@@ -1,0 +1,145 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Thursday, Feb 9, 2017
+//
+VERSION=0.56d
+
+[MULTIDEF 01770]
+DEFNAME=m_magincia_unknown_stall_1
+//NAME=
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Unknown Stall 1
+MULTIREGION=-1,-2,2,2
+COMPONENT=02a58,1,0
+COMPONENT=i_sign_brass,2,-2
+COMPONENT=0a20,1,-2
+COMPONENT=0b97,2,-2
+
+[MULTIDEF 01771]
+DEFNAME=m_magincia_unknown_stall_2
+//NAME=
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Unknown Stall 2
+MULTIREGION=-1,-2,2,2
+COMPONENT=0afa,1,1
+COMPONENT=0b26,-1,-1
+COMPONENT=0b26,-1,2
+COMPONENT=09a8,-1,0,7
+COMPONENT=i_sign_brass,2,-2
+COMPONENT=0a20,1,-2
+COMPONENT=0b97,2,-2
+
+[MULTIDEF 01772]
+DEFNAME=m_magincia_commodity_stall_1
+NAME=Commodity Stall
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Commodity Stall 1
+MULTIREGION=-1,-2,2,2
+COMPONENT=0709,1,1
+COMPONENT=i_sign_brass,2,-2
+COMPONENT=0a20,1,-2
+COMPONENT=0b97,2,-2
+
+[MULTIDEF 01773]
+DEFNAME=m_magincia_commodity_stall_2
+NAME=Commodity Stall
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Commodity Stall 2
+MULTIREGION=-1,-2,2,2
+COMPONENT=02438,1,0
+COMPONENT=i_sign_brass,2,-2
+COMPONENT=0a20,1,-2
+COMPONENT=0b97,2,-2
+
+[MULTIDEF 01774]
+DEFNAME=m_magincia_commodity_stall_3
+NAME=Commodity Stall
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Commodity Stall 3
+MULTIREGION=-1,-2,2,2
+COMPONENT=04090,0,0
+COMPONENT=i_sign_brass,2,-2
+COMPONENT=0a20,1,-2
+COMPONENT=0b97,2,-2
+
+[MULTIDEF 01775]
+DEFNAME=m_magincia_animal_stall_1
+NAME=Animal Stall
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Animal Stall 1
+MULTIREGION=-2,-2,2,2
+COMPONENT=031f8,0,1
+COMPONENT=041a,-1,0
+COMPONENT=0870,2,0
+COMPONENT=i_sign_brass,2,-2
+COMPONENT=0a20,1,-2
+COMPONENT=0b97,2,-2
+
+//[MULTIDEF 01776]
+
+[MULTIDEF 01777]
+DEFNAME=m_magincia_animal_stall_2
+NAME=Animal Stall
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Animal Stall 2
+MULTIREGION=-2,-2,2,2
+COMPONENT=0177d,0,-1
+COMPONENT=0177d,0,1
+COMPONENT=0870,2,0
+COMPONENT=i_sign_brass,2,-2
+COMPONENT=0a20,1,-2
+COMPONENT=0b97,2,-2
+
+[MULTIDEF 01778]
+DEFNAME=m_magincia_unknown_stall_3
+//NAME=
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Unknown Stall 3
+MULTIREGION=-1,-2,2,2
+COMPONENT=0512,1,0
+COMPONENT=i_sign_brass,2,-2
+COMPONENT=0a20,1,-2
+COMPONENT=0b97,2,-2
+
+//[MULTIDEF 01779]
+//[MULTIDEF 0177a]
+
+[MULTIDEF 0177b]
+DEFNAME=m_magincia_animal_stall_3
+NAME=Animal Stall
+TYPE=t_multi
+CATEGORY=Multis
+SUBSECTION=Magincia Bazaar
+DESCRIPTION=Animal Stall 3
+MULTIREGION=-2,-2,2,2
+COMPONENT=0914,-1,0
+COMPONENT=0914,1,1
+COMPONENT=0870,2,1
+COMPONENT=i_sign_brass,2,-2
+COMPONENT=0a20,1,-2
+COMPONENT=0b97,2,-2
+
+[EOF]
