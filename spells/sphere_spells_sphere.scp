@@ -1,0 +1,298 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Tuesday, Sept 19, 2017
+//
+VERSION=0.56d
+
+[COMMENT sphere_spells]
+- Potions are just spells that have an effect attached at the potion layer.
+- Spells and potion effects can be added to equipped items.
+- Until monster AI is improved, all "good" spells have had the spellflag_playeronly added
+- Only spells with SPELLFLAG_HARM flag can be reflected with Magic Reflection spell.
+- If MAGICF_OSIFORMULAS flag is enabled on sphere.ini, it will override EFFECT / DURATION values on some spells.
+
+///////////////////
+// Sphere Spells //
+///////////////////
+
+[SPELL 0]
+// No effect...
+DEFNAME=s_Water
+NAME=Water
+SOUND=0
+RUNES=
+CAST_TIME=0
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=0
+FLAGS=0
+EFFECT_ID=0
+EFFECT=0
+DURATION=0.0
+MANAUSE=4
+SKILLREQ=MAGERY 1.0
+INTERRUPT=100.0,100.0
+
+
+[SPELL 1000]
+DEFNAME=s_summon_undead
+NAME=Summon Undead
+SOUND=snd_spell_summon_undead
+RUNES=KNM
+CAST_TIME=2.3
+RESOURCES=i_reag_blood_moss
+RUNE_ITEM=i_RUNE_ALCHEM_1
+SCROLL_ITEM=i_scroll_X_GREEN2
+FLAGS=spellflag_dir_anim|spellflag_targ_xyz|spellflag_summon
+EFFECT_ID=0
+EFFECT=0
+LAYER=layer_spell_summon
+DURATION=2*60.0,3*60.0
+MANAUSE=15
+SKILLREQ=MAGERY 30.0, NECROMANCY 40.0
+INTERRUPT=100.0,100.0
+
+[SPELL 1001]
+DEFNAME=s_animate_dead
+NAME=Animate Dead
+SOUND=snd_SPELL_ANIMATE_DEAD
+RUNES=IAMG
+CAST_TIME=60
+RESOURCES=i_reag_blood_moss
+RUNE_ITEM=i_RUNE_ALCHEM_2
+SCROLL_ITEM=i_scroll_X_TEAL2
+FLAGS=SPELLFLAG_TARG_ITEM
+EFFECT_ID=0
+EFFECT=0
+LAYER=layer_spell_summon
+DURATION=2*60.0,3*60.0
+MANAUSE=15
+// NOTE: This spell, in past testings, when used on a player corpse, would cause the loss of all players effects upon decay. I suggest code that when used on a player corpse and the player is in the area that it ressurects the player, retains the items, but leaves him controlled by the caster for the duration of the spell, like a pet  :)
+SKILLREQ=MAGERY 30.0, NECROMANCY 40.0
+INTERRUPT=100.0,100.0
+
+[SPELL 1002]
+DEFNAME=s_bone_armor
+NAME=Bone Armor
+SOUND=snd_SPELL_BONE_ARMOR
+RUNES=ICSY
+CAST_TIME=60
+RESOURCES=i_reag_blood_moss
+RUNE_ITEM=i_RUNE_ALCHEM_3
+SCROLL_ITEM=i_scroll_X_BROWN2
+FLAGS=SPELLFLAG_TARG_OBJ
+EFFECT_ID=0
+EFFECT=0
+LAYER=layer_spell_protection
+DURATION=0.0
+MANAUSE=15
+SKILLREQ=MAGERY 30.0, NECROMANCY 40.0
+INTERRUPT=100.0,100.0
+
+[SPELL 1003]
+//Adds a light halo around the character
+DEFNAME=s_light
+NAME=Light
+SOUND=snd_SPELL_LIGHT
+RUNES=IL
+CAST_TIME=60
+RESOURCES=i_reag_spider_silk,i_reag_sulfur_ash
+RUNE_ITEM=i_light_source
+SCROLL_ITEM=I_SCROLL_X_RED
+FLAGS=SPELLFLAG_TARG_CHAR| SPELLFLAG_GOOD
+EFFECT_ID=0
+EFFECT=0
+LAYER=layer_spell_night_sight
+DURATION=3*60.0,5*60.0
+MANAUSE=15
+SKILLREQ=MAGERY 30.0, NECROMANCY 40.0
+INTERRUPT=100.0,100.0
+
+[SPELL 1004]
+DEFNAME=s_fire_bolt
+NAME=Fire Bolt
+SOUND=snd_SPELL_FIRE_BOLT
+RUNES=VFP
+CAST_TIME=60
+RESOURCES=i_reag_black_pearl,i_reag_sulfur_ash,i_reag_nightshade
+RUNE_ITEM=i_rune_FIREBALL
+SCROLL_ITEM=I_SCROLL_X_BLUE
+FLAGS=SPELLFLAG_TARG_CHAR|SPELLFLAG_DIR_ANIM|SPELLFLAG_HARM|SPELLFLAG_FX_BOLT|SPELLFLAG_RESIST|SPELLFLAG_DAMAGE
+EFFECT_ID=i_fx_firesnake
+EFFECT=30,50
+DURATION=0.0
+MANAUSE=15
+SKILLREQ=MAGERY 30.0, NECROMANCY 40.0
+INTERRUPT=100.0,100.0
+
+[SPELL 1005]
+DEFNAME=s_Hallucination
+NAME=Hallucination
+SOUND=snd_Z_END_MYSTERY1
+RUNES=WN
+CAST_TIME=60
+RESOURCES=i_reag_garlic,i_reag_nightshade
+RUNE_ITEM=i_rune_MIND_BLAST
+SCROLL_ITEM=i_scroll_MIND_BLAST
+FLAGS=SPELLFLAG_TARG_CHAR|SPELLFLAG_DIR_ANIM| SPELLFLAG_HARM | SPELLFLAG_FX_TARG| spellflag_curse
+EFFECT_ID=i_fx_curse
+EFFECT=2,5
+LAYER=layer_flag_hallucination
+DURATION=2*60.0,4*60.0
+MANAUSE=15
+SKILLREQ=MAGERY 30.0, NECROMANCY 40.0
+INTERRUPT=100.0,100.0
+
+[SPELL 1006]
+DEFNAME=s_Stone
+NAME=Stone
+FLAGS=SPELLFLAG_TARG_CHAR|SPELLFLAG_DIR_ANIM| SPELLFLAG_HARM | SPELLFLAG_FX_TARG | SPELLFLAG_PLAYERONLY
+RUNE_ITEM=i_RUNE_ALCHEM_3
+DURATION=2*60.0,4*60.0
+
+[SPELL 1007]
+DEFNAME=s_Shrink
+NAME=Shrink
+FLAGS=SPELLFLAG_TARG_CHAR|SPELLFLAG_DIR_ANIM| SPELLFLAG_HARM | SPELLFLAG_FX_TARG | SPELLFLAG_PLAYERONLY
+RUNE_ITEM=i_RUNE_ALCHEM_3
+DURATION=2*60.0,4*60.0
+
+[SPELL 1008]
+DEFNAME=s_Refresh
+NAME=Refresh
+FLAGS=SPELLFLAG_TARG_CHAR | SPELLFLAG_FX_TARG | SPELLFLAG_GOOD | SPELLFLAG_PLAYERONLY
+RUNE_ITEM=i_RUNE_ALCHEM_3
+EFFECT=40,180
+
+[SPELL 1009]
+DEFNAME=s_Restore
+NAME=Restore
+FLAGS=SPELLFLAG_TARG_CHAR | SPELLFLAG_FX_TARG | SPELLFLAG_GOOD | SPELLFLAG_PLAYERONLY
+RUNE_ITEM=i_RUNE_ALCHEM_3
+EFFECT=10,100
+
+[SPELL 1010]
+DEFNAME=s_Mana
+NAME=Mana
+FLAGS=SPELLFLAG_TARG_CHAR | SPELLFLAG_FX_TARG | SPELLFLAG_GOOD | SPELLFLAG_PLAYERONLY
+RUNE_ITEM=i_RUNE_ALCHEM_3
+EFFECT_ID=i_fx_HEAL_EFFECT
+EFFECT=10,100
+
+[SPELL 1011]
+DEFNAME=s_Sustenance
+NAME=Sustenance
+FLAGS=SPELLFLAG_TARG_CHAR|SPELLFLAG_DIR_ANIM| SPELLFLAG_GOOD | SPELLFLAG_FX_TARG | SPELLFLAG_PLAYERONLY
+RUNE_ITEM=i_RUNE_ALCHEM_3
+EFFECT=4,100
+
+[SPELL 1012]
+// This potion makes your skin match the colors of whatever is behind you.
+DEFNAME=s_Chameleon
+NAME=Chameleon
+FLAGS=SPELLFLAG_TARG_CHAR|SPELLFLAG_DIR_ANIM| SPELLFLAG_HARM | SPELLFLAG_FX_TARG | SPELLFLAG_PLAYERONLY
+RUNE_ITEM=i_RUNE_ALCHEM_3
+DURATION=2*60.0,4*60.0
+
+[SPELL 1013]
+// This potion polymorphs you into an animal for a while.
+DEFNAME=s_BeastForm
+NAME=Beast Form
+FLAGS=SPELLFLAG_HARM| SPELLFLAG_PLAYERONLY
+RUNE_ITEM=i_RUNE_ALCHEM_3
+DURATION=2*60.0,4*60.0
+
+[SPELL 1014]
+// This potion polymorphs you into a monster for a while.
+DEFNAME=s_Monster_Form
+NAME=Monster Form
+FLAGS=SPELLFLAG_HARM| SPELLFLAG_PLAYERONLY
+RUNE_ITEM=i_RUNE_ALCHEM_3
+DURATION=2*60.0,4*60.0
+
+[SPELL 1015]
+// This potion permanently changes your gender.
+DEFNAME=s_Gender_Swap
+NAME=Gender Swap
+FLAGS=SPELLFLAG_HARM| SPELLFLAG_PLAYERONLY
+RUNE_ITEM=i_RUNE_ALCHEM_3
+
+[SPELL 1016]
+// Temporarily increases your meditation skill.
+DEFNAME=s_Trance
+NAME=Trance
+FLAGS=SPELLFLAG_PLAYERONLY
+RUNE_ITEM=i_RUNE_ALCHEM_3
+EFFECT_ID=i_fx_HEAL_EFFECT
+DURATION=2*60.0,4*60.0
+
+[SPELL 1017]
+// This potion turns you into an immobile but untargetable particle system for a while.
+DEFNAME=s_Particle_Form
+NAME=Particle Form
+FLAGS=SPELLFLAG_PLAYERONLY
+RUNE_ITEM=i_RUNE_ALCHEM_3
+DURATION=2*60.0,4*60.0
+
+[SPELL 1018]
+// This potion erects a temporary force field around you. Nobody approaching will be able to get within 1 tile of you though you can move close to them if you wish.
+DEFNAME=s_Shield
+NAME=Shield
+FLAGS=SPELLFLAG_PLAYERONLY
+RUNE_ITEM=i_RUNE_ALCHEM_3
+DURATION=2*60.0,4*60.0
+
+[SPELL 1019]
+// This potion turns your skin into steel, giving a boost to your AR.
+DEFNAME=s_Steelskin
+NAME=Steel Skin
+FLAGS=SPELLFLAG_TARG_CHAR | SPELLFLAG_FX_TARG| SPELLFLAG_GOOD | SPELLFLAG_PLAYERONLY
+RUNE_ITEM=i_RUNE_ALCHEM_3
+EFFECT=4,40
+DURATION=2*60.0,4*60.0
+
+[SPELL 1020]
+// This potion turns your skin into stone, giving a boost to your AR.
+DEFNAME=s_Stoneskin
+NAME=Stone Skin
+FLAGS=SPELLFLAG_TARG_CHAR | SPELLFLAG_FX_TARG| SPELLFLAG_GOOD | SPELLFLAG_PLAYERONLY
+RUNE_ITEM=i_RUNE_ALCHEM_3
+EFFECT=4,40
+DURATION=2*60.0,4*60.0
+
+[SPELL 1021]
+// Regen hit points at fast rate.
+DEFNAME=s_Regenerate
+NAME=Regeneration
+FLAGS=SPELLFLAG_TARG_CHAR | SPELLFLAG_FX_TARG | SPELLFLAG_GOOD | SPELLFLAG_PLAYERONLY
+RUNE_ITEM=i_RUNE_ALCHEM_3
+DURATION=2*60.0,4*60.0
+
+[SPELL 1022]
+// Enchant a weapon or armor.
+// Effect of all enchanted weapons is tied to EFFECT here !
+DEFNAME=s_Enchant
+NAME=Enchantment
+FLAGS=SPELLFLAG_TARG_OBJ | SPELLFLAG_FX_TARG | SPELLFLAG_GOOD | SPELLFLAG_PLAYERONLY
+RUNE_ITEM=i_RUNE_ALCHEM_3
+MANAUSE=200
+SKILLREQ=MAGERY 200.0
+EFFECT=1,9
+
+[SPELL 1023]
+//
+DEFNAME=s_Forget
+NAME=Forget
+FLAGS=SPELLFLAG_HARM| SPELLFLAG_PLAYERONLY
+RUNE_ITEM=i_RUNE_ALCHEM_3
+
+//Spells can be defined up to 1055
+
+[EOF]

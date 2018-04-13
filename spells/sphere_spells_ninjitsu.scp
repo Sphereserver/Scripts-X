@@ -1,0 +1,173 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Tuesday, Sept 19, 2017
+//
+VERSION=0.56d
+
+[COMMENT sphere_spells]
+- Potions are just spells that have an effect attached at the potion layer.
+- Spells and potion effects can be added to equipped items.
+- Until monster AI is improved, all "good" spells have had the spellflag_playeronly added
+- Only spells with SPELLFLAG_HARM flag can be reflected with Magic Reflection spell.
+- If MAGICF_OSIFORMULAS flag is enabled on sphere.ini, it will override EFFECT / DURATION values on some spells.
+
+/////////////////////
+// Ninjitsu Spells //
+/////////////////////
+
+[SPELL 501]
+DEFNAME=s_focus_attack
+NAME=Focus Attack
+SOUND=snd_ninjitsu_focus_attack
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=i_rune_focus_attack
+SCROLL_ITEM=
+FLAGS=
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=10
+SKILLREQ=NINJITSU 30.0
+INTERRUPT=0.0,0.0
+
+[SPELL 502]
+DEFNAME=s_death_strike
+NAME=Death Strike
+SOUND=//Scripted because it is different for males and females
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=i_rune_death_strike
+SCROLL_ITEM=0
+FLAGS=
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=30
+SKILLREQ=NINJITSU 85.0
+INTERRUPT=0.0,0.0
+ON=@Success
+   IF (<SRC.f_isfemale>)
+      SRC.SOUND snd_ninjitsu_deathstrike_f
+   ELSE
+      SRC.SOUND snd_ninjitsu_deathstrike_m
+   ENDIF
+
+[SPELL 503]
+DEFNAME=s_animal_form
+NAME=Animal Form
+SOUND=0
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=i_rune_animal_form
+SCROLL_ITEM=0
+FLAGS=
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=10
+SKILLREQ=NINJITSU 0.0
+INTERRUPT=0.0,0.0
+
+[SPELL 504]
+DEFNAME=s_ki_attack
+NAME=Ki Attack
+SOUND=snd_ninjitsu_ki_attack
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=i_rune_ki_attack
+SCROLL_ITEM=0
+FLAGS=
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=
+SKILLREQ=NINJITSU 0.0
+INTERRUPT=0.0,0.0
+
+[SPELL 505]
+DEFNAME=s_surprise_attack
+NAME=Surprise Attack
+SOUND=//Scripted because its different depending on gender
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=i_rune_suprise_attack
+SCROLL_ITEM=0
+FLAGS=
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=20
+SKILLREQ=NINJITSU 60.0
+INTERRUPT=0.0,0.0
+ON=@Success
+   IF (<SRC.f_isfemale>)
+      SRC.SOUND snd_ninjitsu_suprise_attack_f
+   ELSE
+      SRC.SOUND snd_ninjitsu_suprise_attack_m
+   ENDIF
+
+[SPELL 506]
+DEFNAME=s_backstab
+NAME=Backstab
+SOUND=0
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=i_rune_backstab
+SCROLL_ITEM=0
+FLAGS=
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=30
+SKILLREQ=NINJITSU 40.0
+INTERRUPT=0.0,0.0
+
+[SPELL 507]
+DEFNAME=s_shadowjump
+NAME=Shadowjump
+SOUND=snd_ninjitsu_shadowjump
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=i_rune_shadowjump
+SCROLL_ITEM=0
+FLAGS=
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=15
+SKILLREQ=NINJITSU 50.0
+INTERRUPT=0.0,0.0
+
+[SPELL 508]
+DEFNAME=s_mirror_image
+NAME=Mirror Image
+SOUND=snd_ninjitsu_mirror_image
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=i_rune_mirror_image
+SCROLL_ITEM=0
+FLAGS=
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=10
+SKILLREQ=NINJITSU 20.0
+INTERRUPT=0.0,0.0
+
+[EOF]

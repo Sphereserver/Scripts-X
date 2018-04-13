@@ -1,0 +1,210 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Tuesday, Sept 19, 2017
+//
+VERSION=0.56d
+
+[COMMENT sphere_spells]
+- Potions are just spells that have an effect attached at the potion layer.
+- Spells and potion effects can be added to equipped items.
+- Until monster AI is improved, all "good" spells have had the spellflag_playeronly added
+- Only spells with SPELLFLAG_HARM flag can be reflected with Magic Reflection spell.
+- If MAGICF_OSIFORMULAS flag is enabled on sphere.ini, it will override EFFECT / DURATION values on some spells.
+
+/////////////////////
+// Chivalry Spells //
+/////////////////////
+
+[SPELL 201]
+DEFNAME=s_cleanse_by_fire
+NAME=Cleanse by Fire
+SOUND=0
+RUNES=.@,,2 1060718
+CAST_TIME=1.0
+RESOURCES=
+//RUNE_ITEM=
+SCROLL_ITEM=i_scroll_cleanse_by_fire
+FLAGS=spellflag_targ_char|spellflag_fx_targ|spellflag_good|spellflag_playeronly
+EFFECT_ID=i_fx_bless_effect
+EFFECT=10
+DURATION=0
+MANAUSE=10
+TITHINGUSE=10
+SKILLREQ=CHIVALRY 5.0
+INTERRUPT=100.0,55.0
+PROMPT_MSG=Who shall you cure?
+
+[SPELL 202]
+DEFNAME=s_close_wounds
+NAME=Close Wounds
+SOUND=0202
+RUNES=.@,,2 1060719
+CAST_TIME=1.5
+RESOURCES=
+//RUNE_ITEM=0
+//SCROLL_ITEM=0
+FLAGS=spellflag_targ_char|spellflag_fx_targ|spellflag_good|spellflag_playeronly|spellflag_heal
+EFFECT_ID=i_fx_heal_effect
+EFFECT=10
+DURATION=0
+MANAUSE=10
+TITHINGUSE=10
+SKILLREQ=SKILL_CHIVALRY 0.1
+INTERRUPT=0.0,0.0
+PROMPT_MSG=Who shall you heal?
+
+[SPELL 203]
+DEFNAME=s_Consecrate_Weapon
+NAME=Consecrate Weapon
+SOUND=
+RUNES=.@,,2 1060720
+CAST_TIME=0.1
+RESOURCES=
+//RUNE_ITEM=0
+//SCROLL_ITEM=0
+FLAGS=spellflag_playeronly|spellflag_nofreezeoncast
+EFFECT_ID=
+EFFECT=10
+LAYER=layer_spell_consecrate_weapon
+DURATION=0.0
+MANAUSE=10
+TITHINGUSE=10
+SKILLREQ=SKILL_CHIVALRY 15.0
+INTERRUPT=0.0,0.0
+
+[SPELL 204]
+DEFNAME=s_Dispel_Evil
+NAME=Dispel Evil
+SOUND=snd_spell_dispel
+RUNES=.@,,2 1060721
+CAST_TIME=0.3
+RESOURCES=
+//RUNE_ITEM=0
+//SCROLL_ITEM=0
+FLAGS=spellflag_playeronly|spellflag_nofreezeoncast
+EFFECT_ID=
+EFFECT=10
+DURATION=0.0
+MANAUSE=10
+TITHINGUSE=10
+SKILLREQ=SKILL_CHIVALRY 35.0
+INTERRUPT=0.0,0.0
+
+[SPELL 205]
+DEFNAME=s_Divine_Fury
+NAME=Divine Fury
+SOUND=020F
+RUNES=.@,,2 1060722
+CAST_TIME=1.0
+RESOURCES=
+//RUNE_ITEM=0
+//SCROLL_ITEM=0
+FLAGS=spellflag_playeronly|spellflag_nofreezeoncast
+EFFECT_ID=0376A
+EFFECT=10
+LAYER=layer_spell_divine_fury
+DURATION=0.0
+MANAUSE=15
+TITHINGUSE=10
+SKILLREQ=SKILL_CHIVALRY 25.0
+INTERRUPT=0.0,0.0
+
+[SPELL 206]
+DEFNAME=s_Enemy_of_One
+NAME=Enemy of One
+SOUND=0f5
+RUNES=.@,,2 1060723
+CAST_TIME=0.5
+RESOURCES=
+//RUNE_ITEM=0
+//SCROLL_ITEM=0
+FLAGS=spellflag_playeronly|spellflag_nofreezeoncast
+EFFECT_ID=0376A
+EFFECT=10
+LAYER=layer_spell_enemy_of_one
+DURATION=0.0
+MANAUSE=20
+TITHINGUSE=10
+SKILLREQ=CHIVALRY 45.0
+INTERRUPT=0.0,0.0
+
+[SPELL 207]
+DEFNAME=s_Holy_Light
+NAME=Holy Light
+SOUND=snd_spell_light
+RUNES=.@,,2 1060724
+CAST_TIME=1.8
+RESOURCES=
+//RUNE_ITEM=0
+//SCROLL_ITEM=0
+FLAGS=spellflag_playeronly|spellflag_nofreezeoncast
+EFFECT_ID=
+EFFECT=10
+DURATION=0.0
+MANAUSE=10
+TITHINGUSE=10
+SKILLREQ=CHIVALRY 55.0
+INTERRUPT=0.0,0.0
+
+[SPELL 208]
+DEFNAME=s_Noble_Sacrifice
+NAME=Noble Sacrifice
+SOUND=
+RUNES=.@,,2 1060725
+CAST_TIME=1.5
+RESOURCES=
+//RUNE_ITEM=0
+//SCROLL_ITEM=0
+FLAGS=spellflag_playeronly|spellflag_nofreezeoncast|spellflag_heal
+EFFECT_ID=
+EFFECT=30
+DURATION=0.0
+MANAUSE=20
+TITHINGUSE=30
+SKILLREQ=SKILL_CHIVALRY 65.0
+INTERRUPT=0.0,0.0
+
+[SPELL 209]
+DEFNAME=s_Remove_Curse
+NAME=Remove Curse
+SOUND=
+RUNES=.@,,2 1060726
+CAST_TIME=1.5
+RESOURCES=
+//RUNE_ITEM=0
+//SCROLL_ITEM=0
+FLAGS=spellflag_playeronly|spellflag_targ_char|spellflag_nofreezeoncast
+EFFECT_ID=
+EFFECT=10
+DURATION=0.0
+MANAUSE=20
+TITHINGUSE=30
+SKILLREQ=SKILL_CHIVALRY 5.0
+INTERRUPT=0.0,0.0
+
+[SPELL 210]
+DEFNAME=s_Sacred_Journey
+NAME=Sacred Journey
+SOUND=
+RUNES=.@,,2 1060727
+CAST_TIME=1.5
+RESOURCES=
+//RUNE_ITEM=0
+//SCROLL_ITEM=0
+FLAGS=spellflag_playeronly|spellflag_targ_item|spellflag_nofreezeoncast
+EFFECT_ID=
+EFFECT=15
+DURATION=0.0
+MANAUSE=10
+TITHINGUSE=15
+SKILLREQ=SKILL_CHIVALRY 15.0
+INTERRUPT=0.0,0.0
+
+[EOF]

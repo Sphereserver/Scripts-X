@@ -1,0 +1,88 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Friday, Aug 4, 2017
+//
+VERSION=0.56d
+
+[DIALOG d_hair_dye]
+50,50
+
+page 0
+resizepic 100 10 2600 350 355
+resizepic 120 54 5100 110 270
+dhtmlgump 70 25 400 35 0 0 <DEF.CENTER>Hair Color Selection Menu<DEF.CENTERE>
+button 149 328 4005 4007 1 0 1
+dhtmlgump 185 329 250 35 0 0 Dye my hair this color!
+
+WHILE !(<isempty <DEF.Hair.Dye.<SRC.CTAG0.Hairstylist.Dye.Palette>.<eval <LOCAL._WHILE>+1>>>)
+ ARGS=<DEF.Hair.Dye.<SRC.CTAG0.Hairstylist.Dye.Palette>.<eval <LOCAL._WHILE>+1>>
+ dtext 130 <eval 59+(<LOCAL._WHILE>*22)> <eval <ARGV0>-1> *****
+ button 207 <eval 60+(<LOCAL._WHILE>*22)> 5224 5224 0 <eval <LOCAL._WHILE>+1> 0
+ENDWHILE
+
+WHILE !(<isempty <DEF.Hair.Dye.<SRC.CTAG0.Hairstylist.Dye.Palette>.<eval <LOCAL._WHILE>+1>>>)
+ ARGS=<DEF.Hair.Dye.<SRC.CTAG0.Hairstylist.Dye.Palette>.<eval <LOCAL._WHILE>+1>>
+ page <eval <LOCAL._WHILE>+1>
+ LOCAL.N=0
+ FOR <ARGV0> <ARGV1>
+  dtext <eval 278+((<LOCAL.N>/16)*80)> <eval 52+((<LOCAL.N>%16)*17)> <eval <LOCAL._FOR>-1> *****
+  radio <eval 260+((<LOCAL.N>/16)*80)> <eval 52+((<LOCAL.N>%16)*17)> 210 211 0 <LOCAL._FOR>
+  LOCAL.N ++
+ ENDFOR
+ENDWHILE
+
+[DIALOG d_hair_dye BUTTON]
+ON=1 2500
+IF !(<SRC.CANSEELOS <UID>>)
+ return 1
+ELIF !(<SRC.ISGM>)
+ IF (<SRC.GOLD> < <SRC.CTAG0.Hairstylist.Price>)
+  SAY You cannot afford my services for that style.
+  return 1
+ ENDIF
+ SRC.GOLD -= <SRC.CTAG0.Hairstylist.Price>
+ SRC.SYSMESSAGE <dSRC.CTAG0.Hairstylist.Price> gold has been removed from your bank box.
+ENDIF
+
+WHILE !(<isempty <DEF.Hair.Dye.<SRC.CTAG0.Hairstylist.Dye.Palette>.<eval <LOCAL._WHILE>+1>>>)
+ ARGS=<DEF.Hair.Dye.<SRC.CTAG0.Hairstylist.Dye.Palette>.<eval <LOCAL._WHILE>+1>>
+ IF (<ARGCHKID> >= <ARGV0>) && (<ARGCHKID> <= <ARGV1>)
+  IF (<SRC.CTAG0.Hairstylist.Dye.Hair>)
+   SRC.FINDLAYER.layer_hair.COLOR=<ARGCHKID>
+  ENDIF
+  IF (<SRC.CTAG0.Hairstylist.Dye.Beard>)
+   SRC.FINDLAYER.layer_beard.COLOR=<ARGCHKID>
+  ENDIF
+  return 1
+ ENDIF
+ENDWHILE
+
+[DEFNAME HairDyes]
+Hair.Dye.Normal.1		1602, 1627	//Brown
+Hair.Dye.Normal.2		1628, 1654	//Chestnut
+Hair.Dye.Normal.3		1502, 1533	//Auburn
+Hair.Dye.Normal.4		1302, 1333	//Blue
+Hair.Dye.Normal.5		1402, 1433	//Green
+Hair.Dye.Normal.6		1202, 1225	//Red
+Hair.Dye.Normal.7		2402, 2430	//Light
+Hair.Dye.Normal.8		2213, 2218	//Blonde
+Hair.Dye.Normal.9		1102, 1109	//Black
+Hair.Dye.Normal.10		1110, 1117	//Beige
+Hair.Dye.Normal.11		1118, 1133	//Golden
+Hair.Dye.Normal.12		1134, 1149	//Dark Brown
+
+Hair.Dye.Bright.1		12, 21		//Purple
+Hair.Dye.Bright.2		32, 36		//Red
+Hair.Dye.Bright.3		38, 45		//Orange
+Hair.Dye.Bright.4		54, 56		//Yellow
+Hair.Dye.Bright.5		62, 71		//Green
+Hair.Dye.Bright.6		81, 82		//Light Green
+Hair.Dye.Bright.7		89, 90		//Blue
+Hair.Dye.Bright.8		1153, 1154	//White

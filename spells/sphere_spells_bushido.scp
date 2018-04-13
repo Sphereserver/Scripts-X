@@ -1,0 +1,199 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Tuesday, Sept 19, 2017
+//
+VERSION=0.56d
+
+[COMMENT sphere_spells]
+- Potions are just spells that have an effect attached at the potion layer.
+- Spells and potion effects can be added to equipped items.
+- Until monster AI is improved, all "good" spells have had the spellflag_playeronly added
+- Only spells with SPELLFLAG_HARM flag can be reflected with Magic Reflection spell.
+- If MAGICF_OSIFORMULAS flag is enabled on sphere.ini, it will override EFFECT / DURATION values on some spells.
+
+////////////////////
+// Bushido Spells //
+////////////////////
+//"
+// A character with Bushido as well as the Parrying skill will be able to
+// block with a sword, though their defense chance with an actual Shield is
+// lowered as they progress as a Samurai. Bushido also offers the only method
+// in the game to entirely avoid direct spell damage: The Evasion ability.
+//
+// A Samurai with 50 Bushido or above may activate the Perfection system
+// by honoring a target creature. This grants a damage bonus dependant on
+// consecutive hits.
+//
+// At 90 skill, it becomes possible to use Bushido in place of Animal Taming
+// for the purpose of controlling and riding Lesser Hiryus.
+//
+// This skill also counts towards your ability to perform Special Moves and
+// gives a damage bonus to the Whirlwind special move.
+//"
+
+[SPELL 401]
+//"
+// Once enabled, the next blow the caster lands must be a killing blow.
+//
+// If successful, the caster gets a 10 second Swing Speed Increase of 0.25s
+// and 8 to 10 Hit Points are restored (adjusted upwards per level of
+// Perfection.)
+//
+// An unsuccessful use yields a 6 second loss of all Magic Resistance and
+// all other Resistances are reduced by 40.
+//
+// Duration: Killing blow must land within 6-10 seconds.
+//"
+DEFNAME=s_honorable_execution
+NAME=Honorable Execution
+SOUND=snd_bushido_honorable_execution
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=i_rune_honorable_execution
+SCROLL_ITEM=0
+FLAGS=spellflag_scripted
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=0
+SKILLREQ=Bushido 25.0
+INTERRUPT=0.0,0.0
+
+[SPELL 402]
+//"
+// A defensive stance that allows Stamina and Hit Points gain with each
+// successful parry.  Each such parry will heal 1 to (Bushido / 12) hit
+// points, and refresh stamina for 1 to (Bushido / 5).
+//
+// Also increases stamina and Hit Point Regeneration rate for 4 seconds
+// upon activation.  The increased rate is halted if hit during the 4
+// second duration.  Max HP healed = ((Bushido*Bushido)/576)+15
+//
+// Duration: 4 seconds
+//"
+DEFNAME=s_confidence
+NAME=Confidence
+SOUND=snd_bushido_confidence
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=i_rune_confidence
+SCROLL_ITEM=0
+FLAGS=spellflag_scripted
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=10
+SKILLREQ=Bushido 25.0
+INTERRUPT=0.0,0.0
+
+[SPELL 403]
+//"
+// Increases your chance to parry, also grants the ability to parry direct
+// damage attacks from other sources, such as spells and Dragons Breath.
+// Evasion can only be used once every 20 seconds. The chance to block is
+// based on Bushido, Anatomy, and Tactics. The duration of Evasion is also
+// influenced by these skills.
+//
+// Duration: 3 to 6 seconds with a 2 second bonus if your Bushido is above
+// 100.0 and both Tactics and Anatomy are 100.0 or better.
+//"
+DEFNAME=s_evasion
+NAME=Evasion
+SOUND=snd_bushido_evasion
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=i_rune_evasion
+SCROLL_ITEM=0
+FLAGS=spellflag_disabled
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=10
+SKILLREQ=Bushido 60.0
+INTERRUPT=0.0,0.0
+
+[SPELL 404]
+//"
+// Places you in a defensive stance that allows you to automatically counter
+// attack the next time you successfully parry, without interrupting your
+// normal swing timer. The Counter Attack takes normal hit and miss ratios
+// into account, and therefore can miss.
+//
+// Duration: Until next successful parry
+//"
+DEFNAME=s_counter_attack
+NAME=Counter Attack
+SOUND=0
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=i_rune_counter_attack
+SCROLL_ITEM=0
+FLAGS=spellflag_disabled
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=5
+SKILLREQ=Bushido 40.0
+INTERRUPT=0.0,0.0
+
+[SPELL 405]
+//"
+// Allows a single attack with a 50% Hit Chance Increase. The HCI cap of 45%
+// applies. However, if under the effects of a Hit Lower Attack, the full
+// 50% bonus is enjoyed. (The bonus can overcome the effects of Hit Lower
+// Attack.) Also, some hits under the effect of a Lighting Strike will be
+// deemed Critical Hits and will do extra damage. 
+//
+// Duration: Instant
+//"
+DEFNAME=s_lightning_strike
+NAME=Lightning Strike
+SOUND=snd_bushido_lightning_strike
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=i_rune_lightning_strike
+SCROLL_ITEM=0
+FLAGS=spellflag_disabled
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=10
+SKILLREQ=Bushido 50.0
+INTERRUPT=0.0,0.0
+
+[SPELL 406]
+//"
+// Works only on multiple targets. A successful hit on an opponent results in
+// another hit attempt on a different, adjacent opponent. Normal hit and miss
+// ratios apply. A damage bonus of 100% is applied to the second target, if
+// the first target is killed.
+//
+// Duration: Instant
+//"
+DEFNAME=s_momentum_strike
+NAME=Momentum Strike
+SOUND=snd_bushido_momentum_strike
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=i_rune_momentum_strike
+SCROLL_ITEM=0
+FLAGS=spellflag_disabled
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=10
+SKILLREQ=BUSHIDO 70.0
+INTERRUPT=0.0,0.0

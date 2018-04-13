@@ -1,0 +1,82 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Friday, Aug 4, 2017
+//
+VERSION=0.56d
+
+[DIALOG d_HELPGM]	// 12
+// Put up a help system dialog that lists ingame commands etc.
+0, 0	// location on the screen.
+resizepic 0 0 3600 600 450
+page 0
+gumppic 285 178 1418
+gumppic 15 50 1800
+gumppic 37 63 50468
+gumppic 15 50 1889
+gumppic 15 50 1883
+gumppic 15 50 1811
+gumppic 15 50 1812
+gumppic 15 50 1891
+gumppic 37 63 50409
+gumppic 130 91 50628
+gumppic 29 76 50984
+text 220 17 995 0
+button 250 300 243 241 1 0 0
+page 1
+text 240 40 995 1
+text 240 55 995 2
+text 240 70 995 3
+text 240 95 995 4
+button 250 115 210 211 1 0 1
+text 300 115 995 5
+button 250 140 210 211 1 0 2
+text 300 140 995 6
+button 250 165 210 211 1 0 3
+text 300 165 995 7
+button 250 190 210 211 1 0 4
+text 300 190 995 8
+button 250 215 210 211 1 0 5
+text 300 215 995 9
+button 250 240 210 211 1 0 6
+text 300 240 995 10
+button 250 265 210 211 1 0 7
+text 300 265 995 11
+
+[DIALOG d_HELPGM TEXT]
+SPHERE Help System
+Hail! Welcome to the SPHERE command help
+system. Pick the catagory of the command from
+the list below.
+Select     Category
+Administrator
+Game Master
+Counselor
+Player
+Triggers and Events
+Properties and Methods
+SPHERE FAQ
+
+[DIALOG d_HELPGM BUTTON]
+
+ON=1
+
+ON=2
+
+ON=3
+
+ON=4
+
+ON=5
+
+ON=6
+
+ON=7
+
+[EOF]

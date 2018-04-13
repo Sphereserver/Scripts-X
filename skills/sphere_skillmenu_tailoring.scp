@@ -1,0 +1,260 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, May 7, 2017
+//
+VERSION=0.56d
+
+[COMMENT sphere_skillmenu]
+SphereServer has a number of hardcoded skillmenu's, this file contains the softcoded component.
+The purpose of these specific skillmenus is as follows:
+sm_tailor_leather		= Triggered by DClicking a sewing kit and using it on leather
+sm_tailor_cloth			= Triggered by DClicking a sewing kit and using it on cloth
+
+[SKILLMENU sm_tailor_leather]
+Leather
+
+ON=i_BOOTS_CALF Footwear
+SKILLMENU=sm_leather_footwear
+
+ON=i_LEATHER_TUNIC Leather Armour
+SKILLMENU=sm_leather_armor
+
+ON=i_STUDDED_TUNIC Studded Armour
+SKILLMENU=sm_leather_studded_armor
+
+ON=i_ARMOR_FEMALE_BUSTIER Female Armour
+SKILLMENU=sm_leather_female_armor
+
+ON=i_BACKPACK Misc
+SKILLMENU=sm_leather_misc
+
+ON=i_mask_blue Masks
+SKILLMENU=sm_leather_masks
+
+[SKILLMENU sm_tailor_cloth]
+Cloth
+
+ON=i_shirt_fancy Shirts
+SKILLMENU=sm_cloth_shirts
+
+ON=i_pants_long Pants
+SKILLMENU=sm_cloth_legwear
+
+ON=i_hat_floppy Headwear
+SKILLMENU=sm_cloth_headwear
+
+ON=i_apron_half Misc.
+SKILLMENU=sm_cloth_misc
+
+ON=i_cloth_bolt <name> (<resmake>)
+MAKEITEM=i_cloth_bolt
+
+[SKILLMENU sm_leather_footwear]
+Footwear
+
+ON=i_SANDALS <name> (<resmake>)
+MAKEITEM=i_SANDALS
+
+ON=i_SHOES_PLAIN <name> (<resmake>)
+MAKEITEM=i_SHOES_PLAIN
+
+ON=i_BOOTS_CALF <name> (<resmake>)
+MAKEITEM=i_BOOTS_CALF
+
+ON=i_BOOTS_THIGH <name> (<resmake>)
+MAKEITEM=i_BOOTS_THIGH
+
+[SKILLMENU sm_leather_armor]
+Leather Armour
+
+ON=i_LEATHER_CAP <name> (<resmake>)
+MAKEITEM=i_LEATHER_CAP
+
+ON=i_LEATHER_GORGET <name> (<resmake>)
+MAKEITEM=i_LEATHER_GORGET
+
+ON=i_LEATHER_GLOVES <name> (<resmake>)
+MAKEITEM=i_LEATHER_GLOVES
+
+ON=i_LEATHER_SLEEVES <name> (<resmake>)
+MAKEITEM=i_LEATHER_SLEEVES
+
+ON=i_LEATHER_LEGGINGS <name> (<resmake>)
+MAKEITEM=i_LEATHER_LEGGINGS
+
+ON=i_LEATHER_TUNIC <name> (<resmake>)
+MAKEITEM=i_LEATHER_TUNIC
+
+[SKILLMENU sm_leather_studded_armor]
+Studded Armour
+
+ON=i_STUDDED_GORGET <name> (<resmake>)
+MAKEITEM=i_STUDDED_GORGET
+
+ON=i_STUDDED_GLOVES <name> (<resmake>)
+MAKEITEM=i_STUDDED_GLOVES
+
+ON=i_STUDDED_SLEEVES <name> (<resmake>)
+MAKEITEM=i_STUDDED_SLEEVES
+
+ON=i_STUDDED_LEGGINGS <name> (<resmake>)
+MAKEITEM=i_STUDDED_LEGGINGS
+
+ON=i_STUDDED_TUNIC <name> (<resmake>)
+MAKEITEM=i_STUDDED_TUNIC
+
+[SKILLMENU sm_leather_female_armor]
+Female Armour
+
+ON=i_armor_female_shorts <name> (<resmake>)
+MAKEITEM=i_armor_female_shorts
+
+ON=i_armor_female_bustier <name> (<resmake>)
+MAKEITEM=i_armor_female_bustier
+
+ON=i_armor_female_bustier_studded <name> (<resmake>)
+MAKEITEM=i_armor_female_bustier_studded
+
+ON=i_armor_female_studded <name> (<resmake>)
+MAKEITEM=i_armor_female_studded
+
+ON=i_armor_female_skirt <name> (<resmake>)
+MAKEITEM=i_armor_female_skirt
+
+ON=i_armor_female_LEATHER <name> (<resmake>)
+MAKEITEM=i_armor_female_LEATHER
+
+[SKILLMENU sm_leather_misc]
+Packs
+
+ON=i_backpack <name> (<resmake>)
+MAKEITEM=i_backpack
+
+ON=i_bag <name> (<resmake>)
+MAKEITEM=i_bag
+
+ON=i_pouch <name> (<resmake>)
+MAKEITEM=i_pouch
+
+[SKILLMENU sm_leather_masks]
+Masks
+
+ON=i_mask_bear <name> (<resmake>)
+MAKEITEM=i_mask_bear
+
+ON=i_mask_deer <name> (<resmake>)
+MAKEITEM=i_mask_deer
+
+ON=i_mask_orc <name> (<resmake>)
+MAKEITEM=i_mask_orc
+
+ON=i_mask_blue <name> (<resmake>)
+MAKEITEM=i_mask_blue
+
+ON=i_mask_tribal_red <name> (<resmake>)
+MAKEITEM=i_mask_tribal_red
+
+[SKILLMENU sm_cloth_shirts]
+Shirts
+
+ON=i_shirt_plain <name> (<resmake>)
+MAKEITEM=i_shirt_plain
+
+ON=i_shirt_fancy <name> (<resmake>)
+MAKEITEM=i_shirt_fancy
+
+ON=i_doublet <name> (<resmake>)
+MAKEITEM=i_doublet
+
+ON=i_dress_plain <name> (<resmake>)
+MAKEITEM=i_dress_plain
+
+ON=i_dress_full <name> (<resmake>)
+MAKEITEM=i_dress_full
+
+ON=i_robe <name> (<resmake>)
+MAKEITEM=i_robe
+
+ON=i_cape <name> (<resmake>)
+MAKEITEM=i_cape
+
+ON=i_jester_suit <name> (<resmake>)
+MAKEITEM=i_jester_suit
+
+ON=i_tunic <name> (<resmake>)
+MAKEITEM=i_tunic
+
+ON=i_surcoat <name> (<resmake>)
+MAKEITEM=i_surcoat
+
+[SKILLMENU sm_cloth_legwear]
+Legwear
+
+ON=i_pants_short <name> (<resmake>)
+MAKEITEM=i_pants_short
+
+ON=i_pants_long <name> (<resmake>)
+MAKEITEM=i_pants_long
+
+ON=i_skirt_long <name> (<resmake>)
+MAKEITEM=i_skirt_long
+
+ON=i_kilt <name> (<resmake>)
+MAKEITEM=i_kilt
+
+[SKILLMENU sm_cloth_headwear]
+Headwear
+
+ON=i_bandana <name> (<resmake>)
+MAKEITEM=i_bandana
+
+ON=i_SKULL_CAP <name> (<resmake>)
+MAKEITEM=i_SKULL_CAP
+
+ON=i_hat_floppy <name> (<resmake>)
+MAKEITEM=i_hat_floppy
+
+ON=i_hat_wide_brim <name> (<resmake>)
+MAKEITEM=i_hat_wide_brim
+
+ON=i_hat_feather <name> (<resmake>)
+MAKEITEM=i_hat_feather
+
+ON=i_hat_tricorne <name> (<resmake>)
+MAKEITEM=i_hat_tricorne
+
+ON=i_hat_straw_tall <name> (<resmake>)
+MAKEITEM=i_hat_straw_tall
+
+ON=i_hat_straw <name> (<resmake>)
+MAKEITEM=i_hat_straw
+
+ON=i_bonnet <name> (<resmake>)
+MAKEITEM=i_bonnet
+
+ON=i_hat_jester <name> (<resmake>)
+MAKEITEM=i_hat_jester
+
+ON=i_hat_wizards <name> (<resmake>)
+MAKEITEM=i_hat_wizards
+
+[SKILLMENU sm_cloth_misc]
+Misc.
+
+ON=i_SASH <name> (<resmake>)
+MAKEITEM=i_SASH
+
+ON=i_apron_half <name> (<resmake>)
+MAKEITEM=i_apron_half
+
+ON=i_apron_full <name> (<resmake>)
+MAKEITEM=i_apron_full
+
+[EOF]

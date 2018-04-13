@@ -1,0 +1,272 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, May 7, 2017
+//
+VERSION=0.56d
+
+[COMMENT sphere_skillmenu]
+SphereServer has a number of hardcoded skillmenu's, this file contains the softcoded component.
+The purpose of this specific skillmenu is as follows:
+sm_tinker				= Triggered by DClicking tinker tools
+
+[SKILLMENU sm_tinker]
+Tinkering
+
+ON=i_barrel_open Containers
+SKILLMENU=sm_containers
+
+ON=i_clock_parts Parts
+SKILLMENU=sm_parts
+
+ON=i_shovel Tools
+SKILLMENU=sm_tools
+
+ON=i_key_iron Keys
+SKILLMENU=sm_keys
+
+ON=i_lute Instruments
+SKILLMENU=sm_instruments
+
+ON=i_necklace_gold Jewelry
+SKILLMENU=sm_jewelry
+
+ON=i_KEG_WOOD Tavern Types
+SKILLMENU=sm_tavern_stuff
+
+ON=i_plane_smoothing Wooden Items
+SKILLMENU=sm_wood_stuff
+
+[SKILLMENU sm_containers]
+Containers
+
+ON=i_box_brass <name> (<resmake>)
+MAKEITEM=i_box_brass
+
+ON=i_keg_small <name> (<resmake>)
+MAKEITEM=i_keg_small
+
+ON=i_keg_potion <name> (<resmake>)
+MAKEITEM=i_keg_potion
+
+ON=i_barrel_open <name> (<resmake>)
+MAKEITEM=i_barrel_open
+
+ON=i_barrel <name> (<resmake>)
+MAKEITEM=i_barrel
+
+ON=i_chest_wooden_brass <name> (<resmake>)
+MAKEITEM=i_chest_wooden_brass
+
+ON=i_chest_metal <name> (<resmake>)
+MAKEITEM=i_chest_metal
+
+ON=i_chest_metal_brass <name> (<resmake>)
+MAKEITEM=i_chest_metal_brass
+
+[SKILLMENU sm_instruments]
+Instruments
+
+ON=i_tambourine <name> (<resmake>)
+MAKEITEM=i_tambourine
+
+ON=i_tambourine_tas <name> (<resmake>)
+MAKEITEM=i_tambourine_tas
+
+ON=i_drum <name> (<resmake>)
+MAKEITEM=i_drum
+
+ON=i_lute <name> (<resmake>)
+MAKEITEM=i_lute
+
+ON=i_lyre <name> (<resmake>)
+MAKEITEM=i_lyre
+
+ON=i_HARP_LARGE <name> (<resmake>)
+MAKEITEM=i_HARP_LARGE
+
+[SKILLMENU sm_tools]
+Tools
+
+ON=i_shovel <name> (<resmake>)
+MAKEITEM=i_shovel
+
+ON=i_saw_dovetail <name> (<resmake>)
+MAKEITEM=i_saw_dovetail
+
+ON=i_bottle_empty <name> (<resmake>)
+MAKEITEM=i_bottle_empty
+
+ON=i_hatchet <name> (<resmake>)
+MAKEITEM=i_hatchet
+
+ON=i_lockpick <name> (<resmake>)
+MAKEITEM=i_lockpick
+
+ON=i_mortar_pestle <name> (<resmake>)
+MAKEITEM=i_mortar_pestle
+
+ON=i_pickaxe <name> (<resmake>)
+MAKEITEM=i_pickaxe
+
+ON=i_saw <name> (<resmake>)
+MAKEITEM=i_saw
+
+ON=i_scissors <name> (<resmake>)
+MAKEITEM=i_scissors
+
+ON=i_sewing_kit <name> (<resmake>)
+MAKEITEM=i_sewing_kit
+
+ON=i_sextant <name> (<resmake>)
+MAKEITEM=i_sextant
+
+ON=i_hammer_sledge <name> (<resmake>)
+MAKEITEM=i_hammer_sledge
+
+ON=i_hammer_smith <name> (<resmake>)
+MAKEITEM=i_hammer_smith
+
+ON=i_tinker_tools <name> (<resmake>)
+MAKEITEM=i_tinker_tools
+
+ON=i_toolkit <name> (<resmake>)
+MAKEITEM=i_toolkit
+
+[SKILLMENU sm_jewelry]
+Jewelry
+
+ON=i_necklace_metal_beads <name> (<resmake>)
+MAKEITEM=i_necklace_metal_beads
+
+ON=i_necklace_gold <name> (<resmake>)
+MAKEITEM=i_necklace_gold
+
+ON=i_necklace_gold_beads <name> (<resmake>)
+MAKEITEM=i_necklace_gold_beads
+
+ON=i_earrings_gold <name> (<resmake>)
+MAKEITEM=i_earrings_gold
+
+ON=i_ring_gold <name> (<resmake>)
+MAKEITEM=i_ring_gold
+
+ON=i_bracelet_gold <name> (<resmake>)
+MAKEITEM=i_bracelet_gold
+
+ON=i_necklace_silver <name> (<resmake>)
+MAKEITEM=i_necklace_silver
+
+ON=i_necklace_silver_beads <name> (<resmake>)
+MAKEITEM=i_necklace_silver_beads
+
+ON=i_earrings_silver <name> (<resmake>)
+MAKEITEM=i_earrings_silver
+
+ON=i_ring_silver <name> (<resmake>)
+MAKEITEM=i_ring_silver
+
+ON=i_bracelet_silver <name> (<resmake>)
+MAKEITEM=i_bracelet_silver 
+
+[SKILLMENU sm_wood_stuff]
+Wooden Items
+
+ON=i_axle <name> (<resmake>)
+MAKEITEM=i_axle
+
+ON=i_clock_frame <name> (<resmake>)
+MAKEITEM=i_clock_frame
+
+ON=i_plane_jointing <name> (<resmake>)
+MAKEITEM=i_plane_jointing
+
+ON=i_plane_moulding <name> (<resmake>)
+MAKEITEM=i_plane_moulding
+
+ON=i_plane_smoothing <name> (<resmake>)
+MAKEITEM=i_plane_smoothing
+
+ON=i_clock <name> (<resmake>)
+MAKEITEM=i_clock
+
+[SKILLMENU sm_parts]
+Parts
+
+ON=i_wire_iron <name> (<resmake>)
+MAKEITEM=i_wire_iron
+
+ON=i_CLOCK_PARTS <name> (<resmake>)
+MAKEITEM=i_CLOCK_PARTS
+
+ON=i_gears <name> (<resmake>)
+MAKEITEM=i_gears
+
+ON=i_hinge <name> (<resmake>)
+MAKEITEM=i_hinge
+
+ON=i_barrel_tap <name> (<resmake>)
+MAKEITEM=i_barrel_tap
+
+ON=i_barrel_hoops <name> (<resmake>)
+MAKEITEM=i_barrel_hoops
+
+ON=i_SEXTANT_PARTS <name> (<resmake>)
+MAKEITEM=i_SEXTANT_PARTS
+
+ON=i_springs <name> (<resmake>)
+MAKEITEM=i_springs
+
+[SKILLMENU sm_tavern_stuff]
+Tavern Types
+
+ON=i_mug_ceramic <name> (<resmake>)
+MAKEITEM=i_mug_ceramic
+
+ON=i_goblet <name> (<resmake>)
+MAKEITEM=i_goblet
+
+ON=i_mug_pewter <name> (<resmake>)
+MAKEITEM=i_mug_pewter
+
+ON=i_goblet_2 <name> (<resmake>)
+MAKEITEM=i_goblet_2
+
+ON=i_skull_mug <name> (<resmake>)
+MAKEITEM=i_skull_mug
+
+ON=i_PITCHER <name> (<resmake>)
+MAKEITEM=i_PITCHER
+
+ON=i_spittoon <name> (<resmake>)
+MAKEITEM=i_spittoon
+
+ON=i_backgammon_game <name> (<resmake>)
+MAKEITEM=i_backgammon_game
+
+ON=i_game_board <name> (<resmake>)
+MAKEITEM=i_game_board
+
+ON=i_dice_cup <name> (<resmake>)
+MAKEITEM=i_dice_cup
+
+[SKILLMENU sm_keys]
+Keys
+
+ON=i_key_ring <name> (<resmake>)
+MAKEITEM=i_key_ring
+
+ON=i_key_copper <name> (<resmake>)
+MAKEITEM=i_key_copper
+
+ON=i_key_gold <name> (<resmake>)
+MAKEITEM=i_key_gold
+
+ON=i_key_iron <name> (<resmake>)
+MAKEITEM=i_key_iron

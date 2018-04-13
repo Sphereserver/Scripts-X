@@ -1,0 +1,292 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Friday, Aug 4, 2017
+//
+VERSION=0.56d
+
+[MENU M_TRAV]
+Travel to Places
+ON=0 Special GM Areas
+MENU M_TRAV_GM
+ON=0 Towns
+MENU M_TRAV_TOWN
+ON=0 Councelor Halls
+MENU M_TRAV_COUNC
+ON=0 Dungeons
+MENU M_TRAV_DUNG
+ON=0 Shrines
+MENU M_TRAV_SHRINE
+ON=0 Graveyards
+MENU M_TRAV_GRAVE
+ON=0 Forts
+MENU M_TRAV_FORT
+ON=0 Sightings
+MENU M_TRAV_SIGHTS
+ON=0 MoonGates
+MENU M_TRAV_MOON
+ON=0 T2A Locations
+MENU M_TRAV_T2A
+ON=0 PREVIOUS MENU
+MENU M_GMFEATURES
+
+[MENU M_TRAV_GM]
+Special GM Areas
+ON=0 Jail #1
+GO JAIL1
+ON=0 Jail #2
+GO JAIL2
+ON=0 Jail #3
+GO JAIL3
+ON=0 Jail #4
+GO JAIL4
+ON=0 Jail #5
+GO JAIL5
+ON=0 Jail #6
+GO JAIL6
+ON=0 Jail #7
+GO JAIL7
+ON=0 Jail #8
+GO JAIL8
+ON=0 Jail #9
+GO JAIL9
+ON=0 Jail #10
+GO JAIL10
+ON=0 Green Acres
+GO GREEN ACRES
+ON=0 Green Acres 2
+GO GREEN ACRES 2
+ON=0 Green Acres 3
+GO GREEN ACRES 3
+ON=0 PREVIOUS MENU
+MENU M_TRAV
+
+[MENU M_TRAV_TOWN]
+Towns
+ON=0 Britain
+go Britain
+ON=0 Bucaneer's Den
+go Buccaneer's Den
+ON=0 Cove (center)
+go Cove
+ON=0 Jhelom
+go Jhelom
+ON=0 Minoc
+go Minoc
+ON=0 Moonglow
+go Moonglow
+ON=0 Nujel'm
+go Nujel'm
+ON=0 Ocllo
+go Ocllo
+ON=0 Serpent's Hold
+go Serpent's Hold
+ON=0 Skara Brae
+go Skara Brae
+ON=0 Trinsic
+go Trinsic
+ON=0 Vesper
+go Vesper
+ON=0 Wind
+go Wind
+ON=0 Yew
+go Yew
+ON=0 PREVIOUS MENU
+MENU M_TRAV
+
+[MENU M_TRAV_COUNC]
+Councelor Halls
+ON=0 Moonglow
+go Moonglow Councelor's Guild Hall
+ON=0 Skara Brae
+go Skara Brae Councelor's Guild Hall
+ON=0 PREVIOUS MENU
+MENU M_TRAV
+
+[MENU M_TRAV_DUNG]
+Dungeons
+ON=0 Covetous (entrance)
+go Covetous Entrance
+ON=0 Deceit (entrance)
+go Deceit Entrance
+ON=0 Despise (entrance)
+go Despise Entrance
+ON=0 Destard (entrance)
+go Destard Entrance
+ON=0 Hythloth (entrance)
+go Hythloth Entrance
+ON=0 Shame (entrance)
+go Shame Entrance
+ON=0 Wrong (entrance)
+go Wrong Entrance
+ON=0 PREVIOUS MENU
+MENU M_TRAV
+
+[MENU M_TRAV_SHRINE]
+Shrines
+ON=0 Chaos
+go Chaos
+ON=0 Compassion
+go 1856 876 0
+ON=0 Honesty
+go Honesty
+ON=0 Honor
+go Honor
+ON=0 Humility
+go Humility
+ON=0 Justice
+go Justice
+ON=0 Sacrifice
+go Sacrifice
+ON=0 Spirituality
+go Spirituality
+ON=0 Valor
+go Valor
+ON=0 PREVIOUS MENU
+MENU M_TRAV
+
+[MENU M_TRAV_GRAVE]
+Graveyards
+ON=0 Britain
+go Britain Graveyard
+ON=0 Cove
+go Cove Graveyard
+ON=0 Jhelom
+go Jhelom Cemetary
+ON=0 Moonglow
+go Moonglow Cemetary
+ON=0 Nujel'm
+go Nujel'm Cemetary
+ON=0 Vesper
+go Vesper Cemetary
+ON=0 Yew
+go Yew Graveyard
+ON=0 PREVIOUS MENU
+MENU M_TRAV
+
+[MENU M_TRAV_FORT]
+Forts
+ON=0 Cove Orc Fort
+go Cove Orc Camp
+ON=0 Yew Brigand Camp
+go Yew Brigand Fort
+ON=0 Yew Fort of the Damned
+go Yew Crypts
+ON=0 Yew Orc Fort
+go Yew Orc Fort
+ON=0 PREVIOUS MENU
+MENU M_TRAV
+
+[MENU M_TRAV_SIGHTS]
+Sightings
+ON=0 Trapper's Camp
+go Vesper Tanner's Huts
+ON=0 Fisherman's Huts
+go Fisherman's Hut
+ON=0 Island Temple
+go Temple Isle
+ON=0 Hidden Valley Temple
+go Hidden Valley Temple
+ON=0 Inside Hedge Maze
+go Hedge Maze
+ON=0 Outside Hedge Maze
+go Hedge Maze Entrance
+ON=0 Crossroads NE of Britain
+go Crossroads
+ON=0 Ancient Ruins (Swamp North of Trinsic)
+go Ancient Ruins
+ON=0 Daemon Temple
+go Daemon temple
+ON=0 Jhelom Fighting Pit
+go Jhelom Fighting Pits
+ON=0 Great Waterfall
+go Great Waterfall
+ON=0 PREVIOUS MENU
+MENU M_TRAV
+
+[MENU M_TRAV_MOON]
+MoonGates
+ON=0 Britain
+go Britain Moongate
+ON=0 Jhelom
+go Jhelom Moongate
+ON=0 Magincia
+go Magincia Moongate
+ON=0 Minoc/Vesper
+go Minoc-Vesper Moongate
+ON=0 Moonglow
+go Moonglow Moongate
+ON=0 Skara Brae
+go Skara Brae Moongate
+ON=0 Trinsic
+go Trinsic Moongate
+ON=0 Yew
+go Yew Moongate
+ON=0 PREVIOUS MENU
+MENU M_TRAV
+
+[MENU M_TRAV_T2A]
+T2A Locations
+ON=0 Delucia
+go Delucia
+ON=0 Papua
+go Papua
+ON=0 Fire Dungeon
+go Fire Dungeon Entrance
+ON=0 Ice Dungeon
+go Ice Dungeon Entrance
+ON=0 Terathan Keep
+go Terathan Keep
+ON=0 Ophidian Lair
+go Ophidian Lair
+ON=0 Delucia Orc Fort
+go Delucia Orc Fort
+ON=0 City of the Dead
+go City of the Dead
+ON=0 Ruins in the Weeds
+go Ruins in the Weeds
+ON=0 Entrances & Exits to T2A
+MENU M_TRAV_T2A_ENT
+ON=0 PREVIOUS MENU
+MENU M_TRAV
+
+[MENU M_TRAV_T2A_ENT]
+Entraces & Exits to T2A
+ON=0 Britain Entrance
+go 1497 1641 20
+ON=0 Britain Exit
+go 6032 1494 5
+ON=0 Cove Entrance
+go 2399 199 0
+ON=0 Cove Exit
+go 6088 3676 18
+ON=0 Cove Entrance 2
+go 1628 3322 0
+ON=0 Cove Exit 2
+go 5154 4063 37
+ON=0 Serpent's Hold Entrance
+go 2923 3407 8
+ON=0 Serpent's Hold Exit
+go 5687 1422 40
+ON=0 Trinsic Entrance
+go 1981 2070 0
+ON=0 Trinsic Exit
+go 5128 3144 99
+ON=0 Trinsic Entrance 2
+go 5900 1410 0
+ON=0 Trinsic Exit 2
+go 5961 1408 0
+ON=0 Vesper Entrance
+go 2778 894 0
+ON=0 Vesper Exit
+go 5697 3656 0
+ON=0 PREVIOUS MENU
+MENU M_TRAV_T2A
+
+[EOF]

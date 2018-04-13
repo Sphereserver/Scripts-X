@@ -1,0 +1,356 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, May 7, 2017
+//
+VERSION=0.56d
+
+[COMMENT sphere_skillmenu]
+SphereServer has a number of hardcoded skillmenu's, this file contains the softcoded component.
+The purpose of this specific skillmenu is as follows:
+sm_carpentry			= Triggered by DClicking a carpentry tool
+
+[SKILLMENU sm_carpentry]
+Carpentry
+
+ON=i_board boards
+MAKEITEM=i_board
+
+ON=i_chair_throne Chairs
+SKILLMENU=sm_wood_chairs
+
+ON=i_chest_wooden_brass Containers & Shields
+SKILLMENU=sm_wood_containers_shields
+
+ON=i_table_nightstand Table
+SKILLMENU=sm_wood_tables
+
+ON=i_staff_gnarled Weapons & Tools
+SKILLMENU=sm_wood_weapons_tools
+
+ON=i_armoir_dk Furniture
+SKILLMENU=sm_wood_furniture
+
+ON=i_portrait_7 Paintings
+SKILLMENU=sm_wood_paintings
+
+ON=i_trophy_deerhead Trophies
+SKILLMENU=sm_wood_trophies
+
+ON=i_saddle Rancher Types
+SKILLMENU=sm_wood_rancher
+
+ON=i_BED_9 Beds
+SKILLMENU=sm_wood_beds
+
+ON=i_bulletin_board Miscellaneous
+SKILLMENU=sm_wood_misc
+
+[SKILLMENU sm_wood_chairs]
+Chairs
+
+ON=i_chair_throne <name> (<resmake>)
+MAKEITEM=i_chair_throne
+
+ON=i_chair_wood_rough_dark <name> (<resmake>)
+MAKEITEM=i_chair_wood_rough_dark
+
+ON=i_chair_wood_fancy_cushion <name> (<resmake>)
+MAKEITEM=i_chair_wood_fancy_cushion
+
+ON=i_chair_wood_cushion <name> (<resmake>)
+MAKEITEM=i_chair_wood_cushion
+
+ON=i_chair_wood <name> (<resmake>)
+MAKEITEM=i_chair_wood
+
+ON=i_chair_wood_bamboo <name> (<resmake>)
+MAKEITEM=i_chair_wood_bamboo
+
+ON=i_chair_stool_BAR <name> (<resmake>)
+MAKEITEM=i_chair_stool_BAR
+
+ON=i_chair_stool <name> (<resmake>)
+MAKEITEM=i_chair_stool
+
+ON=i_bench_wood_dark <name> (<resmake>)
+MAKEITEM=i_bench_wood_dark
+
+[SKILLMENU sm_wood_containers_shields]
+Containers & Shields
+
+ON=i_CHEST_WOODEN_BRASS <name> (<resmake>)
+MAKEITEM=i_CHEST_WOODEN_BRASS
+
+ON=i_BOX_WOOD <name> (<resmake>)
+MAKEITEM=i_BOX_WOOD
+
+ON=i_CRATE_SMALL <name> (<resmake>)
+MAKEITEM=i_CRATE_SMALL
+
+ON=i_CRATE_MD <name> (<resmake>)
+MAKEITEM=i_CRATE_MD
+
+ON=i_CRATE_LG <name> (<resmake>)
+MAKEITEM=i_CRATE_LG
+
+ON=i_SHIELD_WOOD <name> (<resmake>)
+MAKEITEM=i_SHIELD_WOOD
+
+[SKILLMENU sm_wood_tables]
+Tables
+
+ON=i_BAR_PIECE Bars
+SKILLMENU=sm_wood_bars
+
+ON=i_TABLE_NIGHTSTAND <name> (<resmake>)
+MAKEITEM=i_TABLE_NIGHTSTAND
+
+ON=i_TABLE_WOOD_ROUGH_SMALL <name> (<resmake>)
+MAKEITEM=i_TABLE_WOOD_ROUGH_SMALL
+
+ON=i_table_wood_rough_board <name> (<resmake>)
+MAKEITEM=i_table_wood_rough_board
+
+ON=i_bench_woodworker_end Woodworkers Bench
+SKILLMENU=sm_wood_woodworkers
+
+ON=i_table_runner_plaid_blue <name> (<resmake>)
+MAKEITEM=i_table_runner_plaid_blue
+
+ON=i_table_runner_purple <name> (<resmake>)
+MAKEITEM=i_table_runner_purple
+
+ON=i_table_runner_red <name> (<resmake>)
+MAKEITEM=i_table_runner_red
+
+ON=i_table_runner_snowflake <name> (<resmake>)
+MAKEITEM=i_table_runner_snowflake
+
+[SKILLMENU sm_wood_weapons_tools]
+Weapons & Tools
+
+ON=i_FISHING_POLE <name> (<resmake>)
+MAKEITEM=i_FISHING_POLE
+
+ON=i_DYE_TUB <name> (<resmake>)
+MAKEITEM=i_DYE_TUB
+
+ON=i_DYES <name> (<resmake>)
+MAKEITEM=i_DYES
+
+ON=i_CLUB <name> (<resmake>)
+MAKEITEM=i_CLUB
+
+ON=i_staff_gnarled <name> (<resmake>)
+MAKEITEM=i_staff_gnarled
+
+ON=i_staff_quarter <name> (<resmake>)
+MAKEITEM=i_staff_quarter
+
+ON=i_CROOK_THIN <name> (<resmake>)
+MAKEITEM=i_CROOK_THIN
+
+ON=i_STAFF_BLACK <name> (<resmake>)
+MAKEITEM=i_STAFF_BLACK
+
+[SKILLMENU sm_wood_furniture]
+Furniture
+
+ON=i_table_writing <name> (<resmake>)
+MAKEITEM=i_table_writing
+
+ON=i_ARMOIR_DK <name> (<resmake>)
+MAKEITEM=i_ARMOIR_DK
+
+ON=i_ARMOIR_LT <name> (<resmake>)
+MAKEITEM=i_ARMOIR_LT
+
+ON=i_BOOKCASE <name> (<resmake>)
+MAKEITEM=i_BOOKCASE
+
+ON=i_BOOKCASE_FULL <name> (<resmake>)
+MAKEITEM=i_BOOKCASE_FULL
+
+ON=i_MUSIC_STAND <name> (<resmake>)
+MAKEITEM=i_MUSIC_STAND
+
+ON=i_MUSIC_STAND_BOOK <name> (<resmake>)
+MAKEITEM=i_MUSIC_STAND_BOOK
+
+ON=i_MUSIC_STAND_TALL <name> (<resmake>)
+MAKEITEM=i_MUSIC_STAND_TALL
+
+ON=i_MUSIC_STAND_TALL_BOOK <name> (<resmake>)
+MAKEITEM=i_MUSIC_STAND_TALL_BOOK
+
+ON=i_BUREAU_2 <name> (<resmake>)
+MAKEITEM=i_BUREAU_2
+
+[SKILLMENU sm_wood_misc]
+Miscellaneous
+
+ON=i_PARCHMENT <name> (<resmake>)
+MAKEITEM=i_PARCHMENT
+
+ON=i_SCROLL_BLANK <name> (<resmake>)
+MAKEITEM=i_SCROLL_BLANK
+
+ON=i_DARTBOARD <name> (<resmake>)
+MAKEITEM=i_DARTBOARD
+
+ON=i_DRESS_FORM <name> (<resmake>)
+MAKEITEM=i_DRESS_FORM
+
+ON=i_TRAINING_DUMMY <name> (<resmake>)
+MAKEITEM=i_DEED_DUMMYW
+
+ON=i_DEED_DUMMYN <name> (<resmake>)
+MAKEITEM=i_DEED_DUMMYN
+
+ON=i_DEED_PICKPOCKW <name> (<resmake>)
+MAKEITEM=i_DEED_PICKPOCKN
+
+ON=i_DEED_PICKPOCKN <name> (<resmake>)
+MAKEITEM=i_DEED_PICKPOCKN
+
+ON=i_DEED_ARCHBUTTEW <name> (<resmake>)
+MAKEITEM=i_DEED_ARCHBUTTEW
+
+ON=i_DEED_ARCHBUTTEN <name> (<resmake>)
+MAKEITEM=i_DEED_ARCHBUTTEN
+
+ON=i_DEED_SPINWHEEL <name> (<resmake>)
+MAKEITEM=i_DEED_SPINWHEEL
+
+ON=i_MODEL_SHIP <name> (<resmake>)
+MAKEITEM=i_MODEL_SHIP
+
+ON=i_LANTERN <name> (<resmake>)
+MAKEITEM=i_LANTERN
+
+ON=i_GLOBE <name> (<resmake>)
+MAKEITEM=i_GLOBE
+
+ON=i_BARREL_open <name> (<resmake>)
+MAKEITEM=i_BARREL_open
+
+ON=i_tub_empty <name> (<resmake>)
+MAKEITEM=i_tub_empty
+
+ON=I_DEED_BBOARDW <name> (<resmake>)
+MAKEITEM=i_DEED_BBOARDW
+
+ON=i_DEED_BBOARDN <name> (<resmake>)
+MAKEITEM=i_DEED_BBOARDN
+
+[SKILLMENU sm_wood_paintings]
+Paintings
+
+ON=i_portrait_1 <name> (<resmake>)
+MAKEITEM=i_portrait_1
+
+ON=i_portrait_3 <name> (<resmake>)
+MAKEITEM=i_portrait_3
+
+ON=i_portrait_4 <name> (<resmake>)
+MAKEITEM=i_portrait_4
+
+ON=i_portrait_7 <name> (<resmake>)
+MAKEITEM=i_portrait_7
+
+ON=i_portrait_big <name> (<resmake>)
+MAKEITEM=i_portrait_big
+
+ON=i_portrait_5 <name> (<resmake>)
+MAKEITEM=i_portrait_5
+
+ON=i_portrait_6 <name> (<resmake>)
+MAKEITEM=i_portrait_6
+
+[SKILLMENU sm_wood_trophies]
+Trophies
+
+ON=i_trophy_bearhead <name> (<resmake>)
+MAKEITEM=i_trophy_bearhead
+
+ON=i_trophy_deerhead <name> (<resmake>)
+MAKEITEM=i_trophy_deerhead
+
+ON=i_trophy_fish <name> (<resmake>)
+MAKEITEM=i_trophy_fish
+
+ON=i_trophy_gorillahead <name> (<resmake>)
+MAKEITEM=i_trophy_gorillahead
+
+ON=i_trophy_orchead <name> (<resmake>)
+MAKEITEM=i_trophy_orchead
+
+ON=i_trophy_polarbearhead <name> (<resmake>)
+MAKEITEM=i_trophy_polarbearhead
+
+ON=i_trophy_trollhead <name> (<resmake>)
+MAKEITEM=i_trophy_trollhead
+
+[SKILLMENU sm_wood_bars]
+Bar
+
+ON=i_bar_door_ne <name> (<resmake>)
+MAKEITEM=i_bar_door_ne
+
+ON=i_bar_piece <name> (<resmake>)
+MAKEITEM=i_bar_piece
+
+[SKILLMENU sm_wood_woodworkers]
+Woodworkers Bench
+
+ON=i_bench_woodworker_end <name> (<resmake>)
+MAKEITEM=i_bench_woodworker_end
+
+ON=i_vise <name> (<resmake>)
+MAKEITEM=i_vise
+
+ON=i_bench_cooper <name> (<resmake>)
+MAKEITEM=i_bench_cooper
+
+[SKILLMENU sm_wood_rancher]
+Rancher Types
+
+ON=i_trough_water <name> (<resmake>)
+MAKEITEM=i_trough_water
+
+ON=i_saddle <name> (<resmake>)
+MAKEITEM=i_saddle
+
+[SKILLMENU sm_wood_beds]
+Beds
+
+ON=i_BED_9 <name> (<resmake>)
+MAKEITEM=i_BED_9
+
+ON=i_BED_11 <name> (<resmake>)
+MAKEITEM=i_BED_11
+
+ON=i_BED_16 <name> (<resmake>)
+MAKEITEM=i_BED_16
+
+ON=i_BED_17 <name> (<resmake>)
+MAKEITEM=i_BED_17
+
+ON=i_BED_18 <name> (<resmake>)
+MAKEITEM=i_BED_18
+
+ON=i_BED_19 <name> (<resmake>)
+MAKEITEM=i_BED_19
+
+ON=i_BED_7 <name> (<resmake>)
+MAKEITEM=i_BED_7
+
+ON=i_BED_8 <name> (<resmake>)
+MAKEITEM=i_BED_8

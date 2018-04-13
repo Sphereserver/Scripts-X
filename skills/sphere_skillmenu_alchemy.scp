@@ -1,0 +1,113 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, May 7, 2017
+//
+VERSION=0.56d
+
+[COMMENT sphere_skillmenu]
+SphereServer has a number of hardcoded skillmenu's, this file contains the softcoded component.
+The purpose of this specific skillmenu is as follows:
+sm_alchemy			= Triggered by DClicking a alchemy tool
+
+[SKILLMENU sm_alchemy]
+What sort of potion do you want to make?
+
+ON=i_potion_Agility <name> (<resmake>)
+MAKEITEM=i_potion_Agility
+ON=i_potion_AgilityGreat <name> (<resmake>)
+MAKEITEM=i_potion_AgilityGreat
+ON=i_potion_CureLess <name> (<resmake>)
+MAKEITEM=i_potion_CureLess
+ON=i_potion_Cure <name> (<resmake>)
+MAKEITEM=i_potion_Cure
+ON=i_potion_CureGreat <name> (<resmake>)
+MAKEITEM=i_potion_CureGreat
+ON=i_potion_ExplosionLess <name> (<resmake>)
+MAKEITEM=i_potion_ExplosionLess
+ON=i_potion_Explosion <name> (<resmake>)
+MAKEITEM=i_potion_Explosion
+ON=i_potion_ExplosionGreat <name> (<resmake>)
+MAKEITEM=i_potion_ExplosionGreat
+ON=i_potion_HealLess <name> (<resmake>)
+MAKEITEM=i_potion_HealLess
+ON=i_potion_Heal <name> (<resmake>)
+MAKEITEM=i_potion_Heal
+ON=i_potion_HealGreat <name> (<resmake>)
+MAKEITEM=i_potion_HealGreat
+ON=i_potion_Nightsight <name> (<resmake>)
+MAKEITEM=i_potion_Nightsight
+ON=i_potion_PoisonLess <name> (<resmake>)
+MAKEITEM=i_potion_PoisonLess
+ON=i_potion_Poison <name> (<resmake>)
+MAKEITEM=i_potion_Poison
+ON=i_potion_PoisonGreat <name> (<resmake>)
+MAKEITEM=i_potion_PoisonGreat
+ON=i_potion_PoisonDeadly <name> (<resmake>)
+MAKEITEM=i_potion_PoisonDeadly
+ON=i_potion_Refresh <name> (<resmake>)
+MAKEITEM=i_potion_Refresh
+ON=i_potion_RefreshTotal <name> (<resmake>)
+MAKEITEM=i_potion_RefreshTotal
+ON=i_potion_Strength <name> (<resmake>)
+MAKEITEM=i_potion_Strength
+ON=i_potion_StrengthGreat <name> (<resmake>)
+MAKEITEM=i_potion_StrengthGreat
+ON=i_potion_Shrink <name> (<resmake>)
+MAKEITEM=i_potion_Shrink
+ON=i_potion_Invisibility <name> (<resmake>)
+MAKEITEM=i_potion_Invisibility
+ON=i_potion_Mana <name> (<resmake>)
+MAKEITEM=i_potion_Mana
+ON=i_potion_ManaTotal <name> (<resmake>)
+MAKEITEM=i_potion_ManaTotal
+ON=i_potion_Beastform <name> (<resmake>)
+MAKEITEM=i_potion_Beastform
+ON=i_potion_Chameleon <name> (<resmake>)
+MAKEITEM=i_potion_Chameleon
+ON=i_potion_Clever <name> (<resmake>)
+MAKEITEM=i_potion_Clever
+ON=i_potion_Clever_Great <name> (<resmake>)
+MAKEITEM=i_potion_Clever_Great
+ON=i_potion_Clumsiness <name> (<resmake>)
+MAKEITEM=i_potion_Clumsiness
+ON=i_potion_Confusion <name> (<resmake>)
+MAKEITEM=i_potion_Confusion
+ON=i_potion_Forget_Less <name> (<resmake>)
+MAKEITEM=i_potion_Forget_Less
+ON=i_potion_Forget <name> (<resmake>)
+MAKEITEM=i_potion_Forget
+ON=i_potion_Forget_Great <name> (<resmake>)
+MAKEITEM=i_potion_Forget_Great
+ON=i_potion_Gender <name> (<resmake>)
+MAKEITEM=i_potion_Gender
+ON=i_potion_Trance <name> (<resmake>)
+MAKEITEM=i_potion_Trance
+ON=i_potion_Trance_Great <name> (<resmake>)
+MAKEITEM=i_potion_Trance_Great
+ON=i_potion_Restore <name> (<resmake>)
+MAKEITEM=i_potion_Restore
+ON=i_potion_Restore_Great <name> (<resmake>)
+MAKEITEM=i_potion_Restore_Great
+ON=i_potion_Sustenance <name> (<resmake>)
+MAKEITEM=i_potion_Sustenance
+ON=i_potion_Monster <name> (<resmake>)
+MAKEITEM=i_potion_Monster
+ON=i_potion_Particle <name> (<resmake>)
+MAKEITEM=i_potion_Particle
+ON=i_potion_Shield <name> (<resmake>)
+MAKEITEM=i_potion_Shield
+ON=i_potion_Steelskin <name> (<resmake>)
+MAKEITEM=i_potion_Steelskin
+ON=i_potion_Stoneskin <name> (<resmake>)
+MAKEITEM=i_potion_Stoneskin
+ON=i_potion_Weakness <name> (<resmake>)
+MAKEITEM=i_potion_Weakness
+
+[EOF]

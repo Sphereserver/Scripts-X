@@ -1,0 +1,325 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Tuesday, Sept 19, 2017
+//
+VERSION=0.56d
+
+[COMMENT sphere_spells]
+- Potions are just spells that have an effect attached at the potion layer.
+- Spells and potion effects can be added to equipped items.
+- Until monster AI is improved, all "good" spells have had the spellflag_playeronly added
+- Only spells with SPELLFLAG_HARM flag can be reflected with Magic Reflection spell.
+- If MAGICF_OSIFORMULAS flag is enabled on sphere.ini, it will override EFFECT / DURATION values on some spells.
+
+/////////////////////////
+// Spellweaving Spells //
+/////////////////////////
+
+[SPELL 601]
+DEFNAME=s_arcane_circle
+NAME=Arcane Circle
+SOUND=snd_spellweave_arcane_circle
+RUNES=//Myrshalee
+CAST_TIME=0.5
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=i_scroll_arcane_circle
+FLAGS=spellflag_disabled|spellflag_good
+EFFECT_ID=03779
+EFFECT=0
+DURATION=0.0
+MANAUSE=24
+SKILLREQ=SPELLWEAVING 0.1
+INTERRUPT=100.0,100.0
+
+[SPELL 602]
+DEFNAME=s_gift_of_renewal
+NAME=Gift of Renewal
+SOUND=snd_spellweave_gift_of_renewal
+RUNES=//Olorisstra
+CAST_TIME=3.0
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=i_scroll_gift_of_renewal
+FLAGS=spellflag_disabled|spellflag_good|spellflag_targ_char
+EFFECT_ID=0
+EFFECT=0
+LAYER=layer_spell_gift_of_renewal
+DURATION=0.0
+MANAUSE=24
+SKILLREQ=SPELLWEAVING 0.1
+INTERRUPT=100.0,100.0
+
+[SPELL 603]
+DEFNAME=s_immolating_weapon
+NAME=Immolating Weapon
+SOUND=snd_spellweave_immolating_weapon
+RUNES=//Thalshara
+CAST_TIME=1.0
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=i_scroll_immolating_weapon
+FLAGS=spellflag_disabled|spellflag_good|spellflag_bless|spellflag_targ_item
+EFFECT_ID=0
+EFFECT=0
+LAYER=LAYER_SPELL_Immolating_Weapon
+DURATION=0.0
+MANAUSE=26
+SKILLREQ=SPELLWEAVING 0.1
+INTERRUPT=100.0,100.0
+
+[SPELL 604]
+DEFNAME=s_attunement
+NAME=Attunement
+SOUND=snd_spellweave_attunement
+RUNES=//Haeldril
+CAST_TIME=1.0
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=i_scroll_attunement
+FLAGS=spellflag_disabled|spellflag_good|spellflag_bless|spellflag_targ_char
+EFFECT_ID=0
+EFFECT=0
+LAYER=layer_spell_attunement
+DURATION=0.0
+MANAUSE=26
+SKILLREQ=SPELLWEAVING 0.1
+INTERRUPT=100.0,100.0
+
+[SPELL 605]
+DEFNAME=s_thunderstorm
+NAME=Thunderstorm
+SOUND=snd_spellweave_thunderstorm
+RUNES=//Erelonia
+CAST_TIME=1.5
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=i_scroll_thunderstorm
+FLAGS=spellflag_disabled|spellflag_targ_xyz|spellflag_harm|spellflag_resist
+EFFECT_ID=0
+EFFECT=0
+LAYER=layer_spell_thunderstorm
+DURATION=0.0
+MANAUSE=32
+SKILLREQ=SPELLWEAVING 10.1
+INTERRUPT=100.0,100.0
+
+[SPELL 606]
+DEFNAME=s_nature_fury
+NAME=Nature's Fury
+SOUND=snd_spellweave_natures_fury
+RUNES=//Rauvvrae
+CAST_TIME=1.5
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=i_scroll_nature_fury
+FLAGS=spellflag_disabled|spellflag_harm|spellflag_targ_xyz|spellflag_playeronly
+EFFECT_ID=0
+EFFECT=0
+DURATION=0.0
+MANAUSE=24
+SKILLREQ=SPELLWEAVING 0.1
+INTERRUPT=100.0,100.0
+//snd_spellweave_natures_fury_attack
+//snd_spellweave_natures_fury_idle
+
+[SPELL 607]
+DEFNAME=s_summon_fey
+NAME=Summon Fey
+SOUND=0
+RUNES=//Alalithra
+CAST_TIME=2.0
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=i_scroll_summon_fey
+FLAGS=spellflag_disabled|spellflag_summon
+EFFECT_ID=0
+EFFECT=0
+LAYER=layer_spell_summon
+DURATION=0.0
+MANAUSE=31
+SKILLREQ=SPELLWEAVING 24.1
+INTERRUPT=100.0,100.0
+
+[SPELL 608]
+DEFNAME=s_summon_fiend
+NAME=Summon Fiend
+SOUND=0
+RUNES=//Nylisstra
+CAST_TIME=2.0
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=i_scroll_summon_fiend
+FLAGS=spellflag_disabled|spellflag_summon
+EFFECT_ID=0
+EFFECT=0
+LAYER=layer_spell_summon
+DURATION=0.0
+MANAUSE=31
+SKILLREQ=SPELLWEAVING 24.1
+INTERRUPT=100.0,100.0
+
+[SPELL 609]
+DEFNAME=s_reaper_form
+NAME=Reaper Form
+SOUND=0
+RUNES=//Tarisstree
+CAST_TIME=2.5
+RESOURCES=
+RUNE_ITEM=i_scroll_reaper_form
+SCROLL_ITEM=i_scroll_reaper_form
+FLAGS=spellflag_good|spellflag_poly
+EFFECT_ID=0
+EFFECT=0
+LAYER=layer_spell_polymorph
+DURATION=0.0
+MANAUSE=24
+SKILLREQ=SPELLWEAVING 34.1
+INTERRUPT=100.0,100.0
+
+ON=@Select
+   IF (<FLAGS> & statf_polymorph)
+    IF (<MANA> < <SERV.SPELL.s_reaper_form.MANAUSE>)
+     SYSMESSAGE <DEFMSG.spell_try_nomana>
+    ELSE
+     MANA -= <SERV.SPELL.s_reaper_form.MANAUSE>
+     FINDID.<SERV.SPELL.s_reaper_form.RUNE_ITEM>.REMOVE
+    ENDIF
+    return 1
+   ENDIF
+
+[SPELL 610]
+DEFNAME=s_wildfire
+NAME=Wildfire
+SOUND=snd_spellweave_wildfire
+RUNES=//Haelyn
+CAST_TIME=2.5
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=i_scroll_wildfire
+FLAGS=spellflag_disabled|spellflag_field|spellflag_targ_xyz|spellflag_harm
+EFFECT_ID=0
+EFFECT=0
+DURATION=0.0
+MANAUSE=34
+SKILLREQ=SPELLWEAVING 38.1
+INTERRUPT=100.0,100.0
+
+[SPELL 611]
+DEFNAME=s_essence_of_wind
+NAME=Essence of Wind
+SOUND=snd_spellweave_essence_of_wind
+RUNES=//Anathrae
+CAST_TIME=3.0
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=i_scroll_essence_of_wind
+FLAGS=spellflag_disabled|spellflag_curse|spellflag_harm|spellflag_resist|spellflag_targ_char
+EFFECT_ID=0
+EFFECT=0
+LAYER=layer_spell_essence_of_wind
+DURATION=0.0
+MANAUSE=40
+SKILLREQ=SPELLWEAVING 52.1
+INTERRUPT=100.0,100.0
+//snd_spellweave_essence_of_wind_cold
+
+[SPELL 612]
+DEFNAME=s_dryad_allure
+NAME=Dryad Allure
+SOUND=snd_spellweave_dryad_allure
+RUNES=//Rathril
+CAST_TIME=3.0
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=i_scroll_dryad_allure
+FLAGS=spellflag_disabled|spellflag_targ_char
+EFFECT_ID=0
+EFFECT=0
+LAYER=layer_spell_dryad_allure
+DURATION=0.0
+MANAUSE=40
+SKILLREQ=SPELLWEAVING 52.1
+INTERRUPT=100.0,100.0
+//snd_spellweave_dryad_allure_fail
+
+[SPELL 613]
+DEFNAME=s_ethereal_voyage
+NAME=Ethereal Voyage
+SOUND=snd_spellweave_ethereal_voyage
+RUNES=//Orlavdra
+CAST_TIME=3.5
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=i_scroll_ethereal_voyage
+FLAGS=spellflag_disabled|spellflag_playeronly|spellflag_bless|spellflag_good
+EFFECT_ID=0
+EFFECT=0
+LAYER=layer_spell_ethereal_voyage
+DURATION=0.0
+MANAUSE=60
+SKILLREQ=SPELLWEAVING 66.1
+INTERRUPT=100.0,100.0
+
+[SPELL 614]
+DEFNAME=s_word_of_death
+NAME=Word of Death
+SOUND=0
+RUNES=//Nyraxle
+CAST_TIME=3.5
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=i_scroll_word_of_death
+FLAGS=spellflag_disabled|spellflag_playeronly|spellflag_targ_xyz|spellflag_area|spellflag_harm
+EFFECT_ID=0
+EFFECT=0
+DURATION=0.0
+MANAUSE=60
+SKILLREQ=SPELLWEAVING 66.1
+INTERRUPT=100.0,100.0
+
+[SPELL 615]
+DEFNAME=s_gift_of_life
+NAME=Gift of Life
+SOUND=0
+RUNES=//Illorae
+CAST_TIME=4.0
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=i_scroll_gift_of_life
+FLAGS=spellflag_disabled|spellflag_good|spellflag_bless
+EFFECT_ID=0
+EFFECT=0
+LAYER=layer_spell_gift_of_life
+DURATION=0.0
+MANAUSE=70
+SKILLREQ=SPELLWEAVING 80.1
+INTERRUPT=100.0,100.0
+
+[SPELL 616]
+DEFNAME=s_arcane_empowerment
+NAME=Arcane Empowerment
+SOUND=snd_spellweave_arcane_empowerment
+RUNES=//Aslavdra
+CAST_TIME=4.0
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=i_scroll_arcane_empowerment
+FLAGS=spellflag_disabled|spellflag_targ_char|spellflag_good|spellflag_bless
+EFFECT_ID=0
+EFFECT=0
+LAYER=layer_spell_arcane_empowerment
+DURATION=0.0
+MANAUSE=70
+SKILLREQ=SPELLWEAVING 80.1
+INTERRUPT=100.0,100.0
+//snd_spellweave_arcane_empowerment_end
+
+[EOF]

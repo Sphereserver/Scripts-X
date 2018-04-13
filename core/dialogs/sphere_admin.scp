@@ -131,7 +131,9 @@ else
 endif
 
 [FUNCTION admin_getclienttype]
-if (<clientiskr>) || (<clientissa>) 
+if (<clientiskr>)
+ return "Kingdom Reborn Client"
+elif  (<clientisenhanced>)
  return "Enhanced Client"
 elif (<clientis3d>)
  return "Classic Client 3D"

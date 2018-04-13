@@ -1,0 +1,120 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Tuesday, Sept 19, 2017
+//
+VERSION=0.56d
+
+/////////////////
+// Bard spells //
+/////////////////
+
+[SPELL 701]
+DEFNAME=s_inspire
+NAME=Inspire
+SOUND=0
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=0
+FLAGS=
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=16
+SKILLREQ=Provocation 90.0
+INTERRUPT=0.0,0.0
+
+[SPELL 702]
+DEFNAME=s_invigorate
+NAME=Invigorate
+SOUND=0
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=0
+FLAGS=
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=22
+SKILLREQ=Provocation 90.0
+INTERRUPT=0.0,0.0
+
+[SPELL 703]
+DEFNAME=s_resilience
+NAME=Resilience
+SOUND=0
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=0
+FLAGS=
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=16
+SKILLREQ=Peacemaking 90.0
+INTERRUPT=0.0,0.0
+
+[SPELL 704]
+DEFNAME=s_perseverance
+NAME=Perseverance
+SOUND=0
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=0
+FLAGS=
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=18
+SKILLREQ=Peacemaking 90.0
+INTERRUPT=0.0,0.0
+
+[SPELL 705]
+DEFNAME=s_tribulation
+NAME=Tribulation
+SOUND=0
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=0
+FLAGS=
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=24
+SKILLREQ=Enticement 90.0
+INTERRUPT=0.0,0.0
+
+[SPELL 706]
+DEFNAME=s_despair
+NAME=Despair
+SOUND=0
+RUNES=
+CAST_TIME=
+RESOURCES=
+RUNE_ITEM=0
+SCROLL_ITEM=0
+FLAGS=
+EFFECT_ID=
+EFFECT=
+DURATION=
+MANAUSE=26
+SKILLREQ=Enticement 90.0
+INTERRUPT=0.0,0.0
+
+[EOF]

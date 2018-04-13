@@ -1,0 +1,115 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, May 7, 2017
+//
+VERSION=0.56d
+
+[COMMENT sphere_skillmenu]
+SphereServer has a number of hardcoded skillmenu's, this file contains the softcoded component.
+The purpose of these specific skillmenus is as follows:
+sm_summon				= Triggered by the Magery "summoning" spell
+sm_polymorph			= Triggered by the Magery Polymorph spell
+
+[SKILLMENU sm_summon]
+What do you want to summon ?
+
+ON=i_PET_SCORP <name>
+TEST=MAGERY 75.0
+SUMMON=c_SCORPION_GIANT
+
+ON=i_PET_BEAR <name>
+TEST=MAGERY 50.0
+SUMMON=c_Bear_Brown
+
+ON=i_PET_RAT_2 <name>
+TEST=MAGERY 35.0
+SUMMON=c_RAT_GIANT
+
+ON=i_PET_CHICKEN <name>
+TEST=MAGERY 35.0
+SUMMON=c_CHICKEN
+
+ON=i_PET_DEER <name>
+TEST=MAGERY 35.0
+SUMMON=c_STAG
+
+ON=i_PET_DEER <name>
+TEST=MAGERY 35.0
+SUMMON=c_DOE
+
+ON=i_pet_DOG <name>
+TEST=MAGERY 35.0
+SUMMON=c_DOG
+
+//ON=i_pet_SHEEP <name>
+//TEST=MAGERY 35.0
+//SUMMON=c_SHEEP_SHORN
+
+ON=i_PET_CROC <name>
+TEST=MAGERY 35.0
+SUMMON=c_Alligator
+
+ON=i_pet_Grizzly <name>
+TEST=MAGERY 35.0
+SUMMON=c_Bear_Grizzly
+
+ON=i_pet_horse_brown_lt <name>
+TEST=MAGERY 35.0
+SUMMON=HORSES
+
+ON=i_pet_bear_polar <name>
+TEST=MAGERY 75.0
+SUMMON=c_Bear_Polar
+
+ON=i_pet_rabbit_2 <name>
+TEST=MAGERY 20.0
+SUMMON=c_Rabbit
+
+ON=i_pet_snake <name>
+TEST=MAGERY 25.0
+SUMMON=c_Snake
+
+
+[SKILLMENU sm_polymorph]
+What do you want to polymorph into?
+
+ON=i_pet_MAN Man
+TEST=MAGERY 40.0
+POLY C_MAN
+
+ON=i_pet_woman Woman
+TEST=MAGERY 40.0
+POLY C_WOMAN
+
+ON=i_PET_CHICKEN Chicken
+TEST=MAGERY 40.0
+POLY c_CHICKEN
+
+ON=i_pet_DOG Dog
+TEST=MAGERY 60.0
+POLY c_DOG
+
+ON=i_PET_SNAKE_GIANT Giant Serpant
+TEST=MAGERY 60.0
+POLY c_SNAKE_GIANT
+
+on=i_pet_croc <name>
+test=magery 65.0
+poly c_alligator
+
+ON=i_PET_DEMON Demon
+TEST=MAGERY 85.0
+POLY c_DEMON
+
+ON=i_pet_DRAGON Dragon
+TEST=MAGERY 98.0
+POLY { c_dragon 1 c_dragon_red 1 }
+
+[EOF]
