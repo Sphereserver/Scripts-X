@@ -1,0 +1,91 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Tuesday, Oct 17, 2017
+//
+VERSION=0.56d
+
+[DEFNAME def_html]	// useful with htmlgumps
+L1		<
+R1		>
+
+B		<b>
+BE		</b>
+BIG		<big>
+BIGE		</big>
+SMALL		<small>
+SMALLE		</small>
+EM		<em>
+EME		</em>
+U		<u>
+UE		</u>
+I		<i>
+IE		</i>
+H1		<h1>
+H1E		</h1>
+H2		<h2>
+H2E		</h2>
+H3		<h3>
+H3E		</h3>
+H4		<h4>
+H4E		</h4>
+H5		<h5>
+H5E		</h5>
+H6		<h6>
+H6E		</h6>
+A		<a
+AE		</a>
+BR		<br>
+CENTER		<center>
+CENTERE		</center>
+DIV_LEFT	<div align="left">
+DIV_RIGHT	<div align="right">
+DIV_END		</div>
+
+BFONT		<basefont
+BFONTE		</basefont>
+BFONT_SIZE1	<basefont size="1">
+BFONT_SIZE2	<basefont size="2">
+BFONT_SIZE3	<basefont size="3">
+BFONT_SIZE4	<basefont size="4">
+BFONT_SIZE5	<basefont size="5">
+BFONT_SIZE7	<basefont size="7">
+
+BFONT_BLACK		<basefont color="#000008">
+BFONT_WHITE		<basefont color="#ffffff">
+BFONT_LIME		<basefont color="#00ff00">
+BFONT_LRED		<basefont color="#ffcccc">
+BFONT_RED		<basefont color="#ff0000">
+BFONT_DRED		<basefont color="#8b0000">
+BFONT_LYELLOW		<basefont color="#ffffc8">
+BFONT_YELLOW		<basefont color="#ffff00">
+BFONT_DYELLOW		<basefont color="#8b8b00">
+BFONT_LCYAN		<basefont color="#e0ffff">
+BFONT_CYAN		<basefont color="#00ffff">
+BFONT_DCYAN		<basefont color="#008b8b">
+BFONT_LGRAY		<basefont color="#d3d3d3">
+BFONT_GRAY		<basefont color="#808080">
+BFONT_DGRAY		<basefont color="#a9a9a9">
+BFONT_LGREEN		<basefont color="#90ee90">
+BFONT_GREEN		<basefont color="#008000">
+BFONT_DGREEN		<basefont color="#006400">
+BFONT_LORANGE		<basefont color="#ffc600">
+BFONT_ORANGE		<basefont color="#ffa500">
+BFONT_DORANGE		<basefont color="#ff8c00">
+BFONT_LBLUE		<basefont color="#add8e6">
+BFONT_BLUE		<basefont color="#0000ff">
+BFONT_DBLUE		<basefont color="#00008b">
+BFONT_LSLATEBLUE	<basefont color="#ceceff">
+BFONT_SLATEBLUE		<basefont color="#8484ff">
+BFONT_DSLATEBLUE	<basefont color="#483d8b">
+BFONT_LPURPLE		<basefont color="#8968cd">
+BFONT_PURPLE		<basefont color="#800080">
+BFONT_DPURPLE		<basefont color="#551a8b">
+
+[EOF]

@@ -1,0 +1,79 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2017
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Tuesday, Oct 17, 2017
+//
+VERSION=0.56d
+
+[DEFNAME mount_items]
+// This list contains all mounts/mountmemories required to make NPCs act as mount.
+// Syntax: mount_0x<char dispid (hex)> <mount memory id>
+// ---------------------------------------------------------
+// Pre-T2A
+mount_0xc8	i_mt_horse_tan
+mount_0xcc	i_mt_horse_brown_dk
+mount_0xe2	i_mt_horse_gray
+mount_0xe4	i_mt_horse_brown_lt
+// T2A
+mount_0xd2	i_mt_ostard_desert
+mount_0xda	i_mt_ostard_frenzied
+mount_0xdb	i_mt_ostard_forest
+mount_0xdc	i_mt_llama
+// LBR
+mount_0xa9	i_mt_beetle_fire
+mount_0xaa	i_mt_llama_ethereal
+mount_0xab	i_mt_ostard_ethereal
+mount_0xb1	i_mt_warhorse_dread
+mount_0xb2	i_mt_unknown_mare
+mount_0xb3	i_mt_unknown_mare2
+mount_0xbb	i_mt_ridgeback
+mount_0xbc	i_mt_savage_ridgeback
+mount_0xbe	i_mt_steed_fire
+mount_0xbf	i_mt_kirin_ethereal
+mount_0xc0	i_mt_unicorn_ethereal
+mount_0xc1	i_mt_ridgeback_ethereal
+mount_0xc2	i_mt_swamp_dragon_ethereal
+mount_0xc3	i_mt_giant_beetle_ethereal
+mount_0x72	i_mt_steed_dark
+mount_0x73	i_mt_steed_ethereal
+mount_0x74	i_mt_nightmare
+mount_0x75	i_mt_steed_silver
+mount_0x76	i_mt_warhorse_truebritannians
+mount_0x77	i_mt_warhorse_magecouncil
+mount_0x78	i_mt_warhorse_minax
+mount_0x79	i_mt_warhorse_shadowlords
+mount_0x7a	i_mt_unicorn
+mount_0x84	i_mt_kirin
+mount_0x90	i_mt_sea_horse
+mount_0x317	i_mt_giant_beetle
+mount_0x319	i_mt_skeletal_mount
+mount_0x31a	i_mt_swamp_dragon
+mount_0x31f	i_mt_armored_swamp_dragon
+// SE
+mount_0xf3	i_mt_hiryu
+// ML
+mount_0xd5	i_mt_bear_polar
+mount_0x114	i_mt_reptalon
+mount_0x115	i_mt_cu_sidhe
+mount_0x11c	i_mt_armor_steed
+// SA
+mount_0x1b0	i_mt_boura_armoured
+mount_0x4e6	i_mt_wild_tiger
+mount_0x4e7	i_mt_tiger_ethereal
+// HS
+mount_0x42d	i_mt_hellhound_ancient
+// TOL
+mount_0x579	i_mt_tarantula
+mount_0x57f	i_mt_lasher
+mount_0x580	i_mt_palomino
+mount_0x582	i_mt_windrunner
+mount_0x59a	i_mt_serpentine_dragon_ethereal
+
+
+[EOF]
