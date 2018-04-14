@@ -1,0 +1,171 @@
+﻿//****************************************************************************
+// SPHERE by : Menasoft ©1997-2007
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Thursday, October 24, 2013
+//
+VERSION=0.56c
+
+[TYPEDEF t_shrine_guilt]
+// GUILT SHRINE.
+// Erases a KILL from your stats for 1000 GOLD
+// This is a guilt shrine for erasing kills from your
+// stats, and when you dont have kills automatically
+// you loose the murderer flag, hope you enjoy it.
+ON=@DClick
+   IF (<SRC.KILLS> > 0)
+      IF (<SRC.RESTEST 1000 i_gold>)
+         SRC.KILLS -= 1
+         SRC.CONSUME=1000 i_gold
+         SRC.MESSAGE You have been forgiven of one of your evil deeds!
+      ELSE
+         SRC.MESSAGE You need to contribute 1000 gold, for forgiveness of one your kills!
+      ENDIF
+   ELSE
+      SRC.MESSAGE You have not killed anyone!!!
+   ENDIF
+
+[TYPEDEF t_windgate]
+ON=@Step
+   IF (<SRC.MAGERY> > 70.0)
+      SRC.MESSAGE Welcome to Wind!
+      SRC.GO Wind
+   ELSE
+      SRC.MESSAGE You are not a worthy mage to enter Wind!
+   ENDIF
+   RETURN 1
+
+[TYPEDEF t_sex_change]
+ON=@DClick
+   IF (<SRC.FLAGS> & <DEF.statf_polymorph>)
+      SRC.SPELLEFFECT=s_dispel 1000 // Dispell the polymorph effect
+   ENDIF
+   IF (<SRC.BODY> == c_man)
+      SRC.BODY=c_woman
+   ELSEIF (<SRC.BODY> == c_woman)
+      SRC.BODY=c_man
+   ELSEIF (<SRC.BODY> == c_elf_male)
+      SRC.BODY=c_elf_female
+   ELSEIF (<SRC.BODY> == c_elf_female)
+      SRC.BODY=c_elf_male
+   ELSEIF (<SRC.BODY> == c_gargoyle_male)
+      SRC.BODY=c_gargoyle_female
+   ELSEIF (<SRC.BODY> == c_gargoyle_female)
+      SRC.BODY=c_gargoyle_male
+   ELSE
+      RETURN 1
+   ENDIF
+   SERV.NEWITEM=i_fire_column              // create a fire column
+   NEW.ATTR=attr_decay|attr_move_never // allow it to decay and prevent move
+   NEW.TIMER=2                             // it lasts 2 seconds
+   NEW.P=<SRC.P>                           // put it on the player
+   SRC.SOUND=snd_spell_explosion           // play a sound
+   REMOVE   // gets rid of the object
+   RETURN 1
+
+[TYPEDEF t_body_change]
+ON=@DClick
+   SRC.BODY=c_titan
+   SRC.COLOR=0
+   SRC.SOUND=snd_spell_explosion
+   SRC.SYSMESSAGE=You are now a titan!
+
+[TYPEDEF t_gate_res_good]
+ON=@Step
+   IF (<SRC.KARMA> < 0)
+      SRC.MESSAGE You are not fit to be here evil one!
+      RETURN 1
+   ENDIF
+   IF !(<SRC.FLAGS> & <DEF.statf_dead>)   // Are they dead ?
+      SRC.MESSAGE You feel you are on holy ground.
+      RETURN 0
+   ENDIF
+   SRC.MESSAGE Return to life friend of goodness.
+   SRC.RESURRECT
+   RETURN 1
+ON=@DClick
+   // DClicking is the same as Stepping
+   TRIGGER=@STEP
+
+[TYPEDEF t_gate_res_evil]
+// gate or tile for a murderer to step on.
+// useful at chaos shrine or in bucs den.
+ON=@Step
+   IF (<SRC.KILLS> > 10)
+      // They have have killed more than 10 players
+      SRC.MESSAGE Welcome back to life, o Murderous One.
+      SRC.RESURRECT
+   ELIF !(<SRC.FLAGS> & <DEF.statf_dead>)
+      // Since they are not dead, just give them full HP
+      SRC.MESSAGE You feel energized!
+      SRC.HITS=<SRC.MAXHITS>
+   ELSE
+      // Since they are not a dead murder, do nothing
+      SRC.MESSAGE You are not truely evil yet.
+   ENDIF
+
+
+[TYPEDEF t_landmine]
+ON=@Step
+   IF !(<MORE1>)
+      EFFECT=3,i_fx_explode            // explosion animation
+      SOUND=snd_SPELL_EXPLOSION        // explosion sound
+      SRC.DAMAGE={5 20} <DEF.dam_fire> // cause damage
+      MORE1=1                          // disarm landmine
+      TIMER=30                         // trigger @Timer after 30 seconds
+   ELSE
+      SAY Click
+   ENDIF
+   RETURN 0   // allow the step
+ON=@Timer
+   MORE1=0    // activate landmine
+   RETURN 1   // prevent decay
+ON=@DClick
+   // Can be disarmed by a player with decent tinkering
+   IF (<SRC.SKILLCHECK TINKERING 300>)
+      MORE1=1   // disarm landmine
+      TIMER=60  // trigger @Timer after 60 seconds
+      MESSAGE Mine is disarmed...
+   ELSE
+      MESSAGE You fail to disarm the Mine!
+      IF (RAND(2))
+         TRIGGER @STEP
+      ELSE
+         MESSAGE The mine does not go off. Close one!
+      ENDIF
+   ENDIF
+   RETURN 1
+
+[TYPEDEF t_vend_machine]
+ON=@DCLick
+   IF (<SRC.RESTEST 10 i_gold>)
+      SERV.NEWITEM={ i_ham 1 i_fruit_apple 1 i_bread_loaf 1 i_bacon_slice 1 i_ribs_cooked 1 i_sausages 1 }
+      NEW.BOUNCE   // put it in your pack.
+      SRC.CONSUME=10 i_gold
+      SRC.MESSAGE That will be 10 Gold Thank Thee.
+      SOUND 0F7
+      RETURN 1
+   ELSE
+      MESSAGE You lack 10 Gold to pay.
+   ENDIF
+
+[TYPEDEF t_magic_stone]
+// When you use an item of this type it raises your INT to 60.
+ON=@DCLICK
+   LOCAL.TEMP=60
+   if (<SRC.INT> < <LOCAL.TEMP>)
+      SRC.MESSAGE You feel a surge of magical energy go through your body.
+      SRC.MESSAGE You feel a lot more intelligent then you were 2 seconds ago.
+      SRC.INT=<LOCAL.TEMP>
+      SRC.MANA=<LOCAL.TEMP>
+   ELSE
+      SRC.MESSAGE You are already too powerful for the effects of this stone to work!
+   ENDIF
+   RETURN 1
+
+[EOF]

@@ -1,0 +1,156 @@
+
+[COMMENT typedef_ninja_shuriken]
+This typedef script is to be used on both the ninja belt, and the shuriken. It
+covers both items since they are dependant on each other and most of the code
+is shared...
+
+This script could be improved further:
+- Allow shurikens to be dropped on the belt to load them...
+- The belt should probably be a container so that it (and the player) gain
+  weight when shurikens are loaded.  When this conversion is made, the load
+  limit check could be eliminated...
+
+
+[DEFNAME ninja_shuriken_properties]
+ShurikenMinRange    1
+ShurikenMaxRange    10
+ShurikenMinDamage   10
+ShurikenMaxDamage   20
+ShurikenDamageType  dam_physical
+ShurikenSkillUsed   Throwing
+ShurikenSkillGain   1 // 1 means skillgain is possible, 0 means never gain...
+ShurikenLoadLimit   50
+ShurikenDelayTime   50 // 50 is about 5 seconds...
+// cliloc 3006226 Shuriken
+// cliloc 1045158//"You must have the item in your backpack to target it."
+
+
+[TYPEDEF t_ninja_shuriken]
+ON=@DClick
+   IF (<TOPOBJ.UID>!=<SRC>)
+      SRC.SYSMESSAGELOC color_text,1115941//"You must be carrying this item to use it."
+      RETURN 1
+   ENDIF
+   IF !(<SRC.FINDID.i_belt_ninja_leather>)
+      //Cannot throw a shuriken without a ninja belt present...
+      RETURN 1
+   ENDIF
+   IF (<SRC.FINDID.i_belt_ninja_leather.TAG0.LastUsedTime>)
+      IF (<EVAL <SERV.TIME>-<SRC.FINDID.i_belt_ninja_leather.TAG0.LastUsedTime>> < <DEF.ShurikenDelayTime>)
+         SRC.SYSMESSAGELOC color_text,1063298//"You cannot throw another shuriken yet."
+         RETURN 1
+      ENDIF
+   ENDIF
+   IF (<SRC.FINDLAYER.1>) && (<SRC.FINDLAYER.2>)
+      SRC.SYSMESSAGELOC color_text,1063299//"You must have a free hand to throw shuriken."
+      RETURN 1
+   ENDIF
+   IF !(<SRC.FINDID.i_belt_ninja_leather.TAG0.ShurikenCount>)
+      SRC.SYSMESSAGELOC color_text,1063297//"You have no shuriken in your ninja belt!"
+   ENDIF
+   IF (<DEFNAME>==i_belt_ninja_leather)
+      IF (<TAG0.ShurikenCount>)
+         TARGET 1113280//"Which target do you wish to throw this at?"
+      ENDIF
+      RETURN 0 //So that DClick will equip the belt
+   ENDIF
+   TARGET 1113280//"Which target do you wish to throw this at?"
+   RETURN 1 //To prevent "can't think of a way to use that" message when the shuriken is DClicked
+
+ON=@TargOn_Char
+   IF !(<SRC.TARG.CANSEELOS>)
+      SRC.SYSMESSAGELOC color_text,500237//"Target cannot be seen."
+      RETURN 1
+   ENDIF
+   IF (<SRC.TARG.DISTANCE> < <DEF.ShurikenMinRange>)
+      SRC.SYSMESSAGELOC color_text,1063303//"Your target is too close!"
+      RETURN 1
+   ENDIF
+   IF (<SRC.TARG.DISTANCE> > <DEF.ShurikenMaxRange>)
+      SRC.SYSMESSAGELOC color_text,1063304//"Your target is too far!"
+      RETURN 1
+   ENDIF
+   SRC.ANIM=11
+   SRC.TARG.EFFECT=0,i_shuriken,4,4,0
+   SRC.FINDID.i_belt_ninja_leather.TAG.LastUsedTime=<SERV.TIME>
+   IF (<DEF.ShurikenSkillgain>)
+      SRC.SKILLGAIN <DEF.ShurikenSkillUsed>,<SRC.<DEF.ShurikenSkill>>
+   ENDIF
+   IF (<R1250> < <SRC.<DEF.ShurikenSkillUsed>>)
+      SRC.TARG.DAMAGE=<R<DEF.ShurikenMinDamage>,<DEF.ShurikenMaxDamage>> <DEF.ShurikenDamageType> <SRC>
+      SRC.SOUND=snd_combat_shuriken_hit
+      SRC.TARG.SOUND=snd_combat_shuriken_hit
+   ELSE
+      SRC.SOUND=snd_combat_shuriken_miss
+      SRC.TARG.SOUND=snd_combat_shuriken_miss
+   ENDIF
+   IF (<SRC.FINDID.i_belt_ninja_leather.TAG0.ShurikenCount>)
+      SRC.FINDID.i_belt_ninja_leather.TAG0.ShurikenCount --
+      RESENDTOOLTIP
+   ELSE
+      SRC.FINDID.i_shuriken.REMOVE
+   ENDIF
+   RETURN 1
+
+ON=@DropOn_Self
+   SERV.LOG Does this trigger work? name=<NAME> src=<SRC.NAME>
+   IF (<ARGO.DEFNAME>!=i_shuriken)
+      SRC.SYSMESSAGELOC color_text,1063301//"You can only place shuriken in a ninja belt."
+      RETURN 1
+   ENDIF
+   IF (<TAG0.ShurikenCount> >= <DEF.ShurikenLoadLimit>)
+      SRC.SYSMESSAGELOC color_text,1063302//"You cannot add any more shuriken."
+      RETURN 1
+   ENDIF
+
+ON=@ClientToolTip
+   IF (<DEFNAME>==i_belt_ninja_leather)
+      SRC.ADDCLILOC 1060584,<dTAG0.ShurikenCount>
+   ENDIF
+   RETURN 0
+
+ON=@ContextMenuRequest
+   IF (<DEFNAME>==i_belt_ninja_leather)
+      SRC.ADDCONTEXTENTRY 300,6222//"Load Ninja Belt"
+      SRC.ADDCONTEXTENTRY 400,6223//"UnLoad Ninja Belt"
+      SRC.ADDCONTEXTENTRY 500,391//"Help"
+   ENDIF
+
+ON=@ContextMenuSelect
+   IF (<ARGN>==300)
+      LOCAL.ItemsAdded=0
+      LOCAL.OldObj=<OBJ>
+      OBJ=<UID>
+      FORCONT <SRC.FINDLAYER.layer_pack.UID> 0//Only search the top level of the backpack
+         IF (<DEFNAME>==i_shuriken)
+            IF (<OBJ.TAG0.ShurikenCount> < <DEF.ShurikenLoadLimit>)
+               OBJ.TAG0.ShurikenCount ++
+               LOCAL.ItemsAdded ++
+               REMOVE
+            ENDIF
+         ENDIF
+      ENDFOR
+      OBJ=<OBJ>
+      IF (<LOCAL.ItemsAdded>)
+         SRC.SYSMESSAGE Loaded <dLOCAL.ItemsAdded> shuriken into the belt.
+         RESENDTOOLTIP
+      ENDIF
+      IF !(<TAG0.ShurikenCount> >= <DEF.ShurikenLoadLimit>) && !(<LOCAL.ItemsAdded>)
+         SRC.SYSMESSAGE No shuriken were found in your backpack.
+      ENDIF
+      IF (<TAG0.ShurikenCount> >= <DEF.ShurikenLoadLimit>)
+         SRC.SYSMESSAGELOC color_text,1063302//"You cannot add any more shuriken."
+      ENDIF
+   ENDIF
+   IF (<ARGN>==400)
+      SERV.NEWITEM i_shuriken,1,<SRC>
+      TAG0.ShurikenCount --
+      RESENDTOOLTIP
+   ENDIF
+   IF (<ARGN>==500)
+      SRC.SYSMESSAGELOC color_text,1115941//"You must be carrying this item to use it."
+      SRC.SYSMESSAGELOC color_text,1070785//"Double click this item each time you wish to throw a shuriken."
+      SRC.SYSMESSAGELOC color_text,1063299//"You must have a free hand to throw shuriken."
+   ENDIF
+
+[EOF]

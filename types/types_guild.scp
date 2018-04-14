@@ -1,0 +1,118 @@
+﻿//****************************************************************************
+// SPHERE by : Menasoft ©1997-2007
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Thursday, October 24, 2013
+//
+VERSION=0.56c
+
+[TYPEDEF t_guild_door]
+//Guild Members Only Door
+//Set the door to the Triger Type #, then Link the DOOR to the GUILDSTONE
+//DO NOT LINK THE GUILDSTONE TO THE DOOR - YOUR GUILDSTONE WILL DISAPPEAR IN THE NEXT SAVE.
+ON=@DClick
+   IF (<SRC.MEMORYFINDTYPE.0400.LINK> == <LINK>)
+      MOREP=<P>
+      SRC.MESSAGE You pass through the door magically.
+      SRC.GO <MOREP>
+   ELSE
+      SRC.MESSAGE The door seems magically locked.
+   ENDIF
+   RETURN 1
+
+[TYPEDEF t_guild_red]
+ON=@DClick
+   SRC.COLOR=020    // change their skincolor to red
+   SRC.OSKIN=020    // make it permanent
+   SRC.P=1962,850,5 // send them to the arena coordinates
+   SRC.SYSMESSAGE Welcome to the red faction!
+
+[TYPEDEF t_guild_red_res]
+// Red Faction res gate
+ON=@Step
+   IF (<SRC.OSKIN> == 020)
+      SRC.MESSAGE Return to life red one!
+      SRC.RESURRECT
+   ELSE
+      SRC.MESSAGE You Are Not A Red Faction Member!
+   ENDIF
+   RETURN 1
+
+[TYPEDEF t_guild_green]
+ON=@DClick
+   SRC.COLOR=02f5
+   SRC.OSKIN=02f5
+   SRC.P=2023,827,6
+   SRC.SYSMESSAGE Welcome to the green faction!
+
+[TYPEDEF t_guild_green_res]
+// Green Faction res gate
+ON=@Step
+   IF (<SRC.OSKIN> == 02f5)
+      SRC.MESSAGE Return to life green one!
+      SRC.RESURRECT
+   ELSE
+      SRC.MESSAGE You Are Not A green Faction Member!
+   ENDIF
+   RETURN 1
+
+[TYPEDEF t_guild_blue]
+ON=@DClick
+   SRC.COLOR=03
+   SRC.OSKIN=03
+   SRC.P=2000,782,6
+   SRC.SYSMESSAGE Welcome to the blue faction!
+
+[TYPEDEF t_guild_blue_res]
+// Blue Faction res gate
+ON=@Step
+   IF (<SRC.OSKIN> == 03)
+      SRC.MESSAGE Return to life blue one!
+      SRC.RESURRECT
+   ELSE
+      SRC.MESSAGE You Are Not A Blue Faction Member!
+   ENDIF
+   RETURN 1
+
+[TYPEDEF t_guild_yellow]
+ON=@DClick
+   SRC.COLOR=035
+   SRC.OSKIN=035
+   SRC.P=2118,773,6
+   SRC.SYSMESSAGE Welcome to the yellow faction!
+
+[TYPEDEF t_guild_yellow_res]
+// Yellow Faction res gate
+ON=@Step
+   IF (<SRC.OSKIN> == 035)
+      SRC.MESSAGE Return to life yellow one!
+      SRC.RESURRECT
+   ELSE
+      SRC.MESSAGE You Are Not A Yellow Faction Member!
+   ENDIF
+   RETURN 1
+
+[TYPEDEF t_guild_purple]
+ON=@DClick
+   SRC.COLOR=0143
+   SRC.OSKIN=0143
+   SRC.P=2090,847,6
+   SRC.SYSMESSAGE Welcome to the purple faction!
+
+[TYPEDEF t_guild_purple_res]
+// Purple Faction res gate
+ON=@Step
+   IF (<SRC.OSKIN> == 0143)
+      SRC.MESSAGE Return to life purple one!
+      SRC.RESURRECT
+   ELSE
+      SRC.MESSAGE You Are Not A Purple Faction Member!
+   ENDIF
+   RETURN 1
+
+[EOF]

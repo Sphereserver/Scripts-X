@@ -1,0 +1,99 @@
+[FUNCTION f_coords] // Arguments: dX, dY, dZ (d stands for delta, or variation). Returns the coordinates (x,y,z,m) plus/minus the corresponding argument.
+RETURN <EVAL <P.X>+<ARGN1>>, <EVAL <P.Y>+<ARGN2>>, <EVAL <P.Z>+<ARGN3>>, <EVAL <MAP>>
+
+[FUNCTION f_coordsSameMap] // Arguments: dX, dY, dZ (d stands for delta, or variation). Like coords but doesn't return also the map number.
+RETURN <EVAL <P.X>+<ARGN1>>, <EVAL <P.Y>+<ARGN2>>, <EVAL <P.Z>+<ARGN3>>
+
+[FUNCTION f_moveback]
+IF (<ARGN1>)
+	DOSWITCH (<DIR>)
+	LOCAL.OK=<MOVE s>
+	LOCAL.OK=<MOVE sw>
+	LOCAL.OK=<MOVE w>
+	LOCAL.OK=<MOVE nw>
+	LOCAL.OK=<MOVE n>
+	LOCAL.OK=<MOVE ne>
+	LOCAL.OK=<MOVE e>
+	LOCAL.OK=<MOVE se>
+	ENDDO
+	IF (<LOCAL.OK>&08)
+		RETURN 1
+	ENDIF
+ENDIF
+DOSWITCH (<DIR>)
+MOVE s
+MOVE sw
+MOVE w
+MOVE nw
+MOVE n
+MOVE ne
+MOVE e
+MOVE se
+ENDDO
+FIX
+
+[FUNCTION f_moveforward]
+IF (<ARGN1>)
+	DOSWITCH (<DIR>)
+	LOCAL.OK=<MOVE n>
+	LOCAL.OK=<MOVE ne>
+	LOCAL.OK=<MOVE e>
+	LOCAL.OK=<MOVE se>
+	LOCAL.OK=<MOVE s>
+	LOCAL.OK=<MOVE sw>
+	LOCAL.OK=<MOVE w>
+	LOCAL.OK=<MOVE nw>
+	ENDDO
+	IF (<LOCAL.OK>&08)
+		RETURN 1
+	ENDIF
+ENDIF
+DOSWITCH (<DIR>)
+MOVE n
+MOVE ne
+MOVE e
+MOVE se
+MOVE s
+MOVE sw
+MOVE w
+MOVE nw
+ENDDO
+
+[FUNCTION f_standsFront]
+REF1=<QVAL <ARGN1>?<ARGN1>:<SRC.UID>>
+LOCAL.DX=<REF1.P.X>-<P.X>
+LOCAL.DY=<REF1.P.Y>-<P.Y>
+IF (<REF1.DIR>==0)
+	IF (<LOCAL.DX>==0) && (<LOCAL.DY>>0)
+		RETURN 1
+	ENDIF
+ELIF (<REF1.DIR>==1)
+	IF (<LOCAL.DX>==-<LOCAL.DY>) && (<LOCAL.DX><0)
+		RETURN 1
+	ENDIF
+ELIF (<REF1.DIR>==2)
+	IF (<LOCAL.DY>==0) && (<LOCAL.DX><0)
+		RETURN 1
+	ENDIF
+ELIF (<REF1.DIR>==3)
+	IF (<LOCAL.DX>==<LOCAL.DY>) && (<LOCAL.DX><0)
+		RETURN 1
+	ENDIF
+ELIF (<REF1.DIR>==4)
+	IF (<LOCAL.DX>==0) && (<LOCAL.DY><0)
+		RETURN 1
+	ENDIF
+ELIF (<REF1.DIR>==5)
+	IF (<LOCAL.DX>==-<LOCAL.DY>) && (<LOCAL.DX>>0)
+		RETURN 1
+	ENDIF
+ELIF (<REF1.DIR>==6)
+	IF (<LOCAL.DY>==0) && (<LOCAL.DX>>0)
+		RETURN 1
+	ENDIF
+ELIF (<REF1.DIR>==7)
+	IF (<LOCAL.DX>==<LOCAL.DY>) && (<LOCAL.DX>>0)
+		RETURN 1
+	ENDIF
+ENDIF
+RETURN 0

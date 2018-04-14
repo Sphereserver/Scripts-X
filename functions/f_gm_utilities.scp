@@ -1,0 +1,27 @@
+[FUNCTION t]	// A better teleporting command than .tele.
+TARGETFG t_sub
+
+[FUNCTION t_sub]
+IF (<ARGO>)
+	GO <ARGO.P>
+ELSEIF (<TARGP>)
+	GO <TARGP>
+ELSE
+	SYSMESSAGE Target non valido
+ENDIF
+TARGETFG t_sub
+
+[FUNCTION sm]	// Staff message. Talk via sysmessages with other Game Masters (starting from PLEVEL 2).
+IF (<ISEMPTY <ARGS>>)
+	SYSMESSAGE Syntax: .sm [text]
+	RETURN 1
+ENDIF
+LOCAL.NAME=<NAME>
+FOR (<SERV.CLIENTS>)
+	IF (<SERV.CLIENT.<EVAL <LOCAL._FOR>-1>.ACCOUNT.PLEVEL>>1)
+		REF1=<SERV.CLIENT.<EVAL <LOCAL._FOR>-1>.UID>
+		REF1.SYSMESSAGE @<TAG0.NAME.HUE> <LOCAL.NAME>: <ARGS>
+	ENDIF
+ENDFOR
+
+[EOF]

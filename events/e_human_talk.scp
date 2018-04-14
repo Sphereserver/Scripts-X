@@ -12,32 +12,6 @@
 VERSION=0.56c
 
 
-[EVENTS e_Human_Environ]
-ON=@EnvironChange
-	IF (<flags> & statf_war)
-		return 0
-	ENDIF
-	IF !(<sector.isdark>) || (<flags> & statf_nightsight)
-		IF (<findlayer(layer_hand2)>)
-			IF (<findlayer(layer_hand2).type> == t_light_lit)
-				findlayer(layer_hand2).bounce
-			ENDIF
-		ENDIF
-		return 0
-	ENDIF
-	// already have a lit light ?
-	IF (<findlayer(layer_hand2)>)
-		IF (<findlayer(layer_hand2).type> == t_light_lit)
-			return 0
-		ENDIF
-	ENDIF
-	// try to use a torch or light source if i have one. (and it's dark)
-	IF (<findtype.t_light_out>)
-		findtype.t_light_out.equip
-		findtype.t_light_out.use
-	ENDIF
-	return 0
-
 [EVENTS e_Human_Greet]
 ON=@NPCHearGreeting
 	// They just spoke to me for the first time.
