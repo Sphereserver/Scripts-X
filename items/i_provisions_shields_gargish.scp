@@ -1,0 +1,216 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2018
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Wednesday, April 18, 2018
+//
+VERSION=0.56d
+
+
+[ITEMDEF 04200]
+DEFNAME=i_shield_gargish_wooden
+NAME=Gargish wooden shield
+TYPE=t_shield
+FLIP=1
+//ARMOR=8
+VALUE=28
+WEIGHT=11.0
+RESOURCES=10 i_board,2 i_ingot_iron
+SKILLMAKE=Carpentry 52.6,t_carpentry,Armslore 10.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Shields
+DESCRIPTION=Gargish Wooden Shield
+canuse=can_u_gargoyle
+ReqStr=20
+TEVENTS=t_equipitem
+DUPELIST=04207
+ON=@Create
+   HITPOINTS={36 48}
+   RESENERGY=1
+
+[ITEMDEF 04201]
+DEFNAME=i_shield_gargish_kite
+NAME=Gargish kite shield
+TYPE=t_shield
+FLIP=1
+//ARMOR=12
+VALUE=73
+WEIGHT=14.0
+RESOURCES=16 i_ingot_iron
+SKILLMAKE=Blacksmithing 31.0,Armslore 20.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Shields
+DESCRIPTION=Gargish Kite Shield
+canuse=can_u_gargoyle
+ReqStr=45
+TEVENTS=t_equipitem
+DUPELIST=04206
+ON=@Create
+   HITPOINTS={36 48}
+   RESENERGY=1
+
+[ITEMDEF 04202]
+DEFNAME=i_shield_gargish_plate_small
+NAME=small Gargish plate shield
+TYPE=t_shield
+FLIP=1
+//ARMOR=7
+VALUE=35
+WEIGHT=8.0
+RESOURCES=8 i_ingot_iron
+SKILLMAKE=Blacksmithing 10.0,Armslore 20.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Shields
+DESCRIPTION=Gargish Plate Shield (small)
+canuse=can_u_gargoyle
+ReqStr=20
+TEVENTS=t_equipitem
+DUPELIST=0420a
+ON=@Create
+   HITPOINTS={36 48}
+   RESCOLD=1
+
+[ITEMDEF 04203]
+DEFNAME=i_shield_gargish_plate_medium
+NAME=medium Gargish plate shield
+TYPE=t_shield
+FLIP=1
+//ARMOR=11
+VALUE=60
+WEIGHT=12.0
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 25.0,Armslore 20.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Shields
+DESCRIPTION=Gargish Plate Shield (medium)
+canuse=can_u_gargoyle
+ReqStr=45
+TEVENTS=t_equipitem
+DUPELIST=04209
+ON=@Create
+   HITPOINTS={36 48}
+   RESFIRE=1
+
+[ITEMDEF 04204]
+DEFNAME=i_shield_gargish_plate_large
+NAME=large Gargish plate shield
+TYPE=t_shield
+FLIP=1
+//ARMOR=15
+VALUE=108
+WEIGHT=18.0
+RESOURCES=18 i_ingot_iron
+SKILLMAKE=Blacksmithing 50.0,Armslore 20.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Shields
+DESCRIPTION=Gargish Plate Shield (large)
+canuse=can_u_gargoyle
+ReqStr=90
+TEVENTS=t_equipitem
+DUPELIST=04208
+ON=@Create
+   HITPOINTS={36 48}
+   RESFIRE=1
+
+[ITEMDEF 04205]
+DEFNAME=i_shield_gargish_stone_large
+NAME=Large Gargish stone shield
+TYPE=t_shield
+FLIP=1
+//ARMOR=15
+VALUE=108
+WEIGHT=18.0
+RESOURCES=18 i_rock_plain
+SKILLMAKE=Blacksmithing 75.0,Armslore 30.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Shields
+DESCRIPTION=Gargish Stone Shield (large)
+canuse=can_u_gargoyle
+ReqStr=75
+TEVENTS=t_equipitem
+DUPELIST=0420b
+ON=@Create
+   HITPOINTS={36 48}
+   RESPOISON=1
+
+[ITEMDEF 04206]
+//Gargish kite shield
+DUPEITEM=04201
+
+[ITEMDEF 04207]
+//Gargish wooden shield
+DUPEITEM=04200
+
+[ITEMDEF 04208]
+//Gargish plate shield (large)
+DUPEITEM=04204
+
+[ITEMDEF 04209]
+//Gargish plate shield (medium)
+DUPEITEM=04203
+
+[ITEMDEF 0420a]
+//Gargish plate shield (small)
+DUPEITEM=04200
+
+[ITEMDEF 0420b]
+//Gargish stone shield (large)
+DUPEITEM=04205
+
+
+[ITEMDEF 04228]
+DEFNAME=i_shield_gargish_chaos
+TYPE=t_shield
+FLIP=1
+//ARMOR=16
+VALUE=220
+WEIGHT=20.0
+RESOURCES=4 i_ingot_silver,10 i_ingot_blackrock,2 i_ingot_gold
+SKILLMAKE=Blacksmithing 110.0,Armslore 110.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Shields
+DESCRIPTION=Gargish Chaos Shield
+canuse=can_u_gargoyle
+ReqStr=95
+TEVENTS=t_equipitem
+DUPELIST=04229
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=1
+
+[ITEMDEF 04229]
+//Gargish Chaos Shield
+DUPEITEM=04228
+
+[ITEMDEF 0422a]
+DEFNAME=i_shield_gargish_order
+TYPE=t_shield
+FLIP=1
+//ARMOR=16
+VALUE=220
+WEIGHT=20.0
+RESOURCES=4 i_ingot_silver,10 i_ingot_blackrock,2 i_ingot_gold
+SKILLMAKE=Blacksmithing 110.0,Armslore 110.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Shields
+DESCRIPTION=Gargish Order Shield
+canuse=can_u_gargoyle
+ReqStr=95
+TEVENTS=t_equipitem
+DUPELIST=0422c
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=1
+
+[ITEMDEF 0422c]
+//Gargish Order Shield
+DUPEITEM=0422a
+
+
+
+[EOF]
