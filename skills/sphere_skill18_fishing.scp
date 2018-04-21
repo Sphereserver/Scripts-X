@@ -1,0 +1,83 @@
+// SPHERE by : Menasoft ©1997-2016
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Tuesday, Jun 28, 2016
+//
+VERSION=0.56d
+
+[SKILL 18]
+DEFNAME=Skill_Fishing
+KEY=Fishing
+TITLE=Fisherman
+PROMPT_MSG=What water do you want to fish in?
+FLAGS=skf_gather
+DELAY=8.0
+STAT_STR=40
+STAT_DEX=40
+STAT_INT=30
+BONUS_STR=10
+BONUS_DEX=90
+BONUS_INT=0
+BONUS_STATS=25
+ADV_RATE=2.5,50.0,200.0
+VALUES=1,30,200
+RANGE=4
+
+ON=@PreStart
+	IF (<SRC.FINDLAYER.layer_horse>)
+		SRC.SYSMESSAGE You can't fish while riding!
+		return 1
+	ENDIF
+
+ON=@Start
+	ANIM 12
+	SERV.NEWITEM i_memory_fishing_splash
+	NEW.LINK=<UID>
+	NEW.P=<ACT.P>
+
+ON=@Success
+	ACTARG2=1		// 1 will pack the resource, 0 place it on the ground.
+
+ON=@Fail
+	SRC.SYSMESSAGE You fish a while, but fail to catch anything.
+
+ON=@Abort
+	SRC.SYSMESSAGE You pull your line back in and stop fishing.
+
+ON=@Stroke
+	IF (<SRC.FINDLAYER.layer_horse>)
+		SRC.SYSMESSAGE You can't fish while riding!
+		return 1
+	ENDIF
+	// Damage for Fishing Poles was never active, I add it here anyway.
+	//IF ( <SERV.EXPERIMENTAL>&00002000)		// EF_DamageTools
+	//	IF (<SRC.FINDLAYER.2.HITS> > 0)
+	//		SRC.FINDLAYER.2.DAMAGE <eval <maxhits>*2>,DAM_PHYSICAL,<SRC>
+	//	ELSE
+	//		SRC.FINDLAYER.2.DESTROY
+	//	ENDIF
+	//ENDIF
+
+[ITEMDEF i_memory_fishing_splash]
+ID=i_memory
+
+ON=@Create
+ATTR=attr_move_never|attr_decay
+TIMERD=15
+IF (<TIMERD> > <SERV.SKILL.FISHING.DELAY>)	// We don't want to fire the splash after the fish success so a check for skill's delay is needed.
+ TIMERD=<eval <SERV.SKILL.FISHING.DELAY>/2>
+ENDIF
+
+ON=@Timer
+IF (<LINK.ACTION> == skill_fishing)		// Check out if cont is still fishing, otherwise we don't want the effect.
+ EFFECT 2,0352D,4,16
+ SOUND 0364
+ENDIF
+
+
+[EOF]

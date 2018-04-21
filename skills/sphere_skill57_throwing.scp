@@ -1,0 +1,28 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2016
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Tuesday, Jun 28, 2016
+//
+VERSION=X1
+
+[SKILL 57]
+DEFNAME=Skill_Throwing
+KEY=Throwing
+TITLE=Bladeweaver
+FLAGS=skf_fight|skf_ranged
+STAT_STR=40
+STAT_DEX=70
+STAT_INT=30
+BONUS_STR=0
+BONUS_DEX=95
+BONUS_INT=5
+BONUS_STATS=10
+ADV_RATE=10.0,200.0,800.0
+
+[EOF]

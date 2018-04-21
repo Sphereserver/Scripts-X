@@ -1,0 +1,36 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2016
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Tuesday, Jun 28, 2016
+//
+VERSION=0.56d
+
+[SKILL 0]
+DEFNAME=Skill_Alchemy
+KEY=Alchemy
+TITLE=Alchemist
+FLAGS=skf_craft
+DELAY=1.2		//Old value=3.0,1.0 // per stroke.
+STAT_STR=5
+STAT_DEX=40
+STAT_INT=75
+BONUS_STR=0
+BONUS_DEX=20
+BONUS_INT=80
+BONUS_STATS=10
+ADV_RATE=10.0,200.0,800.0
+VALUES=1,20,100
+
+ON=@Fail
+	SRC.SYSMESSAGE You toss the failed mixture from the mortar, unable to create a potion from it.
+
+ON=@Abort
+	SRC.SYSMESSAGE You fail to complete the potion.
+
+[EOF]

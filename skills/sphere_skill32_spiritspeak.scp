@@ -1,0 +1,34 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2016
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Tuesday, Jun 28, 2016
+//
+VERSION=0.56d
+
+[SKILL 32]
+DEFNAME=Skill_SpiritSpeak
+KEY=SpiritSpeak
+TITLE=Medium
+DELAY=2.0
+STAT_STR=20
+STAT_DEX=30
+STAT_INT=70
+BONUS_STR=0
+BONUS_DEX=0
+BONUS_INT=100
+BONUS_STATS=50
+ADV_RATE=2.5,50.0,200.0
+
+ON=@Fail
+	SRC.SYSMESSAGE You fail your attempt at contacting the netherworld.
+
+ON=@Abort
+	SRC.SYSMESSAGE You stop trying to commune with the netherworld.
+
+[EOF]
