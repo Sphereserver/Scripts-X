@@ -1,3 +1,8 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
 
 [COMMENT typedef_ninja_shuriken]
 This typedef script is to be used on both the ninja belt, and the shuriken. It

@@ -1,3 +1,9 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
 [FUNCTION f_coords] // Arguments: dX, dY, dZ (d stands for delta, or variation). Returns the coordinates (x,y,z,m) plus/minus the corresponding argument.
 RETURN <EVAL <P.X>+<ARGN1>>, <EVAL <P.Y>+<ARGN2>>, <EVAL <P.Z>+<ARGN3>>, <EVAL <MAP>>
 

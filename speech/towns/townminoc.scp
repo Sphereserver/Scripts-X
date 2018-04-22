@@ -1,13 +1,10 @@
 //****************************************************************************
-//SPHERE by : Menasoft ©1997-2007
-//www.sphereserver.net
-// All SPHERE script files and formats are copyright Menasoft & Partners.
-// This file may be freely edited for personal use, but may not be distributed
-// in whole or in part, in any format without express written permission from
-// Menasoft & Partners.  All donations and contributions
-// become the property of Menasoft & Partners.
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
 //****************************************************************************
-// FILE LAST UPDATED: Friday, April 28, 2000// Purpose: Britannia Minoc Script
+VERSION=X1
+
+// Purpose: Britannia Minoc Script
 // Notes:  This is used for general information pertaining to all Britannians of Minco
 // Current Keyword List:Keywords:house,stable,tavern,butcher,provisioner,supply,guild,warrior*guild, fighter*guild
 // miner*guild,tinker,clock,wood*worker,concert,music,smith,blacksmith,tanner,hide,armor,armour,tent,

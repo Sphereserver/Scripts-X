@@ -1,0 +1,105 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[SPAWN spawn_Bandits]
+CATEGORY=Spawn Groups
+SUBSECTION=Evil NPC
+DESCRIPTION=Bandits
+ID=c_bandit_m
+ID=c_bandit_f
+
+[SPAWN spawn_Barbarians]
+CATEGORY=Spawn Groups
+SUBSECTION=Evil NPC
+DESCRIPTION=Barbarians
+ID=c_barbarian_warrioress  3
+ID=c_barbarian_warrior     3
+ID=c_barbarian_shaman      2
+ID=c_barbarian_chieftain   1
+
+[SPAWN spawn_Brigands]
+CATEGORY=Spawn Groups
+SUBSECTION=Evil NPC
+DESCRIPTION=Brigands
+ID=c_brigand_f
+ID=c_brigand
+
+[SPAWN spawn_DreadLords]
+CATEGORY=Spawn Groups
+SUBSECTION=Evil NPC
+DESCRIPTION=Dreadlords
+ID=c_dreadlord             5
+ID=c_dreadhorse            4
+ID=c_dreadranger           4
+ID=c_dreadlord_captain     3
+ID=c_warhorse_dread        1
+ID=c_dreadlord_general     1
+
+[SPAWN spawn_EvilJapanese]
+CATEGORY=Spawn Groups
+SUBSECTION=Evil NPC
+DESCRIPTION=Evil Japanese
+ID=c_ninja
+ID=c_ninja_f
+ID=c_ronin
+ID=c_ronin_f
+
+[SPAWN spawn_EvilMages]
+CATEGORY=Spawn Groups
+SUBSECTION=Evil NPC
+DESCRIPTION=Evil Mages
+ID=c_evilmage              2
+ID=c_evilmage_lord         1
+
+[SPAWN spawn_FrostElves]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Frost Elf
+ID=c_frostelf_archer       4
+ID=c_frostelf_warrior      3
+ID=c_frostelf_shaman       3
+ID=c_frostelf_warrioress   3
+ID=c_frostelf_merc         3
+ID=c_frostelf_ranger       2
+ID=c_frostelf_chief        1
+
+[SPAWN spawn_Pirates]
+CATEGORY=Spawn Groups
+SUBSECTION=Evil NPC
+DESCRIPTION=Pirates
+ID=c_pirate_f
+ID=c_pirate_m
+
+[SPAWN spawn_Savages]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Savages
+ID=c_savage_warrior_male   5
+ID=c_savage_warrior_female 5
+ID=c_savage_shaman         5
+ID=c_savage_rider          5
+
+[SPAWN spawn_Witches]
+CATEGORY=Spawn Groups
+SUBSECTION=Evil NPC
+DESCRIPTION=Witches
+ID=c_black_cat             3
+ID=c_witch                 2
+ID=c_warlock               1
+ID=c_witch_high            1
+
+[SPAWN spawn_Woodelves]
+CATEGORY=Spawn Groups
+SUBSECTION=Evil NPC
+DESCRIPTION=Wood Elves
+ID=c_woodelf_hunter        2
+ID=c_woodelf_spearman      2
+ID=c_woodelf_archer        2
+ID=c_woodelf_fighter       1
+ID=c_woodelf_elite_ranger  1
+ID=c_woodelf_elite_warrior 1
+
+[EOF]

@@ -1,16 +1,8 @@
 //****************************************************************************
-// SPHERE by : Menasoft ©1997-2007
-// www.sphereserver.com
-// All SPHERE script files and formats are copyright Menasoft & Partners.
-// This file may be freely edited for personal use, but may not be distributed
-// in whole or in part, in any format without express written permission from
-// Menasoft & Partners.  All donations and contributions
-// become the property of Menasoft & Partners.
-//
-// DO NOT MAKE CHANGES TO DEFAULT SCRIPTS! MAKE YOUR ALTERATIONS IN CUSTOM FILES!
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
 //****************************************************************************
-// FILE LAST UPDATED: 14-March-2007
-VERSION=0.56b
+VERSION=X1
 
 [dialog d_Town_CharList]
 5,25

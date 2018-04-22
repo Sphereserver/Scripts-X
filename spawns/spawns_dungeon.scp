@@ -1,0 +1,427 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[SPAWN spawn_Deceit2]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Deceit 2
+ID=c_elemental_air
+ID=c_elemental_earth     2
+ID=c_elemental_fire
+ID=c_rat_giant          10
+ID=c_headless           10
+ID=c_lizardman           2
+ID=c_lizardman_mace      2
+ID=c_lizardman_spear     2
+ID=c_mongbat             7
+ID=c_scorpion_giant      4
+ID=c_skeleton            2
+ID=c_skeleton_w_axe      2
+ID=c_skeleton_w_sword    2
+ID=c_zombie              8
+ID=c_spectre             4
+
+[SPAWN spawn_Deceit3]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Deceit 3
+ID=c_gazer
+ID=c_scorpion_giant      3
+ID=c_spider_giant        3
+ID=c_ratman_w_mace       3
+ID=c_ratman              3
+ID=c_ratman_w_sword      3
+ID=c_snake_giant         2
+ID=c_zombie              5
+ID=c_spectre             3
+
+[SPAWN spawn_Deceit4]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Deceit 4
+ID=c_demon
+ID=c_demon_balron
+ID=c_dragon
+ID=c_dragon_red
+ID=c_drake               3
+ID=c_drake_red           3
+ID=c_wyvern              3
+ID=c_elemental_air       2
+ID=c_elemental_earth     2
+ID=c_elemental_fire      2
+ID=c_spectre             4
+ID=c_lich                2
+
+[SPAWN spawn_Shame1]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Shame 1
+ID=c_headless
+ID=c_slime
+ID=c_mongbat
+ID=c_orc
+ID=c_orc_w_club
+ID=c_ratman
+ID=c_lizardman
+ID=c_lizardman_mace
+ID=c_ratman_w_sword
+ID=c_goblin_gray
+
+[SPAWN spawn_Shame2]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Shame 2
+ID=c_lizardman_mace
+ID=c_lizardman_spear
+ID=c_orc_lord
+ID=c_ogre
+ID=c_goblin_chief
+ID=c_goblin_gray_mage
+ID=c_slime
+ID=c_spider_giant
+
+[SPAWN spawn_Shame3]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Shame 3
+ID=c_wyvern
+ID=c_drake_red
+ID=c_drake
+ID=c_elemental_air
+ID=c_elemental_earth
+ID=c_ettin
+ID=c_ettin_w_hammer
+ID=c_ogre
+ID=c_troll
+ID=c_troll_w_axe
+ID=c_frost_troll
+ID=c_scorpion_giant
+ID=c_snake_giant
+ID=c_spider_giant
+ID=c_gazer
+ID=c_orc_lord
+ID=c_orc_mage
+
+[SPAWN spawn_Shame4]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Shame 4
+ID=c_elemental_water
+ID=c_ettin_w_hammer
+ID=c_troll
+ID=c_troll_w_axe
+ID=c_frost_troll
+ID=c_elemental_air
+ID=c_snake_giant
+ID=c_gazer
+
+[SPAWN spawn_Hythloth_trammel1]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Hythloth 1 (Trammel)
+ID=c_gargoyle_fire           1
+ID=c_gargoyle                1
+ID=c_hellhound               1
+ID=c_imp                     1
+
+[SPAWN spawn_Hythloth_felucca1]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Hythloth 1 (Felucca)
+ID=c_gargoyle_fire           1
+ID=c_gargoyle                1
+ID=c_hellhound               1
+
+[SPAWN spawn_Hythloth_trammel2]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Hythloth 2 (Trammel)
+ID=c_demon                   1
+ID=c_gargoyle                2
+ID=c_gazer                   2
+ID=c_gazer_larva             2
+ID=c_hellhound               2
+ID=c_imp                     2
+
+[SPAWN spawn_Hythloth_felucca2]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Hythloth 2 (Felucca)
+ID=c_demon                   1
+ID=c_gargoyle                2
+ID=c_gazer_elder             1
+ID=c_hellhound               2
+ID=c_gargoyle_stone          2
+
+[SPAWN spawn_Hythloth_trammel3]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Hythloth 3 (Trammel)
+ID=c_demon_balron            1
+ID=c_gargoyle_stone          2
+ID=c_gazer                   2
+ID=c_gazer_larva             2
+ID=c_hellhound               2
+ID=c_imp                     3
+ID=c_demon                   2
+ID=c_gargoyle                3
+ID=c_gazer_elder             2
+
+[SPAWN spawn_Hythloth_felucca3]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Hythloth 3 (Felucca)
+ID=c_demon_balron            1
+ID=c_gargoyle_stone          2
+ID=c_gazer                   2
+ID=c_demon                   2
+ID=c_gazer_elder             2
+
+[SPAWN spawn_Hythloth_trammel4]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Hythloth 4 (Trammel)
+ID=c_demon_balron            1
+ID=c_demon                   2
+ID=c_gargoyle_fire           2
+ID=c_gargoyle                3
+ID=c_gazer                   2
+ID=c_hellhound               2
+ID=c_imp                     3
+ID=c_gargoyle_stone          2
+
+[SPAWN spawn_Hythloth_felucca4]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Hythloth 4 (Felucca)
+ID=c_demon_balron            1
+ID=c_demon                   2
+ID=c_gargoyle_fire           2
+ID=c_gargoyle                3
+ID=c_gazer                   2
+ID=c_gargoyle_stone          2
+
+[SPAWN spawn_FanDancerDojo_level1]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Fan Dancer Dojo Level 1
+ID=c_headless                4
+ID=c_grubber                 4
+ID=c_demon_horde_minion      3
+ID=c_mound_maggots           3
+ID=c_imp                     2
+ID=c_hellhound               2
+ID=c_demon                   2
+ID=c_fan_dancer              1
+
+[SPAWN spawn_Despise_level1]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Despise 1
+ID=c_lizardman
+ID=c_lizardman_spear
+ID=c_lizardman_mace
+
+[SPAWN spawn_Despise_level3]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Despise 3
+ID=c_ettin
+ID=c_elemental_earth
+
+[SPAWN spawn_Despise_level4]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Despise 4
+ID=c_ettin                   5
+ID=c_ogre                    5
+ID=c_troll                   5
+ID=c_cyclops                 4
+ID=c_elemental_acid          3
+ID=c_titan                   3
+ID=c_ogre_lord
+
+[SPAWN spawn_Destard_level1]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Destard 1
+ID=c_snake_giant             3
+ID=c_elemental_water         3
+ID=c_wyvern                  3
+ID=c_drake                   2
+ID=c_drake_red               2
+ID=c_dragon
+ID=c_dragon_red
+
+[SPAWN spawn_Destard_level2]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Destard 2
+ID=c_wyvern                  3
+ID=c_drake                   3
+ID=c_drake_red               3
+ID=c_evilmage_lord           2
+ID=c_demon                   2
+ID=c_wyrm_shadow
+
+[SPAWN spawn_Destard_level3]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Destard 3
+ID=c_wyvern                  5
+ID=c_elemental_fire          4
+ID=c_wyrm_ancient
+
+[SPAWN spawn_OrcCave_level1]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Orc Cave 1
+ID=c_orc
+ID=c_orc_scout
+ID=c_orc_chopper
+ID=c_orc_lord
+
+[SPAWN spawn_OrcCave_level2]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Orc Cave 2
+ID=c_corpser
+ID=c_wolf_dire
+ID=c_rat_giant
+ID=c_spider_giant
+ID=c_orc
+ID=c_orc_bomber
+ID=c_orc_chopper
+ID=c_orc_scout
+ID=c_orc_lord
+ID=c_orc_mage
+
+[SPAWN spawn_OrcCave_level3]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Orc Cave 3
+ID=c_orc                     4
+ID=c_orc_bomber              4
+ID=c_elemental_earth         3
+ID=c_orc_brute
+
+[SPAWN spawn_FanDancerDojo_level2]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Fan Dancer Dojo Level 2
+ID=c_hellcat                 3
+ID=c_demon                   3
+ID=c_hellhound_leader        3
+ID=c_ronin                   2
+ID=c_bloodworm               2
+ID=c_demon_chaos             2
+ID=c_succubus                1
+ID=c_fan_dancer              1
+ID=c_tsuki_wolf              1
+
+[SPAWN spawn_FanDancerDojo_level3]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Fan Dancer Dojo Level 3
+ID=c_maddening_horror        7
+ID=c_demon_horde_large       6
+ID=c_succubus                5
+ID=c_fan_dancer              4
+ID=c_tsuki_wolf              4
+ID=c_hellhound_ancient       3
+ID=c_oni                     3
+ID=c_lich_primeval           2
+ID=c_devourer_souls          1
+ID=c_demon_balron            1
+
+[SPAWN spawn_Labyrinth]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Labyrinth Monsters
+ID=c_bird                   10
+ID=c_squirrel               10
+ID=c_eagle                  10
+ID=c_rat
+ID=c_rat_giant
+ID=c_elemental_air           6
+ID=c_minotaur                5
+ID=c_minotaur_scout          4
+ID=c_minotaur_captain        3
+ID=c_drake                   2
+ID=c_drake_red               2
+ID=c_reptalon
+//ID=c_tormented_minotaur    6
+//Flurry
+//Grim
+//Meraktus the Tormented
+//Miasma
+//Mistral
+//Pyre
+//Rend
+//Reptalon
+//Tempest
+
+[SPAWN spawn_Paroxysmus]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Palace of Paroxysmus
+ID=c_slime_corrosive        14
+ID=c_hellhound              13
+ID=c_elemental_earth        12
+ID=c_demon                  12
+ID=c_hellhound_leader       11
+ID=c_demon_arcane           11
+ID=c_demon_chaos            10
+ID=c_plague_spawn            8
+ID=c_slith_toxic             7
+ID=c_elemental_acid          7
+ID=c_succubus                6
+ID=c_demon_moloch            6
+ID=c_plague_beast            5
+ID=c_plague_beast_lord       4
+ID=c_elemental_poison        3
+ID=c_demon_balron
+
+[SPAWN spawn_PrismOfLight]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Prism of Light
+ID=c_slime_crystal           7
+ID=c_fetid_essence           6
+ID=c_corporeal_brume         6
+ID=c_mantra_effervescent     6
+ID=c_crystal_elemental       5
+ID=c_demon_crystal           4
+ID=c_wisp_crystal            3
+ID=c_dragon_crystaldrake     2
+ID=c_hydra_crystal           1
+ID=c_crystal_lattice_seeker  1
+
+[SPAWN spawn_Solen_Hive]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Solen Hive
+ID=c_solen_worker            7
+ID=c_solen_warrior           5
+ID=c_solen_queen             3
+
+[SPAWN spawn_TwistedWeald]
+CATEGORY=Spawn Groups
+SUBSECTION=Dungeons
+DESCRIPTION=Twisted Weald Monsters
+ID=c_wolf_dire              11
+ID=c_changeling             10
+ID=c_quagmire                9
+ID=c_corpser                 8
+ID=c_dryad                   7
+ID=c_pixie                   6
+ID=c_wisp_dark               5
+ID=c_satyr                   4
+ID=c_spider_dread            3
+ID=c_cu_sidhe
+ID=c_spider_lord             1
+
+[EOF]

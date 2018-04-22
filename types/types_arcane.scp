@@ -1,3 +1,9 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
 [TYPEDEF t_gem_arcane]
 // An Arcane Gem can be used on certain clothing (robe, cape, thigh boots, or
 // leather gloves) to make that clothing "arcane".  When Arcane clothing is

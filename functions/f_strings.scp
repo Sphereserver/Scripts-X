@@ -1,3 +1,9 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
 [FUNCTION f_strFirstLettersToUpper]
 //in: yo bro
 //out: Yo Bro

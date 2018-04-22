@@ -1,3 +1,9 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
 ////////////////////////////////////////////////////////////////////////////////////////////
 //New .add dialog (SQLite version)
 //Author: Xun
@@ -511,4 +517,5 @@ new.morep=<argv[3]>,<argv[4]>,<argv[5]>
 new.attr=0b0
 new.p=<targp>
 new.timer=1
+
 [EOF]

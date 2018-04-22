@@ -1,0 +1,441 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[SPAWN spawn_Demons]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Demons
+ID=c_demon_horde_minion   23
+ID=c_imp                  22
+ID=c_demon                21
+ID=c_demon_arcane         20
+ID=c_gargoyle             19
+ID=c_gargoyle_enforcer    18
+ID=c_gibberling           17
+ID=c_gargoyle_enslaved    16
+ID=c_demon_chaos          15
+ID=c_maddening_horror     14
+ID=c_ravager              13
+ID=c_demon_horde_large    12
+ID=c_gargoyle_undead      11
+ID=c_demon_ice            10
+ID=c_gargoyle_fire         9
+ID=c_gargoyle_stone        8
+ID=c_demon_moloch          7
+ID=c_succubus              6
+ID=c_fan_dancer            5
+ID=c_tsuki_wolf            4
+ID=c_gargoyle_destroyer    3
+ID=c_devourer_souls        2
+ID=c_demon_balron          1
+//ID=c_demon_exodus        1
+
+[SPAWN spawn_Dragons]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Dragons
+ID=c_wyvern               13
+ID=c_serpentine_dragon    12
+ID=c_kepetch              11
+ID=c_dragon_wolf          10
+ID=c_drake                 9
+ID=c_drake_red             9
+ID=c_dragon_greendrake     9
+ID=c_dragon_bluedrake      9
+ID=c_dragon_crystaldrake   8
+ID=c_dragon_copperdrake    8
+ID=c_dragon_silverdrake    8
+ID=c_dragon_blackdrake     7
+ID=c_dragon_fairy          7
+ID=c_dragon_golddrake      6
+ID=c_dragon                4
+ID=c_dragon_red            4
+ID=c_dragon_ice            4
+ID=c_skeletal_dragon       4
+ID=c_dragon_greater        4
+ID=c_wyrm_shadow           4
+ID=c_hydra                 4
+ID=c_reptalon
+ID=c_dragon_crystal        2
+ID=c_dragon_wyrm           1
+ID=c_wyrm_white            1
+ID=c_wyrm_ancient          1
+ID=c_reptile_lord          1
+
+[SPAWN spawn_Elems]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Elementals
+ID=c_elemental_sand_vortex  15
+ID=c_elemental_air          10
+ID=c_elemental_earth        10
+ID=c_elemental_fire         10
+ID=c_elemental_water        10
+ID=c_elemental_ice           9
+ID=c_rai_ju                  8
+ID=c_kaze_kemono             7
+ID=c_crystal_elemental       7
+ID=c_efreet                  6
+ID=c_elemental_acid          5
+ID=c_elemental_snow          4
+ID=c_elemental_poison        3
+ID=c_elemental_lava          2
+ID=c_elemental_blood         1
+
+[SPAWN spawn_Fey]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Fey Monsters
+ID=c_squirrel               17
+ID=c_doe                    16
+ID=c_stag                   15
+ID=c_demon_horde_minion     14
+ID=c_skittering_hopper      14
+ID=c_gazer_larva            13
+ID=c_vampire_bat            12
+ID=c_bogle                  11
+ID=c_spider_giant           11
+ID=c_harpy                  11
+ID=c_changeling             10
+ID=c_bake_kitsune            9
+ID=c_pixie                   8
+ID=c_treefellow              8
+ID=c_dryad                   8
+ID=c_reaper                  8
+ID=c_wisp                    7
+ID=c_wisp_dark               6
+ID=c_kaze_kemono             6
+ID=c_unicorn
+ID=c_satyr                   5
+ID=c_demon_horde_large       5
+ID=c_reaper_redux            4
+ID=c_mimic                   3
+ID=c_tsuki_wolf              3
+ID=c_centaur                 2
+ID=c_dragon_fairy            1
+ID=c_ethereal_warrior        1
+
+[SPAWN spawn_Gargoyles]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Gargoyles
+ID=c_gargoyle              6
+ID=c_gargoyle_enslaved     5
+ID=c_gargoyle_enforcer     4
+ID=c_gargoyle_undead       3
+ID=c_gargoyle_fire         2
+ID=c_gargoyle_stone        2
+ID=c_gargoyle_destroyer    1
+
+[SPAWN spawn_Gazers]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Gazers
+ID=c_gazer_larva           3
+ID=c_gazer                 2
+ID=c_gazer_elder           1
+
+[SPAWN spawn_Giants]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Giants
+ID=c_ogre                 10
+ID=c_ettin                10
+ID=c_ettin_w_hammer       10
+ID=c_ettin_lord           10
+ID=c_frost_ettin          10
+ID=c_frost_troll          10
+ID=c_troll                 8
+ID=c_troll_w_axe           8
+ID=c_frost_troll           8
+ID=c_cyclops               5
+ID=c_cyclops_king          4
+ID=c_titan                 2
+ID=c_ogre_lord             1
+
+[SPAWN spawn_Goblins]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Goblins
+ID=c_goblin_shaman         6
+ID=c_goblin_gray_mage      6
+ID=c_goblin_gray           4
+ID=c_goblin_lord           4
+ID=c_goblin_chief          2
+//ID=c_goblin_green          1
+
+[SPAWN spawn_Insects]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Insects
+ID=c_scorpion_clockwork    9
+ID=c_scorpion_giant        9
+ID=c_deathwatch_beetle     8
+ID=c_solen_worker          7
+ID=c_giant_beetle
+ID=c_beetle_fire
+ID=c_fire_ant              5
+ID=c_solen_warrior         4
+ID=c_solen_queen           3
+ID=c_rune_beetle           2
+ID=c_ant_lion              2
+ID=c_beetle_iron           1
+
+[SPAWN spawn_Juka]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Juka
+ID=c_juka_mage             3
+ID=c_juka_warrior          2
+ID=c_juka_lord             1
+
+[SPAWN spawn_Lizardmen]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Lizard Men
+ID=c_lizardman             1
+ID=c_lizardman_mace        1
+ID=c_lizardman_spear       1
+
+[SPAWN spawn_Meer]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Meer
+ID=c_meer_warrior          4
+ID=c_meer_captain          3
+ID=c_meer_mage             2
+ID=c_meer_eternal          1
+
+[SPAWN spawn_Ophidians]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Ophidians
+ID=c_ophidian_justicar     5
+ID=c_ophidian_shaman       4
+ID=c_ophidian_warrior      3
+ID=c_ophidian_avenger      2
+ID=c_ophidian_queen        1
+
+[SPAWN spawn_Orcs]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Orcs
+ID=c_orc                   8
+ID=c_orc_w_club            8
+ID=c_orc_scout             7
+ID=c_orc_mage              5
+ID=c_orc_chopper           3
+ID=c_orc_lord              2
+ID=c_orc_captain           2
+ID=c_orc_bomber            2
+ID=c_orc_brute             1
+
+[SPAWN spawn_RatMen]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=RatMen
+ID=c_rat
+ID=c_rat_giant
+ID=c_ratman                2
+ID=c_ratman_w_mace         2
+ID=c_ratman_w_sword        2
+ID=c_ratman_archer         1
+ID=c_ratman_mage           1
+
+[SPAWN spawn_Scorpion]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Scorpions
+ID=c_scorpion_giant        5
+ID=c_scorpion_thrall       4
+ID=c_scorpion_prince       3
+ID=c_scorpion_king         2
+ID=c_scorpion_queen        1
+
+[SPAWN spawn_Slimes]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Slimes
+ID=c_slime                 2
+ID=c_slime_corrosive       1
+
+[SPAWN spawn_Solen]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Solen
+ID=c_solen_worker          7
+ID=c_solen_warrior         5
+ID=c_solen_queen           3
+
+[SPAWN spawn_Spiders]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Spiders
+ID=c_spider_giant          6
+ID=c_spider_frost          5
+ID=c_spider_trapdoor       4
+ID=c_spider_dread          3
+ID=c_spider_wolf           2
+
+[SPAWN spawn_Sprites]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Sprites
+ID=c_sprite_sprite         8
+ID=c_sprite_mage           8
+ID=c_sprite_sorc           8
+ID=c_sprite_archer         8
+ID=c_sprite_assassin       6
+ID=c_sprite_witch          4
+ID=c_sprite_necro          2
+ID=c_sprite_paladin        1
+
+[SPAWN spawn_Terathans]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Terathans
+ID=c_terathan_drone        5
+ID=c_terathan_warrior      4
+ID=c_terathan_matriarch    3
+ID=c_terathan_assassin     2
+ID=c_terathan_avenger      1
+
+[SPAWN spawn_Ore_Elementals]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Ore Elementals
+ID=c_elemental_ore_copper      8
+ID=c_elemental_ore_copper_dull 7
+ID=c_elemental_ore_gold        6
+ID=c_elemental_ore_agapite     5
+ID=c_elemental_ore_bronze      4
+ID=c_elemental_ore_shadow      3
+ID=c_elemental_ore_valorite    2
+ID=c_elemental_ore_verite      1
+
+[SPAWN spawn_Undead_Weak]
+CATEGORY=Spawn Groups
+SUBSECTION=Undead
+DESCRIPTION=Weak Undead
+ID=c_zombie                7
+ID=c_vampire_bat           6
+ID=c_skeleton              6
+ID=c_skeleton_w_axe        6
+ID=c_skeleton_w_sword      6
+ID=c_skeletonarcher        4
+ID=c_ghoul                 3
+ID=c_spectre               3
+ID=c_bogle                 3
+ID=c_skeleton_mage         3
+ID=c_gore_fiend            1
+
+[SPAWN spawn_Undead_Strong]
+CATEGORY=Spawn Groups
+SUBSECTION=Undead
+DESCRIPTION=Strong Undead
+ID=c_ghost                14
+ID=c_wraith               14
+ID=c_phantom              14
+ID=c_flesh_golem          14
+ID=c_wailing_banshee      14
+ID=c_skeletal_mount
+ID=c_patchwork_skeleton   12
+ID=c_skeleton_knight      11
+ID=c_revenant_lion        10
+ID=c_lich                  9
+ID=c_lady_of_snow          9
+ID=c_dream_wraith          9
+ID=c_gargoyle_undead       8
+ID=c_mummy                 7
+ID=c_vampire               5
+ID=c_rotting_corpse        4
+ID=c_lich_lord             3
+ID=c_lich_ancient          2
+ID=c_lich_primeval         1
+ID=c_skeletal_dragon       1
+
+[SPAWN spawn_Undead_All]
+CATEGORY=Spawn Groups
+SUBSECTION=Undead
+DESCRIPTION=All Undead
+ID=c_zombie               17
+ID=c_skeleton             16
+ID=c_skeleton_w_axe       16
+ID=c_skeleton_w_sword     16
+ID=c_skeletonarcher       14
+ID=c_spectre              13
+ID=c_bogle                13
+ID=c_skeleton_mage        13
+ID=c_ghoul                13
+ID=c_gore_fiend           11
+ID=c_ghost                10
+ID=c_wraith               10
+ID=c_phantom              10
+ID=c_flesh_golem          10
+ID=c_wailing_banshee      10
+ID=c_skeletal_mount
+ID=c_patchwork_skeleton   14
+ID=c_skeleton_knight       7
+ID=c_revenant_lion         7
+ID=c_lady_of_snow          6
+ID=c_mummy                 6
+ID=c_lich                  6
+ID=c_dream_wraith          9
+ID=c_gargoyle_undead       8
+ID=c_vampire               4
+ID=c_rotting_corpse        3
+ID=c_lich_lord             2
+ID=c_lich_ancient          2
+ID=c_lich_primeval         1
+ID=c_skeletal_dragon       1
+
+[comment SPAWN spawn_Void]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Void Monsters
+//ID=c_wanderer_void         1
+
+[SPAWN spawn_Worms]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Worms
+ID=c_rotworm               2
+ID=c_bloodworm             1
+
+[SPAWN spawn_Yomotsu]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Yomotsu
+ID=c_yomotsu_warrior       4
+ID=c_yomotsu_priest        4
+ID=c_yomotsu_elder         1
+
+[SPAWN spawn_Minotaurs]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Minotaurs
+ID=c_tormented_minotaur    4
+ID=c_minotaur              3
+ID=c_minotaur_scout        2
+ID=c_minotaur_captain      1
+//ID=c_minotaur_lord         1
+
+[SPAWN spawn_Snakes]
+CATEGORY=Spawn Groups
+SUBSECTION=Monsters
+DESCRIPTION=Snakes
+ID=c_snake                 8
+ID=c_lava_snake            7
+ID=c_snake_giant           4
+//ID=c_serpent_ice           4
+ID=c_serpent_silver        3
+ID=c_maddening_horror      3
+ID=c_kepetch               2
+ID=c_kepetch_shorn         2
+ID=c_serpent_lava          1
+
+
+[EOF]

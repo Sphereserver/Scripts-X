@@ -1,0 +1,218 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[SPAWN spawn_Animals]
+CATEGORY=Spawn Groups
+SUBSECTION=Animals
+DESCRIPTION=All Animals
+ID=c_alligator
+ID=c_alligator_small
+ID=c_bear_black
+ID=c_bear_brown
+ID=c_bear_grizzly
+ID=c_bear_polar
+ID=c_boura
+ID=c_bull_brown_dk
+ID=c_bull_brown_lt
+ID=c_bullfrog
+ID=c_cat
+ID=c_chicken
+ID=c_chicken_lizard
+ID=c_cougar
+ID=c_cow_brown
+ID=c_cow_bw
+ID=c_crane
+ID=c_doe
+ID=c_dog
+ID=c_eagle
+ID=c_ferret
+ID=c_goat
+ID=c_goat_mountain
+ID=c_gorilla
+ID=c_lava_snake
+ID=c_leopard
+ID=c_leopard_snow
+ID=c_llama
+ID=c_panther
+ID=c_pig
+ID=c_pig_big
+ID=c_rabbit
+ID=c_rat
+ID=c_rat_giant
+ID=c_rat_sewer
+ID=c_sheep_woolly
+ID=c_skittering_hopper
+ID=c_snake
+ID=c_squirrel
+ID=c_stag
+ID=c_toad_giant
+ID=c_turkey
+ID=c_turkey_giant
+ID=c_walrus
+ID=c_wisp
+ID=c_wisp_dark
+ID=c_wolf_dark
+ID=c_wolf_dire
+ID=c_wolf_grey
+ID=c_wolf_silver
+ID=c_wolf_timber
+ID=c_wolf_white
+
+[SPAWN spawn_Birds]
+CATEGORY=Spawn Groups
+SUBSECTION=Animals
+DESCRIPTION=Birds
+ID=c_bird               10
+ID=c_crane
+ID=c_eagle
+//ID=c_parrot
+ID=c_turkey
+
+[SPAWN spawn_WaterCreatures]
+CATEGORY=Spawn Groups
+SUBSECTION=Animals
+DESCRIPTION=Water Creatures
+ID=c_kappa
+ID=c_dolphin
+ID=c_elemental_water
+ID=c_kraken
+ID=c_sea_serpent
+ID=c_sea_serpent_deep
+
+[SPAWN spawn_ForestAnimals]
+CATEGORY=Spawn Groups
+SUBSECTION=Animals
+DESCRIPTION=Forest Animals
+ID=c_bear_brown
+ID=c_bird
+ID=c_cougar
+ID=c_doe
+ID=c_eagle
+ID=c_gorilla
+ID=c_jackrabbit
+ID=c_rabbit
+ID=c_rat
+ID=c_skittering_hopper
+ID=c_snake
+ID=c_squirrel
+ID=c_stag
+ID=c_wolf_dark
+ID=c_wolf_dire
+ID=c_wolf_silver
+ID=c_wolf_timber
+
+[SPAWN spawn_FarmAnimals]
+CATEGORY=Spawn Groups
+SUBSECTION=Animals
+DESCRIPTION=Farm Animals
+ID=c_bull_brown_dk
+ID=c_bull_brown_lt
+ID=c_chicken
+ID=c_cow_brown
+ID=c_cow_bw
+ID=c_goat
+ID=c_horse_brown_dk
+ID=c_horse_brown_lt
+ID=c_horse_gray
+ID=c_horse_tan
+ID=c_llama
+ID=c_pig
+ID=c_sheep_woolly
+ID=c_turkey
+
+[SPAWN spawn_JungleCreatures]
+CATEGORY=Spawn Groups
+SUBSECTION=Animals
+DESCRIPTION=Jungle Creatures
+ID=c_bear_black
+ID=c_bird
+ID=c_crane
+ID=c_ferret
+ID=c_gorilla
+ID=c_horse_gray
+ID=c_leopard
+ID=c_panther
+//ID=c_parrot
+ID=c_pig_big
+ID=c_slime
+ID=c_snake
+ID=c_wolf_dark
+ID=c_wolf_grey
+ID=c_wolf_silver
+
+[SPAWN spawn_SwampCreatures]
+CATEGORY=Spawn Groups
+SUBSECTION=Animals
+DESCRIPTION=Swamp Creatures
+ID=c_alligator
+ID=c_alligator_small
+ID=c_bird
+ID=c_bullfrog
+ID=c_chicken_lizard
+ID=c_crane
+ID=c_kappa
+ID=c_rat
+ID=c_rat_giant
+ID=c_slime
+ID=c_snake
+ID=c_swamp_tentacles
+ID=c_toad_giant
+
+[SPAWN spawn_CityAnimals]
+CATEGORY=Spawn Groups
+SUBSECTION=Animals
+DESCRIPTION=City Animals
+ID=c_bird
+ID=c_cat
+ID=c_dog
+
+[SPAWN spawn_MountainAnimals]
+CATEGORY=Spawn Groups
+SUBSECTION=Animals
+DESCRIPTION=Mountain Animals
+ID=c_eagle                  13
+ID=c_goat_mountain          13
+ID=c_horse_brown_lt
+
+[SPAWN spawn_CaveAnimals]
+CATEGORY=Spawn Groups
+SUBSECTION=Animals
+DESCRIPTION=Cave Animals
+ID=c_rat                    19
+ID=c_bear_grizzly           16
+
+[SPAWN spawn_IceAnimals]
+CATEGORY=Spawn Groups
+SUBSECTION=Animals
+DESCRIPTION=Ice Animals
+ID=c_walrus                 15
+ID=c_leopard_snow           13
+ID=c_wolf_white             13
+ID=c_bear_polar
+ID=c_ice_snake              14
+
+[SPAWN spawn_PlainsAnimals]
+CATEGORY=Spawn Groups
+SUBSECTION=Animals
+DESCRIPTION=Plains Animals
+ID=c_rabbit                 14
+ID=c_ferret                 14
+ID=c_eagle                  13
+ID=c_snake                  13
+ID=c_horse_tan
+ID=c_goat
+ID=c_horse_brown_dk
+ID=c_horse_brown_lt
+ID=c_horse_gray
+ID=c_horse_tan
+ID=c_wolf_silver            10
+ID=c_bird_crow
+ID=c_bird_raven
+ID=c_bird
+ID=c_boura
+ID=c_boura_armoured
+
+[EOF]
