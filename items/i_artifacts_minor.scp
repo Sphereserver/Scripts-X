@@ -62,7 +62,7 @@ ON=@Create
 [ITEMDEF i_bow_juka_king]
 ID=i_bow
 NAME=Bow of the Juka King
-TAG.SlayerGroup=REPTILE
+SLAYER=faction_reptile
 HitMagicArrow=25
 IncreaseHitChance=15
 IncreaseDam=40
@@ -262,7 +262,7 @@ ON=@ClientTooltip
 [ITEMDEF i_gwennos_harp]
 ID=i_harp_large
 NAME=Gwenno's Harp
-TAG.SlayerGroup=REPOND,REPTILE
+SLAYER=slayer_repond|slayer_reptile
 CATEGORY=Artifacts
 SUBSECTION=Minor Artifacts
 DESCRIPTION=Gwenno's Harp
@@ -322,7 +322,7 @@ ON=@Create
 [ITEMDEF i_iolos_lute]
 ID=i_lute
 NAME=Iolo's Lute
-TAG.SlayerGroup=DEMON,UNDEAD
+SLAYER=slayer_demon|slayer_undead
 CATEGORY=Artifacts
 SUBSECTION=Minor Artifacts
 DESCRIPTION=Iolo's Lute
@@ -358,7 +358,7 @@ ON=@Create
 [ITEMDEF i_night_kiss]
 ID=i_dagger
 NAME=Night's Kiss
-TAG.SlayerGroup=REPOND
+SLAYER=slayer_repond
 HitLeechLife=40
 IncreaseSwingSpeed=30
 IncreaseDam=35
@@ -441,7 +441,7 @@ ON=@ClientToolTip
 [ITEMDEF i_pixie_swatter]
 ID=i_scepter
 NAME=Pixie Swatter
-TAG.SlayerGroup=FEY
+SLAYER=slayer_fey
 HitAreaPoison=75
 IncreaseSwingSpeed=30
 RESFIRE=12
@@ -765,7 +765,7 @@ HitLeechLife=40
 HitLeechMana=40
 HitLeechStam=40
 IncreaseSwingSpeed=60
-TAG.SlayerGroup=REPOND
+SLAYER=slayer_repond
 TEVENTS=t_equipitem
 CATEGORY=Artifacts
 SUBSECTION=Minor Artifacts
