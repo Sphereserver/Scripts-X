@@ -13,6 +13,9 @@ VALUE=37000
 REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
 TSPEECH=spk_house_cmds
 DUPELIST=065
+BaseStorage=489
+BaseVendors=10
+//LockdownPercent=50
 CATEGORY=Multis
 SUBSECTION=Houses
 DESCRIPTION=Stone and Plaster House
@@ -33,6 +36,9 @@ VALUE=37000
 REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
 TSPEECH=spk_house_cmds
 DUPELIST=067
+BaseStorage=489
+BaseVendors=10
+//LockdownPercent=50
 CATEGORY=Multis
 SUBSECTION=Houses
 DESCRIPTION=Field Stone House
@@ -53,6 +59,9 @@ VALUE=36750
 REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
 TSPEECH=spk_house_cmds
 DUPELIST=069
+BaseStorage=489
+BaseVendors=10
+//LockdownPercent=50
 CATEGORY=Multis
 SUBSECTION=Houses
 DESCRIPTION=Small Brick House
@@ -73,6 +82,9 @@ VALUE=35250
 REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
 TSPEECH=spk_house_cmds
 DUPELIST=06b
+BaseStorage=489
+BaseVendors=10
+//LockdownPercent=50
 CATEGORY=Multis
 SUBSECTION=Houses
 DESCRIPTION=Wooden House
@@ -93,6 +105,9 @@ VALUE=36750
 REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
 TSPEECH=spk_house_cmds
 DUPELIST=06d
+BaseStorage=489
+BaseVendors=10
+//LockdownPercent=50
 CATEGORY=Multis
 SUBSECTION=Houses
 DESCRIPTION=Wood and Plaster House
@@ -113,6 +128,9 @@ VALUE=36750
 REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
 TSPEECH=spk_house_cmds
 DUPELIST=06f
+BaseStorage=489
+BaseVendors=10
+//LockdownPercent=50
 CATEGORY=Multis
 SUBSECTION=Houses
 DESCRIPTION=Thatched-Roof Cottage
@@ -124,6 +142,118 @@ COMPONENT=i_sign_brass_2,2,4,5
 //Thatched-roof cottage
 DUPEITEM=06e
 
+[MULTIDEF 0a0]
+DEFNAME=m_small_stone_workshop
+NAME=Small stone workshop
+NAMELOC=1011321	//Small stone workshop
+TYPE=t_multi
+VALUE=50500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+BaseStorage=489
+BaseVendors=10
+//LockdownPercent=50
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=Small Stone Workshop
+MULTIREGION=-3,-3,3,4
+COMPONENT=067b,-2,0,27	//metal door
+COMPONENT=i_sign_brass_2,3,4,7
+
+[MULTIDEF 0a2]
+DEFNAME=m_small_marble_workshop
+NAME=Small marble workshop
+NAMELOC=1011322	//Small marble workshop
+TYPE=t_multi
+VALUE=52500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+BaseStorage=489
+BaseVendors=10
+//LockdownPercent=50
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=Small Marble Workshop
+MULTIREGION=-3,-3,3,4
+COMPONENT=067b,-2,0,24	//metal door
+COMPONENT=i_sign_brass_2,3,4,5
+
+[MULTIDEF 098]
+DEFNAME=m_small_stone_tower
+NAME=Small stone tower
+NAMELOC=1011317	//Small stone tower
+TYPE=t_multi
+VALUE=73500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+BaseStorage=667
+BaseVendors=14
+//LockdownPercent=50
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=Small Stone Tower
+MULTIREGION=-3,-3,4,4
+COMPONENT=i_door_metal,3,3,6
+COMPONENT=i_sign_brass_2,1,4,5
+
+[MULTIDEF 09a]
+DEFNAME=m_two_story_log_cabin
+NAME=Two-story log cabin
+NAMELOC=1011318	//Two-story log cabin
+TYPE=t_multi
+VALUE=81750
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+BaseStorage=1265
+BaseVendors=24
+//LockdownPercent=50
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=Two-Story Log Cabin
+MULTIREGION=-3,-6,4,7
+COMPONENT=i_door_wood_3,1,4,8
+COMPONENT=i_door_wood_3,1,0,29
+COMPONENT=i_sign_brass_2,4,7,9
+
+[MULTIDEF 09c]
+DEFNAME=m_sandstone_house_with_patio
+NAME=Sandstone house with patio
+NAMELOC=1011320	//Sandstone house with patio
+TYPE=t_multi
+VALUE=76500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+BaseStorage=1265
+BaseVendors=24
+//LockdownPercent=50
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=Sandstone House with Patio
+MULTIREGION=-5,-4,6,4
+COMPONENT=i_door_wood_2,-1,3,6
+COMPONENT=i_sign_brass_2,2,4,1
+
+[MULTIDEF 09e]
+DEFNAME=m_two_story_villa
+NAME=Two-story villa
+NAMELOC=1011319	//Two-story villa
+TYPE=t_multi
+VALUE=113750
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+BaseStorage=1265
+BaseVendors=24
+//LockdownPercent=50
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=Two-Story Villa
+MULTIREGION=-5,-5,5,6
+COMPONENT=i_door_wood,-3,-1,25
+COMPONENT=06b3,1,0,25	//wooden door
+COMPONENT=i_door_wood,3,1,5
+COMPONENT=06a7,4,1,5	//wooden door
+COMPONENT=i_sign_brass_2,1,6,3
+
 [MULTIDEF 074]
 DEFNAME=m_brick_house
 NAME=Brick house
@@ -133,6 +263,9 @@ VALUE=131500
 REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
 TSPEECH=spk_house_cmds
 DUPELIST=075
+BaseStorage=1576
+BaseVendors=28
+//LockdownPercent=50
 CATEGORY=Multis
 SUBSECTION=Houses
 DESCRIPTION=Brick House
@@ -193,6 +326,56 @@ COMPONENT=i_sign_brass_2,1,7,5
 //Two-story stone and plaster house
 DUPEITEM=078
 
+[MULTIDEF 087]
+//Large house with patio
+DUPEITEM=08c
+
+[MULTIDEF 08c]
+DEFNAME=m_large_house_with_patio
+NAME=Large house with patio
+NAMELOC=1011315	//Large house with patio
+TYPE=t_multi
+VALUE=129250
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+DUPELIST=087,08d
+BaseStorage=1576
+BaseVendors=28
+//LockdownPercent=50
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=Large House with Patio
+MULTIREGION=-7,-7,7,7
+COMPONENT=i_door_wood,4,-1,7
+COMPONENT=06ad,1,4,7	//wooden door
+COMPONENT=06ad,1,-4,7	//wooden door
+COMPONENT=06a7,-3,6,7	//wooden door
+COMPONENT=i_door_wood,-4,6,7
+COMPONENT=i_sign_brass_2,0,7,5
+
+[MULTIDEF 08d]
+//Large house with patio
+DUPEITEM=08c
+
+[MULTIDEF 096]
+DEFNAME=m_marble_house_with_patio
+NAME=Marble house with patio
+NAMELOC=1011316	//Marble house with patio
+TYPE=t_multi
+VALUE=160500
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+BaseStorage=1576
+BaseVendors=28
+//LockdownPercent=50
+CATEGORY=Multis
+SUBSECTION=Houses
+DESCRIPTION=Marble House with Patio
+MULTIREGION=-7,-7,7,7
+COMPONENT=i_door_metal,-4,3,4
+COMPONENT=0677,-3,3,4	//metal door
+COMPONENT=i_sign_brass_2,0,7,0
+
 [MULTIDEF 07a]
 DEFNAME=m_tower
 NAME=Tower
@@ -202,6 +385,9 @@ VALUE=366500
 REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
 TSPEECH=spk_house_cmds
 DUPELIST=07b
+BaseStorage=2437
+BaseVendors=42
+//LockdownPercent=50
 CATEGORY=Multis
 SUBSECTION=Houses
 DESCRIPTION=Tower
@@ -226,6 +412,9 @@ VALUE=572750
 REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
 TSPEECH=spk_house_cmds
 DUPELIST=07d
+BaseStorage=3019
+BaseVendors=52
+//LockdownPercent=50
 CATEGORY=Multis
 SUBSECTION=Houses
 DESCRIPTION=Small Stone Keep
@@ -247,6 +436,9 @@ VALUE=865250
 REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
 TSPEECH=spk_house_cmds
 DUPELIST=07f
+BaseStorage=4688
+BaseVendors=78
+//LockdownPercent=50
 CATEGORY=Multis
 SUBSECTION=Houses
 DESCRIPTION=Castle
@@ -264,143 +456,5 @@ COMPONENT=i_door_metal,-1,-11,6
 [MULTIDEF 07f]
 //Castle
 DUPEITEM=07e
-
-[MULTIDEF 087]
-//Large house with patio
-DUPEITEM=08c
-
-[MULTIDEF 08c]
-DEFNAME=m_large_house_with_patio
-NAME=Large house with patio
-NAMELOC=1011315	//Large house with patio
-TYPE=t_multi
-VALUE=129250
-REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
-TSPEECH=spk_house_cmds
-DUPELIST=087,08d
-CATEGORY=Multis
-SUBSECTION=Houses
-DESCRIPTION=Large House with Patio
-MULTIREGION=-7,-7,7,7
-COMPONENT=i_door_wood,4,-1,7
-COMPONENT=06ad,1,4,7	//wooden door
-COMPONENT=06ad,1,-4,7	//wooden door
-COMPONENT=06a7,-3,6,7	//wooden door
-COMPONENT=i_door_wood,-4,6,7
-COMPONENT=i_sign_brass_2,0,7,5
-
-[MULTIDEF 08d]
-//Large house with patio
-DUPEITEM=08c
-
-[MULTIDEF 096]
-DEFNAME=m_marble_house_with_patio
-NAME=Marble house with patio
-NAMELOC=1011316	//Marble house with patio
-TYPE=t_multi
-VALUE=160500
-REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
-TSPEECH=spk_house_cmds
-CATEGORY=Multis
-SUBSECTION=Houses
-DESCRIPTION=Marble House with Patio
-MULTIREGION=-7,-7,7,7
-COMPONENT=i_door_metal,-4,3,4
-COMPONENT=0677,-3,3,4	//metal door
-COMPONENT=i_sign_brass_2,0,7,0
-
-[MULTIDEF 098]
-DEFNAME=m_small_stone_tower
-NAME=Small stone tower
-NAMELOC=1011317	//Small stone tower
-TYPE=t_multi
-VALUE=73500
-REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
-TSPEECH=spk_house_cmds
-CATEGORY=Multis
-SUBSECTION=Houses
-DESCRIPTION=Small Stone Tower
-MULTIREGION=-3,-3,4,4
-COMPONENT=i_door_metal,3,3,6
-COMPONENT=i_sign_brass_2,1,4,5
-
-[MULTIDEF 09a]
-DEFNAME=m_two_story_log_cabin
-NAME=Two-story log cabin
-NAMELOC=1011318	//Two-story log cabin
-TYPE=t_multi
-VALUE=81750
-REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
-TSPEECH=spk_house_cmds
-CATEGORY=Multis
-SUBSECTION=Houses
-DESCRIPTION=Two-Story Log Cabin
-MULTIREGION=-3,-6,4,7
-COMPONENT=i_door_wood_3,1,4,8
-COMPONENT=i_door_wood_3,1,0,29
-COMPONENT=i_sign_brass_2,4,7,9
-
-[MULTIDEF 09c]
-DEFNAME=m_sandstone_house_with_patio
-NAME=Sandstone house with patio
-NAMELOC=1011320	//Sandstone house with patio
-TYPE=t_multi
-VALUE=76500
-REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
-TSPEECH=spk_house_cmds
-CATEGORY=Multis
-SUBSECTION=Houses
-DESCRIPTION=Sandstone House with Patio
-MULTIREGION=-5,-4,6,4
-COMPONENT=i_door_wood_2,-1,3,6
-COMPONENT=i_sign_brass_2,2,4,1
-
-[MULTIDEF 09e]
-DEFNAME=m_two_story_villa
-NAME=Two-story villa
-NAMELOC=1011319	//Two-story villa
-TYPE=t_multi
-VALUE=113750
-REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
-TSPEECH=spk_house_cmds
-CATEGORY=Multis
-SUBSECTION=Houses
-DESCRIPTION=Two-Story Villa
-MULTIREGION=-5,-5,5,6
-COMPONENT=i_door_wood,-3,-1,25
-COMPONENT=06b3,1,0,25	//wooden door
-COMPONENT=i_door_wood,3,1,5
-COMPONENT=06a7,4,1,5	//wooden door
-COMPONENT=i_sign_brass_2,1,6,3
-
-[MULTIDEF 0a0]
-DEFNAME=m_small_stone_workshop
-NAME=Small stone workshop
-NAMELOC=1011321	//Small stone workshop
-TYPE=t_multi
-VALUE=50500
-REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
-TSPEECH=spk_house_cmds
-CATEGORY=Multis
-SUBSECTION=Houses
-DESCRIPTION=Small Stone Workshop
-MULTIREGION=-3,-3,3,4
-COMPONENT=067b,-2,0,27	//metal door
-COMPONENT=i_sign_brass_2,3,4,7
-
-[MULTIDEF 0a2]
-DEFNAME=m_small_marble_workshop
-NAME=Small marble workshop
-NAMELOC=1011322	//Small marble workshop
-TYPE=t_multi
-VALUE=52500
-REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
-TSPEECH=spk_house_cmds
-CATEGORY=Multis
-SUBSECTION=Houses
-DESCRIPTION=Small Marble Workshop
-MULTIREGION=-3,-3,3,4
-COMPONENT=067b,-2,0,24	//metal door
-COMPONENT=i_sign_brass_2,3,4,5
 
 [EOF]

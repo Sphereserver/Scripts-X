@@ -605,4 +605,15 @@ faction_flame               0100000000
 faction_ice                 0200000000
 faction_wolf                0400000000
 
+[DEFNAME house_types]
+house_private=0
+house_public=1
+house_guild=2
+
+[DEFNAME house_transfer_types]
+transfer_nothing	= 0		// Do not transfer any item to the Moving Crate, the crate will still be moved if uid is given.
+transfer_lockdowns	= 01	// Transfer LockDowns
+transfer_addon		= 02	// Transfer Addons
+transfer_all		= 04	// Transfer LockDowns, Addons and every other item found inside a house that is not a component of it.
+
 [EOF]
