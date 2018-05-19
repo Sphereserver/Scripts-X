@@ -1,0 +1,161 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[SPEECH spk_player_house]
+ON=lock this*
+ref1 = <region.uid>
+if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
+	targetf, f_lock
+	sysmessage @,,1 What do you wish to lockdown?
+	return 1
+else
+	sysmessage @32,,1 You must be in your house to do that.
+	return 1
+endif
+
+ON=release this*
+ref1 = <region.uid>
+if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
+	targetf, f_unlock
+	sysmessage @,,1 What do you wish to release?
+	return 1
+else
+	sysmessage @32,,1 You must be in your house to do that.
+	return 1
+endif
+
+ON=secure this*
+ref1 = <region.uid>
+if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<isgm>)
+	targetf, f_secureitem
+	sysmessage @,,1 What do you wish to secure?
+	return 1
+else
+	sysmessage @32,,1 You must be in your house to do that.
+	return 1
+endif
+
+ON=move north*
+ref1 = <region.uid>
+if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
+	targetf, f_moven
+	sysmessage @,,1 What do you wish to move?
+	return 1
+else
+	sysmessage @32,,1 You must be in your house to do that.
+	return 1
+endif
+
+ON=move south*
+ref1 = <region.uid>
+if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
+	targetf, f_moves
+	sysmessage @,,1 What do you wish to move?
+	return 1
+else
+	sysmessage @32,,1 You must be in your house to do that.
+	return 1
+endif
+
+ON=move east*
+ref1 = <region.uid>
+if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
+	targetf, f_movee
+	sysmessage @,,1 What do you wish to move?
+	return 1
+else
+	sysmessage @32,,1 You must be in your house to do that.
+	return 1
+endif
+
+ON=move west*
+ref1 = <region.uid>
+if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
+	targetf, f_movew
+	sysmessage @,,1 What do you wish to move?
+	return 1
+else
+	sysmessage @32,,1 You must be in your house to do that.
+	return 1
+endif
+
+ON=release this*
+ref1 = <region.uid>
+if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
+	targetf, f_release
+	sysmessage @,,1 What do you wish to release?
+	return 1
+else
+	sysmessage @32,,1 You must be in your house to do that.
+	return 1
+endif
+
+ON=bank*
+if !<isgm>
+	if <def.can_bank>
+		ref1 = <region.uid>
+		if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
+			bankself
+			sysmessage You have <bankbalance> gold in your Bank Box
+		else
+			return 0
+		endif
+	endif
+else
+	bankself
+	return 0
+endif
+
+ON=eject*
+ref1 = <region.uid>
+if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>) 
+	targetf, f_eject
+else
+	return 0
+endif
+
+ON=Ban Person*
+ref1 = <region.uid>
+if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
+	targetf, f_add_list ban
+else
+	return 0
+endif
+
+ON=Place trashcan*
+ref1 = <region.uid>
+if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<isgm>)
+	if (<ref1.tag0.trashcan>)
+		sysmessage @32,,1 You already have a trashcan.
+		return 1
+	else
+		serv.newitem i_trashcan
+		new.p=<p>
+		new.attr=attr_move_never
+		ref1.tag0.trashcan=<new.uid>
+	endif
+else
+	return 0
+endif
+
+
+ON=Remove trashcan*
+ref1 = <region.uid>
+if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
+	if (<ref1.tag0.trashcan>)
+		try uid.<ref1.tag0.trashcan>.remove 
+		ref1.tag.trashcan
+	else
+		sysmessage @32,,1 You have no trashcan to remove.
+		return 1
+	endif
+else
+	return 0
+endif
+
+
+ON=house commands*
+sdialog d_house_commands

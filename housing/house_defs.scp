@@ -1,0 +1,147 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+// OSI Housing System created by Morinkushi(azmanomer)
+// Features:
+//		Put house up for sale via sign, Ideal for static buildings.
+//
+// Variable Property Tax: This will allow you to set regions to be cheaper/more expensive than the default, ideal for building player towns or charging for those high traffic zones like Britain.
+//			use this feature the def.maintenance_fee MUST be turned on.
+//			To set an area with a different rate simple go to that place and set region.tag.maintenance_override to the percentage figure you want.
+//			All houses placed in this area will be charge at that percent rather than the rate set in defs.
+//			Players can check a region's maintenance rate by using .rate
+//
+// Estate Tax:		This comes into effect when set to a number other than 0 (but lower than def.account_house_limit if set) and a player has MORE than this number of houses.
+//			def.estate_rate will be overridden by regional maintenance rates.
+//			Flate rate (def.estate_calc = 1) adds an extra def.estate_rate or regional maintenance rate to the cost to refresh a house when a player has more than <def.estate_tax> houses regardless of how many.
+//			Linear rate (def.estate_calc = 2) adds 1 def.estate_rate or regional maintenance rate for each house over <def.estate_tax> (gets more expensive with more houses)
+//
+//		To retain the house the player should use another character on the account and use the transfer ownership option on that character 
+//		(you can use this to transfer the house around the chars in account) BEFORE they delete the named character.
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+[DEFNAME housing_control]
+//general settings
+can_bank 		1 		// set to 1 to allow players to bank from home. (verbal command)(owner, co-owners & friends only)
+allow_custom 		1		// Allow players to convert to custom houses 0 to disable
+wipe_switch_lists 	1 		// if set to 1 access/ban lists are wiped when house is switched between private/public (helps reduce server memory)
+allow_sign_color 	1		// Allow player to change the color of their house signs.
+secure_locks_limit 	1		// Lockdowns & Secures Zero to turn off limitations
+custom_placement	0		//Overwrite hardcoded placement check. (Doesnt work right now)
+	
+//vendor settings
+house_list_vendors	0 	// set to 1 to allow players on house list to place vendors, 0 = owner only
+house_sell			0   //set to 0 if you dont want to allow sell houses.
+
+//Set these to the body types for vendors in your script
+vendor_deed_id		i_deed_vendor
+vendor_obody_male	c_h_vendor
+vendor_obody_female	c_h_vendor_f
+
+//Taxes & Fees 
+redeed_fee 		10	// Cost to redeed a house % of house value, zero disables.
+can_decay 		30 	// set to number of days for a house to decay, or set to 0 to disable
+property_tax		10	// Set to % figure of house value to pay for maintenance on houses, WORKS ONLY WHEN can_decay IS ON! zero disables.
+House_PlaceMinDistFront	5	// Minimum front distance allowed between placed houses. Default = 5
+House_PlaceMinDistArea	1	// Minimum area distance allowed between placed houses. Default = 1
+
+estate_tax 		2	// Extra charges for player with MORE than this many houses.  0 disables
+estate_rate 		10	// % per house over the estate_tax
+estate_calc 		1	// 1 = flat <def.estate_rate>% rate    2 = linear charge increase per house (1 over = + premium rate, 2 over = + premium rate*2, 3 over = + premium rate*3 e.t.c..) 
+
+buy_storage 		1 	// if set to 1 allows players to increase secure storage by up to 100% via house sign, 0 to disable
+
+//DO NOT ALTER THE FOLLOWING AFTER INITIAL SETUP!!! - - Doing so could cause problems when players go over these limits.
+max_friends 		20 	// DO NOT SET THIS ONE ABOVE 20 Dialog doesn't have extra pages for above that amount (actual number is set from building size)
+max_co_owners 		10 	// DO NOT SET THIS ONE ABOVE 10 Dialog is not set up for more than that amount (actual number is set from building size)
+
+//Available sign colors - Test colors only, set to suit your hues and tastes.
+sign_color_1 06d6
+sign_color_2 07ad
+sign_color_3 0641
+sign_color_4 0975
+sign_color_5 07a1
+sign_color_6 0770
+sign_color_7 079c
+sign_color_8 0455
+sign_color_9 0796
+sign_color_10 0665
+sign_color_11 07d1
+sign_color_12 0400
+sign_color_13 0750
+sign_color_14 0515
+sign_color_15 04de
+sign_color_16 0538
+sign_color_17 079b
+sign_color_18 04ab
+sign_color_19 04a9
+sign_color_20 04aa
+sign_color_21 0157
+sign_color_22 0676
+sign_color_23 0157
+sign_color_24 0235
+sign_color_25 06c0
+sign_color_26 04ac
+sign_color_27 0473
+sign_color_28 02e9
+sign_color_29 04a8
+sign_color_30 0490
+
+[DEFNAME signs]
+sign_1 9
+sign_2 29
+sign_3 54
+sign_4 90
+sign_5 147
+sign_6 169
+sign_7 177
+sign_8 204
+sign_9 251
+sign_10 257
+sign_11 263
+sign_12 298
+sign_13 347
+sign_14 424
+sign_15 441
+sign_16 466
+sign_17 514
+sign_18 600
+sign_19 601
+sign_20 602
+sign_21 603
+sign_22 660
+sign_23 666
+sign_24 672
+sign_25 898
+sign_26 970
+sign_27 974
+sign_28 982
+
+[defname house_access_level]
+house_access_owner      = 0
+house_access_coowner    = 1
+house_access_friend     = 2
+house_access_guild      = 3
+house_access_all        = 4
+
+[defname house_container_access_level]
+house_container_access_all         = 0
+house_container_access_friend     = 1
+house_container_access_coowner    = 2
+house_container_access_owner    = 3
+
+[DEFNAME house_types]
+house_private=0
+house_public=1
+house_guild=2
+
+[DEFNAME house_transfer_types]
+transfer_nothing	= 0		// Do not transfer any item to the Moving Crate, the crate will still be moved if uid is given.
+transfer_lockdowns	= 01	// Transfer LockDowns
+transfer_addon		= 02	// Transfer Addons
+transfer_all		= 04	// Transfer LockDowns, Addons and every other item found inside a house that is not a component of it.
+
