@@ -156,7 +156,7 @@ else
 endif
 name <link.name>
 link.tag.buildon=<serv.rtime>
-link.tag.transferred=<serv.rtime>
+link.tag.lasttransfer=<serv.rtime>
 REGION.EVENTS=+r_house_system
 
 

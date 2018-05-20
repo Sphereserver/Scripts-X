@@ -278,16 +278,15 @@ if <def.secure_locks_limit>)
 		sysmessage @32,,1 Your house reached its storage limit.
 		return
 	endif
-else
-	if (<argo.isitem> && <argo.region.uid>==<ref1>)
-		ref1.lockitem <argo>
-		if ((<argo.attr>&attr_decay) && (<argo.timer> >= 0))
-			argo.tag.decay=1
-			argo.timer -1
-			argo.attr &= ~attr_decay
-			if (<ref1.GetFriendPos <uid>> >= 0)
-				argo.tag.lockedby <uid>
-			endif
+endif
+if (<argo.isitem> && <argo.region.uid>==<ref1>)
+	ref1.lockitem <argo>
+	if ((<argo.attr>&attr_decay) && (<argo.timer> >= 0))
+		argo.tag.decay=1
+		argo.timer -1
+		argo.attr &= ~attr_decay
+		if (<ref1.GetFriendPos <uid>> >= 0)
+			argo.tag.lockedby <uid>
 		endif
 	endif
 endif
@@ -320,24 +319,24 @@ if !(<ref1.IsOwner <uid>> || (<ref1.GetCoownerPos <uid>> >= 0) || <IsGM>) // Dou
     return
 endif
 if <def.secure_locks_limit>)
-	if <ref1.currentstorage> >= <ref1.maxstorage> || (<eval <argo.count>+1>> >= <ref1.maxstorage>)
+	if (<ref1.currentstorage> >= <ref1.maxstorage>) || (<eval <argo.count>+1> >= <ref1.maxstorage>)
 		sysmessage @32,,1 Your house reached its storage limit.
 		return
 	endif
-else
-	if (<argo.isitem> && <argo.region.uid>==<ref1>)
-		if (<argo.iscontainer>)
-			ref1.secure <argo>
-			if ((<argo.attr>&attr_decay) && (<argo.timer> >= 0))
+endif
+if (<argo.isitem> && <argo.region.uid>==<ref1>)
+	if (<argo.iscontainer>)
+		ref1.secure <argo>
+		if ((<argo.attr>&attr_decay) && (<argo.timer> >= 0))
 			argo.tag.decay=1
 			argo.timer -1
 			argo.attr &= ~attr_decay
-			endif
-		else
-			sysmessage @32,,1 You can only secure containers.
 		endif
+	else
+		sysmessage @32,,1 You can only secure containers.
 	endif
 endif
+
 
 [function f_d_secure]
 ref1= <argo.region.uid>
