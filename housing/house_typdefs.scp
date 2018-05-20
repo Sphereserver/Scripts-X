@@ -471,9 +471,6 @@ ON=@HouseDesignCommit
 ON=@HouseDesignExit
 	SYSMESSAGE @,,1 You have left house design mode.
 	events -e_house_customize
-	forplayers 20
-	update
-	endfor
 	RETURN 2
 
 [EVENTS e_moving_crate]
@@ -493,7 +490,7 @@ for 0 <eval <houses>-1>
 	ref1=<house.<dlocal._for>.MovingCrate>
 	if (<ref1>)
 		ref1.attr |= attr_invis
-		ref1.p <link.p>
+		ref1.p <ref1.link.p>
 		ref1.move 0 0 -20
 	endif
 endfor
