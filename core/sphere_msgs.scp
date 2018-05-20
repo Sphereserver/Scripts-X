@@ -130,6 +130,7 @@ EMOTE_DEF_UNICODE	0
 //cont_magic					"The item bounces out of the magic container"
 //cont_toosmall					"The container is too small for that"
 //corpse_name					"%s of %s"
+//deed_name                          "Deed to a %s"
 //detecthidden_succ				"You find %s"
 //drink_cantmove				"You can't move the item."
 //drink_potion_delay			"You can't drink another potion yet"
