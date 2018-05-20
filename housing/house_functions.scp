@@ -15,6 +15,24 @@ for 0 254
 endfor
 src.p <local.p>
 
+[FUNCTION f_house_placement]
+SERV.NEWITEM i_gold
+NEW.TYPE=t_deed
+NEW.MORE1=<ARGS>
+NEW.CONT <SRC.FINDLAYER.21>
+NEW.REMOVEFROMVIEW
+NEW.USE
+
+[FUNCTION HouseIsPlaced]
+SERV.NEWITEM i_gold
+NEW.P <STREAT <STREAT <ARGS>>>
+NEW.REMOVEFROMVIEW
+REF1=<NEW.REGION.UID>
+IF (<REF1.DISPID>==<STRARG <ARGS>>)
+ REF1.TAG.PLACEMENT=<STRARG <STREAT <ARGS>>>
+ENDIF
+NEW.REMOVE
+
 [function f_house_timer_activate]
 foritems 7168
 	if (<type>==t_multi) || (<type>==t_multi_custom)

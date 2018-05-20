@@ -133,6 +133,15 @@ ON=@PickUp_Self
 if <count> <= 1
 	remove
 endif
+
+on @destroy
+ref1 = <link.owner>
+if <ref1.isevent.e_moving_crate>
+	ref1.events -e_moving_crate
+endif
+
+on @create
+attr |= attr_invis
  
 [TYPEDEF t_house_secure]
 ON=@Destroy // When destroyed, the item must be unlinked from the house.
@@ -265,81 +274,45 @@ link.delfriend -1
 link.resendtooltip 1
 
 [TYPEDEF t_deed]
-ON=@Targon_Ground
-
-[TYPEDEF t_owneronly]
-ON=@Click
-	message @,,1 Owner's Storage
 ON=@DClick
-	ref1 = <region.uid>
-	if !<src.isgm>
-		if (<ref1.isowner <src>>)
-			return 0
-		else
-			src.sysmessage @32,,1 This <name> belongs to Owner you cannot open it.
-			return 1
-		endif
-	endif
+IF (<CONT> != <SRC.FINDLAYER.21>)
+  SRC.SYSMESSAGE @,,1 The item must be on your backpack.
+  return 1
+ENDIF
+IF (<DISPID>==i_gold)
+ TIMERF 60,TRIGGER @TargOn_Cancel
+ENDIF
 
-ON=@ClientToolTip
-	src.addcliloc 1042971,Owner Only
-	src.addcliloc 501644 
+ON=@TargOn_Ground
+IF !(<SRC.ISGM>)
+  IF !STRMATCH("*ship*","<BASEID>")
+    IF (<SRC.TAG0.House.PlacementDelay> > <SERV.TIME>)
+      SRC.SYSMESSAGE @,,1 Number of days until you can place another house: <eval (<SRC.TAG0.House.PlacementDelay>-<SERV.TIME>)/864000>
+      return 1
+    ELIF !(<DEF0.PLACEMENT_ILSHENAR_FACET>) && (<SRC.TARGP.M>==2)
+      SRC.SYSMESSAGE @,,1 Housing cannot be created in this area.
+      TRIGGER @TargOn_Cancel
+      return 1
+    ENDIF
+  ENDIF
+  SRC.TIMERF 1,HouseIsPlaced <MORE1> <BASEID> <SRC.TARGP>
+ENDIF
 
-[TYPEDEF t_coowner]
-ON=@Click
-	message @,,1 Owner & Co-owner Storage
-ON=@DClick
-ref1 = <region.uid>
-	if !<src.isgm>
-		if (<ref1.isowner <src>>) || (<ref1.getcoownerpos <src>> >= 0)
-			return 0
-		else
-			src.sysmessage @32,,1 Only the owner & co-owners can open this <name>.
-			return 1
-		endif
-	endif
+ON=@TargOn_Char
+SRC.SYSMESSAGE @,,1 You must place your house on ground.
+TRIGGER @TargOn_Cancel
+return 1
 
-ON=@ClientToolTip
-	src.addcliloc 1042971,Owner & Co-owners Only
-	src.addcliloc 501644 
+ON=@TargOn_Item
+SRC.SYSMESSAGE @,,1 You must place your house on ground.
+TRIGGER @TargOn_Cancel
+return 1
 
-[TYPEDEF t_friend]
-On=@Click
-	message @,,1 Owner, Co-owner & Friend's Chest
-ON=@DClick
-ref1= <region.uid>
-	if !<src.isgm>
-		if (<ref1.isowner <src>>) || (<ref1.getcoownerpos <src>> >= 0) || (<ref1.getfriendpos <src>> >=0)
-			return 0
-		else
-			src.sysmessage @32,,1 Only The owner, co-owners & friends of the house can open this <name>.
-			return 1
-		endif
-	endif
-
-ON=@ClientToolTip
-	src.addcliloc 1042971,Owner Co-Owners & Friends Only
-	src.addcliloc 501644 
-
-[TYPEDEF t_guild]
-ON=@Click
-	ref1=<src.region.uid>
-	message @,,1 <uid.<ref1.guild>.abbrev> guild chest
-ON=@DClick
-	if !<src.isgm>
-		ref1=<src.region.uid>	
-			if (<src.guild>=!<ref1.guild>)
-				src.sysmessage @32,,1 Only <uid.<ref1.guild>.abbrev> guild members can open this <name>.
-				return 1
-			else
-				return 0
-			endif
-	endif
-
-ON=@ClientToolTip
-ref1=<src.region.uid>
-	src.addcliloc 1042971,[<uid.<ref1.guild>.abbrev>]
-	src.addcliloc 501644 
+ON=@TargOn_Cancel
+IF (<DISPID>==i_gold)
+ SRC.SDIALOG d_house_placement_tool
+ REMOVE
+ENDIF
 
 [REGIONTYPE r_house_system]
 ON=@Enter
@@ -502,3 +475,27 @@ ON=@HouseDesignExit
 	update
 	endfor
 	RETURN 2
+
+[EVENTS e_moving_crate]
+on @logout
+for 0 <eval <houses>-1>
+	ref1=<house.<dlocal._for>.MovingCrate>
+	if (<ref1>)
+		ref1.attr |= attr_invis
+		ref1.p <ref1.link.p>
+		ref1.move 0 0 -20
+	endif
+endfor
+events -e_moving_crate
+
+on @HouseDesignBegin
+for 0 <eval <houses>-1>
+	ref1=<house.<dlocal._for>.MovingCrate>
+	if (<ref1>)
+		ref1.attr |= attr_invis
+		ref1.p <link.p>
+		ref1.move 0 0 -20
+	endif
+endfor
+events -e_moving_crate
+

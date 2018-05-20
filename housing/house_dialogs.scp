@@ -129,26 +129,24 @@ dtext 240 250 1152 CANCEL
 [DIALOG d_house_placement BUTTON]
 ON=0
 IF (<LINK.TAG0.PLACEMENT> != i_gold)
- SERV.NEWITEM <LINK.TAG0.PLACEMENT>
- NEW.BOUNCE
-ENDIF
-LINK.REMOVE
+	LINK.redeed
+endif
+link.remove
 
 ON=1
 IF (<LINK.TAG0.PLACEMENT> == i_gold)
-  IF (<SRC.ISGM>)
-   SRC.SYSMESSAGE @,,1 <LINK.VALUE> gold would have been withdrawn from your bank if you were not a GM.
-  ELIF (<SRC.BANKBALANCE> < <LINK.VALUE>)
-   SRC.SYSMESSAGE @,,1 You do not have the funds avaible in your bankbox to purchase this house. Try placing a smaller house, or adding gold to your bankbox.
-   LINK.REMOVE
-   return 1
-  ELSE
-   SRC.GOLD -= <LINK.VALUE>
-   SRC.UPDATE
-   SRC.SYSMESSAGE @,,1 <LINK.VALUE> gold has been withdrawn from your bank box.
-  ENDIF
+	IF (<SRC.ISGM>)
+		SRC.SYSMESSAGE @,,1 <LINK.VALUE> gold would have been withdrawn from your bank if you were not a GM.
+	ELIF (<SRC.BANKBALANCE> < <LINK.VALUE>)
+		SRC.SYSMESSAGE @,,1 You do not have the funds avaible in your bankbox to purchase this house. Try placing a smaller house, or adding gold to your bankbox.
+		LINK.REMOVE
+		return 1
+	ELSE
+		SRC.GOLD -= <LINK.VALUE>
+		SRC.UPDATE
+		SRC.SYSMESSAGE @,,1 <LINK.VALUE> gold has been withdrawn from your bank box.
+	ENDIF
 ENDIF
-LINK.TAG.PLACEMENT=
 if <def.can_decay> && !<src.isgm>
 	attr=02|010
 	timer=60*60*24*<def.can_decay>	
@@ -339,19 +337,19 @@ if <def.buy_storage> && <def.secure_locks_limit>
 	endif
 endif
 dtext 7 170 07f9 Maximum Secure Storage
-dtext 200 170 07f9 <qval (!<def.secure_locks_limit>)Unlimited:<maxstorage>>
+dtext 200 170 07f9 <qval (!<def.secure_locks_limit>)?Unlimited:<maxstorage>>
 dtext 7 190 07f9 Used by Moving Crate
-dtext 200 190 07f9 <qval (!<def.secure_locks_limit>)Unlimited:<qval (<movingcrate>)?<uid.<movingcrate>.count>:0>>
+dtext 200 190 07f9 <qval (!<def.secure_locks_limit>)?Unlimited:<qval (<movingcrate>)?<uid.<movingcrate>.count>:0>>
 dtext 7 210 07f9 Used by Lockdowns
-dtext 200 210 07f9 <qval (!<def.secure_locks_limit>)Unlimited:<lockdowns>>
+dtext 200 210 07f9 <qval (!<def.secure_locks_limit>)?Unlimited:<lockdowns>>
 dtext 7 230 07f9 Used by Secure Storage
-dtext 200 230 07f9 <qval (!<def.secure_locks_limit>)Unlimited:<getSECUREDitems>>
+dtext 200 230 07f9 <qval (!<def.secure_locks_limit>)?Unlimited:<getSECUREDitems>>
 dtext 7 250 07f9 Available Storage
-dtext 200 250 07f9 <qval (!<def.secure_locks_limit>)Unlimited:<eval (<maxstorage>-(<lockdowns>+<getSECUREDitems>))>>
+dtext 200 250 07f9 <qval (!<def.secure_locks_limit>)?Unlimited:<eval (<maxstorage>-(<lockdowns>+<getSECUREDitems>))>>
 dtext 7 280 07f9 Maximum Lockdowns
-dtext 200 280 07f9 <qval (!<def.secure_locks_limit>)Unlimited:<maxlockdowns>>
+dtext 200 280 07f9 <qval (!<def.secure_locks_limit>)?Unlimited:<maxlockdowns>>
 dtext 7 300 07f9 Available Lockdowns
-dtext 200 300 07f9 <qval (!<def.secure_locks_limit>)Unlimited:<eval (<maxlockdowns>-<lockdowns>)>>
+dtext 200 300 07f9 <qval (!<def.secure_locks_limit>)?Unlimited:<eval (<maxlockdowns>-<lockdowns>)>>
 dtext 7 350 07f9 Vendors
 dtext 200 350 07f9 <vendors>/<maxvendors>
 
@@ -831,6 +829,9 @@ on=0,88
 		if <MovingCrate>
 			ref1 = <MovingCrate>
 			ref1.p = <src.p>
+			ref1.attr &= ~attr_invis
+			src.update
+			src.events +e_moving_crate
 		endif
 	elif (<argn>==58) //change foundation style
 			
@@ -1609,5 +1610,181 @@ dhtmlgump 90 150 70 40 0 0 Down
 ON=1 3
 TAG.Mode=<ARGN>
 DClick
+
+[ITEMDEF i_house_placement_tool]
+ID=014f6
+NAME=House Placement Tool
+VALUE=600
+DUPELIST=014f5
+
+ON=@DClick
+SDIALOG d_house_placement_tool
+return 1
+
+[DIALOG d_house_placement_tool]
+50,50
+
+page 0
+IF !(<SRC.ISGM>) && (<DEF0.PLACEMENT_WAITING_PERIOD>) && (<SRC.TAG0.House.PlacementDelay> > <SERV.TIME>)
+ LOCAL.X=330
+ LOCAL.Y=220
+ELSE
+ LOCAL.X=250
+ LOCAL.Y=125
+ENDIF
+resizepic 0 0 5054 <eval <LOCAL.X>+20> <eval <LOCAL.Y>+20>
+gumppictiled 10 10 <dLOCAL.X> <dLOCAL.Y> 2624
+checkertrans 10 10 <dLOCAL.X> <dLOCAL.Y>
+dhtmlgump 10 10 <LOCAL.X> 20 0 0 <DEF.BFONT_white><DEF.CENTER>HOUSE PLACEMENT TOOL<DEF.CENTERE>
+button 10 40 4005 4007 1 0 1
+dtext 45 40 1152 Classic Houses
+button 10 60 4005 4007 1 0 2
+dtext 45 60 1152 2-Story Customizable Houses
+button 10 80 4005 4007 1 0 3
+dtext 45 80 1152 3-Story Customizable Houses
+IF !(<SRC.ISGM>) && (<DEF0.PLACEMENT_WAITING_PERIOD>) && (<SRC.TAG0.House.PlacementDelay> > <SERV.TIME>)
+ dhtmlgump 10 105 330 90 0 0 <DEF.BFONT_yellow>You are currently unable to place a new house or receive a house in trade because you have become the owner of a house within the last <dDEF0.PLACEMENT_WAITING_PERIOD> days.  You can test for house placement right now, but you cannot currently create a permanent house.
+ LOCAL.Y=205
+ELSE
+ LOCAL.Y=110
+ENDIF
+button 10 <LOCAL.Y> 4017 4019 1 0 0
+dtext 45 <LOCAL.Y> 1152 Close
+
+[DIALOG d_house_placement_tool BUTTON]
+ON=1
+SDIALOG d_house_placement_tool_classic
+
+ON=2
+SDIALOG d_house_placement_tool_custom_2story
+
+ON=3
+SDIALOG d_house_placement_tool_custom_3story
+
+[FUNCTION RenderPlacementToolDialogBackground]
+resizepic 0 0 5054 520 420
+gumppictiled 10 10 500 20 2624
+checkertrans 10 10 500 20
+dhtmlgump 10 10 500 20 0 0 <DEF.BFONT_white><DEF.CENTER>HOUSE PLACEMENT TOOL<DEF.CENTERE>
+gumppictiled 10 40 500 20 2624
+checkertrans 10 40 500 20
+dtext 50 40 1152 House Description
+dtext 275 40 1152 Storage
+dtext 350 40 1152 Lockdowns
+dtext 425 40 1152 Cost
+gumppictiled 10 70 500 280 2624
+checkertrans 10 70 500 280
+gumppictiled 10 360 500 20 2624
+checkertrans 10 360 500 20
+dtext 10 360 1152 Bank Balance:
+dtext 250 360 1152 <SRC.BANKBALANCE>
+gumppictiled 10 390 500 20 2624
+checkertrans 10 390 500 20
+button 10 390 4017 4019 1 0 0
+dtext 50 390 1152 Close
+
+[FUNCTION RenderPlacementToolDialogPage]
+IF (<LOCAL.Y> > 340)
+ button 450 390 4005 4007 0 <eval <LOCAL.PAGE>+1> 0
+ dtext 400 390 1152 Next
+ LOCAL.PAGE ++
+ page <LOCAL.PAGE>
+ button 200 390 4014 4016 0 <eval <LOCAL.PAGE>-1> 0
+ dtext 250 390 1152 Previous
+ LOCAL.Y=70
+ENDIF
+
+
+
+[DIALOG d_house_placement_tool_classic]
+50,50
+
+page 0
+RenderPlacementToolDialogBackground
+
+page 1
+LOCAL.PAGE=1
+LOCAL.Y=70
+FOR 1 20
+ IF (<SERV.ITEMDEF.<DEF.house_classic_<dlocal._for>>>)
+  LOCAL.STORAGE=<SERV.ITEMDEF.<DEF.house_classic_<dlocal._for>>.basestorage>
+  button 10 <LOCAL.Y> 4005 4007 1 0 <local._for>
+  dtext 50 <LOCAL.Y> 1152 <SERV.ITEMDEF.<DEF.house_classic_<dlocal._for>>.NAME>
+  dtext 275 <LOCAL.Y> 1152 <dLOCAL.Storage>
+  dtext 350 <LOCAL.Y> 1152 <eval <LOCAL.Storage>/2>
+  dtext 425 <LOCAL.Y> 1152 <SERV.ITEMDEF.<DEF.house_classic_<dlocal._for>>.VALUE>
+  LOCAL.Y += 20
+  CALL RenderPlacementToolDialogPage
+ ENDIF
+ENDFOR
+
+[DIALOG d_house_placement_tool_classic BUTTON]
+ON=0
+SDIALOG d_house_placement_tool
+
+ON=1 20
+SRC.f_house_placement <DEF.house_classic_<ARGN>>
+
+
+
+[DIALOG d_house_placement_tool_custom_2story]
+50,50
+
+page 0
+RenderPlacementToolDialogBackground
+
+page 1
+LOCAL.PAGE=1
+LOCAL.Y=70
+FOR 1 47
+ IF (<SERV.ITEMDEF.<DEF.house_custom_2story_<dlocal._for>>>)
+  LOCAL.STORAGE=<SERV.ITEMDEF.<DEF.house_custom_2story_<dlocal._for>>.basestorage>
+  button 10 <LOCAL.Y> 4005 4007 1 0 <local._for>
+  dtext 50 <LOCAL.Y> 1152 <SERV.ITEMDEF.<DEF.house_custom_2story_<dlocal._for>>.NAME>
+  dtext 275 <LOCAL.Y> 1152 <dLOCAL.Storage>
+  dtext 350 <LOCAL.Y> 1152 <eval <LOCAL.Storage>/2>
+  dtext 425 <LOCAL.Y> 1152 <SERV.ITEMDEF.<DEF.house_custom_2story_<dlocal._for>>.VALUE>
+  LOCAL.Y += 20
+  CALL RenderPlacementToolDialogPage
+ ENDIF
+ENDFOR
+
+[DIALOG d_house_placement_tool_custom_2story BUTTON]
+ON=0
+SDIALOG d_house_placement_tool
+
+ON=1 47
+SRC.f_house_placement <DEF.house_custom_2story_<ARGN>>
+
+
+
+[DIALOG d_house_placement_tool_custom_3story]
+50,50
+
+page 0
+RenderPlacementToolDialogBackground
+
+page 1
+LOCAL.PAGE=1
+LOCAL.Y=70
+FOR 1 55
+ IF (<SERV.ITEMDEF.<DEF.house_custom_3story_<dlocal._for>>>)
+  LOCAL.STORAGE=<SERV.ITEMDEF.<DEF.house_custom_3story_<dlocal._for>>.basestorage>
+  button 10 <LOCAL.Y> 4005 4007 1 0 <local._for>
+  dtext 50 <LOCAL.Y> 1152 <SERV.ITEMDEF.<DEF.house_custom_3story_<dlocal._for>>.NAME>
+  dtext 275 <LOCAL.Y> 1152 <dLOCAL.Storage>
+  dtext 350 <LOCAL.Y> 1152 <eval <LOCAL.Storage>/2>
+  dtext 425 <LOCAL.Y> 1152 <SERV.ITEMDEF.<DEF.house_custom_3story_<dlocal._for>>.VALUE>
+  LOCAL.Y += 20
+  CALL RenderPlacementToolDialogPage
+ ENDIF
+ENDFOR
+
+[DIALOG d_house_placement_tool_custom_3story BUTTON]
+ON=0
+SDIALOG d_house_placement_tool
+
+ON=1 55
+SRC.f_house_placement <DEF.house_custom_3story_<ARGN>>
 
 [EOF]
