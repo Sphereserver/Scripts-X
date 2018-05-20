@@ -471,6 +471,12 @@ ON=@HouseDesignCommit
 ON=@HouseDesignExit
 	SYSMESSAGE @,,1 You have left house design mode.
 	events -e_house_customize
+	if <argo.movingcrate>
+		ref1=<argo.movingcrate>
+		ref1.attr |= attr_invis
+		ref1.p = <argo.p>
+		ref1.move 0,0,-20
+	endif
 	RETURN 2
 
 [EVENTS e_moving_crate]
