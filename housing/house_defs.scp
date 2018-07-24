@@ -271,3 +271,12 @@ transfer_lockdowns	= 01	// Transfer LockDowns
 transfer_addon		= 02	// Transfer Addons
 transfer_all		= 04	// Transfer LockDowns, Addons and every other item found inside a house that is not a component of it.
 
+[DEFNAME house_privs]
+hp_none         = 0
+hp_owner        = 1
+hp_coowner      = 2
+hp_friend       = 3
+hp_accessonly   = 4
+hp_ban          = 5
+hp_vendor       = 6
+hp_guild        = 7

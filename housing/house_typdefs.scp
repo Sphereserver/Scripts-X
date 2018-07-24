@@ -4,14 +4,8 @@
 //****************************************************************************
 VERSION=X1
 
+// Event for locked down items.
 [TYPEDEF t_house_lockdown]
-ON=@Destroy // When destroyed, the item must be unlinked from the house.
-if (<Link>)
-    if (<Link.Type>==t_multi || <Link.Type>==t_ship || <Link.Type>==t_multi_custom)
-        Link.UnlockItem <uid>
-    endif
-endif
-
 ON=@ClientToolTip
 src.addcliloc 501643
  
@@ -40,6 +34,7 @@ if (<argo.region.uid> != <link.region.uid>)
     return 1
 endif
  
+// Doors event 
 [TYPEDEF t_house_door]
 ON=@Click	
 if (<tag0.guild>)
@@ -114,17 +109,18 @@ if !(<src.isgm>)
 	return 1
 endif
 
+// House container created from COMPONENTs from [MULTIDEF ] (this also have 't_house_component').
 [TYPEDEF t_house_container]
-ON=@DClick
-ON=@PickUp_Self
-ON=@PickUp_Ground
  
+// House Component created from [MULTIDEF ].
 [TYPEDEF t_house_component]
-ON=@Destroy
-link.DelComponent=<uid> // Remove the component to the house list of components.
- 
+
+// Event for Moving Crates.
+// Moving Crates are meant for House Customizing purposes, some items are moved inside when required
+// in customize mode. Player storage is NOT allowed.
+// Moving Crates are automatically deleted when there are no items inside.
+// *More behaviour on player side event (e_moving_crate).
 [TYPEDEF t_moving_crate]
-ON=@DropOn_Self // Moving Crates are not meant for storage, no items can be dropped inside.
 if !<src.isgm>
 return 1
 endif
@@ -134,24 +130,19 @@ if <count> <= 1
 	remove
 endif
 
-on @destroy
+ON=@destroy
 ref1 = <link.owner>
-if <ref1.isevent.e_moving_crate>
+if (<ref1> && <ref1.isevent.e_moving_crate>)
 	ref1.events -e_moving_crate
 endif
 
-on @create
+ON=@create
 attr |= attr_invis
- 
-[TYPEDEF t_house_secure]
-ON=@Destroy // When destroyed, the item must be unlinked from the house.
-if (<Link>)
-    if (<Link.Type>==t_multi || <Link.Type>==t_ship || <Link.Type>==t_multi_custom)
-        Link.Release <uid>
-    endif
-endif
 
-on=@clienttooltip
+// Secured Containers.
+// Only allowed players can manage their storage (Refer to f_house_can_access to see the allowance).
+[TYPEDEF t_house_secure]
+ON=@clienttooltip
 src.addcliloc 501644
  
 ON=@PickUp_ground
@@ -159,7 +150,7 @@ if (!<src.IsGM>)
     return 1
 endif
 
-on=@DClick
+ON=@DClick
 if (<f_house_can_access>)
     return 0
 endif
@@ -171,14 +162,7 @@ if (<f_house_can_access>)
 endif
 return 1
 
-// [typedef t_weapon_axe]
-// ON=@TargOn_Item
-// if strmatch("t_multi*","<uid.<src.region.uid>.type>")
-	// ref1=<src.region.tag0.sign>
-	// ref2=<argo.link>
-	// if <ref2>
-		// if <ref2.<uid.<ref2.region.uid>.tag0.sign>==<ref1.link>
-
+// Telepad for multis.
 [typedef t_house_telepad]
 ON=@Click	
 if (<tag0.guild>)
@@ -218,7 +202,7 @@ elif (<tag0.access>==house_access_friend)
 endif
 
 
-on @step
+ON=@step
 if !(<link>==04fffffff) 
 	if !(<src.isgm>)
 		if (<f_house_can_access>)
@@ -228,6 +212,7 @@ if !(<link>==04fffffff)
 	endif
 endif
 
+// @Custom event for house transfers
 [TYPEDEF t_trade_house_deed]
 ON=@Click
 MESSAGE House Transfer Contract
@@ -273,6 +258,7 @@ link.delaccess -1
 link.delfriend -1
 link.resendtooltip 1
 
+// @Override of t_deed typedef
 [TYPEDEF t_deed]
 ON=@DClick
 IF (<CONT> != <SRC.FINDLAYER.21>)
@@ -314,6 +300,7 @@ IF (<DISPID>==i_gold)
  REMOVE
 ENDIF
 
+// @Custom region event for houses.
 [REGIONTYPE r_house_system]
 ON=@Enter
 if <src.isplayer>
@@ -439,7 +426,7 @@ ON=@SkillUseQuick
 	ENDIF
 	RETURN 1
 
-// on=@HouseDesignCommitItem
+// ON=@HouseDesignCommitItem
 // serv.log <local.id> --- <local.p.x> ---- <local.p.y> ------ <local.p.z> ------- <local.visible>
 
 ON=@HouseDesignCommit
@@ -480,7 +467,7 @@ ON=@HouseDesignExit
 	RETURN 2
 
 [EVENTS e_moving_crate]
-on @logout
+ON=@logout
 for 0 <eval <houses>-1>
 	ref1=<house.<dlocal._for>.MovingCrate>
 	if (<ref1>)
@@ -491,7 +478,7 @@ for 0 <eval <houses>-1>
 endfor
 events -e_moving_crate
 
-on @HouseDesignBegin
+ON=@HouseDesignBegin
 for 0 <eval <houses>-1>
 	ref1=<house.<dlocal._for>.MovingCrate>
 	if (<ref1>)
@@ -502,3 +489,8 @@ for 0 <eval <houses>-1>
 endfor
 events -e_moving_crate
 
+// Event applied when you are listed (with any privilege) on one or more houses.
+[EVENTS e_house_priv]
+
+// Event applied when you are listed (with any privilege) on one or more ships.
+[EVENTS e_ship_priv]
