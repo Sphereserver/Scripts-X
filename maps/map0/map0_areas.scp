@@ -3,6 +3,24 @@
 // www.sphereserver.net
 //****************************************************************************
 
+[COMMENT map0_areas.scp]
+This file (and other map files like it) define map areas (also known as
+AREADEF and ROOMDEF, and typically named a_something) using one or more
+RECT= properties that describe a rectangle.  The RECT= property uses 5 values
+to describe the rectangle:  The first two numbers are the coordinate of the
+upper left corner of the region, and the second two are the coordinates of
+the lower right, the last number is the map.
+
+If an area of the map is NOT covered by a rectangle, that area is unusable
+(nothing can move there) which is why each map file typically first defines
+a rectangle covering "the entire map".
+
+The order of the map regions in this file can be important when rectangles
+overlap each others perimiter (as opposed to being fully enclosed.)
+Because of this situation you may need to shuffle specific regions up or
+down in the file to properly define partially overlapping regions.
+
+WARNING: NEVER edit a map file on a running server!
 
 ////////////////////////////////////////
 // Facet
