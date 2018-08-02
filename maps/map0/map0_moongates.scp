@@ -1,2 +1,16 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
 
+[MoonGates]
+1336,1997,5,0=mg_britain
+1499,3771,5,0=mg_jhelom
+771,752,5,0=mg_yew
+2701,692,5,0=mg_minoc
+1828,2948,-20,0=mg_trinsic
+643,2067,5,0=mg_skara_brae
+3563,2139,34,0=mg_magincia
+4467,1283,5,0=mg_moonglow
+2711,2234,0,0=mg_buccaneers_den
 [EOF]

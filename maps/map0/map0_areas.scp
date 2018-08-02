@@ -1,5 +1,12 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
 
 
+////////////////////////////////////////
+// Facet
+////////////////////////////////////////
 
 [AREADEF a_world]
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
@@ -8,7 +15,9 @@ GROUP=ALLMAP
 P=1323,1624,55,0
 RECT=0,0,7168,4096,0
 
-// === AREAS
+////////////////////////////////////////
+// Areas
+////////////////////////////////////////
 
 [AREADEF a_cave_1]
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
@@ -321,7 +330,7 @@ FLAGS=REGION_FLAG_NOBUILDING
 P=2923,3406,8,0
 RECT=2921,3402,2925,3408,0
 
-[AREADEF a_exit_from_eapua_1]
+[AREADEF a_exit_est_from_papua_1]
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 NAME=Exit from E of Papua
 GROUP=T2A Entrances & Exits
@@ -3086,21 +3095,6 @@ GROUP=Moongates
 P=1609,3372,0,0
 RECT=1603,3366,1616,3379,0
 
-[AREADEF a_pontao]
-NAME=Pontao
-FLAGS=REGION_ANTIMAGIC_ALL|REGION_ANTIMAGIC_GATE|REGION_FLAG_NOBUILDING|REGION_FLAG_SAFE|REGION_FLAG_NO_PVP
-RECT=5232,1736,5263,1749,0
-RECT=5232,1748,5275,1779,0
-P=5264,1763,0,0
-GROUP=POD Areas
-
-[AREADEF a_mercado]
-NAME=Mercado
-FLAGS=REGION_ANTIMAGIC_ALL|REGION_ANTIMAGIC_GATE|REGION_FLAG_NOBUILDING|REGION_FLAG_SAFE|REGION_FLAG_NO_PVP
-RECT=5940,1937,5978,1981,0
-P=5941,1938
-GROUP=POD Areas
-
 [AREADEF a_Britain_Fields]
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
 NAME=Britain Fields
@@ -3196,10 +3190,5 @@ FLAGS=region_flag_nobuilding
 RECT=1105,2575,1175,2620,0
 P=1140,2595,0,0
 
-[AREADEF a_sea_market]
-NAME=Sea Market
-FLAGS=region_antimagic_recall_in|region_antimagic_gate|region_flag_guarded
-RECT=4500,2250,4600,2450,0
-P=4551,2313,-2,0
 
 [EOF]
