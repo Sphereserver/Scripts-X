@@ -1,0 +1,821 @@
+[CHARDEF 084]
+DEFNAME=c_kirin
+NAME=Kirin
+SOUND=snd_kirin
+ICON=i_pet_kirin
+DAM=10,30
+ARMOR=35
+RESOURCES=15 i_ribs_raw,10 i_hide
+CAN=MT_WALK|MT_RUN
+FOODTYPE=40 t_meat_raw
+DESIRES=e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+MOVERATE=40
+TEVENTS=e_horses
+RESLEVEL=2
+RESDISPDNID=c_horse_gray
+RESDISPDNHUE=08037
+CATEGORY=Mounts
+SUBSECTION=Magical
+DESCRIPTION=Kirin
+
+ON=@Create
+	NPC=brain_animal
+	KARMA=-2000
+	FAME={100 3000}
+	STR={150 200}
+	MAXHITS=300
+	INT={300 340}
+	DEX={90 110}
+	PARRYING={60.0 95.0}
+	MAGICRESISTANCE={99.0 100.0}
+	TACTICS={98.0 100.0}
+	WRESTLING={95.0 100.0}
+	TAMING=105.0
+	MAGERY=125.0
+
+[ITEMDEF 9632]
+DEFNAME=i_pet_kirin
+NAME=Kirin
+
+[CHARDEF 0c4]
+Name=Kaze Kemono
+DEFNAME=c_kaze_kemono
+CAN=MT_WALK|MT_RUN
+ICON=i_pet_kazekemono
+sound=655
+dam=15,20
+ARMOR=35
+RESDISPDNID=c_elem_air
+RESLEVEL=3
+RESDISPDNHUE=33
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Kaze Kemono
+
+on=@create
+	NPC=BRAIN_MONSTER
+	str={201, 275}
+	dex={101, 155}
+	int={101, 105}
+	maxhits={251, 330}
+	resphysical={50, 70}
+	resfire={30, 60}
+	rescold={30, 60}
+	respoison={50, 70}
+	resenergy={60, 80}
+	magicresistance={110.1, 125.0}
+	tactics={55.1, 65.0}
+	wrestling={85.1, 95.0}
+	anatomy={25.1, 35.0}
+	magery={95.1, 105.0}
+	fame=8000
+	karma=-8000
+
+on=@npcrestock
+	item=i_gold,{550 650}
+	//item=magic_items
+	item=random_jewel,2
+
+
+[CHARDEF 0c7]
+Name=Rai-Ju
+DEFNAME=c_rai_ju
+ICON=i_pet_raiju
+SOUND=0346
+CAN=MT_WALK|MT_RUN
+dam=12,15
+ARMOR=15
+RESDISPDNID=c_elem_air
+RESLEVEL=3
+RESDISPDNHUE=33
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Rai-Ju
+
+on=@create
+	NPC=BRAIN_MONSTER
+	str={151, 225}
+	dex={81, 135}
+	int={176, 180}
+	maxhits={201, 280}
+	resphysical={45, 65}
+	resfire={70, 85}
+	rescold={30, 60}
+	respoison={50, 70}
+	resenergy={60, 80}
+	wrestling={85.1, 95.0}
+	tactics={55.1, 65.0}
+	magicresistance={110.1, 125.0}
+	anatomy={25.1, 35.0}
+	fame=8000
+	karma=-8000
+
+on=@npcrestock
+	item=i_gold,{550 650}
+	//item=magic_items
+	item=random_jewel,2
+
+[CHARDEF 0f0]
+defname=c_kappa
+name=Kappa
+sound=0508
+ICON=i_pet_kappa
+dam=6,12
+ARMOR=15
+CAN=MT_WALK|MT_USEHANDS|MT_SWIM
+FOODTYPE=40 t_meat_raw
+DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+RESDISPDNID=c_man
+RESLEVEL=3
+RESDISPDNHUE=33
+CATEGORY=Monsters
+//In Japanese folklore they are refered as Demon
+SUBSECTION=Demons, Oriental
+DESCRIPTION=Kappa
+
+ON=@Create
+NPC=brain_monster
+str={186, 230}
+dex={51, 75}
+int={41, 55}
+maxmana={30}
+maxhits={151, 180}
+resphysical={35, 50}
+resfire={35, 50}
+rescold={25, 50}
+respoison={35, 50}
+resenergy={20, 30}
+magicresistance={60.1, 70.0}
+tactics={79.1, 89.0}
+wrestling={60.1, 70.0}
+fame=1700
+karma=-1700
+
+ON=@NpcRestock
+	item=i_gold,{175 225}
+	//item=i_seed_fragrant
+	//item=i_seed_peculiar
+	item=i_treasure_map2,R99
+
+[CHARDEF 0f1]
+Name=Oni
+DEFNAME=c_oni
+dam=14,20
+ARMOR=40
+ICON=i_pet_oni
+SOUND=04E0
+CAN=MT_WALK|MT_RUN
+RESDISPDNID=c_man
+RESLEVEL=3
+RESDISPDNHUE=55
+CATEGORY=Monsters
+SUBSECTION=Demons, Oriental	//In Japanese folklore they are refered as Demon
+DESCRIPTION=Oni
+
+on=@create
+	NPC=BRAIN_MONSTER
+	str={801, 910}
+	dex={151, 300}
+	int={171, 195}
+	maxhits={401, 530}
+	resphysical={65, 80}
+	resfire={50, 70}
+	rescold={35, 50}
+	respoison={45, 70}
+	resenergy={45, 65}
+	evaluatingintel={100.1, 125.0}
+	magery={96.1, 106.0}
+	anatomy={85.1, 95.0}
+	magicresistance={85.1, 100.0}
+	tactics={86.1, 101.0}
+	wrestling={90.1, 100.0}
+	fame=15000
+	karma=-15000
+
+on=@npcrestock
+	item=i_gold,{1600 1850}
+	//item=magic_items	//todo
+	//item=random_items
+	item=i_treasure_map4,R99
+	//item=i_bonsai_seed
+
+
+[CHARDEF 0f2]
+defname=c_deathwatch_beetle
+name=deathwatch beetle
+SOUND=04f0
+ICON=i_pet_deathwatch_beetle
+dam=5,10
+ARMOR=20
+RESOURCES=8 i_hide
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
+FOODTYPE=40 t_meat_raw
+DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+MOVERATE=55
+RESDISPDNID=c_man
+RESLEVEL=3
+RESDISPDNHUE=33
+CATEGORY=Animals
+SUBSECTION=Beetles
+DESCRIPTION=Beetle, Deathwatch
+
+ON=@Create
+NPC=brain_monster
+str={136, 160}
+dex={41, 52}
+int={31, 40}
+maxhits={121, 145}
+maxmana={20}
+resphysical={35, 40}
+resfire={15, 30}
+rescold={15, 30}
+respoison={50, 80}
+resenergy={20, 35}
+magicresistance={50.1, 58.0}
+tactics={67.1, 77.0}
+wrestling={50.1, 60.0}
+anatomy={30.1, 34.0}
+fame=1400
+karma=-1400
+
+ON=@Hit
+IF !(<SRC.FLAGS>&statf_poisoned)
+	SRC.SPELLEFFECT S_POISON,1000,<UID>
+endif
+
+ON=@NpcRestock
+	item=random_potion
+	item={random_first_circle 1 random_second_circle 1}
+	item=random_armor
+	//item=i_seed_bonsai
+
+
+[CHARDEF 0f3]
+DEFNAME=c_hiryu
+NAME=Hiryu
+SOUND=04FB
+ICON=i_pet_hiryu
+dam=20,30
+ARMOR=20
+RESOURCES=60 i_hide, 16 i_ribs_raw
+CAN=MT_WALK|MT_RUN
+FOODTYPE=55 i_ribs_raw
+DESIRES=c_man,c_woman
+AVERSIONS=e_carnivores3
+MOVERATE=40
+RESDISPDNID=c_horse_gray
+RESLEVEL=4
+RESDISPDNHUE=08386
+TEVENTS=e_horses
+CATEGORY=Mounts
+SUBSECTION=Animals
+DESCRIPTION=Hiryu
+
+ON=@Create
+	npc=brain_dragon
+	str={1201, 1410}
+	dex={171, 270}
+	int={301, 325}
+	maxhits={901, 1100}
+	maxmana={60}
+	resphysical={55, 70}
+	resfire={70, 90}
+	rescold={15, 25}
+	respoison={40, 50}
+	resenergy={40, 50}
+	anatomy={75.1, 80.0}
+	magicresistance={85.1, 100.0}
+	tactics={100.1, 110.0}
+	wrestling={100.1, 120.0}
+	taming=98.7
+	fame=18000
+	karma=-18000
+
+on=@npcrestock
+	item=i_gold,{1500 1900}
+	item=magic_items
+	item=random_jewel
+	item=random_jewel
+	item=random_jewel
+	item=random_jewel
+	//item=i_seed_bonsai	//fixme
+	//item=i_seed_fragrant
+	//item=i_seed_peculiar
+
+[CHARDEF 0f4]
+defname=c_rune_beetle
+name=Rune Beetle
+SOUND=04e5
+ICON=i_pet_runebeetle
+dam=15,22
+RESOURCES=15 i_ribs_raw
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
+FOODTYPE=40 t_meat_raw
+DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+MOVERATE=40
+RESDISPDNID=c_man
+RESLEVEL=3
+RESDISPDNHUE=33
+CATEGORY=Animals
+SUBSECTION=Beetles
+DESCRIPTION=Beetle, Rune
+
+ON=@Create
+NPC=brain_monster
+str={401, 460}
+dex={121, 170}
+int={376, 450}
+maxhits={301, 360}
+resphysical={40, 65}
+resfire={35, 50}
+rescold={35, 50}
+respoison={75, 95}
+resenergy={40, 60}
+evaluatingintel={100.1, 125.0}
+magery={100.1, 110.0}
+poisoning={120.1, 140.0}
+magicresistance={95.1, 110.0}
+tactics={78.1, 93.0}
+wrestling={70.1, 77.5}
+fame=15000
+karma=-15000
+
+ON=@NpcRestock
+	item=i_gold,{1000 1200}
+	//item=magic_items
+	item={random_fourth_circle 1 random_fifth_circle 1}
+	item={random_body_parts_1 1 random_body_parts_2 1}
+	item=random_bones
+	item=random_reagent,{5 14}
+
+
+[CHARDEF 0f5]
+defname=c_Yomotsu_Warrior
+name=Yomotsu Warrior
+SOUND=0452
+ICON=i_pet_yomotsu_warrior
+RESDISPDNID=c_man
+RESLEVEL=3
+RESDISPDNHUE=33
+dam=8,10
+ARMOR=15
+RESOURCES=1 i_ribs_raw
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
+FOODTYPE=40 t_meat_raw
+DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+MOVERATE=60
+CATEGORY=Monsters
+SUBSECTION=Yomotsu
+DESCRIPTION=Warrior, Yomotsu
+
+ON=@Create
+NPC=brain_monster
+str={486, 530}
+dex={151, 165}
+int={17, 31}
+maxhits={486, 530}
+maxmana={17, 31}
+resphysical={65, 85}
+resfire={30, 50}
+rescold={45, 65}
+respoison={35, 55}
+resenergy={25, 50}
+anatomy={85.1, 95.0}
+magicresistance={82.6, 90.5}
+tactics={95.1, 105.0}
+wrestling={97.6, 107.5}
+fame=4200	
+karma=-4200
+
+ON=@NpcRestock
+	item=i_gold,{600 700}
+	//item=magic_items
+	item=random_footwear
+	item=i_axe_exec
+	item=random_pants
+	item=i_gourd
+	item=random_jewel,2
+	item=i_treasure_map3,R99
+	//item=i_seed_bonsai
+
+[CHARDEF 0f6]
+NAME=Bake Kitsune
+DEFNAME=c_bake_kitsune
+SOUND=snd_z_end_spirtspk
+CAN=MT_WALK|MT_RUN|MT_EQUIP
+ICON=i_pet_bakekitsune
+DAM=9,18
+ARMOR=18
+RESDISPDNID=c_wolf
+RESLEVEL=3
+RESDISPDNHUE=33
+CATEGORY=Animals
+SUBSECTION=Magical
+DESCRIPTION=Bake Kitsune
+ON=@Create
+	NPC=brain_monster
+	Str={170 220}
+	Dex={125 145}
+	Int={375 425}
+	MagicResistance={80.0 100.0}
+	Tactics={70.0 90.0}
+	Wrestling={50.0 55.0}
+	Magery={80.0 90.0}
+	Meditation={85.0 95.0}
+	EvaluatingIntel={80.0 90.0}
+	Fame=150
+	Karma=-2150
+
+[CHARDEF 0f7]
+Name=Fan Dancer
+DEFNAME=c_fan_dancer
+SOUND=0372
+CAN=MT_WALK|MT_RUN
+ICON=i_pet_fandancer
+maxhits={351, 430}
+dam=12,17
+ARMOR=15
+RESDISPDNID=c_woman
+RESLEVEL=3
+RESDISPDNHUE=33
+CATEGORY=Monsters
+SUBSECTION=Demons
+DESCRIPTION=Fan Dancer
+
+on=@create
+NPC=BRAIN_MONSTER
+str={301, 375}
+dex={201, 255}
+int={21, 25}
+resphysical={40, 60}
+resfire={50, 70}
+rescold={50, 70}
+respoison={50, 70}
+resenergy={40, 60}
+magicresistance={100.1, 110.0}
+tactics={85.1, 95.0}
+wrestling={85.1, 95.0}
+anatomy={85.1, 95.0}
+fame=9000
+karma=-9000
+
+on=@Npcrestock
+	item=i_gold,{700 100}
+	//item=magic_items
+	//item=i_tessen
+	item=random_jewel,2
+	//item=i_seed_bonsai
+	//item=i_oragami_paper
+	item=i_treasure_map3,R99
+	
+
+[CHARDEF 0f8]
+name=Gaman
+defname=c_gaman
+armor=20
+icon=i_pet_gaman
+sound=04F8
+resources=15 i_hide, 10 i_ribs_raw
+can=MT_WALK|MT_RUN
+dam=6,11
+RESDISPDNID=c_dog
+RESLEVEL=3
+RESDISPDNHUE=33
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Gaman
+
+on=@create
+	npc=brain_animal
+	str={146, 175}
+	dex={111, 150}
+	int={46, 60}
+	maxhits={131, 160}
+	resphysical={50, 70}
+	resfire={30, 50}
+	rescold={30, 50}
+	respoison={40, 60}
+	resenergy={30, 50}
+	magicresistance={37.6, 42.5}
+	tactics={70.6, 83.0}
+	wrestling={50.1, 57.5}
+	taming=68.7
+	fame=2000
+	karma=-2000
+
+[CHARDEF 0f9]
+Name=Yamandon
+DEFNAME=c_yamandon
+ICON=i_pet_yamandon
+dam=19,35
+SOUND=1260
+CAN=MT_WALK|MT_RUN
+RESOURCES=20 i_hide
+RESDISPDNID=c_man
+RESLEVEL=3
+RESDISPDNHUE=33
+CATEGORY=Monsters
+SUBSECTION=Demons
+DESCRIPTION=Yamandon
+
+on=@create
+NPC=BRAIN_MONSTER
+str={786, 930}
+dex={251, 365}
+int={101, 115}
+maxhits={1601, 1800}
+resphysical={65, 85}
+resfire={70, 90}
+rescold={50, 70}
+respoison={50, 70}
+resenergy={50, 70}
+anatomy={115.1, 130.0}
+magicresistance={117.6, 132.5}
+poisoning={120.1, 140.0}
+tactics={117.1, 132.0}
+wrestling={112.6, 132.5}
+fame=22000
+karma=-22000
+
+on=@npcrestock
+	item=i_gold,{2000 2500}
+	//item=magic_items
+	item=random_jewel,6
+	item=i_eggs_fresh,2
+	item=i_treasure_map5,R99	
+	//item=i_seed_bonsai
+
+[CHARDEF 0fa]
+Name=Tsuki Wolf
+DEFNAME=c_tsuki_wolf
+ARMOR=35
+CAN=MT_WALK|MT_RUN
+SOUND=snd_tsuki_wolf
+ICON=i_pet_tsukiwolf
+resources=25 i_hide, 4 i_ribs_raw
+dam=14,18
+RESDISPDNID=c_dog
+RESLEVEL=3
+RESDISPDNHUE=33
+CATEGORY=Monsters
+SUBSECTION=Demons
+DESCRIPTION=Tsuki Wolf
+
+on=@create
+NPC=BRAIN_MONSTER
+str={401, 450}
+dex={151, 200}
+int={66, 76}
+maxhits={376, 450}
+maxmana={40}
+
+resphysical={40, 60}
+resfire={50, 70}
+rescold={50, 70}
+respoison={50, 70}
+resenergy={50, 70}
+anatomy={65.1, 72.0}
+magicresistance={65.1, 70.0}
+tactics={95.1, 110.0}
+wrestling={97.6, 107.5}
+necromancy={20.0}
+spiritspeak={20.0}
+anatomy={40.0, 50.0}
+detectinghidden={100.0}
+parrying={90.0, 100.0}
+fame=8500
+karma=-8500
+
+on=@npcrestock
+	item=i_gold,{900 1200}
+	//item=magic_items
+	item={random_body_parts_1 1 random_body_parts_2 1}
+	item=random_bones
+	item=random_armor
+	//item=i_seed_fragrant
+	//item=i_seed_peculiar
+	item=i_treasure_map3,R99
+
+[CHARDEF 0fb]
+Name=Revenant Lion
+DEFNAME=c_revenant_lion
+SOUND=0515
+dam=18,24
+ARMOR=18
+CAN=MT_WALK|MT_RUN
+ICON=i_pet_ravlion
+RESDISPDNID=c_dog
+RESLEVEL=3
+RESDISPDNHUE=33
+CATEGORY=Monsters
+SUBSECTION=Undeads
+DESCRIPTION=Revenant Lion
+
+on=@create
+NPC=BRAIN_MONSTER
+str={276, 325}
+dex={156, 175}
+int={76, 105}
+maxhits={251, 280}
+resphysical={40, 60}
+resfire={20, 30}
+rescold={50, 60}
+respoison={55, 65}
+resenergy={40, 50}
+evaluatingintel={80.1, 90.0}
+magery={80.1, 90.0}
+poisoning={120.1, 130.0}
+magicresistance={70.1, 90.0}
+tactics={60.1, 80.0}
+wrestling={80.1, 88.0}
+fame=4000
+karma=-4000
+
+on=@npcrestock
+	item=i_gold,{500 700}
+	//item=magic_items,2
+	item={random_fourth_circle 1 random_fifth_circle 1}
+	item=random_bones
+	item={random_body_parts_1 1 random_body_parts_2 1}
+	item=random_reagent_necro,{6 8}
+
+[CHARDEF 0fc]
+defname=c_lady_of_the_snow
+DEFNAME2=c_lady_of_snow
+Name=Lady of the Snow
+sound=0482
+ICON=i_pet_ladysnow
+CAN=MT_WALK|MT_RUN
+dam=13,20
+ARMOR=18
+SOUND=snd_elementl_airelem5
+RESDISPDNID=c_woman
+RESLEVEL=3
+RESDISPDNHUE=33
+CATEGORY=Monsters
+SUBSECTION=Undeads
+DESCRIPTION=Lady of the Snow
+
+on=@create
+NPC=BRAIN_MONSTER
+str={276, 305}
+dex={106, 125}
+int={471, 495}
+maxhits={596, 625}
+resphysical={45, 55}
+resfire={40, 55}
+rescold={70, 90}
+respoison={60, 70}
+resenergy={65, 85}
+magery={95.1, 110.0}
+magicresistance={90.1, 105.0}
+tactics={80.1, 100.0}
+wrestling={80.1, 100.0}
+necromancy={90, 110.0}
+spiritspeak={90.0, 110.0}
+fame=15200
+karma=-15200
+
+on=@npcrestock
+	item=i_gold,{800 100}
+	//item=magic_items,3
+	item=random_reagent,3
+
+
+[CHARDEF 0fd]
+defname=c_Yomotsu_Priest
+name=Yomotsu Priest
+SOUND=0452
+ICON=i_pet_yomotsu_priest
+dam=8,10
+ARMOR=18
+RESOURCES=15 i_ribs_raw
+CAN=MT_WALK|MT_RUN|MT_USEHANDS
+FOODTYPE=40 t_meat_raw
+DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+MOVERATE=60
+RESDISPDNID=c_man
+RESLEVEL=3
+RESDISPDNHUE=33
+CATEGORY=Monsters
+SUBSECTION=Yomotsu 
+DESCRIPTION=Mage, Yomotsu
+
+ON=@Create
+NPC=brain_monster
+str={486, 530}
+dex={101, 115}
+int={601, 670}
+maxhits={486, 530}
+resphysical={65, 85}
+resfire={30, 50}
+rescold={45, 65}
+respoison={35, 55}
+resenergy={25, 50}
+evaluatingintel={92.6, 107.5}
+magery={105.1, 115.0}
+meditation={100.1, 110.0}
+magicresistance={112.6, 122.5}
+tactics={55.1, 105.0}
+wrestling={47.6, 57.5}
+fame=9000
+karma=-9000
+
+ON=@NpcRestock
+	item=i_gold,{700 1000}
+	//item=magic_items
+	item=random_footwear
+	item=i_axe_exec
+	item=random_pants
+	item=i_gourd
+	item=random_jewel,2
+	item=i_treasure_map3,R99
+	//item=i_seed_bonsai
+
+
+[CHARDEF 0fe]
+name=Crane
+defname=c_crane
+dam=1,1
+armor=5
+sound=04d7
+resources=25 i_feather, 1 i_bird_raw
+can=MT_WALK|MT_RUN
+icon=i_pet_crane
+RESDISPDNID=c_man
+RESLEVEL=3
+RESDISPDNHUE=33
+CATEGORY=Animals
+SUBSECTION=Birds
+DESCRIPTION=Crane
+
+on=@create
+	str={26, 35}
+	dex={16, 25}
+	int={11, 15}
+	maxhits={26, 35}
+	resphysical={5, 5}
+	magicresistance={4.1, 5.0}
+	tactics={10.1, 11.0}
+	wrestling={10.1, 11.0}
+	fame=0
+	karma=200
+
+[CHARDEF 0ff]
+defname=c_Yomotsu_Elder
+name=Yomotsu Elder
+SOUND=snd_yomotsu
+ICON=i_pet_yomotsu_elder
+dam=19,27
+ARMOR=22
+RESDISPDNID=c_man
+RESLEVEL=3
+RESDISPDNHUE=33
+RESOURCES=15 i_ribs_raw
+CAN=MT_WALK|MT_RUN|MT_USEHANDS
+FOODTYPE=40 t_meat_raw
+DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+MOVERATE=60
+CATEGORY=Monsters
+SUBSECTION=Yomotsu
+DESCRIPTION=Elder, Yomotsu
+
+ON=@Create
+NPC=brain_monster
+str={686, 830}
+dex={251, 365}
+int={17, 31}
+maxhits={801, 900}
+resphysical={65, 85}
+resfire={30, 50}
+rescold={45, 65}
+respoison={35, 55}
+resenergy={25, 50}
+anatomy={115.1, 130.0}
+magicresistance={100.1, 120.0}
+tactics={115.1, 130.0}
+wrestling={110.1, 130.0}
+fame=12000
+karma=-12000
+
+ON=@NpcRestock
+	item=i_gold,1500 1800}
+	//item=magic_items
+	item=random_footwear
+	item=i_axe_exec
+	item=random_pants
+	item=i_gourd
+	item=random_jewel,2
+	item=i_treasure_map3,R99
+	//item=i_seed_bonsai
+
+
+
+[EOF]

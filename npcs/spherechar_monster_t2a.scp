@@ -1,0 +1,574 @@
+[CHARDEF 046]
+DEFNAME=c_terathan_warrior
+NAME=Terathan Warrior
+SOUND=589
+ICON=i_pet_terathan_war
+CAN=MT_WALK|MT_USEHANDS
+dam=7,17
+armor=30
+RESOURCES=4 i_ribs_raw
+FOODTYPE=15 t_meat_raw
+AVERSIONS=r_civilization
+DESIRES=e_TERATHAN
+TEVENTS=e_TERATHAN
+RESLEVEL=1
+RESDISPDNID=c_snake_giant
+RESDISPDNHUE=0100
+CATEGORY=Monsters
+SUBSECTION=Terathans
+DESCRIPTION=Terathan Warrior
+
+ON=@Create
+	NPC=brain_monster
+	str={166, 215}
+	dex={96, 145}
+	int={41, 65}
+	maxhits={100, 129}
+	maxmana={0}
+	resphysical={30, 35}
+	resfire={20, 30}
+	rescold={25, 35}
+	respoison={30, 40}
+	resenergy={25, 35}
+	poisoning={ 60.1, 80.0}
+	magicresistance={60.1, 75.0}
+	tactics={80.1, 100.0}
+	wrestling={80.1, 90.0}
+	fame=4000
+	karma=-4000
+
+ON=@NPCRestock
+	item=i_gold,{125 175}
+	item=i_treasure_map1,R99
+	//item=i_seed_fragrant
+	//item=i_seed_peculiar
+
+[CHARDEF 047]
+DEFNAME=c_terathan_drone
+NAME=Terathan Drone
+SOUND=594
+ICON=i_pet_terathan_drone
+dam=6,12
+armor=24
+RESOURCES=4 i_ribs_raw
+CAN=MT_WALK
+FOODTYPE=15 t_meat_raw
+AVERSIONS=r_civilization
+DESIRES=e_TERATHAN
+TEVENTS=e_TERATHAN
+RESLEVEL=1
+RESDISPDNID=c_snake_giant
+RESDISPDNHUE=0100
+CATEGORY=Monsters
+SUBSECTION=Terathans
+DESCRIPTION=Terathan Drone
+
+ON=@Create
+	NPC=brain_monster
+	str={36, 65}
+	dex={96, 145}
+	int={21, 45}
+	maxhits={22, 39}
+	maxmana={0}
+	resphysical={20, 25}
+	resfire={10, 20}
+	rescold={15, 25}
+	respoison={30, 40}
+	resenergy={15, 25}
+	poisoning={ 40.1, 60.0}
+	magicresistance={30.1, 45.0}
+	tactics={30.1, 50.0}
+	wrestling={40.1, 50.0}
+	fame=2000
+	karma=-2000
+
+ON=@NPCRestock
+	item=i_gold,{50 100}
+	item=i_reag_spider_silk,2
+
+[CHARDEF 048]
+DEFNAME=c_terathan_matriarch
+NAME=Terathan Matriarch
+SOUND=599
+ICON=i_pet_terathan_queen
+dam=11,14
+ARMOR=25
+CAN=MT_WALK|MT_USEHANDS
+AVERSIONS=r_civilization
+DESIRES=e_TERATHAN
+TEVENTS=e_TERATHAN
+RESLEVEL=1
+RESDISPDNID=c_snake_giant
+RESDISPDNHUE=0100
+CATEGORY=Monsters
+SUBSECTION=Terathans
+DESCRIPTION=Terathan Matriarch
+
+ON=@Create
+	NPC=brain_monster
+	str={316, 405}
+	dex={96, 115}
+	int={366, 455}
+	maxhits={190, 243}
+	resphysical={45, 55}
+	resfire={30, 40}
+	rescold={35, 45}
+	respoison={40, 50}
+	resenergy={35, 45}
+	evaluatingintel={90.1, 100.0}
+	magery={90.1, 100.0}
+	magicresistance={90.1, 100.0}
+	tactics={50.1, 70.0}
+	wrestling={60.1, 80.0}
+	fame=10000
+	karma=-10000
+
+ON=@NPCRestock
+	item=i_gold,{550 650}
+	item=random_second_circle,2
+	item=i_reag_spider_silk,5
+	item=random_potion
+	item=random_reagent_necro,{4 10}
+	item=i_treasure_map4,R99
+	
+[CHARDEF 04b]
+DEFNAME=c_cyclops
+NAME=Cyclopean Warrior
+SOUND=604
+ICON=i_pet_CYCLOPS
+CAN=MT_WALK|MT_USEHANDS
+dam=7,23
+armor=48
+RESOURCES=4 i_ribs_raw
+FOODTYPE=15 t_meat_raw
+DESIRES=c_cyclops,t_arock
+AVERSIONS=r_civilization
+RESLEVEL=1
+RESDISPDNID=c_ogre
+RESDISPDNHUE=01a0
+CATEGORY=Monsters
+SUBSECTION=Giants
+DESCRIPTION=Cyclops
+
+ON=@Create
+NPC=brain_monster
+str={336, 385}
+dex={96, 115}
+int={31, 55}
+maxhits={202, 231}
+maxmana=0
+resphysical={45, 50}
+resfire={30, 40}
+rescold={25, 35}
+respoison={30, 40}
+resenergy={30, 40}
+magicresistance={60.3, 105.0}
+tactics={80.1, 100.0}
+wrestling={80.1, 90.0}
+fame=4500
+karma=-4500
+
+
+ON=@NPCRestock
+	item=i_gold,{400 500}
+	//item=magic_items
+	item=i_treasure_map3,R99
+
+[CHARDEF 04c]
+DEFNAME=c_titan
+NAME=Titan
+SOUND=snd_MONSTER_TITAN1
+ICON=i_pet_TITAN
+dam=13,16
+armor=40
+RESOURCES=4 i_ribs_raw
+CAN=MT_WALK|MT_USEHANDS
+FOODTYPE=15 t_meat_raw
+DESIRES=c_titan
+AVERSIONS=r_civilization
+RESLEVEL=1
+RESDISPDNID=c_ogre
+RESDISPDNHUE=01a2
+CATEGORY=Monsters
+SUBSECTION=Giants
+DESCRIPTION=Titan
+
+ON=@Create
+NPC=brain_monster
+str={536, 585}
+dex={126, 145}
+int={281, 305}
+maxhits={322, 351}
+resphysical={35, 45}
+resfire={30, 40}
+rescold={25, 35}
+respoison={30, 40}
+resenergy={30, 40}
+evaluatingintel={85.1, 100.0}
+magery={85.1, 100.0}
+magicresistance={80.2, 110.0}
+tactics={60.1, 80.0}
+wrestling={40.1, 50.0}
+fame=11500
+karma=-11500
+
+ON=@NPCRestock
+	item=i_gold,{600 900}
+	item={random_fourth_circle 1 random_fifth_circle 1}
+	item=i_treasure_map5,R99
+	//item=i_seed_fragrant
+	//item=i_seed_peculiar
+
+[CHARDEF 050]
+defname=c_toad_giant
+name=Giant Toad
+sound=snd_MONSTER_GIANTTOAD1
+icon=i_pet_toad_giant
+dam=5,17
+armor=24
+resources=1 i_ribs_raw,12 i_hide	//fixme: Spined hide
+can=MT_WALK
+foodtype=5 t_meat_raw
+aversions=r_civilization
+CATEGORY=Animals
+SUBSECTION=Amphibious
+DESCRIPTION=Toad, Giant
+
+ON=@Create
+	npc=brain_monster
+	str={76, 100}
+	dex={6, 25}
+	int={11, 20}
+	maxhits={46, 60}
+	resphysical={20, 25}
+	resfire={5, 10}
+	resenergy={5, 10}
+	magicresistance={25.1, 40.0}
+	tactics={40.1, 60.0}
+	wrestling={40.1, 60.0}
+	fame=750
+	karma=-750
+
+on=@npcrestock
+	item=i_gold,{25,50}
+
+
+[CHARDEF 051]
+defname=c_bullfrog
+name=Bull Frog
+sound=snd_MONSTER_BULLFROG1
+icon=i_pet_bullfrog
+can=MT_WALK
+dam=1,2
+armor=8
+resources=1 i_ribs_raw,4 i_hide
+foodtype=5 t_meat_raw
+aversions=r_civilization
+CATEGORY=Animals
+SUBSECTION=Amphibious
+DESCRIPTION=Bullfrog
+
+ON=@Create
+	npc=brain_animal
+	str={46, 70}
+	dex={6, 25}
+	int={11, 20}
+	maxhits={28, 42}
+	resphysical={5, 10}
+	magicresistance={25.1, 40.0}
+	tactics={40.1, 60.0}
+	wrestling={40.1, 60.0}
+	taming=23.1
+	fame=350
+	karma=0
+
+ON=@NPCRestock
+	item=i_gold,{25,50}
+
+[CHARDEF 055]
+DEFNAME=c_ophidian_mage
+NAME=Ophidian Mage
+SOUND=639
+ICON=i_pet_ophid_mage
+CAN=MT_WALK|MT_USEHANDS
+dam=5,10
+armor=30
+RESOURCES=1 i_ribs_raw
+FOODTYPE=5 t_meat_raw, 5 t_food
+DESIRES=i_gold,t_reagent,t_web,i_reag_spider_silk,e_Ophidian
+TEVENTS=e_Ophidian
+RESLEVEL=1
+RESDISPDNID=c_spider_giant
+RESDISPDNHUE=0153
+CATEGORY=Monsters
+SUBSECTION=Ophidians
+DESCRIPTION=Ophidian Mage
+
+ON=@Create
+	NPC=brain_monster
+	str={181, 205}
+	dex={191, 215}
+	int={96, 120}
+	maxhits={109, 123}
+	resphysical={25, 35}
+	resfire={30, 40}
+	rescold={35, 45}
+	respoison={40, 50}
+	resenergy={35, 45}
+	evaluatingintel={85.1, 100.0}
+	magery={85.1, 100.0}
+	magicresistance={75.0, 97.5}
+	tactics={65.0, 87.5}
+	wrestling={20.2, 60.0}
+	fame=4000
+	karma=-4000
+
+ON=@NPCRestock
+	item=i_gold,{125 175}
+	item={random_first_circle 1 random_second_circle 1}
+	item={random_third_circle 1 random_fifth_circle 1}
+	item=random_reagents,5
+	item=random_reagents,5
+	item=i_treasure_map2,R99
+
+[CHARDEF 056]
+DEFNAME=c_ophidian_warrior
+NAME=Ophidian Warrior
+SOUND=634
+ICON=i_pet_ophid_war
+CAN=MT_WALK|MT_USEHANDS
+dam=5,11
+armor=36
+RESOURCES=1 i_ribs_raw
+FOODTYPE=15 t_meat_raw
+DESIRES=e_Ophidian
+TEVENTS=e_Ophidian
+RESLEVEL=1
+RESDISPDNID=c_spider_giant
+RESDISPDNHUE=0153
+CATEGORY=Monsters
+SUBSECTION=Ophidians
+DESCRIPTION=Ophidian Warrior
+
+ON=@Create
+	NPC=brain_monster
+	str={150, 320}
+	dex={94, 190}
+	int={64, 160}
+	maxhits={128, 155}
+	maxmana={0}
+	resphysical={35, 40}
+	resfire={20, 30}
+	rescold={25, 35}
+	respoison={30, 40}
+	resenergy={25, 35}
+	magicresistance={70.1, 85.0}
+	swordsmanship={60.1, 85.0}
+	tactics={75.1, 90.0}
+	fame=4500
+	karma=-4500
+
+ON=@NPCRestock
+	item=i_gold,{175 225}	
+	item=i_treasure_map1,R99
+
+
+[CHARDEF 057]
+defname=c_ophidian_matriarch
+defname2=c_ophidian_queen
+NAME=Ophidian Matriarch
+SOUND=644
+ICON=i_pet_ophid_queen
+CAN=MT_WALK|MT_USEHANDS
+dam=11,13
+armor=50
+RESOURCES=
+FOODTYPE=15 t_meat_raw, 5 t_food
+DESIRES=i_gold,e_Ophidian
+TEVENTS=e_Ophidian
+RESLEVEL=1
+RESDISPDNID=c_spider_giant
+RESDISPDNHUE=0153
+CATEGORY=Monsters
+SUBSECTION=Ophidians
+DESCRIPTION=Ophidian Queen
+
+ON=@Create
+	NPC=brain_monster
+	str={416, 505}
+	dex={96, 115}
+	int={366, 455}
+	maxhits={250, 303}
+	resphysical={45, 55}
+	resfire={30, 40}
+	rescold={35, 45}
+	respoison={40, 50}
+	resenergy={35, 45}
+	evaluatingintel={90.1, 100.0}
+	magery={90.1, 100.0}
+	meditation={5.4, 25.0}
+	magicresistance={90.1, 100.0}
+	tactics={50.1, 70.0}
+	wrestling={60.1, 80.0}
+	fame=16000
+	karma=-16000
+
+ON=@NPCRestock
+	item=i_gold,{550 650}
+	item=random_potion
+	item={random_fourth_circle 1 random_fifth_circle 1}
+	item=i_treasure_map4,R99
+
+
+[CHARDEF 05f]
+// This body cannot be viewed on newer clients and will cause
+// client crashes. Use c_sea_monster instead.
+DEFNAME=c_sea_monster_old
+NAME=Sea Monster
+SOUND=snd_MONSTER_SEASERP1
+ICON=i_pet_snake
+CAN=MT_SWIM
+ANIM=078c7f
+DAM=5,15
+ARMOR=15
+RESOURCES=50 i_ribs_raw,8 i_reag_serpent_scale
+FOODTYPE=25 t_meat_raw,t_fish
+DESIRES=t_ship
+//SHELTER=r_water
+AVERSIONS=r_civilization
+RESLEVEL=1
+RESDISPDNID=c_sea_serpent
+RESDISPDNHUE=0123
+CATEGORY=Monsters
+SUBSECTION=Aquatic
+DESCRIPTION=Sea Monster
+
+ON=@Create
+	NPC=brain_monster
+	FAME={2000 6000}
+	KARMA={-3000 -3999}
+	//ALIGNMENT=NEUTRAL
+	STR={165 225}
+	DEX={58 85}
+	INT={53 85}
+	PARRYING={65.0 75.0}
+	MAGICRESISTANCE={60.0 75.0}
+	TACTICS={60.0 70.0}
+	WRESTLING={60.0 75.0}
+	FISHING=80.0
+
+ON=@NPCRestock
+	ITEM=loot_SEA_SERPENT
+
+[CHARDEF 0d2]
+defname=c_ostard_desert
+defname2=c_ostard_ocklock
+name=Desert Ostard
+sound=0270
+icon=i_pet_OSTARD_Desert
+dam=5,11
+armor=9
+resources=3 i_ribs_raw
+can=MT_WALK|MT_RUN
+foodtype=55 t_crops, 55 t_fruit, 64 t_grass
+desires=e_OSTARDS
+RESLEVEL=1
+RESDISPDNID=c_horse_tan
+RESDISPDNHUE=0100
+CATEGORY=Mounts
+SUBSECTION=Ostards
+DESCRIPTION=Ostard, Desert
+
+ON=@Create
+	npc=brain_animal
+	str={94, 170}
+	dex={56, 75}
+	int={6, 10}
+	maxhits={71, 88}
+	resphysical={15, 20}
+	resfire={5, 15}
+	magicresistance={25.1, 30.0}
+	tactics={25.3, 40.0}
+	wrestling={29.3, 44.0}
+	taming=29.1
+	fame=450
+	karma=0
+
+[CHARDEF 0da]
+defname=c_ostard_frenzied
+defname2=c_ostard_zostrich
+name=Zostrich
+sound=0275
+icon=i_pet_OSTARD_ZOSTRICH
+can=MT_WALK|MT_RUN
+dam=11,17
+armor=15
+resources=3 i_ribs_raw
+foodtype=55 t_crops, 55 t_fruit, 64 t_grass
+desires=e_OSTARDS
+ANIM=01fff
+RESLEVEL=1
+RESDISPDNID=c_horse_tan
+RESDISPDNHUE=0150
+CATEGORY=Mounts
+SUBSECTION=Ostards
+DESCRIPTION=Ostard, Frenzied
+
+ON=@Create
+	npc=brain_animal
+	color={044e, 047d}
+	str={94, 170}
+	dex={96, 115}
+	int={6, 10}
+	maxhits={71, 110}
+	resphysical={25, 30}
+	resfire={10, 15}
+	respoison={20, 25}
+	resenergy={20, 25}
+	magicresistance={75.1, 80.0}
+	tactics={79.3, 94.0}
+	wrestling={79.3, 94.0}
+	taming=77.1
+	fame=1500
+	karma=-1500
+
+
+[CHARDEF 0db]
+defname=c_ostard_forest
+defname2=c_ostard_orn
+name=Forest Ostard
+sound=0270
+icon=i_pet_OSTARD_Forest
+can=MT_WALK|MT_RUN
+DAM=4,12
+armor=9
+resources=3 i_ribs_raw
+foodtype=55 t_crops, 55 t_fruit, 64 t_grass
+desires=e_OSTARDS,c_man,c_woman
+aversions=e_carnivores3
+ANIM=01fff
+RESLEVEL=1
+RESDISPDNID=c_horse_tan
+RESDISPDNHUE=0166lla
+CATEGORY=Mounts
+SUBSECTION=Ostards
+DESCRIPTION=Ostard, Forest
+
+ON=@Create
+	npc=brain_animal
+	color={0899,08b0} 
+	str={94, 170}
+	dex={56, 75}
+	int={6, 10}
+	maxhits={71, 88}
+dam=8,14
+	resphysical={15, 20}
+	magicresistance={27.1, 32.0}
+	tactics={29.3, 44.0}
+	wrestling={29.3, 44.0}
+	taming=29.1
+	fame=450
+	karma=0
+
+
+[EOF]
