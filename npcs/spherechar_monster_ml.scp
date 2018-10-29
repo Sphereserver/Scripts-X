@@ -640,7 +640,7 @@ foodtype=55 i_ribs_raw
 desires=c_elf_male,c_elf_female
 aversions=e_carnivores3
 CATEGORY=Mounts
-SUBSECTION=Magical
+SUBSECTION=Wild
 DESCRIPTION=Cu Sidhe
 
 ON=@Create

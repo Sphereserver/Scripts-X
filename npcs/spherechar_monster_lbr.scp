@@ -1381,6 +1381,55 @@ ON=@NpcRestock
 	//item=i_seed_fragrant
 	//item=i_seed_peculiar
 
+[CHARDEF 02fe]
+DEFNAME=c_juka_lord
+NAME=Juka Lord
+soundidle=01ac
+soundnotice=01cd
+soundgethit=01d0
+sounddie=028d
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
+dam=10,12
+armor=28
+DESIRES=i_gold
+AVERSIONS=t_trap,r_civilization,e_carnivores3
+FOODTYPE=t_meat_raw
+MAXFOOD=40
+RESOURCES=1 i_ribs_raw
+TEVENTS=e_carnivores2
+CATEGORY=Monsters
+SUBSECTION=Juka
+DESCRIPTION=Juka, Lord
+
+ON=@Create
+NPC=brain_monster
+str={401, 500}
+dex={81, 100}
+int={151, 200}
+maxhits={241, 300}
+resphysical={40, 50}
+resfire={45, 50}
+rescold={40, 50}
+respoison={20, 25}
+resenergy={40, 50}
+anatomy={90.1, 100.0}
+archery={95.1, 100.0}
+healing={80.1, 100.0}
+magicresistance={120.1, 130.0}
+swordsmanship={90.1, 100.0}
+tactics={95.1, 100.0}
+wrestling={90.1, 100.0}
+fame=15000
+karma=-15000
+
+ON=@NpcRestock
+	item=i_gold,{400 500}
+	item=random_jewel
+	item=i_bandage,{10 30}
+	item=i_arrow,{50 70}
+	//item=magic_items
+	//item=i_juka_slayer_bow
+	//item=i_arcane_gem
 
 [CHARDEF 02ff]
 defname=c_Betrayer
@@ -1809,55 +1858,6 @@ ON=@NpcRestock
 item={random_body_parts_1 1 random_body_parts_2 1}
 item=random_bones
 
-[CHARDEF 0308]
-DEFNAME=c_juka_lord
-NAME=Juka Lord
-soundidle=01ac
-soundnotice=01cd
-soundgethit=01d0
-sounddie=028d
-CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
-dam=10,12
-armor=28
-DESIRES=i_gold
-AVERSIONS=t_trap,r_civilization,e_carnivores3
-FOODTYPE=t_meat_raw
-MAXFOOD=40
-RESOURCES=1 i_ribs_raw
-TEVENTS=e_carnivores2
-CATEGORY=Monsters
-SUBSECTION=Juka
-DESCRIPTION=Juka, Lord
-
-ON=@Create
-NPC=brain_monster
-str={401, 500}
-dex={81, 100}
-int={151, 200}
-maxhits={241, 300}
-resphysical={40, 50}
-resfire={45, 50}
-rescold={40, 50}
-respoison={20, 25}
-resenergy={40, 50}
-anatomy={90.1, 100.0}
-archery={95.1, 100.0}
-healing={80.1, 100.0}
-magicresistance={120.1, 130.0}
-swordsmanship={90.1, 100.0}
-tactics={95.1, 100.0}
-wrestling={90.1, 100.0}
-fame=15000
-karma=-15000
-
-ON=@NpcRestock
-	item=i_gold,{400 500}
-	item=random_jewel
-	item=i_bandage,{10 30}
-	item=i_arrow,{50 70}
-	//item=magic_items
-	//item=i_juka_slayer_bow
-	//item=i_arcane_gem
 
 
 [CHARDEF 0309]
