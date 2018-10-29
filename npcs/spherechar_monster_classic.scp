@@ -1379,7 +1379,7 @@ armor=28
 RESOURCES=1 i_ribs_raw
 FOODTYPE=15 t_meat_raw
 AVERSIONS=r_civilization
-CATEGORY=Monsters
+CATEGORY=Animals
 SUBSECTION=Arachnids
 DESCRIPTION=Scorpion, Giant
 
