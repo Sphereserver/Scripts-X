@@ -391,6 +391,7 @@ ON=@NPCRestock
 	item=i_treasure_map4,R99
 
 
+	
 [CHARDEF 0d]
 DEFNAME=c_elem_air
 NAME=Air Elemental
@@ -2163,6 +2164,38 @@ ON=@Create
 	fame=450
 	karma=0
 
+	
+[chardef 0c8]
+defname=c_horse_tan
+name=Horse
+sound=snd_ANIMALS_HORSE1
+icon=i_pet_horse_tan
+can=MT_WALK|MT_RUN
+resources=3 i_ribs_raw, 10 i_hide
+foodtype=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+dam=3, 4
+armor=9
+desires=e_horses,c_man,c_woman
+TEVENTS=e_horses
+aversions=e_carnivores3
+CATEGORY=Mounts
+SUBSECTION=Domestic
+DESCRIPTION=Horse, Tan
+
+ON=@Create
+	npc=brain_animal
+	str={22, 98}
+	dex={56, 75}
+	int={6, 10}
+	maxhits={28, 45}
+	resphysical={15, 20}
+	magicresistance={25.1, 30.0}
+	tactics={29.3, 44.0}
+	wrestling={29.3, 44.0}
+	taming=29.1
+	fame=300
+	karma=300	
+	
 [CHARDEF 0c9]
 defname=c_cat
 name=Cat
@@ -2193,7 +2226,190 @@ ON=@Create
 	taming=0
 	fame=0
 	karma=150
+	
+[chardef 0ca]
+defname=c_alligator
+name=Alligator
+sound=661
+icon=i_pet_CROC
+dam=5, 15
+armor=30
+resources=6 i_ribs_raw,12 i_hide
+can=MT_WALK|MT_RUN|MT_SWIM
+foodtype=5 t_meat_raw,t_fish
+desires=c_alligator
+aversions=r_civilization,c_man,c_woman,e_carnivores3
+CATEGORY=Animals
+SUBSECTION=Reptiles
+DESCRIPTION=Alligator
 
+ON=@Create
+	npc=brain_animal
+	str={76, 100}
+	dex={6, 25}
+	int={11, 20}
+	maxhits={46, 60}
+	maxstam={46, 65}
+	resphysical={25, 35}
+	resfire={5, 10}
+	respoison={5, 10}
+	magicresistance={25.1, 40.0}
+	tactics={40.1, 60.0}
+	wrestling={40.1, 60.0}
+	taming=47.1
+	fame=600
+	karma=-600
+
+[chardef 0cb]
+defname=c_pig
+name=Pig
+sound=0c4
+icon=i_pet_PIG
+can=MT_WALK|MT_RUN
+dam=2, 4
+armor=12
+resources=1 i_ribs_raw
+foodtype=55 t_fruit, 55 t_crops, 55 t_grain, 55 t_garbage
+desires=c_pig,c_pig_big
+CATEGORY=Animals
+SUBSECTION=Domestic
+DESCRIPTION=Pig
+
+ON=@Create
+	str={20}
+	dex={20}
+	int={5}
+	maxhits={12}
+	resphysical={10, 15}
+	magicresistance={5.0}
+	tactics={5.0}
+	wrestling={5.0}
+	taming=11.1
+	fame=150
+	karma=0
+
+[chardef 0cc]
+defname=c_horse_brown_dk
+name=Horse
+sound=0a8
+icon=i_pet_horse_brown_dk
+can=MT_WALK|MT_RUN
+resources=3 i_ribs_raw, 10 i_hide
+foodtype=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+dam=3, 4
+armor=9
+desires=e_horses,c_man,c_woman
+TEVENTS=e_horses
+aversions=e_carnivores3
+CATEGORY=Mounts
+SUBSECTION=Domestic
+DESCRIPTION=Horse, Dark Brown
+
+ON=@Create
+	npc=brain_animal
+	str={22, 98}
+	dex={56, 75}
+	int={6, 10}
+	maxhits={28, 45}
+	resphysical={15, 20}
+	magicresistance={25.1, 30.0}
+	tactics={29.3, 44.0}
+	wrestling={29.3, 44.0}
+	taming=29.1
+	fame=300
+	karma=300
+
+[chardef 0cd]
+defname=c_rabbit
+name=Rabbit
+sound=0c9
+icon=i_pet_RABBIT_2
+can=MT_WALK|MT_RUN
+dam=1
+armor=6
+resources=1 i_ribs_raw,1 i_hide
+foodtype=55 t_crops,55 t_foliage, 64 t_grass
+desires=c_rabbit
+aversions=e_carnivores2
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Rabbit
+
+ON=@Create
+	npc=brain_animal
+	str={6, 10}
+	dex={26, 38}
+	int={6, 14}
+	maxhits={4, 6}
+	resphysical={5, 10}
+	magicresistance={5.0}
+	tactics={5.0}
+	wrestling={5.0}
+	taming=18.9
+	fame=150
+	karma=0
+
+[chardef 0cf]
+defname=c_sheep_woolly
+name=Sheep
+sound=0cf
+icon=i_pet_SHEEP_WOOLY
+dam=1, 2
+armor=6
+resources=3 I_WOOL, 3 i_lamb_leg_raw
+can=MT_WALK|MT_RUN
+foodtype=5 t_crops, 5 t_grain, 64 t_grass
+desires=c_SHEEP_WOOLLY,c_SHEEP_SHORN,c_man,c_woman
+aversions=e_carnivores3
+CATEGORY=Animals
+SUBSECTION=Domestic
+DESCRIPTION=Sheep, Wooly
+
+ON=@Create
+	npc=brain_animal
+	str={19}
+	dex={25}
+	int={5}
+	maxhits={12}
+	resphysical={5, 10}
+	magicresistance={5.0}
+	tactics={6.0}
+	wrestling={5.0}
+	taming=11.1
+	fame=300
+	karma=0
+
+
+[chardef 0d0]
+defname=c_chicken
+name=Chicken
+sound=06e
+icon=i_pet_CHICKEN
+dam=1
+armor=2
+resources=25 i_feather,I_BIRD_RAW
+can=MT_WALK|MT_RUN
+foodtype=5 t_grain
+desires=c_chicken
+aversions=e_carnivores2
+CATEGORY=Animals
+SUBSECTION=Domestic
+DESCRIPTION=Chicken
+
+ON=@Create
+	npc=brain_animal
+	str={5}
+	dex={15}
+	int={5}
+	maxhits={3}
+	resphysical={1, 5}
+	magicresistance={4.0}
+	tactics={5.0}
+	wrestling={5.0}
+	taming=0.9
+	fame=150
+	karma=0
+	
 [CHARDEF 0d1]
 defname=c_goat
 name=Goat
@@ -2371,7 +2587,7 @@ desires=c_cow_bw,c_cow_brown,c_bull_brown_lt,c_bull_brown_dk
 aversions=e_carnivores3
 CATEGORY=Animals
 SUBSECTION=Domestic
-DESCRIPTION=Cow, Black&White
+DESCRIPTION=Cow, Black and White
 
 ON=@Create
 	npc=brain_animal
@@ -2386,6 +2602,36 @@ ON=@Create
 	taming=11.1
 	fame=300
 	karma=0
+
+
+[chardef 0D9]
+defname=c_dog
+name=Dog
+sound=085
+icon=i_pet_DOG
+can=MT_WALK|MT_RUN
+dam=4, 7
+armor=12
+resources=3 i_ribs_raw
+foodtype=5 t_meat_raw
+desires=c_man,c_woman,c_DOG
+CATEGORY=Animals
+SUBSECTION=Domestic
+DESCRIPTION=Dog
+
+ON=@Create
+	npc=brain_animal
+	str={27, 37}
+	dex={28, 43}
+	int={29, 37}
+	maxhits={17, 22}
+	resphysical={10, 15}
+	magicresistance={22.1, 47.0}
+	tactics={19.2, 31.0}
+	wrestling={19.2, 31.0}
+	taming=15.3
+	fame=0
+	karma=300	
 
 [CHARDEF 0dc]
 defname=c_llama
@@ -2514,7 +2760,69 @@ ON=@Create
 	taming=23.1
 	fame=450
 	karma=0
+	
+[chardef 0e2]
+defname=c_horse_gray
+name=Horse
+sound=0a8
+icon=i_pet_horse_gray
+can=MT_WALK|MT_RUN
+resources=3 i_ribs_raw, 10 i_hide
+foodtype=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+dam=3, 4
+armor=9
+desires=e_horses,c_man,c_woman
+TEVENTS=e_horses
+aversions=e_carnivores3
+CATEGORY=Mounts
+SUBSECTION=Domestic
+DESCRIPTION=Horse, Gray
 
+ON=@Create
+	npc=brain_animal
+	str={22, 98}
+	dex={56, 75}
+	int={6, 10}
+	maxhits={28, 45}
+	resphysical={15, 20}
+	magicresistance={25.1, 30.0}
+	tactics={29.3, 44.0}
+	wrestling={29.3, 44.0}
+	taming=29.1
+	fame=300
+	karma=300
+
+[chardef 0e4]
+defname=c_horse_brown_lt
+name=Horse
+sound=0a8
+icon=i_pet_horse_brown_lt
+can=MT_WALK|MT_RUN
+resources=3 i_ribs_raw, 10 i_hide
+foodtype=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+dam=3, 4
+armor=9
+desires=e_horses,c_man,c_woman
+TEVENTS=e_horses
+aversions=e_carnivores3
+CATEGORY=Mounts
+SUBSECTION=Domestic
+DESCRIPTION=Horse, Light Brown
+
+ON=@Create
+	npc=brain_animal
+	str={22, 98}
+	dex={56, 75}
+	int={6, 10}
+	maxhits={28, 45}
+	resphysical={15, 20}
+	magicresistance={25.1, 30.0}
+	tactics={29.3, 44.0}
+	wrestling={29.3, 44.0}
+	taming=29.1
+	fame=300
+	karma=300
+	
 [CHARDEF 0e7]
 defname=c_cow_brown
 name=Cow
@@ -2528,7 +2836,7 @@ desires=c_cow_bw,c_cow_brown,c_bull_brown_lt,c_bull_brown_dk
 aversions=e_carnivores3
 CATEGORY=Animals
 SUBSECTION=Domestic
-DESCRIPTION=Cow, Brown&White
+DESCRIPTION=Cow, Brown and White
 
 ON=@Create
 	npc=brain_animal
@@ -2559,7 +2867,7 @@ aversions=e_carnivores3
 
 CATEGORY=Animals
 SUBSECTION=Domestic
-DESCRIPTION=Bull, Light
+DESCRIPTION=Bull, Light Brown
 
 ON=@Create
 	npc=brain_animal
@@ -2592,7 +2900,7 @@ aversions=e_carnivores3
 
 CATEGORY=Animals
 SUBSECTION=Domestic
-DESCRIPTION=Bull, Dark
+DESCRIPTION=Bull, Dark Brown
 
 ON=@Create
 	npc=brain_animal
@@ -2609,6 +2917,73 @@ ON=@Create
 	fame=600
 	karma=0
 
+
+[chardef 0ea]
+defname=c_great_hart
+defname2=c_stag
+name=Great Hart
+sound=082
+icon=i_pet_DEER
+dam=5, 9
+armor=24
+resources=6 i_ribs_raw,15 i_hide
+can=MT_WALK|MT_RUN
+foodtype=25 t_crops, 64 t_grass
+desires=c_stag,c_doe,r_foliage
+aversions=r_civilization,e_carnivores3
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Great Hart
+
+ON=@Create
+	npc=brain_animal
+	str={41, 71}
+	dex={47, 77}
+	int={27, 57}
+	maxhits={27, 41}
+	resphysical={20, 25}
+	rescold={5, 10}
+	magicresistance={26.8, 44.5}
+	tactics={29.8, 47.5}
+	wrestling={29.8, 47.5}
+	taming=59.1
+	fame=300
+	karma=0
+
+[chardef 0ed]
+defname=c_hind
+defname2=c_doe
+name=Hind
+sound=082
+icon=i_pet_DEER
+dam=4
+armor=8
+resources=25 i_ribs_raw,8 i_hide
+can=MT_WALK|MT_RUN
+foodtype=25 t_crops, 64 t_grass
+desires=c_stag,c_doe,r_foliage
+aversions=r_civilization,e_carnivores3
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Hind
+
+ON=@Create
+	npc=brain_animal
+	str={21, 51}
+	dex={47, 77}
+	int={17, 47}
+	maxhits={15, 29}
+	resphysical={5, 15}
+	rescold={5}
+	magicresistance={15.0}
+	tactics={19.0}
+	wrestling={26.0}
+	taming=23.1
+	fame=300
+	karma=0
+	
+	
+	
 [CHARDEF 0ee]
 defname=c_rat
 name=Rat
