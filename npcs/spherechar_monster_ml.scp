@@ -12,7 +12,7 @@ RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
 AVERSIONS=t_TRAP,t_eerie_stuff
 CAN=MT_WALK|MT_FIRE_IMMUNE|MT_USEHANDS|MT_EQUIP
-CATEGORY=Monsters
+CATEGORY=Named Creatures
 SUBSECTION=Demons
 DESCRIPTION=Chief Paroxysmus
 
@@ -55,8 +55,8 @@ RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
 AVERSIONS=t_TRAP,t_eerie_stuff
 CAN=MT_WALK|MT_RUN
-CATEGORY=Mounts
-SUBSECTION=Magical
+CATEGORY=Named Creatures
+SUBSECTION=Animals
 DESCRIPTION=Dread Horn
 
 ON=@Create
@@ -92,7 +92,7 @@ RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
 AVERSIONS=t_TRAP,t_eerie_stuff
 CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
-CATEGORY=Monsters
+CATEGORY=Named Creatures
 SUBSECTION=Feys
 DESCRIPTION=Lady Melisande
 
@@ -914,7 +914,7 @@ foodtype=55 i_ribs_raw
 desires=c_man,c_woman
 aversions=e_carnivores3
 CATEGORY=Mounts
-SUBSECTION=Equines
+SUBSECTION=Domestic
 DESCRIPTION=Armored Steed
 
 ON=@Create

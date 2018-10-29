@@ -16,7 +16,7 @@ RESDISPDNID=c_snake_giant
 RESDISPDNHUE=0100
 CATEGORY=Monsters
 SUBSECTION=Terathans
-DESCRIPTION=Terathan Warrior
+DESCRIPTION=Terathan, Warrior
 
 ON=@Create
 	NPC=brain_monster
@@ -61,7 +61,7 @@ RESDISPDNID=c_snake_giant
 RESDISPDNHUE=0100
 CATEGORY=Monsters
 SUBSECTION=Terathans
-DESCRIPTION=Terathan Drone
+DESCRIPTION=Terathan, Drone
 
 ON=@Create
 	NPC=brain_monster
@@ -102,7 +102,7 @@ RESDISPDNID=c_snake_giant
 RESDISPDNHUE=0100
 CATEGORY=Monsters
 SUBSECTION=Terathans
-DESCRIPTION=Terathan Matriarch
+DESCRIPTION=Terathan, Matriarch
 
 ON=@Create
 	NPC=brain_monster
@@ -302,7 +302,7 @@ RESDISPDNID=c_spider_giant
 RESDISPDNHUE=0153
 CATEGORY=Monsters
 SUBSECTION=Ophidians
-DESCRIPTION=Ophidian Mage
+DESCRIPTION=Ophidian, Mage
 
 ON=@Create
 	NPC=brain_monster
@@ -348,7 +348,7 @@ RESDISPDNID=c_spider_giant
 RESDISPDNHUE=0153
 CATEGORY=Monsters
 SUBSECTION=Ophidians
-DESCRIPTION=Ophidian Warrior
+DESCRIPTION=Ophidian, Warrior
 
 ON=@Create
 	NPC=brain_monster
@@ -391,7 +391,7 @@ RESDISPDNID=c_spider_giant
 RESDISPDNHUE=0153
 CATEGORY=Monsters
 SUBSECTION=Ophidians
-DESCRIPTION=Ophidian Queen
+DESCRIPTION=Ophidian, Queen
 
 ON=@Create
 	NPC=brain_monster

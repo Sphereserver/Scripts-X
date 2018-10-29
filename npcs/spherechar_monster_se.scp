@@ -16,7 +16,7 @@ RESLEVEL=2
 RESDISPDNID=c_horse_gray
 RESDISPDNHUE=08037
 CATEGORY=Mounts
-SUBSECTION=Magical
+SUBSECTION=Wild
 DESCRIPTION=Kirin
 
 ON=@Create
@@ -132,7 +132,7 @@ RESLEVEL=3
 RESDISPDNHUE=33
 CATEGORY=Monsters
 //In Japanese folklore they are refered as Demon
-SUBSECTION=Demons, Oriental
+SUBSECTION=Demons
 DESCRIPTION=Kappa
 
 ON=@Create
@@ -171,7 +171,7 @@ RESDISPDNID=c_man
 RESLEVEL=3
 RESDISPDNHUE=55
 CATEGORY=Monsters
-SUBSECTION=Demons, Oriental	//In Japanese folklore they are refered as Demon
+SUBSECTION=Demons
 DESCRIPTION=Oni
 
 on=@create
@@ -271,7 +271,7 @@ RESLEVEL=4
 RESDISPDNHUE=08386
 TEVENTS=e_horses
 CATEGORY=Mounts
-SUBSECTION=Animals
+SUBSECTION=Wild
 DESCRIPTION=Hiryu
 
 ON=@Create
@@ -371,7 +371,7 @@ AVERSIONS=e_carnivores3
 MOVERATE=60
 CATEGORY=Monsters
 SUBSECTION=Yomotsu
-DESCRIPTION=Warrior, Yomotsu
+DESCRIPTION=Yomotsu, Warrior
 
 ON=@Create
 NPC=brain_monster
@@ -415,7 +415,7 @@ RESDISPDNID=c_wolf
 RESLEVEL=3
 RESDISPDNHUE=33
 CATEGORY=Animals
-SUBSECTION=Magical
+SUBSECTION=Wild
 DESCRIPTION=Bake Kitsune
 ON=@Create
 	NPC=brain_monster
@@ -705,7 +705,7 @@ RESLEVEL=3
 RESDISPDNHUE=33
 CATEGORY=Monsters
 SUBSECTION=Yomotsu 
-DESCRIPTION=Mage, Yomotsu
+DESCRIPTION=Yomotsu, Priest
 
 ON=@Create
 NPC=brain_monster
@@ -785,8 +785,7 @@ AVERSIONS=e_carnivores3
 MOVERATE=60
 CATEGORY=Monsters
 SUBSECTION=Yomotsu
-DESCRIPTION=Elder, Yomotsu
-
+DESCRIPTION=Yomotsu, Elder
 ON=@Create
 NPC=brain_monster
 str={686, 830}

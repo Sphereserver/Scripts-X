@@ -172,7 +172,7 @@ RESLEVEL=3
 RESDISPDNHUE=33
 CATEGORY=Monsters
 SUBSECTION=Undeads
-DESCRIPTION=Flesh Golem
+DESCRIPTION=Golem, Flesh
 
 ON=@Create
 NPC=brain_monster

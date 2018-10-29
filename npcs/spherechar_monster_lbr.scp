@@ -52,7 +52,6 @@ ON=@NpcRestock
 [CHARDEF 03e]
 DEFNAME=c_wyvern
 NAME=Wyvern
-ID=c_DRAGON_RED
 sound=362
 dam=8,19
 armor=40
@@ -361,7 +360,7 @@ RESLEVEL=2
 RESDISPDNID=c_horse_gray
 RESDISPDNHUE=08254
 CATEGORY=Mounts
-SUBSECTION=Magical
+SUBSECTION=Wild
 DESCRIPTION=Unicorn
 
 ON=@Create
