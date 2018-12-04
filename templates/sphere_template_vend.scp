@@ -576,6 +576,54 @@ BUY=i_potion_Steelskin,3
 BUY=i_potion_Stoneskin,3
 BUY=i_potion_Weakness,3
 
+[TEMPLATE VENDOR_S_MYSTIC_SHOP]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Mystic
+SELL=random_scroll_mystic,{4 24}
+SELL=random_scroll_mystic,{4 24}
+SELL=random_scroll_mystic,{4 24}
+SELL=random_scroll_mystic,{4 24}
+SELL=i_reag_bone,{21 206}
+SELL=i_reag_dragon_blood,{21 206}
+SELL=i_reag_daemon_bone,{21 206} 
+SELL=i_reag_fertile_dirt,{21 206}
+SELL=i_spellbook_mystic,{3 27
+
+[TEMPLATE VENDOR_B_MYSTIC_SHOP]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Mystic
+BUY=random_scroll_mystic,{4 24}
+BUY=random_scroll_mystic,{4 24}
+BUY=random_scroll_mystic,{4 24}
+BUY=random_scroll_mystic,{4 24}
+BUY=i_reag_bone,{21 206}
+BUY=i_reag_dragon_blood,{21 206}
+BUY=i_reag_daemon_bone,{21 206} 
+BUY=i_reag_fertile_dirt,{21 206}
+BUY=i_spellbook_mystic,{3 27}
+
+[TEMPLATE VENDOR_S_SPELLWEAVER_SHOP]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Spellweaver
+SELL=random_scroll_spellweaving,{4 24}
+SELL=random_scroll_spellweaving,{4 24}
+SELL=random_scroll_spellweaving,{4 24}
+SELL=random_scroll_spellweaving,{4 24}
+SELL=i_spellbook_spellweaving,{3 27}
+
+[TEMPLATE VENDOR_B_SPELLWEAVER_SHOP]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Spellweaver
+BUY=random_scroll_spellweaving,{4 24}
+BUY=random_scroll_spellweaving,{4 24}
+BUY=random_scroll_spellweaving,{4 24}
+BUY=random_scroll_spellweaving,{4 24}
+BUY=i_spellbook_spellweaving,{3 27}
+
 [TEMPLATE VENDOR_S_MAGE_SHOP]
 CATEGORY=Vendor Templates
 SUBSECTION=Sell Templates
@@ -1640,7 +1688,6 @@ BUY=i_scimitar,{10 15}
 BUY=i_knife_skinning,{10 15}
 BUY=i_axe_two_hand,{10 15}
 BUY=i_axe_war,{10 15}
-
 BUY=i_log,{10 15}
 BUY=i_ingot_iron,{10 15}
 
@@ -1679,6 +1726,77 @@ BUY=i_hammer_war,{10 15}
 BUY=i_mace_war,{10 15}
 BUY=i_ingot_iron,{10 15}
 BUY=i_log,{10 15}
+
+[TEMPLATE VENDOR_S_GARGISH_WEAPONS_BLADED]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Bladed Weaponsmith, Gargoyle
+SELL=i_dual_shortaxes,{10 15}
+SELL=i_stone_warsword,{10 15}
+SELL=i_gargish_talwar,{10 15}
+SELL=i_sword_dread,{10 15}
+SELL=i_sword_glass ,{10 15}
+SELL=i_gargish_cleaver,{10 15}
+SELL=i_gargish_bardiche,{10 15}
+SELL=i_gargish_knife_butcher,{10 15}
+SELL=i_gargish_katana,{10 15}
+SELL=i_gargish_scythe,{10 15}
+SELL=i_gargish_talwar,{10 15}
+SELL=i_gargish_bone_harvester,{10 15}
+SELL=i_gargish_daisho,{10 15}
+SELL=i_gargish_axe_battle,{10 15}
+SELL=i_gargish_axe,{10 15}
+SELL=i_boomerang,{10 15}
+SELL=i_cyclone,{10 15}
+SELL=i_soul_glaive,{10 15}
+
+[TEMPLATE VENDOR_B_GARGISH_WEAPONS_BLADED]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Bladed Weaponsmith, Gargoyle
+BUY=i_dual_shortaxes,{10 15}
+BUY=i_stone_warsword,{10 15}
+BUY=i_gargish_talwar,{10 15}
+BUY=i_sword_dread,{10 15}
+BUY=i_sword_glass ,{10 15}
+BUY=i_gargish_cleaver,{10 15}
+BUY=i_gargish_bardiche,{10 15}
+BUY=i_gargish_knife_butcher,{10 15}
+BUY=i_gargish_katana,{10 15}
+BUY=i_gargish_scythe,{10 15}
+BUY=i_gargish_talwar,{10 15}
+BUY=i_gargish_bone_harvester,{10 15}
+BUY=i_gargish_daisho,{10 15}
+BUY=i_gargish_axe_battle,{10 15}
+BUY=i_gargish_axe,{10 15}
+BUY=i_log,{10 15}
+BUY=i_ingot_iron,{10 15}
+
+[TEMPLATE VENDOR_S_GARGISH_WEAPONS_BLUNT]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Blunt Weaponsmith, Gargoyle
+SELL=i_mace_disc,{10 15}
+SELL=i_gargish_hammer_war,{10 15}
+SELL=i_gargish_maul,{10 15}
+SELL=i_gargish_tessen,{10 15}
+SELL=i_staff_glass,{10 15}
+SELL=i_staff_serpentstone,{10 15}
+SELL=i_gargish_staff_gnarled,{10 15}
+
+[TEMPLATE VENDOR_B_GARGISH_WEAPONS_BLUNT]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Blunt Weaponsmith, Gargoyle
+BUY=i_mace_disc,{10 15}
+BUY=i_gargish_hammer_war,{10 15}
+BUY=i_gargish_maul,{10 15}
+BUY=i_gargish_tessen,{10 15}
+BUY=i_staff_glass,{10 15}
+BUY=i_staff_serpentstone,{10 15}
+BUY=i_gargish_staff_gnarled,{10 15}
+BUY=i_log,{10 15}
+BUY=i_ingot_iron,{10 15}
 
 [TEMPLATE VENDOR_S_MAGE_1ST]
 CATEGORY=Vendor Templates

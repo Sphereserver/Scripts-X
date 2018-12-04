@@ -114,7 +114,7 @@ TSPEECH=spk_human_default
 TEVENTS=e_human_hearunk
 CATEGORY=Humanoids
 SUBSECTION=Gargoyles
-DESCRIPTION=Gargoyle Female
+DESCRIPTION=Gargoyle, Female
 
 ON=@Create
 	NPC = brain_human
