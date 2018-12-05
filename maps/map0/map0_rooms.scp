@@ -2,7 +2,7 @@
 // SphereServer by: SphereServer development team and Menasoft.
 // www.sphereserver.net
 //****************************************************************************
-
+VERSION=X1
 
 [ROOMDEF a_house_1]
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass

@@ -1,0 +1,36 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[COMMENT sphere_map1_haven]
+To enable Haven Island region, uncomment the right file in spheretables.scp to
+choose between old Haven (AOS/SE) or New Haven (ML+).
+Do not enable both, just choose the one that will best match your server.
+
+
+[AREADEF a_haven_island]
+NAME=Haven Island
+GROUP=Haven
+P=3627,2606,0,1
+RECT=3314,2345,3814,3095,1
+FLAGS=region_flag_no_pvp|region_flag_nobuilding|region_antimagic_recall_in|region_antimagic_gate
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+
+[AREADEF a_haven_town]
+NAME=Haven
+GROUP=Haven
+P=3618,2587,0,1
+RECT=3590,2460,3708,2686,1
+RECT=3568,2552,3590,2631,1
+RECT=3708,2558,3761,2712,1
+RECT=3695,2686,3708,2712,1
+RECT=3664,2608,3680,2624,1
+RECT=3664,2640,3672,2656,1
+RECT=3672,2648,3680,2656,1
+FLAGS=region_flag_no_pvp|region_flag_nobuilding|region_antimagic_recall_in|region_antimagic_gate|region_flag_guarded
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_ocllo
+
+[EOF]

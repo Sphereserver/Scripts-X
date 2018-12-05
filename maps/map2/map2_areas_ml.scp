@@ -8,22 +8,13 @@ VERSION=X1
 // Dungeons
 ////////////////////////////////////////
 
-[AREADEF a_abyssal_infernals_lair]
-NAME=Abyssal Infernal's Lair
-GROUP=SA Dungeons
-P=6995,733,53,0
-RECT=6877,634,7167,841,0
+[AREADEF a_twisted_weald]
+NAME=Twisted Weald
+GROUP=ML Dungeons
+P=2211,1262,3,2
+RECT=2100,1300,2258,1141,2
 FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-TAG.MUSIC=midi_StygianDragon
-
-[AREADEF a_primeval_lichs_lair]
-NAME=Primeval Lich's Lair
-GROUP=SA Dungeons
-P=6993,1363,-15,0
-RECT=6909,904,7130,1382,0
-FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
-EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
-TAG.MUSIC=midi_PrimevalLich
+TAG.MUSIC=midi_Dread_horn_area
 
 [EOF]

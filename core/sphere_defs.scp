@@ -169,15 +169,15 @@ mt_fly            000010
 mt_fire_immune    000020
 mt_noindoors      000040   // Can't go under roof
 mt_hover          000080   // Hovers (can follow gargoyle flight paths)
-mt_equip          000100
-mt_usehands       000200
+mt_equip          000100   // Can equip non-special items (<= 24, which is layer_legs), like armors and robes. Does not allow weapon equipping (layers 1 and 2), see MT_USEHANDS instead
+mt_usehands       000200   // Can do actions that require hands: looting, moving objects, equip weapons. If not enabled, the NPC won't have interest in items, so the trigger @NPCLookAtItem won't fire
 mt_mount          000400   // can ride mountables
 mt_female         000800
 mt_nonhum         001000   // Body type for combat messages
 mt_run            002000
 mt_nodclicklos    004000   // when dclicking sth., ignore LOS checks
 mt_nodclickdist   008000   // when dclicking sth., ignore distance checks
-mt_nonmover       010000	// Stay in place, no move at all
+mt_nonmover       010000   // Stay in place, no move at all
 
 [DEFNAME sector_flags]
 secf_nosleep	01 //sector will never sleep, this flag take over secf_instasleep

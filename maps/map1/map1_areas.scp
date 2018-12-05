@@ -1,0 +1,37 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[COMMENT sphere_map1]
+Trammel is basically a copy of Felucca, but pvp-safe.
+
+
+////////////////////////////////////////
+// Facet
+////////////////////////////////////////
+
+[AREADEF a_facet_trammel]
+NAME=Trammel
+GROUP=ALLMAP
+P=1323,1624,55,1
+RECT=0,0,7168,4096,1
+FLAGS=region_flag_no_pvp
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+
+////////////////////////////////////////
+// Dungeons
+////////////////////////////////////////
+
+[AREADEF a_solen_hive_map1]
+NAME=Solen Hive
+GROUP=Dungeons
+P=5803,1920,0,1
+RECT=5640,1777,5935,2039,1
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in|region_antimagic_gate
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_dungeon9
+
+
+[EOF]

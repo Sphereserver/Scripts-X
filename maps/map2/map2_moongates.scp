@@ -5,13 +5,14 @@
 VERSION=X1
 
 [MoonGates]
-1336,1997,5,0=mg_britain
-1499,3771,5,0=mg_jhelom
-771,752,5,0=mg_yew
-2701,692,5,0=mg_minoc
-1828,2948,-20,0=mg_trinsic
-643,2067,5,0=mg_skara_brae
-3563,2139,34,0=mg_magincia
-4467,1283,5,0=mg_moonglow
-2711,2234,0,0=mg_buccaneers_den
+1215,467,-13,2=mg_compassion
+722,1366,-60,2=mg_honesty
+744,724,-28,2=mg_honor
+281,1016,0,2=mg_humility
+987,1011,-32,2=mg_justice
+1174,1286,-30,2=mg_sacrifice
+1532,1340,-3,2=mg_spirituality
+528,216,-45,2=mg_valor
+1721,218,96,2=mg_chaos
+
 [EOF]

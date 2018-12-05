@@ -1,0 +1,14 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[Teleporters]
+3508,2777,0,1=5913,355,0,1=tp_newhaven_island_newhaven_mine
+3508,2778,0,1=5913,355,0,1=tp_newhaven_island_newhaven_mine
+5912,354,0,1=3509,2778,0,1=tp_newhaven_mine_newhaven_island
+5912,355,0,1=3509,2778,0,1=tp_newhaven_mine_newhaven_island
+5912,356,0,1=3509,2778,0,1=tp_newhaven_mine_newhaven_island
+
+[EOF]

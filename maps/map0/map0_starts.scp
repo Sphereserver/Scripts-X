@@ -2,8 +2,10 @@
 // SphereServer by: SphereServer development team and Menasoft.
 // www.sphereserver.net
 //****************************************************************************
+VERSION=X1
 
-[STARTS 2]	// new client (<ARGN> == 2 if new cliloc line is added)
+//[STARTS version] If version == 2, after the P there's a line for the cliloc
+[STARTS 2]
 Yew
 The Empath Abbey
 633,858,0,0
@@ -40,3 +42,5 @@ Vesper
 The Ironwood Inn
 2771,976,0,0
 1075080
+
+[EOF]

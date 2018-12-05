@@ -1,0 +1,20 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[MoonGates]
+1336,1997,5,1=mg_britain_map1
+1499,3771,5,1=mg_jhelom_map1
+771,752,5,1=mg_yew_map1
+2701,692,5,1=mg_minoc_map1
+1828,2948,-20,1=mg_trinsic_map1
+643,2067,5,1=mg_skara_brae_map1
+3563,2139,34,1=mg_magincia_map1
+4467,1283,5,1=mg_moonglow_map1
+2711,2234,0,1=mg_buccaneers_den_map1
+//3763,2771,50,1=mg_haven
+//3450,2677,25,1=mg_new_haven
+
+[EOF]

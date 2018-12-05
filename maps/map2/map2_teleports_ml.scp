@@ -1,0 +1,14 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[Teleporters]
+1450,1470,-22,2=2189,1253,0,2=tp_MushroomCave_TwistedWeald	//add i_fx_sparkle here
+2187,1251,2,2=1450,1474,-24,2=tp_TwistedWeald_MushroomCave	//add i_fx_sparkle here
+
+2139,1263,-60,2=2139,1265,-57,2=tp_TwistedWeald_TwistedWealdShip
+2139,1265,-57,2=2139,1263,-60,2=tp_TwistedWealdShip_TwistedWeald
+
+[EOF]

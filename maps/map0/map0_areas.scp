@@ -2,11 +2,12 @@
 // SphereServer by: SphereServer development team and Menasoft.
 // www.sphereserver.net
 //****************************************************************************
+VERSION=X1
 
 [COMMENT map0_areas.scp]
 This file (and other map files like it) define map areas (also known as
 AREADEF and ROOMDEF, and typically named a_something) using one or more
-RECT= properties that describe a rectangle.  The RECT= property uses 5 values
+RECT= properties that describe a rectangle. The RECT= property uses 5 values
 to describe the rectangle:  The first two numbers are the coordinate of the
 upper left corner of the region, and the second two are the coordinates of
 the lower right, the last number is the map.

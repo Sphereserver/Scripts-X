@@ -278,20 +278,19 @@ DUPEITEM=0360e
 
 [ITEMDEF 0363c]
 //shadow wall (window)
-DUPEITEM=0363e
+DUPEITEM=0360e
 
 [ITEMDEF 0363d]
 //shadow wall (window)
-DUPEITEM=0363e
+DUPEITEM=0360e
 
 [ITEMDEF 0363e]
 //shadow wall (window)
-DUPEITEM=0363e
+DUPEITEM=0360e
 
 [ITEMDEF 0363f]
 //shadow wall (window)
-DUPEITEM=0363e
-
+DUPEITEM=0360e
 
 [ITEMDEF 03647]
 //shadow wall (tattered)
