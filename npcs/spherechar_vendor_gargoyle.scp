@@ -3923,8 +3923,8 @@ ON=@NPCRestock
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
 
-   SELL=VENDOR_S_TAILOR
-   BUY=VENDOR_B_TAILOR
+   SELL=VENDOR_S_GARGISH_TAILOR
+   BUY=VENDOR_B_GARGISH_TAILOR
 
 [CHARDEF c_tailor_gargoyle_f]
 ID=c_gargoyle_female
@@ -3976,8 +3976,8 @@ ON=@NPCRestock
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
 
-   SELL=VENDOR_S_TAILOR
-   BUY=VENDOR_B_TAILOR
+   SELL=VENDOR_S_GARGISH_TAILOR
+   BUY=VENDOR_B_GARGISH_TAILOR
 
 
 [CHARDEF c_tanner_gargoyle]

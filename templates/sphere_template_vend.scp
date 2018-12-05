@@ -790,7 +790,7 @@ DESCRIPTION=Tailor
 SELL=i_sewing_kit,{2 24}
 SELL=i_scissors,{2 24}
 SELL=i_dye_tub,{2 24}
-SELL=i_DYES,{2 24}
+SELL=i_dyes,{2 24}
 SELL=i_shirt_plain,{2 24}
 SELL=i_shirt_fancy,{2 24}
 SELL=i_pants_short,{2 24}
@@ -867,7 +867,6 @@ BUY=i_kilt,{2 24}
 BUY=i_apron_half,{2 24}
 BUY=i_robe,{2 24}
 BUY=i_cape,{2 24}
-BUY=i_CAPE,24
 BUY=i_doublet,{2 24}
 BUY=i_jester_suit,{2 24}
 BUY=i_hat_jester,{2 24}
@@ -887,6 +886,48 @@ BUY=i_scissors,{2 24}
 BUY=i_cotton,{2 24}
 BUY=i_FLAX_BUNDLE,{2 24}
 BUY=i_thread,{2 24}
+
+[TEMPLATE VENDOR_S_GARGISH_TAILOR]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Tailor, Gargoyle
+SELL=i_sewing_kit,{2 24}
+SELL=i_scissors,{2 24}
+SELL=i_dye_tub,{2 24}
+SELL=i_dyes,{2 24}
+SELL=i_gargish_robe,{2 24}
+SELL=i_gargish_robe_fancy,{2 24}
+SELL=i_gargish_apron,{2 24}
+SELL=i_gargish_cloth_chest_female,{2 24}
+SELL=i_gargish_cloth_chest,{2 24}
+SELL=i_gargish_cloth_wings,{2 24}
+SELL=i_gargish_sash_female,{2 24}
+SELL=i_gargish_sash,{2 24}
+SELL=i_gargish_cloth_kilt_female,{2 24}
+SELL=i_gargish_cloth_kilt,{2 24}
+
+[TEMPLATE VENDOR_B_GARGISH_TAILOR]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Tailor, Gargoyle
+BUY=i_sewing_kit,{2 24}
+BUY=i_scissors,{2 24}
+BUY=i_dye_tub,{2 24}
+BUY=i_dyes,{2 24}
+BUY=i_scissors,{2 24}
+BUY=i_cotton,{2 24}
+BUY=i_FLAX_BUNDLE,{2 24}
+BUY=i_thread,{2 24}
+BUY=i_gargish_robe,{2 24}
+BUY=i_gargish_robe_fancy,{2 24}
+BUY=i_gargish_apron,{2 24}
+BUY=i_gargish_cloth_chest_female,{2 24}
+BUY=i_gargish_cloth_chest,{2 24}
+BUY=i_gargish_cloth_wings,{2 24}
+BUY=i_gargish_sash_female,{2 24}
+BUY=i_gargish_sash,{2 24}
+BUY=i_gargish_cloth_kilt_female,{2 24}
+BUY=i_gargish_cloth_kilt,{2 24}
 
 [TEMPLATE VENDOR_S_TINKER]
 CATEGORY=Vendor Templates
