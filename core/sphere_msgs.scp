@@ -6,8 +6,8 @@ VERSION=X1
 
 [COMMENT sphere_msgs]
 By default, lines in this file are commented out because the server itself
-is handling the message.  If you want to change a message, uncomment the
-appropriate line and change it to say what you want.  If you want the message
+is handling the message. If you want to change a message, uncomment the
+appropriate line and change it to say what you want. If you want the message
 to not be sent at all, then set the value to "".
 
 After making a change, this script needs to be reloaded, at which point sphere
@@ -18,32 +18,29 @@ NOTE: If the string contains a % character, your string must contain all
 
 
 [DEFNAME messages_settings]
-// Default settings for SysMessage
+// The same color index will generate a text of slightly different color if UNICODE is on. If you enable it, use 944 instead of 946 to obtain the same color (kinda).
+
+// Default settings for SysMessage (talkmode_say and no src uid) and system prompts (talkmode_system)
 SMSG_DEF_COLOR		946
 SMSG_DEF_FONT   	3
 SMSG_DEF_UNICODE	0
 
-// Default settings for Message
-MSG_DEF_COLOR		946
-MSG_DEF_FONT		3
-MSG_DEF_UNICODE		0
-
-// Default settings for Message when clicking on items
+// Default settings for Message when clicking on items (talkmode_item)
 IMSG_DEF_COLOR		946
 IMSG_DEF_FONT		3
-IMSG_DEF_UNICODE	1
+IMSG_DEF_UNICODE	0
 
-// Default settings for Message when clicking on chars
+// Default settings for Message when clicking on chars (talkmode_item)
 CMSG_DEF_FONT		3
-CMSG_DEF_UNICODE	1
+CMSG_DEF_UNICODE	0
 
-// Default settings for Say
+// Default settings for Say (talkmode_say)
 // Note: these settings will not override player speech settings
 SAY_DEF_COLOR		946
 SAY_DEF_FONT		3
 SAY_DEF_UNICODE		0
 
-// Default settings for Emote
+// Default settings for Emote (talkmode_emote)
 EMOTE_DEF_COLOR		34
 EMOTE_DEF_FONT		3
 EMOTE_DEF_UNICODE	0

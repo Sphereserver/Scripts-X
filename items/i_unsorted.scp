@@ -1582,7 +1582,6 @@ DUPELIST=01e33
 //dartboard w/knives
 DUPEITEM=01e32
 
-
 [ITEMDEF 01ea7]
 //Worldgem bit plain and small (see fancy bit at 1f13)
 DEFNAME=i_worldgem_bit
@@ -1595,11 +1594,9 @@ DESCRIPTION=Worldgem Bit
 [ITEMDEF 01f13]
 //fancy medium sized worldgem bit (see plain at 01ea7)
 DEFNAME=i_worldgem_lg
-TYPE=t_spawn_char
 CATEGORY=Provisions - GM Items
 SUBSECTION=Special Items
 DESCRIPTION=Large Worldgem Bit
-
 
 [ITEMDEF 01f19]
 DEFNAME=i_crystal_green_big
