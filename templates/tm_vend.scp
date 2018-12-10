@@ -329,9 +329,7 @@ SUBSECTION=Sell Templates
 DESCRIPTION=Tanner
 
 SELL=VENDOR_S_ARMORER_LEATHER
-
 SELL=i_hides_cut_2,{5 55}
-
 SELL=i_knife_skinning,{5 55}
 SELL=i_bag,{5 55}
 SELL=i_pouch,{5 55}
@@ -886,48 +884,6 @@ BUY=i_scissors,{2 24}
 BUY=i_cotton,{2 24}
 BUY=i_FLAX_BUNDLE,{2 24}
 BUY=i_thread,{2 24}
-
-[TEMPLATE VENDOR_S_GARGISH_TAILOR]
-CATEGORY=Vendor Templates
-SUBSECTION=Sell Templates
-DESCRIPTION=Tailor, Gargoyle
-SELL=i_sewing_kit,{2 24}
-SELL=i_scissors,{2 24}
-SELL=i_dye_tub,{2 24}
-SELL=i_dyes,{2 24}
-SELL=i_gargish_robe,{2 24}
-SELL=i_gargish_robe_fancy,{2 24}
-SELL=i_gargish_apron,{2 24}
-SELL=i_gargish_cloth_chest_female,{2 24}
-SELL=i_gargish_cloth_chest,{2 24}
-SELL=i_gargish_cloth_wings,{2 24}
-SELL=i_gargish_sash_female,{2 24}
-SELL=i_gargish_sash,{2 24}
-SELL=i_gargish_cloth_kilt_female,{2 24}
-SELL=i_gargish_cloth_kilt,{2 24}
-
-[TEMPLATE VENDOR_B_GARGISH_TAILOR]
-CATEGORY=Vendor Templates
-SUBSECTION=Buy Templates
-DESCRIPTION=Tailor, Gargoyle
-BUY=i_sewing_kit,{2 24}
-BUY=i_scissors,{2 24}
-BUY=i_dye_tub,{2 24}
-BUY=i_dyes,{2 24}
-BUY=i_scissors,{2 24}
-BUY=i_cotton,{2 24}
-BUY=i_FLAX_BUNDLE,{2 24}
-BUY=i_thread,{2 24}
-BUY=i_gargish_robe,{2 24}
-BUY=i_gargish_robe_fancy,{2 24}
-BUY=i_gargish_apron,{2 24}
-BUY=i_gargish_cloth_chest_female,{2 24}
-BUY=i_gargish_cloth_chest,{2 24}
-BUY=i_gargish_cloth_wings,{2 24}
-BUY=i_gargish_sash_female,{2 24}
-BUY=i_gargish_sash,{2 24}
-BUY=i_gargish_cloth_kilt_female,{2 24}
-BUY=i_gargish_cloth_kilt,{2 24}
 
 [TEMPLATE VENDOR_S_TINKER]
 CATEGORY=Vendor Templates
@@ -1647,9 +1603,7 @@ DESCRIPTION=Shield Armourer
 SELL=i_shield_buckler,{10 15}
 SELL=i_shield_wood,{10 15}
 SELL=i_shield_kite_wood,{10 15}
-COLOR=colors_all
 SELL=i_shield_kite_metal,{10 15}
-COLOR=colors_all
 SELL=i_shield_round_bronze,{10 15}
 SELL=i_shield_round_metal,{10 15}
 SELL=i_shield_heater,{10 15}
@@ -1767,77 +1721,6 @@ BUY=i_hammer_war,{10 15}
 BUY=i_mace_war,{10 15}
 BUY=i_ingot_iron,{10 15}
 BUY=i_log,{10 15}
-
-[TEMPLATE VENDOR_S_GARGISH_WEAPONS_BLADED]
-CATEGORY=Vendor Templates
-SUBSECTION=Sell Templates
-DESCRIPTION=Bladed Weaponsmith, Gargoyle
-SELL=i_dual_shortaxes,{10 15}
-SELL=i_stone_warsword,{10 15}
-SELL=i_gargish_talwar,{10 15}
-SELL=i_sword_dread,{10 15}
-SELL=i_sword_glass ,{10 15}
-SELL=i_gargish_cleaver,{10 15}
-SELL=i_gargish_bardiche,{10 15}
-SELL=i_gargish_knife_butcher,{10 15}
-SELL=i_gargish_katana,{10 15}
-SELL=i_gargish_scythe,{10 15}
-SELL=i_gargish_talwar,{10 15}
-SELL=i_gargish_bone_harvester,{10 15}
-SELL=i_gargish_daisho,{10 15}
-SELL=i_gargish_axe_battle,{10 15}
-SELL=i_gargish_axe,{10 15}
-SELL=i_boomerang,{10 15}
-SELL=i_cyclone,{10 15}
-SELL=i_soul_glaive,{10 15}
-
-[TEMPLATE VENDOR_B_GARGISH_WEAPONS_BLADED]
-CATEGORY=Vendor Templates
-SUBSECTION=Buy Templates
-DESCRIPTION=Bladed Weaponsmith, Gargoyle
-BUY=i_dual_shortaxes,{10 15}
-BUY=i_stone_warsword,{10 15}
-BUY=i_gargish_talwar,{10 15}
-BUY=i_sword_dread,{10 15}
-BUY=i_sword_glass ,{10 15}
-BUY=i_gargish_cleaver,{10 15}
-BUY=i_gargish_bardiche,{10 15}
-BUY=i_gargish_knife_butcher,{10 15}
-BUY=i_gargish_katana,{10 15}
-BUY=i_gargish_scythe,{10 15}
-BUY=i_gargish_talwar,{10 15}
-BUY=i_gargish_bone_harvester,{10 15}
-BUY=i_gargish_daisho,{10 15}
-BUY=i_gargish_axe_battle,{10 15}
-BUY=i_gargish_axe,{10 15}
-BUY=i_log,{10 15}
-BUY=i_ingot_iron,{10 15}
-
-[TEMPLATE VENDOR_S_GARGISH_WEAPONS_BLUNT]
-CATEGORY=Vendor Templates
-SUBSECTION=Sell Templates
-DESCRIPTION=Blunt Weaponsmith, Gargoyle
-SELL=i_mace_disc,{10 15}
-SELL=i_gargish_hammer_war,{10 15}
-SELL=i_gargish_maul,{10 15}
-SELL=i_gargish_tessen,{10 15}
-SELL=i_staff_glass,{10 15}
-SELL=i_staff_serpentstone,{10 15}
-SELL=i_gargish_staff_gnarled,{10 15}
-
-[TEMPLATE VENDOR_B_GARGISH_WEAPONS_BLUNT]
-CATEGORY=Vendor Templates
-SUBSECTION=Buy Templates
-DESCRIPTION=Blunt Weaponsmith, Gargoyle
-BUY=i_mace_disc,{10 15}
-BUY=i_gargish_hammer_war,{10 15}
-BUY=i_gargish_maul,{10 15}
-BUY=i_gargish_tessen,{10 15}
-BUY=i_staff_glass,{10 15}
-BUY=i_staff_serpentstone,{10 15}
-BUY=i_gargish_staff_gnarled,{10 15}
-BUY=i_log,{10 15}
-BUY=i_ingot_iron,{10 15}
 
 [TEMPLATE VENDOR_S_MAGE_1ST]
 CATEGORY=Vendor Templates

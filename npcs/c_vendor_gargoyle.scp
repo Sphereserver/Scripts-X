@@ -393,19 +393,16 @@ ON=@Create
 ON=@NPCRestock
    ITEM=random_coin_purse
    ITEM=random_weapon_mace_gargish
-
-   SELL=VENDOR_S_ARMORER_WOODANDSTONE
-   SELL=VENDOR_S_ARMORER_SHIELDS
-   SELL=VENDOR_S_ARMORER_PLATE
-   SELL=VENDOR_S_ARMORER_CHAIN
-   SELL=VENDOR_S_ARMORER_RING
-   SELL=VENDOR_S_ARMORER_LEATHER
-   BUY=VENDOR_B_ARMORER_WOODANDSTONE
-   BUY=VENDOR_B_ARMORER_SHIELDS
-   BUY=VENDOR_B_ARMORER_PLATE
-   BUY=VENDOR_B_ARMORER_CHAIN
-   BUY=VENDOR_B_ARMORER_RING
-   BUY=VENDOR_B_ARMORER_LEATHER
+   
+   SELL=VENDOR_S_GARGISH_ARMORER_LEATHER
+   SELL=VENDOR_S_GARGISH_ARMORER_PLATE
+   SELL=VENDOR_S_GARGISH_ARMORER_SHIELDS
+   SELL=VENDOR_S_GARGISH_ARMORER_STONE
+   
+   BUY=VENDOR_S_GARGISH_ARMORER_LEATHER
+   BUY=VENDOR_S_GARGISH_ARMORER_PLATE
+   BUY=VENDOR_S_GARGISH_ARMORER_SHIELDS
+   BUY=VENDOR_S_GARGISH_ARMORER_STONE
 
 [CHARDEF c_armorer_gargoyle_f]
 ID=c_gargoyle_female
@@ -462,18 +459,15 @@ ON=@NPCRestock
    ITEM=random_coin_purse
    ITEM=random_weapon_mace_gargish
 
-   SELL=VENDOR_S_ARMORER_WOODANDSTONE
-   SELL=VENDOR_S_ARMORER_SHIELDS
-   SELL=VENDOR_S_ARMORER_PLATE
-   SELL=VENDOR_S_ARMORER_CHAIN
-   SELL=VENDOR_S_ARMORER_RING
-   SELL=VENDOR_S_ARMORER_LEATHER
-   BUY=VENDOR_B_ARMORER_WOODANDSTONE
-   BUY=VENDOR_B_ARMORER_SHIELDS
-   BUY=VENDOR_B_ARMORER_PLATE
-   BUY=VENDOR_B_ARMORER_CHAIN
-   BUY=VENDOR_B_ARMORER_RING
-   BUY=VENDOR_B_ARMORER_LEATHER
+   SELL=VENDOR_S_GARGISH_ARMORER_LEATHER
+   SELL=VENDOR_S_GARGISH_ARMORER_PLATE
+   SELL=VENDOR_S_GARGISH_ARMORER_SHIELDS
+   SELL=VENDOR_S_GARGISH_ARMORER_STONE
+   
+   BUY=VENDOR_S_GARGISH_ARMORER_LEATHER
+   BUY=VENDOR_S_GARGISH_ARMORER_PLATE
+   BUY=VENDOR_S_GARGISH_ARMORER_SHIELDS
+   BUY=VENDOR_S_GARGISH_ARMORER_STONE
 
 
 [CHARDEF c_baker_gargoyle]
@@ -642,8 +636,6 @@ ON=@Create
    COLOR=colors_neutral
 ON=@NPCRestock
    ITEM=random_coin_purse
-   ITEM=i_sword_long_b
-   ITEM=random_shield
 
 [CHARDEF c_banker_gargoyle_f]
 ID=c_gargoyle_female
@@ -696,9 +688,6 @@ ON=@Create
    COLOR=colors_neutral
 ON=@NPCRestock
    ITEM=random_coin_purse
-   ITEM=i_sword_long_b
-   ITEM=random_shield
-
 
 [CHARDEF c_beekeeper_gargoyle]
 ID=c_gargoyle_male
@@ -881,13 +870,12 @@ ON=@NPCRestock
    ITEM=random_weapon_mace_gargish
 
    SELL=VENDOR_S_BLACKSMITH
-   BUY=VENDOR_B_ARMORER_LEATHER
-   BUY=VENDOR_B_ARMORER_RING
-   BUY=VENDOR_B_ARMORER_CHAIN
-   BUY=VENDOR_B_ARMORER_PLATE
-   BUY=VENDOR_B_ARMORER_SHIELDS
-   BUY=VENDOR_B_WEAPONS_BLADED
-   BUY=VENDOR_B_WEAPONS_BLUNT
+   BUY=VENDOR_B_GARGISH_ARMORER_LEATHER
+   BUY=VENDOR_B_GARGISH_ARMORER_PLATE
+   BUY=VENDOR_B_GARGISH_ARMORER_SHIELDS
+   BUY=VENDOR_B_GARGISH_ARMORER_STONE
+   BUY=VENDOR_B_GARGISH_WEAPONS_BLADED
+   BUY=VENDOR_B_GARGISH_WEAPONS_BLUNT
    BUY=VENDOR_B_BLACKSMITH
    BUY=VENDOR_B_MAGIC_ARMOR
    BUY=VENDOR_B_MAGIC_WEAPONS
@@ -951,13 +939,12 @@ ON=@NPCRestock
    ITEM=random_weapon_mace_gargish
 
    SELL=VENDOR_S_BLACKSMITH
-   BUY=VENDOR_B_ARMORER_LEATHER
-   BUY=VENDOR_B_ARMORER_RING
-   BUY=VENDOR_B_ARMORER_CHAIN
-   BUY=VENDOR_B_ARMORER_PLATE
-   BUY=VENDOR_B_ARMORER_SHIELDS
-   BUY=VENDOR_B_WEAPONS_BLADED
-   BUY=VENDOR_B_WEAPONS_BLUNT
+   BUY=VENDOR_B_GARGISH_ARMORER_LEATHER
+   BUY=VENDOR_B_GARGISH_ARMORER_PLATE
+   BUY=VENDOR_B_GARGISH_ARMORER_SHIELDS
+   BUY=VENDOR_B_GARGISH_ARMORER_STONE
+   BUY=VENDOR_B_GARGISH_WEAPONS_BLADED
+   BUY=VENDOR_B_GARGISH_WEAPONS_BLUNT
    BUY=VENDOR_B_BLACKSMITH
    BUY=VENDOR_B_MAGIC_ARMOR
    BUY=VENDOR_B_MAGIC_WEAPONS
@@ -1149,7 +1136,7 @@ ON=@Create
 ON=@NPCRestock
    ITEM=random_coin_purse
    ITEM=i_cleaver_meat,1,R3
-   ITEM=i_knife_skinning,1,R3
+   ITEM=i_gargish_dagger,1,R3
    ITEM=i_knife_butcher,1,R3
 
    SELL=VENDOR_S_BUTCHER_TEMPLATE
@@ -1206,8 +1193,6 @@ ON=@Create
    COLOR=colors_neutral
 ON=@NPCRestock
    ITEM=random_coin_purse
-   ITEM=i_sword_long_b
-   ITEM=random_shield
 
    SELL=VENDOR_S_CARPENTER
    BUY=VENDOR_B_CARPENTER
@@ -1260,8 +1245,6 @@ ON=@Create
    COLOR=colors_neutral
 ON=@NPCRestock
    ITEM=random_coin_purse
-   ITEM=i_sword_long_b
-   ITEM=random_shield
 
    SELL=VENDOR_S_CARPENTER
    BUY=VENDOR_B_CARPENTER
@@ -1428,7 +1411,7 @@ ON=@Create
    COLOR=colors_all
 ON=@NPCRestock
    ITEM=random_coin_purse
-   ITEM=i_knife_skinning
+   ITEM=i_gargish_dagger
 
    SELL=VENDOR_S_COBBLER
    BUY=VENDOR_B_COBBLER
@@ -1481,7 +1464,7 @@ ON=@Create
    COLOR=colors_all
 ON=@NPCRestock
    ITEM=random_coin_purse
-   ITEM=i_knife_skinning
+   ITEM=i_gargish_dagger
 
    SELL=vendor_s_cobbler
    BUY=vendor_b_cobbler
@@ -1542,7 +1525,7 @@ ON=@Create
    COLOR=colors_neutral
 ON=@NPCRestock
    ITEM=random_coin_purse
-   ITEM=i_cleaver_meat
+   ITEM=i_gargish_cleaver
 
    SELL=VENDOR_S_COOK
    BUY=VENDOR_B_COOK
@@ -1600,7 +1583,7 @@ ON=@Create
    COLOR=colors_neutral
 ON=@NPCRestock
    ITEM=random_coin_purse
-   ITEM=i_cleaver_meat
+   ITEM=i_gargish_cleaver
 
    SELL=VENDOR_S_COOK
    BUY=VENDOR_B_COOK
@@ -1874,7 +1857,7 @@ ON=@Create
    COLOR=colors_green
 ON=@NPCRestock
    ITEM=random_coin_purse
-   ITEM=i_knife_skinning
+   ITEM=i_gargish_dagger
    ITEM=random_weapon_throwing_gargish
 
    SELL=VENDOR_S_FURTRADER
@@ -1931,7 +1914,7 @@ ON=@Create
    COLOR=colors_green
 ON=@NPCRestock
    ITEM=random_coin_purse
-   ITEM=i_knife_skinning
+   ITEM=i_gargish_dagger
    ITEM=random_weapon_throwing_gargish
 
    SELL=VENDOR_S_FURTRADER
@@ -2550,8 +2533,8 @@ ON=@NPCRestock
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
 
-   SELL=VENDOR_S_JEWELER
-   BUY=VENDOR_B_JEWELER
+   SELL=VENDOR_S_GARGISH_JEWELER
+   BUY=VENDOR_B_GARGISH_JEWELER
 
 [CHARDEF c_jeweler_gargoyle_f]
 ID=c_gargoyle_female
@@ -2608,8 +2591,8 @@ ON=@NPCRestock
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
 
-   SELL=VENDOR_S_JEWELER
-   BUY=VENDOR_B_JEWELER
+   SELL=VENDOR_S_GARGISH_JEWELER
+   BUY=VENDOR_B_GARGISH_JEWELER
 
 
 [CHARDEF c_lumberjack_gargoyle]
@@ -2669,15 +2652,9 @@ ON=@NPCRestock
 
    SELL=i_kindling,{20 40}
    SELL=i_log,{20 40}
-   BUY=i_hatchet,{5 10}
-   BUY=i_axe_exec,{5 10}
-   BUY=i_axe_battle,{5 10}
-   BUY=i_axe,{5 10}
-   BUY=i_axe_double,{5 10}
-   BUY=i_axe_war,{5 10}
-   BUY=i_axe_battle_large,{5 10}
-   BUY=i_axe_two_hand,{5 10}
-   BUY=i_ornate_axe,{5 10}
+   BUY=i_gargish_axe_battle,{5 10}
+   BUY=i_gargish_axe,{5 10}
+  
 
 [CHARDEF c_lumberjack_gargoyle_f]
 ID=c_gargoyle_female
@@ -2734,15 +2711,8 @@ ON=@NPCRestock
 
    SELL=i_kindling,{20 40}
    SELL=i_log,{20 40}
-   BUY=i_hatchet,{5 10}
-   BUY=i_axe_exec,{5 10}
-   BUY=i_axe_battle,{5 10}
-   BUY=i_axe,{5 10}
-   BUY=i_axe_double,{5 10}
-   BUY=i_axe_war,{5 10}
-   BUY=i_axe_battle_large,{5 10}
-   BUY=i_axe_two_hand,{5 10}
-   BUY=i_ornate_axe,{5 10}
+   BUY=i_gargish_axe_battle,{5 10}
+   BUY=i_gargish_axe,{5 10}
 
 
 [CHARDEF c_mageshop_gargoyle]
@@ -4034,7 +4004,7 @@ ON=@Create
    COLOR=colors_brown
 ON=@NPCRestock
    ITEM=random_coin_purse
-   ITEM=i_knife_skinning
+   ITEM=i_gargish_dagger
 
    SELL=VENDOR_S_TANNER
    BUY=VENDOR_B_TANNER
@@ -4090,7 +4060,7 @@ ON=@Create
    COLOR=colors_brown
 ON=@NPCRestock
    ITEM=random_coin_purse
-   ITEM=i_knife_skinning
+   ITEM=i_gargish_dagger
 
    SELL=VENDOR_S_TANNER
    BUY=VENDOR_B_TANNER

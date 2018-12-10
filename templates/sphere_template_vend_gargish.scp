@@ -1,0 +1,281 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[COMMENT sphere_template_vend_gargish]
+
+This file contains vendor buy and sell templates for gargoyle ONLY items.
+
+NOTE:
+* We should NOT mix containers (SELL and BUY stuff in the same template.)
+
+
+[TEMPLATE VENDOR_S_GARGISH_ARMORER_LEATHER]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Leather Armourer, Gargoyle
+SELL=i_gargish_leather_arms_f,{10 15}
+SELL=i_gargish_leather_arms,{10 15}
+SELL=i_gargish_leather_chest_f,{10 15}
+SELL=i_gargish_leather_chest,{10 15}
+SELL=i_gargish_leather_leggings_f,{10 15}
+SELL=i_gargish_leather_leggings,{10 15}
+SELL=i_gargish_leather_kilt_f,{10 15}
+SELL=i_gargish_leather_kilt,{10 15}
+SELL=i_gargish_leather_talons,{10 15}
+SELL=i_gargish_belt,{10 15}
+SELL=i_gargish_leather_wing_armor,{10 15}
+
+[TEMPLATE VENDOR_B_GARGISH_ARMORER_LEATHER]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Leather Armourer, Gargoyle
+BUY=i_gargish_leather_arms_f,{10 15}
+BUY=i_gargish_leather_arms,{10 15}
+BUY=i_gargish_leather_chest_f,{10 15}
+BUY=i_gargish_leather_chest,{10 15}
+BUY=i_gargish_leather_leggings_f,{10 15}
+BUY=i_gargish_leather_leggings,{10 15}
+BUY=i_gargish_leather_kilt_f,{10 15}
+BUY=i_gargish_leather_kilt,{10 15}
+BUY=i_gargish_leather_talons,{10 15}
+BUY=i_gargish_belt,{10 15}
+BUY=i_gargish_leather_wing_armor,{10 15}
+
+[TEMPLATE VENDOR_S_GARGISH_ARMORER_PLATE]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Plate Armourer, Gargoyle
+SELL=i_gargish_plate_arms_female,{10 15}
+SELL=i_gargish_plate_arms,{10 15}
+SELL=i_gargish_plate_chest_female,{10 15}
+SELL=i_gargish_plate_chest,{10 15}
+SELL=i_gargish_plate_kilt_female,{10 15}
+SELL=i_gargish_plate_kilt,{10 15}
+SELL=i_gargish_plate_leggings_female,{10 15}
+SELL=i_gargish_plate_leggings,{10 15}
+SELL=i_gargish_plate_talons,{10 15}
+
+
+[TEMPLATE VENDOR_B_GARGISH_ARMORER_PLATE]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Plate Armourer, Gargoyle
+BUY=i_gargish_plate_arms_female,{10 15}
+BUY=i_gargish_plate_arms,{10 15}
+BUY=i_gargish_plate_chest_female,{10 15}
+BUY=i_gargish_plate_chest,{10 15}
+BUY=i_gargish_plate_kilt_female,{10 15}
+BUY=i_gargish_plate_kilt,{10 15}
+BUY=i_gargish_plate_leggings_female,{10 15}
+BUY=i_gargish_plate_leggings,{10 15}
+BUY=i_gargish_plate_talons,{10 15}
+
+[TEMPLATE VENDOR_S_GARGISH_ARMORER_SHIELDS]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Shield Armourer, Gargoyle
+SELL=i_shield_gargish_wooden,{10 15}
+SELL=i_shield_gargish_kite,{10 15}
+SELL=i_shield_gargish_plate_small,{10 15}
+SELL=i_shield_gargish_plate_medium,{10 15}
+SELL=i_shield_gargish_plate_large,{10 15}
+SELL=i_shield_gargish_stone_large,{10 15}
+
+[TEMPLATE VENDOR_S_GARGISH_ARMORER_STONE]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Stone Armourer, Gargoyle
+SELL=i_gargish_stone_arms_female,{10 15}
+SELL=i_gargish_stone_arms,{10 15}
+SELL=i_gargish_stone_chest_female,{10 15}
+SELL=i_gargish_stone_chest,{10 15}
+SELL=i_gargish_stone_kilt_female,{10 15}
+SELL=i_gargish_stone_kilt,{10 15}
+SELL=i_gargish_stone_leggings_female,{10 15}
+SELL=i_gargish_stone_leggings,{10 15}
+
+[TEMPLATE VENDOR_B_GARGISH_ARMORER_SHIELDS]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Shield Armourer, Gargoyle
+BUY=i_shield_gargish_wooden,{10 15}
+BUY=i_shield_gargish_kite,{10 15}
+BUY=i_shield_gargish_plate_small,{10 15}
+BUY=i_shield_gargish_plate_medium,{10 15}
+BUY=i_shield_gargish_plate_large,{10 15}
+BUY=i_shield_gargish_stone_large,{10 15}
+
+[TEMPLATE VENDOR_B_GARGISH_ARMORER_STONE]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Stone Armourer, Gargoyle
+BUY=i_gargish_stone_arms_female,{10 15}
+BUY=i_gargish_stone_arms,{10 15}
+BUY=i_gargish_stone_chest_female,{10 15}
+BUY=i_gargish_stone_chest,{10 15}
+BUY=i_gargish_stone_kilt_female,{10 15}
+BUY=i_gargish_stone_kilt,{10 15}
+BUY=i_gargish_stone_leggings_female,{10 15}
+BUY=i_gargish_stone_leggings,{10 15}
+
+
+[TEMPLATE VENDOR_S_GARGISH_JEWELER]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Jeweler, Gargoyle
+SELL=i_necklace_gargoyle,{3 13}
+SELL=i_bracelet_gargoyle,{3 13}
+SELL=i_ring_gargoyle,{3 13}
+SELL=i_earrings_gargoyle,{3 13}
+
+SELL=i_crystal_of_com_t1,{3 13}
+SELL=i_crystal_of_com_t2,{3 13}
+SELL=i_crystal_of_com_t3,{3 13}
+SELL=i_gem_star_sapphire,{3 13}
+SELL=i_gem_emerald,{3 13}
+SELL=i_gem_sapphire,{3 13}
+SELL=i_gem_ruby,{3 13}
+SELL=i_gem_citrine,{3 13}
+SELL=i_gem_amethyst,{3 13}
+SELL=i_gem_tourmaline,{3 13}
+SELL=i_gem_amber,{3 13}
+SELL=i_gem_diamond,{3 13}
+
+[TEMPLATE VENDOR_B_GARGISH_JEWELER]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Jeweler, Gargoyle
+
+BUY=i_wire_iron,{3 13}
+BUY=i_wire_copper,{3 13}
+BUY=i_wire_gold,{3 13}
+BUY=i_wire_silver,{3 13}
+
+BUY=i_ingot_iron,{3 13}
+BUY=i_ingot_copper,{3 13}
+BUY=i_ingot_gold,{3 13}
+BUY=i_ingot_silver,{3 13}
+
+//BUY=i_forged_metal,{3 13}
+BUY=i_necklace_gargoyle,{3 13}
+BUY=i_bracelet_gargoyle,{3 13}
+BUY=i_ring_gargoyle,{3 13}
+BUY=i_earrings_gargoyle,{3 13}
+
+BUY=Vendor_B_Gems
+
+[TEMPLATE VENDOR_S_GARGISH_TAILOR]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Tailor, Gargoyle
+SELL=i_sewing_kit,{2 24}
+SELL=i_scissors,{2 24}
+SELL=i_dye_tub,{2 24}
+SELL=i_dyes,{2 24}
+SELL=i_gargish_robe,{2 24}
+SELL=i_gargish_robe_fancy,{2 24}
+SELL=i_gargish_apron,{2 24}
+SELL=i_gargish_cloth_chest_female,{2 24}
+SELL=i_gargish_cloth_chest,{2 24}
+SELL=i_gargish_cloth_wings,{2 24}
+SELL=i_gargish_sash_female,{2 24}
+SELL=i_gargish_sash,{2 24}
+SELL=i_gargish_cloth_kilt_female,{2 24}
+SELL=i_gargish_cloth_kilt,{2 24}
+
+[TEMPLATE VENDOR_B_GARGISH_TAILOR]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Tailor, Gargoyle
+BUY=i_sewing_kit,{2 24}
+BUY=i_scissors,{2 24}
+BUY=i_dye_tub,{2 24}
+BUY=i_dyes,{2 24}
+BUY=i_scissors,{2 24}
+BUY=i_cotton,{2 24}
+BUY=i_flax_bundle,{2 24}
+BUY=i_thread,{2 24}
+BUY=i_gargish_robe,{2 24}
+BUY=i_gargish_robe_fancy,{2 24}
+BUY=i_gargish_apron,{2 24}
+BUY=i_gargish_cloth_chest_female,{2 24}
+BUY=i_gargish_cloth_chest,{2 24}
+BUY=i_gargish_cloth_wings,{2 24}
+BUY=i_gargish_sash_female,{2 24}
+BUY=i_gargish_sash,{2 24}
+BUY=i_gargish_cloth_kilt_female,{2 24}
+BUY=i_gargish_cloth_kilt,{2 24}
+
+[TEMPLATE VENDOR_S_GARGISH_WEAPONS_BLADED]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Bladed Weaponsmith, Gargoyle
+SELL=i_dual_shortaxes,{10 15}
+SELL=i_stone_warsword,{10 15}
+SELL=i_gargish_talwar,{10 15}
+SELL=i_sword_dread,{10 15}
+SELL=i_sword_glass ,{10 15}
+SELL=i_gargish_cleaver,{10 15}
+SELL=i_gargish_bardiche,{10 15}
+SELL=i_gargish_knife_butcher,{10 15}
+SELL=i_gargish_katana,{10 15}
+SELL=i_gargish_scythe,{10 15}
+SELL=i_gargish_talwar,{10 15}
+SELL=i_gargish_bone_harvester,{10 15}
+SELL=i_gargish_daisho,{10 15}
+SELL=i_gargish_axe_battle,{10 15}
+SELL=i_gargish_axe,{10 15}
+SELL=i_boomerang,{10 15}
+SELL=i_cyclone,{10 15}
+SELL=i_soul_glaive,{10 15}
+
+[TEMPLATE VENDOR_B_GARGISH_WEAPONS_BLADED]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Bladed Weaponsmith, Gargoyle
+BUY=i_dual_shortaxes,{10 15}
+BUY=i_stone_warsword,{10 15}
+BUY=i_gargish_talwar,{10 15}
+BUY=i_sword_dread,{10 15}
+BUY=i_sword_glass ,{10 15}
+BUY=i_gargish_cleaver,{10 15}
+BUY=i_gargish_bardiche,{10 15}
+BUY=i_gargish_knife_butcher,{10 15}
+BUY=i_gargish_katana,{10 15}
+BUY=i_gargish_scythe,{10 15}
+BUY=i_gargish_talwar,{10 15}
+BUY=i_gargish_bone_harvester,{10 15}
+BUY=i_gargish_daisho,{10 15}
+BUY=i_gargish_axe_battle,{10 15}
+BUY=i_gargish_axe,{10 15}
+BUY=i_log,{10 15}
+BUY=i_ingot_iron,{10 15}
+
+[TEMPLATE VENDOR_S_GARGISH_WEAPONS_BLUNT]
+CATEGORY=Vendor Templates
+SUBSECTION=Sell Templates
+DESCRIPTION=Blunt Weaponsmith, Gargoyle
+SELL=i_mace_disc,{10 15}
+SELL=i_gargish_hammer_war,{10 15}
+SELL=i_gargish_maul,{10 15}
+SELL=i_gargish_tessen,{10 15}
+SELL=i_staff_glass,{10 15}
+SELL=i_staff_serpentstone,{10 15}
+SELL=i_gargish_staff_gnarled,{10 15}
+
+[TEMPLATE VENDOR_B_GARGISH_WEAPONS_BLUNT]
+CATEGORY=Vendor Templates
+SUBSECTION=Buy Templates
+DESCRIPTION=Blunt Weaponsmith, Gargoyle
+BUY=i_mace_disc,{10 15}
+BUY=i_gargish_hammer_war,{10 15}
+BUY=i_gargish_maul,{10 15}
+BUY=i_gargish_tessen,{10 15}
+BUY=i_staff_glass,{10 15}
+BUY=i_staff_serpentstone,{10 15}
+BUY=i_gargish_staff_gnarled,{10 15}
+BUY=i_log,{10 15}
+BUY=i_ingot_iron,{10 15}
