@@ -1,0 +1,70 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+////////////////////////////////////////
+// Cities and nearby regions
+////////////////////////////////////////
+
+[AREADEF a_townHeartwood]
+NAME=The Heartwood
+GROUP=ML Cities
+P=7035,409,12,1
+RECT=6907,253,7166,512,1
+FLAGS=region_flag_nobuilding|region_flag_guarded
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_Elf_city_1
+
+////////////////////////////////////////
+// Dungeons
+////////////////////////////////////////
+
+[AREADEF a_sanctuary]
+NAME=Sanctuary
+GROUP=ML Dungeons
+P=6170,195,-10,1
+RECT=6141,0,6401,257,1
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_dungeon9
+
+[AREADEF a_prism_of_light]
+NAME=Prism of Light
+GROUP=ML Dungeons
+P=6475,188,-2,1
+RECT=6448,17,6656,256,1
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_dungeon9
+
+[AREADEF a_palace_paroxysmus]
+NAME=Palace of Paroxysmus
+GROUP=ML Dungeons
+P=6306,403,60,1
+RECT=6198,316,6563,676,1
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_Paroxysmus_lair
+
+[AREADEF a_blighted_grove]
+NAME=Blighted Grove
+GROUP=ML Dungeons
+P=6500,890,2,1
+RECT=6446,814,6596,974,1
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_Melisandes_lair
+
+[AREADEF a_painted_caves]
+NAME=Painted Caves
+GROUP=ML Dungeons
+P=6308,892,0,1
+RECT=6243,846,6315,919,1
+FLAGS=region_flag_nobuilding|region_flag_underground|region_antimagic_recall_in
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+TAG.MUSIC=midi_dungeon9
+
+
+[EOF]

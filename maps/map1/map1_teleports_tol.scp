@@ -1,0 +1,29 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[Teleporters]
+//Time of Legends Teleports
+6945,1813,80,1=5813,2960,14,1=tp_DragonTurtle_SakTeb	//add i_fx_bless_effect here
+7013,1956,40,1=5319,981,0,1=tp_DragonTurtle_Destard		//add i_fx_bless_effect here
+
+7007,2060,5,1=7162,1906,45,1=tp_Passage_DragonTurtle1
+7007,2059,5,1=7162,1905,45,1=tp_Passage_DragonTurtle2
+7007,2058,5,1=7162,1904,45,1=tp_Passage_DragonTurtle3
+7007,2057,5,1=7162,1903,45,1=tp_Passage_DragonTurtle4
+7007,2056,5,1=7162,1902,45,1=tp_Passage_DragonTurtle5
+7163,1906,45,1=7008,2060,5,1=tp_DragonTurtle_Passage1
+7163,1905,45,1=7008,2059,5,1=tp_DragonTurtle_Passage2
+7163,1904,45,1=7008,2058,5,1=tp_DragonTurtle_Passage3
+7163,1903,45,1=7008,2057,5,1=tp_DragonTurtle_Passage4
+7163,1902,45,1=7008,2056,5,1=tp_DragonTurtle_Passage5
+
+
+//The only way to reach Dryad Queen's Home is clicking on an banner (i_curtain_banner_nw, color=016)
+//located here on this P, so there's no teleport here, this line is just for documentation purposes
+//4445,3695,16,1=856,2783,5,5=tp_FireIsland_DryadQueensHome
+
+
+[EOF]
