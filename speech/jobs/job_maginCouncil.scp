@@ -1,0 +1,33 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[SPEECH jobMaginCouncil]
+//MAGINCIA COUNCIL MEMBER
+DEFAULT=I do not understand thee.
+ON=Hail
+ON=Hi
+ON=Greet
+ON=Hello
+SAY=Yes, yes, hello.  Now what was I saying?
+ON=Job
+ON=What do you do
+SAY=Oh, you again.  I'm a Council Member of this beautiful city.  Now where was I?
+ON=Bye
+ON=Goodbye
+ON=Farewell
+	SAY=Yes, goodbye already.  Hmm... where did I leave my notes?
+	BYE
+	return 1
+ON=PARLIAMENT
+SAY=Hmm?  The parliament is meeting...right now!  I must hurry!
+ON=FIND
+ON=BUSY
+SAY=Please excuse me, I'm very busy.
+ON=NOTES
+SAY=Ah, you mean my latest speech... I believe it may be in my chambers.  Oh where is that blasted servant?
+//RANDOM=*ahem* Citizens, isn't the maintaining the beauty of Magincia of utmost importance?
+
+[EOF]

@@ -1,0 +1,95 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[SPEECH jobFighter]
+//FIGHTER
+DEFAULT=I do not understand thee.
+ON=Hi
+ON=Hello
+ON=Greet
+ON=Hail
+SAY=I greet thee.
+ON=Bye
+ON=Goodbye
+ON=Hail
+	SAY=Farewell.
+	BYE
+	return 1
+ON=PLATE
+ON=ARMOR
+SAY=Plate Armor's the best, but requires great strength.  Leather is for weaklings.
+ON=AXE
+SAY=Although the Executioner's Axe is most feared, the Double Axe lasts longer and inflicts more damage.
+ON=HALBERD
+ON=BARDICHE
+SAY=The Bardiche lasts longer in battle than the Halberd, but does less damage.
+ON=CROSSBOW
+ON=BOW
+SAY=A regular bow can be a better albeit less powerful friend than the more unweildy Crossbow.
+ON=NORSE HELM
+ON=OPEN FACED HELM
+ON=HELM
+SAY=Of the plain helms available, a closed helm will provide the best protection in battle.
+ON=BUCKLER
+SAY=Don't be fooled. A buckler offers little more protection that the shorter-lived wooden shield.
+ON=CHAIN
+SAY=While chain is more easily damaged than ringmail, it offers better protection.
+ON=CLUB
+SAY=Clubs are often the weapon of choice for stupid creatures.
+ON=SCIMITAR
+ON=CUTLASS
+SAY=Only the scimitar equals the slashing speed of a cutlass.
+ON=FIGHT
+SAY=I always try to be prepared for battle, so I keep my armor clean and a weapon at the ready.
+ON=FORK
+SAY=A pitchfork may be faster, but for my money, only a war fork is sure to leave 'em screaming.
+ON=GAUNTLET
+SAY=Gauntlets are better protection for the wrists.
+ON=GORGET
+SAY=The gauntlet may seem small protection for the neck, it is thick and protective.
+ON=HEATER
+SAY=The heater shield offers stylish but average protection.
+ON=THOU<ANY>IDIOT
+ON=STUPID
+ON=MORON
+ON=IDIOT
+ON=YOU<ANY>IDIOT
+ON=THOU<ANY>
+ON=YOU<ANY>MORON
+SAY=Be careful, friend, or I shall have to prove my sword is sharper than your tongue.
+ON=KILL
+SAY=Oh I just love killing.
+ON=KATANA
+ON=KITANA
+SAY=This sword does little damage compared with the broad sword.
+ON=KRYSS
+SAY=The kryss does more damage and lasts longer than the quick slashing butcher knife.
+ON=MAUL
+ON=MACE
+SAY=In the mace family, a war mace or war hammer will hurt your opponent most.
+ON=MAIM
+SAY=Maiming is almost as good as killing. Almost.
+ON=PROVISIONS
+SAY=See a provisioner for supplies if you're going on a long battle journey.
+ON=RING
+SAY=Most rings are ordinary, but I have heard of special rings which increase one's strength in battle.
+ON=SHIELD
+SAY=The Chaos Shield yields more protection than the Order Shield.
+ON=SKILL
+SAY=Some weapons require great skill in a given area, like Swordsmanship, Fencing or Mace Fighting.
+ON=SPEAR
+SAY=Bah. Spears better for catching fish.
+ON=STAFF
+SAY=A black staff does more damage than a gnarled staff, but isn't as fast.
+ON=SWORD
+SAY=A long sword is my favorite weapon for damage and it requires less frequent repairs than the faster cutlass.
+ON=TROUBLE
+SAY=It seems you are expert at getting yourself into trouble.
+ON=WEAPON
+SAY=My favorite weapons are those which do the most damage!
+//RANDOM=Who wants to be a sissy fisherman?  It's the fighting life for me!
+
+[EOF]

@@ -1,0 +1,46 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[SPEECH jobTailorMaster]
+//GUILDMASTER Clothier
+ON=Hail
+ON=Hi
+ON=Greet
+ON=Hello
+	SAY=Greetings, lovely friend!
+ON=Job
+ON=What do you do
+	SAY=I am the best clothier in the land!
+ON=Bye
+ON=Goodbye
+ON=Farewell
+	SAY=Until we meet again...
+	BYE
+	return 1
+ON=CLOTH
+	SAY=I offer only the finest cloth, in simply divine colors!
+ON=COTTON
+	SAY=Thou may even use cotton to make a nice pair of pants. Very breathable, but it may shrink in the rain.
+ON=DYE
+	SAY=Thou wouldst look regal in purple.
+ON=LOOM
+	SAY=The loom takes so long.  Patience is definitely a virtue.
+ON=WEAVE
+	SAY=No, this is my natural hair.  Why dost thou ask?
+ON=WOOL
+	SAY=Sheep are such filthy animals, but wool makes wonderful tunics.
+ON=YARN
+	SAY=Oh, I make things with yarn all the time.
+ON=GUILD
+ON=JOIN
+	SAY=I recommend thou develop a sense of color first.
+ON=MASTER
+	SAY=I'm am a master of cloth, color, and all things frilly.
+
+//RANDOM=Honey, let's talk wardrobe.  Thou needst something mayhap... more slimming?
+//DEFAULT=I do not understand thee.
+
+[EOF]

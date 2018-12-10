@@ -1,0 +1,78 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[SPEECH jobCook]
+//COOK
+DEFAULT=I do not understand thee.
+ON=BUY
+BUY
+ON=SELL
+SELL
+ON=Hi
+ON=Hello
+ON=Hail
+ON=Greet
+SAY=Hello there. You look hungry, friend.
+ON=Bye
+ON=Goodbye
+ON=Farewell
+	SAY=Farewell and eat hearty!
+	BYE
+	return 1
+ON=job
+ON=what do you do
+SAY=I delight in the culinary arts!
+ON=BACON
+SAY=Bacon and eggs?  The breakfast of champions!
+ON=BEEF
+SAY=Oh, I loves beef.  Can eat it for days, I can.
+ON=BREAD
+SAY=That's right.  Put meat between some bread.  I call it a sandwich.
+ON=CAKE
+SAY=Ah, a nice piece of cake after a good meal.  Now that's livin'.
+ON=CHICKEN
+SAY=Oh, use a little mushrooms and cheese to perk that dish right up.
+ON=CONSUMPTION
+SAY=Is that a sickness?  I hope I don't catch it.
+ON=COOK
+SAY=I am the best Cook in all the lands!
+ON=CRAFT
+SAY=A crafty cook is the best cook.  Gotta know just how much salt to add.
+ON=FISH
+SAY=They say fish is brain food.  Never helped me.
+ON=FLOUR
+SAY=Roll some fish in Flour and a little milk.  If you fry it, you'll have a crunchy meal!
+ON=FOOD
+SAY=What type a food ya have a hankerin' for?
+ON=HAM
+SAY=It's very important that you trim most of the fat off the ham after it's done.
+ON=INGREDIENT
+SAY=Cayenne pepper is the most sought after ingredient of all of Britannia.
+ON=MEAL
+SAY=Lots of meat, a nice side dish and a bit of cake is all ya need for a good meal.
+ON=MEALS
+SAY=Cheese makes a decent meal when you're traveling far.  It keeps well.
+ON=MEAT
+SAY=I prefer beef to fish, but that's just me.
+ON=OVEN
+SAY=Oh yes, I've burned me arms on this oven plenty of times.
+ON=PASTRY
+SAY=A nice tart is what dreams are made of.
+ON=PORK
+SAY=Ah, the other white meat.  A bit salty for my tastes.
+ON=ROAST
+SAY=The key to a good roast is the seasonings.
+ON=SKILL
+SAY=The best skill is learn not to burn your food.
+ON=SWEETS
+SAY=The ladies love the sweets.  That's why I cook 'em.
+ON=VEGETABLES
+SAY=You can do so much with a nice potato or tomato.
+ON=WHAT<ANY>YOU<ANY>COOK
+SAY=If it's dead, I can cook it.  Maybe even half dead.
+//RANDOM=Sure, swords and magic are nice, but everyone has to eat.
+
+[EOF]

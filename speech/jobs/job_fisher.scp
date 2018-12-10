@@ -1,0 +1,46 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[SPEECH jobFisher]
+//FISHERMAN/WOMAN
+DEFAULT=I do not understand thee.
+ON=BUY
+BUY
+ON=SELL
+SELL
+ON=Hail
+ON=Hi
+ON=Greet
+ON=Hello
+SAY=Greetings.
+ON=Job
+ON=What do you do
+SAY=I enjoy fishing for a living.
+ON=Bye
+ON=Goodbye
+ON=Farewell
+	SAY=Goodbye.
+	BYE
+	return 1
+ON=FISH <ANY>
+ON=CATCH
+ON=RIVER
+ON=SEA
+SAY=The best way to catch 'em is to put thine lure in the nearest water, friend.
+ON=FISHER
+ON=FISHERMAN
+ON=FISHERMEN
+ON=FISHERWOMAN
+SAY=Ahh.. fishing is a simple life. But I've got sounds of the sea, and plenty to eat!
+ON=FOOD
+SAY=Fish makes a filling meal.  Thou may get more out of a fish if it is cut with a bladed edge.
+ON=NETS
+SAY=Some use nets, but I prefer a rod.
+ON=SKILL
+SAY=Watch me a bit, perhaps thou wilt learn?
+//RANDOM=Tales of the sea? Ask a sailor!  Taste of the sea?  Well that's my speciality!
+
+[EOF]

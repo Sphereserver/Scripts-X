@@ -1,0 +1,53 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[SPEECH jobGypsy]
+//GYPSY
+DEFAULT=I do not understand thee.
+ON=Hi
+ON=Greet
+ON=Hello
+ON=Hail
+SAY=Ah, hello traveler.  Do you wish to know your fate?
+ON=Job
+ON=What do you do
+SAY=I am a Gypsy.  I see all and hear all!  I may tell thee... for a price.
+ON=Bye
+ON=Goodbye
+ON=Farewell
+	SAY=If you were more free with your gold, I could tell you more.  No matter.  Goodbye.
+	BYE
+	return 1
+ON=APPRAISE
+SAY=Let me see.  Ah, yes... it's doubtful such a thing would have worth to a person of your means.
+ON=CAMP
+SAY=Some free advice... do not camp near a swamp.
+ON=DESTINY
+ON=FORTUNE
+ON=PALM
+ON=READ
+ON=FUTURE
+SAY=Perhaps if you cross my palms with gold, the mists clouding your future will clear...
+ON=FREEMAN
+SAY=Oh yes, every man and woman should be free.  Yet, some are slaves to their destiny.
+ON=GYPSIE
+ON=GYPSY
+SAY=We are a mystical people who know much of destiny.
+ON=HIDE
+SAY=Beware of the shadows, for they betray the light and only bring fear.
+ON=LOCK
+SAY=A lock is merely an invitation.
+ON=SKILL
+SAY=The skill of a Gypsy is known far and near, though stingy travelers may find their fortunes misleading.
+ON=STEAL
+SAY=Some travelers tire easily if they carry too much.  Gypsies merely help relieve their burden.
+ON=THIEF
+SAY=A gypsy is not a thief.  Where did you hear such lies?  I shall have to think of a curse...
+ON=THIEV
+SAY=My people have not stolen anything from you.  Begone!
+//RANDOM=Fortunes told!  Palms read! Find your Destiny!
+
+[EOF]

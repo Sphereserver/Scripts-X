@@ -1,0 +1,71 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[SPEECH jobMerchantMaster]
+//GUILDMASTER Merchant
+DEFAULT=I do not understand thee.
+ON=Hail
+ON=Hi
+ON=Greet
+ON=Hello
+SAY=Greetings.
+ON=Job
+ON=What do you do
+SAY=I am a GuildMaster Merchant, meaning I instruct in the ways of the service trades.
+ON=Bye
+ON=Goodbye
+ON=Farewell
+	SAY=Goodbye.
+	BYE
+	return 1
+ON=deaf
+ON=hearing
+SAY=I apologize. We occasionally feature loud bards for entertainment. I fear I am quite deaf!
+ON=EMPATH
+ON=ABBEY
+SAY='Tis a boring place -- no drinking, no wenches.  Only solitary rooms and books!
+ON=ARTIFACT
+SAY=Our regular bartender is so ancient, we do sometimes refer to him as "The Artifact."
+ON=BARMAID
+SAY=Keep your hands off my girlies, friend.
+ON=TAVERN
+ON=ALE
+ON=BEER
+SAY=Our beer's the best!  If you'd like watered down horse spit, try some other tavern.
+ON=FOOD
+ON=BREAKFAST
+ON=DINNER
+ON=LUNCH
+SAY=Nothing like good food to help digest ale!
+ON=HINT
+ON=INFO
+SAY=We serve fine food and drink.  For more help than that, may I suggest you call a GM?
+ON=MAGIC
+SAY=If I catch anyone creating food with magic, I'll be quite upset. It undercuts our market.
+ON=NEWS
+SAY=I hear the pie is excellent today!
+ON=ITCH
+ON=SCRATCH
+ON=RUMOR
+ON=RUMOUR
+SAY=I wasn't going to mention it, but do be careful in your choice of wenches.  Some may leave you itchy.
+ON=TO DO
+SAY=I have to remember to see a doctor about this itch...
+ON=WAITRESS
+SAY=Keep your hands to yourself.  The wenches are for the wenching, waitresses for the uh.. waiting.
+ON=WENCH
+SAY=Oh the finest wenches this side of Empath Abbey, friend!  You may have to haggle for a good price.
+ON=WHERE<ANY>MONKS
+SAY=This is not a holy place.  Try the abbey.
+ON=GUILD
+SAY=Our guild is rarely open to new members. Business is good.
+ON=MASTER
+SAY=I am indeed a master, meaning I know more of Merchant ways than you may ever hope to.
+ON=JOIN
+SAY=So you want to get in on the racket, eh?
+//RANDOM=Not everyone is cut out for the service trade.
+
+[EOF]
