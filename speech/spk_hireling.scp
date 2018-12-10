@@ -4,42 +4,6 @@
 //****************************************************************************
 VERSION=X1
 
-[SPEECH spk_player]
-// All players speech filtered through here.
-ON=I must consider my sins
-SYSMESSAGE Murders: <KILLS>
-
-ON=I resign from my guild
-IF (<GUILD>)
- f_guildsys_removecharfromguild <GUILD>,<UID>
-ENDIF
-
-ON=I resign from my town
-IF (<TOWN>)
- f_townsys_removecharfromtown <TOWN>,<UID>
-ENDIF
-
-[SPEECH spk_pet]
-// Pets that cannot talk
-ON=ATTACK
-ON=COME
-ON=DROP
-ON=DROP ALL
-ON=FOLLOW
-ON=FOLLOW ME
-ON=FRIEND
-ON=GO
-ON=GUARD
-ON=GUARD ME
-ON=KILL
-ON=RELEASE
-ON=SPEAK
-ON=STAY
-ON=STAY HERE
-ON=STOP
-ON=TRANSFER
-ON=UNFRIEND
-
 [SPEECH spk_hireling]
 // Pets that can talk.
 ON=ATTACK

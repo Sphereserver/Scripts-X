@@ -1,0 +1,602 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[MULTIDEF 0]
+DEFNAME=m_small_ship_n
+NAME=Small Ship
+NAMELOC=1116741	//Small Ship
+TYPE=t_ship
+VALUE=12500
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=3
+SHIPSPEED=5,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Small Ship
+MULTIREGION=-2,-5,2,5
+COMPONENT=03e4e,1, 4	//tiller
+COMPONENT=i_ship_hatch_n,0,-4	//hatch
+COMPONENT=03eb2,2,0		//plank right
+COMPONENT=03eb1,-2,0	//plank left
+
+[MULTIDEF 01]
+DEFNAME=m_small_ship_e
+NAME=Small Ship
+NAMELOC=1116741	//Small Ship
+TYPE=t_ship
+VALUE=12500
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=3
+SHIPSPEED=5,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Small Ship
+MULTIREGION=-5,-2,5,2
+COMPONENT=03e55,-4,0
+COMPONENT=i_ship_hatch_e,4, 0
+COMPONENT=03e85,0, 2
+COMPONENT=03e8a,0,-2
+
+[MULTIDEF 02]
+DEFNAME=m_small_ship_s
+NAME=Small Ship
+NAMELOC=1116741	//Small Ship
+TYPE=t_ship
+VALUE=12500
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=3
+SHIPSPEED=5,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Small Ship
+MULTIREGION=-2,-5,2,5
+COMPONENT=03e4b,0, -4
+COMPONENT=i_ship_hatch_s,0,  4
+COMPONENT=03eb1,-2, 0
+COMPONENT=03eb2,2,  0
+
+[MULTIDEF 03]
+DEFNAME=m_small_ship_w
+NAME=Small Ship
+NAMELOC=1116741	//Small Ship
+TYPE=t_ship
+VALUE=12500
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=3
+SHIPSPEED=5,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Small Ship
+MULTIREGION=-5,-2,5,2
+COMPONENT=03e50,4, 0
+COMPONENT=i_ship_hatch_w,-4,0
+COMPONENT=03e8a,0,-2
+COMPONENT=03e85,0, 2
+
+[MULTIDEF 04]
+DEFNAME=m_small_dragon_ship_n
+NAME=Small Dragon Ship
+NAMELOC=1116742	//Small Dragon Ship
+TYPE=t_ship
+VALUE=12500
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=3
+SHIPSPEED=5,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Small Dragon Ship
+MULTIREGION=-2,-5,2,5
+COMPONENT=03e4e,1, 4, 
+COMPONENT=i_ship_hatch_n,0,-4
+COMPONENT=03eb2,2, 0
+COMPONENT=03eb1,-2, 0
+
+[MULTIDEF 05]
+DEFNAME=m_small_dragon_ship_e
+NAME=Small Dragon Ship
+NAMELOC=1116742	//Small Dragon Ship
+TYPE=t_ship
+VALUE=12500
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=3
+SHIPSPEED=5,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Small Dragon Ship
+MULTIREGION=-5,-2,5,2
+COMPONENT=03e55,-4,0
+COMPONENT=i_ship_hatch_e,4, 0
+COMPONENT=03e85,0, 2
+COMPONENT=03e8a,0,-2
+
+[MULTIDEF 06]
+DEFNAME=m_small_dragon_ship_s
+NAME=Small Dragon Ship
+NAMELOC=1116742	//Small Dragon Ship
+TYPE=t_ship
+VALUE=12500
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=3
+SHIPSPEED=5,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Small Dragon Ship
+MULTIREGION=-2,-5,2,5
+COMPONENT=03e4b,0, -4
+COMPONENT=i_ship_hatch_s,0,  4
+COMPONENT=03eb2,2,  0
+COMPONENT=03eb1,-2, 0
+
+[MULTIDEF 07]
+DEFNAME=m_small_dragon_ship_w
+NAME=Small Dragon Ship
+NAMELOC=1116742	//Small Dragon Ship
+TYPE=t_ship
+VALUE=12500
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=3
+SHIPSPEED=5,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Small Dragon Ship
+MULTIREGION=-5,-2,5,2
+COMPONENT=03e50,4, 0
+COMPONENT=i_ship_hatch_w,-4,0
+COMPONENT=03e85,0, 2
+COMPONENT=03e8a,0,-2
+
+[MULTIDEF 08]
+DEFNAME=m_medium_ship_n
+NAME=Medium Ship
+NAMELOC=1116743	//Medium Ship
+TYPE=t_ship
+VALUE=14200
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=3
+SHIPSPEED=5,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Medium Ship
+MULTIREGION=-2,-5,2,6
+COMPONENT=03e4e,1, 5, 0
+COMPONENT=i_ship_hatch_n,0,-4, 0
+COMPONENT=03eb2,2, 0, 0
+COMPONENT=03eb1,-2, 0, 0
+
+[MULTIDEF 09]
+DEFNAME=m_medium_ship_e
+NAME=Medium Ship
+NAMELOC=1116743	//Medium Ship
+TYPE=t_ship
+VALUE=14200
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=3
+SHIPSPEED=5,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Medium Ship
+MULTIREGION=-6,-2,5,2
+COMPONENT=03e55,-5,0, 0
+COMPONENT=i_ship_hatch_e,4, 0, 0
+COMPONENT=03e85,0, 2, 0
+COMPONENT=03e8a,0,-2, 0
+
+[MULTIDEF 0a]
+DEFNAME=m_medium_ship_s
+NAME=Medium Ship
+NAMELOC=1116743	//Medium Ship
+TYPE=t_ship
+VALUE=14200
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=3
+SHIPSPEED=5,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Medium Ship
+MULTIREGION=-2,-6,2,5
+COMPONENT=03e4b,0,-5,0
+COMPONENT=i_ship_hatch_s,0,4,0
+COMPONENT=03eb2,2,0,0
+COMPONENT=03eb1,-2,0,0
+
+[MULTIDEF 0b]
+DEFNAME=m_medium_ship_w
+NAME=Medium Ship
+NAMELOC=1116743	//Medium Ship
+TYPE=t_ship
+VALUE=14200
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=3
+SHIPSPEED=5,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Medium Ship
+MULTIREGION=-5,-2,6,2
+COMPONENT=03e50,5, 0,0
+COMPONENT=i_ship_hatch_w,-4,0,0
+COMPONENT=03e85,0, 2,0
+COMPONENT=03e8a,0,-2,0
+
+[MULTIDEF 0c]
+DEFNAME=m_medium_dragon_ship_n
+NAME=Medium Dragon Ship
+NAMELOC=1116744	//Medium Dragon Ship
+TYPE=t_ship
+VALUE=14200
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=3
+SHIPSPEED=5,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Medium Dragon Ship
+MULTIREGION=-2,-5,2,6
+COMPONENT=03e4e,1, 5, 0
+COMPONENT=i_ship_hatch_n,0,-4, 0
+COMPONENT=03eb2,2, 0, 0
+COMPONENT=03eb1,-2, 0, 0
+
+[MULTIDEF 0d]
+DEFNAME=m_medium_dragon_ship_e
+NAME=Medium Dragon Ship
+NAMELOC=1116744	//Medium Dragon Ship
+TYPE=t_ship
+VALUE=14200
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=3
+SHIPSPEED=5,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Medium Dragon Ship
+MULTIREGION=-6,-2,5,2
+COMPONENT=i_ship_tillerman,-5,0, 0
+COMPONENT=i_ship_hatch_e,4, 0, 0
+COMPONENT=03e87,0, 2, 0
+COMPONENT=03e8a,0,-2, 0
+
+[MULTIDEF 0e]
+DEFNAME=m_medium_dragon_ship_s
+NAME=Medium Dragon Ship
+NAMELOC=1116744	//Medium Dragon Ship
+TYPE=t_ship
+VALUE=14200
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=3
+SHIPSPEED=5,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Medium Dragon Ship
+MULTIREGION=-2,-6,2,5
+COMPONENT=03e4b,0, -5,0
+COMPONENT=i_ship_hatch_s,0,  4,0
+COMPONENT=03ea9,2,  0,0
+COMPONENT=03eb1,-2, 0,0
+
+[MULTIDEF 0f]
+DEFNAME=m_medium_dragon_ship_w
+NAME=Medium Dragon Ship
+NAMELOC=1116744	//Medium Dragon Ship
+TYPE=t_ship
+VALUE=14200
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=3
+SHIPSPEED=5,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Medium Dragon Ship
+MULTIREGION=-5,-2,6,2
+COMPONENT=03e50,5, 0
+COMPONENT=i_ship_hatch_w,-4,0
+COMPONENT=03e87,0, 2
+COMPONENT=03e8a,0,-2
+
+[MULTIDEF 010]
+DEFNAME=m_large_ship_n
+NAME=Large Ship
+NAMELOC=1116745	//Large Ship
+TYPE=t_ship
+VALUE=15900
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=4
+SHIPSPEED=2,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Large Ship
+MULTIREGION=-2,-6,2,6
+COMPONENT=03e4e,1, 5, 0
+COMPONENT=i_ship_hatch_n,0,-5, 0
+COMPONENT=03eb2,2, -1, 0
+COMPONENT=03eb1,-2, -1, 0
+
+[MULTIDEF 011]
+DEFNAME=m_large_ship_e
+NAME=Large Ship
+NAMELOC=1116745	//Large Ship
+TYPE=t_ship
+VALUE=15900
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=4
+SHIPSPEED=2,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Large Ship
+MULTIREGION=-6,-2,6,2
+COMPONENT=03e55,-5,0, 0
+COMPONENT=i_ship_hatch_e,5, 0, 0
+COMPONENT=03e85,1, 2, 0
+COMPONENT=03e8a,1,-2, 0
+
+[MULTIDEF 012]
+DEFNAME=m_large_ship_s
+NAME=Large Ship
+NAMELOC=1116745	//Large Ship
+TYPE=t_ship
+VALUE=15900
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=4
+SHIPSPEED=2,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Large Ship
+MULTIREGION=-2,-6,2,6
+COMPONENT=03e4b,0, -5,0
+COMPONENT=i_ship_hatch_s,0, 5,0
+COMPONENT=03eb2,2, 1,0
+COMPONENT=03eb1,-2, 1,0
+
+[MULTIDEF 013]
+DEFNAME=m_large_ship_w
+NAME=Large Ship
+NAMELOC=1116745	//Large Ship
+TYPE=t_ship
+VALUE=15900
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=4
+SHIPSPEED=2,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Large Ship
+MULTIREGION=-6,-2,6,2
+COMPONENT=03e50,5, 0,0
+COMPONENT=i_ship_hatch_w,-5,0,0
+COMPONENT=03e85,-1, 2,0
+COMPONENT=03e8a,-1,-2,0
+
+[MULTIDEF 014]
+DEFNAME=m_large_dragon_ship_n
+NAME=Large Dragon Ship
+NAMELOC=1116746	//Large Dragon Ship
+TYPE=t_ship
+VALUE=15900
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=4
+SHIPSPEED=2,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Large Dragon Ship
+MULTIREGION=-2,-6,2,6
+COMPONENT=03e4e,1, 5, 0
+COMPONENT=i_ship_hatch_n,0,-5, 0
+COMPONENT=03eb2,2, -1, 0
+COMPONENT=03eb1,-2, -1, 0
+
+[MULTIDEF 015]
+DEFNAME=m_large_dragon_ship_e
+NAME=Large Dragon Ship
+NAMELOC=1116746	//Large Dragon Ship
+TYPE=t_ship
+VALUE=15900
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=4
+SHIPSPEED=2,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Large Dragon Ship
+MULTIREGION=-6,-2,6,2
+COMPONENT=03e55,-5,0, 0
+COMPONENT=i_ship_hatch_e,5, 0, 0
+COMPONENT=03e85,1, 2, 0
+COMPONENT=03e8a,1,-2, 0
+
+[MULTIDEF 016]
+DEFNAME=m_large_dragon_ship_s
+NAME=Large Dragon Ship
+NAMELOC=1116746	//Large Dragon Ship
+TYPE=t_ship
+VALUE=15900
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=4
+SHIPSPEED=2,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Large Dragon Ship
+MULTIREGION=-2,-6,2,6
+COMPONENT=03e4b,0, -5,0
+COMPONENT=i_ship_hatch_s,0, 5,0
+COMPONENT=03eb2,2, 1,0
+COMPONENT=03eb1,-2, 1,0
+
+[MULTIDEF 017]
+DEFNAME=m_large_dragon_ship_w
+NAME=Large Dragon Ship
+NAMELOC=1116746	//Large Dragon Ship
+TYPE=t_ship
+VALUE=15900
+HEIGHT=3
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=4
+SHIPSPEED=2,1
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Large Dragon Ship
+MULTIREGION=-6,-2,6,2
+COMPONENT=03e50,5, 0,0
+COMPONENT=i_ship_hatch_w,-5,0,0
+COMPONENT=03e85,-1, 2,0
+COMPONENT=03e8a,-1,-2,0
+
+
+// Stygian Abyss
+
+[MULTIDEF 03c]
+DEFNAME=m_rowboat_n
+NAME=Rowboat
+NAMELOC=1116750	//Rowboat
+TYPE=t_ship
+VALUE=6200
+HEIGHT=5
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=1
+SHIPSPEED=5,1
+EXPANSION=expansion_hs
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Rowboat
+MULTIREGION=-1,-3,1,4
+COMPONENT=01,0,0
+COMPONENT=014f8,0,-2,5
+COMPONENT=03ebd,1,3
+COMPONENT=03ebc,0,4
+
+[MULTIDEF 03d]
+DEFNAME=m_rowboat_e
+NAME=Rowboat
+NAMELOC=1116750	//Rowboat
+TYPE=t_ship
+VALUE=6200
+HEIGHT=5
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=1
+SHIPSPEED=5,1
+EXPANSION=expansion_hs
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Rowboat
+MULTIREGION=-4,-1,3,1
+COMPONENT=01,0,0
+COMPONENT=014f8,2,0,5
+COMPONENT=03e62,-3,0
+COMPONENT=03e63,-4,0
+
+[MULTIDEF 03e]
+DEFNAME=m_rowboat_s
+NAME=Rowboat
+NAMELOC=1116750	//Rowboat
+TYPE=t_ship
+VALUE=6200
+HEIGHT=5
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=1
+SHIPSPEED=5,1
+EXPANSION=expansion_hs
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Rowboat
+MULTIREGION=-1,-4,1,3
+COMPONENT=01,0,0
+COMPONENT=014f8,0,2,5
+COMPONENT=03ec3,0,-3
+COMPONENT=03ec4,0,-4
+
+[MULTIDEF 03f]
+DEFNAME=m_rowboat_w
+NAME=Rowboat
+NAMELOC=1116750	//Rowboat
+TYPE=t_ship
+VALUE=6200
+HEIGHT=5
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=1
+SHIPSPEED=5,1
+EXPANSION=expansion_hs
+CATEGORY=Multis
+SUBSECTION=Ships
+DESCRIPTION=Rowboat
+MULTIREGION=-3,-1,4,1
+COMPONENT=01,0,0
+COMPONENT=014f8,-2,0,5
+COMPONENT=03e77,3,1
+COMPONENT=03e76,4,0
+
+[EOF]

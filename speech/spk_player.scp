@@ -1,0 +1,22 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[SPEECH spk_player]
+// All players speech filtered through here.
+ON=I must consider my sins
+SYSMESSAGE Murders: <KILLS>
+
+ON=I resign from my guild
+IF (<GUILD>)
+ f_guildsys_removecharfromguild <GUILD>,<UID>
+ENDIF
+
+ON=I resign from my town
+IF (<TOWN>)
+ f_townsys_removecharfromtown <TOWN>,<UID>
+ENDIF
+
+[EOF]

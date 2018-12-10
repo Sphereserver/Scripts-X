@@ -6,9 +6,7 @@ VERSION=X1
 
 // Main start menu, used when /add with no parms are passed
 [MENU MENU_ADDITEM]
-SPHERE Main GM Menu
-ON=0 GameMaster Features
-MENU M_GMFEATURES
+SPHERE GM Add Menu
 ON=0 Valuables
 MENU M_ADDI_VAL
 ON=0 NPCs
@@ -41,20 +39,12 @@ ON=0 Rocks, Stones, Boulders
 MENU M_ADDI_STONE
 ON=0 Structures
 MENU M_ADDI_STRUCTURE
-
-// GM Features and Travel Places Menus
-[MENU M_GMFEATURES]
-GameMaster Features
 ON=0 Items
 MENU M_ADDI_GM
-ON=0 Travel to Places
-MENU M_TRAV
 ON=0 Hair & Beards
 MENU M_ADDI_HAIR
 ON=0 House Deeds
 MENU m_addi_deeds
-ON=0 PREVIOUS MENU
-MENU MENU_ADDITEM
 
 [MENU M_ADDI_GM]
 GameMaster Items

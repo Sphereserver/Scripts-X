@@ -1,0 +1,28 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[SPEECH spk_pet]
+// Pets that cannot talk
+ON=ATTACK
+ON=COME
+ON=DROP
+ON=DROP ALL
+ON=FOLLOW
+ON=FOLLOW ME
+ON=FRIEND
+ON=GO
+ON=GUARD
+ON=GUARD ME
+ON=KILL
+ON=RELEASE
+ON=SPEAK
+ON=STAY
+ON=STAY HERE
+ON=STOP
+ON=TRANSFER
+ON=UNFRIEND
+
+[EOF]

@@ -4,6 +4,9 @@
 //****************************************************************************
 VERSION=X1
 
+[FUNCTION gmtravel]
+MENU m_trav
+
 [MENU M_TRAV]
 Travel to Places
 ON=0 Special GM Areas
@@ -281,5 +284,6 @@ ON=0 Vesper Exit
 go 5697 3656 0
 ON=0 PREVIOUS MENU
 MENU M_TRAV_T2A
+
 
 [EOF]

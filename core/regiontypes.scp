@@ -1,0 +1,90 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[REGIONTYPE r_default_rock t_rock]
+// By default, iron is most common, sometimes nothing can be mined, but there
+// is a small chance of a rare diamond.  Shadow ore is cannot be mined.
+RESOURCES=50.0 mr_iron    // This large number makes this very common.
+RESOURCES=10.0 mr_nothing
+RESOURCES=8.0 mr_rusty
+RESOURCES=6.0 mr_old_copper
+RESOURCES=6.0 mr_dull_copper
+RESOURCES=5.0 mr_bronze
+RESOURCES=5.0 mr_copper
+RESOURCES=2.0 mr_gold
+RESOURCES=2.0 mr_rose
+RESOURCES=2.0 mr_agapite
+RESOURCES=1.0 mr_bloodrock
+RESOURCES=1.0 mr_silver
+RESOURCES=0.5 mr_verite
+RESOURCES=0.2 mr_valorite
+RESOURCES=0.1 mr_mytheril
+RESOURCES=0.1 mr_blackrock
+RESOURCES=0.1 mr_diamond    // The small number means this is very rare.
+
+[REGIONTYPE r_dungeon t_rock]
+// Usually Iron, but sometimes Shadow ore can be mined in dungeons.
+RESOURCES=100.0 mr_nothing
+RESOURCES=30.0 mr_iron
+RESOURCES=5.0 mr_shadow
+
+ON=@RegPeriodic
+SRC.SOUND={021f 1 0243 1 0244 1 0245 1}
+
+[REGIONTYPE r_spooky t_rock]
+// Iron and Shadow ore are very rarely mined in a spooky region.
+RESOURCES=65.0 mr_nothing  // Usually there is nothing here.
+RESOURCES=30.0 mr_iron
+RESOURCES=5.0 mr_shadow
+
+[REGIONTYPE r_swamp t_rock]
+// There is nothing to mine in a swamp.
+RESOURCES=100.0 mr_nothing
+
+ON=@RegPeriodic
+SRC.SOUND={0e 10 0f 10 022 1 023 1 024 1 0267 1}
+
+
+/////////////////////
+// Generic Regions //
+/////////////////////
+
+[REGIONTYPE r_default]
+ON=@Enter
+IF (<SRC.ISPLAYER>) && STRCMPI("<TAG.MUSIC>","<SRC.REGION.TAG.MUSIC>")
+ IF !(<isempty <TAG.MUSIC>>)
+  SRC.MIDILIST=<TAG.MUSIC>
+ ELSE
+  SRC.MIDILIST=midi_britain1,midi_ForestA,midi_JungleA,midi_MountainA,midi_Plains,midi_Victory
+ ENDIF
+ENDIF
+
+//ON=@CliPeriodic
+//IF (<SRC.ISPLAYER>)
+// SRC.MIDILIST=midi_britain1,midi_ForestA,midi_JungleA,midi_MountainA,midi_Plains,midi_Victory
+//ENDIF
+
+[REGIONTYPE r_graveyards]
+ON=@RegPeriodic
+SRC.SOUND={0a 1 0b 1}
+
+[REGIONTYPE r_forests]
+ON=@RegPeriodic
+IF (<SRC.SECTOR.ISNIGHTTIME>)
+ SRC.SOUND={00 2 01 2 02 2 07d 1}	//Play these sounds at night.
+ELSE
+ SRC.SOUND={08 10 09 10 0219 1 07d 1}	//Play these sounds during the day.
+ENDIF
+
+[REGIONTYPE r_jungle]
+ON=@RegPeriodic
+IF (<SRC.SECTOR.ISNIGHTTIME>)
+ SRC.SOUND={0c 2 0d 2 0b3 1}
+ELSE
+ SRC.SOUND={03 2 04 2 05 2 0b3 1}
+ENDIF
+
+[EOF]
