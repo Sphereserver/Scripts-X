@@ -151,7 +151,7 @@ ON=@Timer
    ENDIF
    RETURN 1
 
-  [ITEMDEF i_mem_vicious_bite]
+[ITEMDEF i_mem_vicious_bite]
 ID=0e23
 NAME=Vicious bite memory
 TYPE=t_eq_script

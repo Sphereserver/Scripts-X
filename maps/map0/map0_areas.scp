@@ -1602,7 +1602,7 @@ NAME=Trinsic's Order of Engineers
 GROUP=Trinsic
 FLAGS=REGION_FLAG_GUARDED|REGION_FLAG_UNDERGROUND|REGION_FLAG_NOBUILDING
 P=1856,2685
-RECT=1838,2672,1863,2688
+RECT=1838,2672,1863,2688,0
 
 [AREADEF a_trinsic_cut_1]
 EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
