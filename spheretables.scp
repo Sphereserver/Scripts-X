@@ -23,7 +23,11 @@ As a general rule:
 // sphere.ini and spheretable.scp are automatic.
 // All the other scripts we want to load.
 functions/
-core/backward_compatibility.scp
+core/backward_compatibility_functions.scp
+//core/backward_compatibility_56b.scp
+//core/backward_compatibility_56c.scp
+//core/backward_compatibility_56c_multis.scp
+//core/backward_compatibility_56d.scp
 //core/combat_override.scp
 core/defs.scp
 core/defs_buffs_debuffs.scp

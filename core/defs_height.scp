@@ -4,6 +4,11 @@
 //****************************************************************************
 VERSION=X1
 
+// TODO: move the heights to the CHARDEFs! It's WAY faster to retrieve them that way, and faster reading is fundamental
+//	since the height property is read a LOT of times by Sphere.
+// This file is meant to be removed after that work is done! These defs are useless also for an hypothetic override, because
+//  HEIGHT is a R/W property and it can be changed dynamically on each char.
+
 [DEFNAME charheight]
 height_01 28 //DEFNAME=c_ogre
 height_02 32 //DEFNAME=c_ettin
