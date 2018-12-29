@@ -78,7 +78,9 @@ f_onserver_timer
 [FUNCTION f_onaccount_pwchange]
 // This function is called when an account password is being changed.
 // Variables:
-//	ARGS --> New password
+//	ARGS 				--> Account name
+//	LOCAL.PASSWORD  	--> New password
+//	LOCAL.OLDPASSWORD	--> Old password (empty if creating a new account, or, you know, no previous password)
 // Return:
 //	0 --> Allow password change (default action)
 //	1 --> Deny password change
