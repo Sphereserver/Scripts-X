@@ -132,33 +132,40 @@ statf_onhorse           080000000   // mounted on horseback.
 
 [DEFNAME attr_flags]
 // apply to items
-attr_identified		00001   // this is the identified name. ???
-attr_decay			00002   // timer currently set to decay.
-attr_newbie			00004   // not lost on death or sellable ?
-attr_move_always	00008   // always movable (else default as stored in client) (even if mul says not movable) never decays !
-attr_move_never		00010   // never movable (else default as stored in client) never decays !
-attr_magic			00020   // don't set this while worn! this item is magic as apposed to marked or markable.
-attr_owned			00040   // this is owned by the town. you need to steal it. never decays !
-attr_invis			00080   // gray hidden item (to gm's or owners?)
-attr_cursed			00100
-attr_cursed2		00200   // cursed damned unholy
-attr_blessed		00400
-attr_blessed2		00800   // blessed sacred holy
-attr_forsale		01000   // for sale on a vendor.
-attr_stolen			02000   // the item is hot. m_uidlink = previous owner.
-attr_can_decay		04000   // this item can decay. but it would seem that it would not (attr_move_never etc)
-attr_static			08000   // worldforge merge marker. (not used)
-attr_exceptional	010000		// is exceptional
-attr_enchanted		020000		// is enchanted
-attr_imbued			040000		// is imbued
-attr_questitem		080000	// is quest item
-attr_insured		0100000	// Is insured
-attr_nodroptrade	0200000	// no-drop/trade
-attr_artifact		0400000	// artifact
-attr_lockeddown		0800000	// locked down
-attr_secure			01000000	// secured
-attr_reforged		02000000	// Is Runic Reforged.
-attr_opened			04000000	// Is Door Opened (only used when DOOROPENID is set on the door)
+attr_identified         000000001 //Is item identified?
+attr_decay              000000002 //Can item decay?
+attr_newbie             000000004 //Is item newbiefied?
+attr_move_always        000000008 //Set the item always moveable (else default as stored in client even if mul says not moveable) and never decay.
+attr_move_never         000000010 //Never moveable (else default as stored in client) and never decay.
+attr_magic              000000020 //DO NOT SET THIS WHILE WORN! This item is magic as apposed to marked or markable.
+attr_owned              000000040 //This is owned by the town. You need to steal it. Never decay.
+attr_invis              000000080 //Set item as invisible.
+attr_cursed             000000100
+attr_cursed2            000000200 //Cursed damned unholy.
+attr_blessed            000000400
+attr_blessed2           000000800 //Blessed savred holy.
+attr_forsale            000001000 //For sale on a vendor.
+attr_stolen             000002000 //This item is hot. Link = previous owner.
+attr_can_decay          000004000 //This item can decay but it would seem that it would not (ATTR_MOVE_NEVER etc)
+attr_static             000008000 //WorldForge merge marker. (used for statics saves)
+attr_exceptional        000010000 //Is item exceptional?
+attr_enchanted          000020000 //Is item enchanted?
+attr_imbued             000040000 //Is item imbued?
+attr_questitem          000080000 //Is it a quest item?
+attr_insured            000100000 //Is item insured?
+attr_nodrop             000200000 //No-drop
+attr_notrade            000400000 //No-trade
+attr_artifact           000800000 //Unused: Artifact (Note: Never used in source!)
+attr_lockeddown         001000000 //Is locked down?
+attr_secure             002000000 //Is item secure?
+attr_reforged           004000000 //Is runic reforged?
+attr_opened             008000000 //Is door opened?
+attr_shardbound         010000000 //Unused: No info.
+attr_accountbound       020000000 //Unused: No info.
+attr_characterbound     040000000 //Unused: No info.
+//attr_cannotrepair       0400000000000 //Unused.
+//attr_factionitem        080000000000000 //Unused.
+//attr_vvvitem            0100000000000000 //Unused.
 
 [DEFNAME can_flags]
 // monster "can" type flags.
