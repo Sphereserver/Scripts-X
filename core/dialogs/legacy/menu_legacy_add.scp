@@ -2035,8 +2035,8 @@ ON=i_chair_wood_cushion Chair
 ADD i_chair_wood_cushion
 ON=i_CHAIR_WOOD Chair
 ADD i_CHAIR_WOOD
-ON=i_CHAIR_WOOD_BAMBOO Chair
-ADD i_CHAIR_WOOD_BAMBOO
+ON=i_chair_wood_2 Chair
+ADD i_chair_wood_2
 ON=i_chair_stone Stone Throne
 ADD i_chair_stone
 ON=i_chair_throne Throne
@@ -2079,8 +2079,8 @@ ON=i_ALTAR_STONE Alter
 ADD i_ALTAR_STONE
 ON=i_bench_WOOD_HIGHBACK Bench
 ADD i_bench_WOOD_HIGHBACK
-ON=i_bench_woodworker_end Workers Bench
-ADD i_bench_woodworker_end
+ON=i_bench_woodworker Workers Bench
+ADD i_bench_woodworker
 ON=i_bench_cooper Coopers Bench
 ADD i_bench_cooper
 ON=i_bench_sandstone_end Bench
@@ -2138,8 +2138,8 @@ ADD i_trough_water
 
 [MENU M_ADDI_PROV_FURN_RUIN]
 Equip (Ruined Furniture)
-ON=i_CHAIR_WOOD_BAMBOO_BROKEN Chair
-ADD i_CHAIR_WOOD_BAMBOO_BROKEN
+ON=i_chair_wood_2_BROKEN Chair
+ADD i_chair_wood_2_BROKEN
 ON=0c12 Armoire
 ADD 0c12
 ON=0c13 Armoire
@@ -2150,8 +2150,8 @@ ON=0c15 Bookcase
 ADD 0c15
 ON=i_chair_covered Covered Chair
 ADD i_chair_covered
-ON=i_CHAIR_WOOD_BAMBOO_BROKEN_NOSEAT Bamboo Chair
-ADD i_CHAIR_WOOD_BAMBOO_BROKEN_NOSEAT
+ON=i_chair_wood_2_BROKEN_NOSEAT Bamboo Chair
+ADD i_chair_wood_2_BROKEN_NOSEAT
 ON=i_chair_wood_fancy_cushion_broken Chair
 ADD i_chair_wood_fancy_cushion_broken
 ON=0c20 Dresser

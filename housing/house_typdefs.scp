@@ -305,7 +305,7 @@ ENDIF
 ON=@Enter
 if <src.isplayer>
 	src.events +e_house_player_events
-	SRC.SPEECH +spk_player_house
+	SRC.dSPEECH +spk_player_house
 	src.timerf 1, visitor_count
 	ref1=<uid>
 	if !<src.isgm>

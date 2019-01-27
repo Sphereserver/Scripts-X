@@ -37,7 +37,7 @@ SKILLMENU=sm_wood_weapons_tools
 ON=i_armoir_dk Furniture
 SKILLMENU=sm_wood_furniture
 
-ON=i_portrait_7 Paintings
+ON=i_portrait_6 Paintings
 SKILLMENU=sm_wood_paintings
 
 ON=i_trophy_deerhead Trophies
@@ -70,8 +70,8 @@ MAKEITEM=i_chair_wood_cushion
 ON=i_chair_wood <name> (<resmake>)
 MAKEITEM=i_chair_wood
 
-ON=i_chair_wood_bamboo <name> (<resmake>)
-MAKEITEM=i_chair_wood_bamboo
+ON=i_chair_wood_2 <name> (<resmake>)
+MAKEITEM=i_chair_wood_2
 
 ON=i_chair_stool_BAR <name> (<resmake>)
 MAKEITEM=i_chair_stool_BAR
@@ -118,20 +118,17 @@ MAKEITEM=i_TABLE_WOOD_ROUGH_SMALL
 ON=i_table_wood_rough_board <name> (<resmake>)
 MAKEITEM=i_table_wood_rough_board
 
-ON=i_bench_woodworker_end Woodworkers Bench
+ON=i_bench_woodworker Woodworkers Bench
 SKILLMENU=sm_wood_woodworkers
 
-ON=i_table_runner_plaid_blue <name> (<resmake>)
-MAKEITEM=i_table_runner_plaid_blue
+ON=i_table_runner_blue <name> (<resmake>)
+MAKEITEM=i_table_runner_blue
 
 ON=i_table_runner_purple <name> (<resmake>)
 MAKEITEM=i_table_runner_purple
 
 ON=i_table_runner_red <name> (<resmake>)
 MAKEITEM=i_table_runner_red
-
-ON=i_table_runner_snowflake <name> (<resmake>)
-MAKEITEM=i_table_runner_snowflake
 
 [SKILLMENU sm_wood_weapons_tools]
 Weapons & Tools
@@ -310,8 +307,8 @@ MAKEITEM=i_bar_piece
 [SKILLMENU sm_wood_woodworkers]
 Woodworkers Bench
 
-ON=i_bench_woodworker_end <name> (<resmake>)
-MAKEITEM=i_bench_woodworker_end
+ON=i_bench_woodworker <name> (<resmake>)
+MAKEITEM=i_bench_woodworker
 
 ON=i_vise <name> (<resmake>)
 MAKEITEM=i_vise
