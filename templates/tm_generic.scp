@@ -145,7 +145,7 @@ random_bottle          { i_bottle_ale 1 i_bottle_ale_2 1 i_bottle_ale_3 1 i_bott
 random_container       { random_basket 3 random_chest 3 random_crate 3 random_giftbox 1 }
 
 random_basket          { i_basket 1 i_basket_bushel 1 i_basket_2 1 i_basin 1 i_basket_square 1 i_basket_square_small 1 i_basket_round_small 1 i_basket_round_tall 1 i_basket_square_deep 1 i_basket_square_tall 1 i_basket_round_flat 1 }
-random_chest           { i_box_brass 1 i_box_wood 1 i_chest_metal 1 i_chest_metal_brass 1 i_chest_wooden_brass 1 i_chest_japanese4 1 i_chest_ornate_elven 1 i_chest_ornate_elven_2 1 i_chest_gargoyle 1 i_chest_pirate 1 i_chest_gothic 1 }
+random_chest           { i_box_brass 1 i_box_wood 1 i_chest_metal 1 i_chest_metal_brass 1 i_chest_wooden_brass 1 i_wooden_foot_locker 1 i_chest_ornate_elven 1 i_box_decorative 1 i_chest_gargish 1 i_chest_pirate 1 i_chest_gothic 1 }
 random_crate           { i_crate_small 1 i_crate_lg 1 i_crate_md 1 i_barrel_open 1 i_keg_small 1 i_tub_empty 1 i_barrel 1 i_bucket 1 }
 random_giftbox         { i_giftbox 1 i_giftbox_cube 1 i_giftbox_cylinder 1 i_giftbox_octogon 1 i_giftbox_rectangle 1 i_giftbox_angel 1 i_giftbox_tall 1 i_giftbox_heart_shaped 1 i_giftbox_heart_shaped_beating 1 }
 
@@ -153,16 +153,11 @@ random_giftbox         { i_giftbox 1 i_giftbox_cube 1 i_giftbox_cylinder 1 i_gif
 random_all_items       { random_armor_all 3 random_scroll 3 random_wearables 2 random_activators 1 random_reagent 1 }
 
 [DEFNAME items_random_armor]
-random_head_armor          { random_helms 1 random_coifs 1 }
 random_body_armor          { random_chest_armor 1 random_leg_armor 1 random_arm_armor 1 random_neck_armor 1 random_head_armor 1 random_hand_armor 1 }
-random_chest_armor         { random_chest_armor_male 2 random_chest_armor_female 1 }
-random_leg_armor           { random_leg_armor_male 2 random_leg_armor_female 1 }
-
 random_chest_armor_male    { i_bone_chest 1 i_chainmail_tunic 10 i_leather_tunic 30 i_studded_tunic 20 i_ringmail_tunic 15 i_platemail_chest 5 }
 random_chest_armor_female  { i_armor_female_studded 8 i_armor_female_plate 3 i_armor_female_leather 9 }
 random_leg_armor_male      { i_bone_leggings 1 i_chainmail_leggings 10 i_leather_leggings 30 i_studded_leggings 20 i_ringmail_leggings 15 i_platemail_leggings 5 }
 random_leg_armor_female    { i_armor_female_shorts 5 i_armor_female_skirt 5 i_armor_female_bustier 5 i_armor_female_bustier_studded 5 }
-random_arm_armor           { i_bone_arms 1 i_leather_sleeves 30 i_studded_sleeves 20 i_ringmail_sleeves 15 i_platemail_arms 5 }
 random_neck_armor          { i_leather_gorget 3 i_studded_gorget 2 i_platemail_gorget 1 i_studded_gorget 2 }
 random_helms               { i_platemail_helm 3 i_bone_helmet 1 i_helm_nose 2 } // i_closed, i_open , i_bascinet,
 random_coifs               { i_chainmail_coif 4 i_helm_closed 6 }
