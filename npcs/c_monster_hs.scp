@@ -133,16 +133,7 @@ ON=@Create
    RESPOISON={35 40}
 ON=@NPCRestock
    ITEM=loot_werewolf
-ON=@GetHit
-   IF !(<R10>)
-      IF (<BODY>==c_werewolf)
-         BODY=c_man
-      ELSE
-         BODY=c_werewolf
-      ENDIF
-      NAME=were wolf
-      SRC.UPDATE
-   ENDIF
+
 
 
 [CHARDEF 042f]
