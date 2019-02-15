@@ -70,11 +70,15 @@ ON=@DClick
 if (<link>!=04fffffff)
 	if !(<def.can_decay>)
 		if (<attr>&02)
-			attr &~ 02
+			attr &=~ 02
+			timer -1
 		endif
 	else
 		if !(<attr>&02)
 			attr |= 02
+			if <timer> < 0
+				timer=60*60*24*<def.can_decay>
+			endif
 		endif
 	endif
 endif
@@ -985,13 +989,13 @@ return 1
 
 //sign hanger
 on=12967,12978
-foritems 3
-	if (<baseid>==0b98) || (<baseid>==0b97) || (<baseid>==0b9a) || (<baseid>==0b99) || (<baseid>==0b9c) || (<baseid>==0ba2) ||(<baseid>==0ba0) || (<baseid>==0b9e) || (<baseid>==0b9b) || (<baseid>==0ba1) || (<baseid>==0b9f) || (<baseid>==0b9d) ||(<baseid>==i_signpost_wooden_dark)
-	ref1=<uid>
-		ref1.dispid=<hval <argn>-10000>
-		ref1.update
+for 0 <eval <src.houses>-1>
+	if (<src.house.<dlocal._for>.comp.2> == <link>)
+		ref1=<src.house.<dlocal._for>.comp.0>
 	endif
 endfor
+ref1.dispid=<hval <argn>-10000>
+ref1.update
 
 // sign coloring
 on=5000,9000
@@ -1270,6 +1274,15 @@ return 1
 ON=1
 link.name=<argtxt[1]>
 region.name=<argtxt[1]>
+if <def.can_decay>
+	link.attr=02|010
+	if <link.timer> < 0
+		link.timer 60*60*24*<def.can_decay>
+	endif
+else
+	link.timer =-1
+	link.attr=010
+endif
 return 1
 
 [DIALOG d_clear_list]
