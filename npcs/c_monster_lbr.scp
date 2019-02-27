@@ -231,12 +231,6 @@ ON=@NpcRestock
 	ITEM=i_gold,{770 1120}
 	ITEM=random_weapon
 
-
-
-//Undead monsters go here
-//4:22 AM 4/1/2018
-
-
 [CHARDEF 067]
 defname=c_dragon_serpentine
 defname2=c_serpentine_dragon
@@ -2366,7 +2360,7 @@ RESLEVEL=2
 RESDISPDNID=c_horse_gray
 RESDISPDNHUE=08097
 CATEGORY=Mounts
-SUBSECTION=Undead
+SUBSECTION=Undeads
 DESCRIPTION=Skeletal Mount
 
 ON=@Create
