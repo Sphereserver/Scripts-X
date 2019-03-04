@@ -729,9 +729,50 @@ ON=@NPCRestock
 	item=random_potion	
 	item=i_treasure_map4,R99
 
+[CHARDEF 017]
+DEFNAME=c_wolf_dire
+NAME=dire wolf
+ICON=i_pet_wolf_dire
+SOUND=snd_animals_wolf1
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=20,32
+ARMOR=20
+DESIRES=r_jungle,r_forests
+AVERSIONS=r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=15
+RESOURCES=1 i_ribs_raw,7 i_hide_spined
+TAG.Barding.Diff=50.3
+FollowerSlots=1
+TAG.SlayerGroup=WOLF
+TEVENTS=e_carnivores
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Wolf, Dire
+ON=@Create
+   NPC=brain_animal
+   FAME={1000 1499}
+   KARMA={-1000 -1499}
+   STR={96 120}
+   MAXHITS={58 72}
+   DEX={81 105}
+   MAXSTAM={81 105}
+   INT={36 60}
+   MAXMANA={36 60}
+   MAGICRESISTANCE={57.0 75.0}
+   TACTICS={50.0 70.0}
+   TAMING={80.0 85.0}
+   WRESTLING={60.0 80.0}
+   RESPHYSICAL={0 5}
+   RESCOLD={5 10}
+   RESENERGY={10 15}
+   RESFIRE={10 20}
+   RESPOISON={5 10}
+
+
 [CHARDEF 018]
-DEFNAME=c_liche
-NAME=Liche
+DEFNAME=c_lich
+NAME=Lich
 SOUND=03e9
 ICON=i_pet_LICH
 dam=24,26
@@ -743,7 +784,7 @@ BLOODCOLOR=colors_green
 TEVENTS=e_undead
 CATEGORY=Monsters
 SUBSECTION=Undeads
-DESCRIPTION=Liche
+DESCRIPTION=Lich
 
 ON=@Create
 NPC=brain_monster
@@ -772,6 +813,47 @@ ON=@NPCRestock
 	item=random_reagent_necro,{15 25}
 	//item=magic_items
 	item=i_treasure_map3,R99
+
+
+[CHARDEF 019]
+DEFNAME=c_wolf_grey
+NAME=grey wolf
+ICON=i_pet_wolf_grey
+SOUND=snd_animals_wolf1
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=4,10
+ARMOR=15
+DESIRES=r_jungle
+AVERSIONS=r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=15
+RESOURCES=1 i_ribs_raw,6 i_hide
+TAG.Barding.Diff=30.2
+FollowerSlots=1
+TAG.SlayerGroup=WOLF
+TEVENTS=e_carnivores
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Wolf, Grey
+ON=@Create
+   NPC=brain_animal
+   FAME={500 999}
+   KARMA={-800 -999}
+   STR={56 80}
+   MAXHITS={34 48}
+   DEX={55 75}
+   MAXSTAM={55 75}
+   INT={31 55}
+   MAXMANA={31 55}
+   MAGICRESISTANCE={20.0 35.0}
+   TACTICS={45.0 60.0}
+   TAMING={50.0 55.0}
+   WRESTLING={45.0 60.0}
+   RESPHYSICAL={0 5}
+   RESCOLD={20 25}
+   RESENERGY={10 15}
+   RESFIRE={10 15}
+   RESPOISON={10 15}
 
 [CHARDEF 01a]
 DEFNAME=c_spectre
@@ -1057,6 +1139,46 @@ ON=@NPCRestock
 	item=i_treasure_map1,R99
 
 
+[CHARDEF 025]
+DEFNAME=c_wolf_white
+NAME=white wolf
+ICON=i_pet_wolf_silver
+SOUND=snd_animals_wolf1
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=4,10
+ARMOR=15
+DESIRES=r_forests,r_snow
+AVERSIONS=r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=15
+RESOURCES=1 i_ribs_raw,6 i_hide
+TAG.Barding.Diff=32.3
+FollowerSlots=1
+TAG.SlayerGroup=WOLF
+TEVENTS=e_carnivores
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Wolf, White
+ON=@Create
+   NPC=brain_animal
+   FAME={500 999}
+   KARMA={-800 -999}
+   STR={56 80}
+   MAXHITS={34 48}
+   DEX={56 75}
+   MAXSTAM={56 75}
+   INT={31 55}
+   MAXMANA={31 55}
+   MAGICRESISTANCE={20.0 35.0}
+   TACTICS={45.0 60.0}
+   TAMING={65.0 70.0}
+   WRESTLING={45.0 60.0}
+   RESPHYSICAL={0 5}
+   RESCOLD={20 25}
+   RESENERGY={10 15}
+   RESFIRE={10 15}
+   RESPOISON={10 15}
+
 
 [CHARDEF 027]
 DEFNAME=c_mongbat
@@ -1210,47 +1332,6 @@ karma=-1500
 ON=@NPCRestock
 	item=i_gold,{50 100}
 	
-
-[CHARDEF 02b]
-DEFNAME=c_icefiend
-NAME=Ice Fiend
-SOUND=357
-ICON=i_pet_DAEMON
-dam=8,19
-armor=60
-RESOURCES=9 i_ribs_raw, 8 i_reag_daemon_bone
-CAN=MT_FLY|MT_WALK
-DESIRES=i_gold
-AVERSIONS=r_civilization,r_water
-CATEGORY=Monsters
-SUBSECTION=Demons
-DESCRIPTION=Demon, Ice
-
-ON=@Create
-str={376, 405}
-dex={176, 195}
-int={201, 225}
-maxhits={226, 243}
-evaluatingintel={80.1, 90.0}
-magery={80.1, 90.0}
-magicresistance={75.1, 85.0}
-tactics={80.1, 90.0}
-wrestling={80.1, 100.0}
-resphysical={55, 65}
-resfire={10, 20}
-rescold={60, 70}
-respoison={20, 30}
-resenergy={30, 40}
-fame=18000
-karma=-18000
-
-ON=@NPCRestock
-item=i_gold,{650 800}
-item=random_second_circle
-item=random_second_circle
-//item=magic_items
-item=i_treasure_map4,R99	//todo
-
 [CHARDEF 02c]
 DEFNAME=c_ratman_w_axe
 DEFNAME2=c_ratman_w_mace
@@ -1590,44 +1671,7 @@ on=@npcrestock
 	item=i_treasure_map1,R99
 
 	
-//bodyconv.def: the Frost Troll replaces the Troll with Mace graphic
-[CHARDEF 037]
-DEFNAME=c_frost_troll
-NAME=Frost Troll
-SOUND=461
-ICON=i_pet_troll
-dam=14,20
-ARMOR=50
-RESOURCES=2 i_ribs_raw
-CAN=MT_WALK
-FOODTYPE=15 t_meat_raw
-DESIRES=i_gold
-AVERSIONS=r_civilization
-CATEGORY=Monsters
-SUBSECTION=Trolls
-DESCRIPTION=Troll, Frost
 
-ON=@Create
-npc=brain_monster
-str={227, 265}
-dex={66, 85}
-int={46, 70}
-maxhits={140, 156}
-resphysical={45, 55}
-rescold={40, 50}
-respoison={5, 10}
-resenergy={5, 10}
-magicresistance={65.1, 80.0}
-tactics={80.1, 100.0}
-wrestling={80.1, 100.0}
-fame=4000
-karma=-4000
-
-ON=@NPCRestock
-	item=i_gold,{125 175}
-	item=random_Jewel
-	item=random_weapon
-	item=i_treasure_map1,R99
 
 [CHARDEF 038]
 DEFNAME=c_skeleton_w_axe
@@ -1908,6 +1952,46 @@ CATEGORY=Animals
 SUBSECTION=Wild
 DESCRIPTION=Cougar
 
+
+[CHARDEF 040]
+DEFNAME=c_leopard
+NAME=leopard
+ICON=i_pet_panther
+SOUND=snd_animals_cougar1
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=4,14
+ARMOR=20
+DESIRES=r_jungle
+AVERSIONS=r_civilization,r_water
+FOODTYPE=t_meat_raw
+MAXFOOD=15
+RESOURCES=1 i_ribs_raw,8 i_hide
+TAG.Barding.Diff=33.3
+FollowerSlots=1
+TEVENTS=e_carnivores
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Leopard
+ON=@Create
+   NPC=brain_animal
+   FAME={500 999}
+   KARMA={-500 -999}
+   STR={56 80}
+   MAXHITS={34 48}
+   DEX={66 85}
+   MAXSTAM={66 85}
+   INT={26 50}
+   MAXMANA={26 50}
+   MAGICRESISTANCE={25.0 35.0}
+   TACTICS={43.0 60.0}
+   TAMING={50.0 55.0}
+   WRESTLING={40.0 50.0}
+   RESPHYSICAL={0 5}
+   RESCOLD={30 40}
+   RESENERGY={20 30}
+   RESFIRE={5 10}
+   RESPOISON={10 20}
+
 ON=@Create
 	npc=brain_animal
 	str={56, 80}
@@ -1924,6 +2008,98 @@ ON=@Create
 	taming=41.1
 	fame=450
 	karma=0
+
+
+[CHARDEF 04f]
+DEFNAME=c_lich_lord
+NAME=lich lord
+ICON=i_pet_lich
+SOUND=snd_monster_lich1
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
+DAM=30,38
+ARMOR=40
+DESIRES=r_graveyards,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+//FOODTYPE=
+//MAXFOOD=
+RESOURCES=1 i_reag_blackmoor
+BLOODCOLOR=colors_green
+MOVERATE=120
+TAG.Barding.Diff=106.4
+DamCold=60
+DamEnergy=40
+TAG.SlayerGroup=UNDEAD
+TEVENTS=e_undead
+CATEGORY=Monsters
+SUBSECTION=Undead
+DESCRIPTION=Lich, Lord
+ON=@Create
+   NPC=brain_monster
+   FAME={3500 3999}
+   KARMA={-3500 -3999}
+   STR={416 505}
+   MAXHITS={250 303}
+   DEX={146 165}
+   MAXSTAM={146 165}
+   INT={566 655}
+   MAXMANA={566 655}
+   ARCHERY={60.0 80.0}
+   EVALUATINGINTEL={90.0 100.0}
+   FENCING={60.0 80.0}
+   MACEFIGHTING={60.0 80.0}
+   MAGERY={90.0 100.0}
+   MAGICRESISTANCE={150.0 200.0}
+   NECROMANCY={90.0 100.0}
+   PARRYING={50.0 70.0}
+   SWORDSMANSHIP={60.0 80.0}
+   TACTICS={50.0 70.0}
+   WRESTLING={60.0 80.0}
+   RESPHYSICAL={0 10}
+   RESCOLD={50 60}
+   RESENERGY={40 50}
+   RESFIRE={30 40}
+   RESPOISON={50 60}
+ON=@NPCRestock
+   ITEM=loot_lich_lord
+   ITEM=loot_ai_hard
+
+[CHARDEF 053]
+DEFNAME=c_ogre_lord
+NAME=ogre lord
+ICON=i_pet_ogre
+SOUND=snd_monster_ogre1
+CAN=MT_WALK|MT_USEHANDS|MT_EQUIP
+DAM=22,25
+ARMOR=50
+DESIRES=r_forests,t_coin,t_gold,t_gem,t_potion
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=35
+RESOURCES=2 i_ribs_raw
+TAG.Barding.Diff=103.7
+TAG.SlayerGroup=OGRE,REPOND
+TEVENTS=e_carnivores3
+CATEGORY=Monsters
+SUBSECTION=Giants
+DESCRIPTION=Ogre, Lord
+ON=@Create
+   NPC=brain_monster
+   FAME=15000
+   KARMA=-15000
+   STR={760 945}
+   DEX={65 75}
+   INT={45 70}
+   WRESTLING={90.1 100.0}
+   TACTICS={90.1 100.0}
+   MAGICRESISTANCE={125.1 140.0}
+   RESPHYSICAL={45 55}
+   RESFIRE={30 40}
+   RESCOLD={30 40}
+   RESPOISON={40 50}
+   RESENERGY={40 50}
+ON=@NPCRestock
+   ITEM=loot_ogre_lord
+
 
 [CHARDEF 058]
 defname=c_mountain_goat
@@ -1959,6 +2135,49 @@ ON=@Create
 	fame=300
 	karma=0
 
+[CHARDEF 05b]
+DEFNAME=c_serpent_silver
+NAME=silver serpent
+ICON=i_pet_serpent_silver
+SOUND=snd_animals_snake1
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=11,53
+ARMOR=35
+DESIRES=r_jungle,t_coin,t_gold,t_gem
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=35
+RESOURCES=1 i_ribs_raw
+TAG.Barding.Diff=80.1
+DamPoison=50
+TAG.HitPoison=5	//Lethal
+TAG.SlayerGroup=SNAKE,REPTILE
+TEVENTS=e_carnivores2
+CATEGORY=Animals
+SUBSECTION=Reptiles
+DESCRIPTION=Snake, Giant Silver
+ON=@Create
+   NPC=brain_animal
+   FAME={2500 2999}
+   KARMA={-2500 -2999}
+   STR={261 360}
+   MAXHITS={197 216}
+   DEX={151 200}
+   MAXSTAM={151 200}
+   INT={21 40}
+   MAXMANA={21 40}
+   MAGICRESISTANCE={95.0 100.0}
+   POISONING={100.0 125.0}
+   TACTICS={80.0 95.0}
+   WRESTLING={85.0 100.0}
+   RESPHYSICAL={0 10}
+   RESCOLD={5 10}
+   RESENERGY={5 10}
+   RESFIRE={5 10}
+   RESPOISON=100
+ON=@NPCRestock
+   ITEM=loot_serpent_silver
+
 
 [CHARDEF 090]
 defname=c_sea_horse
@@ -1986,11 +2205,6 @@ on=@create
 	wrestling={60.1, 70.0}
 	fame=6000
 	karma=-6000
-
-
-
-
-
 
 [CHARDEF 096]
 DEFNAME=c_sea_serpent

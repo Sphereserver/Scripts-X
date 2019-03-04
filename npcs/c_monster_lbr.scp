@@ -1,3 +1,53 @@
+[CHARDEF 0b]
+DEFNAME=c_spider_dread
+NAME=dread spider
+ICON=i_pet_spider_dread
+SOUND=snd_monster_gispidr1
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=13,33
+ARMOR=40
+DESIRES=r_caves,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=35
+RESOURCES=1 i_ribs_raw
+TAG.Barding.Diff=88.0
+DamPoison=80
+TAG.OVERRIDE.SPIDERWEB=1
+TAG.SlayerGroup=SPIDER,ARACHNID
+TEVENTS=e_carnivores2
+RESDISPDNID=c_spider_giant
+RESLEVEL=2
+RESDISPDNHUE=0ad
+CATEGORY=Animals
+SUBSECTION=Arachnids
+DESCRIPTION=Spider, Dread
+ON=@Create
+   NPC=brain_monster
+   FAME={2500 2999}
+   KARMA={-2500 -2999}
+   STR={196 220}
+   MAXHITS={118 132}
+   DEX={126 145}
+   MAXSTAM={126 145}
+   INT={286 310}
+   MAXMANA={286 310}
+   EVALUATINGINTEL={65.0 80.0}
+   MAGERY={65.0 80.0}
+   MAGICRESISTANCE={45.0 60.0}
+   POISONING={100.0 125.0}
+   TACTICS={55.0 70.0}
+   WRESTLING={60.0 75.0}
+   TAMING=95.1
+   RESPHYSICAL={0 10}
+   RESCOLD={20 30}
+   RESENERGY={20 30}
+   RESFIRE={20 30}
+   RESPOISON=100
+ON=@NpcRestock
+   ITEM=loot_spider_dread
+   
+
 [CHARDEF 02e]
 defname=c_wyrm_ancient
 defname2=c_dragon_wyrm
@@ -434,7 +484,7 @@ RESDISPDNHUE=36
 MOVERATE=60
 CATEGORY=Monsters
 SUBSECTION=Gargoyles
-DESCRIPTION=Fire, Gargoyle
+DESCRIPTION=Gargoyle, Fire
 
 
 ON=@Create
