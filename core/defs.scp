@@ -47,6 +47,8 @@ region_flag_safe				002000   // this region is safe from all harm.
 region_flag_guarded				004000   // try tag.guardowner
 region_flag_no_pvp				008000   // players cannot directly harm each other here.
 region_flag_arena				010000   // pvp is allowed, no murder or criminal acts are taken in count.
+region_flag_nomining			020000   // Can't use mining in this region.
+region_flag_walk_noblockheight	040000   // Ignore char height for walkchecks inside this area.
 
 [DEFNAME spell_flags]
 spellflag_dir_anim         00000001   // evoke type cast or directed. (animation)
@@ -167,7 +169,7 @@ mt_walk           000004   // Can walk on land
 mt_passwalls      000008   // Walk through walls
 mt_fly            000010
 mt_fire_immune    000020
-mt_noindoors      000040   // Can't go under roof
+mt_noindoors      000040   // Can't go under roof (or items acting as such)
 mt_hover          000080   // Hovers (can follow gargoyle flight paths)
 mt_equip          000100   // Can equip non-special items (<= 24, which is layer_legs), like armors and robes. Does not allow weapon equipping (layers 1 and 2), see MT_USEHANDS instead
 mt_usehands       000200   // Can do actions that require hands: looting, moving objects, equip weapons. If not enabled, the NPC won't have interest in items, so the trigger @NPCLookAtItem won't fire
@@ -178,6 +180,7 @@ mt_run            002000
 mt_nodclicklos    004000   // when dclicking sth., ignore LOS checks
 mt_nodclickdist   008000   // when dclicking sth., ignore distance checks
 mt_nonmover       010000   // Stay in place, no move at all
+mt_noblockheight  020000   // Do not consider char's height when checking if it can move to a point
 
 [DEFNAME sector_flags]
 secf_nosleep	01 //sector will never sleep, this flag take over secf_instasleep
