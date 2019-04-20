@@ -188,6 +188,8 @@ mt_nodclicklos    004000   // when dclicking sth., ignore LOS checks
 mt_nodclickdist   008000   // when dclicking sth., ignore distance checks
 mt_nonmover       010000   // Stay in place, no move at all
 mt_noblockheight  020000   // Do not consider char's height when checking if it can move to a point
+mt_statue		  040000   // statue: char incapable of any action and stands still in an animation frame (TAG.STATUE_ANIM and TAG.STATUE_FRAME)
+mt_nonselectable  080000   // Can't be selected/targeted (useful for chars with mt_statue which need to act as an item)
 
 [DEFNAME sector_flags]
 secf_nosleep	01 //sector will never sleep, this flag take over secf_instasleep
