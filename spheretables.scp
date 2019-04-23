@@ -30,7 +30,9 @@ core/backward_compatibility_functions.scp
 //core/backward_compatibility_56d.scp
 //core/combat_override.scp
 core/defs.scp
+core/defs_component_props.scp
 core/defs_buffs_debuffs.scp
+core/defs_faction.scp
 core/defs_height.scp
 core/defs_html.scp
 core/defs_mounts.scp
