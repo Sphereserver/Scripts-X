@@ -1,0 +1,12 @@
+
+-Most NPCs here seems to do not have sound and resistances
+-resphysical must be added as resistance, it works different than armor
+-armor values doesn't even approach to resphysical
+-Elemental damages are missing
+-Lots of stats/skills does not match uoguide/stratics
+-Fixed values on stat/skills must be fixed, not ranged
+-There are NPCs with skills they shouldn't even have.
+-TAG.BARDING.DIFF missing in most npcs
+-KARMA/FAME values does not match
+-Mount icons placed here, should be moved to i_char_icons.scp? some of them are duplicated -> remove
+-missing FACTIONS 
