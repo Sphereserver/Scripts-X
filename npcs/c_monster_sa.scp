@@ -13,25 +13,25 @@ SUBSECTION=Worms
 DESCRIPTION=Worm, Blood
 
 ON=@create
-	NPC=brain_monster
+    NPC=brain_monster
 
-	FAME=1500
-	KARMA=-1500
+    FAME=1500
+    KARMA=-1500
 
-	STR={401, 473}
-	INT={18, 19}
-	MAXHITS={374, 422}
+    STR={401, 473}
+    INT={18, 19}
+    MAXHITS={374, 422}
 
-	RESPHYSICAL={52, 55}
-	RESFIRE={42, 50}
-	RESCOLD={29, 31}
-	RESPOISON={69, 75}
-	RESENERGY={26, 27}
+    RESPHYSICAL={52, 55}
+    RESFIRE={42, 50}
+    RESCOLD={29, 31}
+    RESPOISON={69, 75}
+    RESENERGY={26, 27}
 
-	MAGICRESISTANCE={35.0}
-	MAGICRESISTANCE={35}
-	TACTICS={100.0}
-	WRESTLING={100.0}
+    MAGICRESISTANCE={35.0}
+    MAGICRESISTANCE={35}
+    TACTICS={100.0}
+    WRESTLING={100.0}
 
 
 [CHARDEF 0125]
@@ -113,35 +113,35 @@ SUBSECTION=Goblins
 DESCRIPTION=Green Goblin, Enslaved
 
 ON=@create
-	NPC=brain_monster
+    NPC=brain_monster
 
-	FAME=1500
-	KARMA=-1500
+    FAME=1500
+    KARMA=-1500
 
-	STR={326, 326}
-	DEX={71, 71}
-	INT={126, 126}
-	MAXHITS={184, 184}
-	MAXSTAM={71, 71}
-	MAXMANA={126, 126}
+    STR={326, 326}
+    DEX={71, 71}
+    INT={126, 126}
+    MAXHITS={184, 184}
+    MAXSTAM={71, 71}
+    MAXMANA={126, 126}
 
-	RESPHYSICAL={40, 40}
-	RESFIRE={38, 39}
-	RESCOLD={31, 32}
-	RESPOISON={12, 12}
-	RESENERGY={10, 11}
+    RESPHYSICAL={40, 40}
+    RESFIRE={38, 39}
+    RESCOLD={31, 32}
+    RESPOISON={12, 12}
+    RESENERGY={10, 11}
 
-	MAGICRESISTANCE={121.6, 122.9}
-	TACTICS={80.0, 81.2}
-	ANATOMY={82.0, 83.4}
-	WRESTLING={99.2, 99.4}
+    MAGICRESISTANCE={121.6, 122.9}
+    TACTICS={80.0, 81.2}
+    ANATOMY={82.0, 83.4}
+    WRESTLING={99.2, 99.4}
 
 ON=@CreateLoot
-	ITEM=i_gold,{30 40}
-	//ITEM=magic_items
-	ITEM=random_jewel
-	//ITEM=i_goblin_blood
-	//ITEM=i_essence_control
+    ITEM=i_gold,{30 40}
+    //ITEM=magic_items
+    ITEM=random_jewel
+    //ITEM=i_goblin_blood
+    //ITEM=i_essence_control
 
 
 [CHARDEF 029a]
@@ -313,34 +313,34 @@ CATEGORY=Animals
 SUBSECTION=Beetles
 DESCRIPTION=Beetle, Iron
 ON=@create
-	NPC=brain_monster
+    NPC=brain_monster
 
-	FAME=15000
-	KARMA=-15000
+    FAME=15000
+    KARMA=-15000
 
-	STR={816, 883}
-	DEX={68, 73}
-	INT={40, 49}
-	MAXHITS={762, 830}
+    STR={816, 883}
+    DEX={68, 73}
+    INT={40, 49}
+    MAXHITS={762, 830}
 
-	RESPHYSICAL={55, 60}
-	RESFIRE={20, 30}
-	RESCOLD={20, 30}
-	RESPOISON={30, 40}
-	RESENERGY={45, 55}
+    RESPHYSICAL={55, 60}
+    RESFIRE={20, 30}
+    RESCOLD={20, 30}
+    RESPOISON={30, 40}
+    RESENERGY={45, 55}
 
-	ANATOMY={80.1, 85.0}
-	MAGICRESISTANCE={125.1, 130.0}
-	TACTICS={90.1, 100.0}
-	WRESTLING={90.1, 110.0}
-	MINING={50.1, 70.0}
+    ANATOMY={80.1, 85.0}
+    MAGICRESISTANCE={125.1, 130.0}
+    TACTICS={90.1, 100.0}
+    WRESTLING={90.1, 110.0}
+    MINING={50.1, 70.0}
 
 
 [CHARDEF 02cb]
 DEFNAME=c_boura_ruddy
 NAME=ruddy boura
 SOUND=1507
-RESOURCES=10 i_ribs_raw, 8 i_reag_dragon_blood	//todo: 22 i_hide_spined
+RESOURCES=10 i_ribs_raw, 8 i_reag_dragon_blood    //todo: 22 i_hide_spined
 CAN=mt_walk|mt_run
 
 DAM=16,20
@@ -353,35 +353,35 @@ SUBSECTION=Wild
 DESCRIPTION=Boura, Ruddy
 
 ON=@create
-	NPC=brain_animal
+    NPC=brain_animal
 
-	FAME=2500
-	KARMA=-2500
+    FAME=2500
+    KARMA=-2500
 
-	STR={396, 480}
-	DEX={68, 82}
-	INT={16, 20}
-	MAXHITS={435, 509}
-	MAXSTAM={68, 82}
-	MAXMANA={16, 20}
+    STR={396, 480}
+    DEX={68, 82}
+    INT={16, 20}
+    MAXHITS={435, 509}
+    MAXSTAM={68, 82}
+    MAXMANA={16, 20}
 
-	RESPHYSICAL={50, 60}
-	RESFIRE={35, 40}
-	RESCOLD={10, 20}
-	RESPOISON={30, 40}
-	RESENERGY={30, 40}
+    RESPHYSICAL={50, 60}
+    RESFIRE={35, 40}
+    RESCOLD={10, 20}
+    RESPOISON={30, 40}
+    RESENERGY={30, 40}
 
-	ANATOMY={86.6, 88.8}
-	MAGICRESISTANCE={69.7, 87.7}
-	TACTICS={83.3, 88.8}
-	WRESTLING={86.6, 87.9}
+    ANATOMY={86.6, 88.8}
+    MAGICRESISTANCE={69.7, 87.7}
+    TACTICS={83.3, 88.8}
+    WRESTLING={86.6, 87.9}
 
 
 [CHARDEF 02cc]
 DEFNAME=c_Chicken_Lizard
 NAME=chicken lizard
 SOUND=1508
-RESOURCES=3 i_bird_raw, 4 i_reag_dragon_blood	//todo:1 i_chicken_lizard_egg
+RESOURCES=3 i_bird_raw, 4 i_reag_dragon_blood    //todo:1 i_chicken_lizard_egg
 CAN=mt_walk|mt_run
 
 DAM=2,5
@@ -392,23 +392,23 @@ CATEGORY=Animals
 SUBSECTION=Reptiles
 DESCRIPTION=Chicken Lizard
 ON=@create
-	NPC=brain_animal
+    NPC=brain_animal
 
-	FAME=300
+    FAME=300
 
-	STR={74, 95}
-	DEX={78, 95}
-	INT={6, 10}
-	MAXHITS={74, 95}
-	MAXMANA={6, 10}
-	MAXSTAM={78, 95}
+    STR={74, 95}
+    DEX={78, 95}
+    INT={6, 10}
+    MAXHITS={74, 95}
+    MAXMANA={6, 10}
+    MAXSTAM={78, 95}
 
-	RESPHYSICAL={15, 20}
-	RESFIRE={5, 15}
+    RESPHYSICAL={15, 20}
+    RESFIRE={5, 15}
 
-	MAGICRESISTANCE={25.1, 29.6}
-	TACTICS={30.1, 44.9}
-	WRESTLING={26.2, 38.2}
+    MAGICRESISTANCE={25.1, 29.6}
+    TACTICS={30.1, 44.9}
+    WRESTLING={26.2, 38.2}
 
 
 [CHARDEF 02cd]
@@ -426,29 +426,29 @@ CATEGORY=Monsters
 SUBSECTION=Mechanicals
 DESCRIPTION=Clockwork Scorpion
 ON=@create
-	NPC=brain_monster
+    NPC=brain_monster
 
-	FAME=3500
-	KARMA=-3500
+    FAME=3500
+    KARMA=-3500
 
-	STR={225, 245}
-	DEX={80, 100}
-	INT={30, 40}
-	MAXHITS={151, 210}
+    STR={225, 245}
+    DEX={80, 100}
+    INT={30, 40}
+    MAXHITS={151, 210}
 
-	RESPHYSICAL={80, 100}
-	RESFIRE={20, 30}
-	RESCOLD={60, 80}
-	RESPOISON=
-	RESENERGY={10, 25}
+    RESPHYSICAL={80, 100}
+    RESFIRE={20, 30}
+    RESCOLD={60, 80}
+    RESPOISON=
+    RESENERGY={10, 25}
 
-	MAGICRESISTANCE={30.1, 50.0}
-	POISONING={ 95.1, 100.0}
-	TACTICS={70.1, 90.0}
-	WRESTLING={50.1, 80.0}
+    MAGICRESISTANCE={30.1, 50.0}
+    POISONING={ 95.1, 100.0}
+    TACTICS={70.1, 90.0}
+    WRESTLING={50.1, 80.0}
 
 ON=@CreateLoot
-	//fixme: need loot
+    //fixme: need loot
 
 
 [CHARDEF 02ce]
@@ -467,30 +467,30 @@ SUBSECTION=Dragons
 DESCRIPTION=Dragon, Fairy
 
 ON=@create
-	NPC=brain_dragon
+    NPC=brain_dragon
 
-	FAME=15000
-	KARMA=-15000
+    FAME=15000
+    KARMA=-15000
 
-	STR={512, 558}
-	DEX={95, 105}
-	INT={455, 501}
-	MAXHITS={398, 403}
+    STR={512, 558}
+    DEX={95, 105}
+    INT={455, 501}
+    MAXHITS={398, 403}
 
-	RESPHYSICAL={16, 30}
-	RESFIRE={41, 44}
-	RESCOLD={40, 49}
-	RESPOISON={40, 49}
-	RESENERGY={45, 47}
+    RESPHYSICAL={16, 30}
+    RESFIRE={41, 44}
+    RESCOLD={40, 49}
+    RESPOISON={40, 49}
+    RESENERGY={45, 47}
 
-	MAGICRESISTANCE={99.1, 100.0}
-	TACTICS={60.6, 68.2}
-	WRESTLING={90.1, 92.5}
-	MYSTICISM={101.8, 108.3}
+    MAGICRESISTANCE={99.1, 100.0}
+    TACTICS={60.6, 68.2}
+    WRESTLING={90.1, 92.5}
+    MYSTICISM={101.8, 108.3}
 
 ON=@CreateLoot
-	ITEM=i_gold,{1500 1600}
-	ITEM=i_treasure_map3,R99
+    ITEM=i_gold,{1500 1600}
+    ITEM=i_treasure_map3,R99
 
 
 [CHARDEF 02cf]
@@ -564,36 +564,36 @@ SUBSECTION=Elementals
 DESCRIPTION=Elemental, Lava
 
 ON=@create
-	NPC=brain_monster
+    NPC=brain_monster
     
-	FAME=12250
-	KARMA=-12250
+    FAME=12250
+    KARMA=-12250
     
-	STR={446, 510}
-	DEX={160, 190}
-	INT={360, 430}
-	MAXHITS={270, 290}
+    STR={446, 510}
+    DEX={160, 190}
+    INT={360, 430}
+    MAXHITS={270, 290}
     
-	RESFIRE={20, 30}
-	RESCOLD={20, 30}
-	RESENERGY={40, 50}
+    RESFIRE={20, 30}
+    RESCOLD={20, 30}
+    RESENERGY={40, 50}
     
-	EVALUATINGINTEL={84.8, 92.6}
-	MAGERY={80.0, 92.7}
-	MEDITATION={97.8, 120.0}
-	MAGICRESISTANCE={101.9, 106.2}
-	TACTICS={80.3, 94.0}
-	WRESTLING={71.7, 85.4}
-	POISONING={ 90.0, 100.0}
-	DETECTINGHIDDEN={75.1}
+    EVALUATINGINTEL={84.8, 92.6}
+    MAGERY={80.0, 92.7}
+    MEDITATION={97.8, 120.0}
+    MAGICRESISTANCE={101.9, 106.2}
+    TACTICS={80.3, 94.0}
+    WRESTLING={71.7, 85.4}
+    POISONING={ 90.0, 100.0}
+    DETECTINGHIDDEN={75.1}
 
 ON=@CreateLoot
-	ITEM=i_gold,{800 1000}
-	ITEM=i_potion_poisonless
-	ITEM=random_reagent,9
-	ITEM=random_jewel,2
-	ITEM=random_scroll1
-	ITEM=i_treasure_map5,R99
+    ITEM=i_gold,{800 1000}
+    ITEM=i_potion_poisonless
+    ITEM=random_reagent,9
+    ITEM=random_jewel,2
+    ITEM=random_scroll1
+    ITEM=i_treasure_map5,R99
 
 
 [CHARDEF 02d1]
@@ -611,30 +611,30 @@ SUBSECTION=Undeads
 DESCRIPTION= Maddening Horror
 
 ON=@create
-	NPC=brain_monster
+    NPC=brain_monster
     
-	FAME=23000
-	KARMA=-23000
+    FAME=23000
+    KARMA=-23000
     
-	STR={270, 290}
-	DEX={80, 100}
+    STR={270, 290}
+    DEX={80, 100}
     
-	RESPHYSICAL={55, 65}
-	RESFIRE={20, 30}
-	RESCOLD={50, 60}
-	RESPOISON={40, 50}
-	RESENERGY={50, 60}
+    RESPHYSICAL={55, 65}
+    RESFIRE={20, 30}
+    RESCOLD={50, 60}
+    RESPOISON={40, 50}
+    RESENERGY={50, 60}
     
-	EVALUATINGINTEL={120.0, 130.0}
-	MAGERY={120.0, 130.0}
-	MEDITATION={100.0, 110.0}
-	MAGICRESISTANCE={180.0, 195.0}
-	TACTICS={95.0, 100.0}
-	WRESTLING={80.0, 85.0}
-	POISONING={ 110.0}
-	DETECTINGHIDDEN={100.0}
-	NECROMANCY={120.0}
-	SPIRITSPEAK={120.0}
+    EVALUATINGINTEL={120.0, 130.0}
+    MAGERY={120.0, 130.0}
+    MEDITATION={100.0, 110.0}
+    MAGICRESISTANCE={180.0, 195.0}
+    TACTICS={95.0, 100.0}
+    WRESTLING={80.0, 85.0}
+    POISONING={ 110.0}
+    DETECTINGHIDDEN={100.0}
+    NECROMANCY={120.0}
+    SPIRITSPEAK={120.0}
 
 
 [CHARDEF 02d2]
@@ -652,35 +652,35 @@ SUBSECTION=Gargoyles
 DESCRIPTION=Gargoyle, Undead
 
 ON=@create
-	NPC=brain_monster
+    NPC=brain_monster
     
-	FAME=3000
-	KARMA=-3001
+    FAME=3000
+    KARMA=-3001
     
     STR={200, 245}
-	MAXHITS={115, 140}
-	DEX={75, 95}
-	INT={40, 60}
+    MAXHITS={115, 140}
+    DEX={75, 95}
+    INT={40, 60}
     
-	RESPHYSICAL={35,45}
-	RESFIRE={20,30}
-	RESCOLD={55,60}
-	RESPOISON={20,30}
-	RESENERGY={30,40}
+    RESPHYSICAL={35,45}
+    RESFIRE={20,30}
+    RESCOLD={55,60}
+    RESPOISON={20,30}
+    RESENERGY={30,40}
     
-	MAGICRESISTANCE=66.6
-	TACTICS=86.2
-	WRESTLING=86.9
+    MAGICRESISTANCE=66.6
+    TACTICS=86.2
+    WRESTLING=86.9
 
 
 ON=@CreateLoot
-	ITEM=i_gold,{1000 1300}
-	//ITEM=magic_items,{4 5}
-	ITEM=random_reagent_necro,{5 10}
-	//ITEM=i_undying_flesh
-	//ITEM=i_bone_armor_blue
-	//ITEM=i_pottery_fragments
-	//ITEM=i_tattered_scroll
+    ITEM=i_gold,{1000 1300}
+    //ITEM=magic_items,{4 5}
+    ITEM=random_reagent_necro,{5 10}
+    //ITEM=i_undying_flesh
+    //ITEM=i_bone_armor_blue
+    //ITEM=i_pottery_fragments
+    //ITEM=i_tattered_scroll
 
 
 [CHARDEF 02d3]
@@ -701,37 +701,37 @@ SUBSECTION=Goblins
 DESCRIPTION=Green Goblin
 
 ON=@create
-	NPC=brain_monster
+    NPC=brain_monster
     
-	FAME=1500
-	KARMA=-1500
+    FAME=1500
+    KARMA=-1500
     
-	STR={252, 343}
-	DEX={60, 74}
-	INT={117, 148}
-	MAXHITS={162, 208}
-	MAXSTAM={60, 74}
-	MAXMANA={117, 148}
+    STR={252, 343}
+    DEX={60, 74}
+    INT={117, 148}
+    MAXHITS={162, 208}
+    MAXSTAM={60, 74}
+    MAXMANA={117, 148}
     
-	RESPHYSICAL={40, 50}
-	RESFIRE={30, 39}
-	RESCOLD={27, 35}
-	RESPOISON={11, 20}
-	RESENERGY={10, 20}
+    RESPHYSICAL={40, 50}
+    RESFIRE={30, 39}
+    RESCOLD={27, 35}
+    RESPOISON={11, 20}
+    RESENERGY={10, 20}
     
-	MAGICRESISTANCE={120.5, 128.8}
-	TACTICS={80.9, 89.9}
-	ANATOMY={83.1, 89.6}
-	WRESTLING={93.0, 108.3}
+    MAGICRESISTANCE={120.5, 128.8}
+    TACTICS={80.9, 89.9}
+    ANATOMY={83.1, 89.6}
+    WRESTLING={93.0, 108.3}
 
 
 ON=@CreateLoot
-	ITEM=i_gold,{60 60}
-	//ITEM=magic_items
-	ITEM=random_jewel
-	//ITEM=i_bola_ball
-	ITEM={i_bottle_wine 1}
-	//ITEM=i_goblin_blood
+    ITEM=i_gold,{60 60}
+    //ITEM=magic_items
+    ITEM=random_jewel
+    //ITEM=i_bola_ball
+    ITEM={i_bottle_wine 1}
+    //ITEM=i_goblin_blood
 
 
 [CHARDEF 02d4]
@@ -751,30 +751,30 @@ SUBSECTION=Feys
 DESCRIPTION=Gremlin
 
 ON=@create
-	NPC=brain_monster
+    NPC=brain_monster
     
-	FAME=1500
-	KARMA=-1500
+    FAME=1500
+    KARMA=-1500
     
-	STR={100, 110}
-	DEX={125, 135}
-	INT={30, 40}
-	MAXHITS={65, 75]
+    STR={100, 110}
+    DEX={125, 135}
+    INT={30, 40}
+    MAXHITS={65, 75]
     
-	RESPHYSICAL={25, 30}
-	RESFIRE={35, 40}
-	RESCOLD={20, 25}
-	RESPOISON={15, 20}
-	RESENERGY={25, 33}
+    RESPHYSICAL={25, 30}
+    RESFIRE={35, 40}
+    RESCOLD={20, 25}
+    RESPOISON={15, 20}
+    RESENERGY={25, 33}
     
-	ANATOMY={78.5}
-	MAGICRESISTANCE={82.5}
-	TACTICS={65.3}
+    ANATOMY={78.5}
+    MAGICRESISTANCE={82.5}
+    TACTICS={65.3}
 
 ON=@CreateLoot
-	ITEM=i_gold,{60 200}
-	ITEM=i_arrow,{60 80}
-	ITEM=i_fruit_apple,5
+    ITEM=i_gold,{60 200}
+    ITEM=i_arrow,{60 80}
+    ITEM=i_fruit_apple,5
 
 
 [CHARDEF 02d5]
@@ -846,7 +846,7 @@ CAN=mt_walk|mt_run|mt_equip|mt_usehands
 
 DAM=7,17
 
-RESOURCES=5 i_ribs_raw, 14 i_hide_spined,	//15 i_fur
+RESOURCES=5 i_ribs_raw, 14 i_hide_spined,    //15 i_fur
 
 //FIXME RESDISP*
 
@@ -855,30 +855,30 @@ SUBSECTION=Reptiles
 DESCRIPTION=Kepetch
 
 ON=@create
-	NPC=brain_monster
+    NPC=brain_monster
     
-	FAME=6000
-	KARMA=-6000
+    FAME=6000
+    KARMA=-6000
     
-	STR={337, 354}
-	DEX={184, 194}
-	INT={32, 37}
-	MAXHITS={308, 366}
+    STR={337, 354}
+    DEX={184, 194}
+    INT={32, 37}
+    MAXHITS={308, 366}
     
-	RESPHYSICAL={55, 65}
-	RESFIRE={40, 45}
-	RESCOLD={45, 55}
-	RESPOISON={55, 65}
-	RESENERGY={65, 75}
+    RESPHYSICAL={55, 65}
+    RESFIRE={40, 45}
+    RESCOLD={45, 55}
+    RESPOISON={55, 65}
+    RESENERGY={65, 75}
     
-	ANATOMY={119.7, 124.1}
-	MAGICRESISTANCE={89.9, 97.4}
-	TACTICS={117.4, 123.5}
-	WRESTLING={107.7, 113.9}
+    ANATOMY={119.7, 124.1}
+    MAGICRESISTANCE={89.9, 97.4}
+    TACTICS={117.4, 123.5}
+    WRESTLING={107.7, 113.9}
 
 
 ON=@CreateLoot
-	ITEM=i_gold,{149 200}
+    ITEM=i_gold,{149 200}
 
 
 [CHARDEF 02d7]
@@ -1021,33 +1021,33 @@ SUBSECTION=Dinosaurs
 DESCRIPTION=Raptor
 
 ON=@create
-	NPC=brain_monster
+    NPC=brain_monster
     
-	FAME=7500
-	KARMA=-7500
+    FAME=7500
+    KARMA=-7500
     
-	STR={404, 471}
-	DEX={132, 155}
-	INT={105, 145}
-	MAXHITS={343, 400}
+    STR={404, 471}
+    DEX={132, 155}
+    INT={105, 145}
+    MAXHITS={343, 400}
     
-	RESPHYSICAL={45, 50}
-	RESFIRE={50, 60}
-	RESCOLD={40, 50}
-	RESPOISON={20, 30}
-	RESENERGY={30, 40}
+    RESPHYSICAL={45, 50}
+    RESFIRE={50, 60}
+    RESCOLD={40, 50}
+    RESPOISON={20, 30}
+    RESENERGY={30, 40}
     
-	MAGICRESISTANCE={75.1, 90.0}
-	TACTICS={75.1, 100.0}
-	WRESTLING={70.1, 95.1}
+    MAGICRESISTANCE={75.1, 90.0}
+    TACTICS={75.1, 100.0}
+    WRESTLING={70.1, 95.1}
     
 ON=@CreateLoot
-	ITEM=i_gold,{400 500}
-	//ITEM=magic_items
-	//ITEM=i_raptor_teeth
-	//ITEM=i_pottery_fragments
-	//ITEM=i_raptor_claw
-	ITEM=i_trasure_map3,R99
+    ITEM=i_gold,{400 500}
+    //ITEM=magic_items
+    //ITEM=i_raptor_teeth
+    //ITEM=i_pottery_fragments
+    //ITEM=i_raptor_claw
+    ITEM=i_trasure_map3,R99
 
 
 [CHARDEF 02dc]
@@ -1064,26 +1064,26 @@ SUBSECTION=Worms
 DESCRIPTION=Worm, Rot
 
 ON=@create
-	NPC=brain_monster
+    NPC=brain_monster
     
-	FAME=1500
-	KARMA=-1500
+    FAME=1500
+    KARMA=-1500
     
-	STR={200, 300}
-	DEX=
-	INT={15, 20}
-	MAXHITS={200, 250}
-	MAXSTAM=
+    STR={200, 300}
+    DEX=
+    INT={15, 20}
+    MAXHITS={200, 250}
+    MAXSTAM=
     
-	//RESPHYSICAL={35, 45}
-	RESFIRE={30, 40}
-	RESCOLD={25, 35}
-	RESPOISON={65, 75}
-	RESENERGY={25, 35}
+    //RESPHYSICAL={35, 45}
+    RESFIRE={30, 40}
+    RESCOLD={25, 35}
+    RESPOISON={65, 75}
+    RESENERGY={25, 35}
     
-	MAGICRESISTANCE={25.0}
-	TACTICS={25.0}
-	WRESTLING={50.0}
+    MAGICRESISTANCE={25.0}
+    TACTICS={25.0}
+    WRESTLING={50.0}
 
 
 [CHARDEF 02dd]
@@ -1103,35 +1103,35 @@ SUBSECTION=Dragons
 DESCRIPTION=Skree
 
 ON=@create
-	NPC=brain_dragon
+    NPC=brain_dragon
     
-	FAME=2000
-	KARMA=-2000
+    FAME=2000
+    KARMA=-2000
     
-	STR={297, 330}
-	DEX={96, 124}
-	INT={188, 260}
-	MAXHITS={205, 300}
+    STR={297, 330}
+    DEX={96, 124}
+    INT={188, 260}
+    MAXHITS={205, 300}
     
-	RESPHYSICAL={55, 65}
-	RESFIRE={45, 55}
-	RESCOLD={25, 40}
-	RESPOISON={55, 65}
-	RESENERGY={25, 40}
+    RESPHYSICAL={55, 65}
+    RESFIRE={45, 55}
+    RESCOLD={25, 40}
+    RESPOISON={55, 65}
+    RESENERGY={25, 40}
     
-	EVALUATINGINTEL={90.6, 100.0}
-	MAGERY={90.2, 114.2}
-	MEDITATION={65.3, 75.0}
-	MAGICRESISTANCE={75.1, 90.0}
-	TACTICS={20.2, 24.7}
-	WRESTLING={20.2, 34.8}
-	MYSTICISM={20.1, 35.0}
-	TAMING=95.1
+    EVALUATINGINTEL={90.6, 100.0}
+    MAGERY={90.2, 114.2}
+    MEDITATION={65.3, 75.0}
+    MAGICRESISTANCE={75.1, 90.0}
+    TACTICS={20.2, 24.7}
+    WRESTLING={20.2, 34.8}
+    MYSTICISM={20.1, 35.0}
+    TAMING=95.1
 
 ON=@CreateLoot
-	ITEM=i_gold,{50 100}
-	//ITEM=random_reagents_mysticism
-	//ITEM=random_scroll_mysticisim
+    ITEM=i_gold,{50 100}
+    //ITEM=random_reagents_mysticism
+    //ITEM=random_scroll_mysticisim
 
 
 [CHARDEF 02de]
@@ -1151,31 +1151,31 @@ SUBSECTION=Reptiles
 DESCRIPTION=Slith
 
 ON=@create
-	NPC=brain_monster
+    NPC=brain_monster
     
-	FAME=3000
-	KARMA=-3000
+    FAME=3000
+    KARMA=-3000
     
-	STR={129, 136}
-	DEX={72, 75}
-	INT={12, 13}
-	MAXHITS={84, 85}
+    STR={129, 136}
+    DEX={72, 75}
+    INT={12, 13}
+    MAXHITS={84, 85}
     
-	RESPHYSICAL={35, 40}
-	RESFIRE={35, 45}
-	RESPOISON={25, 35}
-	RESENERGY={25, 30}
+    RESPHYSICAL={35, 40}
+    RESFIRE={35, 45}
+    RESPOISON={25, 35}
+    RESENERGY={25, 30}
     
-	MAGICRESISTANCE={59.1, 63.5}
-	TACTICS={74.6, 76.4}
-	WRESTLING={62.0, 77.1}
+    MAGICRESISTANCE={59.1, 63.5}
+    TACTICS={74.6, 76.4}
+    WRESTLING={62.0, 77.1}
 
 ON=@CreateLoot
-	ITEM=i_gold,{100 200}
-	//ITEM=magic_items
-	//ITEM=i_slith_tongue
-	//ITEM=i_slith_eye
-	//ITEM=i_pottery_fragments
+    ITEM=i_gold,{100 200}
+    //ITEM=magic_items
+    //ITEM=i_slith_tongue
+    //ITEM=i_slith_eye
+    //ITEM=i_pottery_fragments
 
 
 [CHARDEF 02df]
@@ -1262,32 +1262,32 @@ SUBSECTION=Arachnids
 DESCRIPTION=Spider, Wolf
 
 ON=@create
-	NPC=brain_monster
+    NPC=brain_monster
 
-	STR={225, 268}
-	DEX={145, 165}
-	INT={285, 310}
-	MAXHITS={150, 160}
-	MAXMANA={285, 310}
-	MAXSTAM={145, 165}
+    STR={225, 268}
+    DEX={145, 165}
+    INT={285, 310}
+    MAXHITS={150, 160}
+    MAXMANA={285, 310}
+    MAXSTAM={145, 165}
     
-	RESPHYSICAL={30, 35}
-	RESFIRE={20, 30}
-	RESCOLD={25, 35}
-	RESPOISON=
-	RESENERGY={25, 35}
+    RESPHYSICAL={30, 35}
+    RESFIRE={20, 30}
+    RESCOLD={25, 35}
+    RESPOISON=
+    RESENERGY={25, 35}
     
-	ANATOMY={80.0, 90.0}
-	MAGICRESISTANCE={60.0, 75.0}
-	POISONING={ 62.3, 77.2}
-	TACTICS={84.1, 95.9}
-	WRESTLING={80.2, 90.0}
-	HIDING={105.0, 110.0}
-	STEALTH={105.0, 110.0}
+    ANATOMY={80.0, 90.0}
+    MAGICRESISTANCE={60.0, 75.0}
+    POISONING={ 62.3, 77.2}
+    TACTICS={84.1, 95.9}
+    WRESTLING={80.2, 90.0}
+    HIDING={105.0, 110.0}
+    STEALTH={105.0, 110.0}
 
 ON=@CreateLoot
-	//ITEM=i_bottle_ichor
-	//ITEM=i_spider_carapace
+    //ITEM=i_bottle_ichor
+    //ITEM=i_spider_carapace
 
 
 [CHARDEF 02e1]
@@ -1305,38 +1305,38 @@ SUBSECTION=Arachnids
 DESCRIPTION=Spider, Trapdoor
 
 ON=@create
-	NPC=brain_monster
+    NPC=brain_monster
     
-	FAME=2000
-	KARMA=-2000
+    FAME=2000
+    KARMA=-2000
     
-	STR={100, 104}
-	DEX={162, 165}
-	INT={29, 50}
-	MAXHITS={125, 144}
+    STR={100, 104}
+    DEX={162, 165}
+    INT={29, 50}
+    MAXHITS={125, 144}
     
-	RESPHYSICAL=
-	RESFIRE={30, 35}
-	RESCOLD={30, 35}
-	RESPOISON={40, 45}
-	RESENERGY={95, 100}
+    RESPHYSICAL=
+    RESFIRE={30, 35}
+    RESCOLD={30, 35}
+    RESPOISON={40, 45}
+    RESENERGY={95, 100}
     
-	ANATOMY={2.0, 3.8}
-	MAGICRESISTANCE={47.5, 57.9}
-	POISONING={ 70.5, 73.5}
-	TACTICS={73.3, 78.9}
-	WRESTLING={92.5, 94.6}
-	HIDING={110.3, 119.9}
-	STEALTH={110.5, 119.6}
+    ANATOMY={2.0, 3.8}
+    MAGICRESISTANCE={47.5, 57.9}
+    POISONING={ 70.5, 73.5}
+    TACTICS={73.3, 78.9}
+    WRESTLING={92.5, 94.6}
+    HIDING={110.3, 119.9}
+    STEALTH={110.5, 119.6}
 
 ON=@CreateLoot
-	ITEM=i_gold,{250 350}
-	ITEM=i_reag_spider_silk,8
-	//ITEM=magic_items,{1 4},R99
-	//ITEM=i_bottle_ichor
-	//ITEM=i_spider_carapace
-	//ITEM=i_tattered_scroll
-	ITEM=i_treasure_map2,R99
+    ITEM=i_gold,{250 350}
+    ITEM=i_reag_spider_silk,8
+    //ITEM=magic_items,{1 4},R99
+    //ITEM=i_bottle_ichor
+    //ITEM=i_spider_carapace
+    //ITEM=i_tattered_scroll
+    ITEM=i_treasure_map2,R99
 
 
 [CHARDEF 02e2]
@@ -1355,29 +1355,29 @@ SUBSECTION=Insects
 DESCRIPTION=Fire Ant
 
 ON=@create
-	NPC=brain_monster
+    NPC=brain_monster
     
-	FAME=5000
-	KARMA=-5000
+    FAME=5000
+    KARMA=-5000
     
-	STR={200 250}
-	DEX={100 115}
-	INT={15 30}
-	MAXHITS={250 300}
+    STR={200 250}
+    DEX={100 115}
+    INT={15 30}
+    MAXHITS={250 300}
     
-	RESPHYSICAL={45 55}
-	RESFIRE={95 100}
-	RESCOLD={35 45}
-	RESPOISON={35 45}
-	RESENERGY={35 45}
+    RESPHYSICAL={45 55}
+    RESFIRE={95 100}
+    RESCOLD={35 45}
+    RESPOISON={35 45}
+    RESENERGY={35 45}
     
-	MAGICRESISTANCE={45.0 90.0}
-	TACTICS={70.0 85.0}
-	WRESTLING={75.0 85.0}
+    MAGICRESISTANCE={45.0 90.0}
+    TACTICS={70.0 85.0}
+    WRESTLING={75.0 85.0}
 
 ON=@CreateLoot
-	ITEM=i_gold,{299 299}
-	ITEM=i_treasure_map3,R99
+    ITEM=i_gold,{299 299}
+    ITEM=i_treasure_map3,R99
 
 
 [CHARDEF 02e3]
@@ -1627,8 +1627,8 @@ ON=@Create
     TACTICS={115.0 125.0}
     WRESTLING={115.0 125.0}
 
-    //BREATH.ANIM=i_fx_explode		//explosion id
-    //BREATH.TYPE=3				// Follow target
+    //BREATH.ANIM=i_fx_explode        //explosion id
+    //BREATH.TYPE=3                // Follow target
 
 ON=@CreateLoot
     ITEM=loot_dragon_stygian_lord

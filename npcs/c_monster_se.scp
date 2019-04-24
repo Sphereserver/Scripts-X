@@ -25,22 +25,22 @@ SUBSECTION=Wild
 DESCRIPTION=Kirin
 
 ON=@Create
-	NPC=brain_animal
+    NPC=brain_animal
     
-	KARMA=-2000
-	FAME={100 3000}
+    KARMA=-2000
+    FAME={100 3000}
     
-	STR={150 200}
-	MAXHITS=300
-	INT={300 340}
-	DEX={90 110}
+    STR={150 200}
+    MAXHITS=300
+    INT={300 340}
+    DEX={90 110}
     
-	PARRYING={60.0 95.0}
-	MAGICRESISTANCE={99.0 100.0}
-	TACTICS={98.0 100.0}
-	WRESTLING={95.0 100.0}
-	TAMING=105.0
-	MAGERY=125.0
+    PARRYING={60.0 95.0}
+    MAGICRESISTANCE={99.0 100.0}
+    TACTICS={98.0 100.0}
+    WRESTLING={95.0 100.0}
+    TAMING=105.0
+    MAGERY=125.0
 
 [ITEMDEF 9632]
 DEFNAME=i_pet_kirin
@@ -66,32 +66,32 @@ SUBSECTION=Elementals
 DESCRIPTION=Kaze Kemono
 
 ON=@create
-	NPC=BRAIN_MONSTER
+    NPC=BRAIN_MONSTER
     
-	STR={201, 275}
-	DEX={101, 155}
-	INT={101, 105}
-	MAXHITS={251, 330}
+    STR={201, 275}
+    DEX={101, 155}
+    INT={101, 105}
+    MAXHITS={251, 330}
     
-	RESPHYSICAL={50, 70}
-	RESFIRE={30, 60}
-	RESCOLD={30, 60}
-	RESPOISON={50, 70}
-	RESENERGY={60, 80}
+    RESPHYSICAL={50, 70}
+    RESFIRE={30, 60}
+    RESCOLD={30, 60}
+    RESPOISON={50, 70}
+    RESENERGY={60, 80}
     
-	MAGICRESISTANCE={110.1, 125.0}
-	TACTICS={55.1, 65.0}
-	WRESTLING={85.1, 95.0}
-	ANATOMY={25.1, 35.0}
-	MAGERY={95.1, 105.0}
+    MAGICRESISTANCE={110.1, 125.0}
+    TACTICS={55.1, 65.0}
+    WRESTLING={85.1, 95.0}
+    ANATOMY={25.1, 35.0}
+    MAGERY={95.1, 105.0}
     
-	FAME=8000
-	KARMA=-8000
+    FAME=8000
+    KARMA=-8000
 
 ON=@npcrestock
-	ITEM=i_gold,{550 650}
-	//ITEM=magic_items
-	ITEM=random_jewel,2
+    ITEM=i_gold,{550 650}
+    //ITEM=magic_items
+    ITEM=random_jewel,2
 
 
 [CHARDEF 0c7]
@@ -113,30 +113,30 @@ SUBSECTION=Elementals
 DESCRIPTION=Rai-Ju
 
 ON=@create
-	NPC=BRAIN_MONSTER
+    NPC=BRAIN_MONSTER
     
-	FAME=8000
-	KARMA=-8000
+    FAME=8000
+    KARMA=-8000
     
-	STR={151, 225}
-	DEX={81, 135}
-	INT={176, 180}
-	MAXHITS={201, 280}
+    STR={151, 225}
+    DEX={81, 135}
+    INT={176, 180}
+    MAXHITS={201, 280}
     
-	RESPHYSICAL={45, 65}
-	RESFIRE={70, 85}
-	RESCOLD={30, 60}
-	RESPOISON={50, 70}
-	RESENERGY={60, 80}
+    RESPHYSICAL={45, 65}
+    RESFIRE={70, 85}
+    RESCOLD={30, 60}
+    RESPOISON={50, 70}
+    RESENERGY={60, 80}
     
-	WRESTLING={85.1, 95.0}
-	TACTICS={55.1, 65.0}
-	MAGICRESISTANCE={110.1, 125.0}
-	ANATOMY={25.1, 35.0}
+    WRESTLING={85.1, 95.0}
+    TACTICS={55.1, 65.0}
+    MAGICRESISTANCE={110.1, 125.0}
+    ANATOMY={25.1, 35.0}
 
 ON=@npcrestock
-	ITEM=i_gold,{550 650}
-	ITEM=random_jewel,2
+    ITEM=i_gold,{550 650}
+    ITEM=random_jewel,2
 
 
 [CHARDEF 0f0]
@@ -184,10 +184,10 @@ ON=@Create
     WRESTLING={60.1, 70.0}
 
 ON=@NpcRestock
-	ITEM=i_gold,{175 225}
-	//ITEM=i_seed_fragrant
-	//ITEM=i_seed_peculiar
-	ITEM=i_treasure_map2,R99
+    ITEM=i_gold,{175 225}
+    //ITEM=i_seed_fragrant
+    //ITEM=i_seed_peculiar
+    ITEM=i_treasure_map2,R99
 
 [CHARDEF 0f1]
 NAME=Oni
@@ -208,35 +208,35 @@ SUBSECTION=Demons
 DESCRIPTION=Oni
 
 ON=@create
-	NPC=BRAIN_MONSTER
+    NPC=BRAIN_MONSTER
     
-	FAME=15000
-	KARMA=-15000
+    FAME=15000
+    KARMA=-15000
     
-	STR={801, 910}
-	DEX={151, 300}
-	INT={171, 195}
-	MAXHITS={401, 530}
+    STR={801, 910}
+    DEX={151, 300}
+    INT={171, 195}
+    MAXHITS={401, 530}
     
-	RESPHYSICAL={65, 80}
-	RESFIRE={50, 70}
-	RESCOLD={35, 50}
-	RESPOISON={45, 70}
-	RESENERGY={45, 65}
+    RESPHYSICAL={65, 80}
+    RESFIRE={50, 70}
+    RESCOLD={35, 50}
+    RESPOISON={45, 70}
+    RESENERGY={45, 65}
     
-	EVALUATINGINTEL={100.1, 125.0}
-	MAGERY={96.1, 106.0}
-	ANATOMY={85.1, 95.0}
-	MAGICRESISTANCE={85.1, 100.0}
-	TACTICS={86.1, 101.0}
-	WRESTLING={90.1, 100.0}
+    EVALUATINGINTEL={100.1, 125.0}
+    MAGERY={96.1, 106.0}
+    ANATOMY={85.1, 95.0}
+    MAGICRESISTANCE={85.1, 100.0}
+    TACTICS={86.1, 101.0}
+    WRESTLING={90.1, 100.0}
 
 ON=@npcrestock
-	ITEM=i_gold,{1600 1850}
-	//ITEM=magic_items	//todo
-	//ITEM=random_items
-	ITEM=i_treasure_map4,R99
-	//ITEM=i_bonsai_seed
+    ITEM=i_gold,{1600 1850}
+    //ITEM=magic_items    //todo
+    //ITEM=random_items
+    ITEM=i_treasure_map4,R99
+    //ITEM=i_bonsai_seed
 
 
 [CHARDEF 0f2]
@@ -288,10 +288,10 @@ ON=@Create
     POISONING=1000
 
 ON=@NpcRestock
-	ITEM=random_potion
-	ITEM={random_first_circle 1 random_second_circle 1}
-	ITEM=random_armor
-	//ITEM=i_seed_bonsai
+    ITEM=random_potion
+    ITEM={random_first_circle 1 random_second_circle 1}
+    ITEM=random_armor
+    //ITEM=i_seed_bonsai
 
 
 [CHARDEF 0f3]
@@ -321,39 +321,39 @@ SUBSECTION=Wild
 DESCRIPTION=Hiryu
 
 ON=@Create
-	NPC=brain_dragon
+    NPC=brain_dragon
     
-	FAME=18000
-	KARMA=-18000
+    FAME=18000
+    KARMA=-18000
     
-	STR={1201, 1410}
-	DEX={171, 270}
-	INT={301, 325}
-	MAXHITS={901, 1100}
-	MAXMANA=60
+    STR={1201, 1410}
+    DEX={171, 270}
+    INT={301, 325}
+    MAXHITS={901, 1100}
+    MAXMANA=60
     
-	RESPHYSICAL={55, 70}
-	RESFIRE={70, 90}
-	RESCOLD={15, 25}
-	RESPOISON={40, 50}
-	RESENERGY={40, 50}
+    RESPHYSICAL={55, 70}
+    RESFIRE={70, 90}
+    RESCOLD={15, 25}
+    RESPOISON={40, 50}
+    RESENERGY={40, 50}
     
-	ANATOMY={75.1, 80.0}
-	MAGICRESISTANCE={85.1, 100.0}
-	TACTICS={100.1, 110.0}
-	WRESTLING={100.1, 120.0}
-	TAMING=98.7
+    ANATOMY={75.1, 80.0}
+    MAGICRESISTANCE={85.1, 100.0}
+    TACTICS={100.1, 110.0}
+    WRESTLING={100.1, 120.0}
+    TAMING=98.7
 
 ON=@npcrestock
-	ITEM=i_gold,{1500 1900}
-	ITEM=magic_items
-	ITEM=random_jewel
-	ITEM=random_jewel
-	ITEM=random_jewel
-	ITEM=random_jewel
-	//ITEM=i_seed_bonsai	//fixme
-	//ITEM=i_seed_fragrant
-	//ITEM=i_seed_peculiar
+    ITEM=i_gold,{1500 1900}
+    ITEM=magic_items
+    ITEM=random_jewel
+    ITEM=random_jewel
+    ITEM=random_jewel
+    ITEM=random_jewel
+    //ITEM=i_seed_bonsai    //fixme
+    //ITEM=i_seed_fragrant
+    //ITEM=i_seed_peculiar
 
 [CHARDEF 0f4]
 DEFNAME=c_rune_beetle
@@ -403,12 +403,12 @@ ON=@Create
     WRESTLING={70.1, 77.5}
 
 ON=@NpcRestock
-	ITEM=i_gold,{1000 1200}
-	//ITEM=magic_items
-	ITEM={random_fourth_circle 1 random_fifth_circle 1}
-	ITEM={random_body_parts_1 1 random_body_parts_2 1}
-	ITEM=random_bones
-	ITEM=random_reagent,{5 14}
+    ITEM=i_gold,{1000 1200}
+    //ITEM=magic_items
+    ITEM={random_fourth_circle 1 random_fifth_circle 1}
+    ITEM={random_body_parts_1 1 random_body_parts_2 1}
+    ITEM=random_bones
+    ITEM=random_reagent,{5 14}
 
 
 [CHARDEF 0f5]
@@ -438,7 +438,7 @@ DESCRIPTION=Yomotsu, Warrior
 ON=@Create
     NPC=brain_monster
     
-    FAME=4200	
+    FAME=4200    
     KARMA=-4200
     
     STR={486, 530}
@@ -459,15 +459,15 @@ ON=@Create
     WRESTLING={97.6, 107.5}
 
 ON=@NpcRestock
-	ITEM=i_gold,{600 700}
-	//ITEM=magic_items
-	ITEM=random_footwear
-	ITEM=i_axe_exec
-	ITEM=random_pants
-	ITEM=i_gourd
-	ITEM=random_jewel,2
-	ITEM=i_treasure_map3,R99
-	//ITEM=i_seed_bonsai
+    ITEM=i_gold,{600 700}
+    //ITEM=magic_items
+    ITEM=random_footwear
+    ITEM=i_axe_exec
+    ITEM=random_pants
+    ITEM=i_gourd
+    ITEM=random_jewel,2
+    ITEM=i_treasure_map3,R99
+    //ITEM=i_seed_bonsai
 
 [CHARDEF 0f6]
 NAME=Bake Kitsune
@@ -488,21 +488,21 @@ SUBSECTION=Wild
 DESCRIPTION=Bake Kitsune
 
 ON=@Create
-	NPC=brain_monster
+    NPC=brain_monster
     
-	FAME=150
-	KARMA=-2150
+    FAME=150
+    KARMA=-2150
     
-	STR={170 220}
-	DEX={125 145}
-	INT={375 425}
+    STR={170 220}
+    DEX={125 145}
+    INT={375 425}
     
-	MAGICRESISTANCE={80.0 100.0}
-	TACTICS={70.0 90.0}
-	WRESTLING={50.0 55.0}
-	MAGERY={80.0 90.0}
-	MEDITATION={85.0 95.0}
-	EVALUATINGINTEL={80.0 90.0}
+    MAGICRESISTANCE={80.0 100.0}
+    TACTICS={70.0 90.0}
+    WRESTLING={50.0 55.0}
+    MAGERY={80.0 90.0}
+    MEDITATION={85.0 95.0}
+    EVALUATINGINTEL={80.0 90.0}
 
 [CHARDEF 0f7]
 NAME=Fan Dancer
@@ -545,14 +545,14 @@ ON=@create
     ANATOMY={85.1, 95.0}
 
 ON=@Npcrestock
-	ITEM=i_gold,{700 100}
-	//ITEM=magic_items
-	//ITEM=i_tessen
-	ITEM=random_jewel,2
-	//ITEM=i_seed_bonsai
-	//ITEM=i_oragami_paper
-	ITEM=i_treasure_map3,R99
-	
+    ITEM=i_gold,{700 100}
+    //ITEM=magic_items
+    //ITEM=i_tessen
+    ITEM=random_jewel,2
+    //ITEM=i_seed_bonsai
+    //ITEM=i_oragami_paper
+    ITEM=i_treasure_map3,R99
+    
 
 [CHARDEF 0f8]
 NAME=Gaman
@@ -575,26 +575,26 @@ SUBSECTION=Wild
 DESCRIPTION=Gaman
 
 ON=@create
-	NPC=brain_animal
+    NPC=brain_animal
     
-	STR={146, 175}
-	DEX={111, 150}
-	INT={46, 60}
-	MAXHITS={131, 160}
+    STR={146, 175}
+    DEX={111, 150}
+    INT={46, 60}
+    MAXHITS={131, 160}
     
-	FAME=2000
-	KARMA=-2000
+    FAME=2000
+    KARMA=-2000
     
-	RESPHYSICAL={50, 70}
-	RESFIRE={30, 50}
-	RESCOLD={30, 50}
-	RESPOISON={40, 60}
-	RESENERGY={30, 50}
+    RESPHYSICAL={50, 70}
+    RESFIRE={30, 50}
+    RESCOLD={30, 50}
+    RESPOISON={40, 60}
+    RESENERGY={30, 50}
     
-	MAGICRESISTANCE={37.6, 42.5}
-	TACTICS={70.6, 83.0}
-	WRESTLING={50.1, 57.5}
-	TAMING=68.7
+    MAGICRESISTANCE={37.6, 42.5}
+    TACTICS={70.6, 83.0}
+    WRESTLING={50.1, 57.5}
+    TAMING=68.7
 
 [CHARDEF 0f9]
 NAME=Yamandon
@@ -639,12 +639,12 @@ ON=@create
     WRESTLING={112.6, 132.5}
 
 ON=@npcrestock
-	ITEM=i_gold,{2000 2500}
-	//ITEM=magic_items
-	ITEM=random_jewel,6
-	ITEM=i_eggs_fresh,2
-	ITEM=i_treasure_map5,R99	
-	//ITEM=i_seed_bonsai
+    ITEM=i_gold,{2000 2500}
+    //ITEM=magic_items
+    ITEM=random_jewel,6
+    ITEM=i_eggs_fresh,2
+    ITEM=i_treasure_map5,R99    
+    //ITEM=i_seed_bonsai
 
 [CHARDEF 0fa]
 NAME=Tsuki Wolf
@@ -695,14 +695,14 @@ ON=@create
     PARRYING={90.0, 100.0}
 
 ON=@npcrestock
-	ITEM=i_gold,{900 1200}
-	//ITEM=magic_items
-	ITEM={random_body_parts_1 1 random_body_parts_2 1}
-	ITEM=random_bones
-	ITEM=random_armor
-	//ITEM=i_seed_fragrant
-	//ITEM=i_seed_peculiar
-	ITEM=i_treasure_map3,R99
+    ITEM=i_gold,{900 1200}
+    //ITEM=magic_items
+    ITEM={random_body_parts_1 1 random_body_parts_2 1}
+    ITEM=random_bones
+    ITEM=random_armor
+    //ITEM=i_seed_fragrant
+    //ITEM=i_seed_peculiar
+    ITEM=i_treasure_map3,R99
 
 
 [CHARDEF 0fb]
@@ -748,12 +748,12 @@ ON=@create
     WRESTLING={80.1, 88.0}
 
 ON=@npcrestock
-	ITEM=i_gold,{500 700}
-	//ITEM=magic_items,2
-	ITEM={random_fourth_circle 1 random_fifth_circle 1}
-	ITEM=random_bones
-	ITEM={random_body_parts_1 1 random_body_parts_2 1}
-	ITEM=random_reagent_necro,{6 8}
+    ITEM=i_gold,{500 700}
+    //ITEM=magic_items,2
+    ITEM={random_fourth_circle 1 random_fifth_circle 1}
+    ITEM=random_bones
+    ITEM={random_body_parts_1 1 random_body_parts_2 1}
+    ITEM=random_reagent_necro,{6 8}
 
 
 [CHARDEF 0fc]
@@ -801,9 +801,9 @@ ON=@create
     SPIRITSPEAK={90.0, 110.0}
 
 ON=@npcrestock
-	ITEM=i_gold,{800 100}
-	//ITEM=magic_items,3
-	ITEM=random_reagent,3
+    ITEM=i_gold,{800 100}
+    //ITEM=magic_items,3
+    ITEM=random_reagent,3
 
 
 [CHARDEF 0fd]
@@ -855,15 +855,15 @@ ON=@Create
     WRESTLING={47.6, 57.5}
 
 ON=@NpcRestock
-	ITEM=i_gold,{700 1000}
-	//ITEM=magic_items
-	ITEM=random_footwear
-	ITEM=i_axe_exec
-	ITEM=random_pants
-	ITEM=i_gourd
-	ITEM=random_jewel,2
-	ITEM=i_treasure_map3,R99
-	//ITEM=i_seed_bonsai
+    ITEM=i_gold,{700 1000}
+    //ITEM=magic_items
+    ITEM=random_footwear
+    ITEM=i_axe_exec
+    ITEM=random_pants
+    ITEM=i_gourd
+    ITEM=random_jewel,2
+    ITEM=i_treasure_map3,R99
+    //ITEM=i_seed_bonsai
 
 
 [CHARDEF 0fe]
@@ -887,19 +887,19 @@ SUBSECTION=Birds
 DESCRIPTION=Crane
 
 ON=@create
-	
-	KARMA=200
     
-	STR={26, 35}
-	DEX={16, 25}
-	INT={11, 15}
-	MAXHITS={26, 35}
+    KARMA=200
     
-	RESPHYSICAL={5, 5}
+    STR={26, 35}
+    DEX={16, 25}
+    INT={11, 15}
+    MAXHITS={26, 35}
     
-	MAGICRESISTANCE={4.1, 5.0}
-	TACTICS={10.1, 11.0}
-	WRESTLING={10.1, 11.0}
+    RESPHYSICAL={5, 5}
+    
+    MAGICRESISTANCE={4.1, 5.0}
+    TACTICS={10.1, 11.0}
+    WRESTLING={10.1, 11.0}
 
 [CHARDEF 0ff]
 DEFNAME=c_Yomotsu_Elder
@@ -948,14 +948,14 @@ ON=@Create
     WRESTLING={110.1, 130.0}
 
 ON=@NpcRestock
-	ITEM=i_gold,1500 1800}
-	//ITEM=magic_items
-	ITEM=random_footwear
-	ITEM=i_axe_exec
-	ITEM=random_pants
-	ITEM=i_gourd
-	ITEM=random_jewel,2
-	ITEM=i_treasure_map3,R99
-	//ITEM=i_seed_bonsai
+    ITEM=i_gold,1500 1800}
+    //ITEM=magic_items
+    ITEM=random_footwear
+    ITEM=i_axe_exec
+    ITEM=random_pants
+    ITEM=i_gourd
+    ITEM=random_jewel,2
+    ITEM=i_treasure_map3,R99
+    //ITEM=i_seed_bonsai
 
 [EOF]

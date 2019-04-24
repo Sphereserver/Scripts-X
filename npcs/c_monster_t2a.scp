@@ -45,11 +45,11 @@ ON=@Create
     //Brain
     NPC=brain_monster
     
-	//Fame/Karma
+    //Fame/Karma
     FAME={1500 1999}
     KARMA={-1500 -1999}
     
-	//Stats
+    //Stats
     STR={75 100}
     MAXHITS={45 60}
     DEX={126 145}
@@ -57,14 +57,14 @@ ON=@Create
     INT={36 60}
     MAXMANA={36 60}
     
-	//Resistances
+    //Resistances
     RESPHYSICAL={0 5}
     RESCOLD={40 50}
     RESENERGY={10 20}
     RESFIRE={1 10}
     RESPOISON={20 30}
-	
-	//Skills
+    
+    //Skills
     MAGICRESISTANCE={25.0 40.0}
     TACTICS={35.0 50.0}
     TAMING=74.7
@@ -279,27 +279,27 @@ CATEGORY=Animals
 SUBSECTION=Wild
 DESCRIPTION=Leopard, Snow
 
-ON=@Create	
+ON=@Create    
     NPC=brain_animal
-	
+    
     FAME={500 999}
     KARMA={-500 -999}
-	
+    
     COLOR=0481
-	
+    
     STR={56 80}
     MAXHITS={34 48}
     DEX={66 85}
     MAXSTAM={66 85}
     INT={26 50}
     MAXMANA={26 50}
-	
+    
     RESPHYSICAL={0 5}
     RESCOLD={30 40}
     RESENERGY={20 30}
     RESFIRE={5 10}
     RESPOISON={10 20} 
-	
+    
     MAGICRESISTANCE={25.0 35.0}
     TACTICS={43.0 60.0}
     TAMING={50.0 55.0}
@@ -337,27 +337,27 @@ DESCRIPTION=Swamp Tentacles
 
 ON=@Create
     NPC=brain_monster
-	
+    
     KARMA={-1500 -1999}
     FAME={1500 1999}
-	
+    
     STR={96 120}
     MAXHITS={58 72}
     DEX={66 85}
     MAXSTAM={66 85}
     INT={16 30}
     MAXMANA={16 30}
-	
+    
     RESPHYSICAL={0 10}
     RESCOLD={10 20}
     RESENERGY={10 20}
     RESFIRE={10 20}
     RESPOISON={60 80}
-	
+    
     MAGICRESISTANCE={15.0 20.0}
     TACTICS={65.0 80.0}
     WRESTLING={65.0 80.0}
-	
+    
 ON=@Createloot
     ITEM=loot_swamp_tentacle
 
@@ -392,28 +392,28 @@ DESCRIPTION=Gargoyle, Stone
 
 ON=@Create
     NPC=brain_monster
-	
+    
     FAME={2500 2999}
     KARMA={-3000 -3999}
-	
+    
     STR={246 275}
     MAXHITS={148 165}
     DEX={76 95}
     MAXSTAM={76 95}
     INT={81 105}
     MAXMANA={81 105}
-	
+    
     RESPHYSICAL={0 10}
     RESCOLD={10 20}
     RESENERGY={30 40}
     RESFIRE={20 30}
     RESPOISON={30 40}
-	
+    
     MAGICRESISTANCE={85.0 100.0}
     PARRYING={80.0 100.0}
     TACTICS={80.0 100.0}
     WRESTLING={60.0 80.0}
-	
+    
 ON=@Createloot
     ITEM=loot_gargoyle_stone
 
@@ -448,30 +448,30 @@ DESCRIPTION=Gazer, Elder
 
 ON=@Create
     NPC=brain_monster
-	
+    
     FAME={2500 2999}
     KARMA={-2500 -2999}
-	
+    
     STR={296 325}
     MAXHITS={178 195}
     DEX={86 105}
     MAXSTAM={86 105}
     INT={291 385}
     MAXMANA={291 385}
-	
+    
     RESPHYSICAL={0 10}
     RESCOLD={40 50}
     RESENERGY={40 50}
     RESFIRE={60 70}
     RESPOISON={40 50}
-	
+    
     ANATOMY={62.0 100.0}
     EVALUATINGINTEL={90.0 105.0}
     MAGERY={90.0 105.0}
     MAGICRESISTANCE={115.0 130.0}
     TACTICS={80.0 100.0}
     WRESTLING={80.0 100.0}
-	
+    
 ON=@Createloot
     ITEM=loot_gazer_elder
 
@@ -506,30 +506,30 @@ SUBSECTION=Terathans
 DESCRIPTION=Terathan, Warrior
 
 ON=@Create
-	NPC=brain_monster
-	
-	FAME=4000
-	KARMA=-4000
-	
-	STR={166, 215}
-	DEX={96, 145}
-	INT={41, 65}
-	MAXHITS={100, 129}
-	
-	RESPHYSICAL={30, 35}
-	RESFIRE={20, 30}
-	RESCOLD={25, 35}
-	RESPOISON={30, 40}
-	RESENERGY={25, 35}
-	
-	POISONING={ 60.1, 80.0}
-	MAGICRESISTANCE={60.1, 75.0}
-	TACTICS={80.1, 100.0}
-	WRESTLING={80.1, 90.0}
+    NPC=brain_monster
+    
+    FAME=4000
+    KARMA=-4000
+    
+    STR={166, 215}
+    DEX={96, 145}
+    INT={41, 65}
+    MAXHITS={100, 129}
+    
+    RESPHYSICAL={30, 35}
+    RESFIRE={20, 30}
+    RESCOLD={25, 35}
+    RESPOISON={30, 40}
+    RESENERGY={25, 35}
+    
+    POISONING={ 60.1, 80.0}
+    MAGICRESISTANCE={60.1, 75.0}
+    TACTICS={80.1, 100.0}
+    WRESTLING={80.1, 90.0}
 
 ON=@Createloot
-	ITEM=i_gold,{125 175}
-	ITEM=i_treasure_map1,R99
+    ITEM=i_gold,{125 175}
+    ITEM=i_treasure_map1,R99
 
 
 [CHARDEF 047]
@@ -562,30 +562,30 @@ SUBSECTION=Terathans
 DESCRIPTION=Terathan, Drone
 
 ON=@Create
-	NPC=brain_monster
-	
-	FAME=2000
-	KARMA=-2000
-	
-	STR={36, 65}
-	DEX={96, 145}
-	INT={21, 45}
-	MAXHITS={22, 39}
-	
-	RESPHYSICAL={20, 25}
-	RESFIRE={10, 20}
-	RESCOLD={15, 25}
-	RESPOISON={30, 40}
-	RESENERGY={15, 25}
-	
-	POISONING={ 40.1, 60.0}
-	MAGICRESISTANCE={30.1, 45.0}
-	TACTICS={30.1, 50.0}
-	WRESTLING={40.1, 50.0}
+    NPC=brain_monster
+    
+    FAME=2000
+    KARMA=-2000
+    
+    STR={36, 65}
+    DEX={96, 145}
+    INT={21, 45}
+    MAXHITS={22, 39}
+    
+    RESPHYSICAL={20, 25}
+    RESFIRE={10, 20}
+    RESCOLD={15, 25}
+    RESPOISON={30, 40}
+    RESENERGY={15, 25}
+    
+    POISONING={ 40.1, 60.0}
+    MAGICRESISTANCE={30.1, 45.0}
+    TACTICS={30.1, 50.0}
+    WRESTLING={40.1, 50.0}
 
 ON=@Createloot
-	ITEM=i_gold,{50 100}
-	ITEM=i_reag_spider_silk,2
+    ITEM=i_gold,{50 100}
+    ITEM=i_reag_spider_silk,2
 
 
 [CHARDEF 048]
@@ -616,35 +616,35 @@ SUBSECTION=Terathans
 DESCRIPTION=Terathan, Matriarch
 
 ON=@Create
-	NPC=brain_monster
-	
-	FAME=10000
-	KARMA=-10000
-	
-	STR={316, 405}
-	DEX={96, 115}
-	INT={366, 455}
-	MAXHITS={190, 243}
-	
-	RESPHYSICAL={45, 55}
-	RESFIRE={30, 40}
-	RESCOLD={35, 45}
-	RESPOISON={40, 50}
-	RESENERGY={35, 45}
-	
-	EVALUATINGINTEL={90.1, 100.0}
-	MAGERY={90.1, 100.0}
-	MAGICRESISTANCE={90.1, 100.0}
-	TACTICS={50.1, 70.0}
-	WRESTLING={60.1, 80.0}
+    NPC=brain_monster
+    
+    FAME=10000
+    KARMA=-10000
+    
+    STR={316, 405}
+    DEX={96, 115}
+    INT={366, 455}
+    MAXHITS={190, 243}
+    
+    RESPHYSICAL={45, 55}
+    RESFIRE={30, 40}
+    RESCOLD={35, 45}
+    RESPOISON={40, 50}
+    RESENERGY={35, 45}
+    
+    EVALUATINGINTEL={90.1, 100.0}
+    MAGERY={90.1, 100.0}
+    MAGICRESISTANCE={90.1, 100.0}
+    TACTICS={50.1, 70.0}
+    WRESTLING={60.1, 80.0}
 
 ON=@Createloot
-	ITEM=i_gold,{550 650}
-	ITEM=random_second_circle,2
-	ITEM=i_reag_spider_silk,5
-	ITEM=random_potion
-	ITEM=random_reagent_necro,{4 10}
-	ITEM=i_treasure_map4,R99
+    ITEM=i_gold,{550 650}
+    ITEM=random_second_circle,2
+    ITEM=i_reag_spider_silk,5
+    ITEM=random_potion
+    ITEM=random_reagent_necro,{4 10}
+    ITEM=i_treasure_map4,R99
 
 
 [CHARDEF 049]
@@ -678,30 +678,30 @@ DESCRIPTION=Harpy, Stone
 
 ON=@Create
     NPC=brain_monster
-	
+    
     FAME={2000 2499}
     KARMA={-2000 -2499}
-	
+    
     STR={296 320}
     MAXHITS={178 192}
     DEX={86 110}
     MAXSTAM={86 110}
     INT={51 75}
     MAXMANA={51 75}
-	
+    
     RESPHYSICAL={0 10}
     RESCOLD={10 30}
     RESENERGY={30 40}
     RESFIRE={20 30}
     RESPOISON={30 40}
-	
+    
     MAGICRESISTANCE={50.0 65.0}
     TACTICS={70.0 100.0}
     WRESTLING={70.0 100.0}
-	
+    
 ON=@Createloot
     ITEM=Loot_Harpy_Stone
-	
+    
 
 [CHARDEF 04b]
 DEFNAME=c_cyclops
@@ -733,30 +733,30 @@ SUBSECTION=Giants
 DESCRIPTION=Cyclops
 
 ON=@Create
-	NPC=brain_monster
-	FAME=4500
-	KARMA=-4500
+    NPC=brain_monster
+    FAME=4500
+    KARMA=-4500
 
-	STR={336, 385}
-	DEX={96, 115}
-	INT={31, 55}
-	MAXHITS={202, 231}
-	
-	
-	RESPHYSICAL={45, 50}
-	RESFIRE={30, 40}
-	RESCOLD={25, 35}
-	RESPOISON={30, 40}
-	RESENERGY={30, 40}
-	
-	MAGICRESISTANCE={60.3, 105.0}
-	TACTICS={80.1, 100.0}
-	WRESTLING={80.1, 90.0}
+    STR={336, 385}
+    DEX={96, 115}
+    INT={31, 55}
+    MAXHITS={202, 231}
+    
+    
+    RESPHYSICAL={45, 50}
+    RESFIRE={30, 40}
+    RESCOLD={25, 35}
+    RESPOISON={30, 40}
+    RESENERGY={30, 40}
+    
+    MAGICRESISTANCE={60.3, 105.0}
+    TACTICS={80.1, 100.0}
+    WRESTLING={80.1, 90.0}
 
 
 ON=@Createloot
-	ITEM=i_gold,{400 500}
-	ITEM=i_treasure_map3,r99
+    ITEM=i_gold,{400 500}
+    ITEM=i_treasure_map3,r99
 
 
 [CHARDEF 04c]
@@ -789,32 +789,32 @@ SUBSECTION=Giants
 DESCRIPTION=Titan
 
 ON=@Create
-	NPC=brain_monster
-	
-	FAME=11500
-	KARMA=-11500
-	
-	STR={536, 585}
-	DEX={126, 145}
-	INT={281, 305}
-	MAXHITS={322, 351}
-	
-	RESPHYSICAL={35, 45}
-	RESFIRE={30, 40}
-	RESCOLD={25, 35}
-	RESPOISON={30, 40}
-	RESENERGY={30, 40}
-	
-	EVALUATINGINTEL={85.1, 100.0}
-	MAGERY={85.1, 100.0}
-	MAGICRESISTANCE={80.2, 110.0}
-	TACTICS={60.1, 80.0}
-	WRESTLING={40.1, 50.0}
+    NPC=brain_monster
+    
+    FAME=11500
+    KARMA=-11500
+    
+    STR={536, 585}
+    DEX={126, 145}
+    INT={281, 305}
+    MAXHITS={322, 351}
+    
+    RESPHYSICAL={35, 45}
+    RESFIRE={30, 40}
+    RESCOLD={25, 35}
+    RESPOISON={30, 40}
+    RESENERGY={30, 40}
+    
+    EVALUATINGINTEL={85.1, 100.0}
+    MAGERY={85.1, 100.0}
+    MAGICRESISTANCE={80.2, 110.0}
+    TACTICS={60.1, 80.0}
+    WRESTLING={40.1, 50.0}
 
 ON=@Createloot
-	ITEM=i_gold,{600 900}
-	ITEM={random_fourth_circle 1 random_fifth_circle 1}
-	ITEM=i_treasure_map5,R99
+    ITEM=i_gold,{600 900}
+    ITEM={random_fourth_circle 1 random_fifth_circle 1}
+    ITEM=i_treasure_map5,R99
 
 
 [CHARDEF 04e]
@@ -849,23 +849,23 @@ DESCRIPTION=Lich, Ancient
 
 ON=@Create
     NPC=brain_monster
-	
+    
     FAME={4000 4499}
     KARMA={-4000 -4499}
-	
+    
     STR={216 305}
     MAXHITS={560 595}
     DEX={96 115}
     MAXSTAM={96 115}
     INT={966 1045}
     MAXMANA={225 269}
-	
+    
     RESPHYSICAL={0 10}
     RESCOLD={50 60}
     RESENERGY={25 30}
     RESFIRE={25 30}
     RESPOISON={50 60}
-	
+    
     ARCHERY={75.0 100.0}
     EVALUATINGINTEL={120.0 130.0}
     FENCING={75.0 100.0}
@@ -878,7 +878,7 @@ ON=@Create
     SWORDSMANSHIP={75.0 100.0}
     TACTICS={90.0 100.0}
     WRESTLING={75.0 100.0}
-	
+    
 ON=@Createloot
     ITEM=loot_lich_ancient
     ITEM=loot_ai_hard
@@ -895,7 +895,7 @@ DAM=5,17
 ARMOR=24
 HEIGHT=15
 
-RESOURCES=1 i_ribs_raw,12 i_hide	//Fixme: Spined Hide
+RESOURCES=1 i_ribs_raw,12 i_hide    //Fixme: Spined Hide
 FOODTYPE=5 t_meat_raw
 AVERSIONS=r_civilization
 
@@ -908,25 +908,25 @@ SUBSECTION=Amphibious
 DESCRIPTION=Toad, Giant
 
 ON=@Create
-	NPC=brain_monster
-	FAME=750
-	KARMA=-750
-	
-	STR={76, 100}
-	DEX={6, 25}
-	INT={11, 20}
-	MAXHITS={46, 60}
-	
-	RESPHYSICAL={20, 25}
-	RESFIRE={5, 10}
-	RESENERGY={5, 10}
-	
-	MAGICRESISTANCE={25.1, 40.0}
-	TACTICS={40.1, 60.0}
-	WRESTLING={40.1, 60.0}
+    NPC=brain_monster
+    FAME=750
+    KARMA=-750
+    
+    STR={76, 100}
+    DEX={6, 25}
+    INT={11, 20}
+    MAXHITS={46, 60}
+    
+    RESPHYSICAL={20, 25}
+    RESFIRE={5, 10}
+    RESENERGY={5, 10}
+    
+    MAGICRESISTANCE={25.1, 40.0}
+    TACTICS={40.1, 60.0}
+    WRESTLING={40.1, 60.0}
 
 ON=@Createloot
-	ITEM=i_gold,{25,50}
+    ITEM=i_gold,{25,50}
 
 
 [CHARDEF 051]
@@ -953,25 +953,25 @@ SUBSECTION=Amphibious
 DESCRIPTION=Bullfrog
 
 ON=@Create
-	NPC=brain_animal
-	
-	FAME=350
-	
-	
-	STR={46, 70}
-	DEX={6, 25}
-	INT={11, 20}
-	MAXHITS={28, 42}
-	
-	RESPHYSICAL={5, 10}
-	
-	MAGICRESISTANCE={25.1, 40.0}
-	TACTICS={40.1, 60.0}
-	WRESTLING={40.1, 60.0}
-	TAMING=23.1
+    NPC=brain_animal
+    
+    FAME=350
+    
+    
+    STR={46, 70}
+    DEX={6, 25}
+    INT={11, 20}
+    MAXHITS={28, 42}
+    
+    RESPHYSICAL={5, 10}
+    
+    MAGICRESISTANCE={25.1, 40.0}
+    TACTICS={40.1, 60.0}
+    WRESTLING={40.1, 60.0}
+    TAMING=23.1
 
 ON=@Createloot
-	ITEM=i_gold,{25,50}
+    ITEM=i_gold,{25,50}
 
 [CHARDEF 055]
 DEFNAME=c_ophidian_mage
@@ -1002,35 +1002,35 @@ SUBSECTION=Ophidians
 DESCRIPTION=Ophidian, Mage
 
 ON=@Create
-	NPC=brain_monster
-	
-	FAME=4000
-	KARMA=-4000
-	
-	STR={181, 205}
-	DEX={191, 215}
-	INT={96, 120}
-	MAXHITS={109, 123}
-	
-	RESPHYSICAL={25, 35}
-	RESFIRE={30, 40}
-	RESCOLD={35, 45}
-	RESPOISON={40, 50}
-	RESENERGY={35, 45}
-	
-	EVALUATINGINTEL={85.1, 100.0}
-	MAGERY={85.1, 100.0}
-	MAGICRESISTANCE={75.0, 97.5}
-	TACTICS={65.0, 87.5}
-	WRESTLING={20.2, 60.0}
+    NPC=brain_monster
+    
+    FAME=4000
+    KARMA=-4000
+    
+    STR={181, 205}
+    DEX={191, 215}
+    INT={96, 120}
+    MAXHITS={109, 123}
+    
+    RESPHYSICAL={25, 35}
+    RESFIRE={30, 40}
+    RESCOLD={35, 45}
+    RESPOISON={40, 50}
+    RESENERGY={35, 45}
+    
+    EVALUATINGINTEL={85.1, 100.0}
+    MAGERY={85.1, 100.0}
+    MAGICRESISTANCE={75.0, 97.5}
+    TACTICS={65.0, 87.5}
+    WRESTLING={20.2, 60.0}
 
 ON=@Createloot
-	ITEM=i_gold,{125 175}
-	ITEM={random_first_circle 1 random_second_circle 1}
-	ITEM={random_third_circle 1 random_fifth_circle 1}
-	ITEM=random_reagents,5
-	ITEM=random_reagents,5
-	ITEM=i_treasure_map2,R99
+    ITEM=i_gold,{125 175}
+    ITEM={random_first_circle 1 random_second_circle 1}
+    ITEM={random_third_circle 1 random_fifth_circle 1}
+    ITEM=random_reagents,5
+    ITEM=random_reagents,5
+    ITEM=i_treasure_map2,R99
 
 [CHARDEF 056]
 DEFNAME=c_ophidian_warrior
@@ -1061,28 +1061,28 @@ SUBSECTION=Ophidians
 DESCRIPTION=Ophidian, Warrior
 
 ON=@Create
-	NPC=brain_monster
-	FAME=4500
-	KARMA=-4500
-	
-	STR={150, 320}
-	DEX={94, 190}
-	INT={64, 160}
-	MAXHITS={128, 155}
-	
-	RESPHYSICAL={35, 40}
-	RESFIRE={20, 30}
-	RESCOLD={25, 35}
-	RESPOISON={30, 40}
-	RESENERGY={25, 35}
-	
-	MAGICRESISTANCE={70.1, 85.0}
-	SWORDSMANSHIP={60.1, 85.0}
-	TACTICS={75.1, 90.0}
+    NPC=brain_monster
+    FAME=4500
+    KARMA=-4500
+    
+    STR={150, 320}
+    DEX={94, 190}
+    INT={64, 160}
+    MAXHITS={128, 155}
+    
+    RESPHYSICAL={35, 40}
+    RESFIRE={20, 30}
+    RESCOLD={25, 35}
+    RESPOISON={30, 40}
+    RESENERGY={25, 35}
+    
+    MAGICRESISTANCE={70.1, 85.0}
+    SWORDSMANSHIP={60.1, 85.0}
+    TACTICS={75.1, 90.0}
 
 ON=@Createloot
-	ITEM=i_gold,{175 225}	
-	ITEM=i_treasure_map1,R99
+    ITEM=i_gold,{175 225}    
+    ITEM=i_treasure_map1,R99
 
 
 [CHARDEF 057]
@@ -1114,34 +1114,34 @@ SUBSECTION=Ophidians
 DESCRIPTION=Ophidian, Queen
 
 ON=@Create
-	NPC=brain_monster
-	
-	FAME=16000
-	KARMA=-16000
-	
-	STR={416, 505}
-	DEX={96, 115}
-	INT={366, 455}
-	MAXHITS={250, 303}
-	
-	RESPHYSICAL={45, 55}
-	RESFIRE={30, 40}
-	RESCOLD={35, 45}
-	RESPOISON={40, 50}
-	RESENERGY={35, 45}
-	
-	EVALUATINGINTEL={90.1, 100.0}
-	MAGERY={90.1, 100.0}
-	MEDITATION={5.4, 25.0}
-	MAGICRESISTANCE={90.1, 100.0}
-	TACTICS={50.1, 70.0}
-	WRESTLING={60.1, 80.0}
+    NPC=brain_monster
+    
+    FAME=16000
+    KARMA=-16000
+    
+    STR={416, 505}
+    DEX={96, 115}
+    INT={366, 455}
+    MAXHITS={250, 303}
+    
+    RESPHYSICAL={45, 55}
+    RESFIRE={30, 40}
+    RESCOLD={35, 45}
+    RESPOISON={40, 50}
+    RESENERGY={35, 45}
+    
+    EVALUATINGINTEL={90.1, 100.0}
+    MAGERY={90.1, 100.0}
+    MEDITATION={5.4, 25.0}
+    MAGICRESISTANCE={90.1, 100.0}
+    TACTICS={50.1, 70.0}
+    WRESTLING={60.1, 80.0}
 
 ON=@Createloot
-	ITEM=i_gold,{550 650}
-	ITEM=random_potion
-	ITEM={random_fourth_circle 1 random_fifth_circle 1}
-	ITEM=i_treasure_map4,R99
+    ITEM=i_gold,{550 650}
+    ITEM=random_potion
+    ITEM={random_fourth_circle 1 random_fifth_circle 1}
+    ITEM=i_treasure_map4,R99
 
 [CHARDEF 059]
 DEFNAME=c_serpent_ice
@@ -1173,28 +1173,28 @@ DESCRIPTION=Snake, Giant Ice
 
 ON=@Create
     NPC=brain_animal
-	
+    
     FAME={2000 2499}
     KARMA={-2000 -2499}
-	
+    
     STR={216 245}
     MAXHITS={130 147}
     DEX={26 50}
     MAXSTAM={26 50}
     INT={66 85}
     MAXMANA={66 85}
-	
+    
     RESPHYSICAL={0 5}
     RESCOLD={80 90}
     RESENERGY={10 20}
     
     RESPOISON={15 25}
-	
+    
     ANATOMY={27.0 50.0}
     MAGICRESISTANCE={25.0 40.0}
     TACTICS={75.0 80.0}
     WRESTLING={60.0 80.0}
-	
+    
 ON=@Createloot
     ITEM=loot_serpent_ice
 
@@ -1228,27 +1228,27 @@ DESCRIPTION=Snake, Giant Lava
 
 ON=@Create
     NPC=brain_animal
-	
+    
     FAME={2500 2999}
     KARMA={-2500 -2999}
-	
+    
     STR={386 415}
     MAXHITS={232 249}
     DEX={56 80}
     MAXSTAM={56 80}
     INT={66 85}
     MAXMANA={66 85}
-	
+    
     RESPHYSICAL={0 10}
     
     RESENERGY={10 20}
     RESFIRE={70 80}
     RESPOISON={30 40}
-	
+    
     MAGICRESISTANCE={25.0 70.0}
     TACTICS={65.0 70.0}
     WRESTLING={60.0 80.0}
-	
+    
     f_addExtendedAIEvent e_extendedAI_aura_fire
 
 ON=@Createloot
@@ -1284,27 +1284,27 @@ DESCRIPTION=Slime, Frost
 
 ON=@Create
     NPC=brain_monster
-	
+    
     FAME={1 499}
     KARMA={-800 -999}
-	
+    
     STR={18 30}
     MAXHITS={13 17}
     DEX={16 21}
     MAXSTAM={16 21}
     INT={16 20}
     MAXMANA={16 20}
-	
+    
     RESPHYSICAL={0 5}
     RESCOLD={40 50}
     RESENERGY={10 20}
     
     RESPOISON={20 30}
-	
+    
     MAGICRESISTANCE={5.0 10.0}
     TACTICS={19.0 34.0}
     WRESTLING={25.0 40.0}
-	
+    
 ON=@Createloot
     ITEM=loot_frostooze
 
@@ -1342,23 +1342,23 @@ SUBSECTION=Aquatic
 DESCRIPTION=Sea Monster
 
 ON=@Create
-	NPC=brain_monster
-	
-	FAME={2000 6000}
-	KARMA={-3000 -3999}
-	
-	STR={165 225}
-	DEX={58 85}
-	INT={53 85}
-	
-	PARRYING={65.0 75.0}
-	MAGICRESISTANCE={60.0 75.0}
-	TACTICS={60.0 70.0}
-	WRESTLING={60.0 75.0}
-	FISHING=80.0
+    NPC=brain_monster
+    
+    FAME={2000 6000}
+    KARMA={-3000 -3999}
+    
+    STR={165 225}
+    DEX={58 85}
+    INT={53 85}
+    
+    PARRYING={65.0 75.0}
+    MAGICRESISTANCE={60.0 75.0}
+    TACTICS={60.0 70.0}
+    WRESTLING={60.0 75.0}
+    FISHING=80.0
 
 ON=@Createloot
-	ITEM=loot_sea_serpent
+    ITEM=loot_sea_serpent
 
 [CHARDEF 0d2]
 DEFNAME=c_ostard_desert
@@ -1389,23 +1389,23 @@ SUBSECTION=Ostards
 DESCRIPTION=Ostard, Desert
 
 ON=@Create
-	NPC=brain_animal
-	
-	FAME=450
-	
-	
-	STR={94, 170}
-	DEX={56, 75}
-	INT={6, 10}
-	MAXHITS={71, 88}
-	
-	RESPHYSICAL={15, 20}
-	RESFIRE={5, 15}
-	
-	MAGICRESISTANCE={25.1, 30.0}
-	TACTICS={25.3, 40.0}
-	WRESTLING={29.3, 44.0}
-	TAMING=29.1
+    NPC=brain_animal
+    
+    FAME=450
+    
+    
+    STR={94, 170}
+    DEX={56, 75}
+    INT={6, 10}
+    MAXHITS={71, 88}
+    
+    RESPHYSICAL={15, 20}
+    RESFIRE={5, 15}
+    
+    MAGICRESISTANCE={25.1, 30.0}
+    TACTICS={25.3, 40.0}
+    WRESTLING={29.3, 44.0}
+    TAMING=29.1
 
 [CHARDEF 0da]
 DEFNAME=c_ostard_frenzied
@@ -1437,27 +1437,27 @@ SUBSECTION=Ostards
 DESCRIPTION=Ostard, Frenzied
 
 ON=@Create
-	NPC=brain_animal
-	
-	FAME=1500
-	KARMA=-1500
-	
-	COLOR={044e, 047d}
-	
-	STR={94, 170}
-	DEX={96, 115}
-	INT={6, 10}
-	MAXHITS={71, 110}
-	
-	RESPHYSICAL={25, 30}
-	RESFIRE={10, 15}
-	RESPOISON={20, 25}
-	RESENERGY={20, 25}
-	
-	MAGICRESISTANCE={75.1, 80.0}
-	TACTICS={79.3, 94.0}
-	WRESTLING={79.3, 94.0}
-	TAMING=77.1
+    NPC=brain_animal
+    
+    FAME=1500
+    KARMA=-1500
+    
+    COLOR={044e, 047d}
+    
+    STR={94, 170}
+    DEX={96, 115}
+    INT={6, 10}
+    MAXHITS={71, 110}
+    
+    RESPHYSICAL={25, 30}
+    RESFIRE={10, 15}
+    RESPOISON={20, 25}
+    RESENERGY={20, 25}
+    
+    MAGICRESISTANCE={75.1, 80.0}
+    TACTICS={79.3, 94.0}
+    WRESTLING={79.3, 94.0}
+    TAMING=77.1
 
 
 [CHARDEF 0db]
@@ -1491,24 +1491,24 @@ SUBSECTION=Ostards
 DESCRIPTION=Ostard, Forest
 
 ON=@Create
-	NPC=brain_animal
-	
-	FAME=450
-	
-	
-	COLOR={0899,08b0} 
-	
-	STR={94, 170}
-	DEX={56, 75}
-	INT={6, 10}
-	MAXHITS={71, 88}
-	
-	RESPHYSICAL={15, 20}
-	
-	MAGICRESISTANCE={27.1, 32.0}
-	TACTICS={29.3, 44.0}
-	WRESTLING={29.3, 44.0}
-	TAMING=29.1
+    NPC=brain_animal
+    
+    FAME=450
+    
+    
+    COLOR={0899,08b0} 
+    
+    STR={94, 170}
+    DEX={56, 75}
+    INT={6, 10}
+    MAXHITS={71, 88}
+    
+    RESPHYSICAL={15, 20}
+    
+    MAGICRESISTANCE={27.1, 32.0}
+    TACTICS={29.3, 44.0}
+    WRESTLING={29.3, 44.0}
+    TAMING=29.1
 
 
 [Eof]

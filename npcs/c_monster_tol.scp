@@ -407,7 +407,7 @@ DAM=24,33
 ARMOR=75
 FOLLOWERSLOTS=5
 
-FOODTYPE=t_food	//t_fish
+FOODTYPE=t_food    //t_fish
 RESOURCES=4 i_dragonturtle_scute
 
 // FIXME RESDISPDNID
@@ -494,7 +494,7 @@ SOUND=snd_animals_cat1
 DAM=10,12
 ARMOR=8
 
-FOODTYPE=t_food	//,t_fish
+FOODTYPE=t_food    //,t_fish
 RESOURCES=1 i_ribs_raw
 
 // FIXME RESDISPDNID
@@ -1045,7 +1045,7 @@ ON=@Create
     TACTICS={65.1 90.0}
     MAGICRESISTANCE={65.1 80.0}
     DETECTINGHIDDEN=50.6
-    TAMING=84.3			
+    TAMING=84.3            
 
 
 [CHARDEF 058a]
@@ -1832,7 +1832,7 @@ ON=@Create
     RESFIRE={70 80}
     RESCOLD={70 80}
     RESPOISON={80 90}
-	RESENERGY={80 90}
+    RESENERGY={80 90}
     
     DETECTINGHIDDEN=100.0
     MAGICRESISTANCE=150.0
