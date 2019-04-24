@@ -70,11 +70,12 @@ CAN=mt_usehands|mt_walk|mt_run
 DAM=10,15
 ARMOR=50,60
 
+DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
+
 RESDISPDNID=c_elem_air
 RESLEVEL=3
 RESDISPDNHUE=55
 
-DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 CATEGORY=Monsters
 SUBSECTION=Elementals
 DESCRIPTION=Elemental, Crystal
