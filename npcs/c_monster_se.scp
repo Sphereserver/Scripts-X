@@ -8,6 +8,7 @@ CAN=mt_walk|mt_run
 DAM=10,30
 ARMOR=35
 MOVERATE=40
+HEIGHT=15
 
 RESOURCES=15 i_ribs_raw,10 i_hide
 FOODTYPE=40 t_meat_raw
@@ -25,7 +26,7 @@ SUBSECTION=Wild
 DESCRIPTION=Kirin
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     KARMA=-2000
     FAME={100 3000}
@@ -56,6 +57,7 @@ ICON=i_pet_kazekemono
 SOUND=655
 DAM=15,20
 ARMOR=35
+HEIGHT=18
 
 RESDISPDNID=c_elem_air
 RESLEVEL=3
@@ -103,6 +105,7 @@ CAN=mt_walk|mt_run
 
 DAM=12,15
 ARMOR=15
+HEIGHT=18
 
 RESDISPDNID=c_elem_air
 RESLEVEL=3
@@ -148,6 +151,7 @@ CAN=mt_walk|mt_usehands|mt_swim
 
 DAM=6,12
 ARMOR=15
+HEIGHT=16
 
 FOODTYPE=40 t_meat_raw
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman
@@ -162,7 +166,7 @@ SUBSECTION=Demons   //In Japanese folklore they are refered as Demon
 DESCRIPTION=Kappa
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=1700
     KARMA=-1700
@@ -189,6 +193,7 @@ ON=@NpcRestock
     //ITEM=i_seed_peculiar
     ITEM=i_treasure_map2,R99
 
+
 [CHARDEF 0f1]
 NAME=Oni
 DEFNAME=c_oni
@@ -198,6 +203,7 @@ CAN=mt_walk|mt_run
 
 DAM=14,20
 ARMOR=40
+HEIGHT=18
 
 RESDISPDNID=c_man
 RESLEVEL=3
@@ -249,6 +255,7 @@ CAN=mt_walk|mt_run|mt_usehands|mt_equip
 DAM=5,10
 ARMOR=20
 MOVERATE=55
+HEIGHT=9
 
 RESOURCES=8 i_hide
 FOODTYPE=40 t_meat_raw
@@ -264,7 +271,7 @@ SUBSECTION=Beetles
 DESCRIPTION=Beetle, Deathwatch
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=1400
     KARMA=-1400
@@ -304,6 +311,7 @@ CAN=mt_walk|mt_run
 DAM=20,30
 ARMOR=20
 MOVERATE=40
+HEIGHT=15
 
 RESOURCES=60 i_hide, 16 i_ribs_raw
 FOODTYPE=55 i_ribs_raw
@@ -321,7 +329,7 @@ SUBSECTION=Wild
 DESCRIPTION=Hiryu
 
 ON=@Create
-    NPC=brain_dragon
+    NPC=<def.brain_dragon>
     
     FAME=18000
     KARMA=-18000
@@ -355,6 +363,7 @@ ON=@npcrestock
     //ITEM=i_seed_fragrant
     //ITEM=i_seed_peculiar
 
+
 [CHARDEF 0f4]
 DEFNAME=c_rune_beetle
 NAME=Rune Beetle
@@ -364,6 +373,7 @@ CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
 DAM=15,22
 MOVERATE=40
+HEIGHT=18
 
 RESOURCES=15 i_ribs_raw
 FOODTYPE=40 t_meat_raw
@@ -379,7 +389,7 @@ SUBSECTION=Beetles
 DESCRIPTION=Beetle, Rune
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=15000
     KARMA=-15000
@@ -421,6 +431,7 @@ CAN=mt_walk|mt_run|mt_usehands|mt_equip
 DAM=8,10
 ARMOR=15
 MOVERATE=60
+HEIGHT=18
 
 RESOURCES=1 i_ribs_raw
 FOODTYPE=40 t_meat_raw
@@ -436,7 +447,7 @@ SUBSECTION=Yomotsu
 DESCRIPTION=Yomotsu, Warrior
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=4200    
     KARMA=-4200
@@ -469,6 +480,7 @@ ON=@NpcRestock
     ITEM=i_treasure_map3,R99
     //ITEM=i_seed_bonsai
 
+
 [CHARDEF 0f6]
 NAME=Bake Kitsune
 DEFNAME=c_bake_kitsune
@@ -478,6 +490,7 @@ ICON=i_pet_bakekitsune
 
 DAM=9,18
 ARMOR=18
+HEIGHT=10
 
 RESDISPDNID=c_wolf
 RESLEVEL=3
@@ -488,7 +501,7 @@ SUBSECTION=Wild
 DESCRIPTION=Bake Kitsune
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=150
     KARMA=-2150
@@ -504,6 +517,7 @@ ON=@Create
     MEDITATION={85.0 95.0}
     EVALUATINGINTEL={80.0 90.0}
 
+
 [CHARDEF 0f7]
 NAME=Fan Dancer
 DEFNAME=c_fan_dancer
@@ -513,6 +527,7 @@ ICON=i_pet_fandancer
 
 DAM=12,17
 ARMOR=15
+HEIGHT=12
 
 RESDISPDNID=c_woman
 RESLEVEL=3
@@ -563,6 +578,7 @@ CAN=mt_walk|mt_run
 SOUND=04F8
 
 DAM=6,11
+HEIGHT=18
 
 RESOURCES=15 i_hide, 10 i_ribs_raw
 
@@ -575,7 +591,7 @@ SUBSECTION=Wild
 DESCRIPTION=Gaman
 
 ON=@create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     STR={146, 175}
     DEX={111, 150}
@@ -596,14 +612,16 @@ ON=@create
     WRESTLING={50.1, 57.5}
     TAMING=68.7
 
+
 [CHARDEF 0f9]
 NAME=Yamandon
 DEFNAME=c_yamandon
 ICON=i_pet_yamandon
 CAN=mt_walk|mt_run
+SOUND=1260
 
 DAM=19,35
-SOUND=1260
+HEIGHT=23
 
 RESOURCES=20 i_hide
 
@@ -646,6 +664,7 @@ ON=@npcrestock
     ITEM=i_treasure_map5,R99    
     //ITEM=i_seed_bonsai
 
+
 [CHARDEF 0fa]
 NAME=Tsuki Wolf
 DEFNAME=c_tsuki_wolf
@@ -655,6 +674,7 @@ SOUND=snd_tsuki_wolf
 ICON=i_pet_tsukiwolf
 
 DAM=14,18
+HEIGHT=25
 
 RESOURCES=25 i_hide, 4 i_ribs_raw
 
@@ -714,6 +734,7 @@ ICON=i_pet_ravlion
 
 DAM=18,24
 ARMOR=18
+HEIGHT=15
 
 RESDISPDNID=c_dog
 RESLEVEL=3
@@ -767,6 +788,7 @@ SOUND=snd_elementl_airelem5
 
 DAM=13,20
 ARMOR=18
+HEIGHT=14
 
 RESDISPDNID=c_woman
 RESLEVEL=3
@@ -816,6 +838,7 @@ CAN=mt_walk|mt_run|mt_usehands
 DAM=8,10
 ARMOR=18
 MOVERATE=60
+HEIGHT=18
 
 RESOURCES=15 i_ribs_raw
 FOODTYPE=40 t_meat_raw
@@ -831,7 +854,7 @@ SUBSECTION=Yomotsu
 DESCRIPTION=Yomotsu, Priest
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=9000
     KARMA=-9000
@@ -875,6 +898,7 @@ ICON=i_pet_crane
 
 DAM=1,1
 ARMOR=5
+HEIGHT=5
 
 RESOURCES=25 i_feather, 1 i_bird_raw
 
@@ -901,6 +925,7 @@ ON=@create
     TACTICS={10.1, 11.0}
     WRESTLING={10.1, 11.0}
 
+
 [CHARDEF 0ff]
 DEFNAME=c_Yomotsu_Elder
 NAME=Yomotsu Elder
@@ -911,6 +936,7 @@ CAN=mt_walk|mt_run|mt_usehands
 DAM=19,27
 ARMOR=22
 MOVERATE=60
+HEIGHT=18
 
 RESOURCES=15 i_ribs_raw
 FOODTYPE=40 t_meat_raw
@@ -926,7 +952,7 @@ SUBSECTION=Yomotsu
 DESCRIPTION=Yomotsu, Elder
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=12000
     KARMA=-12000

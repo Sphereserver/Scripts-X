@@ -9,6 +9,7 @@ CAN=mt_walk|mt_fire_immune|mt_usehands|mt_equip
 
 DAM=4,20
 ARMOR=30
+HEIGHT=35
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
@@ -23,7 +24,7 @@ SUBSECTION=Demons
 DESCRIPTION=Chief Paroxysmus
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -59,6 +60,7 @@ CAN=mt_walk|mt_run
 
 DAM=5,20
 ARMOR=30
+HEIGHT=16
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
@@ -73,7 +75,7 @@ SUBSECTION=Animals
 DESCRIPTION=Dread Horn
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -103,6 +105,7 @@ CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
 DAM=5,20
 ARMOR=10
+HEIGHT=19
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
@@ -117,7 +120,7 @@ SUBSECTION=Feys
 DESCRIPTION=Lady Melisande
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -139,51 +142,6 @@ ON=@CreateLoot
     ITEMNEWBIE=i_spellbook
     ADDSPELL=s_harm
 
-
-[CHARDEF 0103]
-//TODO: Spawns acid pools that do fire damage as you stand in them and damages your armor rapidly.
-DEFNAME=c_Interred_Grizzle
-NAME=Interred Grizzle
-ID=259
-CAN=mt_walk|mt_run|mt_equip|mt_usehands
-
-DAM=16,19
-TAG.BARDING.DIFF=96.8
-
-RESDISPDNID=c_man
-RESLEVEL=5
-
-CATEGORY=Monsters
-SUBSECTION=Undeads
-DESCRIPTION=Interred Grizzle
-
-ON=@create
-    NPC=brain_monster
-    
-    FAME=3700  // Guessed
-    KARMA=-3700  // Guessed
-    
-    STR={459, 475}
-    DEX={95, 120}
-    INT={50, 85}
-    
-    RESFIRE={55, 65}
-    RESCOLD={55, 80}
-    RESPOISON={20, 35}
-    RESENERGY={65, 70}
-    RESPHYSICAL={45,55}
-    
-    DAMPHYSICAL=30
-    DAMFIRE=70
-    
-    MEDITATION={77.7, 84.0}
-    EVALUATINGINTEL={72.2, 79.6}
-    MAGERY={83.7, 89.6}
-    MAGICRESISTANCE={80.2, 87.3}
-    TACTICS={104.5, 105.1}
-    WRESTLING={105.1, 109.4}
-
-
 [CHARDEF 0103]
 //TODO: Howl Of Cacophony, Drops puddles of acid
 DEFNAME=c_monstrous_interred_grizzle
@@ -193,6 +151,7 @@ ICON=i_worldgem_bit
 CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
 ARMOR=45,65
+HEIGHT=25
 TAG.BARDING.DIFF=160.0
 
 RESOURCES=15 i_ribs_raw, 8 i_reag_bone
@@ -208,7 +167,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Monstrous Interred Grizzle
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={10000 13000}
     KARMA={-10000 -13000}
@@ -252,6 +211,7 @@ CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
 DAM=4,30
 ARMOR=15
+HEIGHT=16
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
@@ -266,7 +226,7 @@ SUBSECTION=ML
 DESCRIPTION=Travesty
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -296,6 +256,7 @@ CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
 DAM=4,10
 ARMOR=15
+HEIGHT=28
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
@@ -310,7 +271,7 @@ SUBSECTION=Elementals
 DESCRIPTION=Shimmering Effusion
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -340,6 +301,7 @@ CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
 DAM=15,30
 ARMOR=26
+HEIGHT=18
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
@@ -354,7 +316,7 @@ SUBSECTION=Minotaurs
 DESCRIPTION=Minotaur, Tormented
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={100 1201}
     KARMA={-5000 -6999}
@@ -388,6 +350,7 @@ SOUNDDIE=059c
 
 DAM=11,20
 ARMOR=28
+HEIGHT=18
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
@@ -402,7 +365,7 @@ SUBSECTION=Minotaurs
 DESCRIPTION=Minotaur
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=5000
     KARMA=-5000
@@ -437,6 +400,7 @@ CAN=mt_walk|mt_usehands|mt_equip|mt_fly
 
 DAM=4,10
 ARMOR=15
+HEIGHT=18
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
@@ -451,7 +415,7 @@ SUBSECTION=Feys
 DESCRIPTION=Changeling
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -481,6 +445,7 @@ CAN=mt_walk
 
 DAM=21,26
 ARMOR=30
+HEIGHT=25
 
 RESOURCES=40 i_hide, 19 i_ribs_raw, 8 i_reag_dragon_blood
 DESIRES=i_gold,e_notoriety
@@ -521,6 +486,7 @@ ON=@CreateLoot
     //ITEM=i_thorvalds_medallion
     //ITEM=i_pet_parrot
 
+
 [CHARDEF 010a]
 DEFNAME=c_Dryad
 NAME=Dryad
@@ -530,6 +496,7 @@ CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
 DAM=5,20
 ARMOR=20
+HEIGHT=14
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
@@ -544,7 +511,7 @@ SUBSECTION=Feys
 DESCRIPTION=Dryad
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -574,6 +541,7 @@ CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
 DAM=11,14
 ARMOR=28
+HEIGHT=15
 
 RESOURCES=1 i_ribs_raw
 DESIRES=i_gold,e_notoriety
@@ -588,7 +556,7 @@ SUBSECTION=Giants
 DESCRIPTION=Troglodyte
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=5000
     KARMA=-5000
@@ -627,6 +595,7 @@ CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
 DAM=13,24
 ARMOR=15
+HEIGHT=18
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
@@ -641,7 +610,7 @@ SUBSECTION=Feys
 DESCRIPTION=Satyr
 
 ON=@Create
-NPC=brain_monster
+NPC=<def.brain_monster>
 
 FAME=5000
 
@@ -674,6 +643,7 @@ CAN=mt_walk
 
 DAM=4,10
 ARMOR=15
+HEIGHT=28
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
@@ -688,7 +658,7 @@ SUBSECTION=Elementals
 DESCRIPTION=Fetid Essence
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={100 3000}
     KARMA={-3000 -5000}
@@ -718,6 +688,7 @@ CAN=mt_walk|mt_run
 
 DAM=21,28
 ARMOR=30
+HEIGHT=18
 
 FOODTYPE=55 i_ribs_raw
 DESIRES=c_man,c_woman
@@ -732,7 +703,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Reptalon
 
 ON=@Create
-    NPC=brain_dragon
+    NPC=<def.brain_dragon>
     
     STR={1001, 1025}
     DEX={152, 164}
@@ -756,9 +727,11 @@ ON=@CreateLoot
     ITEM=magic_items
     //ITEM=spellweaving_scrolls
 
+
 [ITEMDEF 10090]
 DEFNAME=i_pet_hiryu
 NAME=Hiryu
+
 
 [CHARDEF 0115]
 NAME=Cu Sidhe
@@ -769,6 +742,7 @@ CAN=mt_walk|mt_run
 
 DAM=21,28
 ARMOR=20
+HEIGHT=12
 
 RESOURCES=3 i_ribs_raw,10 i_hide
 FOODTYPE=55 i_ribs_raw
@@ -784,7 +758,7 @@ SUBSECTION=Wild
 DESCRIPTION=Cu Sidhe
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     FAME=5000  //Guessing here
     KARMA=5000  //Guessing here
@@ -825,6 +799,7 @@ CAN=mt_walk|mt_run
 
 DAM=1,2
 ARMOR=10
+HEIGHT=2
 
 RESOURCES=3 i_ribs_raw,2 i_hide
 FOODTYPE=55 i_fruit_gourd1
@@ -840,7 +815,7 @@ SUBSECTION=Wild
 DESCRIPTION=Squirrel
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     STR={4, 10} //GUESSED STATS
     DEX={3, 5}
@@ -861,6 +836,7 @@ CAN=mt_walk|mt_run
 
 DAM=7,9
 ARMOR=10
+HEIGHT=3
 TAG.BARDING.DIFF=30.0
 
 FOODTYPE=55 i_fruit_gourd1
@@ -877,7 +853,7 @@ SUBSECTION=Wild
 DESCRIPTION=Ferret
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     STR={40, 50}
     DEX=55
@@ -908,6 +884,7 @@ SOUNDDIE=059c
 
 DAM=11,20
 ARMOR=28
+HEIGHT=30
 
 RESOURCES=15 i_ribs_raw,10 i_hide
 FOODTYPE=55 i_ribs_raw
@@ -923,7 +900,7 @@ DESCRIPTION=Minotaur, Captain
 
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=7000
     KARMA=-7000
@@ -962,6 +939,7 @@ CAN=mt_walk|mt_run
 
 DAM=11,20
 ARMOR=50
+HEIGHT=30
 
 RESOURCES=15 i_ribs_raw,10 i_hide
 FOODTYPE=55 i_ribs_raw
@@ -976,7 +954,7 @@ SUBSECTION=Minotaurs
 DESCRIPTION=Minotaur, Scout
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=5000
     KARMA=-5000
@@ -1020,6 +998,7 @@ SOUND=0bf
 ICON=i_pet_bird
 CAN=mt_walk|mt_run|mt_fly
 
+HEIGHT=4
 
 RESOURCES=1 i_bird_raw,5 i_feather
 FOODTYPE=55 i_bread_loaf
@@ -1035,7 +1014,7 @@ SUBSECTION=Birds
 DESCRIPTION=Parrot
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     STR=1
     DEX=1
     //FLAGS |= statf_invul
@@ -1050,6 +1029,7 @@ CAN=mt_walk|mt_run|mt_fly
 
 DAM=5,9
 ARMOR=10
+HEIGHT=3
 TAG.BARDING.DIFF=4.6
 
 RESOURCES=1 i_bird_raw,5 i_feather
@@ -1066,11 +1046,11 @@ SUBSECTION=Birds
 DESCRIPTION=Crows
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     FAME=150
     
-    COLOR=colors_black
+    COLOR=<def.colors_black>
     
     STR={1, 4}
     DEX=25
@@ -1092,6 +1072,7 @@ CAN=mt_walk|mt_run
 
 DAM=10,15
 ARMOR=20
+HEIGHT=16
 
 RESOURCES=15 i_ribs_raw,10 i_hide
 FOODTYPE=55 i_ribs_raw
@@ -1124,6 +1105,8 @@ NAME=Elf Male
 ICON=i_pet_MAN
 CAN=mt_equip|mt_walk|mt_run|mt_usehands
 
+HEIGHT=16
+
 RESOURCES=i_flesh_head, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg, i_blood_2
 FOODTYPE=15 t_food, t_fruit
 DESIRES=i_gold,e_notoriety
@@ -1147,6 +1130,8 @@ DEFNAME=c_elf_female
 NAME=Elf Female
 ICON=i_pet_woman
 CAN=mt_equip|mt_walk|mt_run|mt_female|mt_usehands
+
+HEIGHT=16
 
 RESOURCES=i_flesh_head, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg, i_blood_2
 FOODTYPE=15 t_food, t_fruit
@@ -1172,6 +1157,8 @@ NAME=Elf male Ghost
 ICON=i_pet_MAN
 CAN=mt_equip|mt_walk|mt_run|mt_ghost
 
+HEIGHT=16
+
 RESOURCES=i_flesh_head, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg, i_blood_2
 FOODTYPE=15 t_food, t_fruit
 DESIRES=i_gold,e_notoriety
@@ -1188,11 +1175,14 @@ CATEGORY=Humanoids
 SUBSECTION=Elves
 DESCRIPTION=Elf Ghost, Male
 
+
 [CHARDEF 0260]
 DEFNAME=c_elf_ghost_woman
 NAME=Elf Female Ghost
 ICON=i_pet_woman
 CAN=mt_equip|mt_walk|mt_run|mt_ghost|mt_female
+
+HEIGHT=16
 
 RESOURCES=i_flesh_head, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg, i_blood_2
 FOODTYPE=15 t_food, t_fruit

@@ -13,7 +13,7 @@ SUBSECTION=Worms
 DESCRIPTION=Worm, Blood
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=1500
     KARMA=-1500
@@ -62,7 +62,7 @@ SUBSECTION=Mechanicals
 DESCRIPTION=Vollem
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     RESPHYSICAL={0 10}
     RESCOLD={30 40}
@@ -113,7 +113,7 @@ SUBSECTION=Goblins
 DESCRIPTION=Green Goblin, Enslaved
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=1500
     KARMA=-1500
@@ -150,6 +150,8 @@ NAME=Gargoyle Male
 ICON=i_pet_man
 CAN=mt_equip|mt_walk|mt_run|mt_usehands
 
+HEIGHT=16
+
 RESOURCES=i_flesh_head,i_flesh_torso,i_flesh_right_arm,i_flesh_left_arm,i_flesh_left_leg,i_flesh_right_leg,i_blood_2
 FOODTYPE=15 t_food, t_fruit
 DESIRES=i_gold,e_notoriety
@@ -173,6 +175,8 @@ DEFNAME=c_gargoyle_female
 NAME=Gargoyle Female
 ICON=i_pet_woman
 CAN=mt_equip|mt_walk|mt_run|mt_usehands|mt_female
+
+HEIGHT=16
 
 RESOURCES=i_flesh_head,i_flesh_torso,i_flesh_right_arm,i_flesh_left_arm,i_flesh_left_leg,i_flesh_right_leg,i_blood_2
 FOODTYPE=15 t_food, t_fruit
@@ -198,6 +202,8 @@ NAME=Gargoyle Male Ghost
 ICON=i_pet_man
 CAN=mt_equip|mt_walk|mt_run|mt_usehands
 
+HEIGHT=16
+
 RESOURCES=i_flesh_head,i_flesh_torso,i_flesh_right_arm,i_flesh_left_arm,i_flesh_left_leg,i_flesh_right_leg,i_blood_2
 FOODTYPE=15 t_food, t_fruit
 DESIRES=i_gold,e_notoriety
@@ -221,6 +227,8 @@ DEFNAME=c_garg_ghost_woman
 NAME=Gargoyle Female Ghost
 ICON=i_pet_woman
 CAN=mt_equip|mt_walk|mt_run|mt_usehands|mt_female
+
+HEIGHT=16
 
 RESOURCES=i_flesh_head,i_flesh_torso,i_flesh_right_arm,i_flesh_left_arm,i_flesh_left_leg,i_flesh_right_leg,i_blood_2
 FOODTYPE=15 t_food, t_fruit
@@ -272,7 +280,7 @@ SUBSECTION=Demons
 DESCRIPTION=Abyssal Infernal
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME={9500 9999}
     KARMA={-9500 -9999}
@@ -313,7 +321,7 @@ CATEGORY=Animals
 SUBSECTION=Beetles
 DESCRIPTION=Beetle, Iron
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=15000
     KARMA=-15000
@@ -353,7 +361,7 @@ SUBSECTION=Wild
 DESCRIPTION=Boura, Ruddy
 
 ON=@create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
 
     FAME=2500
     KARMA=-2500
@@ -392,7 +400,7 @@ CATEGORY=Animals
 SUBSECTION=Reptiles
 DESCRIPTION=Chicken Lizard
 ON=@create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
 
     FAME=300
 
@@ -426,7 +434,7 @@ CATEGORY=Monsters
 SUBSECTION=Mechanicals
 DESCRIPTION=Clockwork Scorpion
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=3500
     KARMA=-3500
@@ -467,7 +475,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Dragon, Fairy
 
 ON=@create
-    NPC=brain_dragon
+    NPC=<def.brain_dragon>
 
     FAME=15000
     KARMA=-15000
@@ -521,7 +529,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Dragon, Wolf
 
 ON=@Create
-    NPC=brain_dragon
+    NPC=<def.brain_dragon>
 
     FAME={3000 3499}
     KARMA={-3000 -3499}
@@ -564,7 +572,7 @@ SUBSECTION=Elementals
 DESCRIPTION=Elemental, Lava
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=12250
     KARMA=-12250
@@ -611,7 +619,7 @@ SUBSECTION=Undeads
 DESCRIPTION= Maddening Horror
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=23000
     KARMA=-23000
@@ -652,7 +660,7 @@ SUBSECTION=Gargoyles
 DESCRIPTION=Gargoyle, Undead
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=3000
     KARMA=-3001
@@ -701,7 +709,7 @@ SUBSECTION=Goblins
 DESCRIPTION=Green Goblin
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=1500
     KARMA=-1500
@@ -751,15 +759,15 @@ SUBSECTION=Feys
 DESCRIPTION=Gremlin
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=1500
     KARMA=-1500
     
-    STR={100, 110}
-    DEX={125, 135}
-    INT={30, 40}
-    MAXHITS={65, 75]
+    STR={100 110}
+    DEX={125 135}
+    INT={30 40}
+    MAXHITS={65 75}
     
     RESPHYSICAL={25, 30}
     RESFIRE={35, 40}
@@ -809,7 +817,7 @@ SUBSECTION=Slimes
 DESCRIPTION=Homunculus
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={2500 2999}
     KARMA={-2500 -2999}
@@ -855,7 +863,7 @@ SUBSECTION=Reptiles
 DESCRIPTION=Kepetch
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=6000
     KARMA=-6000
@@ -908,7 +916,7 @@ SUBSECTION=Reptiles
 DESCRIPTION=Kepetch, shorn
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     FAME={2500 2999}
     KARMA={-3000 -3499}
@@ -965,7 +973,7 @@ SUBSECTION=Mythological
 DESCRIPTION=Medusa
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={9000 9999}
     KARMA={-9000 -9999}
@@ -1021,7 +1029,7 @@ SUBSECTION=Dinosaurs
 DESCRIPTION=Raptor
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=7500
     KARMA=-7500
@@ -1064,7 +1072,7 @@ SUBSECTION=Worms
 DESCRIPTION=Worm, Rot
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=1500
     KARMA=-1500
@@ -1103,7 +1111,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Skree
 
 ON=@create
-    NPC=brain_dragon
+    NPC=<def.brain_dragon>
     
     FAME=2000
     KARMA=-2000
@@ -1151,7 +1159,7 @@ SUBSECTION=Reptiles
 DESCRIPTION=Slith
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=3000
     KARMA=-3000
@@ -1216,7 +1224,7 @@ SUBSECTION=Arachnids
 DESCRIPTION=Navrey Night-Eyes
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={9500 9999}
     KARMA={-9500 -9999}
@@ -1262,7 +1270,7 @@ SUBSECTION=Arachnids
 DESCRIPTION=Spider, Wolf
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     STR={225, 268}
     DEX={145, 165}
@@ -1305,7 +1313,7 @@ SUBSECTION=Arachnids
 DESCRIPTION=Spider, Trapdoor
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=2000
     KARMA=-2000
@@ -1355,7 +1363,7 @@ SUBSECTION=Insects
 DESCRIPTION=Fire Ant
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=5000
     KARMA=-5000
@@ -1408,7 +1416,7 @@ SUBSECTION=Mechanicals
 DESCRIPTION=Leather Wolf
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     FAME={2000 2499}
     KARMA={-3000 -3499}
@@ -1446,7 +1454,6 @@ CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
 DAM=18,25
 ARMOR=55
-BLOODCOLOR=colors_green
 DamCOLD=45
 DamENERGY=45
 FACTION=faction_undead
@@ -1464,8 +1471,9 @@ SUBSECTION=Undeads
 DESCRIPTION=Wraith, Dream
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
+    BLOODCOLOR=<def.colors_green>
     FAME={3000 3499}
     KARMA={-3000 -3499}
     
@@ -1529,7 +1537,7 @@ SUBSECTION=Demons
 DESCRIPTION=Slasher of Veils
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME={9000 9999}
 
@@ -1569,11 +1577,6 @@ ON=@CreateLoot
 ON=@GetHit
 argn1 /= 10 //BAD BAD BAD fix, maxhits should be 100k but we divided it to 10k, so we should decrease the received damage too. This will lead to confusing damage appearing on screen with the damage packet, but it's a temporary? workaround
 
-ON=@SpellEffect // same here
-if (<serv.spell.<argn1>.flags> &spellflag_harm)
-     argn2 /= 10
-endif
-
 
 [CHARDEF 033a]
 DEFNAME=c_dragon_stygian
@@ -1604,7 +1607,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Dragon, Stygian
 
 ON=@Create
-    NPC=brain_dragon
+    NPC=<def.brain_dragon>
 
     FAME={9500 9999}
     KARMA={-9500 -9999}
@@ -1644,7 +1647,6 @@ CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
 DAM=17,21
 ARMOR=40
-BLOODCOLOR=colors_green
 DamCOLD=20
 DamENERGY=20
 DamFIRE=20
@@ -1663,7 +1665,9 @@ SUBSECTION=Undeads
 DESCRIPTION=Lich, Primeval
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
+    
+    BLOODCOLOR=<def.colors_green>
 
     FAME={8000 8499}
     KARMA={-8000 -8499}
@@ -1728,7 +1732,7 @@ SUBSECTION=Mythological
 DESCRIPTION=Phoenix
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME={5000 5499}
     KARMA={-5000 -5499}
@@ -1781,7 +1785,7 @@ SUBSECTION=Wild
 DESCRIPTION=Turkey, Giant
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     STR={1204 1394}
     DEX={172 258}

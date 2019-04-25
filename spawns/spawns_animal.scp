@@ -3,7 +3,7 @@
 // www.sphereserver.net
 //****************************************************************************
 VERSION=X1
-
+[EOF]
 [SPAWN spawn_Animals]
 CATEGORY=Spawn Groups
 SUBSECTION=Animals

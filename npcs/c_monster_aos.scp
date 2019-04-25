@@ -11,7 +11,7 @@ BLOODCOLOR=colors_green
 TAG.Barding.DIFF=88.1
 DAMCOLD=40
 DAMENERGY=50
-FACTION=UNDEAD
+FACTION=faction_undead
 
 DESIRES=r_dungeon_doom,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
 AVERSIONS=t_trap,r_civilization
@@ -24,7 +24,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Dark Guardian
 
 ON=@Create
-   NPC=brain_monster
+   NPC=<def.brain_monster>
    
    FAME={3000 3499}
    KARMA={-3000 -3499}
@@ -69,6 +69,7 @@ CAN=mt_usehands|mt_walk|mt_run
 
 DAM=10,15
 ARMOR=50,60
+HEIGHT=15
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -81,7 +82,7 @@ SUBSECTION=Elementals
 DESCRIPTION=Elemental, Crystal
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=6500
     KARMA=-6500
@@ -122,6 +123,7 @@ CAN=mt_walk
 DAM=35,45
 ARMOR=25
 MOVERATE=40
+HEIGHT=18
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -134,7 +136,7 @@ SUBSECTION=Feys
 DESCRIPTION=Treefellow
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -162,6 +164,7 @@ CAN=mt_walk|mt_run
 DAM=3,5
 ARMOR=12
 ARMOR=15
+HEIGHT=8
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -174,7 +177,7 @@ SUBSECTION=Insects
 DESCRIPTION=Skittering Hopper
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     FAME=300
     
@@ -205,6 +208,7 @@ CAN=mt_usehands|mt_walk|mt_run
 
 DAM=22,26
 ARMOR=44
+HEIGHT=18
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -255,6 +259,7 @@ CAN=mt_usehands|mt_walk|mt_run
 RESPHYSICAL={50, 60}
 ARMOR=34
 DAM=18,22
+HEIGHT=18
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -267,7 +272,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Golem, Flesh
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=1000
     KARMA=-1800
@@ -298,6 +303,7 @@ CAN=mt_usehands|mt_walk|mt_run
 
 DAM=15,21
 ARMOR=24
+HEIGHT=14
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -310,7 +316,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Gore Fiend
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=1500
     KARMA=-1500
@@ -343,6 +349,7 @@ CAN=mt_usehands|mt_walk|mt_run
 
 DAM=12,17
 ARMOR=27
+HEIGHT=16
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -355,7 +362,7 @@ SUBSECTION=Demons
 DESCRIPTION=Gibberling
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=1500
     KARMA=-1500
@@ -388,7 +395,7 @@ CAN=mt_usehands|mt_walk|mt_run
 
 DAM=34,36
 ARMOR=44
-ARMOR=20
+HEIGHT=30
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -401,7 +408,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Bone Daemon
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=20000
     KARMA=-20000
@@ -439,6 +446,7 @@ CAN=mt_usehands|mt_walk|mt_run
 
 DAM=18,22
 ARMOR=54
+HEIGHT=16
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -451,7 +459,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Patchwork Skeleton
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=500
     KARMA=-500
@@ -474,6 +482,7 @@ ON=@Create
 ON=@NpcRestock
     ITEM=i_gold,{50 100}
 
+
 [CHARDEF 0136]
 DEFNAME=c_Wailing_Banshee
 NAME=Wailing Banshee
@@ -483,6 +492,7 @@ CAN=mt_walk|mt_fly
 
 DAM=10,14
 ARMOR=19
+HEIGHT=19
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -495,7 +505,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Wailing Banshee
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=1500
     KARMA=-1500
@@ -518,6 +528,7 @@ ON=@Create
 ON=@NpcRestock
     ITEM=i_gold,{50 100}
 
+
 [CHARDEF 0138]
 DEFNAME=c_abyssmal_horror
 NAME=Abyssmal Horror
@@ -527,6 +538,7 @@ CAN=mt_usehands|mt_walk|mt_run|mt_swim
 
 DAM=13,17
 ARMOR=54
+HEIGHT=35
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -539,7 +551,7 @@ SUBSECTION=Demons
 DESCRIPTION=Abyssmal Horror
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=26000
     KARMA=-26000
@@ -566,6 +578,7 @@ ON=@NpcRestock
     ITEM=i_gold,{1600 2000}
     //ITEM=magic_items    //todo
 
+
 [CHARDEF 013a]
 DEFNAME=c_ravager
 NAME=Ravager
@@ -575,6 +588,7 @@ CAN=mt_usehands|mt_walk|mt_run|mt_equip
 
 DAM=15,20
 ARMOR=54
+HEIGHT=25
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -587,7 +601,7 @@ SUBSECTION=Demons
 DESCRIPTION=Ravager
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=3500
     KARMA=-3500
@@ -611,6 +625,7 @@ ON=@NpcRestock
     ITEM=i_gold,{275 325}
     ITEM=i_treasure_map4,R99
 
+
 [CHARDEF 013c]
 DEFNAME=c_wanderer_void
 NAME=Wanderer of the Void
@@ -620,6 +635,7 @@ CAN=mt_usehands|mt_walk|mt_run
 
 DAM=20,27
 ARMOR=35
+HEIGHT=30
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -632,7 +648,7 @@ SUBSECTION=Demons
 DESCRIPTION=Wanderer of the Void
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -665,6 +681,7 @@ CAN=mt_walk|mt_fly
 
 DAM=12,17
 ARMOR=10
+HEIGHT=14
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -677,7 +694,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Vampire Bat
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -705,6 +722,7 @@ CAN=mt_usehands|mt_walk
 
 DAM=10,21
 ARMOR=10
+HEIGHT=8
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -717,7 +735,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Mound of Maggots
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -746,6 +764,7 @@ CAN=mt_walk|mt_usehands
 DAM=15,23
 ARMOR=32
 MOVERATE=60
+HEIGHT=30
 
 FOODTYPE=1 t_meat_raw
 DESIRES=999 t_corpse
@@ -759,7 +778,7 @@ SUBSECTION=Demons
 DESCRIPTION=Moloch
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=7500
     KARMA=-7500

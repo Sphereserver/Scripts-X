@@ -14,7 +14,7 @@ MAXFOOD=25
 FOLLOWERSLOTS=1
 DAMCOLD=80
 FACTION=faction_spider
-HEIGH=10
+HEIGHT=10
 TAG.BARDING.DIFF=45.4
 TAG.OVERRIDE.SPIDERWEB=1
 
@@ -43,7 +43,7 @@ DESCRIPTION=Spider, Frost
 
 ON=@Create
     //Brain
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     //Fame/Karma
     FAME={1500 1999}
@@ -89,7 +89,6 @@ MOVERATE=120
 DAMCOLD=80
 FACTION=faction_demon
 HEIGHT=35
-BLOODCOLOR=colors_white
 TAG.BARDING.DIFF=89.3
 
 DESIRES=r_snow,r_dungeon,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent,e_carnivores3
@@ -106,7 +105,9 @@ SUBSECTION=Demons
 DESCRIPTION=Demon, Ice
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
+    
+    BLOODCOLOR=<def.colors_white>
     
     FAME={2500 2999}
     KARMA={-5000 -5999}
@@ -172,7 +173,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Wyrm, White
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=18000
     KARMA=-18000
@@ -211,7 +212,7 @@ DAMCOLD=25
 ARMOR=50
 MAXFOOD=35
 FACTION=faction_troll
-HEIGHT=32
+HEIGHT=23
 TAG.BARDING.DIFF=54.5
 
 FOODTYPE=t_meat_raw
@@ -227,7 +228,7 @@ SUBSECTION=Giants
 DESCRIPTION=Frost Troll
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=4500
     KARMA=-4500
@@ -280,7 +281,7 @@ SUBSECTION=Wild
 DESCRIPTION=Leopard, Snow
 
 ON=@Create    
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     FAME={500 999}
     KARMA={-500 -999}
@@ -318,7 +319,6 @@ RANGE=2
 ARMOR=25
 MAXFOOD=35
 RESOURCES=3 i_reag_dead_wood
-BLOODCOLOR=colors_green
 DAMPOISON=60
 HEIGHT=18
 TAG.BARDING.DIFF=48.0
@@ -336,7 +336,9 @@ SUBSECTION=Plants
 DESCRIPTION=Swamp Tentacles
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
+    
+    BLOODCOLOR=<def.colors_green>
     
     KARMA={-1500 -1999}
     FAME={1500 1999}
@@ -372,8 +374,8 @@ CAN=mt_walk|mt_fly|mt_usehands|mt_equip
 DAM=25,40
 ARMOR=45
 MAXFOOD=25
-BLOODCOLOR=-1
 FACTION=faction_gargoyle
+BLOODCOLOR=-1
 HEIGHT=16
 TAG.BARDING.DIFF=71.4
 
@@ -391,7 +393,7 @@ SUBSECTION=Gargoyles
 DESCRIPTION=Gargoyle, Stone
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={2500 2999}
     KARMA={-3000 -3999}
@@ -447,7 +449,7 @@ SUBSECTION=Gazers
 DESCRIPTION=Gazer, Elder
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={2500 2999}
     KARMA={-2500 -2999}
@@ -506,7 +508,7 @@ SUBSECTION=Terathans
 DESCRIPTION=Terathan, Warrior
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=4000
     KARMA=-4000
@@ -562,7 +564,7 @@ SUBSECTION=Terathans
 DESCRIPTION=Terathan, Drone
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=2000
     KARMA=-2000
@@ -616,7 +618,7 @@ SUBSECTION=Terathans
 DESCRIPTION=Terathan, Matriarch
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=10000
     KARMA=-10000
@@ -657,9 +659,9 @@ CAN=mt_walk|mt_fly|mt_female|mt_usehands|mt_nonhum
 DAM=20,40
 ARMOR=45
 MAXFOOD=25
-BLOODCOLOR=-1
 DAMPOISON=25
 FACTION=faction_bird
+BLOODCOLOR=-1
 HEIGHT=18
 TAG.BARDING.DIFF=70.3
 
@@ -677,7 +679,7 @@ SUBSECTION=Mythological
 DESCRIPTION=Harpy, Stone
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={2000 2499}
     KARMA={-2000 -2499}
@@ -733,7 +735,7 @@ SUBSECTION=Giants
 DESCRIPTION=Cyclops
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     FAME=4500
     KARMA=-4500
 
@@ -789,7 +791,7 @@ SUBSECTION=Giants
 DESCRIPTION=Titan
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=11500
     KARMA=-11500
@@ -833,7 +835,6 @@ DAMCOLD=40
 DAMENERGY=40
 FACTION=faction_undead
 HEIGHT=18
-BLOODCOLOR=colors_green
 
 DESIRES=r_graveyards,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent,e_undead
 AVERSIONS=t_trap,r_civilization
@@ -848,7 +849,9 @@ SUBSECTION=Undeads
 DESCRIPTION=Lich, Ancient
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
+    
+    BLOODCOLOR=<def.colors_green>
     
     FAME={4000 4499}
     KARMA={-4000 -4499}
@@ -908,7 +911,7 @@ SUBSECTION=Amphibious
 DESCRIPTION=Toad, Giant
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     FAME=750
     KARMA=-750
     
@@ -953,7 +956,7 @@ SUBSECTION=Amphibious
 DESCRIPTION=Bullfrog
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     FAME=350
     
@@ -972,6 +975,7 @@ ON=@Create
 
 ON=@Createloot
     ITEM=i_gold,{25,50}
+
 
 [CHARDEF 055]
 DEFNAME=c_ophidian_mage
@@ -1002,7 +1006,7 @@ SUBSECTION=Ophidians
 DESCRIPTION=Ophidian, Mage
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=4000
     KARMA=-4000
@@ -1031,6 +1035,7 @@ ON=@Createloot
     ITEM=random_reagents,5
     ITEM=random_reagents,5
     ITEM=i_treasure_map2,R99
+
 
 [CHARDEF 056]
 DEFNAME=c_ophidian_warrior
@@ -1061,7 +1066,7 @@ SUBSECTION=Ophidians
 DESCRIPTION=Ophidian, Warrior
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     FAME=4500
     KARMA=-4500
     
@@ -1114,7 +1119,7 @@ SUBSECTION=Ophidians
 DESCRIPTION=Ophidian, Queen
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=16000
     KARMA=-16000
@@ -1172,7 +1177,7 @@ SUBSECTION=Reptiles
 DESCRIPTION=Snake, Giant Ice
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     FAME={2000 2499}
     KARMA={-2000 -2499}
@@ -1227,7 +1232,7 @@ SUBSECTION=Reptiles
 DESCRIPTION=Snake, Giant Lava
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     FAME={2500 2999}
     KARMA={-2500 -2999}
@@ -1283,7 +1288,7 @@ SUBSECTION=Slimes
 DESCRIPTION=Slime, Frost
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={1 499}
     KARMA={-800 -999}
@@ -1342,7 +1347,7 @@ SUBSECTION=Aquatic
 DESCRIPTION=Sea Monster
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={2000 6000}
     KARMA={-3000 -3999}
@@ -1359,6 +1364,7 @@ ON=@Create
 
 ON=@Createloot
     ITEM=loot_sea_serpent
+
 
 [CHARDEF 0d2]
 DEFNAME=c_ostard_desert
@@ -1389,7 +1395,7 @@ SUBSECTION=Ostards
 DESCRIPTION=Ostard, Desert
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     FAME=450
     
@@ -1437,7 +1443,7 @@ SUBSECTION=Ostards
 DESCRIPTION=Ostard, Frenzied
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     FAME=1500
     KARMA=-1500
@@ -1491,7 +1497,7 @@ SUBSECTION=Ostards
 DESCRIPTION=Ostard, Forest
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     FAME=450
     

@@ -10,7 +10,27 @@ TODO:
 -KARMA/FAME values does not match
 -Mount icons placed here, should be moved to i_char_icons.scp? some of them are duplicated -> remove
 -missing FACTIONS 
-
+-Missing CHARDEF (according to defs_height.scp):
+    0a, 
+    013, 01b,
+    022, 026,
+    045,
+    060, 061, 062, 06a, 06b, 06c, 06d, 06f,
+    070, 071, 072, 073, 074, 075, 076, 077, 078, 079, 07b, 07c, 07d, 07e, 07f
+    081, 083, 085, 086, 087, 088, 089, 08a, 08b, 08c, 08d, 08e, 08f
+    091, 092, 093, 09d, 09f
+    0a0, 0a1, 0a2, 0a3, 0a4, 0a5, 0a6, 0a8
+    0b5, 0b7, 0b8, 0b9, 0ba, 0bf
+    0c0, 0c1, 0c2, 0c3, 0c5, 0c6
+    010c, 010d, 010e
+    0110, 011d
+    0132, 0137, 0139, 013b, 013e
+    02f1, 02f2, 02f6, 02fc
+    0301, 0306, 030b
+    031b, 031c, 031d, 031e
+    03ca
+    03db
+-Heights added only until 03ef, we are missing values for HS+ chars
 
 coding guidelines:
 
@@ -71,14 +91,14 @@ DESCRIPTION=Elemental, Example
 ON=@Create
     //Even with fixed size, brain, color, fame/karma skills and stats must be added in @Create
     //Brain first
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     //Fame/karma
     FAME=10000
     KARMA=-10000
     
     //Color, if required
-    COLOR=colors_slime
+    COLOR=<def.colors_slime>
     
     //Stats
     STR={100 150}

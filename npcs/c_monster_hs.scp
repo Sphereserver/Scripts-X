@@ -1,7 +1,7 @@
 [CHARDEF 042c]
 //FIXME: Animates dead, summons parasitic eels, water ball ranged attack
 DEFNAME=c_scalis
-NAME=scalis
+NAME=Osiredon
 //FIXME: ICON=i_pet_scalis
 SOUND=snd_monster_tera_warrior1
 CAN=mt_swim
@@ -10,7 +10,6 @@ DAM=19,26
 RANGE=2
 ARMOR=80
 MAXFOOD=80
-BLOODCOLOR=colors_blue
 DamCOLD=30
 DamENERGY=30
 //FACTION=faction_dragon
@@ -30,9 +29,9 @@ SUBSECTION=Aquatic
 DESCRIPTION=Scalis (Osiredon)
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
-    NAME=Osiredon
+    BLOODCOLOR=<def.colors_blue>
     
     FAME={9500 9999}
     KARMA={-9500 -9999}
@@ -95,7 +94,7 @@ SUBSECTION=Demons
 DESCRIPTION=Hell Hound
 
 ON=@Create
-    NPC=brain_dragon
+    NPC=<def.brain_dragon>
     
     FAME={3500 3999}
     KARMA={-3500 -3999}
@@ -147,7 +146,7 @@ SUBSECTION=Mythological
 DESCRIPTION=Were Wolf
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={2500 2999}
     KARMA={-2500 -2999}
@@ -201,7 +200,7 @@ SUBSECTION=Minotaurs
 DESCRIPTION=Minotaur, Lord
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={4500 5000}
     KARMA={-4500 -5000}
@@ -250,7 +249,7 @@ DESIRES=t_coin,t_gold,t_wand,t_potion,t_scroll,t_reagent,e_notoriety
 FOODTYPE=t_fish
 
 RESLEVEL=7
-RESDISPDNID=c_sea_serpent_deep
+RESDISPDNID=c_sea_serpent
 RESDISPDNHUE=33
 
 CATEGORY=Named Creatures
@@ -258,7 +257,7 @@ SUBSECTION=Aquatic
 DESCRIPTION=Charybdis
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={7500 8000}
     KARMA={-7500 -8000}
@@ -303,7 +302,7 @@ SUBSECTION=Aquatic
 DESCRIPTION=Charybdis, Tentacle
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={7500 8000}
     KARMA={-7500 -8000}
@@ -337,7 +336,6 @@ CAN=mt_nonmover|mt_nonhum
 
 DAM=14,27
 ARMOR=30
-BLOODCOLOR=colors_orange
 TAG.Barding.DIFF=72.5
 FACTION=faction_demon
 
@@ -353,7 +351,9 @@ SUBSECTION=Halloween
 DESCRIPTION=Killer Pumpkin I
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
+    
+    BLOODCOLOR=<def.colors_orange>
     
     FAME={1500 1999}
     KARMA={-1500 -1999}
@@ -394,7 +394,6 @@ CAN=mt_nonmover|mt_nonhum
 
 DAM=14,27
 ARMOR=30
-BLOODCOLOR=colors_orange
 FACTION=faction_demon
 TAG.Barding.DIFF=72.5
 
@@ -410,7 +409,9 @@ SUBSECTION=Halloween
 DESCRIPTION=Killer Pumpkin II
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
+    
+    BLOODCOLOR=<def.colors_orange>
     
     FAME={1500 1999}
     KARMA={-1500 -1999}
@@ -469,7 +470,7 @@ SUBSECTION=Mechanicals
 DESCRIPTION=Clockwork Exodus
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={4500 5000}
     KARMA={-4500 -5000}

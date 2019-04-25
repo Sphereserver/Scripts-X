@@ -175,7 +175,7 @@ height_09b 15 //DEFNAME=c_rotting_corpse
 height_09d 10 //DEFNAME=c_spider_unknown
 height_09e 18 //DEFNAME=c_elemental_acid
 height_09f 18 //DEFNAME=c_elemental_blood
-
+///
 height_0a0 18 //DEFNAME=c_elemental_unknown_red
 height_0a1 18 //DEFNAME=c_elemental_ice
 height_0a2 18 //DEFNAME=c_elemental_poison

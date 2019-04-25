@@ -12,6 +12,7 @@ DAMPOISON=80
 FACTION=faction_spider
 TAG.OVERRIDE.SPIDERWEB=1
 TAG.Barding.DIFF=88.0
+HEIGHT=10
 
 DESIRES=r_caves,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
 AVERSIONS=t_trap,r_civilization
@@ -29,7 +30,7 @@ SUBSECTION=Arachnids
 DESCRIPTION=Spider, Dread
 
 ON=@Create
-   NPC=brain_monster
+   NPC=<def.brain_monster>
    
    FAME={2500 2999}
    KARMA={-2500 -2999}
@@ -70,6 +71,7 @@ CAN=mt_usehands|mt_walk|mt_fly
 DAM=29,35
 ARMOR=70
 MOVERATE=50
+HEIGHT=45
 
 RESOURCES=40 i_hide_barbed,19 i_ribs_raw, 12 random_dragon_scales
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
@@ -83,7 +85,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Wyrm, Ancient
 
 ON=@Create
-    NPC=brain_dragon
+    NPC=<def.brain_dragon>
 
     FAME=22500
     KARMA=-22500
@@ -124,6 +126,7 @@ NAME=Wyvern
 SOUND=362
 DAM=8,19
 ARMOR=40
+HEIGHT=18
 
 RESOURCES=20 i_hide_horned, 10 i_ribs_raw
 FOODTYPE=25 t_meat_raw
@@ -137,7 +140,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Wyvern
 
 ON=@Create
-    NPC=brain_dragon
+    NPC=<def.brain_dragon>
 
     FAME=4000
     KARMA=-4000
@@ -173,10 +176,11 @@ CAN=mt_fly|mt_walk
 
 DAM=10,14
 ARMOR=15
+HEIGHT=12
 
 RESOURCES=1 i_ribs_raw, 6 i_hide_spined    //todo
 FOODTYPE=9 t_meat_raw
-DESIRES=c_IMP
+DESIRES=c_imp
 AVERSIONS=r_civilization,r_water
 
 //FIXME RESDISPDNID
@@ -186,7 +190,7 @@ SUBSECTION=Demons
 DESCRIPTION=Imp
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=2500
     KARMA=-2500
@@ -225,6 +229,7 @@ CAN=mt_usehands|mt_swim
 DAM=73,121
 ARMOR=47
 RANGE=3
+HEIGHT=16
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -237,7 +242,7 @@ SUBSECTION=Aquatic
 DESCRIPTION=Kraken
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=10000
     KARMA=-10000
@@ -265,6 +270,7 @@ CAN=mt_walk|mt_run|mt_usehands
 DAM=47,53
 ARMOR=50
 MOVERATE=40
+HEIGHT=19
 
 RESOURCES=15 i_ribs_raw,10 i_hide
 FOODTYPE=40 t_meat_raw
@@ -280,7 +286,7 @@ SUBSECTION=Feys
 DESCRIPTION=Centaur
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     FAME=6500
     
     STR={202 300}
@@ -304,6 +310,7 @@ CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
 DAM=21,40
 ARMOR=33
+HEIGHT=35
 
 RESOURCES=15 i_ribs_raw,10 i_hide
 FOODTYPE=40 t_meat_raw
@@ -319,7 +326,7 @@ SUBSECTION=Demons
 DESCRIPTION=Exodus
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -350,6 +357,7 @@ CAN=mt_walk|mt_usehands
 DAM=5,12
 ARMOR=36
 MOVERATE=40
+HEIGHT=30
 
 RESOURCES=19 i_ribs_raw,20 i_hide_barbed, 6 random_dragon_scales_wb
 FOODTYPE=40 t_meat_raw
@@ -365,7 +373,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Dragon, Serpentine
 
 ON=@Create
-    NPC=brain_dragon
+    NPC=<def.brain_dragon>
 
     FAME=15000
     KARMA=15000
@@ -407,6 +415,7 @@ CAN=mt_walk|mt_usehands|mt_fly
 DAM=29,35
 ARMOR=80
 MOVERATE=50
+HEIGHT=30
 
 RESOURCES=19 i_ribs_raw,20 i_hide_barbed
 FOODTYPE=40 t_meat_raw
@@ -422,7 +431,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Dragon, Skeletal
 
 ON=@Create
-    NPC=brain_dragon
+    NPC=<def.brain_dragon>
 
     FAME=22500
     KARMA=-22500
@@ -466,6 +475,7 @@ CAN=mt_walk|mt_run
 DAM=10,15
 ARMOR=20
 MOVERATE=40
+HEIGHT=16
 
 RESOURCES=15 i_ribs_raw,10 i_hide
 FOODTYPE=55 t_crops, 55 t_fruit, 55 t_grain, 64 t_grass
@@ -483,7 +493,7 @@ SUBSECTION=Wild
 DESCRIPTION=Unicorn
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     KARMA=-2000
     FAME=3000
@@ -513,6 +523,7 @@ CAN=mt_walk|mt_usehands|mt_fly|mt_run
 
 DAM=11,17
 ARMOR=90
+HEIGHT=12
 
 RESOURCES=15 i_ribs_raw
 FOODTYPE=1 t_meat_raw
@@ -528,7 +539,7 @@ SUBSECTION=Feys
 DESCRIPTION=Pixie
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=7000
     KARMA=-7000
@@ -565,6 +576,7 @@ CAN=mt_walk|mt_usehands|mt_fly
 ARMOR=30
 DAM=22,45
 MOVERATE=60
+HEIGHT=16
 
 FOODTYPE=1 t_meat_raw
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman
@@ -579,7 +591,7 @@ DESCRIPTION=Gargoyle, Fire
 
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=3500
     KARMA=-3500
@@ -628,7 +640,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Skeleton, Mage
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=3000
     KARMA=-3000
@@ -670,6 +682,7 @@ DAM=18,28
 ARMOR=80
 MOVERATE=30
 ARMOR=85
+HEIGHT=16
 
 RESOURCES=1 i_ribs_raw
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
@@ -683,7 +696,7 @@ SUBSECTION=Demons
 DESCRIPTION=Succubus
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=24000
     KARMA=-24000
@@ -723,6 +736,7 @@ CAN=mt_walk
 
 DAM=18,22
 ARMOR=50
+HEIGHT=18
 
 RESOURCES=10 i_ribs_raw
 FOODTYPE=15 t_meat_raw
@@ -735,7 +749,7 @@ SUBSECTION=Terathans
 DESCRIPTION=Terathan Avenger
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=15000
     KARMA=-15000
@@ -776,6 +790,7 @@ CAN=mt_walk|mt_usehands
 DAM=13,23
 ARMOR=50
 MOVERATE=110
+HEIGHT=16
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -788,7 +803,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Mummy
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=4000
     KARMA=-4000
@@ -828,6 +843,7 @@ CAN=mt_walk|mt_run|mt_usehands
 
 DAM=5,17
 ARMOR=24
+HEIGHT=10
 
 //FIXME RESDISPDNID
 
@@ -836,7 +852,7 @@ SUBSECTION=Arachnids
 DESCRIPTION=Black Widow
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=3500
     KARMA=-3500
@@ -875,6 +891,7 @@ SOUNDHIT=0162
 SOUNDGETHIT=0163
 SOUNDDIE=021d
 DAM=7,20
+HEIGHT=12
 
 RESOURCES=16 i_ribs_raw
 
@@ -885,7 +902,7 @@ SUBSECTION=Beetles
 DESCRIPTION=Beetle, Fire
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=4000
     KARMA=-4000
@@ -923,6 +940,7 @@ CAN=mt_walk|mt_run|mt_usehands
 ARMOR=25
 DAM=11,35
 MOVERATE=40
+HEIGHT=18
 
 FOODTYPE=1 t_meat_raw
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman
@@ -936,7 +954,7 @@ SUBSECTION=Arachnids
 DESCRIPTION=Mephitis
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=3500
     KARMA=-3500
@@ -952,7 +970,7 @@ ON=@Create
     ANATOMY={30.0 75.0}
     POISONING={60.0 80.0}
 
-    f_addExtendedAIEvent e_extendedAI_aura_summonDreadSpider
+    f_addExtendedAIEvent e_extendedAI_aura_summon_dreadSpider
     
 ON=@CreateLoot
     ITEM=i_gold,{125 175}
@@ -970,6 +988,7 @@ CAN=mt_walk|mt_run|mt_usehands|mt_equip
 DAM=10,20
 ARMOR=40
 MOVERATE=40
+HEIGHT=35
 
 RESOURCES=15 i_ribs_raw,10 i_hide
 FOODTYPE=40 t_meat_raw
@@ -986,7 +1005,7 @@ DESCRIPTION=Semidar
 
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -1019,6 +1038,7 @@ CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
 ARMOR=80
 DAM=47,74
+HEIGHT=36
 
 RESOURCES=100 i_feather
 FOODTYPE=1 t_meat_raw
@@ -1033,7 +1053,7 @@ SUBSECTION=Feys
 DESCRIPTION=Ethereal Warrior
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=7000
     KARMA=-7000
@@ -1069,6 +1089,7 @@ CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
 ARMOR=10
 DAM=10,25
+HEIGHT=30
 
 FOODTYPE=1 t_meat_raw
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman
@@ -1082,7 +1103,7 @@ SUBSECTION=Feys
 DESCRIPTION=Forest Queen
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -1113,6 +1134,7 @@ CAN=mt_walk|mt_run|mt_equip|mt_usehands
 
 DAM=1,8
 ARMOR=30
+HEIGHT=15
 
 //FIXME RESDISPDNID
 
@@ -1121,7 +1143,7 @@ SUBSECTION=Orcs
 DESCRIPTION=Orc, Bomber
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=2500
     KARMA=-2500
@@ -1163,6 +1185,7 @@ DAM=4,12
 ARMOR=9
 ANIM=01fff
 MOVERATE=40
+HEIGHT=16
 
 RESOURCES=15 i_ribs_raw
 FOODTYPE=55 t_crops, 55 t_fruit, 55 t_grain, 64 t_grass
@@ -1179,7 +1202,7 @@ SUBSECTION=Wild
 DESCRIPTION=Ridgeback
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     KARMA=-2000
     
@@ -1209,6 +1232,7 @@ DAM=8,23
 ARMOR=15
 ANIM=01fff
 MOVERATE=40
+HEIGHT=16
 
 RESOURCES=15 i_ribs_raw
 FOODTYPE=55 t_crops, 55 t_fruit, 55 t_grain, 64 t_grass
@@ -1225,7 +1249,7 @@ SUBSECTION=Wild
 DESCRIPTION=Ridgeback, Savage
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     KARMA=-2000
     
@@ -1249,6 +1273,7 @@ CAN=mt_walk|mt_usehands|mt_run
 
 DAM=20,25
 ARMOR=50
+HEIGHT=45
 
 RESOURCES=2 i_ribs_raw
 FOODTYPE=1 t_meat_raw
@@ -1263,7 +1288,7 @@ SUBSECTION=Orcs
 DESCRIPTION=Orc, Brute
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=15000
     KARMA=-15000
@@ -1309,7 +1334,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Wraith
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=4000
     KARMA=-4000
@@ -1341,14 +1366,15 @@ DEFNAME=c_iron_golem
 NAME=Iron Golem
 ICON=i_pet_irongolem
 CAN=mt_walk|mt_usehands
-
 SOUNDIDLE=542
 SOUNDNOTICE=541
 SOUNDHIT=562
 SOUNDGETHIT=320
 SOUNDDIE=545
+
 ARMOR=55
 DAM=31,64
+HEIGHT=30
 
 RESOURCES=1 i_ore_iron
 FOODTYPE=1 t_meat_raw
@@ -1363,7 +1389,7 @@ SUBSECTION=Mechanicals
 DESCRIPTION=Golem, Iron
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -1397,6 +1423,7 @@ CAN=mt_walk|mt_usehands|mt_equip|mt_fly
 ARMOR=50
 DAM=31,64
 MOVERATE=30
+HEIGHT=32
 
 FOODTYPE=1 t_meat_raw
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman
@@ -1410,7 +1437,7 @@ SUBSECTION=Gargoyles
 DESCRIPTION=Gargoyle, Destroyer
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=8000
     KARMA=-8000
@@ -1442,14 +1469,15 @@ DEFNAME=c_exodus_overseer
 NAME=Exodus Overseer
 ICON=i_pet_exodus_overseer
 CAN=mt_walk|mt_run|mt_usehands
-
 SOUNDIDLE=0fd
 SOUNDNOTICE=026c
 SOUNDHIT=023b
 SOUNDGETHIT=0140
 SOUNDDIE=0211
+
 DAM=13,19
 ARMOR=50
+HEIGHT=16
 
 RESOURCES=15 i_ribs_raw
 FOODTYPE=1 t_meat_raw
@@ -1464,7 +1492,7 @@ SUBSECTION=Mechanicals
 DESCRIPTION=Exodus, Overseer
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=10000
     KARMA=-10000
@@ -1493,14 +1521,15 @@ DEFNAME=c_exodus_minion
 NAME=Exodus Minion
 ICON=i_pet_exodus_minion
 CAN=mt_walk|mt_run|mt_usehands
-
 SOUNDIDLE=0218
 SOUNDNOTICE=026c
 SOUNDHIT=0232
 SOUNDGETHIT=0140
 SOUNDDIE=0211
+
 DAM=16,22
 ARMOR=65
+HEIGHT=18
 
 RESOURCES=15 i_ribs_raw
 FOODTYPE=1 t_meat_raw
@@ -1515,7 +1544,7 @@ SUBSECTION=Mechanicals
 DESCRIPTION=Exodus, Minion
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=18000
     KARMA=-18000
@@ -1544,14 +1573,15 @@ DEFNAME=c_exodus_minionlord
 NAME=Exodus Minion Lord
 ICON=i_pet_exodus_minion
 CAN=mt_walk|mt_run|mt_usehands
-
 SOUNDIDLE=0fd
 SOUNDNOTICE=026c
 SOUNDHIT=023b
 SOUNDGETHIT=0140
 SOUNDDIE=0211
+
 DAM=26,38
 ARMOR=50
+HEIGHT=40
 
 RESOURCES=15 i_ribs_raw
 FOODTYPE=1 t_meat_raw
@@ -1566,7 +1596,7 @@ SUBSECTION=Mechanicals
 DESCRIPTION=Exodus, Minion Lord
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=10000
     KARMA=-10000
@@ -1594,14 +1624,15 @@ ON=@CreateLoot
 DEFNAME=c_juka_mage
 NAME=juka mage
 CAN=mt_walk|mt_run|mt_usehands|mt_equip
-
 SOUNDIDLE=01ac
 SOUNDNOTICE=01cd
 SOUNDGETHIT=01d0
 SOUNDDIE=028d
+
 DAM=4,10
 ARMOR=16
 MAXFOOD=40
+HEIGHT=16
 
 DESIRES=i_gold
 AVERSIONS=t_trap,e_carnivores3
@@ -1617,7 +1648,7 @@ SUBSECTION=Juka
 DESCRIPTION=Juka, Mage
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=15000
     KARMA=-15000
@@ -1653,14 +1684,15 @@ ON=@CreateLoot
 DEFNAME=c_juka_lord
 NAME=Juka Lord
 CAN=mt_walk|mt_run|mt_usehands|mt_equip
-
 SOUNDIDLE=01ac
 SOUNDNOTICE=01cd
 SOUNDGETHIT=01d0
 SOUNDDIE=028d
+
 DAM=10,12
 ARMOR=28
 MAXFOOD=40
+HEIGHT=17
 
 DESIRES=i_gold
 AVERSIONS=t_trap,r_civilization,e_carnivores3
@@ -1676,7 +1708,7 @@ SUBSECTION=Juka
 DESCRIPTION=Juka, Lord
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=15000
     KARMA=-15000
@@ -1706,20 +1738,22 @@ ON=@CreateLoot
     ITEM=i_bandage,{10 30}
     ITEM=i_arrow,{50 70}
 
+
 [CHARDEF 02ff]
 DEFNAME=c_Betrayer
 NAME=Betrayer
 ICON=i_pet_betrayer
 CAN=mt_walk|mt_usehands|mt_equip
-
 SOUNDIDLE=0fd
 SOUNDNOTICE=026c
 SOUNDHIT=023b
 SOUNDGETHIT=0140
 SOUNDDIE=0423
+
 DAM=37,64
 ARMOR=65
 MOVERATE=120
+HEIGHT=15
 
 RESOURCES=1 i_ribs_raw
 FOODTYPE=40 t_meat_raw
@@ -1735,7 +1769,7 @@ SUBSECTION=Mechanicals
 DESCRIPTION=Betrayer
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -1770,15 +1804,16 @@ defname2=c_Blackthorn_Juggernaught
 NAME=Blackthorn Juggernaught
 ICON=i_pet_juggernaught
 CAN=mt_walk|mt_usehands|mt_equip
-
 SOUNDIDLE=0fd
 SOUNDNOTICE=026c
 SOUNDHIT=023b
 SOUNDGETHIT=0140
 SOUNDDIE=0423
+
 DAM=12,19
 ARMOR=70
 MOVERATE=120
+HEIGHT=18
 
 RESOURCES=1 i_ribs_raw
 FOODTYPE=40 t_meat_raw
@@ -1794,7 +1829,7 @@ SUBSECTION=Mechanicals
 DESCRIPTION=Blackthorn Juggernaut
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=12000
     KARMA=-12000
@@ -1826,12 +1861,13 @@ NAME=Meer Mage
 SOUND=snd_human_foomph09
 ICON=i_pet_meermage
 CAN=mt_walk|mt_run|mt_usehands
-
 SOUNDGETHIT=014d
 SOUNDHIT=0314
 SOUNDDIE=075
+
 DAM=24,26
 ARMOR=16
+HEIGHT=16
 
 RESOURCES=15 i_ribs_raw,10 i_hide
 FOODTYPE=40 t_meat_raw
@@ -1847,7 +1883,7 @@ SUBSECTION=Meer
 DESCRIPTION=Meer, Mage
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=8000
     KARMA=8000
@@ -1883,11 +1919,12 @@ NAME=Meer Warrior
 SOUND=snd_human_foomph09
 ICON=i_pet_meerwarrior
 CAN=mt_walk|mt_run|mt_usehands
-
 SOUNDGETHIT=0156
 SOUNDDIE=015c
+
 DAM=12,19
 ARMOR=22
+HEIGHT=16
 
 RESOURCES=15 i_ribs_raw,10 i_hide
 FOODTYPE=40 t_meat_raw
@@ -1903,7 +1940,7 @@ SUBSECTION=Meer
 DESCRIPTION=Meer, Warrior
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=2000
     KARMA=5000
@@ -1933,12 +1970,13 @@ NAME=Meer Eternal
 SOUND=snd_human_foomph09
 ICON=i_pet_meereternal
 CAN=mt_walk|mt_run
-
 SOUNDGETHIT=0167
 SOUNDHIT=028b
 SOUNDDIE=0bc
+
 DAM=11,13
 ARMOR=34
+HEIGHT=18
 
 RESOURCES=15 i_ribs_raw,10 i_hide
 FOODTYPE=40 t_meat_raw
@@ -1954,7 +1992,7 @@ SUBSECTION=Meer
 DESCRIPTION=Meer, Eternal
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=18000
     KARMA=18000
@@ -1991,12 +2029,13 @@ NAME=Meer Captain
 SOUND=snd_human_foomph09
 ICON=i_pet_meercaptain
 CAN=mt_walk|mt_run|mt_usehands
-
 SOUNDGETHIT=014d
 SOUNDHIT=0314
 SOUNDDIE=075
+
 DAM=5,15
 ARMOR=28
+HEIGHT=16
 
 RESOURCES=15 i_ribs_raw,10 i_hide
 FOODTYPE=40 t_meat_raw
@@ -2012,7 +2051,7 @@ SUBSECTION=Meer
 DESCRIPTION=Meer, Captain
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=2000
     KARMA=5000
@@ -2050,6 +2089,7 @@ CAN=mt_walk
 
 DAM=56,75
 ARMOR=55
+HEIGHT=10
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -2062,7 +2102,7 @@ SUBSECTION=Slimes
 DESCRIPTION=Plague Beast
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=10000
     KARMA=-10000
@@ -2086,8 +2126,8 @@ ON=@CreateLoot
     RANDMAGICITEM
 
 
-[CHARDEF 0307]
-DEFNAME=c_Plague_Beast_Lord
+[CHARDEF c_plague_beast_lord]
+id=c_plague_beast
 NAME=plague beast lord
 SOUND=679
 CAN=mt_walk|mt_run|mt_equip|mt_usehands
@@ -2102,7 +2142,7 @@ SUBSECTION=Slimes
 DESCRIPTION=Plague Beast, Lord
 
 ON=@create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=2000
     KARMA=-2000
@@ -2132,6 +2172,7 @@ CAN=mt_walk|mt_run|mt_usehands
 DAM=5,10
 ARMOR=18
 MOVERATE=40
+HEIGHT=10
 
 RESOURCES=15 i_ribs_raw,10 i_hide
 FOODTYPE=40 t_meat_raw
@@ -2147,7 +2188,7 @@ SUBSECTION=Demons
 DESCRIPTION=Horde Minion, Small
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=500
     KARMA=-500
@@ -2180,6 +2221,7 @@ DAM=14,22
 ARMOR=55
 RESOURCES=15 i_ribs_raw
 MOVERATE=50
+HEIGHT=16
 
 FOODTYPE=40 t_meat_raw
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman
@@ -2194,7 +2236,7 @@ SUBSECTION=Demons
 DESCRIPTION=Doppleganger
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=1000
     KARMA=-1000
@@ -2222,6 +2264,7 @@ CAN=mt_usehands|mt_walk|mt_fly
 DAM=3,15
 ARMOR=17
 MOVERATE=90
+HEIGHT=16
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -2234,7 +2277,7 @@ SUBSECTION=Gazers
 DESCRIPTION=Gazer, Larva
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=900
     KARMA=-900
@@ -2263,6 +2306,7 @@ CAN=mt_walk|mt_usehands|mt_equip
 
 ARMOR=35
 DAM=40,95
+HEIGHT=30
 
 FOODTYPE=1 t_meat_raw
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman
@@ -2276,7 +2320,7 @@ SUBSECTION=Plants
 DESCRIPTION=Bog Thing
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -2304,6 +2348,7 @@ CAN=mt_walk|mt_run|mt_usehands
 
 DAM=5,7
 ARMOR=28
+HEIGHT=18
 
 FOODTYPE=1 t_meat_raw
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman
@@ -2317,7 +2362,7 @@ SUBSECTION=Solen
 DESCRIPTION=Red Solen, Worker
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=1500
     KARMA=-1500
@@ -2350,6 +2395,7 @@ CAN=mt_walk|mt_run|mt_usehands
 
 DAM=5,15
 ARMOR=35
+HEIGHT=18
 
 FOODTYPE=1 t_meat_raw
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman
@@ -2363,7 +2409,7 @@ SUBSECTION=Solen
 DESCRIPTION=Red Solen, Warrior
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=3000
     KARMA=-3000
@@ -2398,6 +2444,7 @@ CAN=mt_walk|mt_usehands|mt_run
 DAM=10,15
 ARMOR=45
 MOVERATE=75
+HEIGHT=18
 
 FOODTYPE=1 t_meat_raw
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman
@@ -2411,7 +2458,7 @@ SUBSECTION=Solen
 DESCRIPTION=Red Solen, Queen
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=4500
     KARMA=-4500
@@ -2431,7 +2478,7 @@ ON=@Create
     TACTICS={90.0}
     WRESTLING={90.0}
 
-    f_addExtendedAIEvent e_extendedAI_aura_summonFireAntWorker
+    f_addExtendedAIEvent e_extendedAI_aura_summon_fireAntWorker
     
 ON=@CreateLoot
     ITEM=i_gold,{400 500}
@@ -2447,6 +2494,7 @@ CAN=mt_walk|mt_fly|mt_run
 DAM=12,16
 ARMOR=55
 MOVERATE=45
+HEIGHT=35
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -2459,7 +2507,7 @@ SUBSECTION=Demons
 DESCRIPTION=Demon, Arcane
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=7000
     KARMA=-10000
@@ -2497,6 +2545,7 @@ CAN=mt_walk
 DAM=7,21
 ARMOR=45
 MOVERATE=30
+HEIGHT=15
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -2509,7 +2558,7 @@ SUBSECTION=Insects
 DESCRIPTION=Ant Lion
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=4500
     KARMA=-4500
@@ -2546,6 +2595,7 @@ CAN=mt_walk|mt_run|mt_usehands
 DAM=51,80
 ARMOR=70
 MOVERATE=50
+HEIGHT=18
 
 RESOURCES=15 i_ribs_raw,10 i_hide
 FOODTYPE=40 t_meat_raw
@@ -2561,7 +2611,7 @@ SUBSECTION=Mythological
 DESCRIPTION=Sphynx
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=10000
     
@@ -2593,6 +2643,7 @@ CAN=mt_walk
 DAM=17,24
 ARMOR=57
 RANGE=3
+HEIGHT=15
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
@@ -2605,7 +2656,7 @@ SUBSECTION=Plants
 DESCRIPTION=Quagmire
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
     
     FAME=1500
     KARMA=-1500
@@ -2631,15 +2682,16 @@ DEFNAME=c_giant_beetle
 NAME=Giant Beetle
 CAN=mt_walk|mt_run
 ICON=i_pet_giantbeetle
-
 SOUNDIDLE=021d
 SOUNDNOTICE=021d
 SOUNDHIT=0162
 SOUNDGETHIT=0163
 SOUNDDIE=021d
+
 DAM=7,20
 ARMOR=30
 MOVERATE=40
+HEIGHT=12
 
 FOODTYPE=40 t_meat_raw
 DESIRES=i_gold
@@ -2656,7 +2708,7 @@ SUBSECTION=Beetles
 DESCRIPTION=Beetle, Giant
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     FAME=4000
     KARMA=-4000
@@ -2687,6 +2739,7 @@ CAN=mt_walk|mt_usehands|mt_fly|mt_run
 
 DAM=12,17
 ARMOR=15
+HEIGHT=30
 
 RESOURCES=15 i_ribs_raw,10 i_hide
 FOODTYPE=40 t_meat_raw
@@ -2702,7 +2755,7 @@ SUBSECTION=Demons
 DESCRIPTION=Demon, Chaos
 
 ON=@Create
-    NPC=brain_monster
+    NPC=<def.brain_monster>
 
     FAME=3000
     KARMA=-4000
@@ -2736,6 +2789,7 @@ CAN=mt_walk|mt_run
 DAM=18,22
 ARMOR=30
 MOVERATE=60
+HEIGHT=16
 
 RESOURCES=25 i_ribs_raw,10 i_hide
 FOODTYPE=40 t_meat_raw
@@ -2753,7 +2807,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Skeletal Mount
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     KARMA=-2000
     FAME={100 2000}
@@ -2768,6 +2822,7 @@ ON=@Create
     WRESTLING={90.0 93.0}
     TAMING=105.0
     MAGERY=100.0
+
 
 [ITEMDEF 9751]
 DEFNAME=i_pet_skeletalmount
@@ -2784,6 +2839,7 @@ CAN=mt_walk|mt_fly|mt_fire_immune
 DAM=6,24
 ARMOR=20
 MOVERATE=40
+HEIGHT=15
 
 RESOURCES=60 i_ribs_raw
 FOODTYPE=80 t_meat_raw
@@ -2802,7 +2858,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Swamp Dragon
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     COLOR=2129
     KARMA=-2000
     STR={160 200}
@@ -2826,6 +2882,7 @@ CAN=mt_walk|mt_fly|mt_fire_immune
 DAM=10,24
 ARMOR=50
 MOVERATE=40
+HEIGHT=15
 
 RESOURCES=60 i_ribs_raw
 FOODTYPE=80 t_meat_raw
@@ -2842,7 +2899,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Swamp Dragon, Armoured
 
 ON=@Create
-    NPC=brain_animal
+    NPC=<def.brain_animal>
     
     KARMA=-2000
     FAME={3000 9000}
@@ -2871,6 +2928,7 @@ MAXFOOD=10
 FACTION=REPTILE
 FOLLOWERSLOTS=1
 DAMFIRE=40
+HEIGHT=8
 TAG.Barding.DIFF=58.8
 
 DESIRES=r_mountains_volcanic,r_desert,t_coin,t_gold,t_gem
@@ -2887,7 +2945,7 @@ SUBSECTION=Reptiles
 DESCRIPTION=Lizard, Lava
 
 ON=@Create
-   NPC=brain_dragon
+   NPC=<def.brain_dragon>
    
    FAME={1500 1999}
    KARMA={-1500 -1999}
