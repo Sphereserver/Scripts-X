@@ -48,7 +48,7 @@ Known Issues:
  lines of the @ClientToolTip trigger have a sample of how you might correct
  that, but the sample only works on original items.
 
-The TAGs being handled inside this TYPEDEF currently include:
+The TAGs being handled inside this TYPEDEF currently include (THE LIST IS OUTDATED!):
 
 Rarity
  - Purpose: When the value is 1, the item tooltip will indicate the item is
@@ -115,11 +115,6 @@ IncreaseHitChance
  - Purpose: When the value is positive, the item improves the chance to hit
             you opponent.  When negative, the item makes it harder to hit
             your target (a curse of sorts).
- - Values:  Positive or negative integer.
- - Effect:  NOT IMPLEMENTED YET
-
-DecreaseHitChance
- - Purpose: The opposite of IncreaseHitChance.
  - Values:  Positive or negative integer.
  - Effect:  NOT IMPLEMENTED YET
 
@@ -353,13 +348,13 @@ IF (<HasComponentProps <def.CompProps_ItemWeapon>>)
 	ENDIF
 ENDIF
 IF (<SRC.ISPLAYER>) && (<TAG0.MaxLevel>)
-	IF (<SRC.LEVEL> > <TAG0.MaxLevel>)
+	IF (<SRC.LEVEL> > <TAG.MaxLevel>)
 		SRC.SYSMESSAGE @<def.color_text> You are too high level to use this item.
 		RETURN 1
 	ENDIF
 ENDIF
 IF (<SRC.ISPLAYER>) && (<TAG0.MinLevel>)
-	IF (<SRC.LEVEL> < <TAG0.MinLevel>)
+	IF (<SRC.LEVEL> < <TAG.MinLevel>)
 		SRC.SYSMESSAGE @<def.color_text> You are too low level to use this item.
 		RETURN 1
 	ENDIF
@@ -452,15 +447,11 @@ IF (<HasComponentProps <def.CompProps_ItemEquippable>>)
 	// IF (<IncreaseHitChance>)
 		// IF (<IncreaseHitChance> < 0)
 			// SRC.SYSMESSAGELOC <def.color_text>,1062319//"Your attack chance has been reduced!"
+		// ELSE
+			// SRC.SYSMESSAGELOC <def.color_text>,1062319//"Your attack chance has been reduced!"
 		// ENDIF
 		// SRC.IncreaseHitChance += <IncreaseHitChance>
 	// ENDIF
-	IF (<DecreaseHitChance>)
-		IF (<DecreaseHitChance> > 0)
-			SRC.SYSMESSAGELOC <def.color_text>,1062319//"Your attack chance has been reduced!"
-		ENDIF
-		SRC.DecreaseHitChance += <DecreaseHitChance>
-	ENDIF
 	// IF (<IncreaseSwingSpeed>)
 		// SRC.IncreaseSwingSpeed += <IncreaseSwingSpeed>
 	// ENDIF
@@ -563,19 +554,19 @@ IF (<HasComponentProps <def.CompProps_ItemEquippable>>)
 	ENDIF
 ENDIF
 IF <BonusSkill1>
-	SRC.<BonusSkill1> +=<BonusSkill1Amt>
+	SRC.<BonusSkill1> += <BonusSkill1Amt>
 ENDIF
 IF <BonusSkill2>
-	SRC.<BonusSkill2> +=<BonusSkill2Amt>
+	SRC.<BonusSkill2> += <BonusSkill2Amt>
 ENDIF
 IF <BonusSkill3>
-	SRC.<BonusSkill3> +=<BonusSkill3Amt>
+	SRC.<BonusSkill3> += <BonusSkill3Amt>
 ENDIF
 IF <BonusSkill4>
-	SRC.<BonusSkill4> +=<BonusSkill4Amt>
+	SRC.<BonusSkill4> += <BonusSkill4Amt>
 ENDIF
 IF <BonusSkill5>
-	SRC.<BonusSkill5> +=<BonusSkill5Amt>
+	SRC.<BonusSkill5> += <BonusSkill5Amt>
 ENDIF
 
 ON=@UnEquip
@@ -613,9 +604,9 @@ IF (<HasComponentProps <def.CompProps_ItemWeapon>>)
 	IF (<HitLeechStam>)
 		SRC.HitLeechStam -= <HitLeechStam>
 	ENDIF
-	IF (<MageWeapon>)
-		TRY SRC.<MageWeapon> -= <MageWeapon>
-	ENDIF
+	//IF (<MageWeapon>)
+	//	SRC.<MageWeapon> -= <MageWeapon> // FIXME ?
+	//ENDIF
 	IF (<HitDispel>)
 		SRC.HitDispel -= <HitDispel>
 	ENDIF

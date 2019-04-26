@@ -21,7 +21,7 @@ ADDCLILOC 1042971,<NAME>
 IF !(<ATTR> & <def.attr_identified>)
 	ADDCLILOC 1041522,<def.BFONT_RED>,#1038000,<def.BFONT_WHITE>
 ENDIF
-IF (<TYPE>==t_wand)
+IF (<TYPE>==<resdef.t_wand>)
 	IF (<MOREX> > 0) && (<MOREX> <= 64)
 		LOCAL.SpellCliloc=<EVAL 3002010+<MOREX>>
 		ADDCLILOC <dLOCAL.SpellCliloc>,<dMORE2>
@@ -29,13 +29,13 @@ IF (<TYPE>==t_wand)
 	ADDCLILOC 1060741,<dMORE2>
 ENDIF
 IF (<Rarity>)
-	ADDCLILOC 1061078,<INSTANCES>//"Artifact rarity: ~"
+	ADDCLILOC 1061078,<Rarity> //"Artifact rarity: ~"
 ENDIF
 IF (<canuse>&<def.can_u_gargoyle>) && !((<canuse>&<def.can_u_human>) || (<canuse>&<def.can_u_elf>))
-	ADDCLILOC 1111709//"Gargoyles Only"
+	ADDCLILOC 1111709 //"Gargoyles Only"
 ENDIF
 IF (<canuse>&<def.can_u_elf>) && !((<canuse>&<def.can_u_human>) || (<canuse>&<def.can_u_gargoyle>))
-	ADDCLILOC 1075086
+	ADDCLILOC 1075086 // "Elves only"
 ENDIF
 IF (<ATTR>&<def.attr_stolen>)
 	ADDCLILOC 1072948//"Stolen Property"
@@ -53,23 +53,53 @@ IF (<TAG0.MinLevel>)
 	ADDCLILOC 1053099,Minimum Level,<dTAG.MinLevel>
 ENDIF
 IF (<HasComponentProps <DEF.CompProps_ItemWeapon>>)
+	IF (<AssassinHoned>)
+		ADDCLILOC 1152206 // Assassin Honed
+	ENDIF
+	IF (<Balanced>)
+		ADDCLILOC 1072792 // Balanced
+	ENDIF
+	IF (<Bane>)
+		ADDCLILOC 1154671 //Bane
+	ENDIF
+	IF (<BattleLust>)
+		ADDCLILOC 1113710 // Battle Lust
+	ENDIF
+	IF (<BloodDrinker>)
+		ADDCLILOC 1113591 // Blood Drinker
+	ENDIF
+	IF (<BoneBreaker>)
+		ADDCLILOC 1157318 // Bone Breaker
+	ENDI
+	IF (<MageWeapon>)
+		ADDCLILOC 1060438,<SRC.MAGERY> // FIXME: <SRC.MAGERY> is incorrect
+	ENDIF
+	IF (<Massive>)
+		ADDCLILOC 1038003 // Massive
+	ENDIF
+	IF (<SearingWeapon>)
+		ADDCLILOC 1151183 // Searing Weapon
+	ENDIF
+	IF (<SplinteringWeapon>)
+		ADDCLILOC 1112857 //splintering weapon ~1_val~%
+	ENDIF
 	IF (<UseBestWeaponSkill>)
-		ADDCLILOC 1060400
-	ELSEIF (<MageWeapon>)
-		ADDCLILOC 1060438,<SRC.MAGERY>
-	ELSEIF (<TAG0.OVERRIDE_SKILL>)
-		ADDCLILOC <EVAL 1044059 + <dTAG.OVERRIDE_SKILL>>
+		ADDCLILOC 1060400 // use best weapon skill
+	ELIF (<TAG0.OVERRIDE_SKILL>)
+		IF (<TAG.OVERRIDE_SKILL> < 58)
+			ADDCLILOC <EVAL 1044059 + <dTAG.OVERRIDE_SKILL>>
+		ENDIF
 	ELSE
 		IF (<SKILL>==42)//Swordsmanship
-			ADDCLILOC 1061172
-		ELSEIF (<SKILL>==41)//Macefighting
-			ADDCLILOC 1061173
-		ELSEIF (<SKILL>==42)//Fencing
-			ADDCLILOC 1061174
-		ELSEIF (<SKILL>==31)//Archery
-			ADDCLILOC 1061175
-		ELSEIF (<SKILL>==57)//Throwing
-			ADDCLILOC 1112075
+			ADDCLILOC 1061172 // skill required: swordsmanship
+		ELIF (<SKILL>==41)//Macefighting
+			ADDCLILOC 1061173 // skill required: mace fighting
+		ELIF (<SKILL>==42)//Fencing
+			ADDCLILOC 1061174 // skill required: fencing
+		ELIF (<SKILL>==31)//Archery
+			ADDCLILOC 1061175 // skill required: archery
+		ELIF (<SKILL>==57)//Throwing
+			ADDCLILOC 1112075 // skill required: throwing
 		ENDIF
 	ENDIF
 	ADDCLILOC 1061168,<DAM>
@@ -83,34 +113,60 @@ IF (<HasComponentProps <DEF.CompProps_ItemWeapon>>)
 		ADDCLILOC 1061171
 	ENDIF
 ENDIF
+// if is armor?
+IF (<MageArmor>)
+	ADDCLILOC 1060437
+ENDIF
+// endif
 
 ADDCLILOC 1072225,<FVAL <WEIGHT>>
+IF (<WEIGHTREDUCTION>)
+	ADDCLILOC 1072210,<WEIGHTREDUCTION> // Weight reduction: ~1_PERCENTAGE~%
+ENDIF
+
+IF (<LAVAINFUSED>)
+	ADDCLILOC 1151318,<LAVAINFUSED> // lava infused ~1_token~
+ENDIF
+IF (<SHIPWRECKITEM>)
+	ADDCLILOC 1041645 // recovered from a shipwrecklist
+ENDIF
+IF (<UNLUCKY>)
+	ADDCLILOC 1151821 // Luck -100
+ENDIF
+
 
 IF !(<HasComponentProps <DEF.CompProps_ItemEquippable>>)
 	RETURN 1
 ENDIF
 // From now on, there are only CompProps_ItemEquippable properties.
 
-IF (<RESCOLD>)
-	ADDCLILOC 1060445,<RESCOLD>
-ENDIF
-IF (<RESENERGY>)
-	ADDCLILOC 1060446,<RESENERGY>
-ENDIF
-IF (<RESFIRE>)
-	ADDCLILOC 1060447,<RESFIRE>
-ENDIF
-IF (<RESPHYSICAL>)
-	ADDCLILOC 1060448,<RESPHYSICAL>
-ENDIF
-IF (<RESPOISON>)
-	ADDCLILOC 1060449,<RESPOISON>
-ENDIF
-IF (<DEFNAME>==i_belt_ninja_leather)
-	ADDCLILOC 1060584,<dTAG0.ShurikenCount>
+IF (<SERV.CombatFlags> & 08) // COMBAT_ELEMENTAL_ENGINE
+	IF (<RESCOLD>)
+		ADDCLILOC 1060445,<RESCOLD>
+	ENDIF
+	IF (<RESENERGY>)
+		ADDCLILOC 1060446,<RESENERGY>
+	ENDIF
+	IF (<RESFIRE>)
+		ADDCLILOC 1060447,<RESFIRE>
+	ENDIF
+	IF (<RESPHYSICAL>)
+		ADDCLILOC 1060448,<RESPHYSICAL>
+	ENDIF
+	IF (<RESPOISON>)
+		ADDCLILOC 1060449,<RESPOISON>
+	ENDIF
+	IF (<DEFNAME>==<resdef.i_belt_ninja_leather>)
+		ADDCLILOC 1060584,<dTAG0.ShurikenCount>
+	ENDIF
 ENDIF
 
-IF (<ATTR> & attr_identified)
+// Uncomment this IF (and its matching ENDIF) to restore pre-AoS behavior.
+//  Starting from AoS, the magical properties are shown in the tooltip even if the item is unidentified.
+//IF (<ATTR> & <def.attr_identified>)
+	IF (<Imbued>)
+		ADDCLILOC 1080418 // (Imbued)
+	ENDIF
 	IF <BonusSkill1>
 		ADDCLILOC 1060451,<Serv.Skill.<BonusSkill1>.Key>,<fval <BonusSkill1Amt>>
 	ENDIF
@@ -126,69 +182,32 @@ IF (<ATTR> & attr_identified)
 	IF <BonusSkill5>
 		ADDCLILOC 1060455,<Serv.Skill.<BonusSkill5>.Key>,<fval <BonusSkill5Amt>>
 	ENDIF
-	IF (<Balanced>)
-		ADDCLILOC 1072792
+	IF (<Altered>)
+		ADDCLILOC 1111880 // Altered
 	ENDIF
+	IF (<Antique>)
+		ADDCLILOC 1152714 // Antique
+	ENDIF
+	IF (<Brittle>)
+		ADDCLILOC 1116209 // Brittle
+	ENDIF
+	IF (<Unwieldly>)
+		ADDCLILOC 1154909 // Unwieldly
+	ENDIF
+	IF (<Prized>)
+		ADDCLILOC 1154910 // Prized
+	ENDIF
+	IF (<LUCK>)
+		ADDCLILOC 1060436,<LUCK>
+	ENDIF
+	
 	IF (<SpellChanneling>)
 		ADDCLILOC 1060482,<SpellChanneling>
 	ENDIF
 	IF (<NightSight>)
 		ADDCLILOC 1060441
 	ENDIF
-	IF (<IncreaseDam>)
-		ADDCLILOC 1060401,<IncreaseDam>
-	ENDIF
-	IF (<IncreaseDefChance>)
-		ADDCLILOC 1060408,<IncreaseDefChance>
-	ENDIF
-	IF (<IncreaseHitChance>)
-		ADDCLILOC 1060415,<IncreaseHitChance>
-	ENDIF
-	IF (<DecreaseHitChance>)
-		ADDCLILOC 1042971,Hit Chance Decrease: <DecreaseHitChance>%
-	ENDIF
-	IF (<IncreaseSwingSpeed>)
-		ADDCLILOC 1060486,<IncreaseSwingSpeed>
-	ENDIF
-	IF (<DamPhysical>)
-		ADDCLILOC 1060403,<DamPhysical>
-	ENDIF
-	IF (<DamFire>)
-		ADDCLILOC 1060405,<DamFire>
-	ENDIF
-	IF (<DamCold>)
-		ADDCLILOC 1060404,<DamCold>
-	ENDIF
-	IF (<DamPoison>)
-		ADDCLILOC 1060406,<DamPoison>
-	ENDIF
-	IF (<DamEnergy>)
-		ADDCLILOC 1060407,<DamEnergy>
-	ENDIF
-	IF (<EnhancePotions>)
-		ADDCLILOC 1060411,<EnhancePotions>
-	ENDIF
-	IF (<LowerManaCost>)
-		ADDCLILOC 1060433,<LowerManaCost>
-	ENDIF
-	IF (<LowerReagentCost>)
-		ADDCLILOC 1060434,<LowerReagentCost>
-	ENDIF
-	IF (<LowerReq>)
-		ADDCLILOC 1060435,<LowerReq>
-	ENDIF
-	IF (<IncreaseSpellDam>)
-		ADDCLILOC 1060483,<IncreaseSpellDam>
-	ENDIF
-	IF (<IncreaseGold>)
-		ADDCLILOC 1060414,<IncreaseGold>
-	ENDIF
-	IF (<ReflectPhysicalDam>)
-		ADDCLILOC 1060442,<ReflectPhysicalDam>
-	ENDIF
-	IF (<LUCK>)
-		ADDCLILOC 1060436,<LUCK>
-	ENDIF
+	
 	IF (<BonusStr>)//strength bonus
 		ADDCLILOC 1060485,<BonusStr>
 	ENDIF
@@ -216,29 +235,139 @@ IF (<ATTR> & attr_identified)
 	IF (<RegenMana>)
 		ADDCLILOC 1060440,<RegenMana>
 	ENDIF
+
+	IF (<EnhancePotions>)
+		ADDCLILOC 1060411,<EnhancePotions>
+	ENDIF
+	IF (<ReflectPhysicalDam>)
+		ADDCLILOC 1060442,<ReflectPhysicalDam>
+	ENDIF
+	IF (<ReactiveParalyze>)
+		ADDCLILOC 1112364 // reactive paralyze
+	ENDIF
+	IF (<IncreaseGold>)
+		ADDCLILOC 1060414,<IncreaseGold>
+	ENDIF
+	IF (<IncreaseKarmaLoss>)
+		ADDCLILOC 1075210,<IncreaseKarmaLoss> // increased karma loss ~1val~%
+	ENDIF
+
+	IF (<IncreaseDefChance>)
+		ADDCLILOC 1060408,<IncreaseDefChance>
+	ENDIF
+	IF (<IncreaseHitChance>)
+		ADDCLILOC 1060415,<IncreaseHitChance>
+	ENDIF
+	IF (<IncreaseSwingSpeed>)
+		ADDCLILOC 1060486,<IncreaseSwingSpeed>
+	ENDIF
+	IF (<IncreaseSpellDam>)
+		ADDCLILOC 1060483,<IncreaseSpellDam>
+	ENDIF
+	IF (<BonusBerserk>)
+		ADDCLILOC 1151541,<BonusBerserk> // Berserk ~1_VAL~
+	ENDIF
+	//IF (<RageFocus>)
+	//	ADDCLILOC 1153788? Rage Attack
+	//ENDIF
+	IF (<SpellFocusing>)
+		ADDCLILOC 1151391 // Spell Focusing
+	ENDIF
 	IF (<FasterCastRecovery>)
 		ADDCLILOC 1060412,<FasterCastRecovery>
 	ENDIF
 	IF (<FasterCasting>)
 		ADDCLILOC 1060413,<FasterCasting>
 	ENDIF
-	IF (<SelfRepair>)
-		ADDCLILOC 1060450,<SelfRepair>
+	IF (<LowerManaCost>)
+		ADDCLILOC 1060433,<LowerManaCost>
 	ENDIF
-	IF (<HitAreaPhysical>)
-		ADDCLILOC 1060428,<HitAreaPhysical>
+	IF (<LowerReagentCost>)
+		ADDCLILOC 1060434,<LowerReagentCost>
 	ENDIF
-	IF (<HitAreaFire>)
-		ADDCLILOC 1060419,<HitAreaFire>
+	
+	IF (<IncreaseDam>)
+		ADDCLILOC 1060401,<IncreaseDam> // damage increase ~1_val~%
 	ENDIF
-	IF (<HitAreaCold>)
-		ADDCLILOC 1060416,<HitAreaCold>
+	IF (<SERV.CombatFlags> & 08) // COMBAT_ELEMENTAL_ENGINE
+		IF (<DamChaos>)
+			ADDCLILOC 1072846,<DamChaos> // chaos damage ~1_val~%
+		ENDIF
+		IF (<DamDirect>)
+			ADDCLILOC 1079978,<DamDirect> // direct damage: ~1_PERCENT~%
+		ENDIF
+		IF (<DamPhysical>)
+			ADDCLILOC 1060403,<DamPhysical>
+		ENDIF
+		IF (<DamFire>)
+			ADDCLILOC 1060405,<DamFire>
+		ENDIF
+		IF (<DamCold>)
+			ADDCLILOC 1060404,<DamCold>
+		ENDIF
+		IF (<DamPoison>)
+			ADDCLILOC 1060406,<DamPoison>
+		ENDIF
+		IF (<DamEnergy>)
+			ADDCLILOC 1060407,<DamEnergy>
+		ENDIF
 	ENDIF
-	IF (<HitAreaPoison>)
-		ADDCLILOC 1060429,<HitAreaPoison>
+	
+	// EaterDam? Is a custom sphere (and unimplemented) stuff?
+	IF (<SERV.CombatFlags> & 08) // COMBAT_ELEMENTAL_ENGINE
+		IF (<EaterCold>)
+			ADDCLILOC 1113594,<EaterCold> // Cold Eater ~1_Val~%
+		ENDIF
+		IF (<EaterEnergy>)
+			ADDCLILOC 1113596,<EaterEnergy> // Energy Eater ~1_Val~%
+		ENDIF
+		IF (<EaterFire>)
+			ADDCLILOC 1113593,<EaterFire> // Fire Eater ~1_Val~%
+		ENDIF
+		IF (<EaterKinetic>)
+			ADDCLILOC 1113597,<EaterKinetic> // Kinetic Eater ~1_Val~%
+		ENDIF
+		IF (<EaterPoison>)
+			ADDCLILOC 1113595,<EaterPoison> // Poison Eater ~1_Val~%
+		ENDIF
 	ENDIF
-	IF (<HitAreaEnergy>)
-		ADDCLILOC 1060418,<HitAreaEnergy>
+	
+	IF (<SoulCharge>)
+		ADDCLILOC 1113630,<SoulCharge> // Soul Charge ~1_val~%
+	ENDIF
+	IF (<SERV.CombatFlags> & 08) // COMBAT_ELEMENTAL_ENGINE
+		IF (<SoulChargeCold>)
+			ADDCLILOC 1113632,<SoulChargeCold> // Soul Charge : Cold : ~1_val~%
+		ENDIF
+		IF (<SoulChargeEnergy>)
+			ADDCLILOC 1113634,<SoulChargeEnergy> // Soul Charge : Energy : ~1_val~%
+		ENDIF
+		IF (<SoulChargeFire>)
+			ADDCLILOC 1113631,<SoulChargeFire> // Soul Charge : Fire : ~1_val~%
+		ENDIF
+		IF (<SoulChargeKinetic>)
+			ADDCLILOC 1113635,<SoulChargeKinetic> // Soul Charge : Kinetic : ~1_val~%
+		ENDIF
+		IF (<SoulChargePoison>)
+			ADDCLILOC 1113633,<SoulChargePoison> // Soul Charge : Poison : ~1_val~%
+		ENDIF
+	//ENDIF
+	//IF (<SERV.CombatFlags> & 08) // COMBAT_ELEMENTAL_ENGINE
+		IF (<HitAreaPhysical>)
+			ADDCLILOC 1060428,<HitAreaPhysical>
+		ENDIF
+		IF (<HitAreaFire>)
+			ADDCLILOC 1060419,<HitAreaFire>
+		ENDIF
+		IF (<HitAreaCold>)
+			ADDCLILOC 1060416,<HitAreaCold>
+		ENDIF
+		IF (<HitAreaPoison>)
+			ADDCLILOC 1060429,<HitAreaPoison>
+		ENDIF
+		IF (<HitAreaEnergy>)
+			ADDCLILOC 1060418,<HitAreaEnergy>
+		ENDIF
 	ENDIF
 	IF (<HitLowerAtk>)
 		ADDCLILOC 1060424,<HitLowerAtk>
@@ -255,38 +384,56 @@ IF (<ATTR> & attr_identified)
 	IF (<HitLeechStam>)
 		ADDCLILOC 1060430,<HitLeechStam>
 	ENDIF
-	IF (<ISWEAPON>)
-		IF (<HitDispel>)
-			ADDCLILOC 1060417,<HitDispel>
-		ENDIF
-		IF (<HitFireball>)
-			ADDCLILOC 1060420,<HitFireball>
-			IF (<tag0.HitFireballCharges>)
-				ADDCLILOC 1060487,<tag.HitFireballCharges>
-			ENDIF
-		ENDIF
-		IF (<HitHarm>)
-			ADDCLILOC 1060421,<HitHarm>
-			IF (<tag0.HitHarmCharges>)
-				ADDCLILOC 1060489,<tag.HitHarmCharges>
-			ENDIF
-		ENDIF
-		IF (<HitLightning>)
-			ADDCLILOC 1060423,<HitLightning>
-			IF (<tag0.HitLightningCharges>)
-				ADDCLILOC 1060491,<tag.HitLightningCharges>
-			ENDIF
-		ENDIF
-		IF (<HitMagicArrow>)
-			ADDCLILOC 1060426,<HitMagicArrow>
-			IF (<tag0.HitMagicArrowCharges>)
-				ADDCLILOC 1060492,<tag.HitMagicArrowCharges>
-			ENDIF
+	IF (<HitDispel>)
+		ADDCLILOC 1060417,<HitDispel>
+	ENDIF
+	IF (<HitFireball>)
+		ADDCLILOC 1060420,<HitFireball>
+		IF (<tag0.HitFireballCharges>)
+			ADDCLILOC 1060487,<dtag.HitFireballCharges>
 		ENDIF
 	ENDIF
-	IF (<MageArmor>)
-		ADDCLILOC 1060437
+	IF (<HitHarm>)
+		ADDCLILOC 1060421,<HitHarm>
+		IF (<tag0.HitHarmCharges>)
+		ADDCLILOC 1060489,<dtag.HitHarmCharges>
+		ENDIF
 	ENDIF
+	IF (<HitLightning>)
+		ADDCLILOC 1060423,<HitLightning>
+		IF (<tag0.HitLightningCharges>)
+			ADDCLILOC 1060491,<dtag.HitLightningCharges>
+		ENDIF
+	ENDIF
+	IF (<HitMagicArrow>)
+		ADDCLILOC 1060426,<HitMagicArrow>
+		IF (<tag0.HitMagicArrowCharges>)
+			ADDCLILOC 1060492,<dtag.HitMagicArrowCharges>
+		ENDIF
+	ENDIF
+	IF (<HitManaDrain>)
+		ADDCLILOC 1113699,<HitManaDrain> // Hit Mana Drain ~1_val~%
+	ENDIF
+	IF (<HitFatigue>)
+		ADDCLILOC 1113700,<HitFatigue> // // Hit Fatigue ~1_val~%
+	ENDIF
+	IF (<HitSparks>)
+		ADDCLILOC 1157326,<HitSparks> // Sparks ~1_val~%
+	ENDIF
+	IF (<HitSwarm>)
+		ADDCLILOC 1157325,<HitSwarm> // Swarm ~1_val~%
+	ENDIF
+	IF (<HitSpell>)
+		ADDCLILOC 1080129,<SERV.SPELL.<RESOURCEINDEX <HitSpell>>.NAME> // +~1_HIT_SPELL_EFFECT~% Hit Spell Effect.
+		// <HitSpellStr>
+	ENDIF
+	IF (<HitLowerAtk>)
+		ADDCLILOC 1060424,<HitLowerAtk> // hit lower attack ~1_val~%
+	ENDIF
+	IF (<HitLowerDef>)
+		ADDCLILOC 1060425,<HitLowerDef> // hit lower defense ~1_val~%
+	ENDIF
+		
 	IF <SLAYER>
 		IF (<SLAYER>&<def.faction_repond>)
 			ADDCLILOC 1060472
@@ -397,24 +544,48 @@ IF (<ATTR> & attr_identified)
 			ADDCLILOC 1095010
 		ENDIF
 	ENDIF
-ENDIF
+//The following ENDIF matches: IF (<ATTR> & <def.attr_identified>)
+//ENDIF
+
 IF (<SRC.ISPLAYER>) && (<REQSTR>)
-	LOCAL.ActualRequirements=<EVAL <REQSTR> - <LowerReq>>
-	IF (<LOCAL.ActualRequirements> < 0)
-		LOCAL.ActualRequirements=0
+	LOCAL.ActualReq=<EVAL <REQSTR> - <LowerReq>>
+	IF (<LOCAL.ActualReq> < 0)
+		LOCAL.ActualReq=0
 	ENDIF
-	IF (<SRC.STR> > <LOCAL.ActualRequirements>)
-		ADDCLILOC 1061170,<dLOCAL.ActualRequirements>
+	IF (<SRC.STR> > <LOCAL.ActualReq>)
+		ADDCLILOC 1061170,<dLOCAL.ActualReq>
 	ELSE
-		ADDCLILOC 1116690,<DEF.HTML_REDTEXT>,Required Strength: <dLOCAL.ActualRequirements>,<DEF.HTML_WHITETEXT>
+		ADDCLILOC 1116690,<DEF.HTML_REDTEXT>,Required Strength: <dLOCAL.ActualReq>,<DEF.HTML_WHITETEXT>
 	ENDIF
 ENDIF
 IF (<HITPOINTS>)
 	ADDCLILOC 1060639,<MORE1L>,<MORE1H>
+	IF (<BonusDurability>)
+		ADDCLILOC 1060410, <BonusDurability> // durability ~1_val~%
+	ENDIF
 ENDIF
+IF (<SelfRepair>)
+	ADDCLILOC 1060450,<SelfRepair>
+ENDIF
+	
 // When you RETURN 1 in this trigger, the built-in tooltip is prevented.
 // If you remove the RETURN 1, these customizations and the built-in
 // tooltip are merged and the order ends up... confusing.
 RETURN 1
 
 [EOF]
+
+
+[COMMENT tooltips for special properties (gained only using a full item set or such)]
+// Virtuous/Villanious Epiphany set
+PROP: (HEALINGBURSTEVIL,	RDS_SA) 1150830 // Set Ability: evil healing burst
+PROP: (HEALINGBURSTGOOD,	RDS_SA) 1150831 // Set Ability: good healing burst
+PROP: (MANABURSTEVIL,		RDS_SA) 1150242 // Set Ability: evil mana burst
+PROP: (MANABURSTGOOD,		RDS_SA) 1150241 // Set Ability: good mana burst
+PROP: (BURSTFREQUENCY,		RDS_SA) 1150240 // Set Bonus: Frequency ~1_val~
+PROP: (BURSTKARMA,			RDS_SA)	1150243 // Karma Bonus: Burst level ~1_val~
+
+// Mana phasing orb
+MANAPHASE
+
+

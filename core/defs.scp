@@ -15,6 +15,14 @@ deffood		{ i_fruit_grapes 1 i_ham 1 i_cheese_cut 1 i_muffin 1 i_fish_cut_cooked 
 //These ones can have multiple words seperated by a ','
 guardcall	GUARD,GUARDS
 
+[DEFNAME trigger_argtype] // to be used with the TRIGGER keyword
+TAT_AS_ARGN   1      // Treat the arguments as ARGN1/2/3
+TAT_AS_ARGS   2      // Treat the arguments as ARGS (with ARGV[x] enabled)
+TAT_AS_ARGO   3      // Treat the arguments as ARGO
+
+[DEFNAME misc_clilocs]
+empty_cliloc      1042971
+empty_cliloc2     1070722
 
 [DEFNAME brains]
 brain_none             0
@@ -406,7 +414,8 @@ prof_samurai         6
 prof_ninja           7
 
 [DEFNAME resdisp_version]
-// RESDISP is a property of the user ACCOUNT
+// RESDISP is a property of the user ACCOUNT, but these values are used also for EXPANSION
+// and the ini settings: EraLimitGear, EraLimitLoot, EraLimitProps.
 RDS_PRET2A      0
 RDS_T2A         1
 RDS_LBR         2
@@ -461,15 +470,6 @@ SKILLTITLE_GRANDMASTER	1000
 SKILLTITLE_ELDER		1100	// This works with the normal skills and Bushido/Ninjitsu too.
 SKILLTITLE_LEGENDARY	1200	// Same here
 
-[DEFNAME trigger_argtype]
-TAT_AS_ARGN   1      // Treat the arguments as ARGN1/2/3
-TAT_AS_ARGS   2      // Treat the arguments as ARGS (with ARGV[x] enabled)
-TAT_AS_ARGO   3      // Treat the arguments as ARGO
-
-[DEFNAME misc_own]
-empty_cliloc      1042971
-empty_cliloc2     1070722
-
 [DEFNAME los_flags]
 los_nb_local_terrain   00001   // Terrain inside a region I am standing in does not block LOS
 los_nb_local_static    00002   // Static items inside a region I am standing in do not block LOS
@@ -484,7 +484,6 @@ los_no_other_region    00200   // Do not allow LOS path checking to go out of yo
 los_nc_multi           00400   // Do not allow LOS path checking to go through (no cross) a multi region (except the one you are standing in)
 los_fishing            00800   // Do not allow LOS path checking to go through objects or terrain which do not represent water
 los_nc_water           01000   // Do not allow LOS path checking to go through water.
-
 
 [DEFNAME ref_types]
 tref_serv          000001
@@ -540,18 +539,6 @@ war_swing_equipping		0	// we are recoiling our weapon.
 war_swing_ready			1	// we can swing at any time.
 war_swing_swinging		2	// we are swinging our weapon.
 
-[DEFNAME expansions]
-expansion_t2a			0
-expansion_renaissance	1
-expansion_thirddawn		2
-expansion_lbr			3
-expansion_aos			4
-expansion_se			5
-expansion_ml			6
-expansion_sa			7
-expansion_hs			8
-expansion_tol			9
-
 [DEFNAME theme_packs]
 theme_gothic		1
 theme_rustic		2
@@ -570,9 +557,9 @@ mapwaypoint_greendot			14
 mapwaypoint_greendot_flashing	15
 
 [DEFNAME house_types]
-house_private=0
-house_public=1
-house_guild=2
+house_private	0
+house_public	1
+house_guild		2
 
 [DEFNAME house_transfer_types]
 transfer_nothing	= 0		// Do not transfer any item to the Moving Crate, the crate will still be moved if uid is given.
