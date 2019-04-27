@@ -5,7 +5,7 @@
 VERSION=X1
 
 [FUNCTION addnpc]
-ARGS=<QVAL (<isnum <ARGS>>)? <ARGS>|08c000000 : <RESDEF.<ARGS>>>
+ARGS=<QVAL (<isnum <ARGS>>)? <RESDEF.<serv.chardef.<ARGS>.defname>> : <RESDEF.<ARGS>>>
 IF (<SERV.CHARDEF.<dARGS>>)
  ADD <ARGS>
  return 1
