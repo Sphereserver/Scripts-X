@@ -884,7 +884,7 @@ DAM=20,32
 ARMOR=20
 MAXFOOD=15
 FOLLOWERSLOTS=1
-FACTION=faction_faction_WOLF
+FACTION=faction_wolf
 HEIGHT=10
 TAG.Barding.DIFF=50.3
 
@@ -2498,7 +2498,7 @@ DAM=22,25
 ARMOR=50
 MAXFOOD=35
 TAG.Barding.DIFF=103.7
-FACTION=faction_ogre,REPOND
+FACTION=faction_ogre
 
 DESIRES=r_forests,t_coin,t_gold,t_gem,t_potion
 AVERSIONS=t_trap,r_civilization
@@ -2587,7 +2587,7 @@ DAM=11,53
 ARMOR=35
 DAMPOISON=50
 MAXFOOD=35
-FACTION=faction_snake,REPTILE
+FACTION=faction_snake
 TAG.Barding.DIFF=80.1
 
 DESIRES=r_jungle,t_coin,t_gold,t_gem
