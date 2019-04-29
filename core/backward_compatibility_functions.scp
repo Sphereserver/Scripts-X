@@ -5,8 +5,8 @@
 VERSION=X1
 
 [FUNCTION addnpc]
-ARGS=<QVAL (<isnum <ARGS>>)? <RESDEF.<serv.chardef.<ARGS>.defname>> : <RESDEF.<ARGS>>>
-IF (<SERV.CHARDEF.<dARGS>>)
+ARGS=<QVAL <isnum <ARGS>> ? <RESDEF.<SERV.CHARDEF.<RESOURCEINDEX <ARGS>>.defname>> : <RESDEF.<ARGS>>>
+IF (!<ISEMPTY <ARGS>> && <SERV.CHARDEF.<dARGS>>)
  ADD <ARGS>
  return 1
 ENDIF
@@ -32,8 +32,8 @@ INVUL <ARGS>
 INVIS <ARGS>
 
 [FUNCTION static] //by Thomas20198701
-ARGS=<DEF0.<ARGS>>
-IF (<SERV.ITEMDEF.<dARGS>>)
+ARGS=<QVAL <isnum <ARGS>> ? <RESDEF.<SERV.ITEMDEF.<RESOURCEINDEX <ARGS>>.defname>> : <RESDEF.<ARGS>>>
+IF (!<ISEMPTY <ARGS>> && <SERV.ITEMDEF.<dARGS>>)
  TARGETFG static_ <ARGS>
  SYSMESSAGE <DEFMSG.where_to_place> <SERV.ITEMDEF.<ARGS>.NAME>?
  return 1
@@ -103,8 +103,8 @@ return 1
 //             - can be a uid or map location
 //
 // Determine spell and skill used to cast
-LOCAL.SPELL = <EVAL <ARGV[0]> &~ 0ff000000>
-LOCAL.SKILL = <EVAL (<STREAT <SERV.SPELL.<LOCAL.SPELL>.SKILLREQ>>) &~ 0ff000000>
+LOCAL.SPELL = <RESOURCEINDEX <ARGV[0]>>
+LOCAL.SKILL = <RESOURCEINDEX <STREAT <SERV.SPELL.<LOCAL.SPELL>.SKILLREQ>>>
 IF !(<LOCAL.SKILL>)
  LOCAL.SKILL = 25
 ENDIF

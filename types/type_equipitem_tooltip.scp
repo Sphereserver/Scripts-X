@@ -31,11 +31,15 @@ ENDIF
 IF (<Rarity>)
 	ADDCLILOC 1061078,<Rarity> //"Artifact rarity: ~"
 ENDIF
-IF (<canuse>&<def.can_u_gargoyle>) && !((<canuse>&<def.can_u_human>) || (<canuse>&<def.can_u_elf>))
+IF ((<canuse>&<def.can_u_gargoyle>) && !(<canuse>&(<def.can_u_human>|<def.can_u_elf>)))
 	ADDCLILOC 1111709 //"Gargoyles Only"
-ENDIF
-IF (<canuse>&<def.can_u_elf>) && !((<canuse>&<def.can_u_human>) || (<canuse>&<def.can_u_gargoyle>))
+ELIF ((<canuse>&<def.can_u_elf>) && !(<canuse>&<def.can_u_human>|<def.can_u_gargoyle>))
 	ADDCLILOC 1075086 // "Elves only"
+// Not used by OSI?
+//ELIF ((<canuse>&<def.can_u_human>) && (<canuse>&<def.can_u_gargoyle>) && !(<canuse>&<def.can_u_elf>))
+//	ADDCLILOC 1154651 // Exclude Elves Only
+//ELIF ((<canuse>&<def.can_u_human>) && (<canuse>&<def.can_u_elf>) && !(<canuse>&<def.can_u_gargoyle>))
+//	ADDCLILOC 1154649 // Exclude Gargoyles Only
 ENDIF
 IF (<ATTR>&<def.attr_stolen>)
 	ADDCLILOC 1072948//"Stolen Property"
@@ -119,7 +123,8 @@ IF (<MageArmor>)
 ENDIF
 // endif
 
-ADDCLILOC 1072225,<FVAL <WEIGHT>>
+// Send weight cliloc only if FeatureML & FEATURE_ML_UPDATE ?
+ADDCLILOC <QVAL (<WEIGHT> == 10) ? 1072788 : 1072225>,<FVAL <WEIGHT>> // Weight: ~1_WEIGHT~ stone / Weight: ~1_WEIGHT~ stones
 IF (<WEIGHTREDUCTION>)
 	ADDCLILOC 1072210,<WEIGHTREDUCTION> // Weight reduction: ~1_PERCENTAGE~%
 ENDIF
@@ -155,10 +160,15 @@ IF (<SERV.CombatFlags> & 08) // COMBAT_ELEMENTAL_ENGINE
 	ENDIF
 	IF (<RESPOISON>)
 		ADDCLILOC 1060449,<RESPOISON>
-	ENDIF
-	IF (<DEFNAME>==<resdef.i_belt_ninja_leather>)
-		ADDCLILOC 1060584,<dTAG0.ShurikenCount>
-	ENDIF
+	ENDIF	
+ELSE
+	// Obsolete AR was replaced by physical/fire/cold/poison/energy resist since AOS
+    // and doesn't even have proper tooltips. It's just there for backward compatibility
+	ADDCLILOC 1060658,<DEFMSG.tooltip_tag_armor>,<AR>
+ENDIF
+
+IF (<DEFNAME>==<resdef.i_belt_ninja_leather>)
+	ADDCLILOC 1060584,<dTAG0.ShurikenCount>
 ENDIF
 
 // Uncomment this IF (and its matching ENDIF) to restore pre-AoS behavior.
