@@ -1,0 +1,17 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[COMMENT]
+These types are meant to be used as TEVENTS (or even EVENTS) for ITEMS. Since these add additional behavior (or are just
+used for classification purpose), they doesn't fit for a base TYPE.
+
+
+[TYPEDEF ei_artifact]
+
+[TYPEDEF ei_material_nonbase] // "colored" weapons/armors
+
+
+[EOF]

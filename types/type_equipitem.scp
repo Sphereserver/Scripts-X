@@ -6,7 +6,7 @@ VERSION=X1
 
 [COMMENT sphere_item_typedef_equipitem]
 
-The t_equipitem TYPEDEF is typically applied on every equipable item.  For
+The ei_equipitem TYPEDEF is typically applied on every equipable item.  For
 example:
 
   t_clothing
@@ -19,7 +19,7 @@ example:
   t_spellbook
   t_fishing_pole
 
-When an item with t_equipitem is equipped by a player or NPC, the TAGs on
+When an item with ei_equipitem is equipped by a player or NPC, the TAGs on
 the item are usually added to the person wearing it.  That way multiple items
 with the same TAG can be equipped at the same time, stacking the effect.
 
@@ -55,28 +55,28 @@ Rarity
             an artifact, and tell you how many of these items exist within
             the world.
  - Values:  One or zero.
- - Effect:  This TAG is implemented inside the t_equipitem TYPEDEF and
+ - Effect:  This TAG is implemented inside the ei_equipitem TYPEDEF and
             does not rely on other TYPEDEFs or EVENTs.
 
 TAG.Stolen
  - Purpose: When the value is 1, the item tooltip will indicate the item is
             stolen.
  - Values:  One or zero.
- - Effect:  This TAG is implemented inside the t_equipitem TYPEDEF and
+ - Effect:  This TAG is implemented inside the ei_equipitem TYPEDEF and
             does not rely on other TYPEDEFs or EVENTs.
 
 Exceptional
  - Purpose: When the value is 1, the item tooltip will indicate the item is
             exceptional.
  - Values:  One or zero.
- - Effect:  This TAG is implemented inside the t_equipitem TYPEDEF and
+ - Effect:  This TAG is implemented inside the ei_equipitem TYPEDEF and
             does not rely on other TYPEDEFs or EVENTs.
 
 CraftedBy
  - Purpose: The value of the tag will show up on the tooltip like this:
             "crafted by <CraftedBy>"
  - Values:  Usually the name of a person
- - Effect:  This TAG is implemented inside the t_equipitem TYPEDEF and
+ - Effect:  This TAG is implemented inside the ei_equipitem TYPEDEF and
             does not rely on other TYPEDEFs or EVENTs.
 
 CanUse
@@ -88,7 +88,7 @@ CanUse
 			can_u_female
 			can_u_all
 			can_u_none
- - Effect:  This TAG is implemented inside the t_equipitem TYPEDEF and
+ - Effect:  This TAG is implemented inside the ei_equipitem TYPEDEF and
             does not rely on other TYPEDEFs or EVENTs.
 
 SpellChanneling
@@ -101,7 +101,7 @@ SpellChanneling
 NightSight
  - Purpose: When the value is 1, the item grants permanent nightsight.
  - Values:  One or zero.
- - Effect:  This TAG is implemented inside the t_equipitem TYPEDEF and
+ - Effect:  This TAG is implemented inside the ei_equipitem TYPEDEF and
             does not rely on other TYPEDEFs or EVENTs.
 
 IncreaseDefChance
@@ -131,12 +131,12 @@ RESPOISON
  - Values:  Positive or negative integer.
  - Effect:  This effect only works when the sphere.ini COMBAT_USE_RESISTANCE
             flag is enabled.  These TAGs are implemented inside the
-            t_equipitem TYPEDEF and does not rely on other TYPEDEFs or EVENTs.
+            ei_equipitem TYPEDEF and does not rely on other TYPEDEFs or EVENTs.
 
 RESPHYSICAL
  - Purpose: A more flexible alternative to ARMOR= on equipable items.
  - Values:  Positive or negative integer
- - Effect:  This TAG is implemented inside the t_equipitem TYPEDEF and
+ - Effect:  This TAG is implemented inside the ei_equipitem TYPEDEF and
             does not rely on other TYPEDEFs or EVENTs.
 
 LowerManaCost
@@ -180,7 +180,7 @@ ReflectPhysicalDam
 LUCK
  - Purpose: Increases (or decreases) the LUCK of the wearer.
  - Values:  Positive or negative integer.
- - Effect:  This TAG is implemented inside the t_equipitem TYPEDEF and
+ - Effect:  This TAG is implemented inside the ei_equipitem TYPEDEF and
             does not rely on other TYPEDEFs or EVENTs.
 
 BonusStr
@@ -191,7 +191,7 @@ BonusStam
 BonusMana
  - Purpose: Increases (or decreases) the applicable Stat.
  - Values:  Positive or negative integer.
- - Effect:  This TAG is implemented inside the t_equipitem TYPEDEF and
+ - Effect:  This TAG is implemented inside the ei_equipitem TYPEDEF and
             does not rely on other TYPEDEFs or EVENTs.
 
 RegenHits
@@ -200,7 +200,7 @@ RegenMana
  - Purpose: Speeds up or slows down the rate of regeneration
             of the applicable stat.
  - Values:  SMALL positive or negative integer.
- - Effect:  This TAG is implemented inside the t_equipitem TYPEDEF and
+ - Effect:  This TAG is implemented inside the ei_equipitem TYPEDEF and
             does not rely on other TYPEDEFs or EVENTs.
 
 FasterCastRecovery
@@ -208,7 +208,7 @@ FasterCastRecovery
             this number is less than one, the wearer will not recover
             ANY mana!
  - Values:  SMALL positive or negative integer.
- - Effect:  This TAG is implemented inside the t_equipitem TYPEDEF and
+ - Effect:  This TAG is implemented inside the ei_equipitem TYPEDEF and
             does not rely on other TYPEDEFs or EVENTs.
 
 FasterCasting
@@ -220,7 +220,7 @@ SelfRepair
  - Purpose: Instead of taking damage, items with this propery might
             become less damaged instead.
  - Values:  Positive or negative integer.
- - Effect:  This TAG is implemented inside the t_equipitem TYPEDEF and
+ - Effect:  This TAG is implemented inside the ei_equipitem TYPEDEF and
             does not rely on other TYPEDEFs or EVENTs.
 
 BonusSkill1
@@ -231,7 +231,7 @@ BonusSkill5
  - Purpose: An item can enhance up to 5 skills when it is worn.
  - Values:  The value must be: the KEY from a skill, a comma, followed
             by the amount (including one decimal place!)
- - Effect:  This TAG is implemented inside the t_equipitem TYPEDEF and
+ - Effect:  This TAG is implemented inside the ei_equipitem TYPEDEF and
             does not rely on other TYPEDEFs or EVENTs.
 
 TAG.MaxLevel
@@ -239,7 +239,7 @@ TAG.MinLevel
  - Purpose: Prevent the item from being equipped when the player does not
             meet the level requirement.
  - Values:  Positive Integer.
- - Effect:  This TAG is implemented inside the t_equipitem TYPEDEF and
+ - Effect:  This TAG is implemented inside the ei_equipitem TYPEDEF and
             does not rely on other TYPEDEFs or EVENTs.
 
 The following tags are weapons only (NONE OF THEM ARE IMPLEMENTED YET):
@@ -295,7 +295,7 @@ MageArmor             - Values:  One or zero.
 
 
 
-[TYPEDEF t_equipitem]
+[TYPEDEF ei_equipitem]
 ON=@EquipTest
 IF (<CanUse>&<def.can_u_none>)
 	RETURN 1

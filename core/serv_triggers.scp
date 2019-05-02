@@ -116,6 +116,7 @@ f_onserver_timer
 // This function is called on server startup.
 
 //SERV.ServIP=xxx.xxx.xxx.xxx	//Add your public IP here (not domain) if you are behind a router
+//f_dtl_db_loadtomdb 			// Load into MDB (in-memory database) the database file used for the loot dynamic templates
 
 
 [FUNCTION f_onserver_exit]

@@ -4,12 +4,12 @@
 //****************************************************************************
 VERSION=X1
 
-[TYPEDEF t_notooltip]
+[TYPEDEF ei_notooltip]
 // Add this type as an event to an item if you want it to not show any tooltip.
 ON=@ClientToolTip
 RETURN 1
 
-[TYPEDEF t_equipitem_tooltip]
+[TYPEDEF ei_equipitem_tooltip]
 // Add this type to EventsItem sphere.ini setting if you want to override the default tooltip generation.
 ON=@ClientToolTip
 //IF ((<DISPID>!=<BASEID>) || (<DISPIDDEC>>16381))
@@ -33,7 +33,7 @@ IF (<Rarity>)
 ENDIF
 IF ((<canuse>&<def.can_u_gargoyle>) && !(<canuse>&(<def.can_u_human>|<def.can_u_elf>)))
 	ADDCLILOC 1111709 //"Gargoyles Only"
-ELIF ((<canuse>&<def.can_u_elf>) && !(<canuse>&<def.can_u_human>|<def.can_u_gargoyle>))
+ELIF ((<canuse>&<def.can_u_elf>) && !(<canuse>&(<def.can_u_human>|<def.can_u_gargoyle>)))
 	ADDCLILOC 1075086 // "Elves only"
 // Not used by OSI?
 //ELIF ((<canuse>&<def.can_u_human>) && (<canuse>&<def.can_u_gargoyle>) && !(<canuse>&<def.can_u_elf>))
@@ -221,8 +221,8 @@ ENDIF
 	IF (<BonusStr>)//strength bonus
 		ADDCLILOC 1060485,<BonusStr>
 	ENDIF
-	IF (<BonusHits>)//hitpoint increase
-		ADDCLILOC 1060431,<BonusHits>
+	IF (<BonusHitsMax>)//hitpoint increase
+		ADDCLILOC 1060431,<BonusHitsMax>
 	ENDIF
 	IF (<RegenHits>)
 		ADDCLILOC 1060444,<RegenHits>
@@ -230,8 +230,8 @@ ENDIF
 	IF (<BonusDex>)//dexterity bonus
 		ADDCLILOC 1060409,<BonusDex>
 	ENDIF
-	IF (<BonusStam>)//stamina increase
-		ADDCLILOC 1060484,<BonusStam>
+	IF (<BonusStamMax>)//stamina increase
+		ADDCLILOC 1060484,<BonusStamMax>
 	ENDIF
 	IF (<RegenStam>)
 		ADDCLILOC 1060443,<RegenStam>
@@ -239,8 +239,8 @@ ENDIF
 	IF (<BonusINT>)//intelligence bonus
 		ADDCLILOC 1060432,<BonusINT>
 	ENDIF
-	IF (<BonusMana>)//mana increase
-		ADDCLILOC 1060439,<BonusMana>
+	IF (<BonusManaMax>)//mana increase
+		ADDCLILOC 1060439,<BonusManaMax>
 	ENDIF
 	IF (<RegenMana>)
 		ADDCLILOC 1060440,<RegenMana>

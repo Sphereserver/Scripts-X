@@ -28,7 +28,7 @@ core/backward_compatibility_functions.scp
 //core/backward_compatibility_56c.scp
 //core/backward_compatibility_56c_multis.scp
 //core/backward_compatibility_56d.scp
-//core/combat_override.scp
+//core/combat_override.scp // incomplete and outdated
 core/defs.scp
 core/defs_component_props.scp
 core/defs_buffs_debuffs.scp
