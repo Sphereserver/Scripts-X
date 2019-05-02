@@ -27,8 +27,9 @@ sex_female	1
 
 // Flags for further categorization, useful for "filtering" out items(or to take only items with certain flags)
 //DTL_flag_yourflag				01
-DTL_flag_artifact			010000000
-DTL_flag_material_nonbase	020000000
+DTL_flag_material_nonbase	010000000
+DTL_flag_magic_preaos		020000000
+DTL_flag_artifact			040000000
 
 
 [function f_DTL_db_loadtomdb]
@@ -59,10 +60,10 @@ if <isempty <argv3>>
 	argv3 = <EraLimitGear>
 endif
 // In the future we may even use a prepared statement
-// Explanation of the query: pick all the defnames that are of the given class, race, sex, with an expansion <= the given one and exclude artifacts and "colored" craftables (made of a non-base material, like iron)
-mdb.query SELECT defname FROM '<def.DTL_DB_Table>' WHERE class=<argv0> AND race=<argv1> AND sex=<argv2> AND expansion<=<argv3> AND NOT flags&<eval <def.DTL_flag_artifact>|<def.DTL_flag_material_nonbase>>
+// Explanation of the query: pick all the defnames that are of the given class, race, sex, with an expansion <= the given one and exclude pre-aos magic items, artifacts and "colored" craftables (made of a non-base material, like iron)
+mdb.query SELECT defname FROM '<def.DTL_DB_Table>' WHERE class=<argv0> AND race=<argv1> AND sex=<argv2> AND expansion<=<argv3> AND NOT flags&<eval <def.DTL_flag_material_nonbase>|<def.DTL_magic_preaos>|<def.DTL_flag_artifact>>
 if !<mdb.row.numrows>
-	serv.log DynamicTemplate: Can't find DB entry with class=<argv1> AND race=<argv1> AND sex=<argv2> AND expansion<=<argv3> AND NOT flags&<eval <def.DTL_flag_artifact>|<def.DTL_flag_material_nonbase>>
+	serv.log DynamicTemplate: Can't find DB entry with class=<argv1> AND race=<argv1> AND sex=<argv2> AND expansion<=<argv3> AND NOT flags&<eval <def.DTL_flag_material_nonbase>|<def.DTL_magic_preaos>|<def.DTL_flag_artifact>>
 	return //<def.defaultitem>
 endif
 return <mdb.row.<R0,<mdb.row.numrows>>.defname>
@@ -187,11 +188,14 @@ for 0 <eval <serv.deflist.itemdef.count>-1>
 	local.e=<<local._d>.expansion>
 	
 	// Get the Flags
-	if <<local._d>.istevent.<resdef.ei_artifact>>
-		local.f |= <def.DTL_flag_artifact>
-	endif
 	if <<local._d>.istevent.<resdef.ei_material_nonbase>>
 		local.f |= <def.DTL_flag_material_nonbase>
+	endif
+	if <<local._d>.istevent.<resdef.ei_magic_preaos>>
+		local.f |= <def.DTL_flag_magic_preaos>
+	endif
+	if <<local._d>.istevent.<resdef.ei_artifact>>
+		local.f |= <def.DTL_flag_artifact>
 	endif
 	
 	local.defname=<<local._d>.defname>
