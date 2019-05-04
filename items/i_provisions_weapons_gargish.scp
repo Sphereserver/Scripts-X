@@ -25,6 +25,7 @@ canuse=can_u_gargoyle
 ReqStr=35
 TEVENTS=ei_equipitem
 DUPELIST=04068
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
    UsesMax=150
@@ -50,6 +51,7 @@ canuse=can_u_gargoyle
 ReqStr=10
 TEVENTS=ei_equipitem
 DUPELIST=04072
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -77,6 +79,7 @@ canuse=can_u_gargoyle
 ReqStr=25
 TEVENTS=ei_equipitem
 DUPELIST=04067
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -101,6 +104,7 @@ canuse=can_u_gargoyle
 ReqStr=40
 TEVENTS=ei_equipitem
 DUPELIST=04071
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -128,6 +132,7 @@ canuse=can_u_gargoyle
 ReqStr=40
 TEVENTS=ei_equipitem
 DUPELIST=0406c
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -152,6 +157,7 @@ canuse=can_u_gargoyle
 ReqStr=10
 TEVENTS=ei_equipitem
 DUPELIST=0406a
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -176,6 +182,7 @@ canuse=can_u_gargoyle
 ReqStr=45
 TEVENTS=ei_equipitem
 DUPELIST=0406e
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -200,6 +207,7 @@ CanUse=can_u_gargoyle
 ReqStr=40
 TEVENTS=ei_equipitem
 DUPELIST=0406d
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -224,6 +232,7 @@ canuse=can_u_gargoyle
 ReqStr=20
 TEVENTS=ei_equipitem
 DUPELIST=04070
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -247,6 +256,7 @@ canuse=can_u_gargoyle
 ReqStr=35
 TEVENTS=ei_equipitem
 DUPELIST=0406f
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -271,6 +281,7 @@ canuse=can_u_gargoyle
 ReqStr=10
 TEVENTS=ei_equipitem
 DUPELIST=04076
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -295,6 +306,7 @@ canuse=can_u_gargoyle
 ReqStr=40
 TEVENTS=ei_equipitem
 DUPELIST=04075
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -328,6 +340,7 @@ canuse=can_u_gargoyle
 ReqStr=60
 TEVENTS=ei_equipitem
 DUPELIST=0406b
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -352,6 +365,7 @@ CanUse=can_u_gargoyle
 ReqStr=35
 TEVENTS=ei_equipitem
 DUPELIST=04074
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -376,8 +390,10 @@ CanUse=can_u_gargoyle
 ReqStr=20
 TEVENTS=ei_equipitem
 DUPELIST=04073
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
+   
 [ITEMDEF 048ae]
 DEFNAME=i_gargish_cleaver
 NAME=Gargish cleaver
@@ -399,6 +415,7 @@ ReqStr=10
 CanUse=can_u_gargoyle
 TEVENTS=ei_equipitem
 DUPELIST=048af
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -427,6 +444,7 @@ ReqStr=35
 CanUse=can_u_gargoyle
 TEVENTS=ei_equipitem
 DUPELIST=048b1
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
    UsesMax=150
@@ -456,6 +474,7 @@ ReqStr=35
 CanUse=can_u_gargoyle
 TEVENTS=ei_equipitem
 DUPELIST=048b3
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
    UsesMax=150
@@ -485,6 +504,7 @@ ReqStr=45
 CanUse=can_u_gargoyle
 TEVENTS=ei_equipitem
 DUPELIST=048b5
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
    UsesMax=150
@@ -514,6 +534,7 @@ ReqStr=5
 CanUse=can_u_gargoyle
 TEVENTS=ei_equipitem
 DUPELIST=048b7
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -542,6 +563,7 @@ ReqStr=20
 CanUse=can_u_gargoyle
 TEVENTS=ei_equipitem
 DUPELIST=048b9
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -570,6 +592,7 @@ CanUse=can_u_gargoyle
 ReqStr=25
 TEVENTS=ei_equipitem
 DUPELIST=048bb
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -598,6 +621,7 @@ ReqStr=10
 CanUse=can_u_gargoyle
 TEVENTS=ei_equipitem
 DUPELIST=048bd
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -626,6 +650,7 @@ ReqStr=40
 CanUse=can_u_gargoyle
 TEVENTS=ei_equipitem
 DUPELIST=048bf
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -654,6 +679,7 @@ ReqStr=95
 CanUse=can_u_gargoyle
 TEVENTS=ei_equipitem
 DUPELIST=048c1
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -682,6 +708,7 @@ ReqStr=45
 CanUse=can_u_gargoyle
 TEVENTS=ei_equipitem
 DUPELIST=048c3
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -711,6 +738,7 @@ ReqStr=45
 CanUse=can_u_gargoyle
 TEVENTS=ei_equipitem
 DUPELIST=048c5
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
    UsesMax=150
@@ -740,6 +768,7 @@ ReqStr=25
 CanUse=can_u_gargoyle
 TEVENTS=ei_equipitem
 DUPELIST=048c7
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -768,6 +797,7 @@ ReqStr=50
 CanUse=can_u_gargoyle
 TEVENTS=ei_equipitem
 DUPELIST=048c9
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -797,6 +827,7 @@ ReqStr=95
 CanUse=can_u_gargoyle
 TEVENTS=ei_equipitem
 DUPELIST=048cb
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -826,6 +857,7 @@ ReqStr=10
 CanUse=can_u_gargoyle
 TEVENTS=ei_equipitem
 DUPELIST=048cd
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -854,6 +886,7 @@ ReqStr=10
 CanUse=can_u_gargoyle
 TEVENTS=ei_equipitem
 DUPELIST=048cf
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
@@ -882,6 +915,7 @@ ReqStr=40
 CanUse=can_u_gargoyle
 TEVENTS=ei_equipitem
 DUPELIST=048d1
+Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
 
