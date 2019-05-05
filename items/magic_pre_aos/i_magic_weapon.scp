@@ -29,7 +29,7 @@ NAME=Scimitar of Ruin
 RESOURCES=10 i_ingot_iron, i_scimitar
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Scimitars
@@ -47,7 +47,7 @@ NAME=Scimitar of Might
 RESOURCES=10 i_ingot_iron, i_scimitar
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Scimitars
@@ -65,7 +65,7 @@ NAME=Scimitar of Force
 RESOURCES=10 i_ingot_iron, i_scimitar
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Scimitars
@@ -83,7 +83,7 @@ NAME=Scimitar of Power
 RESOURCES=10 i_ingot_iron, i_scimitar
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Scimitars
@@ -101,7 +101,7 @@ NAME=Scimitar of Vanquishing
 RESOURCES=10 i_ingot_iron, i_scimitar
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Scimitars
@@ -119,7 +119,7 @@ NAME=Halberd of Ruin
 RESOURCES=20 i_ingot_iron, i_halberd
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Halberds
@@ -137,7 +137,7 @@ NAME=Halberd of Might
 RESOURCES=20 i_ingot_iron, i_halberd
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Halberds
@@ -155,7 +155,7 @@ NAME=Halberd of Force
 RESOURCES=20 i_ingot_iron, i_halberd
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Halberds
@@ -173,7 +173,7 @@ NAME=Halberd of Power
 RESOURCES=20 i_ingot_iron, i_halberd
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Halberds
@@ -191,7 +191,7 @@ NAME=Halberd of Vanquishing
 RESOURCES=20 i_ingot_iron, i_halberd
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Halberds
@@ -209,7 +209,7 @@ NAME=Bardiche of Ruin
 RESOURCES=18 i_ingot_iron, i_bardiche
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Bardiches
@@ -227,7 +227,7 @@ NAME=Bardiche of Might
 RESOURCES=18 i_ingot_iron, i_bardiche
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Bardiches
@@ -245,7 +245,7 @@ NAME=Bardiche of Force
 RESOURCES=18 i_ingot_iron, i_bardiche
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Bardiches
@@ -263,7 +263,7 @@ NAME=Bardiche of Power
 RESOURCES=18 i_ingot_iron, i_bardiche
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Bardiches
@@ -281,7 +281,7 @@ NAME=Bardiche of Vanquishing
 RESOURCES=18 i_ingot_iron, i_bardiche
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Bardiches
@@ -299,7 +299,7 @@ NAME=Cutlass of Ruin
 RESOURCES=8 i_ingot_iron, i_cutlass
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Cutlasses
@@ -317,7 +317,7 @@ NAME=Cutlass of Might
 RESOURCES=8 i_ingot_iron, i_cutlass
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Cutlasses
@@ -335,7 +335,7 @@ NAME=Cutlass of Force
 RESOURCES=8 i_ingot_iron, i_cutlass
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Cutlasses
@@ -353,7 +353,7 @@ NAME=Cutlass of Power
 RESOURCES=8 i_ingot_iron, i_cutlass
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Cutlasses
@@ -371,7 +371,7 @@ NAME=Cutlass of Vanquishing
 RESOURCES=8 i_ingot_iron, i_cutlass
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Cutlasses
@@ -389,7 +389,7 @@ NAME=Viking Sword of Ruin
 RESOURCES=14 i_ingot_iron, i_sword_viking
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Viking Swords
@@ -407,7 +407,7 @@ NAME=Viking Sword of Might
 RESOURCES=14 i_ingot_iron, i_sword_viking
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Viking Swords
@@ -425,7 +425,7 @@ NAME=Viking Sword of Force
 RESOURCES=14 i_ingot_iron, i_sword_viking
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Viking Swords
@@ -443,7 +443,7 @@ NAME=Viking Sword of Power
 RESOURCES=14 i_ingot_iron, i_sword_viking
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Viking Swords
@@ -461,7 +461,7 @@ NAME=Viking Sword of Vanquishing
 RESOURCES=14 i_ingot_iron, i_sword_viking
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Viking Swords
@@ -479,7 +479,7 @@ NAME=Katana of Ruin
 RESOURCES=8 i_ingot_iron, i_katana
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Katanas
@@ -497,7 +497,7 @@ NAME=Katana of Might
 RESOURCES=8 i_ingot_iron, i_katana
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Katanas
@@ -515,7 +515,7 @@ NAME=Katana of Force
 RESOURCES=8 i_ingot_iron, i_katana
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Katanas
@@ -533,7 +533,7 @@ NAME=Katana of Power
 RESOURCES=8 i_ingot_iron, i_katana
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Katanas
@@ -551,7 +551,7 @@ NAME=Katana of Vanquishing
 RESOURCES=8 i_ingot_iron, i_katana
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Katanas
@@ -569,7 +569,7 @@ NAME=Pitchfork of Ruin
 RESOURCES=5 i_ingot_iron, i_pitchfork
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Pitchforks
@@ -587,7 +587,7 @@ NAME=Pitchfork of Might
 RESOURCES=5 i_ingot_iron, i_pitchfork
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Pitchforks
@@ -605,7 +605,7 @@ NAME=Pitchfork of Force
 RESOURCES=5 i_ingot_iron, i_pitchfork
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Pitchforks
@@ -623,7 +623,7 @@ NAME=Pitchfork of Power
 RESOURCES=5 i_ingot_iron, i_pitchfork
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Pitchforks
@@ -641,7 +641,7 @@ NAME=Pitchfork of Vanquishing
 RESOURCES=5 i_ingot_iron, i_pitchfork
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Pitchforks
@@ -659,7 +659,7 @@ NAME=Broadsword of Ruin
 RESOURCES=10 i_ingot_iron, i_sword_broad
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Broadswords
@@ -677,7 +677,7 @@ NAME=Broadsword of Might
 RESOURCES=10 i_ingot_iron, i_sword_broad
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Broadswords
@@ -695,7 +695,7 @@ NAME=Broadsword of Force
 RESOURCES=10 i_ingot_iron, i_sword_broad
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Broadswords
@@ -713,7 +713,7 @@ NAME=Broadsword of Power
 RESOURCES=10 i_ingot_iron, i_sword_broad
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Broadswords
@@ -731,7 +731,7 @@ NAME=Broadsword of Vanquishing
 RESOURCES=10 i_ingot_iron, i_sword_broad
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Broadswords
@@ -749,7 +749,7 @@ NAME=Kryss of Ruin
 RESOURCES=8 i_ingot_iron, i_kryss
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Krysses
@@ -767,7 +767,7 @@ NAME=Kryss of Might
 RESOURCES=8 i_ingot_iron, i_kryss
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Krysses
@@ -785,7 +785,7 @@ NAME=Kryss of Force
 RESOURCES=8 i_ingot_iron, i_kryss
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Krysses
@@ -803,7 +803,7 @@ NAME=Kryss of Power
 RESOURCES=8 i_ingot_iron, i_kryss
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Krysses
@@ -821,7 +821,7 @@ NAME=Kryss of Vanquishing
 RESOURCES=8 i_ingot_iron, i_kryss
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Krysses
@@ -839,7 +839,7 @@ NAME=Longsword of Ruin
 RESOURCES=12 i_ingot_iron, i_sword_long
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Longswords
@@ -857,7 +857,7 @@ NAME=Longsword of Might
 RESOURCES=12 i_ingot_iron, i_sword_long
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Longswords
@@ -875,7 +875,7 @@ NAME=Longsword of Force
 RESOURCES=12 i_ingot_iron, i_sword_long
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Longswords
@@ -893,7 +893,7 @@ NAME=Longsword of Power
 RESOURCES=12 i_ingot_iron, i_sword_long
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Longswords
@@ -911,7 +911,7 @@ NAME=Longsword of Vanquishing
 RESOURCES=12 i_ingot_iron, i_sword_long
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Longswords
@@ -929,7 +929,7 @@ NAME=Spear of Ruin
 RESOURCES=12 i_ingot_iron, i_spear
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Spears
@@ -947,7 +947,7 @@ NAME=Spear of Might
 RESOURCES=12 i_ingot_iron, i_spear
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Spears
@@ -965,7 +965,7 @@ NAME=Spear of Force
 RESOURCES=12 i_ingot_iron, i_spear
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Spears
@@ -983,7 +983,7 @@ NAME=Spear of Power
 RESOURCES=12 i_ingot_iron, i_spear
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Spears
@@ -1001,7 +1001,7 @@ NAME=Spear of Vanquishing
 RESOURCES=12 i_ingot_iron, i_spear
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Spears
@@ -1019,7 +1019,7 @@ NAME=Short Spear of Ruin
 RESOURCES=6 i_ingot_iron, i_spear_short
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Short Spears
@@ -1037,7 +1037,7 @@ NAME=Short Spear of Might
 RESOURCES=6 i_ingot_iron, i_spear_short
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Short Spears
@@ -1055,7 +1055,7 @@ NAME=Short Spear of Force
 RESOURCES=6 i_ingot_iron, i_spear_short
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Short Spears
@@ -1073,7 +1073,7 @@ NAME=Short Spear of Power
 RESOURCES=6 i_ingot_iron, i_spear_short
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Short Spears
@@ -1091,7 +1091,7 @@ NAME=Short Spear of Vanquishing
 RESOURCES=6 i_ingot_iron, i_spear_short
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Short Spears
@@ -1109,7 +1109,7 @@ NAME=War Fork of Ruin
 RESOURCES=12 i_ingot_iron, i_war_fork
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Forks
@@ -1127,7 +1127,7 @@ NAME=War Fork of Might
 RESOURCES=12 i_ingot_iron, i_war_fork
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Forks
@@ -1145,7 +1145,7 @@ NAME=War Fork of Force
 RESOURCES=12 i_ingot_iron, i_war_fork
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Forks
@@ -1163,7 +1163,7 @@ NAME=War Fork of Power
 RESOURCES=12 i_ingot_iron, i_war_fork
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Forks
@@ -1181,7 +1181,7 @@ NAME=War Fork of Vanquishing
 RESOURCES=12 i_ingot_iron, i_war_fork
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Forks
@@ -1199,7 +1199,7 @@ NAME=Mace of Ruin
 RESOURCES=6 i_ingot_iron, i_mace
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Maces
@@ -1217,7 +1217,7 @@ NAME=Mace of Might
 RESOURCES=6 i_ingot_iron, i_mace
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Maces
@@ -1235,7 +1235,7 @@ NAME=Mace of Force
 RESOURCES=6 i_ingot_iron, i_mace
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Maces
@@ -1253,7 +1253,7 @@ NAME=Mace of Power
 RESOURCES=6 i_ingot_iron, i_mace
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Maces
@@ -1271,7 +1271,7 @@ NAME=Mace of Vanquishing
 RESOURCES=6 i_ingot_iron, i_mace
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Maces
@@ -1289,7 +1289,7 @@ NAME=War Mace of Ruin
 RESOURCES=14 i_ingot_iron, i_mace_war
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Maces
@@ -1307,7 +1307,7 @@ NAME=War Mace of Might
 RESOURCES=14 i_ingot_iron, i_mace_war
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Maces
@@ -1325,7 +1325,7 @@ NAME=War Mace of Force
 RESOURCES=14 i_ingot_iron, i_mace_war
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Maces
@@ -1343,7 +1343,7 @@ NAME=War Mace of Power
 RESOURCES=14 i_ingot_iron, i_mace_war
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Maces
@@ -1361,7 +1361,7 @@ NAME=War Mace of Vanquishing
 RESOURCES=14 i_ingot_iron, i_mace_war
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Maces
@@ -1379,7 +1379,7 @@ NAME=Maul of Ruin
 RESOURCES=10 i_ingot_iron, i_maul
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Mauls
@@ -1397,7 +1397,7 @@ NAME=Maul of Might
 RESOURCES=10 i_ingot_iron, i_maul
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Mauls
@@ -1415,7 +1415,7 @@ NAME=Maul of Force
 RESOURCES=10 i_ingot_iron, i_maul
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Mauls
@@ -1433,7 +1433,7 @@ NAME=Maul of Power
 RESOURCES=10 i_ingot_iron, i_maul
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Mauls
@@ -1451,7 +1451,7 @@ NAME=Maul of Vanquishing
 RESOURCES=10 i_ingot_iron, i_maul
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Mauls
@@ -1469,7 +1469,7 @@ NAME=Hammer Pick of Ruin
 RESOURCES=16 i_ingot_iron, i_hammer_pick
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Hammer Picks
@@ -1487,7 +1487,7 @@ NAME=Hammer Pick of Might
 RESOURCES=16 i_ingot_iron, i_hammer_pick
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Hammer Picks
@@ -1505,7 +1505,7 @@ NAME=Hammer Pick of Force
 RESOURCES=16 i_ingot_iron, i_hammer_pick
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Hammer Picks
@@ -1523,7 +1523,7 @@ NAME=Hammer Pick of Power
 RESOURCES=16 i_ingot_iron, i_hammer_pick
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Hammer Picks
@@ -1541,7 +1541,7 @@ NAME=Hammer Pick of Vanquishing
 RESOURCES=16 i_ingot_iron, i_hammer_pick
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Hammer Picks
@@ -1559,7 +1559,7 @@ NAME=War Hammer of Ruin
 RESOURCES=16 i_ingot_iron, i_hammer_war
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Hammers
@@ -1577,7 +1577,7 @@ NAME=War Hammer of Might
 RESOURCES=16 i_ingot_iron, i_hammer_war
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Hammers
@@ -1595,7 +1595,7 @@ NAME=War Hammer of Force
 RESOURCES=16 i_ingot_iron, i_hammer_war
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Hammers
@@ -1613,7 +1613,7 @@ NAME=War Hammer of Power
 RESOURCES=16 i_ingot_iron, i_hammer_war
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Hammers
@@ -1631,7 +1631,7 @@ NAME=War Hammer of Vanquishing
 RESOURCES=16 i_ingot_iron, i_hammer_war
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Hammers
@@ -1649,7 +1649,7 @@ NAME=Axe of Ruin
 RESOURCES=14 i_ingot_iron, i_axe
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Axes
@@ -1667,7 +1667,7 @@ NAME=Axe of Might
 RESOURCES=14 i_ingot_iron, i_axe
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Axes
@@ -1685,7 +1685,7 @@ NAME=Axe of Force
 RESOURCES=14 i_ingot_iron, i_axe
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Axes
@@ -1703,7 +1703,7 @@ NAME=Axe of Power
 RESOURCES=14 i_ingot_iron, i_axe
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Axes
@@ -1721,7 +1721,7 @@ NAME=Axe of Vanquishing
 RESOURCES=14 i_ingot_iron, i_axe
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Axes
@@ -1739,7 +1739,7 @@ NAME=Executioner's Axe of Ruin
 RESOURCES=14 i_ingot_iron, i_axe_exec
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Executioner's Axes
@@ -1757,7 +1757,7 @@ NAME=Executioner's Axe of Might
 RESOURCES=14 i_ingot_iron, i_axe_exec
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Executioner's Axes
@@ -1775,7 +1775,7 @@ NAME=Executioner's Axe of Force
 RESOURCES=14 i_ingot_iron, i_axe_exec
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Executioner's Axes
@@ -1793,7 +1793,7 @@ NAME=Executioner's Axe of Power
 RESOURCES=14 i_ingot_iron, i_axe_exec
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Executioner's Axes
@@ -1811,7 +1811,7 @@ NAME=Executioner's Axe of Vanquishing
 RESOURCES=14 i_ingot_iron, i_axe_exec
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Executioner's Axes
@@ -1829,7 +1829,7 @@ NAME=Battle Axe of Ruin
 RESOURCES=14 i_ingot_iron, i_axe_battle
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Battle Axes
@@ -1847,7 +1847,7 @@ NAME=Battle Axe of Might
 RESOURCES=14 i_ingot_iron, i_axe_battle
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Battle Axes
@@ -1865,7 +1865,7 @@ NAME=Battle Axe of Force
 RESOURCES=14 i_ingot_iron, i_axe_battle
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Battle Axes
@@ -1883,7 +1883,7 @@ NAME=Battle Axe of Power
 RESOURCES=14 i_ingot_iron, i_axe_battle
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Battle Axes
@@ -1901,7 +1901,7 @@ NAME=Battle Axe of Vanquishing
 RESOURCES=14 i_ingot_iron, i_axe_battle
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Battle Axes
@@ -1919,7 +1919,7 @@ NAME=Double Axe of Ruin
 RESOURCES=12 i_ingot_iron, i_axe_double
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Double Axes
@@ -1937,7 +1937,7 @@ NAME=Double Axe of Might
 RESOURCES=12 i_ingot_iron, i_axe_double
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Double Axes
@@ -1955,7 +1955,7 @@ NAME=Double Axe of Force
 RESOURCES=12 i_ingot_iron, i_axe_double
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Double Axes
@@ -1973,7 +1973,7 @@ NAME=Double Axe of Power
 RESOURCES=12 i_ingot_iron, i_axe_double
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Double Axes
@@ -1991,7 +1991,7 @@ NAME=Double Axe of Vanquishing
 RESOURCES=12 i_ingot_iron, i_axe_double
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Double Axes
@@ -2009,7 +2009,7 @@ NAME=Two Handed Axe of Ruin
 RESOURCES=16 i_ingot_iron, i_axe_two_hand
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Two Handed Axes
@@ -2027,7 +2027,7 @@ NAME=Two Handed Axe of Might
 RESOURCES=16 i_ingot_iron, i_axe_two_hand
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Two Handed Axes
@@ -2045,7 +2045,7 @@ NAME=Two Handed Axe of Force
 RESOURCES=16 i_ingot_iron, i_axe_two_hand
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Two Handed Axes
@@ -2063,7 +2063,7 @@ NAME=Two Handed Axe of Power
 RESOURCES=16 i_ingot_iron, i_axe_two_hand
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Two Handed Axes
@@ -2081,7 +2081,7 @@ NAME=Two Handed Axe of Vanquishing
 RESOURCES=16 i_ingot_iron, i_axe_two_hand
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Two Handed Axes
@@ -2099,7 +2099,7 @@ NAME=War Axe of Ruin
 RESOURCES=16 i_ingot_iron, i_axe_war
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Axes
@@ -2117,7 +2117,7 @@ NAME=War Axe of Might
 RESOURCES=16 i_ingot_iron, i_axe_war
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Axes
@@ -2135,7 +2135,7 @@ NAME=War Axe of Force
 RESOURCES=16 i_ingot_iron, i_axe_war
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Axes
@@ -2153,7 +2153,7 @@ NAME=War Axe of Power
 RESOURCES=16 i_ingot_iron, i_axe_war
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Axes
@@ -2171,7 +2171,7 @@ NAME=War Axe of Vanquishing
 RESOURCES=16 i_ingot_iron, i_axe_war
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic War Axes
@@ -2189,7 +2189,7 @@ NAME=Large Battle Axe of Ruin
 RESOURCES=12 i_ingot_iron, i_axe_battle_large
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Large Battle Axes
@@ -2207,7 +2207,7 @@ NAME=Large Battle Axe of Might
 RESOURCES=12 i_ingot_iron, i_axe_battle_large
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Large Battle Axes
@@ -2225,7 +2225,7 @@ NAME=Large Battle Axe of Force
 RESOURCES=12 i_ingot_iron, i_axe_battle_large
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Large Battle Axes
@@ -2243,7 +2243,7 @@ NAME=Large Battle Axe of Power
 RESOURCES=12 i_ingot_iron, i_axe_battle_large
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Large Battle Axes
@@ -2261,7 +2261,7 @@ NAME=Large Battle Axe of Vanquishing
 RESOURCES=12 i_ingot_iron, i_axe_battle_large
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Large Battle Axes
@@ -2279,7 +2279,7 @@ NAME=Club of Ruin
 RESOURCES=4 i_log, i_club
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Clubs
@@ -2297,7 +2297,7 @@ NAME=Club of Might
 RESOURCES=4 i_log, i_club
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Clubs
@@ -2315,7 +2315,7 @@ NAME=Club of Force
 RESOURCES=4 i_log, i_club
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Clubs
@@ -2333,7 +2333,7 @@ NAME=Club of Power
 RESOURCES=4 i_log, i_club
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Clubs
@@ -2351,7 +2351,7 @@ NAME=Club of Vanquishing
 RESOURCES=4 i_log, i_club
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Clubs
@@ -2369,7 +2369,7 @@ NAME=Bow of Ruin
 RESOURCES=7 i_log, i_bow
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Bows
@@ -2387,7 +2387,7 @@ NAME=Bow of Might
 RESOURCES=7 i_log, i_bow
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Bows
@@ -2405,7 +2405,7 @@ NAME=Bow of Force
 RESOURCES=7 i_log, i_bow
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Bows
@@ -2423,7 +2423,7 @@ NAME=Bow of Power
 RESOURCES=7 i_log, i_bow
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Bows
@@ -2441,7 +2441,7 @@ NAME=Bow of Vanquishing
 RESOURCES=7 i_log, i_bow
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Bows
@@ -2459,7 +2459,7 @@ NAME=Crossbow of Ruin
 RESOURCES=7 i_log, i_crossbow
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Crossbows
@@ -2477,7 +2477,7 @@ NAME=Crossbow of Might
 RESOURCES=7 i_log, i_crossbow
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Crossbows
@@ -2495,7 +2495,7 @@ NAME=Crossbow of Force
 RESOURCES=7 i_log, i_crossbow
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Crossbows
@@ -2513,7 +2513,7 @@ NAME=Crossbow of Power
 RESOURCES=7 i_log, i_crossbow
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Crossbows
@@ -2531,7 +2531,7 @@ NAME=Crossbow of Vanquishing
 RESOURCES=7 i_log, i_crossbow
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Crossbows
@@ -2549,7 +2549,7 @@ NAME=Heavy Crossbow of Ruin
 RESOURCES=10 i_log, i_crossbow_heavy
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=15
+//INCREASEDAM=15
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Heavy Crossbows
@@ -2567,7 +2567,7 @@ NAME=Heavy Crossbow of Might
 RESOURCES=10 i_log, i_crossbow_heavy
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=20
+//INCREASEDAM=20
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Heavy Crossbows
@@ -2585,7 +2585,7 @@ NAME=Heavy Crossbow of Force
 RESOURCES=10 i_log, i_crossbow_heavy
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=25
+//INCREASEDAM=25
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Heavy Crossbows
@@ -2603,7 +2603,7 @@ NAME=Heavy Crossbow of Power
 RESOURCES=10 i_log, i_crossbow_heavy
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=30
+//INCREASEDAM=30
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Heavy Crossbows
@@ -2621,7 +2621,7 @@ NAME=Heavy Crossbow of Vanquishing
 RESOURCES=10 i_log, i_crossbow_heavy
 TEVENTS=ei_equipitem
 TEVENTS=ei_magic_preaos
-INCREASEDAM=35
+//INCREASEDAM=35
 
 CATEGORY=Provisions - Weapons - Magic
 SUBSECTION=Magic Heavy Crossbows

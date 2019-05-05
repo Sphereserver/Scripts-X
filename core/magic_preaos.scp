@@ -18,27 +18,28 @@ attr_magic_level_5	100.0
 
 [COMMENT ATTR_MAGIC ARMOR]
 // Property: Armor Resistance Increase (ascending order)
-// ar += 10 + (5 * bonus level)
-[0: Regular]
-1: Defense			// 15
-2: Guarding			// 20
-3: Hardening		// 25
-4: Fortification	// 30
-5: Invulnerability	// 35
+// ar += (5 * bonus level)
+(0: Regular)
+1: Defense			// 5
+2: Guarding			// 10
+3: Hardening		// 15
+4: Fortification	// 20
+5: Invulnerability	// 25
 
 // Property: Armor Durability Increase (ascending order) (NOT IMPLEMENTED)
-[0: Regular]
-1: Durable			// 5
-2: Substantial		// 10
-3: Massive			// 15
-4: Fortified		// 20
-5: Indestructible	// 25
+// Exceptional additional +20?
+(0: Regular)
+1: Durable			// 20
+2: Substantial		// 50
+3: Massive			// 70
+4: Fortified		// 100
+5: Indestructible	// 120
 
 
 [COMMENT ATTR_MAGIC WEAPON]
 // Property: damage increase (ascending order)
 // damage += (2 * (DamageLevel) - 1;
-[0: Regular]
+(0: Regular)
 1: Ruin				// 1
 2: Might			// 3
 3: Force			// 5
@@ -47,7 +48,7 @@ attr_magic_level_5	100.0
 
 // Property: weapon skill bonus (ascending order) (NOT IMPLEMENTED)
 // It's a raw hit chance bonus?
-[0: Regular]
+(0: Regular)
 1: Accurate					// 2.0
 2: Surpassingly Accurate	// 4.0
 3: Eminently Accurate		// 6.0

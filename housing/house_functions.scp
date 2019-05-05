@@ -493,7 +493,7 @@ if (<argo.topobj.ischar>)
 endif
 ref8=<argo>
 if (<ref8.region.uid> == <src.region.uid>)
-	ref8.move -1,,0
+	ref8.move -1,0,0
 	ref8.update
 	return 1
 else
