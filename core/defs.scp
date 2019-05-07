@@ -15,6 +15,9 @@ deffood		{ i_fruit_grapes 1 i_ham 1 i_cheese_cut 1 i_muffin 1 i_fish_cut_cooked 
 //These ones can have multiple words seperated by a ','
 guardcall	GUARD,GUARDS
 
+// "magic"  values
+link_invalid 04fffffff
+
 [DEFNAME trigger_argtype] // to be used with the TRIGGER keyword
 TAT_AS_ARGN   1      // Treat the arguments as ARGN1/2/3
 TAT_AS_ARGS   2      // Treat the arguments as ARGS (with ARGV[x] enabled)

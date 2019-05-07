@@ -5,7 +5,7 @@
 VERSION=X1
 
 // Event for locked down items.
-[TYPEDEF t_house_lockdown]
+[TYPEDEF ei_house_lockdown]
 ON=@ClientToolTip
 src.addcliloc 501643
  
@@ -35,7 +35,7 @@ if (<argo.region.uid> != <link.region.uid>)
 endif
  
 // Doors event 
-[TYPEDEF t_house_door]
+[TYPEDEF ei_house_door]
 ON=@Click	
 if (<tag0.guild>)
 	message @,,1 [<uid.<tag0.guild>.abbrev>] Guild Members Only.
@@ -64,11 +64,11 @@ elif (<tag0.owneronly>)
 	src.addcliloc 1042971, Owner Only
 	return 1
 elif (<tag0.restricted>)
-	if (<tag0.restricted>==1)
+	if (<tag.restricted>==1)
 		src.addcliloc 1042971, Restricted Access
 		src.addcliloc 1070722, Owner & Co-owners Only
 		return 1
-	elif (<tag0.restricted>==2)
+	elif (<tag.restricted>==2)
 		src.addcliloc 1042971, Restricted Access
 		src.addcliloc 1070722, Owner Co-owners & Friends Only
 		return 1
@@ -109,20 +109,20 @@ if !(<src.isgm>)
 	return 1
 endif
 
-// House container created from COMPONENTs from [MULTIDEF ] (this also have 't_house_component').
-[TYPEDEF t_house_container]
+// House container created from COMPONENTs from [MULTIDEF ] (this also have 'ei_house_component').
+[TYPEDEF ei_house_container]
  
 // House Component created from [MULTIDEF ].
-[TYPEDEF t_house_component]
+[TYPEDEF ei_house_component]
 
 // Event for Moving Crates.
 // Moving Crates are meant for House Customizing purposes, some items are moved inside when required
 // in customize mode. Player storage is NOT allowed.
 // Moving Crates are automatically deleted when there are no items inside.
 // *More behaviour on player side event (e_moving_crate).
-[TYPEDEF t_moving_crate]
+[TYPEDEF ei_moving_crate]
 if !<src.isgm>
-return 1
+	return 1
 endif
 
 ON=@PickUp_Self
@@ -137,11 +137,11 @@ if (<ref1> && <ref1.isevent.e_moving_crate>)
 endif
 
 ON=@create
-attr |= attr_invis
+attr |= <def.attr_invis>
 
 // Secured Containers.
 // Only allowed players can manage their storage (Refer to f_house_can_access to see the allowance).
-[TYPEDEF t_house_secure]
+[TYPEDEF ei_house_secure]
 ON=@clienttooltip
 src.addcliloc 501644
  
@@ -163,7 +163,7 @@ endif
 return 1
 
 // Telepad for multis.
-[typedef t_house_telepad]
+[typedef ei_house_telepad]
 ON=@Click	
 if (<tag0.guild>)
 	message @,,1 [<uid.<tag0.guild>.abbrev>] Guild Members Only.
@@ -203,7 +203,7 @@ endif
 
 
 ON=@step
-if !(<link>==04fffffff) 
+if !(<link>==<def.link_invalid>) 
 	if !(<src.isgm>)
 		if (<f_house_can_access>)
 			return 0
@@ -348,7 +348,7 @@ DIALOGCLOSE d_house_menu
 if <argn1>
 	for <ARGN1>
 		if <REF<dLOCAL._FOR>>
-			if (<REF<dLOCAL._FOR>.TYPE>==t_trade_house_deed)
+			if (<REF<dLOCAL._FOR>.TYPE>==ei_trade_house_deed)
 				UID.<REF<dLOCAL._FOR>>.TRIGGER @HouseTraded
 				UID.<REF<dLOCAL._FOR>>.REMOVE
 			endif
@@ -445,7 +445,7 @@ ON=@HouseDesignCommit
 	SYSMESSAGE @,,1 Your new house design has been committed.
 	IF (<LOCAL.CURCOST> == 0)
 		SYSMESSAGE @,,1 As the new design costs the same as the previous one, no gold has been taken out of your account.
-	ELSEIF (<LOCAL.CURCOST> < 0)
+	ELIF (<LOCAL.CURCOST> < 0)
 		LOCAL.CURCOST = <EVAL (0 - <LOCAL.CURCOST>)>
 		GOLD += <LOCAL.CURCOST>
 		SYSMESSAGE @,,1 As the new design is cheaper than the previous one, <dLOCAL.CURCOST> gold has been returned to you.
@@ -494,3 +494,5 @@ events -e_moving_crate
 
 // Event applied when you are listed (with any privilege) on one or more ships.
 [EVENTS e_ship_priv]
+
+[EOF]

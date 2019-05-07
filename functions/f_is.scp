@@ -42,4 +42,12 @@ IF (<ISEVENT.e_undead>) || (<ISTEVENT.e_undead>) // || (<NPC>==brain_undead)
 ENDIF
 RETURN 0
 
+[function f_isContainer]
+if <isitem>
+	if ((<type>==t_container) || (<type>==t_container_locked))
+		return 1
+	endif
+endif
+return 0
+
 [EOF]

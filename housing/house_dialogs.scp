@@ -4,19 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[PLEVEL 1]
-rate
-
-[ITEMDEF 0bd1] 
-//brass sign 
-DEFNAME=i_sign_brass 
-TYPE=t_sign_gump
-CAN=can_i_dcignorelos
-CATEGORY=Decoration - Signs 
-SUBSECTION=Blank 
-DESCRIPTION=Brass Blank 
-DUPELIST=0bd2 
-
+[TYPEDEF ei_house_sign]
 ON=@Create
 if !<link.tag0.convert>
 	attr=012
@@ -50,7 +38,7 @@ endif
 
 
 ON=@ClientToolTip
-if (<link>==04fffffff)
+if (<link>==<def.link_invalid>)
 	return 0
 endif
 if <link.tag0.demolition>
@@ -67,7 +55,7 @@ src.addcliloc <QVAL (<link.housetype>==house_private)? 1061642:1061641>
 return 1
 
 ON=@DClick
-if (<link>!=04fffffff)
+if (<link>!=<def.link_invalid>)
 	if !(<def.can_decay>)
 		if (<attr>&02)
 			attr &=~ 02
@@ -1574,7 +1562,7 @@ else
 	elif (<ARGO.CONT>) || (<ARGO.REGION.UID> != <TAG0.HOUSE>) || !(<ARGO.IsOnHouse>)
 		SRC.SYSMESSAGE @32,,1 That must be in your house.
 		return 1
-	elif !(<ARGO.isevent.t_house_lockdown>)
+	elif !(<ARGO.isevent.ei_house_lockdown>)
 		SRC.SYSMESSAGE @32,,1 That must be locked.
 		return 1
 	elif !(<ref1.owner> == <src>)

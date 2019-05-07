@@ -325,7 +325,7 @@ if <def.secure_locks_limit>)
 	endif
 endif
 if (<argo.isitem> && <argo.region.uid>==<ref1>)
-	if (<argo.iscontainer>)
+	if (<argo.f_isContainer>)
 		ref1.secure <argo>
 		if ((<argo.attr>&attr_decay) && (<argo.timer> >= 0))
 			argo.tag.decay=1
@@ -342,11 +342,11 @@ endif
 ref1= <argo.region.uid>
 if <src> == <ref1.owner>
 	if (<argo.type>==t_door) || (<argo.type>==t_door_locked) || (<argo.type>==t_telepad)
-		if <argo.isevent.t_house_door> || <argo.isevent.t_house_telepad>
+		if <argo.isevent.ei_house_door> || <argo.isevent.ei_house_telepad>
 			dialogclose d_secure
 			argo.sdialog d_secure
 		endif
-	elif (<argo.type>==t_container) || (<argo.type>==t_container_locked) || (<argo.type>=t_chest_locked)
+	elif (<argo.f_isContainer>)
 		if <argo.isevent.t_house_secure>
 			dialogclose d_secure
 			argo.sdialog d_secure
@@ -400,14 +400,6 @@ if (<argo.type>==t_stone_guild) && (<argo.region.uid>==<src.region.uid>)
 	src.sysmessage @,,1 All <uid.<argo.uid>.name> guild members now have access to this building.
 	src.sysmessage @,,1 Don't forget to set your door codes if areas are/need to be restricted.
 endif
-
-[function iscontainer]
-if <isitem>
-	if ((<type>==t_container) || (<type>==t_container_locked))
-		return 1
-	endif
-endif
-return 0
 
 [FUNCTION f_moven]
 ref1=<src.region.uid>
@@ -827,3 +819,5 @@ if (<ARGS> > <LOCAL.TERRAIN>)
 	return <eval 1+(<ARGS>-<LOCAL.TERRAIN>)/20>
 endif
 return 0
+
+[EOF]

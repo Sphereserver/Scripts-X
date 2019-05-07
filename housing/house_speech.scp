@@ -159,3 +159,5 @@ endif
 
 ON=house commands*
 sdialog d_house_commands
+
+[EOF]
