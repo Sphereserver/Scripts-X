@@ -372,8 +372,8 @@ DESIRES=i_gold
 AVERSIONS=r_civilization
 
 CATEGORY=Monsters
-SUBSECTION=Demons
-DESCRIPTION=Demon
+SUBSECTION=Daemons
+DESCRIPTION=Daemon
 
 ON=@Create
      NPC=<def.brain_monster>
@@ -407,7 +407,7 @@ ON=@CreateLoot
 
 
 [CHARDEF 0c]
-DEFNAME=c_dragon_green
+DEFNAME=c_dragon
 NAME=#NAMES_DRAGON the Dragon
 SOUND=362
 ICON=i_pet_dragon
@@ -468,7 +468,7 @@ ON=@CreateLoot
 
      
 [CHARDEF 0d]
-DEFNAME=c_elem_air
+DEFNAME=c_elemental_air
 NAME=Air Elemental
 SOUND=655
 ICON=i_pet_elem_air
@@ -518,7 +518,7 @@ ON=@CreateLoot
      ITEM=i_treasure_map1,R99
 
 [CHARDEF 0e]
-DEFNAME=c_elem_earth
+DEFNAME=c_elemental_earth
 NAME=Earth Elemental
 SOUND=268
 ICON=i_pet_elem_earth
@@ -568,7 +568,7 @@ ON=@CreateLoot
 
 
 [CHARDEF 0f]
-DEFNAME=c_elem_fire
+DEFNAME=c_elemental_fire
 NAME=Fire Elemental
 SOUND=838
 ICON=i_pet_elem_fire
@@ -630,7 +630,7 @@ ON=@Death
 
 
 [CHARDEF 010]
-DEFNAME=c_elem_water
+DEFNAME=c_elemental_water
 NAME=Water Elemental
 SOUND=278
 ICON=i_pet_elem_water
@@ -731,7 +731,7 @@ ON=@CreateLoot
 
 [CHARDEF 012]
 // Ettin with big stone axe.
-DEFNAME=c_ettin_w_axe
+DEFNAME=c_ettin_w_hammer
 NAME=Ettin
 SOUND=367
 ICON=i_pet_ettin
@@ -1462,10 +1462,10 @@ ON=@CreateLoot
 
 
 [CHARDEF 028]
-DEFNAME=c_balron
+DEFNAME=c_daemon_balron
 NAME=Balron
 SOUND=357
-ICON=i_pet_dragon
+ICON=i_pet_daemon
 CAN=mt_walk|mt_fly
 
 DAM=22,29
@@ -1477,7 +1477,7 @@ DESIRES=c_DAEMON,i_gold,t_wand
 AVERSIONS=r_water,r_mountains
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Balron
 
 ON=@Create
@@ -2072,8 +2072,9 @@ NAME=Bone Knight
 SOUND=451
 ICON=i_pet_skeleton
 CAN=mt_walk|mt_usehands|mt_equip
+BLOODCOLOR=-1
 
-DAM=8, 18
+DAM=8,18
 ARMOR=40
 HEIGHT=16
 
@@ -2084,12 +2085,12 @@ TEVENTS=e_undead
 
 CATEGORY=Monsters
 SUBSECTION=Undeads
-DESCRIPTION=Skeleton, Knight
+DESCRIPTION=Skeleton, Bone Knight
 
 ON=@Create
      NPC=<def.brain_monster>
 
-     BLOODCOLOR=-1
+  
 
      FAME=3000
      KARMA=-3000
@@ -2729,10 +2730,113 @@ ON=@Create
     TACTICS={60.0 80.0}
     TAMING={85.0 95.0}
     WRESTLING={70.0 90.0}
+	
+[CHARDEF 08a]
+DEFNAME=c_orc_lord
+NAME=Orc lord
+SOUND=snd_monster_orc2_1
+ICON=i_pet_orc_lord
+CAN=mt_walk|mt_run|mt_usehands|mt_equip
+DAM=8,28
+ARMOR=25
+TAG.Barding.Diff=72.6
 
+DESIRES=r_orc_camp,t_coin,t_gold,t_gem,t_potion
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=35
+RESOURCES=1 i_ribs_raw
+TEVENTS=e_carnivores2
+
+CATEGORY=Monsters
+SUBSECTION=Orcs
+DESCRIPTION=Orc, Lord
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   KARMA={-2000 -2499}
+   FAME={2000 2499}
+   
+   BLOODCOLOR=<def.colors_green>
+   
+   STR={145 215}
+   MAXHITS={95 125}
+   DEX={90 115}
+   MAXSTAM={90 115}
+   INT={60 85}
+   MAXMANA={60 85}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={20 30}
+   RESENERGY={30 40}
+   RESFIRE={30 40}
+   RESPOISON={30 40}
+   
+   ARCHERY={40.0 50.0}
+   FENCING={40.0 50.0}
+   MACEFIGHTING={40.0 50.0}
+   MAGICRESISTANCE={70.0 85.0}
+   PARRYING={40.0 55.0}
+   SWORDSMANSHIP={60.0 85.0}
+   TACTICS={75.0 90.0}
+   WRESTLING={60.0 85.0}
+
+ON=@Createloot
+   ITEM=loot_orcish_lord
+   ITEM=loot_ai_hard
+
+[CHARDEF 08c]
+DEFNAME=c_orc_shaman
+NAME=Orc shaman
+SOUND=snd_monster_orc2_1
+ICON=i_pet_orc_shaman
+CAN=mt_walk|mt_usehands|mt_equip
+
+DAM=8,25
+ARMOR=25
+TAG.Barding.Diff=73.2
+
+DESIRES=r_orc_camp,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=25
+RESOURCES=1 i_ribs_raw
+
+CATEGORY=Monsters
+SUBSECTION=Orcs
+DESCRIPTION=Orc, Shaman
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   FAME={1500 1999}
+   KARMA={-1500 -1999}
+   BLOODCOLOR=<def.colors_green>
+   
+   STR={116 150}
+   MAXHITS={70 90}
+   DEX={91 115}
+   MAXSTAM={91 115}
+   INT={161 185}
+   MAXMANA={161 185}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={20 30}
+   RESENERGY={30 40}
+   RESFIRE={30 40}
+   RESPOISON={30 40}
+   
+   EVALUATINGINTEL={60.0 73.0}
+   MAGERY={60.0 73.0}
+   MAGICRESISTANCE={60.0 75.0}
+   PARRYING={50.0 65.0}
+   TACTICS={50.0 65.0}
+   WRESTLING={40.0 50.0}
+
+ON=@NPCRestock
+   ITEM=loot_orcish_mage
 
 [CHARDEF 090]
-DEFNAME=c_sea_horse
+DEFNAME=c_horse_sea
 NAME=Sea Horse
 SOUND=
 CAN=mt_swim
@@ -2742,9 +2846,8 @@ CATEGORY=Mounts
 SUBSECTION=Aquatic
 DESCRIPTION=Horse, Sea
 
-ON=@create
+ON=@Create
      NPC=<def.brain_monster>
-     
      FAME=6000
      KARMA=-6000
      
@@ -2762,7 +2865,59 @@ ON=@create
      TACTICS={60.1, 70.0}
      WRESTLING={60.1, 70.0}
 
+[CHARDEF 093]
+DEFNAME=c_skeleton_knight
+NAME=skeletal knight
+SOUND=snd_monster_skletn1
+ICON=i_pet_skeleton_knight
+CAN=mt_walk|mt_run|mt_usehands|mt_equip
+BLOODCOLOR=-1
 
+DAM=18,43
+ARMOR=35
+TAG.Barding.Diff=67.4
+DamCold=60
+
+DESIRES=r_graveyards,t_coin,t_gold,t_gem,t_potion
+AVERSIONS=t_trap,r_civilization
+RESOURCES=3 i_reag_bone
+
+TEVENTS=e_undead
+
+CATEGORY=Monsters
+SUBSECTION=Undead
+DESCRIPTION=Skeleton, Knight
+
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   FAME={2000 2499}
+   KARMA={-2000 -2499}
+   
+   STR={196 250}
+   MAXHITS={118 150}
+   DEX={76 95}
+   MAXSTAM={76 95}
+   INT={36 60}
+   MAXMANA={36 60}  
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={50 60}
+   RESENERGY={30 40}
+   RESFIRE={20 30}
+   RESPOISON={20 30}
+   
+   FENCING={60.0 85.0}
+   MACEFIGHTING={60.0 85.0}
+   MAGICRESISTANCE={65.0 80.0}
+   PARRYING={85.0 100.0}
+   SWORDSMANSHIP={85.0 100.0}
+   TACTICS={85.0 100.0}
+   WRESTLING={85.0 100.0}
+ 
+ON=@Createloot
+   ITEM=loot_skeletal_knight
+   
 [CHARDEF 096]
 DEFNAME=c_sea_serpent
 NAME=Sea Serpent
@@ -3782,7 +3937,7 @@ ON=@Create
 
 
 [CHARDEF 0e1]
-DEFNAME=c_wolf
+DEFNAME=c_wolf_timber
 NAME=Timber Wolf
 SOUND=0e5
 ICON=i_pet_wolf
@@ -4271,8 +4426,8 @@ ON=@Create
 [CHARDEF 0190]
 DEFNAME=c_man
 NAME=Man
+SOUND=snd_special_human
 ICON=i_pet_man
-SOUND=0154
 CAN=mt_equip|mt_walk|mt_run|mt_usehands
 
 HEIGHT=16
@@ -4280,7 +4435,7 @@ HEIGHT=16
 RESOURCES=i_flesh_head, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg, i_blood_2
 FOODTYPE=15 t_food, t_fruit
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_trap,t_eerie_stuff
 
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
@@ -4308,8 +4463,9 @@ ON=@Create
 DEFNAME=c_woman
 NAME=Woman
 CAN=mt_equip|mt_walk|mt_run|mt_female|mt_usehands
+SOUND=snd_special_human
 ICON=i_pet_woman
-SOUND=014b
+
 
 HEIGHT=16
 
@@ -4343,7 +4499,7 @@ ON=@Create
 [CHARDEF 0192]
 //Ghost robe is not automatic !
 //DEFNAME2=GHOSTMAN
-DEFNAME=c_ghost_man
+DEFNAME=c_ghost_male
 NAME=Ghost
 ICON=i_pet_man
 CAN=mt_equip|mt_walk|mt_run|mt_ghost
@@ -4372,7 +4528,7 @@ ON=@Create
 [CHARDEF 0193]
 //Ghost robe is not automatic !
 //DEFNAME2=GHOSTWOMAN
-DEFNAME=c_ghost_woman
+DEFNAME=c_ghost_female
 NAME=Ghost
 ICON=i_pet_woman
 CAN=mt_equip|mt_walk|mt_run|mt_ghost|mt_female

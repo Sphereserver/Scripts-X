@@ -1,3 +1,103 @@
+[CHARDEF 0c5]
+//FIXME: No Stratics data
+DEFNAME=c_dragon_crimson
+NAME=crimson dragon
+SOUND=snd_monster_stygian_dragon1
+ICON=i_pet_dragon_crimson
+CAN=mt_walk|mt_nonhum
+
+DAM=30,50
+ARMOR=75
+TAG.Barding.Diff=130.0
+DAMENERGY=25
+DAMFIRE=50
+
+DESIRES=r_dungeon_abyss,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization,e_carnivores3
+FOODTYPE=t_meat_raw
+MAXFOOD=90
+RESOURCES=20 i_ribs_raw,60 i_hide,15 i_reag_dragon_blood
+
+CATEGORY=Monsters
+SUBSECTION=Dragons
+DESCRIPTION=Dragon, Crimson
+ON=@Create
+   NPC=<def.brain_dragon>
+   FAME={8500 8999}
+   KARMA={-8500 -8999}
+   STR={675 725}
+   MAXHITS={1000 1500}
+   DEX={125 150}
+   MAXSTAM={225 250}
+   INT={175 185}
+   MAXMANA={175 200}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={55 65}
+   RESENERGY={65 75}
+   RESFIRE={65 75}
+   RESPOISON={55 65}
+   
+   ANATOMY={95.0 105.0}
+   MAGICRESISTANCE={145.0 155.0}
+   TACTICS={115.0 125.0}
+   WRESTLING={115.0 125.0}
+   
+ON=@Createloot
+   ITEM=loot_dragon_stygian
+   ITEM=loot_ai_hard
+
+[CHARDEF 0c6]
+//FIXME: No Stratics data
+DEFNAME=c_dragon_platinum
+NAME=platinum dragon
+SOUND=snd_monster_stygian_dragon1
+ICON=i_pet_dragon_platinum
+CAN=mt_walk|mt_nonhum
+
+DAM=30,50
+ARMOR=75
+TAG.Barding.Diff=130.0
+DAMCOLD=50
+DAMENERGY=25
+
+DESIRES=r_dungeon_abyss,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization,e_carnivores3
+FOODTYPE=t_meat_raw
+MAXFOOD=90
+RESOURCES=20 i_ribs_raw,60 i_hide,15 i_reag_dragon_blood
+
+CATEGORY=Monsters
+SUBSECTION=Dragons
+DESCRIPTION=Dragon, Platinum
+ON=@Create
+   NPC=<def.brain_dragon>
+   FAME={8500 8999}
+   KARMA={-8500 -8999}
+   
+   STR={675 725}
+   MAXHITS={1000 1500}
+   DEX={125 150}
+   MAXSTAM={225 250}
+   INT={175 185}
+   MAXMANA={175 200}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={65 75}
+   RESENERGY={65 75}
+   RESFIRE={55 65}
+   RESPOISON={55 65}
+
+   ANATOMY={95.0 105.0}
+   MAGICRESISTANCE={145.0 155.0}
+   TACTICS={115.0 125.0}
+   WRESTLING={115.0 125.0}
+
+
+ON=@Createloot
+   ITEM=loot_dragon_stygian
+   ITEM=loot_ai_hard
+   
 [CHARDEF 011f]
 DEFNAME=c_BloodWorm
 NAME=bloodworm
@@ -106,13 +206,14 @@ ON=@CreateLoot
 
 
 [CHARDEF 014e]
-DEFNAME=c_goblin_green_enslaved
-NAME=Enslaved Green Goblin
-SOUND=045A
+DEFNAME=c_goblin_gray
+NAME=gray goblin
+SOUND=snd_monster_goblin_gray1
+ICON=i_pet_goblin_gray
 CAN=mt_walk|mt_run|mt_usehands
 
-DAM=5,7
-ARMOR=28
+DAM=7,14
+ARMOR=40
 
 RESOURCES=1 i_ribs_raw
 
@@ -124,7 +225,7 @@ ERALIMITPROPS=6
 
 CATEGORY=Monsters
 SUBSECTION=Goblins
-DESCRIPTION=Green Goblin, Enslaved
+DESCRIPTION=Gray Goblin
 
 ON=@create
     NPC=<def.brain_monster>
@@ -157,7 +258,54 @@ ON=@CreateLoot
     //ITEM=i_goblin_blood
     //ITEM=i_essence_control
 
+[CHARDEF 01b0]
+//FIXME: Stun attack
+DEFNAME=c_boura_armoured
+NAME=armoured boura
+SOUND=snd_monster_boura1
+ICON=i_pet_boura_armoured
+CAN=mt_walk|mt_run|mt_nonhum
 
+DAM=16,20
+ARMOR=45
+TAG.Barding.Diff=86.7
+
+DESIRES=r_plains
+AVERSIONS=e_carnivores2,e_carnivores3
+RESOURCES=30 i_fur,20 i_hide_spined,10 i_ribs_raw,8 i_reag_dragon_blood
+FOODTYPE=t_fruit,t_grain,t_grass
+MAXFOOD=40
+
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Boura, Armoured
+
+ON=@Create
+   NPC=<def.brain_animal>
+   FAME={2000 2500}
+   KARMA={-2000 -2499}
+   STR={300 410}
+   MAXHITS={435 530}
+   DEX={65 85}
+   MAXSTAM={65 85}
+   INT={15 20}
+   MAXMANA={15 20}
+   
+   RESPHYSICAL={0 5}
+   RESCOLD={35 40}
+   RESENERGY={30 40}
+   RESFIRE={30 40}
+   RESPOISON={30 40}   
+   
+   ANATOMY={85.0 90.0}
+   MAGICRESISTANCE={65.0 75.0}
+   TACTICS={80.0 90.0}
+   TAMING={15.0 20.0}
+   WRESTLING={85.0 95.0}
+
+ON=@Createloot
+   ITEM=i_boura_pelt,{1 3},R5
+   
 [CHARDEF 029a]
 DEFNAME=c_gargoyle_male
 NAME=Gargoyle Male
@@ -219,7 +367,7 @@ DESCRIPTION=Gargoyle, Female
 
 
 [CHARDEF 02b6]
-DEFNAME=c_garg_ghost_man
+DEFNAME=c_gargoyle_ghost_male
 NAME=Gargoyle Male Ghost
 ICON=i_pet_man
 CAN=mt_equip|mt_walk|mt_run|mt_usehands
@@ -237,7 +385,7 @@ TEVENTS=e_human_hearunk
 
 RESLEVEL=7
 RESDISPDNHUE=0410
-RESDISPDNID=c_ghost_man
+RESDISPDNID=c_ghost_male
 
 ERALIMITLOOT=6
 ERALIMITGEAR=6
@@ -249,7 +397,7 @@ DESCRIPTION=Gargoyle Ghost, Male
 
 
 [CHARDEF 02b7]
-DEFNAME=c_garg_ghost_woman
+DEFNAME=c_gargoyle_ghost_female
 NAME=Gargoyle Female Ghost
 ICON=i_pet_woman
 CAN=mt_equip|mt_walk|mt_run|mt_usehands|mt_female
@@ -267,7 +415,7 @@ TEVENTS=e_human_hearunk
 
 RESLEVEL=7
 RESDISPDNHUE=0410
-RESDISPDNID=c_ghost_woman
+RESDISPDNID=c_ghost_female
 
 ERALIMITLOOT=6
 ERALIMITGEAR=6
@@ -277,6 +425,45 @@ CATEGORY=Humanoids
 SUBSECTION=Gargoyles
 DESCRIPTION=Gargoyle Ghost, Male
 
+[CHARDEF 02c1]
+DEFNAME=c_stone_form
+NAME=stone form
+SOUND=snd_monster_stoneform1
+ICON=i_pet_stone_form
+CAN=mt_walk|mt_run|mt_usehands|mt_equip
+BLOODCOLOR=-1
+
+DAM=21,35
+ARMOR=35
+
+CATEGORY=Spells
+SUBSECTION=Mysticism
+DESCRIPTION=Stone Form
+ON=@Create
+   NPC=<def.brain_monster>
+   FAME={2500 2999}
+   KARMA={-3500 -3999}
+   
+   STR={150 200}
+   MAXHITS={100 150}
+   DEX={76 95}
+   MAXSTAM={95 115}
+   INT={75 100}
+   MAXMANA={75 100}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={30 40}
+   RESENERGY={20 30}
+   RESFIRE={30 40}
+   RESPOISON={20 30}
+   
+   MAGICRESISTANCE={75.0 85.0}
+   PARRYING={60.0 80.0}
+   TACTICS={60.0 100.0}
+   WRESTLING={60.0 100.0}
+
+ON=@Createloot
+   ITEM=loot_elem_earth
 
 [CHARDEF 02c9]
 DEFNAME=c_abyssal_infernal
@@ -310,7 +497,7 @@ ERALIMITGEAR=6
 ERALIMITPROPS=6
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Abyssal Infernal
 
 ON=@Create
@@ -384,7 +571,7 @@ ON=@create
 
 
 [CHARDEF 02cb]
-DEFNAME=c_boura_ruddy
+DEFNAME=c_boura
 NAME=ruddy boura
 SOUND=1507
 RESOURCES=10 i_ribs_raw, 8 i_reag_dragon_blood    //todo: 22 i_hide_spined
@@ -467,7 +654,7 @@ ON=@create
 
 
 [CHARDEF 02cd]
-DEFNAME=c_clockwork_scorpion
+DEFNAME=c_scorpion_clockwork
 NAME=clockwork scorpion
 ID=717
 SOUND=541
@@ -511,7 +698,7 @@ ON=@CreateLoot
 
 
 [CHARDEF 02ce]
-DEFNAME=c_Fairy_Dragon
+DEFNAME=c_dragon_fairy
 NAME=Fairy Dragon
 SOUND=362
 CAN=mt_walk|mt_run|mt_equip|mt_usehands
@@ -617,7 +804,7 @@ ON=@CreateLoot
 
 
 [CHARDEF 02d0]
-DEFNAME=c_elem_lava
+DEFNAME=c_elemental_lava
 NAME=lava elemental
 SOUND=060A
 CAN=mt_walk|mt_run|mt_equip|mt_usehands
@@ -713,7 +900,7 @@ ON=@create
 
 
 [CHARDEF 02d2]
-DEFNAME=c_Undead_Guardian
+DEFNAME=c_gargoyle_undead
 NAME=undead gargoyle
 SOUND=1606
 CAN=mt_walk|mt_run|mt_equip|mt_usehands
@@ -816,7 +1003,7 @@ ON=@CreateLoot
     ITEM={i_bottle_wine 1}
     //ITEM=i_goblin_blood
 
-
+//This is the goblin grey mage
 [CHARDEF 02d4]
 DEFNAME=c_gremlin
 NAME=gremlin
@@ -1106,6 +1293,60 @@ ON=@CreateLoot
     ITEM=loot_ai_hard
     ITEM=i_statue_medusa,R40
 
+[CHARDEF 02d9]
+//FIXME: Incomplete Stratics data
+DEFNAME=c_mimic
+NAME=mimic
+SOUND=snd_monster_mimic1
+ICON=i_pet_mimic
+CAN=mt_walk|mt_run|mt_nonhum
+
+DAM=13,20
+ARMOR=60
+TAG.Barding.Diff=111.4
+TAG.OVERRIDE.SPIDERWEB=1
+DAMCOLD=20
+DAMENERGY=20
+DAMFIRE=20
+DAMPOISON=20
+
+DESIRES=r_caves,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=30
+RESOURCES=1 i_ribs_raw
+
+CATEGORY=Named Creatures
+SUBSECTION=Arachnids		//It has the  Arachnid Slayer vulnerability
+DESCRIPTION=Mimic
+
+ON=@Create
+   NPC=<def.brain_monster>
+   FAME={2500 2999}
+   KARMA={-2500 -2999}
+   
+   STR={275 300}
+   MAXHITS={525 550}
+   DEX={120 140}
+   MAXSTAM={120 140}
+   INT={250 275}
+   MAXMANA={250 275}
+   
+   EVALUATINGINTEL={95.0 105.0}
+   MAGERY={105.0 110.0}
+   MAGICRESISTANCE={45.0 60.0}
+   MEDITATION={95.0 105.0}
+   TACTICS={90.0 100.0}
+   WRESTLING={90.0 100.0}
+   
+   RESPHYSICAL={0 5}
+   RESCOLD={35 40}
+   RESENERGY={40 45}
+   RESFIRE={40 45}
+   RESPOISON={35 40}
+   
+ON=@Createloot
+   ITEM=loot_mimic
 
 [CHARDEF 02da]
 DEFNAME=c_raptor
@@ -1371,7 +1612,7 @@ ON=@CreateLoot
 
 
 [CHARDEF 02e0]
-DEFNAME=c_wolf_Spider
+DEFNAME=c_spider_wolf
 NAME=Wolf spider
 SOUND=1605
 CAN=mt_walk|mt_run|mt_usehands
@@ -1418,7 +1659,7 @@ ON=@CreateLoot
 
 
 [CHARDEF 02e1]
-DEFNAME=c_trapdoor_Spider
+DEFNAME=c_spider_trapdoor
 NAME=trapdoor spider
 SOUND=1605
 CAN=mt_walk|mt_run|mt_equip|mt_usehands
@@ -1672,7 +1913,7 @@ ERALIMITGEAR=6
 ERALIMITPROPS=6
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Slasher of Veils
 
 ON=@Create
@@ -1716,6 +1957,11 @@ ON=@CreateLoot
 ON=@GetHit
 argn1 /= 10 //BAD BAD BAD fix, maxhits should be 100k but we divided it to 10k, so we should decrease the received damage too. This will lead to confusing damage appearing on screen with the damage packet, but it's a temporary? workaround
 
+[CHARDEF 02e6] // Can't find
+//FIXME: Needs to be scripted
+DEFNAME=c_tunnel_spirit
+NAME=tunnel spirit
+CAN=MT_NONMOVER|MT_NONHUM
 
 [CHARDEF 033a]
 DEFNAME=c_dragon_stygian
@@ -1780,6 +2026,46 @@ ON=@CreateLoot
     ITEM=loot_dragon_stygian_lord
     ITEM=loot_ai_hard
 
+[CHARDEF 033d]
+//FIXME: No Stratics entry
+//"The Rising Colossus stats, skills, and duration are determined by the
+// Casters Focus or Imbuing (whichever is greater), and Mysticism skills"
+DEFNAME=c_rising_colossus
+NAME=rising colossus
+SOUND=snd_monster_rising_colossus1
+ICON=i_pet_rising_colossus
+
+CAN=MT_WALK
+DAM=33,49
+ARMOR=45
+TAG.Barding.Diff=88.2
+FollowerSlots=5
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Rising Colossus
+
+ON=@Create
+   NPC=<def.brain_monster>
+   FAME=0
+   KARMA=0
+   STR={190 200}
+   MAXHITS={190 200}
+   DEX={100 110}
+   MAXSTAM={100 110}
+   INT={140 150}
+   MAXMANA={140 150}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={45 55}
+   RESENERGY={40 50}
+   RESFIRE={45 55}
+   RESPOISON={55 65}
+   
+   ANATOMY={50.0 75.0}
+   MAGICRESISTANCE={90.0 100.0}
+   TACTICS={95.0 105.0}
+   WRESTLING={95.0 105.0}
 
 [CHARDEF 033e]
 DEFNAME=c_lich_primeval

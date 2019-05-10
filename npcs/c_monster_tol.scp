@@ -1,3 +1,42 @@
+[CHARDEF 04e6]
+DEFNAME=c_tiger_wild
+NAME=Wild Tiger
+SOUND=snd_monster_wildtiger1
+ICON=i_pet_tiger
+CAN=mt_walk|mt_run
+
+DAM=18,24
+ARMOR=65
+TAG.Barding.Diff=90.8
+
+FOODTYPE=t_meat_raw
+RESOURCES=2 i_ribs_raw, 4 i_tigerpelt
+
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Tiger, Wild
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   FAME=16000
+   KARMA=-16000
+   
+   STR={500 555}
+   DEX={85 125}
+   INT={85 165}
+   MAXHITS={350 450}
+   
+   RESPHYSICAL={55 75}
+   RESFIRE={20 40}
+   RESCOLD={55 65}
+   RESPOISON={30 40}
+   RESENERGY={25 35}
+   
+   WRESTLING={89.6 95.1}
+   TACTICS={100.2 102.5}
+   MAGICRESISTANCE={88.4 98.0}
+   TAMING=101.1
+
 [CHARDEF 0505]
 DEFNAME=c_dimetrosaur
 NAME=Dimetrosaur

@@ -64,6 +64,56 @@ ON=@CreateLoot
    ITEM=loot_spider_dread
    
 
+[CHARDEF 026]
+//FIXME: No Stratics data yet
+DEFNAME=c_daemon_blackgate
+NAME=#NAMES_DAEMON
+SOUND=snd_monster_daemon1
+ICON=i_pet_daemon_blackgate
+CAN=mt_walk|mt_fly|mt_usehands|mt_equip
+
+DAM=133,149
+ARMOR=60
+DamCold=25
+DamEnergy=25
+DamFire=25
+TAG.Barding.Diff=114.5
+
+DESIRES=r_caves,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=45
+RESOURCES=1 i_ribs_raw,4 i_reag_daemon_bone
+
+CATEGORY=Monsters
+SUBSECTION=Daemons
+DESCRIPTION=Daemon, Blackgate
+
+ON=@Create
+   NPC=brain_monster
+   FAME={6500 6999}
+   KARMA={-6500 -6999}
+   STR={690 900}
+   MAXHITS={4000 4999}
+   DEX={150 180}
+   MAXSTAM={150 180}
+   INT={140 150}
+   MAXMANA={140 150}
+   EVALUATINGINTEL={90.0 100.0}
+   MAGERY={90.0 100.0}
+   MAGICRESISTANCE={90.0 100.0}
+   MEDITATION={90.0 100.0}
+   PARRYING={90.0 100.0}
+   TACTICS={99.0 100.0}
+   WRESTLING={98.0 99.0}
+   RESPHYSICAL={0 20}
+   RESCOLD={20 30}
+   RESENERGY={40 50}
+   RESFIRE={50 60}
+   RESPOISON={70 80}
+ON=@Createloot
+   ITEM=loot_demon
+
 [CHARDEF 02e]
 DEFNAME=c_wyrm_ancient
 defname2=c_dragon_wyrm
@@ -201,7 +251,7 @@ ERALIMITGEAR=2
 ERALIMITPROPS=2
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Imp
 
 ON=@Create
@@ -349,7 +399,7 @@ ERALIMITGEAR=2
 ERALIMITPROPS=2
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Exodus
 
 ON=@Create
@@ -548,10 +598,108 @@ ON=@Create
     MAGERY=90.0
     TAMING=80.0
 
-[ITEMDEF 9678]
-DEFNAME=i_pet_unicorn
-NAME=Unicorn
 
+[CHARDEF 07d]
+DEFNAME=c_evilmage
+NAME=#NAMES_EVIL_MAGE
+SOUND=snd_special_human
+ICON=i_pet_evil_mage
+CAN=mt_walk|mt_run|mt_usehands|mt_equip
+
+DAM=9,18
+ARMOR=15
+TAG.Barding.Diff=72.2
+
+
+DESIRES=r_ruins,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_food,t_drink
+MAXFOOD=25
+RESOURCES=1 i_ribs_raw
+
+CATEGORY=Humanoids
+SUBSECTION=Evil Humans
+DESCRIPTION=Evil Mage
+ON=@Create
+   NPC=brain_monster
+   FAME={1500 1999}
+   KARMA={-1500 -1999}
+   STR={81 105}
+   MAXHITS={49 63}
+   DEX={49 63}
+   MAXSTAM={49 63}
+   INT={96 120}
+   MAXMANA={96 120}
+   ARCHERY={20.0 60.0}
+   EVALUATINGINTEL={75.0 100.0}
+   FENCING={20.0 60.0}
+   MACEFIGHTING={20.0 60.0}
+   MAGERY={75.0 100.0}
+   MAGICRESISTANCE={75.0 98.0}
+   MEDITATION={75.0 85.0}
+   PARRYING={65.0 87.0}
+   SWORDSMANSHIP={20.0 60.0}
+   TACTICS={65.0 87.0}
+   WRESTLING={20.0 60.0}
+   RESPHYSICAL={0 5}
+   RESCOLD=0
+   RESENERGY={5 10}
+   RESFIRE={5 10}
+   RESPOISON={5 10}
+ON=@Createloot
+   ITEM={ i_robe 10 i_kamishimo 1 }
+   ITEM=loot_mage_evil
+
+[CHARDEF 07e]
+DEFNAME=c_evilmage_lord
+NAME=#NAMES_EVIL_MAGE_LORD
+SOUND=snd_special_human
+ICON=i_pet_evil_mage_lord
+CAN=mt_walk|mt_run|mt_usehands|mt_equip
+DAM=9,18
+ARMOR=35
+MOVERATE=150
+TAG.Barding.Diff=79.6
+
+DESIRES=r_ruins,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_food,t_drink
+MAXFOOD=25
+RESOURCES=1 i_ribs_raw
+
+CATEGORY=Humanoids
+SUBSECTION=Evil Humans
+DESCRIPTION=Evil Mage, Lord
+ON=@Create
+   NPC=brain_monster
+   FAME={1500 1999}
+   KARMA={-1500 -1999}
+   STR={81 105}
+   MAXHITS={49 63}
+   DEX={191 215}
+   MAXSTAM={191 215}
+   INT={126 150}
+   MAXMANA={126 150}
+   ARCHERY={20.0 80.0}
+   EVALUATINGINTEL={80.0 100.0}
+   FENCING={20.0 80.0}
+   MACEFIGHTING={20.0 80.0}
+   MAGERY={95.0 100.0}
+   MAGICRESISTANCE={77.0 100.0}
+   MEDITATION={90.0 110.0}
+   PARRYING={65.0 88.0}
+   SWORDSMANSHIP={20.0 80.0}
+   TACTICS={65.0 88.0}
+   WRESTLING={20.0 80.0}
+   RESPHYSICAL={0 5}
+   RESCOLD={30 40}
+   RESENERGY={30 40}
+   RESFIRE={30 40}
+   RESPOISON={30 40}
+ON=@Createloot
+   ITEM=loot_mage_evil
+   ITEM=i_kamishimo
+   ITEM=loot_ai_hard
 
 [CHARDEF 080]
 DEFNAME=c_pixie
@@ -610,7 +758,7 @@ ON=@CreateLoot
 
 
 [CHARDEF 082]
-DEFNAME=c_fire_gargoyle
+DEFNAME=c_gargoyle_fire
 NAME=Fire Gargoyle
 SOUND=snd_monster_gargyl1
 ICON=i_pet_garg
@@ -714,6 +862,54 @@ ON=@Create
     TAMING=105.0
     MAGERY=125.0
 
+[CHARDEF 092]
+DEFNAME=c_harrower
+NAME=nameless one
+SOUND=snd_monster_shadowlord1
+ICON=i_pet_harrower
+
+CAN=mt_walk|mt_run|mt_usehands|mt_equip
+DAM=15,25
+ARMOR=40
+TAG.Barding.Diff=84.8
+DamCold=40
+
+DESIRES=r_dungeon_khaldun,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+
+TEVENTS=e_undead
+
+CATEGORY=Monsters
+SUBSECTION=Undead
+DESCRIPTION=Nameless One
+
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   FAME={1500 1999}
+   KARMA={-1500 -1999}
+   
+   STR={105 135}
+   MAXHITS={136 165}
+   DEX={66 95}
+   MAXSTAM={66 95}
+   INT={175 205}
+   MAXMANA={175 205}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={30 40}
+   RESENERGY={1 10}
+   RESFIRE={10 20}
+   RESPOISON={10 20}
+   
+   EVALUATINGINTEL={70.0 80.0}
+   MAGERY={70.0 80.0}
+   MAGICRESISTANCE={70.0 90.0}
+   TACTICS={70.0 90.0}
+   WRESTLING={50.0 70.0}
+ 
+ON=@Createloot
+   ITEM=loot_skeletal_mage
 
 [CHARDEF 094]
 DEFNAME=c_skeleton_mage
@@ -797,7 +993,7 @@ ERALIMITGEAR=2
 ERALIMITPROPS=2
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Succubus
 
 ON=@Create
@@ -998,8 +1194,8 @@ ON=@CreateLoot
     
 
 [CHARDEF 0a9]
+DEFNAME=c_beetle_fire
 NAME=fire beetle
-DEFNAME=c_giant_beetle_fire
 CAN=mt_walk|mt_run|mt_equip|mt_usehands
 SOUNDIDLE=021d
 SOUNDNOTICE=021d
@@ -1052,7 +1248,7 @@ ON=@CreateLoot
 
 
 [CHARDEF 0ad]
-DEFNAME=c_mephitis
+DEFNAME=c_spider_lord
 NAME=Mephitis
 SOUND=snd_monster_gispidr1
 ICON=i_pet_spiderlord
@@ -1129,7 +1325,7 @@ ERALIMITGEAR=2
 ERALIMITPROPS=2
 
 CATEGORY=Named Creatures
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Semidar
 
 
@@ -1159,8 +1355,8 @@ ON=@CreateLoot
 
 
 [CHARDEF 0af]
-DEFNAME=c_Ethereal_Warrior
-NAME=Ethereal Warrior
+DEFNAME=c_forest_lord
+NAME=Forest Lord
 SOUND=snd_pixie
 ICON=i_pet_forestlord
 CAN=mt_walk|mt_run|mt_usehands|mt_equip
@@ -1183,7 +1379,7 @@ ERALIMITPROPS=2
 
 CATEGORY=Monsters
 SUBSECTION=Feys
-DESCRIPTION=Ethereal Warrior
+DESCRIPTION=Forest Lord
 
 ON=@Create
     NPC=<def.brain_monster>
@@ -1796,7 +1992,60 @@ ON=@Create
 ON=@CreateLoot
     ITEM=i_gold,{450 650}
 
+[CHARDEF 02fc]
+DEFNAME=c_juka_warrior
+NAME=juka warrior
+ICON=i_pet_juka_warrior
+CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
+//SOUND=0
+SOUNDIDLE=-1 //01AC
+SOUNDNOTICE=-1 //01CD
+SOUNDHIT=01B0
+SOUNDGETHIT=01D0
+SOUNDDIE=028D
+
+DAM=20,26
+ARMOR=40
+TAG.Barding.Diff=85.6
+
+DESIRES=r_ruins,t_coin,t_gold,t_gem,t_potion
+AVERSIONS=t_trap,r_civilization,e_carnivores3
+FOODTYPE=t_meat_raw
+MAXFOOD=35
+RESOURCES=1 i_ribs_raw
+
+CATEGORY=Monsters
+SUBSECTION=Juka
+DESCRIPTION=Juka, Warrior
+
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   FAME={2000 2499}
+   KARMA={-2000 -2499}
+   
+   STR={251 350}
+   MAXHITS={151 210}
+   DEX={61 80}
+   MAXSTAM={61 80}
+   INT={101 150}
+   MAXMANA={101 150}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={25 35}
+   RESENERGY={10 20}
+   RESFIRE={30 40}
+   RESPOISON={10 20}
+   
+   ANATOMY={80.0 90.0}
+   MAGICRESISTANCE={120.0 130.0}
+   TACTICS={80.0 90.0}
+   WRESTLING={80.0 90.0}
+
+ON=@Createloot
+   ITEM=loot_juka_warrior
+   
 [CHARDEF 02fd]
 DEFNAME=c_juka_mage
 NAME=juka mage
@@ -1988,8 +2237,8 @@ ON=@CreateLoot
 
 
 [CHARDEF 0300]
-DEFNAME=c_Blackthorn_Juggernaut
-defname2=c_Blackthorn_Juggernaught
+DEFNAME=c_juggernaut
+DEFNAME=c_blackthorn_juggernaught
 NAME=Blackthorn Juggernaught
 ICON=i_pet_juggernaught
 CAN=mt_walk|mt_usehands|mt_equip
@@ -2288,6 +2537,68 @@ ON=@CreateLoot
     ITEM=random_sword
     ITEM=random_reagent,{10 20}
 
+[CHARDEF 0306]
+//FIXME: No Stratics entry
+DEFNAME=c_dawn
+NAME=Dawn
+SOUND=snd_special_human
+ICON=i_pet_dawn
+CAN=mt_walk|mt_run|mt_usehands|mt_equip
+
+DAM=50,60
+ARMOR=50
+TAG.Barding.Diff=10000	//Immune to barding
+DAMCOLD=10
+DAMENERGY=10
+DAMFIRE=10
+DAMPOISON=10
+
+DESIRES=t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization,e_carnivores3
+FOODTYPE=t_food
+MAXFOOD=35
+RESOURCES=1 i_ribs_raw
+MOVERATE=150
+
+CATEGORY=Named Creatures
+SUBSECTION=Humanoids
+DESCRIPTION=Dawn
+
+ON=@Create
+   NPC=<def.brain_monster>
+   FAME={8000 8999}
+   KARMA={-8000 -8999}
+   
+   STR={750 900}
+   MAXHITS={4000 5000}
+   DEX={265 290}
+   MAXSTAM={265 290}
+   INT={995 1190}
+   MAXMANA={995 1190}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={50 60}
+   RESENERGY={40 50}
+   RESFIRE={30 40}
+   RESPOISON=100
+   ANATOMY={90.0 100.0}
+   ARCHERY={60.0 80.0}
+   
+   EVALUATINGINTEL={70.0 80.0}
+   FENCING={110.0 120.0}
+   MACEFIGHTING={110.0 120.0}
+   MAGERY={110.0 120.0}
+   MAGICRESISTANCE={100.0 125.0}
+   MEDITATION={75.0 100.0}
+   PARRYING={100.0 125.0}
+   POISONING={100.0 125.0}
+   SWORDSMANSHIP={100.0 125.0}
+   TACTICS={100.0 125.0}
+ 
+ON=@Createloot
+   ITEM=loot_dawn
+   ITEM=loot_ai_hard
+   
 
 [CHARDEF 0307]
 DEFNAME=c_plague_beast
@@ -2379,8 +2690,8 @@ ON=@create
 
 
 [CHARDEF 0308]
-DEFNAME=c_horde_minion
-defname2=c_horde_minion_small
+DEFNAME=c_daemon_horde_minion
+DEFNAME2=c_horde_minion_small
 NAME=horde minion
 SOUND=357
 ICON=i_pet_hordedaemon
@@ -2405,7 +2716,7 @@ ERALIMITGEAR=2
 ERALIMITPROPS=2
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Horde Minion, Small
 
 ON=@Create
@@ -2457,7 +2768,7 @@ ERALIMITGEAR=2
 ERALIMITPROPS=2
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Doppleganger
 
 ON=@Create
@@ -2525,7 +2836,58 @@ ON=@CreateLoot
     ITEM=i_reag_nightshade,{2 6}
     ITEM=i_gold,{25 55}
 
+[CHARDEF 030b]
+DEFNAME=c_bogling
+NAME=bogling
+SOUND=snd_monster_headls1
+ICON=i_pet_bogling
+CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
+DAM=8,12
+ARMOR=20
+
+TAG.Barding.Diff=61.5
+
+DESIRES=r_swamp,t_coin,t_gold,t_gem,t_potion
+AVERSIONS=r_civilization,e_carnivores2,e_carnivores3
+FOODTYPE=t_meat_raw
+MAXFOOD=35
+RESOURCES=1 i_ribs_raw,6 i_hide
+
+RESLEVEL=2
+RESDISPDNID=c_man
+RESDISPDNHUE=0ad
+
+CATEGORY=Monsters
+SUBSECTION=Plants
+DESCRIPTION=Bogling
+
+ON=@Create
+   NPC=<def.brain_monster>
+   FAME={1000 1499}
+   KARMA={-1000 -1499}
+   BLOODCOLOR=<def.colors_green>
+   
+   STR={96 120}
+   MAXHITS={58 72}
+   DEX={91 115}
+   MAXSTAM={91 115}
+   INT={21 45}
+   MAXMANA={21 45}
+   
+   RESPHYSICAL={0 5}
+   RESCOLD={15 25}
+   RESENERGY={15 25}
+   RESFIRE={10 20}
+   RESPOISON={15 25}
+   
+   MAGICRESISTANCE={75.0 100.0}
+   TACTICS={55.0 80.0}
+   WRESTLING={55.0 75.0}
+
+ON=@Createloot
+   ITEM=loot_bogling
+   
 [CHARDEF 030c]
 DEFNAME=c_bog_thing
 NAME=Bog Thing
@@ -2573,7 +2935,7 @@ ON=@CreateLoot
 
 
 [CHARDEF 030d]
-DEFNAME=c_solen_worker_red
+DEFNAME=c_solen_worker
 NAME=Red Solen Worker
 SOUND=959
 ICON=i_pet_fireant_worker
@@ -2624,7 +2986,7 @@ ON=@CreateLoot
 
 
 [CHARDEF 030e]
-DEFNAME=c_solen_warrior_red
+DEFNAME=c_solen_warrior
 NAME=Red Solen Warrior
 SOUND=959
 ICON=i_pet_fireant_warrior
@@ -2676,7 +3038,7 @@ ON=@CreateLoot
 
 
 [CHARDEF 030f]
-DEFNAME=c_solen_queen_red
+DEFNAME=c_solen_queen
 NAME=Red Solen Queen
 SOUND=959
 ICON=i_pet_fireant_queen
@@ -2730,7 +3092,7 @@ ON=@CreateLoot
 
 
 [CHARDEF 0310]
-DEFNAME=c_arcane_daemon
+DEFNAME=c_daemon_arcane
 NAME=Arcane Daemon
 SOUND=047d
 ICON=i_pet_arcanedaemon
@@ -2752,7 +3114,7 @@ ERALIMITGEAR=2
 ERALIMITPROPS=2
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Demon, Arcane
 
 ON=@Create
@@ -2937,7 +3299,57 @@ ON=@CreateLoot
     ITEM=random_jewel, {1 2}
     ITEM=i_gold,{125 175}
 
+[CHARDEF 0316]
+//FIXME: Throws sand
+DEFNAME=c_elemental_sand_vortex
+NAME=sand vortex
+SOUND=snd_elementl_airelem1
+ICON=i_pet_vortex_sand
+CAN=mt_walk|mt_run|mt_usehands|mt_nonhum
 
+DAM=5,27
+ARMOR=80
+MOVERATE=120
+TAG.Barding.Diff=75.6
+TAG.OVERRIDE.ROCK=i_sand
+DAMFIRE=10
+
+DESIRES=r_desert,t_coin,t_gold,t_gem,t_potion
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=35
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Vortex, Sand
+
+ON=@Create
+   NPC=<def.brain_monster>
+   FAME={1500 1999}
+   KARMA={-1500 -1999}
+   BLOODCOLOR=<def.colors_white>
+   
+   STR={96 120}
+   MAXHITS={51 62}
+   DEX={171 195}
+   MAXSTAM={171 195}
+   INT={76 100}
+   MAXMANA={76 100}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={60 70}
+   RESENERGY={60 70}
+   RESFIRE={60 70}
+   RESPOISON={60 70}
+   
+   MAGICRESISTANCE={145.0 155.0}
+   TACTICS={66.0 75.0}
+   WRESTLING={75.0 85.0}
+
+ON=@Createloot
+   ITEM=loot_elem_sand_vortex
+   ITEM=i_sand,{1 3}
+   
 [CHARDEF 0317]
 DEFNAME=c_giant_beetle
 NAME=Giant Beetle
@@ -2996,7 +3408,7 @@ ON=@Create
 
 
 [CHARDEF 0318]
-DEFNAME=c_chaos_daemon
+DEFNAME=c_daemon_chaos
 NAME=Chaos Daemon
 SOUND=03e9
 ICON=i_pet_chaosdaemon
@@ -3020,7 +3432,7 @@ ERALIMITGEAR=2
 ERALIMITPROPS=2
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Demon, Chaos
 
 ON=@Create

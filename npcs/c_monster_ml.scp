@@ -24,7 +24,7 @@ ERALIMITGEAR=5
 ERALIMITPROPS=5
 
 CATEGORY=Named Creatures
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Chief Paroxysmus
 
 ON=@Create
@@ -105,7 +105,7 @@ ON=@CreateLoot
 
 
 [CHARDEF 0102]
-DEFNAME=c_lady_m
+DEFNAME=c_lady_melisande
 NAME=Lady Melisande
 //SOUND=snd_monster_daemon1
 ICON=i_worldgem_bit
@@ -220,10 +220,10 @@ ON=@CreateLoot
 
 
 [CHARDEF 0104]
-DEFNAME=c_Travesty
-NAME=Travesty
-SOUND=snd_monster_daemon1
-ICON=i_worldgem_bit
+DEFNAME=c_mantra_effervescent
+NAME=Mantra Effervescent
+SOUND=snd_monster_fetidessence1
+i_pet_mantra_effervescent
 CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
 DAM=4,30
@@ -242,9 +242,9 @@ ERALIMITLOOT=5
 ERALIMITGEAR=5
 ERALIMITPROPS=5
 
-CATEGORY=New Monsters
-SUBSECTION=ML
-DESCRIPTION=Travesty
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Mantra Effervescent
 
 ON=@Create
     NPC=<def.brain_monster>
@@ -269,10 +269,10 @@ ON=@CreateLoot
 
 
 [CHARDEF 0105]
-DEFNAME=c_Shimmering_Effusion
+DEFNAME=c_shimmering_effusion
 NAME=Shimmering Effusion
 //SOUND=snd_monster_daemon1
-ICON=i_worldgem_bit
+ICON=i_pet_shimmering_effusion
 CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
 DAM=4,10
@@ -477,7 +477,7 @@ ON=@CreateLoot
 DEFNAME=c_Hydra
 NAME=Hydra
 SOUND=016a
-ICON=i_worldgem_bit
+ICON=i_pet_hydra
 CAN=mt_walk
 
 DAM=21,26
@@ -526,7 +526,6 @@ ON=@CreateLoot
     ITEM=i_hydra_scale
     //ITEM=i_thorvalds_medallion
     //ITEM=i_pet_parrot
-
 
 [CHARDEF 010a]
 DEFNAME=c_Dryad
@@ -686,6 +685,58 @@ ON=@CreateLoot
     ITEM=i_gold,{125 250}
     ITEM=random_scroll
 
+[CHARDEF 0110]
+//Spawned by Shimmering Effusions
+//FIXME: Has an area attack of some sort
+DEFNAME=c_corporeal_brume
+NAME=corporeal brume
+SOUND=snd_monster_corporealbrume1
+ICON=i_pet_corporeal_brume
+CAN=mt_walk|mt_run|mt_nonhum
+BLOODCOLOR=-1
+
+DAM=21,25
+ARMOR=95
+TAG.Barding.Diff=124.5
+DAMENERGY=50
+
+DESIRES=r_caves,t_coin,t_gold,t_gem
+AVERSIONS=t_trap,r_civilization
+RESOURCES=1 i_crystals_broken
+
+RESLEVEL=5
+RESDISPDNID=c_man
+RESDISPDNHUE=33
+
+CATEGORY=Monsters
+SUBSECTION=Fey
+DESCRIPTION=Corporeal Brume
+
+ON=@Create
+   NPC=<def.brain_monster>
+   FAME={2000 2499}
+   KARMA={-2000 -2499}
+   STR={400 450}
+   MAXHITS={1100 1200}
+   DEX={130 150}
+   MAXSTAM={130 150}
+   INT={50 60}
+   MAXMANA={50 60}
+   
+   RESPHYSICAL={0 5}
+   RESCOLD={40 50}
+   RESENERGY={30 40}
+   RESFIRE={45 55}
+   RESPOISON={50 60}  
+   
+   ANATOMY={100.0 110.0}
+   MAGICRESISTANCE={80.0 90.0}
+   TACTICS={110.0 120.0}
+   WRESTLING={110.0 120.0}
+
+ON=@Createloot
+   ITEM=random_jewel,{1 4}
+   ITEM=i_gold,{180 230}
 
 [CHARDEF 0111]
 DEFNAME=c_Fetid_Essence
@@ -1253,7 +1304,7 @@ DESCRIPTION=Elf, Female
 
 
 [CHARDEF 025f]
-DEFNAME=c_elf_ghost_man
+DEFNAME=c_elf_ghost_male
 NAME=Elf male Ghost
 ICON=i_pet_MAN
 CAN=mt_equip|mt_walk|mt_run|mt_ghost
@@ -1270,7 +1321,7 @@ TSPEECH=spk_human_default
 TEVENTS=e_Human_HearUnk
 
 RESLEVEL=5
-RESDISPDNID=c_ghost_man
+RESDISPDNID=c_ghost_male
 
 ERALIMITLOOT=5
 ERALIMITGEAR=5
@@ -1282,7 +1333,7 @@ DESCRIPTION=Elf Ghost, Male
 
 
 [CHARDEF 0260]
-DEFNAME=c_elf_ghost_woman
+DEFNAME=c_elf_ghost_female
 NAME=Elf Female Ghost
 ICON=i_pet_woman
 CAN=mt_equip|mt_walk|mt_run|mt_ghost|mt_female
@@ -1299,7 +1350,7 @@ TSPEECH=spk_human_default
 TEVENTS=e_Human_HearUnk
 
 RESLEVEL=5
-RESDISPDNID=c_ghost_woman
+RESDISPDNID=c_ghost_female
 
 ERALIMITLOOT=5
 ERALIMITGEAR=5

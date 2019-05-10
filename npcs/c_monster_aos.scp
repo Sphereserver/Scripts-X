@@ -217,7 +217,7 @@ ON=@NpcRestock
 
 
 [CHARDEF 012f]
-DEFNAME=c_devourer
+DEFNAME=c_devourer_souls
 NAME=Devourer of Souls
 SOUND=357
 ICON=i_pet_devourer
@@ -238,7 +238,7 @@ ERALIMITGEAR=3
 ERALIMITPROPS=3
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Devourer of Souls
 
 ON=@Create
@@ -369,7 +369,97 @@ ON=@Create
 ON=@npcrestock
     ITEM=i_gold,{125 175}
 
+[CHARDEF 0132]
+//"The Impaler is the third of the five champions you have to defeat in
+//the Doom Gauntlet to summon the arch champion known as the Dark Father."
+//FIXME: Cannot be first target of a provoke attempt.
+//FIXME: Cannot be area peaced.
+DEFNAME=c_impaler
+NAME=Impaler
+SOUND=snd_monster_yamandon1
+ICON=i_pet_impaler
+CAN=mt_walk|mt_run
 
+DAM=72,79
+RANGE=2
+ARMOR=90
+TAG.Barding.Diff=160.0
+
+DESIRES=r_dungeon_doom,t_coin,t_gold,t_gem
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=45
+RESOURCES=1 i_ribs_raw
+
+CATEGORY=Named Creatures
+SUBSECTION=Doom Champions
+DESCRIPTION=Impaler
+ON=@Create
+   DORAND 20
+      NAME=Cassiel
+      NAME=Crarigor
+      NAME=Empalk
+      NAME=Flandrith
+      NAME=Gathfe
+      NAME=Ix
+      NAME=Magor
+      NAME=Manglar
+      NAME=Perfus
+      NAME=Po-Kor
+      NAME=Scrill
+      NAME=Selminus
+      NAME=Skred
+      NAME=Slix
+      NAME=Stavinfeks
+      NAME=Steelbane
+      NAME=Verolyn
+      NAME=Victux
+      NAME=Vladeer
+      NAME=Xtul
+   ENDDO
+   
+   NPC=<def.brain_monster>
+   
+   FAME={1500 1999}
+   KARMA={-1500 -1999}
+   STR={185 195}
+   MAXHITS={4995 5005}
+   DEX={40 55}
+   MAXSTAM={140 180}
+   INT={185 195}
+   MAXMANA={185 195}
+   
+   RESPHYSICAL={0 5}
+   RESCOLD={70 80}
+   RESENERGY=100
+   RESFIRE={55 65}
+   RESPOISON={55 65}
+   
+   MAGICRESISTANCE={95.0 105.0}
+   POISONING={155.0 165.0}
+   TACTICS={95.0 105.0}
+   WRESTLING={75.0 85.0}
+
+ON=@Createloot
+   ITEM=loot_impaler
+   ITEM=loot_ai_hard
+   
+ON=@Hit
+   //Bleed Attack
+   IF (<MANA> >= 25) && !(<SRC.FINDID.i_bleed_timer>)
+      MANA -= 25
+      SERV.NEWITEM=i_bleed_timer
+      NEW.LINK=<UID>
+      SRC.EQUIP <NEW>
+   ENDIF
+   //Mortal Strike Attack
+   IF (<MANA> >= 30) && !(<SRC.FINDID.i_blockheal_timer>)
+      MANA -= 30
+      SRC.SOUND snd_spell_paralyze
+      SERV.NEWITEM=i_blockheal_timer
+      SRC.EQUIP <NEW>
+   ENDIF
+   
 [CHARDEF 0133]
 DEFNAME=c_gibberling
 NAME=Gibberling
@@ -392,7 +482,7 @@ ERALIMITGEAR=3
 ERALIMITPROPS=3
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Gibberling
 
 ON=@Create
@@ -575,6 +665,94 @@ ON=@NpcRestock
     ITEM=i_gold,{50 100}
 
 
+ [CHARDEF 0137]
+//"The Shadow Knight is the fourth of the five champions you have to defeat
+//in the Doom Gauntlet to summon the arch champion known as the Dark Father."
+//FIXME: Cannot be first target of a provoke attempt.
+//FIXME: Cannot be area peaced.
+DEFNAME=c_shadow_knight
+NAME=shadow knight
+SOUND=snd_monster_ghost1
+ICON=i_pet_knight_shadow
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
+
+DAM=51,73
+RANGE=2
+ARMOR=90
+TAG.Barding.Diff=160.0
+DAMCOLD=40
+
+DESIRES=r_dungeon_doom,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=45
+RESOURCES=1 i_reag_brimstone
+
+CATEGORY=Named Creatures
+SUBSECTION=Doom Champions
+DESCRIPTION=Shadow Knight
+
+ON=@Create
+   DORAND 20
+      NAME=Arametheus
+      NAME=Archatrix
+      NAME=Doomor
+      NAME=Erdok
+      NAME=Helzigar
+      NAME=Jonar
+      NAME=Krakus
+      NAME=Lord Kaos
+      NAME=Malashim
+      NAME=Marcus Fel
+      NAME=Marth Fador
+      NAME=Montobulus
+      NAME=Nelokhiel
+      NAME=Oghmus
+      NAME=Samael
+      NAME=Terxor
+      NAME=Tyrnak
+      NAME=Uhn
+      NAME=Usuhl
+      NAME=Zul
+   ENDDO
+   NPC=<def.brain_monster>
+   FAME={2500 2999}
+   KARMA={-2500 -2999}
+   BLOODCOLOR=<def.colors_black>
+   
+   STR={245 255}
+   MAXHITS={1995 2005}
+   DEX={95 105}
+   MAXSTAM={150 185}
+   INT={95 105}
+   MAXMANA={150 185}
+   
+   RESPHYSICAL={0 5}
+   RESCOLD={70 80}
+   RESENERGY={50 60}
+   RESFIRE={60 70}
+   RESPOISON={70 80}
+   
+   ANATOMY={85.0 95.0}
+   ARCHERY={95.0 105.0}
+   DETECTINGHIDDEN={95.0 105.0}
+   EVALUATINGINTEL={95.0 105.0}
+   FENCING={95.0 105.0}
+   HIDING={95.0 105.0}
+   MACEFIGHTING={95.0 105.0}
+   MAGERY={95.0 105.0}
+   MAGICRESISTANCE={115.0 125.0}
+   MEDITATION={95.0 105.0}
+   PARRYING={95.0 105.0}
+   STEALTH={95.0 105.0}
+   SWORDSMANSHIP={95.0 105.0}
+   TACTICS={95.0 105.0}
+   WRESTLING={95.0 105.0}
+
+ON=@Createloot
+   ITEM=loot_shadow_knight
+   ITEM=loot_ai_hard
+
 [CHARDEF 0138]
 DEFNAME=c_abyssmal_horror
 NAME=Abyssmal Horror
@@ -597,7 +775,7 @@ ERALIMITGEAR=3
 ERALIMITPROPS=3
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Abyssmal Horror
 
 ON=@Create
@@ -628,7 +806,100 @@ ON=@NpcRestock
     ITEM=i_gold,{1600 2000}
     //ITEM=magic_items    //todo
 
+[CHARDEF 0139]
+//"The Darknight Creeper is the first of the five champions you have to
+// defeat in the Doom Gauntlet to summon the arch champion known as the
+// Dark Father."
+//FIXME: Cannot be first target of a provoke attempt.
+//FIXME: Cannot be area peaced.
+DEFNAME=c_darknight_creeper
+NAME=darknight creeper
+SOUND=snd_monster_daemon1
+ICON=i_pet_darknight_creeper
+CAN=mt_walk|mt_run|mt_usehands|mt_equip
+DAM=59,69
+RANGE=2
+ARMOR=60
+TAG.Barding.Diff=160.0
+DAMPOISON=15
 
+DESIRES=r_dungeon_doom,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=55
+RESOURCES=2 i_ribs_raw,4 i_reag_blood_moss
+
+CATEGORY=Named Creatures
+SUBSECTION=Doom Champions
+DESCRIPTION=Darknight Creeper
+
+ON=@Create
+   DORAND 20
+      NAME=Blassarrabb
+      NAME=Centibis
+      NAME=Crenabil
+      NAME=Farthak
+      NAME=Flaggroth
+      NAME=Gragok
+      NAME=Gragragron
+      NAME=Grothelfiend
+      NAME=Krullus
+      NAME=Krygar
+      NAME=Laitesach
+      NAME=Legron
+      NAME=Lorbna
+      NAME=Noirkrach
+      NAME=Pariah
+      NAME=Thranger
+      NAME=Vendodroth
+      NAME=Vilithrar
+      NAME=Ydoc Llessue
+      NAME=Zhaan
+   ENDDO
+   NPC=<def.brain_monster>
+   FAME={4000 4499}
+   KARMA={-4000 -4499}
+   
+   STR={301 330}
+   MAXHITS={3995 4005}
+   DEX={101 110}
+   MAXSTAM={101 110}
+   INT={301 330}
+   MAXMANA={301 330}
+   
+   RESPHYSICAL={0 5}
+   RESCOLD=100
+   RESENERGY={70 80}
+   RESFIRE={55 65}
+   RESPOISON={80 95}
+   
+   ANATOMY={65.0 75.0}
+   ARCHERY={90.0 91.0}
+   EVALUATINGINTEL={118.0 120.0}
+   FENCING={90.0 91.0}
+   MACEFIGHTING={90.0 91.0}
+   MAGERY={112.0 120.0}
+   MAGICRESISTANCE={90.0 91.0}
+   MEDITATION={145.0 150.0}
+   NECROMANCY={95.0 105.0}
+   PARRYING={95.0 105.0}
+   POISONING={85.0 95.0}
+   SWORDSMANSHIP={90.0 91.0}
+   TACTICS={95.0 105.0}
+   WRESTLING={90.0 91.0}
+   
+ON=@Createloot
+   ITEM=loot_darknight_creeper
+   ITEM=loot_ai_hard
+ON=@Hit
+   //Bleed Attack
+   IF (<MANA> >= 25) && !(<SRC.FINDID.i_bleed_timer>)
+      MANA -= 25
+      SERV.NEWITEM=i_bleed_timer
+      NEW.LINK=<UID>
+      SRC.EQUIP <NEW>
+   ENDIF
+   
 [CHARDEF 013a]
 DEFNAME=c_ravager
 NAME=Ravager
@@ -651,7 +922,7 @@ ERALIMITGEAR=3
 ERALIMITPROPS=3
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Ravager
 
 ON=@Create
@@ -679,6 +950,75 @@ ON=@NpcRestock
     ITEM=i_gold,{275 325}
     ITEM=i_treasure_map4,R99
 
+[CHARDEF 013b]
+//"The Flesh Renderer is the second of the five champions you have to
+// defeat in the Doom Gauntlet to summon the arch champion known as the
+// Dark Father."
+//FIXME: Cannot be first target of a provoke attempt.
+//FIXME: Cannot be area peaced.
+DEFNAME=c_flesh_renderer
+NAME=flesh renderer
+SOUND=snd_monster_insect1
+ICON=i_pet_flesh_renderer
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+
+DAM=48,61
+ARMOR=80
+TAG.Barding.Diff=160.0
+DAMPOISON=20
+
+DESIRES=r_dungeon_doom,t_coin,t_gold,t_gem
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=65
+RESOURCES=6 i_reag_obsidian
+
+CATEGORY=Named Creatures
+SUBSECTION=Doom Champions
+DESCRIPTION=Flesh Renderer
+
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   FAME={2000 2499}
+   KARMA={-2000 -2499}
+   BLOODCOLOR=<def.colors_black>
+   
+   STR={401 460}
+   MAXHITS={4495 4505}
+   DEX={201 210}
+   MAXSTAM={201 210}
+   INT={221 260}
+   MAXMANA={221 260}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={50 60}
+   RESENERGY={70 80}
+   RESFIRE={50 60}
+   RESPOISON=100
+   
+   MAGICRESISTANCE={155.0 160.0}
+   POISONING={95.0 105.0}
+   TACTICS={95.0 105.0}
+   WRESTLING={90.0 100.0}
+
+ON=@Createloot
+   ITEM=loot_flesh_renderer
+   
+ON=@Hit
+   //Dismount Attack
+   IF (<MANA> >= 20) && (<SRC.FLAGS> & statf_onhorse)
+      MANA -= 20
+      SRC.DISMOUNT
+      SRC.EMOTE knocked off mount!
+      SRC.DAMAGE <R15,25> <DEF.dam_physical> <UID>
+   ENDIF
+   //Paralyze Attack
+   IF !(<SRC.FLAGS>&statf_freeze) && !(<R99>)
+      SRC.SPELLEFFECT s_paralyze,100.0,1,<UID>
+      SRC.EFFECT 3,i_fx_field_paralyze,1,16,0,02
+      SRC.SOUND snd_spell_paralyze
+   ENDIF
 
 [CHARDEF 013c]
 DEFNAME=c_wanderer_void
@@ -702,7 +1042,7 @@ ERALIMITGEAR=3
 ERALIMITPROPS=3
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Wanderer of the Void
 
 ON=@Create
@@ -821,7 +1161,7 @@ ON=@NpcRestock
 
 
 [CHARDEF 0311]
-DEFNAME=c_Moloch
+DEFNAME=c_daemon_moloch
 NAME=Moloch
 SOUND=0300
 ICON=i_pet_fourarmed_daemon
@@ -844,7 +1184,7 @@ ERALIMITGEAR=3
 ERALIMITPROPS=3
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Moloch
 
 ON=@Create

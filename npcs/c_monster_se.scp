@@ -124,7 +124,7 @@ ERALIMITGEAR=4
 ERALIMITPROPS=4
 
 CATEGORY=Monsters
-SUBSECTION=Demons   //In Japanese folklore they are refered as Demon
+SUBSECTION=Daemons   //In Japanese folklore they are refered as Demon
 DESCRIPTION=Kappa
 
 ON=@Create
@@ -176,7 +176,7 @@ ERALIMITGEAR=4
 ERALIMITPROPS=4
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Oni
 
 ON=@create
@@ -524,7 +524,7 @@ ERALIMITGEAR=4
 ERALIMITPROPS=4
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Fan Dancer
 
 ON=@create
@@ -628,7 +628,7 @@ ERALIMITGEAR=4
 ERALIMITPROPS=4
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Yamandon
 
 ON=@create
@@ -685,7 +685,7 @@ ERALIMITGEAR=4
 ERALIMITPROPS=4
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Tsuki Wolf
 
 ON=@create
