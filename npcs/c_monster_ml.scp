@@ -222,7 +222,7 @@ ON=@CreateLoot
 [CHARDEF 0104]
 DEFNAME=c_mantra_effervescent
 NAME=Mantra Effervescent
-SOUND=snd_monster_fetidessence1
+//SOUND=snd_monster_fetidessence1
 i_pet_mantra_effervescent
 CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
