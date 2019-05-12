@@ -1632,6 +1632,7 @@ VALUE=76
 WEIGHT=12.0
 RESOURCES=12 i_ingot_iron
 SKILLMAKE=Blacksmithing 59.7,Armslore 25.0
+TEVENTS=ei_equipment_3donly
 CATEGORY=Provisions - Armor
 SUBSECTION=Platemail Armor
 DESCRIPTION=Waraji (3d client only)

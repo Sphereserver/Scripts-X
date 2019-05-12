@@ -22,13 +22,13 @@ DTL_DB_Table 	DynamicTemplate_Loot
 sex_male	0
 sex_female	1
 
-// Flags for further categorization, useful for "filtering" out items(or to take only items with certain flags)
+// Flags for further categorization, useful for "filtering" out items (or to take only items with certain flags)
 //DTL_flag_yourflag				01
 DTL_flag_material_nonbase	0010000000
 DTL_flag_magic_preaos		0020000000
 DTL_flag_artifact			0040000000
 DTL_flag_equipment_special	0080000000
-//DTL_flag_equipment_3donly	0100000000
+DTL_flag_equipment_3donly	0100000000
 
 
 [function f_DTL_mdb_update]
@@ -44,7 +44,7 @@ serv.log DynamicTemplateLoot database loaded in memory.
 
 
 // DynamicTemplateLoot
-[function f_DTLoot] // class, race, sex ID (0=male, 1=female), expamsion ID (optional)
+[function f_DTLoot] // class, race, sex ID (0=male, 1=female), expansion ID (optional)
 // class: weapon_fence, armor...
 // race: any, human, elf, garg, nohuman, noelf, nogarg
 // sex: female (female-only items), male (male + female)
@@ -58,7 +58,7 @@ local.sex= <qval <isnum    <argv2>> ?<argv2>:<def.sex_male>>
 local.exp= <qval <isnum    <argv3>> ?<argv3>:<EraLimitGear>>
 
 local.race_is_any   = <eval (0 == strcmpi("any","<local.race>"))>
-local.flags_exclude = <eval <def.DTL_flag_material_nonbase>|<def.DTL_flag_magic_preaos>|<def.DTL_flag_artifact>|<def.DTL_flag_equipment_special>>
+local.flags_exclude = <eval <def.DTL_flag_material_nonbase>|<def.DTL_flag_magic_preaos>|<def.DTL_flag_artifact>|<def.DTL_flag_equipment_special>|<def.DTL_flag_equipment_3donly>>
 
 // In the future we may even use a prepared statement
 // Explanation of the query: pick all the defnames that are of the given class, race, sex, with an expansion <= the given one and exclude pre-aos magic items, artifacts and "colored" craftables (made of a non-base material, like iron)
@@ -113,10 +113,18 @@ for 0 <eval <serv.deflist.itemdef.count>-1>
 	
 	local._d = serv.itemdef.<local._item>
 	
+	local._cu=<<local._d>.canuse>
+	// Not interested in unequippable/unusable items
+	if (<local._cu>&<def.can_u_none>)
+		continue
+	endif
+	
 	// Get the Class
 	local._t=<resdef.<<local._d>.type>>
+	if <local._t>==<resdef.t_normal>
+		continue	// The type of the vast majority of unequippable items, skip it (for speed)
 	// Weapon
-	if <local._t>==<resdef.t_weapon_fence>
+	elif <local._t>==<resdef.t_weapon_fence>
 		local.c="weapon_fence"
 	elif <local._t>==<resdef.t_weapon_sword>
 		local.c="weapon_sword"
@@ -158,12 +166,6 @@ for 0 <eval <serv.deflist.itemdef.count>-1>
 	else
 		continue
 	endif
-	
-	local._cu=<<local._d>.canuse>
-	if (<local._cu>&<def.can_u_none>)
-		continue
-	endif
-	
 
 	// Get the Sex
 	if <local._cu>&<def.can_u_female>
@@ -208,9 +210,9 @@ for 0 <eval <serv.deflist.itemdef.count>-1>
 	if <<local._d>.istevent.<resdef.ei_equipment_special>>
 		local.f |= <def.DTL_flag_equipment_special>
 	endif
-	//if <<local._d>.istevent.<resdef.ei_equipment_3donly>>
-	//	local.f |= <def.DTL_flag_equipment_3donly>
-	//endif
+	if <<local._d>.istevent.<resdef.ei_equipment_3donly>>
+		local.f |= <def.DTL_flag_equipment_3donly>
+	endif
 	
 	local.defname=<<local._d>.defname>
 	if <isempty <local.defname>>
