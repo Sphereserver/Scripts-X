@@ -44,14 +44,16 @@ serv.log DynamicTemplateLoot database loaded in memory.
 
 
 // DynamicTemplateLoot
-[function f_DTLoot] // class, race, sex ID (0=male, 1=female), expansion ID (optional)
+// f_DTLoot arguments: class, race, sex ID (0=male, 1=female), expansion ID (optional)
+// Example of usage: ITEM=<f_DTLoot <StrRandRange "weapon_sword" 1 "armor_leather" 1>, any, 0>
+[function f_DTLoot]
 // class: weapon_fence, armor...
 // race: any, human, elf, garg, nohuman, noelf, nogarg
 // sex: female (female-only items), male (male + female)
 // expansion id: <def.rds_t2a>, <def.rds_aos>, <def.rds_hs>... ignore items added after this UO expansion
 if <isempty <argv0>>
 	serv.log DynamicTemplate: Invalid args.
-	return <def.defaultitem>
+	return //<def.defaultitem> // It's better to generate an error, so that we can easily track the line of code
 endif
 local.race=<qval !<isempty <argv1>> ?<argv1>:"any">
 local.sex= <qval <isnum    <argv2>> ?<argv2>:<def.sex_male>>
@@ -65,7 +67,7 @@ local.flags_exclude = <eval <def.DTL_flag_material_nonbase>|<def.DTL_flag_magic_
 mdb.query SELECT defname FROM '<def.DTL_DB_Table>' WHERE class='<argv0>' <qval <local.race_is_any>?:AND race='<local.race>'> AND sex=<dlocal.sex> AND expansion<=<dlocal.exp> AND NOT flags&<dlocal.flags_exclude>
 if !<mdb.row.numrows>
 	serv.log DynamicTemplate: Can't find DB entry with class=<argv0> <qval <local.race_is_any>?:AND race='<local.race>'> AND sex=<dlocal.sex> AND expansion<=<dlocal.exp> AND NOT flags&<dlocal.flags_exclude>
-	return <def.defaultitem>
+	return //<def.defaultitem> // It's better to generate an error, so that we can easily track the line of code
 endif
 return <mdb.row.<R0,<mdb.row.numrows>>.defname>
 
@@ -103,6 +105,9 @@ if <local.ldb>
 	endif
 endif
 
+// Temp values (looked up once, outside the for loop, for speed)
+local._t_normal=<resdef.t_normal>
+
 serv.log Starting DynamicTemplateLoot database rebuild...
 local.hour=<serv.rticks>
 for 0 <eval <serv.deflist.itemdef.count>-1>
@@ -121,7 +126,7 @@ for 0 <eval <serv.deflist.itemdef.count>-1>
 	
 	// Get the Class
 	local._t=<resdef.<<local._d>.type>>
-	if <local._t>==<resdef.t_normal>
+	if <local._t>==<local._t_normal>
 		continue	// The type of the vast majority of unequippable items, skip it (for speed)
 	// Weapon
 	elif <local._t>==<resdef.t_weapon_fence>
