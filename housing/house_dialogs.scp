@@ -8,12 +8,12 @@ VERSION=X1
 ON=@Create
 if !<link.tag0.convert>
 	attr=012
-	timerf 1, HouseCheckPlacement
+	timerf 1, f_house_checkPlacement
 	timer 30
 else
-	if <def.can_decay>
+	if <def.hs_can_decay>
 		attr=02|010
-		timer=60*60*24*<def.can_decay>	
+		timer=60*60*24*<def.hs_can_decay>	
 	else
 		timer =-1
 		attr=010
@@ -48,15 +48,15 @@ elif <link.region.tag0.forsale>
 endif
 src.addcliloc 1061639,<name>
 src.addcliloc 1061640,<uid.<more1>.name>
-if <link.housetype>==house_guild
+if <link.housetype>==<def.house_guild>
 	src.addcliloc 1042971,[<uid.<tag0.is_guild>.abbrev>] Guild House
 endif
-src.addcliloc <QVAL (<link.housetype>==house_private)? 1061642:1061641>
+src.addcliloc <QVAL (<link.housetype>==<def.house_private>)? 1061642:1061641>
 return 1
 
 ON=@DClick
 if (<link>!=<def.link_invalid>)
-	if !(<def.can_decay>)
+	if !(<def.hs_can_decay>)
 		if (<attr>&02)
 			attr &=~ 02
 			timer -1
@@ -65,7 +65,7 @@ if (<link>!=<def.link_invalid>)
 		if !(<attr>&02)
 			attr |= 02
 			if <timer> < 0
-				timer=60*60*24*<def.can_decay>
+				timer=60*60*24*<def.hs_can_decay>
 			endif
 		endif
 	endif
@@ -90,7 +90,7 @@ endif
 
 ON=@Timer
 ref2=<link.owner>
-if (<def.can_decay>)
+if (<def.hs_can_decay>)
 	attr 012
 	link.remove
 	if <ref2.isonline>
@@ -139,9 +139,9 @@ IF (<LINK.TAG0.PLACEMENT> == i_gold)
 		SRC.SYSMESSAGE @,,1 <LINK.VALUE> gold has been withdrawn from your bank box.
 	ENDIF
 ENDIF
-if <def.can_decay> && !<src.isgm>
+if <def.hs_can_decay> && !<src.isgm>
 	attr=02|010
-	timer=60*60*24*<def.can_decay>	
+	timer=60*60*24*<def.hs_can_decay>	
 else
 	timer =-1
 	attr=010
@@ -176,13 +176,13 @@ dtext 195 68 07f9 CUSTOMIZE
 button 150 88 4005 4007 0 5 5
 dtext 195 88 07f9 OWNERSHIP
 if (<isowner <src>>) || (<GetCoownerPos <src>> >= 0) || (<GetFriendPos <src>> >= 0) || (<src.isgm>)
-	button 7 405 4005 4007 1 0 <QVAL (<housetype>==house_private)? 14:15>
-	dtext 47 405 <QVAL (<housetype>==house_private)? 07f9 Grant Access:07f9 Banish>
-	button 7 425 4005 4007 1 9 <QVAL (<housetype>==house_private)? 12:13>
-	dtext 47 425 <QVAL (<housetype>==house_private)? 07f9 Revoke Access:07f9 Lift a Ban>
+	button 7 405 4005 4007 1 0 <QVAL (<housetype>==<def.house_private>)? 14:15>
+	dtext 47 405 <QVAL (<housetype>==<def.house_private>)? 07f9 Grant Access:07f9 Banish>
+	button 7 425 4005 4007 1 9 <QVAL (<housetype>==<def.house_private>)? 12:13>
+	dtext 47 425 <QVAL (<housetype>==<def.house_private>)? 07f9 Revoke Access:07f9 Lift a Ban>
 else
-	dtext 57 405 992 <QVAL (<housetype>==house_private)? Grant Access:Banish>
-	dtext 57 425 992 <QVAL (<housetype>==house_private)? Revoke Access:Lift a Ban>
+	dtext 57 405 992 <QVAL (<housetype>==<def.house_private>)? Grant Access:Banish>
+	dtext 57 425 992 <QVAL (<housetype>==<def.house_private>)? Revoke Access:Lift a Ban>
 endif
 button 250 425 4005 4007 1 0 29
 dtext 290 425 07f9 Eject Person
@@ -192,33 +192,33 @@ button 150 8 4006 4006 0 1 1
 dtext 195 8 068 INFORMATION
 dtext 20 130 07f9 Owned By:
 dtext 220 130 07f9 <owner.name> 
-if (<housetype>==house_guild)
+if (<housetype>==<def.house_guild>)
 	dtext 20 170 068 This house is designated as the [<uid.<tag0.is_guild>.abbrev>] guild house.
 endif
 dtext 20 170 <QVAL (<tag0.demolition>)? 32 This house is improperly placed.:068 This house is properly placed.>
 dtext 20 190 068 This house is of <QVAL (<type>==t_multi_custom)? custom:prebuilt> design.
-dtext 20 210 068 This house is <QVAL (<housetype>==house_private)? private property.:open to the public.>
+dtext 20 210 068 This house is <QVAL (<housetype>==<def.house_private>)? private property.:open to the public.>
 if <tag0.forsale>
 	dtext 20 250 26 This house is currently for sale for 
 	dtext 290 250 26 <dtag0.price> gp
 endif
 local.value=<eval <value>+<tag0.boughtstorage>+<tag0.construction>>
-if <def.can_decay> && <def.property_tax>
+if <def.hs_can_decay> && <def.hs_property_tax>
 	if <region.tag0.maintenance_override>
 		local.maint=<MULDIV <dlocal.value>,<region.dtag0.maintenance_override>,100>
 	else
-		local.maint=<MULDIV <dlocal.value>,<ddef.property_tax>,100>
+		local.maint=<MULDIV <dlocal.value>,<ddef.hs_property_tax>,100>
 	endif
 endif
-if <def.can_decay>
+if <def.hs_can_decay>
 	if (<dtag0.decay_exempt>==1)
 		dtext 20 270 068 This house has been made exempt from decay
 	else
-		if !<def.property_tax>
+		if !<def.hs_property_tax>
 				dtext 20 270 068 This house <QVAL (<tag0.demolition>)? will be demolished:will decay> in <QVAL (<eval <timer>/86400> < 1)? <eval (<timer>%86400)/3600> hours and <eval ((<timer>%86400)%3600)/60> minutes.:<eval <timer>/86400> days>
 		else
 			dtext 20 240 068 Propery Tax covered for <QVAL (<eval <timer>/86400> < 1)? <eval (<timer>%86400)/3600> hours and <eval ((<timer>%86400)%3600)/60> minutes.:<eval <timer>/86400> days>
-			dtext 20 260 068 Property Tax for this house <dlocal.maint>gp every <ddef.can_decay> days
+			dtext 20 260 068 Property Tax for this house <dlocal.maint>gp every <ddef.hs_can_decay> days
 		endif
 	endif
 else
@@ -274,7 +274,7 @@ else
 	dtext 47 280 992 Remove a Friend
 	dtext 47 300 992 Clear Friends List
 endif
-if <housetype> == house_private
+if <housetype> == <def.house_private>
 	button 7 340 4005 4007 1 6 12
 	dtext 47 340 07f9 View Access List
 	if (<isowner <src>>) || (<GetCoownerPos <src>> >= 0) || (<GetFriendPos <src>> >= 0) || (<src.isgm>)
@@ -294,25 +294,25 @@ else
 	endif
 endif
 if (<isowner <src>>) || (<src.isgm>)
-	dtext 240 180 07f9 <QVAL (<housetype>==house_guild)? Remove Guild Declaration:Declare Guildhouse>
+	dtext 240 180 07f9 <QVAL (<housetype>==<def.house_guild>)? Remove Guild Declaration:Declare Guildhouse>
 	button 200 180 4005 4007 1 0 50
 	button 200 140 4005 4007 1 0 23  //private-public
 	button 200 200 4005 4007 1 2 26
 	dtext 240 200 07f9 Recode Doors, Boxes
 	dtext 240 220 07f9 or Telepads
-	dtext 240 140 07f9 Change to <QVAL (<housetype> == house_private)? Public:Private>
-	dtext 240 160 068 Change to <QVAL !(<housetype> == house_private)? Public:Private>
+	dtext 240 140 07f9 Change to <QVAL (<housetype> == <def.house_private>)? Public:Private>
+	dtext 240 160 068 Change to <QVAL !(<housetype> == <def.house_private>)? Public:Private>
 else
-	dtext 250 190 992 <QVAL (<housetype>==house_guild)? Remove Guild Declaration:Declare Guildhouse>
+	dtext 250 190 992 <QVAL (<housetype>==<def.house_guild>)? Remove Guild Declaration:Declare Guildhouse>
 	dtext 250 220 992 Recode Doors
-	dtext 250 250 992 Change to <QVAL (<housetype> == house_private)? Public:Private>
+	dtext 250 250 992 Change to <QVAL (<housetype> == <def.house_private>)? Public:Private>
 endif
 
 page 3
 button 150 48 4006 4006 0 3 3
 dtext 195 48 068 STORAGE
 dtext 110 125 07F9 HOUSE STORAGE SUMMARY
-if <def.buy_storage> && <def.secure_locks_limit>
+if <def.hs_buy_storage> && <def.hs_hs_secure_locks_limit>
 	if (<isowner <src>>) || (<src.isgm>)
 		dtext 7 150 07f9 Increased Storage
 		dtext 200 150 07f9 <IncreasedStorage>%
@@ -329,19 +329,19 @@ if <def.buy_storage> && <def.secure_locks_limit>
 	endif
 endif
 dtext 7 170 07f9 Maximum Secure Storage
-dtext 200 170 07f9 <qval (!<def.secure_locks_limit>)?Unlimited:<maxstorage>>
+dtext 200 170 07f9 <qval (!<def.hs_hs_secure_locks_limit>)?Unlimited:<maxstorage>>
 dtext 7 190 07f9 Used by Moving Crate
-dtext 200 190 07f9 <qval (!<def.secure_locks_limit>)?Unlimited:<qval (<movingcrate>)?<uid.<movingcrate>.count>:0>>
+dtext 200 190 07f9 <qval (!<def.hs_hs_secure_locks_limit>)?Unlimited:<qval (<movingcrate>)?<uid.<movingcrate>.count>:0>>
 dtext 7 210 07f9 Used by Lockdowns
-dtext 200 210 07f9 <qval (!<def.secure_locks_limit>)?Unlimited:<lockdowns>>
+dtext 200 210 07f9 <qval (!<def.hs_hs_secure_locks_limit>)?Unlimited:<lockdowns>>
 dtext 7 230 07f9 Used by Secure Storage
-dtext 200 230 07f9 <qval (!<def.secure_locks_limit>)?Unlimited:<getSECUREDitems>>
+dtext 200 230 07f9 <qval (!<def.hs_hs_secure_locks_limit>)?Unlimited:<getSECUREDitems>>
 dtext 7 250 07f9 Available Storage
-dtext 200 250 07f9 <qval (!<def.secure_locks_limit>)?Unlimited:<eval (<maxstorage>-(<lockdowns>+<getSECUREDitems>))>>
+dtext 200 250 07f9 <qval (!<def.hs_hs_secure_locks_limit>)?Unlimited:<eval (<maxstorage>-(<lockdowns>+<getSECUREDitems>))>>
 dtext 7 280 07f9 Maximum Lockdowns
-dtext 200 280 07f9 <qval (!<def.secure_locks_limit>)?Unlimited:<maxlockdowns>>
+dtext 200 280 07f9 <qval (!<def.hs_hs_secure_locks_limit>)?Unlimited:<maxlockdowns>>
 dtext 7 300 07f9 Available Lockdowns
-dtext 200 300 07f9 <qval (!<def.secure_locks_limit>)?Unlimited:<eval (<maxlockdowns>-<lockdowns>)>>
+dtext 200 300 07f9 <qval (!<def.hs_hs_secure_locks_limit>)?Unlimited:<eval (<maxlockdowns>-<lockdowns>)>>
 dtext 7 350 07f9 Vendors
 dtext 200 350 07f9 <vendors>/<maxvendors>
 
@@ -359,7 +359,7 @@ if (<isowner <src>>) || (<src.isgm>)
 			dtext 47 140 992 Convert Into Customizable House
 			dtext 47 180 992 Customize This House
 		else
-			if <def.allow_custom>
+			if <def.hs_allow_custom>
 				button 7 140 4005 4007 1 0 53
 				dtext 47 140 07f9 Convert Into Customizable House
 			else
@@ -407,7 +407,7 @@ endif
 page 5
 button 150 88 4006 4006 0 5 5
 dtext 195 88 068 OWNERSHIP
-if <def.can_decay> && <def.property_tax>
+if <def.hs_can_decay> && <def.hs_property_tax>
 	if (<isowner <src>>) || (<GetCoownerPos <src>> >= 0) || (<GetFriendPos <src>> >= 0) || (<src.isgm>)
 		button 7 140 4005 4007 0 16 84
 		dtext 47 140 07f9 Pay Property Tax
@@ -443,18 +443,18 @@ if (<src.isgm>)
 endif
 
 page 6
-if (<housetype>== house_private)
- 	render_list Access,1
+if (<housetype>== <def.house_private>)
+ 	f_house_render_list Access,1
 else
-	render_list Ban,1
+	f_house_render_list Ban,1
 endif
 
 page 7
-render_list Coowner
+f_house_render_list Coowner
 
 
 page 8
-render_list Friend
+f_house_render_list Friend
 
 page 10
 dtext 150 130 90 Sell This House
@@ -530,8 +530,8 @@ endif
 
 page 14
 //sign change
-render_signs
-if <def.allow_sign_color>
+f_house_render_signs
+if <def.hs_allow_sign_color>
 	button 310 340 4005 4007 0 15 83
 	dtext 340 340 90 Colorize
 endif
@@ -568,33 +568,33 @@ if (!<src.isgm>)
 		dtext 20 260 90 If this house is put for sale or moved the exemption will be lost.
 	else
 		local.daysleft <eval (((<link.timer>/60)/60)/24)>
-		local.days <eval (<ddef.can_decay>-<dlocal.daysleft>)>
+		local.days <eval (<ddef.hs_can_decay>-<dlocal.daysleft>)>
 		local.value <eval (<value>+<tag0.boughtstorage>+<tag0.construction>)>
-		if <def.estate_tax>
+		if <def.hs_estate_tax>
 			if <src.houses>
-				if (<src.houses> > <ddef.estate_tax>)
-					dtext 100 210 32 Estate Tax applies for <eval <src.houses>-<ddef.estate_tax>> house(s)
+				if (<src.houses> > <ddef.hs_estate_tax>)
+					dtext 100 210 32 Estate Tax applies for <eval <src.houses>-<ddef.hs_estate_tax>> house(s)
 					dtext 180 280 32 PLUS
-					if (<ddef.estate_calc>==1)
-						dtext 60 300 90 Additional <qval <region.region.tag0.maintenance_override>? <region.region.dtag0.maintenance_override>:<ddef.estate_rate>>%  of house value (flat rate)
+					if (<ddef.hs_estate_calc>==1)
+						dtext 60 300 90 Additional <qval <region.region.tag0.maintenance_override>? <region.region.dtag0.maintenance_override>:<ddef.hs_estate_rate>>%  of house value (flat rate)
 						if <region.region.tag0.maintenance_override>
 							local.rate=<eval <region.region.dtag0.maintenance_override>*2>
 							local.maint=<MULDIV <dlocal.value>,<dlocal.rate>,100>
 						else
-							local.rate=<eval <ddef.property_tax>+<ddef.estate_rate>>
+							local.rate=<eval <ddef.hs_property_tax>+<ddef.hs_estate_rate>>
 							local.maint=<MULDIV <dlocal.value>,<dlocal.rate>,100>
 						endif
-					elif (<ddef.estate_calc>==2)
-						dtext 110 300 90 Additional <qval <region.region.tag0.maintenance_override>? <region.region.dtag0.maintenance_override>:<ddef.estate_rate>> %  house value
-						dtext 80 320 90 for each house over standard allowance (<eval <src.houses> - <ddef.estate_tax>>)
-						local.overage= <eval <src.houses>-<ddef.estate_tax>>
+					elif (<ddef.hs_estate_calc>==2)
+						dtext 110 300 90 Additional <qval <region.region.tag0.maintenance_override>? <region.region.dtag0.maintenance_override>:<ddef.hs_estate_rate>> %  house value
+						dtext 80 320 90 for each house over standard allowance (<eval <src.houses> - <ddef.hs_estate_tax>>)
+						local.overage= <eval <src.houses>-<ddef.hs_estate_tax>>
 						if <region.region.tag0.maintenance_override>
 							local.rate=<eval <region.region.dtag0.maintenance_override>*<dlocal.overage>>
 							local.rate =<eval <local.rate>+<region.region.dtag0.maintenance_override>>
 							local.maint=<MULDIV <dlocal.value>,<dlocal.rate>,100>
 						else
-							local.rate=<eval <ddef.estate_rate>*<dlocal.overage>>
-							local.rate <eval <local.rate>+def.property_tax>>
+							local.rate=<eval <ddef.hs_estate_rate>*<dlocal.overage>>
+							local.rate <eval <local.rate>+def.hs_property_tax>>
 							local.maint=<MULDIV <dlocal.value>,<dlocal.rate>,100>
 						endif
 					endif
@@ -602,7 +602,7 @@ if (!<src.isgm>)
 					if <region.region.tag0.maintenance_override>
 						local.maint=<MULDIV <dlocal.value>,<region.region.tag0.maintenance_override>,100>
 					else
-						local.maint=<MULDIV <dlocal.value>,<ddef.property_tax>,100>
+						local.maint=<MULDIV <dlocal.value>,<ddef.hs_property_tax>,100>
 					endif
 				endif
 			endif
@@ -610,18 +610,18 @@ if (!<src.isgm>)
 			if <region.region.tag0.maintenance_override>
 				local.maint=<MULDIV <dlocal.value>,<region.region.tag0.maintenance_override>,100>
 			else
-				local.maint=<MULDIV <dlocal.value>,<ddef.property_tax>,100>
+				local.maint=<MULDIV <dlocal.value>,<ddef.hs_property_tax>,100>
 			endif
 		endif
 		local.maintenance= <eval <local.maint>/30>
 		local.maintpay = <eval (<dlocal.maintenance>*<dlocal.days>)>
-		dtext 70 160 07f9 Reset your house's decay timer to <ddef.can_decay> days
+		dtext 70 160 07f9 Reset your house's decay timer to <ddef.hs_can_decay> days
 		dtext 60 180 07f9 Property Tax may be paid whenever any is due
-		dtext 60 240 07f9 The price of your Property Tax per <ddef.can_decay> days 
-		dtext 60 260 07f9 is <qval <region.region.tag0.maintenance_override>? <region.region.dtag0.maintenance_override>:<ddef.property_tax>> % of <qval <region.region.tag0.maintenance_override>? house value [<region.region.name> rate]:house value>
+		dtext 60 240 07f9 The price of your Property Tax per <ddef.hs_can_decay> days 
+		dtext 60 260 07f9 is <qval <region.region.tag0.maintenance_override>? <region.region.dtag0.maintenance_override>:<ddef.hs_property_tax>> % of <qval <region.region.tag0.maintenance_override>? house value [<region.region.name> rate]:house value>
 			
-		if <eval <local.daysleft> < (<def.can_decay>-1)>
-			if <def.can_decay> && <def.property_tax>
+		if <eval <local.daysleft> < (<def.hs_can_decay>-1)>
+			if <def.hs_can_decay> && <def.hs_property_tax>
 				button 100 340 4005 4007 1 18 85
 				dtext 140 340 07f9 Pay <dlocal.maintpay>gp to add <dlocal.days> days
 			endif
@@ -631,15 +631,15 @@ if (!<src.isgm>)
 	endif
 else
 	dtext 140 230 90 Staff Override
-	dtext 140 340 90 Reset decay timer to <ddef.can_decay> days
+	dtext 140 340 90 Reset decay timer to <ddef.hs_can_decay> days
 	button 100 340 4005 4007 1 18 85
 endif
 
 page 17
-render_list Coowner,1
+f_house_render_list Coowner,1
 
 page 18
-render_list Friend,1
+f_house_render_list Friend,1
 
 [DIALOG d_house_menu button]
 on=0,88
@@ -659,30 +659,30 @@ on=0,88
 			src.ctag0.list=ban
 			sdialog d_house_menu 6 
 	elif (<argn>==14) //grant access
-			targetf, f_add_list 4
+			targetf, f_house_add_list 4
 	elif (<argn>==15)//ban
-			targetf, f_add_list 3
+			targetf, f_house_add_list 3
 	elif (<argn>==17) //add coowner
-			targetf, f_add_list 1
+			targetf, f_house_add_list 1
 	elif (<argn>==18) //clear coowner
 			src.ctag0.list=coowner
-			sdialog d_clear_list 
+			sdialog d_house_list_clear 
 	elif (<argn>==19) //add friend
-			targetf, f_add_list 2
+			targetf, f_house_add_list 2
 	elif (<argn>==20) //clear friend
 			src.ctag0.list=friend
-			sdialog d_clear_list 
+			sdialog d_house_list_clear 
 	elif (<argn>==21) //clear access
 			src.ctag0.list=access
-			sdialog d_clear_list 
+			sdialog d_house_list_clear 
 	elif (<argn>==22) //clear bans
 			src.ctag0.list=ban
-			sdialog d_clear_list 
+			sdialog d_house_list_clear 
 	elif (<argn>==23) //private/public toggle
-			if (<housetype>==house_private)
+			if (<housetype>==<def.house_private>)
 				housetype=house_public
 				resendtooltip
-				if <def.wipe_switch_lists>
+				if <def.hs_wipe_switch_lists>
 					if <accesses>
 						delaccess -1
 					endif
@@ -690,9 +690,9 @@ on=0,88
 				src.sysmessage @,,1 This property is now to the public (shop setting), only those on the banned list may not enter.
 				src.sysmessage @,,1 You should recode any doors you do not wish the general public to be able to open.
 			else
-				housetype=house_private
+				housetype=<def.house_private>
 				ref1.resendtooltip
-				if <def.wipe_switch_lists>
+				if <def.hs_wipe_switch_lists>
 					if <bans>
 						delban -1
 					endif
@@ -701,27 +701,27 @@ on=0,88
 			endif
 			dialog d_house_menu 
 	elif (<argn>==24)//rename house
-			dialog d_rename_house
+			dialog d_house_rename
 	//elif (<argn>==25) // -------------------------- reserved change sign page
 	elif (<argn>==26)//recode doors
-			src.targetf f_d_secure
+			src.targetf f_d_house_secure
 			return 1
 	elif (<argn>==27)//transfer ownership
 			if (<tag0.demolition>)
 				src.sysmessage @32,,1 This house is scheduled for demolition and cannot be traded.
 				return 1
 			endif
-			SRC.TARGETF f_transfer_house <UID>
+			SRC.TARGETF f_house_transfer <UID>
 			src.sysmessage @,,1 To whom do you wish to transfer full ownership of this property?
 			return 1
 	elif (<argn>==28)//demolish
-			sdialog d_demolish
+			sdialog d_house_demolish
 			src.sysmessage @,,1 Selecting Demolish will destroy any items left in your house.
 			src.sysmessage @,,1 Select Redeed to send items in your house to your bank.
 			src.sysmessage @,,1 Person specific chests will be returned to their owner regardless.
 			return 1
 	elif (<argn>==29)// eject
-			targetf, f_eject
+			targetf, f_house_eject
 			return 1
  	elif (<argn>==30)// price/take off market
 			if (<tag0.demolition>)
@@ -743,14 +743,14 @@ on=0,88
 					if (<isnum <argtxt[0]>>) && (<eval <argtxt[0]>> > 0)
 						tag0.price=<argtxt[0]>
 						region.tag0.forsale=1
-						f_open_house
+						f_house_open
 						tag0.private=
 						delfriend -1
 						delcoowner -1
 						delaccess -1
 						delban -1
 						src.sysmessage @,,1 Your house is now on the market for <dtag0.price> gp
-						if (<def.can_decay>)
+						if (<def.hs_can_decay>)
 							tag0.decay_exempt=	
 							link.attr |= 02
 						endif
@@ -764,19 +764,19 @@ on=0,88
 			endif
 	elif (<argn>==31) // add 25% storage
 			local.value=<QVAL (<value>)? <eval (<value>/8)>:<eval (<tag0.value>8)>>
-			f_buy_storage <local.value>
+			f_house_hs_buy_storage <local.value>
 			return 1
 	elif (<argn>==32) //add 50% storage
 			local.value=<QVAL (<value>)? <eval <value>/4>:<eval <tag0.value>/4>>
-			f_buy_storage <local.value>
+			f_house_hs_buy_storage <local.value>
 			return 1
 	elif (<argn>==33) // add 75% storage
 			local.value=<QVAL (<value>)? <eval ((<value>/8)*3)>:<eval ((<tag0.value>/8)*3)>>
-			f_buy_storage <local.value>
+			f_house_hs_buy_storage <local.value>
 			return 1
 	elif (<argn>==34) //add 100% storage
 			local.value=<QVAL (<value>)? <eval <value>/2>:<eval <tag0.value>/2>>
-			f_buy_storage <local.value>
+			f_house_hs_buy_storage <local.value>
 			return 1
 	elif (<argn>==35) //custom builder
 			if (<tag0.demolition>)
@@ -794,16 +794,16 @@ on=0,88
 			customize
 			return 1 
 	elif (<argn>==36) //sign post menu
-			link.dialog d_sign_post
+			link.dialog d_house_sign_post
 			return 1
 	elif (<argn>==50) //guild declaration FIX ME
-			if (<housetype>==house_guild)
+			if (<housetype>==<def.house_guild>)
 				ref1.tag0.is_guild=
 				resendtooltip
 				src.sysmessage @,,1 This building is no longer a guildhouse.
 				return 1
 			else
-				src.targetf, f_declare_guild	
+				src.targetf, f_house_declare_guild	
 				src.sysmessage @,,1 Target your guildstone 
 				return 1
 			endif
@@ -812,10 +812,10 @@ on=0,88
 				src.sysmessage @32,,1 This house is scheduled for demolition and cannot be converted.
 				return 1
 			endif
-			f_swap
+			f_house_swap
 	//elif (<argn>==54)      //  ------------------------------------ unused
 	elif (<argn>==55) //admin, value and market
-			dialog d_static_pricing
+			dialog d_house_static_pricing
 			return 1
 	elif (<argn>==57) // relocate moving crate
 		if <MovingCrate>
@@ -866,30 +866,30 @@ on=0,88
 	elif (<argn>==85)
 
 			local.daysleft <eval (((<link.timer>/60)/60)/24)>
-			local.days <eval (<ddef.can_decay>-<dlocal.daysleft>)>
+			local.days <eval (<ddef.hs_can_decay>-<dlocal.daysleft>)>
 			local.value <eval (<tag0.value>+<value>+<tag0.boughtstorage>+<tag0.construction>)>
 			ref2=<owner>
 			if !<src.isgm> 
-				if <def.estate_tax>
+				if <def.hs_estate_tax>
 					if <ref2.houses>
-						if (<ref2.houses> > <ddef.estate_tax>)
-							if (<ddef.estate_calc>==1)
+						if (<ref2.houses> > <ddef.hs_estate_tax>)
+							if (<ddef.hs_estate_calc>==1)
 								if <region.region.tag0.maintenance_override>
 									local.rate=<eval <region.region.dtag0.maintenance_override>*2>
 									local.maintenance=<MULDIV <dlocal.value>,<dlocal.rate>,100>
 								else
-									local.rate=<eval <ddef.property_tax>+<ddef.estate_rate>>
+									local.rate=<eval <ddef.hs_property_tax>+<ddef.hs_estate_rate>>
 									local.maintenance=<MULDIV <dlocal.value>,<dlocal.rate>,100>
 								endif
-							elif (<ddef.estate_calc>==2)
-								local.overage= <eval <ref2.houses>-<ddef.estate_tax>>
+							elif (<ddef.hs_estate_calc>==2)
+								local.overage= <eval <ref2.houses>-<ddef.hs_estate_tax>>
 								if <region.region.tag0.maintenance_override>
 									local.rate=<eval <region.region.dtag0.maintenance_override>*<dlocal.overage>>
 									local.rate =<eval <local.rate>+<region.region.dtag0.maintenance_override>>
 									local.maintenance=<MULDIV <dlocal.value>,<dlocal.rate>,100>
 								else
-									local.rate=<eval <ddef.estate_rate>*<dlocal.overage>>
-									local.rate <eval <local.rate>+def.property_tax>>
+									local.rate=<eval <ddef.hs_estate_rate>*<dlocal.overage>>
+									local.rate <eval <local.rate>+def.hs_property_tax>>
 									local.maintenance=<MULDIV <dlocal.value>,<dlocal.rate>,100>
 								endif
 							endif
@@ -897,31 +897,31 @@ on=0,88
 							if <region.region.tag0.maintenance_override>
 								local.maintenance=<MULDIV <dlocal.value>,<region.region.tag0.maintenance_override>,100>
 							else
-								local.maintenance=<MULDIV <dlocal.value>,<ddef.property_tax>,100>
+								local.maintenance=<MULDIV <dlocal.value>,<ddef.hs_property_tax>,100>
 							endif
 						endif
 					else
 						if <region.region.tag0.maintenance_override>
 							local.maintenance=<MULDIV <dlocal.value>,<region.region.tag0.maintenance_override>,100>
 						else
-							local.maintenance=<MULDIV <dlocal.value>,<ddef.property_tax>,100>
+							local.maintenance=<MULDIV <dlocal.value>,<ddef.hs_property_tax>,100>
 						endif
 					endif
 				else
 					if <region.region.tag0.maintenance_override>
 						local.maintenance=<MULDIV <dlocal.value>,<region.region.tag0.maintenance_override>,100>
 					else
-						local.maintenance=<MULDIV <dlocal.value>,<ddef.property_tax>,100>
+						local.maintenance=<MULDIV <dlocal.value>,<ddef.hs_property_tax>,100>
 					endif
 				endif
 				local.maintenance= <eval <local.maintenance>/30>
 				local.maintpay = <eval (<dlocal.maintenance>*<dlocal.days>)>
-				if (<eval (((<link.timer>/60)/60)/24)> < <ddef.can_decay>)
+				if (<eval (((<link.timer>/60)/60)/24)> < <ddef.hs_can_decay>)
 					if (<src.gold> >= <dlocal.maintpay>) 
 						src.gold -= <dlocal.maintpay>
 						link.timer += <eval ((((<dlocal.days>-1)*60)*60)*24)>	
 						src.sysmessage @,,1 <dlocal.maintpay>gp has been paid to cover <dlocal.days> days.
-						src.sysmessage @,,1 Your property tax is now paid for the next <ddef.can_decay> days.
+						src.sysmessage @,,1 Your property tax is now paid for the next <ddef.hs_can_decay> days.
 					else
 						src.sysmessage @32,,1 You lack the funds to pay the property tax
 						return 1
@@ -931,7 +931,7 @@ on=0,88
 					return 1
 				endif	
 			else
-				link.timer=<eval (((<ddef.can_decay>*24) *60) *60)>
+				link.timer=<eval (((<ddef.hs_can_decay>*24) *60) *60)>
 				ref1=<owner>
 				serv.log <src.name> used staff refresh override on a house owned by <ref1.name> (account: <ref1.account.name>)
 				src.sysmessage @,,1 Property refreshed.
@@ -946,7 +946,7 @@ on=0,88
 	elif (<argn>==88) //normal
 		tag.decay_exempt=
 		link.attr |= 02
-		link.timer=60*60*24*<def.can_decay>
+		link.timer=60*60*24*<def.hs_can_decay>
 	endif
 
 on=100,299 // rmv person from (x) list 
@@ -955,7 +955,7 @@ local.button <eval <argn>-100>
 if <<local.list><qval (strmatch(*access*,<local.list>))?es:s>>
 	if (<<local.list>.<dlocal.button>.uid>==<src.uid>)
 		src.sysmessage @,,1 You have removed yourself from the <local.list> list.
-		if (<housetype>==house_private)
+		if (<housetype>==<def.house_private>)
 			src.go <link.p>
 			src.sysmessage @32,,1 This is private property, you no longer have permission to enter.
 		endif
@@ -992,7 +992,7 @@ on=5000,9000
 //-------------------------------------------------------------------------------End main menu--------------------------------------------------------------------//
 
 
-[DIALOG d_demolish]
+[DIALOG d_house_demolish]
 100,100
 resizepic 0 0 2620 240 220 
 checkertrans 5 5 230 210
@@ -1004,11 +1004,11 @@ button 7 100 4017 4018 1 0 0
 dtext 47 100 90 Abort
 button 7 130 4005 4007 1 0 1
 dtext 47 130 90 Demolish & Destroy Contents
-if ((<type>==t_multi_custom) || (<def.redeed_fee> && (<type>==t_multi))
+if ((<type>==t_multi_custom) || (<def.hs_redeed_fee> && (<type>==t_multi))
 	if !<src.isgm>
 		local.total=<eval <value>+<tag0.boughtstorage>+<tag0.construction>>
 		local.refund=<eval <tag0.boughtstorage>+<tag0.construction>>
-		local.redeedfee <muldiv <dlocal.total>,<ddef.redeed_fee>,100>
+		local.redeedfee <muldiv <dlocal.total>,<ddef.hs_redeed_fee>,100>
 		if (<dlocal.refund> > <dlocal.redeedfee>)
 			local.refund -= <dlocal.redeedfee>
 			dtext 47 180 367 <dlocal.refund>gp Refund
@@ -1031,12 +1031,12 @@ else
 endif
 
 
-[DIALOG d_demolish button]
+[DIALOG d_house_demolish button]
 on=0
 src.sysmessage @,,1 Aborted
 ON=1 // demolish
 ref2=<owner>
-if (<housetype>==house_guild)
+if (<housetype>==<def.house_guild>)
 	src.sysmessage @32,,1 This house is a guild house.
 	src.sysmessage @32,,1 You must remove the guild declaration and move the guildstone before you can demolish the building
 	return 1
@@ -1049,7 +1049,7 @@ remove
 region.allclients.update
 
 on=2 //redeed FIX ME
-if (<housetype>==house_guild)
+if (<housetype>==<def.house_guild>)
 	src.sysmessage @32,,1 This house is a guild house.
 	src.sysmessage @32,,1 You must remove the guild declaration and move the guildstone before you can redeed the building
 	return 1
@@ -1057,8 +1057,8 @@ endif
 if (<type>==t_multi_custom)
 	local.total=<eval <value>+<tag0.boughtstorage>+<tag0.construction>>
 	src.sysmessage @,,1 You spent <dlocal.total>gp for upgrades on this property
-	if <def.redeed_fee>
-		local.redeedfee <muldiv <dlocal.total>,<ddef.redeed_fee>,100>
+	if <def.hs_redeed_fee>
+		local.redeedfee <muldiv <dlocal.total>,<ddef.hs_redeed_fee>,100>
 		local.total -= <dlocal.redeedfee>
 		src.sysmessage @,,1 Your redeed fee of <dlocal.redeedfee> was paid from money
 	endif
@@ -1067,9 +1067,9 @@ if (<type>==t_multi_custom)
 	src.sysmessage @,,1 You have been refunded <dlocal.total>
 elseif (<type>==t_multi)
 	local.total=<eval <value>+<tag0.boughtstorage>>
-	local.redeedfee <muldiv <dlocal.total>,<ddef.redeed_fee>,100>
+	local.redeedfee <muldiv <dlocal.total>,<ddef.hs_redeed_fee>,100>
 	local.refund = <dtag0.boughtstorage>
-	if <def.redeed_fee>
+	if <def.hs_redeed_fee>
 		if (<dlocal.refund> > <dlocal.redeedfee>)
 			src.sysmessage @,,1 You spent <dlocal.total>gp for upgrades on this property
 			local.refund -= <dlocal.redeedfee>
@@ -1114,11 +1114,11 @@ dtext 20 160 90 This house is for sale by owner
 button 57 180 4005 4007 1 0 1
 dtext 107 180 90 Buy this house for <dtag.price> gp
 dtext 20 200 90 Maximum Lockdowns  
-dtext 250 200 90 <QVAL (<def.secure_locks_limit>)? <maxlockdowns>:Unlimited>
+dtext 250 200 90 <QVAL (<def.hs_hs_secure_locks_limit>)? <maxlockdowns>:Unlimited>
 dtext 20 220 90 Maximum Storage
-dtext 250 220 90 <QVAL (<def.secure_locks_limit>)? <maxstorage>:Unlimited>
+dtext 250 220 90 <QVAL (<def.hs_hs_secure_locks_limit>)? <maxstorage>:Unlimited>
 
-if <def.can_decay>
+if <def.hs_can_decay>
 	dtext 20 280 90 This house <QVAL (<tag0.demolition>)? will be demolished:will decay> in <QVAL (<eval <timer>/86400> < 1)? <eval (<timer>%86400)/3600> hours and <eval ((<timer>%86400)%3600)/60> minutes.:<eval <timer>/86400> days>
 endif
 dtext 20 300 90 House Value
@@ -1138,8 +1138,8 @@ if !(<src.isgm>)
 					if (strmatch(*Britannic Realtors*, <ref2.name>)
 						owner <src>
 						ref2.remove
-						if <def.can_decay>
-							link.timer=60*60*24*<def.can_decay>
+						if <def.hs_can_decay>
+							link.timer=60*60*24*<def.hs_can_decay>
 						endif
 					else
 						if (ref2.isplayer)
@@ -1174,8 +1174,8 @@ if !(<src.isgm>)
 				if (strmatch(*Britannic Realtors*, <ref2.name>)
 					owner <src>
 					ref2.remove
-					if <def.can_decay>
-						link.timer=60*60*24*<def.can_decay>
+					if <def.hs_can_decay>
+						link.timer=60*60*24*<def.hs_can_decay>
 					endif
 				else
 					if (ref2.isplayer)
@@ -1206,8 +1206,8 @@ if !(<src.isgm>)
 			if (strmatch(*Britannic Realtors*, <ref2.name>)
 				owner <src>
 				ref2.remove
-				if <def.can_decay>
-					link.timer=60*60*24*<def.can_decay>
+				if <def.hs_can_decay>
+					link.timer=60*60*24*<def.hs_can_decay>
 				endif
 			else
 				if (ref2.isplayer)
@@ -1240,11 +1240,11 @@ endif
 100,100
 gumppic  27 27 100 
 dhtmlgump 50 50 100 100 0 0 <def.center><name><def.centere>
-if <housetype>==house_guild
+if <housetype>==<def.house_guild>
 	dtext 85 25 90 [<uid.<tag0.is_guild>.abbrev>]
 endif
 
-[DIALOG d_rename_house]
+[DIALOG d_house_rename]
 100,100
 resizepic 0 0 2620 200 200 
 checkertrans 5 5 190 190
@@ -1255,17 +1255,17 @@ dtext 147 140 90 Abort
 button 7 140 4005 4007 1 0 1
 dtext 47 140 90 Confirm
 
-[DIALOG d_rename_house BUTTON]
+[DIALOG d_house_rename BUTTON]
 ON=0
 src.sysmessage @,,1 House renaming cancelled.
 return 1
 ON=1
 link.name=<argtxt[1]>
 region.name=<argtxt[1]>
-if <def.can_decay>
+if <def.hs_can_decay>
 	link.attr=02|010
 	if <link.timer> < 0
-		link.timer 60*60*24*<def.can_decay>
+		link.timer 60*60*24*<def.hs_can_decay>
 	endif
 else
 	link.timer =-1
@@ -1273,7 +1273,7 @@ else
 endif
 return 1
 
-[DIALOG d_clear_list]
+[DIALOG d_house_list_clear]
 100,100
 resizepic 0 0 2620 200 200 
 checkertrans 5 5 190 190
@@ -1294,7 +1294,7 @@ elif !(strcmpi("<src.ctag0.list>","BAN"))
 endif
 dtext 47 140 90 Confirm
 
-[DIALOG d_clear_list button]
+[DIALOG d_house_list_clear button]
 
 ON=0
 src.sysmessage @,,1 Aborted
@@ -1318,7 +1318,7 @@ elif (<argn>==4)//bans
 	return 1
 endif
 
-[DIALOG d_sign_post]
+[DIALOG d_house_sign_post]
 0,0
 page 0
 resizepic 0 0 2620 600 620
@@ -1354,7 +1354,7 @@ endfor
 button 510 520 4017 4019 1 0 0
 dtext 550 520 90 Cancel
 
-[DIALOG d_sign_post button]
+[DIALOG d_house_sign_post button]
 on=0
 dialogclose
 
@@ -1368,7 +1368,7 @@ foritems 2
 	endif
 endfor
 
-[DIALOG d_secure]
+[DIALOG d_house_secure]
 100,100
 ref1 = <region.uid>
 resizepic 0 0 5054 200 180 
@@ -1379,50 +1379,50 @@ checkertrans 9 9 182 162
 dtext 60 9 07f9 SET ACCESS
 dtext 9 40 07f9 Owner: 
 dtext 90 40 07f9 <link.owner>
-dtext 47 70 <qval (<tag0.access>==house_access_owner)? 0f0:07f9> Owner Only
-dtext 47 90 <qval (<tag0.access>==house_access_coowner)? 0f0:07f9> Co-owners
-dtext 47 110 <qval (<tag0.access>==house_access_friend)? 0f0:07f9> Friends
-dtext 47 130 <QVAL (<link.housetype>==house_guild)?<qval (<tag0.access>==house_access_guild)?0f0:07f9>Guild Members:992 Guild members>
-dtext 47 150 <qval (<tag0.access>==house_access_all)? 0f0:07f9> Anyone
-button 9 70 <qval (<tag0.access>==house_access_owner)? 4006 4006 0 0:4005 4007 1 0> 1
-button 9 90 <qval (<tag0.access>==house_access_coowner)? 4006 4006 0 0:4005 4007 1 0> 2
-button 9 110 <qval (<tag0.access>==house_access_friend)? 4006 4006 0 0:4005 4007 1 0> 3
-if <ref1.housetype>==house_guild
-button 9 130 <qval (<tag0.access>==house_access_guild)? 4006 4006 0 0:4005 4007 1 0> 4
+dtext 47 70 <qval (<tag0.access>==<def.house_access_owner>)? 0f0:07f9> Owner Only
+dtext 47 90 <qval (<tag0.access>==<def.house_access_coowner>)? 0f0:07f9> Co-owners
+dtext 47 110 <qval (<tag0.access>==<def.house_access_friend>)? 0f0:07f9> Friends
+dtext 47 130 <QVAL (<link.housetype>==<def.house_guild>)?<qval (<tag0.access>==<def.house_access_guild>)?0f0:07f9>Guild Members:992 Guild members>
+dtext 47 150 <qval (<tag0.access>==<def.house_access_all>)? 0f0:07f9> Anyone
+button 9 70 <qval (<tag0.access>==<def.house_access_owner>)? 4006 4006 0 0:4005 4007 1 0> 1
+button 9 90 <qval (<tag0.access>==<def.house_access_coowner>)? 4006 4006 0 0:4005 4007 1 0> 2
+button 9 110 <qval (<tag0.access>==<def.house_access_friend>)? 4006 4006 0 0:4005 4007 1 0> 3
+if <ref1.housetype>==<def.house_guild>
+button 9 130 <qval (<tag0.access>==<def.house_access_guild>)? 4006 4006 0 0:4005 4007 1 0> 4
 endif
-button 9 150 <qval (<tag0.access>==house_access_all)? 4006 4006 0 0:4005 4007 1 0> 5
+button 9 150 <qval (<tag0.access>==<def.house_access_all>)? 4006 4006 0 0:4005 4007 1 0> 5
 
-[DIALOG d_secure button]
+[DIALOG d_house_secure button]
 ON=0
 dialogclose
 
 on=1,5
 	if (<argn>==1)//owner only
-			tag.access house_access_owner
+			tag.access <def.house_access_owner>
 			resendtooltip 1
 			src.sysmessage @,,1 Only the Owner & Co-owners may now open this <name>
 			return 1
 	elif (<argn>==2)//co-owner only
-			tag.access house_access_coowner
+			tag.access <def.house_access_coowner>
 			resendtooltip 1
 			src.sysmessage @,,1 Only the Owner & Co-owners may now open this <name>
-			// src.sdialog d_secure
+			// src.sdialog d_house_secure
 			return 1
 	elif (<argn>==3)//friend only
-			tag.access house_access_friend
+			tag.access <def.house_access_friend>
 			resendtooltip 1
 			src.sysmessage @,,1 Only the Owner, Co-owners & Friends of the house may now open this <name>
 			return 1
 	elif (<argn>==4)//door guild only
-			tag.access house_access_guild
+			tag.access <def.house_access_guild>
 			resendtooltip 1
 			src.sysmessage @,,1 Only the Owner, Co-owners & Friends of the house may now open this <name>
 			return 1
 	elif (<argn>==5)//door reset
-			tag.access house_access_all
+			tag.access <def.house_access_all>
 			resendtooltip 1
 			src.sysmessage @,,1 Everyone can open <name> now.
-			// src.sdialog d_secure
+			// src.sdialog d_house_secure
 			return 1
 
 [ITEMDEF i_trashcan] 
@@ -1430,13 +1430,17 @@ NAME=trashcan
 ID=i_barrel_open 
 TYPE=t_container 
 
+//FIXME: better axis categorization?
+CATEGORY=Special Items
+SUBSECTION=Unequippable
+DESCRIPTION=Trashcan
+
 ON=@CREATE 
 COLOR=0835 
 
 ON=@Dropon_Self
-ref6=<argo> 
 src.sound=011e
-ref6.remove 
+argo.remove 
 return 1
 
 [DIALOG d_house_commands]
@@ -1477,14 +1481,14 @@ dtext 180 270 90 Removes a player from your house
 dtext 180 290 90 Places a trashcan where you are standing
 dtext 180 310 90 Removes a trashcan
 
-if <def.can_bank>
+if <def.hs_can_bank>
 dtext 60 330 90 Bank
 dtext 180 330 90 Opens your bank box
 endif
 
 [DIALOG d_house_commands button]
 
-[DIALOG d_static_pricing]
+[DIALOG d_house_static_pricing]
 100,100
 page 0
 resizepic 0 123 2620 400 267
@@ -1497,7 +1501,7 @@ dtext 120 240 90 Enter this property's value
 button 180 300 4023 4025 1 0 1
 dtext 120 330 90 Put this house on the market
 
-[DIALOG d_static_pricing button]
+[DIALOG d_house_static_pricing button]
 on=1
 tag0.value=<argtxt[0]>
 tag0.price=<argtxt[0]>
@@ -1555,11 +1559,11 @@ if (<ARGO> == <UID>)
 	return 1
 else
 	ref1 = <argo.region.uid>
-	if (<ref1> != <TAG0.HOUSE>) || !(<SRC.IsOnHouse>)
-	serv.log <SRC.REGION.UID> --- <TAG0.HOUSE> ---- <SRC.IsOnHouse>
+	if (<ref1> != <TAG0.HOUSE>) || !(<SRC.f_house_isInside>)
+	serv.log <SRC.REGION.UID> --- <TAG0.HOUSE> ---- <SRC.f_house_isInside>
 		SRC.SYSMESSAGE @32,,1 You must be in your house to do this.
 		return 1
-	elif (<ARGO.CONT>) || (<ARGO.REGION.UID> != <TAG0.HOUSE>) || !(<ARGO.IsOnHouse>)
+	elif (<ARGO.CONT>) || (<ARGO.REGION.UID> != <TAG0.HOUSE>) || !(<ARGO.f_house_isInside>)
 		SRC.SYSMESSAGE @32,,1 That must be in your house.
 		return 1
 	elif !(<ARGO.isevent.ei_house_lockdown>)
@@ -1662,7 +1666,7 @@ SDIALOG d_house_placement_tool_custom_2story
 ON=3
 SDIALOG d_house_placement_tool_custom_3story
 
-[FUNCTION RenderPlacementToolDialogBackground]
+[FUNCTION f_house_RenderPlacementToolDlgBackground]
 resizepic 0 0 5054 520 420
 gumppictiled 10 10 500 20 2624
 checkertrans 10 10 500 20
@@ -1684,7 +1688,7 @@ checkertrans 10 390 500 20
 button 10 390 4017 4019 1 0 0
 dtext 50 390 1152 Close
 
-[FUNCTION RenderPlacementToolDialogPage]
+[FUNCTION f_house_RenderPlacementToolDlgPage]
 IF (<LOCAL.Y> > 340)
  button 450 390 4005 4007 0 <eval <LOCAL.PAGE>+1> 0
  dtext 400 390 1152 Next
@@ -1701,7 +1705,7 @@ ENDIF
 50,50
 
 page 0
-RenderPlacementToolDialogBackground
+f_house_RenderPlacementToolDlgBackground
 
 page 1
 LOCAL.PAGE=1
@@ -1715,7 +1719,7 @@ FOR 1 20
   dtext 350 <LOCAL.Y> 1152 <eval <LOCAL.Storage>/2>
   dtext 425 <LOCAL.Y> 1152 <SERV.ITEMDEF.<DEF.house_classic_<dlocal._for>>.VALUE>
   LOCAL.Y += 20
-  CALL RenderPlacementToolDialogPage
+  CALL f_house_RenderPlacementToolDlgPage
  ENDIF
 ENDFOR
 
@@ -1732,7 +1736,7 @@ SRC.f_house_placement <DEF.house_classic_<ARGN>>
 50,50
 
 page 0
-RenderPlacementToolDialogBackground
+f_house_RenderPlacementToolDlgBackground
 
 page 1
 LOCAL.PAGE=1
@@ -1746,7 +1750,7 @@ FOR 1 47
   dtext 350 <LOCAL.Y> 1152 <eval <LOCAL.Storage>/2>
   dtext 425 <LOCAL.Y> 1152 <SERV.ITEMDEF.<DEF.house_custom_2story_<dlocal._for>>.VALUE>
   LOCAL.Y += 20
-  CALL RenderPlacementToolDialogPage
+  CALL f_house_RenderPlacementToolDlgPage
  ENDIF
 ENDFOR
 
@@ -1763,7 +1767,7 @@ SRC.f_house_placement <DEF.house_custom_2story_<ARGN>>
 50,50
 
 page 0
-RenderPlacementToolDialogBackground
+f_house_RenderPlacementToolDlgBackground
 
 page 1
 LOCAL.PAGE=1
@@ -1777,7 +1781,7 @@ FOR 1 55
   dtext 350 <LOCAL.Y> 1152 <eval <LOCAL.Storage>/2>
   dtext 425 <LOCAL.Y> 1152 <SERV.ITEMDEF.<DEF.house_custom_3story_<dlocal._for>>.VALUE>
   LOCAL.Y += 20
-  CALL RenderPlacementToolDialogPage
+  CALL f_house_RenderPlacementToolDlgPage
  ENDIF
 ENDFOR
 
@@ -1787,5 +1791,6 @@ SDIALOG d_house_placement_tool
 
 ON=1 55
 SRC.f_house_placement <DEF.house_custom_3story_<ARGN>>
+
 
 [EOF]

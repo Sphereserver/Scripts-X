@@ -78,14 +78,14 @@ endif
 ON=@DClick
 type=t_door
 ref1=<region.uid>
-if <def.can_decay> 
+if <def.hs_can_decay> 
 	if (<ref1.tag0.decay_exempt>)
 		ref1.link.timer=-1
 	else
-		if !<def.property_tax>
+		if !<def.hs_property_tax>
 			if (<ref1.isowner <src>>)
 				if !(<ref1.tag0.demolition>)
-					ref1.link.timer=60*60*24*<def.can_decay>
+					ref1.link.timer=60*60*24*<def.hs_can_decay>
 				else
 					src.sysmessage @32,,1 This house is improperly placed and has been scheduled for demolition in  <QVAL (<eval <ref1.link.timer>/86400> < 1)? <eval (<ref1.link.timer>%86400)/3600> hours and <eval ((<ref1.link.timer>%86400)%3600)/60> minutes.:<eval <ref1.link.timer>/86400> days.>
 					src.sysmessage @32,,1 Unless you redeed it yourself before that time the house and all items within will be lost without refund.
@@ -281,7 +281,7 @@ IF !(<SRC.ISGM>)
       return 1
     ENDIF
   ENDIF
-  SRC.TIMERF 1,HouseIsPlaced <MORE1> <BASEID> <SRC.TARGP>
+  SRC.TIMERF 1,f_house_isPlaced <MORE1> <BASEID> <SRC.TARGP>
 ENDIF
 
 ON=@TargOn_Char
@@ -306,7 +306,7 @@ ON=@Enter
 if <src.isplayer>
 	src.events +e_house_player_events
 	SRC.dSPEECH +spk_player_house
-	src.timerf 1, visitor_count
+	src.timerf 1, f_house_visitor_count
 	ref1=<uid>
 	if !<src.isgm>
 		if <ref1.housetype>==house_private
@@ -343,7 +343,7 @@ ON=@Exit
 //////////////////////////////////////////////////////////////////////////////////////events///////////////////////////////////////////////////
 [EVENTS e_house_transfer]
 ON=@TradeAccepted
-DIALOGCLOSE d_demolish
+DIALOGCLOSE d_house_demolish
 DIALOGCLOSE d_house_menu
 if <argn1>
 	for <ARGN1>

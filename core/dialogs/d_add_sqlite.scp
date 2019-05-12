@@ -39,7 +39,7 @@ ldb.execute DROP TABLE IF EXISTS '<def.AddDLG_DB_Table_Char>'
 ldb.execute CREATE TABLE '<def.AddDLG_DB_Table_Item>' ('id' TEXT PRIMARY KEY NOT NULL,'defname' TEXT, 'name' TEXT,'category' TEXT,'subsection' TEXT,'description' TEXT)
 ldb.execute CREATE TABLE '<def.AddDLG_DB_Table_Char>' ('id' TEXT PRIMARY KEY NOT NULL,'defname' TEXT, 'name' TEXT,'category' TEXT,'subsection' TEXT,'description' TEXT)
 
-serv.log Starting AddDialog database rebuilding...
+serv.log Starting AddDialog database rebuild...
 local.hour=<serv.rticks>
 LDB.EXECUTE BEGIN
 for 0 <eval <serv.deflist.itemdef.count>-1>

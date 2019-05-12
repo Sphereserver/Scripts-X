@@ -4,11 +4,8 @@
 //****************************************************************************
 VERSION=X1
 
-// TODO! Before this script can be fully functional!
-//-- In the equippables def add:
-//--	EXPANSION
-//--	TEVENTS=ei_artifact (done, for the large part)
-//--	TEVENTS=ei_material_nonbase
+// TODO:
+//	Add: TEVENTS=ei_equipment_3donly to the items usable only with the old 3d, LBR client
 
 [COMMENT How to setup this script]
 1) If you haven't the DTL database file (it should be provided with the script pack), you can rebuild it using "f_DTL_db_rebuild".
@@ -20,56 +17,60 @@ Done!
 
 [DEFNAME defs_DynamicTemplateLoot]
 DTL_DB_File 	databases/dynamictemplate_loot.db
-DTL_DB_Table 	DTL
+DTL_DB_Table 	DynamicTemplate_Loot
 
 sex_male	0
 sex_female	1
 
 // Flags for further categorization, useful for "filtering" out items(or to take only items with certain flags)
 //DTL_flag_yourflag				01
-DTL_flag_material_nonbase	010000000
-DTL_flag_magic_preaos		020000000
-DTL_flag_artifact			040000000
+DTL_flag_material_nonbase	0010000000
+DTL_flag_magic_preaos		0020000000
+DTL_flag_artifact			0040000000
+DTL_flag_equipment_special	0080000000
+//DTL_flag_equipment_3donly	0100000000
 
 
-[function f_DTL_db_loadtomdb]
-mdb.importdb "<serv.scpfiles><def.DTL_DB_File>"
-
-[function f_DTL_db_memtest] // just for testing purposes
-mdb.query SELECT defname FROM '<def.DTL_DB_Table>' WHERE sex=1
-if <mdb.row.numrows>
-	for 0 <eval <mdb.row.numrows>-1>
-		serv.log <mdb.row.<dlocal._for>.defname>
-	endfor
+[function f_DTL_mdb_update]
+// Delete old table
+mdb.execute DROP TABLE IF EXISTS '<def.DTL_DB_Table>'
+if !<file.fileexist "<serv.scpfiles><def.DTL_DB_File>">
+	serv.log Couldn't find database file: "<serv.scpfiles><def.DTL_DB_File>".
+	return
 endif
+// Import .db file into the MDB
+mdb.importdb "<serv.scpfiles><def.DTL_DB_File>"
+serv.log DynamicTemplateLoot database loaded in memory.
 
 
 // DynamicTemplateLoot
-[function f_DTLoot] // class, race, sex ID (0=male, 1=female), expamsion ID
+[function f_DTLoot] // class, race, sex ID (0=male, 1=female), expamsion ID (optional)
+// class: weapon_fence, armor...
+// race: any, human, elf, garg, nohuman, noelf, nogarg
+// sex: female (female-only items), male (male + female)
+// expansion id: <def.rds_t2a>, <def.rds_aos>, <def.rds_hs>... ignore items added after this UO expansion
 if <isempty <argv0>>
-	serv.log DynamicTemplate: Invalid args
-	return //<def.defaultitem>
+	serv.log DynamicTemplate: Invalid args.
+	return <def.defaultitem>
 endif
-if <isempty <argv1>>
-	argv1 = "human"
-endif
-if <isempty <argv2>>
-	argv2 = 0
-endif
-if <isempty <argv3>>
-	argv3 = <EraLimitGear>
-endif
+local.race=<qval !<isempty <argv1>> ?<argv1>:"any">
+local.sex= <qval <isnum    <argv2>> ?<argv2>:<def.sex_male>>
+local.exp= <qval <isnum    <argv3>> ?<argv3>:<EraLimitGear>>
+
+local.race_is_any   = <eval (0 == strcmpi("any","<local.race>"))>
+local.flags_exclude = <eval <def.DTL_flag_material_nonbase>|<def.DTL_flag_magic_preaos>|<def.DTL_flag_artifact>|<def.DTL_flag_equipment_special>>
+
 // In the future we may even use a prepared statement
 // Explanation of the query: pick all the defnames that are of the given class, race, sex, with an expansion <= the given one and exclude pre-aos magic items, artifacts and "colored" craftables (made of a non-base material, like iron)
-mdb.query SELECT defname FROM '<def.DTL_DB_Table>' WHERE class=<argv0> AND race=<argv1> AND sex=<argv2> AND expansion<=<argv3> AND NOT flags&<eval <def.DTL_flag_material_nonbase>|<def.DTL_magic_preaos>|<def.DTL_flag_artifact>>
+mdb.query SELECT defname FROM '<def.DTL_DB_Table>' WHERE class='<argv0>' <qval <local.race_is_any>?:AND race='<local.race>'> AND sex=<dlocal.sex> AND expansion<=<dlocal.exp> AND NOT flags&<dlocal.flags_exclude>
 if !<mdb.row.numrows>
-	serv.log DynamicTemplate: Can't find DB entry with class=<argv1> AND race=<argv1> AND sex=<argv2> AND expansion<=<argv3> AND NOT flags&<eval <def.DTL_flag_material_nonbase>|<def.DTL_magic_preaos>|<def.DTL_flag_artifact>>
-	return //<def.defaultitem>
+	serv.log DynamicTemplate: Can't find DB entry with class=<argv0> <qval <local.race_is_any>?:AND race='<local.race>'> AND sex=<dlocal.sex> AND expansion<=<dlocal.exp> AND NOT flags&<dlocal.flags_exclude>
+	return <def.defaultitem>
 endif
 return <mdb.row.<R0,<mdb.row.numrows>>.defname>
 
 
-[function f_reserved_DTL_db_setup]
+[function f_reserved_DTL_ldb_setup]
 if !(<ldb.connected>)
 	ldb.connect "<serv.scpfiles><def.DTL_DB_File>"
 	if !<ldb.connected>
@@ -87,21 +88,22 @@ ldb.execute CREATE TABLE '<def.DTL_DB_Table>' ('defname' TEXT PRIMARY KEY, 'clas
 return 1
 
 
-[FUNCTION f_DTL_db_rebuild]
-local.file = 0
-local.ldb = 1
+[FUNCTION f_DTL_ldb_rebuild]
+local.file = 0			// Can be enabled for debugging
+local.ldb = 1			// Recreate the SQLite .db file
+local.mdb_update = 1	// After recreating .db file, load it in the MDB
 if <local.file>
 	file.mode.append=1
 endif
 if <local.ldb>
-	if !<f_reserved_DTL_db_setup>
+	if !<f_reserved_DTL_ldb_setup>
 		local.ldb = 0
 	else
 		ldb.execute BEGIN
 	endif
 endif
 
-serv.log Starting DynamicTemplateLoot database rebuilding...
+serv.log Starting DynamicTemplateLoot database rebuild...
 local.hour=<serv.rticks>
 for 0 <eval <serv.deflist.itemdef.count>-1>
 	local._item=<serv.deflist.itemdef.<dlocal._for>>
@@ -112,7 +114,7 @@ for 0 <eval <serv.deflist.itemdef.count>-1>
 	local._d = serv.itemdef.<local._item>
 	
 	// Get the Class
-	local._t=<eval <<local._d>.type>>
+	local._t=<resdef.<<local._d>.type>>
 	// Weapon
 	if <local._t>==<resdef.t_weapon_fence>
 		local.c="weapon_fence"
@@ -158,8 +160,11 @@ for 0 <eval <serv.deflist.itemdef.count>-1>
 	endif
 	
 	local._cu=<<local._d>.canuse>
-	local.f=0
+	if (<local._cu>&<def.can_u_none>)
+		continue
+	endif
 	
+
 	// Get the Sex
 	if <local._cu>&<def.can_u_female>
 		local.s="female" // female only
@@ -170,24 +175,27 @@ for 0 <eval <serv.deflist.itemdef.count>-1>
 	endif
 	
 	// Get the Race
-	if ((<local._cu>&<def.can_u_human>) && (<local._cu>&<def.can_u_gargoyle>) && !(<local._cu>&<def.can_u_elf>))
+	if ((<local._cu>&<def.can_u_human>) && !(<local._cu>&(<def.can_u_elf>|<def.can_u_gargoyle>)))
+		local.r="human"	// human only
+	elif ((<local._cu>&<def.can_u_elf>) && !(<local._cu>&(<def.can_u_human>|<def.can_u_gargoyle>)))
+		local.r="elf" 	// elf only
+	elif ((<local._cu>&<def.can_u_gargoyle>) && !(<local._cu>&(<def.can_u_human>|<def.can_u_elf>)))
+		local.r="garg" 	// garg only
+	elif ((<local._cu>&<def.can_u_elf>) && (<local._cu>&<def.can_u_gargoyle>) && !(<local._cu>&<def.can_u_human>))
+		local.r="nohuman"
+	elif ((<local._cu>&<def.can_u_human>) && (<local._cu>&<def.can_u_gargoyle>) && !(<local._cu>&<def.can_u_elf>))
 		local.r="noelf"
 	elif ((<local._cu>&<def.can_u_human>) && (<local._cu>&<def.can_u_elf>) && !(<local._cu>&<def.can_u_gargoyle>))
 		local.r="nogarg"
-	elif ((<local._cu>&<def.can_u_gargoyle>) && !(<local._cu>&(<def.can_u_human>|<def.can_u_elf>)))
-		local.r="garg" // garg only
-	elif ((<local._cu>&<def.can_u_elf>) && !(<local._cu>&(<def.can_u_human>|<def.can_u_gargoyle>)))
-		local.r="elf" // elf only
-	elif ((<local._cu>&<def.can_u_human>) && !(<local._cu>&(<def.can_u_elf>|<def.can_u_gargoyle>)))
-		local.r="human" // human only
 	elif
-		local.r="anyrace"
+		local.r="any"
 	endif
 	
 	// Get the Expansion
 	local.e=<<local._d>.expansion>
 	
 	// Get the Flags
+	local.f=0
 	if <<local._d>.istevent.<resdef.ei_material_nonbase>>
 		local.f |= <def.DTL_flag_material_nonbase>
 	endif
@@ -197,6 +205,12 @@ for 0 <eval <serv.deflist.itemdef.count>-1>
 	if <<local._d>.istevent.<resdef.ei_artifact>>
 		local.f |= <def.DTL_flag_artifact>
 	endif
+	if <<local._d>.istevent.<resdef.ei_equipment_special>>
+		local.f |= <def.DTL_flag_equipment_special>
+	endif
+	//if <<local._d>.istevent.<resdef.ei_equipment_3donly>>
+	//	local.f |= <def.DTL_flag_equipment_3donly>
+	//endif
 	
 	local.defname=<<local._d>.defname>
 	if <isempty <local.defname>>
@@ -204,11 +218,12 @@ for 0 <eval <serv.deflist.itemdef.count>-1>
 	endif
 	
 	if <local.file> && !<local.f> // don't dump artifacts or items with a non-base material ("colored")
-		if !<file.open dump_<local.c>_<local.r>_<local.s>.txt> // FIXME expansion
+		if !<file.open dump_<local.c>_<local.r>_<local.s>.txt>
 			serv.log Couldn't open file with c=<local.c>, race=<local.r>, sex=<local.s>
 			continue
 		endif
-		file.writeline <local.defname>
+		file.writeline <local.defname> (EXPANSION: <dlocal.e>)
+		file.flush
 		file.close
 	endif
 	if <local.ldb>
@@ -221,5 +236,9 @@ if <local.ldb>
 	ldb.close
 endif
 serv.log Database rebuilt in <eval <serv.rticks>-<local.hour>> seconds.
+
+if (<local.ldb> && <local.mdb_update>)
+	f_DTL_mdb_update
+endif
 
 [EOF]

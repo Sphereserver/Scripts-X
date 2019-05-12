@@ -271,8 +271,8 @@ XGO
 JAIL
 FORGIVE
 // Scripted functions
-t
-sm
+t	// teleport
+sm	// staff message
 //gmtravel
 
 [PLEVEL 3]
