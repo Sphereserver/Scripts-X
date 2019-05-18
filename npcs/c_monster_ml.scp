@@ -1250,6 +1250,11 @@ ICON=i_pet_MAN
 CAN=mt_equip|mt_walk|mt_run|mt_usehands
 
 HEIGHT=16
+RESPHYSICALMAX=70
+RESFIREMAX=70
+RESCOLDMAX=70
+RESPOISONMAX=70
+RESENERGYMAX=75
 
 RESOURCES=i_flesh_head, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg, i_blood_2
 FOODTYPE=15 t_food, t_fruit
@@ -1280,6 +1285,11 @@ ICON=i_pet_woman
 CAN=mt_equip|mt_walk|mt_run|mt_female|mt_usehands
 
 HEIGHT=16
+RESPHYSICALMAX=70
+RESFIREMAX=70
+RESCOLDMAX=70
+RESPOISONMAX=70
+RESENERGYMAX=75
 
 RESOURCES=i_flesh_head, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg, i_blood_2
 FOODTYPE=15 t_food, t_fruit
