@@ -43,24 +43,24 @@ endfor
 
 [function f_house_can_access]
 ref1 = <region.uid>
-if (<tag0.access>==house_access_all || <src.IsGM>)
+if (<tag0.access>==<def.house_access_all> || <src.IsGM>)
     return 1
 endif
 local.AccessLevel = <ref1.f_house_get_priv <src>>
-if (<tag0.access>==house_access_friend)
-    if (<local.AccessLevel> <= house_access_friend)
+if (<tag0.access>==<def.house_access_friend>)
+    if (<local.AccessLevel> <= <def.house_access_friend>)
         return 1
     endif
-elseif (<tag0.access>==house_access_coowner)
-    if (<local.AccessLevel> <= house_access_coowner)
+elseif (<tag0.access>==<def.house_access_coowner>)
+    if (<local.AccessLevel> <= <def.house_access_coowner>)
         return 1
     endif
-elseif (<tag0.access>==house_access_owner)
-    if (<local.AccessLevel> == house_access_owner)
+elseif (<tag0.access>==<def.house_access_owner>)
+    if (<local.AccessLevel> == <def.house_access_owner>)
         return 1
     endif
-elseif (<tag0.access>==house_access_guild)
-    if ((<local.AccessLevel> == house_access_guild))
+elseif (<tag0.access>==<def.house_access_guild>)
+    if ((<local.AccessLevel> == <def.house_access_guild>))
         return 1
     endif
 endif
@@ -68,18 +68,20 @@ return 0
  
 [function f_house_get_priv]
 if (<IsOwner <src>>)
-    return house_access_owner
+    return <def.house_access_owner>
 elseif (<getCoownerpos <src>> >= 0)
-    return house_access_coowner
+    return <def.house_access_coowner>
 elseif (<getFriendpos <src>> >= 0)
-    return house_access_friend
-elseif (<owner.guild> == <src.guild>)
-    local.priv=<src.guild.memberfromuid.<src>.priv>
-    if ((<local.priv>==1) || (<local.priv>==2)) // 1 = member, 2 = master
-        return house_access_guild
+    return <def.house_access_friend>
+elseif (<owner.guild>)
+    if(<owner.guild> == <src.guild>)
+        local.priv=<src.guild.memberfromuid.<src>.priv>
+        if ((<local.priv>==1) || (<local.priv>==2)) // 1 = member, 2 = master
+            return <def.house_access_guild>
+        endif
     endif
 endif
-return 10
+return <def.house_access_none>
 
 [FUNCTION f_house_render_list]
 ref1 = <owner>
@@ -584,12 +586,18 @@ if (<baseid>==m_tower)
 	local.xy=16x14
 else
 	args = <multiregion>
-	local.topx=<argv[0]> 
-	local.topy=<argv[1]>
-	local.bottomx= <argv[2]> 
-	local.bottomy= <argv[3]>
-	local.x <eval (<local.bottomx>-<local.topx>)+1> 
-	local.y <eval <local.bottomy>-<local.topy>>
+	local.left=<argv[0]> 
+	local.top=<argv[1]>
+	local.right=<argv[2]> 
+	local.bottom= <argv[3]>
+	local.x <eval (<local.bottom> - <local.top>) + 1> 
+	local.y <eval (<local.right> - <local.left>) + 1>
+    local.x /= 2
+    local.y /= 2
+    local.x=<max 7,<local.x>>
+    local.y=<max 7,<local.y>>
+    local.x=<min 18,<local.x>>
+    local.y=<min 18,<local.y>>
 	local.xy <dlocal.x>x<dlocal.y>
 endif
 forchars <eval (((<argv[2]>+<argv[3]>)/2)+2)>
@@ -652,41 +660,20 @@ REF1=<LINK.owner>//Owner
 if !<ref1.uid>
 	return 1
 endif
-REF1.f_house_removeKeys
 if <def.custom_placement>
 	if (<f_house_checkNearArea>)
 		REF1.SYSMESSAGE @,,1 Bu alana evi kuramassınız.. // FIXME: translate to english!
 		if !(<REF1.ISGM>)
-			SERV.NEWITEM i_deed_<STRSUB 2 30 <link.BASEID>>
-			link.REMOVE
-			NEW.CONT=<REF1.FINDLAYER.21>
+			link.redeed
 			return 1
 		endif
 	endif
 endif
 trysrc <ref1> DIALOG d_house_placement
 
-[FUNCTION f_house_removeKeys]
-for 0 <FINDLAYER.21.RESCOUNT>
-	REF1=<FINDLAYER.21.FINDCONT(<LOCAL._FOR>)>
-	if (<REF1.DISPID>==i_key_copper)
-		if STRMATCH("t_multi*","<REF1.LINK.TYPE>")
-			REF1.REMOVE
-		endif
-	endif
-endfor
-for 0 <FINDLAYER.29.RESCOUNT>
-	REF1=<FINDLAYER.29.FINDCONT(<LOCAL._FOR>)>
-	if (<REF1.DISPID>==i_key_copper)
-		if STRMATCH("t_multi*","<REF1.LINK.TYPE>")
-			REF1.REMOVE
-		endif
-	endif
-endfor
-
-
 //////////////////////////////////////////////////////////////////////////////////////////Custom Placement check////////////////////////////////////////////////////////////////////////////////////
 [FUNCTION f_house_checkNearArea]
+return 0
 ref1= <region.uid>
 ARGS=<ref1.MULTIREGION>
 SERV.NEWNPC c_pig
@@ -819,5 +806,34 @@ if (<ARGS> > <LOCAL.TERRAIN>)
 	return <eval 1+(<ARGS>-<LOCAL.TERRAIN>)/20>
 endif
 return 0
+
+[FUNCTION f_multi_onplacement_check]
+//local values = west, north, east, south
+local.check_blockradius=-1,-1,1,1
+local.check_multiradius=0,-5,0,5
+
+if (<def.hs_placement_check_roads>)
+    args=<serv.itemdef.<local.id>.multiregion>
+    local.left=<argv0>
+    local.top=<argv1>
+    local.max_x=<eval -<local.left> + <argv2>>
+    local.max_y=<eval -<local.top> + <argv3>>
+    serv.newnpc=c_man_invisible
+    new.flags |= statf_invisible
+    new.p=<local.p>
+    new.move <local.left>,<local.top>
+
+    for py 1 <local.max_y>
+        for px 1 <local.max_x>
+            if (<new.f_isOnRoad>)
+                new.remove
+                return 1
+            endif
+            new.move 1
+        endfor
+        new.move -<local.max_x> 1
+    endfor
+    new.remove
+endif
 
 [EOF]

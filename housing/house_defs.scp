@@ -32,6 +32,7 @@ hs_wipe_switch_lists 		1 		// if set to 1 access/ban lists are wiped when house 
 hs_allow_sign_color 		1		// Allow player to change the color of their house signs.
 hs_hs_secure_locks_limit 	1		// Lockdowns & Secures Zero to turn off limitations
 hs_secure_locks_limit		0		//Overwrite hardcoded placement check. (Doesnt work right now)
+hs_placement_check_roads    1
 	
 //vendor settings
 house_list_vendors	0 	// set to 1 to allow players on house list to place vendors, 0 = owner only
@@ -248,16 +249,17 @@ house_custom_3story_54		"m_foundation_18x17"
 house_custom_3story_55		"m_foundation_18x18"
 
 [defname house_access_level]
-house_access_owner      = 0
-house_access_coowner    = 1
-house_access_friend     = 2
-house_access_guild      = 3
-house_access_all        = 4
+house_access_none       = 0
+house_access_owner      = 1
+house_access_coowner    = 2
+house_access_friend     = 3
+house_access_guild      = 4
+house_access_all        = 5
 
 [defname house_container_access_level]
-house_container_access_all         = 0
-house_container_access_friend     = 1
-house_container_access_coowner    = 2
+house_container_access_all      = 0
+house_container_access_friend   = 1
+house_container_access_coowner  = 2
 house_container_access_owner    = 3
 
 [DEFNAME house_privs]
