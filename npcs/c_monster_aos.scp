@@ -59,7 +59,7 @@ ON=@Create
    TACTICS={50.0 70.0}
    WRESTLING={50.0 70.0}
    
-ON=@NPCRestock
+ON=@CreateLoot
    ITEM=loot_dark_guardian
    ITEM=loot_ai_hard
 
@@ -114,7 +114,7 @@ ON=@Create
     TACTICS={75.1, 85.0}
     WRESTLING={65.1, 75.0}
 
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=i_gold,{400 500}
     ITEM=random_jewel
     ITEM=random_jewel
@@ -162,7 +162,7 @@ ON=@Create
     TACTICS={80.0 90.0}
     WRESTLING=100.0
 
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=i_gold,{290 320}
     ITEM=i_log,{10 20}
 
@@ -212,7 +212,7 @@ ON=@Create
     WRESTLING={40.1, 60.0}
     TAMING=12.9
 
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=i_gold,{50,100}
 
 
@@ -265,7 +265,7 @@ ON=@Create
     TACTICS={75.1, 85.0}
     WRESTLING={80.1, 100.0}
 
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=i_gold,{1000 1200}
     ITEM=random_reagent_necro
 
@@ -316,7 +316,7 @@ ON=@Create
     TACTICS={55.1, 80.0}
     WRESTLING={60.1, 70.0}
 
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=i_gold,{125 175}
 
 
@@ -366,7 +366,7 @@ ON=@Create
     TACTICS={45.1, 70.0}
     WRESTLING={50.1, 70.0}
 
-ON=@npcrestock
+ON=@CreateLoot
     ITEM=i_gold,{125 175}
 
 [CHARDEF 0132]
@@ -506,7 +506,7 @@ ON=@Create
     TACTICS={67.6, 92.5}
     WRESTLING={60.1, 80.0}
 
-ON=@npcrestock
+ON=@CreateLoot
     ITEM=i_gold,{50 100}
 
 
@@ -560,7 +560,7 @@ ON=@Create
     TACTICS={100.0}
     WRESTLING={100.0}
 
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=i_gold,{4000 5000}
     //ITEM=magic_items    //todo
 
@@ -611,7 +611,7 @@ ON=@Create
     TACTICS={55.1, 80.0}
     WRESTLING={50.1, 70.0}
 
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=i_gold,{50 100}
 
 
@@ -661,7 +661,7 @@ ON=@Create
     TACTICS={45.1, 70.0}
     WRESTLING={50.1, 70.0}
 
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=i_gold,{50 100}
 
 
@@ -802,7 +802,7 @@ ON=@Create
     TACTICS={100.0}
     WRESTLING={84.1, 88.0}
 
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=i_gold,{1600 2000}
     //ITEM=magic_items    //todo
 
@@ -946,7 +946,7 @@ ON=@Create
     TACTICS={75.1, 100.0}
     WRESTLING={70.1, 90.0}
 
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=i_gold,{275 325}
     ITEM=i_treasure_map4,R99
 
@@ -1064,7 +1064,7 @@ ON=@Create
     ITEMNEWBIE=i_spellbook
     ADDCIRCLE 6,1
 
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=i_gold,{200 490}
     ITEM=random_jewel,3
     ITEM=i_reag_daemon_bone,{20 60}
@@ -1111,7 +1111,7 @@ ON=@Create
 
     HITLEECHLIFE=66
     
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=i_gold,{90 120}
 
 
@@ -1155,7 +1155,7 @@ ON=@Create
     TACTICS={50.0 60.0}
     WRESTLING={40.0 60.0}
 
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=i_gold,{100 200}
     ITEM=i_reag_daemon_bone,{2 10}
 
@@ -1208,7 +1208,7 @@ ON=@Create
     TACTICS={75.1, 90.0}
     WRESTLING={70.1, 90.0}
 
-ON=@NpcRestock
+ON=@CreateLoot
 ITEM=i_gold,{300 350}
 
 

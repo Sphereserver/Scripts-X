@@ -1560,9 +1560,10 @@ ON=@Create
    WRESTLING={60.0 80.0}
    
  
-ON=@NpcRestock
+ON=@CreateLoot
    ITEM=loot_efreet
    ITEM=loot_ai_hard
+   
 [CHARDEF 086]
 //FIXME: No Stratics data yet
 DEFNAME=c_dragon_komodo

@@ -21,7 +21,7 @@ CATEGORY=Monsters
 SUBSECTION=Elementals
 DESCRIPTION=Kaze Kemono
 
-ON=@create
+ON=@Create
     NPC=BRAIN_MONSTER
     
     STR={201, 275}
@@ -44,7 +44,7 @@ ON=@create
     FAME=8000
     KARMA=-8000
 
-ON=@npcrestock
+ON=@CreateLoot
     ITEM=i_gold,{550 650}
     //ITEM=magic_items
     ITEM=random_jewel,2
@@ -73,7 +73,7 @@ CATEGORY=Monsters
 SUBSECTION=Elementals
 DESCRIPTION=Rai-Ju
 
-ON=@create
+ON=@Create
     NPC=BRAIN_MONSTER
     
     FAME=8000
@@ -95,7 +95,7 @@ ON=@create
     MAGICRESISTANCE={110.1, 125.0}
     ANATOMY={25.1, 35.0}
 
-ON=@npcrestock
+ON=@CreateLoot
     ITEM=i_gold,{550 650}
     ITEM=random_jewel,2
 
@@ -149,7 +149,7 @@ ON=@Create
     TACTICS={79.1, 89.0}
     WRESTLING={60.1, 70.0}
 
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=i_gold,{175 225}
     //ITEM=i_seed_fragrant
     //ITEM=i_seed_peculiar
@@ -179,7 +179,7 @@ CATEGORY=Monsters
 SUBSECTION=Daemons
 DESCRIPTION=Oni
 
-ON=@create
+ON=@Create
     NPC=BRAIN_MONSTER
     
     FAME=15000
@@ -203,7 +203,7 @@ ON=@create
     TACTICS={86.1, 101.0}
     WRESTLING={90.1, 100.0}
 
-ON=@npcrestock
+ON=@CreateLoot
     ITEM=i_gold,{1600 1850}
     //ITEM=magic_items    //todo
     //ITEM=random_items
@@ -264,7 +264,7 @@ ON=@Create
     ANATOMY={30.1, 34.0}
     POISONING=1000
 
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=random_potion
     ITEM={random_first_circle 1 random_second_circle 1}
     ITEM=random_armor
@@ -326,7 +326,7 @@ ON=@Create
     WRESTLING={100.1, 120.0}
     TAMING=98.7
 
-ON=@npcrestock
+ON=@CreateLoot
     ITEM=i_gold,{1500 1900}
     ITEM=magic_items
     ITEM=random_jewel
@@ -390,7 +390,7 @@ ON=@Create
     TACTICS={78.1, 93.0}
     WRESTLING={70.1, 77.5}
 
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=i_gold,{1000 1200}
     //ITEM=magic_items
     ITEM={random_fourth_circle 1 random_fifth_circle 1}
@@ -451,7 +451,7 @@ ON=@Create
     TACTICS={95.1, 105.0}
     WRESTLING={97.6, 107.5}
 
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=i_gold,{600 700}
     //ITEM=magic_items
     ITEM=random_footwear
@@ -527,7 +527,7 @@ CATEGORY=Monsters
 SUBSECTION=Daemons
 DESCRIPTION=Fan Dancer
 
-ON=@create
+ON=@Create
     NPC=BRAIN_MONSTER
     
     FAME=9000
@@ -549,7 +549,7 @@ ON=@create
     WRESTLING={85.1, 95.0}
     ANATOMY={85.1, 95.0}
 
-ON=@Npcrestock
+ON=@CreateLoot
     ITEM=i_gold,{700 100}
     //ITEM=magic_items
     //ITEM=i_tessen
@@ -584,7 +584,7 @@ CATEGORY=Animals
 SUBSECTION=Wild
 DESCRIPTION=Gaman
 
-ON=@create
+ON=@Create
     NPC=<def.brain_animal>
     
     STR={146, 175}
@@ -631,8 +631,8 @@ CATEGORY=Monsters
 SUBSECTION=Daemons
 DESCRIPTION=Yamandon
 
-ON=@create
-    NPC=BRAIN_MONSTER
+ON=@Create
+    NPC=<def.brain_monster>
     
     FAME=22000
     KARMA=-22000
@@ -654,7 +654,7 @@ ON=@create
     TACTICS={117.1, 132.0}
     WRESTLING={112.6, 132.5}
 
-ON=@npcrestock
+ON=@CreateLoot
     ITEM=i_gold,{2000 2500}
     //ITEM=magic_items
     ITEM=random_jewel,6
@@ -689,7 +689,7 @@ SUBSECTION=Daemons
 DESCRIPTION=Tsuki Wolf
 
 ON=@create
-    NPC=BRAIN_MONSTER
+    NPC=<def.brain_monster>
     
     FAME=8500
     KARMA=-8500
@@ -716,7 +716,7 @@ ON=@create
     DETECTINGHIDDEN={100.0}
     PARRYING={90.0, 100.0}
 
-ON=@npcrestock
+ON=@CreateLoot
     ITEM=i_gold,{900 1200}
     //ITEM=magic_items
     ITEM={random_body_parts_1 1 random_body_parts_2 1}
@@ -751,7 +751,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Revenant Lion
 
 ON=@create
-    NPC=BRAIN_MONSTER
+    NPC=<def.brain_monster>
     
     FAME=4000
     KARMA=-4000
@@ -774,7 +774,7 @@ ON=@create
     TACTICS={60.1, 80.0}
     WRESTLING={80.1, 88.0}
 
-ON=@npcrestock
+ON=@CreateLoot
     ITEM=i_gold,{500 700}
     //ITEM=magic_items,2
     ITEM={random_fourth_circle 1 random_fifth_circle 1}
@@ -809,7 +809,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Lady of the Snow
 
 ON=@create
-    NPC=BRAIN_MONSTER
+   NPC=<def.brain_monster>
     
     FAME=15200
     KARMA=-15200
@@ -832,7 +832,7 @@ ON=@create
     NECROMANCY={90, 110.0}
     SPIRITSPEAK={90.0, 110.0}
 
-ON=@npcrestock
+ON=@CreateLoot
     ITEM=i_gold,{800 100}
     //ITEM=magic_items,3
     ITEM=random_reagent,3
@@ -891,7 +891,7 @@ ON=@Create
     TACTICS={55.1, 105.0}
     WRESTLING={47.6, 57.5}
 
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=i_gold,{700 1000}
     //ITEM=magic_items
     ITEM=random_footwear
@@ -928,7 +928,8 @@ CATEGORY=Animals
 SUBSECTION=Birds
 DESCRIPTION=Crane
 
-ON=@create
+ON=@Create
+	NPC=<def.brain_animal>
     
     KARMA=200
     
@@ -995,7 +996,7 @@ ON=@Create
     TACTICS={115.1, 130.0}
     WRESTLING={110.1, 130.0}
 
-ON=@NpcRestock
+ON=@CreateLoot
     ITEM=i_gold,1500 1800}
     //ITEM=magic_items
     ITEM=random_footwear

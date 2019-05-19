@@ -2832,7 +2832,7 @@ ON=@Create
    TACTICS={50.0 65.0}
    WRESTLING={40.0 50.0}
 
-ON=@NPCRestock
+ON=@CreateLoot
    ITEM=loot_orcish_mage
 
 [CHARDEF 090]
