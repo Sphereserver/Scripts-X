@@ -34,6 +34,7 @@ core/defs_component_props.scp
 core/defs_buffs_debuffs.scp
 core/defs_faction.scp
 core/defs_height.scp
+core/defs_hues.scp
 core/defs_html.scp
 core/defs_mounts.scp
 core/defs_sounds.scp
