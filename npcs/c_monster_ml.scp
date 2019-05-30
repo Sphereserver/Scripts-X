@@ -13,7 +13,7 @@ HEIGHT=35
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 RESLEVEL=5
 RESDISPDNHUE=33
@@ -68,7 +68,7 @@ HEIGHT=16
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 RESLEVEL=5
 RESDISPDNHUE=33
@@ -117,7 +117,7 @@ HEIGHT=19
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 RESLEVEL=5
 RESDISPDNHUE=33
@@ -169,7 +169,7 @@ TAG.BARDING.DIFF=160.0
 
 RESOURCES=15 i_ribs_raw, 8 i_reag_bone
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 RESLEVEL=5
 RESDISPDNHUE=33
@@ -232,7 +232,7 @@ HEIGHT=16
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 RESLEVEL=5
 RESDISPDNHUE=33
@@ -281,7 +281,7 @@ HEIGHT=28
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 RESLEVEL=5
 RESDISPDNHUE=33
@@ -330,7 +330,7 @@ HEIGHT=18
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 RESLEVEL=5
 RESDISPDNHUE=33
@@ -383,7 +383,7 @@ HEIGHT=18
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 RESLEVEL=5
 RESDISPDNHUE=33
@@ -437,7 +437,7 @@ HEIGHT=18
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 RESLEVEL=5
 RESDISPDNHUE=33
@@ -486,7 +486,7 @@ HEIGHT=25
 
 RESOURCES=40 i_hide, 19 i_ribs_raw, 8 i_reag_dragon_blood
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 RESLEVEL=5
 RESDISPDNHUE=33
@@ -540,7 +540,7 @@ HEIGHT=14
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 RESLEVEL=5
 RESDISPDNHUE=33
@@ -589,7 +589,7 @@ HEIGHT=15
 
 RESOURCES=1 i_ribs_raw
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 RESLEVEL=5
 RESDISPDNHUE=33
@@ -647,7 +647,7 @@ HEIGHT=18
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 RESLEVEL=5
 RESDISPDNHUE=33
@@ -751,7 +751,7 @@ HEIGHT=28
 
 RESOURCES=15 i_ribs_raw
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 RESLEVEL=5
 RESDISPDNHUE=33
@@ -1259,7 +1259,7 @@ RESENERGYMAX=75
 RESOURCES=i_flesh_head, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg, i_blood_2
 FOODTYPE=15 t_food, t_fruit
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
@@ -1294,7 +1294,7 @@ RESENERGYMAX=75
 RESOURCES=i_flesh_head, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg, i_blood_2
 FOODTYPE=15 t_food, t_fruit
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
@@ -1324,7 +1324,7 @@ HEIGHT=16
 RESOURCES=i_flesh_head, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg, i_blood_2
 FOODTYPE=15 t_food, t_fruit
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
@@ -1353,7 +1353,7 @@ HEIGHT=16
 RESOURCES=i_flesh_head, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg, i_blood_2
 FOODTYPE=15 t_food, t_fruit
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default

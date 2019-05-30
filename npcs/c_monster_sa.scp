@@ -322,7 +322,7 @@ RESENERGYMAX=70
 RESOURCES=i_flesh_head,i_flesh_torso,i_flesh_right_arm,i_flesh_left_arm,i_flesh_left_leg,i_flesh_right_leg,i_blood_2
 FOODTYPE=15 t_food, t_fruit
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_trap,t_eerie_stuff
+AVERSIONS=t_trap
 
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
@@ -357,7 +357,7 @@ RESENERGYMAX=70
 RESOURCES=i_flesh_head,i_flesh_torso,i_flesh_right_arm,i_flesh_left_arm,i_flesh_left_leg,i_flesh_right_leg,i_blood_2
 FOODTYPE=15 t_food, t_fruit
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_trap,t_eerie_stuff
+AVERSIONS=t_trap
 
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
@@ -387,7 +387,7 @@ HEIGHT=16
 RESOURCES=i_flesh_head,i_flesh_torso,i_flesh_right_arm,i_flesh_left_arm,i_flesh_left_leg,i_flesh_right_leg,i_blood_2
 FOODTYPE=15 t_food, t_fruit
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_trap,t_eerie_stuff
+AVERSIONS=t_trap
 
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
@@ -417,7 +417,7 @@ HEIGHT=16
 RESOURCES=i_flesh_head,i_flesh_torso,i_flesh_right_arm,i_flesh_left_arm,i_flesh_left_leg,i_flesh_right_leg,i_blood_2
 FOODTYPE=15 t_food, t_fruit
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_trap,t_eerie_stuff
+AVERSIONS=t_trap
 
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default

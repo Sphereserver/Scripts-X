@@ -103,7 +103,6 @@ DAM=3,7
 ARMOR=18
 HEIGHT=16
 
-RESOURCES=10 t_eerie_stuff
 FOODTYPE=20 t_meat_raw
 DESIRES=i_gold,t_meat_raw, t_corpse
 AVERSIONS=t_trap
@@ -4440,7 +4439,7 @@ RESENERGYMAX=70
 RESOURCES=i_flesh_head, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg, i_blood_2
 FOODTYPE=15 t_food, t_fruit
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_trap,t_eerie_stuff
+AVERSIONS=t_trap
 
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
@@ -4480,7 +4479,7 @@ RESENERGYMAX=70
 
 RESOURCES=i_flesh_head_2, i_flesh_torso, i_flesh_right_arm, i_flesh_left_arm, i_flesh_left_leg, i_flesh_right_leg, i_blood_2
 FOODTYPE=15 t_food,t_fruit
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 DESIRES=i_gold,e_notoriety
 
 
@@ -4515,7 +4514,7 @@ CAN=mt_equip|mt_walk|mt_run|mt_ghost
 
 HEIGHT=16
 
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 DESIRES=i_gold,e_notoriety
 
 CATEGORY=Humanoids
@@ -4546,7 +4545,7 @@ HEIGHT=16
 
 RESOURCES=8 i_ribs_raw
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 CATEGORY=Humanoids
 SUBSECTION=Human
@@ -4577,7 +4576,7 @@ HEIGHT=8
 
 FOODTYPE=15 t_food,t_fruit
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
@@ -4612,7 +4611,7 @@ HEIGHT=8
 FOODTYPE=15 t_food,t_fruit
 DESIRES=i_gold,e_notoriety
 RESOURCES=4 i_ribs_raw
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
@@ -4647,7 +4646,7 @@ HEIGHT=8
 FOODTYPE=15 t_food,t_fruit
 DESIRES=i_gold,e_notoriety
 RESOURCES=4 i_ribs_raw
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
@@ -4682,7 +4681,7 @@ HEIGHT=8
 FOODTYPE=15 t_food,t_fruit
 DESIRES=i_gold,e_notoriety
 RESOURCES=4 i_ribs_raw
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 TSPEECH=spk_human_prime
 TSPEECH=spk_human_default
@@ -4716,7 +4715,7 @@ HEIGHT=16
 RESOURCES=4 i_ribs_raw
 FOODTYPE=15 t_food,t_fruit
 DESIRES=i_gold,e_notoriety
-AVERSIONS=t_TRAP,t_eerie_stuff
+AVERSIONS=t_TRAP
 
 CATEGORY=Humanoids
 SUBSECTION=Human
