@@ -1,4 +1,72 @@
+[CHARDEF 013]
+//"Malefic is a named Dread Spider from the Twisted Weald."
+DEFNAME=c_spider_malefic
+NAME=Malefic
+SOUND=snd_monster_gispidr1
+ICON=i_pet_spider_dread
+CAN=MT_WALK|MT_RUN|MT_NONHUM
 
+DAM=15,22
+ARMOR=60
+RESOURCES=1 i_ribs_raw
+DESIRES=r_dungeon_twisted_weald,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+
+MOVERATE=200
+TAG.Barding.Diff=126.6
+DamPoison=80
+
+TAG.OVERRIDE.SPIDERWEB=1
+
+CATEGORY=Named Creatures
+SUBSECTION=Arachnids
+DESCRIPTION=Malefic
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   FAME={2500 2999}
+   KARMA={-2500 -2999}
+   
+   COLOR=09f5
+   
+   STR={220 225}
+   MAXHITS={655 700}
+   DEX={367 377}
+   MAXSTAM={367 377}
+   INT={286 310}
+   MAXMANA={286 310}
+   
+   EVALUATINGINTEL={106.0 110.0}
+   MAGERY={107.0 110.0}
+   MAGICRESISTANCE={88.0 90.0}
+   MEDITATION={17.0 20.0}
+   POISONING={100.0 125.0}
+   TACTICS={99.0 101.0}
+   WRESTLING={103.0 105.0}
+   
+   RESCOLD={45 50}
+   RESENERGY={45 50}
+   RESFIRE={45 50}
+   RESPOISON=100
+   
+ON=@CreateLoot
+   ITEM=loot_spider_dread
+   
+ON=@Hit
+   //Dismount Attack
+   IF (<MANA> >= 20) && (<SRC.FLAGS> & statf_onhorse)
+      MANA -= 20
+      SRC.DISMOUNT
+      SRC.EMOTE knocked off mount!
+      SRC.DAMAGE <R15,25> <DEF.dam_physical> <UID>
+   ENDIF
+   //Bleed Attack
+   IF (<MANA> >= 25) && !(<SRC.FINDID.i_bleed_timer>)
+      MANA -= 25
+      SERV.NEWITEM i_bleed_timer
+      NEW.LINK=<UID>
+      SRC.EQUIP <NEW>
+   ENDIF
 
 [CHARDEF 0100]
 DEFNAME=c_chief_paroxysmus

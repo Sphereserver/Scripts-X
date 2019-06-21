@@ -404,7 +404,53 @@ ON=@CreateLoot
      //ITEM=magic_items
      ITEM=i_treasure_map4,R99
 
+[CHARDEF 0a]	//This is the  LBR graphic of the daemon that replaced the cooler sword-wielding daemon.
+DEFNAME=c_daemon_2 
+NAME=#NAMES_DAEMON
+SOUND=snd_monster_daemon1
+ICON=i_pet_demon
+CAN=MT_WALK|MT_FLY|MT_USEHANDS
 
+DAM=21,39
+ARMOR=45
+HEIGHT=35
+
+RESOURCES=1 i_ribs_raw,2 i_reag_daemon_bone
+DESIRES=r_caves,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+
+CATEGORY=Monsters
+SUBSECTION=Demons
+DESCRIPTION=Daemon 2
+
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   FAME={1500 1999}
+   KARMA={-1000 -1999}
+   
+   STR={476, 505}
+   DEX={76, 95}
+   INT={301, 325}
+   MAXHITS={286, 303}
+
+   RESPHYSICAL={45, 60}
+   RESFIRE={50, 60}
+   RESCOLD={30, 40}
+   RESPOISON={20, 30}
+   RESENERGY={30, 40}
+
+   EVALUATINGINTEL={70.1, 80.0}
+   MAGERY={70.1, 80.0}
+   MAGICRESISTANCE={85.1, 95.0}
+   TACTICS={70.1, 80.0}
+   WRESTLING={60.1, 80.0}
+
+   
+ON=@CreateLoot
+   ITEMNEWBIE=random_weapon_sword_normal
+   ITEM=loot_demon
+   
 [CHARDEF 0c]
 DEFNAME=c_dragon
 NAME=#NAMES_DRAGON the Dragon
