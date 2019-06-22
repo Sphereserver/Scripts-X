@@ -11,8 +11,6 @@ TODO:
 -Mount icons placed here, should be moved to i_char_icons.scp? some of them are duplicated -> remove
 -missing FACTIONS 
 -Missing CHARDEF (according to defs_height.scp):
-    01b,
-    022
     045,
     060, 062, 06a, 06b, 06c, 06d, 06f,
     070, 071, 072, 073, 075, 076, 077, 078, 079, 07b, 07c

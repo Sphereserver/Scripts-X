@@ -8,6 +8,7 @@ CAN=MT_WALK|MT_RUN|MT_NONHUM
 
 DAM=15,22
 ARMOR=60
+
 RESOURCES=1 i_ribs_raw
 DESIRES=r_dungeon_twisted_weald,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
 AVERSIONS=t_trap,r_civilization
@@ -21,6 +22,7 @@ TAG.OVERRIDE.SPIDERWEB=1
 CATEGORY=Named Creatures
 SUBSECTION=Arachnids
 DESCRIPTION=Malefic
+
 ON=@Create
    NPC=<def.brain_monster>
    

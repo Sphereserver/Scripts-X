@@ -1,3 +1,47 @@
+[CHARDEF 01b]
+//"The Dark Wolf Familiar will attack the foes that its master attacks,
+// and as an extra bonus it will allow its master to tame any wolf he meets
+// in his travels."
+//FIXME: Gives wolf training skill to summoner.
+//FIXME: Abilities: +1 stamina every 2 seconds.
+
+DEFNAME=c_familiar_dark_wolf
+NAME=Dark Wolf Familiar
+SOUND=snd_animals_wolf1
+ICON=i_pet_wolf_grey
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+
+DAM=15,33
+ARMOR=40
+
+TAG.Barding.Diff=10000	//Immune to barding
+FollowerSlots=1
+FACTION = faction_wolf
+
+CATEGORY=Spells
+SUBSECTION=Necromancy
+DESCRIPTION=Familiar, Dark Wolf
+ON=@Create
+   NPC=<def.brain_animal>
+   
+   FAME={500 999}
+   KARMA={-800 -999}
+   
+   STR={95 105}
+   MAXHITS={55 65}
+   DEX={85 95}
+   MAXSTAM={85 95}
+   INT={85 95}
+   MAXMANA={25 35}
+   
+   TACTICS={45.0 55.0}
+   WRESTLING={85.0 90.0}
+   RESPHYSICAL={0 10}
+   RESCOLD={25 40}
+   RESENERGY={25 40}
+   RESFIRE={25 40}
+   RESPOISON={25 40}
+
 [CHARDEF 052]
 DEFNAME=c_dark_guardian
 NAME=dark guardian

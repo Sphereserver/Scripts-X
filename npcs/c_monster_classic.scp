@@ -145,7 +145,6 @@ DEFNAME=c_gargoyle
 NAME=Gargoyle
 SOUND=snd_monster_gargyl1
 ICON=i_pet_garg
-ANIM=03fbc7f
 CAN=mt_walk|mt_fly|mt_usehands
 
 DAM=3,18
@@ -358,7 +357,7 @@ ON=@CreateLoot
 [CHARDEF 09]
 DEFNAME=c_daemon
 NAME=#NAMES_DAEMON the Daemon
-SOUND=357
+SOUND=snd_monster_daemon1
 ICON=i_pet_daemon
 CAN=mt_walk|mt_fly|mt_usehands
 
@@ -369,6 +368,7 @@ HEIGHT=35
 RESOURCES=1 i_ribs_raw
 DESIRES=i_gold
 AVERSIONS=r_civilization
+FACTION = faction_demon
 
 CATEGORY=Monsters
 SUBSECTION=Daemons
@@ -418,9 +418,10 @@ HEIGHT=35
 RESOURCES=1 i_ribs_raw,2 i_reag_daemon_bone
 DESIRES=r_caves,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
 AVERSIONS=t_trap,r_civilization
+FACTION = faction_demon
 
 CATEGORY=Monsters
-SUBSECTION=Demons
+SUBSECTION=Daemons
 DESCRIPTION=Daemon 2
 
 ON=@Create
@@ -1325,7 +1326,53 @@ ON=@CreateLoot
      ITEM=i_gold,{50 75}
      ITEM=i_treasure_map1,R99
 
+[CHARDEF 022]
+DEFNAME = c_white_wolf
+NAME=White Wolf
+SOUND=snd_animals_wolf1
+ICON=i_pet_wolf_timber
+CAN=MT_WALK|MT_RUN|MT_NONHUM
 
+DAM=4,10
+ARMOR=15
+
+DESIRES=r_jungle
+AVERSIONS=r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=15
+RESOURCES=1 i_ribs_raw,2 i_fur_light,4 i_hide
+
+TAG.Barding.Diff=32.3
+FollowerSlots=1
+FACTION=faction_wolf
+
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Wolf, White 1
+ON=@Create
+   NPC=<def.brain_animal>
+   
+   FAME={500 999}
+   KARMA={-800 -999}
+   
+   STR={56 80}
+   MAXHITS={34 48}
+   DEX={56 75}
+   MAXSTAM={56 75}
+   INT={31 55}
+   MAXMANA={31 55}
+   
+   MAGICRESISTANCE={20.0 35.0}
+   TACTICS={45.0 60.0}
+   TAMING={65.0 70.0}
+   WRESTLING={45.0 60.0}
+   
+   RESPHYSICAL={0 5}
+   RESCOLD={20 25}
+   RESENERGY={10 15}
+   RESFIRE={10 15}
+   RESPOISON={10 15}
+   
 [CHARDEF 023]
 DEFNAME=c_lizardman_spear
 NAME=#NAMES_lizardman the Lizard Man
@@ -1417,7 +1464,7 @@ ON=@CreateLoot
 
 
 [CHARDEF 025]
-DEFNAME=c_wolf_white
+DEFNAME=c_wolf_white_2
 NAME=white wolf
 ICON=i_pet_wolf_silver
 SOUND=snd_animals_wolf1
@@ -1425,6 +1472,7 @@ CAN=mt_walk|mt_run|mt_nonhum
 
 DAM=4,10
 ARMOR=15
+
 MAXFOOD=15
 FOLLOWERSLOTS=1
 FACTION=faction_wolf
@@ -1440,7 +1488,7 @@ TEVENTS=e_carnivores
 
 CATEGORY=Animals
 SUBSECTION=Wild
-DESCRIPTION=Wolf, White
+DESCRIPTION=Wolf, White 2
 
 ON=@Create
     NPC=<def.brain_animal>

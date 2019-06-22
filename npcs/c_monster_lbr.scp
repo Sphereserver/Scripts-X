@@ -90,7 +90,7 @@ SUBSECTION=Daemons
 DESCRIPTION=Daemon, Blackgate
 
 ON=@Create
-   NPC=brain_monster
+   NPC=<def.brain_monster>
    FAME={6500 6999}
    KARMA={-6500 -6999}
    STR={690 900}
