@@ -1348,7 +1348,7 @@ FACTION=faction_wolf
 
 CATEGORY=Animals
 SUBSECTION=Wild
-DESCRIPTION=Wolf, White 1
+DESCRIPTION=Wolf, White
 ON=@Create
    NPC=<def.brain_animal>
    
@@ -1464,7 +1464,7 @@ ON=@CreateLoot
 
 
 [CHARDEF 025]
-DEFNAME=c_wolf_white_2
+DEFNAME=c_wolf_white_duplicate
 NAME=white wolf
 ICON=i_pet_wolf_silver
 SOUND=snd_animals_wolf1
@@ -1488,7 +1488,7 @@ TEVENTS=e_carnivores
 
 CATEGORY=Animals
 SUBSECTION=Wild
-DESCRIPTION=Wolf, White 2
+DESCRIPTION=Wolf, White Duplicate
 
 ON=@Create
     NPC=<def.brain_animal>
@@ -2517,6 +2517,111 @@ ON=@Create
      WRESTLING={45.1, 60.0}
      TAMING=41.1
 
+
+
+[CHARDEF 044]
+DEFNAME=c_gazer_elder
+NAME=Elder Gazer
+ICON=i_pet_gazer
+SOUND=snd_monster_gazer1
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+
+DAM=23,59
+ARMOR=45
+
+DESIRES=r_jungle,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=25
+RESOURCES=1 i_ribs_raw
+
+TAG.Barding.Diff=90.2
+DamEnergy=50
+
+CATEGORY=Monsters
+SUBSECTION=Gazers
+DESCRIPTION=Gazer, Elder
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   FAME={2500 2999}
+   KARMA={-2500 -2999}
+   
+   STR={296 325}
+   MAXHITS={178 195}
+   DEX={86 105}
+   MAXSTAM={86 105}
+   INT={291 385}
+   MAXMANA={291 385}
+   
+   ANATOMY={62.0 100.0}
+   EVALUATINGINTEL={90.0 105.0}
+   MAGERY={90.0 105.0}
+   MAGICRESISTANCE={115.0 130.0}
+   TACTICS={80.0 100.0}
+   WRESTLING={80.0 100.0}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={40 50}
+   RESENERGY={40 50}
+   RESFIRE={60 70}
+   RESPOISON={40 50}
+   
+ON=@CreateLoot
+   ITEM=loot_gazer_elder
+
+[CHARDEF 045]
+DEFNAME=c_gazer_2
+NAME=Gazer
+SOUND=snd_monster_gazer1
+ICON=i_pet_gazer
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+
+ARMOR=45
+DAM=18,24
+
+DESIRES=t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=20
+RESOURCES=1 i_ribs_raw
+
+TAG.Barding.Diff=90.2
+DamEnergy=50
+
+CATEGORY=Monsters
+SUBSECTION=Gazers
+DESCRIPTION=Gazer, Duplicate
+
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   FAME={1000 2500}
+   KARMA={-3000 -3999}
+   
+   STR={100 150}
+   MAXHITS={200 250}
+   DEX={86 105}
+   MAXSTAM={86 105}
+   INT={226 250}
+   MAXMANA={226 250}
+   
+   ANATOMY={75.0 85.0}
+   EVALUATINGINTEL={90.0 105.0}
+   MAGERY={90.0 105.0}
+   MAGICRESISTANCE={90.0 105.0}
+   MEDITATION={90.0 105.0}
+   TACTICS={80.0 100.0}
+   WRESTLING={40.0 80.0}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={10 20}
+   RESENERGY={10 20}
+   RESFIRE={40 50}
+   RESPOISON={30 40}
+   
+ON=@CreateLoot
+   ITEM=i_gold,{10 100}
 
 [CHARDEF 04f]
 DEFNAME=c_lich_lord

@@ -70,6 +70,69 @@ ON=@Hit
       SRC.EQUIP <NEW>
    ENDIF
 
+
+   
+[CHARDEF 060]
+//"This poisonous version of the slime resides in Paroxysmus Palace and
+// carries the skull, torso and legs, keys to access Chief Paroxysmus"
+//FIXME: damage the durability of any melee weapon used on them
+DEFNAME=c_slime_corrosive
+NAME=Corrosive Slime
+SOUND=snd_monster_slime1
+ICON=i_pet_slime
+CAN=MT_WALK|MT_NONHUM
+
+DAM=1,5
+ARMOR=5
+
+DESIRES=r_dungeon_paroxysmus,t_coin,t_gold,t_gem
+AVERSIONS=r_civilization,t_light_lit
+FOODTYPE=t_meat_raw
+MAXFOOD=10
+
+TAG.Barding.Diff=33.0
+
+TEVENTS=e_carnivores
+CATEGORY=Monsters
+SUBSECTION=Slimes
+DESCRIPTION=Slime, Corrosive
+
+ON=@Create
+   NPC=<def.brain_monster>
+   COLOR=colors_green
+   
+   FAME={1 499}
+   KARMA={-800 -999}
+   STR={20 35}
+   MAXHITS={15 20}
+   DEX={15 25}
+   MAXSTAM={15 25}
+   INT={15 20}
+   MAXMANA={15 20}
+   
+   MAGICRESISTANCE={15.0 20.0}
+   TACTICS={20.0 30.0}
+   WRESTLING={20.0 30.0}
+   
+   RESPHYSICAL={0 5}
+   RESCOLD=0
+   RESENERGY=0
+   RESFIRE=0
+   RESPOISON={15 20}
+   
+ON=@CreateLoot
+   ITEM=loot_slime_corrosive
+   
+ON=@PersonalSpace
+   IF (<SRC.ISPLAYER>)
+      SRC.SYSMESSAGELOC color_text,1070820//"The creature spills a pool of acidic slime."
+      SERV.NEWITEM=i_pool_acid
+      NEW.P=<SRC.P>
+      NEW.ATTR=attr_decay|attr_move_never
+      NEW.TIMER={5 10}
+      NEW.LINK=<UID>
+   ENDIF
+
 [CHARDEF 0100]
 DEFNAME=c_chief_paroxysmus
 NAME=Chief Paroxysmus

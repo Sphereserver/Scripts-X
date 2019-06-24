@@ -1410,8 +1410,116 @@ ON=@Create
    TAMING=85.5
    WRESTLING={60.0 80.0}
   
-ON=ON=@Createloot
+ON=@Createloot
    ITEM=loot_hellhound
+   
+[CHARDEF 062]
+//FIXME: Fireball attack based on their hitpoints
+//FIXME: Fight in packs
+DEFNAME=c_hellhound_leader
+NAME=Alpha hell hound
+SOUND=snd_animals_wolf1
+ICON=i_pet_hellhound
+
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=21,31
+ARMOR=35
+
+DESIRES=r_desert,r_mountains_volcanic,t_coin,t_gold,t_gem
+AVERSIONS=r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=15
+RESOURCES=1 i_ribs_raw,5 i_reag_sulfur_ash
+
+TAG.Barding.Diff=65.0
+FACTION=faction_wolf
+FollowerSlots=2
+
+DamFire=80
+
+CATEGORY=Animals
+SUBSECTION=Wild
+DESCRIPTION=Hell Hound, Alpha
+
+ON=@Create
+   NPC=<def.brain_animal>
+   
+   FAME={1000 1499}
+   KARMA={-1000 -1499}
+   
+   STR={132 174}
+   MAXHITS={132 174}
+   DEX={81 105}
+   MAXSTAM={81 105}
+   INT={36 60}
+   MAXMANA={36 60}
+   
+   MAGICRESISTANCE={77.0 90.0}
+   TACTICS={70.0 90.0}
+   WRESTLING={74.0 91.0}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD=0
+   RESENERGY={10 20}
+   RESFIRE={50 60}
+   RESPOISON={10 20}
+   
+ON=@CreateLoot
+   ITEM=loot_hellhound
+   
+[CHARDEF 06a]
+DEFNAME=c_wyrm_shadow
+NAME=Shadow wyrm
+SOUND=snd_monster_dragon1
+ICON=i_pet_dragon
+CAN=MT_WALK|MT_FLY|MT_NONHUM
+
+DAM=130,165
+ARMOR=65
+
+DESIRES=r_dungeon,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=50
+RESOURCES=19 i_ribs_raw,20 i_hide_barbed,6 i_reag_dragon_blood,10 i_dragonscale_black
+
+TAG.Barding.Diff=124.9
+DamCold=25
+
+FACTION=faction_dragon
+
+CATEGORY=Monsters
+SUBSECTION=Dragons
+DESCRIPTION=Wyrm, Shadow
+ON=@Create
+   NPC=<def.brain_dragon>
+   
+   FAME={6000 6999}
+   KARMA={-6000 -6999}
+   STR={898 1030}
+   MAXHITS={558 599}
+   DEX={68 200}
+   MAXSTAM={68 200}
+   INT={488 620}
+   MAXMANA={488 620}
+   
+   EVALUATINGINTEL={80.0 100.0}
+   MAGERY={80.0 100.0}
+   MAGICRESISTANCE={100.0 130.0}
+   MEDITATION={52.0 75.0}
+   TACTICS={97.0 100.0}
+   WRESTLING={97.0 100.0}
+   TAMING=104.7
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={45 55}
+   RESENERGY={50 60}
+   RESFIRE={50 60}
+   RESPOISON={20 30}
+   //BREATH.ANIM=i_fx_explode		//explosion id
+   //BREATH.TYPE=3				// Follow target
+ON=@CreateLoot
+   ITEM=loot_wyrm_shadow
    
 [CHARDEF 074]
 DEFNAME=c_nightmare
@@ -1466,7 +1574,7 @@ ON=@Create
    TAMING=95.1
    WRESTLING={80.0 93.0}
 
-ON=ON=@Createloot
+ON=@Createloot
    ITEM=loot_nightmare  
 
 [CHARDEF 07f]
@@ -1511,7 +1619,7 @@ ON=@Create
    RESENERGY={5 15}
    RESFIRE={30 40}
    
-ON=ON=@Createloot
+ON=@Createloot
    ITEM=loot_hellcat
 
 [CHARDEF 083]
