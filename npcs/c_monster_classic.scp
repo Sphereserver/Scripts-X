@@ -2928,6 +2928,399 @@ ON=@Create
     TACTICS={60.0 80.0}
     TAMING={85.0 95.0}
     WRESTLING={70.0 90.0}
+
+
+
+//"Ore elementals:
+// Melee attacks do 25 to 40 damage per hit. It has a special type of
+// gas attack which looks like a large yellowish white flamestrike. This
+// gas does from 15-45 points of damage per hit. It also decreases stamina
+// by 8 points, and makes a hissing sound similar to the sound made when
+// someone trips a box trapped with gas. Poison (magical or liquid) seems
+// to have no effect on Ore Elementals. Ore Elementals rate from tough
+// (Copper) to almost invincible (Valorite)."
+[CHARDEF 06b]
+DEFNAME=c_elemental_ore_agapite
+NAME=agapite elemental
+SOUND=snd_elementl_erthel1
+ICON=i_pet_elem_earth
+CAN=MT_WALK|MT_USEHANDS
+
+DAM=59,69
+ARMOR=30
+
+DESIRES=r_caves,r_desert,t_coin,t_gold,t_gem,t_potion,t_arock,t_ore
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_arock,t_coin,t_ore,t_ingot
+MAXFOOD=45
+RESOURCES=10 i_ore_agapite
+
+BLOODCOLOR=color_o_agapite
+MOVERATE=120
+TAG.Barding.Diff=72.9
+FACTION=faction_elemental
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Elemental, Agapite
+
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   FAME={2500 2999}
+   KARMA={-2500 -2999}
+   
+   STR={226 255}
+   MAXHITS={136 153}
+   DEX={126 145}
+   MAXSTAM={126 145}
+   INT={71 92}
+   MAXMANA={71 92}
+   
+   MAGICRESISTANCE={50.0 95.0}
+   TACTICS={60.0 100.0}
+   WRESTLING={60.0 100.0}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={40 50}
+   RESENERGY={10 20}
+   RESFIRE={40 50}
+   RESPOISON={30 40}
+   
+ON=@CreateLoot
+   ITEM=loot_elem_ore_agapite
+
+[CHARDEF 06c]
+//FIXME: Bronze Elemental has a gas attack that can hit nearby characters.
+DEFNAME=c_elemental_ore_bronze
+NAME=bronze elemental
+SOUND=snd_elementl_erthel1
+ICON=i_pet_elem_earth
+CAN=MT_WALK|MT_USEHANDS
+
+DAM=20,37
+ARMOR=30
+
+DESIRES=r_caves,t_coin,t_gold,t_gem,t_potion,t_arock,t_ore
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_arock,t_coin,t_ore,t_ingot
+MAXFOOD=45
+RESOURCES=10 i_ore_copper//bronze
+
+BLOODCOLOR=color_o_copper//bronze
+MOVERATE=120
+TAG.Barding.Diff=71.8
+DamFire=70
+
+FACTION=faction_elemental
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Elemental Ore, Bronze
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   FAME={2500 2999}
+   KARMA={-2500 -2999}
+   
+   STR={226 255}
+   MAXHITS={136 153}
+   DEX={126 145}
+   MAXSTAM={126 145}
+   INT={71 92}
+   MAXMANA={71 92}
+   
+   MAGICRESISTANCE={50.0 95.0}
+   TACTICS={60.0 100.0}
+   WRESTLING={60.0 100.0}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={10 20}
+   RESENERGY={20 30}
+   RESFIRE={30 40}
+   RESPOISON={70 80}
+   
+ON=@CreateLoot
+   ITEM=loot_elem_ore_bronze
+
+[CHARDEF 06d]
+//FIXME: "Reflects 50% damage done by spells OR melee."
+DEFNAME=c_elemental_ore_copper
+NAME=copper elemental
+SOUND=snd_elementl_erthel1
+ICON=i_pet_elem_earth
+CAN=MT_WALK|MT_USEHANDS
+
+DAM=20,37
+ARMOR=30
+
+DESIRES=r_caves,t_coin,t_gold,t_gem,t_potion,t_arock,t_ore
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_arock,t_coin,t_ore,t_ingot
+MAXFOOD=45
+RESOURCES=10 i_ore_copper
+
+BLOODCOLOR=color_o_copper
+MOVERATE=120
+TAG.Barding.Diff=73.3
+ReflectPhysicalDam=50
+
+FACTION=faction_elemental
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Elemental, Copper
+
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   FAME={2500 2999}
+   KARMA={-2500 -2999}
+   
+   STR={226 255}
+   MAXHITS={136 153}
+   DEX={126 145}
+   MAXSTAM={126 145}
+   INT={71 92}
+   MAXMANA={71 92}
+   
+   MAGICRESISTANCE={50.0 95.0}
+   TACTICS={60.0 100.0}
+   WRESTLING={60.0 100.0}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={30 40}
+   RESENERGY={10 20}
+   RESFIRE={30 40}
+   RESPOISON={20 30}
+   
+ON=@CreateLoot
+   ITEM=loot_elem_ore_copper
+
+[CHARDEF 06e]
+DEFNAME=c_elemental_ore_copper_dull
+NAME=dull copper elemental
+SOUND=snd_elementl_erthel1
+ICON=i_pet_elem_earth
+CAN=MT_WALK|MT_USEHANDS
+
+DAM=19,37
+ARMOR=30
+
+DESIRES=r_caves,t_coin,t_gold,t_gem,t_potion,t_arock,t_ore
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_arock,t_coin,t_ore,t_ingot
+MAXFOOD=45
+
+RESOURCES=10 i_ore_copper//_dull
+BLOODCOLOR=color_o_copper//_dull
+MOVERATE=120
+TAG.Barding.Diff=73.8
+FACTION=faction_elemental
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Elemental, Dull Copper
+
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   FAME={2500 2999}
+   KARMA={-2500 -2999}
+   
+   STR={226 255}
+   MAXHITS={136 153}
+   DEX={126 145}
+   MAXSTAM={126 145}
+   INT={71 92}
+   MAXMANA={71 92}
+   
+   MAGICRESISTANCE={50.0 95.0}
+   TACTICS={60.0 100.0}
+   WRESTLING={60.0 100.0}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={10 20}
+   RESENERGY={20 30}
+   RESFIRE={30 40}
+   RESPOISON={20 30}
+   
+ON=@CreateLoot
+   ITEM=loot_elem_ore_copper_dull
+   
+ON=@Death
+   // Death explosion
+   SERV.NEWITEM=i_fx_explode
+   NEW.TYPE=t_explosion
+   NEW.ATTR=attr_move_never|attr_decay
+   NEW.LINK=<UID>
+   NEW.MOREX=<R20,30>
+   NEW.MOREY=dam_fire
+   NEW.MOREZ=2
+   NEW.P=<P>
+   NEW.TIMERD=1
+
+[CHARDEF 06f]
+//FIXME: "Immune to most damage done by pets and provoked creatures."
+//FIXME: Immune to spell damage
+DEFNAME=c_elemental_ore_shadow
+NAME=shadow iron elemental
+SOUND=snd_elementl_erthel1
+ICON=i_pet_elem_earth
+CAN=MT_WALK|MT_USEHANDS
+
+DAM=20,37
+ARMOR=30
+
+DESIRES=r_caves,t_coin,t_gold,t_gem,t_potion,t_arock,t_ore
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_arock,t_coin,t_ore,t_ingot
+MAXFOOD=45
+RESOURCES=10 i_ore_shadow
+BLOODCOLOR=color_o_shadow
+
+MOVERATE=120
+TAG.Barding.Diff=72.3
+
+FACTION=faction_elemental
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Elemental, Shadow
+
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   FAME={2500 2999}
+   KARMA={-2500 -2999}
+   
+   STR={226 255}
+   MAXHITS={136 153}
+   DEX={126 145}
+   MAXSTAM={126 145}
+   INT={71 92}
+   MAXMANA={71 92}
+   
+   MAGICRESISTANCE={100.0 125.0}
+   TACTICS={60.0 100.0}
+   WRESTLING={60.0 100.0}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={20 30}
+   RESENERGY={30 40}
+   RESFIRE={30 40}
+   RESPOISON={10 20}
+   
+ON=@CreateLoot
+   ITEM=loot_elem_ore_shadow
+
+[CHARDEF 070]
+//FIXME: "Immune to pets and most provoked creatures."
+//FIXME: Immune to magic damage.
+//FIXME: Reflects all magic damage.
+//FIXME: Gas Attack.
+DEFNAME=c_elemental_ore_valorite
+NAME=valorite elemental
+SOUND=snd_elementl_erthel1
+ICON=i_pet_elem_earth
+CAN=MT_WALK|MT_USEHANDS
+
+DAM=59,69
+ARMOR=65
+
+DESIRES=r_caves,t_coin,t_gold,t_gem,t_potion,t_arock,t_ore
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_arock,t_coin,t_ore,t_ingot
+MAXFOOD=45
+RESOURCES=10 i_ore_valorite
+BLOODCOLOR=color_o_valorite
+
+MOVERATE=120
+TAG.Barding.Diff=74.0
+DamCold=25
+DamEnergy=25
+DamFire=25
+
+FACTION=faction_elemental
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Elemental, Valorite
+
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   FAME={2500 2999}
+   KARMA={-2500 -2999}
+   STR={226 255}
+   MAXHITS={136 153}
+   DEX={126 145}
+   MAXSTAM={126 145}
+   INT={71 92}
+   MAXMANA={71 92}
+   
+   MAGICRESISTANCE={100.0 125.0}
+   TACTICS={60.0 100.0}
+   WRESTLING={60.0 100.0}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={50 60}
+   RESENERGY={40 50}
+   RESFIRE={50 60}
+   RESPOISON={50 60}
+   
+ON=@CreateLoot
+   ITEM=loot_elem_ore_valorite
+
+[CHARDEF 071]
+DEFNAME=c_elemental_ore_verite
+NAME=verite elemental
+SOUND=snd_elementl_erthel1
+ICON=i_pet_elem_earth
+CAN=MT_WALK|MT_USEHANDS
+
+DAM=20,37
+ARMOR=30
+
+DESIRES=r_caves,t_coin,t_gold,t_gem,t_potion,t_arock,t_ore
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_arock,t_coin,t_ore,t_ingot
+MAXFOOD=45
+RESOURCES=10 i_ore_verite
+BLOODCOLOR=color_o_verite
+
+MOVERATE=120
+TAG.Barding.Diff=72.9
+DamEnergy=50
+
+FACTION=faction_elemental
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Elemental, Verite
+
+ON=@Create
+   NPC=<def.brain_monster>
+   FAME={2500 2999}
+   KARMA={-2500 -2999}
+   STR={226 255}
+   MAXHITS={136 153}
+   DEX={126 145}
+   MAXSTAM={126 145}
+   INT={71 92}
+   MAXMANA={71 92}
+   MAGICRESISTANCE={50.0 95.0}
+   TACTICS={60.0 100.0}
+   WRESTLING={60.0 100.0}
+   RESPHYSICAL={0 10}
+   RESCOLD={50 60}
+   RESENERGY={50 60}
+   RESFIRE={10 20}
+   RESPOISON={50 60}
+ON=@CreateLoot
+   ITEM=loot_elem_ore_verite
+
+
 	
 [CHARDEF 08a]
 DEFNAME=c_orc_lord
@@ -3083,7 +3476,7 @@ RESOURCES=3 i_reag_bone
 TEVENTS=e_undead
 
 CATEGORY=Monsters
-SUBSECTION=Undead
+SUBSECTION=Undeads
 DESCRIPTION=Skeleton, Knight
 
 ON=@Create

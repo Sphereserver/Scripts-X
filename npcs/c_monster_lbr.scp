@@ -871,6 +871,7 @@ ICON=i_pet_harrower
 CAN=mt_walk|mt_run|mt_usehands|mt_equip
 DAM=15,25
 ARMOR=40
+
 TAG.Barding.Diff=84.8
 DamCold=40
 
@@ -880,7 +881,7 @@ AVERSIONS=t_trap,r_civilization
 TEVENTS=e_undead
 
 CATEGORY=Monsters
-SUBSECTION=Undead
+SUBSECTION=Undeads
 DESCRIPTION=Nameless One
 
 ON=@Create
