@@ -550,6 +550,333 @@ ON=@CreateLoot
     ITEM=i_treasure_map5,R99
 
 
+   
+[CHARDEF 072]
+//FIXME: No Stratics data
+DEFNAME=c_steed_dark
+NAME=dark steed
+SOUND=snd_animals_horse1
+ICON=i_pet_horse_nightmare
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+
+DAM=25,35
+ARMOR=25
+
+DESIRES=r_swamp,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=e_carnivores2,e_carnivores3
+FOODTYPE=t_meat_raw
+MAXFOOD=35
+
+RESOURCES=5 i_ribs_raw,10 i_hide_barbed
+TAG.Barding.Diff=85.2
+FollowerSlots=3
+DamEnergy=20
+DamFire=20
+
+TEVENTS=e_horses
+
+CATEGORY=Mounts
+SUBSECTION=Wild
+DESCRIPTION=Steed, Dark
+ON=@Create
+   NPC=<def.brain_dragon>
+   
+   FAME={3000 3499}
+   KARMA={-3000 -2499}
+   
+   STR={496 525}
+   MAXHITS={298 315}
+   DEX={86 105}
+   MAXSTAM={86 105}
+   INT={86 125}
+   MAXMANA={86 125}
+   
+   EVALUATINGINTEL={10.0 50.0}
+   MAGICRESISTANCE={84.0 100.0}
+   TACTICS={97.0 100.0}
+   TAMING={95.0 100.0}
+   WRESTLING={80.0 93.0}
+   RESPHYSICAL={0 5}
+   RESCOLD={30 40}
+   RESENERGY={20 30}
+   RESFIRE={30 40}
+   RESPOISON={30 40}
+   
+   //BREATH.ANIM=i_fx_explode		//explosion id
+   //BREATH.TYPE=3				// Follow target
+   
+ON=@CreateLoot
+   ITEM=loot_steed_dark
+
+[CHARDEF 073]
+DEFNAME=c_steed_ethereal
+NAME=ethereal steed
+ICON=i_steed_ethereal
+CAN=MT_WALK
+
+FollowerSlots=1
+CATEGORY=Mounts
+SUBSECTION=Ethereal
+DESCRIPTION=Steed
+ON=@Create
+   NPC=brain_animal
+   STR=1
+   
+[CHARDEF 075]
+//FIXME: No Stratics data
+//FIXME: Attacks evil creatures on sight
+DEFNAME=c_steed_silver
+NAME=silver steed
+SOUND=snd_animals_horse1
+ICON=i_pet_steed_silver
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+
+DAM=25,35
+ARMOR=25
+
+DESIRES=r_jungle,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=e_carnivores2,e_carnivores3
+FOODTYPE=t_meat_raw
+MAXFOOD=35
+RESOURCES=5 i_ribs_raw,10 i_hide
+
+TAG.Barding.Diff=85.2
+FollowerSlots=3
+DamCold=20
+DamEnergy=20
+
+TEVENTS=e_horses
+
+CATEGORY=Mounts
+SUBSECTION=Wild
+DESCRIPTION=Steed, Silver
+
+ON=@Create
+   NPC=<def.brain_dragon>
+   FAME={3000 3499}
+   KARMA={-3000 -2499}
+   STR={496 525}
+   MAXHITS={298 315}
+   DEX={86 105}
+   MAXSTAM={86 105}
+   INT={86 125}
+   MAXMANA={86 125}
+   MAGICRESISTANCE={84.0 100.0}
+   TACTICS={97.0 100.0}
+   TAMING={95.0 100.0}
+   WRESTLING={80.0 93.0}
+   RESPHYSICAL={0 5}
+   RESCOLD={30 40}
+   RESENERGY={20 30}
+   RESFIRE={30 40}
+   RESPOISON={30 40}
+   //BREATH.ANIM=i_fx_explode		//explosion id
+   //BREATH.TYPE=3				// Follow target
+   
+ON=@CreateLoot
+   ITEM=loot_steed_silver
+
+[CHARDEF 076]
+//FIXME: Only usable by faction
+DEFNAME=c_warhorse_truebritannians
+NAME=True Britannians warhorse
+SOUND=snd_animals_horse1
+ICON=i_pet_horse
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+
+DAM=12,20
+ARMOR=40
+
+DESIRES=r_civilization,t_coin,t_gold,t_gem
+AVERSIONS=e_carnivores2,e_carnivores3
+FOODTYPE=t_fruit,t_grain,t_grass
+MAXFOOD=35
+RESOURCES=3 i_ribs_raw,5 i_hide
+
+TAG.Barding.Diff=65.7
+FollowerSlots=1
+
+TEVENTS=e_horses
+
+CATEGORY=Mounts
+SUBSECTION=Faction
+DESCRIPTION=Warhorse, True Britannians
+
+ON=@Create
+   NPC=<def.brain_animal>
+   
+   FAME={3000 3499}
+   KARMA={-3000 -2499}
+   
+   STR={390 410}
+   MAXHITS={230 250}
+   DEX={120 130}
+   MAXSTAM={120 130}
+   INT={51 55}
+   MAXMANA={51 55}
+   
+   MAGICRESISTANCE={25.0 30.0}
+   TACTICS={29.0 44.0}
+   TAMING={25.0 30.0}
+   WRESTLING={29.0 44.0}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={30 40}
+   RESENERGY={30 40}
+   RESFIRE={30 40}
+   RESPOISON={30 40}
+   
+[CHARDEF 077]
+//FIXME: Only usable by faction
+DEFNAME=c_warhorse_magecouncil
+NAME=Council of Mages warhorse
+SOUND=snd_animals_horse1
+ICON=i_pet_horse
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+
+DAM=12,20
+ARMOR=40
+
+DESIRES=r_civilization,t_coin,t_gold,t_gem
+AVERSIONS=e_carnivores2,e_carnivores3
+FOODTYPE=t_fruit,t_grain,t_grass
+MAXFOOD=35
+RESOURCES=3 i_ribs_raw,5 i_hide
+
+TAG.Barding.Diff=65.7
+FollowerSlots=1
+
+TEVENTS=e_horses
+
+CATEGORY=Mounts
+SUBSECTION=Faction
+DESCRIPTION=Warhorse, Council of Mages
+
+ON=@Create
+   NPC=<def.brain_animal>
+   
+   FAME={3000 3499}
+   KARMA={-3000 -2499}
+   
+   STR={390 410}
+   MAXHITS={230 250}
+   DEX={120 130}
+   MAXSTAM={120 130}
+   INT={51 55}
+   MAXMANA={51 55}
+   
+   MAGICRESISTANCE={25.0 30.0}
+   TACTICS={29.0 44.0}
+   TAMING={25.0 30.0}
+   WRESTLING={29.0 44.0}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={30 40}
+   RESENERGY={30 40}
+   RESFIRE={30 40}
+   RESPOISON={30 40}
+
+[CHARDEF 078]
+//FIXME: Only usable by faction
+DEFNAME=c_warhorse_minax
+NAME=Minax warhorse
+SOUND=snd_animals_horse1
+ICON=i_pet_horse
+
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+
+DAM=12,20
+ARMOR=40
+
+DESIRES=r_civilization,t_coin,t_gold,t_gem
+AVERSIONS=e_carnivores2,e_carnivores3
+FOODTYPE=t_fruit,t_grain,t_grass
+MAXFOOD=35
+RESOURCES=3 i_ribs_raw,5 i_hide
+
+TAG.Barding.Diff=65.7
+FollowerSlots=1
+
+TEVENTS=e_horses
+
+CATEGORY=Mounts
+SUBSECTION=Faction
+DESCRIPTION=Warhorse, Minax
+
+ON=@Create
+   NPC=<def.brain_animal>
+   
+   FAME={3000 3499}
+   KARMA={-3000 -2499}
+   
+   STR={390 410}
+   MAXHITS={230 250}
+   DEX={120 130}
+   MAXSTAM={120 130}
+   INT={51 55}
+   MAXMANA={51 55}
+   
+   MAGICRESISTANCE={25.0 30.0}
+   TACTICS={29.0 44.0}
+   TAMING={25.0 30.0}
+   WRESTLING={29.0 44.0}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={30 40}
+   RESENERGY={30 40}
+   RESFIRE={30 40}
+   RESPOISON={30 40}
+
+[CHARDEF 079]
+//FIXME: Only usable by faction
+DEFNAME=c_warhorse_shadowlords
+NAME=Shadowlords warhorse
+SOUND=snd_animals_horse1
+ICON=i_pet_horse
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+
+DAM=12,20
+ARMOR=40
+
+DESIRES=r_civilization,t_coin,t_gold,t_gem
+AVERSIONS=e_carnivores2,e_carnivores3
+FOODTYPE=t_fruit,t_grain,t_grass
+MAXFOOD=35
+RESOURCES=3 i_ribs_raw,5 i_hide
+
+TAG.Barding.Diff=65.7
+FollowerSlots=1
+
+TEVENTS=e_horses
+
+CATEGORY=Mounts
+SUBSECTION=Faction
+DESCRIPTION=Warhorse, Shadowlords
+
+ON=@Create
+   NPC=<def.brain_animal>
+   
+   FAME={3000 3499}
+   KARMA={-3000 -2499}
+   
+   STR={390 410}
+   MAXHITS={230 250}
+   DEX={120 130}
+   MAXSTAM={120 130}
+   INT={51 55}
+   MAXMANA={51 55}
+   
+   MAGICRESISTANCE={25.0 30.0}
+   TACTICS={29.0 44.0}
+   TAMING={25.0 30.0}
+   WRESTLING={29.0 44.0}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={30 40}
+   RESENERGY={30 40}
+   RESFIRE={30 40}
+   RESPOISON={30 40}
+   
 [CHARDEF 07a]
 DEFNAME=c_unicorn
 NAME=Unicorn
@@ -598,6 +925,76 @@ ON=@Create
     MAGERY=90.0
     TAMING=80.0
 
+
+[CHARDEF 07b]
+DEFNAME=c_ethereal_warrior
+NAME=ethereal warrior
+//SOUND=0 //snd_monster_pixie1 // the sound IDs aren't sequential, we need to set them manually
+SOUNDIDLE=046C
+SOUNDNOTICE=046A
+SOUNDHIT=0467 // snd_monster_pixie1
+SOUNDGETHIT=046B
+SOUNDDIE=0469
+ICON=i_pet_forestlord
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
+
+DAM=47,74
+ARMOR=80
+
+DESIRES=r_forests,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=40
+RESOURCES=100 i_feather
+MOVERATE=150
+
+TAG.Barding.Diff=107.6
+HitLeechLife=30
+HitLeechMana=30
+HitLeechStam=30
+
+FACTION=faction_fey
+
+CATEGORY=Monsters
+SUBSECTION=Feys
+DESCRIPTION=Ethereal, Warrior
+
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   FAME={4500 4999}
+   KARMA={-4500 -4999}
+   
+   STR={586 785}
+   MAXHITS={352 471}
+   DEX={177 255}
+   MAXSTAM={177 255}
+   INT={351 450}
+   MAXMANA={351 450}
+   
+   ANATOMY={50.0 75.0}
+   ARCHERY={97.0 100.0}
+   EVALUATINGINTEL={90.0 100.0}
+   FENCING={97.0 100.0}
+   MACEFIGHTING={97.0 100.0}
+   MAGERY={99.0 100.0}
+   MAGICRESISTANCE={90.0 100.0}
+   MEDITATION={90.0 100.0}
+   PARRYING={90.0 100.0}
+   SWORDSMANSHIP={97.0 100.0}
+   TACTICS={90.0 100.0}
+   WRESTLING={97.0 100.0}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={40 50}
+   RESENERGY={40 50}
+   RESFIRE={40 50}
+   RESPOISON={40 50}
+   
+ON=@CreateLoot
+   ITEM=loot_ethereal_warrior
+   ITEM=loot_ai_healer
+   
 
 [CHARDEF 07d]
 DEFNAME=c_evilmage
@@ -756,6 +1153,65 @@ ON=@CreateLoot
     ITEM=i_reag_garlic,{2 5}
     ITEM=random_scroll
 
+[CHARDEF 081]
+//Found only within the Khaldun
+DEFNAME=c_harrower_tentacles
+NAME=tentacles of the Harrower
+SOUND=snd_monster_corpsr1
+ICON=i_pet_tentacles_swamp
+
+CAN=MT_NONMOVER|MT_NONHUM
+
+DAM=57,93
+RANGE=9
+ARMOR=55
+
+DESIRES=r_dungeon_khaldun,t_coin,t_gold,t_gem
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=35
+RESOURCES=2 i_ribs_raw
+
+TAG.Barding.Diff=131.4
+
+DamCold=20
+DamEnergy=20
+DamFire=20
+DamPoison=20
+HitLeechLife=50
+
+CATEGORY=Named Creatures
+SUBSECTION=The Harrower
+DESCRIPTION=Tentacles of the Harrower
+
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   KARMA={-7000 -7999}
+   FAME={7000 7999}
+   
+   STR={901 1000}
+   MAXHITS={541 600}
+   DEX={126 140}
+   MAXSTAM={126 140}
+   INT={1001 1200}
+   MAXMANA={1001 1200}
+   
+   DETECTINGHIDDEN={90.0 100.0}
+   MAGICRESISTANCE={120.0 140.0}
+   POISONING={100.0 110.0}
+   TACTICS={90.0 100.0}
+   WRESTLING={90.0 100.0}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={35 45}
+   RESENERGY={35 45}
+   RESFIRE={35 45}
+   RESPOISON={35 45}
+   
+ON=@CreateLoot
+   ITEM=loot_harrower_tentacles
+
 
 [CHARDEF 082]
 DEFNAME=c_gargoyle_fire
@@ -880,8 +1336,8 @@ AVERSIONS=t_trap,r_civilization
 
 TEVENTS=e_undead
 
-CATEGORY=Monsters
-SUBSECTION=Undeads
+CATEGORY=Named Creatures
+SUBSECTION=The Harrower
 DESCRIPTION=Nameless One
 
 ON=@Create
@@ -3116,7 +3572,7 @@ ERALIMITPROPS=2
 
 CATEGORY=Monsters
 SUBSECTION=Daemons
-DESCRIPTION=Demon, Arcane
+DESCRIPTION=Daemon, Arcane
 
 ON=@Create
     NPC=<def.brain_monster>
@@ -3434,7 +3890,7 @@ ERALIMITPROPS=2
 
 CATEGORY=Monsters
 SUBSECTION=Daemons
-DESCRIPTION=Demon, Chaos
+DESCRIPTION=Daemon, Chaos
 
 ON=@Create
     NPC=<def.brain_monster>

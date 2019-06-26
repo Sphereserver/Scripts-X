@@ -92,7 +92,6 @@ MAXFOOD=10
 
 TAG.Barding.Diff=33.0
 
-TEVENTS=e_carnivores
 CATEGORY=Monsters
 SUBSECTION=Slimes
 DESCRIPTION=Slime, Corrosive
@@ -132,6 +131,64 @@ ON=@PersonalSpace
       NEW.TIMER={5 10}
       NEW.LINK=<UID>
    ENDIF
+
+[CHARDEF 07c]
+//Master Theophilus is a named necromancer that can be found in Bedlam. While it uses the Evil Mage graphical ID this NPC was introduced in ML.
+DEFNAME=c_theophilus
+NAME=Master Theophilus
+SOUND=snd_special_human
+ICON=i_pet_evil_mage
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
+
+DAM=15,20
+ARMOR=55
+
+DESIRES=r_dungeon_bedlam,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_food,t_drink
+MAXFOOD=25
+RESOURCES=1 i_ribs_raw
+
+TAG.Barding.Diff=145.4
+FACTION=faction_mage
+
+CATEGORY=Named Creatures
+SUBSECTION=Humanoids
+DESCRIPTION=Master Theophilus
+
+ON=@Create
+   NAME=Master Theophilus
+   NPC=brain_monster
+   FAME={2000 2499}
+   KARMA={-2000 -2499}
+   STR={161 189}
+   MAXHITS={686 874}
+   DEX={262 309}
+   MAXSTAM={262 301}
+   INT={414 448}
+   MAXMANA={414 448}
+   ARCHERY={65.0 105.0}
+   EVALUATINGINTEL={120.0 135.0}
+   FENCING={65.0 105.0}
+   MACEFIGHTING={65.0 105.0}
+   MAGERY={135.0 145.0}
+   MAGICRESISTANCE={125.0 135.0}
+   MEDITATION={125.0 135.0}
+   NECROMANCY={135.0 145.0}
+   PARRYING={110.0 120.0}
+   SWORDSMANSHIP={65.0 105.0}
+   TACTICS={110.0 120.0}
+   WRESTLING={65.0 105.0}
+   RESPHYSICAL={0 5}
+   RESCOLD={50 60}
+   RESENERGY={50 60}
+   RESFIRE={50 60}
+   RESPOISON={50 60}
+   
+ON=@CreateLoot
+   ITEM={ i_robe 10 i_kamishimo 1 }
+   ITEM=loot_mage_evil
+   ITEM=monster_regbag_necromancy
 
 [CHARDEF 0100]
 DEFNAME=c_chief_paroxysmus
@@ -830,6 +887,7 @@ BLOODCOLOR=-1
 
 DAM=21,25
 ARMOR=95
+
 TAG.Barding.Diff=124.5
 DAMENERGY=50
 
@@ -842,7 +900,7 @@ RESDISPDNID=c_man
 RESDISPDNHUE=33
 
 CATEGORY=Monsters
-SUBSECTION=Fey
+SUBSECTION=Feys
 DESCRIPTION=Corporeal Brume
 
 ON=@Create
