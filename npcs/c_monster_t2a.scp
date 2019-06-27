@@ -1719,6 +1719,63 @@ ON=@Create
    TACTICS={40.0 60.0}
    TAMING={45.0 50.0}
    WRESTLING={40.0 60.0}
+
+[CHARDEF 087]
+//FIXME: Immune to low level poison
+DEFNAME=c_ogre_lord_arctic
+NAME=arctic ogre lord
+SOUND=snd_monster_ogre1
+ICON=i_pet_ogre_lord
+CAN=MT_WALK|MT_USEHANDS|MT_EQUIP
+
+DAM=82,111
+ARMOR=45
+
+DESIRES=r_snow,t_coin,t_gold,t_gem,t_potion
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=35
+RESOURCES=2 i_ribs_raw
+BLOODCOLOR=colors_white
+
+TAG.Barding.Diff=88.8
+DamCold=70
+FACTION=faction_ogre|faction_repond
+
+CATEGORY=Monsters
+SUBSECTION=Giants
+DESCRIPTION=Ogre, Lord Arctic
+
+ON=@Create
+   NPC=<def.brain_monster>
+   
+   FAME={5000 5999}
+   KARMA={-5000 -5999}
+   STR={767 945}
+   MAXHITS={476 552}
+   DEX={66 75}
+   MAXSTAM={66 75}
+   INT={46 70}
+   MAXMANA={46 70}
+   
+   ARCHERY={90.0 100.0}
+   FENCING={90.0 100.0}
+   MACEFIGHTING={90.0 100.0}
+   MAGICRESISTANCE={125.0 140.0}
+   PARRYING={90.0 100.0}
+   SWORDSMANSHIP={90.0 100.0}
+   TACTICS={90.0 100.0}
+   WRESTLING={90.0 100.0}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={30 40}
+   RESENERGY={40 50}
+   RESFIRE={30 40}
+   RESPOISON={40 50}
+   
+ON=@CreateLoot
+   ITEM=loot_ogre_lord_arctic
+   ITEM=loot_ai_hard
    
 [CHARDEF 088]
 DEFNAME=c_ophidian_archmage

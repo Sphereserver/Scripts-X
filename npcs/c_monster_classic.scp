@@ -3320,7 +3320,51 @@ ON=@Create
 ON=@CreateLoot
    ITEM=loot_elem_ore_verite
 
+[CHARDEF 085]
+//FIXME: No Stratics data yet
+DEFNAME=c_alligator_small
+NAME=Alligator
+SOUND=snd_animals_aligatr1
+ICON=i_pet_croc
+CAN=MT_WALK|MT_NONHUM
 
+DAM=7,14
+ARMOR=25
+
+DESIRES=r_swamp,t_coin,t_gold
+AVERSIONS=r_civilization,e_carnivores3
+FOODTYPE=t_fish
+MAXFOOD=20
+RESOURCES=1 i_ribs_raw,12 i_hide_spined
+
+TAG.Barding.Diff=32.2
+FollowerSlots=1
+FACTION=faction_reptile
+CATEGORY=Animals
+SUBSECTION=Reptiles
+DESCRIPTION=Alligator, Small
+
+ON=@Create
+   NPC=<def.brain_animal>
+   FAME={500 999}
+   KARMA={-800 -999}
+   
+   STR={76 100}
+   MAXHITS={46 60}
+   DEX={6 25}
+   MAXSTAM={65 75}
+   INT={11 20}
+   MAXMANA={11 20}
+   MAGICRESISTANCE={15.0 30.0}
+   TACTICS={30.0 50.0}
+   TAMING={35.0 40.0}
+   
+   WRESTLING={30.0 50.0}
+   RESPHYSICAL={0 10}
+   RESCOLD=0
+   RESENERGY=0
+   RESFIRE={5 10}
+   RESPOISON={5 10}
 	
 [CHARDEF 08a]
 DEFNAME=c_orc_lord
@@ -3425,6 +3469,112 @@ ON=@Create
 
 ON=@CreateLoot
    ITEM=loot_orcish_mage
+   
+
+[CHARDEF 08e]
+DEFNAME=c_ratman_archer
+NAME=#NAMES_RATMAN
+SOUND=snd_monster_ratman1
+ICON=i_pet_ratman
+CAN=MT_WALK|MT_USEHANDS|MT_EQUIP
+
+DAM=36,42
+ARMOR=40
+
+DESIRES=r_jungle,t_coin,t_gold,t_gem,t_potion
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=25
+RESOURCES=1 i_ribs_raw,8 i_hide_spined
+MOVERATE=150
+
+TAG.Barding.Diff=73.5
+FACTION=faction_repond
+
+CATEGORY=Monsters
+SUBSECTION=Ratmen
+DESCRIPTION=Ratman, Archer
+
+ON=@Create
+   COLOR=08000|RAND(COLOR_DYE_HIGH)
+   NPC=<def.brain_monster>
+   
+   FAME={2000 2499}
+   KARMA={-2000 -2499}
+   
+   STR={146 180}
+   HITPOINTS={88 108}
+   DEX={101 130}
+   MAXSTAM={101 130}
+   INT={116 140}
+   MAXMANA={116 140}
+   
+   ANATOMY={60.0 100.0}
+   ARCHERY={50.0 75.0}
+   FENCING={50.0 75.0}
+   MAGICRESISTANCE={65.0 90.0}
+   TACTICS={50.0 75.0}
+   WRESTLING={50.0 75.0}
+   
+   RESPHYSICAL={0 15}
+   RESCOLD={10 20}
+   RESENERGY={10 20}
+   RESFIRE={10 20}
+   RESPOISON={10 20}
+   
+ON=@CreateLoot
+   ITEM=loot_ratman_archer
+
+[CHARDEF 08f]
+DEFNAME=c_ratman_mage
+NAME=#NAMES_RATMAN
+SOUND=snd_monster_ratman1
+ICON=i_pet_ratman
+CAN=MT_WALK|MT_USEHANDS|MT_EQUIP
+
+DAM=19,28
+ARMOR=40
+
+DESIRES=r_jungle,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=25
+RESOURCES=1 i_ribs_raw,8 i_hide_spined
+
+TAG.Barding.Diff=79.3
+FACTION=faction_repond
+
+CATEGORY=Monsters
+SUBSECTION=Ratmen
+DESCRIPTION=Ratman, Mage
+ON=@Create
+   COLOR=08000|RAND(COLOR_DYE_HIGH)
+   NPC=<def.brain_monster>
+   
+   FAME={2000 2499}
+   KARMA={-2000 -2499}
+   
+   STR={146 180}
+   HITPOINTS={88 108}
+   DEX={101 130}
+   MAXSTAM={101 130}
+   INT={186 210}
+   MAXMANA={186 210}
+   
+   EVALUATINGINTEL={70.0 80.0}
+   MAGERY={70.0 80.0}
+   MAGICRESISTANCE={65.0 90.0}
+   TACTICS={50.0 75.0}
+   WRESTLING={50.0 75.0}
+   
+   RESPHYSICAL={0 5}
+   RESCOLD={10 20}
+   RESENERGY={10 20}
+   RESFIRE={10 20}
+   RESPOISON={10 20}
+   
+ON=@CreateLoot
+   ITEM=loot_ratman_mage
 
 [CHARDEF 090]
 DEFNAME=c_horse_sea

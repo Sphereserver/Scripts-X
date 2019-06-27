@@ -1318,6 +1318,122 @@ ON=@Create
     TAMING=105.0
     MAGERY=125.0
 
+[CHARDEF 08b]
+//FIXME: Verify animation with 3d client.
+//FIXME: Can hit multiple targets with one attack.
+//They were introduced in 2001, LBR Expansion
+DEFNAME=c_orc_chopper
+NAME=orc chopper
+SOUND=snd_monster_orc2_1
+ICON=i_pet_orc_lord
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
+
+DAM=32,37
+ARMOR=25
+
+DESIRES=r_orc_camp,t_coin,t_gold,t_gem,t_potion
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=35
+RESOURCES=1 i_ribs_raw
+BLOODCOLOR=colors_green
+COLOR=096d
+
+TAG.Barding.Diff=67.3
+FACTION=faction_orc|faction_repond
+
+CATEGORY=Monsters
+SUBSECTION=Orcs
+DESCRIPTION=Orc, Chopper
+ON=@Create
+  
+   NPC=<def.brain_monster>
+   FAME={2000 2499}
+   KARMA={-2000 -2499}
+   
+   STR={145 245}
+   MAXHITS={95 130}
+   DEX={90 115}
+   MAXSTAM={90 115}
+   INT={60 85}
+   MAXMANA={60 85}
+   
+   MAGICRESISTANCE={60.0 85.0}
+   SWORDSMANSHIP={60.0 85.0}
+   TACTICS={75.0 90.0}
+   WRESTLING={60.0 85.0}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={15 25}
+   RESENERGY={25 30}
+   RESFIRE={30 40}
+   RESPOISON={15 20}
+   
+ON=@CreateLoot
+   ITEM=loot_orc_chopper
+
+[CHARDEF 08d]
+//FIXME: always appears naked with 2d client
+//FIXME: No Stratics data yet
+DEFNAME=c_man_paladin
+NAME=#NAMES_HUMANMALE
+SOUND=snd_special_human
+ICON=i_pet_man
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
+
+DAM=9,18
+ARMOR=30
+
+DESIRES=r_dungeon,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=e_carnivores3
+FOODTYPE=t_food,t_drink,t_fruit,t_grain
+MAXFOOD=25
+RESOURCES=1 i_ribs_raw
+
+TAG.Barding.Diff=72.2
+FACTION=faction_repond
+
+CATEGORY=Humanoids
+SUBSECTION=Civilized
+DESCRIPTION=Paladin, 3D CLIENT ONLY
+
+ON=@Create
+   NPC=<def.brain_human>
+   
+   KARMA={1000 1499}
+   FAME={1000 1499}
+   
+   STR={100 125}
+   MAXHITS={125 150}
+   DEX={76 100}
+   MAXSTAM={76 100}
+   INT={76 100}
+   MAXMANA={76 100}
+   
+   ANATOMY={50.0 100.0}
+   ARCHERY={50.0 100.0}
+   CHIVALRY={50.0 100.0}
+   EVALUATINGINTEL={50.0 100.0}
+   FENCING={50.0 100.0}
+   MACEFIGHTING={50.0 100.0}
+   MAGERY={25.0 50.0}
+   MAGICRESISTANCE={50.0 100.0}
+   MEDITATION={25.0 50.0}
+   PARRYING={50.0 100.0}
+   SWORDSMANSHIP={90.0 100.0}
+   TACTICS={90.0 100.0}
+   WRESTLING={90.0 100.0}
+   
+   RESPHYSICAL={0 10}
+   RESCOLD={5 10}
+   RESENERGY={5 10}
+   RESFIRE={5 10}
+   RESPOISON={5 10}
+   
+ON=@CreateLoot
+   ITEM=loot_paladin
+   ITEM=loot_ai_healer
+
 [CHARDEF 092]
 DEFNAME=c_harrower
 NAME=nameless one

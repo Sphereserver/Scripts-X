@@ -12,7 +12,6 @@ TODO:
 -missing FACTIONS 
 -Missing CHARDEF (according to defs_height.scp):
     
-	083, 085, 086, 087, 088, 089, 08a, 08b, 08c, 08d, 08e, 08f
     091, 092, 093, 09d, 09f
     0a0, 0a1, 0a2, 0a3, 0a4, 0a5, 0a6, 0a8
     0b5, 0b7, 0b8, 0b9, 0ba, 0bf
