@@ -24,7 +24,7 @@ SUBSECTION=Arachnids
 DESCRIPTION=Malefic
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={2500 2999}
    KARMA={-2500 -2999}
@@ -97,7 +97,7 @@ SUBSECTION=Slimes
 DESCRIPTION=Slime, Corrosive
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    COLOR=colors_green
    
    FAME={1 499}
@@ -218,7 +218,7 @@ SUBSECTION=Daemons
 DESCRIPTION=Chief Paroxysmus
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -273,7 +273,7 @@ SUBSECTION=Animals
 DESCRIPTION=Dread Horn
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -322,7 +322,7 @@ SUBSECTION=Feys
 DESCRIPTION=Lady Melisande
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -374,7 +374,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Monstrous Interred Grizzle
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={10000 13000}
     KARMA={-10000 -13000}
@@ -437,7 +437,7 @@ SUBSECTION=Elementals
 DESCRIPTION=Mantra Effervescent
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -486,7 +486,7 @@ SUBSECTION=Elementals
 DESCRIPTION=Shimmering Effusion
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -535,7 +535,7 @@ SUBSECTION=Minotaurs
 DESCRIPTION=Minotaur, Tormented
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={100 1201}
     KARMA={-5000 -6999}
@@ -588,7 +588,7 @@ SUBSECTION=Minotaurs
 DESCRIPTION=Minotaur
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     FAME=5000
     KARMA=-5000
@@ -642,7 +642,7 @@ SUBSECTION=Feys
 DESCRIPTION=Changeling
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -745,7 +745,7 @@ SUBSECTION=Feys
 DESCRIPTION=Dryad
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -794,7 +794,7 @@ SUBSECTION=Giants
 DESCRIPTION=Troglodyte
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     FAME=5000
     KARMA=-5000
@@ -852,7 +852,7 @@ SUBSECTION=Feys
 DESCRIPTION=Satyr
 
 ON=@Create
-NPC=<def.brain_monster>
+NPC=brain_monster
 
 FAME=5000
 
@@ -904,7 +904,7 @@ SUBSECTION=Feys
 DESCRIPTION=Corporeal Brume
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    FAME={2000 2499}
    KARMA={-2000 -2499}
    STR={400 450}
@@ -957,7 +957,7 @@ SUBSECTION=Elementals
 DESCRIPTION=Fetid Essence
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={100 3000}
     KARMA={-3000 -5000}
@@ -1006,7 +1006,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Reptalon
 
 ON=@Create
-    NPC=<def.brain_dragon>
+    NPC=brain_dragon
     
     STR={1001, 1025}
     DEX={152, 164}
@@ -1065,7 +1065,7 @@ SUBSECTION=Wild
 DESCRIPTION=Cu Sidhe
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME=5000  //Guessing here
     KARMA=5000  //Guessing here
@@ -1126,7 +1126,7 @@ SUBSECTION=Wild
 DESCRIPTION=Squirrel
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     STR={4, 10} //GUESSED STATS
     DEX={3, 5}
@@ -1168,7 +1168,7 @@ SUBSECTION=Wild
 DESCRIPTION=Ferret
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     STR={40, 50}
     DEX=55
@@ -1219,7 +1219,7 @@ DESCRIPTION=Minotaur, Captain
 
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=7000
     KARMA=-7000
@@ -1277,7 +1277,7 @@ SUBSECTION=Minotaurs
 DESCRIPTION=Minotaur, Scout
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=5000
     KARMA=-5000
@@ -1341,7 +1341,7 @@ SUBSECTION=Birds
 DESCRIPTION=Parrot
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     STR=1
     DEX=1
     //FLAGS |= statf_invul
@@ -1377,11 +1377,11 @@ SUBSECTION=Birds
 DESCRIPTION=Crows
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME=150
     
-    COLOR=<def.colors_black>
+    COLOR=colors_black
     
     STR={1, 4}
     DEX=25

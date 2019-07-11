@@ -22,7 +22,7 @@ CATEGORY=Monsters
 SUBSECTION=Dragons
 DESCRIPTION=Dragon, Crimson
 ON=@Create
-   NPC=<def.brain_dragon>
+   NPC=brain_dragon
    FAME={8500 8999}
    KARMA={-8500 -8999}
    STR={675 725}
@@ -71,7 +71,7 @@ CATEGORY=Monsters
 SUBSECTION=Dragons
 DESCRIPTION=Dragon, Platinum
 ON=@Create
-   NPC=<def.brain_dragon>
+   NPC=brain_dragon
    FAME={8500 8999}
    KARMA={-8500 -8999}
    
@@ -117,7 +117,7 @@ SUBSECTION=Worms
 DESCRIPTION=Worm, Blood
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     FAME=1500
     KARMA=-1500
@@ -170,7 +170,7 @@ SUBSECTION=Mechanicals
 DESCRIPTION=Vollem
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     RESPHYSICAL={0 10}
     RESCOLD={30 40}
@@ -228,7 +228,7 @@ SUBSECTION=Goblins
 DESCRIPTION=Gray Goblin
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     FAME=1500
     KARMA=-1500
@@ -281,7 +281,7 @@ SUBSECTION=Wild
 DESCRIPTION=Boura, Armoured
 
 ON=@Create
-   NPC=<def.brain_animal>
+   NPC=brain_animal
    FAME={2000 2500}
    KARMA={-2000 -2499}
    STR={300 410}
@@ -450,7 +450,7 @@ CATEGORY=Spells
 SUBSECTION=Mysticism
 DESCRIPTION=Stone Form
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    FAME={2500 2999}
    KARMA={-3500 -3999}
    
@@ -511,7 +511,7 @@ SUBSECTION=Daemons
 DESCRIPTION=Abyssal Infernal
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     FAME={9500 9999}
     KARMA={-9500 -9999}
@@ -557,7 +557,7 @@ SUBSECTION=Beetles
 DESCRIPTION=Beetle, Iron
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     FAME=15000
     KARMA=-15000
@@ -601,7 +601,7 @@ SUBSECTION=Wild
 DESCRIPTION=Boura, Ruddy
 
 ON=@create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
 
     FAME=2500
     KARMA=-2500
@@ -644,7 +644,7 @@ CATEGORY=Animals
 SUBSECTION=Reptiles
 DESCRIPTION=Chicken Lizard
 ON=@create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
 
     FAME=300
 
@@ -682,7 +682,7 @@ CATEGORY=Monsters
 SUBSECTION=Mechanicals
 DESCRIPTION=Clockwork Scorpion
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     FAME=3500
     KARMA=-3500
@@ -727,7 +727,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Dragon, Fairy
 
 ON=@create
-    NPC=<def.brain_dragon>
+    NPC=brain_dragon
 
     FAME=15000
     KARMA=-15000
@@ -785,7 +785,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Dragon, Wolf
 
 ON=@Create
-    NPC=<def.brain_dragon>
+    NPC=brain_dragon
 
     FAME={3000 3499}
     KARMA={-3000 -3499}
@@ -832,7 +832,7 @@ SUBSECTION=Elementals
 DESCRIPTION=Elemental, Lava
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=12250
     KARMA=-12250
@@ -883,7 +883,7 @@ SUBSECTION=Undeads
 DESCRIPTION= Maddening Horror
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=23000
     KARMA=-23000
@@ -928,7 +928,7 @@ SUBSECTION=Gargoyles
 DESCRIPTION=Gargoyle, Undead
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=3000
     KARMA=-3001
@@ -981,7 +981,7 @@ SUBSECTION=Goblins
 DESCRIPTION=Green Goblin
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=1500
     KARMA=-1500
@@ -1035,7 +1035,7 @@ SUBSECTION=Feys
 DESCRIPTION=Gremlin
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=1500
     KARMA=-1500
@@ -1097,7 +1097,7 @@ SUBSECTION=Slimes
 DESCRIPTION=Homunculus
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={2500 2999}
     KARMA={-2500 -2999}
@@ -1147,7 +1147,7 @@ SUBSECTION=Reptiles
 DESCRIPTION=Kepetch
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=6000
     KARMA=-6000
@@ -1204,7 +1204,7 @@ SUBSECTION=Reptiles
 DESCRIPTION=Kepetch, shorn
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME={2500 2999}
     KARMA={-3000 -3499}
@@ -1265,7 +1265,7 @@ SUBSECTION=Mythological
 DESCRIPTION=Medusa
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={9000 9999}
     KARMA={-9000 -9999}
@@ -1331,7 +1331,7 @@ SUBSECTION=Arachnids		//It has the  Arachnid Slayer vulnerability
 DESCRIPTION=Mimic
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    FAME={2500 2999}
    KARMA={-2500 -2999}
    
@@ -1379,7 +1379,7 @@ SUBSECTION=Dinosaurs
 DESCRIPTION=Raptor
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=7500
     KARMA=-7500
@@ -1426,7 +1426,7 @@ SUBSECTION=Worms
 DESCRIPTION=Worm, Rot
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=1500
     KARMA=-1500
@@ -1469,7 +1469,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Skree
 
 ON=@create
-    NPC=<def.brain_dragon>
+    NPC=brain_dragon
     
     FAME=2000
     KARMA=-2000
@@ -1521,7 +1521,7 @@ SUBSECTION=Reptiles
 DESCRIPTION=Slith
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=3000
     KARMA=-3000
@@ -1590,7 +1590,7 @@ SUBSECTION=Arachnids
 DESCRIPTION=Navrey Night-Eyes
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={9500 9999}
     KARMA={-9500 -9999}
@@ -1640,7 +1640,7 @@ SUBSECTION=Arachnids
 DESCRIPTION=Spider, Wolf
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     STR={225, 268}
     DEX={145, 165}
@@ -1687,7 +1687,7 @@ SUBSECTION=Arachnids
 DESCRIPTION=Spider, Trapdoor
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=2000
     KARMA=-2000
@@ -1741,7 +1741,7 @@ SUBSECTION=Insects
 DESCRIPTION=Fire Ant
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=5000
     KARMA=-5000
@@ -1798,7 +1798,7 @@ SUBSECTION=Mechanicals
 DESCRIPTION=Leather Wolf
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME={2000 2499}
     KARMA={-3000 -3499}
@@ -1857,9 +1857,9 @@ SUBSECTION=Undeads
 DESCRIPTION=Wraith, Dream
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
-    BLOODCOLOR=<def.colors_green>
+    BLOODCOLOR=colors_green
     FAME={3000 3499}
     KARMA={-3000 -3499}
     
@@ -1927,7 +1927,7 @@ SUBSECTION=Daemons
 DESCRIPTION=Slasher of Veils
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     FAME={9000 9999}
 
@@ -2006,7 +2006,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Dragon, Stygian
 
 ON=@Create
-    NPC=<def.brain_dragon>
+    NPC=brain_dragon
 
     FAME={9500 9999}
     KARMA={-9500 -9999}
@@ -2056,7 +2056,7 @@ SUBSECTION=Elementals
 DESCRIPTION=Rising Colossus
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    FAME=0
    KARMA=0
    STR={190 200}
@@ -2108,9 +2108,9 @@ SUBSECTION=Undeads
 DESCRIPTION=Lich, Primeval
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
-    BLOODCOLOR=<def.colors_green>
+    BLOODCOLOR=colors_green
 
     FAME={8000 8499}
     KARMA={-8000 -8499}
@@ -2179,7 +2179,7 @@ SUBSECTION=Mythological
 DESCRIPTION=Phoenix
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     FAME={5000 5499}
     KARMA={-5000 -5499}
@@ -2238,7 +2238,7 @@ SUBSECTION=Wild
 DESCRIPTION=Turkey, Giant
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     STR={1204 1394}
     DEX={172 258}

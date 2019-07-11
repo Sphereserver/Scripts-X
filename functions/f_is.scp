@@ -5,7 +5,7 @@
 VERSION=X1
 
 [FUNCTION f_isHuman]
-IF (<BODY>==c_man) || (<BODY>==c_woman) || (<BODY>==c_ghost_male) || (<BODY>==c_ghost_female) || (<BODY>==c_man_gm)
+IF (<BODY>==c_man) || (<BODY>==c_woman) || (<BODY>==c_ghost_male) || (<BODY>==c_ghost_female)
 	RETURN 1
 ENDIF
 RETURN 0

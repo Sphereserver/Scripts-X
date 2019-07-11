@@ -33,9 +33,9 @@ SUBSECTION=Aquatic
 DESCRIPTION=Scalis (Osiredon)
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
-    BLOODCOLOR=<def.colors_blue>
+    BLOODCOLOR=colors_blue
     
     FAME={9500 9999}
     KARMA={-9500 -9999}
@@ -102,7 +102,7 @@ SUBSECTION=Daemons
 DESCRIPTION=Hell Hound
 
 ON=@Create
-    NPC=<def.brain_dragon>
+    NPC=brain_dragon
     
     FAME={3500 3999}
     KARMA={-3500 -3999}
@@ -158,7 +158,7 @@ SUBSECTION=Mythological
 DESCRIPTION=Were Wolf
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={2500 2999}
     KARMA={-2500 -2999}
@@ -216,7 +216,7 @@ SUBSECTION=Minotaurs
 DESCRIPTION=Minotaur, Lord
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={4500 5000}
     KARMA={-4500 -5000}
@@ -277,7 +277,7 @@ SUBSECTION=Aquatic
 DESCRIPTION=Charybdis
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={7500 8000}
     KARMA={-7500 -8000}
@@ -326,7 +326,7 @@ SUBSECTION=Aquatic
 DESCRIPTION=Charybdis, Tentacle
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={7500 8000}
     KARMA={-7500 -8000}
@@ -379,9 +379,9 @@ SUBSECTION=Halloween
 DESCRIPTION=Killer Pumpkin I
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
-    BLOODCOLOR=<def.colors_orange>
+    BLOODCOLOR=colors_orange
     
     FAME={1500 1999}
     KARMA={-1500 -1999}
@@ -441,9 +441,9 @@ SUBSECTION=Halloween
 DESCRIPTION=Killer Pumpkin II
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
-    BLOODCOLOR=<def.colors_orange>
+    BLOODCOLOR=colors_orange
     
     FAME={1500 1999}
     KARMA={-1500 -1999}
@@ -506,7 +506,7 @@ SUBSECTION=Mechanicals
 DESCRIPTION=Clockwork Exodus
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={4500 5000}
     KARMA={-4500 -5000}

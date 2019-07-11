@@ -128,7 +128,7 @@ SUBSECTION=Daemons   //In Japanese folklore they are refered as Demon
 DESCRIPTION=Kappa
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     FAME=1700
     KARMA=-1700
@@ -241,7 +241,7 @@ SUBSECTION=Beetles
 DESCRIPTION=Beetle, Deathwatch
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     FAME=1400
     KARMA=-1400
@@ -303,7 +303,7 @@ SUBSECTION=Wild
 DESCRIPTION=Hiryu
 
 ON=@Create
-    NPC=<def.brain_dragon>
+    NPC=brain_dragon
     
     FAME=18000
     KARMA=-18000
@@ -367,7 +367,7 @@ SUBSECTION=Beetles
 DESCRIPTION=Beetle, Rune
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     FAME=15000
     KARMA=-15000
@@ -429,7 +429,7 @@ SUBSECTION=Yomotsu
 DESCRIPTION=Yomotsu, Warrior
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=4200    
     KARMA=-4200
@@ -487,7 +487,7 @@ SUBSECTION=Wild
 DESCRIPTION=Bake Kitsune
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=150
     KARMA=-2150
@@ -585,7 +585,7 @@ SUBSECTION=Wild
 DESCRIPTION=Gaman
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     STR={146, 175}
     DEX={111, 150}
@@ -632,7 +632,7 @@ SUBSECTION=Daemons
 DESCRIPTION=Yamandon
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=22000
     KARMA=-22000
@@ -689,7 +689,7 @@ SUBSECTION=Daemons
 DESCRIPTION=Tsuki Wolf
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=8500
     KARMA=-8500
@@ -751,7 +751,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Revenant Lion
 
 ON=@create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=4000
     KARMA=-4000
@@ -809,7 +809,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Lady of the Snow
 
 ON=@create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
     
     FAME=15200
     KARMA=-15200
@@ -868,7 +868,7 @@ SUBSECTION=Yomotsu
 DESCRIPTION=Yomotsu, Priest
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=9000
     KARMA=-9000
@@ -929,7 +929,7 @@ SUBSECTION=Birds
 DESCRIPTION=Crane
 
 ON=@Create
-	NPC=<def.brain_animal>
+	NPC=brain_animal
     
     KARMA=200
     
@@ -975,7 +975,7 @@ SUBSECTION=Yomotsu
 DESCRIPTION=Yomotsu, Elder
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=12000
     KARMA=-12000

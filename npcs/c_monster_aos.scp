@@ -22,7 +22,7 @@ CATEGORY=Spells
 SUBSECTION=Necromancy
 DESCRIPTION=Familiar, Dark Wolf
 ON=@Create
-   NPC=<def.brain_animal>
+   NPC=brain_animal
    
    FAME={500 999}
    KARMA={-800 -999}
@@ -71,9 +71,9 @@ SUBSECTION=Undeads
 DESCRIPTION=Dark Guardian
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
-    BLOODCOLOR=<def.colors_green>
+    BLOODCOLOR=colors_green
    
    FAME={3000 3499}
    KARMA={-3000 -3499}
@@ -135,7 +135,7 @@ SUBSECTION=Elementals
 DESCRIPTION=Elemental, Crystal
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=6500
     KARMA=-6500
@@ -193,7 +193,7 @@ SUBSECTION=Feys
 DESCRIPTION=Treefellow
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -238,7 +238,7 @@ SUBSECTION=Insects
 DESCRIPTION=Skittering Hopper
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME=300
     
@@ -340,7 +340,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Golem, Flesh
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     FAME=1000
     KARMA=-1800
@@ -390,7 +390,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Gore Fiend
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     FAME=1500
     KARMA=-1500
@@ -462,7 +462,7 @@ ON=@Create
       NAME=Xtul
    ENDDO
    
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={1500 1999}
    KARMA={-1500 -1999}
@@ -530,7 +530,7 @@ SUBSECTION=Daemons
 DESCRIPTION=Gibberling
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=1500
     KARMA=-1500
@@ -580,7 +580,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Bone Daemon
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=20000
     KARMA=-20000
@@ -635,7 +635,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Patchwork Skeleton
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=500
     KARMA=-500
@@ -685,7 +685,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Wailing Banshee
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=1500
     KARMA=-1500
@@ -709,7 +709,7 @@ ON=@CreateLoot
     ITEM=i_gold,{50 100}
 
 
- [CHARDEF 0137]
+[CHARDEF 0137]
 //"The Shadow Knight is the fourth of the five champions you have to defeat
 //in the Doom Gauntlet to summon the arch champion known as the Dark Father."
 //FIXME: Cannot be first target of a provoke attempt.
@@ -759,10 +759,10 @@ ON=@Create
       NAME=Usuhl
       NAME=Zul
    ENDDO
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    FAME={2500 2999}
    KARMA={-2500 -2999}
-   BLOODCOLOR=<def.colors_black>
+   BLOODCOLOR=colors_black
    
    STR={245 255}
    MAXHITS={1995 2005}
@@ -823,7 +823,7 @@ SUBSECTION=Daemons
 DESCRIPTION=Abyssmal Horror
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=26000
     KARMA=-26000
@@ -900,7 +900,7 @@ ON=@Create
       NAME=Ydoc Llessue
       NAME=Zhaan
    ENDDO
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    FAME={4000 4499}
    KARMA={-4000 -4499}
    
@@ -970,7 +970,7 @@ SUBSECTION=Daemons
 DESCRIPTION=Ravager
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
     FAME=3500
     KARMA=-3500
@@ -1022,11 +1022,11 @@ SUBSECTION=Doom Champions
 DESCRIPTION=Flesh Renderer
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={2000 2499}
    KARMA={-2000 -2499}
-   BLOODCOLOR=<def.colors_black>
+   BLOODCOLOR=colors_black
    
    STR={401 460}
    MAXHITS={4495 4505}
@@ -1090,7 +1090,7 @@ SUBSECTION=Daemons
 DESCRIPTION=Wanderer of the Void
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -1140,7 +1140,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Vampire Bat
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -1185,7 +1185,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Mound of Maggots
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={100 3000}
     KARMA={-5000 -6999}
@@ -1232,7 +1232,7 @@ SUBSECTION=Daemons
 DESCRIPTION=Moloch
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=7500
     KARMA=-7500

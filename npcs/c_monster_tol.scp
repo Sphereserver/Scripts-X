@@ -16,7 +16,7 @@ CATEGORY=Animals
 SUBSECTION=Wild
 DESCRIPTION=Tiger, Wild
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME=16000
    KARMA=-16000
@@ -62,7 +62,7 @@ SUBSECTION=Dinosaurs
 DESCRIPTION=Dimetrosaur
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=17000
     KARMA=-17000
@@ -114,7 +114,7 @@ SUBSECTION=Dinosaurs
 DESCRIPTION=Gallusaurus
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=8100
     KARMA=-8100
@@ -163,7 +163,7 @@ SUBSECTION=Dinosaurs
 DESCRIPTION=Archaeosaurus
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=8100
     KARMA=-8100
@@ -210,7 +210,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Dragon, Turtle Adult
 
 ON=@Create
-    NPC=<def.brain_dragon>
+    NPC=brain_dragon
     
     FAME=11000
     KARMA=-11000
@@ -256,7 +256,7 @@ SUBSECTION=Dinosaurs
 DESCRIPTION=Najasaurus
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=10000
     KARMA=-10000
@@ -305,7 +305,7 @@ SUBSECTION=Dinosaurs
 DESCRIPTION=Allosaurus
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=21000
     KARMA=-21000
@@ -357,7 +357,7 @@ SUBSECTION=Dinosaurs
 DESCRIPTION=Saurosaurus
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=11000
     KARMA=-11000
@@ -405,7 +405,7 @@ SUBSECTION=Dinosaurs
 DESCRIPTION=Anchisaur
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=8000
     KARMA=-8000
@@ -452,7 +452,7 @@ SUBSECTION=Myrmidex
 DESCRIPTION=Myrmidex, Larvae
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=2500
     KARMA=-2500
@@ -496,7 +496,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Dragon, Turtle Hatchling
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=16000
     KARMA=-16000
@@ -545,7 +545,7 @@ SUBSECTION=Wild
 DESCRIPTION=Gorilla, Giant
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=35000
     KARMA=-35000
@@ -591,7 +591,7 @@ SUBSECTION=Wild
 DESCRIPTION=Tiger, Cub
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     
     KARMA=500
@@ -633,7 +633,7 @@ SUBSECTION=Dinosaurs
 DESCRIPTION=Tyrannosaurus Rex
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=24000
     KARMA=-24000
@@ -675,7 +675,7 @@ SUBSECTION=Arachnids
 DESCRIPTION=Tarantula
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
 
 
 [CHARDEF 057a]
@@ -704,7 +704,7 @@ SUBSECTION=Myrmidex
 DESCRIPTION=Myrmidex, Drone
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=2500
     KARMA=-2500
@@ -748,7 +748,7 @@ SUBSECTION=Myrmidex
 DESCRIPTION=Myrmidex, Warrior
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=8000
     KARMA=-8000
@@ -796,7 +796,7 @@ SUBSECTION=Myrmidex
 DESCRIPTION=Myrmidex, Queen
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=35000
     KARMA=-35000
@@ -841,7 +841,7 @@ SUBSECTION=Giants
 DESCRIPTION=Zipactriotl
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=35000
     KARMA=-35000
@@ -885,7 +885,7 @@ SUBSECTION=Mechanicals
 DESCRIPTION=Kotl Automaton
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=14000
     KARMA=-14000
@@ -934,7 +934,7 @@ SUBSECTION=Animals
 DESCRIPTION=Lasher
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME=300
     KARMA=-300
@@ -981,7 +981,7 @@ SUBSECTION=Domestic
 DESCRIPTION=Horse, Palomino
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME=300
     KARMA=-300
@@ -1024,7 +1024,7 @@ SUBSECTION=Wild
 DESCRIPTION=Windrunner
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME=300
     KARMA=-300
@@ -1070,7 +1070,7 @@ SUBSECTION=Dinosaurs
 DESCRIPTION=Triceratops
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     //FAME=//FIXME
     //KARMA=
     
@@ -1118,7 +1118,7 @@ SUBSECTION=Wild
 DESCRIPTION=Tiger, Saber-tooth
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=11000
     KARMA=-11000
@@ -1165,7 +1165,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Drake, Platinum
 
 ON=@Create
-    NPC=<def.brain_dragon>
+    NPC=brain_dragon
     
     FAME=5500
     KARMA=-5500
@@ -1212,7 +1212,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Drake, Platinum Elemental
 
 ON=@Create
-    NPC=<def.brain_dragon>
+    NPC=brain_dragon
     
     FAME=5500
     KARMA=-5500
@@ -1261,7 +1261,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Drake, Crimson
 
 ON=@Create
-    NPC=<def.brain_dragon>
+    NPC=brain_dragon
     
     FAME=5500
     KARMA=-5500
@@ -1308,7 +1308,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Drake, Crimson Elemental
 
 ON=@Create
-    NPC=<def.brain_dragon>
+    NPC=brain_dragon
     
     FAME=5500
     KARMA=-5500
@@ -1380,7 +1380,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Drake, Stygian
 
 ON=@Create
-    NPC=<def.brain_dragon>
+    NPC=brain_dragon
     
     FAME=5500
     KARMA=-5500
@@ -1433,7 +1433,7 @@ DESCRIPTION=Drake, Stygian Elemental
 ON=@Create
     COLOR={0 1 0482 1 048e 1}
     
-    NPC=<def.brain_dragon>
+    NPC=brain_dragon
     FAME=5500
     KARMA=-5500
     
@@ -1481,7 +1481,7 @@ SUBSECTION=Wild
 DESCRIPTION=Blood Fox
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     //FAME=//FIXME
     //KARMA=
     
@@ -1528,7 +1528,7 @@ SUBSECTION=Insects
 DESCRIPTION=Mite, Frost
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     //FAME=//FIXME
     //KARMA=
@@ -1578,7 +1578,7 @@ SUBSECTION=Wild
 DESCRIPTION=Ossein Ram
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     //FAME=//FIXME
     //KARMA=
@@ -1627,7 +1627,7 @@ SUBSECTION=Wild
 DESCRIPTION=Lion, Adult
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=11000
     KARMA=-11000
@@ -1672,7 +1672,7 @@ SUBSECTION=Pagan Titans
 DESCRIPTION=Hydros (Water)
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=20000
     KARMA=-20000
@@ -1720,7 +1720,7 @@ SUBSECTION=Halloween
 DESCRIPTION=Jack in the Box
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     //FAME=//FIXME
     //KARMA=
@@ -1770,7 +1770,7 @@ SUBSECTION=Pagan Titans
 DESCRIPTION=Lithos (Earth)
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=20000
     KARMA=-20000
@@ -1817,7 +1817,7 @@ SUBSECTION=Pagan Titans
 DESCRIPTION=Stratos (Air)
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=20000
     KARMA=-20000
@@ -1864,7 +1864,7 @@ SUBSECTION=Pagan Titans
 DESCRIPTION=Pyros (Fire)
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=20000
     KARMA=-20000
@@ -1906,7 +1906,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Serpentine Dragon
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     STR=1
 
 
@@ -1935,7 +1935,7 @@ SUBSECTION=Wild
 DESCRIPTION=Eowmu
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME=300
     KARMA=-300
@@ -1981,7 +1981,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Cat, Skeletal
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME=300
     KARMA=-300
@@ -2026,7 +2026,7 @@ SUBSECTION=Giants
 DESCRIPTION=Khal Ankur
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=28000
     KARMA=-28000

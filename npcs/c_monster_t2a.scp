@@ -43,7 +43,7 @@ DESCRIPTION=Spider, Frost
 
 ON=@Create
     //Brain
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     //Fame/Karma
     FAME={1500 1999}
@@ -105,9 +105,9 @@ SUBSECTION=Daemons
 DESCRIPTION=Daemon, Ice
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
-    BLOODCOLOR=<def.colors_white>
+    BLOODCOLOR=colors_white
     
     FAME={2500 2999}
     KARMA={-5000 -5999}
@@ -173,7 +173,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Wyrm, White
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=18000
     KARMA=-18000
@@ -228,7 +228,7 @@ SUBSECTION=Giants
 DESCRIPTION=Frost Troll
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=4500
     KARMA=-4500
@@ -281,7 +281,7 @@ SUBSECTION=Wild
 DESCRIPTION=Leopard, Snow
 
 ON=@Create    
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME={500 999}
     KARMA={-500 -999}
@@ -336,9 +336,9 @@ SUBSECTION=Plants
 DESCRIPTION=Swamp Tentacles
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
-    BLOODCOLOR=<def.colors_green>
+    BLOODCOLOR=colors_green
     
     KARMA={-1500 -1999}
     FAME={1500 1999}
@@ -393,7 +393,7 @@ SUBSECTION=Gargoyles
 DESCRIPTION=Gargoyle, Stone
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={2500 2999}
     KARMA={-3000 -3999}
@@ -449,7 +449,7 @@ SUBSECTION=Gazers
 DESCRIPTION=Gazer, Elder
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={2500 2999}
     KARMA={-2500 -2999}
@@ -508,7 +508,7 @@ SUBSECTION=Terathans
 DESCRIPTION=Terathan, Warrior
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=4000
     KARMA=-4000
@@ -564,7 +564,7 @@ SUBSECTION=Terathans
 DESCRIPTION=Terathan, Drone
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=2000
     KARMA=-2000
@@ -618,7 +618,7 @@ SUBSECTION=Terathans
 DESCRIPTION=Terathan, Matriarch
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=10000
     KARMA=-10000
@@ -679,7 +679,7 @@ SUBSECTION=Mythological
 DESCRIPTION=Harpy, Stone
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={2000 2499}
     KARMA={-2000 -2499}
@@ -735,7 +735,7 @@ SUBSECTION=Giants
 DESCRIPTION=Cyclops
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     FAME=4500
     KARMA=-4500
 
@@ -791,7 +791,7 @@ SUBSECTION=Giants
 DESCRIPTION=Titan
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=11500
     KARMA=-11500
@@ -849,9 +849,9 @@ SUBSECTION=Undeads
 DESCRIPTION=Lich, Ancient
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
-    BLOODCOLOR=<def.colors_green>
+    BLOODCOLOR=colors_green
     
     FAME={4000 4499}
     KARMA={-4000 -4499}
@@ -911,7 +911,7 @@ SUBSECTION=Amphibious
 DESCRIPTION=Toad, Giant
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     FAME=750
     KARMA=-750
     
@@ -956,7 +956,7 @@ SUBSECTION=Amphibious
 DESCRIPTION=Bullfrog
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME=350
     
@@ -1006,7 +1006,7 @@ SUBSECTION=Ophidians
 DESCRIPTION=Ophidian, Shaman
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=4000
     KARMA=-4000
@@ -1066,7 +1066,7 @@ SUBSECTION=Ophidians
 DESCRIPTION=Ophidian, Warrior
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     FAME=4500
     KARMA=-4500
     
@@ -1119,7 +1119,7 @@ SUBSECTION=Ophidians
 DESCRIPTION=Ophidian, Queen
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=16000
     KARMA=-16000
@@ -1177,7 +1177,7 @@ SUBSECTION=Reptiles
 DESCRIPTION=Snake, Giant Ice
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME={2000 2499}
     KARMA={-2000 -2499}
@@ -1232,7 +1232,7 @@ SUBSECTION=Reptiles
 DESCRIPTION=Snake, Giant Lava
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME={2500 2999}
     KARMA={-2500 -2999}
@@ -1288,7 +1288,7 @@ SUBSECTION=Slimes
 DESCRIPTION=Slime, Frost
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={1 499}
     KARMA={-800 -999}
@@ -1347,7 +1347,7 @@ SUBSECTION=Aquatic
 DESCRIPTION=Sea Monster
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME={2000 6000}
     KARMA={-3000 -3999}
@@ -1389,7 +1389,7 @@ CATEGORY=Animals
 SUBSECTION=Wild
 DESCRIPTION=Hell Hound
 ON=@Create
-   NPC=<def.brain_dragon>
+   NPC=brain_dragon
    FAME={1000 1499}
    KARMA={-1000 -1499}
    
@@ -1442,7 +1442,7 @@ SUBSECTION=Wild
 DESCRIPTION=Hell Hound, Alpha
 
 ON=@Create
-   NPC=<def.brain_animal>
+   NPC=brain_animal
    
    FAME={1000 1499}
    KARMA={-1000 -1499}
@@ -1492,7 +1492,7 @@ CATEGORY=Monsters
 SUBSECTION=Dragons
 DESCRIPTION=Wyrm, Shadow
 ON=@Create
-   NPC=<def.brain_dragon>
+   NPC=brain_dragon
    
    FAME={6000 6999}
    KARMA={-6000 -6999}
@@ -1550,8 +1550,8 @@ SUBSECTION=Wild
 DESCRIPTION=Nightmare
 
 ON=@Create
-   NPC=<def.brain_dragon>
-   COLOR=<def.colors_black>
+   NPC=brain_dragon
+   COLOR=colors_black
    FAME={3000 3499}
    KARMA={-3000 -3499}
    
@@ -1600,7 +1600,7 @@ SUBSECTION=Wild
 DESCRIPTION=Hellcat
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    FAME={1500 1999}
    KARMA={-1500 -1999}
    STR={116 185}
@@ -1645,7 +1645,7 @@ CATEGORY=Monsters
 SUBSECTION=Elementals
 DESCRIPTION=Efreet
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={2500 2999}
    KARMA={-2500 -2999}
@@ -1698,7 +1698,7 @@ SUBSECTION=Wild
 DESCRIPTION=Komodo Dragon
 
 ON=@Create
-   NPC=<def.brain_animal>
+   NPC=brain_animal
    FAME={1000 1499}
    KARMA={-1000 -1499}
    
@@ -1747,7 +1747,7 @@ SUBSECTION=Giants
 DESCRIPTION=Ogre, Lord Arctic
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={5000 5999}
    KARMA={-5000 -5999}
@@ -1798,7 +1798,7 @@ CATEGORY=Monsters
 SUBSECTION=Ophidians
 DESCRIPTION=Ophidian, Archmage
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    FAME={1000 1499}
    KARMA={-1000 -1499}
    
@@ -1845,7 +1845,7 @@ CATEGORY=Monsters
 SUBSECTION=Ophidians
 DESCRIPTION=Ophidian, Knight
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    FAME={3000 3499}
    KARMA={-3000 -3499}
    
@@ -1898,12 +1898,12 @@ SUBSECTION=Elementals
 DESCRIPTION=Elemental, Acid
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={2500 2999}
    KARMA={-2500 -2999}
    
-   BLOODCOLOR=<def.colors_green>
+   BLOODCOLOR=colors_green
    
    STR={326 355}
    MAXHITS={196 213}
@@ -1948,7 +1948,7 @@ CATEGORY=Monsters
 SUBSECTION=Elementals
 DESCRIPTION=Elemental, Blood
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={4500 4999}
    KARMA={-4500 -4999}
@@ -1995,7 +1995,7 @@ SUBSECTION=Elementals
 DESCRIPTION=Elemental, Ice
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={1500 1999}
    KARMA={-1500 -1999}
@@ -2058,12 +2058,12 @@ CATEGORY=Monsters
 SUBSECTION=Elementals
 DESCRIPTION=Elemental, Poison>
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={3000 3499}
    KARMA={-3000 -3499}
    
-   BLOODCOLOR=<def.colors_green>
+   BLOODCOLOR=colors_green
    
    STR={426 515}
    MAXHITS={256 309}
@@ -2110,12 +2110,12 @@ SUBSECTION=Elementals
 DESCRIPTION=Elemental, Snow
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={1500 1999}
    KARMA={-1500 -1999}
    
-   BLOODCOLOR=<def.colors_white>
+   BLOODCOLOR=colors_white
    
    STR={326 355}
    MAXHITS={196 213}
@@ -2178,7 +2178,7 @@ SUBSECTION=Ostards
 DESCRIPTION=Ostard, Desert
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME=450
     
@@ -2226,7 +2226,7 @@ SUBSECTION=Ostards
 DESCRIPTION=Ostard, Frenzied
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME=1500
     KARMA=-1500
@@ -2280,7 +2280,7 @@ SUBSECTION=Ostards
 DESCRIPTION=Ostard, Forest
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME=450
     

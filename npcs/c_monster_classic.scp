@@ -19,7 +19,7 @@ SUBSECTION=Giants
 DESCRIPTION=Ogre
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=3000
      KARMA=-3000
@@ -66,7 +66,7 @@ SUBSECTION=Giants
 DESCRIPTION=Ettin
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
      
      FAME=3000
      KARMA=-3000
@@ -114,9 +114,9 @@ SUBSECTION=Undeads
 DESCRIPTION=Zombie
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
      
-     BLOODCOLOR=<def.colors_green>
+     BLOODCOLOR=colors_green
 
      FAME=600
      KARMA=-600
@@ -161,7 +161,7 @@ SUBSECTION=Gargoyles
 DESCRIPTION=Gargoyle
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
      
      FAME=5000
      KARMA={-4000 -4999}
@@ -200,7 +200,7 @@ SUBSECTION=Birds
 DESCRIPTION=Eagle
 
 ON=@create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=300
      
@@ -247,7 +247,7 @@ SUBSECTION=Birds
 DESCRIPTION=Bird, Generic
 
 ON=@create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      FAME=150
      
      STR=10
@@ -280,7 +280,7 @@ SUBSECTION=Orcs
 DESCRIPTION=Orc, Captain
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=2500
      KARMA=-2500
@@ -327,7 +327,7 @@ SUBSECTION=Plants
 DESCRIPTION=Corpser
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=1000
      KARMA=-1000
@@ -375,7 +375,7 @@ SUBSECTION=Daemons
 DESCRIPTION=Daemon
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=15000
      KARMA=-15000
@@ -425,7 +425,7 @@ SUBSECTION=Daemons
 DESCRIPTION=Daemon 2
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={1500 1999}
    KARMA={-1000 -1999}
@@ -475,7 +475,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Dragon, Green
 
 ON=@Create
-     NPC=<def.brain_dragon>
+     NPC=brain_dragon
 
      FAME=15000
      KARMA=-15000
@@ -531,9 +531,9 @@ SUBSECTION=Elementals
 DESCRIPTION=Elemental, Air
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
      
-     BLOODCOLOR=<def.colors_white>
+     BLOODCOLOR=colors_white
      
      FAME=4500
      KARMA=-4500
@@ -583,9 +583,9 @@ SUBSECTION=Elementals
 DESCRIPTION=Elemental, Earth
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
      
-     BLOODCOLOR=<def.colors_brown>
+     BLOODCOLOR=colors_brown
      
      FAME=3500
      KARMA=-3500
@@ -632,9 +632,9 @@ SUBSECTION=Elementals
 DESCRIPTION=Elemental, Fire
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
      
-     BLOODCOLOR=<def.colors_red>
+     BLOODCOLOR=colors_red
      
      FAME=4500
      KARMA=-4500
@@ -695,9 +695,9 @@ SUBSECTION=Elementals
 DESCRIPTION=Elemental, Water
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
-     BLOODCOLOR=<def.colors_blue>
+     BLOODCOLOR=colors_blue
      
      FAME=4500
      KARMA=-4500
@@ -748,7 +748,7 @@ SUBSECTION=Orcs
 DESCRIPTION=Orc
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=1500
      KARMA=-1500
@@ -797,7 +797,7 @@ SUBSECTION=Giants
 DESCRIPTION=Ettin, Axe
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
      FAME=3000
      KARMA=-3000
 
@@ -843,7 +843,7 @@ SUBSECTION=Reptiles
 DESCRIPTION=Snake, Giant
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=2500
      KARMA=-2500
@@ -890,7 +890,7 @@ SUBSECTION=Gazers
 DESCRIPTION=Gazer
 
 ON=@Create
-NPC=<def.brain_monster>
+NPC=brain_monster
 
 FAME=3500
 KARMA=-3500
@@ -946,7 +946,7 @@ SUBSECTION=Wild
 DESCRIPTION=Wolf, Dire
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME={1000 1499}
     KARMA={-1000 -1499}
@@ -990,9 +990,9 @@ SUBSECTION=Undeads
 DESCRIPTION=Lich
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
      
-     BLOODCOLOR=<def.colors_green>
+     BLOODCOLOR=colors_green
 
      FAME=8000
      KARMA=-8000
@@ -1051,7 +1051,7 @@ SUBSECTION=Wild
 DESCRIPTION=Wolf, Grey
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME={500 999}
     KARMA={-800 -999}
@@ -1092,9 +1092,9 @@ SUBSECTION=Undeads
 DESCRIPTION=Spectre
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
      
-     BLOODCOLOR=<def.colors_green>
+     BLOODCOLOR=colors_green
 
      FAME=4000
      KARMA=-4000
@@ -1140,7 +1140,7 @@ SUBSECTION=Arachnids
 DESCRIPTION=Spider, Giant
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=600
      KARMA=-600
@@ -1184,7 +1184,7 @@ SUBSECTION=Wild
 DESCRIPTION=Gorilla
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=450
      
@@ -1224,7 +1224,7 @@ SUBSECTION=Mythological
 DESCRIPTION=Harpy
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
      
      FAME={300 1000}
      KARMA={-2000 -2999}
@@ -1263,7 +1263,7 @@ SUBSECTION=Mythological
 DESCRIPTION=Headless
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=450
      KARMA=-450
@@ -1303,7 +1303,7 @@ SUBSECTION=Lizardmen
 DESCRIPTION=Lizardman
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=1500
      KARMA=-1500
@@ -1350,7 +1350,7 @@ CATEGORY=Animals
 SUBSECTION=Wild
 DESCRIPTION=Wolf, White
 ON=@Create
-   NPC=<def.brain_animal>
+   NPC=brain_animal
    
    FAME={500 999}
    KARMA={-800 -999}
@@ -1394,7 +1394,7 @@ SUBSECTION=Lizardmen
 DESCRIPTION=Lizardman, Spear
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=1500
      KARMA=-1500
@@ -1439,7 +1439,7 @@ SUBSECTION=Lizardmen
 DESCRIPTION=Lizardman, Mace
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=1500
      KARMA=-1500
@@ -1491,7 +1491,7 @@ SUBSECTION=Wild
 DESCRIPTION=Wolf, White Duplicate
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME={500 999}
     KARMA={-800 -999}
@@ -1536,7 +1536,7 @@ SUBSECTION=Mongbats
 DESCRIPTION=Mongbat, Subterranean
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
      
      FAME={100 300}
      KARMA={-2000 -2999}
@@ -1574,7 +1574,7 @@ SUBSECTION=Daemons
 DESCRIPTION=Balron
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=24000
      KARMA=-24000
@@ -1629,7 +1629,7 @@ SUBSECTION=Orcs
 DESCRIPTION=Orc, Club
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=1500
      KARMA=-1500
@@ -1675,7 +1675,7 @@ SUBSECTION=Ratmen
 DESCRIPTION=Rat Man
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=1500
      KARMA=-1500
@@ -1720,7 +1720,7 @@ SUBSECTION=Ratmen
 DESCRIPTION=Rat Man, Axe
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=1500
      KARMA=-1500
@@ -1765,7 +1765,7 @@ SUBSECTION=Ratmen
 DESCRIPTION=Rat Man, Sword
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=1500
      KARMA=-1500
@@ -1810,7 +1810,7 @@ SUBSECTION=Plants
 DESCRIPTION=Reaper
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=3500
      KARMA=-3500
@@ -1860,7 +1860,7 @@ SUBSECTION=Arachnids
 DESCRIPTION=Scorpion, Giant
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=2000
      KARMA=-2000
@@ -1908,7 +1908,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Skeleton
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=450
      KARMA=-450
@@ -1952,12 +1952,12 @@ SUBSECTION=Slimes
 DESCRIPTION=Slime
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=300
      KARMA=-300
 
-     COLOR=<def.colors_slime>
+     COLOR=colors_slime
 
      STR={22, 34}
      DEX={16, 21}
@@ -1997,12 +1997,12 @@ SUBSECTION=Reptiles
 DESCRIPTION=Snake, Generic
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=300
      KARMA=-300
      
-     COLOR=<def.colors_snake>
+     COLOR=colors_snake
      
      STR={22, 34}
      DEX={16, 25}
@@ -2040,7 +2040,7 @@ SUBSECTION=Trolls
 DESCRIPTION=Troll, Axe
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=3500
      KARMA=-3500
@@ -2087,7 +2087,7 @@ SUBSECTION=Trolls
 DESCRIPTION=Troll
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=3500
      KARMA=-3500
@@ -2133,7 +2133,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Skeleton, Axe
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=450
      KARMA=-450
@@ -2181,7 +2181,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Skeleton, Bone Knight
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
   
 
@@ -2228,7 +2228,7 @@ SUBSECTION=Mythological
 DESCRIPTION=Wisp
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=4000
      
@@ -2280,7 +2280,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Dragon, Red
 
 ON=@Create
-NPC=<def.brain_dragon>
+NPC=brain_dragon
 
 FAME=15000
 KARMA=-15000
@@ -2339,7 +2339,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Drake, Gray
 
 ON=@Create
-NPC=<def.brain_dragon>
+NPC=brain_dragon
 
 FAME=5500
 KARMA=-5500
@@ -2394,7 +2394,7 @@ SUBSECTION=Dragons
 DESCRIPTION=Drake, Red
 
 ON=@create
-NPC=<def.brain_dragon>
+NPC=brain_dragon
 
 FAME=5500
 KARMA=-5500
@@ -2448,7 +2448,7 @@ SUBSECTION=Wild
 DESCRIPTION=Cougar
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME={500 999}
     KARMA={-500 -999}
@@ -2498,7 +2498,7 @@ SUBSECTION=Wild
 DESCRIPTION=Leopard
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=450
      
@@ -2542,7 +2542,7 @@ CATEGORY=Monsters
 SUBSECTION=Gazers
 DESCRIPTION=Gazer, Elder
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={2500 2999}
    KARMA={-2500 -2999}
@@ -2594,7 +2594,7 @@ SUBSECTION=Gazers
 DESCRIPTION=Gazer, Duplicate
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={1000 2500}
    KARMA={-3000 -3999}
@@ -2650,9 +2650,9 @@ SUBSECTION=Undeads
 DESCRIPTION=Lich, Lord
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
 
-    BLOODCOLOR=<def.colors_green>
+    BLOODCOLOR=colors_green
     
     FAME={3500 3999}
     KARMA={-3500 -3999}
@@ -2711,7 +2711,7 @@ SUBSECTION=Giants
 DESCRIPTION=Ogre, Lord
 
 ON=@Create
-    NPC=<def.brain_monster>
+    NPC=brain_monster
     
     FAME=15000
     KARMA=-15000
@@ -2754,7 +2754,7 @@ SUBSECTION=Wild
 DESCRIPTION=Goat, Mountain
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=300
      
@@ -2801,7 +2801,7 @@ SUBSECTION=Reptiles
 DESCRIPTION=Snake, Giant Silver
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME={2500 2999}
     KARMA={-2500 -2999}
@@ -2855,7 +2855,7 @@ SUBSECTION=Wild
 DESCRIPTION=Wolf, Dark
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME={1000 1499}
     KARMA={-1000 -1499}
@@ -2906,7 +2906,7 @@ SUBSECTION=Wild
 DESCRIPTION=Wolf, Silver
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME={500 999}
     KARMA={-800 -999}
@@ -2965,7 +2965,7 @@ SUBSECTION=Elementals
 DESCRIPTION=Elemental, Agapite
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={2500 2999}
    KARMA={-2500 -2999}
@@ -3018,7 +3018,7 @@ CATEGORY=Monsters
 SUBSECTION=Elementals
 DESCRIPTION=Elemental Ore, Bronze
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={2500 2999}
    KARMA={-2500 -2999}
@@ -3072,7 +3072,7 @@ SUBSECTION=Elementals
 DESCRIPTION=Elemental, Copper
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={2500 2999}
    KARMA={-2500 -2999}
@@ -3123,7 +3123,7 @@ SUBSECTION=Elementals
 DESCRIPTION=Elemental, Dull Copper
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={2500 2999}
    KARMA={-2500 -2999}
@@ -3189,7 +3189,7 @@ SUBSECTION=Elementals
 DESCRIPTION=Elemental, Shadow
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={2500 2999}
    KARMA={-2500 -2999}
@@ -3248,7 +3248,7 @@ SUBSECTION=Elementals
 DESCRIPTION=Elemental, Valorite
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={2500 2999}
    KARMA={-2500 -2999}
@@ -3300,7 +3300,7 @@ SUBSECTION=Elementals
 DESCRIPTION=Elemental, Verite
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    FAME={2500 2999}
    KARMA={-2500 -2999}
    STR={226 255}
@@ -3345,7 +3345,7 @@ SUBSECTION=Reptiles
 DESCRIPTION=Alligator, Small
 
 ON=@Create
-   NPC=<def.brain_animal>
+   NPC=brain_animal
    FAME={500 999}
    KARMA={-800 -999}
    
@@ -3387,12 +3387,12 @@ CATEGORY=Monsters
 SUBSECTION=Orcs
 DESCRIPTION=Orc, Lord
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    KARMA={-2000 -2499}
    FAME={2000 2499}
    
-   BLOODCOLOR=<def.colors_green>
+   BLOODCOLOR=colors_green
    
    STR={145 215}
    MAXHITS={95 125}
@@ -3441,11 +3441,11 @@ CATEGORY=Monsters
 SUBSECTION=Orcs
 DESCRIPTION=Orc, Shaman
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={1500 1999}
    KARMA={-1500 -1999}
-   BLOODCOLOR=<def.colors_green>
+   BLOODCOLOR=colors_green
    
    STR={116 150}
    MAXHITS={70 90}
@@ -3497,7 +3497,7 @@ DESCRIPTION=Ratman, Archer
 
 ON=@Create
    COLOR=08000|RAND(COLOR_DYE_HIGH)
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={2000 2499}
    KARMA={-2000 -2499}
@@ -3549,7 +3549,7 @@ SUBSECTION=Ratmen
 DESCRIPTION=Ratman, Mage
 ON=@Create
    COLOR=08000|RAND(COLOR_DYE_HIGH)
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={2000 2499}
    KARMA={-2000 -2499}
@@ -3588,7 +3588,7 @@ SUBSECTION=Aquatic
 DESCRIPTION=Horse, Sea
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
      FAME=6000
      KARMA=-6000
      
@@ -3630,7 +3630,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Skeleton, Knight
 
 ON=@Create
-   NPC=<def.brain_monster>
+   NPC=brain_monster
    
    FAME={2000 2499}
    KARMA={-2000 -2499}
@@ -3681,12 +3681,12 @@ SUBSECTION=Aquatic
 DESCRIPTION=Sea Serpent
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
      
      FAME={2000 6000}
      KARMA={-3000 -3999}
      
-     COLOR=<def.colors_blue>
+     COLOR=colors_blue
      
      STR={165 185}
      DEX={58 85}
@@ -3723,7 +3723,7 @@ SUBSECTION=Aquatic
 DESCRIPTION=Dolphin
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=500
      KARMA=2000
@@ -3762,7 +3762,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Ghoul
 
 ON=@Create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
 
      FAME=2500
      KARMA=-2500
@@ -3801,7 +3801,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Rotting Corpse
 
 ON=@create
-     NPC=<def.brain_monster>
+     NPC=brain_monster
      
      FAME=6000
      KARMA=-6000
@@ -3849,7 +3849,7 @@ SUBSECTION=Wild
 DESCRIPTION=Bear, Brown
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=450
      
@@ -3891,7 +3891,7 @@ SUBSECTION=Domestic
 DESCRIPTION=Horse, Tan
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=300
      KARMA=300
@@ -3937,7 +3937,7 @@ SUBSECTION=Wild
 DESCRIPTION=Fire Steed
 
 ON=@Create
-    NPC=<def.brain_dragon>
+    NPC=brain_dragon
     
     FAME={1000 2000}
     KARMA={-4000 -5999}
@@ -3986,7 +3986,7 @@ SUBSECTION=Domestic
 DESCRIPTION=Cat
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      KARMA=150
      
@@ -4023,7 +4023,7 @@ SUBSECTION=Reptiles
 DESCRIPTION=Alligator
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=600
      KARMA=-600
@@ -4104,7 +4104,7 @@ SUBSECTION=Domestic
 DESCRIPTION=Horse, Dark Brown
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=300
      KARMA=300
@@ -4142,7 +4142,7 @@ SUBSECTION=Wild
 DESCRIPTION=Rabbit
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=150
      
@@ -4180,7 +4180,7 @@ SUBSECTION=Domestic
 DESCRIPTION=Sheep, Wooly
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=300
      
@@ -4217,7 +4217,7 @@ SUBSECTION=Domestic
 DESCRIPTION=Chicken
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=150
      
@@ -4254,7 +4254,7 @@ SUBSECTION=Wild
 DESCRIPTION=Goat, Generic
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=150
      
@@ -4291,7 +4291,7 @@ SUBSECTION=Wild
 DESCRIPTION=Bear, Black
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=450
      
@@ -4330,7 +4330,7 @@ SUBSECTION=Wild
 DESCRIPTION=Bear, Grizzly
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=1000
      
@@ -4371,7 +4371,7 @@ SUBSECTION=Wild
 DESCRIPTION=Bear, Polar
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      FAME=1500
      
      STR={116, 140}
@@ -4412,7 +4412,7 @@ SUBSECTION=Wild
 DESCRIPTION=Panther
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=450
      
@@ -4459,7 +4459,7 @@ SUBSECTION=Wild
 DESCRIPTION=Rat, Giant
 
 ON=@Create
-    NPC=<def.brain_animal>
+    NPC=brain_animal
     
     FAME={1 499}
     KARMA={-500 -999}
@@ -4505,7 +4505,7 @@ SUBSECTION=Domestic
 DESCRIPTION=Cow, Black and White
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=300
      
@@ -4542,7 +4542,7 @@ SUBSECTION=Domestic
 DESCRIPTION=Dog
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      KARMA=300
      
@@ -4579,7 +4579,7 @@ SUBSECTION=Domestic
 DESCRIPTION=Llama
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=300
      
@@ -4617,7 +4617,7 @@ SUBSECTION=Wild
 DESCRIPTION=Walrus
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=150
      
@@ -4660,7 +4660,7 @@ SUBSECTION=Domestic
 DESCRIPTION=Sheep, Shorn
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=300
      
@@ -4698,7 +4698,7 @@ SUBSECTION=Wild
 DESCRIPTION=Wolf, Timber
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=450
      
@@ -4742,7 +4742,7 @@ SUBSECTION=Domestic
 DESCRIPTION=Horse, Gray
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=300
      KARMA=300
@@ -4782,7 +4782,7 @@ SUBSECTION=Domestic
 DESCRIPTION=Horse, Light Brown
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=300
      KARMA=300
@@ -4820,7 +4820,7 @@ SUBSECTION=Domestic
 DESCRIPTION=Cow, Brown and White
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=300
      
@@ -4858,7 +4858,7 @@ SUBSECTION=Domestic
 DESCRIPTION=Bull, Light Brown
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=600
      
@@ -4898,7 +4898,7 @@ SUBSECTION=Domestic
 DESCRIPTION=Bull, Dark Brown
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=600
      
@@ -4938,7 +4938,7 @@ SUBSECTION=Wild
 DESCRIPTION=Great Hart
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=300
      
@@ -4979,7 +4979,7 @@ SUBSECTION=Wild
 DESCRIPTION=Hind
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=300
      
@@ -5017,7 +5017,7 @@ SUBSECTION=Wild
 DESCRIPTION=Rat
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=150
      KARMA=-150
@@ -5060,7 +5060,7 @@ SUBSECTION=Wild
 DESCRIPTION=Boar
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      FAME=300
      
@@ -5102,7 +5102,7 @@ SUBSECTION=Domestic
 DESCRIPTION=Horse, Pack
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      KARMA=200
      
@@ -5143,7 +5143,7 @@ SUBSECTION=Domestic
 DESCRIPTION=Llama, Pack
 
 ON=@Create
-     NPC=<def.brain_animal>
+     NPC=brain_animal
      
      KARMA=200
      
@@ -5192,9 +5192,9 @@ SUBSECTION=Human
 DESCRIPTION=Human, Male
 
 ON=@Create
-     NPC=<def.brain_human>
+     NPC=brain_human
      
-     COLOR=<def.colors_skin>
+     COLOR=colors_skin
      
      FENCING={15.0 38.0}
      PARRYING={15.0 38.0}
@@ -5234,9 +5234,9 @@ SUBSECTION=Human
 DESCRIPTION=Human, Female
 
 ON=@Create
-     NPC=<def.brain_human>
+     NPC=brain_human
      
-     COLOR=<def.colors_skin>
+     COLOR=colors_skin
      
      FENCING={15.0 38.0}
      PARRYING={15.0 38.0}
@@ -5264,7 +5264,7 @@ SUBSECTION=Human
 DESCRIPTION=Human Ghost, Male
 
 ON=@Create
-     NPC=<def.brain_human>
+     NPC=brain_human
      
      FENCING={15.0 38.0}
      PARRYING={15.0 38.0}
@@ -5294,7 +5294,7 @@ SUBSECTION=Human
 DESCRIPTION=Human Ghost, Female
 
 ON=@Create
-     NPC=<def.brain_human>
+     NPC=brain_human
      
      FENCING={15.0 38.0}
      PARRYING={15.0 38.0}
@@ -5329,7 +5329,7 @@ SUBSECTION=Human
 DESCRIPTION=Human kid, male Blond
 
 ON=@Create
-     NPC=<def.brain_human>
+     NPC=brain_human
      
      FENCING={8.0 19.0}
      PARRYING={8.0 19.0}
@@ -5364,7 +5364,7 @@ SUBSECTION=Human
 DESCRIPTION=Human kid, male Brown
 
 ON=@Create
-     NPC=<def.brain_human>
+     NPC=brain_human
      
      FENCING={8.0 19.0}
      PARRYING={8.0 19.0}
@@ -5399,7 +5399,7 @@ SUBSECTION=Human
 DESCRIPTION=Human kid, female Blond
 
 ON=@Create
-     NPC=<def.brain_human>
+     NPC=brain_human
      
      FENCING={8.0 19.0}
      PARRYING={8.0 19.0}
@@ -5434,7 +5434,7 @@ SUBSECTION=Human
 DESCRIPTION=Human kid, female Brown
 
 ON=@Create
-     NPC=<def.brain_human>
+     NPC=brain_human
      
      FENCING={8.0 19.0}
      PARRYING={8.0 19.0}
@@ -5464,7 +5464,7 @@ SUBSECTION=Human
 DESCRIPTION=Human, Invisible
 
 ON=@Create
-     NPC=<def.brain_human>
+     NPC=brain_human
      
      FENCING={8.0 19.0}
      PARRYING={8.0 19.0}
