@@ -649,9 +649,9 @@ IF (<HasComponentProps <def.CompProps_ItemEquippable>>)
 			// SRC.SYSMESSAGELOC <def.color_text>,1062320//"Your attack chance has returned to normal."
 		// ENDIF
 	// ENDIF
-	IF (<DecreaseHitChance>)
-		SRC.DecreaseHitChance -= <DecreaseHitChance>
-		IF (<SRC.DecreaseHitChance>==0)
+	IF (<IncreaseHitChance>)
+		SRC.IncreaseHitChance -= <IncreaseHitChance>
+		IF (<SRC.IncreaseHitChance>==0)
 			SRC.SYSMESSAGELOC <def.color_text>,1062320//"Your attack chance has returned to normal."
 		ENDIF
 	ENDIF
