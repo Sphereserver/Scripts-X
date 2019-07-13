@@ -58,7 +58,7 @@ ON=@Create
    ATTR=attr_newbie
    COLOR=034
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1060738,<MORE>	//value: ~1_val~
+   addcliloc 1060738,<MORE>	//value: ~1_val~
 ON=@AfterClick
    LOCAL.ClickMsgText .= ": <MORE>"
 ON=@DClick

@@ -996,7 +996,7 @@ DESCRIPTION=Enchanted Writing Desk (unlit)
 ON=@Create
    MOREZ=29
 ON=@ClientTooltip
-   SRC.ADDCLILOC 502696	//turned off
+   addcliloc 502696	//turned off
 
 [ITEMDEF 09feb]
 DEFNAME=i_enchanted_writing_desk_south_lit
@@ -1009,7 +1009,7 @@ DESCRIPTION=Enchanted Writing Desk (lit)
 ON=@Create
    MOREZ=29
 ON=@ClientTooltip
-   SRC.ADDCLILOC 502695	//turned on
+   addcliloc 502695	//turned on
 
 [ITEMDEF 09fec]
 //enchanted writing desk (south)(anim)
@@ -1037,7 +1037,7 @@ DESCRIPTION=Enchanted Writing Desk (unlit)
 ON=@Create
    MOREZ=29
 ON=@ClientTooltip
-   SRC.ADDCLILOC 502696	//turned off
+   addcliloc 502696	//turned off
 
 [ITEMDEF 09ff2]
 DEFNAME=i_enchanted_writing_desk_east_lit
@@ -1050,7 +1050,7 @@ DESCRIPTION=Enchanted Writing Desk (lit)
 ON=@Create
    MOREZ=29
 ON=@ClientTooltip
-   SRC.ADDCLILOC 502695	//turned on
+   addcliloc 502695	//turned on
 
 [ITEMDEF 09ff3]
 //enchanted writing desk (east)(anim)

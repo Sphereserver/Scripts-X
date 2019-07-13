@@ -899,7 +899,7 @@ DESCRIPTION=Santa Statue (unlit)
 ON=@Create
    MOREZ=29
 ON=@ClientTooltip
-   SRC.ADDCLILOC 502696	//turned off
+   addcliloc 502696	//turned off
 
 [ITEMDEF 04a99]
 DEFNAME=i_statue_santa_south
@@ -912,7 +912,7 @@ DESCRIPTION=Santa Statue (unlit)
 ON=@Create
    MOREZ=29
 ON=@ClientTooltip
-   SRC.ADDCLILOC 502696	//turned off
+   addcliloc 502696	//turned off
 
 [ITEMDEF 04a9a]
 DEFNAME=i_statue_santa_east_lit
@@ -925,7 +925,7 @@ DESCRIPTION=Santa Statue (lit)
 ON=@Create
    MOREZ=29
 ON=@ClientTooltip
-   SRC.ADDCLILOC 502695	//turned on
+   addcliloc 502695	//turned on
 
 [ITEMDEF 04a9b]
 DEFNAME=i_statue_santa_south_lit
@@ -938,7 +938,7 @@ DESCRIPTION=Santa Statue (lit)
 ON=@Create
    MOREZ=29
 ON=@ClientTooltip
-   SRC.ADDCLILOC 502695	//turned on
+   addcliloc 502695	//turned on
 
 
 [ITEMDEF 04b20]
@@ -2152,7 +2152,7 @@ CATEGORY=Christmas
 SUBSECTION=Misc
 DESCRIPTION=Card of Semidar (Dupre the Paladin)
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1156396	//Dupre the Paladin
+   addcliloc 1156396	//Dupre the Paladin
 
 [ITEMDEF i_card_semidar_nystul]
 ID=09c14
@@ -2163,7 +2163,7 @@ CATEGORY=Christmas
 SUBSECTION=Misc
 DESCRIPTION=Card of Semidar (Nystul the Mage)
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1156397	//Nystul the Mage
+   addcliloc 1156397	//Nystul the Mage
 
 [ITEMDEF i_card_semidar_shamino]
 ID=09c14
@@ -2174,7 +2174,7 @@ CATEGORY=Christmas
 SUBSECTION=Misc
 DESCRIPTION=Card of Semidar (Shamino Sallé Dacil)
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1156398	//Shamino Sallé Dacil
+   addcliloc 1156398	//Shamino Sallé Dacil
 
 [ITEMDEF i_card_semidar_juonar]
 ID=09c14
@@ -2185,7 +2185,7 @@ CATEGORY=Christmas
 SUBSECTION=Misc
 DESCRIPTION=Card of Semidar (Juo'nar the Lich)
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1156399	//Juo'nar the Lich
+   addcliloc 1156399	//Juo'nar the Lich
 
 [ITEMDEF i_card_semidar_professor_rafkin]
 ID=09c14
@@ -2196,7 +2196,7 @@ CATEGORY=Christmas
 SUBSECTION=Misc
 DESCRIPTION=Card of Semidar (Professor Ellie Rafkin)
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1156562	//Professor Ellie Rafkin
+   addcliloc 1156562	//Professor Ellie Rafkin
 
 [ITEMDEF i_card_semidar_minax]
 ID=09c14
@@ -2207,7 +2207,7 @@ CATEGORY=Christmas
 SUBSECTION=Misc
 DESCRIPTION=Card of Semidar (Minax the Enchantress)
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1156981	//Minax the Enchantress
+   addcliloc 1156981	//Minax the Enchantress
 
 [ITEMDEF m_sleigh_reindeer_n]
 ID=09dc6

@@ -116,7 +116,7 @@ DESCRIPTION=Candelabra of Souls
 ON=@Create
    ATTR=attr_magic|attr_identified
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1061078,<INSTANCES>
+   addcliloc 1061078,<INSTANCES>
 
 [ITEMDEF i_captain_quacklebush_cutlass]
 ID=i_cutlass
@@ -236,7 +236,7 @@ ON=@Create
    COLOR=047e
    ATTR=attr_magic|attr_identified
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1061078,<INSTANCES>
+   addcliloc 1061078,<INSTANCES>
 
 [ITEMDEF i_gloves_pugilist]
 ID=i_leather_gloves
@@ -271,7 +271,7 @@ DESCRIPTION=Gold Bricks
 ON=@Create
    ATTR=attr_magic|attr_identified
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1061078,<INSTANCES>
+   addcliloc 1061078,<INSTANCES>
 
 [ITEMDEF i_gwennos_harp]
 ID=i_harp_large
@@ -285,10 +285,10 @@ ON=@Create
    COLOR=047e
    ATTR=attr_magic|attr_identified
 ON=@ClientToolTip
-   SRC.ADDCLILOC 1061078,<INSTANCES>
+   addcliloc 1061078,<INSTANCES>
    IF (<ATTR>&attr_identified)
-      SRC.ADDCLILOC 1060472
-      SRC.ADDCLILOC 1060473
+      addcliloc 1060472
+      addcliloc 1060473
    ENDIF
 
 [ITEMDEF i_helm_swiftness]
@@ -348,10 +348,10 @@ ON=@Create
    COLOR=047e
    ATTR=attr_magic|attr_identified
 ON=@ClientToolTip
-   SRC.ADDCLILOC 1061078,<INSTANCES>
+   addcliloc 1061078,<INSTANCES>
    IF (<ATTR> & attr_identified)
-      SRC.ADDCLILOC 1060479
-      SRC.ADDCLILOC 1060460
+      addcliloc 1060479
+      addcliloc 1060460
    ENDIF
 
 [ITEMDEF i_luna_lance]
@@ -460,7 +460,7 @@ DESCRIPTION=Phillip's Wooden Steed
 ON=@Create
    ATTR=attr_magic|attr_identified
 ON=@ClientToolTip
-   SRC.ADDCLILOC 1061078,<INSTANCES>
+   addcliloc 1061078,<INSTANCES>
 
 [ITEMDEF i_pixie_swatter]
 ID=i_scepter
@@ -516,7 +516,7 @@ ON=@Create
    COLOR={0 1 0482 1 0489 1 0495 1 04f2 1}
    ATTR=attr_magic|attr_identified
 ON=@ClientToolTip
-   SRC.ADDCLILOC 1061078,<INSTANCES>
+   addcliloc 1061078,<INSTANCES>
 
 [ITEMDEF i_art_shield_invul]
 ID=i_shield_order
@@ -548,7 +548,7 @@ ON=@Create
    COLOR=037b
    ATTR=attr_magic|attr_identified
 ON=@ClientToolTip
-   SRC.ADDCLILOC 1061078,<INSTANCES>
+   addcliloc 1061078,<INSTANCES>
 
 [ITEMDEF i_staff_of_power]
 ID=i_staff_black
@@ -581,7 +581,7 @@ ON=@Create
    COLOR=066c
    ATTR=attr_magic|attr_identified
 ON=@ClientToolTip
-   SRC.ADDCLILOC 1061078,<INSTANCES>
+   addcliloc 1061078,<INSTANCES>
 
 [ITEMDEF i_violet_courage]
 ID=i_armor_female_plate
@@ -881,7 +881,7 @@ ON=@Create
    ATTR=attr_magic|attr_identified
    HITPOINTS=255
 ON=@ClientToolTip
-   SRC.ADDCLILOC 1075086
+   addcliloc 1075086
 
 [ITEMDEF i_robe_eclipse]
 ID=i_robe
@@ -971,7 +971,7 @@ ON=@Create
    ATTR=attr_magic|attr_identified
    HITPOINTS=255
 ON=@ClientToolTip
-   SRC.ADDCLILOC 1075086
+   addcliloc 1075086
 
 [ITEMDEF i_totem_of_void]
 ID=i_talisman4

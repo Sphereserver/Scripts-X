@@ -82,7 +82,7 @@ CATEGORY=Artifacts
 SUBSECTION=Lesser Treasures of Tokuno
 DESCRIPTION=Pigments of Tokuno (Lesser)
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1060584,<dMORE1>	//uses remaining: ~1_val~
+   addcliloc 1060584,<dMORE1>	//uses remaining: ~1_val~
 ON=@Create
    ATTR=attr_magic|attr_identified
    MORE1=1
@@ -130,7 +130,7 @@ CATEGORY=Artifacts
 SUBSECTION=Greater Treasures of Tokuno
 DESCRIPTION=Pigments of Tokuno (Greater)
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1060584,<dMORE1>	//uses remaining: ~1_val~
+   addcliloc 1060584,<dMORE1>	//uses remaining: ~1_val~
 ON=@Create
    ATTR=attr_magic|attr_identified
    MORE1=1
@@ -370,7 +370,7 @@ ON=@Create
    ENDDO
    TAG.Charges=300
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1060584,<dTAG0.Charges>	//uses remaining: ~1_val~
+   addcliloc 1060584,<dTAG0.Charges>	//uses remaining: ~1_val~
 
 [ITEMDEF i_gloves_of_the_sun]
 ID=i_leather_gloves

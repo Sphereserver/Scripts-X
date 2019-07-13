@@ -422,6 +422,7 @@ DEFNAME=i_pitcher_glass
 TYPE=t_pitcher_empty
 TDATA1=i_pitcher_glass
 FLIP=1
+VALUE=3
 CATEGORY=Decoration - Kitchen and Dining
 SUBSECTION=Table Settings
 DESCRIPTION=Empty Glass Pitcher
@@ -1292,8 +1293,8 @@ ON=@Create
    MOREM=6
 
 [ITEMDEF 01041]
-DEFNAME=i_quiche_baked
-NAME=baked quiche
+DEFNAME=i_pie_baked
+NAME=baked pie
 TYPE=t_food
 VALUE=15
 WEIGHT=0.2

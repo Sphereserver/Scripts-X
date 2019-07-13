@@ -46,7 +46,7 @@ VALUE=10000
 
 ON=@ClientToolTip
 if (<TAG0.MODE>)
-	SRC.ADDCLILOC <eval 1018322+<TAG0.MODE>>
+	addcliloc <eval 1018322+<TAG0.MODE>>
 endif
 
 ON=@Click

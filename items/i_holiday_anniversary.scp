@@ -696,7 +696,7 @@ DESCRIPTION=15th Anniversary Cake
 ON=@Create
    MORE2=10
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1153151,<dMORE2>	//Slices: ~1_amt~ 
+   addcliloc 1153151,<dMORE2>	//Slices: ~1_amt~ 
 ON=@DClick
    SERV.NEWITEM i_cake_15th_anniversary_slice
    NEW.BOUNCE

@@ -163,7 +163,7 @@ ON=@Create
    MOREP=-1,-1
    MORE1=10
 ON=@ClientTooltip
-   SRC.ADDCLILOC 1075217,<dMORE1>	//~1_val~ charges remaining
+   addcliloc 1075217,<dMORE1>	//~1_val~ charges remaining
 
 [ITEMDEF 01f15]
 //recall rune
@@ -1931,7 +1931,7 @@ ON=@Create
    MOREY=50.0
    MORE2={5 15}
 ON=@ClientToolTip
-   SRC.ADDCLILOC 1044391
+   addcliloc 1044391
 
 [ITEMDEF i_wand_harm]
 ID=i_wand_4

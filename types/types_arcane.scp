@@ -84,7 +84,7 @@ DESCRIPTION=Arcane Gem
 // This TYPEDEF is added to equipable items that grant the wearer the
 // e_arcane_player_effect EVENT.
 ON=@CLIENTTOOLTIP
-	SRC.ADDCLILOC 1061837,<dTAG0.ArcaneCharges>,24
+	addcliloc 1061837,<dTAG0.ArcaneCharges>,24
    RETURN 0
 ON=@Equip
    IF (<TAG0.ArcaneCharges> > 0)

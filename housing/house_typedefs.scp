@@ -43,16 +43,16 @@ if (<link>==<def.link_invalid>)
     return 0
 endif
 if <link.tag0.demolition>
-    src.addcliloc 1070722, Demolition Scheduled in <QVAL (<eval <timer>/86400> < 1)? <eval (<timer>%86400)/3600> hours and <eval ((<timer>%86400)%3600)/60> minutes.:<eval <timer>/86400> days>
+    addcliloc 1070722, Demolition Scheduled in <QVAL (<eval <timer>/86400> < 1)? <eval (<timer>%86400)/3600> hours and <eval ((<timer>%86400)%3600)/60> minutes.:<eval <timer>/86400> days>
 elif <link.region.tag0.forsale>
-    src.addcliloc 1070722, FOR SALE <link.dtag0.price>gp
+    addcliloc 1070722, FOR SALE <link.dtag0.price>gp
 endif
-src.addcliloc 1061639,<name>
-src.addcliloc 1061640,<uid.<more1>.name>
+addcliloc 1061639,<name>
+addcliloc 1061640,<uid.<more1>.name>
 if <link.housetype>==<def.house_guild>
-    src.addcliloc 1042971,[<uid.<tag0.is_guild>.abbrev>] Guild House
+    addcliloc 1042971,[<uid.<tag0.is_guild>.abbrev>] Guild House
 endif
-src.addcliloc <QVAL (<link.housetype>==<def.house_private>)? 1061642:1061641>
+addcliloc <QVAL (<link.housetype>==<def.house_private>)? 1061642:1061641>
 return 1
 
 
@@ -110,7 +110,7 @@ endif
 // Event for locked down items.
 [TYPEDEF ei_house_lockdown]
 ON=@ClientToolTip
-src.addcliloc 501643
+addcliloc 501643
  
 ON=@PickUp_Ground   // Do not allow to move this item
 if (!<src.IsGM>)
@@ -160,20 +160,20 @@ endif
 
 ON=@ClientToolTip
 if (<tag0.guild>)
-	src.addcliloc 1042971, [<uid.<tag0.guild>.abbrev>] Guild Members Only
+	addcliloc 1042971, [<uid.<tag0.guild>.abbrev>] Guild Members Only
 	return 1
 elif (<tag0.owneronly>)
-	src.addcliloc 1070722, Private
-	src.addcliloc 1042971, Owner Only
+	addcliloc 1070722, Private
+	addcliloc 1042971, Owner Only
 	return 1
 elif (<tag0.restricted>)
 	if (<tag.restricted>==1)
-		src.addcliloc 1042971, Restricted Access
-		src.addcliloc 1070722, Owner & Co-owners Only
+		addcliloc 1042971, Restricted Access
+		addcliloc 1070722, Owner & Co-owners Only
 		return 1
 	elif (<tag.restricted>==2)
-		src.addcliloc 1042971, Restricted Access
-		src.addcliloc 1070722, Owner Co-owners & Friends Only
+		addcliloc 1042971, Restricted Access
+		addcliloc 1070722, Owner Co-owners & Friends Only
 		return 1
 	endif
 endif
@@ -245,7 +245,7 @@ attr |= <def.attr_invis>
 // Only allowed players can manage their storage (Refer to f_house_can_access to see the allowance).
 [TYPEDEF ei_house_secure]
 ON=@clienttooltip
-src.addcliloc 501644
+addcliloc 501644
  
 ON=@PickUp_ground
 if (!<src.IsGM>)
@@ -287,19 +287,19 @@ endif
 
 ON=@ClientToolTip
 if (<tag0.guild>)
-	src.addcliloc 1042971, [<uid.<tag0.guild>.abbrev>] Guild Members Only
+	addcliloc 1042971, [<uid.<tag0.guild>.abbrev>] Guild Members Only
 	return 1
 elif (<tag0.access>==house_access_owner)
-	src.addcliloc 1070722, Private
-	src.addcliloc 1042971, Owner Only
+	addcliloc 1070722, Private
+	addcliloc 1042971, Owner Only
 	return 1
 elif (<tag0.access>==house_access_coowner)
-	src.addcliloc 1042971, Restricted Access
-	src.addcliloc 1070722, Owner & Co-owners Only
+	addcliloc 1042971, Restricted Access
+	addcliloc 1070722, Owner & Co-owners Only
 	return 1
 elif (<tag0.access>==house_access_friend)
-	src.addcliloc 1042971, Restricted Access
-	src.addcliloc 1070722, Owner Co-owners & Friends Only
+	addcliloc 1042971, Restricted Access
+	addcliloc 1070722, Owner Co-owners & Friends Only
 	return 1
 endif
 
@@ -324,9 +324,9 @@ MESSAGE Location: <LINK.SEXTANTP> //<LINK.REGION.REGION.NAME> (<LINK.P>)
 return 1
 
 ON=@ClientToolTip
-SRC.ADDCLILOC 1061112,<LINK.NAME>
-SRC.ADDCLILOC 1061113,<UID.<LINK.MORE2>.NAME>
-SRC.ADDCLILOC 1061114,<STRARG <LINK.SEXTANTP>> <STREAT <LINK.SEXTANTP>>
+addcliloc 1061112,<LINK.NAME>
+addcliloc 1061113,<UID.<LINK.MORE2>.NAME>
+addcliloc 1061114,<STRARG <LINK.SEXTANTP>> <STREAT <LINK.SEXTANTP>>
 
 ON=@Timer
 if (<CONT.TYPE>==t_eq_trade_window)
