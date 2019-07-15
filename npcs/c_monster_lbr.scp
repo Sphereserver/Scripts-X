@@ -1972,11 +1972,11 @@ ON=@Create
     MAGERY={99.0 100.0}
     EVALUATINGINTEL={90.0 100.0}
     MEDITATION={90.0 100.0}
+	
+    f_addExtendedAIEvent e_extendedAI_hit_etherealWarrior
     
     ITEMNEWBIE=i_spellbook
     ADDCIRCLE 8,1
-    
-    f_addExtendedAIEvent e_extendedAI_hit_etherealWarrior
 
 ON=@CreateLoot
     ITEM=i_gold,{900 1000}
