@@ -594,10 +594,10 @@ else
 	local.y <eval (<local.right> - <local.left>) + 1>
     local.x /= 2
     local.y /= 2
-    local.x=<max 7,<local.x>>
-    local.y=<max 7,<local.y>>
-    local.x=<min 18,<local.x>>
-    local.y=<min 18,<local.y>>
+    local.x=<eval max 7,<local.x>>
+    local.y=<eval max 7,<local.y>>
+    local.x=<eval min 18,<local.x>>
+    local.y=<eval min 18,<local.y>>
 	local.xy <dlocal.x>x<dlocal.y>
 endif
 forchars <eval (((<argv[2]>+<argv[3]>)/2)+2)>
