@@ -911,7 +911,7 @@ button 7 100 4017 4018 1 0 0
 dtext 47 100 90 Abort
 button 7 130 4005 4007 1 0 1
 dtext 47 130 90 Demolish & Destroy Contents
-if ((<type>==t_multi_custom) || (<def.hs_redeed_fee> && (<type>==t_multi))
+if (<type>==t_multi_custom) || (<def.hs_redeed_fee> && (<type>==t_multi))
     if !<src.isgm>
         local.total=<eval <value>+<tag0.boughtstorage>+<tag0.construction>>
         local.refund=<eval <tag0.boughtstorage>+<tag0.construction>>
@@ -1044,7 +1044,7 @@ if !(<src.isgm>)
                 if (<src.gold> >= <dlocal.total>) 
                     src.gold -= <dlocal.total>
                     ref2=<owner>
-                    if (strmatch(*Britannic Realtors*, <ref2.name>)
+                    if (strmatch(*Britannic Realtors*, <ref2.name>))
                         owner <src>
                         ref2.remove
                         if <def.hs_can_decay>
@@ -1080,7 +1080,7 @@ if !(<src.isgm>)
             if (<src.gold> >= <dlocal.total>) 
                 src.gold -= <dlocal.total>
                 ref2=<owner>
-                if (strmatch(*Britannic Realtors*, <ref2.name>)
+                if (strmatch(*Britannic Realtors*, <ref2.name>))
                     owner <src>
                     ref2.remove
                     if <def.hs_can_decay>
@@ -1112,7 +1112,7 @@ if !(<src.isgm>)
         if (<src.gold> >= <dlocal.total>) 
             src.gold -= <dlocal.total>
             ref2=<owner>
-            if (strmatch(*Britannic Realtors*, <ref2.name>)
+            if (strmatch(*Britannic Realtors*, <ref2.name>))
                 owner <src>
                 ref2.remove
                 if <def.hs_can_decay>
@@ -1339,7 +1339,7 @@ on=1,5
             src.sysmessage @,,1 Everyone can open <name> now.
             // src.sdialog d_house_secure
             return 1
-
+endif
 
 [DIALOG d_house_commands]
 0,0
