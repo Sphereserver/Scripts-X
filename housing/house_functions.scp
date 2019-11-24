@@ -88,9 +88,9 @@ ref1 = <owner>
 local.list = <argv[0]>
 dtext 125 130 07f9 <local.list> List
 dtext 230 140 07f9 <<local.list><qval (strmatch(*access*,<local.list>))?es:s>> / 10
-if (strmatch(*ban*,<local.list>)
+if (strmatch(*ban*,<local.list>))
 	local.fontcolor = 32
-elif (strmatch(*access*,<local.list>)
+elif (strmatch(*access*,<local.list>))
 	local.fontcolor =  367
 else
 	local.fontcolor = 07f9
@@ -108,7 +108,7 @@ if <<local.list><qval (strmatch(*access*,<local.list>))?es:s>>
 		if (<local._for>==11)
 			local.y=170
 		endif
-		if ((<isowner <src>>) || (<get<local.list>pos <src>> >= 0) || (<src.isgm>)) && ((strmatch(*coowner*,<local.list>) || (strmatch(*friend*,<local.list>))
+		if ((<isowner <src>>) || (<get<local.list>pos <src>> >= 0) || (<src.isgm>)) && ((strmatch(*coowner*,<local.list>)) || (strmatch(*friend*,<local.list>)))
 			if (<<local.list>.<local._for>>==<src.uid>) || (<isowner <src>>) || (<src.isgm>)
 				dtext 57 <local.y> <local.fontcolor> <<local.list>.<local._for>.name>
 				if <argv[1]>
@@ -117,7 +117,7 @@ if <<local.list><qval (strmatch(*access*,<local.list>))?es:s>>
 			else
 				dtext 57 <local.y> <local.fontcolor> <<local.list>.<local._for>.name>
 			endif
-		elif ((<isowner <src>>) || (<GetCoownerPos <src>> >= 0) || (<src.isgm>)) && ((strmatch(*friend*,<local.list>) || (strmatch(*access*,<local.list>) ||(strmatch(*ban*,<local.list>)))
+		elif ((<isowner <src>>) || (<GetCoownerPos <src>> >= 0) || (<src.isgm>)) && ((strmatch(*friend*,<local.list>)) || (strmatch(*access*,<local.list>)) ||(strmatch(*ban*,<local.list>)))
 			dtext 57 <local.y> <local.fontcolor> <<local.list>.<local._for>.name>
 			serv.log a
 			if <argv[1]>
