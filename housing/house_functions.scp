@@ -275,7 +275,7 @@ ref1=<region.uid>
 if !(<ref1.IsOwner <uid>> || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || <IsGM>) // Double check to prevent players to get the target on their house and use it on another.
     return
 endif
-if <def.hs_hs_secure_locks_limit>)
+if <def.hs_hs_secure_locks_limit>
 	if <ref1.currentstorage> >= <ref1.maxstorage>
 		sysmessage @32,,1 Your house reached its storage limit.
 		return
@@ -320,7 +320,7 @@ if !(<ref1.IsOwner <uid>> || (<ref1.GetCoownerPos <uid>> >= 0) || <IsGM>) // Dou
 	sysmessage @32,,1 Only owner and co-owner can secure items.
     return
 endif
-if <def.hs_hs_secure_locks_limit>)
+if <def.hs_hs_secure_locks_limit>
 	if (<ref1.currentstorage> >= <ref1.maxstorage>) || (<eval <argo.count>+1> >= <ref1.maxstorage>)
 		sysmessage @32,,1 Your house reached its storage limit.
 		return
