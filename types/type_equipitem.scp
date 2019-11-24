@@ -334,7 +334,6 @@ IF (<SRC.IsPlayer>)
 	ELSEIF ( ( (<CanUse>&<def.can_u_elf>) && !(<SRC.f_isElf>) ) && !( (<CanUse>&<def.can_u_human>) && (<src.f_isHuman>) ) )		//can't be used by elves
 			SRC.SYSMESSAGELOC <def.color_text>,1072203//"Only elves may use this."
 			RETURN 1
-		ENDIF
 	ENDIF
 ENDIF
 
