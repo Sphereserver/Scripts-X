@@ -250,7 +250,7 @@ ElIf (<Int> <= 800)    // Lich Lord
   f_lich_AssumeForm 300
   P=<New.P>
   Update
-ElIF(<Int> <= 1200)    // Ancient Lich
+ElIF (<Int> <= 1200)    // Ancient Lich
   Serv.NewNPC={c_Flesh_Golem 1 c_Gore_Fiend 1 c_Patchwork_Skeleton 1 c_Interred_Grizzle 1 c_Rotting_Corpse 1 c_Mummy 1}
   New.Amount={4 1 6 1 8 1}
   New.Flags |= <def.StatF_Conjured>
