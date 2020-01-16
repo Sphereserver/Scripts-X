@@ -1109,7 +1109,7 @@ ARMOR=10
 HEIGHT=2
 
 RESOURCES=3 i_ribs_raw,2 i_hide
-FOODTYPE=55 i_fruit_gourd1
+FOODTYPE=55 i_fruit_gourd_yellow
 DESIRES=c_man,c_woman
 AVERSIONS=e_carnivores3
 
@@ -1150,7 +1150,7 @@ ARMOR=10
 HEIGHT=3
 TAG.BARDING.DIFF=30.0
 
-FOODTYPE=55 i_fruit_gourd1
+FOODTYPE=55 i_fruit_gourd_yellow
 DESIRES=c_man,c_woman
 AVERSIONS=e_carnivores3
 RESOURCES=3 i_ribs_raw,3 i_hide
@@ -1561,5 +1561,55 @@ CATEGORY=Humanoids
 SUBSECTION=Elves
 DESCRIPTION=Elf Ghost, Female
 
+[CHARDEF 0b1]
+//FIXME: Incomplete Stratics data
+//FIXME: Area attack spell that only works when not tamed
+//FIXME: Special command 'Trick' that creates a black cloud
+DEFNAME=c_warhorse_dread
+NAME=dread warhorse
+ICON=i_pet_horse_nightmare
+SOUND=snd_animals_horse1
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=20,26
+ARMOR=65
+DESIRES=r_plains,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=e_carnivores2,e_carnivores3
+FOODTYPE=t_meat_raw
+MAXFOOD=35
+RESOURCES=5 i_ribs_raw,10 i_hide
+BLOODCOLOR=colors_blood
+MOVERATE=100
+TAG.Barding.Diff=120.0
+FollowerSlots=3
+DamEnergy=40
+DamPoison=20
+TEVENTS=e_horses
+TEVENTS=e_carnivores2
+CATEGORY=Mounts
+SUBSECTION=Wild
+DESCRIPTION=Dread Warhorse
+ON=@Create
+   NPC=brain_animal
+   FAME={3000 3499}
+   KARMA={-3000 -2499}
+   STR={500 555}
+   MAXHITS={555 650}
+   DEX={85 125}
+   MAXSTAM={85 125}
+   INT={100 160}
+   MAXMANA={100 160}
+   EVALUATINGINTEL={15.0 20.0}
+   MAGICRESISTANCE={90.0 95.0}
+   MAGERY={35.0 50.0}
+   TACTICS={105.0 110.}
+//   TAMING={105.0 110.0}
+   WRESTLING={95.0 100.0}
+   MODAR={0 10}
+   RESCOLD={20 40}
+   RESENERGY={40 50}
+   RESFIRE={20 40}
+   RESPOISON={50 60}
+ON=@NPCRestock
+   ITEM=loot_warhorse_dread
 
 [EOF]

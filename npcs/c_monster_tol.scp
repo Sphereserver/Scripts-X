@@ -1913,7 +1913,7 @@ ON=@Create
 [CHARDEF 05a0]
 DEFNAME=c_eowmu
 NAME=Eowmu
-ICON=i_pet_eowmu
+ICON=i_pet_ostard_forest //FIXME
 SOUND=snd_animal_ostard_desert1
 CAN=mt_walk|mt_run
 
@@ -1960,7 +1960,7 @@ ON=@Create
 [CHARDEF 05a1]
 DEFNAME=c_skeletal_cat
 NAME=Skeletal Cat
-ICON=i_pet_skeletal_cat
+ICON=i_pet_cat //FIXME
 SOUND=snd_monster_skeldragon1
 CAN=mt_walk|mt_run
 
@@ -2006,7 +2006,7 @@ ON=@Create
 [CHARDEF 05c7]
 DEFNAME=c_khal_ankur
 NAME=Khal Ankur
-ICON=i_pet_khal_ankur
+ICON=i_pet_ogre //fixme
 SOUND=snd_monster_exodus1
 CAN=mt_walk|mt_run
 

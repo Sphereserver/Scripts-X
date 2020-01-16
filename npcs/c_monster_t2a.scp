@@ -1329,7 +1329,7 @@ ARMOR=15
 FACTION=faction_snake
 HEIGHT=6
 
-RESOURCES=50 i_ribs_raw,8 i_reag_serpent_scale
+RESOURCES=50 i_ribs_raw,8 i_reag_nox_crystal
 FOODTYPE=25 t_meat_raw,t_fish
 DESIRES=t_ship
 AVERSIONS=r_civilization
@@ -1372,7 +1372,7 @@ DEFNAME=c_hellhound
 NAME=hell hound
 ICON=i_pet_hellhound
 SOUND=snd_animals_wolf1
-CAN=mt_walk|mt_run|mt_nonhuman
+CAN=mt_walk|mt_run
 
 DAM=21,31
 ARMOR=25
@@ -2201,7 +2201,7 @@ DEFNAME=c_ostard_frenzied
 Defname2=c_ostard_zostrich
 NAME=Zostrich
 SOUND=0275
-ICON=i_pet_ostard_zostrich
+ICON=i_pet_ostard_frenzied_2
 CAN=mt_walk|mt_run
 
 DAM=11,17

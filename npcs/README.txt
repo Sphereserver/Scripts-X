@@ -68,7 +68,7 @@ TEVENTS=e_carnivores
 TSPEECH=spk_human
 
 //ResDisp*
-RESDISPDNID=c_elem_air
+RESDISPDNID=c_elemental_air
 RESLEVEL=2
 RESDISPDNHUE=55
 

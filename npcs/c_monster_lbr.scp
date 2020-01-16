@@ -127,7 +127,7 @@ ARMOR=70
 MOVERATE=50
 HEIGHT=45
 
-RESOURCES=40 i_hide_barbed,19 i_ribs_raw, 12 random_dragon_scales
+RESOURCES=40 i_hide_barbed,19 i_ribs_raw// fıxme, 12 random_dragon_scales
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
 RESDISPDNID=c_dragon_red
@@ -184,7 +184,7 @@ SOUND=362
 DAM=8,19
 ARMOR=40
 HEIGHT=18
-
+CAN=MT_WALK|MT_USEHANDS|MT_FLY
 RESOURCES=20 i_hide_horned, 10 i_ribs_raw
 FOODTYPE=25 t_meat_raw
 DESIRES=i_gold
@@ -332,7 +332,7 @@ ON=@CreateLoot
 [CHARDEF 065]
 DEFNAME=c_centaur
 NAME=Centaur
-SOUND=snd_centaur
+SOUND=snd_monster_centaur1
 ICON=i_pet_centaur
 CAN=mt_walk|mt_run|mt_usehands
 
@@ -436,7 +436,7 @@ ARMOR=36
 MOVERATE=40
 HEIGHT=30
 
-RESOURCES=19 i_ribs_raw,20 i_hide_barbed, 6 random_dragon_scales_wb
+RESOURCES=19 i_ribs_raw,20 i_hide_barbed//FIXME, 6 random_dragon_scales_wb
 FOODTYPE=40 t_meat_raw
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman
 AVERSIONS=e_carnivores3
@@ -611,7 +611,7 @@ ON=@CreateLoot
 [CHARDEF 073]
 DEFNAME=c_steed_ethereal
 NAME=ethereal steed
-ICON=i_steed_ethereal
+//fıxme ICON=i_steed_ethereal
 CAN=MT_WALK
 
 FollowerSlots=1
@@ -1101,7 +1101,7 @@ ON=@Createloot
 [CHARDEF 080]
 DEFNAME=c_pixie
 NAME=Pixie
-SOUND=snd_pixie
+SOUND=snd_monster_pixie
 ICON=i_pet_pixie
 CAN=mt_walk|mt_usehands|mt_fly|mt_run
 
@@ -1272,7 +1272,7 @@ ON=@CreateLoot
 [CHARDEF 084]
 DEFNAME=c_kirin
 NAME=Kirin
-SOUND=snd_kirin
+SOUND=snd_animal_kirin1
 ICON=i_pet_kirin
 CAN=mt_walk|mt_run
 
@@ -1824,7 +1824,7 @@ ON=@CreateLoot
 DEFNAME=c_spider_lord
 NAME=Mephitis
 SOUND=snd_monster_gispidr1
-ICON=i_pet_spiderlord
+ICON=i_pet_spider_lord
 CAN=mt_walk|mt_run|mt_usehands
 
 ARMOR=25
@@ -1930,7 +1930,7 @@ ON=@CreateLoot
 [CHARDEF 0af]
 DEFNAME=c_forest_lord
 NAME=Forest Lord
-SOUND=snd_pixie
+SOUND=snd_monster_pixie
 ICON=i_pet_forestlord
 CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
@@ -1985,7 +1985,7 @@ ON=@CreateLoot
 [CHARDEF 0b0]
 DEFNAME=c_forest_queen
 NAME=Forest Queen
-SOUND=snd_pixie
+SOUND=snd_monster_pixie
 ICON=i_pet_pixie
 CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
@@ -2290,7 +2290,7 @@ ON=@CreateLoot
 [CHARDEF 02f0]
 DEFNAME=c_iron_golem
 NAME=Iron Golem
-ICON=i_pet_irongolem
+ICON=i_pet_golem_iron
 CAN=mt_walk|mt_usehands
 SOUNDIDLE=542
 SOUNDNOTICE=541
@@ -2813,7 +2813,7 @@ ON=@CreateLoot
 DEFNAME=c_juggernaut
 DEFNAME=c_blackthorn_juggernaught
 NAME=Blackthorn Juggernaught
-ICON=i_pet_juggernaught
+ICON=i_pet_juggernaut
 CAN=mt_walk|mt_usehands|mt_equip
 SOUNDIDLE=0fd
 SOUNDNOTICE=026c
@@ -2874,7 +2874,7 @@ ON=@CreateLoot
 DEFNAME=c_meer_mage
 NAME=Meer Mage
 SOUND=snd_human_foomph09
-ICON=i_pet_meermage
+ICON=i_pet_meer_mage
 CAN=mt_walk|mt_run|mt_usehands
 SOUNDGETHIT=014d
 SOUNDHIT=0314
@@ -2936,7 +2936,7 @@ ON=@CreateLoot
 DEFNAME=c_Meer_Warrior
 NAME=Meer Warrior
 SOUND=snd_human_foomph09
-ICON=i_pet_meerwarrior
+ICON=i_pet_meer_warrior
 CAN=mt_walk|mt_run|mt_usehands
 SOUNDGETHIT=0156
 SOUNDDIE=015c
@@ -2991,7 +2991,7 @@ ON=@CreateLoot
 DEFNAME=c_meer_eternal
 NAME=Meer Eternal
 SOUND=snd_human_foomph09
-ICON=i_pet_meereternal
+ICON=c_meer_eternal
 CAN=mt_walk|mt_run
 SOUNDGETHIT=0167
 SOUNDHIT=028b
@@ -3054,7 +3054,7 @@ ON=@CreateLoot
 DEFNAME=c_meer_captain
 NAME=Meer Captain
 SOUND=snd_human_foomph09
-ICON=i_pet_meercaptain
+ICON=c_meer_captain
 CAN=mt_walk|mt_run|mt_usehands
 SOUNDGETHIT=014d
 SOUNDHIT=0314
@@ -3267,7 +3267,7 @@ DEFNAME=c_daemon_horde_minion
 DEFNAME2=c_horde_minion_small
 NAME=horde minion
 SOUND=357
-ICON=i_pet_hordedaemon
+ICON=i_pet_daemon_horde
 CAN=mt_walk|mt_run|mt_usehands
 
 DAM=5,10
@@ -3319,7 +3319,7 @@ ON=@CreateLoot
 DEFNAME=c_Doppleganger
 NAME=Doppleganger
 SOUND=snd_monster_gazer1
-ICON=i_pet_droppelganger
+ICON=i_pet_doppleganger
 CAN=mt_walk|mt_usehands
 
 DAM=14,22
@@ -3511,7 +3511,7 @@ ON=@CreateLoot
 DEFNAME=c_solen_worker
 NAME=Red Solen Worker
 SOUND=959
-ICON=i_pet_fireant_worker
+ICON=i_pet_solen_worker
 CAN=mt_walk|mt_run|mt_usehands
 
 DAM=5,7
@@ -3562,7 +3562,7 @@ ON=@CreateLoot
 DEFNAME=c_solen_warrior
 NAME=Red Solen Warrior
 SOUND=959
-ICON=i_pet_fireant_warrior
+ICON=i_pet_solen_warrior
 CAN=mt_walk|mt_run|mt_usehands
 
 DAM=5,15
@@ -3614,7 +3614,7 @@ ON=@CreateLoot
 DEFNAME=c_solen_queen
 NAME=Red Solen Queen
 SOUND=959
-ICON=i_pet_fireant_queen
+ICON=i_pet_solen_queen
 CAN=mt_walk|mt_usehands|mt_run
 
 DAM=10,15
@@ -3668,7 +3668,7 @@ ON=@CreateLoot
 DEFNAME=c_daemon_arcane
 NAME=Arcane Daemon
 SOUND=047d
-ICON=i_pet_arcanedaemon
+ICON=i_pet_daemon_arcane
 CAN=mt_walk|mt_fly|mt_run
 
 DAM=12,16
@@ -3927,7 +3927,7 @@ ON=@Createloot
 DEFNAME=c_giant_beetle
 NAME=Giant Beetle
 CAN=mt_walk|mt_run
-ICON=i_pet_giantbeetle
+ICON=i_pet_beetle_giant
 SOUNDIDLE=021d
 SOUNDNOTICE=021d
 SOUNDHIT=0162
@@ -3984,7 +3984,7 @@ ON=@Create
 DEFNAME=c_daemon_chaos
 NAME=Chaos Daemon
 SOUND=03e9
-ICON=i_pet_chaosdaemon
+ICON=i_pet_daemon_chaos
 CAN=mt_walk|mt_usehands|mt_fly|mt_run
 
 DAM=12,17
@@ -4091,7 +4091,7 @@ NAME=Skeletal Mount
 DEFNAME=c_swamp_dragon
 NAME=Swamp Dragon
 SOUND=snd_monster_dragon1
-ICON=i_pet_swampdragon
+ICON=i_pet_dragon_swamp
 CAN=mt_walk|mt_fly|mt_fire_immune
 
 DAM=6,24
@@ -4138,7 +4138,7 @@ ON=@Create
 DEFNAME=c_armored_swamp_dragon
 NAME=Armored Swamp Dragon
 SOUND=snd_monster_dragon1
-ICON=i_pet_swampdragon
+ICON=i_pet_dragon_swamp
 CAN=mt_walk|mt_fly|mt_fire_immune
 
 DAM=10,24

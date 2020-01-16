@@ -9,7 +9,7 @@ DAM=15,20
 ARMOR=35
 HEIGHT=18
 
-RESDISPDNID=c_elem_air
+RESDISPDNID=c_elemental_air
 RESLEVEL=4
 RESDISPDNHUE=33
 
@@ -61,7 +61,7 @@ DAM=12,15
 ARMOR=15
 HEIGHT=18
 
-RESDISPDNID=c_elem_air
+RESDISPDNID=c_elemental_air
 RESLEVEL=4
 RESDISPDNHUE=33
 
@@ -342,7 +342,7 @@ ON=@CreateLoot
 DEFNAME=c_rune_beetle
 NAME=Rune Beetle
 SOUND=04e5
-ICON=i_pet_runebeetle
+ICON=i_pet_beetle_rune
 CAN=mt_walk|mt_run|mt_usehands|mt_equip
 
 DAM=15,22
@@ -474,7 +474,7 @@ DAM=9,18
 ARMOR=18
 HEIGHT=10
 
-RESDISPDNID=c_wolf
+RESDISPDNID=c_wolf_grey
 RESLEVEL=4
 RESDISPDNHUE=33
 
@@ -668,8 +668,8 @@ NAME=Tsuki Wolf
 DEFNAME=c_tsuki_wolf
 ARMOR=35
 CAN=mt_walk|mt_run
-SOUND=snd_tsuki_wolf
-ICON=i_pet_tsukiwolf
+SOUND=snd_monster_tsuki_wolf1
+ICON=i_pet_wolf_tsuki
 
 DAM=14,18
 HEIGHT=25
@@ -732,7 +732,7 @@ NAME=Revenant Lion
 DEFNAME=c_revenant_lion
 SOUND=0515
 CAN=mt_walk|mt_run
-ICON=i_pet_ravlion
+ICON=i_pet_revenant_lion
 
 DAM=18,24
 ARMOR=18
@@ -948,7 +948,7 @@ ON=@Create
 [CHARDEF 0ff]
 DEFNAME=c_Yomotsu_Elder
 NAME=Yomotsu Elder
-SOUND=snd_yomotsu
+SOUND=snd_monster_yomotsu1
 ICON=i_pet_yomotsu_elder
 CAN=mt_walk|mt_run|mt_usehands
 

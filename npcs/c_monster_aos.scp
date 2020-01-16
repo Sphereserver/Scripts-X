@@ -113,7 +113,7 @@ DEFNAME=c_elem_crystal
 defname2=c_crystal_elemental
 NAME=Crystal Elemental
 SOUND=278
-ICON=i_pet_crystalelemental
+ICON=i_pet_elem_crystal
 CAN=mt_usehands|mt_walk|mt_run
 
 DAM=10,15
@@ -122,7 +122,7 @@ HEIGHT=15
 
 DESIRES=i_gold,e_notoriety,e_horses,c_man,c_woman,t_corpse
 
-RESDISPDNID=c_elem_air
+RESDISPDNID=c_elemental_air
 RESLEVEL=3
 RESDISPDNHUE=55
 
@@ -264,7 +264,7 @@ ON=@CreateLoot
 DEFNAME=c_devourer_souls
 NAME=Devourer of Souls
 SOUND=357
-ICON=i_pet_devourer
+ICON=i_pet_devourer_souls
 CAN=mt_usehands|mt_walk|mt_run
 
 DAM=22,26
@@ -318,7 +318,7 @@ ON=@CreateLoot
 DEFNAME=c_flesh_golem
 NAME=Flesh Golem
 SOUND=684
-ICON=i_pet_fleshgolem
+ICON=i_pet_golem_flesh
 CAN=mt_usehands|mt_walk|mt_run
 
 ARMOR=34
@@ -558,7 +558,7 @@ ON=@CreateLoot
 DEFNAME=c_bone_daemon
 NAME=Bone Daemon
 SOUND=snd_monster_skletn1
-ICON=i_pet_bonedaemon
+ICON=i_pet_daemon_bone
 CAN=mt_usehands|mt_walk|mt_run
 
 DAM=34,36
@@ -613,7 +613,7 @@ ON=@CreateLoot
 DEFNAME=c_patchwork_skeleton
 NAME=Patchwork Skeleton
 SOUND=048d
-ICON=i_pet_patchwork_sklt
+ICON=i_pet_skeleton_patchwork
 CAN=mt_usehands|mt_walk|mt_run
 
 DAM=18,22
@@ -801,7 +801,7 @@ ON=@Createloot
 DEFNAME=c_abyssmal_horror
 NAME=Abyssmal Horror
 SOUND=0451
-ICON=i_pet_abysmallhorror
+ICON=i_pet_abyssmal_horror
 CAN=mt_usehands|mt_walk|mt_run|mt_swim
 
 DAM=13,17
@@ -1208,7 +1208,7 @@ ON=@CreateLoot
 DEFNAME=c_daemon_moloch
 NAME=Moloch
 SOUND=0300
-ICON=i_pet_fourarmed_daemon
+ICON=i_pet_daemon_moloch
 CAN=mt_walk|mt_usehands
 
 DAM=15,23

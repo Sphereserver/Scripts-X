@@ -142,7 +142,7 @@ ON=@create
 DEFNAME=c_vollem
 NAME=vollem
 ICON=i_pet_vollem
-SOUND=snd_monster_vollem
+//SOUND=snd_monster_vollem
 CAN=mt_walk|mt_run|mt_nonhum
 
 DAM=16,22
