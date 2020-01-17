@@ -291,7 +291,7 @@ CATEGORY=Vegetation
 SUBSECTION=Plants and Flowers
 DESCRIPTION=Vines
 ON=@Create
-   FRUIT={ i_fruit_watermelon, i_fruit_pumpkin, i_fruit_pumpkin_2, i_fruit_pumpkin_3, i_fruit_gourd_yellow, i_fruit_gourd_green, i_fruit_cantaloupe, i_fruit_honeydewmelon, i_fruit_squash }
+   FRUIT={ i_fruit_watermelon, i_fruit_pumpkin, i_fruit_pumpkin_2, i_fruit_pumpkin_3, i_fruit_gourd_yellow, i_fruit_gourd_green, i_fruit_cantaloupe, i_fruit_honeydewmelon, i_fruit_squash, i_fruit_watermelon }
 
 [ITEMDEF 0c5f]
 //vines
@@ -305,7 +305,7 @@ CATEGORY=Vegetation
 SUBSECTION=Plants and Flowers
 DESCRIPTION=Vines
 ON=@Create
-   FRUIT={ i_fruit_watermelon, i_fruit_pumpkin, i_fruit_pumpkin_2, i_fruit_pumpkin_3, i_fruit_gourd_yellow, i_fruit_gourd_green, i_fruit_cantaloupe, i_fruit_honeydewmelon, i_fruit_squash }
+   FRUIT={ i_fruit_watermelon, i_fruit_pumpkin, i_fruit_pumpkin_2, i_fruit_pumpkin_3, i_fruit_gourd_yellow, i_fruit_gourd_green, i_fruit_cantaloupe, i_fruit_honeydewmelon, i_fruit_squash, i_fruit_watermelon }
 
 [ITEMDEF 0c60]
 //vines
@@ -318,7 +318,7 @@ CATEGORY=Vegetation
 SUBSECTION=Plants and Flowers
 DESCRIPTION=Vines
 ON=@Create
-   FRUIT={ i_fruit_watermelon, i_fruit_pumpkin, i_fruit_pumpkin_2, i_fruit_pumpkin_3, i_fruit_gourd_yellow, i_fruit_gourd_green, i_fruit_cantaloupe, i_fruit_honeydewmelon, i_fruit_squash }
+   FRUIT={ i_fruit_watermelon, i_fruit_pumpkin, i_fruit_pumpkin_2, i_fruit_pumpkin_3, i_fruit_gourd_yellow, i_fruit_gourd_green, i_fruit_cantaloupe, i_fruit_honeydewmelon, i_fruit_squash, i_fruit_watermelon }
 
 [ITEMDEF 0c61]
 DEFNAME=i_crop_turnip1

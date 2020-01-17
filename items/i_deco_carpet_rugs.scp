@@ -880,7 +880,7 @@ DUPEITEM=01e49
 //bearskin rug
 DUPEITEM=01e49
 
-[ITEMDEF i_multi_rug_polarbear_ew]
+[ITEMDEF i_multi_rug_polarbear_w]
 NAME=polarbear rug
 TYPE=t_multi
 CATEGORY=Multis

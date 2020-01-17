@@ -1819,6 +1819,73 @@ ON=@CreateLoot
     ITEM=i_reag_sulfur_ash,{15 25}
     ITEM=i_ingot_iron,2
 
+[CHARDEF 0aa]
+DEFNAME=c_llama_ethereal
+NAME=ethereal llama
+ICON=i_pet_llama
+SOUND=snd_animals_llama3
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=1,2
+ARMOR=1
+//DESIRES=
+//AVERSIONS=
+//FOODTYPE=
+//MAXFOOD=
+//RESOURCES=
+BLOODCOLOR=-1
+MOVERATE=100
+FollowerSlots=1
+CATEGORY=Mounts
+SUBSECTION=Ethereal
+DESCRIPTION=Llama
+ON=@Create
+   NPC=brain_animal
+   FAME=0
+   KARMA=0
+   STR={1 2}
+   MAXHITS={1 2}
+   DEX={1 2}
+   MAXSTAM={1 2}
+   INT={1 2}
+   MAXMANA={1 2}
+   RESCOLD=0
+   RESENERGY=0
+   RESFIRE=0
+   RESPOISON=0
+
+[CHARDEF 0ab]
+DEFNAME=c_ostard_ethereal
+NAME=ethereal ostard
+ICON=i_pet_ostard_desert
+SOUND=snd_animal_ostard_desert1
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=1,2
+ARMOR=1
+//DESIRES=
+//AVERSIONS=
+//FOODTYPE=
+//MAXFOOD=
+//RESOURCES=
+BLOODCOLOR=-1
+MOVERATE=100
+FollowerSlots=1
+CATEGORY=Mounts
+SUBSECTION=Ethereal
+DESCRIPTION=Ostard
+ON=@Create
+   NPC=brain_animal
+   FAME=0
+   KARMA=0
+   STR={1 2}
+   MAXHITS={1 2}
+   DEX={1 2}
+   MAXSTAM={1 2}
+   INT={1 2}
+   MAXMANA={1 2}
+   RESCOLD=0
+   RESENERGY=0
+   RESFIRE=0
+   RESPOISON=0
 
 [CHARDEF 0ad]
 DEFNAME=c_spider_lord
@@ -1864,7 +1931,7 @@ ON=@Create
     ANATOMY={30.0 75.0}
     POISONING={60.0 80.0}
 
-    f_addExtendedAIEvent e_extendedAI_aura_summon_dreadSpider
+    f_addExtendedAIEvent e_extendedAI_aura_summonDreadSpider
     
 ON=@CreateLoot
     ITEM=i_gold,{125 175}
@@ -2130,11 +2197,6 @@ ON=@Create
     WRESTLING={29.0 44.0}
     TAMING=80.0
 
-[ITEMDEF 9749]
-DEFNAME=i_pet_ridgeback
-NAME=Ridgeback
-
-
 [CHARDEF 0bc]
 DEFNAME=c_savage_ridgeback
 NAME=Savage Ridgeback
@@ -2236,6 +2298,180 @@ ON=@CreateLoot
     ITEM=i_ore_shadow
     ITEM=i_ingot_iron
 
+[CHARDEF 0bf]
+DEFNAME=c_kirin_ethereal
+NAME=ethereal ki-rin
+ICON=i_pet_kirin
+SOUND=snd_animal_kirin
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=1,2
+ARMOR=1
+//DESIRES=
+//AVERSIONS=
+//FOODTYPE=
+//MAXFOOD=
+//RESOURCES=
+BLOODCOLOR=-1
+MOVERATE=100
+FollowerSlots=1
+CATEGORY=Mounts
+SUBSECTION=Ethereal
+DESCRIPTION=Ki-Rin
+ON=@Create
+   COLOR=04fff
+   NPC=brain_animal
+   FAME=0
+   KARMA=0
+   STR={1 2}
+   MAXHITS={1 2}
+   DEX={1 2}
+   MAXSTAM={1 2}
+   INT={1 2}
+   MAXMANA={1 2}
+   RESCOLD=0
+   RESENERGY=0
+   RESFIRE=0
+   RESPOISON=0
+
+[CHARDEF 0c0]
+DEFNAME=c_unicorn_ethereal
+NAME=ethereal unicorn
+ICON=i_pet_unicorn
+SOUND=snd_animals_horse1
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=1,2
+ARMOR=1
+//DESIRES=
+//AVERSIONS=
+//FOODTYPE=
+//MAXFOOD=
+//RESOURCES=
+BLOODCOLOR=-1
+MOVERATE=100
+FollowerSlots=1
+CATEGORY=Mounts
+SUBSECTION=Ethereal
+DESCRIPTION=Unicorn
+ON=@Create
+   COLOR=04fff
+   NPC=brain_animal
+   KARMA=0
+   FAME=0
+   STR={1 2}
+   MAXHITS={1 2}
+   DEX={1 2}
+   MAXSTAM={1 2}
+   INT={1 2}
+   MAXMANA={1 2}
+   RESCOLD=0
+   RESENERGY=0
+   RESFIRE=0
+   RESPOISON=0
+
+[CHARDEF 0c1]
+DEFNAME=c_ridgeback_ethereal
+NAME=ethereal ridgeback
+ICON=i_pet_ridgeback
+SOUND=snd_animal_ostard_desert1
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=1,2
+ARMOR=1
+//DESIRES=
+//AVERSIONS=
+//RESOURCES=
+//FOODTYPE=
+//MAXFOOD=
+BLOODCOLOR=-1
+MOVERATE=100
+FollowerSlots=1
+CATEGORY=Mounts
+SUBSECTION=Ethereal
+DESCRIPTION=Ridgeback
+ON=@Create
+   COLOR=04fff
+   NPC=brain_animal
+   KARMA=0
+   FAME=0
+   STR={1 2}
+   MAXHITS={1 2}
+   DEX={1 2}
+   MAXSTAM={1 2}
+   INT={1 2}
+   MAXMANA={1 2}
+   RESCOLD=0
+   RESENERGY=0
+   RESFIRE=0
+   RESPOISON=0
+
+[CHARDEF 0c2]
+DEFNAME=c_swamp_dragon_ethereal
+NAME=ethereal swamp dragon
+ICON=i_pet_dragon_swamp
+SOUND=snd_monster_dragon1
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=1,2
+ARMOR=1
+//DESIRES=
+//AVERSIONS=
+//FOODTYPE=
+//MAXFOOD=
+//RESOURCES=
+BLOODCOLOR=-1
+MOVERATE=100
+FollowerSlots=1
+CATEGORY=Mounts
+SUBSECTION=Ethereal
+DESCRIPTION=Swamp Dragon
+ON=@Create
+   COLOR=04fff
+   NPC=brain_animal
+   FAME=0
+   KARMA=0
+   STR={1 2}
+   MAXHITS={1 2}
+   DEX={1 2}
+   MAXSTAM={1 2}
+   INT={1 2}
+   MAXMANA={1 2}
+   RESCOLD=0
+   RESENERGY=0
+   RESFIRE=0
+   RESPOISON=0
+
+[CHARDEF 0c3]
+DEFNAME=c_giant_beetle_ethereal
+NAME=ethereal giant beetle
+ICON=i_pet_beetle_giant
+SOUND=snd_monster_rune_beetle
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=1,2
+ARMOR=1
+//DESIRES=
+//AVERSIONS=
+//FOODTYPE=
+//MAXFOOD=
+//RESOURCES=
+BLOODCOLOR=-1
+MOVERATE=100
+FollowerSlots=1
+CATEGORY=Mounts
+SUBSECTION=Ethereal
+DESCRIPTION=Giant Beetle
+ON=@Create
+   COLOR=04fff
+   NPC=brain_animal
+   KARMA=0
+   FAME=0
+   STR={1 2}
+   MAXHITS={1 2}
+   DEX={1 2}
+   MAXSTAM={1 2}
+   INT={1 2}
+   MAXMANA={1 2}
+   RESCOLD=0
+   RESENERGY=0
+   RESFIRE=0
+   RESPOISON=0
 
 [CHARDEF 02ec]
 DEFNAME=c_wraith
@@ -4081,11 +4317,6 @@ ON=@Create
     TAMING=105.0
     MAGERY=100.0
 
-
-[ITEMDEF 9751]
-DEFNAME=i_pet_skeletalmount
-NAME=Skeletal Mount    
-    
 
 [CHARDEF 031a]
 DEFNAME=c_swamp_dragon

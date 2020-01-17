@@ -276,7 +276,7 @@ ON=@ClientTooltip
 [ITEMDEF i_gwennos_harp]
 ID=i_harp_large
 NAME=Gwenno's Harp
-SLAYER=slayer_repond|slayer_reptile
+SLAYER=faction_repond|faction_reptile
 TEVENTS=ei_artifact
 CATEGORY=Artifacts
 SUBSECTION=Minor Artifacts
@@ -339,7 +339,7 @@ ON=@Create
 [ITEMDEF i_iolos_lute]
 ID=i_lute
 NAME=Iolo's Lute
-SLAYER=slayer_demon|slayer_undead
+SLAYER=faction_demon|faction_undead
 TEVENTS=ei_artifact
 CATEGORY=Artifacts
 SUBSECTION=Minor Artifacts
@@ -377,7 +377,7 @@ ON=@Create
 [ITEMDEF i_night_kiss]
 ID=i_dagger
 NAME=Night's Kiss
-SLAYER=slayer_repond
+SLAYER=faction_repond
 HitLeechLife=40
 IncreaseSwingSpeed=30
 IncreaseDam=35
@@ -465,7 +465,7 @@ ON=@ClientToolTip
 [ITEMDEF i_pixie_swatter]
 ID=i_scepter
 NAME=Pixie Swatter
-SLAYER=slayer_fey
+SLAYER=faction_fey
 HitAreaPoison=75
 IncreaseSwingSpeed=30
 RESFIRE=12
@@ -806,7 +806,7 @@ HitLeechLife=40
 HitLeechMana=40
 HitLeechStam=40
 IncreaseSwingSpeed=60
-SLAYER=slayer_repond
+SLAYER=faction_repond
 TEVENTS=ei_equipitem
 TEVENTS=ei_artifact
 CATEGORY=Artifacts
