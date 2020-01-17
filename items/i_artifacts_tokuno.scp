@@ -455,7 +455,7 @@ ON=@Create
 ID=i_bokuto
 NAME=Peasant's Bokuto
 SelfRepair=3
-SLAYER=slayer_snake
+SLAYER=faction_snake
 HitLowerDef=30
 IncreaseSwingSpeed=10
 IncreaseDam=35
@@ -595,7 +595,7 @@ ON=@Create
 [ITEMDEF i_the_horselord]
 ID=i_yumi
 NAME=The Horselord
-SLAYER=slayer_elemental|slayer_reptile
+SLAYER=faction_elemental|faction_reptile
 BonusDex=5
 RegenMana=1
 LUCK=125
