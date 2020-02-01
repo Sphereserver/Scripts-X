@@ -312,10 +312,11 @@ LAYER_SPELL_Dryad_Allure		72
 LAYER_SPELL_Essence_Of_Wind		73
 
 //Mysticism
-LAYER_SPELL_Sleep				74
-LAYER_SPELL_Bombard				75
-LAYER_SPELL_Spell_Plague		76
-LAYER_SPELL_Nether_Cyclone		77
+LAYER_SPELL_Enchant				74
+LAYER_SPELL_Sleep				75
+LAYER_SPELL_Bombard				76
+LAYER_SPELL_Spell_Plague		77
+LAYER_SPELL_Nether_Cyclone		78
 
 [DEFNAME def_gumps]
 // name the gumps.
