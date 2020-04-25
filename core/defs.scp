@@ -194,7 +194,7 @@ mt_usehands       000200   // Can do actions that require hands: looting, moving
 mt_mount          000400   // can ride mountables
 mt_female         000800
 mt_nonhum         001000   // Body type for combat messages
-mt_run            002000
+mt_run            002000   // Not needed if mt_fly is activated
 mt_nodclicklos    004000   // when dclicking sth., ignore LOS checks
 mt_nodclickdist   008000   // when dclicking sth., ignore distance checks
 mt_nonmover       010000   // Stay in place, no move at all
