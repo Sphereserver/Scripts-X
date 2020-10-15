@@ -16,3 +16,5 @@ ELIF (<ARGN1> >= 60)
 ELSE
  return <ARGN1>m
 ENDIF
+
+[EOF]

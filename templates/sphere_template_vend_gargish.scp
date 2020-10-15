@@ -279,3 +279,5 @@ BUY=i_staff_serpentstone,{10 15}
 BUY=i_gargish_staff_gnarled,{10 15}
 BUY=i_log,{10 15}
 BUY=i_ingot_iron,{10 15}
+
+[EOF]

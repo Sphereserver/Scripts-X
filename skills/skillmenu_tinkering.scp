@@ -270,3 +270,5 @@ MAKEITEM=i_key_gold
 
 ON=i_key_iron <name> (<resmake>)
 MAKEITEM=i_key_iron
+
+[EOF]

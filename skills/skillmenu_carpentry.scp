@@ -351,3 +351,5 @@ MAKEITEM=i_BED_7
 
 ON=i_BED_8 <name> (<resmake>)
 MAKEITEM=i_BED_8
+
+[EOF]

@@ -19,7 +19,7 @@ if !(<src> || <src>==<uid> )			// I cannot hit the 'air' or myself.
 endif
 // I cannot damage if I'm dead, stoned, freezed or sleeping, same if the target is dead, invul o stoned or has less than 1 hit point (this last should not happen ... just a safecheck).
 serv.log combat_hit <name>
-if ( (<flags>&statf_dead) || (<flags>&statf_stone) || (<flags>&statf_freeze) || (<flags>&statf_sleeping) || (<src.flags>&statf_dead) || (<src.flags>&statf_invul) || (<src.flags>&statf_stone ) || <src.hits> < 1  ) ) 
+if ( (<flags>&statf_dead) || (<flags>&statf_stone) || (<flags>&statf_freeze) || (<flags>&statf_sleeping) || (<src.flags>&statf_dead) || (<src.flags>&statf_invul) || (<src.flags>&statf_stone ) || <src.hits> < 1  ) 
 	return -1
 endif
 if (<region.safe> || <src.region.safe>)								// I cannot hit if my region is safe or the target is on a safe region...
@@ -456,7 +456,7 @@ local.poison -= <muldiv <local.poison>,<respoison>,100>
 if (<local.dam> < 0 && <local.fire> < 0 && <local.cold> < 0 && <local.energy>< 0 && <local.poison>< 0 )
 	return 1
 endif
-if ( <src.Weapon> && <serv.CombatFlags>&00080 && (<argn2>&DAM_PHYSICAL || <argn2>&DAM_PIERCE || <argn2>&DAM_SLASH)) )		// COMBAT_OSIDAMAGEMOD  
+if ( <src.Weapon> && <serv.CombatFlags>&00080 && (<argn2>&DAM_PHYSICAL || <argn2>&DAM_PIERCE || <argn2>&DAM_SLASH))		// COMBAT_OSIDAMAGEMOD  
 	local.mod = 0
 	local.modtemp = 0 
 	// Begin bonus section
@@ -502,7 +502,7 @@ if ( (<argn2>&dam_energy || <argn2>&dam_physical || <argn2>&dam_fire || <argn2>&
 		findid.i_rune_paralyze.remove
 	endif
 endif
-if ( <argn2>&dam_physical || <argn2>&dam_pierce || <argn2>&dam_slash) )
+if ( <argn2>&dam_physical || <argn2>&dam_pierce || <argn2>&dam_slash)
 	if (<flags>&statf_hidden)
 		flags &= ~statf_hidden
 	endif

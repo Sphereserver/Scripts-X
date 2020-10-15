@@ -56,3 +56,5 @@ on=0 3
   sdialog d_Town_Master,0
   return 1
 
+  [EOF]
+

@@ -196,7 +196,7 @@ for 0 <eval <serv.deflist.itemdef.count>-1>
 		local.r="noelf"
 	elif ((<local._cu>&<def.can_u_human>) && (<local._cu>&<def.can_u_elf>) && !(<local._cu>&<def.can_u_gargoyle>))
 		local.r="nogarg"
-	elif
+	else
 		local.r="any"
 	endif
 	
