@@ -8,9 +8,7 @@
 // Created by Golfin (http://eranova.cz/) and Jhobean (https://www.uocryptonite.com/)
 // Translated by Golfin
 //***********************************************************************************
-// Last file update: 5.10.2020
-//
-VERSION=X
+VERSION=X1
 
 [DEFNAME Language_ITA]
 ITA_Admin_Plevel_0				"Ospite"
@@ -22,7 +20,7 @@ ITA_Admin_Plevel_5				"Sviluppatore"
 ITA_Admin_Plevel_6				"Amministratore"
 ITA_Admin_Plevel_7				"Proprietario"
 
-ITA_clients					"Clienti:"
+ITA_clients					"Clients:"
 ITA_Found					"Trovato"
 ITA_Page					"Pagina"
 ITA_Results					"risultati"
@@ -33,11 +31,11 @@ ITA_Character_Name				"Nome personaggio:"
 ITA_IP_Address					"indirizzo IP"
 ITA_Location					"Posizione"
 ITA_Plevel					"Plevel:"
-ITA_Edit_Clients				"Modifica i clienti"
+ITA_Edit_Clients				"Modifica i client"
 ITA_Account					"Account"
-ITA_Info_Account				"Info cliente"
-ITA_Action_Acc					"Azioni cliente"
-ITA_Notes					"Note cliente"
+ITA_Info_Account				"Info client"
+ITA_Action_Acc					"Azioni client"
+ITA_Notes					"Note client"
 ITA_Character					"Personaggio"
 ITA_Properties					"Proprietà"
 ITA_Skills					"Abilità"

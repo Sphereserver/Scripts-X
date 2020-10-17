@@ -8,9 +8,7 @@
 // Created by Golfin (http://eranova.cz/) and Jhobean (https://www.uocryptonite.com/)
 // Translated by MirroR_
 //***********************************************************************************
-// Last file update: 5.10.2020
-//
-VERSION=X
+VERSION=X1
 
 [DEFNAME Language_TRK]
 TRK_Admin_Plevel_0				"Ziyetretçi"

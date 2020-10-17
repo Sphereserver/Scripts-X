@@ -7,9 +7,7 @@
 // New Multilanguage Admin
 // Created by Golfin (http://eranova.cz/) and Jhobean (https://www.uocryptonite.com/)
 //***********************************************************************************
-// Last file update: 5.10.2020
-//
-VERSION=X
+VERSION=X1
 
 [FUNCTION admin]
 If (<GetRefType> == <Def.TRef_Serv>)

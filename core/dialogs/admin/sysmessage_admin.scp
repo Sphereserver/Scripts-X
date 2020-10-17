@@ -8,9 +8,7 @@
 // Created by Golfin (http://eranova.cz/) and Jhobean (https://www.uocryptonite.com/)
 // Translated by Golfin, TRK Mirror_
 //***********************************************************************************
-// Last file update: 5.10.2020
-//
-VERSION=X
+VERSION=X1
 
 [DEFNAME Sysmessage_CSY]
 CSY_Properties_Sys					"Vlastnosti"
