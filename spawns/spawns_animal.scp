@@ -3,7 +3,7 @@
 // www.sphereserver.net
 //****************************************************************************
 VERSION=X1
-[EOF]
+
 [SPAWN spawn_Animals]
 CATEGORY=Spawn Groups
 SUBSECTION=Animals
@@ -30,7 +30,7 @@ ID=c_dog
 ID=c_eagle
 ID=c_ferret
 ID=c_goat
-ID=c_goat_mountain
+ID=c_mountain_goat
 ID=c_gorilla
 ID=c_lava_snake
 ID=c_leopard
@@ -173,7 +173,7 @@ CATEGORY=Spawn Groups
 SUBSECTION=Animals
 DESCRIPTION=Mountain Animals
 ID=c_eagle                  13
-ID=c_goat_mountain          13
+ID=c_mountain_goat          13
 ID=c_horse_brown_lt
 
 [SPAWN spawn_CaveAnimals]

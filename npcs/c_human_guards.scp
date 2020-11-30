@@ -1,3 +1,9 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
 [CHARDEF c_guard]
 ID=c_man
 NAME=#NAMES_HUMANMALE the guard
@@ -45,7 +51,6 @@ ON=@Create
    ITEM=i_platemail_arms
    ITEM=i_sash
    COLOR=colors_red
-ON=@NPCRestock
    ITEM=random_coin_purse
    ITEM=i_halberd
    ITEM=i_mt_horse_gray,1,R5
@@ -98,7 +103,6 @@ ON=@Create
    ITEM=i_platemail_arms
    ITEM=i_sash
    COLOR=colors_red
-ON=@NPCRestock
    ITEM=random_coin_purse
    ITEM=i_halberd
    ITEM=i_mt_horse_gray,1,R5

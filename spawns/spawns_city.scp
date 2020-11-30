@@ -4,7 +4,6 @@
 //****************************************************************************
 VERSION=X1
 
-[EOF]
 [SPAWN spawn_Villagers]
 CATEGORY=Spawn Groups
 SUBSECTION=Humans
@@ -342,7 +341,7 @@ CATEGORY=Spawn Groups
 SUBSECTION=Shopkeepers
 DESCRIPTION=Waitstaff
 ID=c_waiter
-ID=c_waitress
+ID=c_waiter_f
 
 [SPAWN spawn_Tinkers]
 CATEGORY=Spawn Groups

@@ -385,7 +385,7 @@ ADD c_ORC
 ON=0 Orc (with club)
 ADD c_orc_w_club
 ON=0 Orcish Mage
-ADD c_orc_mage
+ADD c_orc_shaman
 ON=0 Orc Captian
 ADD c_orc_captain
 ON=0 Orc Lord
@@ -868,7 +868,7 @@ ADD c_BIRD
 ON=0 Tropical Bird
 ADD C_BIRD_TROPICAL
 ON=0 Crow
-ADD C_BIRD_CROW
+ADD c_bird_crow
 ON=0 Raven
 ADD C_BIRD_RAVEN
 ON=0 Magpie
@@ -885,7 +885,7 @@ ADD c_elem_ice
 ON=0 Snow Elemental
 ADD c_elem_ice
 ON=0 Ice Fiend
-ADD c_ICEFIEND
+ADD c_daemon_ice
 ON=0 Ice Snake
 ADD c_ice_snake
 ON=0 Oclock (Desert Ostard)

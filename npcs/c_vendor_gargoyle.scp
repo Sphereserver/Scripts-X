@@ -1,3 +1,9 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
 [CHARDEF c_alchemist_gargoyle]
 ID=c_gargoyle_male
 NAME=#NAMES_GARGOYLE_MALE the alchemist
@@ -49,10 +55,10 @@ ON=@Create
    COLOR=colors_red
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
 
+ON=@NPCRestock
    SELL=VENDOR_S_ALCHEMIST
    BUY=VENDOR_B_ALCHEMIST
 
@@ -105,10 +111,10 @@ ON=@Create
    COLOR=colors_red
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
 
+ON=@NPCRestock
    SELL=VENDOR_S_ALCHEMIST
    BUY=VENDOR_B_ALCHEMIST
 
@@ -162,10 +168,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_all
-ON=@NPCRestock
    ITEM=random_coin_purse
    ITEM=random_weapon_staff_gargish
 
+ON=@NPCRestock
    SELL=VENDOR_S_TRAINER
    BUY=VENDOR_B_TRAINER
 
@@ -216,10 +222,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_all
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_staff_gargish
-
+ON=@NPCRestock
    SELL=VENDOR_S_TRAINER
    BUY=VENDOR_B_TRAINER
 
@@ -275,9 +281,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
+ON=@NPCRestock   
    SELL=VENDOR_S_DEED_TEMPLATE
    BUY=VENDOR_B_DEED_TEMPLATE
 
@@ -330,9 +337,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
+ON=@NPCRestock 
    SELL=VENDOR_S_DEED_TEMPLATE
    BUY=VENDOR_B_DEED_TEMPLATE
 
@@ -390,10 +398,10 @@ ON=@Create
    COLOR=colors_neutral
    ITEM=random_aprons_gargoyle
    COLOR=colors_blue
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_mace_gargish
-   
+ON=@NPCRestock   
    SELL=VENDOR_S_GARGISH_ARMORER_LEATHER
    SELL=VENDOR_S_GARGISH_ARMORER_PLATE
    SELL=VENDOR_S_GARGISH_ARMORER_SHIELDS
@@ -455,10 +463,10 @@ ON=@Create
    COLOR=colors_neutral
    ITEM=random_aprons_gargoyle
    COLOR=colors_blue
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_mace_gargish
-
+ON=@NPCRestock
    SELL=VENDOR_S_GARGISH_ARMORER_LEATHER
    SELL=VENDOR_S_GARGISH_ARMORER_PLATE
    SELL=VENDOR_S_GARGISH_ARMORER_SHIELDS
@@ -521,9 +529,10 @@ ON=@Create
    COLOR=colors_neutral
    ITEM=i_bandana
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
+ON=@NPCRestock   
    SELL=VENDOR_S_BAKER_TEMPLATE
    BUY=VENDOR_B_BAKER_TEMPLATE
 
@@ -576,9 +585,10 @@ ON=@Create
    COLOR=colors_neutral
    ITEM=i_bandana
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
+ON=@NPCRestock
    SELL=VENDOR_S_BAKER_TEMPLATE
    BUY=VENDOR_B_BAKER_TEMPLATE
 
@@ -739,10 +749,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=i_jar_honey,{14 40}
    SELL=i_string,{4 10}
    SELL=i_beeswax,{4 10}
@@ -798,10 +808,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=i_jar_honey,{14 40}
    SELL=i_string,{4 10}
    SELL=i_beeswax,{4 10}
@@ -865,10 +875,10 @@ ON=@Create
    COLOR=colors_neutral
    ITEM=random_aprons_gargoyle
    COLOR=colors_red
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_mace_gargish
-
+ON=@NPCRestock
    SELL=VENDOR_S_BLACKSMITH
    BUY=VENDOR_B_GARGISH_ARMORER_LEATHER
    BUY=VENDOR_B_GARGISH_ARMORER_PLATE
@@ -934,10 +944,10 @@ ON=@Create
    COLOR=colors_neutral
    ITEM=random_aprons_gargoyle
    COLOR=colors_red
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_mace_gargish
-
+ON=@NPCRestock
    SELL=VENDOR_S_BLACKSMITH
    BUY=VENDOR_B_GARGISH_ARMORER_LEATHER
    BUY=VENDOR_B_GARGISH_ARMORER_PLATE
@@ -1075,10 +1085,10 @@ ON=@Create
    COLOR=colors_neutral
    ITEM=random_aprons_gargoyle
    COLOR=colors_brown
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_knife_butcher,1,R3
-
+ON=@NPCRestock
    SELL=VENDOR_S_BUTCHER_TEMPLATE
    BUY=VENDOR_B_BUTCHER_TEMPLATE
 
@@ -1133,12 +1143,12 @@ ON=@Create
    COLOR=colors_neutral
    ITEM=random_aprons_gargoyle
    COLOR=colors_brown
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_cleaver_meat,1,R3
    ITEM=i_gargish_dagger,1,R3
    ITEM=i_knife_butcher,1,R3
-
+ON=@NPCRestock
    SELL=VENDOR_S_BUTCHER_TEMPLATE
    BUY=VENDOR_B_BUTCHER_TEMPLATE
 
@@ -1191,9 +1201,9 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
-   ITEM=random_coin_purse
 
+   ITEM=random_coin_purse
+ON=@NPCRestock
    SELL=VENDOR_S_CARPENTER
    BUY=VENDOR_B_CARPENTER
 
@@ -1243,9 +1253,9 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
-   ITEM=random_coin_purse
 
+   ITEM=random_coin_purse
+ON=@NPCRestock
    SELL=VENDOR_S_CARPENTER
    BUY=VENDOR_B_CARPENTER
 
@@ -1297,9 +1307,9 @@ ON=@Create
    ITEM=i_gargish_robe
    COLOR=colors_red
    ITEM=i_gargish_leather_talons
-ON=@NPCRestock
-   ITEM=random_coin_purse
 
+   ITEM=random_coin_purse
+ON=@NPCRestock
    SELL=i_rune_marker,{2 10}
    SELL=random_potions_all,{12 20}
    SELL=random_reagent,{12 20}
@@ -1352,9 +1362,9 @@ ON=@Create
    ITEM=i_gargish_robe
    COLOR=colors_red
    ITEM=i_gargish_leather_talons
-ON=@NPCRestock
-   ITEM=random_coin_purse
 
+   ITEM=random_coin_purse
+ON=@NPCRestock
    SELL=i_rune_marker,{2 10}
    SELL=random_potions_all,{12 20}
    SELL=random_reagent,{12 20}
@@ -1409,10 +1419,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_all
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_COBBLER
    BUY=VENDOR_B_COBBLER
 
@@ -1462,10 +1472,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_all
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=vendor_s_cobbler
    BUY=vendor_b_cobbler
 
@@ -1523,10 +1533,10 @@ ON=@Create
    COLOR=colors_neutral
    ITEM=i_bandana
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_cleaver
-
+ON=@NPCRestock
    SELL=VENDOR_S_COOK
    BUY=VENDOR_B_COOK
 
@@ -1581,10 +1591,10 @@ ON=@Create
    COLOR=colors_neutral
    ITEM=i_bandana
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_cleaver
-
+ON=@NPCRestock
    SELL=VENDOR_S_COOK
    BUY=VENDOR_B_COOK
 
@@ -1635,10 +1645,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_FARMER
    BUY=VENDOR_B_FARMER
 
@@ -1686,10 +1696,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_FARMER
    BUY=VENDOR_B_FARMER
 
@@ -1742,10 +1752,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_fishing_pole
-
+ON=@NPCRestock
    SELL=VENDOR_S_FISHER
    BUY=VENDOR_B_FISHER
 
@@ -1796,10 +1806,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_fishing_pole
-
+ON=@NPCRestock
    SELL=VENDOR_S_FISHER
    BUY=VENDOR_B_FISHER
 
@@ -1855,11 +1865,11 @@ ON=@Create
    COLOR=colors_green
    ITEM=random_footwear_gargoyle
    COLOR=colors_green
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
    ITEM=random_weapon_throwing_gargish
-
+ON=@NPCRestock
    SELL=VENDOR_S_FURTRADER
    BUY=VENDOR_B_FURTRADER
 
@@ -1912,11 +1922,11 @@ ON=@Create
    COLOR=colors_green
    ITEM=random_footwear_gargoyle
    COLOR=colors_green
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
    ITEM=random_weapon_throwing_gargish
-
+ON=@NPCRestock
    SELL=VENDOR_S_FURTRADER
    BUY=VENDOR_B_FURTRADER
 
@@ -1967,10 +1977,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_GLASSBLOWER
    BUY=VENDOR_B_GLASSBLOWER
 
@@ -2023,10 +2033,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_GLASSBLOWER
    BUY=VENDOR_B_GLASSBLOWER
 
@@ -2151,11 +2161,11 @@ ON=@Create
    COLOR=colors_yellow
    ITEM=i_gargish_leather_talons
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
    ITEM=i_bandage,{20 25}
-
+ON=@NPCRestock
    SELL=VENDOR_S_HEALER_SHOP
    BUY=VENDOR_B_HEALER_SHOP
 
@@ -2206,11 +2216,11 @@ ON=@Create
    COLOR=colors_yellow
    ITEM=i_gargish_leather_talons
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
    ITEM=i_bandage,{20 25}
-
+ON=@NPCRestock
    SELL=VENDOR_S_HEALER_SHOP
    BUY=VENDOR_B_HEALER_SHOP
 
@@ -2467,11 +2477,11 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_sword_long_b
    ITEM=random_shield
-
+ON=@NPCRestock
    SELL=VENDOR_S_INNKEEPER
    BUY=VENDOR_B_INNKEEPER
 
@@ -2529,10 +2539,10 @@ ON=@Create
    ITEM=random_jewelry
    ITEM=random_jewelry
    ITEM=random_jewelry
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_GARGISH_JEWELER
    BUY=VENDOR_B_GARGISH_JEWELER
 
@@ -2587,10 +2597,10 @@ ON=@Create
    ITEM=random_jewelry
    ITEM=random_jewelry
    ITEM=random_jewelry
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_GARGISH_JEWELER
    BUY=VENDOR_B_GARGISH_JEWELER
 
@@ -2646,10 +2656,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_axe_gargish
-
+ON=@NPCRestock
    SELL=i_kindling,{20 40}
    SELL=i_log,{20 40}
    BUY=i_gargish_axe_battle,{5 10}
@@ -2705,10 +2715,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_axe_gargish
-
+ON=@NPCRestock
    SELL=i_kindling,{20 40}
    SELL=i_log,{20 40}
    BUY=i_gargish_axe_battle,{5 10}
@@ -2828,10 +2838,10 @@ ON=@Create
    COLOR=colors_blue
    ITEM=i_hat_wizards
    COLOR=colors_blue
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_MAGE_SHOP
    BUY=VENDOR_B_MAGE_SHOP
 
@@ -2883,11 +2893,11 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
    ITEM=random_shield
-
+ON=@NPCRestock
    SELL=VENDOR_S_MAPMAKER
    BUY=VENDOR_B_MAPMAKER
 
@@ -2936,11 +2946,11 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
    ITEM=random_shield
-
+ON=@NPCRestock
    SELL=VENDOR_S_MAPMAKER
    BUY=VENDOR_B_MAPMAKER
 
@@ -2990,10 +3000,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=i_flour_sack,{4 10}
    SELL=i_hay_sheaf,{4 10}
    BUY=i_flour_sack,{4 10}
@@ -3042,10 +3052,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=i_flour_sack,{4 10}
    SELL=i_hay_sheaf,{4 10}
    BUY=i_flour_sack,{4 10}
@@ -3101,9 +3111,10 @@ ON=@Create
    COLOR=colors_yellow
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
+
+ON=@NPCRestock
 
 [CHARDEF c_minter_gargoyle_f]
 ID=c_gargoyle_female
@@ -3152,10 +3163,10 @@ ON=@Create
    COLOR=colors_yellow
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
 
+ON=@NPCRestock
 
 
 [CHARDEF c_mystic_gargoyle]
@@ -3208,10 +3219,10 @@ ON=@Create
    COLOR=colors_neutral
    ITEM=i_gargish_robe
    
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_staff_gargish
-
+ON=@NPCRestock
    SELL=VENDOR_S_MYSTIC
    BUY=VENDOR_B_MYSTIC
 
@@ -3263,10 +3274,10 @@ ON=@Create
    COLOR=colors_neutral
    ITEM=i_gargish_robe
    
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_staff_gargish
-
+ON=@NPCRestock
    SELL=VENDOR_S_MYSTIC
    BUY=VENDOR_B_MYSTIC
 
@@ -3320,10 +3331,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_sword_gargish
-
+ON=@NPCRestock
    SELL=VENDOR_S_PROVISIONER
    BUY=VENDOR_B_PROVISIONER
 
@@ -3376,10 +3387,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_sword_gargish
-
+ON=@NPCRestock
    SELL=VENDOR_S_PROVISIONER
    BUY=VENDOR_B_PROVISIONER
 
@@ -3434,11 +3445,11 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_boots_all
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_mace_gargish
    ITEM=i_shepherds_crook,1,R2
-
+ON=@NPCRestock
    SELL=VENDOR_S_RANCHER
    BUY=VENDOR_B_RANCHER
 
@@ -3490,11 +3501,11 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_boots_all
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_mace_gargish
    ITEM=i_shepherds_crook,1,R2
-
+ON=@NPCRestock
    SELL=VENDOR_S_RANCHER
    BUY=VENDOR_B_RANCHER
 
@@ -3547,10 +3558,10 @@ ON=@Create
    COLOR=colors_green
    ITEM=random_footwear_gargoyle
    COLOR=colors_green
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=i_scroll_blank,{10 20}
    SELL=i_pen_and_ink,{5 10}
    SELL=i_book_sm,{5 10}
@@ -3674,10 +3685,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_all
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_shepherds_crook
-
+ON=@NPCRestock
    SELL=VENDOR_S_SHEPHERD
    BUY=VENDOR_B_SHEPHERD
 
@@ -3726,10 +3737,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_all
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_shepherds_crook
-
+ON=@NPCRestock
    SELL=VENDOR_S_SHEPHERD
    BUY=VENDOR_B_SHEPHERD
 
@@ -3781,10 +3792,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_cutlass
-
+ON=@NPCRestock
    SELL=VENDOR_S_SHIP
    BUY=VENDOR_B_SHIP
 
@@ -3833,10 +3844,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_cutlass
-
+ON=@NPCRestock
    SELL=VENDOR_S_SHIP
    BUY=VENDOR_B_SHIP
 
@@ -3889,10 +3900,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_GARGISH_TAILOR
    BUY=VENDOR_B_GARGISH_TAILOR
 
@@ -3942,10 +3953,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_GARGISH_TAILOR
    BUY=VENDOR_B_GARGISH_TAILOR
 
@@ -4002,10 +4013,10 @@ ON=@Create
    COLOR=colors_brown
    ITEM=random_aprons_gargoyle
    COLOR=colors_brown
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_TANNER
    BUY=VENDOR_B_TANNER
 
@@ -4058,10 +4069,10 @@ ON=@Create
    ITEM=random_footwear_gargoyle
    ITEM=random_aprons_gargoyle
    COLOR=colors_brown
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_TANNER
    BUY=VENDOR_B_TANNER
 
@@ -4118,10 +4129,10 @@ ON=@Create
    COLOR=colors_neutral
    ITEM=random_aprons_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_mace_gargish
-
+ON=@NPCRestock
    SELL=VENDOR_S_TAVERNKEEPER
    BUY=VENDOR_B_TAVERNKEEPER
 
@@ -4175,10 +4186,10 @@ ON=@Create
    COLOR=colors_neutral
    ITEM=random_aprons_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_mace_gargish
-
+ON=@NPCRestock
    SELL=VENDOR_S_TAVERNKEEPER
    BUY=VENDOR_B_TAVERNKEEPER
 
@@ -4231,11 +4242,11 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_tinker_tools
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_TINKER
    BUY=VENDOR_B_TINKER
 
@@ -4285,11 +4296,11 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_tinker_tools
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_TINKER
    BUY=VENDOR_B_TINKER
 
@@ -4339,10 +4350,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_VEGSELLER
    BUY=VENDOR_B_VEGSELLER
 
@@ -4389,10 +4400,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_all
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_VEGSELLER
    BUY=VENDOR_B_VEGSELLER
 
@@ -4445,10 +4456,10 @@ ON=@Create
    COLOR=colors_blue
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_VET
    BUY=VENDOR_B_VET
 
@@ -4498,10 +4509,10 @@ ON=@Create
    COLOR=colors_blue
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_VET
    BUY=VENDOR_B_VET
 
@@ -4554,10 +4565,10 @@ ON=@Create
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
    ITEM=random_aprons_gargoyle
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_WAITER
    BUY=VENDOR_B_WAITER
 
@@ -4607,10 +4618,10 @@ ON=@Create
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
    ITEM=random_aprons_gargoyle
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_WAITER
    BUY=VENDOR_B_WAITER
 
@@ -4672,10 +4683,10 @@ ON=@Create
    COLOR=colors_neutral
    ITEM=random_aprons_gargoyle
    COLOR=colors_yellow
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_axe_gargish
-
+ON=@NPCRestock
    SELL=VENDOR_S_GARGISH_WEAPONS_BLADED
    SELL=VENDOR_S_MAGIC_WEAPONS
    BUY=VENDOR_B_GARGISH_WEAPONS_BLADED
@@ -4737,10 +4748,10 @@ ON=@Create
    COLOR=colors_neutral
    ITEM=random_aprons_gargoyle
    COLOR=colors_yellow
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_axe_gargish
-
+ON=@NPCRestock
    SELL=VENDOR_S_GARGISH_WEAPONS_BLADED
    SELL=VENDOR_S_MAGIC_WEAPONS
    BUY=VENDOR_B_GARGISH_WEAPONS_BLADED
@@ -4804,10 +4815,10 @@ ON=@Create
    COLOR=colors_neutral
    ITEM=random_aprons_gargoyle
    COLOR=colors_green
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_mace_gargish
-
+ON=@NPCRestock
    SELL=VENDOR_S_GARGISH_WEAPONS_BLUNT
    SELL=VENDOR_S_MAGIC_WEAPONS
    BUY=VENDOR_B_GARGISH_WEAPONS_BLUNT
@@ -4868,10 +4879,10 @@ ON=@Create
    COLOR=colors_neutral
    ITEM=random_aprons_gargoyle
    COLOR=colors_green
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=random_weapon_mace_gargish
-
+ON=@NPCRestock
    SELL=VENDOR_S_GARGISH_WEAPONS_BLUNT
    SELL=VENDOR_S_MAGIC_WEAPONS
    BUY=VENDOR_B_GARGISH_WEAPONS_BLUNT
@@ -4926,10 +4937,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_WEAVER
    BUY=VENDOR_B_WEAVER
 
@@ -4979,10 +4990,10 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_gargoyle
    COLOR=colors_neutral
-ON=@NPCRestock
+
    ITEM=random_coin_purse
    ITEM=i_gargish_dagger
-
+ON=@NPCRestock
    SELL=VENDOR_S_WEAVER
    BUY=VENDOR_B_WEAVER
    
