@@ -9,9 +9,9 @@
 //***********************************************************************************
 VERSION=X1
 
-[DIALOG d_SphereplayerTags]
+[DIALOG d_SphereAdmin_PlayerTags]
 50,50
-Src.Dialogclose d_SphereplayerTags
+Src.Dialogclose d_SphereAdmin_PlayerTags
 
 Page 0
 Resizepic 0 0 5054 652 507
@@ -78,37 +78,37 @@ Else
    DText 160 60 0c1 <Def.d_admin_<Src.CTag0.AccountLang>_No_Tags>
 Endif
 
-[DIALOG d_SphereplayerTags Button]
+[DIALOG d_SphereAdmin_PlayerTags Button]
 On=0 1
-   Src.Dialog d_SpherePlayerTweak
+   Src.Dialog d_SphereAdmin_PlayerTweak
 
 On=2
-   Dialog d_SpherePlayerTweak 1
+   Dialog d_SphereAdmin_PlayerTweak 1
 
 On=3
-   Dialog d_SpherePlayerTweak 2
+   Dialog d_SphereAdmin_PlayerTweak 2
 
 On=4
-   Dialog d_SpherePlayerNotes
+   Dialog d_SphereAdmin_PlayerNotes
 
 On=5
-   Dialog d_SpherePlayerTweak 3
+   Dialog d_SphereAdmin_PlayerTweak 3
 
 On=6
-   Dialog d_SpherePlayerTweak 4
+   Dialog d_SphereAdmin_PlayerTweak 4
 
 On=7
-   Dialog d_SpherePlayerTweak 5
+   Dialog d_SphereAdmin_PlayerTweak 5
 
 On=8
-   Dialog d_SphereplayerTags
+   Dialog d_SphereAdmin_PlayerTags
 
 On=9
-   Dialog d_SpherePlayerTweak 6
+   Dialog d_SphereAdmin_PlayerTweak 6
 
 On=1000,1999
 	Tag.<Tagat.<Eval <ArgN>-1000>.Key>=
-	Dialog d_SphereplayerTags
-	Src.Sysmessage @tcolor_Orange <Def.d_admin_<Src.CTag0.AccountLang>_Tags_Sys> <Name> <Def.d_admin_<Src.CTag0.AccountLang>_Updated_Sys>
+	Dialog d_SphereAdmin_PlayerTags
+	Src.Sysmessage @<def.tcolor_orange> <Def.d_admin_<Src.CTag0.AccountLang>_Tags_Sys> <Name> <Def.d_admin_<Src.CTag0.AccountLang>_Updated_Sys>
 
 [EOF]

@@ -23,11 +23,11 @@ As a general rule:
 // sphere.ini and spheretable.scp are automatic.
 // All the other scripts we want to load.
 functions/
-core/backward_compatibility_functions.scp
-//core/backward_compatibility_56b.scp
-//core/backward_compatibility_56c.scp
-//core/backward_compatibility_56c_multis.scp
-//core/backward_compatibility_56d.scp
+core/backwards_compatibility_functions.scp
+//core/backwards_compatibility_56b.scp
+//core/backwards_compatibility_56c.scp
+//core/backwards_compatibility_56c_multis.scp
+//core/backwards_compatibility_56d.scp
 //core/combat_override.scp // incomplete and outdated
 core/defs.scp
 core/defs_component_props.scp
@@ -39,14 +39,14 @@ core/defs_html.scp
 core/defs_mounts.scp
 core/defs_sounds.scp
 core/defs_types_hardcoded.scp
-core/msgs.scp
+core/messages.scp
 core/serv_triggers.scp
 core/magic_preaos.scp
 core/dialogs/
 core/dialogs/admin/
 //core/dialogs/legacy/
-book_content_default.scp
-name_templates.scp
+templates_special/sp_tm_book.scp
+templates_special/sp_tm_name.scp
 skills/
 speech/
 speech/human/
@@ -59,7 +59,7 @@ items/magic_pre_aos/
 items/material_nonbase/
 multis/
 templates/
-newbie_templates.scp
+templates_special/sp_tm_newbie.scp
 core/regionresources.scp
 core/regiontypes.scp
 events/

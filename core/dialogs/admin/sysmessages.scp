@@ -8,7 +8,7 @@
 // Created by Golfin (http://eranova.cz/) and Jhobean (https://www.uocryptonite.com/)
 // Translated by Golfin, TRK Mirror_
 //***********************************************************************************
-//For an obscur reason, these defs need to be separate on a separate ANSI encoded  file. Avoid this make bug on sysmessage with special letter like é à ç á
+//For an obscure reason, these defs need to be separate on a separate ANSI encoded  file. Avoid this make bug on sysmessage with special letter like é à ç á
 VERSION=X1
 
 [DEFNAME defs_d_admin_Sysmessage_CSY]

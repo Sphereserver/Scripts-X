@@ -9,7 +9,7 @@
 //***********************************************************************************
 VERSION=X1
 
-[DIALOG d_Search]
+[DIALOG d_SphereAdmin_search]
 50,50
 Src.Dialogclose d_SphereAdmin
 
@@ -57,7 +57,7 @@ dtext 365 100 2048 <Def.d_admin_<Src.CTag0.AccountLang>_Offline>
 radio 340 120 210 211 0 3
 dtext 365 120 2048 <Def.d_admin_<Src.CTag0.AccountLang>_Both>
 
-[DIALOG d_Search Button]
+[DIALOG d_SphereAdmin_search Button]
 
 On=0
    Dialog d_SphereAdmin

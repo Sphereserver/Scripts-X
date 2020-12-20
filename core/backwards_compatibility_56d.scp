@@ -5,7 +5,7 @@
 VERSION=X1
 
 // Translate defnames used in 56d to the currently used ones
-[DEFNAME backward_compatibility_defs_56d]
+[RESDEFNAME backward_compatibility_defs_56d]
 // Miscellaneous
 i_map							i_map_blank
 i_banner_serpent				i_banner_order

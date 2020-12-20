@@ -5,7 +5,7 @@
 VERSION=X1
 
 // Translate defnames used in 56c to the currently used ones
-[DEFNAME backward_compatibility_defs_56c]
+[RESDEFNAME backward_compatibility_defs_56c]
 // Doors
 i_door_elven_bark				i_door_elven_wooden
 i_door_portculis				i_door_portcullis

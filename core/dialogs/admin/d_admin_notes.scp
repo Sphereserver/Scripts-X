@@ -9,9 +9,9 @@
 //***********************************************************************************
 VERSION=X1
 
-[DIALOG d_SpherePlayerNotes]
+[DIALOG d_SphereAdmin_PlayerNotes]
 50,50
-Src.Dialogclose d_SpherePlayerTweak
+Src.Dialogclose d_SphereAdmin_PlayerTweak
 
 Page 0
 Resizepic 0 0 5054 652 507
@@ -77,33 +77,33 @@ If (0<Account.Tag0.NumNotes>)
    end
 Endif
 
-[DIALOG d_SpherePlayerNotes Button]
+[DIALOG d_SphereAdmin_PlayerNotes Button]
 On=0 1
    Src.Dialog d_SphereAdmin
 
 On=2
-   Dialog d_SpherePlayerTweak 1
+   Dialog d_SphereAdmin_PlayerTweak 1
 
 On=3
-   Dialog d_SpherePlayerTweak 2
+   Dialog d_SphereAdmin_PlayerTweak 2
 
 On=4
-   Dialog d_SpherePlayerNotes
+   Dialog d_SphereAdmin_PlayerNotes
 
 On=5
-   Dialog d_SpherePlayerTweak 3
+   Dialog d_SphereAdmin_PlayerTweak 3
 
 On=6
-   Dialog d_SpherePlayerTweak 4
+   Dialog d_SphereAdmin_PlayerTweak 4
 
 On=7
-   Dialog d_SpherePlayerTweak 5
+   Dialog d_SphereAdmin_PlayerTweak 5
 
 On=8
-   Dialog d_SphereplayerTags
+   Dialog d_SphereAdmin_PlayerTags
 
 On=9
-   Dialog d_SpherePlayerTweak 6
+   Dialog d_SphereAdmin_PlayerTweak 6
 
 On=10
    Dialog d_sphereplayerAddNotes
@@ -113,13 +113,13 @@ On=11 500
       Src.CTag.noteFor=<UID>
       Src.f_Admin_Removenote <Eval (<ArgN1>-10)>
    //Else
-   //   Src.Sysmessage @tcolor_Orange Nem��e� m�nit pozn�mku vy��mu Plevelu ne� m� Ty.
-   //   Src.Dialog d_SpherePlayerNotes
+   //   Src.Sysmessage @<def.tcolor_orange> Nem��e� m�nit pozn�mku vy��mu Plevelu ne� m� Ty.
+   //   Src.Dialog d_SphereAdmin_PlayerNotes
    //Endif
 
 [DIALOG d_SphereplayerAddNotes]
 50,50
-Src.Dialogclose d_SpherePlayerNotes
+Src.Dialogclose d_SphereAdmin_PlayerNotes
 
 Page 0
 Resizepic 0 0 5054 652 507
@@ -174,31 +174,31 @@ Button 160 205 4005 4006 1 0 11
 
 [DIALOG d_SphereplayerAddNotes Button]
 On=0 1
-   Src.Dialog d_SpherePlayerNotes
+   Src.Dialog d_SphereAdmin_PlayerNotes
 
 On=2
-   Dialog d_SpherePlayerTweak 1
+   Dialog d_SphereAdmin_PlayerTweak 1
 
 On=3
-   Dialog d_SpherePlayerTweak 2
+   Dialog d_SphereAdmin_PlayerTweak 2
 
 On=4
-   Dialog d_SpherePlayerNotes
+   Dialog d_SphereAdmin_PlayerNotes
 
 On=5
-   Dialog d_SpherePlayerTweak 3
+   Dialog d_SphereAdmin_PlayerTweak 3
 
 On=6
-   Dialog d_SpherePlayerTweak 4
+   Dialog d_SphereAdmin_PlayerTweak 4
 
 On=7
-   Dialog d_SpherePlayerTweak 5
+   Dialog d_SphereAdmin_PlayerTweak 5
 
 On=8
-   Dialog d_SphereplayerTags
+   Dialog d_SphereAdmin_PlayerTags
 
 On=9
-   Dialog d_SpherePlayerTweak 6
+   Dialog d_SphereAdmin_PlayerTweak 6
 
 On=10
    Dialog d_sphereplayerAddNotes
@@ -209,9 +209,9 @@ If !(<isEmpty <ArgTxt[0]>>)
   Account.Tag.Note_<dAccount.Tag0.NumNotes>=""<ArgTxt[0]>""
   Account.Tag.Note_<dAccount.Tag0.NumNotes>_By=<Src.Name>
   Account.Tag.Note_<dAccount.Tag0.NumNotes>_Time=<Serv.rTime>
-  Sysmessage @tcolor_orange <Def.d_admin_<Src.CTag0.AccountLang>_For_Account_Sys> <Account.Name> <Def.d_admin_<Src.CTag0.AccountLang>_Added_Note_Sys>
+  Sysmessage @<def.tcolor_orange> <Def.d_admin_<Src.CTag0.AccountLang>_For_Account_Sys> <Account.Name> <Def.d_admin_<Src.CTag0.AccountLang>_Added_Note_Sys>
 Endif
-Src.Dialog d_SpherePlayerNotes <Eval 1+((<Account.Tag0.NumNotes>-1)/4)>
+Src.Dialog d_SphereAdmin_PlayerNotes <Eval 1+((<Account.Tag0.NumNotes>-1)/4)>
 
 [FUNCTION f_Admin_Removenote]
 Local.Note=<ArgV[0]>
@@ -230,8 +230,8 @@ Else
    end
 Endif
 TrySrv Obj.Account.Tag0.NumNotes=<Eval <Obj.Account.Tag0.NumNotes>-1>
-Sysmessage @tcolor_Orange <Def.d_admin_<Src.CTag0.AccountLang>_Note_For_Account_Sys> <Obj.Account> <Def.d_admin_<Src.CTag0.AccountLang>_Del_Note_Sys>
-Obj.Dialog d_SpherePlayerNotes
+Sysmessage @<def.tcolor_orange> <Def.d_admin_<Src.CTag0.AccountLang>_Note_For_Account_Sys> <Obj.Account> <Def.d_admin_<Src.CTag0.AccountLang>_Del_Note_Sys>
+Obj.Dialog d_SphereAdmin_PlayerNotes
 Obj=<Local.OldObj>
 
 [EOF]
