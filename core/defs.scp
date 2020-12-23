@@ -174,6 +174,7 @@ attr_opened             008000000 //Is door opened?
 attr_shardbound         010000000 //Unused: No info.
 attr_accountbound       020000000 //Unused: No info.
 attr_characterbound     040000000 //Unused: No info.
+attr_canuse_paralyzed	080000000 //Can item usable while paralyzed?
 //attr_cannotrepair       0400000000000 //Unused.
 //attr_factionitem        080000000000000 //Unused.
 //attr_vvvitem            0100000000000000 //Unused.

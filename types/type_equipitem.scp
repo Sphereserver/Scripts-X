@@ -636,24 +636,18 @@ IF (<HasComponentProps <def.CompProps_ItemEquippable>>)
 	// IF (<IncreaseDam>)
 		// SRC.IncreaseDam -= <IncreaseDam>
 	// ENDIF
-	IF (<IncreaseDefChance>)
-		SRC.IncreaseDefChance -= <IncreaseDefChance>
-		IF (<SRC.IncreaseDefChance>==0)
-			SRC.SYSMESSAGELOC <def.color_text>,1062321//"Your defense chance has returned to normal."
-		ENDIF
-	ENDIF
+	// IF (<IncreaseDefChance>)
+		// SRC.IncreaseDefChance -= <IncreaseDefChance>
+		// IF (<SRC.IncreaseDefChance>==0)
+			// SRC.SYSMESSAGELOC <def.color_text>,1062321//"Your defense chance has returned to normal."
+		// ENDIF
+	// ENDIF
 	// IF (<IncreaseHitChance>)
 		// SRC.IncreaseHitChance -= <IncreaseHitChance>
 		// IF (<SRC.IncreaseHitChance>==0)
 			// SRC.SYSMESSAGELOC <def.color_text>,1062320//"Your attack chance has returned to normal."
 		// ENDIF
 	// ENDIF
-	IF (<IncreaseHitChance>)
-		SRC.IncreaseHitChance -= <IncreaseHitChance>
-		IF (<SRC.IncreaseHitChance>==0)
-			SRC.SYSMESSAGELOC <def.color_text>,1062320//"Your attack chance has returned to normal."
-		ENDIF
-	ENDIF
 	// IF (<IncreaseSwingSpeed>)
 		// SRC.IncreaseSwingSpeed -= <IncreaseSwingSpeed>
 	// ENDIF
@@ -697,9 +691,9 @@ IF (<HasComponentProps <def.CompProps_ItemEquippable>>)
 	IF (<LowerReagentCost>)
 		SRC.LowerReagentCost -= <LowerReagentCost>
 	ENDIF
-	IF (<IncreaseSpellDam>)
-		SRC.IncreaseSpellDam -= <IncreaseSpellDam>
-	ENDIF
+	// IF (<IncreaseSpellDam>)
+		// SRC.IncreaseSpellDam -= <IncreaseSpellDam>
+	// ENDIF
 	IF (<IncreaseGold>)
 		SRC.IncreaseGold -= <IncreaseGold>
 	ENDIF
