@@ -1534,8 +1534,8 @@ SDIALOG d_house_placement_tool
 
 ON=1 20
 local.item=<DEF.house_classic_<ARGN>>
-if (<gold> <SERV.ITEMDEF.<local.item>.VALUE>)
-    sysmessage @,,1 You cannot afford that.
+if (<src.gold> < <SERV.ITEMDEF.<local.item>.VALUE>)
+    src.sysmessage @,,1 You cannot afford that.
     return 1
 endif
 SRC.f_house_placement <local.item>
@@ -1570,8 +1570,8 @@ SDIALOG d_house_placement_tool
 
 ON=1 47
 local.item=<DEF.house_custom_2story_<ARGN>>
-if (<gold> <SERV.ITEMDEF.<local.item>.VALUE>)
-    sysmessage @,,1 You cannot afford that.
+if (<src.gold> < <SERV.ITEMDEF.<local.item>.VALUE>)
+    src.sysmessage @,,1 You cannot afford that.
     return 1
 endif
 SRC.f_house_placement <local.item>
@@ -1606,8 +1606,8 @@ SDIALOG d_house_placement_tool
 
 ON=1 55
 local.item=<DEF.house_custom_3story_<ARGN>>
-if (<gold> <SERV.ITEMDEF.<local.item>.VALUE>)
-    sysmessage @,,1 You cannot afford that.
+if (<src.gold> < <SERV.ITEMDEF.<local.item>.VALUE>)
+    src.sysmessage @,,1 You cannot afford that.
     return 1
 endif
 SRC.f_house_placement <local.item>

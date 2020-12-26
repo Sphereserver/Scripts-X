@@ -54,16 +54,18 @@ SRC.SOUND={0e 10 0f 10 022 1 023 1 024 1 0267 1}
 
 [REGIONTYPE r_default]
 ON=@Enter
-IF (<SRC.ISPLAYER>) && STRCMPI("<TAG.MUSIC>","<SRC.REGION.TAG.MUSIC>")
- IF !(<isempty <TAG.MUSIC>>)
-  SRC.MIDILIST=<TAG.MUSIC>
- ELSE
-  SRC.MIDILIST=midi_britain1,midi_ForestA,midi_JungleA,midi_MountainA,midi_Plains,midi_Victory
+IF <SRC.ISPLAYER> && <SRC.REGION>
+ IF STRCMPI("<TAG.MUSIC>","<SRC.REGION.TAG.MUSIC>")
+  IF !(<isempty <TAG.MUSIC>>)
+   SRC.MIDILIST=<TAG.MUSIC>
+  ELSE
+   SRC.MIDILIST=midi_britain1,midi_ForestA,midi_JungleA,midi_MountainA,midi_Plains,midi_Victory
+  ENDIF
  ENDIF
 ENDIF
 
 //ON=@CliPeriodic
-//IF (<SRC.ISPLAYER>)
+//IF <SRC.ISPLAYER> && <SRC.REGION>
 // SRC.MIDILIST=midi_britain1,midi_ForestA,midi_JungleA,midi_MountainA,midi_Plains,midi_Victory
 //ENDIF
 

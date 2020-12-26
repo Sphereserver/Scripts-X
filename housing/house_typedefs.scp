@@ -7,16 +7,19 @@ VERSION=X1
 // House sign override
 [TYPEDEF ei_house_sign]
 ON=@Create
+timerf 1, trigger @HouseSysInit // The LINK is automatically set immediately after placement and @Create
+
+ON=@HouseSysInit
 if !<link.tag0.convert>
-    attr=012
-    timer 30
+    attr=010
+    timer = -1
 else
     if <def.hs_can_decay>
         attr=02|010
         timer=60*60*24*<def.hs_can_decay>    
     else
-        timer =-1
         attr=010
+		timer =-1
     endif
 endif
 link.REGION.EVENTS=+r_house_system
