@@ -247,9 +247,12 @@ NEW.REMOVE
 
 [FUNCTION TreasureMap_CanFitLocation]
 REF1=<REGION.UID>
-IF (<REF1.TYPE> == t_multi) || (<REF1.TYPE> == t_multi_custom) || (<REF1.TYPE> == t_ship)
- return 0
-ELIF (<REGION.FLAGS> & region_flag_guarded|region_flag_safe|region_flag_underground)
+IF <REF1.ISVALID>
+    IF (<REF1.TYPE>) //If you get a type, it's because it's not a static Region
+        return 0
+    ENDIF
+ENDIF
+IF (<REGION.FLAGS> & region_flag_guarded|region_flag_safe|region_flag_underground)
  return 0
 ELIF !((<P.TYPE> == t_dirt) || (<P.TYPE> == t_grass) || (<P.TYPE> == t_forest) || (<P.TYPE> == t_jungle) || (<P.TYPE> == t_sand) || (<P.TYPE> == t_snow))
  return 0
