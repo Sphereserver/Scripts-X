@@ -421,6 +421,7 @@ EMOTE_DEF_UNICODE	0
 //msg_arrdep_2					"arrived in"
 //msg_arrdep_3					"departed from"
 //msg_bounce_pack				"in your pack"
+//msg_bounce_cont				"in the %s"
 //msg_cantpush					"You are not strong enough to push %s out of the way."
 //msg_cantsleep					"Can't sleep here"
 //msg_cmd_lackpriv				"You lack privilege to do this."
