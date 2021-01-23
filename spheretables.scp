@@ -23,6 +23,9 @@ As a general rule:
 // sphere.ini and spheretable.scp are automatic.
 // All the other scripts we want to load.
 functions/
+crafting/
+crafting/skillmenu/
+crafting/skillmenu/legacy/
 core/backwards_compatibility_functions.scp
 //core/backwards_compatibility_56b.scp
 //core/backwards_compatibility_56c.scp
@@ -45,8 +48,6 @@ core/magic_preaos.scp
 core/dialogs/
 core/dialogs/admin/
 //core/dialogs/legacy/
-templates_special/sp_tm_book.scp
-templates_special/sp_tm_name.scp
 skills/
 speech/
 speech/human/
@@ -58,10 +59,8 @@ items/
 items/magic_pre_aos/
 items/material_nonbase/
 multis/
-templates/
-templates_special/sp_tm_newbie.scp
-core/regionresources.scp
-core/regiontypes.scp
+core/regionresources.scp 	//Must be define after ITEM
+core/regiontypes.scp		//Must be define after ITEM
 events/
 spells/
 npcs/
@@ -122,6 +121,10 @@ maps/map5/map5_teleports.scp
 maps/map5/map5_teleports_tol.scp
 maps/map5/map5_moongates.scp
 maps/map5/map5_moongates_tol.scp
+
+//templates
+templates/
+templates_special/
 
 //custom/
 

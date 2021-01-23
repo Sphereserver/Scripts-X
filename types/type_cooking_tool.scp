@@ -1,0 +1,17 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+
+[TYPEDEF t_cooking_tool]
+ON=@DClick
+if <topobj.uid> == <src.uid>
+   src.craftskill cooking
+else
+   src.sysmessage @,,1 It must be in your backpack.
+endif
+return 1
+
+[eof]
