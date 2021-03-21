@@ -193,7 +193,7 @@ attr_canuse_paralyzed	080000000 //Can item usable while paralyzed?
 //attr_factionitem        080000000000000 //Unused.
 //attr_vvvitem            0100000000000000 //Unused.
 
-[DEFNAME can_flags]
+[DEFNAME can_m_flags]
 // monster "can" type flags.
 mt_male           000000
 mt_ghost          000001   // Moves through doors
@@ -554,6 +554,10 @@ can_u_human			04
 can_u_elf			08
 can_u_gargoyle		010
 can_u_none			020
+
+[DEFNAME can_o_flags]
+// "Can" flags working for both chars and items
+can_o_nosleep 		010000000
 
 [DEFNAME swing_types]
 war_swing_equipping		0	// we are recoiling our weapon.
