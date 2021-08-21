@@ -36,6 +36,20 @@ f_onserver_timer
 //	1 --> Deny access and send deny message
 //	2 --> Allow access (default action)
 
+[FUNCTION f_onclient_exceed_network_quota]
+// This function is called after a client exceeded its in/out network traffic quota.
+// Variables:
+//	LOCAL.Account --> Account name connecting ("NA" if no account attached)
+//	LOCAL.IP      --> IP address connecting
+//      SRC --> Client Object
+//      ARGN1 --> (1: output quota; 2: input quota)
+//      ARGN2 --> bytes sent/received
+//      ARGN3 --> maximum bytes allowed to be sent/received (quota)
+// Return:
+//    0 --> Ignore this, stop hardcoded behavior but generate a log message
+//    1 --> Ignore this, stop hardcoded behavior and do not generate a log message
+//    2 --> Disconnect client and generate log message (default behavior)
+
 
 [FUNCTION f_onaccount_connect]
 // This function is called when an client connect on server, before password checks.
