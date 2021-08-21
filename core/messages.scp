@@ -212,6 +212,7 @@ EMOTE_DEF_UNICODE	0
 //herding_success				"The animal goes where it is instructed"
 //hiding_revealed				"You have been revealed"
 //hiding_stumble				"You stumble apon %s hidden."
+//hiding_stumble_osilike		"Being perfectly rested, you shove something invisible out of the way."
 //hiding_success				"You have hidden yourself well"
 //hiding_toolit					"You are too well lit to hide"
 //inscription_fail				"You have no blank scrolls"

@@ -76,7 +76,6 @@ Checkertrans 5 5 640 497
 
 DText 10 7 0c1 SphereServer <Src.Version> Admin Panel (<Serv.Servname>) - <Def.d_admin_<Src.CTag0.AccountLang>_clients> <QVal (<CTag0.Dialog.Admin.Search>)? <Def.d_admin_<Src.CTag0.AccountLang>_Found> <dCTag0.Dialog.Admin.Clients> <Def.d_admin_<Src.CTag0.AccountLang>_Results> : <dCTag0.Dialog.Admin.Clients>>
 Button 615 5 4017 4018 1 0 0
-serv.log <Src.CTag0.AccountLang>
 
 If (<Def0.Admin_GM_Function> = 1)
    If (<Account.Plevel> > 1)
