@@ -1,0 +1,23 @@
+//These are functions that get grouped together for spawner purposes
+
+[function spawn_dungeons_felucca]
+spawn_blighted_grove_felucca
+spawn_britain_sewer_felucca
+spawn_covetous_felucca
+spawn_deceit_felucca
+spawn_despise_felucca
+spawn_destard_felucca
+spawn_fire_dungeon_felucca
+spawn_hythloth_felucca
+spawn_ice_dungeon_felucca
+spawn_orc_caves_felucca
+spawn_painted_caves_felucca
+spawn_khaldun_felucca
+spawn_palace_of_paroxysmus_felucca
+spawn_prism_of_light_felucca
+spawn_shame_felucca
+spawn_solen_hive_felucca
+spawn_terathan_keep_felucca
+spawn_wrong_felucca
+
+[EOF]

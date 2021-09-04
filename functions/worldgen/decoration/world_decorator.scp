@@ -1,0 +1,322 @@
+[defname world_decorator_settings]
+
+worlddecorator_facet_0		Felucca
+worlddecorator_facet_0_0	Britain,deco_britain_felucca
+worlddecorator_facet_0_1	Bucaneer's Den,deco_buccaneers_den_felucca
+worlddecorator_facet_0_2	Cove,deco_cove_felucca
+worlddecorator_facet_0_3	Delucia,deco_delucia_felucca
+worlddecorator_facet_0_4	Heartwood,deco_heartwood_felucca
+worlddecorator_facet_0_5	Jhelom,deco_jhelom_felucca
+worlddecorator_facet_0_6	Magincia,deco_magincia_felucca
+worlddecorator_facet_0_7	Minoc,deco_minoc_felucca
+worlddecorator_facet_0_8	Moonglow,deco_moonglow_felucca
+worlddecorator_facet_0_9	Nujel'm,deco_nujelm_felucca
+worlddecorator_facet_0_10	Ocllo,deco_ocllo_felucca
+worlddecorator_facet_0_11	Papua,deco_papua_felucca
+worlddecorator_facet_0_12	Sea Market,deco_sea_market_felucca
+worlddecorator_facet_0_13	Serpent's Hold,deco_serpents_hold_felucca
+worlddecorator_facet_0_14	Skara Brae,deco_skara_brae_felucca
+worlddecorator_facet_0_15	Trinsic,deco_trinsic_felucca
+worlddecorator_facet_0_16	Vesper,deco_vesper_felucca
+worlddecorator_facet_0_17	Wind,deco_wind_felucca
+worlddecorator_facet_0_18	Yew,deco_yew_felucca
+worlddecorator_facet_0_19	Blighted Cove,deco_blighted_cove_magincia
+worlddecorator_facet_0_20	Covetous,deco_covetous_felucca
+worlddecorator_facet_0_21	Deceit, deco_deceit_felucca
+worlddecorator_facet_0_22	Despise,deco_despise_felucca
+worlddecorator_facet_0_23	Destard,deco_destard_felucca
+worlddecorator_facet_0_24	Fire Dungeon,deco_fire_dungeon_felucca
+worlddecorator_facet_0_25	Hedge Maze,deco_hedge_maze_felucca
+worlddecorator_facet_0_26	Hythloth,deco_hythloth_felucca
+worlddecorator_facet_0_27	Ice Dungeon,deco_ice_dungeon_felucca
+worlddecorator_facet_0_28	Khaldun,deco_khaldun_felucca
+worlddecorator_facet_0_29	Orc Cave,deco_orc_cave_felucca
+worlddecorator_facet_0_30	Painted Cave,deco_painted_cave_felucca
+worlddecorator_facet_0_31	Palace of Paroxysmus,deco_palace_of_proxysmus_felucca
+worlddecorator_facet_0_32	Prism of Light,deco_prism_of_light_felucca
+worlddecorator_facet_0_33	Sanctuary,deco_sanctuary_felucca
+worlddecorator_facet_0_34	Shame,deco_shame_felucca
+worlddecorator_facet_0_35	Solen Hive,deco_solen_hive_felucca
+worlddecorator_facet_0_36	Terathan Keep,deco_terathan_keep_felucca
+worlddecorator_facet_0_37	Wrong,deco_wrong_felucca
+worlddecorator_facet_0_38	Ruined Magincia,deco_magincia_ruined_felucca
+worlddecorator_facet_0_39	Terrain Fixes & Misc,place_terrain_fixes_felucca
+
+worlddecorator_facet_1		Trammel
+worlddecorator_facet_1_0	Britain,deco_britain_trammel
+worlddecorator_facet_1_1	Buccaneer's Den,deco_buccaneers_den_trammel
+worlddecorator_facet_1_2	Cove,deco_cove_trammel
+worlddecorator_facet_1_3	Delucia,deco_delucia_trammel
+worlddecorator_facet_1_4	Heartwood,deco_heartwood_trammel
+worlddecorator_facet_1_5	Jhelom,deco_jhelom_trammel
+worlddecorator_facet_1_6	Magincia,deco_magincia_trammel
+worlddecorator_facet_1_7	Minoc,deco_minoc_trammel
+worlddecorator_facet_1_8	Magincia,deco_magincia_trammel
+worlddecorator_facet_1_9	Nujel'm,deco_nujelm_trammel
+worlddecorator_facet_1_10	Papua,deco_papua_trammel
+worlddecorator_facet_1_11	Sea Market,deco_sea_market_trammel
+worlddecorator_facet_1_12	Serpent's Hold,deco_serpents_hold_trammel
+worlddecorator_facet_1_13	Skara Brae,deco_skara_brae_trammel
+worlddecorator_facet_1_14	Trinsic,deco_trinsic_trammel
+worlddecorator_facet_1_15	Vesper,deco_vesper_trammel
+worlddecorator_facet_1_16	Wind,deco_wind_trammel
+worlddecorator_facet_1_17	Yew,deco_yew_trammel
+worlddecorator_facet_1_18	Blighted Grove,deco_blighted_grove_trammel
+worlddecorator_facet_1_19	Covetous,deco_covetous_trammel
+worlddecorator_facet_1_20	Deceit,deco_deceit_trammel
+worlddecorator_facet_1_21	Despise,deco_despise_trammel
+worlddecorator_facet_1_22	Destard,deco_destard_trammel
+worlddecorator_facet_1_23	Fire Dungeon,deco_fire_dungeon_trammel
+worlddecorator_facet_1_24	Hedge Maze,deco_hedge_maze_trammel
+worlddecorator_facet_1_25	Hythloth,deco_hythloth_trammel
+worlddecorator_facet_1_26	Ice Dungeon,deco_ice_dungeon_trammel
+worlddecorator_facet_1_27	Orc Cave,deco_orc_cave_trammel
+worlddecorator_facet_1_28	Painted Cave,deco_painted_cave_trammel
+worlddecorator_facet_1_29	Palace of Paroxysmus,deco_palace_of_paroxysmus_trammel
+worlddecorator_facet_1_30	Prism of Light,deco_prism_of_light_trammel
+worlddecorator_facet_1_31	Sanctuary,deco_sanctuary_trammel
+worlddecorator_facet_1_32	Shame,deco_shame_trammel
+worlddecorator_facet_1_33	Solen Hive,deco_solen_hive_trammel
+worlddecorator_facet_1_34	Terathan Keep,deco_terathan_keep_trammel
+worlddecorator_facet_1_35	Wrong,deco_wrong_trammel
+worlddecorator_facet_1_36	Additional Haven Deco,deco_haven_additional_trammel
+worlddecorator_facet_1_37	Runied Magincia,deco_magincia_ruined_trammel
+worlddecorator_facet_1_38	New Haven,deco_haven_new_trammel
+worlddecorator_facet_1_39	Old Haven,deco_haven_old_trammel
+worlddecorator_facet_1_40	Haven,deco_haven_trammel
+worlddecorator_facet_1_41	Uzeraan Turmoil,deco_uzeraan_turmoil_quest_trammel
+worlddecorator_facet_1_42	Terrain Fixes & Misc,place_terrain_fixes_trammel
+
+
+
+worlddecorator_facet_2		Ilshenar
+worlddecorator_facet_2_0	Ankh Dungeon,deco_ankh_dungeon_ilshenar
+worlddecorator_facet_2_1	Blood Dungeon,deco_blood_dungeon_ilshenar
+worlddecorator_facet_2_2	Castle Blackthorn,deco_castle_blackthorn_ilshenar
+worlddecorator_facet_2_3	Dueces Vinculum Inn,deco_dueces_vinculum_inn_ilshenar
+worlddecorator_facet_2_4	Exodus Dungeon,deco_exodus_dungeon_ilshenar
+worlddecorator_facet_2_5	Gargoyle Mining Camp,deco_gargoyle_mining_camp
+worlddecorator_facet_2_6	Memorial to Gweno,deco_gweno_memoral_ilshenar
+worlddecorator_facet_2_7	Small Gypsy Camp,deco_gypsy_camp_small_ilshenar
+worlddecorator_facet_2_8	Large Gypsy Camp,deco_gyspy_camp_large_ilshenar
+worlddecorator_facet_2_9	Lakeshire,deco_lakshire_ilshenar
+worlddecorator_facet_2_10	Meer Catacombs,deco_meer_catacombs_ilshenar
+worlddecorator_facet_2_11	Misc,deco_misc_ilshenar
+worlddecorator_facet_2_12	Mistas,deco_mista_ilshenar
+worlddecorator_facet_2_13	Rat Cave,deco_rat_cave_ilshenar
+worlddecorator_facet_2_14	Rat Fortress,deco_rat_fortress_ilshenar
+worlddecorator_facet_2_15	Reg Volom,deco_reg_volom_ilshenar
+worlddecorator_facet_2_16	Savage Village,deco_savage_village_ilshenar
+worlddecorator_facet_2_17	Serpentine Passage,deco_serpentine_passage_ilshenar
+worlddecorator_facet_2_18	Sheep Farm,deco_sheep_farm_ilshenar
+worlddecorator_facet_2_19	Shrines,deco_shrines_ilshenar
+worlddecorator_facet_2_20	Sorcerer's Dungeon,deco_sorcerers_dungeon_ilshenar
+worlddecorator_facet_2_21	Terrort Skitas,deco_terrot_skitas_ilshenar
+worlddecorator_facet_2_22	Twin Oaks Inn,deco_twinoaks_inn_ilshenar
+worlddecorator_facet_2_23	Twisted Weald,deco_twisted_weald_ilshenar
+worlddecorator_facet_2_24	Ver Lor Reg,deco_ver_lor_reg_ilshenar
+worlddecorator_facet_2_25	Wisp Dungeon,deco_wisp_dungeon_ilshenar
+
+
+
+worlddecorator_facet_3		Malas
+worlddecorator_facet_3_0	All Malas,deco_all_malas
+
+worlddecorator_facet_4		Tokuno
+worlddecorator_facet_4_0	All Tokuno,deco_all_tokuno
+
+
+worlddecorator_facet_5		Ter Mur
+worlddecorator_facet_5_0	Underworld,deco_underworld_ter_mur
+
+/////////////////////////////
+// World Decorator item
+
+[itemdef i_world_decorator]
+id=i_crystal_ball
+name=World Decorator
+type=t_script
+
+category=GM Items
+subsection=Worldgen
+description=World Decorator
+
+on=@create
+attr=010
+color=06
+
+on=@dclick
+if (<src.account.plevel> < 6)
+  src.sysmessage You can not use this
+  return 1
+endif
+sdialog d_world_decorator
+return 1
+
+////////////////////////////////////////////
+
+[DIALOG d_world_decorator]
+220,30
+
+page 0
+resizepic 10 10 9200 360 520		
+
+page 1
+
+resizepic 40 20 9200 300 30
+dtext 140 25 1263 World Decorator
+
+resizepic 140 55 9350 100 30
+dtext 150 60 1000 Version: 
+dtext 200 60 036 4.0
+
+resizepic 30 90 9350 320 50		
+dtext 95 95 1000 Special Thanks to:
+dtext 215 95 17 Nerun's Distro
+dtext 90 110 1000 and to            for inspiring
+dtext 135 110 17 AmongVangrell
+
+
+dtext 150 150 1263 Basic Items
+resizepic 29 169 3000 320 100
+
+
+button 30 170 4006 4007 1 0 1		
+dtext 65 170 1000 Generate Doors
+button 30 195 4006 4007 1 0 2		
+dtext 65 195 1000 Generate Signs 
+button 30 220 4006 4007 1 0 3		
+dtext 65 220 1000 Generate Moongates
+button 30 245 4006 4007 1 0 7	
+dtext 65 245 1000 Generate Book
+	
+button 200 170 4006 4007 1 0 4		
+dtext 235 170 1000 Remove Doors 	
+button 200 195 4006 4007 1 0 5		
+dtext 235 195 1000 Remove Signs		
+button 200 220 4006 4007 1 0 6		
+dtext 235 220 1000 Remove Moongates
+button 200 245 4006 4007 1 0 8		
+dtext 235 245 1000 Remove Book 	
+
+
+dtext 155 275 1263 Decoration	
+resizepic 30 295 3000 330 150	
+while !<isempty <def.worlddecorator_facet_<dlocal.n>>>
+  args=<def0.worlddecorator_facet_<dlocal.n>>
+  button 30 <eval 295+(<local.n>*25)> 4006 4007 1 0 <eval <local.n>+9>
+  dtext 65 <eval 295+(<local.n>*25)> <eval 026+(<local.n>*20)> <argv[0]>
+  button 200 <eval 295+(<local.n>*25)> 4012 4013 0 <eval <local.n>+2>
+  dtext 235 <eval 295+(<local.n>*25)> 1000 More [<argv[0]>]
+  local.n += 1
+endwhile
+
+resizepic 30 470 3000 260 20
+button 30 470 4006 4007 1 0 999999	
+dtext 65 470 1000 Remove    items from the server
+dtext 110 470 026 ALL
+
+tilepic 310 470 13945 1
+
+local.n=
+local.x=2
+while !<isempty <def.worlddecorator_facet_<dlocal.n>>>
+  page=<local.x>		
+  resizepic 85 20 9200 205 20	
+  args=<def0.worldspawner_facet_<dlocal.n>>		
+  dtext 140 20 <eval 026+(<local.n>*20)> <argv[0]> Decorator		
+  button 20 470 4015 4016 0 1
+  dtext 60 470 1263 Go Back
+  while !<isempty <def.worlddecorator_facet_<dlocal.n>_<dlocal.y>>>
+    args=<def.worlddecorator_facet_<dlocal.n>_<dlocal.y>>
+    button <eval 35+(<local.z>*160)> <eval 45+(<local.q>*20)> 210 211 1 0 <eval ((<local.n>*100)+<local.y>)+100>
+    dtext <eval 65+(<local.z>*160)> <eval 45+(<local.q>*20)> 1000 <argv[0]>
+    dtext <eval 42+(<local.z>*160)> <eval 44+(<local.q>*20)> 1000 <qval <var0.<argv[1]>>?<dvar0.<argv[1]>>:>
+    if <local.y> == 20
+      local.z=1
+      local.q=-1
+    endif
+    local.q += 1
+    local.y += 1
+  endwhile
+  local.n += 1
+  local.x += 1
+  local.y=
+  local.z=
+  local.q=
+endwhile
+	
+
+[dialog d_world_decorator button]
+
+onbutton=1,99	
+doswitch <eval <argn>-1>
+  begin
+    src.place_doors_felucca
+    src.place_doors_trammel
+    src.f_link_double_doors
+    src.sysmessage Doors placed
+  end
+  begin
+    src.place_signs_felucca
+    src.place_signs_trammel
+    src.sysmessage Signs placed
+  end
+  src.place_moongates
+  src.f_remove_all_doors
+  src.f_remove_all_signs
+  src.remove_moongates
+  src.f_stock_bookcases
+  src.f_clearout_bookcases
+  src.f_decorate_facet 0
+  src.f_decorate_facet 1
+  src.f_decorate_facet 2
+  src.f_decorate_facet 3
+  src.f_decorate_facet 4
+  src.f_decorate_facet 5
+enddo
+sdialog d_world_decorator
+
+onbutton=100,1000
+argn -= 100
+
+local.n=<eval <argn>/100>
+local.x=<eval <argn>-(<local.n>*100)>
+
+args=<def0.worlddecorator_facet_<dlocal.n>_<dlocal.x>>
+
+var0.decorator_facet=<local.n>
+src.<argv[1]>
+var0.<argv[1]> += 1
+src.sysmessage @<eval 026+(<local.n>*20)> Decorating <argv[0]> in <def0.worldspawner_facet_<dlocal.n>> complete.
+var0.decorator_facet=
+sdialog d_world_decorator <eval <local.n>+2>
+
+onbutton=999999	
+sdialog d_f_destroy_world
+
+
+[DIALOG d_f_destroy_world]
+250,200
+
+resizepic 10 10 9200 300 100
+
+dtext 110 20 1263 ARE YOU SURE?
+dtext 25 45 026 [ATTENTION ALL ITEMS WILL BE DELETED!!]
+
+button 50 75 4015 4016 1 0 1
+dtext 90 75 1000 Go Back
+
+button 210 75 249 248 1 0 2
+
+[DIALOG d_f_destroy_world button]
+onbutton=1
+sdialog d_world_decorator
+
+onbutton=2
+src.f_destroy_world
+sdialog d_world_decorator
+
+
+
+[EOF]

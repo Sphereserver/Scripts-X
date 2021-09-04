@@ -1269,33 +1269,26 @@ CATEGORY=Decoration - Dungeons and The Dead
 SUBSECTION=Graves & Gravestones
 DESCRIPTION=Gravestone
 
-[ITEMDEF 01185]
-DEFNAME=i_gravestone_19
-NAME=memorial to Gwenno
-//TYPE=t_sign_gump
-//TDATA2=066
-FLIP=1
-WEIGHT=800.0
-RESOURCES=80 i_rock_plain
+[itemdef 01185]
+defname=i_memorial_gwenn
+name=Memorial to Gween
+RESOURCES=4 i_floor_marble
+WEIGHT=20
 CATEGORY=Decoration - Dungeons and The Dead
 SUBSECTION=Graves & Gravestones
-DESCRIPTION=Memorial to Gwenno
+DESCRIPTION=Gween Memorial
 DUPELIST=01186,01187,01188,01189
-
 [ITEMDEF 01186]
-//memorial to Gwenno
+//Gween Memorial
 DUPEITEM=01185
-
 [ITEMDEF 01187]
-//memorial to Gwenno
+//Gween Memorial
 DUPEITEM=01185
-
 [ITEMDEF 01188]
-//memorial to Gwenno
+//Gween Memorial
 DUPEITEM=01185
-
 [ITEMDEF 01189]
-//memorial to Gwenno
+//Gween Memorial
 DUPEITEM=01185
 
 

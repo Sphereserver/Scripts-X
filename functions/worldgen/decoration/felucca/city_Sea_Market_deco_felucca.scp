@@ -1,0 +1,286 @@
+[function deco_sea_market_felucca]
+
+
+////////////////////////////////////////////////////
+// Sea Market / Dock Town //
+////////////////////////////////////////////////////
+//	
+serv.newitem=01E5E
+new.attr=attr_static 
+new.p=4544 2298 -1
+serv.newitem= 01E5E
+new.attr=attr_static 
+new.p=4539 2316 -1
+//	
+serv.newitem=00DBA
+new.attr=attr_static 
+new.p=4533 2400 -5
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4574 2350 -5
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4574 2329 -5
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4531 2333 -2
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4532 2384 -5
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4573 2379 0
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4575 2407 -5
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4575 2408 -5
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4545 2369 -5
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4528 2367 -5
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4574 2311 -1
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4575 2349 -5
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4559 2354 -5
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4556 2400 -5
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4573 2303 -2
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4538 2385 -5
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4574 2351 -5
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4531 2400 -5
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4529 2400 -5
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4547 2400 -5
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4529 2395 -5
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4531 2333 -2
+serv.newitem= 00DBA
+new.attr=attr_static 
+new.p=4540 2349 -2
+//	
+serv.newitem=014F6
+new.attr=attr_static 
+new.p=4546 2331 2
+//	
+serv.newitem=010EF
+new.attr=attr_static 
+new.p=4550 2336 -2
+//	
+serv.newitem=00DBB
+new.attr=attr_static 
+new.p=4574 2330 -5
+serv.newitem= 00DBB
+new.attr=attr_static 
+new.p=4575 2351 -5
+serv.newitem= 00DBB
+new.attr=attr_static 
+new.p=4529 2348 -5
+serv.newitem= 00DBB
+new.attr=attr_static 
+new.p=4529 2367 -5
+serv.newitem= 00DBB
+new.attr=attr_static 
+new.p=4531 2401 -5
+serv.newitem= 00DBB
+new.attr=attr_static 
+new.p=4556 2401 -5
+serv.newitem= 00DBB
+new.attr=attr_static 
+new.p=4536 2368 -5
+serv.newitem= 00DBB
+new.attr=attr_static 
+new.p=4574 2404 -5
+serv.newitem= 00DBB
+new.attr=attr_static 
+new.p=4529 2366 -5
+serv.newitem= 00DBB
+new.attr=attr_static 
+new.p=4532 2400 -5
+serv.newitem= 00DBB
+new.attr=attr_static 
+new.p=4558 2353 -5
+serv.newitem= 00DBB
+new.attr=attr_static 
+new.p=4568 2408 -5
+serv.newitem= 00DBB
+new.attr=attr_static 
+new.p=4573 2337 -5
+serv.newitem= 00DBB
+new.attr=attr_static 
+new.p=4559 2353 -5
+serv.newitem= 00DBB
+new.attr=attr_static 
+new.p=4574 2408 -5
+serv.newitem= 00DBB
+new.attr=attr_static 
+new.p=4574 2380 -5
+serv.newitem= 00DBB
+new.attr=attr_static 
+new.p=4574 2296 -5
+//	
+serv.newitem=01BD6
+new.attr=attr_static 
+new.p=4552 2323 4
+//	
+serv.newitem=014ED
+new.attr=attr_static 
+new.p=4538 2328 2
+serv.newitem= 014ED
+new.attr=attr_static 
+new.p=4552 2324 4
+//	
+serv.newitem=01F28 
+new.Name=Please Put Your Garbage In Here. Thank You!
+new.attr=attr_static 
+new.p=4546 2314 3
+//	
+serv.newitem=014F4
+new.attr=attr_static 
+new.p=4539 2328 2
+//	
+serv.newitem=00A93
+new.attr=attr_static 
+new.p=4552 2322 4
+//	
+serv.newitem=014EE
+new.attr=attr_static 
+new.p=4552 2324 4
+//	
+serv.newitem=01DB7
+new.attr=attr_static 
+new.p=4540 2329 -2
+serv.newitem= 01DB7
+new.attr=attr_static 
+new.p=4540 2329 -2
+//	
+serv.newitem=01EA6
+new.attr=attr_static 
+new.p=4543 2324 -2
+//	
+serv.newitem=014F8
+new.attr=attr_static 
+new.p=4544 2315 -2
+//	
+serv.newitem=00DD6
+new.attr=attr_static 
+new.p=4559 2333 -2
+//	
+serv.newitem=00A6C
+new.attr=attr_static 
+new.p=4552 2322 5
+//	
+serv.newitem=0154D
+new.attr=attr_static 
+new.p=4541 2326 4
+serv.newitem= 0154D
+new.attr=attr_static 
+new.p=4540 2326 4
+//	
+serv.newitem=010F1
+new.attr=attr_static 
+new.p=4543 2324 -2
+//	
+//Anvil
+serv.newitem= 0FAF
+new.attr=attr_static 
+new.p=4567 2327 -2
+//	
+serv.newitem=01E2B
+new.attr=attr_static 
+new.p=4543 2326 -2
+serv.newitem= 01E2B
+new.attr=attr_static 
+new.p=4543 2316 -2
+//	
+serv.newitem=00DD7
+new.attr=attr_static 
+new.p=4531 2350 -2
+//	
+serv.newitem=00FB1
+new.attr=attr_static 
+new.p=4568 2327 -2
+//	
+serv.newitem=i_addon_trash_barrel 
+new.color=0946
+new.attr=attr_static 
+new.p=4546 2314 -2
+//not implemented?	
+serv.newitem=044CA
+new.attr=attr_static 
+new.p=4552 2303 -2
+//	
+serv.newitem=3063
+new.attr=attr_static 
+new.p=4537 2324 3
+//	
+serv.newitem=00BD1 
+new.Name=Winds Tavern
+new.attr=attr_static 
+new.p=4548 2300 -6
+//	
+//FullBookcase
+serv.newitem= 0A97
+new.attr=attr_static 
+new.p=4537 2316 -1
+//	
+serv.newitem=00BCF 
+new.Name=General Store
+new.attr=attr_static 
+new.p=4543 2317 -2
+//	
+serv.newitem=0E83
+new.attr=attr_static 
+new.p=4537 2320 -1
+//	
+serv.newitem=014F7
+new.attr=attr_static 
+new.p=4537 2319 7
+serv.newitem= 014F7
+new.attr=attr_static 
+new.p=4537 2320 7
+//	
+serv.newitem=01DB7
+new.attr=attr_static 
+new.p=4540 2329 -2
+//	
+serv.newitem=3062
+new.attr=attr_static 
+new.p=4537 2325 3
+//	
+serv.newitem=0a1a
+new.attr=attr_static 
+new.p=4568 2400 15
+//	
+serv.newitem=00DC0
+new.attr=attr_static 
+new.p=4544 2324 -2
+//	
+serv.newitem=014EC
+new.attr=attr_static 
+new.p=4552 2318 2
+
+[EOF]

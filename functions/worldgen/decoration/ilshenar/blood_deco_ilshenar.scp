@@ -1,0 +1,140 @@
+[function deco_blood_dungeon_ilshenar]
+
+// stone pavers
+serv.newitem=00521 
+new.color=01
+new.attr=attr_static 
+new.p=1745 1236 -30 2
+serv.newitem=00521 
+new.color=01
+new.attr=attr_static 
+new.p=1746 1236 -30 2
+serv.newitem=00521 
+new.color=01
+new.attr=attr_static 
+new.p=1747 1236 -30 2
+serv.newitem=00521 
+new.color=01
+new.attr=attr_static 
+new.p=1748 1236 -30 2
+
+// studded gloves
+serv.newitem=013D5
+new.attr=attr_static 
+new.p=2057 937 -28 2
+
+// metal chest
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=2051 932 -23 2
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=2051 933 -23 2
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=2153 907 -23 2
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=2153 917 -23 2
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=2177 932 -23 2
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=2051 931 -23 2
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=2075 906 -23 2
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=2075 907 -23 2
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=2075 908 -23 2
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=2075 917 -23 2
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=2075 918 -23 2
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=2075 919 -23 2
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=2153 906 -23 2
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=2153 908 -23 2
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=2153 918 -23 2
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=2153 919 -23 2
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=2177 931 -23 2
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=2177 933 -23 2
+
+// bones
+serv.newitem=00ED2
+new.attr=attr_static 
+new.p=2110 903 -28 2
+
+// barred metal door
+serv.newitem=01FF7
+new.attr=attr_static 
+new.p=2046 835 -28 2
+serv.newitem=01FF7
+new.attr=attr_static 
+new.p=2046 841 -28 2
+
+// barred metal door
+serv.newitem=01FEF
+new.attr=attr_static 
+new.p=2048 832 -28 2
+serv.newitem=01FEF
+new.attr=attr_static 
+new.p=2052 832 -28 2
+serv.newitem=01FEF
+new.attr=attr_static 
+new.p=2056 832 -28 2
+serv.newitem=01FEF
+new.attr=attr_static 
+new.p=2172 832 -28 2
+serv.newitem=01FEF
+new.attr=attr_static 
+new.p=2176 832 -28 2
+serv.newitem=01FEF
+new.attr=attr_static 
+new.p=2180 832 -28 2
+serv.newitem=01FEF
+new.attr=attr_static 
+new.p=2184 832 -28 2
+
+// stone stairs
+serv.newitem=00789 
+new.color=096C
+new.attr=attr_static 
+new.p=2112 829 -13 2
+serv.newitem=00789 
+new.color=096C
+new.attr=attr_static 
+new.p=2113 829 -13 2
+serv.newitem=00789 
+new.color=096C
+new.attr=attr_static 
+new.p=2114 829 -13 2
+serv.newitem=00789 
+new.color=096C
+new.attr=attr_static 
+new.p=2115 829 -13 2
+serv.newitem=00789 
+new.color=096C
+new.attr=attr_static 
+new.p=2116 829 -13 2
+
+[eof]

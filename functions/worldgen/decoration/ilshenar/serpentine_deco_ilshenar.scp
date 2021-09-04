@@ -1,0 +1,36 @@
+[function deco_serpentine_passage_ilshenar]
+// lute
+SERV.NEWITEM=00EB3
+new.attr=attr_static
+new.p=426 1557 -23 2
+// lap harp
+SERV.NEWITEM=00EB2
+new.attr=attr_static
+new.p=426 1558 -23 2
+// tambourine
+SERV.NEWITEM=00E9E
+new.attr=attr_static
+new.p=427 1560 -23 2
+// standing harp
+SERV.NEWITEM=00EB1
+new.attr=attr_static
+new.p=434 1557 -22 2
+SERV.NEWITEM=00EB1
+new.attr=attr_static
+new.p=436 1557 -22 2
+// metal door
+SERV.NEWITEM=00675 
+new.color=08AB
+new.attr=attr_static
+new.p=478 1527 -27 2
+// metal door
+SERV.NEWITEM=00677 
+new.color=08AB
+new.attr=attr_static
+new.p=479 1527 -27 2
+// drum
+SERV.NEWITEM=00E9C
+new.attr=attr_static
+new.p=427 1557 -23 2
+
+[EOF]

@@ -1,0 +1,4585 @@
+[function deco_skara_brae_felucca]
+
+//Teleporters //
+serv.newitem=01BC3 
+new.morep=709 2236 -2
+new.name=teleporter
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.p=683 2233 -2
+serv.newitem=01BC3 
+new.morep=683 2233 -2
+new.name=teleporter
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.p=709 2236 -2
+serv.newitem=01BC3 
+new.morep=709 2238 -2
+new.name=teleporter
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.p=683 2242 -2
+serv.newitem=01BC3 
+new.morep=683 2242 -2
+new.name=teleporter
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.p=709 2238 -2
+//Main Island //
+//fireplace
+serv.newitem=08DA
+new.attr=attr_static 
+new.p=552 2171 0
+//
+//fireplace
+serv.newitem=08DB
+new.attr=attr_static 
+new.p=552 2170 0
+//
+//oven
+serv.newitem=092C
+new.attr=attr_static 
+new.p=552 2168 0
+//
+//basket
+//Basket
+serv.newitem=0990
+new.attr=attr_static 
+new.p=609 2152 0
+//
+//fruit basket
+//FruitBasket
+serv.newitem=0993
+new.attr=attr_static 
+new.p=611 2154 6
+//
+//ceramic mug
+//CeramicMug
+serv.newitem=0997
+new.attr=attr_static 
+new.p=592 2276 4
+//
+//bottle of liquor
+//BeverageBottle
+serv.newitem=099B
+new.attr=attr_static 
+new.p=616 2195 4
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=643 2176 4
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=627 2173 4
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=669 2146 4
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=562 2188 4
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=562 2170 4
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=600 2187 4
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=558 2175 6
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=556 2175 6
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=552 2175 6
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=568 2114 4
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=592 2164 4
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=611 2216 4
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=558 2181 4
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=576 2234 4
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=648 2154 4
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=562 2181 4
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=558 2186 4
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=584 2138 4
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=562 2174 4
+serv.newitem=099B  
+new.attr=attr_static 
+new.p=602 2200 4
+//Fork
+serv.newitem=09A3
+new.attr=attr_static 
+new.p=669 2147 4
+//Fork
+serv.newitem=09A4
+new.attr=attr_static 
+new.p=628 2173 4
+//Knife
+serv.newitem=09A5
+new.attr=attr_static 
+new.p=669 2147 4
+//Knife
+serv.newitem=09A6
+new.attr=attr_static 
+new.p=628 2173 4
+//FillableMetalBox
+serv.newitem=09A8
+new.attr=attr_static 
+new.p=581 2230 6
+serv.newitem=09A8  
+new.attr=attr_static 
+new.p=595 2200 6
+serv.newitem=09A8  
+new.attr=attr_static 
+new.p=589 2144 6
+serv.newitem=09A8  
+new.attr=attr_static 
+new.p=652 2160 6
+serv.newitem=09A8  
+new.attr=attr_static 
+new.p=604 2178 6
+serv.newitem=09A8  
+new.attr=attr_static 
+new.p=620 2215 6
+serv.newitem=09A8  
+new.attr=attr_static 
+new.p=603 2272 6
+serv.newitem=09A8  
+new.attr=attr_static 
+new.p=603 2232 6
+//FillableSmallCrate
+serv.newitem=09A9
+new.attr=attr_static 
+new.p=636 2161 0
+serv.newitem=009A9
+new.attr=attr_static 
+new.p=634 2163 0
+//MetalChest
+serv.newitem=09AB
+new.attr=attr_static 
+new.p=595 2147 3
+serv.newitem=09AB 
+new.attr=attr_static 
+new.p=596 2147 3
+serv.newitem=009AB
+new.attr=attr_static 
+new.p=593 2147 3
+//spoon
+serv.newitem=09C2
+new.attr=attr_static 
+new.p=669 2147 4
+//spoon
+serv.newitem=09C3
+new.attr=attr_static 
+new.p=628 2173 4
+//BeverageBottle
+serv.newitem=09C7
+new.attr=attr_static 
+new.p=558 2172 6
+serv.newitem=09C7  
+new.attr=attr_static 
+new.p=562 2176 4
+serv.newitem=09C7  
+new.attr=attr_static 
+new.p=558 2182 4
+serv.newitem=09C7  
+new.attr=attr_static 
+new.p=554 2182 4
+serv.newitem=09C7  
+new.attr=attr_static 
+new.p=554 2187 4
+serv.newitem=09C7  
+new.attr=attr_static 
+new.p=562 2187 4
+serv.newitem=09C7  
+new.attr=attr_static 
+new.p=554 2188 4
+//
+//plate
+//Plate
+serv.newitem=09D7
+new.attr=attr_static 
+new.p=554 2175 6
+serv.newitem=09D7  
+new.attr=attr_static 
+new.p=592 2275 4
+serv.newitem=09D7  
+new.attr=attr_static 
+new.p=584 2139 4
+serv.newitem=09D7  
+new.attr=attr_static 
+new.p=592 2165 4
+serv.newitem=09D7  
+new.attr=attr_static 
+new.p=628 2173 4
+serv.newitem=09D7  
+new.attr=attr_static 
+new.p=669 2147 4
+serv.newitem=09D7  
+new.attr=attr_static 
+new.p=558 2174 6
+serv.newitem=09D7  
+new.attr=attr_static 
+new.p=603 2200 4
+serv.newitem=09D7  
+new.attr=attr_static 
+new.p=616 2196 4
+serv.newitem=09D7  
+new.attr=attr_static 
+new.p=600 2186 4
+serv.newitem=09D7  
+new.attr=attr_static 
+new.p=568 2115 4
+serv.newitem=09D7  
+new.attr=attr_static 
+new.p=576 2235 4
+serv.newitem=09D7  
+new.attr=attr_static 
+new.p=648 2155 4
+serv.newitem=09D7  
+new.attr=attr_static 
+new.p=644 2176 4
+serv.newitem=09D7  
+new.attr=attr_static 
+new.p=612 2216 4
+//
+//fork
+//Fork
+serv.newitem=09F4
+new.attr=attr_static 
+new.p=603 2200 4
+serv.newitem=09F4  
+new.attr=attr_static 
+new.p=612 2216 4
+serv.newitem=09F4  
+new.attr=attr_static 
+new.p=644 2176 4
+serv.newitem=09F4  
+new.attr=attr_static 
+new.p=554 2175 6
+//
+//fork
+//Fork
+serv.newitem=09F5
+new.attr=attr_static 
+new.p=568 2115 4
+serv.newitem=09F5  
+new.attr=attr_static 
+new.p=558 2174 6
+serv.newitem=09F5  
+new.attr=attr_static 
+new.p=616 2196 4
+serv.newitem=09F5  
+new.attr=attr_static 
+new.p=600 2186 4
+serv.newitem=09F5  
+new.attr=attr_static 
+new.p=584 2139 4
+serv.newitem=09F5  
+new.attr=attr_static 
+new.p=592 2275 4
+serv.newitem=09F5  
+new.attr=attr_static 
+new.p=592 2165 4
+serv.newitem=09F5  
+new.attr=attr_static 
+new.p=576 2235 4
+serv.newitem=09F5  
+new.attr=attr_static 
+new.p=648 2155 4
+//
+//knife
+//Knife
+serv.newitem=09F6
+new.attr=attr_static 
+new.p=644 2176 4
+serv.newitem=09F6  
+new.attr=attr_static 
+new.p=612 2216 4
+serv.newitem=09F6  
+new.attr=attr_static 
+new.p=554 2175 6
+serv.newitem=09F6  
+new.attr=attr_static 
+new.p=603 2200 4
+//
+//knife
+//Knife
+serv.newitem=09F7
+new.attr=attr_static 
+new.p=616 2196 4
+serv.newitem=09F7  
+new.attr=attr_static 
+new.p=576 2235 4
+serv.newitem=09F7  
+new.attr=attr_static 
+new.p=648 2155 4
+serv.newitem=09F7  
+new.attr=attr_static 
+new.p=558 2174 6
+serv.newitem=09F7  
+new.attr=attr_static 
+new.p=568 2115 4
+serv.newitem=09F7  
+new.attr=attr_static 
+new.p=600 2186 4
+serv.newitem=09F7  
+new.attr=attr_static 
+new.p=584 2139 4
+serv.newitem=09F7  
+new.attr=attr_static 
+new.p=592 2275 4
+serv.newitem=09F7  
+new.attr=attr_static 
+new.p=592 2165 4
+//
+//spoon
+serv.newitem=09F8
+new.attr=attr_static 
+new.p=603 2200 4
+serv.newitem=09F8  
+new.attr=attr_static 
+new.p=644 2176 4
+serv.newitem=09F8  
+new.attr=attr_static 
+new.p=612 2216 4
+//
+//spoon
+serv.newitem=09F9
+new.attr=attr_static 
+new.p=568 2115 4
+serv.newitem=09F9  
+new.attr=attr_static 
+new.p=592 2165 4
+serv.newitem=09F9  
+new.attr=attr_static 
+new.p=648 2155 4
+serv.newitem=09F9  
+new.attr=attr_static 
+new.p=616 2196 4
+serv.newitem=09F9  
+new.attr=attr_static 
+new.p=584 2139 4
+serv.newitem=09F9  
+new.attr=attr_static 
+new.p=592 2275 4
+serv.newitem=09F9  
+new.attr=attr_static 
+new.p=600 2186 4
+serv.newitem=09F9  
+new.attr=attr_static 
+new.p=576 2235 4
+//
+//lantern post
+serv.newitem=0A20
+new.attr=attr_static 
+new.p=678 2238 -3
+//
+//candle
+//CandleLarge
+serv.newitem=0A26
+new.attr=attr_static 
+new.p=651 2181 6
+//
+//chest of drawers
+//Drawer
+serv.newitem=0A2C
+new.attr=attr_static 
+new.p=569 2168 0
+serv.newitem=0A2C  
+new.attr=attr_static 
+new.p=649 2152 0
+serv.newitem=0A2C  
+new.attr=attr_static 
+new.p=617 2250 0
+serv.newitem=0A2C  
+new.attr=attr_static 
+new.p=597 2272 0
+serv.newitem=0A2C  
+new.attr=attr_static 
+new.p=573 2112 0
+serv.newitem=0A2C  
+new.attr=attr_static 
+new.p=593 2250 0
+serv.newitem=0A2C  
+new.attr=attr_static 
+new.p=580 2232 0
+serv.newitem=0A2C  
+new.attr=attr_static 
+new.p=585 2136 0
+serv.newitem=0A2C  
+new.attr=attr_static 
+new.p=617 2192 0
+serv.newitem=0A2C  
+new.attr=attr_static 
+new.p=605 2250 0
+serv.newitem=0A2C  
+new.attr=attr_static 
+new.p=593 2160 0
+//
+//chest of drawers
+serv.newitem=0A30
+new.attr=attr_static 
+new.p=601 2200 0
+serv.newitem=00A30
+new.attr=attr_static 
+new.p=605 2184 0
+serv.newitem=00A30
+new.attr=attr_static 
+new.p=610 2216 0
+//
+//chest of drawers
+//FancyDrawer
+serv.newitem=0A34
+new.attr=attr_static 
+new.p=598 2241 0
+serv.newitem=0A34  
+new.attr=attr_static 
+new.p=610 2241 0
+serv.newitem=0A34  
+new.attr=attr_static 
+new.p=610 2252 0
+serv.newitem=0A34  
+new.attr=attr_static 
+new.p=640 2178 0
+serv.newitem=0A34  
+new.attr=attr_static 
+new.p=664 2145 0
+serv.newitem=0A34  
+new.attr=attr_static 
+new.p=624 2173 0
+serv.newitem=0A34  
+new.attr=attr_static 
+new.p=598 2252 0
+serv.newitem=0A34  
+new.attr=attr_static 
+new.p=616 2241 0
+serv.newitem=0A34  
+new.attr=attr_static 
+new.p=592 2241 0
+//
+//armoire
+//FancyArmoire
+serv.newitem=0A4D
+new.attr=attr_static 
+new.p=605 2200 0
+serv.newitem=0A4D  
+new.attr=attr_static 
+new.p=604 2184 0
+//
+//armoire
+//Armoire
+serv.newitem=0A4F
+new.attr=attr_static 
+new.p=621 2250 0
+serv.newitem=0A4F  
+new.attr=attr_static 
+new.p=569 2112 0
+serv.newitem=0A4F  
+new.attr=attr_static 
+new.p=642 2176 0
+serv.newitem=0A4F  
+new.attr=attr_static 
+new.p=589 2136 0
+serv.newitem=0A4F  
+new.attr=attr_static 
+new.p=653 2152 0
+serv.newitem=0A4F  
+new.attr=attr_static 
+new.p=597 2160 0
+serv.newitem=0A4F  
+new.attr=attr_static 
+new.p=596 2272 0
+serv.newitem=0A4F  
+new.attr=attr_static 
+new.p=621 2192 0
+//
+//armoire
+//FancyArmoire
+serv.newitem=0A51
+new.attr=attr_static 
+new.p=608 2221 0
+//
+//armoire
+//Armoire
+serv.newitem=0A53
+new.attr=attr_static 
+new.p=616 2243 0
+serv.newitem=0A53  
+new.attr=attr_static 
+new.p=568 2173 0
+serv.newitem=0A53  
+new.attr=attr_static 
+new.p=664 2149 0
+serv.newitem=0A53  
+new.attr=attr_static 
+new.p=624 2169 0
+serv.newitem=0A53  
+new.attr=attr_static 
+new.p=576 2237 0
+//
+//bookcase
+//LibraryBookcase
+serv.newitem=0A97
+new.attr=attr_static 
+new.p=578 2120 0
+serv.newitem=0A97  
+new.attr=attr_static 
+new.p=561 2216 0
+serv.newitem=0A97  
+new.attr=attr_static 
+new.p=562 2136 0
+serv.newitem=0A97  
+new.attr=attr_static 
+new.p=597 2144 0
+serv.newitem=0A97  
+new.attr=attr_static 
+new.p=670 2144 0
+serv.newitem=0A97  
+new.attr=attr_static 
+new.p=585 2160 0
+serv.newitem=0A97  
+new.attr=attr_static 
+new.p=545 2208 0
+serv.newitem=0A97  
+new.attr=attr_static 
+new.p=582 2120 0
+serv.newitem=0A97  
+new.attr=attr_static 
+new.p=617 2215 0
+//
+//bookcase
+//LibraryBookcase
+serv.newitem=0A98
+new.attr=attr_static 
+new.p=593 2144 0
+serv.newitem=0A98  
+new.attr=attr_static 
+new.p=618 2215 0
+serv.newitem=0A98  
+new.attr=attr_static 
+new.p=579 2120 0
+serv.newitem=0A98  
+new.attr=attr_static 
+new.p=581 2120 0
+serv.newitem=0A98  
+new.attr=attr_static 
+new.p=548 2208 0
+serv.newitem=0A98  
+new.attr=attr_static 
+new.p=546 2208 0
+serv.newitem=0A98  
+new.attr=attr_static 
+new.p=563 2136 0
+serv.newitem=0A98  
+new.attr=attr_static 
+new.p=666 2144 0
+//
+//bookcase
+//LibraryBookcase
+serv.newitem=0A99
+new.attr=attr_static 
+new.p=600 2283 0
+serv.newitem=0A99  
+new.attr=attr_static 
+new.p=648 2157 0
+serv.newitem=0A99  
+new.attr=attr_static 
+new.p=560 2217 0
+serv.newitem=0A99  
+new.attr=attr_static 
+new.p=600 2276 0
+serv.newitem=0A99  
+new.attr=attr_static 
+new.p=624 2192 0
+serv.newitem=0A99  
+new.attr=attr_static 
+new.p=552 2220 0
+serv.newitem=0A99  
+new.attr=attr_static 
+new.p=560 2221 0
+serv.newitem=0A99  
+new.attr=attr_static 
+new.p=616 2217 0
+serv.newitem=0A99  
+new.attr=attr_static 
+new.p=656 2140 0
+serv.newitem=0A99  
+new.attr=attr_static 
+new.p=600 2177 0
+serv.newitem=0A99  
+new.attr=attr_static 
+new.p=624 2164 0
+serv.newitem=0A99  
+new.attr=attr_static 
+new.p=592 2277 0
+serv.newitem=0A99  
+new.attr=attr_static 
+new.p=592 2273 0
+serv.newitem=0A99  
+new.attr=attr_static 
+new.p=576 2233 0
+//
+//bookcase
+//LibraryBookcase
+serv.newitem=0A9A
+new.attr=attr_static 
+new.p=552 2218 0
+serv.newitem=0A9A  
+new.attr=attr_static 
+new.p=560 2219 0
+serv.newitem=0A9A  
+new.attr=attr_static 
+new.p=648 2158 0
+serv.newitem=0A9A  
+new.attr=attr_static 
+new.p=656 2141 0
+serv.newitem=0A9A  
+new.attr=attr_static 
+new.p=600 2181 0
+serv.newitem=0A9A  
+new.attr=attr_static 
+new.p=624 2197 0
+serv.newitem=0A9A  
+new.attr=attr_static 
+new.p=600 2277 0
+serv.newitem=0A9A  
+new.attr=attr_static 
+new.p=600 2284 0
+serv.newitem=0A9A  
+new.attr=attr_static 
+new.p=624 2193 0
+serv.newitem=0A9A  
+new.attr=attr_static 
+new.p=616 2221 0
+serv.newitem=0A9A  
+new.attr=attr_static 
+new.p=624 2165 0
+//
+//bookcase
+//LibraryBookcase
+serv.newitem=0A9B
+new.attr=attr_static 
+new.p=589 2160 0
+serv.newitem=0A9B  
+new.attr=attr_static 
+new.p=549 2208 0
+serv.newitem=0A9B  
+new.attr=attr_static 
+new.p=594 2144 0
+serv.newitem=0A9B  
+new.attr=attr_static 
+new.p=619 2215 0
+serv.newitem=0A9B  
+new.attr=attr_static 
+new.p=596 2144 0
+serv.newitem=0A9B  
+new.attr=attr_static 
+new.p=665 2144 0
+serv.newitem=0A9B  
+new.attr=attr_static 
+new.p=574 2120 0
+serv.newitem=0A9B  
+new.attr=attr_static 
+new.p=564 2136 0
+//
+//bookcase
+//LibraryBookcase
+serv.newitem=0A9C
+new.attr=attr_static 
+new.p=624 2198 0
+serv.newitem=0A9C  
+new.attr=attr_static 
+new.p=600 2178 0
+serv.newitem=0A9C  
+new.attr=attr_static 
+new.p=560 2220 0
+serv.newitem=0A9C  
+new.attr=attr_static 
+new.p=552 2217 0
+serv.newitem=0A9C  
+new.attr=attr_static 
+new.p=560 2218 0
+serv.newitem=0A9C  
+new.attr=attr_static 
+new.p=552 2221 0
+serv.newitem=0A9C  
+new.attr=attr_static 
+new.p=600 2180 0
+serv.newitem=0A9C  
+new.attr=attr_static 
+new.p=600 2285 0
+serv.newitem=0A9C  
+new.attr=attr_static 
+new.p=600 2278 0
+serv.newitem=0A9C  
+new.attr=attr_static 
+new.p=624 2166 0
+//
+//wooden shelf
+//EmptyBookcase
+serv.newitem=0A9D
+new.attr=attr_static 
+new.p=565 2216 0
+serv.newitem=0A9D  
+new.attr=attr_static 
+new.p=557 2216 0
+serv.newitem=0A9D  
+new.attr=attr_static 
+new.p=553 2216 0
+//
+//wooden shelf
+//EmptyBookcase
+serv.newitem=0A9E
+new.attr=attr_static 
+new.p=600 2236 0
+serv.newitem=0A9E  
+new.attr=attr_static 
+new.p=600 2235 0
+serv.newitem=0A9E  
+new.attr=attr_static 
+new.p=544 2209 0
+serv.newitem=0A9E  
+new.attr=attr_static 
+new.p=544 2213 0
+//
+//candle
+//CandleLarge
+serv.newitem=0B1A
+new.attr=attr_static 
+new.p=620 2219 6
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=584 2140 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=556 2202 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=645 2176 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=556 2220 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=595 2205 6
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=592 2274 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=648 2156 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=630 2161 6
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=609 2157 6
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=564 2220 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=652 2163 6
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=613 2216 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=669 2148 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=616 2197 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=554 2139 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=572 2123 6
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=589 2148 6
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=563 2154 6
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=581 2188 6
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=576 2236 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=564 2138 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=581 2226 6
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=546 2212 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=568 2116 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=554 2145 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=592 2166 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=589 2200 6
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=626 2191 6
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=586 2164 6
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=604 2200 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=629 2173 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=562 2202 4
+//
+//lamp post
+//LampPost1
+serv.newitem=0B20
+new.attr=attr_static 
+new.p=584 2127 0
+serv.newitem=0B20 
+new.attr=attr_static 
+new.p=624 2143 0
+serv.newitem=0B20 
+new.attr=attr_static 
+new.p=624 2237 0
+serv.newitem=0B20 
+new.attr=attr_static 
+new.p=655 2150 0
+serv.newitem=0B20 
+new.attr=attr_static 
+new.p=592 2191 0
+serv.newitem=0B20 
+new.attr=attr_static 
+new.p=632 2224 0
+serv.newitem=0B20 
+new.attr=attr_static 
+new.p=600 2167 0
+serv.newitem=0B20 
+new.attr=attr_static 
+new.p=591 2232 0
+serv.newitem=0B20 
+new.attr=attr_static 
+new.p=599 2142 0
+serv.newitem=0B20 
+new.attr=attr_static 
+new.p=607 2208 0
+serv.newitem=0B20 
+new.attr=attr_static 
+new.p=591 2257 0
+serv.newitem=0B20 
+new.attr=attr_static 
+new.p=575 2177 0
+serv.newitem=0B20 
+new.attr=attr_static 
+new.p=575 2152 0
+serv.newitem=0B20 
+new.attr=attr_static 
+new.p=608 2279 0
+serv.newitem=0B20 
+new.attr=attr_static 
+new.p=616 2183 0
+serv.newitem=0B20 
+new.attr=attr_static 
+new.p=640 2167 0
+serv.newitem=0B20 
+new.attr=attr_static 
+new.p=639 2190 0
+serv.newitem=0B20 
+new.attr=attr_static 
+new.p=575 2206 0
+//
+//candelabra
+//CandelabraStand
+serv.newitem=0B26
+new.attr=attr_static 
+new.p=552 2189 0
+serv.newitem=0B26 
+new.attr=attr_static 
+new.p=630 2120 0
+serv.newitem=0B26 
+new.attr=attr_static 
+new.p=592 2248 0
+serv.newitem=0B26 
+new.attr=attr_static 
+new.p=609 2133 0
+serv.newitem=0B26 
+new.attr=attr_static 
+new.p=629 2133 0
+serv.newitem=0B26 
+new.attr=attr_static 
+new.p=608 2120 0
+serv.newitem=0B26 
+new.attr=attr_static 
+new.p=565 2188 0
+//
+//water trough
+//WaterTroughEastAddon
+serv.newitem=0B41
+new.attr=attr_static 
+new.p=544 2124 0
+serv.newitem=00B41
+new.attr=attr_static 
+new.p=544 2120 0
+//
+//chair
+//FancyWoodenChairCushion
+serv.newitem=0B51
+new.attr=attr_static 
+new.p=565 2139 0
+//
+//chair
+//WoodenChairCushion
+serv.newitem=0B52
+new.attr=attr_static 
+new.p=602 2234 0
+serv.newitem=0B52 
+new.attr=attr_static 
+new.p=603 2180 0
+serv.newitem=0B52 
+new.attr=attr_static 
+new.p=553 2142 0
+serv.newitem=0B52 
+new.attr=attr_static 
+new.p=545 2211 0
+serv.newitem=0B52 
+new.attr=attr_static 
+new.p=619 2217 0
+serv.newitem=0B52 
+new.attr=attr_static 
+new.p=571 2121 0
+serv.newitem=0B52 
+new.attr=attr_static 
+new.p=636 2156 0
+serv.newitem=0B52 
+new.attr=attr_static 
+new.p=636 2155 0
+//
+//chair
+//WoodenChairCushion
+serv.newitem=0B53
+new.attr=attr_static 
+new.p=637 2152 0
+serv.newitem=0B53 
+new.attr=attr_static 
+new.p=636 2152 0
+serv.newitem=0B53 
+new.attr=attr_static 
+new.p=559 2201 0
+serv.newitem=0B53 
+new.attr=attr_static 
+new.p=588 2163 0
+//
+//chair
+//WoodenChairCushion
+serv.newitem=0B55
+new.attr=attr_static 
+new.p=596 2203 0
+serv.newitem=0B55 
+new.attr=attr_static 
+new.p=565 2219 0
+serv.newitem=0B55 
+new.attr=attr_static 
+new.p=557 2219 0
+//
+//chair
+//WoodenChair
+serv.newitem=0B56
+new.attr=attr_static 
+new.p=563 2138 0
+serv.newitem=0B56 
+new.attr=attr_static 
+new.p=588 2146 0
+serv.newitem=0B56 
+new.attr=attr_static 
+new.p=580 2228 0
+serv.newitem=0B56 
+new.attr=attr_static 
+new.p=563 2220 0
+serv.newitem=0B56 
+new.attr=attr_static 
+new.p=563 2218 0
+serv.newitem=0B56 
+new.attr=attr_static 
+new.p=563 2140 0
+serv.newitem=0B56 
+new.attr=attr_static 
+new.p=609 2155 0
+serv.newitem=0B56 
+new.attr=attr_static 
+new.p=555 2218 0
+serv.newitem=0B56 
+new.attr=attr_static 
+new.p=555 2220 0
+serv.newitem=0B56 
+new.attr=attr_static 
+new.p=553 2146 0
+serv.newitem=0B56 
+new.attr=attr_static 
+new.p=627 2193 0
+serv.newitem=0B56 
+new.attr=attr_static 
+new.p=553 2138 0
+serv.newitem=0B56 
+new.attr=attr_static 
+new.p=553 2140 0
+serv.newitem=0B56 
+new.attr=attr_static 
+new.p=590 2203 0
+serv.newitem=0B56 
+new.attr=attr_static 
+new.p=668 2147 0
+serv.newitem=0B56 
+new.attr=attr_static 
+new.p=553 2144 0
+//
+//chair
+//WoodenChair
+serv.newitem=0B57
+new.attr=attr_static 
+new.p=634 2152 0
+serv.newitem=0B57 
+new.attr=attr_static 
+new.p=566 2208 0
+serv.newitem=0B57 
+new.attr=attr_static 
+new.p=562 2208 0
+serv.newitem=0B57 
+new.attr=attr_static 
+new.p=628 2172 0
+serv.newitem=0B57 
+new.attr=attr_static 
+new.p=557 2208 0
+serv.newitem=0B57 
+new.attr=attr_static 
+new.p=633 2152 0
+serv.newitem=0B57 
+new.attr=attr_static 
+new.p=650 2162 0
+serv.newitem=0B57 
+new.attr=attr_static 
+new.p=557 2201 0
+serv.newitem=0B57 
+new.attr=attr_static 
+new.p=635 2153 6
+serv.newitem=0B57 
+new.attr=attr_static 
+new.p=553 2208 0
+serv.newitem=0B57 
+new.attr=attr_static 
+new.p=650 2180 0
+serv.newitem=0B57 
+new.attr=attr_static 
+new.p=561 2201 0
+//
+//chair
+//WoodenChair
+serv.newitem=0B58
+new.attr=attr_static 
+new.p=585 2139 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=569 2115 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=588 2202 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=617 2196 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=593 2275 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=556 2142 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=556 2138 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=556 2144 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=547 2210 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=547 2212 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=666 2138 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=556 2140 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=649 2155 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=556 2146 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=577 2235 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=601 2186 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=593 2165 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=605 2180 0
+//
+//chair
+//WoodenChair
+serv.newitem=0B59
+new.attr=attr_static 
+new.p=644 2177 0
+serv.newitem=0B59 
+new.attr=attr_static 
+new.p=560 2204 0
+serv.newitem=0B59 
+new.attr=attr_static 
+new.p=612 2217 0
+serv.newitem=0B59 
+new.attr=attr_static 
+new.p=562 2204 0
+serv.newitem=0B59 
+new.attr=attr_static 
+new.p=603 2201 0
+serv.newitem=0B59 
+new.attr=attr_static 
+new.p=627 2162 0
+serv.newitem=0B59 
+new.attr=attr_static 
+new.p=558 2204 0
+serv.newitem=0B59 
+new.attr=attr_static 
+new.p=556 2204 0
+serv.newitem=0B59 
+new.attr=attr_static 
+new.p=628 2158 0
+serv.newitem=0B59 
+new.attr=attr_static 
+new.p=628 2155 0
+//
+//chair
+//BambooChair
+serv.newitem=0B5A
+new.attr=attr_static 
+new.p=635 2155 6
+serv.newitem=00B5A
+new.attr=attr_static 
+new.p=602 2274 0
+//
+//foot stool
+//FootStool
+serv.newitem=0a2b
+new.attr=attr_static 
+new.p=554 2176 0
+serv.newitem=0a2b 
+new.attr=attr_static 
+new.p=558 2176 0
+serv.newitem=0a2b 
+new.attr=attr_static 
+new.p=552 2176 0
+serv.newitem=0a2b 
+new.attr=attr_static 
+new.p=556 2176 0
+serv.newitem=0a2b 
+new.attr=attr_static 
+new.p=559 2174 0
+serv.newitem=0a2b 
+new.attr=attr_static 
+new.p=559 2172 0
+serv.newitem=0a2b 
+new.attr=attr_static 
+new.p=559 2170 0
+//
+//wooden signpost
+serv.newitem=0B98
+new.attr=attr_static 
+new.p=678 2239 -3
+//
+//sign
+//
+serv.newitem=0BB2 //
+new.Name=Skara Brae Ferry
+new.attr=attr_static 
+new.p=679 2240 7
+//
+//broken chair
+serv.newitem=0C10
+new.attr=attr_static 
+new.p=630 2157 6
+//
+//broken chair
+serv.newitem=0C11
+new.attr=attr_static 
+new.p=627 2157 6
+serv.newitem=00C11
+new.attr=attr_static 
+new.p=630 2154 6
+//
+//broken chair
+serv.newitem=0C19
+new.attr=attr_static 
+new.p=626 2154 6
+//
+//small fish
+serv.newitem=0DD6
+new.attr=attr_static 
+new.p=669 2237 -2
+serv.newitem=0DD6 
+new.attr=attr_static 
+new.p=661 2234 -2
+serv.newitem=0DD6 
+new.attr=attr_static 
+new.p=642 2245 -2
+serv.newitem=0DD6 
+new.attr=attr_static 
+new.p=678 2234 -3
+serv.newitem=0DD6 
+new.attr=attr_static 
+new.p=638 2228 -3
+//small fish
+serv.newitem=0DD8
+new.attr=attr_static 
+new.p=661 2228 -2
+serv.newitem=0DD8 
+new.attr=attr_static 
+new.p=660 2243 -2
+serv.newitem=0DD8 
+new.attr=attr_static 
+new.p=641 2227 -2
+serv.newitem=0DD8 
+new.attr=attr_static 
+new.p=642 2234 -2
+serv.newitem=0DD8 
+new.attr=attr_static 
+new.p=676 2246 -2
+serv.newitem=0DD8 
+new.attr=attr_static 
+new.p=642 2233 -2
+serv.newitem=0DD8 
+new.attr=attr_static 
+new.p=676 2226 -2
+//
+//small fish
+serv.newitem=0DD9
+new.attr=attr_static 
+new.p=644 2243 -2
+serv.newitem=0DD9 
+new.attr=attr_static 
+new.p=644 2234 -2
+serv.newitem=0DD9 
+new.attr=attr_static 
+new.p=661 2244 -2
+serv.newitem=0DD9 
+new.attr=attr_static 
+new.p=672 2234 -2
+serv.newitem=0DD9 
+new.attr=attr_static 
+new.p=679 2225 -2
+//
+//chessmen
+serv.newitem=0E13
+new.attr=attr_static 
+new.p=554 2181 4
+//
+//chessmen
+serv.newitem=0E14
+new.attr=attr_static 
+new.p=554 2181 4
+//
+//cards
+serv.newitem=0E17
+new.attr=attr_static 
+new.p=562 2182 4
+//
+//cards
+serv.newitem=0E18
+new.attr=attr_static 
+new.p=562 2183 4
+//
+//cards
+serv.newitem=0E19
+new.attr=attr_static 
+new.p=562 2183 4
+//
+//checkers
+serv.newitem=0E1A
+new.attr=attr_static 
+new.p=562 2169 4
+//
+//checkers
+serv.newitem=0E1B
+new.attr=attr_static 
+new.p=562 2169 4
+//
+//clean bandage
+serv.newitem=0E21
+new.attr=attr_static 
+new.p=651 2180 0
+//
+//bloody water
+serv.newitem=0E23
+new.attr=attr_static 
+new.p=623 2211 0
+serv.newitem=0E23 
+new.attr=attr_static 
+new.p=616 2209 0
+serv.newitem=0E23 
+new.attr=attr_static 
+new.p=624 2208 0
+//
+//crystal ball
+serv.newitem=0E2F
+new.attr=attr_static 
+new.p=604 2179 6
+//
+//brazier
+//Brazier
+serv.newitem=0E31
+new.attr=attr_static 
+new.p=600 2176 0
+serv.newitem=00E31
+new.attr=attr_static 
+new.p=600 2184 0
+//
+//brazier
+//Brazier
+serv.newitem=0E32
+new.attr=attr_static 
+new.p=656 2136 0
+//
+//crate
+//FillableLargeCrate
+serv.newitem=0E3C
+new.attr=attr_static 
+new.p=635 2160 7
+serv.newitem=0E3C 
+new.attr=attr_static 
+new.p=634 2160 3
+serv.newitem=0E3C 
+new.attr=attr_static 
+new.p=634 2161 3
+serv.newitem=0E3C 
+new.attr=attr_static 
+new.p=634 2160 0
+serv.newitem=0E3C 
+new.attr=attr_static 
+new.p=634 2161 0
+//
+//crate
+//FillableLargeCrate
+serv.newitem=0E3D
+new.attr=attr_static 
+new.p=585 2224 0
+serv.newitem=0E3D 
+new.attr=attr_static 
+new.p=584 2225 3
+serv.newitem=0E3D 
+new.attr=attr_static 
+new.p=585 2224 3
+serv.newitem=0E3D 
+new.attr=attr_static 
+new.p=584 2225 0
+serv.newitem=0E3D 
+new.attr=attr_static 
+new.p=585 2224 6
+serv.newitem=0E3D 
+new.attr=attr_static 
+new.p=584 2224 6
+serv.newitem=0E3D 
+new.attr=attr_static 
+new.p=586 2224 3
+serv.newitem=0E3D 
+new.attr=attr_static 
+new.p=584 2224 3
+serv.newitem=0E3D 
+new.attr=attr_static 
+new.p=586 2224 0
+serv.newitem=0E3D 
+new.attr=attr_static 
+new.p=584 2224 0
+serv.newitem=0E3D 
+new.attr=attr_static 
+new.p=586 2224 6
+serv.newitem=0E3D 
+new.attr=attr_static 
+new.p=586 2225 3
+serv.newitem=0E3D 
+new.attr=attr_static 
+new.p=585 2224 9
+serv.newitem=0E3D 
+new.attr=attr_static 
+new.p=585 2225 0
+serv.newitem=0E3D 
+new.attr=attr_static 
+new.p=586 2225 0
+//
+//crate
+//MediumCrate
+serv.newitem=0E3E
+new.attr=attr_static 
+new.p=635 2162 7
+serv.newitem=0E3E 
+new.attr=attr_static 
+new.p=636 2159 3
+serv.newitem=0E3E 
+new.attr=attr_static 
+new.p=636 2159 0
+//
+//metal chest
+//FillableMetalGoldenChest
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=592 2243 0
+serv.newitem=0E40 
+new.attr=attr_static 
+new.p=610 2251 0
+serv.newitem=0E40 
+new.attr=attr_static 
+new.p=610 2243 0
+serv.newitem=0E40 
+new.attr=attr_static 
+new.p=584 2148 6
+serv.newitem=0E40 
+new.attr=attr_static 
+new.p=604 2251 0
+serv.newitem=0E40 
+new.attr=attr_static 
+new.p=616 2251 0
+serv.newitem=0E40 
+new.attr=attr_static 
+new.p=592 2251 0
+serv.newitem=0E40 
+new.attr=attr_static 
+new.p=598 2251 0
+serv.newitem=0E40 
+new.attr=attr_static 
+new.p=598 2243 0
+//
+//metal chest
+//MetalGoldenChest
+serv.newitem=0E41
+new.attr=attr_static 
+new.p=594 2147 3
+//
+//metal chest
+//FillableMetalGoldenChest
+serv.newitem=0E41
+new.attr=attr_static 
+new.p=617 2240 0
+//
+//wooden chest
+//WoodenChest
+serv.newitem=0E42
+new.attr=attr_static 
+new.p=584 2146 6
+//
+//barrel
+//FillableBarrel
+serv.newitem=0E77
+new.attr=attr_static 
+new.p=583 2230 5
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=639 2246 2
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=582 2230 0
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=583 2229 5
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=608 2152 0
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=582 2230 10
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=582 2229 5
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=639 2245 -2
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=583 2229 0
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=641 2235 -2
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=640 2245 -2
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=659 2224 -2
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=677 2244 -2
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=642 2236 -2
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=552 2174 5
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=576 2230 0
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=552 2173 0
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=641 2236 -2
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=608 2153 0
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=642 2235 -2
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=583 2230 10
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=608 2152 5
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=582 2229 0
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=555 2168 5
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=552 2173 5
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=658 2224 -2
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=552 2174 0
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=555 2168 0
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=556 2168 0
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=639 2246 -3
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=676 2243 -2
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=583 2230 0
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=676 2244 -2
+//
+//metal chest
+//MetalChest
+serv.newitem=0E7C
+new.attr=attr_static 
+new.p=584 2145 6
+serv.newitem=00E7C
+new.attr=attr_static 
+new.p=584 2149 6
+serv.newitem=00E7C
+new.attr=attr_static 
+new.p=584 2147 6
+//
+//crate
+//FillableSmallCrate
+serv.newitem=0E7E
+new.attr=attr_static 
+new.p=635 2163 6
+//
+//strong box
+//FillableMetalBox
+serv.newitem=0E80
+new.attr=attr_static 
+new.p=608 2157 6
+serv.newitem=0E80 
+new.attr=attr_static 
+new.p=625 2161 6
+serv.newitem=0E80 
+new.attr=attr_static 
+new.p=590 2164 6
+serv.newitem=0E80 
+new.attr=attr_static 
+new.p=624 2191 6
+serv.newitem=0E80 
+new.attr=attr_static 
+new.p=577 2188 6
+serv.newitem=0E80 
+new.attr=attr_static 
+new.p=648 2181 6
+serv.newitem=0E80 
+new.attr=attr_static 
+new.p=570 2123 6
+//
+//cleaver
+serv.newitem=0EC3
+new.attr=attr_static 
+new.p=576 2185 6
+//
+//dress form
+//Dressform
+serv.newitem=0EC6
+new.attr=attr_static 
+new.p=648 2180 0
+//
+//dress form
+//Dressform
+serv.newitem=0EC7
+new.attr=attr_static 
+new.p=648 2183 0
+//
+//saddle
+serv.newitem=0F37
+new.attr=attr_static 
+new.p=562 2129 0
+//
+//bolt of cloth
+serv.newitem=0F99
+new.attr=attr_static 
+new.p=653 2181 0
+//
+//bolt of cloth
+serv.newitem=0F9A 
+new.color=01F2
+new.attr=attr_static 
+new.p=648 2179 0
+//
+//bolt of cloth
+serv.newitem=0F9A 
+new.color=031E
+new.attr=attr_static 
+new.p=653 2181 0
+//
+//bolt of cloth
+serv.newitem=0F9B 
+new.color=01ED
+new.attr=attr_static 
+new.p=651 2176 0
+//
+//bolt of cloth
+serv.newitem=0F9C 
+new.color=058
+new.attr=attr_static 
+new.p=651 2176 0
+//
+//sewing kit
+serv.newitem=0F9D
+new.attr=attr_static 
+new.p=649 2181 6
+//
+//scissors
+serv.newitem=0F9F
+new.attr=attr_static 
+new.p=652 2181 6
+//
+//checker board
+//CheckerBoard
+serv.newitem=0FA6
+new.attr=attr_static 
+new.p=562 2169 4
+//
+//chess board
+//ChessBoard
+serv.newitem=0FA6
+new.attr=attr_static 
+new.p=554 2181 4
+//
+//dice and cup
+//Dices
+serv.newitem=0FA7
+new.attr=attr_static 
+new.p=558 2187 4
+//
+//backgammon game
+//Backgammon
+serv.newitem=0FAD
+new.attr=attr_static 
+new.p=558 2188 4
+//
+//anvil
+//AnvilSouthAddon
+serv.newitem=0FB0
+new.attr=attr_static 
+new.p=633 2195 0
+serv.newitem=00FB0
+new.attr=attr_static 
+new.p=632 2195 0
+//
+//sledge hammer
+serv.newitem=0FB4
+new.attr=attr_static 
+new.p=632 2196 0
+serv.newitem=00FB4
+new.attr=attr_static 
+new.p=634 2198 6
+//
+//horse shoes
+serv.newitem=0FB6
+new.attr=attr_static 
+new.p=628 2195 6
+serv.newitem=00FB6
+new.attr=attr_static 
+new.p=635 2196 0
+//
+//forged metal
+serv.newitem=0FB8
+new.attr=attr_static 
+new.p=633 2195 0
+//
+//tongs
+serv.newitem=0FBB
+new.attr=attr_static 
+new.p=634 2194 0
+serv.newitem=00FBB
+new.attr=attr_static 
+new.p=636 2198 6
+//
+//book
+serv.newitem=0FBD
+new.attr=attr_static 
+new.p=564 2219 4
+serv.newitem=00FBD
+new.attr=attr_static 
+new.p=603 2234 6
+serv.newitem=00FBD
+new.attr=attr_static 
+new.p=628 2193 6
+serv.newitem=00FBD
+new.attr=attr_static 
+new.p=665 2138 6
+serv.newitem=00FBD
+new.attr=attr_static 
+new.p=581 2228 6
+serv.newitem=0FBD 
+new.attr=attr_static 
+new.p=564 2139 4
+serv.newitem=0FBD 
+new.attr=attr_static 
+new.p=611 2155 6
+serv.newitem=0FBD 
+new.attr=attr_static 
+new.p=589 2146 6
+serv.newitem=0FBD 
+new.attr=attr_static 
+new.p=546 2211 4
+serv.newitem=0FBD 
+new.attr=attr_static 
+new.p=620 2217 6
+serv.newitem=0FBD 
+new.attr=attr_static 
+new.p=572 2121 6
+serv.newitem=0FBD 
+new.attr=attr_static 
+new.p=556 2219 4
+serv.newitem=0FBD 
+new.attr=attr_static 
+new.p=554 2142 4
+serv.newitem=0FBD 
+new.attr=attr_static 
+new.p=603 2274 6
+serv.newitem=0FBD 
+new.attr=attr_static 
+new.p=595 2203 6
+serv.newitem=0FBD 
+new.attr=attr_static 
+new.p=604 2180 6
+//
+//book
+serv.newitem=0FBE
+new.attr=attr_static 
+new.p=650 2181 6
+serv.newitem=0FBE 
+new.attr=attr_static 
+new.p=627 2161 6
+serv.newitem=0FBE 
+new.attr=attr_static 
+new.p=650 2163 6
+serv.newitem=0FBE 
+new.attr=attr_static 
+new.p=559 2202 4
+serv.newitem=0FBE 
+new.attr=attr_static 
+new.p=588 2164 6
+serv.newitem=0FBE 
+new.attr=attr_static 
+new.p=579 2188 6
+//
+//pen and ink
+serv.newitem=0FBF
+new.attr=attr_static 
+new.p=589 2146 6
+serv.newitem=0FBF 
+new.attr=attr_static 
+new.p=564 2219 4
+serv.newitem=0FBF 
+new.attr=attr_static 
+new.p=556 2219 4
+serv.newitem=0FBF 
+new.attr=attr_static 
+new.p=546 2211 4
+serv.newitem=0FBF 
+new.attr=attr_static 
+new.p=554 2142 4
+serv.newitem=0FBF 
+new.attr=attr_static 
+new.p=581 2228 6
+serv.newitem=0FBF 
+new.attr=attr_static 
+new.p=665 2138 6
+serv.newitem=0FBF 
+new.attr=attr_static 
+new.p=620 2217 6
+serv.newitem=0FBF 
+new.attr=attr_static 
+new.p=603 2274 6
+serv.newitem=0FBF 
+new.attr=attr_static 
+new.p=603 2234 6
+serv.newitem=0FBF 
+new.attr=attr_static 
+new.p=604 2180 6
+serv.newitem=0FBF 
+new.attr=attr_static 
+new.p=611 2155 6
+serv.newitem=0FBF 
+new.attr=attr_static 
+new.p=572 2121 6
+serv.newitem=0FBF 
+new.attr=attr_static 
+new.p=564 2139 4
+serv.newitem=0FBF 
+new.attr=attr_static 
+new.p=595 2202 6
+serv.newitem=0FBF 
+new.attr=attr_static 
+new.p=628 2193 6
+//
+//pen and ink
+serv.newitem=0FC0
+new.attr=attr_static 
+new.p=559 2202 4
+serv.newitem=0FC0 
+new.attr=attr_static 
+new.p=588 2164 6
+serv.newitem=0FC0 
+new.attr=attr_static 
+new.p=650 2163 6
+serv.newitem=0FC0 
+new.attr=attr_static 
+new.p=650 2181 6
+serv.newitem=0FC0 
+new.attr=attr_static 
+new.p=579 2188 6
+serv.newitem=0FC0 
+new.attr=attr_static 
+new.p=627 2161 6
+//
+//book
+//
+serv.newitem=0FEF
+new.name=Taming Dragons
+new.attr=attr_static 
+new.p=564 2208 4
+//
+//book
+//RedBook
+serv.newitem=0FF1
+new.attr=attr_static 
+new.p=554 2208 4
+serv.newitem=0FF1
+new.attr=attr_static 
+new.p=576 2120 4
+//
+//book
+//BlueBook
+serv.newitem=0FF2
+new.attr=attr_static 
+new.p=565 2208 4
+//
+//book
+//DeceitDungeonOfHorror
+serv.newitem=0FF3
+new.name=Deceit Dungeon of Horror
+new.attr=attr_static 
+new.p=563 2208 4
+//
+//book
+//CallToAnarchy
+serv.newitem=0FF4
+new.name=Call To Anarchy
+new.attr=attr_static 
+new.p=575 2120 4
+//
+//book
+//TalkingToWisps
+serv.newitem=0FF4
+new.name=Talking To Wisps
+new.attr=attr_static 
+new.p=556 2208 4
+//
+//pewter mug
+//PewterMug
+serv.newitem=0FFF
+new.attr=attr_static 
+new.p=558 2189 4
+serv.newitem=0FFF 
+new.attr=attr_static 
+new.p=562 2176 4
+serv.newitem=0FFF 
+new.attr=attr_static 
+new.p=562 2189 4
+serv.newitem=0FFF 
+new.attr=attr_static 
+new.p=562 2183 4
+serv.newitem=0FFF 
+new.attr=attr_static 
+new.p=554 2189 4
+//
+//pewter mug
+//PewterMug
+serv.newitem=01001
+new.attr=attr_static 
+new.p=600 2185 4
+serv.newitem=01001 
+new.attr=attr_static 
+new.p=562 2180 4
+serv.newitem=01001 
+new.attr=attr_static 
+new.p=558 2183 4
+serv.newitem=01001 
+new.attr=attr_static 
+new.p=562 2189 4
+serv.newitem=01001 
+new.attr=attr_static 
+new.p=554 2183 4
+//
+//spittoon
+serv.newitem=01003
+new.attr=attr_static 
+new.p=561 2173 0
+serv.newitem=01003
+new.attr=attr_static 
+new.p=558 2179 0
+serv.newitem=01003
+new.attr=attr_static 
+new.p=552 2184 0
+//
+//spinning wheel
+serv.newitem=01019
+new.attr=attr_static 
+new.p=648 2176 0
+//
+//pile of wool
+serv.newitem=0101F 
+new.color=01ED
+new.attr=attr_static 
+new.p=652 2178 0
+//
+//pile of wool
+serv.newitem=0101F 
+new.color=031E
+new.attr=attr_static 
+new.p=649 2177 0
+//
+//dovetail saw
+serv.newitem=01029
+new.attr=attr_static 
+new.p=629 2157 6
+//
+//hammer
+serv.newitem=0102A
+new.attr=attr_static 
+new.p=629 2154 6
+serv.newitem=0102A 
+new.attr=attr_static 
+new.p=591 2203 6
+serv.newitem=0102A 
+new.attr=attr_static 
+new.p=630 2164 6
+serv.newitem=0102A 
+new.attr=attr_static 
+new.p=628 2157 6
+//
+//hammer
+serv.newitem=0102B
+new.attr=attr_static 
+new.p=587 2203 6
+//
+//nails
+serv.newitem=0102E
+new.attr=attr_static 
+new.p=628 2157 6
+serv.newitem=0102E
+new.attr=attr_static 
+new.p=628 2154 6
+//
+//nails
+serv.newitem=0102F
+new.attr=attr_static 
+new.p=587 2201 6
+serv.newitem=0102F
+new.attr=attr_static 
+new.p=630 2163 6
+serv.newitem=0102F
+new.attr=attr_static 
+new.p=590 2200 6
+//
+//saw
+serv.newitem=01034
+new.attr=attr_static 
+new.p=591 2200 6
+//
+//saw
+serv.newitem=01035
+new.attr=attr_static 
+new.p=627 2154 6
+//
+//wood curls
+serv.newitem=01038
+new.attr=attr_static 
+new.p=627 2156 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=626 2159 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=628 2153 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=629 2156 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=628 2159 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=626 2153 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=625 2155 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=625 2153 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=625 2156 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=625 2158 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=625 2157 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=632 2158 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=630 2159 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=631 2159 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=632 2157 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=632 2155 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=632 2154 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=630 2156 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=630 2153 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=631 2153 0
+serv.newitem=01038 
+new.attr=attr_static 
+new.p=631 2156 0
+//
+//globe
+serv.newitem=01047
+new.attr=attr_static 
+new.p=601 2272 0
+//
+//loom bench
+serv.newitem=01049
+new.attr=attr_static 
+new.p=650 2176 0
+//
+//loom bench
+serv.newitem=0104A
+new.attr=attr_static 
+new.p=653 2178 0
+//
+//upright loom
+//LoomSouthAddon
+serv.newitem=01061
+new.attr=attr_static 
+new.p=652 2177 0
+//
+//potted tree
+//PottedTree
+serv.newitem=011C8
+new.attr=attr_static 
+new.p=616 2192 0
+serv.newitem=011C8 
+new.attr=attr_static 
+new.p=552 2216 0
+serv.newitem=011C8
+new.attr=attr_static 
+new.p=576 2232 0
+serv.newitem=011C8
+new.attr=attr_static 
+new.p=648 2152 0
+//
+//potted tree
+//PottedTree1
+serv.newitem=011C9
+new.attr=attr_static 
+new.p=584 2136 0
+serv.newitem=011C9 
+new.attr=attr_static 
+new.p=568 2112 0
+serv.newitem=011C9 
+new.attr=attr_static 
+new.p=544 2208 0
+serv.newitem=011C9 
+new.attr=attr_static 
+new.p=584 2200 0
+serv.newitem=011C9 
+new.attr=attr_static 
+new.p=592 2272 0
+serv.newitem=011C9 
+new.attr=attr_static 
+new.p=600 2200 0
+serv.newitem=011C9 
+new.attr=attr_static 
+new.p=640 2176 0
+serv.newitem=011C9 
+new.attr=attr_static 
+new.p=600 2232 0
+serv.newitem=011C9 
+new.attr=attr_static 
+new.p=624 2184 0
+serv.newitem=011C9 
+new.attr=attr_static 
+new.p=552 2200 0
+serv.newitem=011C9 
+new.attr=attr_static 
+new.p=600 2272 0
+serv.newitem=011C9 
+new.attr=attr_static 
+new.p=566 2200 0
+serv.newitem=011C9 
+new.attr=attr_static 
+new.p=560 2136 0
+//
+//flowerpot
+//PottedPlant
+serv.newitem=011CA
+new.attr=attr_static 
+new.p=568 2168 0
+serv.newitem=011CA 
+new.attr=attr_static 
+new.p=568 2120 0
+serv.newitem=011CA 
+new.attr=attr_static 
+new.p=560 2216 0
+serv.newitem=011CA 
+new.attr=attr_static 
+new.p=584 2160 0
+serv.newitem=011CA 
+new.attr=attr_static 
+new.p=567 2208 0
+serv.newitem=011CA 
+new.attr=attr_static 
+new.p=664 2144 0
+serv.newitem=011CA 
+new.attr=attr_static 
+new.p=616 2215 0
+serv.newitem=011CA 
+new.attr=attr_static 
+new.p=592 2160 0
+serv.newitem=011CA 
+new.attr=attr_static 
+new.p=552 2208 0
+serv.newitem=011CA 
+new.attr=attr_static 
+new.p=592 2246 0
+serv.newitem=011CA 
+new.attr=attr_static 
+new.p=608 2216 0
+serv.newitem=011CA 
+new.attr=attr_static 
+new.p=624 2168 0
+serv.newitem=011CA 
+new.attr=attr_static 
+new.p=648 2160 0
+//
+//flowerpot
+//PottedPlant1
+serv.newitem=011CB
+new.attr=attr_static 
+new.p=630 2162 9
+serv.newitem=011CB 
+new.attr=attr_static 
+new.p=603 2236 9
+serv.newitem=011CB 
+new.attr=attr_static 
+new.p=595 2206 9
+serv.newitem=011CB 
+new.attr=attr_static 
+new.p=600 2279 9
+serv.newitem=011CB 
+new.attr=attr_static 
+new.p=600 2282 9
+serv.newitem=011CB 
+new.attr=attr_static 
+new.p=652 2162 9
+serv.newitem=011CB 
+new.attr=attr_static 
+new.p=576 2188 8
+//
+//flowerpot
+//PottedPlant2
+serv.newitem=011CC
+new.attr=attr_static 
+new.p=603 2276 9
+serv.newitem=011CC 
+new.attr=attr_static 
+new.p=611 2157 8
+serv.newitem=011CC 
+new.attr=attr_static 
+new.p=620 2216 9
+serv.newitem=011CC 
+new.attr=attr_static 
+new.p=628 2191 10
+serv.newitem=011CC 
+new.attr=attr_static 
+new.p=581 2186 8
+serv.newitem=011CC 
+new.attr=attr_static 
+new.p=624 2161 9
+//
+//statue
+serv.newitem=01228
+new.attr=attr_static 
+new.p=563 2152 8
+//
+//tarot
+serv.newitem=012A6
+new.attr=attr_static 
+new.p=604 2181 6
+//
+//brush
+serv.newitem=01370
+new.attr=attr_static 
+new.p=578 2123 6
+//
+//brush
+serv.newitem=01372
+new.attr=attr_static 
+new.p=579 2123 6
+//
+//bridle
+serv.newitem=01374
+new.attr=attr_static 
+new.p=577 2123 6
+//
+//bridle
+serv.newitem=01375
+new.attr=attr_static 
+new.p=576 2123 6
+//
+//statue
+serv.newitem=0139B
+new.attr=attr_static 
+new.p=563 2156 9
+//
+//ship model
+serv.newitem=014F3
+new.attr=attr_static 
+new.p=600 2280 6
+//
+//ship model
+serv.newitem=014F4
+new.attr=attr_static 
+new.p=600 2281 6
+//
+//rope
+serv.newitem=014F8
+new.attr=attr_static 
+new.p=620 2274 -3
+serv.newitem=014F8 
+new.attr=attr_static 
+new.p=658 2245 -3
+serv.newitem=014F8 
+new.attr=attr_static 
+new.p=679 2234 -3
+//
+//rope
+serv.newitem=014FA
+new.attr=attr_static 
+new.p=645 2229 -3
+//
+//water barrel
+serv.newitem=0154D
+new.attr=attr_static 
+new.p=677 2224 -2
+serv.newitem=0154D 
+new.attr=attr_static 
+new.p=640 2225 -2
+serv.newitem=0154D 
+new.attr=attr_static 
+new.p=639 2226 -2
+serv.newitem=0154D 
+new.attr=attr_static 
+new.p=657 2224 -2
+serv.newitem=0154D 
+new.attr=attr_static 
+new.p=657 2239 -2
+serv.newitem=0154D 
+new.attr=attr_static 
+new.p=633 2193 0
+serv.newitem=0154D 
+new.attr=attr_static 
+new.p=673 2233 -3
+serv.newitem=0154D 
+new.attr=attr_static 
+new.p=582 2230 5
+serv.newitem=0154D 
+new.attr=attr_static 
+new.p=639 2225 -2
+//
+//folded cloth
+serv.newitem=0175D
+new.attr=attr_static 
+new.p=648 2187 6
+//
+//folded cloth
+serv.newitem=0175E 
+new.color=031E
+new.attr=attr_static 
+new.p=648 2185 6
+//
+//folded cloth
+serv.newitem=01762
+new.attr=attr_static 
+new.p=649 2182 0
+//
+//folded cloth
+serv.newitem=01764 
+new.color=031E
+new.attr=attr_static 
+new.p=648 2182 0
+//
+//cloth
+serv.newitem=01767
+new.attr=attr_static 
+new.p=648 2182 0
+//
+//cut cloth
+serv.newitem=01768 
+new.color=058
+new.attr=attr_static 
+new.p=648 2186 6
+//
+//hourglass
+serv.newitem=01811
+new.attr=attr_static 
+new.p=669 2136 6
+//
+//scales
+serv.newitem=01851
+new.attr=attr_static 
+new.p=668 2136 6
+//
+//skull with candle
+//CandleSkull
+serv.newitem=01854
+new.attr=attr_static 
+new.p=665 2140 6
+//
+//skull with candle
+//CandleSkull
+serv.newitem=01858
+new.attr=attr_static 
+new.p=665 2136 6
+//
+//empty vials
+serv.newitem=0185B
+new.attr=attr_static 
+new.p=670 2136 6
+//
+//full vials
+serv.newitem=0185D
+new.attr=attr_static 
+new.p=667 2136 6
+//
+//bellows
+serv.newitem=01986
+new.attr=attr_static 
+new.p=636 2193 0
+//
+//forge
+serv.newitem=0198A 
+new.attr=attr_static 
+new.p=636 2194 0
+//
+//forge
+serv.newitem=0198E
+new.attr=attr_static 
+new.p=636 2195 0
+//
+//feather
+serv.newitem=01BD1
+new.attr=attr_static 
+new.p=587 2204 6
+//
+//shaft
+serv.newitem=01BD4
+new.attr=attr_static 
+new.p=591 2204 6
+serv.newitem=01BD4 
+new.attr=attr_static 
+new.p=588 2200 6
+serv.newitem=01BD4 
+new.attr=attr_static 
+new.p=587 2202 6
+serv.newitem=01BD4 
+new.attr=attr_static 
+new.p=591 2202 6
+//
+//boards
+serv.newitem=01BD8
+new.attr=attr_static 
+new.p=613 2273 0
+//
+//boards
+serv.newitem=01BD9
+new.attr=attr_static 
+new.p=608 2277 0
+serv.newitem=01BD9
+new.attr=attr_static 
+new.p=608 2278 0
+//
+//boards
+serv.newitem=01BDB
+new.attr=attr_static 
+new.p=615 2278 0
+//
+//bulletin board
+//BulletinBoard
+serv.newitem=01E5E
+new.attr=attr_static 
+new.p=559 2168 0
+//
+//prow
+serv.newitem=03E9A
+new.attr=attr_static 
+new.p=683 2238 -5
+serv.newitem=03E9A
+new.attr=attr_static 
+new.p=683 2230 -5
+//
+//ship
+serv.newitem=03E9B
+new.attr=attr_static 
+new.p=682 2231 -5
+serv.newitem=03E9B 
+new.attr=attr_static 
+new.p=682 2239 -5
+//
+//ship
+serv.newitem=03E9C
+new.attr=attr_static 
+new.p=684 2239 -5
+serv.newitem=03E9C
+new.attr=attr_static 
+new.p=684 2231 -5
+//
+//ship
+serv.newitem=03E9D
+new.attr=attr_static 
+new.p=682 2240 -5
+serv.newitem=03E9D
+new.attr=attr_static 
+new.p=682 2232 -5
+//
+//ship
+serv.newitem=03E9E
+new.attr=attr_static 
+new.p=684 2232 -5
+serv.newitem=03E9E
+new.attr=attr_static 
+new.p=684 2240 -5
+//
+//ship
+serv.newitem=03E9F
+new.attr=attr_static 
+new.p=682 2241 -5
+new.type=t_normal
+serv.newitem=03E9F
+new.attr=attr_static 
+new.p=682 2233 -5
+new.type=t_normal
+//
+//ship
+serv.newitem=03EA0
+new.attr=attr_static 
+new.p=684 2241 -5
+new.type=t_normal
+serv.newitem=03EA0 
+new.attr=attr_static 
+new.p=684 2233 -5
+new.type=t_normal
+//
+//deck
+serv.newitem=03EA1
+new.attr=attr_static 
+new.p=682 2242 -5
+new.type=t_normal
+serv.newitem=03EA1
+new.attr=attr_static 
+new.p=682 2234 -5
+new.type=t_normal
+//
+//ship
+serv.newitem=03EA6
+new.attr=attr_static 
+new.p=684 2234 -5
+new.type=t_normal
+serv.newitem=03EA6 
+new.attr=attr_static 
+new.p=684 2242 -5
+new.type=t_normal
+//
+//ship
+serv.newitem=03EA7
+new.type=t_normal
+new.attr=attr_static 
+new.p=682 2235 -5
+serv.newitem=03EA7
+new.type=t_normal
+new.attr=attr_static 
+new.p=682 2243 -5
+//
+//ship
+serv.newitem=03EA8
+new.attr=attr_static 
+new.p=684 2235 -5
+serv.newitem=03EA8 
+new.attr=attr_static 
+new.p=684 2243 -5
+//
+//ship
+serv.newitem=03EAB
+new.attr=attr_static 
+new.p=684 2236 -5
+serv.newitem=
+new.attr=attr_static 
+new.p=684 2244 -5
+//
+//deck
+serv.newitem=03EAC
+new.attr=attr_static 
+new.p=683 2235 -5
+serv.newitem=03EAC 
+new.attr=attr_static 
+new.p=683 2234 -5
+serv.newitem=03EAC 
+new.attr=attr_static 
+new.p=683 2243 -5
+serv.newitem=03EAC 
+new.attr=attr_static 
+new.p=683 2242 -5
+//
+//deck
+serv.newitem=03EAD
+new.attr=attr_static 
+new.p=683 2232 -5
+new.type=t_normal
+serv.newitem=03EAD
+new.attr=attr_static 
+new.p=683 2240 -5
+new.type=t_normal
+//
+//hatch
+serv.newitem=03EAE
+new.attr=attr_static 
+new.p=683 2231 -5
+serv.newitem=03EAE 
+new.attr=attr_static 
+new.p=683 2239 -5
+//
+//deck
+serv.newitem=03EB0
+new.attr=attr_static 
+new.p=683 2233 -5
+serv.newitem=03EB0
+new.attr=attr_static 
+new.p=683 2241 -5
+//
+//ship
+serv.newitem=03EB6
+new.attr=attr_static 
+new.p=682 2244 -5
+serv.newitem=03EB6
+new.attr=attr_static 
+new.p=682 2236 -5
+//
+//rudder
+serv.newitem=03EBC
+new.attr=attr_static 
+new.p=683 2237 -5
+new.type=t_normal
+serv.newitem=03EBC
+new.attr=attr_static 
+new.p=683 2245 -5
+new.type=t_normal
+
+//
+//deck
+serv.newitem=03EC0
+new.attr=attr_static 
+new.p=683 2244 -5
+new.type=t_normal
+serv.newitem=03EC0
+new.attr=attr_static 
+new.p=683 2236 -5
+new.type=t_normal
+//
+//gang plank
+serv.newitem=03ED5
+new.attr=attr_static 
+new.p=681 2242 -5
+serv.newitem=03ED5 
+new.attr=attr_static 
+new.p=681 2234 -5
+//East Island //
+
+//tent wall
+serv.newitem=02EB 
+new.color=033 
+new.attr=attr_static 
+new.p=752 2210 4
+serv.newitem=02EB 
+new.color=033  
+new.attr=attr_static 
+new.p=747 2208 9
+serv.newitem=02EB 
+new.color=033   
+new.attr=attr_static 
+new.p=762 2200 0
+serv.newitem=02EB 
+new.color=033 
+new.attr=attr_static 
+new.p=753 2197 6
+//
+//tent wall
+serv.newitem=02EC 
+new.color=033
+new.attr=attr_static 
+new.p=753 2209 4
+serv.newitem=02EC 
+new.color=033 
+new.attr=attr_static 
+new.p=754 2196 6
+serv.newitem=02EC 
+new.color=033 
+new.attr=attr_static 
+new.p=763 2199 0
+serv.newitem=002EC 
+new.color=033
+new.attr=attr_static 
+new.p=748 2207 9
+//
+//gruesome standard
+serv.newitem=041F
+new.attr=attr_static 
+new.p=757 2193 12
+//
+//gruesome standard
+serv.newitem=0420
+new.attr=attr_static 
+new.p=765 2201 0
+//
+//fireplace
+serv.newitem=08DA
+new.attr=attr_static 
+new.p=808 2333 0
+serv.newitem=008DA
+new.attr=attr_static 
+new.p=888 2396 0
+//
+//fireplace
+serv.newitem=08DB
+new.attr=attr_static 
+new.p=888 2395 0
+serv.newitem=008DB
+new.attr=attr_static 
+new.p=808 2332 0
+//
+//fireplace
+serv.newitem=08DE
+new.attr=attr_static 
+new.p=821 2192 0
+serv.newitem=008DE
+new.attr=attr_static 
+new.p=804 2264 0
+//
+//fireplace
+serv.newitem=08DF
+new.attr=attr_static 
+new.p=803 2264 0
+serv.newitem=008DF
+new.attr=attr_static 
+new.p=820 2192 0
+//
+//oven
+serv.newitem=092C
+new.attr=attr_static 
+new.p=887 2393 0
+serv.newitem=0092C
+new.attr=attr_static 
+new.p=807 2330 0
+//
+//oven
+serv.newitem=0930
+new.attr=attr_static 
+new.p=818 2191 0
+serv.newitem=00930
+new.attr=attr_static 
+new.p=802 2264 0
+//
+//cauldron
+serv.newitem=0974
+new.attr=attr_static 
+new.p=756 2267 0
+serv.newitem=00974
+new.attr=attr_static 
+new.p=748 2350 0
+serv.newitem=00974
+new.attr=attr_static 
+new.p=755 2203 0
+//
+//cauldron
+serv.newitem=0975
+new.attr=attr_static 
+new.p=870 2324 0
+serv.newitem=00975
+new.attr=attr_static 
+new.p=786 2233 0
+//
+//slab of bacon
+serv.newitem=0976
+new.attr=attr_static 
+new.p=790 2232 6
+//
+//slab of bacon
+serv.newitem=0977
+new.attr=attr_static 
+new.p=866 2320 6
+//
+//basket
+//Basket
+serv.newitem=0990
+new.attr=attr_static 
+new.p=892 2396 6
+//
+//tray
+serv.newitem=0992
+new.attr=attr_static 
+new.p=810 2334 6
+serv.newitem=0992 
+new.attr=attr_static 
+new.p=890 2398 6
+//
+//ceramic mug
+//CeramicMug
+serv.newitem=0995
+new.attr=attr_static 
+new.p=813 2196 4
+serv.newitem=00995
+new.attr=attr_static 
+new.p=796 2267 4
+//
+//ceramic mug
+//CeramicMug
+serv.newitem=0996
+new.attr=attr_static 
+new.p=796 2266 4
+serv.newitem=00996
+new.attr=attr_static 
+new.p=813 2195 4
+//
+//bottle of liquor
+//BeverageBottle
+serv.newitem=099B
+new.attr=attr_static 
+new.p=891 2387 4
+serv.newitem=099B 
+new.attr=attr_static 
+new.p=748 2264 6
+serv.newitem=099B 
+new.attr=attr_static 
+new.p=784 2220 16
+serv.newitem=099B 
+new.attr=attr_static 
+new.p=810 2322 4
+serv.newitem=099B 
+new.attr=attr_static 
+new.p=740 2344 6
+serv.newitem=099B 
+new.attr=attr_static 
+new.p=864 2316 6
+//
+//fork
+//Fork
+serv.newitem=09A3
+new.attr=attr_static 
+new.p=890 2385 4
+serv.newitem=09A3 
+new.attr=attr_static 
+new.p=890 2387 4
+serv.newitem=09A3 
+new.attr=attr_static 
+new.p=810 2321 4
+serv.newitem=09A3 
+new.attr=attr_static 
+new.p=810 2323 4
+//
+//fork
+//Fork
+serv.newitem=09A4
+new.attr=attr_static 
+new.p=814 2195 4
+serv.newitem=09A4 
+new.attr=attr_static 
+new.p=797 2266 4
+//
+//knife
+//Knife
+serv.newitem=09A5
+new.attr=attr_static 
+new.p=890 2385 4
+serv.newitem=09A5 
+new.attr=attr_static 
+new.p=810 2323 4
+serv.newitem=09A5 
+new.attr=attr_static 
+new.p=890 2387 4
+serv.newitem=09A5 
+new.attr=attr_static 
+new.p=810 2321 4
+//
+//knife
+//Knife
+serv.newitem=09A6
+new.attr=attr_static 
+new.p=797 2266 4
+serv.newitem=09A6 
+new.attr=attr_static 
+new.p=814 2195 4
+//
+//bushel
+//Basket
+serv.newitem=09AC
+new.attr=attr_static 
+new.p=803 2268 6
+serv.newitem=09AC 
+new.attr=attr_static 
+new.p=822 2192 6
+serv.newitem=09AC 
+new.attr=attr_static 
+new.p=819 2195 0
+serv.newitem=09AC 
+new.attr=attr_static 
+new.p=810 2332 0
+//
+//spoon
+serv.newitem=09C2
+new.attr=attr_static 
+new.p=810 2323 4
+serv.newitem=09C2 
+new.attr=attr_static 
+new.p=890 2385 4
+serv.newitem=09C2 
+new.attr=attr_static 
+new.p=890 2386 4
+serv.newitem=09C2 
+new.attr=attr_static 
+new.p=810 2321 4
+//
+//spoon
+serv.newitem=09C3
+new.attr=attr_static 
+new.p=797 2266 4
+serv.newitem=009C3
+new.attr=attr_static 
+new.p=814 2195 4
+//
+//ham
+serv.newitem=09D3
+new.attr=attr_static 
+new.p=754 2263 6
+serv.newitem=009D3
+new.attr=attr_static 
+new.p=866 2321 6
+//
+//plate
+//Plate
+serv.newitem=09D7
+new.attr=attr_static 
+new.p=810 2321 4
+serv.newitem=09D7 
+new.attr=attr_static 
+new.p=739 2344 6
+serv.newitem=09D7 
+new.attr=attr_static 
+new.p=890 2385 4
+serv.newitem=09D7 
+new.attr=attr_static 
+new.p=797 2266 4
+serv.newitem=09D7 
+new.attr=attr_static 
+new.p=811 2322 4
+serv.newitem=09D7 
+new.attr=attr_static 
+new.p=810 2323 4
+serv.newitem=09D7 
+new.attr=attr_static 
+new.p=891 2386 4
+serv.newitem=09D7 
+new.attr=attr_static 
+new.p=797 2267 4
+serv.newitem=09D7 
+new.attr=attr_static 
+new.p=890 2387 4
+serv.newitem=09D7 
+new.attr=attr_static 
+new.p=814 2195 4
+serv.newitem=09D7 
+new.attr=attr_static 
+new.p=747 2264 6
+serv.newitem=09D7 
+new.attr=attr_static 
+new.p=814 2196 4
+serv.newitem=09D7 
+new.attr=attr_static 
+new.p=864 2315 6
+serv.newitem=09D7 
+new.attr=attr_static 
+new.p=784 2219 16
+//
+//kettle
+serv.newitem=09ED
+new.attr=attr_static 
+new.p=809 2334 6
+serv.newitem=09ED 
+new.attr=attr_static 
+new.p=889 2398 6
+serv.newitem=09ED 
+new.attr=attr_static 
+new.p=819 2192 0
+serv.newitem=09ED 
+new.attr=attr_static 
+new.p=806 2265 6
+//
+//fork
+//Fork
+serv.newitem=09F4
+new.attr=attr_static 
+new.p=747 2264 6
+serv.newitem=009F4
+new.attr=attr_static 
+new.p=814 2196 4
+serv.newitem=009F4
+new.attr=attr_static 
+new.p=797 2267 4
+serv.newitem=009F4
+new.attr=attr_static 
+new.p=739 2344 6
+//
+//fork
+//Fork
+serv.newitem=09F5
+new.attr=attr_static 
+new.p=784 2219 16
+serv.newitem=09F5 
+new.attr=attr_static 
+new.p=891 2386 4
+serv.newitem=09F5 
+new.attr=attr_static 
+new.p=864 2315 6
+serv.newitem=09F5 
+new.attr=attr_static 
+new.p=811 2322 4
+//
+//knife
+//Knife
+serv.newitem=09F6
+new.attr=attr_static 
+new.p=739 2344 6
+serv.newitem=09F6 
+new.attr=attr_static 
+new.p=747 2264 6
+serv.newitem=09F6 
+new.attr=attr_static 
+new.p=814 2196 4
+serv.newitem=09F6 
+new.attr=attr_static 
+new.p=797 2267 4
+//
+//knife
+//Knife
+serv.newitem=09F7
+new.attr=attr_static 
+new.p=864 2315 6
+serv.newitem=09F7 
+new.attr=attr_static 
+new.p=811 2322 4
+serv.newitem=09F7 
+new.attr=attr_static 
+new.p=784 2219 16
+serv.newitem=09F7 
+new.attr=attr_static 
+new.p=891 2386 4
+//
+//spoon
+serv.newitem=09F8
+new.attr=attr_static 
+new.p=797 2267 4
+serv.newitem=09F8 
+new.attr=attr_static 
+new.p=739 2344 6
+serv.newitem=09F8 
+new.attr=attr_static 
+new.p=747 2264 6
+serv.newitem=09F8 
+new.attr=attr_static 
+new.p=814 2196 4
+//
+//spoon
+serv.newitem=09F9
+new.attr=attr_static 
+new.p=864 2315 6
+serv.newitem=09F9 
+new.attr=attr_static 
+new.p=784 2219 16
+serv.newitem=09F9 
+new.attr=attr_static 
+new.p=811 2322 4
+serv.newitem=09F9 
+new.attr=attr_static 
+new.p=891 2386 4
+//
+//lantern post
+serv.newitem=0A20
+new.attr=attr_static 
+new.p=712 2234 -3
+//
+//lantern
+//Lantern
+serv.newitem=0A22
+new.attr=attr_static 
+new.p=738 2344 6
+serv.newitem=0A22 
+new.attr=attr_static 
+new.p=746 2264 6
+serv.newitem=0A22 
+new.attr=attr_static 
+new.p=784 2218 16
+serv.newitem=0A22 
+new.attr=attr_static 
+new.p=793 2272 12
+serv.newitem=0A22 
+new.attr=attr_static 
+new.p=814 2200 12
+serv.newitem=0A22 
+new.attr=attr_static 
+new.p=816 2320 12
+serv.newitem=0A22 
+new.attr=attr_static 
+new.p=864 2314 6
+serv.newitem=0A22 
+new.attr=attr_static 
+new.p=896 2384 13
+//
+//chest of drawers
+//Drawer
+serv.newitem=0A2C
+new.attr=attr_static 
+new.p=818 2328 0
+serv.newitem=0A2C 
+new.attr=attr_static 
+new.p=897 2392 0
+//
+//chest of drawers
+//Drawer
+serv.newitem=0A34
+new.attr=attr_static 
+new.p=808 2186 0
+serv.newitem=00A34
+new.attr=attr_static 
+new.p=800 2273 0
+//
+//armoire
+//Armoire
+serv.newitem=0A4F
+new.attr=attr_static 
+new.p=810 2184 0
+serv.newitem=00A4F
+new.attr=attr_static 
+new.p=802 2272 0
+//
+//armoire
+//Armoire
+serv.newitem=0A53
+new.attr=attr_static 
+new.p=816 2330 0
+serv.newitem=0A53 
+new.attr=attr_static 
+new.p=896 2394 0
+//
+//bookcase
+//LibraryBookcase
+serv.newitem=0A97
+new.attr=attr_static 
+new.p=809 2192 0
+serv.newitem=00A97
+new.attr=attr_static 
+new.p=814 2320 0
+serv.newitem=00A97
+new.attr=attr_static 
+new.p=737 2136 0
+serv.newitem=00A97
+new.attr=attr_static 
+new.p=893 2384 0
+//
+//bookcase
+//LibraryBookcase
+serv.newitem=0A98
+new.attr=attr_static 
+new.p=894 2384 0
+serv.newitem=00A98
+new.attr=attr_static 
+new.p=813 2192 0
+serv.newitem=00A98
+new.attr=attr_static 
+new.p=741 2136 0
+//
+//bookcase
+//LibraryBookcase
+serv.newitem=0A99
+new.attr=attr_static 
+new.p=736 2137 0
+serv.newitem=00A99
+new.attr=attr_static 
+new.p=736 2141 0
+serv.newitem=00A99
+new.attr=attr_static 
+new.p=792 2269 0
+serv.newitem=00A99
+new.attr=attr_static 
+new.p=888 2391 0
+serv.newitem=0A99 
+new.attr=attr_static 
+new.p=888 2386 0
+serv.newitem=0A99 
+new.attr=attr_static 
+new.p=808 2327 0
+serv.newitem=0A99 
+new.attr=attr_static 
+new.p=808 2324 0
+serv.newitem=0A99 
+new.attr=attr_static 
+new.p=808 2193 0
+//
+//bookcase
+//LibraryBookcase
+serv.newitem=0A9A
+new.attr=attr_static 
+new.p=808 2197 0
+serv.newitem=0A9A 
+new.attr=attr_static 
+new.p=792 2270 0
+serv.newitem=0A9A 
+new.attr=attr_static 
+new.p=888 2390 0
+serv.newitem=0A9A 
+new.attr=attr_static 
+new.p=808 2326 0
+//
+//bookcase
+//LibraryBookcase
+serv.newitem=0A9B
+new.attr=attr_static 
+new.p=813 2320 0
+serv.newitem=0A9B 
+new.attr=attr_static 
+new.p=814 2192 0
+//
+//bookcase
+//LibraryBookcase
+serv.newitem=0A9C
+new.attr=attr_static 
+new.p=888 2387 0
+serv.newitem=0A9C 
+new.attr=attr_static 
+new.p=792 2265 0
+serv.newitem=0A9C 
+new.attr=attr_static 
+new.p=808 2325 0
+serv.newitem=0A9C 
+new.attr=attr_static 
+new.p=888 2389 0
+//
+//candle
+//CandleLarge
+serv.newitem=0B1A
+new.attr=attr_static 
+new.p=893 2390 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=753 2145 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=753 2141 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=738 2139 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=798 2267 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=815 2196 4
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=812 2334 6
+serv.newitem=0B1A 
+new.attr=attr_static 
+new.p=811 2321 4
+//
+//candelabra
+//CandelabraStand
+serv.newitem=0B26
+new.attr=attr_static 
+new.p=757 2149 0
+//
+//chair
+//WoodenChairCushion
+serv.newitem=0B53
+new.attr=attr_static 
+new.p=739 2138 0
+serv.newitem=0B53 
+new.attr=attr_static 
+new.p=753 2138 0
+//
+//chair
+//WoodenChair
+serv.newitem=0B56
+new.attr=attr_static 
+new.p=751 2140 0
+serv.newitem=0B56 
+new.attr=attr_static 
+new.p=751 2146 0
+serv.newitem=0B56 
+new.attr=attr_static 
+new.p=751 2144 0
+serv.newitem=0B56 
+new.attr=attr_static 
+new.p=751 2142 0
+//
+//chair
+//WoodenChair
+serv.newitem=0B57
+new.attr=attr_static 
+new.p=797 2265 0
+serv.newitem=00B57
+new.attr=attr_static 
+new.p=814 2194 0
+//
+//chair
+//WoodenChair
+serv.newitem=0B58
+new.attr=attr_static 
+new.p=793 2267 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=755 2144 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=755 2146 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=755 2142 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=809 2195 0
+serv.newitem=0B58 
+new.attr=attr_static 
+new.p=755 2140 0
+//
+//chair
+//WoodenChair
+serv.newitem=0B59
+new.attr=attr_static 
+new.p=740 2140 0
+serv.newitem=0B59 
+new.attr=attr_static 
+new.p=738 2140 0
+serv.newitem=0B59 
+new.attr=attr_static 
+new.p=814 2197 0
+serv.newitem=0B59 
+new.attr=attr_static 
+new.p=797 2268 0
+//
+//chair
+//BambooChair
+serv.newitem=0B5A
+new.attr=attr_static 
+new.p=809 2323 0
+serv.newitem=0B5A 
+new.attr=attr_static 
+new.p=809 2321 0
+serv.newitem=0B5A 
+new.attr=attr_static 
+new.p=889 2387 0
+serv.newitem=0B5A 
+new.attr=attr_static 
+new.p=892 2391 0
+serv.newitem=0B5A 
+new.attr=attr_static 
+new.p=812 2327 0
+serv.newitem=0B5A 
+new.attr=attr_static 
+new.p=889 2385 0
+//
+//chair
+//BambooChair
+serv.newitem=0B5C
+new.attr=attr_static 
+new.p=739 2345 0
+serv.newitem=0B5C 
+new.attr=attr_static 
+new.p=747 2265 0
+//
+//chair
+//BambooChair
+serv.newitem=0B5D
+new.attr=attr_static 
+new.p=865 2315 0
+serv.newitem=0B5D 
+new.attr=attr_static 
+new.p=812 2322 0
+serv.newitem=0B5D 
+new.attr=attr_static 
+new.p=892 2386 0
+serv.newitem=0B5D 
+new.attr=attr_static 
+new.p=785 2219 10
+//
+//wooden signpost
+serv.newitem=0B98
+new.attr=attr_static 
+new.p=712 2235 -3
+//
+//sign
+//
+serv.newitem=0BB2
+new.Name=Skara Brae Ferry
+new.attr=attr_static 
+new.p=713 2236 7
+//
+//small fish
+serv.newitem=0DD6
+new.attr=attr_static 
+new.p=716 2236 -2
+//
+//small fish
+serv.newitem=0DD8
+new.attr=attr_static 
+new.p=724 2239 -1
+serv.newitem=0DD8 
+new.attr=attr_static 
+new.p=715 2234 -3
+//
+//small fish
+serv.newitem=0DD9
+new.attr=attr_static 
+new.p=724 2238 -3
+serv.newitem=00DD9
+new.attr=attr_static 
+new.p=713 2238 -1
+//
+//campfire
+serv.newitem=0DE3
+new.attr=attr_static 
+new.p=755 2203 0
+//
+//wooden chest
+//WoodenChest
+serv.newitem=0E42
+new.attr=attr_static 
+new.p=864 2313 0
+serv.newitem=0E42 
+new.attr=attr_static 
+new.p=736 2346 0
+serv.newitem=0E42 
+new.attr=attr_static 
+new.p=744 2269 0
+//
+//wooden chest
+//WoodenChest
+serv.newitem=0E43
+new.attr=attr_static 
+new.p=785 2216 10
+//
+//stump
+serv.newitem=0E58
+new.attr=attr_static 
+new.p=756 2201 0
+//
+//stump
+serv.newitem=0E59
+new.attr=attr_static 
+new.p=753 2202 0
+//
+//barrel
+//Barrel
+serv.newitem=0E77
+new.attr=attr_static 
+new.p=744 2264 5
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=784 2222 15
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=718 2232 -2
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=745 2264 5
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=784 2221 10
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=784 2222 10
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=784 2221 15
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=720 2232 -2
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=729 2232 -2
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=729 2233 -2
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=744 2264 0
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=744 2265 0
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=745 2264 0
+serv.newitem=0E77 
+new.attr=attr_static 
+new.p=728 2232 -2
+//
+//sheaf of hay
+serv.newitem=0F36
+new.attr=attr_static 
+new.p=755 2153 0
+serv.newitem=00F36
+new.attr=attr_static 
+new.p=752 2153 0
+//
+//executioner's axe
+serv.newitem=0F46
+new.attr=attr_static 
+new.p=754 2201 0
+//
+//dying tub
+//DyeTub
+serv.newitem=0FAB 
+new.color=08A
+new.attr=attr_static 
+new.p=864 2317 0
+//
+//dying tub
+//DyeTub
+serv.newitem=0FAB 
+new.color=02DD
+new.attr=attr_static 
+new.p=741 2344 0
+//
+//fire pit
+serv.newitem=0FAC
+new.attr=attr_static 
+new.p=755 2203 0
+serv.newitem=0FAC 
+new.attr=attr_static 
+new.p=870 2324 0
+serv.newitem=0FAC 
+new.attr=attr_static 
+new.p=756 2267 0
+serv.newitem=0FAC 
+new.attr=attr_static 
+new.p=786 2233 0
+serv.newitem=0FAC 
+new.attr=attr_static 
+new.p=748 2350 0
+//
+//book
+serv.newitem=0FBD
+new.attr=attr_static 
+new.p=792 2267 4
+serv.newitem=0FBD 
+new.attr=attr_static 
+new.p=813 2327 4
+serv.newitem=0FBD 
+new.attr=attr_static 
+new.p=893 2391 4
+serv.newitem=0FBD 
+new.attr=attr_static 
+new.p=808 2195 4
+//
+//book
+serv.newitem=0FBE
+new.attr=attr_static 
+new.p=739 2139 4
+serv.newitem=00FBE
+new.attr=attr_static 
+new.p=753 2139 4
+//
+//pen and ink
+serv.newitem=0FBF
+new.attr=attr_static 
+new.p=893 2391 4
+serv.newitem=0FBF 
+new.attr=attr_static 
+new.p=813 2327 4
+serv.newitem=0FBF 
+new.attr=attr_static 
+new.p=792 2267 4
+serv.newitem=0FBF 
+new.attr=attr_static 
+new.p=808 2195 4
+//
+//pen and ink
+serv.newitem=0FC0
+new.attr=attr_static 
+new.p=739 2139 4
+serv.newitem=00FC0
+new.attr=attr_static 
+new.p=753 2139 4
+//
+//pewter mug
+//PewterMug
+serv.newitem=0FFF
+new.attr=attr_static 
+new.p=740 2344 6
+serv.newitem=00FFF
+new.attr=attr_static 
+new.p=748 2264 6
+serv.newitem=00FFF
+new.attr=attr_static 
+new.p=891 2385 4
+//
+//pewter mug
+//PewterMug
+serv.newitem=01000
+new.attr=attr_static 
+new.p=864 2316 6
+serv.newitem=01000
+new.attr=attr_static 
+new.p=784 2220 16
+serv.newitem=01000
+new.attr=attr_static 
+new.p=811 2323 4
+//
+//pewter mug
+//PewterMug
+serv.newitem=01001
+new.attr=attr_static 
+new.p=891 2385 4
+//
+//pewter mug
+//PewterMug
+serv.newitem=01002
+new.attr=attr_static 
+new.p=810 2323 4
+serv.newitem=01002
+new.attr=attr_static 
+new.p=890 2386 4
+serv.newitem=01002
+new.attr=attr_static 
+new.p=810 2321 4
+//
+//wash basin
+serv.newitem=01008
+new.attr=attr_static 
+new.p=785 2217 10
+serv.newitem=01008 
+new.attr=attr_static 
+new.p=745 2265 0
+serv.newitem=01008 
+new.attr=attr_static 
+new.p=745 2346 6
+serv.newitem=01008 
+new.attr=attr_static 
+new.p=866 2322 6
+//
+//archery butte
+//ArcheryButte
+serv.newitem=0100B
+new.attr=attr_static 
+new.p=756 2153 0
+serv.newitem=0100B
+new.attr=attr_static 
+new.p=753 2153 0
+//
+//hay sheave
+serv.newitem=0100D
+new.attr=attr_static 
+new.p=757 2153 0
+serv.newitem=0100D
+new.attr=attr_static 
+new.p=754 2153 0
+//
+//hay
+serv.newitem=01036
+new.attr=attr_static 
+new.p=755 2159 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=752 2161 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=866 2317 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=759 2153 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=748 2268 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=748 2269 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=786 2222 10
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=786 2218 10
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=749 2267 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=749 2269 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=755 2153 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=754 2155 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=867 2315 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=869 2316 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=869 2317 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=869 2315 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=867 2316 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=867 2318 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=868 2318 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=753 2156 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=756 2155 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=865 2318 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=756 2157 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=870 2313 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=758 2156 2
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=758 2154 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=742 2350 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=787 2221 10
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=741 2350 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=738 2346 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=737 2350 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=787 2218 10
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=787 2220 10
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=739 2349 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=740 2350 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=788 2220 10
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=788 2221 10
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=746 2269 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=739 2347 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=741 2348 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=742 2349 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=787 2217 10
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=747 2268 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=754 2159 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=789 2222 10
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=789 2221 10
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=742 2347 0
+serv.newitem=01036 
+new.attr=attr_static 
+new.p=747 2267 0
+//
+//dough
+serv.newitem=0103D
+new.attr=attr_static 
+new.p=806 2266 9
+serv.newitem=0103D 
+new.attr=attr_static 
+new.p=822 2194 9
+//
+//cookie mix
+serv.newitem=0103F
+new.attr=attr_static 
+new.p=806 2264 9
+serv.newitem=0103F
+new.attr=attr_static 
+new.p=822 2195 9
+//
+//rolling pin
+serv.newitem=01043
+new.attr=attr_static 
+new.p=820 2196 0
+//
+//garbage
+serv.newitem=010EE
+new.attr=attr_static 
+new.p=754 2200 0
+serv.newitem=010EE 
+new.attr=attr_static 
+new.p=757 2194 13
+serv.newitem=010EE 
+new.attr=attr_static 
+new.p=761 2199 0
+serv.newitem=010EE 
+new.attr=attr_static 
+new.p=754 2209 5
+serv.newitem=010EE 
+new.attr=attr_static 
+new.p=761 2200 0
+serv.newitem=010EE 
+new.attr=attr_static 
+new.p=753 2204 5
+serv.newitem=010EE 
+new.attr=attr_static 
+new.p=754 2210 1
+serv.newitem=010EE 
+new.attr=attr_static 
+new.p=756 2201 0
+serv.newitem=010EE 
+new.attr=attr_static 
+new.p=755 2205 1
+serv.newitem=010EE 
+new.attr=attr_static 
+new.p=757 2203 0
+serv.newitem=010EE 
+new.attr=attr_static 
+new.p=762 2201 0
+//
+//potted tree
+//PottedTree
+serv.newitem=011C8
+new.attr=attr_static 
+new.p=902 2392 0
+serv.newitem=011C8
+new.attr=attr_static 
+new.p=808 2184 0
+//
+//potted tree
+//PottedTree1
+serv.newitem=011C9
+new.attr=attr_static 
+new.p=888 2384 0
+serv.newitem=011C9 
+new.attr=attr_static 
+new.p=736 2144 0
+serv.newitem=011C9 
+new.attr=attr_static 
+new.p=800 2272 0
+serv.newitem=011C9 
+new.attr=attr_static 
+new.p=816 2328 0
+//
+//flowerpot
+//PottedPlant
+serv.newitem=011CA
+new.attr=attr_static 
+new.p=808 2320 0
+serv.newitem=011CA 
+new.attr=attr_static 
+new.p=896 2392 0
+serv.newitem=011CA 
+new.attr=attr_static 
+new.p=792 2264 0
+serv.newitem=011CA 
+new.attr=attr_static 
+new.p=808 2192 0
+//
+//
+//LocalizedSign
+serv.newitem=01299
+new.name=Archer's Guild
+new.attr=attr_static 
+new.p=742 2232 14
+//
+//
+//LocalizedSign
+serv.newitem=0129A
+new.name=Docks to Skara Brae
+new.attr=attr_static 
+new.p=742 2232 17
+serv.newitem=0129A
+new.name=Docks to Skara Brae
+new.attr=attr_static 
+new.p=772 2240 16
+serv.newitem=0129A
+new.name=Docks to Skara Brae
+new.attr=attr_static 
+new.p=813 2240 10
+//
+//
+//LocalizedSign
+serv.newitem=0129C
+new.name=Britain
+new.attr=attr_static 
+new.p=742 2232 10
+serv.newitem=0129C
+new.name=Britain 
+new.attr=attr_static 
+new.p=772 2240 13
+serv.newitem=0129C
+new.name=Britain
+new.attr=attr_static 
+new.p=813 2240 15
+//
+//
+//LocalizedSign
+serv.newitem=0129D //LabelNumber=1016113
+new.name=Ferry Out of Service
+new.attr=attr_static 
+new.p=712 2232 13
+//
+//plough
+serv.newitem=01500
+new.attr=attr_static 
+new.p=899 2405 0
+//
+//plough
+serv.newitem=01501
+new.attr=attr_static 
+new.p=898 2405 0
+//
+//plough
+serv.newitem=01502
+new.attr=attr_static 
+new.p=810 2281 0
+serv.newitem=01502
+new.attr=attr_static 
+new.p=833 2341 0
+//
+//plough
+serv.newitem=01503
+new.attr=attr_static 
+new.p=833 2342 0
+serv.newitem=01503
+new.attr=attr_static 
+new.p=810 2282 0
+//
+//harrow
+serv.newitem=01505
+new.attr=attr_static 
+new.p=828 2338 0
+serv.newitem=01505 
+new.attr=attr_static 
+new.p=814 2276 0
+//
+//harrow
+serv.newitem=01507
+new.attr=attr_static 
+new.p=895 2406 0
+//
+//water barrel
+serv.newitem=0154D
+new.attr=attr_static 
+new.p=728 2233 -2
+serv.newitem=0154D 
+new.attr=attr_static 
+new.p=752 2268 0
+serv.newitem=0154D 
+new.attr=attr_static 
+new.p=871 2321 0
+serv.newitem=0154D 
+new.attr=attr_static 
+new.p=719 2232 -2
+serv.newitem=0154D 
+new.attr=attr_static 
+new.p=722 2238 -2
+serv.newitem=0154D 
+new.attr=attr_static 
+new.p=784 2230 0
+serv.newitem=0154D 
+new.attr=attr_static 
+new.p=748 2345 0
+//
+//bowl of carrots
+serv.newitem=015F9
+new.attr=attr_static 
+new.p=806 2267 6
+//
+//bowl of lettuce
+serv.newitem=015FB
+new.attr=attr_static 
+new.p=805 2268 6
+//
+//pewter bowl
+serv.newitem=015FD
+new.attr=attr_static 
+new.p=813 2328 4
+//
+//large pewter bowl
+serv.newitem=01603
+new.attr=attr_static 
+new.p=811 2334 6
+//
+//leaves
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=875 2326 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=887 2424 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=861 2280 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=789 2220 10
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=804 2198 0
+serv.newitem=01B23 
+new.color=0970 
+new.attr=attr_static 
+new.p=795 2289 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=803 2197 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=831 2223 13
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=794 2304 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=855 2363 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=894 2382 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=859 2342 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=842 2356 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=805 2189 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=890 2365 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=863 2391 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=806 2303 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=835 2296 8
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=839 2231 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=879 2395 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=892 2245 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=872 2374 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=831 2269 0
+serv.newitem=01B23 
+new.color=0970
+new.attr=attr_static 
+new.p=878 2395 0
+//
+//leaves
+serv.newitem=01B24 
+new.color=0970 
+new.attr=attr_static 
+new.p=890 2363 0
+serv.newitem=01B24 
+new.color=0970  
+new.attr=attr_static 
+new.p=879 2393 0
+serv.newitem=01B24 
+new.color=0970 
+new.attr=attr_static 
+new.p=859 2340 0
+serv.newitem=01B24 
+new.color=0970  
+new.attr=attr_static 
+new.p=842 2354 0
+serv.newitem=01B24 
+new.color=0970  
+new.attr=attr_static 
+new.p=861 2278 0
+serv.newitem=01B24 
+new.color=0970 
+new.attr=attr_static 
+new.p=806 2301 0
+serv.newitem=01B24 
+new.color=0970  
+new.attr=attr_static 
+new.p=878 2393 0
+serv.newitem=01B24 
+new.color=0970  
+new.attr=attr_static 
+new.p=789 2218 10
+serv.newitem=01B24 
+new.color=0970  
+new.attr=attr_static 
+new.p=875 2324 0
+serv.newitem=01B24 
+new.color=0970 
+new.attr=attr_static 
+new.p=863 2389 0
+serv.newitem=01B24 
+new.color=0970  
+new.attr=attr_static 
+new.p=894 2380 0
+serv.newitem=01B24 
+new.color=0970  
+new.attr=attr_static 
+new.p=872 2372 0
+serv.newitem=01B24 
+new.color=0970 
+new.attr=attr_static 
+new.p=805 2187 0
+serv.newitem=01B24 
+new.color=0970  
+new.attr=attr_static 
+new.p=794 2302 0
+serv.newitem=01B24 
+new.color=0970  
+new.attr=attr_static 
+new.p=831 2221 13
+serv.newitem=01B24 
+new.color=0970  
+new.attr=attr_static 
+new.p=855 2361 0
+serv.newitem=01B24 
+new.color=0970  
+new.attr=attr_static 
+new.p=803 2195 0
+serv.newitem=01B24 
+new.color=0970  
+new.attr=attr_static 
+new.p=892 2243 0
+serv.newitem=01B24 
+new.color=0970  
+new.attr=attr_static 
+new.p=887 2422 0
+serv.newitem=01B24 
+new.color=0970  
+new.attr=attr_static 
+new.p=831 2267 0
+serv.newitem=01B24 
+new.color=0970  
+new.attr=attr_static 
+new.p=835 2294 6
+serv.newitem=01B24 
+new.color=0970 
+new.attr=attr_static 
+new.p=804 2196 0
+serv.newitem=01B24 
+new.color=0970  
+new.attr=attr_static 
+new.p=839 2229 0
+//
+//leaves
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=853 2361 0
+serv.newitem=01B25 
+new.color=0970 
+new.attr=attr_static 
+new.p=837 2229 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=803 2187 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=890 2243 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=804 2301 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=833 2294 10
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=792 2302 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=888 2363 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=859 2278 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=877 2393 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=787 2218 10
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=876 2393 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=873 2324 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=829 2267 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=861 2389 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=885 2422 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=870 2372 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=840 2354 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=857 2340 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=829 2221 13
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=801 2195 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=802 2196 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=904 2235 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=892 2380 0
+serv.newitem=01B25 
+new.color=0970
+new.attr=attr_static 
+new.p=793 2287 0
+//
+//leaves
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=802 2198 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=829 2223 13
+serv.newitem=01B26 
+new.color=0970 
+new.attr=attr_static 
+new.p=792 2304 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=787 2220 10
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=870 2374 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=793 2289 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=840 2356 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=892 2382 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=801 2197 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=885 2424 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=859 2280 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=888 2365 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=837 2231 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=904 2237 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=857 2342 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=873 2326 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=876 2395 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=890 2245 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=853 2363 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=833 2296 10
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=861 2391 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=877 2395 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=803 2189 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=829 2269 0
+serv.newitem=01B26 
+new.color=0970
+new.attr=attr_static 
+new.p=804 2303 0
+//
+//tightrope
+serv.newitem=02710
+new.attr=attr_static 
+new.p=710 2236 -3
+serv.newitem=02710 
+new.attr=attr_static 
+new.p=711 2236 -3
+//
+//prow
+serv.newitem=03E9A
+new.attr=attr_static 
+new.p=709 2234 -5
+//
+//ship
+serv.newitem=03E9B
+new.attr=attr_static 
+new.p=708 2235 -5
+//
+//ship
+serv.newitem=03E9C
+new.attr=attr_static 
+new.p=710 2235 -5
+//
+//ship
+serv.newitem=03E9D
+new.attr=attr_static 
+new.p=708 2236 -5
+//
+//ship
+serv.newitem=03E9E
+new.attr=attr_static 
+new.p=710 2236 -5
+//
+//ship
+serv.newitem=03E9F
+new.attr=attr_static 
+new.p=708 2237 -5
+new.type=t_normal
+//
+//ship
+serv.newitem=03EA0
+new.attr=attr_static 
+new.p=710 2237 -5
+new.type=t_normal
+//
+//deck
+serv.newitem=03EA1
+new.attr=attr_static 
+new.p=708 2238 -5
+new.type=t_normal
+//
+//ship
+serv.newitem=03EA7
+new.type=t_normal
+new.attr=attr_static 
+new.p=708 2239 -5
+//
+//ship
+serv.newitem=03EA8
+new.attr=attr_static 
+new.p=710 2239 -5
+//
+//ship
+serv.newitem=03EAB
+new.attr=attr_static 
+new.p=710 2240 -5
+//
+//deck
+serv.newitem=03EAC
+new.attr=attr_static 
+new.p=709 2238 -5
+serv.newitem=03EAC 
+new.attr=attr_static 
+new.p=709 2239 -5
+serv.newitem=03EAC 
+new.attr=attr_static 
+new.p=710 2238 -5
+//
+//deck
+serv.newitem=03EAD
+new.attr=attr_static 
+new.p=709 2236 -5
+new.type=t_normal
+//
+//hatch
+serv.newitem=03EAE
+new.attr=attr_static 
+new.p=709 2235 -5
+//
+//deck
+serv.newitem=03EB0
+new.attr=attr_static 
+new.p=709 2237 -5
+//
+//ship
+serv.newitem=03EB1
+new.attr=attr_static 
+new.p=707 2238 -5
+//
+//ship
+serv.newitem=03EB6
+new.attr=attr_static 
+new.p=708 2240 -5
+//
+//rudder
+serv.newitem=03EBC
+new.attr=attr_static 
+new.p=709 2241 -5
+new.type=t_normal
+//
+//deck
+serv.newitem=03EC0
+new.attr=attr_static 
+new.p=709 2240 -5
+//
+//gang plank
+serv.newitem=03ED4
+new.attr=attr_static 
+new.p=711 2238 -5
+
+[eof]

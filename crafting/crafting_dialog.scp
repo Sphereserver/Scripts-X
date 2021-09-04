@@ -204,7 +204,7 @@ else
       ctag.craft.item.options = <def.<ctag0.craft.skill>_category_<dctag0.craft.sidebar>_<eval <argn>-600>_opt>
    endif
 endif
-craft <ctag0.craft.item>
+f_craft <ctag0.craft.item>
 
 on=400 401 // sidebar buttons
 if <argn> == 401
@@ -263,7 +263,7 @@ on=508 // make last button
 if <isempty <ctag.craft.last.<ctag0.craft.skill>>>
    ctag.craft.message = You need to make an item first.
 endif
-craft <ctag0.craft.last.<ctag0.craft.skill>>
+f_craft <ctag0.craft.last.<ctag0.craft.skill>>
 
 
 ///////////////////////////////////////////////////////////////
@@ -453,7 +453,7 @@ on=508 // make last button
 if <isempty <ctag.craft.last.<ctag0.craft.skill>>>
    ctag.craft.message = You need to make an item first.
 endif
-craft <ctag0.craft.last.<ctag0.craft.skill>>
+f_craft <ctag0.craft.last.<ctag0.craft.skill>>
 
 on=600 700
 if <argn> == 600
@@ -590,7 +590,7 @@ if <ctag0.craft.material.<ctag.craft.skill>>
       local.resource = "_"
    endif
 endif
-craft <ctag0.craft.item>
+f_craft <ctag0.craft.item>
 
 /////////////////////////////////////////
 /////////////////////////////////////////

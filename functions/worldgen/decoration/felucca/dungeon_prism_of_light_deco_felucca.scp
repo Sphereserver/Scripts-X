@@ -1,0 +1,73 @@
+[function deco_prism_of_light_felucca]
+
+//Items
+//Signs
+serv.newitem= 0BCF// (LabelNumber=1073037
+new.attr=attr_static
+new.p=6476 168 -11
+
+serv.newitem= 0BD0// (LabelNumber=1073037
+new.attr=attr_static
+new.p=6473 182 0
+
+serv.newitem= 0BD0// (LabelNumber=1073038
+new.attr=attr_static
+new.p=6472 173 -11
+
+serv.newitem= 0BCF// (LabelNumber=1073039
+new.attr=attr_static
+new.p=6481 182 -11
+
+serv.newitem= 0BD0// (LabelNumber=1073040
+new.attr=attr_static
+new.p=6484 178 -11
+
+serv.newitem= 0BCF// (LabelNumber=1073041
+new.attr=attr_static
+new.p=6488 175 -11
+
+serv.newitem= 0BCF// (LabelNumber=1073042
+new.attr=attr_static
+new.p=6489 169 -11
+
+serv.newitem= 0BCF// (LabelNumber=1073043
+new.attr=attr_static
+new.p=6484 169 -11
+
+serv.newitem= 0BCF// (LabelNumber=1073044
+new.attr=attr_static
+new.p=6478 176 -11
+
+//Peerless Altar
+//Arcane circle
+serv.newitem=0307F
+new.attr=attr_static
+new.p=6589 178 25
+
+//Ankh 
+serv.newitem=0003
+new.attr=attr_static
+new.p=6540 138 -15
+serv.newitem=0002
+new.attr=attr_static
+new.p=6540 139 -15
+
+//Key room moongate
+serv.newitem=0F6C 
+new.color=0481
+new.attr=attr_static
+new.p=6515 184 0
+serv.newitem=0F6C 
+new.color=0481
+new.attr=attr_static
+new.p=6537 175 0
+
+//Boss room red moongates
+serv.newitem=0DDA
+new.attr=attr_static
+new.p=6541 117 -15
+serv.newitem=0DDA
+new.attr=attr_static
+new.p=6523 136 -20
+
+[EOF]

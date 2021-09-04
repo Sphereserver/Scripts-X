@@ -1,0 +1,88 @@
+
+
+//    0     1     2     3     4     5   6 7 8   9     10      11         12         13        14     15    16     17     18     19     20
+//*|List1|List2|List3|List4|List5|List6|X|Y|Z|facet|MinTime|MaxTime|WalkingRange|HomeRange|SpawnID|Count1|Count2|Count3|Count4|Count5|Count6
+
+
+[function f_create_spawner]
+for 0 5
+  if !(<isempty <argv<dlocal._for>>>)
+    if (strmatch(*:*,<argv<dlocal._for>>))	//check to see if more than one npc on the spawner
+      local.spawn_array=<explode :,<argv<dlocal._for>>>
+    endif
+
+//////for validation purposes
+    if (<var0.f_validate_spawns>)
+      if (<local.spawn_array>)
+        f_validate_spawn <explode , <local.spawn_array>>
+        else
+        f_validate_spawn <argv<dlocal._for>>
+      endif
+      f_reset_spawn_counters
+      return 1
+    endif
+/////end of validation
+
+    if (<resourcetype <argv[<dlocal._for>]>>==<def.res_chardef>)	//check for if it's an npc or an item
+      local.type=t_spawn_char
+    elseif (<resourcetype <argv[<dlocal._for>]>>==<def.res_itemdef>)	//<serv.itemdef.<argv<dlocal._for>>>
+      local.type=t_spawn_item
+    endif
+
+    serv.newitem i_worldgem_bit
+    new.type=<local.type>					//<qval <serv.chardef.<argv<dlocal._for>>>?t_spawn_char:t_spawn_item>
+    if (<new.type>==t_spawn_char)
+      new.events=+t_custom_spawner_char
+    else
+      new.events=+t_custom_spawner_item		//this will apply for items/multis
+      new.attr=090    
+    endif
+    if (<local.spawn_array>)
+      new.tag.spawn_array=<local.spawn_array>
+      new.more1=<strarg <local.spawn_array>>
+    else
+      new.more1=<argv<dlocal._for>> 					//more1
+    endif
+    new.p=<argv[6]>,<argv[7]>,<argv[8]>,<dvar0.spawner_facet>	//<argv[9]>	//p
+    new.morep=<argv[10]>,<argv[11]>,<argv[12]>				//morep
+    new.amount=<argv[<eval 15 + <local._for>>]>				//amount
+    new.update	
+    new.timer=<R<argv[10]>,<argv[11]>>
+  endif
+  local.spawn_array=
+endfor
+
+
+////VALIDATION
+[function f_validate_spawn]
+for n 0 <eval <argv> -1>
+  local.spawn=<def0.<argv[<dlocal.n>]>>
+  if !(<resourceindex <local.spawn>>) && !(<resourceindex <local.spawn>>)
+    serv.log <local.spawn> is not a valid chardef or itemdef
+  endif
+endfor
+////VALIDATION
+
+
+[function f_remove_all_spawns]
+forinstances i_worldgem_bit
+  if (<type>==t_spawn_char) || (<type>==t_spawn_item)
+    remove
+  endif
+endfor
+f_reset_spawn_counters
+sysmessage @026 All spawns removed
+
+
+[function f_reset_spawn_counters]
+while !<isempty <def.worldspawner_facet_<dlocal.n>>>
+  while !<isempty <def.worldspawner_facet_<dlocal.n>_<dlocal.x>>>
+    args=<def0.worldspawner_facet_<dlocal.n>_<dlocal.x>>
+    var0.<argv[1]>=
+    local.x += 1
+  endwhile
+  local.n += 1
+  local.x=
+endwhile
+
+[EOF]

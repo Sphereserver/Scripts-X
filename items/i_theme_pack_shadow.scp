@@ -418,10 +418,14 @@ NAME=shadow banner
 //shadow banner (multi-part)(east)
 NAME=shadow banner
 
-[ITEMDEF 03660]
-//globe of sosaria (multi-part)(anim)
-NAME=Globe of Sosaria
+[itemdef 03660]
+defname=i_globe_of_sosaria
+NAME=Globe of Sosaria //(multi-part)(anim)
+CATEGORY=Decoration - HS
+SUBSECTION=Items HS
+DESCRIPTION=Globe of Sosaria
 DUPELIST=3661,03662,03663,03664,03665,03666,03667,03668,03669,0366a,0366b,0366c,0366d,0366e,0366f
+
 
 [ITEMDEF 03661]
 //globe of sosaria (multi-part)(anim)

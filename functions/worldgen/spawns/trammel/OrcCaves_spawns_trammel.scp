@@ -1,0 +1,42 @@
+[function spawn_orc_caves_trammel]
+
+//##############
+//## By Nerun ##
+//##############
+//overrideid 112
+//overridemap 2
+//overridemintime 5
+//overridemaxtime 10
+//##
+//## Britain
+//## Orc Caves
+//##
+//## Cave 1
+//##
+f_create_spawner,Orc,Orccaptain,Orcishlord,,,,5146,1995,0,2,5,15,8,8,1,1,1,1,0,0,0
+f_create_spawner,Orc,,,,,,5153,1971,0,2,5,15,8,8,1,5,0,0,0,0,0
+f_create_spawner,Direwolf,,,,,,5153,1961,0,2,5,15,8,8,1,2,0,0,0,0,0
+f_create_spawner,Orcishlord,,,,,,5144,1960,0,2,5,15,8,8,1,3,0,0,0,0,0
+f_create_spawner,Orccaptain,,,,,,5141,1968,0,2,5,15,8,8,1,3,0,0,0,0,0
+//##
+//## Cave 2
+//##
+f_create_spawner,Orc,,,,,,5332,1365,0,2,5,15,8,8,1,3,0,0,0,0,0
+f_create_spawner,Noble,,,,,,5308,1372,0,2,5,15,8,8,1,1,0,0,0,0,0
+f_create_spawner,Orcishlord,Orc,,,,,5302,1355,0,2,5,15,12,8,1,1,3,0,0,0,0
+f_create_spawner,Giantrat,,,,,,5316,1332,0,2,5,15,8,8,1,3,0,0,0,0,0
+f_create_spawner,Direwolf,,,,,,5331,1346,0,2,5,15,8,8,1,3,0,0,0,0,0
+f_create_spawner,Orccaptain,Orcishlord,Orcishmage,Orcbomber,,,5354,1332,0,2,5,15,8,8,1,1,1,1,1,0,0
+f_create_spawner,Orcbomber,Orccaptain,Orc,,,,5356,1304,0,2,5,15,10,8,1,1,1,2,0,0,0
+f_create_spawner,Orcishlord,Orcishmage,Orcbomber,Orc,,,5317,1309,0,2,5,15,8,8,1,1,2,1,2,0,0
+f_create_spawner,Orc,Orcishmage,Orcishlord,,,,5300,1314,0,2,5,15,10,8,1,3,1,2,0,0,0
+f_create_spawner,Corpser,,,,,,5292,1316,0,2,5,15,8,8,1,2,0,0,0,0,0
+//##
+//## Cave 3
+//##
+f_create_spawner,Orc,,,,,,5281,2029,0,2,5,15,8,8,1,3,0,0,0,0,0
+f_create_spawner,Orcbrute,Orc,,,,,5308,2005,0,2,5,15,12,12,1,1,4,0,0,0,0
+f_create_spawner,Orcbomber,Orc,,,,,5310,1969,0,2,5,15,12,12,1,2,2,0,0,0,0
+f_create_spawner,Orcbomber,Earthelemental,,,,,5348,2011,0,2,5,15,15,10,1,1,4,0,0,0,0
+
+[EOF]

@@ -1,0 +1,6 @@
+[function spawn_quest_npcs_trammel]
+
+f_create_spawner	c_Tutorial_Quester,,,,,,5131,1904,0,1,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_Tutorial_Quester,,,,,,5236,2031,0,1,5,10,10,10,1,1,0,0,0,0,0
+
+[eof]

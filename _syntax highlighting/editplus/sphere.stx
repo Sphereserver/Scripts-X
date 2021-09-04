@@ -1570,7 +1570,7 @@ c_ghost_man
 c_ghost_female
 c_goat
 c_gorilla
-c_grim_reaper
+c_reaper
 c_harpy
 c_headless
 c_horse_brown_dk
@@ -1587,7 +1587,7 @@ c_lizardman_spear
 c_llama
 c_llama_pack
 
-c_balron
+c_daemon_balron
 c_cyclops_king
 c_dragon_blackdrake
 c_dragon_bluedrake
@@ -4436,7 +4436,7 @@ i_reag_pumice
 i_reag_nox_crystal
 i_reag_spider_silk
 i_reag_sulfur_ash
-i_reag_volcanic_ash
+i_reag_grave_dust
 i_reag_wyrm_heart
 
 i_refuse

@@ -1,0 +1,80 @@
+[function deco_shrines_ilshenar]
+
+//Compassion
+serv.newitem=0003
+new.attr=attr_static
+new.type=t_shrine
+new.p=1209 476 -14 2
+serv.newitem=0002
+new.attr=attr_static
+new.type=t_shrine
+new.p=1209 477 -14 2
+//Honesty
+serv.newitem=0004
+new.attr=attr_static
+new.type=t_shrine
+new.p=718 1350 -55 2
+serv.newitem=0005
+new.attr=attr_static
+new.type=t_shrine
+new.p=719 1350 -55 2
+//Humility
+serv.newitem=0003
+new.attr=attr_static
+new.type=t_shrine
+new.p=286 1013 5 2
+serv.newitem=0002
+new.attr=attr_static
+new.type=t_shrine
+new.p=286 1014 5 2
+//Justice
+serv.newitem=0004
+new.attr=attr_static
+new.type=t_shrine
+new.p=986 996 -22 2
+//Sacrifice
+serv.newitem=0003
+new.attr=attr_static
+new.type=t_shrine
+new.p=1170 1287 -30 2
+serv.newitem=0002
+new.attr=attr_static
+new.type=t_shrine
+new.p=1170 1288 -30 2
+//Spirituality
+serv.newitem=0003
+new.attr=attr_static
+new.type=t_shrine
+new.p=1525 1340 4 2
+serv.newitem=0002
+new.attr=attr_static
+new.type=t_shrine
+new.p=1525 1341 4 2
+//Valor
+serv.newitem=0004
+new.attr=attr_static
+new.type=t_shrine
+new.p=524 211 -49 2
+serv.newitem=0005
+new.attr=attr_static
+new.type=t_shrine
+new.p=525 211 -49 2
+serv.newitem=0004
+new.attr=attr_static
+new.type=t_shrine
+new.p=532 211 -44 2
+serv.newitem=0005
+new.attr=attr_static
+new.type=t_shrine
+new.p=533 211 -44 2
+//chaos
+serv.newitem=0004
+new.attr=attr_static
+new.type=t_shrine
+new.p=1749 232 63 2
+serv.newitem=0005
+new.attr=attr_static
+new.type=t_shrine
+new.p=1750 232 63 2
+
+[EOF]

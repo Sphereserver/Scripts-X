@@ -138,6 +138,39 @@ ON=@PersonalSpace
       NEW.LINK=<UID>
    ENDIF
 
+[chardef c_Plague_Spawn]
+defname c_plague_spawn
+name=Plague spawn
+id=c_slime_corrosive
+can=mt_walk|mt_run|mt_equip|mt_usehands
+dam={11, 17}
+armor=20
+CATEGORY=Monsters
+SUBSECTION=Slimes
+DESCRIPTION=Plague spawn
+
+on=@create
+	npc=brain_monster
+	color=010
+	str={201, 300}
+	dex={80}
+	int={16, 20}
+	maxhits={121, 180}
+	//resphysical={35, 45}
+	resfire={30, 40}
+	rescold={25, 35}
+	respoison={65, 75}
+	resenergy={25, 35}
+	magicresistance={25.0}
+	tactics={25.0}
+	wrestling={50.0}
+	fame=1000
+	karma=-1000
+	body={c_elemental_earth 1 c_headless 1 {c_man 1 c_woman 1} 1 c_gorilla 1 c_serpent_giant 1 c_slime 1}
+
+on=@createloot
+	item=i_gold,{25 50} 
+
 [CHARDEF 07c]
 //Master Theophilus is a named necromancer that can be found in Bedlam. While it uses the Evil Mage graphical ID this NPC was introduced in ML.
 DEFNAME=c_theophilus
@@ -197,6 +230,10 @@ ON=@CreateLoot
    ITEM=monster_regbag_necromancy
 
 [CHARDEF 0100]
+// Chief Paroxysmus is the peerless boss of the Palace of Paroxysmus.
+//FIXME: No Stratics data yet
+//FIXME: Eats Pets to quickly regain health
+//FIXME: Poison Aura (lethal)
 DEFNAME=c_chief_paroxysmus
 NAME=Chief Paroxysmus
 SOUND=snd_monster_daemon1
@@ -241,14 +278,28 @@ ON=@Create
     WRESTLING={60.0 90.0}
 
 ON=@CreateLoot
-    ITEM=random_jewel,{1 4}
-    ITEM=i_gold,{80 130}
-    ITEMNEWBIE=i_spellbook
-    ADDSPELL=s_fireball
-    ADDSPELL=s_fire_field
-    ADDSPELL=s_flamestrike
-    ADDSPELL=s_poison_field
-    ADDSPELL=s_paralyze
+    ITEM=loot_paroxysmus
+
+ON=@Hit
+   LOCAL.Counter=RAND(20)
+   //Critical hit
+   IF ( (<MANA> >= 10) && (RAND(5)==0) )
+      EMOTE critical hit <SRC.NAME>
+      SRC.DAMAGE <R25,35> <DEF.dam_physical>
+      MANA -= 10
+   ENDIF
+   //Cursed blow
+   IF ( (<MANA> >= 10) && (RAND(5)==0) && !(<SRC.f_IsCursed>) )
+      SRC.SPELLEFFECT s_curse,100.0,1,<UID>
+      SRC.EFFECT 3,i_fx_curse,1,16,0,044
+      SRC.SOUND snd_spell_curse
+      MANA -= 10
+   ENDIF
+ON=@GetHit
+   //Teleport ranged attackers closer
+   IF ( (<DISTANCE> > 2) && (RAND(5)==0) )
+      SRC.GO <P>
+   ENDIF
 
 
 [CHARDEF 0101]
@@ -296,11 +347,32 @@ ON=@Create
     WRESTLING={60.0 90.0}
 
 ON=@CreateLoot
-    ITEM=random_jewel,{1 4}
-    ITEM=i_gold,{80 130}
+   ITEM=loot_dread_horn
+   //8000 - 10000 Gold. magic items
+   //Special: Peerless artifacts, various special decor items, rare resources
+ON=@Hit
+   LOCAL.Counter=RAND(20)
+   //Critical Hit Attack vs pets
+   IF (<SRC.FLAGS>&statf_pet) || (RAND(10)==1)
+      SRC.DAMAGE <R50,100> <DEF.dam_physical> <UID>
+      EMOTE critical hit <SRC.NAME>
+   ENDIF
+   //Stat Reduction Attack
+   IF (RAND(10)==1)
+      SRC.SPELLEFFECT s_curse,<MAGERY>,1,<UID>
+   ENDIF
+ON=@GetHit
+   //Teleport ranged attackers closer
+   IF (<DISTANCE> > 2)
+      SRC.GO <P>
+   ENDIF
 
 
 [CHARDEF 0102]
+//Lady Melisande is the peerless boss of the Blighted Grove
+//FIXME: No Stratics data
+//FIXME: Wither and Nausea attacks
+//FIXME: Summoning (revenant)
 DEFNAME=c_lady_melisande
 NAME=Lady Melisande
 //SOUND=snd_monster_daemon1
@@ -345,11 +417,18 @@ ON=@Create
     WRESTLING={60.0 90.0}
 
 ON=@CreateLoot
-    ITEM=random_jewel,{1 4}
-    ITEM=i_gold,{80 130}
-    ITEMNEWBIE=i_spellbook
-    ADDSPELL=s_harm
-
+   ITEM=loot_lady_melisande
+ON=@GetHit
+   //Putrid Nausea Aura Attack
+   IF (RAND(3)==0)
+      REF11=<UID>
+      FORCHARS 3
+         IF (<ISPLAYER>) || (<FLAGS>&statf_pet)
+            ACTION=-1//FIXME: Temporary solution, should slow down swing speed and casting time instead
+            SYSMESSAGELOC color_text,1072068//"Your enemies putrid prescence envelops you..."
+         ENDIF
+      END
+   ENDIF
 
 [CHARDEF 0103]
 //TODO: Howl Of Cacophony, Drops puddles of acid
@@ -509,9 +588,36 @@ ON=@Create
     WRESTLING={60.0 90.0}
 
 ON=@CreateLoot
-    ITEM=random_jewel,{1 4}
-    ITEM=i_gold,{80 130}
-
+   ITEM=loot_shimmering_effusion
+ON=@GetHit
+   //Spawn Creatures Attack
+   IF (RAND(10)==0)
+      DORAND 4
+         SRC.NEWNPC c_fetid_essence
+         SRC.NEWNPC c_corporeal_blume
+         SRC.NEWNPC c_wisp_crystal
+         SRC.NEWNPC c_mantra_effervescent
+      ENDDO
+      NEW.FLAGS |= (statf_war|statf_conjured)
+      NEW.P=<SRC.P>
+      NEW.f_NPCRemovalTimer 1200
+      SRC.NEWITEM=random_crystal_broken
+      NEW.ATTR=attr_decay|attr_move_never
+      NEW.TIMER=<R600,900>
+      NEW.P=<SRC.P>
+      SRC.UPDATE
+   ENDIF
+   //Energy Aura Attack
+   IF (RAND(3)==0)
+      REF11=<UID>
+      FORCHARS 3
+         IF (<ISPLAYER>) || (<FLAGS>&statf_pet)
+            LOCAL.DAM=<R10,20>
+            DAMAGE <LOCAL.DAM> <DEF.dam_energy> <REF11>
+            SYSMESSAGE @color_text,,1 Intense energy radiating from the creature damages you
+         ENDIF
+      END
+   ENDIF
 
 [CHARDEF 0106]
 DEFNAME=c_Tormented_Minotaur
@@ -560,6 +666,66 @@ ON=@Create
 ON=@CreateLoot
     ITEM=random_jewel,{1 4}
     ITEM=i_gold,{80 130}
+
+[CHARDEF c_meraktus]
+//Champion of the Labyrinth
+//FIXME: Incomplete Stratics data
+//FIXME: "ground stomp" attack which deals area effect damage dependent on how close you are (also causes dismount)
+ID=c_tormented_minotaur
+NAME=Meraktus the Tormented
+SOUND=snd_monster_minotaur1
+ICON=i_pet_tormented_minotaur
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP|MT_FEMALE
+DAM=16,30
+ARMOR=65
+DESIRES=r_dungeon_labyrinth,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=35 t_meat_raw
+RESOURCES=3 i_ribs_raw,10 i_hide
+BLOODCOLOR=colors_blood
+MOVERATE=100
+TAG.Barding.Diff=160.0
+//TAG.Luck.Loot=FIXME
+TAG.Slayer=SLAYER_BOVINE
+TEVENTS=e_carnivores2
+TEVENTS=e_minotaurs
+CATEGORY=Monsters
+SUBSECTION=Champions
+DESCRIPTION=Meraktus
+RESLEVEL=5
+RESDISPDNID=c_man
+RESDISPDNHUE=33
+
+ON=@Create
+   NAME=Meraktus the Tormented
+   TITLE=tormented minotaur
+   NPC=brain_monster
+   FAME=14000
+   KARMA=-14000
+   STR={1400 1550}
+   MAXHITS={4000 4200}
+   DEX={300 420}
+   MAXSTAM={300 420}
+   INT={125 145}
+   MAXMANA={125 145}
+   ANATOMY={50.0 60.0}
+   ARCHERY={50.0 60.0}
+   DETECTINGHIDDEN={90.0 100.0}
+   FENCING={100.0 110.0}
+   MACEFIGHTING={100.0 110.0}
+   MAGICRESISTANCE={110.0 115.0}
+   PARRYING={100.0 110.0}
+   SWORDSMANSHIP={100.0 110.0}
+   TACTICS={100.0 110.0}
+   WRESTLING={100.0 110.0}
+   MODAR={0 20}
+   RESCOLD={45 55}
+   RESENERGY={50 60}
+   RESFIRE={70 80}
+   RESPOISON={50 60}
+
+ON=@createloot
+   ITEM=loot_tormented_minotaur
 
 
 [CHARDEF 0107]
@@ -771,6 +937,45 @@ ON=@CreateLoot
     ITEM=random_jewel,{1 4}
     ITEM=i_gold,{80 130}
 
+[chardef c_dryad_insane]
+defname=c_dryad_insane
+id=c_dryad
+name=Insane Dryad
+SOUND=057B
+ICON=i_worldgem_bit
+RESLEVEL=5
+RESDISPDNHUE=33
+RESDISPDNID=c_man
+dam={11, 20}
+ARMOR=28
+RESOURCES=1 i_ribs_raw
+DESIRES=i_gold,e_notoriety
+AVERSIONS=t_TRAP
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP
+CATEGORY=New Monsters
+SUBSECTION=ML
+DESCRIPTION=Insane Dryad
+
+ON=@Create
+    npc=brain_monster
+    str={132, 149}
+    dex={152, 168}
+    int={251, 280}
+    maxhits={304, 321}
+    //resphysical={40, 50}
+    resfire={15, 25}
+    rescold={40, 45}
+    respoison={30, 40}
+    resenergy={25, 35}
+    meditation={80.0, 90.0}
+    evaluatingintel={70.0, 80.0}
+    magery={70.0, 80.0}
+    anatomy={0}
+    magicresistance={100.0, 120.0}
+    tactics={70.0, 80.0}
+    wrestling={70.0, 80.0}
+    fame=5000
+    karma=-5000
 
 [CHARDEF 010b]
 DEFNAME=c_Troglodyte
@@ -1142,7 +1347,7 @@ ON=@Create
 
 ON=@CreateLoot
     ITEM=i_gold,{1500,1900}
-    ITEM=random_weapon
+    ITEM=random_weapon_all_normal
     ITEM=random_armor
     ITEM=i_bandage,{1,5}
 //    ITEM=level 5 treasure_map
@@ -1665,5 +1870,37 @@ ON=@Create
    RESPOISON={50 60}
 ON=@NPCRestock
    ITEM=loot_warhorse_dread
+
+[CHARDEF 027d]
+//Spectral Armor (floating sword)
+defname=c_spectral_armor
+name=spectral armor
+soundidle=0200
+sounddie=376A
+soundhit=056
+can=mt_walk|mt_run|mt_equip|mt_usehands
+dam={10, 22}
+armor=18
+
+on=@create
+    color=08026
+    npc=brain_monster
+    str={101, 110}
+    dex={101, 110}
+    int={101, 110}
+    maxhits={178, 201}
+    //resphysical={178, 201}
+    rescold={10, 20}
+    respoison={100}
+    resenergy={10, 20}
+    wrestling={75.1, 100.0}
+    tactics={0.1, 100.0}
+    magicresistance={90.1, 100}
+
+    fame=7000
+    karma=-7000
+
+on=@createloot
+    item=i_gold,{240
 
 [EOF]

@@ -1,0 +1,60 @@
+[function spawn_vendors_tokuno]
+
+//##############
+//## By Nerun ##
+//##############
+//overridemintime 5
+//overridemaxtime 10
+//overrideid 504
+f_create_spawner,bardguildmaster,,,,,,668,1254,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,blacksmith,,,,,,773,1248,26,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,blacksmith,,,,,,662,1210,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,baker,butcher,cook,,,,703,1262,25,5,5,10,10,0,1,1,1,1,0,0,0
+f_create_spawner,shipwright,,,,,,669,1266,47,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,tanner,,,,,,720,1211,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,carpenter,,,,,,739,1223,45,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,Towncrier,,,,,,732,1256,30,5,5,10,0,0,1,1,0,0,0,0,0
+f_create_spawner,bowyer,,,,,,781,1301,26,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,animaltrainer,,,,,,789,1278,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,armorer,,,,,,756,1302,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,tavernkeeper,,,,,,692,1213,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,innkeeper,,,,,,679,1207,25,5,5,10,0,0,1,1,0,0,0,0,0
+f_create_spawner,tinker,,,,,,720,1213,45,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,tailor,,,,,,744,1219,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,mapmaker,,,,,,691,1264,47,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,bard,,,,,,675,1265,25,5,5,10,4,4,1,1,0,0,0,0,0
+f_create_spawner,scribe,,,,,,689,1255,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,herbalist,,,,,,683,1298,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,alchemist,,,,,,702,1298,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,mage,,,,,,695,1297,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,jeweler,,,,,,724,1297,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,provisioner,,,,,,730,1282,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,healer,,,,,,781,1219,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,banker,,,,,,729,1249,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,armorer,,,,,,742,1304,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,weaponsmith,,,,,,806,1308,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,armorer,weaponsmith,,,,,749,1303,25,5,5,10,4,4,1,1,1,0,0,0,0
+f_create_spawner,blacksmith,,,,,,661,1209,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,weaver,,,,,,744,1210,25,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,weaponsmith,,,,,,779,1259,26,5,5,10,4,0,1,1,0,0,0,0,0
+f_create_spawner,noble:peasant:hirebeggar,samurai,ninja,,,,735,1256,30,5,5,10,80,60,1,10,10,10,0,0,0
+//##
+//## wandering healers
+//##
+f_create_spawner,wanderinghealer,,,,,,1166,802,27,5,1,5,3,3,1,1,0,0,0,0,0
+f_create_spawner,wanderinghealer,,,,,,558,534,32,5,1,5,3,3,1,1,0,0,0,0,0
+f_create_spawner,wanderinghealer,,,,,,502,589,24,5,1,5,3,3,1,1,0,0,0,0,0
+f_create_spawner,wanderinghealer,,,,,,1177,985,38,5,1,5,3,3,1,1,0,0,0,0,0
+f_create_spawner,wanderinghealer,,,,,,399,549,15,5,1,5,3,3,1,1,0,0,0,0,0
+f_create_spawner,wanderinghealer,,,,,,226,786,57,5,1,5,3,3,1,1,0,0,0,0,0
+f_create_spawner,wanderinghealer,,,,,,297,637,15,5,1,5,2,2,1,1,0,0,0,0,0
+f_create_spawner,wanderinghealer,,,,,,371,431,32,5,5,20,5,5,1,1,0,0,0,0,0
+f_create_spawner,wanderinghealer,,,,,,763,247,71,5,5,20,3,3,1,1,0,0,0,0,0
+f_create_spawner,wanderinghealer,,,,,,1111,495,18,5,5,20,3,3,1,1,0,0,0,0,0
+f_create_spawner,wanderinghealer,,,,,,1221,494,27,5,5,20,3,3,1,1,0,0,0,0,0
+f_create_spawner,wanderinghealer,,,,,,895,519,53,5,5,20,2,2,1,1,0,0,0,0,0
+f_create_spawner,wanderinghealer,,,,,,1152,936,65,5,5,20,3,3,1,1,0,0,0,0,0
+f_create_spawner,wanderinghealer,,,,,,979,238,21,5,5,20,5,5,1,1,0,0,0,0,0
+f_create_spawner,wanderinghealer,,,,,,248,1089,10,5,1,5,3,3,1,1,0,0,0,0,0
+
+[EOF]

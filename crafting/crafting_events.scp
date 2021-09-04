@@ -88,6 +88,14 @@ if <def0.scp.NewCrafting_<serv.skill.<argn>.key>> == 1
 endif
 
 on=@skillmakeitem
+ref2 = <act.uid>
+ref2.name = <serv.itemdef.<ref2.baseid>.name>
+
+//FIX for giving the color of folded cloth to the new item (Legacy and OSI like crafting menu)
+if <uid.<ref2>.SKILLMAKE.1.key>==Skill_Tailoring && <ARGO.baseid>==i_cloth
+	ref2.color=<argo.color>
+endif
+
 ctag.craft.message =
 if <def.scp.CraftingSystem> == 0
    return 0
@@ -95,9 +103,14 @@ endif
 if <def0.scp.NewCrafting_<serv.skill.<action>.key>> == 0
    return 0
 endif
+
 ref2 = <act.uid>
 ref2.name = <serv.itemdef.<ref2.baseid>.name>
 ctag.craft.message = Your last successful creation: <ref2.name>.
+
+
+
+
 if <ref2.craft_exceptionalchance> > <r>
    if !<isempty <def.<ctag0.craft.skill>_exceptional_bonus>>
       ref2.<def.<ctag0.craft.skill>_exceptional_bonus> <uid>
@@ -121,8 +134,6 @@ if <ctag0.craft.material.<ctag.craft.skill>>
       ref2.<def.<ctag0.craft.skill>_<ctag0.craft.material.<ctag0.craft.skill>>_aftercraft>>
    endif
 endif
-//trigger @ItemCraft,<def.tat_as_argo>,<ref2.uid>
-//ref2.trigger @Craft,<def.tat_as_argo,<uid>
 ref2.resendtooltip 1
 f_resenddialog d_craft_menu
 return 0

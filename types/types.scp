@@ -324,6 +324,60 @@ ELSE
 ENDIF
 UPDATE
 
+//////////////////////////
+// Dungeon Chest Typedefs
+[typedef t_dungeon_chest]
+on=@click
+message <serv.itemdef.<dispid>.name>
+return 1
+
+on=@dclick //Activate the decay if chest is unlock
+if (<type>==t_container)
+   timer=180
+endif
+
+on=@spelleffect
+if (<argn1>==23) && ((<type>==t_container_locked) || (<isevent.t_container_locked>))
+  src.sysmessage You can not unlock this with that spell.
+  return 1
+endif
+
+[typedef t_trapped_container]
+//only can place traps on lockable boxes. not bags or doors.
+//damage varies on skill of the tinkerer
+//explosion traps do the most damage, grandmaster explosions traps will almost always kill the opener
+//poison traps administer level 5 poison, if not cured quickly the player will die
+//lesser explosion and poison traps are as effective as greater poison and explosion potions
+//telekinesis can be used on player trapped boxes
+
+//MOREX - trap type
+//MOREY - quality
+//LINK - uid of the player who trapped the container
+
+on=@dclick
+if (<type>!=t_container_locked) 	//don't fire if the container is locked and doesnt open
+  if (<src.distance <uid>> > 2) && (<src.action>==skill_magery) && (<src.actarg1>==21)	//using telekenisis
+    local.telekinesis=1
+  endif
+  args=<morep>
+  if (<morex>==1)	//dart trap
+    src.damage <qval <local.telekinesis>?0:<morey>> dam_physical <link>
+    src.effect 3,i_xbolt,6,15,1,0	
+    src.sound 548
+  elseif (<morex>==3)	//poison trap
+    src.damage <qval <local.telekinesis>?0:<morey>> dam_poison <link>
+    src.effect 3,i_trap_gas,6,25,1,0
+    src.sound 560
+  elseif (<morex>==3)		//explosion trap
+    src.damage <qval <local.telekinesis>?0:<morey>> dam_fire <link>
+    src.effect 3,i_fx_explode,6,15,1,0
+    src.sound 283
+  endif
+  src.bark 3
+  message You set off a trap!
+  events=-t_trapped_container
+endif
+
 
 [TYPEDEF t_chicken_coop]
 // Used to raise fighting chickens!

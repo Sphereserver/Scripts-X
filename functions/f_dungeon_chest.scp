@@ -1,0 +1,36 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[function f_dungeon_chest_additem]	//command usage : itemid,amount,odds,rolls,function	
+for <argv[3]>
+  if (<argv[2]> <= 0) || !(<R<argv[2]>>) 
+    serv.newitem <argv[0]>,<argv[1]>,<uid>
+    if !(<isempty <argv[4]>>)	//function
+      new.<argv[4]>
+    endif
+  endif
+endfor
+
+
+[function remove_dungeon_chests]
+for n 5 
+  forinstances i_dungeon_chest<dlocal.n>
+    remove
+  endfor
+endfor
+
+[function f_trap_container]	//trapcontainer,[type 1-3],[strength],[uid of the person who trapped it]
+if (!<isevent.t_container_locked>) && (!<isevent.t_container>) && (<type>!=t_container_locked) && (<type>!=t_container)
+  return 1
+endif
+events=+t_trapped_container
+morex=<argv[0]>
+morey=<argv[1]>
+if !(<isempty <argv[2]>>)
+  link=<argv[2]>
+endif
+
+[EOF]

@@ -470,15 +470,6 @@ DESCRIPTION=MahJong
 //backgammon game
 DUPEITEM=0e1c
 
-
-[ITEMDEF 0fc2]
-NAME=Quest item
-WEIGHT=0.1
-CATEGORY=Quest
-SUBSECTION=Unknown
-DESCRIPTION=Feather
-
-
 [ITEMDEF 0fc4]
 DEFNAME=i_shell
 TYPE=t_normal
@@ -1652,39 +1643,6 @@ CATEGORY=Quest
 SUBSECTION=Unknown
 DESCRIPTION=Brass Box (corroded)
 
-
-[ITEMDEF 02002]
-DEFNAME=i_key_quest
-NAME=quest key
-TYPE=t_key
-WEIGHT=0.1
-RESOURCES=5 i_ingot_gold,5 i_ingot_silver,5 i_ingot_copper
-CATEGORY=Quest
-SUBSECTION=Keys
-DESCRIPTION=Quest Key
-ON=@Create
-   ATTR=attr_magic|attr_newbie
-
-[ITEMDEF 02003]
-DEFNAME=i_fishing_net_quest
-NAME=fishing net
-WEIGHT=14.0
-RESOURCES=10 i_rope,10 i_thread,4 i_shell
-CATEGORY=Quest
-SUBSECTION=Unknown
-DESCRIPTION=Fishing Net
-
-[ITEMDEF 02004]
-DEFNAME=i_battered_bucket
-NAME=battered bucket
-TYPE=t_drink
-TDATA1=i_bucket
-WEIGHT=12.1
-RESOURCES=1 i_bucket,3 i_pitcher_water
-CATEGORY=Quest
-SUBSECTION=Lost and Found
-DESCRIPTION=Battered Bucket
-
 [ITEMDEF 02005]
 // Invis marker
 DEFNAME=i_eq_marker
@@ -1894,14 +1852,6 @@ DUPEITEM=02198
 [ITEMDEF 021bc]
 //nodraw
 DUPEITEM=02198
-
-[ITEMDEF 021fe]
-DEFNAME=i_vial_of_stuff
-WEIGHT=1.0
-CATEGORY=Quest
-SUBSECTION=Unknown
-DESCRIPTION=Vial of stuff?
-
 
 [ITEMDEF 02232]
 DEFNAME=i_ant_hill

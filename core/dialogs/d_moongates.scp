@@ -1,0 +1,100 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+//OSI style moongate system by Soulless
+//v1.0
+//8:06 AM 8/31/2018
+
+//redid dialogs, generates the whole thing at once, no more bliping on the screen when selecting facets
+
+
+[itemdef i_moongate]
+id=i_moongate_blue
+type=t_script
+name=Moongate
+
+on=@DClick
+if (<distance> > 2)
+  src.sysmessage You are too far away to use that.
+  return 1
+endif
+
+sdialog d_moongates <eval <src.p.m>+1>
+sound snd_spell_gate_travel
+return 1
+
+
+on=@step 
+if (!<argn1>==1) 
+  sdialog d_moongates <eval <src.p.m>+1>
+  sound snd_spell_gate_travel
+endif 
+
+[dialog d_moongates]
+90,90 
+
+PAGE 0 
+resizepic 10 10 9200 420 300 
+//resizepic 20 20 3000 400 280
+
+dtext 50 30 1263 Pick your destination: 
+
+button 35 220 4005 4007 1 0 1000
+dtext 70 220 1263 OKAY
+button 35 245 4005 4007 1 0 0
+dtext 70 245 1263 CANCEL
+
+//Facet Listings
+for 0 5
+  if (<def0.moongates_facet<dlocal._for>_active>)
+    button 30 <eval 62+(<local._for>*25)> 2117 2118 1 0 <eval <local._for>+1>
+    dtext 50 <eval 60+(<local._for>*25)> 0 <def0.moongates_facet<dlocal._for>>
+  endif
+endfor
+
+//Moongate Listings
+//p = page
+//f = facet
+//m = moongate
+
+page <argn1>
+
+local.f=<eval <argn1>-1>
+dtext 50 <eval 60+(<local.f>*25)> 044 <def0.moongates_facet<dlocal.f>>
+while !<isempty <def.moongates_facet<dlocal.f>_<dlocal.n>>>
+  //serv.b <eval (<dlocal.f>*100)+(<local.n>+1)>
+  radio 210 <eval 42+(<local.y>*25)> 9026 9027 0 <eval (<dlocal.f>*100)+(<local.n>+1)>
+  dtext 233 <eval 45+(<local.y>*25)> <qval (<def0.moongates_facet<dlocal.f>_<dlocal.n>_hue>)?<def0.moongates_facet<dlocal.f>_<dlocal.n>_hue>:0> <streat <streat <streat <streat <def0.moongates_facet<dlocal.f>_<dlocal.n>>>>>> 
+  local.y += 1
+  local.n += 1
+endwhile
+
+[dialog d_moongates button]
+
+onbutton=1,6
+sdialog d_moongates <argn1>
+
+onbutton=1000
+if (<distance> > 2)
+  src.sysmessage You are too far away from the moongate.
+  return 1
+elseif !(<argchk>)
+  src.sysmessage You did not select a location
+  return 1
+endif
+
+//serv.b <eval <argchkid>-1>
+local.n=<eval <argchkid>-1>
+local.facet=<eval <local.n>/100>
+local.moongate=<eval <local.n>-(<local.facet>*100)>
+args=<def0.moongates_facet<dlocal.facet>_<dlocal.moongate>>
+//serv.b <local.n> <local.facet> <local.moongate>
+src.p=<argv[0]>,<argv[1]>,<argv[2]>,<argv[3]>
+src.flags |= statf_hidden
+src.update
+src.sound snd_spell_recall
+
+[EOF]

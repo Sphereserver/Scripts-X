@@ -1,0 +1,188 @@
+//World Spawner by Soulless v4.0
+//13/8/2021
+
+[defname world_spawner_settings]
+
+worldspawner_facet_0		Felucca
+worldspawner_facet_0_0		Vendors,spawn_vendors_felucca
+worldspawner_facet_0_1		Graveyards,spawn_graveyards_felucca
+worldspawner_facet_0_2		Towns,spawn_towns_life_felucca
+worldspawner_facet_0_3		Wild Life,spawn_wild_life_felucca
+worldspawner_facet_0_4		Dungeons,spawn_dungeons_felucca
+worldspawner_facet_0_5		Sea Life,spawn_sea_life_felucca
+worldspawner_facet_0_6		Reagents,spawn_reagents_felucca
+worldspawner_facet_0_7		Lost Lands,spawn_lost_lands_felucca
+worldspawner_facet_0_8		Outdoors,spawn_outdoors_felucca
+
+worldspawner_facet_1		Trammel
+worldspawner_facet_1_0		Vendors,spawn_vendors_trammel
+worldspawner_facet_1_1		Graveyards,spawn_graveyards_trammel
+worldspawner_facet_1_2		Towns,spawn_towns_life_trammel
+worldspawner_facet_1_3		Wild Life,spawn_wild_life_trammel
+worldspawner_facet_1_4		Dungeons,spawn_dungeons_trammel
+worldspawner_facet_1_5		Sea Life,spawn_sea_life_trammel
+worldspawner_facet_1_6		Reagents,spawn_reagents_trammel
+worldspawner_facet_1_7		Lost Lands,spawn_lost_lands_trammel
+worldspawner_facet_1_8		Outdoors,spawn_outdoors_trammel
+
+worldspawner_facet_2		Ilshenar
+worldspawner_facet_2_0		Vendors,spawn_vendors_ilshenar
+worldspawner_facet_2_1		Caves,spawn_caves_ilshenar
+worldspawner_facet_2_2		Towns,spawn_towns_ilshenar
+worldspawner_facet_2_3	 	Dungeons,spawn_dungeons_ilshenar
+worldspawner_facet_2_4		Outdoors,spawn_outdoors_ilshenar
+
+worldspawner_facet_3		Malas
+worldspawner_facet_3_0		Vendors,spawn_vendors_malas	
+worldspawner_facet_3_1		Dungeons,spawn_dungeons_malas
+worldspawner_facet_3_2		Orc Forts,spawn_orc_forts_malas
+worldspawner_facet_3_3		Outdoors,spawn_outdoors_malas
+
+worldspawner_facet_4		Tokuno
+worldspawner_facet_4_0		Vendors,spawn_vendors_tokuno
+worldspawner_facet_4_1		Towns,spawn_towns_life_tokuno
+worldspawner_facet_4_2		Dungeons,spawn_dungeons_tokuno
+worldspawner_facet_4_3		Outdoors,spawn_outdoors_tokuno
+
+worldspawner_facet_5		Ter Mur
+worldspawner_facet_5_0		Vendors,spawn_vendors_ter_mur	
+Worldspawner_facet_5_1		Ter Mur,spawn_outdoors_ter_mur
+Worldspawner_facet_5_2		Underworld,spawn_underworld_ter_mur
+Worldspawner_facet_5_3		Abyss,spawn_abyss_ter_mur
+
+
+[itemdef i_world_spawner]
+id=i_deed
+name=World Spawner
+type=t_script
+
+CATEGORY=GM Items
+SUBSECTION=Worldgen
+DESCRIPTION=World Spawner
+
+on=@create
+ATTR=010
+color=053
+
+on=@dclick
+if (<src.account.plevel> < 6)
+  src.sysmessage You can not use this.
+  return 1
+endif
+sdialog d_world_spawner
+return 1
+
+[dialog d_world_spawner]
+200,100
+
+page 0
+
+resizepic 10 10 9200 260 290
+
+page 1
+resizepic 35 20 9200 205 20
+dtext 100 20 1263 World Spawner
+
+resizepic 90 40 9350 90 20
+dtext 95 40 1000 Version:
+dtext 145 40 036 4.0
+
+resizepic 25 60 9350 230 35
+dtext 30 60 1000 Special thanks to :
+dtext 150 60 17 Nerun's Distro
+dtext 30 75 1000 and to           for inspiring
+dtext 75 75 17 AmonVangrall
+
+resizepic 50 95 9350 200 120//white facet selection 
+while !<isempty <def.worldspawner_facet_<dlocal.n>>>
+  args=<def0.worldspawner_facet_<dlocal.n>>
+  button 25 <eval 95+(<local.n>*20)> 4006 4007 0 <eval <local.n>+2>
+  dtext 60 <eval 95+(<local.n>*20)> <eval 026+(<local.n>*20)> <argv[0]>
+  local.n += 1
+endwhile
+
+checkbox 65 260 210 211 <qval <var0.f_validate_spawns>?1:0> 1
+dtext 90 260 1000 Validate Spawndefs
+
+resizepic 40 230 9350 150 22
+button 25 230 4006 4007 1 0 999999 
+dtext 60 230 1000 Remove    spawns
+dtext 105 230 026 ALL
+
+tilepic 210 230 13945 1 
+
+local.n=
+local.x=2
+while !<isempty <def.worldspawner_facet_<dlocal.n>>>
+  page=<local.x>
+  resizepic 35 80 9350 210 180			
+  resizepic 35 20 9200 205 20			
+  dtext 100 20 1263 World Spawner
+  resizepic 35 40 9200 120 20			
+  args=<def0.worldspawner_facet_<dlocal.n>>
+  dtext 50 40 <eval 026+(<local.n>*20)> <argv[0]> Spawns
+  button 20 263 4015 4016 0 1
+  dtext 55 264 1263 Go Back
+  while !<isempty <def.worldspawner_facet_<dlocal.n>_<dlocal.y>>>
+    args=<def.worldspawner_facet_<dlocal.n>_<dlocal.y>>
+    button 35 <eval 80+(<local.y>*20)> 210 211 1 0 <eval ((<local.n>*100)+<local.y>)+1>
+    dtext 70 <eval 80+(<local.y>*20)> 1000 Spawn <argv[0]>
+    dtext 42 <eval 80+(<local.y>*20)> 1000 <qval <var0.<argv[1]>>?<dvar0.<argv[1]>>:>
+    local.y += 1
+  endwhile
+  local.n += 1
+  local.x += 1
+  local.y=
+endwhile
+
+[dialog d_world_spawner button]
+
+onbutton=1,100000
+argn -= 1
+
+if (<argchk[1]> == 1)
+  var.f_validate_spawns=1
+  else
+  var.f_validate_spawns=
+endif
+
+local.n=<eval <argn>/100>
+local.x=<eval <argn>-(<local.n>*100)>
+
+args=<def0.worldspawner_facet_<dlocal.n>_<dlocal.x>>
+var0.spawner_facet=<local.n>
+src.<argv[1]>
+var0.<argv[1]> += <qval <var0.f_validate_spawns>?0:1>
+src.sysmessage @<eval 026+(<local.n>*20)> Spawning <argv[0]> in <def0.worldspawner_facet_<dlocal.n>> complete.
+var0.spawner_facet=
+sdialog d_world_spawner <eval <local.n>+2>
+
+onbutton=999999	//remove all spawns
+dialog d_remove_spawns
+
+
+[DIALOG d_remove_spawns]
+250,200
+
+resizepic 10 10 9200 315 100
+
+dtext 110 20 1263 ARE YOU SURE?
+dtext 25 45 026 [ATTENTION ALL SPAWNS WILL BE DELETED!!]
+
+button 50 75 4015 4016 1 0 1
+dtext 90 75 1000 Go Back
+
+button 210 75 249 248 1 0 2
+
+[DIALOG d_remove_spawns button]
+onbutton=1
+sdialog d_world_spawner
+
+onbutton=2
+src.f_remove_all_spawns
+sdialog d_world_spawner
+
+
+
+
+[EOF]

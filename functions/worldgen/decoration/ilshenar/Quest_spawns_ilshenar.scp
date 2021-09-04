@@ -1,0 +1,41 @@
+[function spawn_quest_npcs_ilshenar]
+
+f_create_spawner	c_Yorus_The_Tinker,,,,,,1390,427,-20,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_Petrus_the_Beekeeper,,,,,,1422,411,7,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_Lissbet_the_Flower_Girl,,,,,,1568,1041,-7,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_Jelrice_the_Trader,,,,,,1170,1121,-25,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_Arielle,,,,,,1553,1189,-25,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_Anathor,,,,,,2205,1267,0,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,1982,189,-28,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,1468,248,13,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_male,,,,,,1801,434,-14,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,1490,490,-19,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,466,554,-47,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,1032,564,-80,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,1786,573,69,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_male,,,,,,898,638,-40,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_male,,,,,,993,596,-80,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,1072,633,-80,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,1360,598,110,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_male,,,,,,1357,888,-23,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,1435,925,-24,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_male,,,,,,1420,947,-29,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,1157,1022,-33,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,1312,1011,-11,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_male,,,,,,1545,961,-14,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,1569,972,6,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_male,,,,,,776,1065,-9,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,979,1049,-33,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,486,1129,-77,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,1203,1132,-25,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_male,,,,,,1171,1100,-25,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,1236,1126,-24,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_male,,,,,,855,1199,-56,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_male,,,,,,1169,1161,-25,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,1388,1195,-22,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,1486,1226,-20,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,1628,1253,-18,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_male,,,,,,566,1292,-36,2,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner	c_escort_female,,,,,,59,1464,-28,2,5,10,10,10,1,1,0,0,0,0,0
+
+[eof]

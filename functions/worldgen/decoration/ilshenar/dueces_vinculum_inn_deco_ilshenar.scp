@@ -1,0 +1,49 @@
+[function deco_dueces_vinculum_inn_ilshenar]
+
+//chest of drawers
+serv.newitem=00A34
+new.attr=attr_static 
+new.p=658 662 -15 2
+//The Deuce's Vinculum Inn
+serv.newitem=00BC4
+new.name=The Deuce's Vinculum Inn
+new.attr=attr_static 
+new.p=667 680 -24 2
+//skull with candle
+serv.newitem=01853
+new.attr=attr_static 
+new.p=658 675 -29 2
+serv.newitem=01853
+new.attr=attr_static 
+new.p=663 672 -30 2
+serv.newitem=01853
+new.attr=attr_static 
+new.p=664 670 -29 2
+serv.newitem=01853
+new.attr=attr_static 
+new.p=666 676 -29 2
+serv.newitem=01853
+new.attr=attr_static 
+new.p=668 672 -30 2
+serv.newitem=01853
+new.attr=attr_static 
+new.p=670 675 -29 2
+//skull with candle
+serv.newitem=01854
+new.attr=attr_static 
+new.p=660 661 -29 2
+//skull with candle
+serv.newitem=01857
+new.attr=attr_static 
+new.p=659 670 -29 2
+serv.newitem=01857
+new.attr=attr_static 
+new.p=662 676 -29 2
+serv.newitem=01857
+new.attr=attr_static 
+new.p=666 661 -29 2
+serv.newitem=01857
+new.attr=attr_static 
+new.p=669 670 -29 2
+
+[EOF]

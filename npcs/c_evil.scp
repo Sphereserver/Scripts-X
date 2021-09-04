@@ -2327,4 +2327,176 @@ ON=@CreateLoot
    ITEM=loot_ai_hard
    ITEMNEWBIE=i_mt_horse_gray
 
+[chardef c_Cursed]
+defname=c_Cursed
+id=c_man
+name=#names_humanmale
+sound=471
+dam={5, 13}
+can=mt_walk|mt_run|mt_equip|mt_usehands
+CATEGORY=Evil NPC
+SUBSECTION=Cursed Man
+DESCRIPTION=Cursed Man
+
+on=@create
+	title=the Cursed
+	color={08596,08599}
+	npc=brain_monster
+	str={91, 100}
+	dex={86, 95}
+	int={61, 70}
+	maxhits={91, 120}
+	resphysical={15, 25}
+	resfire={5, 10}
+	rescold={25, 35}
+	respoison={5, 10}
+	resenergy={5, 10}
+	fencing={46.0, 77.5}
+	macefighting={35.0, 57.5}
+	magicresistance={53.5, 62.5}
+	swordsmanship={55.0, 77.5}
+	tactics={60.0, 82.5}
+	poisoning={ 60.0, 82.5}
+	fame=1000
+	karma=-2000
+	item=random_pants
+	color=colors_neutral
+	item=i_shirt_plain
+	color=colors_neutral
+	item=random_weapon_all_normal
+
+[chardef c_Cursed_f]
+defname=c_Cursed_f
+id=c_woman
+name=#names_humanmale
+sound=471
+dam={5, 13}
+can=mt_walk|mt_run|mt_equip|mt_usehands
+CATEGORY=Evil NPC
+SUBSECTION=Cursed Woman
+DESCRIPTION=Cursed Woman
+
+on=@create
+	title=the Cursed
+	color={08596,08599}
+	npc=brain_monster
+	str={91, 100}
+	dex={86, 95}
+	int={61, 70}
+	maxhits={91, 120}
+	resphysical={15, 25}
+	resfire={5, 10}
+	rescold={25, 35}
+	respoison={5, 10}
+	resenergy={5, 10}
+	fencing={46.0, 77.5}
+	macefighting={35.0, 57.5}
+	magicresistance={53.5, 62.5}
+	swordsmanship={55.0, 77.5}
+	tactics={60.0, 82.5}
+	poisoning={ 60.0, 82.5}
+	fame=1000
+	karma=-2000
+	item=random_pants
+	color=colors_neutral
+	item=i_shirt_plain
+	color=colors_neutral
+	item=random_weapon_all_normal
+
+
+[chardef c_Khaldun_Summoner]
+defname=c_Khaldun_Summoner
+id=c_man
+name=Zealot of Khaldun
+can=mt_walk|mt_run|mt_equip|mt_usehands
+dam={5, 15}
+armor=36
+CATEGORY=Evil NPC
+SUBSECTION=Khaldun
+DESCRIPTION=Khaldun
+
+on=@create
+	color=0835
+	npc=brain_monster
+	Title = the Summoner
+	str={351, 400}
+	dex={101, 150}
+	int={502, 700}
+	maxhits={421, 480}
+	//resphysical={35, 40}
+	resfire={25, 30}
+	rescold={50, 60}
+	respoison={25, 35}
+	resenergy={25, 35}
+	wrestling={90.1, 100.0}
+	tactics={90.1, 100.0}
+	magicresistance={90.1, 100.0}
+	magery={90.1, 100.0}
+	evaluatingintel={100.0}
+	meditation={120.1, 130.0}
+	fame=10000
+	karma=-10000
+	item=i_bone_helmet
+	color=0835
+	item=random_necklace
+	color=066d
+	item=i_cape
+	color=066d
+	item=i_leather_gloves
+	color=066d
+	item=i_kilt
+	color=066d
+	item=i_sandals
+	color=066d
+
+
+[chardef c_Khaldun_Zealot]
+defname=c_Khaldun_Zealot
+id=c_man
+name=Zealot of Khaldun
+can=mt_walk|mt_run|mt_equip|mt_usehands
+dam={15, 25}
+armor=40
+CATEGORY=Evil NPC
+SUBSECTION=Khaldun
+DESCRIPTION=Khaldun Sumonner
+
+on=@create
+	npc=brain_monster
+	color=0835
+	Title=the Knight
+	str={351, 400}
+	dex={151, 165}
+	int={76, 100}
+	maxhits={448, 470}
+	//resphysical={35, 45}
+	resfire={25, 30}
+	rescold={50, 60}
+	respoison={25, 35}
+	resenergy={25, 35}
+	wrestling={70.1, 80.0}
+	swordsmanship={120.1, 130.0}
+	anatomy={120.1, 130.0}
+	magicresistance={90.1, 100.0}
+	tactics={90.1, 100.0}
+	fame=10000
+	karma=-10000
+	item=i_bone_helmet
+	color=0835
+	item=i_bone_chest
+	color=0835
+	item=i_bone_arms
+	color=0835
+	item=i_bone_gloves
+	color=0835
+	item=i_bone_leggings
+	color=0835
+	item=i_boots_calf
+	color=0835
+	item=i_sword_viking
+	color=0835
+	item=i_shield_round_metal
+	color=0835	
+
+
 [EOF]

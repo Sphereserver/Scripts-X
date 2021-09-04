@@ -236,6 +236,88 @@ DUPELIST=09fb3
 //banner (Hydros)
 DUPEITEM=09fb2
 
+[ITEMDEF 02002]
+DEFNAME=i_key_quest
+NAME=quest key
+TYPE=t_key
+WEIGHT=0.1
+RESOURCES=5 i_ingot_gold,5 i_ingot_silver,5 i_ingot_copper
+CATEGORY=Quests
+SUBSECTION=Keys
+DESCRIPTION=Quest Key
+ON=@Create
+   ATTR=attr_magic|attr_newbie
+
+[ITEMDEF 02003]
+DEFNAME=i_fishing_net_quest
+NAME=fishing net
+WEIGHT=14.0
+RESOURCES=10 i_rope,10 i_thread,4 i_shell
+CATEGORY=Quests
+SUBSECTION=Unknown
+DESCRIPTION=Fishing Net
+
+[ITEMDEF 02004]
+DEFNAME=i_battered_bucket
+NAME=battered bucket
+TYPE=t_drink
+TDATA1=i_bucket
+WEIGHT=12.1
+RESOURCES=1 i_bucket,3 i_pitcher_water
+CATEGORY=Quests
+SUBSECTION=Lost and Found
+DESCRIPTION=Battered Bucket
+
+[ITEMDEF 021fe]
+DEFNAME=i_vial_of_stuff
+WEIGHT=1.0
+CATEGORY=Quests
+SUBSECTION=Unknown
+DESCRIPTION=Vial of stuff?
+
+[ITEMDEF 0fc2]
+DEFNAME=i_salivas_feather
+NAME=Saliva's feather
+TYPE=t_normal
+VALUE=2
+WEIGHT=.1
+CATEGORY=Quests
+SUBSECTION=Quest Items
+DESCRIPTION=Saliva's Feather
+ON=@Create
+   COLOR=colors_yellow
+
+[ITEMDEF i_hydra_scale]
+ID=i_dragonscale
+NAME=hydra's scales
+TYPE=T_INGOT
+VALUE=3
+PILE=1
+WEIGHT=.1
+CATEGORY=Quests
+SUBSECTION=Hydra
+DESCRIPTION=Hydra Scales
+
+ON=@Create
+ COLOR=002B4
+
+[ITEMDEF i_thrashers_tail]
+ID=i_hide
+NAME=Thrasher's tail
+TYPE=t_hide
+CATEGORY=Quests
+SUBSECTION=Thrasher
+DESCRIPTION=Thrasher's tail
+
+[ITEMDEF i_resolves_bridle]
+ID=i_bridle_horse
+NAME=Resolve's bridle
+WEIGHT=5
+RESOURCES=2 i_hide, 1 i_ingot_iron
+CATEGORY=Quests
+SUBSECTION=Resolve
+DESCRIPTION=Resolve's Bridle
+
 [ITEMDEF 09fb4]
 //This is the Town Cryer empty template (decorative). To enable its functionality as newspaper
 //set TYPE=t_town_cryer and fill the TAGs with proper info (as the example items below)

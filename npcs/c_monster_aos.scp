@@ -433,6 +433,7 @@ CAN=mt_walk|mt_run
 DAM=72,79
 RANGE=2
 ARMOR=90
+HEIGHT=24
 TAG.Barding.Diff=160.0
 
 DESIRES=r_dungeon_doom,t_coin,t_gold,t_gem
@@ -561,6 +562,10 @@ ON=@CreateLoot
 
 
 [CHARDEF 0134]
+//The Bone Daemon is the creature you have to beat to gain the golden
+//skull that will give you access to the Doom Gauntlet.
+//FIXME: Cannot be first target of a provoke attempt.
+//FIXME: Cannot be area peaced.
 DEFNAME=c_bone_daemon
 NAME=Bone Daemon
 SOUND=snd_monster_skletn1
@@ -611,8 +616,33 @@ ON=@Create
     WRESTLING={100.0}
 
 ON=@CreateLoot
-    ITEM=i_gold,{4000 5000}
-    //ITEM=magic_items    //todo
+   ITEM=loot_bone_demon
+   //4000 - 5000 Gold. Magic Items
+ON=@GetHit
+   //Spawn Creatures Attack
+   IF (RAND(10)==1)
+      DORAND 12
+         SRC.NEWNPC c_lich
+         SRC.NEWNPC c_spectre
+         SRC.NEWNPC c_lich_ancient
+         SRC.NEWNPC c_lich_lord
+         SRC.NEWNPC c_skeleton_knight
+         SRC.NEWNPC c_skeleton_mage
+         SRC.NEWNPC c_mummy
+         SRC.NEWNPC c_rotting_corpse
+         SRC.NEWNPC c_revenant_lion
+         SRC.NEWNPC c_wailing_banshee
+         SRC.NEWNPC c_reaper
+         SRC.NEWNPC c_patchwork_skeleton
+      ENDDO
+      NEW.FLAGS |= (statf_war|statf_conjured)
+      NEW.P=<SRC.P>
+      NEW.HOME=<NEW.P>
+      NEW.HOMEDIST=10
+      NEW.f_NPCRemovalTimer 1200
+//      NEW.ATTACK
+   ENDIF
+
 
 
 [CHARDEF 0135]

@@ -1,0 +1,11 @@
+[function deco_blighted_cove_magincia]
+
+serv.newitem=03967
+new.attr=attr_static
+new.p=6476 861 8
+
+serv.newitem=021A4
+new.attr=attr_static
+new.p=6511 950 15
+
+[eof]

@@ -1,0 +1,267 @@
+[function deco_castle_blackthorn_ilshenar]
+
+// metal door
+serv.newitem= 067D 
+new.attr=attr_static 
+new.p=1089 707 -80 2
+serv.newitem= 067D 
+new.attr=attr_static 
+new.p=1094 699 -60 2
+serv.newitem= 067D 
+new.attr=attr_static 
+new.p=1094 708 -60 2
+serv.newitem= 067D 
+new.attr=attr_static 
+new.p=1103 704 -80 2
+//*	
+// metal door
+serv.newitem= 067F
+new.attr=attr_static 
+new.p=1089 706 -80 2
+serv.newitem= 067F
+new.attr=attr_static 
+new.p=1094 707 -60 2
+serv.newitem= 067F
+new.attr=attr_static 
+new.p=1094 698 -60 2
+serv.newitem= 067F
+new.attr=attr_static 
+new.p=1103 703 -80 2
+//*	
+// metal door
+serv.newitem= 06CD
+new.attr=attr_static 
+new.p=1103 652 -80 2
+serv.newitem= 06CD
+new.attr=attr_static 
+new.p=1111 652 -80 2
+//*	
+// metal door
+serv.newitem= 06CF
+new.attr=attr_static 
+new.p=1103 651 -80 2
+serv.newitem= 06CF
+new.attr=attr_static 
+new.p=1111 651 -80 2
+//*	
+// wooden door
+serv.newitem= 06E5
+new.attr=attr_static 
+new.p=1071 671 -80 2
+serv.newitem= 06E5
+new.attr=attr_static 
+new.p=1083 632 -60 2
+serv.newitem= 06E5
+new.attr=attr_static 
+new.p=1083 658 -80 2
+serv.newitem= 06E5
+new.attr=attr_static 
+new.p=1083 671 -80 2
+serv.newitem= 06E5
+new.attr=attr_static 
+new.p=1083 671 -60 2
+serv.newitem= 06E5
+new.attr=attr_static 
+new.p=1096 671 -80 2
+serv.newitem= 06E5
+new.attr=attr_static 
+new.p=1097 658 -80 2
+serv.newitem= 06E5
+new.attr=attr_static 
+new.p=1098 632 -60 2
+//*	
+// wooden door
+serv.newitem= 06E7
+new.attr=attr_static 
+new.p=1062 635 -80 2
+serv.newitem= 06E7
+new.attr=attr_static 
+new.p=1062 635 -60 2
+serv.newitem= 06E7
+new.attr=attr_static 
+new.p=1062 635 -40 2
+serv.newitem= 06E7
+new.attr=attr_static 
+new.p=1062 667 -80 2
+serv.newitem= 06E7
+new.attr=attr_static 
+new.p=1062 667 -60 2
+serv.newitem= 06E7
+new.attr=attr_static 
+new.p=1062 667 -40 2
+serv.newitem= 06E7
+new.attr=attr_static 
+new.p=1083 632 -80 2
+serv.newitem= 06E7
+new.attr=attr_static 
+new.p=1083 645 -80 2
+serv.newitem= 06E7
+new.attr=attr_static 
+new.p=1096 632 -80 2
+serv.newitem= 06E7
+new.attr=attr_static 
+new.p=1097 645 -80 2
+serv.newitem= 06E7
+new.attr=attr_static 
+new.p=1105 635 -60 2
+serv.newitem= 06E7
+new.attr=attr_static 
+new.p=1105 668 -80 2
+serv.newitem= 06E7
+new.attr=attr_static 
+new.p=1105 668 -60 2
+serv.newitem= 06E7
+new.attr=attr_static 
+new.p=1105 668 -40 2
+serv.newitem= 06E7
+new.attr=attr_static 
+new.p=1105 635 -80 2
+//*	
+// wooden door
+serv.newitem= 06E9
+new.attr=attr_static 
+new.p=1071 634 -40 2
+serv.newitem= 06E9
+new.attr=attr_static 
+new.p=1074 669 -40 2
+serv.newitem= 06E9
+new.attr=attr_static 
+new.p=1090 634 -40 2
+serv.newitem= 06E9
+new.attr=attr_static 
+new.p=1092 669 -40 2
+serv.newitem= 06E9
+new.attr=attr_static 
+new.p=1092 679 -40 2
+//*	
+// wooden door
+serv.newitem= 06EB
+new.attr=attr_static 
+new.p=1105 635 -40 2
+//*	
+// wooden door
+serv.newitem= 06ED
+new.attr=attr_static 
+new.p=1064 651 -80 2
+//*	
+// wooden door
+serv.newitem= 06F1
+new.attr=attr_static 
+new.p=1067 630 -80 2
+serv.newitem= 06F1
+new.attr=attr_static 
+new.p=1067 630 -60 2
+serv.newitem= 06F1
+new.attr=attr_static 
+new.p=1067 673 -80 2
+serv.newitem= 06F1
+new.attr=attr_static 
+new.p=1067 673 -60 2
+serv.newitem= 06F1
+new.attr=attr_static 
+new.p=1100 630 -80 2
+serv.newitem= 06F1
+new.attr=attr_static 
+new.p=1100 630 -60 2
+serv.newitem= 06F1
+new.attr=attr_static 
+new.p=1100 673 -80 2
+serv.newitem= 06F1
+new.attr=attr_static 
+new.p=1100 673 -60 2
+serv.newitem= 06F1
+new.attr=attr_static 
+new.p=1100 673 -40 2
+//*	
+// wooden door
+serv.newitem= 06F3
+new.attr=attr_static 
+new.p=1103 643 -60 2
+serv.newitem= 06F3
+new.attr=attr_static 
+new.p=1103 660 -60 2
+//*	
+// iron gate
+serv.newitem= 082C
+new.attr=attr_static 
+new.p=1064 644 -40 2
+serv.newitem= 082C
+new.attr=attr_static 
+new.p=1064 659 -40 2
+serv.newitem= 082C
+new.attr=attr_static 
+new.p=1081 644 -40 2
+serv.newitem= 082C
+new.attr=attr_static 
+new.p=1081 659 -40 2
+serv.newitem= 082C
+new.attr=attr_static 
+new.p=1086 644 -40 2
+serv.newitem= 082C
+new.attr=attr_static 
+new.p=1086 659 -40 2
+serv.newitem= 082C
+new.attr=attr_static 
+new.p=1103 644 -40 2
+serv.newitem= 082C
+new.attr=attr_static 
+new.p=1103 659 -40 2
+//*	
+// bookcase
+serv.newitem= 0A97
+new.attr=attr_static 
+new.p=1092 696 -60 2
+//*	
+// bookcase
+serv.newitem= 0A98
+new.attr=attr_static 
+new.p=1086 703 -80 2
+//*	
+// bookcase
+serv.newitem= 0A99
+new.attr=attr_static 
+new.p=1081 707 -60 2
+serv.newitem= 0A99
+new.attr=attr_static 
+new.p=1081 708 -80 2
+//*	
+// bookcase
+serv.newitem= 0A9A
+new.attr=attr_static 
+new.p=1081 699 -60 2
+serv.newitem= 0A9A
+new.attr=attr_static 
+new.p=1081 704 -80 2
+//*	
+// bookcase
+serv.newitem= 0A9B
+new.attr=attr_static 
+new.p=1082 703 -80 2
+serv.newitem= 0A9B
+new.attr=attr_static 
+new.p=1088 696 -60 2
+//*	
+// bookcase
+serv.newitem= 0A9C
+new.attr=attr_static 
+new.p=1081 706 -60 2
+//*	
+// khabur's journal
+serv.newitem= 0FF1
+new.name=Khabur's Journal
+new.attr=attr_static 
+new.p=1073 633 -74 2
+//*	
+// fropoz's journal
+serv.newitem= 0FF1
+new.name=Fropoz's Journal
+new.attr=attr_static 
+new.p=1084 707 -74 2
+//*	
+// translated gargoyle journal
+serv.newitem= 0FF2
+new.name=Translated Gargoyle Journal 
+new.attr=attr_static 
+new.p=1089 708 -54 2
+
+[EOF]

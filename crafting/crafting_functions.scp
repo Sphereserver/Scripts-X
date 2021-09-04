@@ -27,7 +27,7 @@ endif
 f_resenddialog d_craft_menu
 
 
-[function craft]
+[function f_craft]
 //<args> = Item ID need to be craft
 local.recipe = <getargv 3 <ctag0.craft.item.options>>
 if <local.recipe> == 1

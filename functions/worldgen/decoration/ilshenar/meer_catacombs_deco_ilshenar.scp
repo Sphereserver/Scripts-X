@@ -1,0 +1,718 @@
+[function deco_meer_catacombs_ilshenar]
+
+// Teleporters //
+serv.newitem=01BC3 
+new.morep=1790 66 -26 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1037 579 -73 2
+//	
+serv.newitem=01BC3 
+new.morep=1790 67 -26 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1037 580 -73 2
+//	
+serv.newitem=01BC3 
+new.morep=1790 68 -26 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1037 581 -73 2
+//	
+serv.newitem=01BC3 
+new.morep=1786 70 -26 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1038 578 -73 2
+//	
+serv.newitem=01BC3 
+new.morep=1786 70 -26 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1038 579 -73 2
+//	
+serv.newitem=01BC3 
+new.morep=1786 65 -26 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1038 581 -73 2
+//	
+serv.newitem=01BC3 
+new.morep=1786 65 -26 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1038 582 -73 2
+//	
+serv.newitem=01BC3 
+new.morep=1787 70 -26 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1039 578 -73 2
+//	
+serv.newitem=01BC3 
+new.morep=1787 65 -26 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1039 582 -73 2
+//	
+serv.newitem=01BC3 
+new.morep=1788 70 -26 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1040 578 -73 2
+//	
+serv.newitem=01BC3 
+new.morep=1788 70 -26 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1040 579 -73 2
+//	
+serv.newitem=01BC3 
+new.morep=1788 65 -26 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1040 581 -73 2
+//	
+serv.newitem=01BC3 
+new.morep=1788 65 -26 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1040 582 -73 2
+//	
+serv.newitem=01BC3 
+new.morep=1785 68 -26 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1041 581 -73 2
+//	
+serv.newitem=01BC3 
+new.morep=1785 67 -26 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1041 580 -73 2
+//	
+serv.newitem=01BC3 
+new.morep=1785 66 -26 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1041 579 -73 2
+//	
+serv.newitem=01BC3 
+new.morep=1038 583 -78 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1786 66 -26 2
+//	
+serv.newitem=01BC3 
+new.morep=1042 579 -78 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1786 67 -26 2
+//	
+serv.newitem=01BC3 
+new.morep=1042 580 -78 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1786 68 -26 2
+//	
+serv.newitem=01BC3 
+new.morep=1042 581 -78 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1786 69 -26 2
+//	
+serv.newitem=01BC3 
+new.morep=1039 583 -78 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1787 66 -26 2
+//	
+serv.newitem=01BC3 
+new.morep=1040 583 -78 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1788 66 -26 2
+//	
+serv.newitem=01BC3 
+new.morep=1041 583 -78 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1789 66 -26 2
+//	
+serv.newitem=01BC3 
+new.morep=1038 577 -78 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1787 69 -26 2
+//	
+serv.newitem=01BC3 
+new.morep=1039 577 -78 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1788 69 -26 2
+//	
+serv.newitem=01BC3 
+new.morep=1036 579 -78 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1789 67 -26 2
+//	
+serv.newitem=01BC3 
+new.morep=1036 578 -78 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1789 68 -26 2
+//	
+serv.newitem=01BC3 
+new.morep=1036 581 -78 2
+new.type=t_telepad
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.p=1789 69 -26 2
+//	
+////////////////////////
+// Mainland //
+////////////////////////
+// stone
+serv.newitem=07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1037 578 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1037 579 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1037 580 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1037 581 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1037 582 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1038 578 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1038 579 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1038 580 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1038 581 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1038 582 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1039 578 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1039 579 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1039 580 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1039 581 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1039 582 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1040 578 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1040 579 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1040 580 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1040 581 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1040 582 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1041 578 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1041 579 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1041 580 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1041 581 -80 2
+serv.newitem= 07A3 
+new.color=058F
+new.attr=attr_static 
+new.p=1041 582 -80 2
+//	
+// stone stairs
+serv.newitem=07A4 
+new.color=058F
+new.attr=attr_static 
+new.p=1037 583 -80 2
+serv.newitem= 07A4 
+new.color=058F
+new.attr=attr_static 
+new.p=1038 583 -80 2
+serv.newitem= 07A4 
+new.color=058F
+new.attr=attr_static 
+new.p=1039 583 -80 2
+serv.newitem= 07A4 
+new.color=058F
+new.attr=attr_static 
+new.p=1040 583 -80 2
+serv.newitem= 07A4 
+new.color=058F
+new.attr=attr_static 
+new.p=1041 583 -80 2
+//	
+// stone stairs
+serv.newitem=07A5 
+new.color=058F
+new.attr=attr_static 
+new.p=1042 578 -80 2
+serv.newitem= 07A5 
+new.color=058F
+new.attr=attr_static 
+new.p=1042 579 -80 2
+serv.newitem= 07A5 
+new.color=058F
+new.attr=attr_static 
+new.p=1042 580 -80 2
+serv.newitem= 07A5 
+new.color=058F
+new.attr=attr_static 
+new.p=1042 581 -80 2
+serv.newitem= 07A5 
+new.color=058F
+new.attr=attr_static 
+new.p=1042 582 -80 2
+//	
+// stone stairs
+serv.newitem=07A6 
+new.color=058F
+new.attr=attr_static 
+new.p=1037 577 -80 2
+serv.newitem= 07A6 
+new.color=058F
+new.attr=attr_static 
+new.p=1038 577 -80 2
+serv.newitem= 07A6 
+new.color=058F
+new.attr=attr_static 
+new.p=1039 577 -80 2
+serv.newitem= 07A6 
+new.color=058F
+new.attr=attr_static 
+new.p=1040 577 -80 2
+serv.newitem= 07A6 
+new.color=058F
+new.attr=attr_static 
+new.p=1041 577 -80 2
+//	
+// stone stairs
+serv.newitem=07A7 
+new.color=058F
+new.attr=attr_static 
+new.p=1036 578 -80 2
+serv.newitem= 07A7 
+new.color=058F
+new.attr=attr_static 
+new.p=1036 579 -80 2
+serv.newitem= 07A7 
+new.color=058F
+new.attr=attr_static 
+new.p=1036 580 -80 2
+serv.newitem= 07A7 
+new.color=058F
+new.attr=attr_static 
+new.p=1036 581 -80 2
+serv.newitem= 07A7 
+new.color=058F
+new.attr=attr_static 
+new.p=1036 582 -80 2
+//	
+// stone stairs
+serv.newitem=07A8 
+new.color=058F
+new.attr=attr_static 
+new.p=1036 577 -80 2
+//	
+// stone stairs
+serv.newitem=07A9 
+new.color=058F
+new.attr=attr_static 
+new.p=1042 583 -80 2
+//	
+// stone stairs
+serv.newitem=07AA 
+new.color=058F
+new.attr=attr_static 
+new.p=1042 577 -80 2
+//	
+// stone stairs
+serv.newitem=07AB 
+new.color=058F
+new.attr=attr_static 
+new.p=1036 583 -80 2
+//	
+// platform
+serv.newitem=07BD 
+new.color=040C
+new.attr=attr_static 
+new.p=1037 580 -75 2
+serv.newitem= 07BD 
+new.color=040C
+new.attr=attr_static 
+new.p=1038 579 -75 2
+serv.newitem= 07BD 
+new.color=040C
+new.attr=attr_static 
+new.p=1038 581 -75 2
+serv.newitem= 07BD 
+new.color=040C
+new.attr=attr_static 
+new.p=1039 578 -75 2
+serv.newitem= 07BD 
+new.color=040C
+new.attr=attr_static 
+new.p=1039 580 -75 2
+serv.newitem= 07BD 
+new.color=040C
+new.attr=attr_static 
+new.p=1039 582 -75 2
+serv.newitem= 07BD 
+new.color=040C
+new.attr=attr_static 
+new.p=1040 579 -75 2
+serv.newitem= 07BD 
+new.color=040C
+new.attr=attr_static 
+new.p=1040 581 -75 2
+serv.newitem= 07BD 
+new.color=040C
+new.attr=attr_static 
+new.p=1041 580 -75 2
+//	
+// platform
+serv.newitem=07BE 
+new.color=040C
+new.attr=attr_static 
+new.p=1037 579 -75 2
+serv.newitem= 07BE 
+new.color=040C
+new.attr=attr_static 
+new.p=1037 581 -75 2
+serv.newitem= 07BE 
+new.color=040C
+new.attr=attr_static 
+new.p=1038 578 -75 2
+serv.newitem= 07BE 
+new.color=040C
+new.attr=attr_static 
+new.p=1038 580 -75 2
+serv.newitem= 07BE 
+new.color=040C
+new.attr=attr_static 
+new.p=1038 582 -75 2
+serv.newitem= 07BE 
+new.color=040C
+new.attr=attr_static 
+new.p=1039 579 -75 2
+serv.newitem= 07BE 
+new.color=040C
+new.attr=attr_static 
+new.p=1039 581 -75 2
+serv.newitem= 07BE 
+new.color=040C
+new.attr=attr_static 
+new.p=1040 578 -75 2
+serv.newitem= 07BE 
+new.color=040C
+new.attr=attr_static 
+new.p=1040 580 -75 2
+serv.newitem= 07BE 
+new.color=040C
+new.attr=attr_static 
+new.p=1040 582 -75 2
+serv.newitem= 07BE 
+new.color=040C
+new.attr=attr_static 
+new.p=1041 579 -75 2
+serv.newitem= 07BE 
+new.color=040C
+new.attr=attr_static 
+new.p=1041 581 -75 2
+//	
+// platform
+serv.newitem=07BF 
+new.color=040C
+new.attr=attr_static 
+new.p=1037 578 -75 2
+//	
+// platform
+serv.newitem=07C0 
+new.color=040C
+new.attr=attr_static 
+new.p=1041 578 -75 2
+//	
+// platform
+serv.newitem=07C1 
+new.color=040C
+new.attr=attr_static 
+new.p=1037 582 -75 2
+//	
+// platform
+serv.newitem=07C2 
+new.color=040C
+new.attr=attr_static 
+new.p=1041 582 -75 2
+//	
+// glowing rune
+serv.newitem=0E5D 
+new.color=040C
+new.attr=attr_static 
+new.p=1040 578 -73 2
+//	
+// rune
+serv.newitem=0E5E 
+new.color=040C
+new.attr=attr_static 
+new.p=1037 580 -73 2
+serv.newitem= 0E5E 
+new.color=040C
+new.attr=attr_static 
+new.p=1040 580 -73 2
+//	
+// glowing rune
+serv.newitem=0E60 
+new.color=040C
+new.attr=attr_static 
+new.p=1037 579 -73 2
+serv.newitem= 0E60 
+new.color=040C
+new.attr=attr_static 
+new.p=1038 581 -73 2
+serv.newitem= 0E60 
+new.color=040C
+new.attr=attr_static 
+new.p=1039 578 -73 2
+serv.newitem= 0E60 
+new.color=040C
+new.attr=attr_static 
+new.p=1041 581 -73 2
+//	
+// rune
+serv.newitem=0E61 
+new.color=040C
+new.attr=attr_static 
+new.p=1039 580 -73 2
+//	
+// glowing rune
+serv.newitem=0E63 
+new.color=040C
+new.attr=attr_static 
+new.p=1038 578 -73 2
+serv.newitem= 0E63 
+new.color=040C
+new.attr=attr_static 
+new.p=1038 580 -73 2
+serv.newitem= 0E63 
+new.color=040C
+new.attr=attr_static 
+new.p=1039 582 -73 2
+serv.newitem= 0E63 
+new.color=040C
+new.attr=attr_static 
+new.p=1040 581 -73 2
+//	
+// rune
+serv.newitem=0E64 
+new.color=040C
+new.attr=attr_static 
+new.p=1041 579 -73 2
+//	
+// glowing rune
+serv.newitem=0E66 
+new.color=040C
+new.attr=attr_static 
+new.p=1040 582 -73 2
+//	
+// rune
+serv.newitem=0E67 
+new.color=040C
+new.attr=attr_static 
+new.p=1037 581 -73 2
+serv.newitem= 0E67 
+new.color=040C
+new.attr=attr_static 
+new.p=1039 579 -73 2
+serv.newitem= 0E67 
+new.color=040C
+new.attr=attr_static 
+new.p=1039 581 -73 2
+//	
+// glowing rune
+serv.newitem=0E69 
+new.color=040C
+new.attr=attr_static 
+new.p=1038 579 -73 2
+serv.newitem= 0E69 
+new.color=040C
+new.attr=attr_static 
+new.p=1038 582 -73 2
+serv.newitem= 0E69 
+new.color=040C
+new.attr=attr_static 
+new.p=1040 579 -73 2
+serv.newitem= 0E69 
+new.color=040C
+new.attr=attr_static 
+new.p=1041 580 -73 2
+//	
+//	
+//////////////////////
+// Place.. //
+//////////////////////
+//	
+// glowing rune
+serv.newitem=0E5D 
+new.color=040C
+new.attr=attr_static 
+new.p=1789 69 -26 2
+//	
+// rune
+serv.newitem=0E5E 
+new.color=040C
+new.attr=attr_static 
+new.p=1788 67 -26 2
+//	
+// glowing rune
+serv.newitem=0E60 
+new.color=040C
+new.attr=attr_static 
+new.p=1786 68 -26 2
+serv.newitem= 0E60 
+new.color=040C
+new.attr=attr_static 
+new.p=1789 68 -26 2
+//	
+// rune
+serv.newitem=0E61 
+new.color=040C
+new.attr=attr_static 
+new.p=1787 67 -26 2
+//	
+// glowing rune
+serv.newitem=0E63 
+new.color=040C
+new.attr=attr_static 
+new.p=1786 67 -26 2
+serv.newitem= 0E63 
+new.color=040C
+new.attr=attr_static 
+new.p=1787 69 -26 2
+serv.newitem= 0E63 
+new.color=040C
+new.attr=attr_static 
+new.p=1788 68 -26 2
+//	
+// rune
+serv.newitem=0E64 
+new.color=040C
+new.attr=attr_static 
+new.p=1789 66 -26 2
+//	
+// glowing rune
+serv.newitem=0E66 
+new.color=040C
+new.attr=attr_static 
+new.p=1788 69 -26 2
+//	
+// rune
+serv.newitem=0E67 
+new.color=040C
+new.attr=attr_static 
+new.p=1787 66 -26 2
+serv.newitem= 0E67 
+new.color=040C
+new.attr=attr_static 
+new.p=1787 68 -26 2
+//	
+// glowing rune
+serv.newitem=0E69 
+new.color=040C
+new.attr=attr_static 
+new.p=1786 66 -26 2
+serv.newitem= 0E69 
+new.color=040C
+new.attr=attr_static 
+new.p=1786 69 -26 2
+serv.newitem= 0E69 
+new.color=040C
+new.attr=attr_static 
+new.p=1788 66 -26 2
+serv.newitem= 0E69 
+new.color=040C
+new.attr=attr_static 
+new.p=1789 67 -26 2
+
+[EOF]

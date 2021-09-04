@@ -401,7 +401,7 @@ ON=@CreateLoot
     //ITEM=magic_items
     ITEM={random_fourth_circle 1 random_fifth_circle 1}
     ITEM={random_body_parts_1 1 random_body_parts_2 1}
-    ITEM=random_bones
+    ITEM=random_item_bone
     ITEM=random_reagent,{5 14}
 
 
@@ -726,7 +726,7 @@ ON=@CreateLoot
     ITEM=i_gold,{900 1200}
     //ITEM=magic_items
     ITEM={random_body_parts_1 1 random_body_parts_2 1}
-    ITEM=random_bones
+    ITEM=random_item_bone
     ITEM=random_armor
     //ITEM=i_seed_fragrant
     //ITEM=i_seed_peculiar
@@ -784,7 +784,7 @@ ON=@CreateLoot
     ITEM=i_gold,{500 700}
     //ITEM=magic_items,2
     ITEM={random_fourth_circle 1 random_fifth_circle 1}
-    ITEM=random_bones
+    ITEM=random_item_bone
     ITEM={random_body_parts_1 1 random_body_parts_2 1}
     ITEM=random_reagent_necro,{6 8}
 

@@ -1,0 +1,21 @@
+[function spawn_dungeons_trammel]
+spawn_blighted_grove_trammel
+spawn_britain_sewer_trammel
+spawn_covetous_trammel
+spawn_deceit_trammel
+spawn_despise_trammel
+spawn_destard_trammel
+spawn_fire_dungeon_trammel
+spawn_hythloth_trammel
+spawn_ice_dungeon_trammel
+spawn_orc_caves_trammel
+spawn_painted_caves_trammel
+//spawn_khaldun_trammel		//note: doesn't exist in trammel?
+spawn_palace_of_paroxysmus_trammel
+spawn_prism_of_light_trammel
+spawn_shame_trammel
+spawn_solen_hive_trammel
+spawn_terathan_keep_trammel
+spawn_wrong_trammel
+
+[EOF]

@@ -1,0 +1,11 @@
+[Function deco_twisted_weald_ilshenar]
+
+serv.newitem=0375A
+new.attr=attr_static 
+new.p=1450 1470 -22 2
+
+serv.newitem=0375A
+new.attr=attr_static 
+new.p=2187 1251 2 2
+
+[EOF]

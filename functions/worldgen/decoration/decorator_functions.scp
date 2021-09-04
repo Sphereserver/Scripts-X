@@ -1,0 +1,108 @@
+
+[function f_decorate_facet]
+local.n=<args>
+while !<isempty <def.worlddecorator_facet_<dlocal.n>_<dlocal.x>>>
+  args=<def0.worlddecorator_facet_<dlocal.n>_<dlocal.x>>
+  <argv[1]>
+  var0.<argv[1]> += 1
+  local.x += 1
+endwhile
+src.sysmessage @<eval 026+(<local.n>*20)> Decorating <def0.worlddecorator_facet_<dlocal.n>> complete.
+
+[function f_link_double_doors]	//And remove double door
+//send an item to 1 1 1 <map_plane> and make it run this function, then remove the item
+local.p=<p>
+for 0 5
+  p=1,1,1,<local._for>
+  foritems 9999
+    if (<type>==t_door)
+      ref1=<uid>
+      foritems 0 //remove_duplicate_doors
+        if (<type>==t_door) && (<uid> != <ref1.uid>) && (<z>==<ref1.z>)
+          ref2=<uid>
+          if <ref2.uid> > <ref1.uid> //uid of the one placed latest will be a higher number
+            ref2.remove
+          endif
+        endif
+      endfor
+      foritems 1 // bind double door
+        if (<type>==t_door) && (<uid> != <ref1>)  && (<z>==<ref1.z>)
+          ref2=<uid>
+          ref1.link=<ref2>
+        endif
+      endfor
+    endif
+  endfor
+endfor
+p=<local.p>
+update
+
+[function f_reset_decoration_counters]
+while !<isempty <def.worlddecorator_facet_<dlocal.n>>>
+  while !<isempty <def.worlddecorator_facet_<dlocal.n>_<dlocal.x>>>
+    args=<def0.worlddecorator_facet_<dlocal.n>_<dlocal.x>>
+    var0.<argv[1]>=
+    local.x += 1
+  endwhile
+  local.n += 1
+  local.x=
+endwhile
+
+[function f_destroy_world]
+local.p=<P>
+p=1,1,1,0
+update
+for 0 5
+  p=1,1,1,<dlocal._for>
+  foritems 10000
+    remove
+  endfor
+  forchars 10000
+    if <brain>
+       remove
+    endif
+  endfor
+endfor
+p=<local.p>
+update
+f_reset_decoration_counters
+f_reset_spawn_counters
+sysmessage @026 World completey destroyed
+
+[function f_remove_all_signs]
+local.p=<P>
+p=1,1,1,0
+update
+for 0 5
+  p=1,1,1,<dlocal._for>
+  foritems 10000
+    if (<type>==t_sign_gump)
+      remove
+    endif
+  endfor
+endfor
+p=<local.p>
+update
+sysmessage @026 All signs removed
+
+
+[function f_remove_all_doors]
+local.p=<P>
+p=1,1,1,0
+update
+for 0 5
+  p=1,1,1,<dlocal._for>
+  foritems 10000
+    if (<type>==t_door) || (<type>==t_door_locked)
+      remove
+    endif
+  endfor
+endfor
+p=<local.p>
+update
+sysmessage @026 All doors removed
+
+
+[EOF]
+
+

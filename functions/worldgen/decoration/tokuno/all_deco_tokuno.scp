@@ -1,0 +1,275 @@
+[function deco_all_tokuno]
+
+serv.newitem=2996 
+new.name=Miyabi Inn
+new.attr=attr_static
+new.p=677 1220 25 4
+serv.newitem=2966 
+new.name=Rokuon Cultural Center and Shops
+new.attr=attr_static
+new.p=675 1280 32 4
+serv.newitem=2966 
+new.name=Rokuon Cultural Center and Shops
+new.attr=attr_static
+new.p=680 1280 32 4
+serv.newitem=3012 
+new.name=Sake Saka Tavern
+new.attr=attr_static
+new.p=694 1229 25 4
+serv.newitem=3025
+new.name=Koku Kitchens
+new.attr=attr_static
+new.p=710 1251 25 4
+serv.newitem=3025
+new.name=Koku Kitchens
+new.attr=attr_static
+new.p=710 1257 25 4
+serv.newitem=3025
+new.name=Koku Kitchens
+new.attr=attr_static
+new.p=710 1270 25 4
+serv.newitem=2989
+new.name=Sasara Magical Supplies And Remedies
+new.attr=attr_static
+new.p=707 1300 25 4
+serv.newitem=3010
+new.name=Good Fortunes Jewelry
+new.attr=attr_static
+new.p=718 1301 25 4
+serv.newitem=3024
+new.name=Suteki Na Craftworks
+new.attr=attr_static
+new.p=729 1229 25 4
+serv.newitem=5019
+new.attr=attr_static
+new.p=736 1281 25 4
+serv.newitem=3016
+new.name=Mibu BlackSmith
+new.attr=attr_static
+new.p=764 1255 25 4
+serv.newitem=2988
+new.name=Satori Healing Garden
+new.attr=attr_static
+new.p=780 1227 25 4
+serv.newitem=3025
+new.name=Iroha Armorer And Musha-Shugyo Dojo
+new.attr=attr_static
+new.p=768 1298 25 4
+serv.newitem=3000
+new.name=Yume Stables
+new.attr=attr_static
+new.p=790 1284 25 4
+serv.newitem=3021
+new.name=Kagome Bowyer
+new.attr=attr_static
+new.p=789 1302 25 4
+//blockers around him
+serv.newitem=021A4
+new.attr=attr_static
+new.p=677 1277 47 4
+serv.newitem=021A4
+new.attr=attr_static
+new.p=679 1277 47 4
+serv.newitem=021A4
+new.attr=attr_static
+new.p=678 1276 47 4
+serv.newitem=021A4
+new.attr=attr_static
+new.p=678 1278 47 4
+serv.newitem=021A4
+new.attr=attr_static
+new.p=677 1276 47 4
+serv.newitem=021A4
+new.attr=attr_static
+new.p=677 1278 47 4
+serv.newitem=021A4
+new.attr=attr_static
+new.p=679 1276 47 4
+serv.newitem=021A4
+new.attr=attr_static
+new.p=679 1278 47 4
+// ankh
+serv.newitem=00002
+new.type=t_shrine
+new.attr=attr_static
+new.p=296 712 55 4
+serv.newitem=00003
+new.type=t_shrine
+new.attr=attr_static
+new.p=296 711 55 4
+serv.newitem=00002
+new.type=t_shrine
+new.attr=attr_static
+new.p=780 1219 46 4
+serv.newitem=00003
+new.type=t_shrine
+new.attr=attr_static
+new.p=780 1218 46 4
+serv.newitem=00002
+new.type=t_shrine
+new.attr=attr_static
+new.p=1042 508 15 4
+serv.newitem=00003
+new.type=t_shrine
+new.attr=attr_static
+new.p=1042 507 15 4
+serv.newitem=00002
+new.type=t_shrine
+new.attr=attr_static
+new.p=1051 508 15 4
+serv.newitem=00003
+new.type=t_shrine
+new.attr=attr_static
+new.p=1051 507 15 4
+// ankh
+serv.newitem=00004
+new.type=t_shrine
+new.attr=attr_static
+new.p=717 1158 27 4
+// ankh
+serv.newitem=00005
+new.type=t_shrine
+new.attr=attr_static
+new.p=718 1158 27 4
+// board
+serv.newitem=00E1C
+new.attr=attr_static
+new.p=691 1255 48 4
+// game
+serv.newitem=00FAD
+new.attr=attr_static
+new.p=668 1258 47 4 4
+// archery butte
+serv.newitem=0100B
+new.attr=attr_static
+new.p=660 1193 25 4
+serv.newitem=0100B
+new.attr=attr_static
+new.p=663 1193 25 4
+// spinning wheel
+serv.newitem=01019
+new.attr=attr_static
+new.p=742 1205 25 4
+serv.newitem=01019
+new.attr=attr_static
+new.p=749 1203 25 4
+// upright loom
+serv.newitem=01060
+new.attr=attr_static
+new.p=742 1208 25 4
+serv.newitem=01060
+new.attr=attr_static
+new.p=742 1219 25 4
+serv.newitem=01060
+new.attr=attr_static
+new.p=750 1208 25 4
+// upright loom
+serv.newitem=01061
+new.attr=attr_static
+new.p=746 1218 25 4
+serv.newitem=01061
+new.attr=attr_static
+new.p=746 1213 25 4
+// training dummy
+serv.newitem=01074
+new.attr=attr_static
+new.p=662 1206 25 4
+serv.newitem=01074
+new.attr=attr_static
+new.p=662 1212 25 4
+// Valor -> Shrine of Isamu
+serv.newitem=014B7
+new.type=t_shrine
+new.attr=attr_static
+new.p=1050 517 15 4
+new.name=Shrine of Isamu
+// Valor -> Shrine of Isamu
+serv.newitem=014B8
+new.type=t_shrine
+new.attr=attr_static
+new.p=1050 518 15 4
+new.name=Shrine of Isamu
+// Valor -> Shrine of Isamu
+serv.newitem=014B9
+new.type=t_shrine
+new.attr=attr_static
+new.p=1051 518 15 4
+new.name=Shrine of Isamu
+// Valor -> Shrine of Isamu
+serv.newitem=014BA
+new.type=t_shrine
+new.attr=attr_static
+new.p=1051 517 15 4
+new.name=Shrine of Isamu
+// bellows
+serv.newitem=0197A
+new.attr=attr_static
+new.p=767 1257 25 4
+serv.newitem=0197A
+new.attr=attr_static
+new.p=767 1262 25 4
+// bellows
+serv.newitem=0197D
+new.attr=attr_static
+new.p=767 1257 25 4
+// forge
+serv.newitem=0197E 
+new.attr=attr_static
+new.p=768 1257 25 4
+serv.newitem=0197E 
+new.attr=attr_static
+new.p=768 1262 25 4
+// forge
+serv.newitem=01982 
+new.attr=attr_static
+new.p=769 1257 25 4
+serv.newitem=01982 
+new.attr=attr_static
+new.p=769 1262 25 4
+// bellows
+serv.newitem=01986
+new.attr=attr_static
+new.p=638 1204 52 4
+serv.newitem=01986
+new.attr=attr_static
+new.p=638 1208 32 4
+// forge
+serv.newitem=0198A 
+new.attr=attr_static
+new.p=638 1205 52 4
+serv.newitem=0198A 
+new.attr=attr_static
+new.p=638 1209 32 4
+// forge
+serv.newitem=0198E 
+new.attr=attr_static
+new.p=764 1258 25 4
+// forge
+serv.newitem=01991 
+new.attr=attr_static
+new.p=764 1258 25 4
+// bellows
+serv.newitem=01992
+new.attr=attr_static
+new.p=638 1207 52 4
+serv.newitem=01992
+new.attr=attr_static
+new.p=638 1211 32 4
+// forge
+serv.newitem=01996 
+new.attr=attr_static
+new.p=638 1206 52 4
+serv.newitem=01996 
+new.attr=attr_static
+new.p=638 1210 32 4
+// forge
+serv.newitem=0199D 
+new.attr=attr_static
+new.p=764 1257 25 4
+// tower sculpture
+serv.newitem=0241A
+new.attr=attr_static
+new.p=748 1231 25 4
+new.name=May the town of Zento prosper.  Memorial tree planted by Dept and maha.
+
+[eof]

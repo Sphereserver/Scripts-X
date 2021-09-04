@@ -1,0 +1,140 @@
+[function deco_gweno_memoral_ilshenar]
+
+// no draw
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=752 492 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=757 493 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=753 492 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=755 492 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=756 492 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=757 492 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=752 493 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=757 490 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=753 493 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=754 493 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=755 493 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=752 491 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=754 491 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=755 490 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=753 491 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=756 490 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=752 489 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=753 489 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=756 493 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=755 489 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=756 489 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=757 489 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=754 489 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=755 491 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=752 490 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=754 490 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=756 491 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=753 490 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=757 491 -64 2
+serv.newitem=021A4
+new.attr=attr_static 
+new.p=754 492 -64 2
+// memorial to Gwenno
+serv.newitem=01185 
+new.name=In loving memory of Gwenno - You were my muse: I am your legacy.
+new.attr=attr_static 
+new.p=753 493 -64 2
+
+// memorial to Gwenno
+serv.newitem=01186 
+new.name=In loving memory of Gwenno - You were my muse: I am your legacy.
+new.attr=attr_static 
+new.p=755 493 -64 2
+
+// memorial to Gwenno
+serv.newitem=01187 
+new.name=In loving memory of Gwenno - You were my muse: I am your legacy.
+new.attr=attr_static 
+new.p=756 492 -64 2
+
+// rock
+serv.newitem=01772
+new.attr=attr_static 
+new.p=745 488 -66 2
+serv.newitem=01772
+new.attr=attr_static 
+new.p=746 488 -66 2
+
+// rock
+serv.newitem=01771
+new.attr=attr_static 
+new.p=745 489 -66 2
+serv.newitem=01771
+new.attr=attr_static 
+new.p=746 489 -66 2
+
+// memorial to Gwenno
+serv.newitem=01189 
+new.name=In loving memory of Gwenno - You were my muse: I am your legacy.
+new.attr=attr_static 
+new.p=757 489 -64 2
+
+// memorial to Gwenno
+serv.newitem=01188 
+new.name=In loving memory of Gwenno - You were my muse: I am your legacy.
+new.attr=attr_static 
+new.p=757 491 -64 2
+
+[EOF]

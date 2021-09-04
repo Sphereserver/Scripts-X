@@ -1,0 +1,977 @@
+[function deco_despise_felucca]
+
+//crate
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5408 607 45
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5384 552 60
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5487 631 28
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5488 630 25
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5488 631 25
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5488 631 28
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5491 574 59
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5491 574 62
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5492 574 60
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5492 574 63
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5492 576 58
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5493 574 60
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5497 623 25
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5476 898 30
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5505 629 28
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5479 560 60
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5489 575 59
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5497 520 60
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5497 624 25
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5500 520 60
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5505 629 25
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5487 631 25
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5407 612 45
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5505 629 31
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5487 631 31
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5407 612 48
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5384 521 65
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5384 552 63
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5384 552 66
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5384 553 60
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5384 554 60
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5384 555 60
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5384 555 63
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5384 555 66
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5385 525 65
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5385 527 65
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5385 552 60
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5385 552 63
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5385 679 20
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5498 520 60
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5386 552 63
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5386 552 66
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5407 611 45
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5407 611 48
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5407 611 51
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5407 613 45
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5407 613 48
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5407 613 51
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5408 613 45
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5384 522 65
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5384 525 65
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5384 526 65
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5384 526 68
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5384 527 65
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5384 553 63
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5384 556 60
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5386 552 60
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5408 613 48
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5479 560 63
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5479 561 60
+
+//crate
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5485 622 31
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5490 535 60
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5491 624 25
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5485 622 25
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5485 622 28
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5487 623 25
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5489 532 60
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5489 535 60
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5598 835 50
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5544 903 10
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5612 780 60
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5613 777 60
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5384 680 20
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5433 780 60
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5484 622 25
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5484 622 28
+
+//barrel
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5385 520 65
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5489 528 65
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5489 528 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5490 528 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5488 534 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5488 532 65
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5488 532 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5388 552 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5490 528 65
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5388 553 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5489 631 25
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5389 552 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5389 553 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5390 552 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5391 552 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5391 552 65
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5389 552 65
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5390 552 65
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5490 573 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5493 528 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5496 528 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5390 552 70
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5507 520 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5489 630 30
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5490 630 25
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5496 522 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5494 625 25
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5494 625 30
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5407 605 45
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5384 681 20
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5389 528 65
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5489 630 25
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5392 520 65
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5390 528 65
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5564 899 30
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5491 528 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5493 529 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5501 528 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5506 520 60
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5393 520 65
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5388 552 65
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5496 522 65
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5407 605 50
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5408 605 45
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5390 528 70
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5384 529 65
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5389 529 65
+
+//crate
+serv.newitem=0E3E
+new.attr=attr_static
+new.p=5388 601 45
+serv.newitem=0E3E
+new.attr=attr_static
+new.p=5488 531 60
+serv.newitem=0E3E
+new.attr=attr_static
+new.p=5488 530 60
+serv.newitem=0E3E
+new.attr=attr_static
+new.p=5388 522 65
+serv.newitem=0E3E
+new.attr=attr_static
+new.p=5510 813 60
+serv.newitem=0E3E
+new.attr=attr_static
+new.p=5510 812 60
+serv.newitem=0E3E
+new.attr=attr_static
+new.p=5386 585 45
+serv.newitem=0E3E
+new.attr=attr_static
+new.p=5608 822 60
+
+//metal door
+serv.newitem=06C7
+new.attr=attr_static
+new.p=5387 693 20
+
+//metal chest
+serv.newitem=0E40
+new.attr=attr_static
+new.p=5408 929 20
+serv.newitem=0E40
+new.attr=attr_static
+new.p=5512 656 30
+serv.newitem=0E40
+new.attr=attr_static
+new.p=5387 698 15
+serv.newitem=0E40
+new.attr=attr_static
+new.p=5479 564 60
+serv.newitem=0E40
+new.attr=attr_static
+new.p=5604 807 60
+
+//dirty pot
+serv.newitem=09E7
+new.attr=attr_static
+new.p=5392 525 66
+serv.newitem=09E7
+new.attr=attr_static
+new.p=5400 590 45
+
+//cauldron
+serv.newitem=0975
+new.attr=attr_static
+new.p=5398 907 31
+serv.newitem=0975
+new.attr=attr_static
+new.p=5413 723 16
+serv.newitem=0975
+new.attr=attr_static
+new.p=5410 664 20
+serv.newitem=0975
+new.attr=attr_static
+new.p=5459 741 5
+
+//mushroom
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5445 977 15
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5400 929 20
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5406 932 20
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5425 878 30
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5496 542 60
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5405 920 20
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5407 575 60
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5423 893 30
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5405 885 30
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5412 881 30
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5413 892 30
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5428 906 30
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5453 970 15
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5415 904 30
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5448 533 60
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5421 527 60
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5427 957 15
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5401 576 60
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5418 909 30
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5413 934 20
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5391 896 30
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5435 557 60
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5484 544 60
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5401 918 20
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5445 962 15
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5384 897 30
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5386 888 30
+
+//dirty pot
+serv.newitem=09DD
+new.attr=attr_static
+new.p=5495 624 25
+serv.newitem=09DD
+new.attr=attr_static
+new.p=5490 623 25
+serv.newitem=09DD
+new.attr=attr_static
+new.p=5486 631 25
+serv.newitem=09DD
+new.attr=attr_static
+new.p=5497 625 25
+
+//water
+serv.newitem=0179B
+new.attr=attr_static
+new.p=5401 703 14
+serv.newitem=0179B
+new.attr=attr_static
+new.p=5395 704 14
+
+//ceramic mug
+serv.newitem=0995
+new.attr=attr_static
+new.p=5497 563 65
+serv.newitem=0995
+new.attr=attr_static
+new.p=5506 527 60
+serv.newitem=0995
+new.attr=attr_static
+new.p=5499 561 65
+serv.newitem=0995
+new.attr=attr_static
+new.p=5508 526 60
+serv.newitem=0995
+new.attr=attr_static
+new.p=5501 524 60
+serv.newitem=0995
+new.attr=attr_static
+new.p=5503 523 60
+serv.newitem=0995
+new.attr=attr_static
+new.p=5503 533 60
+serv.newitem=0995
+new.attr=attr_static
+new.p=5504 524 60
+serv.newitem=0995
+new.attr=attr_static
+new.p=5505 531 60
+
+//keg
+serv.newitem=0E7F
+new.attr=attr_static
+new.p=5495 625 25
+serv.newitem=0E7F
+new.attr=attr_static
+new.p=5493 625 25
+serv.newitem=0E7F
+new.attr=attr_static
+new.p=5507 653 20
+
+//switch
+serv.newitem=01092
+new.attr=attr_static
+new.p=5425 569 78
+serv.newitem=01092
+new.attr=attr_static
+new.p=5506 625 39
+
+//metal chest
+serv.newitem=0E7C
+new.attr=attr_static
+new.p=5395 1004 5
+serv.newitem=0E7C
+new.attr=attr_static
+new.p=5451 870 45
+serv.newitem=0E7C
+new.attr=attr_static
+new.p=5388 698 15
+serv.newitem=0E7C
+new.attr=attr_static
+new.p=5385 698 15
+serv.newitem=0E7C
+new.attr=attr_static
+new.p=5572 895 30
+
+//crate
+serv.newitem=0E3F
+new.attr=attr_static
+new.p=5490 529 60
+serv.newitem=0E3F
+new.attr=attr_static
+new.p=5514 803 60
+serv.newitem=0E3F
+new.attr=attr_static
+new.p=5565 900 30
+
+//small crate
+serv.newitem=09A9
+new.attr=attr_static
+new.p=5517 809 60
+serv.newitem=09A9
+new.attr=attr_static
+new.p=5613 779 60
+serv.newitem=09A9
+new.attr=attr_static
+new.p=5385 680 20
+serv.newitem=09A9
+new.attr=attr_static
+new.p=5387 680 20
+serv.newitem=09A9
+new.attr=attr_static
+new.p=5391 522 65
+
+//dirty frypan
+serv.newitem=09DE
+new.attr=attr_static
+new.p=5484 622 31
+serv.newitem=09DE
+new.attr=attr_static
+new.p=5487 624 25
+
+//water barrel
+serv.newitem=0154D
+new.attr=attr_static
+new.p=5390 552 60
+serv.newitem=0154D
+new.attr=attr_static
+new.p=5496 522 60
+serv.newitem=0154D
+new.attr=attr_static
+new.p=5489 631 25
+
+//metal chest
+serv.newitem=09AB
+new.attr=attr_static
+new.p=5510 660 20
+serv.newitem=09AB
+new.attr=attr_static
+new.p=5567 897 30
+serv.newitem=09AB
+new.attr=attr_static
+new.p=5615 776 60
+
+//wooden chest
+serv.newitem=0E43
+new.attr=attr_static
+new.p=5504 650 30
+serv.newitem=0E43
+new.attr=attr_static
+new.p=5384 656 30
+serv.newitem=0E43
+new.attr=attr_static
+new.p=5539 877 30
+serv.newitem=0E43
+new.attr=attr_static
+new.p=5386 698 15
+serv.newitem=0E43
+new.attr=attr_static
+new.p=5505 656 30
+serv.newitem=0E43
+new.attr=attr_static
+new.p=5391 703 15
+serv.newitem=0E43
+new.attr=attr_static
+new.p=5614 776 60
+serv.newitem=0E43
+new.attr=attr_static
+new.p=5401 932 20
+serv.newitem=0E43
+new.attr=attr_static
+new.p=5587 815 45
+
+//metal chest
+serv.newitem=0E41
+new.attr=attr_static
+new.p=5553 831 45
+serv.newitem=0E41
+new.attr=attr_static
+new.p=5567 900 30
+serv.newitem=0E41
+new.attr=attr_static
+new.p=5390 604 30
+serv.newitem=0E41
+new.attr=attr_static
+new.p=5394 600 45
+serv.newitem=0E41
+new.attr=attr_static
+new.p=5555 824 45
+serv.newitem=0E41
+new.attr=attr_static
+new.p=5387 587 45
+serv.newitem=0E41
+new.attr=attr_static
+new.p=5539 872 45
+
+//cauldron
+serv.newitem=0974
+new.attr=attr_static
+new.p=5502 541 61
+serv.newitem=0974
+new.attr=attr_static
+new.p=5391 966 15
+serv.newitem=0974
+new.attr=attr_static
+new.p=5434 853 45
+
+//crate
+serv.newitem=0E7E
+new.attr=attr_static
+new.p=5440 843 45
+serv.newitem=0E7E
+new.attr=attr_static
+new.p=5516 808 60
+serv.newitem=0E7E
+new.attr=attr_static
+new.p=5387 590 45
+serv.newitem=0E7E
+new.attr=attr_static
+new.p=5466 826 60
+serv.newitem=0E7E
+new.attr=attr_static
+new.p=5500 536 60
+
+//wooden chest
+serv.newitem=0E42
+new.attr=attr_static
+new.p=5568 899 30
+serv.newitem=0E42
+new.attr=attr_static
+new.p=5392 981 5
+serv.newitem=0E42
+new.attr=attr_static
+new.p=5565 824 45
+serv.newitem=0E42
+new.attr=attr_static
+new.p=5382 658 30
+serv.newitem=0E42
+new.attr=attr_static
+new.p=5384 819 60
+serv.newitem=0E42
+new.attr=attr_static
+new.p=5384 820 60
+serv.newitem=0E42
+new.attr=attr_static
+new.p=5504 532 62
+serv.newitem=0E42
+new.attr=attr_static
+new.p=5390 698 15
+serv.newitem=0E42
+new.attr=attr_static
+new.p=5479 563 60
+serv.newitem=0E42
+new.attr=attr_static
+new.p=5472 760 5
+serv.newitem=0E42
+new.attr=attr_static
+new.p=5472 761 5
+serv.newitem=0E42
+new.attr=attr_static
+new.p=5401 978 5
+
+//metal door
+serv.newitem=06C5
+new.attr=attr_static
+new.p=5386 693 20
+
+//pot
+serv.newitem=09E5
+new.attr=attr_static
+new.p=5389 527 65
+serv.newitem=09E5
+new.attr=attr_static
+new.p=5385 525 68
+
+//dirty pot
+serv.newitem=09DF
+new.attr=attr_static
+new.p=5389 591 45
+serv.newitem=09DF
+new.attr=attr_static
+new.p=5390 591 45
+
+//dirty pan
+serv.newitem=09E8
+new.attr=attr_static
+new.p=5389 591 45
+serv.newitem=09E8
+new.attr=attr_static
+new.p=5393 586 45
+serv.newitem=09E8
+new.attr=attr_static
+new.p=5497 523 60
+serv.newitem=09E8
+new.attr=attr_static
+new.p=5497 527 60
+serv.newitem=09E8
+new.attr=attr_static
+new.p=5503 533 60
+serv.newitem=09E8
+new.attr=attr_static
+new.p=5504 524 60
+serv.newitem=09E8
+new.attr=attr_static
+new.p=5504 530 60
+
+//dirty pot
+serv.newitem=09DC
+new.attr=attr_static
+new.p=5390 525 65
+serv.newitem=09DC
+new.attr=attr_static
+new.p=5497 564 65
+serv.newitem=09DC
+new.attr=attr_static
+new.p=5502 531 60
+
+//kettle
+serv.newitem=09ED
+new.attr=attr_static
+new.p=5391 526 65
+serv.newitem=09ED
+new.attr=attr_static
+new.p=5500 523 60
+
+//water
+serv.newitem=01797
+new.attr=attr_static
+new.p=5395 705 14
+
+//water
+serv.newitem=0179C
+new.attr=attr_static
+new.p=5395 707 14
+
+//water
+serv.newitem=0179A
+new.attr=attr_static
+new.p=5396 705 14
+serv.newitem=0179A
+new.attr=attr_static
+new.p=5399 703 14
+serv.newitem=0179A
+new.attr=attr_static
+new.p=5395 703 14
+serv.newitem=0179A
+new.attr=attr_static
+new.p=5400 703 14
+
+//water
+serv.newitem=01799
+new.attr=attr_static
+new.p=5397 703 14
+serv.newitem=01799
+new.attr=attr_static
+new.p=5397 705 14
+
+//ankh
+serv.newitem=0003
+new.attr=attr_static
+new.p=5425 570 65
+serv.newitem=0002
+new.attr=attr_static
+new.p=5425 571 65
+//fire pit
+serv.newitem=0FAC
+new.attr=attr_static
+new.p=5502 541 60
+
+//gruesome standard
+serv.newitem=041F
+new.attr=attr_static
+new.p=5507 539 70
+
+//blood smear
+serv.newitem=0122F
+new.attr=attr_static
+new.p=5410 550 60
+serv.newitem=0122f
+new.attr=attr_static
+new.p=5413 549 60
+
+//crystal ball
+serv.newitem=0E2F
+new.attr=attr_static
+new.p=5450 1004 19
+
+//stone
+serv.newitem=07A3
+new.attr=attr_static
+new.p=5453 612 45
+
+//stone
+serv.newitem=0788
+new.attr=attr_static
+new.p=5458 610 45
+
+//ankh
+serv.newitem=0004
+new.attr=attr_static
+new.p=5474 525 79
+serv.newitem=0005
+new.attr=attr_static
+new.p=5475 525 79
+//dirty pot
+serv.newitem=09E6
+new.attr=attr_static
+new.p=5480 630 25
+serv.newitem=09E6
+new.attr=attr_static
+new.p=5503 529 60
+
+//bone arms
+serv.newitem=01453
+new.attr=attr_static
+new.p=5561 905 30
+
+//ceramic mug
+serv.newitem=09CA
+new.attr=attr_static
+new.p=5498 528 60
+serv.newitem=09CA
+new.attr=attr_static
+new.p=5502 533 60
+
+//skeleton
+serv.newitem=01B7F
+new.attr=attr_static
+new.p=5501 560 65
+
+//campfire
+serv.newitem=0DE3
+new.attr=attr_static
+new.p=5502 541 60
+
+//garbage
+serv.newitem=010EE
+new.attr=attr_static
+new.p=5502 534 60
+
+//skull mug
+serv.newitem=0FFD
+new.attr=attr_static
+new.p=5507 529 60
+
+[eof]

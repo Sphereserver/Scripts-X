@@ -1,0 +1,46 @@
+[function spawn_vendors_ter_mur]
+
+//###############
+//## By PsYiOn ##
+//###############
+//overrideid 604
+//overridemap 6
+//overridemintime 5
+//overridemaxtime 10
+//##
+//## Holy City
+//##
+f_create_spawner,baker,,,,,,976,3881,-42,2,2,10,5,0,1,1,0,0,0,0,0
+f_create_spawner,blacksmith,blacksmithguildmaster,,,,,1010,3883,-42,2,2,10,5,0,1,1,1,0,0,0,0
+f_create_spawner,healer,healerguildmaster,,,,,1013,3913,-42,2,2,10,5,0,1,1,1,0,0,0,0
+f_create_spawner,tinker,tinkerguildmaster,,,,,977,3909,-42,2,2,10,5,0,1,1,1,0,0,0,0
+f_create_spawner,innkeeper,,,,,,943,3924,-42,2,2,10,5,0,1,1,0,0,0,0,0
+f_create_spawner,blacksmith,blacksmithguildmaster,,,,,1020,3884,-42,2,2,10,5,0,1,1,1,0,0,0,0
+//##
+//## Royal City
+//##
+f_create_spawner,innkeeper,,,,,,740,3466,-19,2,2,10,5,0,1,1,0,0,0,0,0
+f_create_spawner,scribe,,,,,,772,3467,-20,1,5,10,5,0,1,1,0,0,0,0,0
+f_create_spawner,herbalist,alchemist,customhairstylist,,,,773,3478,-20,1,5,10,5,0,1,1,1,1,0,0,0
+f_create_spawner,mage,alchemist,mageguildmaster,,,,772,3490,-20,1,5,10,5,0,1,1,1,1,0,0,0
+f_create_spawner,healer,healerguildmaster,,,,,783,3491,-20,1,5,10,5,0,1,1,1,0,0,0,0
+f_create_spawner,provisioner,cobbler,,,,,797,3494,0,1,5,10,5,0,1,1,1,0,0,0,0
+f_create_spawner,baker,,,,,,805,3491,-20,2,2,10,5,0,1,1,0,0,0,0,0
+f_create_spawner,butcher,,,,,,817,3456,-10,1,5,10,5,0,1,1,0,0,0,0,0
+f_create_spawner,carpenter,architect,realestatebroker,,,,817,3438,0,1,5,10,5,0,1,1,1,1,0,0,0
+f_create_spawner,tinker,tinkerguildmaster,,,,,817,3426,0,2,2,10,5,0,1,1,1,0,0,0,0
+f_create_spawner,blacksmith,blacksmithguildmaster,,,,,816,3419,0,2,2,10,5,0,1,1,1,0,0,0,0
+f_create_spawner,tailor,weaver,tailorguildmaster,,,,805,3397,0,1,5,10,5,0,1,1,1,1,0,0,0
+f_create_spawner,tanner,furtrader,,,,,804,3387,0,1,5,10,5,0,1,1,1,0,0,0,0
+f_create_spawner,animaltrainer,,,,,,851,3404,-20,1,5,10,5,0,1,1,0,0,0,0,0
+f_create_spawner,banker,minter,,,,,833,3439,-20,1,5,10,5,0,1,1,1,0,0,0,0
+f_create_spawner,banker,minter,,,,,843,3439,-20,1,5,10,5,0,1,1,1,0,0,0,0
+f_create_spawner,tailor,weaver,,,,,702,3435,-20,1,5,10,5,0,1,1,1,1,0,0,0
+f_create_spawner,armorer,weaponsmith,,,,,727,3425,-20,1,5,10,5,0,1,1,1,0,0,0,0
+f_create_spawner,farmer,farmer,,,,,715,3446,-20,1,5,10,5,0,1,1,1,0,0,0,0
+f_create_spawner,tavernkeeper,waiter,barkeeper,,,,713,3438,-20,1,5,10,5,0,1,1,1,1,1,0,0
+f_create_spawner,farmer,farmer,,,,,794,3446,-10,1,5,10,5,0,1,1,1,0,0,0,0
+f_create_spawner,jeweler,,,,,,779,3431,-10,1,5,10,5,0,1,1,0,0,0,0,0
+f_create_spawner,towncrier,,,,,,842,3453,-18,2,5,10,4,0,1,1,0,0,0,0,0
+
+[eof]

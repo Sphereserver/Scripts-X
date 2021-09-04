@@ -2837,7 +2837,7 @@ ON=@Create
    MOREM=1
 
 [ITEMDEF i_sugar]
-ID=i_reag_volcanic_ash
+ID=i_reag_grave_dust
 NAME=sugar
 TYPE=t_food
 PILE=1
@@ -2911,7 +2911,7 @@ ON=@Create
 ID=0105e
 NAME=peas
 TYPE=t_fruit
-TDATA1=i_crop_peas1
+//TDATA1=i_crop_peas1
 PILE=1
 VALUE=1
 WEIGHT=0.1
@@ -3226,7 +3226,7 @@ ON=@Create
 	COLOR=COLORS_ORANGE
 
 [ITEMDEF i_fish_full_moon]
-ID=i_sea_sponge
+ID=i_aquarium_full_moon_fish
 NAME=full moon fish
 TYPE=t_fish
 CATEGORY=Provisions - Food

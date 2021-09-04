@@ -1,0 +1,36 @@
+
+
+[function spawn_graveyards_felucca]
+//##############
+//## By Nerun ##
+//##############
+//overrideid 208
+//overridemap 1
+//overridemintime 5
+//overridemaxtime 10
+//##
+//## Graveyards
+//##
+//## Britain Graveyard
+f_create_spawner,Spectre:Wraith,Skeleton,Zombie,,,,1369,1475,10,2,5,10,30,20,1,2,3,4,0,0,0
+//##
+//## Jhelom Graveyard
+f_create_spawner,Spectre:Wraith:Shade,Skeleton,Zombie,,,,1285,3731,0,2,5,10,15,10,1,2,3,4,0,0,0
+//##
+//## Cove Graveyard
+f_create_spawner,Spectre:Shade:Wraith,Lich,Skeleton,Zombie,,,2438,1100,8,2,5,10,20,10,1,1,1,1,1,0,0
+//##
+//## Moonglow Graveyard
+f_create_spawner,Spectre:Shade:Wraith,Skeleton,Zombie,,,,4545,1317,8,2,5,10,20,10,1,1,1,2,0,0,0
+f_create_spawner,Lich,,,,,,4543,1314,8,2,5,10,20,10,1,1,0,0,0,0,0
+//##
+//## Vesper Graveyard
+f_create_spawner,Spectre:Wraith,Skeleton,Zombie,,,,2758,867,0,2,5,10,20,20,1,2,3,4,0,0,0
+//##
+//## Yew Graveyard
+f_create_spawner,Skeleton,,,,,,722,1119,0,2,5,10,20,20,1,10,0,0,0,0,0
+//##
+//## Haven Graveyard
+f_create_spawner,zombie:skeleton,,,,,,3407,2652,48,2,5,10,15,10,1,4,0,0,0,0,0
+
+[eof]

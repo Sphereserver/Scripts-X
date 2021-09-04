@@ -1,0 +1,8 @@
+[function deco_palace_of_paroxysmus_trammel]
+
+//Items
+serv.newitem=0857
+new.attr=attr_static
+new.p=6518 492 -50 1//
+
+[EOF]

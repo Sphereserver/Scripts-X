@@ -1,0 +1,510 @@
+[FUNCTION deco_cove_felucca]
+
+//tent wall
+serv.newitem=02EB 
+new.color=033
+new.attr=attr_static 
+new.p=2333 1220 0
+serv.newitem=02EB 
+new.color=033
+new.attr=attr_static 
+new.p=2337 1229 0
+serv.newitem=02EB 
+new.color=033
+new.attr=attr_static 
+new.p=2342 1214 0
+serv.newitem=02EB 
+new.color=033
+new.attr=attr_static 
+new.p=2346 1220 0
+//tent wall
+serv.newitem=02EC 
+new.color=033
+new.attr=attr_static 
+new.p=2334 1219 0
+serv.newitem=02EC 
+new.color=033
+new.attr=attr_static 
+new.p=2338 1228 0
+serv.newitem=02EC 
+new.color=033
+new.attr=attr_static 
+new.p=2343 1213 0
+serv.newitem=02EC 
+new.color=033
+new.attr=attr_static 
+new.p=2347 1219 0
+//gruesome standard
+serv.newitem=041F
+new.attr=attr_static 
+new.p=2338 1214 0
+//gruesome standard
+serv.newitem=0420
+new.attr=attr_static 
+new.p=2347 1217 0
+//gruesome standard
+serv.newitem=0428
+new.attr=attr_static 
+new.p=2329 1221 0
+//cauldron
+serv.newitem=0974
+new.attr=attr_static 
+new.p=2337 1221 0
+//tray
+serv.newitem=0992
+new.attr=attr_static 
+new.p=2227 1218 6
+serv.newitem=0992
+new.attr=attr_static 
+new.p=2236 1187 6
+serv.newitem=0992
+new.attr=attr_static 
+new.p=2244 1203 6
+serv.newitem=0992
+new.attr=attr_static 
+new.p=2259 1217 6
+//bottle of liquor
+serv.newitem=099B
+new.attr=attr_static 
+new.p=2228 1218 6
+//fork
+serv.newitem=09A3
+new.attr=attr_static 
+new.p=2227 1217 6
+//fork
+serv.newitem=09A4
+new.attr=attr_static 
+new.p=2237 1187 6
+serv.newitem=09A4
+new.attr=attr_static 
+new.p=2245 1203 6
+serv.newitem=09A4
+new.attr=attr_static 
+new.p=2260 1217 6
+//knife
+serv.newitem=09A5
+new.attr=attr_static 
+new.p=2227 1217 6
+//knife
+serv.newitem=09A6
+new.attr=attr_static 
+new.p=2237 1187 6
+serv.newitem=09A6
+new.attr=attr_static 
+new.p=2245 1203 6
+serv.newitem=09A6
+new.attr=attr_static 
+new.p=2260 1217 6
+//metal box
+serv.newitem=09A8
+new.attr=attr_static 
+new.p=2213 1165 6
+//spoon
+serv.newitem=09C2
+new.attr=attr_static 
+new.p=2227 1217 6
+//spoon
+serv.newitem=09C3
+new.attr=attr_static 
+new.p=2237 1187 7
+serv.newitem=09C3
+new.attr=attr_static 
+new.p=2245 1203 7
+serv.newitem=09C3
+new.attr=attr_static 
+new.p=2260 1217 7
+//bottle of wine
+serv.newitem=09C7
+new.attr=attr_static 
+new.p=2238 1188 6
+serv.newitem=09C7
+new.attr=attr_static 
+new.p=2246 1204 6
+serv.newitem=09C7
+new.attr=attr_static 
+new.p=2261 1218 6
+//plate
+serv.newitem=09D7
+new.attr=attr_static 
+new.p=2227 1217 6
+serv.newitem=09D7
+new.attr=attr_static 
+new.p=2228 1217 6
+serv.newitem=09D7
+new.attr=attr_static 
+new.p=2237 1187 6
+serv.newitem=09D7
+new.attr=attr_static 
+new.p=2237 1188 6
+serv.newitem=09D7
+new.attr=attr_static 
+new.p=2245 1203 6
+serv.newitem=09D7
+new.attr=attr_static 
+new.p=2245 1204 6
+serv.newitem=09D7
+new.attr=attr_static 
+new.p=2260 1217 6
+serv.newitem=09D7
+new.attr=attr_static 
+new.p=2260 1218 6
+//fork
+serv.newitem=09F4
+new.attr=attr_static 
+new.p=2237 1188 6
+serv.newitem=09F4
+new.attr=attr_static 
+new.p=2245 1204 6
+serv.newitem=09F4
+new.attr=attr_static 
+new.p=2260 1218 6
+//fork
+serv.newitem=09F5
+new.attr=attr_static 
+new.p=2228 1217 6
+//knife
+serv.newitem=09F6
+new.attr=attr_static 
+new.p=2237 1188 6
+serv.newitem=09F6
+new.attr=attr_static 
+new.p=2245 1204 6
+serv.newitem=09F6
+new.attr=attr_static 
+new.p=2260 1218 6
+//knife
+serv.newitem=09F7
+new.attr=attr_static 
+new.p=2228 1217 6
+//spoon
+serv.newitem=09F8
+new.attr=attr_static 
+new.p=2237 1188 6
+serv.newitem=09F8
+new.attr=attr_static 
+new.p=2245 1204 6
+serv.newitem=09F8
+new.attr=attr_static 
+new.p=2260 1218 6
+//spoon
+serv.newitem=09F9
+new.attr=attr_static 
+new.p=2228 1217 6
+//candle
+serv.newitem=0A26
+new.attr=attr_static 
+new.p=2228 1216 6
+//candle
+serv.newitem=0B1A
+new.attr=attr_static 
+new.p=2212 1116 26
+serv.newitem=0B1A
+new.attr=attr_static 
+new.p=2212 1116 46
+serv.newitem=0B1A
+new.attr=attr_static 
+new.p=2213 1164 6
+serv.newitem=0B1A
+new.attr=attr_static 
+new.p=2213 1168 6
+serv.newitem=0B1A
+new.attr=attr_static 
+new.p=2215 1191 6
+serv.newitem=0B1A
+new.attr=attr_static 
+new.p=2217 1195 6
+serv.newitem=0B1A
+new.attr=attr_static 
+new.p=2236 1188 6
+serv.newitem=0B1A
+new.attr=attr_static 
+new.p=2243 1228 6
+serv.newitem=0B1A
+new.attr=attr_static 
+new.p=2243 1231 6
+serv.newitem=0B1A
+new.attr=attr_static 
+new.p=2244 1204 6
+serv.newitem=0B1A
+new.attr=attr_static 
+new.p=2259 1218 6
+serv.newitem=0B1A
+new.attr=attr_static 
+new.p=2275 1198 6
+serv.newitem=0B1A
+new.attr=attr_static 
+new.p=2276 1200 26
+serv.newitem=0B1A
+new.attr=attr_static 
+new.p=2283 1226 6
+serv.newitem=0B1A
+new.attr=attr_static 
+new.p=2284 1228 26
+//chair
+serv.newitem=0B56
+new.attr=attr_static 
+new.p=2211 1115 20
+serv.newitem=0B56
+new.attr=attr_static 
+new.p=2212 1166 0
+serv.newitem=0B56
+new.attr=attr_static 
+new.p=2242 1229 0
+serv.newitem=0B56
+new.attr=attr_static 
+new.p=2275 1199 20
+serv.newitem=0B56
+new.attr=attr_static 
+new.p=2283 1227 20
+//chair
+serv.newitem=0B57
+new.attr=attr_static 
+new.p=2276 1197 0
+serv.newitem=0B57
+new.attr=attr_static 
+new.p=2284 1225 0
+//chair
+serv.newitem=0B58
+new.attr=attr_static 
+new.p=2213 1115 40
+//chair
+serv.newitem=0B5A
+new.attr=attr_static 
+new.p=2226 1217 0
+//chair
+serv.newitem=0B5B
+new.attr=attr_static 
+new.p=2237 1186 0
+serv.newitem=0B5B
+new.attr=attr_static 
+new.p=2245 1202 0
+serv.newitem=0B5B
+new.attr=attr_static 
+new.p=2260 1216 0
+//chair
+serv.newitem=0B5C
+new.attr=attr_static 
+new.p=2214 1192 0
+serv.newitem=0B5C
+new.attr=attr_static 
+new.p=2237 1189 0
+serv.newitem=0B5C
+new.attr=attr_static 
+new.p=2245 1205 0
+serv.newitem=0B5C
+new.attr=attr_static 
+new.p=2260 1219 0
+//chair
+serv.newitem=0B5D
+new.attr=attr_static 
+new.p=2229 1217 0
+//campfire
+serv.newitem=0DE3
+new.attr=attr_static 
+new.p=2337 1221 0
+//crate
+serv.newitem=0E3C
+new.attr=attr_static 
+new.p=2252 1190 -2
+serv.newitem=0E3C
+new.attr=attr_static 
+new.p=2252 1190 1
+//crate
+serv.newitem=0E3E
+new.attr=attr_static 
+new.p=2252 1190 4
+serv.newitem=0E3E
+new.attr=attr_static 
+new.p=2253 1190 -2
+//stump
+serv.newitem=0E59
+new.attr=attr_static 
+new.p=2330 1220 0
+//barrel
+serv.newitem=0E77
+new.attr=attr_static 
+new.p=2251 1189 -2
+serv.newitem=0E77
+new.attr=attr_static 
+new.p=2251 1189 3
+serv.newitem=0E77
+new.attr=attr_static 
+new.p=2251 1190 -2
+serv.newitem=0E77
+new.attr=attr_static 
+new.p=2252 1189 -2
+serv.newitem=0E77
+new.attr=attr_static 
+new.p=2259 1188 -2
+serv.newitem=0E77
+new.attr=attr_static 
+new.p=2259 1188 3
+serv.newitem=0E77
+new.attr=attr_static 
+new.p=2259 1189 -2
+serv.newitem=0E77
+new.attr=attr_static 
+new.p=2259 1189 3
+serv.newitem=0E77
+new.attr=attr_static 
+new.p=2259 1190 -2
+serv.newitem=0E77
+new.attr=attr_static 
+new.p=2260 1188 -2
+serv.newitem=0E77
+new.attr=attr_static 
+new.p=2260 1188 3
+serv.newitem=0E77
+new.attr=attr_static 
+new.p=2260 1189 -2
+serv.newitem=0E77
+new.attr=attr_static 
+new.p=2260 1189 3
+serv.newitem=0E77
+new.attr=attr_static 
+new.p=2260 1190 -2
+//strong box
+serv.newitem=0E80
+new.attr=attr_static 
+new.p=2212 1191 6
+serv.newitem=0E80
+new.attr=attr_static 
+new.p=2240 1231 6
+//cleaver
+serv.newitem=0EC3
+new.attr=attr_static 
+new.p=2217 1196 6
+//skinning knife
+serv.newitem=0EC5
+new.attr=attr_static 
+new.p=2212 1196 6
+//executioner's axe
+serv.newitem=0F46
+new.attr=attr_static 
+new.p=2331 1219 0s
+//fire pit
+serv.newitem=0FAC
+new.attr=attr_static 
+new.p=2337 1221 0
+//book
+serv.newitem=0FBD
+new.attr=attr_static 
+new.p=2212 1115 26
+serv.newitem=0FBD
+new.attr=attr_static 
+new.p=2212 1115 46
+serv.newitem=0FBD
+new.attr=attr_static 
+new.p=2213 1166 6
+serv.newitem=0FBD
+new.attr=attr_static 
+new.p=2243 1229 6
+serv.newitem=0FBD
+new.attr=attr_static 
+new.p=2276 1199 26
+serv.newitem=0FBD
+new.attr=attr_static 
+new.p=2284 1227 26
+//book
+serv.newitem=0FBE
+new.attr=attr_static 
+new.p=2214 1191 6
+serv.newitem=0FBE
+new.attr=attr_static 
+new.p=2276 1198 6
+serv.newitem=0FBE
+new.attr=attr_static 
+new.p=2284 1226 6
+//pen and ink
+serv.newitem=0FBF
+new.attr=attr_static 
+new.p=2213 1166 6
+serv.newitem=0FBF
+new.attr=attr_static 
+new.p=2243 1229 6
+//pen and ink
+serv.newitem=0FC0
+new.attr=attr_static 
+new.p=2213 1191 6
+//glass pitcher
+serv.newitem=0FF6
+new.attr=attr_static 
+new.p=2261 1217 6
+//garbage
+serv.newitem=010EE
+new.attr=attr_static 
+new.p=2332 1221 0
+serv.newitem=010EE
+new.attr=attr_static 
+new.p=2333 1223 0
+serv.newitem=010EE
+new.attr=attr_static 
+new.p=2336 1221 1
+serv.newitem=010EE
+new.attr=attr_static 
+new.p=2336 1222 0
+serv.newitem=010EE
+new.attr=attr_static 
+new.p=2338 1214 0
+serv.newitem=010EE
+new.attr=attr_static 
+new.p=2338 1218 0
+serv.newitem=010EE
+new.attr=attr_static 
+new.p=2338 1224 0
+serv.newitem=010EE
+new.attr=attr_static 
+new.p=2339 1221 2
+serv.newitem=010EE
+new.attr=attr_static 
+new.p=2340 1220 0
+serv.newitem=010EE
+new.attr=attr_static 
+new.p=2340 1224 0
+//butcher knife
+serv.newitem=013F7
+new.attr=attr_static 
+new.p=2212 1195 6
+//rope
+serv.newitem=014FA
+new.attr=attr_static 
+new.p=2252 1191 -2
+//water barrel
+serv.newitem=0154D
+new.attr=attr_static 
+new.p=2281 1183 0
+//skinned goat
+serv.newitem=01E88
+new.attr=attr_static 
+new.p=2329 1225 3
+//skinned goat
+serv.newitem=01E89
+new.attr=attr_static 
+new.p=2337 1223 0
+//skinned deer
+serv.newitem=01E90
+new.attr=attr_static 
+new.p=2342 1221 0
+//skinned deer
+serv.newitem=01E91
+new.attr=attr_static 
+new.p=2338 1219 0
+serv.newitem=01E91
+new.attr=attr_static 
+new.p=2339 1219 0
+//pitcher of water
+serv.newitem=01F9D
+new.attr=attr_static 
+new.p=2238 1187 6
+serv.newitem=01F9D
+new.attr=attr_static 
+new.p=2246 1203 6
+serv.newitem=01F9D
+new.attr=attr_static 
+new.p=2261 1217 6
+//pitcher of water
+serv.newitem=01F9E
+new.attr=attr_static 
+new.p=2227 1216 6
+
+[EOF]

@@ -66,7 +66,7 @@ ITEM={ i_fish_small 1 i_fish_cut_raw 1 i_fish_big_1 1 i_fish_big_2 1 i_fish_big_
 CATEGORY=Random Item Templates
 SUBSECTION=Natural
 DESCRIPTION=Live Fish
-ITEM={ i_coral 1 i_coral_2 1 i_coral_3 1 i_crab_speckled 1 i_fish_unknown 1 i_fish_minoc_blue 1 i_fish_unknown_2 1 i_fish_unknown_3 1 i_fish_unknown_4 1 i_fish_fandancer 1 i_fish_golden_broadtail 1 i_fish_unknown_5 1 i_fish_unknown_6 1 i_fish_nujelm_honey 1 i_fish_unknown_7 1 i_fish_vesper_reef_tiger 1 i_fish_spotted_bucaneer 1 i_fish_striped_sosarian_swill 1 i_fish_unknown_8 1 i_fish_bones 1 i_frog 1 i_jellyfish 1 i_seahorse 1 i_shrimp_brine 1 i_shell_2 1 i_shell_3 1 i_shrimp 1 i_sea_sponge 1 }
+ITEM={ i_coral 1 i_coral_2 1 i_coral_3 1 i_crab_speckled 1 i_fish_unknown 1 i_fish_minoc_blue 1 i_fish_unknown_2 1 i_fish_unknown_3 1 i_fish_unknown_4 1 i_fish_fandancer 1 i_fish_golden_broadtail 1 i_fish_unknown_5 1 i_fish_unknown_6 1 i_fish_nujelm_honey 1 i_fish_unknown_7 1 i_fish_vesper_reef_tiger 1 i_fish_spotted_bucaneer 1 i_fish_striped_sosarian_swill 1 i_fish_unknown_8 1 i_fish_bones 1 i_frog 1 i_jellyfish 1 i_seahorse 1 i_shrimp_brine 1 i_shell_2 1 i_shell_3 1 i_shrimp 1 }
 
 
 /////////////

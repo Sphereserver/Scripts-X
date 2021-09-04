@@ -1,0 +1,79 @@
+[Function deco_savage_village_ilshenar]
+
+//tribal berry
+serv.newitem=009D0
+new.attr=attr_static
+new.p=1258 752 -74 2
+serv.newitem=009D0
+new.attr=attr_static
+new.p=1259 752 -72 2
+serv.newitem=009D0
+new.attr=attr_static
+new.p=1264 752 -74 2
+serv.newitem=009D0
+new.attr=attr_static
+new.p=1267 752 -73 2
+//tribal paint
+serv.newitem=009EC
+new.attr=attr_static
+new.p=1259 765 -74 2
+//horse dung
+serv.newitem=00F3B
+new.attr=attr_static
+new.p=1276 785 -80 2
+//horse dung
+serv.newitem=00F3C
+new.attr=attr_static
+new.p=1287 777 -80 2
+//spear
+serv.newitem=00F62
+new.attr=attr_static
+new.p=1270 756 -71 2
+serv.newitem=00F62
+new.attr=attr_static
+new.p=1270 756 -70 2
+//mask of orcish kin
+serv.newitem=0141B
+new.attr=attr_static
+new.p=1255 755 -74 2
+serv.newitem=0141B
+new.attr=attr_static
+new.p=1255 760 -74 2
+serv.newitem=0141B
+new.attr=attr_static
+new.p=1255 761 -74 2
+//tribal mask
+serv.newitem=0154B 
+new.color=084C
+new.attr=attr_static
+new.p=1248 702 -74 2
+serv.newitem=0154B 
+new.color=084C
+new.attr=attr_static
+new.p=1258 765 -74 2
+//tribal mask
+serv.newitem=0154B 
+new.color=084E
+new.attr=attr_static
+new.p=1260 765 -74 2
+//tribal mask
+serv.newitem=0154C 
+new.color=0845
+new.attr=attr_static
+new.p=1266 765 -74 2
+//tribal mask
+serv.newitem=0154C 
+new.color=0851
+new.attr=attr_static
+new.p=1257 765 -74 2
+//bolas
+serv.newitem=026AC
+new.attr=attr_static
+new.p=1211 742 -74 2
+serv.newitem=026AC
+new.attr=attr_static
+new.p=1217 740 -74 2
+serv.newitem=026AC
+new.attr=attr_static
+new.p=1270 762 -74 2
+[EOF]

@@ -1,0 +1,35 @@
+[function spawn_abyss_ter_mur]
+
+//##//##//##//##//###
+//## Abyss ##
+//##############//###
+//## By KHzspeed ##
+//##############//###
+//overrideid 601
+//overridemap 6
+//##//overridemintime 5
+//##//overridemaxtime 10
+f_create_spawner,Hydra,,,,,,795,753,53,6,5,10,15,15,1,8,0,0,0,0,0
+f_create_spawner,MaddeningHorror,,,,,,745,739,16,6,5,10,5,5,1,1,0,0,0,0,0
+f_create_spawner,SlasherOfVeils,,,,,,749,475,-17,6,5,10,20,20,1,1,0,0,0,0,0
+f_create_spawner,StygianDragon,,,,,,326,159,20,6,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner,Snake:LavaSnake:CoralSnake:GiantSerpent:Coil,,,,,,716,720,-11,6,5,10,25,25,1,24,0,0,0,0,0
+f_create_spawner,GreaterMongbat:Imp:Daemon:PitFiend:DevourerRenowned,,,,,,992,337,9,6,5,10,20,20,1,35,0,0,0,0,0
+f_create_spawner,ClanChitterAssistant:ClanChitterTinkerer:RakktaviRenowned,,,,,,982,491,-12,6,5,10,18,18,1,15,0,0,0,0,0
+f_create_spawner,ClockworkScorpion,,,,,,981,491,-12,6,5,10,18,18,1,16,0,0,0,0,0
+f_create_spawner,ClanRibbonSupplicant:ClanRibbonCourtier:VitaviRenowned,,,,,,919,502,-12,6,5,10,20,20,1,15,0,0,0,0,0
+f_create_spawner,ClanRibbonPlagueRat,,,,,,918,502,-12,6,5,10,20,20,1,15,0,0,0,0,0
+f_create_spawner,ClanScratchScrounger:ClanScratchHenchrat:TikitaviRenowned,,,,,,949,555,-14,6,5,10,20,20,1,15,0,0,0,0,0
+f_create_spawner,ClanScratchSavageWolf,,,,,,950,555,-14,6,5,10,20,20,1,18,0,0,0,0,0
+f_create_spawner,FireAnt:LavaSnake:LavaLizard:FireGargoyle:Efreet:LavaElemental:FireDaemon:FireElementalRenowned,,,,,,974,161,-11,6,5,10,25,25,1,18,0,0,0,0,0
+f_create_spawner,EnslavedGrayGoblin:EnslavedGreenGoblin:EnslavedGoblinScout:EnslavedGoblinKeeper:EnslavedGreenGoblinAlchemist:EnslavedGoblinMage:GrayGoblinMageRenowned:GreenGoblinAlchemistRenowned,,,,,,581,815,-45,6,5,10,25,25,1,30,0,0,0,0,0
+f_create_spawner,LavaLizard:LavaSnake:FireAnt:HellCat:LavaSerpent:HellHound:LavaElemental:FireDaemon:FireDaemonRenowned,,,,,,526,766,-92,6,5,10,20,20,1,25,0,0,0,0,0
+f_create_spawner,Skeleton:Wraith:SkeletalMage:WailingBanshee:SkeletalLich:RottingCorpse:AncientLichRenowned,,,,,,536,657,8,6,5,10,34,34,1,35,0,0,0,0,0
+f_create_spawner,LavaLizard:LavaSnake:FireAnt:HellHound:LavaSerpent:LavaElemental:FireDaemon:FireDaemonRenowned,,,,,,601,905,-60,6,5,10,35,35,1,38,0,0,0,0,0
+f_create_spawner,Medusa,,,,,,818,927,-15,6,5,10,15,15,1,1,0,0,0,0,0
+f_create_spawner,CorrosiveSlime:AcidSlug:AcidElemental:InterredGrizzle:AcidElementalRenowned,,,,,,684,579,-15,6,5,10,35,35,1,32,0,0,0,0,0
+f_create_spawner,Pixie:Wisp:DarkWisp:PixieRenowned,,,,,,440,708,24,6,5,10,35,35,1,30,0,0,0,0,0
+f_create_spawner,Skeleton:PatchworkSkeleton:SkeletalKnight:BoneKnight:SkeletalMage:BoneMagi:SkeletalLich:SkeletalDragonRenowned,,,,,,674,828,-109,6,5,10,25,25,1,30,0,0,0,0,0
+f_create_spawner,FairyDragon:Wyvern:ForgottenServant:WyvernRenowned,,,,,,887,277,3,6,5,10,20,20,1,35,0,0,0,0,0
+
+[eof]

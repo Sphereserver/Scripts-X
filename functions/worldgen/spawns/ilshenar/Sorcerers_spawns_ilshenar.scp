@@ -1,0 +1,54 @@
+[function spawn_sorcerers_ilshenar]
+
+
+//##############
+//## By Nerun ##
+//##############
+//overrideid 309
+//overridemintime 5
+//overridemaxtime 10
+//##
+//## Sorcerers Dungeon
+//##
+//## Level 1
+//##
+f_create_spawner,Zombie,,,,,,427,67,-28,3,5,10,25,25,1,2,0,0,0,0,0
+f_create_spawner,AcidElemental:Fireelemental:Bloodelemental,,,,,,455,70,-28,3,5,10,10,7,1,5,0,0,0,0,0
+f_create_spawner,Shade,Mongbat,,,,,394,69,-28,3,5,10,15,10,1,2,5,0,0,0,0
+f_create_spawner,Gargoyle,Stonegargoyle,Lich,Shade,,,447,19,-28,3,5,10,25,10,1,3,1,1,1,0,0
+f_create_spawner,Headlessone,Mongbat,,,,,431,16,-28,3,5,10,15,5,1,2,2,0,0,0,0
+f_create_spawner,Headlessone,Mongbat,,,,,462,16,-28,3,5,10,15,5,1,2,2,0,0,0,0
+f_create_spawner,Earthelemental,,,,,,462,16,-28,3,5,10,15,5,1,2,0,0,0,0,0
+f_create_spawner,Bloodelemental,,,,,,383,29,-28,3,5,10,10,5,1,1,0,0,0,0,0
+f_create_spawner,Skeleton,Boneknight,,,,,427,95,-28,3,5,10,15,10,1,4,2,0,0,0,0
+//##
+//## Level 2
+//##
+f_create_spawner,Bloodelemental,,,,,,254,20,-28,3,5,10,10,5,1,1,0,0,0,0,0
+f_create_spawner,Eldergazer,Gazer,Gazerlarva,,,,281,20,-28,3,5,10,15,10,1,1,4,2,0,0,0
+f_create_spawner,Balron,Daemon,,,,,238,48,-28,3,5,10,10,7,1,1,2,0,0,0,0
+f_create_spawner,Imp,,,,,,214,67,-28,3,5,10,40,15,1,4,0,0,0,0,0
+f_create_spawner,Shade,Zombie,Dreadspider,,,,262,84,-28,3,5,10,25,15,1,1,1,1,0,0,0
+f_create_spawner,Gargoyle,Wyvern,Evilmage,,,,262,84,-28,3,5,10,15,15,1,2,1,3,0,0,0
+f_create_spawner,Hellhound,Bloodelemental,,,,,278,53,-28,3,5,10,20,10,1,6,1,0,0,0,0
+f_create_spawner,Dullcopperelemental,,,,,,305,20,-28,3,5,10,20,10,1,5,0,0,0,0,0
+f_create_spawner,Lichlord,,,,,,310,92,-13,3,5,10,20,20,1,2,0,0,0,0,0
+f_create_spawner,Poisonelemental,Bloodelemental,,,,,311,91,-13,3,5,10,20,20,1,1,1,0,0,0,0
+f_create_spawner,Gargoyle,,,,,,336,37,-28,3,5,10,10,8,1,2,0,0,0,0,0
+f_create_spawner,Gargoyle,,,,,,336,48,-28,3,5,10,10,8,1,2,0,0,0,0,0
+f_create_spawner,Lich:Shade,,,,,,336,42,-28,3,5,10,15,8,1,1,0,0,0,0,0
+f_create_spawner,Bloodelemental,,,,,,350,42,-28,3,5,10,10,10,1,1,0,0,0,0,0
+//##
+//## Level 3
+//##
+f_create_spawner,Bloodelemental,,,,,,146,83,-28,3,5,10,20,10,1,1,0,0,0,0,0
+f_create_spawner,Evilmagelord,,,,,,143,70,-28,3,5,10,20,10,1,1,0,0,0,0,0
+f_create_spawner,Bloodelemental,,,,,,160,59,-28,3,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner,Balron,Eldergazer,,,,,155,21,-28,3,5,10,15,10,1,2,1,0,0,0,0
+f_create_spawner,Efreet,,,,,,160,9,-28,3,5,10,5,4,1,2,0,0,0,0,0
+f_create_spawner,Bonemagi:Skeletalmage,Mummy,,,,,109,44,-28,3,5,10,20,15,1,4,3,0,0,0,0
+f_create_spawner,Lichlord,Mummy,,,,,67,70,-28,3,5,10,15,15,1,2,4,0,0,0,0
+f_create_spawner,Boneknight:Skeletalknight,,,,,,133,114,-28,3,5,10,25,20,1,1,0,0,0,0,0
+f_create_spawner,Bloodelemental,,,,,,133,114,-28,3,5,10,20,10,1,1,0,0,0,0,0
+
+[EOF]

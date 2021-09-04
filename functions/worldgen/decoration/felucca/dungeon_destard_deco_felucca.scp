@@ -1,0 +1,1325 @@
+[FUNCTION deco_destard_felucca]
+
+//crate
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5177 1013 0
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5247 838 20
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5247 838 23
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5312 802 0
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5313 802 0
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5313 802 3
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5320 776 0
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5144 870 0
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5153 859 3
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5177 1014 0
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5177 1014 3
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5178 1014 0
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5153 859 0
+serv.newitem=0E3C
+new.attr=attr_static
+new.p=5154 859 0
+
+//stalagmites
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5149 962 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5145 960 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5142 960 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5140 958 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5139 957 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5131 965 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5131 967 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5131 968 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5131 969 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5131 970 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5132 972 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5136 978 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5132 987 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5133 990 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5153 999 0
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5153 1001 8
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5153 1001 0
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5155 1001 1
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5153 1004 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5153 1005 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5153 1006 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5155 1008 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5158 1011 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5165 991 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5166 991 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5136 976 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5151 962 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5150 962 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5148 962 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5147 962 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5147 961 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5146 961 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5143 960 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5142 959 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5141 959 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5140 957 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5131 972 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5132 973 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5133 973 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5133 974 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5134 975 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5135 975 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5135 976 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5135 978 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5135 979 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5134 979 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5133 980 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5132 980 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5132 981 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5132 982 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5132 984 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5132 985 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5132 986 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5132 988 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5132 989 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5133 991 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5133 992 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5133 993 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5133 994 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5133 995 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5155 1000 11
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5152 999 0
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5151 999 0
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5155 1002 1
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5153 1006 35
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5154 1007 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5145 961 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5160 991 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5161 991 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5162 991 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5163 991 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5164 991 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5136 977 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5154 1001 0
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5144 960 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5141 958 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5131 966 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5132 983 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5156 1009 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5159 1011 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5167 992 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5134 974 25
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5155 999 1
+new.type=t_normal
+
+serv.newitem=08E9
+new.attr=attr_static
+new.p=5157 1010 25
+new.type=t_normal
+
+//metal chest
+serv.newitem=09AB
+new.attr=attr_static
+new.p=5160 910 0
+serv.newitem=09AB
+new.attr=attr_static
+new.p=5236 938 -33
+serv.newitem=09AB
+new.attr=attr_static
+new.p=5136 994 0
+serv.newitem=09AB
+new.attr=attr_static
+new.p=5307 810 0
+
+//blood
+serv.newitem=0122D
+new.attr=attr_static
+new.p=5217 907 -30
+serv.newitem=0122D
+new.attr=attr_static
+new.p=5245 954 -30
+serv.newitem=0122D
+new.attr=attr_static
+new.p=5133 844 0
+serv.newitem=0122D
+new.attr=attr_static
+new.p=5274 969 -40
+serv.newitem=0122D
+new.attr=attr_static
+new.p=5268 948 -33
+serv.newitem=0122D
+new.attr=attr_static
+new.p=5147 862 0
+serv.newitem=0122D
+new.attr=attr_static
+new.p=5277 933 -40
+serv.newitem=0122D
+new.attr=attr_static
+new.p=5264 925 -27
+serv.newitem=0122D
+new.attr=attr_static
+new.p=5153 874 10
+serv.newitem=0122D
+new.attr=attr_static
+new.p=5173 957 0
+serv.newitem=0122D
+new.attr=attr_static
+new.p=5247 969 -40
+serv.newitem=0122D
+new.attr=attr_static
+new.p=5247 898 -30
+serv.newitem=0122D
+new.attr=attr_static
+new.p=5192 969 0
+
+//stalagmites
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5163 1004 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5138 957 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5134 957 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5133 957 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5133 958 35
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5132 959 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5170 993 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5131 962 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5165 996 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5166 997 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5166 999 8
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5160 998 -2
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5164 1000 5
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5165 999 -2
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5165 1000 -5
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5162 1001 -5
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5164 1001 -5
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5166 1002 -2
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5168 1002 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5169 993 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5160 1003 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5137 957 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5135 957 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5133 958 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5131 958 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5131 959 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5131 960 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5131 961 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5131 963 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5131 964 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5161 996 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5162 996 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5163 996 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5160 997 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5161 997 -2
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5163 997 -2
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5164 997 -2
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5167 998 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5167 999 10
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5164 998 -2
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5164 999 5
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5162 999 5
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5161 999 5
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5160 999 -2
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5161 999 -5
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5162 999 -5
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5164 999 -5
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5166 999 -2
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5168 999 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5168 1000 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5166 1000 -2
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5164 1000 -5
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5162 1000 -5
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5161 1000 -5
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5160 1000 -2
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5166 1003 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5164 1003 -2
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5160 1004 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5163 1002 -5
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5171 993 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5172 993 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5173 995 35
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5173 996 35
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5173 995 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5174 996 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5174 998 35
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5174 999 35
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5174 998 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5175 999 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5176 999 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5177 999 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5175 1000 12
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5162 1004 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5136 957 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5164 1004 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5165 1004 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5132 958 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5160 996 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5162 997 -2
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5163 999 5
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5164 1001 5
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5160 1001 -2
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5161 1001 -2
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5163 1001 -5
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5166 1002 8
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5168 1003 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5165 1003 -2
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5163 1003 -2
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5162 1003 -2
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5161 1003 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5161 1004 0
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5168 993 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5173 996 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5174 999 25
+
+serv.newitem=08EA
+new.attr=attr_static
+new.p=5178 999 25
+
+//wooden chest
+serv.newitem=0E43
+new.attr=attr_static
+new.p=5133 849 0
+serv.newitem=0E43
+new.attr=attr_static
+new.p=5324 977 0
+serv.newitem=0E43
+new.attr=attr_static
+new.p=5154 993 0
+serv.newitem=0E43
+new.attr=attr_static
+new.p=5309 803 0
+
+//metal chest
+serv.newitem=0E41
+new.attr=attr_static
+new.p=5285 850 0
+serv.newitem=0E41
+new.attr=attr_static
+new.p=5136 959 0
+serv.newitem=0E41
+new.attr=attr_static
+new.p=5175 830 1
+serv.newitem=0E41
+new.attr=attr_static
+new.p=5249 940 -39
+
+//crate
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5144 907 0
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5311 982 0
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5311 982 3
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5311 983 0
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5311 983 3
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5311 983 6
+serv.newitem=0E3D
+new.attr=attr_static
+new.p=5312 983 0
+
+//empty tub
+serv.newitem=0E83
+new.attr=attr_static
+new.p=5178 845 0
+serv.newitem=0E83
+new.attr=attr_static
+new.p=5176 848 0
+
+//blood smear
+serv.newitem=0122F
+new.attr=attr_static
+new.p=5263 981 -30
+serv.newitem=0122F
+new.attr=attr_static
+new.p=5271 980 -27
+serv.newitem=0122F
+new.attr=attr_static
+new.p=5265 916 -40
+serv.newitem=0122F
+new.attr=attr_static
+new.p=5254 956 -30
+serv.newitem=0122F
+new.attr=attr_static
+new.p=5177 958 0
+serv.newitem=0122F
+new.attr=attr_static
+new.p=5200 964 -27
+serv.newitem=0122F
+new.attr=attr_static
+new.p=5183 956 0
+serv.newitem=0122F
+new.attr=attr_static
+new.p=5248 970 -30
+
+//metal chest
+serv.newitem=0E40
+new.attr=attr_static
+new.p=5239 944 -40
+serv.newitem=0E40
+new.attr=attr_static
+new.p=5262 899 -40
+serv.newitem=0E40
+new.attr=attr_static
+new.p=5151 990 0
+serv.newitem=0E40
+new.attr=attr_static
+new.p=5303 809 0
+serv.newitem=0E40
+new.attr=attr_static
+new.p=5325 983 0
+serv.newitem=0E40
+new.attr=attr_static
+new.p=5175 1010 0
+
+//blood
+serv.newitem=0122E
+new.attr=attr_static
+new.p=5247 924 -40
+serv.newitem=0122E
+new.attr=attr_static
+new.p=5183 956 0
+serv.newitem=0122E
+new.attr=attr_static
+new.p=5142 862 10
+serv.newitem=0122E
+new.attr=attr_static
+new.p=5246 897 -40
+serv.newitem=0122E
+new.attr=attr_static
+new.p=5181 958 0
+serv.newitem=0122E
+new.attr=attr_static
+new.p=5221 935 -39
+serv.newitem=0122E
+new.attr=attr_static
+new.p=5130 851 10
+serv.newitem=0122E
+new.attr=attr_static
+new.p=5255 947 -34
+//stalagmites
+serv.newitem=08E4
+new.attr=attr_static
+new.p=5246 837 20
+//mushroom
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5257 790 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5250 850 4
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5146 905 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5132 841 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5124 904 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5128 898 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5129 898 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5129 899 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5130 898 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5137 901 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5134 847 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5137 902 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5139 905 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5134 840 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5136 843 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5250 794 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5255 794 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5256 793 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5257 794 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5242 788 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5245 791 0
+serv.newitem=0D16
+new.attr=attr_static
+new.p=5131 899 0
+
+//metal chest
+serv.newitem=0E7C
+new.attr=attr_static
+new.p=5157 901 0
+serv.newitem=0E7C
+new.attr=attr_static
+new.p=5133 964 0
+serv.newitem=0E7C
+new.attr=attr_static
+new.p=5133 967 0
+
+//bones
+serv.newitem=0ED1
+new.attr=attr_static
+new.p=5139 831 0
+
+//blood
+serv.newitem=0122B
+new.attr=attr_static
+new.p=5271 968 -40
+serv.newitem=0122B
+new.attr=attr_static
+new.p=5217 907 -30
+serv.newitem=0122B
+new.attr=attr_static
+new.p=5221 935 -39
+serv.newitem=0122B
+new.attr=attr_static
+new.p=5250 909 -37
+serv.newitem=0122B
+new.attr=attr_static
+new.p=5140 857 0
+serv.newitem=0122B
+new.attr=attr_static
+new.p=5192 970 10
+serv.newitem=0122B
+new.attr=attr_static
+new.p=5194 961 0
+serv.newitem=0122B
+new.attr=attr_static
+new.p=5175 957 0
+
+//wooden chest
+serv.newitem=0E42
+new.attr=attr_static
+new.p=5205 778 0
+serv.newitem=0E42
+new.attr=attr_static
+new.p=5311 981 0
+serv.newitem=0E42
+new.attr=attr_static
+new.p=5311 985 0
+serv.newitem=0E42
+new.attr=attr_static
+new.p=5175 1009 0
+serv.newitem=0E42
+new.attr=attr_static
+new.p=5175 1011 0
+serv.newitem=0E42
+new.attr=attr_static
+new.p=5163 864 0
+
+//barrel
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5176 1014 0
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5179 1014 0
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5176 1013 0
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5176 1014 5
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5229 828 2
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5314 776 0
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5228 828 1
+
+//small crate
+serv.newitem=09A9
+new.attr=attr_static
+new.p=5304 809 0
+
+//crate
+serv.newitem=0E3E
+new.attr=attr_static
+new.p=5277 804 1
+serv.newitem=0E3E
+new.attr=attr_static
+new.p=5196 918 -40
+
+//blood
+serv.newitem=0122C
+new.attr=attr_static
+new.p=5184 939 0
+serv.newitem=0122C
+new.attr=attr_static
+new.p=5271 968 -40
+serv.newitem=0122C
+new.attr=attr_static
+new.p=5181 956 0
+serv.newitem=0122C
+new.attr=attr_static
+new.p=5234 988 -15
+serv.newitem=0122C
+new.attr=attr_static
+new.p=5278 929 -40
+serv.newitem=0122C
+new.attr=attr_static
+new.p=5217 912 -30
+
+//flowstone
+serv.newitem=08E2
+new.attr=attr_static
+new.p=5139 799 0
+
+//blood
+serv.newitem=0122A
+new.attr=attr_static
+new.p=5217 907 -30
+serv.newitem=0122A
+new.attr=attr_static
+new.p=5180 954 0
+serv.newitem=0122A
+new.attr=attr_static
+new.p=5202 963 -29
+serv.newitem=0122A
+new.attr=attr_static
+new.p=5244 990 -28
+
+//dirty pot
+serv.newitem=09E6
+new.attr=attr_static
+new.p=5153 873 0
+
+//knife
+serv.newitem=09A6
+new.attr=attr_static
+new.p=5153 871 0
+
+//flowstone
+serv.newitem=08E3
+new.attr=attr_static
+new.p=5140 799 0
+
+//stalagmites
+serv.newitem=08E1
+new.attr=attr_static
+new.p=5140 801 0
+serv.newitem=08E1
+new.attr=attr_static
+new.p=5139 802 0
+serv.newitem=08E1
+new.attr=attr_static
+new.p=5139 800 0
+serv.newitem=08E1
+new.attr=attr_static
+new.p=5140 800 0
+//crate
+serv.newitem=0E3F
+new.attr=attr_static
+new.p=5311 800 0
+//key ring
+serv.newitem=01011
+new.attr=attr_static
+new.p=5310 804 0
+//mace
+serv.newitem=0F5C
+new.attr=attr_static
+new.p=5308 805 0
+//spoon
+serv.newitem=09C3
+new.attr=attr_static
+new.p=5152 869 0
+//kettle
+serv.newitem=09ED
+new.attr=attr_static
+new.p=5152 873 0
+//dirty pot
+serv.newitem=09DC
+new.attr=attr_static
+new.p=5153 868 0
+//spoon
+serv.newitem=09F9
+new.attr=attr_static
+new.p=5157 869 0
+//dirty pot
+serv.newitem=09DF
+new.attr=attr_static
+new.p=5156 869 0
+serv.newitem=09DF
+new.attr=attr_static
+new.p=5201 913 -40
+//bowl of lettuce
+serv.newitem=01600
+new.attr=attr_static
+new.p=5156 868 0
+//iron fence
+serv.newitem=0821
+new.attr=attr_static
+new.p=5196 793 0
+serv.newitem=0821
+new.attr=attr_static
+new.p=5196 794 0
+serv.newitem=0821
+new.attr=attr_static
+new.p=5196 795 0
+//dirty frypan
+serv.newitem=09DE
+new.attr=attr_static
+new.p=5201 912 -40
+
+[eof]

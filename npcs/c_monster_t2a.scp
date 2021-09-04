@@ -1038,8 +1038,8 @@ ON=@Createloot
     ITEM=i_gold,{125 175}
     ITEM={random_first_circle 1 random_second_circle 1}
     ITEM={random_third_circle 1 random_fifth_circle 1}
-    ITEM=random_reagents,5
-    ITEM=random_reagents,5
+    ITEM=random_reagent,5
+    ITEM=random_reagent,5
     ITEM=i_treasure_map2,R99
 
 
@@ -1264,7 +1264,53 @@ ON=@Create
 
 ON=@Createloot
     ITEM=loot_serpent_lava
+	
+[CHARDEF 05c]
+//Coil is the named Silver Serpent from the Blighted Grove
+DEFNAME=c_serpent_coil
+NAME=Coil
+ICON=i_pet_snake_giant
+SOUND=snd_animals_snake1
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=14,23
+ARMOR=50
+DESIRES=r_dungeon_blighted_grove,t_coin,t_gold,t_gem
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=t_meat_raw
+MAXFOOD=35
+RESOURCES=4 i_ribs_raw,15 i_hide_spined
+TAG.Barding.Diff=136.7
+DamPoison=50
+TAG.HitPoison=5    //Lethal
+TAG.SlayerGroup=SNAKE,REPTILE
+TEVENTS=e_carnivores2
+CATEGORY=Monsters
+SUBSECTION=Reptiles
+DESCRIPTION=Serpent (Coil)
 
+ON=@Create
+    COLOR=colors_green
+    NPC=brain_monster
+    FAME={2000 2499}
+    KARMA={-2000 -2499}
+    STR={205 335}
+    MAXHITS={1075 1170}
+    DEX={215 365}
+    MAXSTAM={215 365}
+    INT={90 130}
+    MAXMANA={90 130}
+    ANATOMY={120.0 135.0}
+    MAGICRESISTANCE={110.0 120.0}
+    POISONING={115.0 125.0}
+    TACTICS={130.0 140.0}
+    WRESTLING={125.0 135.0}
+    RESPHYSICAL={0 10}
+    RESCOLD={25 30}
+    RESENERGY={25 30}
+    RESFIRE={20 30}
+    RESPOISON=100
+ON=@CreateLoot
+    ITEM=loot_serpent_coil
 
 [CHARDEF 05e]
 DEFNAME=c_frostooze

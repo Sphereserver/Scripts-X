@@ -1,0 +1,120 @@
+[function deco_gargoyle_mining_camp]
+
+// stalagmites
+SERV.NEWITEM=008E1
+new.attr=attr_static 
+new.p=707 667 -37 2
+SERV.NEWITEM=008E1
+new.attr=attr_static 
+new.p=709 667 -16 2
+// flowstone
+SERV.NEWITEM=008E2
+new.attr=attr_static 
+new.p=708 667 -38 2
+// stalagmites
+SERV.NEWITEM=008E4
+new.attr=attr_static 
+new.p=710 667 -10 2
+SERV.NEWITEM=008E4
+new.attr=attr_static 
+new.p=714 668 -29 2
+// stalagmites
+SERV.NEWITEM=008E5
+new.attr=attr_static 
+new.p=712 667 -9 2
+// flowstone
+SERV.NEWITEM=008E6
+new.attr=attr_static 
+new.p=710 667 -17 2
+SERV.NEWITEM=008E6
+new.attr=attr_static 
+new.p=712 667 -15 2
+// flowstone
+SERV.NEWITEM=008E8
+new.attr=attr_static 
+new.p=712 667 -38 2
+SERV.NEWITEM=008E8
+new.attr=attr_static 
+new.p=713 667 -37 2
+// anvil
+SERV.NEWITEM=00FAF
+new.attr=attr_static 
+new.p=947 413 -80 2
+SERV.NEWITEM=00FAF
+new.attr=attr_static 
+new.p=958 421 -80 2
+SERV.NEWITEM=00FAF
+new.attr=attr_static 
+new.p=958 422 -80 2
+// forge
+SERV.NEWITEM=00FB1
+new.attr=attr_static 
+new.p=946 413 -80 2
+// sledge hammer
+SERV.NEWITEM=00FB4
+new.attr=attr_static 
+new.p=957 427 -74 2
+// sledge hammer
+SERV.NEWITEM=00FB5
+new.attr=attr_static 
+new.p=955 415 -74 2
+// tapestry
+SERV.NEWITEM=00FE1 
+NEW.COLOR=01
+NEW.Name=a cave entrance
+new.attr=attr_static 
+new.p=709 667 -42 2
+// tapestry
+SERV.NEWITEM=00FE2 
+NEW.COLOR=01
+NEW.Name=a cave entrance
+new.attr=attr_static 
+new.p=710 667 -42 2
+SERV.NEWITEM=00FE2 
+NEW.COLOR=01
+NEW.Name=a cave entrance
+new.attr=attr_static 
+new.p=711 667 -42 2
+// butcher knife
+SERV.NEWITEM=013F6
+new.attr=attr_static 
+new.p=864 468 7 2
+// rock
+SERV.NEWITEM=01774
+new.attr=attr_static 
+new.p=706 668 -36 2
+// rock
+SERV.NEWITEM=01776
+new.attr=attr_static 
+new.p=711 667 -16 2
+// bellows
+SERV.NEWITEM=01992
+new.attr=attr_static 
+new.p=958 420 -80 2
+SERV.NEWITEM=01992
+new.attr=attr_static 
+new.p=958 425 -80 2
+// forge
+SERV.NEWITEM=01996
+new.attr=attr_static 
+new.p=958 419 -80 2
+SERV.NEWITEM=01996
+new.attr=attr_static 
+new.p=958 424 -80 2
+// forge
+SERV.NEWITEM=0199A
+new.attr=attr_static 
+new.p=958 418 -80 2
+SERV.NEWITEM=0199A
+new.attr=attr_static 
+new.p=958 423 -80 2
+// nodraw
+SERV.NEWITEM=02198
+new.attr=attr_static 
+new.p=911 451 -80 2
+new.attr=attr_static 
+new.p=911 452 -80 2
+new.attr=attr_static 
+new.p=911 453 -80 2
+
+[EOF]

@@ -1,0 +1,146 @@
+[function deco_uzeraan_turmoil_quest_trammel]	
+
+// a magical teleporter//
+serv.newitem=01822//
+new.attr=attr_static 
+new.p=3597 2582 0 1//
+// metal chest//
+serv.newitem=09AB//
+new.attr=attr_static 
+new.p=3456 2558 50 1//
+// Schmendrick cave teleporter//
+serv.newitem=01822//
+new.attr=attr_static 
+new.p=5260 1841 0 1//
+//
+serv.newitem=01BC3 //
+new.morep=3613 2592 0 1//
+new.type=t_telepad
+new.name=teleporter
+new.attr=attr_static|attr_invis 
+new.p=5260 1841 0 1//
+// fire//
+serv.newitem=019AB//
+new.attr=attr_static 
+new.p=5210 1817 0 1//
+serv.newitem= 019AB
+new.attr=attr_static 
+new.p=5211 1814 0 1//
+serv.newitem= 019AB
+new.attr=attr_static 
+new.p=5205 1818 0 1//
+// sparkle//
+serv.newitem=0374A//
+new.type=t_normal
+new.attr=attr_static 
+new.p=5208 1817 0 1//
+// sparkle//
+serv.newitem=0377A//
+new.type=t_normal
+new.attr=attr_static 
+new.p=5209 1815 0 1//
+// sparkle//
+serv.newitem=0376A//
+new.type=t_normal
+new.attr=attr_static 
+new.p=5208 1815 0 1//
+// magical sparkles//
+serv.newitem=01153//
+new.type=t_normal
+new.attr=attr_static 
+new.p=5207 1816 0 1//
+serv.newitem= 01153//
+new.type=t_normal
+new.attr=attr_static 
+new.p=5260 1842 0 1//
+serv.newitem= 01153//
+new.type=t_normal
+new.attr=attr_static 
+new.p=5261 1841 0 1//
+// death vortex//
+serv.newitem=03789//
+new.type=t_normal
+new.attr=attr_static 
+new.p=5208 1815 0 1//
+// magical sparkles//
+serv.newitem=01156//
+new.type=t_normal
+new.attr=attr_static 
+new.p=5261 1841 0 1//
+serv.newitem= 01156//
+new.type=t_normal
+new.attr=attr_static 
+new.p=5261 1842 0 1//
+// cannon south//
+serv.newitem=0e8b//
+new.attr=attr_static 
+new.p=3678 2768 33 1//
+serv.newitem= 0e8b
+new.attr=attr_static 
+new.p=3675 2767 31 1//
+serv.newitem= 0e8b
+new.attr=attr_static 
+new.p=3593 2810 50 1//
+// cannon west//
+serv.newitem=0e94//
+new.attr=attr_static 
+new.p=3681 2776 39 1//
+serv.newitem= 0e94
+new.attr=attr_static 
+new.p=3683 2779 44 1//
+serv.newitem= 0e94
+new.attr=attr_static 
+new.p=3659 2790 47 1//
+serv.newitem= 0e94
+new.attr=attr_static 
+new.p=3705 2832 29 1//
+// cannon east//
+serv.newitem=0e8e//
+new.attr=attr_static 
+new.p=3662 2795 68 1//
+serv.newitem= 0e8e
+new.attr=attr_static 
+new.p=3596 2807 50 1//
+// cannon north//
+serv.newitem=0e91//
+new.attr=attr_static 
+new.p=3593 2804 50 1//
+serv.newitem=0e91 
+new.attr=attr_static 
+new.p=3702 2837 33 1//
+// cannon balls//
+serv.newitem=0E74//
+new.attr=attr_static 
+new.p=3706 2833 24 1//
+serv.newitem= 0E74
+new.attr=attr_static 
+new.p=3595 2808 49 1//
+serv.newitem= 0E74
+new.attr=attr_static 
+new.p=3594 2808 50 1//
+serv.newitem= 0E74
+new.attr=attr_static 
+new.p=3663 2793 67 1//
+serv.newitem= 0E74
+new.attr=attr_static 
+new.p=3661 2791 53 1//
+serv.newitem= 0E74
+new.attr=attr_static 
+new.p=3662 2793 67 1//
+serv.newitem= 0E74
+new.attr=attr_static 
+new.p=3676 2768 32 1//
+serv.newitem= 0E74
+new.attr=attr_static 
+new.p=3676 2767 31 1//
+serv.newitem= 0E74
+new.attr=attr_static 
+new.p=3682 2777 41 1//
+serv.newitem= 0E74
+new.attr=attr_static 
+new.p=3683 2777 42 1//
+serv.newitem= 0E74
+new.attr=attr_static 
+new.p=3681 2777 40 1//
+
+[EOF]	

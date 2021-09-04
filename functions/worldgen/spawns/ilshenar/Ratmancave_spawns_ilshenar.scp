@@ -1,0 +1,23 @@
+[function spawn_ratman_cave_ilshenar]
+
+//##############
+//## By Nerun ##
+//##############
+//overrideid 307
+//overridemintime 5
+//overridemaxtime 10
+//##
+//## Ratman Cave
+//##
+//## Level 1
+//##
+f_create_spawner,Ratman,Ratmanmage,Earthelemental,,,,1310,1519,-28,3,5,10,50,50,1,7,7,7,0,0,0
+//##
+//## Level 2
+//##
+f_create_spawner,Skeletalknight:Boneknight,Lavalizard,,,,,1224,1524,-28,3,5,10,30,30,1,5,5,0,0,0,0
+f_create_spawner,Skeletalknight:Boneknight,Lavalizard,,,,,1224,1494,-28,3,5,10,30,30,1,5,5,0,0,0,0
+f_create_spawner,Skeletaldragon,,,,,,1181,1512,-68,3,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner,TreasureLevel3:TreasureLevel4,,,,,,1171,1511,-68,3,5,10,5,5,1,1,0,0,0,0,0
+
+[EOF]

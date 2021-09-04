@@ -1,0 +1,127 @@
+[function deco_twinoaks_inn_ilshenar]
+
+// fireplace
+serv.newitem=0959
+new.attr=attr_static 
+new.p=1547 1050 -7 2
+serv.newitem=0959
+new.attr=attr_static 
+new.p=1547 1050 13 2
+// fireplace
+serv.newitem=0961
+new.attr=attr_static 
+new.p=1556 1038 13 2
+// crate
+serv.newitem=0E3E
+new.attr=attr_static 
+new.p=1549 1040 -1 2
+// clock
+serv.newitem=0104B
+new.attr=attr_static 
+new.p=1548 1051 8 2
+// wooden door
+serv.newitem=06A7
+new.attr=attr_static 
+new.p=1549 1048 13 2
+serv.newitem=06A7
+new.attr=attr_static 
+new.p=1556 1048 13 2
+serv.newitem=06A7
+new.attr=attr_static 
+new.p=1562 1048 13 2
+// wooden door
+serv.newitem=06AB
+new.attr=attr_static 
+new.p=1556 1043 13 2
+// wooden door
+serv.newitem=06EF
+new.attr=attr_static 
+new.p=1565 1046 -7 2
+// wooden door
+serv.newitem=06ED
+new.attr=attr_static 
+new.p=1565 1047 -7 2
+// dartboard
+serv.newitem=01E2F
+new.attr=attr_static 
+new.p=1547 1046 -7 2
+// crate
+serv.newitem=0E3C
+new.attr=attr_static 
+new.p=1549 1040 -4 2
+serv.newitem=0E3C
+new.attr=attr_static 
+new.p=1549 1040 -7 2
+serv.newitem=0E3C
+new.attr=attr_static 
+new.p=1549 1051 -27 2
+serv.newitem=0E3C
+new.attr=attr_static 
+new.p=1549 1052 -27 2
+serv.newitem=0E3C
+new.attr=attr_static 
+new.p=1549 1052 -24 2
+// dartboard w/knives
+serv.newitem=01E33
+new.attr=attr_static 
+new.p=1547 1048 -7 2
+// crate
+serv.newitem=0E3F
+new.attr=attr_static 
+new.p=1549 1049 -27 2
+// chest of drawers
+serv.newitem=0A34
+new.attr=attr_static 
+new.p=1553 1049 13 2
+// armoire
+serv.newitem=0A53
+new.attr=attr_static 
+new.p=1553 1052 13 2
+serv.newitem=0A53
+new.attr=attr_static 
+new.p=1560 1054 13 2
+// dresser
+serv.newitem=0A3D
+new.attr=attr_static 
+new.p=1558 1038 13 2
+// dresser
+serv.newitem=0A3C
+new.attr=attr_static 
+new.p=1559 1038 13 2
+// armoire
+serv.newitem=0A4D
+new.attr=attr_static 
+new.p=1561 1038 13 2
+// bottle of liquor
+serv.newitem=099B
+new.attr=attr_static 
+new.p=1555 1052 -21 2
+// chest of drawers
+serv.newitem=0A2C
+new.attr=attr_static 
+new.p=1564 1049 13 2
+// Tavern
+serv.newitem=0BC3
+new.attr=attr_static 
+new.p=1566 1049 -6 2
+// water barrel
+serv.newitem=0154D
+new.attr=attr_static 
+new.p=1555 1041 -7 2
+// fireplace
+serv.newitem=0960
+new.attr=attr_static 
+new.p=1555 1038 13 2
+serv.newitem=0953
+new.attr=attr_static 
+new.p=1547 1051 13 2
+
+serv.newitem=0953
+new.attr=attr_static 
+new.p=1547 1051 -6 2
+// fireplace
+serv.newitem=095F
+new.attr=attr_static 
+new.p=1556 1038 13 2
+
+[eof]

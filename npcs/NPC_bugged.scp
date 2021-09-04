@@ -1,0 +1,99 @@
+[CHARDEF 0eb]
+////Partial animation - troll with club - no corpse - dont use
+NAME=0eb
+CAN=MT_NONMOVER|MT_NONHUM
+
+[CHARDEF 0ef]
+////No animation - no corpse - dont use
+NAME=0EF
+CAN=MT_NONMOVER|MT_NONHUM
+
+[CHARDEF 0112]
+////No animation - dont use
+NAME=0122
+CAN=MT_NONMOVER|MT_NONHUM
+
+[CHARDEF 0113]
+////No animation - dont use
+NAME=0113
+CAN=MT_NONMOVER|MT_NONHUM
+
+[CHARDEF 011e]
+////No animation - dont use
+NAME=011e
+CAN=MT_NONMOVER|MT_NONHUM
+
+[CHARDEF 0120]
+////No animation - dont use
+NAME=0120
+CAN=MT_NONMOVER|MT_NONHUM
+
+[CHARDEF 0121]
+////No animation - dont use
+NAME=0121
+CAN=MT_NONMOVER|MT_NONHUM
+
+[CHARDEF 0126]
+////No animation - dont use
+NAME=0126
+CAN=MT_NONMOVER|MT_NONHUM
+
+[CHARDEF 0127]
+////Partial animation - Dolphin - no corpse - dont use
+NAME=Dauphin 0127
+CAN=MT_NONMOVER|MT_NONHUM
+
+[CHARDEF 0128]
+////No animation - dont use
+NAME=0128
+CAN=MT_NONMOVER|MT_NONHUM
+
+[CHARDEF 0129]
+////No animation - dont use
+NAME=0129
+CAN=MT_NONMOVER|MT_NONHUM
+
+[CHARDEF 012a]
+////No animation - dont use
+NAME=012a
+CAN=MT_NONMOVER|MT_NONHUM
+
+[CHARDEF 012b]
+////No animation - dont use
+NAME=012b
+CAN=MT_NONMOVER|MT_NONHUM
+
+[CHARDEF 02db]
+//No animation - dont use
+NAME=02db
+CAN=MT_NONMOVER|MT_NONHUM
+
+
+[CHARDEF 0312]
+//partial animation - dont use
+NAME=Araignee inconnue 0312
+CAN=MT_NONMOVER|MT_NONHUM
+
+[CHARDEF 033b]
+//No animation - dont use
+NAME=033b
+CAN=MT_NONMOVER|MT_NONHUM
+
+[CHARDEF 033c]
+//No animation - dont use
+NAME=033c
+CAN=MT_NONMOVER|MT_NONHUM
+
+[CHARDEF 05f]
+//On very old clients this was a sea monster
+//On somewhat old clients, this creature crash the client
+//On very new clients this is a turkey
+//Anyway, this chardef is not really used
+NAME=05f
+CAN=MT_NONMOVER|MT_NONHUM
+
+[CHARDEF 0e5]
+////No animation - reaper - no corpse - dont use
+NAME=0e5
+CAN=MT_NONMOVER|MT_NONHUM
+

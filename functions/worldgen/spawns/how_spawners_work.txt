@@ -1,0 +1,34 @@
+-TYPES = t_spawn_item, t_spawn_char. Each one generates a different type of objects in the game (it may be revised in the future to merge both*, not soon anyway).
+-MORE/MORE1(R/W) = spawn's ID (can be an Item/Template of items(for t_spawn_item) or a Char/Template of chars(for t_spawn_char)).
+NOTE:MORE2 works different for each spawn type.
+-MORE2/COUNT(R) = t_spawn_char: returns the total spawned characters
+-MORE2/PILE(R/W) = t_spawn_item: gets/sets the total amount of items generated at once eg in a spawn that generates 150 i_arrows with a PILE=5 will generate 5 at each time.
+
+-MOREX/TIMELO(R/W) = Minimum spawn time in minutes.
+-MOREY/TIMEHI(R/W) = Maximum spawn time in minutes.
+-MOREZ/MAXDIST(R/W) = Maximum spawn distance (for both distance away of the spawn (for Items and Chars) when created and max distance to get away from spawn(for NPCs)).
+-MOREP(R/W) = the three MOREX,MOREY,MOREZ grouped as one prop (same as TIMELO,TIMEHI,MAXDIST).
+
+-AT*(R) = Gets the value given from the *n object of this spawn, eg at.3.name will retrieve the name of the object on the position 3 (zero-based, so it will be the fourth on the list).
+-AMOUNT(R/W) = Total amount of objects this spawn can have at the same time.
+-ADDOBJ(W) = Adds to the spawn an object with the given uid (must be a valid uid).
+-DELOBJ(W) = Deletes from the spawn an object with the given uid (must be a valid uid).
+-START(W) = Forces the spawn to start spawning.
+-STOP(W) = Stops the spawn and removes everything it created.
+-RESET(W) = Froces an STOP and then START it again.
+
+
+
+[3:33 AM] XuN: 
+
+Simple explanation:
+1) When double clicking on an STOPPED spawn (nothing has yet spawned from it) START is called.
+2) One object is generated within a distance of MOREZ/MAXDIST.
+    -For t_spawn_item the amount of items generated each time is equal to a random value between 1 and PILE.
+    -for t_spawn_item the maximum distance the NPC can wander away is set equal to MAXDIST
+3) The spawn's timer is set to a value (in minutes) between MOREX and MOREY (TIMELO and TIMEHI).
+4) 2 and 3 are repeated while COUNT < AMOUNT, when COUNT reachs or surpases (it may happen with custom behaviours added from scripts) AMOUNT only 3 will be repeated 
+  (nothing will be spawned but the timer will be set again).
+
+
+

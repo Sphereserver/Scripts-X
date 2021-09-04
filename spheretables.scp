@@ -22,7 +22,6 @@ As a general rule:
 [RESOURCES]
 // sphere.ini and spheretable.scp are automatic.
 // All the other scripts we want to load.
-functions/
 crafting/
 crafting/interface/
 crafting/interface/legacy skillmenu/
@@ -72,6 +71,7 @@ stones/
 stones/guilds/
 stones/towns/
 housing/
+functions/
 
 // maps
 maps/map0/map0_starts.scp
@@ -128,6 +128,26 @@ maps/map5/map5_moongates_tol.scp
 //templates
 templates/
 templates_special/
+
+//WorldGen Should be comment after the word generation is done
+functions/worldgen/crops/
+functions/worldgen/
+functions/worldgen/decoration/
+functions/worldgen/decoration/felucca/
+functions/worldgen/decoration/ilshenar/
+functions/worldgen/decoration/malas/
+functions/worldgen/decoration/misc/
+functions/worldgen/decoration/termur/
+functions/worldgen/decoration/tokuno/
+functions/worldgen/decoration/trammel/
+functions/worldgen/spawns/
+functions/worldgen/spawns/felucca/
+functions/worldgen/spawns/ilshenar/
+functions/worldgen/spawns/malas/
+functions/worldgen/spawns/termur/
+functions/worldgen/spawns/tokuno/
+functions/worldgen/spawns/trammel/
+functions/worldgen/spawns/uoclassic/
 
 //custom/
 

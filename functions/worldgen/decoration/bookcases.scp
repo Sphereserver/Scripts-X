@@ -1,0 +1,82 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[function f_clearout_bookcases]
+ref1=<uid>
+foritems 9999
+if (<baseid>==i_bookcase_full)
+  forcont <uid> 9999
+    remove
+  endfor
+endif
+endfor
+
+[function f_stock_bookcases]
+ref1=<uid>
+foritems 9999
+if (<baseid>==i_bookcase_full)
+  for 5
+    serv.newitem { i_book_lg_pub 1 i_book_sm_pub 1 i_book_sm 1 i_book_lg 1},1,<uid>     
+    new.attr |= attr_static
+    new.type=t_book
+    new.f_populate_book_writing
+    //ref1.useitem <new> //Give the name of the book but take lot of resource on computer (client may crash)
+    new.update
+  endfor
+endif
+endfor
+
+
+[function f_populate_book_writing]
+dorand 44
+  new.more1=b_sphere
+  new.more1=b_hitchhiker
+  new.more1=b_tennyson
+  new.more1=b_arrowsong
+  new.more1=b_mrmeantto
+  new.more1=b_villageblack
+  new.more1=b_greatmen
+  new.more1=b_hazardous
+  new.more1=b_swine
+  new.more1=b_greatenvy
+  new.more1=b_theprince
+  new.more1=b_voiceofreason
+  new.more1=b_atlasshrugged
+  new.more1=b_divinecomedy
+  new.more1=b_talktowisp
+  new.more1=b_orcgrammar
+  new.more1=b_xmasscarol
+  new.more1=b_virtues
+  new.more1=b_principal_truth
+  new.more1=b_principal_love
+  new.more1=b_principal_courage
+  new.more1=b_politic_anarchy
+  new.more1=b_primer_arms_weapons
+  new.more1=b_song_samlethe
+  new.more1=b_tale_three_tribes
+  new.more1=b_beltrans_guild_guide
+  new.more1=b_britannia_birds
+  new.more1=b_britannian_flora
+  new.more1=b_classic_childrens_tales
+  new.more1=b_classic_tales_of_vesper
+  new.more1=b_deceit_dungeon_of_horrors
+  new.more1=b_dimensional_travel
+  new.more1=b_ethical_hedonism
+  new.more1=b_sherrys_story
+  new.more1=b_diversity_of_our_land
+  new.more1=b_quest_of_virtues
+  new.more1=b_regarding_llamas
+  new.more1=b_taming_dragons
+  new.more1=b_burning_of_trinsic
+  new.more1=b_the_fight
+  new.more1=b_travelling_minstrel
+  new.more1=b_major_trade_associations
+  new.more1=b_rankings_of_trades
+  new.more1=b_the_wild_girl
+  new.more1=b_treatsie_on_alchemy
+enddo
+
+[EOF]

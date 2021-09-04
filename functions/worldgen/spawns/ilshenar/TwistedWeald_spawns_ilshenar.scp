@@ -1,0 +1,30 @@
+[function spawn_twisted_weald_ilshenar]
+
+
+//##############################
+//##   XML Spawns by Erica    ##
+//## Convert/Adapted By Nerun ##
+//##############################
+//overrideid 314
+//overridemap 3
+//overridemintime 5
+//overridemaxtime 10
+//##
+//## Twisted Weald
+//##
+f_create_spawner,CuSidhe:DryadA:Changeling:Satyr,DireWolf,,,,,2171,1181,-44,3,5,10,20,20,1,8,2,0,0,0,0
+f_create_spawner,LadyLissith:LadySabrix,,,,,,2177,1210,-60,3,5,10,10,10,1,2,0,0,0,0,0
+f_create_spawner,Quagmire:WhippingVine:Irk,,,,,,2138,1212,-60,3,5,10,20,20,1,8,0,0,0,0,0
+f_create_spawner,Swoop,,,,,,2224,1218,13,3,5,10,8,8,1,1,0,0,0,0,0
+f_create_spawner,Gnaw:DireWolf,,,,,,2134,1174,-46,3,5,10,5,5,1,5,0,0,0,0,0
+f_create_spawner,CuSidhe,,,,,,2206,1220,-8,3,5,10,20,20,1,2,0,0,0,0,0
+f_create_spawner,Corpser:spite:guile,,,,,,2159,1223,-60,3,5,10,10,10,1,5,0,0,0,0,0
+f_create_spawner,Malefic:Virulent,,,,,,2170,1247,-60,3,5,10,10,10,1,4,0,0,0,0,0
+f_create_spawner,Changeling,,,,,,2163,1189,-48,3,5,10,8,8,1,2,0,0,0,0,0
+f_create_spawner,Cusidhe:Dryada:changeling:Satyr,DireWolf,,,,,2207,1180,-36,3,5,10,25,25,1,12,3,0,0,0,0
+f_create_spawner,silk,,,,,,2137,1216,-60,3,5,10,5,5,1,4,0,0,0,0,0
+f_create_spawner,giantblackwidow,,,,,,2177,1229,-60,3,5,10,5,5,1,4,0,0,0,0,0
+f_create_spawner,virulent,,,,,,2157,1206,-60,3,5,10,5,5,1,3,0,0,0,0,0
+f_create_spawner,malefic,,,,,,2167,1266,-60,3,5,10,5,5,1,3,0,0,0,0,0
+
+[EOF]

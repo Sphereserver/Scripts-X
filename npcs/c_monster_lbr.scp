@@ -426,7 +426,7 @@ ON=@Create
 
 ON=@CreateLoot
     ITEM=i_gold,{770 1120}
-    ITEM=random_weapon
+    ITEM=random_weapon_all_normal
 
 
 [CHARDEF 067]
@@ -1543,7 +1543,6 @@ DEFNAME=c_skeleton_mage
 NAME=Skeletal Mage
 CAN=mt_usehands|mt_walk|mt_run
 SOUND=451
-
 DAM=3,7
 ARMOR=38
 
@@ -1594,6 +1593,47 @@ ON=@CreateLoot
     ITEM=random_reagent,3
     ITEM=random_reagent_necro,{3 10}
 
+[CHARDEF c_bone_magi]
+DEFNAME=c_bone_magi
+NAME=Bone Magi
+id=c_skeleton_mage
+dam={3, 7}
+armor=38
+RESOURCES=8 i_reag_bone
+BLOODCOLOR=042
+CAN=MT_WALK|MT_RUN|MT_USEHANDS
+TEVENTS=e_Undead
+CATEGORY=Monsters
+SUBSECTION=Undeads
+DESCRIPTION=Bone Magi
+
+ON=@Create
+faction=faction_undead
+NPC=brain_monster
+str={76, 100}
+dex={56, 75}
+int={186, 210}
+maxhits={46, 60}
+resphysical={35, 40}
+resfire={20, 30}
+rescold={50, 60}
+respoison={20, 30}
+resenergy={30, 40}
+evaluatingintel={60.1, 70.0}
+magery={60.1, 70.0}
+magicresistance={55.1, 70.0}
+tactics={45.1, 60.0}
+wrestling={45.1, 55.0}
+necromancy={89, 99.1}
+spiritspeak={90.0, 99.0}
+fame=3000
+karma=-3000
+
+ON=@createloot
+	item=i_gold,{125 150}
+	item={random_fourth_circle 1 random_fifth_circle 1}	
+	item=random_reagent,3
+	item=random_reagent_necro,{3 10}
 
 [CHARDEF 095]
 DEFNAME=c_Succubus
@@ -1812,52 +1852,64 @@ ON=@Create
 
 
 [CHARDEF 09d]
-DEFNAME=c_giant_black_widow
-NAME=giant black widow
-SOUND=0388 
-CAN=mt_walk|mt_run|mt_usehands
-
-DAM=5,17
-ARMOR=24
+//"Lady Lissith is a named Giant Black Widow from the Twisted Weald.
+// Carries 'Lissith Silk', one of the keys to access Dreadhorn."
+//FIXME: Bleed attack
+DEFNAME=c_lady_lissith
+NAME=Lissith
+ICON=i_pet_spider_dread
+SOUND=snd_monster_gispidr1
+CAN=MT_WALK|MT_RUN|MT_NONHUM
+DAM=15,22
+ARMOR=40
 HEIGHT=10
-
-//FIXME RESDISPDNID
+DESIRES=r_dungeon_twisted_weald,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=35 t_meat_raw
+RESOURCES=1 i_ribs_raw
+BLOODCOLOR=colors_blood
+MOVERATE=120
+TAG.Barding.Diff=92.2
+TAG.HitPoison=5 //Lethal
+//TAG.Luck.Loot=FIXME
+TAG.Slayer=SLAYER_SPIDER
+TEVENTS=e_carnivores2
 
 ERALIMITLOOT=2
 ERALIMITGEAR=2
 ERALIMITPROPS=2
 
-CATEGORY=Animals
-SUBSECTION=Arachnids
-DESCRIPTION=Black Widow
+CATEGORY=Monsters
+SUBSECTION=Spiders
+DESCRIPTION=Black Widow (Lady Lissith)
 
-ON=@create
-    NPC=brain_monster
-
-    FAME=3500
-    KARMA=-3500
-
-    STR={76, 100}
-    DEX={96, 115}
-    INT={36, 60}
-    MAXHITS={46, 60}
-
+ON=@Create
+   NPC=brain_monster
+   FAME=18900
+   KARMA=-18900
+   STR={80 95}
+   MAXHITS={250 260}
+   DEX={126 145}
+   MAXSTAM={115 120}
+   INT={60 75}
+   MAXMANA={60 75}
+   ANATOMY={75.0 90.0}
+   MAGICRESISTANCE={80.0 90.0}
+   //POISONING={110.0 120.0}
+   TACTICS={100.0 115.0}
+   WRESTLING={115.0 125.0}
+   MODAR={0 10}
     RESPHYSICAL={20, 30}
     RESFIRE={10, 20}
     RESCOLD={10, 20}
     RESPOISON={50, 60}
     RESENERGY={10, 20}
-
-    ANATOMY={30.3, 75.0}
-    POISONING={60.1, 80.0}
-    MAGICRESISTANCE={45.1, 60.0}
-    TACTICS={65.1, 80.0}
-    WRESTLING={70.1, 85.0}
-
-ON=@CreateLoot
+ON=@createloot
+   ITEM=loot_spider_dread
     ITEM=i_gold,{125 175}
     ITEM=i_reag_spider_silk,5
     ITEM=random_potion,2    //lesser
+    ITEM=i_lissith_silk
     
 [CHARDEF 0a8]
 //FIXME: attracted by hidden players and will reveal them when they are close enough.
@@ -1968,6 +2020,7 @@ SOUND=snd_animals_llama3
 CAN=MT_WALK|MT_RUN|MT_NONHUM
 DAM=1,2
 ARMOR=1
+HEIGHT=10
 //DESIRES=
 //AVERSIONS=
 //FOODTYPE=
@@ -2002,6 +2055,7 @@ SOUND=snd_animal_ostard_desert1
 CAN=MT_WALK|MT_RUN|MT_NONHUM
 DAM=1,2
 ARMOR=1
+HEIGHT=18
 //DESIRES=
 //AVERSIONS=
 //FOODTYPE=
@@ -2028,8 +2082,60 @@ ON=@Create
    RESFIRE=0
    RESPOISON=0
 
+[CHARDEF 0ac]
+//FIXME: Earthquake Attack that damages all nearby characters.
+DEFNAME=c_champ_rikktor
+NAME=Rikktor
+ICON=i_pet_dragon
+SOUND=snd_monster_dragon1
+CAN=MT_WALK|MT_FLY|MT_NONHUM
+DAM=124,272
+RANGE=2
+ARMOR=80
+HEIGHT=45
+DESIRES=r_dungeon_destard,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=80 t_meat_raw
+RESOURCES=20 i_dragonscale_black,20 i_dragonscale_white,20 i_dragonscale_blue,20 i_dragonscale_red,20 i_dragonscale_yellow
+BLOODCOLOR=colors_blood
+MOVERATE=100
+TAG.Barding.Diff=160.0
+TAG.DamEnergy=25
+TAG.DamFire=50
+//TAG.Luck.Loot=FIXME
+TAG.Slayer=SLAYER_DRAGON
+TEVENTS=e_carnivores3
+CATEGORY=Monsters
+SUBSECTION=Champions
+DESCRIPTION=Wyrm (Rikktor)
+ON=@Create
+   NPC=brain_monster
+   FAME=22500
+   KARMA=-22500
+   STR={701 900}
+   MAXHITS={3000 3100}
+   DEX={201 350}
+   MAXSTAM={201 350}
+   INT={51 100}
+   MAXMANA={51 100}
+   ANATOMY={95.0 105.0}
+   MAGICRESISTANCE={140.0 160.0}
+   TACTICS={98.0 100.0}
+   MODAR={0 10}
+   RESCOLD={30 40}
+   RESENERGY={80 90}
+   RESFIRE={80 90}
+   RESPOISON={80 90}
+ON=@createloot
+   ITEM=loot_champ_rikktor
+   //4000 - 5000 Gold. Magic Items
+   //Special: Level 5 Treasure Map
+
+
 [CHARDEF 0ad]
+//FIXME: "Shoots paralyzing webs and pulls players in."
 DEFNAME=c_spider_lord
+DEFNAME2=c_champ_mephitis
 NAME=Mephitis
 SOUND=snd_monster_gispidr1
 ICON=i_pet_spider_lord
@@ -2073,15 +2179,27 @@ ON=@Create
     POISONING={60.0 80.0}
 
     f_addExtendedAIEvent e_extendedAI_aura_summonDreadSpider
-    
+
+ON=@GetHit
+   //Spawn Creatures Attack (dread spiders)
+   IF (RAND(10)==1)
+      SERV.NEWNPC c_spider_dread
+      NEW.P=<P>
+      NEW.HOME=<NEW.P>
+      NEW.HOMEDIST=7
+      NEW.f_NPCRemovalTimer 1200
+   ENDIF
+
 ON=@CreateLoot
+    ITEM=loot_champ_mephitis
     ITEM=i_gold,{125 175}
     ITEM=i_reag_spider_silk,5
     ITEM=i_potion_poison
 
-
 [CHARDEF 0ae]
+//FIXME: Reflect magic damage back at male spellcasters
 DEFNAME=c_semidar
+defname2=c_champ_semidar
 NAME=Semidar
 SOUND=snd_monster_daemon1
 ICON=i_pet_wailingbanshee
@@ -2131,13 +2249,36 @@ ON=@Create
     ADDCIRCLE 8,1
 
 ON=@CreateLoot
+    ITEM=loot_champ_semidar
     ITEM=i_gold,{700 1100}
-    ITEM=random_weapon
+    ITEM=random_weapon_all_normal
+
+ON=@GetHit
+   //Life Drain Aura Attack
+   IF (RAND(3)==0)
+      REF11=<UID>
+      FORCHARS 3
+         IF (<ISPLAYER>) || (<FLAGS>&statf_pet)
+            LOCAL.DAM=<R10,20>
+            DAMAGE <LOCAL.DAM> <DEF.dam_physical> <REF11>
+            REF11.HITS += <LOCAL.DAM>
+            IF (<REF11.HITS> > <REF11.MAXHITS>)
+               REF11.HITS=<REF11.MAXHITS>
+            ENDIF
+            SRC.SYSMESSAGE @color_text,,1 The evil aura of the succubus drains life from you
+         ENDIF
+      END
+   ENDIF
 
 
 [CHARDEF 0af]
-DEFNAME=c_forest_lord
-NAME=Forest Lord
+//FIXME: Cannot be area peaced.
+//FIXME: Is almost immune to any damage before his queen is killed.
+//FIXME: The first time Lord Oaks is hit he will summon his queen with the words "Come forth my Queen".
+//As long as his queen is alive, Lord Oaks will take very little damage from any attacks.
+defname=c_forest_lord
+defname2=c_champ_lord_oaks
+name=Lord Oaks
 SOUND=snd_monster_pixie
 ICON=i_pet_forestlord
 CAN=mt_walk|mt_run|mt_usehands|mt_equip
@@ -2160,7 +2301,7 @@ ERALIMITPROPS=2
 
 CATEGORY=Monsters
 SUBSECTION=Feys
-DESCRIPTION=Forest Lord
+DESCRIPTION=Lord Oak
 
 ON=@Create
     NPC=brain_monster
@@ -2187,11 +2328,53 @@ ON=@Create
     ADDCIRCLE 8,1
 
 ON=@CreateLoot
+    ITEM=loot_champ_lord_oaks
     ITEM=i_gold,{900 1000}
+ON=@GetHit
+   IF (RAND(19)==1)
+      SRC.NEWNPC c_pixie
+      NEW.FLAGS |= (statf_war|statf_conjured)
+      NEW.P=<SRC.P>
+      NEW.ATTACK <SRC>
+      NEW.f_NPCRemovalTimer 1200
+      SRC.NEWNPC c_pixie
+      NEW.FLAGS |= (statf_war|statf_conjured)
+      NEW.P=<SRC.P>
+      NEW.ATTACK <SRC>
+      NEW.f_NPCRemovalTimer 1200
+      SRC.NEWNPC c_pixie
+      NEW.FLAGS |= (statf_war|statf_conjured)
+      NEW.P=<SRC.P>
+      NEW.ATTACK <SRC>
+      NEW.f_NPCRemovalTimer 1200
+      SRC.NEWNPC c_pixie
+      NEW.FLAGS |= (statf_war|statf_conjured)
+      NEW.P=<SRC.P>
+      NEW.ATTACK <SRC>
+      NEW.f_NPCRemovalTimer 1200
+      SRC.UPDATE
+   ENDIF
+
+
+[comment notes]
+Lord Oaks will take very little damage by any means while Silvani is alive. While it is possible to kill him without first killing Silvani, it will take a vast amount of time. Lord Oaks will
+ ressurrect blue characters in the same way of an Ethereal Warrior. However, if you are blue with negative karma, he will most likely kill you upon ressurrection.
+
+Lord Oaks' slayer vulnerability is Fey, which currently is only available on the Pixie Swatter artifact. On some shards, Animal Tamers with Alchemy and high Enhance Potions mod are used to 
+quickly kill this boss.
+
+The skull of Enlightenment, which upon Oaks' death is given to the player who dealt the highest amount of damage, is highly sought after. This skull is regarded as the ticket to the Harrower.
+
+Lord Oaks is exclusively located in the Lost Lands of T2A, north of the Tortoise Champion Spawn area. Lord Oaks' also spawns in Ilshenar Spirituality, north of the moongate. The Ilshenar 
+spawn, however, will not grant the skull of Enlightenment.
+
+A very small number of Lord Oaks corpses will contain a Dirt Patch, a highly sought after rare item. Lord Oaks and The True Harrower are the only creatures known to drop this item as loot.
+
 
 
 [CHARDEF 0b0]
 DEFNAME=c_forest_queen
+DEFNAME2=c_champ_silvani
 NAME=Forest Queen
 SOUND=snd_monster_pixie
 ICON=i_pet_pixie
@@ -2236,8 +2419,33 @@ ON=@Create
     ADDCIRCLE 8,1
 
 ON=@CreateLoot
+    ITEM=loot_champ_silvani
     ITEM=i_gold,{770 920}
-    ITEM=random_weapon
+    ITEM=random_weapon_all_normal
+ON=@GetHit
+   IF (RAND(19)==1)
+      SRC.NEWNPC c_pixie
+      NEW.FLAGS |= (statf_war|statf_conjured)
+      NEW.P=<SRC.P>
+      NEW.ATTACK <SRC>
+      NEW.f_NPCRemovalTimer 1200
+      SRC.NEWNPC c_pixie
+      NEW.FLAGS |= (statf_war|statf_conjured)
+      NEW.P=<SRC.P>
+      NEW.ATTACK <SRC>
+      NEW.f_NPCRemovalTimer 1200
+      SRC.NEWNPC c_pixie
+      NEW.FLAGS |= (statf_war|statf_conjured)
+      NEW.P=<SRC.P>
+      NEW.ATTACK <SRC>
+      NEW.f_NPCRemovalTimer 1200
+      SRC.NEWNPC c_pixie
+      NEW.FLAGS |= (statf_war|statf_conjured)
+      NEW.P=<SRC.P>
+      NEW.ATTACK <SRC>
+      NEW.f_NPCRemovalTimer 1200
+      SRC.UPDATE
+   ENDIF
 
 [CHARDEF 0b5]
 //FIXME: Teleports away and hides when damaged
@@ -3563,7 +3771,6 @@ ON=@CreateLoot
     ITEM=random_jewel
     ITEM=i_treasure_map5,R99
 
-
 [CHARDEF 0300]
 DEFNAME=c_juggernaut
 DEFNAME=c_blackthorn_juggernaught
@@ -3623,7 +3830,6 @@ ON=@Create
 ON=@CreateLoot
     ITEM=i_gold,{275 325}
     ITEM=random_jewel
-
 
 [CHARDEF 0302]
 DEFNAME=c_meer_mage
@@ -4108,7 +4314,7 @@ ON=@Create
 
 ON=@CreateLoot
     ITEM={random_body_parts_1 1 random_body_parts_2 1}
-    ITEM=random_bones
+    ITEM=random_item_bone
 
 
 [CHARDEF 0309]
@@ -4459,6 +4665,105 @@ ON=@Create
 ON=@CreateLoot
     ITEM=i_gold,{400 500}
 
+[chardef 805]
+defname=c_solen_worker_black
+name=black solen worker
+sound=959
+can=mt_walk|mt_run
+dam={5, 7}
+armor=28
+
+on=@create
+	npc=brain_monster
+	color=0453
+	str={96, 120}
+	dex={81, 105}
+	int={36, 60}
+	maxhits={58, 72}
+	resphysical={25, 30}
+	resfire={20, 30}
+	rescold={10, 20}
+	respoison={10, 20}
+	resenergy={20, 30}
+	magicresistance={60.0}
+	tactics={65.0}
+	wrestling={60.0}
+	fame=1500
+	karma=-1500
+
+on=@createloot
+	item=i_gold,{125 175}
+	//item=i_zoogi_fungus,{1 6}
+
+[chardef 806]
+defname=c_solen_warrior_black
+name=black solen warrior
+sound=959
+can=mt_walk|mt_run|
+dam={5, 15}
+armor=35
+
+CATEGORY=Monsters
+SUBSECTION=Solen
+DESCRIPTION=Black Solen, Warrior
+on=@create
+    npc=brain_monster
+    color=0453
+    str={196, 220}
+    dex={101, 125}
+    int={36, 60}
+    maxhits={96, 107}
+    resphysical={20, 35}
+    resfire={20, 35}
+    rescold={10, 25}
+    respoison={20, 35}
+    resenergy={10, 25}
+    magicresistance={60.0}
+    tactics={80.0}
+    wrestling={80.0}
+    fame=3000
+    karma=-3000
+
+on=@createloot
+    item=i_gold,{250 350}
+    item=random_jewel,{1 4}
+    //item=i_zoogi_fungus,{3 13}
+
+[chardef 807]
+defname=c_solen_queen_black
+name=black solen queen
+sound=959
+can=mt_walk|mt_run
+dam={10, 15}
+armor={30, 40}
+RESDISPDNID=c_man
+RESLEVEL=3
+RESDISPDNHUE=33
+
+on=@create
+	npc=brain_monster
+	color=0453
+	str={296, 320}
+	dex={121, 145}
+	int={76, 100}
+	maxhits={151, 162}
+	resphysical={30, 40}
+	resfire={30, 35}
+	rescold={25, 35}
+	respoison={35, 40}
+	resenergy={25, 30}
+	magicresistance={70.0}
+	tactics={90.0}
+	wrestling={90.0}
+	fame=4500
+	karma=-4500
+
+on=@createloot
+	item=i_gold,{400 500}
+	//item=i_zoogi_fungus,{5 25}
+	//item=i_crystal_ball_pet_summoning
+	//item=i_picnic_basket
+
 
 [CHARDEF 0310]
 DEFNAME=c_daemon_arcane
@@ -4566,7 +4871,7 @@ ON=@CreateLoot
     ITEM=i_gold,{250 300}
     ITEM={i_ore_iron 1 i_ore_copper 1 i_ore_silver 1 i_ore_gold 1},{1-10}
     ITEM=i_reag_fertile_dirt,{1 5}
-    ITEM=random_bones
+    ITEM=random_item_bone
 
 
 [CHARDEF 0314]

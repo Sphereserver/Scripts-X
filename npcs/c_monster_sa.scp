@@ -154,11 +154,6 @@ ON=@CreateLoot
    ITEM=random_jewel,{1 4}
    ITEM=i_gold,{280 330}
 
-[CHARDEF 011e]
-////No animation - dont use
-NAME=011e
-CAN=MT_NONMOVER|MT_NONHUM
-
 [CHARDEF 011f]
 DEFNAME=c_BloodWorm
 NAME=bloodworm
@@ -1559,7 +1554,7 @@ ON=@create
 
 ON=@CreateLoot
     ITEM=i_gold,{50 100}
-    //ITEM=random_reagents_mysticism
+    //ITEM=random_reagent_mysticism
     //ITEM=random_scroll_mysticisim
 
 

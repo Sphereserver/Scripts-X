@@ -1,0 +1,416 @@
+[function place_signs_trammel]
+f_add_sign 3032,373,904,-1,1,Court of Truth
+f_add_sign 2996,2769,976,0,1,The Ironwood Inn
+f_add_sign 3016,2634,2088,10,1,Cutlass Smithing
+f_add_sign 2991,2632,2102,10,1,Violente Woodworks
+f_add_sign 3026,2666,2096,5,1,Buccaneer's Bath
+f_add_sign 3025,2664,2192,4,1,Pirate's Den
+f_add_sign 2988,2706,2152,0,1,Healer of Buccaneer's Den
+f_add_sign 2996,2714,2104,0,1,The Peg Leg Inn
+f_add_sign 3011,2688,2232,-4,1,The Pirate's Plunder
+f_add_sign 3023,2712,2178,0,1,Buccaneer's Den Leatherworks
+f_add_sign 3019,2744,2248,-4,1,Pirates Provisioner
+f_add_sign 3084,2732,2192,0,1,Bank
+f_add_sign 3084,2890,3479,15,1,Bank
+f_add_sign 3019,2840,873,0,1,The Adventurer's Friend
+f_add_sign 2981,2840,878,0,1,The Spinning Wheel
+f_add_sign 2982,2969,624,0,1,The Spinning Wheel
+f_add_sign 3007,2840,801,0,1,Warrior's Companion
+f_add_sign 3053,2864,731,0,1,The Ore of Vesper
+f_add_sign 3016,2857,856,0,1,The Ironworks
+f_add_sign 3021,2860,801,0,1,The Ranger's Tool
+f_add_sign 3025,2848,929,0,1,Counselor's Guild
+f_add_sign 3026,3776,1196,0,1,Counselor's Guild
+f_add_sign 3026,3720,2184,20,1,Counselor's Guild
+f_add_sign 3026,4477,1130,0,1,Counselor's Guild
+f_add_sign 3026,616,984,0,1,Counselor's Guild
+f_add_sign 3026,617,2144,0,1,Counselor's Guild
+f_add_sign 3026,1425,3704,0,1,Counselor's Guild
+f_add_sign 3026,1505,1528,40,1,Counselor's Guild
+f_add_sign 3025,624,2112,0,1,Counselor's Guild
+f_add_sign 3025,2968,3367,15,1,Counselor's Guild
+f_add_sign 3026,1634,1673,26,1,Counselor's Guild
+f_add_sign 3026,1896,2842,20,1,Counselor's Guild
+f_add_sign 3075,2856,910,0,1,The Champions of Light
+f_add_sign 3083,2896,673,0,1,The Mint of Vesper
+f_add_sign 2990,2894,664,0,1,The Bubbling Brew
+f_add_sign 3009,2888,721,0,1,The Shimmering Jewel
+f_add_sign 3018,2905,720,0,1,The Colored Canvas
+f_add_sign 3035,2904,737,0,1,The Musician's Hall
+f_add_sign 2983,2904,794,0,1,The Gadget's Corner
+f_add_sign 3050,2919,680,0,1,The Circles of Magic
+f_add_sign 2990,2912,680,0,1,The Magical Light
+f_add_sign 2992,2913,808,0,1,The Hammer and Nail
+f_add_sign 2987,2928,852,0,1,Healer of Vesper
+f_add_sign 3011,2916,905,0,1,The Marsh Hall
+f_add_sign 3140,2958,712,0,1,The Busy Bees
+f_add_sign 2993,2952,929,0,1,Vesper Customs
+f_add_sign 3020,2977,640,0,1,The Adventurers Supplies
+f_add_sign 2995,2976,875,0,1,Vesper Youth Hostel
+f_add_sign 3057,2976,817,0,1,The Fishermen's Guild
+f_add_sign 3013,3000,833,0,1,The Magician's Friend
+f_add_sign 2994,2993,824,0,1,The Majestic Boat
+f_add_sign 2980,2995,768,0,1,The Twisted Oven
+f_add_sign 2985,3000,777,0,1,The Butcher's Knife
+f_add_sign 3025,3024,777,0,1,Fisherman's Wharf
+f_add_sign 2981,2888,3502,10,1,Silver Serpent Tailors
+f_add_sign 2986,2909,3496,10,1,Serpent Hold Meats
+f_add_sign 2999,2912,3517,10,1,Serpents Hold Stablery
+f_add_sign 2999,3043,3463,25,1,Serpents Hold Stablery
+f_add_sign 2984,2931,3512,10,1,Tinker of the Isle
+f_add_sign 2995,2976,3406,15,1,The Broken Arrow Inn
+f_add_sign 2988,2994,3440,15,1,Serpent's Hold Healer
+f_add_sign 2990,3005,3360,15,1,Serpent's Spells
+f_add_sign 2980,2977,3360,15,1,Plenty O' Dough
+f_add_sign 3007,3024,3430,15,1,Serpents Arms
+f_add_sign 3019,3016,3386,15,1,Supplies
+f_add_sign 3014,3009,3360,15,1,Britannian Herbs
+f_add_sign 3053,3054,3408,15,1,Serpent Warrior's
+f_add_sign 3006,3053,3376,15,1,Silver Serpent Bows
+f_add_sign 3025,3561,1174,9,1,Nujel'm Marketplace
+f_add_sign 2985,3554,1175,0,1,Nujelm Butcher
+f_add_sign 3006,3551,1194,0,1,Nujelm Bowry
+f_add_sign 3026,3551,1178,0,1,Nujelm Tannery
+f_add_sign 3016,3551,1186,0,1,Nujelm Blacksmith
+f_add_sign 3015,3554,1199,0,1,Public Smithing
+f_add_sign 2997,3704,1213,0,1,Seaborne Ships
+f_add_sign 3004,3743,1207,0,1,Bardic Guild
+f_add_sign 3036,3658,2536,0,1,Bardic Guild
+f_add_sign 3036,3658,2536,0,1,Bardic Guild
+f_add_sign 2993,3720,1224,0,1,Customs
+f_add_sign 2993,1480,1746,0,1,Customs
+f_add_sign 2995,3740,1314,0,1,Restful Slumber
+f_add_sign 2987,3720,1380,0,1,Debtor's Prison
+f_add_sign 3025,3732,1394,0,1,Nujel'm Court
+f_add_sign 3085,3753,1240,14,1,Nujel'm Theater
+f_add_sign 3012,3748,1256,0,1,The Silver Bow
+f_add_sign 2981,3784,1264,0,1,Tailor of the Isle
+f_add_sign 3011,3784,1231,0,1,Mystical Spirits
+f_add_sign 3010,3778,1176,0,1,Jewel of the Isle
+f_add_sign 3020,3666,2600,0,1,Last Chance Provisioners
+f_add_sign 3020,3634,2584,0,1,Last Chance Provisioners
+f_add_sign 3025,3608,2609,0,1,Better Leather Tannery
+f_add_sign 2980,3602,2584,0,1,Now You're Cookin'
+f_add_sign 3049,3632,2537,0,1,Sorcerers' Guild
+f_add_sign 3018,3646,2512,0,1,Paint and More
+f_add_sign 2966,3617,2480,0,1,Ocllo Public Library
+f_add_sign 2994,3634,2648,0,1,Anchors Aweigh
+f_add_sign 2988,3625,2616,0,1,Healer of Ocllo
+f_add_sign 3053,3673,2138,24,1,Magincia Miner's Guild
+f_add_sign 3009,3673,2184,30,1,The Family Jewels
+f_add_sign 2981,3672,2232,20,1,Stitchin' Time
+f_add_sign 2998,3669,2261,20,1,The Furled Sail
+f_add_sign 3004,3675,2480,0,1,First Academy of Music
+f_add_sign 3012,3665,2657,4,1,The Albatross
+f_add_sign 2996,3670,2624,0,1,The Bountiful Harvest
+f_add_sign 3016,3647,2600,0,1,Hammer & Steel Smithy
+f_add_sign 2982,3656,2592,0,1,A Stitch in Time
+f_add_sign 2995,3704,2167,20,1,The Stag and Lion
+f_add_sign 2980,3681,2176,20,1,The Bread Basket
+f_add_sign 2988,3685,2231,20,1,Healer of Magincia
+f_add_sign 3060,3682,2261,20,1,Fishermen's Guild & Supplies
+f_add_sign 3084,3690,2520,0,1,Bank of Ocllo
+f_add_sign 3084,3728,2160,20,1,Bank of New Magincia
+f_add_sign 2989,3712,2215,20,1,Magincia's Magicka
+f_add_sign 3011,3736,2230,20,1,Great Horns Tavern
+f_add_sign 3081,3712,2242,20,1,Merchants' Guild
+f_add_sign 3082,1477,1600,20,1,Merchants' Guild
+f_add_sign 2985,3720,2650,20,1,Sweet Meat
+f_add_sign 2980,3753,2232,20,1,Baker's Dozen
+f_add_sign 2979,1368,3733,0,1,Baker's Dozen
+f_add_sign 3048,4548,873,37,1,Encyclopedia Magicka
+f_add_sign 2989,1852,2709,10,1,Encyclopedia Magicka
+f_add_sign 2992,4414,1096,0,1,the Mage's Seat
+f_add_sign 2980,4390,1072,0,1,Mage's Bread
+f_add_sign 2988,4396,1088,0,1,Moonglow Healer
+f_add_sign 3007,4400,1115,0,1,The Mighty Axe
+f_add_sign 2985,4400,1132,0,1,the Fatted Calf
+f_add_sign 2996,4407,1168,0,1,The Scholar's Inn
+f_add_sign 3014,4419,1136,0,1,Herbal Splendor
+f_add_sign 3013,4424,1108,0,1,Moonglow Reagent Shop
+f_add_sign 3019,4424,1062,0,1,the Scholar's Goods
+f_add_sign 3008,4436,1168,0,1,Second Defense Armory
+f_add_sign 3026,4478,1092,0,1,Farmer's Market
+f_add_sign 3023,616,2154,0,1,Farmer's Market
+f_add_sign 3024,610,2168,0,1,Farmer's Market
+f_add_sign 3026,1391,3832,0,1,Farmer's Market
+f_add_sign 3025,1400,3825,0,1,Farmer's Market
+f_add_sign 3026,3019,768,0,1,Farmer's Market
+f_add_sign 2982,4459,1072,0,1,Scholars Cut
+f_add_sign 2990,4451,1096,0,1,Moonglow's Finest Alchemy
+f_add_sign 3084,4469,1176,0,1,First Bank of Moonglow and Tinkersguild
+f_add_sign 2996,4483,1072,0,1,Moonglow Student Hostel
+f_add_sign 3017,4528,1069,0,1,Moonglow Academy of Arts
+f_add_sign 3025,4537,1376,23,1,Britannia Royal Zoo
+f_add_sign 3026,4518,1402,21,1,Britannia Royal Zoo
+f_add_sign 3026,4308,1012,0,1,The Lycaeum
+f_add_sign 3051,4632,1200,0,1,Illusionist's Guild
+f_add_sign 3025,520,986,0,1,The Tanned Hide
+f_add_sign 3026,547,832,0,1,Yew Mill
+f_add_sign 2987,544,970,0,1,Healer of Yew
+f_add_sign 2985,544,1008,0,1,Yew's Finest Cuts
+f_add_sign 2979,557,1000,0,1,The Jolly Baker
+f_add_sign 3022,563,976,0,1,The Sturdy Bow
+f_add_sign 2991,576,1009,0,1,Bloody Thumb Woodworks
+f_add_sign 2992,561,1016,0,1,Bloody Thumb Woodworks
+f_add_sign 3026,636,856,5,1,Empath Abbey
+f_add_sign 3025,624,886,2,1,Ye Olde Winery
+f_add_sign 3011,568,2177,0,1,The Shattered Skull
+f_add_sign 3084,595,2152,0,1,Bank of Skara Brae
+f_add_sign 3055,576,2145,0,1,Rangers' Guild
+f_add_sign 3056,745,2160,0,1,Rangers' Guild
+f_add_sign 3007,592,2170,0,1,More Than Just Mail
+f_add_sign 3024,578,2128,0,1,Beasts of Burden
+f_add_sign 2986,582,2192,0,1,Bountiful Meats
+f_add_sign 2985,592,2185,0,1,Bountiful Meats
+f_add_sign 3022,593,2216,0,1,Bloody Bowman
+f_add_sign 3021,600,2209,0,1,Bloody Bowman
+f_add_sign 3019,592,2225,0,1,Sundry Supplies
+f_add_sign 3023,576,2209,0,1,Skara Brae Town Hall
+f_add_sign 2992,633,2168,0,1,Builders' Delight
+f_add_sign 2997,608,2273,0,1,Superior Ships
+f_add_sign 2995,616,2232,0,1,The Falconer's Inn
+f_add_sign 2988,621,2224,0,1,Healer of Skara Brae
+f_add_sign 3015,632,2185,0,1,On Guard Armory
+f_add_sign 2990,609,2184,0,1,Mages' Menagerie
+f_add_sign 3008,648,2168,0,1,Gore Galore
+f_add_sign 2990,656,2144,0,1,Mystic Treasures
+f_add_sign 2982,648,2192,0,1,Shear Pleasure
+f_add_sign 2989,5305,94,19,1,The Alchemist of Wind
+f_add_sign 2995,5204,4060,37,1,The Barely Inn
+f_add_sign 3020,5217,4019,48,1,The Supply Depot
+f_add_sign 3016,5228,4008,37,1,Zoot's Hammer
+f_add_sign 3084,5270,3988,36,1,Ye Olde Eleventh Bank
+f_add_sign 2989,5291,3982,37,1,Hut o' Magics
+f_add_sign 3000,5304,3997,37,1,Stables
+f_add_sign 3000,1386,1664,30,1,Stables
+f_add_sign 3000,2521,379,23,1,Stables
+f_add_sign 3084,5674,3139,10,1,Ye Olde Loan & Savings
+f_add_sign 3009,5671,3148,21,1,Strange Rocks
+f_add_sign 2999,5678,3286,10,1,Southside Stables
+f_add_sign 2991,5703,3210,10,1,The Carpentry House
+f_add_sign 3013,5720,3205,19,1,The Reagent Shoppe
+f_add_sign 2986,5698,3289,24,1,The Southside Butchery
+f_add_sign 2980,5744,3209,16,1,Nature's Best Baked Goods
+f_add_sign 2987,5740,3216,6,1,The Healing Hand
+f_add_sign 2987,2248,1227,0,1,The Healing Hand
+f_add_sign 2988,2576,603,0,1,The Healing Hand
+f_add_sign 2990,5730,3204,19,1,Tricks of the Trade
+f_add_sign 2984,5729,3250,26,1,Tinker's Paradise
+f_add_sign 3019,5740,3267,13,1,Adventure Outfitters
+f_add_sign 2996,5774,3175,20,1,The Just Inn
+f_add_sign 2994,5804,3282,16,1,Pier 39
+f_add_sign 3007,5802,3287,13,1,The Revenge Shoppe
+f_add_sign 2999,1306,1761,25,1,Sosarian Steeds
+f_add_sign 3076,1342,1744,20,1,Warriors' Guild
+f_add_sign 3008,1370,1584,30,1,The Lord's Arms
+f_add_sign 3053,1360,1776,15,1,Britain's Blacksmith Guild
+f_add_sign 3073,1432,1656,10,1,The Tinkers' Guild
+f_add_sign 2992,1433,1600,20,1,The Saw Horse
+f_add_sign 3025,1420,1595,30,1,Britain Public Library
+f_add_sign 3054,1425,1584,30,1,The Miners' Guild
+f_add_sign 7977,1421,1638,50,1,Poor Gate
+f_add_sign 7977,1470,1643,34,1,the Main Gate
+f_add_sign 7977,1480,1643,34,1,the Main Gate
+f_add_sign 7977,1570,1526,46,1,the Great Northern Bridge
+f_add_sign 7977,1539,1527,45,1,the Northern Bridge
+f_add_sign 4762,1459,1622,35,1,Virtue's Path
+f_add_sign 4764,1428,1622,32,1,Virtue's Path
+f_add_sign 4762,1489,1627,34,1,Virtue's Path
+f_add_sign 4765,1428,1622,37,1,the Moat
+f_add_sign 4761,1415,1736,31,1,the Moat
+f_add_sign 4765,1424,1701,18,1,the Moat
+f_add_sign 4765,1422,1672,25,1,the Moat
+f_add_sign 4766,1439,1585,35,1,the Moat
+f_add_sign 4765,1435,1570,45,1,the Moat
+f_add_sign 4765,1432,1538,47,1,the Moat
+f_add_sign 3015,1428,1546,30,1,The Hammer and Anvil
+f_add_sign 3084,1436,1693,0,1,The First Bank of Britain
+f_add_sign 2997,1424,1747,10,1,The Oaken Oar
+f_add_sign 3011,1432,1730,20,1,The Cat's Lair
+f_add_sign 3008,1446,1654,10,1,Heavy Metal Armorer
+f_add_sign 2979,1460,1610,20,1,Good Eats
+f_add_sign 3086,1454,1600,20,1,The King's Men Theater
+f_add_sign 3086,1441,1584,20,1,The King's Men Theater
+f_add_sign 3023,1440,1611,20,1,The Best Hides of Britain
+f_add_sign 3004,1454,1561,30,1,Lord British's Conservatory of Music
+f_add_sign 3009,1458,1683,0,1,Premier Gems
+f_add_sign 2982,1470,1696,0,1,The Lord's Clothiers
+f_add_sign 3020,1468,1676,0,1,Britain's Premier Provisioners and Fish Shoppe
+f_add_sign 2986,1449,1728,1,1,The Cleaver
+f_add_sign 3070,1444,1670,10,1,Artists' Guild
+f_add_sign 2996,1474,1520,20,1,The North Side Inn
+f_add_sign 2987,1480,1610,20,1,Healer of Britain
+f_add_sign 2996,1501,1627,25,1,Sweet Dreams
+f_add_sign 3007,1489,1587,32,1,Strength and Steel
+f_add_sign 2990,1488,1572,30,1,The Sorcerer's Delight:  Shop
+f_add_sign 3022,1472,1584,20,1,Quality Fletching
+f_add_sign 3011,1502,1689,20,1,The Blue Boar
+f_add_sign 2966,1493,1724,5,1,The First Library of Britain
+f_add_sign 3013,1508,1662,20,1,Ethereal Goods
+f_add_sign 3026,1505,1576,20,1,Britannia Animal Care
+f_add_sign 3000,1516,1553,36,1,The Bucking Horse Stables
+f_add_sign 3083,1328,3771,0,1,Jhelom Bank and Jeweler
+f_add_sign 2995,1368,3829,0,1,The Morning Star Inn
+f_add_sign 2995,1376,3814,0,1,The Morning Star Inn
+f_add_sign 2981,1360,3786,0,1,Adventurer's Needle
+f_add_sign 2982,1458,4008,0,1,Adventurer's Needle
+f_add_sign 3007,1368,3752,0,1,Deadly Intentions
+f_add_sign 3008,1362,3768,0,1,Deadly Intentions
+f_add_sign 3033,1368,3713,0,1,Brothers in Arms
+f_add_sign 2965,1400,3769,0,1,Jhelom Library
+f_add_sign 3016,1385,3712,0,1,First Defense
+f_add_sign 2992,1425,3824,0,1,From Tree to Yew
+f_add_sign 2984,1411,3808,0,1,Gadgets and Things
+f_add_sign 3020,1434,3800,0,1,Needful Things
+f_add_sign 3012,1433,3776,0,1,The Horse's Head
+f_add_sign 2988,1409,3792,0,1,Jhelom Healer
+f_add_sign 3015,1424,3859,0,1,Warrior's Bounty
+f_add_sign 2990,1427,3993,10,1,Jhelom Mage
+f_add_sign 2998,1449,3752,0,1,Sailor's Keeper
+f_add_sign 3007,1448,3721,0,1,Second Skin
+f_add_sign 3007,1448,3721,0,1,Second Skin
+f_add_sign 3059,1440,3746,0,1,Ocean's Treasure
+f_add_sign 3029,1440,3864,0,1,Hand of Death
+f_add_sign 3008,1449,3864,0,1,Jhelom Armory
+f_add_sign 3007,1464,3849,0,1,Jhelom Armory
+f_add_sign 3010,1443,3993,10,1,The Pearl of Jhelom
+f_add_sign 2985,1464,4024,0,1,Finest Cuts
+f_add_sign 3085,1441,4010,10,1,Performing Arts Centre
+f_add_sign 3008,1472,3872,0,1,Call to Arms
+f_add_sign 2982,1555,1665,37,1,The Right Fit
+f_add_sign 3012,1549,1776,10,1,The Unicorn's Horn
+f_add_sign 3077,1592,1562,20,1,Cavalry Guild
+f_add_sign 2990,1590,1665,22,1,Incantations & Enchantments
+f_add_sign 3024,1575,1721,46,1,Sage Advice
+f_add_sign 3007,1640,1688,32,1,Artistic Armor
+f_add_sign 3026,1376,3752,0,1,Jhelom Dueling Pit
+f_add_sign 3012,2970,3432,15,1,The Dog and Lion Pub
+f_add_sign 3025,2863,989,0,1,Tanner's Shop
+f_add_sign 3050,4686,1423,0,1,Sorcerer's Guild
+f_add_sign 3012,3011,3464,15,1,Fisherman's Brew
+f_add_sign 2984,3712,2136,20,1,The Tic - Toc Shop
+f_add_sign 7977,1614,1636,40,1,East Side Park
+f_add_sign 7976,1400,1622,50,1,Castle Britannia
+f_add_sign 7976,1400,1630,50,1,Audience granted by appointment only
+f_add_sign 7976,1495,1643,35,1,Sewer Entrance: ENTER AT YOUR OWN PERIL!
+f_add_sign 7976,1495,1640,35,1,Quarantine Area: No pets permitted beyond this point!
+f_add_sign 4764,1584,1527,56,1,the Great Northern Road
+f_add_sign 4764,1432,1538,42,1,the Great Northern Road
+f_add_sign 4765,1498,1536,46,1,the Great Northern Road
+f_add_sign 4764,1519,1525,55,1,the Great Northern Road
+f_add_sign 4765,1584,1527,52,1,River Road
+f_add_sign 4765,1546,1624,23,1,River Road
+f_add_sign 4764,1546,1624,27,1,River Road
+f_add_sign 4759,1565,1584,43,1,River Road
+f_add_sign 4766,1532,1705,35,1,River Road
+f_add_sign 4761,1537,1668,35,1,River Road
+f_add_sign 4762,1561,1670,36,1,River Road
+f_add_sign 4765,1566,1678,35,1,River Road
+f_add_sign 4759,1559,1695,45,1,River Road
+f_add_sign 4766,1599,1571,36,1,River Road
+f_add_sign 4761,1599,1571,33,1,River Road
+f_add_sign 4761,1572,1600,29,1,River Road
+f_add_sign 4765,1595,1678,22,1,Bay Side Road
+f_add_sign 4759,1595,1678,25,1,Bay Side Road
+f_add_sign 4762,1617,1679,35,1,Bay Side Road
+f_add_sign 4764,1562,1720,50,1,Bay Side Road
+f_add_sign 4765,1664,1592,15,1,Bay Side Road
+f_add_sign 4765,1676,1625,10,1,Bay Side Road
+f_add_sign 4759,1640,1680,33,1,Bay Side Road
+f_add_sign 4765,1667,1559,38,1,Bay Side Road
+f_add_sign 4765,1664,1574,20,1,Bay Side Road
+f_add_sign 4766,1558,1753,30,1,Bay Side Road
+f_add_sign 4762,1552,1728,37,1,The Great Southern Way
+f_add_sign 4765,1552,1728,34,1,The Great Southern Way
+f_add_sign 4765,1532,1705,33,1,The Great Southern Way
+f_add_sign 4765,1485,1709,15,1,The Great Southern Way
+f_add_sign 4761,1488,1731,15,1,The Great Southern Way
+f_add_sign 4764,1468,1732,15,1,The Great Southern Way
+f_add_sign 4764,1441,1732,19,1,The Great Southern Way
+f_add_sign 4764,1415,1736,25,1,The Great Southern Way
+f_add_sign 4762,1362,1756,30,1,To Skara Brae
+f_add_sign 4764,1362,1756,23,1,To Britain
+f_add_sign 4761,1375,1811,18,1,To Britain
+f_add_sign 4759,1355,1835,16,1,To Britain
+f_add_sign 4761,1392,1892,9,1,To Britain
+f_add_sign 4764,1314,1749,26,1,To Britain
+f_add_sign 4764,1262,1742,9,1,To Britain
+f_add_sign 4762,1262,1742,15,1,To the Farms
+f_add_sign 4766,1262,1742,12,1,To Trinsic
+f_add_sign 4765,1392,1892,18,1,To Trinsic
+f_add_sign 4765,1355,1835,16,1,To Trinsic
+f_add_sign 4766,1375,1811,14,1,To Trinsic
+f_add_sign 4765,1362,1756,27,1,To Trinsic
+f_add_sign 4764,1392,1892,13,1,To the coast
+f_add_sign 4764,1643,1521,50,1,To Minoc
+f_add_sign 3025,1557,1613,21,1,The Chamber of Virtue
+f_add_sign 2995,1600,1589,20,1,The Wayfarer's Inn
+f_add_sign 3012,1610,1592,0,1,The Salty Dog
+f_add_sign 3011,1632,1586,0,1,The Salty Dog
+f_add_sign 3024,1619,1769,70,1,The Watch Tower
+f_add_sign 3020,1602,1720,20,1,Profuse Provisions
+f_add_sign 3010,1660,1648,0,1,A Girl's Best Friend
+f_add_sign 3083,1819,2825,0,1,Bank of Brittania : Trinsic Branch
+f_add_sign 3024,1850,2777,0,1,Jail
+f_add_sign 2996,1841,2744,0,1,The Travellers Inn
+f_add_sign 2999,1828,2743,0,1,Trinsic Stablery
+f_add_sign 3074,1855,2688,0,1,Tinkers Guild
+f_add_sign 3074,1844,2688,0,1,Tinkers Guild
+f_add_sign 3020,1851,2800,-8,1,Brittania Provisions
+f_add_sign 2980,1881,2814,6,1,Baked Delights
+f_add_sign 3008,1899,2664,0,1,Shining Path Armory
+f_add_sign 3083,1904,2686,10,1,Trinsic Royal Bank
+f_add_sign 3025,1912,2713,20,1,Trinsic Meeting Hall
+f_add_sign 2988,1914,2813,0,1,Trinsic Healer
+f_add_sign 3010,1901,2814,0,1,The Pearl of Trinsic
+f_add_sign 3016,1933,2776,10,1,Honorable Arms
+f_add_sign 3075,1942,2736,10,1,Brotherhood of Trinsic
+f_add_sign 3023,1939,2701,30,1,Mess Hall
+f_add_sign 3024,1938,2694,20,1,Barracks
+f_add_sign 3024,1947,2691,30,1,Barracks
+f_add_sign 3024,1959,2695,20,1,Barracks
+f_add_sign 3011,1942,2791,0,1,The Keg and Anchor
+f_add_sign 2966,2002,2728,30,1,Paladin's Library
+f_add_sign 3000,2005,2813,-1,1,First Trinsic Stablery
+f_add_sign 2982,1986,2846,15,1,Adventurer's Clothing
+f_add_sign 3023,1997,2864,10,1,Trinsic Fine Skins
+f_add_sign 2985,2000,2888,5,1,The Trinsic Cut
+f_add_sign 2996,2030,2813,9,1,The Rusty Anchor
+f_add_sign 3059,2037,2843,0,1,Sons of the Sea
+f_add_sign 3023,2221,1193,4,1,Farmers' Market
+f_add_sign 3007,2224,1165,0,1,The Warrior's Supplies
+f_add_sign 3024,2428,536,0,1,Minoc Town Hall
+f_add_sign 3053,2459,492,15,1,The Matewan
+f_add_sign 3020,2459,432,15,1,The Old Miners' Supplies
+f_add_sign 2986,2442,416,15,1,The Slaughtered Cow
+f_add_sign 3003,2432,555,0,1,The Mysitcal Lute
+f_add_sign 2984,2472,458,15,1,Gears and Gadgets
+f_add_sign 3076,2482,440,15,1,The New World Order
+f_add_sign 3012,2474,405,15,1,The Barnacle
+f_add_sign 3008,2525,578,0,1,Warriors' Battle Gear
+f_add_sign 2992,2510,482,15,1,The Oak Throne
+f_add_sign 3028,2500,440,15,1,The Golden Pick Axe
+f_add_sign 3026,2523,536,0,1,The Stretched Hide
+f_add_sign 3084,2505,560,0,1,Bank of Minoc
+f_add_sign 3020,2534,560,0,1,The Survival Shop
+f_add_sign 3016,2470,569,5,1,The Forgery
+f_add_sign 3076,2016,2753,30,1,Trinsic Training Hall
+f_add_sign 3022,618,1152,0,1,Great Oak Bowyer
+f_add_sign 2998,626,1040,0,1,Great Oak Vessels
+f_add_sign 3083,3768,1313,0,1,Bank of Nujelm
+f_add_sign 3024,5351,64,15,1,Mage's Appetite
+f_add_sign 2987,5267,131,20,1,Wind Healer
+f_add_sign 2965,5250,184,22,1,Seat of Knowledge
+f_add_sign 2966,5236,155,15,1,The Learned Mage
+f_add_sign 2995,5222,183,8,1,Windy Inn
+f_add_sign 3014,5217,124,0,1,Magical Supplies
+f_add_sign 2982,5200,98,5,1,Windy Clothes
+f_add_sign 2995,5168,35,22,1,Seeker's Inn
+f_add_sign 3019,5158,107,5,1,Mages'sThings
+f_add_sign 2990,5152,77,28,1,Wind Alchemy
+f_add_sign 7976,1580,2484,4,1,Only a mind at peace can approach the shrine
+f_add_sign 7976,1604,2484,7,1,A calm mind may travel where others may not tread
+
+
+[eof]

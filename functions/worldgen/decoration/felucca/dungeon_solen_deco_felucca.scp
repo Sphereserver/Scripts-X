@@ -1,0 +1,250 @@
+[function deco_solen_hive_felucca]
+
+//Water Vats
+serv.newitem=014d7
+new.attr=attr_static
+new.p=5806 1919 5
+serv.newitem=01556
+new.attr=attr_static
+new.p=5807 1918 5
+serv.newitem=014df
+new.attr=attr_static
+new.p=5805 1916 5
+serv.newitem=01558
+new.attr=attr_static
+new.p=5804 1917 5
+serv.newitem=014de
+new.attr=attr_static
+new.p=5803 1918 5
+serv.newitem=01551
+new.attr=attr_static
+new.p=5805 1920 5
+serv.newitem=01559
+new.attr=attr_static
+new.p=5805 1918 5
+serv.newitem=01554
+new.attr=attr_static
+new.p=5805 1917 5
+serv.newitem=01552
+new.attr=attr_static
+new.p=5804 1918 5
+//
+serv.newitem=014d7
+new.attr=attr_static
+new.p=5797 1926 5
+serv.newitem=01555
+new.attr=attr_static
+new.p=5798 1925 5
+serv.newitem=i_vat_3
+new.attr=attr_static
+new.p=5796 1927 5
+serv.newitem=01559
+new.attr=attr_static
+new.p=5796 1925 5
+serv.newitem=01559
+new.attr=attr_static
+new.p=5796 1925 5
+serv.newitem=01558
+new.attr=attr_static
+new.p=5795 1924 5
+serv.newitem=01554
+new.attr=attr_static
+new.p=5796 1924 5
+serv.newitem=01552
+new.attr=attr_static
+new.p=5795 1925 5
+serv.newitem=014df
+new.attr=attr_static
+new.p=5796 1923 5
+serv.newitem=014de
+new.attr=attr_static
+new.p=5794 1925 5
+
+//Felucca solen hive entrances and exits
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=1725,814
+new.morep=5917,2019
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=1725,815
+new.morep=5917,2019
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=1724,814
+new.morep=5917,2019
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=1724,815
+new.morep=5917,2019
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=1691,2789
+new.morep=5659,2017
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=1691,2790
+new.morep=5659,2017
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=1690,2789
+new.morep=5659,2017
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=1690,2790
+new.morep=5659,2017
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=731,1451
+new.morep=5658,1791
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=731,1452
+new.morep=5658,1791
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=730,1451
+new.morep=5658,1791
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=730,1452
+new.morep=5658,1791
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5655,1793
+new.morep=728,1453
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5656,1792
+new.morep=728,1453
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5655,1792
+new.morep=728,1453
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5655,1791
+new.morep=728,1453
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5654,1791
+new.morep=728,1453
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5654,1792
+new.morep=728,1453
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=2609,764
+new.morep=5919,1795
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=2609,763
+new.morep=5919,1795
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=2608,763
+new.morep=5919,1795
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=2608,764
+new.morep=5919,1795
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5921,2022
+new.morep=0,0
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5920,2021
+new.morep=0,0
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5920,2022
+new.morep=1724,816
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5920,2023
+new.morep=1724,816
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5919,2021
+new.morep=1724,816
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5919,2022
+new.morep=1724,816
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5919,2023
+new.morep=1724,816
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5918,2022
+new.morep=1724,816
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5657,2018
+new.morep=1688,2789
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5657,2019
+new.morep=1688,2789
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5656,2018
+new.morep=1688,2789
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5656,2019
+new.morep=1688,2789
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5655,2020
+new.morep=1688,2789
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5656,2020
+new.morep=1688,2789
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5655,2018
+new.morep=1688,2789
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5655,2019
+new.morep=1688,2789
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5920,1795
+new.morep=2608,762
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5919,1794
+new.morep=2608,762
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5919,1795
+new.morep=2608,762
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5919,1796
+new.morep=2608,762
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5918,1796
+new.morep=2608,762
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5918,1794
+new.morep=2608,762
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5918,1795
+new.morep=2608,762
+serv.newitem i_solen_hive_teleporter
+new.attr=attr_static
+new.p=5917,1795
+new.morep=2608,762
+
+
+[EOF]

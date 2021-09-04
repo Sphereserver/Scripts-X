@@ -1,0 +1,51 @@
+[function spawn_vendors_malas]
+
+
+//##############
+//## By Nerun ##
+//##############
+//overrideid 405
+//overridemintime 5
+//overridemaxtime 10
+//##
+//## Luna
+//##
+f_create_spawner,banker,minter,,,,,989,520,-50,4,2,10,5,0,402,1,1,0,0,0,0
+f_create_spawner,blacksmith,blacksmithguildmaster,,,,,976,512,-50,4,2,10,5,0,402,1,1,0,0,0,0
+f_create_spawner,tailor,weaver,tailorguildmaster,tanner,furtrader,,976,527,-50,4,2,10,5,0,402,1,1,1,1,1,0
+f_create_spawner,keeperofchivalry,,,,,,1016,514,-70,4,2,10,5,0,402,1,0,0,0,0,0
+f_create_spawner,keeperofchivalry,,,,,,961,517,-70,4,2,10,5,0,402,1,0,0,0,0,0
+f_create_spawner,holymage,herbalist,alchemist,customhairstylist,,,1004,527,-50,4,2,10,5,0,402,1,1,1,1,0,0
+f_create_spawner,tinker,tinkerguildmaster,carpenter,architect,realestatebroker,,1003,512,-50,4,2,10,5,0,402,1,1,1,1,1,0
+f_create_spawner,provisioner,cobbler,jeweler,,,,993,511,-50,4,2,10,5,0,402,1,1,1,0,0,0
+f_create_spawner,innkeeper,,,,,,989,527,-50,4,2,10,5,0,402,1,0,0,0,0,0
+f_create_spawner,animaltrainer,,,,,,1027,494,-70,4,2,10,5,0,402,1,0,0,0,0,0
+f_create_spawner,healer,healerguildmaster,,,,,1029,520,-55,4,2,10,5,0,402,1,1,0,0,0,0
+f_create_spawner,healer,healerguildmaster,,,,,950,520,-55,4,2,10,5,0,402,1,1,0,0,0,0
+//##
+//## Umbra
+//##
+f_create_spawner,blacksmith,blacksmithguildmaster,,,,,1977,1365,-80,4,2,10,5,0,402,1,1,0,0,0,0
+f_create_spawner,animaltrainer,,,,,,1992,1315,-90,4,2,10,5,0,402,1,0,0,0,0,0
+f_create_spawner,provisioner,cobbler,,,,,2011,1326,-80,4,2,10,5,0,402,1,1,0,0,0,0
+f_create_spawner,baker,,,,,,2017,1356,-90,4,2,10,5,0,402,1,0,0,0,0,0
+f_create_spawner,tavernkeeper,waiter,cook,barkeeper,,,2027,1353,-90,4,2,10,5,0,402,1,1,1,1,0,0
+f_create_spawner,mage,alchemist,mageguildmaster,,,,2023,1379,-80,4,2,10,5,0,402,1,1,1,0,0,0
+f_create_spawner,herbalist,alchemist,customhairstylist,,,,2025,1387,-80,4,2,10,5,0,402,1,1,1,0,0,0
+f_create_spawner,jeweler,,,,,,2045,1397,-90,4,2,10,5,0,402,1,0,0,0,0,0
+f_create_spawner,banker,minter,,,,,2048,1343,-85,4,2,10,5,0,402,1,1,0,0,0,0
+f_create_spawner,innkeeper,,,,,,2037,1311,-85,4,2,10,5,0,402,1,0,0,0,0,0
+f_create_spawner,tinker,tinkerguildmaster,,,,,2066,1282,-80,4,2,10,5,0,402,1,1,0,0,0,0
+f_create_spawner,carpenter,architect,realestatebroker,,,,2060,1283,-80,4,2,10,5,0,402,1,1,1,0,0,0
+f_create_spawner,tailor,weaver,tailorguildmaster,,,,2083,1322,-80,4,2,10,5,0,402,1,1,1,0,0,0
+f_create_spawner,tanner,furtrader,,,,,2078,1327,-80,4,2,10,5,0,402,1,1,0,0,0,0
+f_create_spawner,healer,healerguildmaster,,,,,2068,1372,-75,4,2,10,5,0,402,1,1,0,0,0,0
+//##
+//## Hanse's Hotel
+//##
+f_create_spawner,innkeeper,,,,,,1056,1434,-85,4,2,10,5,0,402,1,0,0,0,0,0
+f_create_spawner,waiter,cook,barkeeper,,,,1050,1434,-85,4,2,10,5,0,402,1,1,1,0,0,0
+f_create_spawner,animaltrainer,veterinarian,,,,,1042,1444,-90,4,5,10,6,4,1,1,1,0,0,0,0
+
+
+[EOF]

@@ -1,0 +1,259 @@
+[function spawn_towns_life_trammel]
+
+//##############
+//## By Nerun ##
+//##############
+//overrideid 123
+//overridemap 2
+//overridemintime 5
+//overridemaxtime 10
+//##
+//## Britain Chaos/Order Guards
+//##
+f_create_spawner,Orderguard,,,,,,1400,1623,28,2,5,10,1,0,1,1,0,0,0,0,0
+f_create_spawner,Orderguard,,,,,,1400,1628,28,2,5,10,1,0,1,1,0,0,0,0,0
+f_create_spawner,Chaosguard,,,,,,1521,1457,15,2,5,10,1,0,1,1,0,0,0,0,0
+f_create_spawner,Chaosguard,,,,,,1525,1457,15,2,5,10,1,0,1,1,0,0,0,0,0
+//##
+//## Town Criers
+//##
+f_create_spawner,Towncrier,,,,,,1662,1611,19,2,5,10,5,1,1,1,0,0,0,0,0
+f_create_spawner,Towncrier,,,,,,1421,1698,0,2,5,10,5,1,1,1,0,0,0,0,0
+f_create_spawner,Towncrier,,,,,,2254,1207,0,2,5,10,5,1,1,1,0,0,0,0,0
+f_create_spawner,Towncrier,,,,,,5290,3987,37,2,5,10,5,1,1,1,0,0,0,0,0
+f_create_spawner,Towncrier,,,,,,3652,2619,0,2,5,10,5,1,1,1,0,0,0,0,0
+f_create_spawner,Towncrier,,,,,,1330,3778,0,2,5,10,5,1,1,1,0,0,0,0,0
+if (<reportedcliver> > 6.0.3)
+  serv.log Skipping Old Magincia, reported client version is <reportedcliver>
+  else
+  f_create_spawner,Towncrier,,,,,,3721,2161,20,2,5,10,5,1,1,1,0,0,0,0,0
+endif
+f_create_spawner,Towncrier,,,,,,2515,557,0,2,5,10,5,1,1,1,0,0,0,0,0
+f_create_spawner,Towncrier,,,,,,4451,1153,0,2,5,10,5,1,1,1,0,0,0,0,0
+f_create_spawner,Towncrier,,,,,,3773,1308,0,2,5,10,5,1,1,1,0,0,0,0,0
+f_create_spawner,Towncrier,,,,,,5685,3148,-4,2,5,10,5,1,1,1,0,0,0,0,0
+f_create_spawner,Towncrier,,,,,,2891,3474,15,2,5,10,5,1,1,1,0,0,0,0,0
+f_create_spawner,Towncrier,,,,,,603,2141,0,2,5,10,5,1,1,1,0,0,0,0,0
+f_create_spawner,Towncrier,,,,,,1914,2687,0,2,5,10,5,1,1,1,0,0,0,0,0
+f_create_spawner,Towncrier,,,,,,1829,2811,0,2,5,10,5,1,1,1,0,0,0,0,0
+f_create_spawner,Towncrier,,,,,,2895,686,0,2,5,10,5,1,1,1,0,0,0,0,0
+f_create_spawner,Towncrier,,,,,,627,864,0,2,5,10,5,1,1,1,0,0,0,0,0
+//##
+//## Hire
+//##
+f_create_spawner,HireBard:HireBardArcher:HireBeggar:HireFighter:HireMage,HireRanger:HireRangerArcher:HireSailor:HireThief:HirePaladin,,,,,1399,3743,-21,2,5,15,10,10,1,5,5,0,0,0,0
+//##
+//## Escorts
+//##
+f_create_spawner,Escortablemage:Seekerofadventure:Noble,,,,,,1483,1760,-2,2,5,15,20,10,1,3,0,0,0,0,0
+f_create_spawner,Escortablemage:Seekerofadventure:Noble,,,,,,1372,3916,-2,2,5,15,20,10,1,3,0,0,0,0,0
+f_create_spawner,Escortablemage:Seekerofadventure:Noble,,,,,,1126,3688,-2,2,5,15,20,10,1,3,0,0,0,0,0
+if (<reportedcliver> > 6.0.3)
+  serv.log Skipping Old Magincia, reported client version is <reportedcliver>
+  else
+  f_create_spawner,Escortablemage:Seekerofadventure:Noble,,,,,,3674,2291,-2,2,5,15,20,10,1,3,0,0,0,0,0
+endif
+f_create_spawner,Escortablemage:Seekerofadventure:Noble,,,,,,4398,1049,-2,2,5,15,20,10,1,3,0,0,0,0,0
+f_create_spawner,Escortablemage:Seekerofadventure:Noble,,,,,,3815,1217,0,2,5,15,20,10,1,3,0,0,0,0,0
+f_create_spawner,Escortablemage:Seekerofadventure:Noble,,,,,,3749,1404,0,2,5,15,20,10,1,3,0,0,0,0,0
+f_create_spawner,Escortablemage:Seekerofadventure:Noble,,,,,,3645,2661,-2,2,5,15,20,10,1,3,0,0,0,0,0
+f_create_spawner,Escortablemage:Seekerofadventure:Noble,,,,,,2994,3451,16,2,5,15,20,10,1,3,0,0,0,0,0
+f_create_spawner,Escortablemage:Seekerofadventure:Noble,,,,,,673,2235,-3,2,5,15,20,10,1,3,0,0,0,0,0
+f_create_spawner,Escortablemage:Seekerofadventure:Noble,,,,,,573,2246,0,2,5,15,20,10,1,3,0,0,0,0,0
+f_create_spawner,Escortablemage:Seekerofadventure:Noble,,,,,,2068,2854,0,2,5,15,20,10,1,3,0,0,0,0,0
+f_create_spawner,Escortablemage:Seekerofadventure:Noble,,,,,,3041,827,-3,2,5,15,20,10,1,3,0,0,0,0,0
+f_create_spawner,Escortablemage:Seekerofadventure:Noble,,,,,,631,883,0,2,5,15,20,10,1,3,0,0,0,0,0
+//##
+//## Treasures
+//##
+//## Trinsic Bank
+f_create_spawner,TreasureLevel3,TreasureLevel4,,,,,1813,2834,0,2,1,2,2,2,1,1,2,0,0,0,0
+//## Vesper Bank
+f_create_spawner,TreasureLevel1,,,,,,2875,675,0,2,1,2,2,2,1,6,0,0,0,0,0
+f_create_spawner,TreasureLevel1,TreasureLevel2,,,,,2874,692,0,2,1,2,1,1,1,1,1,0,0,0,0
+f_create_spawner,TreasureLevel2,TreasureLevel3,,,,,2884,692,0,2,1,2,1,1,1,2,1,0,0,0,0
+//##
+//## Heartwood
+//##
+f_create_spawner,olaeni,,,,,,7082,367,0,2,5,10,4,4,1,1,0,0,0,0,0
+f_create_spawner,bolaevin,bird,,,,,7063,350,0,2,5,10,4,4,1,1,2,0,0,0,0
+f_create_spawner,athialon,,,,,,7010,363,0,2,5,10,8,8,1,1,0,0,0,0,0
+f_create_spawner,abbein,taellia,vicaie,mallew,jothan,alethanian,7048,382,0,2,5,10,12,12,1,1,1,1,1,1,1
+f_create_spawner,tyeelor,,,,,,6989,342,0,2,5,10,8,8,1,1,0,0,0,0,0
+f_create_spawner,aneen,bird,,,,,7053,338,0,2,5,10,6,6,1,1,1,0,0,0,0
+f_create_spawner,alelle,daelas,,,,,7031,409,7,2,5,10,10,10,1,1,1,0,0,0,0
+f_create_spawner,aluniol,rebinil,,,,,7090,387,0,2,5,10,8,8,1,1,1,0,0,0,0
+//##############
+//## By Nerun ##
+//##############
+//overrideid 122
+//overridemap 2
+//overridemintime 5
+//overridemaxtime 10
+//##
+//## Towns
+//##
+//## ----Mainland----
+//##
+//## Wind
+//##
+f_create_spawner,dragon,drake,,,,,5249,228,15,2,5,10,20,20,1,1,2,0,0,0,0
+f_create_spawner,lichlord,lich,,,,,5164,205,15,2,5,10,15,15,1,1,2,0,0,0,0
+f_create_spawner,daemon,,,,,,5133,150,0,2,5,10,15,15,1,3,0,0,0,0,0
+//##
+//## Britain Town
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,1575,1658,20,2,5,15,120,120,1,15,15,15,15,0,0
+f_create_spawner,Cow,,,,,,1319,1810,0,2,5,10,10,5,1,7,0,0,0,0,0
+f_create_spawner,Cow,,,,,,1319,1821,0,2,5,10,10,5,1,7,0,0,0,0,0
+//## -------------------
+//##
+//## Britain Farm 1
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,1340,1790,15,2,5,15,80,80,1,5,5,5,5,0,0
+f_create_spawner,Chicken,,,,,,1339,1788,15,2,5,15,80,80,1,5,0,0,0,0,0
+//##
+//## Britain Farm 2
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,1217,1825,0,2,5,15,80,80,1,5,5,5,5,0,0
+f_create_spawner,Chicken,,,,,,1216,1823,0,2,5,15,80,80,1,5,0,0,0,0,0
+//##
+//## Britain Farm 3
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,1186,1633,0,2,5,15,80,80,1,7,7,7,7,0,0
+f_create_spawner,Chicken,,,,,,1185,1632,0,2,5,15,80,80,1,5,0,0,0,0,0
+//##
+//## Trinsic Town
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,1942,2780,1,2,5,15,120,120,1,12,12,12,12,0,0
+//##
+//## Skara Brae Town
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,608,2195,0,2,5,15,70,70,1,8,8,8,8,0,0
+f_create_spawner,Chicken:Sheep:Cow,,,,,,813,2164,0,2,5,15,15,10,1,3,0,0,0,0,0
+f_create_spawner,Chicken:Sheep:Cow,,,,,,818,2269,0,2,5,15,15,10,1,3,0,0,0,0,0
+f_create_spawner,Chicken:Sheep:Cow,,,,,,830,2353,0,2,5,15,15,10,1,3,0,0,0,0,0
+//##
+//## Yew Town
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,536,982,0,2,5,15,160,160,1,20,20,20,20,0,0
+f_create_spawner,Sheep,,,,,,676,1178,0,2,5,10,15,10,1,15,0,0,0,0,0
+f_create_spawner,Sheep,,,,,,570,1099,0,2,5,10,15,10,1,15,0,0,0,0,0
+f_create_spawner,Sheep,,,,,,675,939,0,2,5,10,15,10,1,15,0,0,0,0,0
+f_create_spawner,Chicken,,,,,,382,1192,0,2,5,10,10,10,1,2,0,0,0,0,0
+f_create_spawner,Chicken,,,,,,560,1239,0,2,5,10,10,10,1,2,0,0,0,0,0
+f_create_spawner,Chicken,,,,,,688,1007,0,2,5,10,10,10,1,2,0,0,0,0,0
+//##
+//## Cove Town
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,2242,1197,0,2,5,15,50,50,1,4,4,4,4,0,0
+f_create_spawner,Chicken,,,,,,2223,1151,0,2,5,10,5,5,1,1,0,0,0,0,0
+//##
+//## Vesper Town 1
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,2919,726,5,2,5,15,100,100,1,10,10,10,10,0,0
+//##
+//## Vesper Town 2
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,2914,916,0,2,5,15,100,100,1,10,10,10,10,0,0
+//##
+//## Minoc Town 1
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,2481,542,0,2,5,15,70,70,1,5,5,5,5,0,0
+//##
+//## Minoc Town 2
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,2472,434,15,2,5,15,50,50,1,5,5,5,5,0,0
+//##
+//## Minoc Town 3
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,2566,622,0,2,5,15,50,50,1,3,3,3,3,0,0
+//##
+//## ----Islands----
+//##
+//## Jhelom Town 1
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,1154,3639,0,2,5,15,50,50,1,4,4,4,4,0,0
+f_create_spawner,Chicken:Cow:Sheep,,,,,,1127,3583,0,2,5,10,10,10,1,5,0,0,0,0,0
+f_create_spawner,Chicken:Cow:Sheep,,,,,,1183,3607,0,2,5,10,10,10,1,5,0,0,0,0,0
+//##
+//## Jhelom Town 2
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,1400,3775,0,2,5,15,100,100,1,10,10,10,10,0,0
+//##
+//## Jhelom Town 3
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,1435,4000,0,2,5,15,50,50,1,5,5,5,5,0,0
+//##
+//## Serpents Hold Town
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,2972,3436,15,2,5,15,100,100,1,12,12,12,12,0,0
+//##
+//## New Haven
+//##
+f_create_spawner,cat,,,,,,3477,2556,10,2,5,10,3,3,1,3,0,0,0,0,0
+f_create_spawner,dog,cat,bird,,,,3487,2549,16,2,5,10,100,100,1,5,5,20,0,0,0
+if (<reportedcliver> > 6.0.3)
+  serv.log Skipping Old Magincia, reported client version is <reportedcliver>
+  else
+  //##
+  //## Magincia Town 1
+  //##
+  f_create_spawner,Bird,Cat,Dog,Rat,,,3714,2205,20,2,5,15,50,50,1,6,6,6,6,0,0
+  //##
+  //## Magincia Town 2
+  //##
+  f_create_spawner,Bird,Cat,Dog,Rat,,,3717,2111,20,2,5,15,50,50,1,6,6,6,6,0,0
+endif
+//##
+//## Buccaneers Den Town 1
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,2682,2118,0,2,5,15,50,50,1,5,5,5,5,0,0
+//##
+//## Buccaneers Den Town 2
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,2687,2218,0,2,5,15,50,50,1,4,4,4,4,0,0
+//##
+//## Nujel'm Town
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,3724,1243,0,2,5,15,160,160,1,18,18,18,18,0,0
+//##
+//## Moonglow Town
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,4429,1121,0,2,5,15,70,70,1,12,12,12,12,0,0
+f_create_spawner,Chicken:Cow:Sheep,,,,,,4634,1302,0,2,5,10,10,10,1,5,0,0,0,0,0
+f_create_spawner,Chicken,,,,,,4567,1476,0,2,5,10,3,3,1,2,0,0,0,0,0
+f_create_spawner,Chicken,,,,,,4422,1451,0,2,5,10,5,5,1,1,0,0,0,0,0
+//##
+//## Heartwood
+//##
+f_create_spawner,bird,,,,,,7036,409,12,2,5,10,12,12,1,3,0,0,0,0,0
+f_create_spawner,bird,,,,,,7048,424,0,2,5,10,20,20,1,5,0,0,0,0,0
+f_create_spawner,bird,,,,,,7081,381,0,2,5,10,12,12,1,3,0,0,0,0,0
+f_create_spawner,bird,,,,,,7002,382,0,2,5,10,20,12,1,5,0,0,0,0,0
+f_create_spawner,bird,,,,,,6999,352,0,2,5,10,12,12,1,3,0,0,0,0,0
+f_create_spawner,bird,,,,,,7047,382,0,2,5,10,12,12,1,5,0,0,0,0,0
+f_create_spawner,Bird,,,,,,7033,385,0,2,5,10,50,50,1,10,0,0,0,0,0
+f_create_spawner,MiniatureMushroom,,,,,,7032,411,7,2,5,10,10,10,1,4,0,0,0,0,0
+f_create_spawner,MiniatureMushroom,,,,,,7044,429,0,2,5,10,10,10,1,4,0,0,0,0,0
+f_create_spawner,MiniatureMushroom,,,,,,6986,384,0,2,5,10,10,10,1,4,0,0,0,0,0
+f_create_spawner,MiniatureMushroom,,,,,,7063,410,0,2,5,10,10,10,1,6,0,0,0,0,0
+f_create_spawner,MiniatureMushroom,,,,,,7052,386,0,2,5,10,10,10,1,6,0,0,0,0,0
+f_create_spawner,MiniatureMushroom,,,,,,7035,387,0,2,5,10,10,10,1,6,0,0,0,0,0
+f_create_spawner,MiniatureMushroom,,,,,,7007,382,0,2,5,10,10,10,1,6,0,0,0,0,0
+f_create_spawner,MiniatureMushroom,,,,,,7087,382,1,2,5,10,10,10,1,2,0,0,0,0,0
+f_create_spawner,MiniatureMushroom,,,,,,6992,345,0,2,5,10,10,10,1,2,0,0,0,0,0
+f_create_spawner,MiniatureMushroom,,,,,,7007,360,0,2,5,10,10,10,1,2,0,0,0,0,0
+//##
+//## ----Lostlands----
+//##
+//## Papua Town
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,5726,3211,-2,2,5,15,100,100,1,12,12,12,12,0,0
+//##
+//## Delucia Town
+//##
+f_create_spawner,Bird,Cat,Dog,Rat,,,5255,4000,37,2,5,15,80,80,1,6,6,6,6,0,0
+f_create_spawner,Chicken:Sheep:Cow:Bull,,,,,,5267,4012,40,2,5,10,15,15,1,5,0,0,0,0,0
+
+[EOF]

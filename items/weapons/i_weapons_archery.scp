@@ -74,7 +74,6 @@ ON=@Create
 [ITEMDEF i_swiftflight]
 ID=i_bow
 NAME=Swiftflight
-TEVENTS=t_iprop
 //TEVENTS=t_set_marksman //FIXME add it
 CATEGORY=Provisions - Weapons - Archery
 SUBSECTION=Bows

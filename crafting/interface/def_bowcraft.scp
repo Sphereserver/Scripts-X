@@ -117,12 +117,6 @@ bowcraft_material_6_color	"color_o_frostwood"
 bowcraft_material_6_resourceid	"i_log_frostwood"
 
 
-[function f_colored_armor_oak]
-if !<istevent.t_iprop>
-events +t_iprop
-endif
-Luck = <eval <Luck> + 40>
-
 [function f_colored_weaps_oak]
 if !<istevent.ei_equipitem>
 events +ei_equipitem

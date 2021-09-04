@@ -3298,8 +3298,19 @@ DUPEITEM=03be
 //sandstone stone wall (full)
 DUPEITEM=03be
 
-[ITEMDEF 03c9]
-//sandstone stone wall (full)
+[itemdef 03c9] //Decoration on a dungeon
+defname=i_wall_stone_and_vine_addon
+name=magic vines
+//DEFNAME=i_door_secret_stone_1
+RESOURCES=100 i_rock_plain
+CATEGORY=Buildings - Doors
+SUBSECTION=Secret Door (dungeon)
+DESCRIPTION=@ (secret door)
+TYPE=T_DOOR
+
+on=@dclick
+src.sysmessage You try to examine the strange wall but the vines get in your way.
+//return 1
 DUPEITEM=03be
 
 [ITEMDEF 03ca]

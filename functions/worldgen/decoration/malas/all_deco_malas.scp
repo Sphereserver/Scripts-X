@@ -1,0 +1,1761 @@
+
+[function deco_all_malas]
+//added
+serv.newitem=01062
+new.attr=attr_static
+new.p=976 523 -50 3
+//moongate
+serv.newitem=01FD7 
+new.color=03F1
+new.type=t_normal
+new.attr=attr_static
+new.p=375 802 1 3
+serv.newitem=01BC3 
+new.type=t_telepad
+new.name=teleporter
+new.attr=attr_static|attr_invis
+new.morep=770 1209 25 4
+new.p=375 802 1 3
+
+//ankh
+serv.newitem=0004 
+new.color=0FA
+new.type=t_shrine
+new.attr=attr_static
+new.p=397 801 4 3
+serv.newitem=0005
+new.color=0FA
+new.type=t_shrine
+new.attr=attr_static
+new.p=398 801 4 3
+
+//Guardian barrier
+serv.newitem=03967
+new.attr=attr_static
+new.p=404 1140 0 3
+serv.newitem=03967
+new.attr=attr_static
+new.p=405 1140 0 3
+serv.newitem=03967
+new.attr=attr_static
+new.p=406 1140 0 3
+serv.newitem=03967
+new.attr=attr_static
+new.p=407 1140 0 3
+serv.newitem=03967
+new.attr=attr_static
+new.p=408 1140 0 3
+serv.newitem=03967
+new.attr=attr_static
+new.p=409 1140 0 3
+
+//Green teleporters
+serv.newitem=0051C
+new.attr=attr_static
+new.p=418 804 -1 3
+
+serv.newitem=0051C 
+new.color=017E
+new.attr=attr_static
+new.p=412 1123 0 3
+
+serv.newitem=01BC3 
+new.morep=417 806 -1
+new.type=t_telepad
+new.name=teleporter
+new.attr=attr_static|attr_invis
+new.p=412 1123 0 3
+
+//Blue teleporters
+serv.newitem=0051C
+new.attr=attr_static
+new.p=423 805 -1 3
+
+serv.newitem=0051C 
+new.color=02
+new.attr=attr_static
+new.p=411 1117 0 3
+
+serv.newitem=01BC3 
+new.morep=422 806 -1
+new.attr=attr_static
+new.p=411 1117 0 3
+
+//Red teleporter
+serv.newitem=0051C 
+new.color=021
+new.attr=attr_static
+new.p=421 1092 0 3
+
+serv.newitem=01BC3 
+new.morep=391 803 -1
+new.attr=attr_static
+new.p=421 1092 0 3
+
+//White teleporters
+serv.newitem=0051C
+new.attr=attr_static
+new.p=392 802 -1 3
+
+serv.newitem=0051C 
+new.color=047E
+new.attr=attr_static
+new.p=412 1086 0 3
+
+serv.newitem=01BC3 
+new.morep=391 803 -1
+new.attr=attr_static
+new.p=412 1086 0 3
+
+//wooden chest
+serv.newitem=00E42
+new.attr=attr_static
+new.p=393 989 -15 3
+
+//floor spikes
+serv.newitem=0119A
+new.attr=attr_static
+new.p=418 1084 0 3
+
+//floor saw
+serv.newitem=011AC
+new.attr=attr_static
+new.p=421 1077 0 3
+
+//hole
+serv.newitem=01B71
+new.attr=attr_static
+new.p=403 1073 0 3
+serv.newitem=01B71
+new.attr=attr_static
+new.p=410 1050 0 3
+serv.newitem=01B71
+new.attr=attr_static
+new.p=408 1044 0 3
+serv.newitem=01B71
+new.attr=attr_static
+new.p=409 1044 0 3
+serv.newitem=01B71
+new.attr=attr_static
+new.p=410 1044 0 3
+serv.newitem=01B71
+new.attr=attr_static
+new.p=411 1044 0 3
+serv.newitem=01B71
+new.attr=attr_static
+new.p=412 1044 0 3
+serv.newitem=01B71
+new.attr=attr_static
+new.p=413 1044 0 3
+// not implemented?
+//haramaki-do
+serv.newitem=02674 
+new.color=048C
+new.attr=attr_static
+new.p=409 1009 -13 3
+
+//war mace
+serv.newitem=01406 
+new.color=047E
+new.attr=attr_static
+new.p=409 1008 -13 3
+
+//kabuto
+serv.newitem=i_platemail_kabuto 
+new.color=048C
+new.attr=attr_static
+new.p=409 1008 -13 3
+
+//chest
+serv.newitem=0280D
+new.attr=attr_static
+new.p=436 999 -15 3
+
+//kimono
+serv.newitem=i_kimono_male
+new.attr=attr_static
+new.p=396 1149 0 3
+
+//ninja pants
+serv.newitem=02791 
+new.color=0530
+new.attr=attr_static
+new.p=397 1146 1 3
+
+//ninja mask
+serv.newitem=i_hood_ninja_leather 
+new.color=0530
+new.attr=attr_static
+new.p=395 1146 0 3
+
+//ninja shirt
+serv.newitem=02793 
+new.color=0530
+new.attr=attr_static
+new.p=396 1146 0 3
+//Orc Forts' Doors
+serv.newitem=006D7
+new.attr=attr_static
+new.p=1206 703 -88 3
+serv.newitem=006D7
+new.attr=attr_static
+new.p=1258 1329 -90 3
+serv.newitem=006D7
+new.attr=attr_static
+new.p=912 196 -79 3
+serv.newitem=006D7
+new.attr=attr_static
+new.p=1599 1822 -110 3
+serv.newitem=006D7
+new.attr=attr_static
+new.p=1666 358 -50 3
+serv.newitem=006D5
+new.attr=attr_static
+new.p=1205 703 -88 3
+serv.newitem=006D5
+new.attr=attr_static
+new.p=1257 1329 -90 3
+serv.newitem=006D5
+new.attr=attr_static
+new.p=911 196 -79 3
+serv.newitem=006D5
+new.attr=attr_static
+new.p=1598 1822 -110 3
+serv.newitem=006D5
+new.attr=attr_static
+new.p=1665 358 -50 3
+//Labyrinth
+//Black moongate
+serv.newitem=01FD7 
+new.attr=attr_static
+new.color=04A
+new.p=1775 971 -85 3
+serv.newitem=0856
+new.attr=attr_static
+new.p=409 1935 0 3
+serv.newitem=0854
+new.attr=attr_static
+new.p=409 1936 0 3
+//CItadel
+serv.newitem=017DC
+new.attr=attr_static
+new.p=85 1880 0 3
+serv.newitem=017DC
+new.attr=attr_static
+new.p=90 1919 0 3
+serv.newitem=017DC
+new.attr=attr_static
+new.p=122 1869 0 3
+serv.newitem=017DC
+new.attr=attr_static
+new.p=137 1916 0 3
+//Traps
+serv.newitem=011A0
+new.attr=attr_static
+new.p=185 1916 0 3
+serv.newitem=011A0
+new.attr=attr_static
+new.p=186 1916 0 3
+serv.newitem=011A0
+new.attr=attr_static
+new.p=182 1891 0 3
+serv.newitem=011A0
+new.attr=attr_static
+new.p=155 1899 0 3
+serv.newitem=011A0
+new.attr=attr_static
+new.p=155 1898 0 3
+serv.newitem=011A0
+new.attr=attr_static
+new.p=136 1975 0 3
+serv.newitem=011A0
+new.attr=attr_static
+new.p=136 1976 0 3
+serv.newitem=011A0
+new.attr=attr_static
+new.p=136 1977 0 3
+//
+serv.newitem=0119A
+new.attr=attr_static
+new.p=135 1870 0 3
+//Bedlam
+//Iron Maiden in Umbra
+serv.newitem=0124D
+new.attr=attr_static
+new.p=2067 1371 -75 3
+//Iron Gate
+serv.newitem=0855
+new.attr=attr_static
+new.p=101 1627 50 3
+//
+serv.newitem=082C
+new.attr=attr_static
+new.p=92 1667 0 3
+//
+serv.newitem=082E
+new.attr=attr_static
+new.p=92 1666 0 3
+
+serv.newitem=06ED
+new.attr=attr_static
+new.p=95 1640 0 3
+serv.newitem=06ED
+new.attr=attr_static
+new.p=86 1651 0 3
+serv.newitem=06ED
+new.attr=attr_static
+new.p=86 1651 20 3
+serv.newitem=06ED
+new.attr=attr_static
+new.p=84 1651 0 3
+serv.newitem=06ED
+new.attr=attr_static
+new.p=84 1651 20 3
+serv.newitem=06ED
+new.attr=attr_static
+new.p=84 1646 0 3
+serv.newitem=06ED
+new.attr=attr_static
+new.p=84 1646 20 3
+serv.newitem=06ED
+new.attr=attr_static
+new.p=91 1628 0 3
+//
+serv.newitem=06EF
+new.attr=attr_static
+new.p=95 1639 0 3
+//Boss Exit
+serv.newitem=0DDA
+new.attr=attr_static
+new.p=99 1617 50 3
+//////////////////////////end of bedlam
+//signs
+serv.newitem=2979 
+new.attr=attr_static
+new.p=962 633 -90 3
+
+serv.newitem=3011 
+new.attr=attr_static
+new.p=962 641 -90 3
+
+serv.newitem=3015 
+new.color=1150
+new.attr=attr_static
+new.p=981 511 -50 3
+
+serv.newitem=2981 
+new.color=1150
+new.attr=attr_static
+new.p=981 526 -50 3
+
+serv.newitem=3020 
+new.color=1150
+new.attr=attr_static
+new.p=994 509 -50 3
+
+serv.newitem=3083 
+new.color=1150
+new.attr=attr_static
+new.p=996 517 -50 3
+
+serv.newitem=2990 
+new.color=1150
+new.attr=attr_static
+new.p=1000 523 -50 3
+
+serv.newitem=2992 
+new.color=1150
+new.attr=attr_static
+new.p=1001 518 -50 3
+
+serv.newitem=2995 
+new.color=1150
+new.attr=attr_static
+new.p=1005 522 -30 3
+
+serv.newitem=3000
+new.attr=attr_static
+new.p=1021 505 -70 3
+//umbra
+serv.newitem=3000 
+new.color=1102
+new.attr=attr_static 
+new.p=1994 1326 -91 3
+
+serv.newitem=3015 
+new.color=1102
+new.attr=attr_static 
+new.p=1997 1369 -87 3
+
+serv.newitem=3020 
+new.color=1102
+new.attr=attr_static 
+new.p=2014 1338 -76 3
+
+serv.newitem=2979 
+new.color=1102
+new.attr=attr_static 
+new.p=2023 1347 -90 3
+
+serv.newitem=3011 
+new.color=1102
+new.attr=attr_static 
+new.p=2030 1348 -89 3
+
+serv.newitem=2995 
+new.color=1102
+new.attr=attr_static 
+new.p=2047 1312 -90 3
+
+serv.newitem=2989 
+new.color=1102
+new.attr=attr_static 
+new.p=2038 1385 -88 3
+
+serv.newitem=3083 
+new.color=1102
+new.attr=attr_static 
+new.p=2056 1338 -85 3
+
+serv.newitem=3009 
+new.color=1102
+new.attr=attr_static 
+new.p=2055 1390 -90 3
+
+serv.newitem=2992 
+new.color=1102
+new.attr=attr_static 
+new.p=2069 1298 -81 3
+
+serv.newitem=2982 
+new.color=1102
+new.attr=attr_static 
+new.p=2075 1339 -82 3
+
+serv.newitem=2988 
+new.color=1102
+new.attr=attr_static 
+new.p=2085 1379 -90 3
+
+////////////////////////////DarkTides
+//a magical teleporter
+//*	DarkTidesTeleporter
+serv.newitem=01822
+new.attr=attr_static 
+new.p=2105 1307 -50 3
+serv.newitem= 01822
+new.attr=attr_static 
+new.p=2018 1226 -90 3
+serv.newitem= 01822
+new.attr=attr_static 
+new.p=1068 458 -90 3
+//*	
+//Crystal cave barrier
+//*	CrystalCaveBarrier
+serv.newitem=03967
+new.attr=attr_static 
+new.p=1193 512 -90 3
+serv.newitem= 03967
+new.attr=attr_static 
+new.p=1194 512 -90 3
+serv.newitem= 03967
+new.attr=attr_static 
+new.p=1195 512 -90 3
+serv.newitem= 03967
+new.attr=attr_static 
+new.p=1196 512 -90 3
+serv.newitem= 03967
+new.attr=attr_static 
+new.p=1197 512 -90 3
+//*	
+//Kronus scroll box
+//*	KronusScrollBox
+serv.newitem=0E80
+new.attr=attr_static 
+new.p=1185 451 -90 3
+//*	
+//Vault of secrets barrier
+//*	VaultOfSecretsBarrier
+serv.newitem=049E
+new.attr=attr_static 
+new.p=1073 450 -90 3
+serv.newitem= 049E
+new.attr=attr_static 
+new.p=1073 451 -90 3
+serv.newitem= 049E
+new.attr=attr_static 
+new.p=1073 452 -90 3
+serv.newitem= 049E
+new.attr=attr_static 
+new.p=1078 450 -90 3
+serv.newitem= 049E
+new.attr=attr_static 
+new.p=1078 451 -90 3
+serv.newitem= 049E
+new.attr=attr_static 
+new.p=1078 452 -90 3
+//*	
+//metal chest
+//*	MetalChest
+serv.newitem=009AB 
+new.color=0499
+new.attr=attr_static 
+new.p=1076 453 -84 3
+serv.newitem= 009AB 
+new.color=0499
+new.attr=attr_static 
+new.p=1076 449 -84 3
+//*	
+//Vault of secrets sign
+//*	LocalizedSign
+serv.newitem=00BD0 
+new.color=0482
+new.attr=attr_static 
+new.p=1079 454 -84 3
+//*	
+//metal signpost
+//*	Static
+//serv.newitem=00B9E
+//*	
+//crate
+//*	MediumCrate
+serv.newitem=00E3E
+new.attr=attr_static 
+new.p=1185 450 -90 3
+serv.newitem= 00E3E
+new.attr=attr_static 
+new.p=1185 450 -87 3
+serv.newitem= 00E3E
+new.attr=attr_static 
+new.p=1200 438 -87 3
+serv.newitem= 00E3E
+new.attr=attr_static 
+new.p=1203 439 -90 3
+serv.newitem= 00E3E
+new.attr=attr_static 
+new.p=1185 454 -87 3
+//*	
+//crate
+//*	MediumCrate
+serv.newitem=00E3F
+new.attr=attr_static 
+new.p=1185 448 -90 3
+serv.newitem= 00E3F
+new.attr=attr_static 
+new.p=1186 439 -87 3
+serv.newitem= 00E3F
+new.attr=attr_static 
+new.p=1201 438 -87 3
+serv.newitem= 00E3F
+new.attr=attr_static 
+new.p=1194 447 -90 3
+serv.newitem= 00E3F
+new.attr=attr_static 
+new.p=1194 448 -90 3
+//*	
+//metal chest
+//*	MetalGoldenChest
+serv.newitem=00E40 
+new.color=0835
+new.attr=attr_static 
+new.p=1185 447 -90 3
+serv.newitem= 00E40 
+new.color=0835
+new.attr=attr_static 
+new.p=1184 446 -90 3
+serv.newitem= 00E40 
+new.color=0835
+new.attr=attr_static 
+new.p=1184 443 -86 3
+//*	
+//metal chest
+//*	MetalGoldenChest
+serv.newitem=00E41 
+new.color=0835
+new.attr=attr_static 
+new.p=1184 445 -90 3
+serv.newitem= 00E41 
+new.color=0835
+new.attr=attr_static 
+new.p=1188 437 -90 3
+serv.newitem= 00E41 
+new.color=0835
+new.attr=attr_static 
+new.p=1188 437 -86 3
+serv.newitem= 00E41 
+new.color=0835
+new.attr=attr_static 
+new.p=1189 437 -90 3
+serv.newitem= 00E41 
+new.color=0835
+new.attr=attr_static 
+new.p=1194 438 -90 3
+//*	
+//metal chest
+//*	MetalGoldenChest
+serv.newitem=00E40
+new.attr=attr_static 
+new.p=1184 444 -90 3
+//*	
+//metal chest
+//*	MetalGoldenChest
+serv.newitem=00E40 
+new.color=0849
+new.attr=attr_static 
+new.p=1184 443 -90 3
+//*	
+//bookcase
+//*	FullBookcase
+serv.newitem=00A9A
+new.attr=attr_static 
+new.p=1185 440 -90 3
+//*	
+//crate
+//*	LargeCrate
+serv.newitem=00E3D
+new.attr=attr_static 
+new.p=1186 439 -90 3
+serv.newitem= 00E3D
+new.attr=attr_static 
+new.p=1200 438 -90 3
+serv.newitem= 00E3D
+new.attr=attr_static 
+new.p=1201 438 -90 3
+serv.newitem= 00E3D
+new.attr=attr_static 
+new.p=1202 439 -90 3
+serv.newitem= 00E3D
+new.attr=attr_static 
+new.p=1202 439 -87 3
+serv.newitem= 00E3D
+new.attr=attr_static 
+new.p=1185 454 -90 3
+serv.newitem= 00E3D
+new.attr=attr_static 
+new.p=1185 453 -90 3
+serv.newitem= 00E3D
+new.attr=attr_static 
+new.p=1186 453 -87 3
+serv.newitem= 00E3D
+new.attr=attr_static 
+new.p=1186 453 -90 3
+//*	
+//metal chest
+//*	MetalGoldenChest
+serv.newitem=00E41 
+new.color=0849
+new.attr=attr_static 
+new.p=1188 437 -82 3
+serv.newitem= 0E41 
+new.color=0849
+new.attr=attr_static 
+new.p=1190 437 -90 3
+//*	
+//metal chest
+//*	MetalGoldenChest
+serv.newitem=00E41 
+new.color=0482
+new.attr=attr_static 
+new.p=1189 437 -86 3
+//*	
+//small fish
+//*	Static
+serv.newitem=00DD9
+new.attr=attr_static 
+new.p=1192 438 -90 3
+//*	
+//bookcase
+//*	FullBookcase
+serv.newitem=00A97
+new.attr=attr_static 
+new.p=1197 437 -90 3
+///////////////////////////////end fark tides
+//doom
+//*	//pedestal
+serv.newitem=01F2A
+new.attr=attr_static 
+new.p=467 92 -1 3
+//*	
+//*	//alchemical symbol
+serv.newitem=0181D 
+new.color=0482
+new.attr=attr_static 
+new.p=468 92 -1 3
+//*	
+//*	//alchemical symbol
+serv.newitem=01821 
+new.color=03FD
+new.attr=attr_static 
+new.p=469 92 -1 3
+//*	
+//*	//alchemical symbol
+serv.newitem=01825 
+new.color=066D
+new.attr=attr_static 
+new.p=470 92 -1 3
+//*	
+//*	//metal door
+serv.newitem=0067D
+new.attr=attr_static 
+new.p=269 74 -1 3
+serv.newitem= 0067D
+new.attr=attr_static 
+new.p=278 96 -1 3
+serv.newitem= 0067D
+new.attr=attr_static 
+new.p=334 15 -1 3
+serv.newitem= 0067D
+new.attr=attr_static 
+new.p=344 15 -1 3
+//*	
+//*	//metal door
+serv.newitem=0067F 
+new.attr=attr_static 
+new.p=269 73 -1 3
+serv.newitem= 0067F
+new.attr=attr_static 
+new.p=278 95 -1 3
+serv.newitem= 0067F
+new.attr=attr_static 
+new.p=334 14 -1 3
+serv.newitem= 0067F
+new.attr=attr_static 
+new.p=344 14 -1 3
+//*	
+//*	//metal door
+serv.newitem=00675
+new.attr=attr_static 
+new.p=308 88 -1 3
+serv.newitem=00675
+new.attr=attr_static 
+new.p=2115 1309 -24 3
+//*	
+//*	//metal door
+serv.newitem=00677 
+new.attr=attr_static 
+new.p=309 88 -1 3
+//*	
+//*	//lever
+serv.newitem=0108C 
+new.color=083E
+new.attr=attr_static 
+new.p=307 143 5 3
+//*	
+//*	//lever
+serv.newitem=01095 
+new.color=083F
+new.attr=attr_static 
+new.p=308 143 5 3
+//*	
+//*	//lever
+serv.newitem=01095 
+new.color=0843
+new.attr=attr_static 
+new.p=309 143 5 3
+serv.newitem= 01095 
+new.color=0843
+new.attr=attr_static 
+new.p=308 146 8 3
+//*	
+//*	//lever
+serv.newitem=01093 
+new.color=0845
+new.attr=attr_static 
+new.p=310 143 5 3
+//*	
+//*	//lever
+serv.newitem=0108C 
+new.color=083D
+new.attr=attr_static 
+new.p=307 144 5 3
+//*	
+//*	//lever
+serv.newitem=0108E 
+new.color=083E
+new.attr=attr_static 
+new.p=307 145 5 3
+serv.newitem= 0108E 
+new.color=083E
+new.attr=attr_static 
+new.p=311 144 9 3
+//*	
+//*	//lever
+serv.newitem=01093 
+new.color=0835
+new.attr=attr_static 
+new.p=309 146 8 3
+//*	
+//*	//lever
+serv.newitem=01093 
+new.color=083B
+new.attr=attr_static 
+new.p=310 146 8 3
+//*	
+//*	//lever
+serv.newitem=0108C 
+new.color=0845
+new.attr=attr_static 
+new.p=311 145 9 3
+//*	
+//*	//crumbling floor
+serv.newitem=011C5 
+new.color=0455
+new.attr=attr_static 
+new.p=2347 1264 -110 3
+serv.newitem= 011C5 
+new.color=0455
+new.attr=attr_static 
+new.p=2347 1271 -110 3
+serv.newitem= 011C5 
+new.color=0455
+new.attr=attr_static 
+new.p=2340 1272 -110 3
+serv.newitem= 011C5 
+new.color=0455
+new.attr=attr_static 
+new.p=2340 1264 -110 3
+//*	
+//*	//metal door
+serv.newitem=00681 
+new.color=0455
+new.attr=attr_static 
+new.p=2333 1269 -110 3
+//*	
+//*	//metal door
+serv.newitem=0067F 
+new.color=0455
+new.attr=attr_static 
+new.p=2333 1268 -110 3
+//*	
+//*	//floor spikes
+serv.newitem=011A0
+new.attr=attr_static 
+new.p=378 140 1 3
+serv.newitem= 011A0
+new.attr=attr_static 
+new.p=378 139 2 3
+serv.newitem= 011A0
+new.attr=attr_static 
+new.p=379 140 -1 3
+serv.newitem= 011A0
+new.attr=attr_static 
+new.p=384 138 4 3
+serv.newitem= 011A0
+new.attr=attr_static 
+new.p=385 138 -2 3
+//*	
+//*	//iron gate
+serv.newitem=0082C
+new.attr=attr_static 
+new.p=351 40 -1 3
+//*	
+//*	//switch
+serv.newitem=0108F
+new.attr=attr_static 
+new.p=351 47 10 3
+//*	
+//*	//skinning knife
+serv.newitem=00EC4
+new.attr=attr_static 
+new.p=445 15 5 3
+serv.newitem= 00EC4
+new.attr=attr_static 
+new.p=445 15 6 3
+serv.newitem= 00EC4
+new.attr=attr_static 
+new.p=453 15 5 3
+serv.newitem= 00EC4
+new.attr=attr_static 
+new.p=452 16 5 3
+//*	
+//*	//skinning knife
+serv.newitem=00EC5
+new.attr=attr_static 
+new.p=444 16 5 3
+serv.newitem= 00EC5
+new.attr=attr_static 
+new.p=449 16 5 3
+serv.newitem= 00EC5
+new.attr=attr_static 
+new.p=449 16 6 3
+//*	
+//*	//floor spikes
+serv.newitem=0119A
+new.attr=attr_static 
+new.p=379 139 0 3
+serv.newitem= 0119A
+new.attr=attr_static 
+new.p=383 138 3 3
+serv.newitem= 0119A
+new.attr=attr_static 
+new.p=383 140 -2 3
+serv.newitem= 0119A
+new.attr=attr_static 
+new.p=386 144 -1 3
+//*	
+//*	//empty tub
+serv.newitem=00E83
+new.attr=attr_static 
+new.p=385 28 -1 3
+serv.newitem= 00E83
+new.attr=attr_static 
+new.p=387 28 -1 3
+//*	
+//*	//iron gate
+serv.newitem=0084C
+new.attr=attr_static 
+new.p=391 29 -1 3
+/////////////////////////////////// end of doom
+//samurai start
+//Candle
+serv.newitem=01433
+new.attr=attr_static 
+new.p=419 731 17 3
+serv.newitem= 01433
+new.attr=attr_static 
+new.p=420 731 17 3
+serv.newitem= 01433
+new.attr=attr_static 
+new.p=422 731 17 3
+serv.newitem= 01433
+new.attr=attr_static 
+new.p=421 731 17 3
+//*	
+//stone pavers
+serv.newitem=0051C 
+new.color=0FA
+new.attr=attr_static
+new.p=389 704 -1 3
+serv.newitem=0051C 
+new.color=0FA
+new.attr=attr_static
+new.p=426 780 -1 3
+serv.newitem=0051C 
+new.color=0FA
+new.attr=attr_static
+new.p=331 769 -1 3
+serv.newitem=0051C 
+new.color=0FA
+new.attr=attr_static
+new.p=355 745 -1 3
+serv.newitem=0051C 
+new.color=0FA
+new.attr=attr_static
+new.p=330 706 -1 3
+//*	
+serv.newitem=01BC3 
+new.morep=384 733 -1 3
+new.attr=attr_static
+new.p=389 704 -1 3
+serv.newitem=01BC3 
+new.morep=384 733 -1 3
+new.attr=attr_static
+new.attr=attr_static 
+new.p=426 780 -1 3
+serv.newitem=01BC3 
+new.morep=384 733 -1 3
+new.attr=attr_static
+new.p=331 769 -1 3
+serv.newitem=01BC3 
+new.morep=384 733 -1 3
+new.attr=attr_static
+new.p=355 745 -1 3
+serv.newitem=01BC3 
+new.morep=384 733 -1 3
+new.attr=attr_static
+new.p=330 706 -1 3
+//*	
+//moongate
+serv.newitem=01FD7 
+new.color=0FA
+new.attr=attr_static
+new.p=391 777 -1
+//*	
+serv.newitem=01BC3 
+new.attr=attr_static|attr_invis
+new.name=teleporter
+new.type=t_telepad
+new.morep=770 1209 25 3
+new.p=391 777 -1 3
+//*	
+//ankh
+serv.newitem=00004 
+new.color=0FA
+new.attr=attr_static
+new.p=351 733 18 3
+serv.newitem=00004 
+new.color=0FA
+new.attr=attr_static
+new.p=388 724 13 3
+//*	
+//brass sign
+//
+serv.newitem=00BD1
+new.attr=attr_static
+new.name=Welcome to your new home Samurai.
+new.p=369 777 -1 3
+//*	
+//chest
+serv.newitem=02811
+new.attr=attr_static 
+new.p=424 704 8 3
+serv.newitem= 02811
+new.attr=attr_static 
+new.p=424 705 8 3
+serv.newitem= 02811
+new.attr=attr_static 
+new.p=424 706 8 3
+//*	
+//katana
+serv.newitem=013FF 
+new.color=0482
+new.attr=attr_static 
+new.p=414 703 9 3
+//*	
+//Haochi's katana generator
+serv.newitem=01B7B
+new.attr=attr_static 
+new.p=415 703 1 3
+
+//luna
+//wooden door
+//*	DarkWoodDoor
+serv.newitem=006AD
+new.attr=attr_static 
+new.p=989 519 -30 3
+serv.newitem= 006AD
+new.attr=attr_static 
+new.p=999 527 -50 3
+//*	
+//wooden door
+//*	DarkWoodDoor
+serv.newitem=006AF 
+new.attr=attr_static 
+new.p=999 512 -50 3
+serv.newitem= 006AF
+new.attr=attr_static 
+new.p=989 518 -30 3
+//*	
+//wooden door
+//*	DarkWoodDoor
+serv.newitem=006A7 
+new.attr=attr_static 
+new.p=991 522 -30 3
+serv.newitem= 006A7
+new.attr=attr_static 
+new.p=978 522 -50 3
+serv.newitem= 006A7
+new.attr=attr_static 
+new.p=1002 522 -50 3
+serv.newitem= 006A7
+new.attr=attr_static 
+new.p=1002 517 -50 3
+serv.newitem= 006A7
+new.attr=attr_static 
+new.p=1002 522 -30 3
+//*	
+//backpack
+//*	Backpack
+serv.newitem=00E75
+new.attr=attr_static 
+new.p=992 509 -47 3
+//*	
+//bookcase
+//*	LibraryBookcase
+serv.newitem=00A9B
+new.attr=attr_static 
+new.p=950 493 -30 3
+serv.newitem= 00A9B
+new.attr=attr_static 
+new.p=951 498 -30 3
+serv.newitem= 00A9B
+new.attr=attr_static 
+new.p=953 493 -30 3
+serv.newitem= 00A9B
+new.attr=attr_static 
+new.p=952 496 -30 3
+serv.newitem= 00A9B
+new.attr=attr_static 
+new.p=952 498 -30 3
+serv.newitem= 00A9B
+new.attr=attr_static 
+new.p=953 496 -30 3
+serv.newitem= 00A9B
+new.attr=attr_static 
+new.p=986 525 -30 3
+serv.newitem= 00A9B
+new.attr=attr_static 
+new.p=1004 523 -50 3
+//*	
+//wooden shelf
+//*	EmptyBookcase
+serv.newitem=00A9E
+new.color=047E
+new.attr=attr_static 
+new.p=947 496 -70 3
+serv.newitem= 00A9E
+new.color=047E
+new.attr=attr_static 
+new.p=947 498 -70 3
+serv.newitem= 00A9E
+new.color=047E
+new.attr=attr_static 
+new.p=947 499 -70 3
+serv.newitem= 00A9E
+new.color=047E
+new.attr=attr_static 
+new.p=947 540 -70 3
+serv.newitem= 00A9E
+new.color=047E
+new.attr=attr_static 
+new.p=947 542 -70 3
+serv.newitem= 00A9E
+new.color=047E
+new.attr=attr_static 
+new.p=948 543 -30 3
+serv.newitem= 00A9E
+new.color=047E
+new.attr=attr_static 
+new.p=949 541 -50 3
+serv.newitem= 00A9E
+new.color=047E
+new.attr=attr_static 
+new.p=947 544 -70 3
+serv.newitem= 00A9E
+new.color=047E
+new.attr=attr_static 
+new.p=1022 494 -50 3
+serv.newitem= 00A9E
+new.color=047E
+new.attr=attr_static 
+new.p=1022 495 -50 3
+serv.newitem= 00A9E
+new.color=047E
+new.attr=attr_static 
+new.p=1022 543 -70 3
+serv.newitem= 00A9E
+new.color=047E
+new.attr=attr_static 
+new.p=1022 544 -70 3
+serv.newitem= 00A9E
+new.color=047E
+new.attr=attr_static 
+new.p=1024 499 -50 3
+serv.newitem= 00A9E
+new.color=047E
+new.attr=attr_static 
+new.p=949 543 -50 3
+serv.newitem= 00A9E
+new.color=047E
+new.attr=attr_static 
+new.p=1024 500 -50 3
+//*	
+//empty tub
+//*	Static
+serv.newitem=00E83
+new.color=047E
+new.attr=attr_static 
+new.p=947 497 -70 3
+//*	
+//barrel
+//*	Barrel
+serv.newitem=00FAE
+new.color=047E
+new.attr=attr_static 
+new.p=947 538 -70 3
+serv.newitem= 00FAE
+new.color=047E
+new.attr=attr_static 
+new.p=948 538 -70 3
+serv.newitem= 00FAE
+new.color=047E
+new.attr=attr_static 
+new.p=1028 541 -70 3
+serv.newitem= 00FAE
+new.color=047E
+new.attr=attr_static 
+new.p=1028 542 -64 3
+serv.newitem= 00FAE
+new.color=047E
+new.attr=attr_static 
+new.p=1028 542 -70 3
+//*	
+//wooden shelf
+//*	EmptyBookcase
+serv.newitem=00A9D
+new.color=047E
+new.attr=attr_static 
+new.p=954 538 -30 3
+serv.newitem= 00A9D
+new.color=047E
+new.attr=attr_static 
+new.p=1025 493 -30 3
+serv.newitem= 00A9D
+new.color=047E
+new.attr=attr_static 
+new.p=1028 493 -30 3
+serv.newitem= 00A9D
+new.color=047E
+new.attr=attr_static 
+new.p=1026 538 -30 3
+//*	
+//forge
+//*	SmallForgeAddon
+serv.newitem=00FB1
+new.attr=attr_static 
+new.p=974 509 -50 3
+serv.newitem= 00FB1
+new.attr=attr_static 
+new.p=977 509 -50 3
+//*	
+//anvil
+//*	AnvilSouthAddon
+serv.newitem=00FB0
+new.attr=attr_static 
+new.p=975 509 -50 3
+serv.newitem= 00FB0
+new.attr=attr_static 
+new.p=976 509 -50 3
+//*	
+//anvil
+//*	AnvilEastAddon
+serv.newitem=00FAF
+new.attr=attr_static 
+new.p=973 513 -50 3
+//*	
+//bellows
+//*	Static
+serv.newitem=01986
+new.attr=attr_static 
+new.p=973 514 -50 3
+//*	
+//forge
+//*	Static
+serv.newitem=0198A
+new.attr=attr_static 
+new.p=973 515 -50 3
+//*	
+//forge
+//*	Static
+serv.newitem=0198E
+new.attr=attr_static 
+new.p=973 516 -50 3
+//*	
+//metal chest
+//*	MetalChest
+serv.newitem=009AB
+new.color=047E
+new.attr=attr_static 
+new.p=987 516 -44 3
+serv.newitem= 009AB
+new.color=047E
+new.attr=attr_static 
+new.p=993 516 -44 3
+serv.newitem= 009AB
+new.color=047E
+new.attr=attr_static 
+new.p=994 516 -44 3
+serv.newitem= 009AB
+new.color=047E
+new.attr=attr_static 
+new.p=1004 509 -30 3
+//*	
+//metal chest
+//*	Metalchest
+serv.newitem=00E7C
+new.color=047E
+new.attr=attr_static 
+new.p=985 523 -40 3
+serv.newitem= 00E7C
+new.color=047E
+new.attr=attr_static 
+new.p=985 523 -45 3
+serv.newitem= 00E7C
+new.color=047E
+new.attr=attr_static 
+new.p=985 523 -50 3
+//*	
+//dresser
+//*	Static
+serv.newitem=00A3D
+new.attr=attr_static 
+new.p=987 525 -30 3
+//*	
+//dresser
+//*	Static
+serv.newitem=00A3C
+new.attr=attr_static 
+new.p=988 525 -30 3
+//*	
+//armoire
+//*	Armoire
+serv.newitem=00A4F
+new.attr=attr_static 
+new.p=999 523 -30 3
+serv.newitem= 00A4F
+new.attr=attr_static 
+new.p=1001 523 -30 3
+//*	
+//chest of drawers
+//*	Drawer
+serv.newitem=00A34
+new.attr=attr_static 
+new.p=996 530 -30 3
+//*	
+//bookcase
+//*	LibraryBookcase
+serv.newitem=00A99
+new.attr=attr_static 
+new.p=1000 524 -50 3
+serv.newitem= 00A99
+new.attr=attr_static 
+new.p=1000 525 -50 3
+serv.newitem= 00A99
+new.attr=attr_static 
+new.p=1000 529 -50 3
+serv.newitem= 00A99
+new.attr=attr_static 
+new.p=1000 530 -50 3
+//*	
+//barrel
+//*	Barrel
+serv.newitem=00E77
+new.color=047E
+new.attr=attr_static 
+new.p=1022 538 -70 3
+serv.newitem= 00E77
+new.color=047E
+new.attr=attr_static 
+new.p=1022 538 -64 3
+serv.newitem= 00E77
+new.color=047E
+new.attr=attr_static 
+new.p=1022 539 -70 3
+serv.newitem= 00E77
+new.color=047E
+new.attr=attr_static 
+new.p=1022 540 -70 3
+serv.newitem= 00E77
+new.color=047E
+new.attr=attr_static 
+new.p=1023 538 -70 3
+//*	
+//spinning wheel
+//*	SpinningWheelSouthAddon
+serv.newitem=01015
+new.attr=attr_static 
+new.p=973 530 -50 3
+//*	
+//upright loom
+//*	LoomSouthAddon
+serv.newitem=01065
+new.attr=attr_static 
+new.p=975 523 -50 3
+//*	
+//wooden door
+//*	DarkWoodDoor
+serv.newitem=006AB
+new.attr=attr_static 
+new.p=978 517 -50 3
+serv.newitem= 006AB
+new.attr=attr_static 
+new.p=994 516 -30 3
+//*	
+//wooden door
+//*	DarkWoodDoor
+serv.newitem=006B3
+new.attr=attr_static 
+new.p=980 527 -50 3
+//*	
+//wooden door
+//*	DarkWoodDoor
+serv.newitem=006B1
+new.attr=attr_static 
+new.p=980 512 -50 3
+//*	
+//wooden door
+//*	LightWoodDoor
+serv.newitem=006D5
+new.attr=attr_static 
+new.p=926 642 -90 3
+//*	
+//Shrine of Wisdom
+//*	AnkhNorth
+serv.newitem=004
+new.color=047E
+new.type=t_shrine
+new.attr=attr_static 
+new.p=975 508 -30 3
+
+serv.newitem=005
+new.color=047E
+new.type=t_shrine
+new.attr=attr_static 
+new.p=976 508 -30 3
+//*	
+//*	ShrineOfWisdomAddon
+serv.newitem=014C3
+new.attr=attr_static 
+new.p=975 509 -30 3
+serv.newitem=014C6
+new.attr=attr_static 
+new.p=976 509 -30 3
+serv.newitem=014C5
+new.attr=attr_static 
+new.p=976 510 -30 3
+serv.newitem=014C4
+new.attr=attr_static 
+new.p=975 510 -30 3
+//*	
+//Bakery
+//*	LocalizedSign
+serv.newitem=00BA3
+new.attr=attr_static 
+new.p=962 633 -90 3
+//*	
+//Tavern
+//*	LocalizedSign
+serv.newitem=00BC3 
+new.attr=attr_static 
+new.p=962 641 -90 3
+//*	
+//wooden door
+//*	LightWoodDoor
+serv.newitem=006D7 
+new.attr=attr_static 
+new.p=927 642 -90 3
+//*	
+//wooden gate
+//*	LightWoodGate
+serv.newitem=00843
+new.attr=attr_static 
+new.p=952 637 -90 3
+//*	
+//wooden door
+//*	LightWoodDoor
+serv.newitem=006DD
+new.attr=attr_static 
+new.p=928 637 -90 3
+//////////////////////////////////////end luna
+//Standard pouches
+serv.newitem=0E79
+new.attr=attr_static
+new.p=951 546 -70 3
+new.morep=1006, 994, -70 3
+serv.newitem=0E79
+new.attr=attr_static
+new.p=914 192 -79  3
+new.morep=1019, 1062, -70 3
+serv.newitem=0E79
+new.attr=attr_static
+new.p=1614 143 -90  3
+new.morep=1214, 1313, -90 3
+serv.newitem=0E79
+new.attr=attr_static
+new.p=2176 324 -90  3
+new.morep=1554, 172, -90 3
+serv.newitem=0E79
+new.attr=attr_static
+new.p=864 812 -90  3
+new.morep=1061, 1161, -70 3
+serv.newitem=0E79
+new.attr=attr_static
+new.p=1326 523 -87  3
+new.morep=1201, 1554, -70 3
+serv.newitem=0E79
+new.attr=attr_static
+new.p=1313 1115 -85  3
+new.morep=1183, 462, -45 3
+
+//Auto-lock pouch
+serv.newitem=0E79
+new.attr=attr_static
+new.p=1051 1434 -85  3
+new.morep=1076, 1244, -70 3
+
+//Bone container
+serv.newitem=0ECA
+new.attr=attr_static
+new.p=424 189 -1  3
+new.morep=2333, 1501, -90 3
+//Altar for summoning bone demons
+serv.newitem=01216
+new.attr=attr_static
+new.p=441 205 -1 3
+
+//Bell for summoning Chyloth
+
+serv.newitem=0091A
+new.name=Bell Of The Dead 
+new.attr=attr_static
+new.p=417 246 23 3
+
+//No teleporting on Chyloth's spot
+serv.newitem=021A4
+new.attr=attr_static
+new.p=417 246 7 3
+
+//Teleporter (pad from first boat to second
+serv.newitem=01822 
+new.attr=attr_static
+new.color=044E
+new.p=408 254 2 3
+
+//Teleporter (obj from first boat to second
+serv.newitem=01BC3
+new.name=teleporter
+new.type=t_telepad 
+new.attr=attr_static|attr_invis
+new.morep=428, 318, 2, 3
+new.p=407 254 2 3
+new.name=teleporter
+new.type=t_telepad
+serv.newitem=01BC3 
+new.attr=attr_static|attr_invis
+new.morep=428, 318, 2, 3
+new.p=408 254 2 3
+new.name=teleporter
+new.type=t_telepad
+serv.newitem=01BC3 
+new.attr=attr_static|attr_invis
+new.morep=428, 318, 2, 3
+new.p=409 254 2 3
+new.name=teleporter
+new.type=t_telepad
+
+//Teleporter (pad from second boat to land
+serv.newitem=01822 
+new.attr=attr_static
+new.color=044E
+new.p=428 321 2 3
+
+//Teleporter (obj from second boat to land
+serv.newitem=01BC3 
+new.attr=attr_static
+new.morep=422, 327, -1, 3
+new.Sound=01FE
+new.p=427 321 2 3
+serv.newitem=01BC3 
+new.attr=attr_static
+new.morep=422, 327, -1, 3
+new.Sound=01FE
+new.p=428 321 2 3
+serv.newitem=01BC3 
+new.attr=attr_static
+new.morep=422, 327, -1, 3
+new.Sound=01FE
+new.p=429 321 2 3
+
+//Daemon Bones
+serv.newitem=00F80
+new.attr=attr_static
+new.p=421 198 -1 3
+serv.newitem=00F80
+new.attr=attr_static
+new.p=422 195 -1 3
+
+//book - 
+serv.newitem=00FBE 
+new.name=The Akashic Records
+new.attr=attr_static
+new.color=0482
+new.p=420 192 8 3
+//spinning wheel
+serv.newitem=01015
+new.attr=attr_static 
+new.p=2088 1318 -80 3
+//upright loom
+serv.newitem=01060
+new.attr=attr_static 
+new.p=2088 1326 -80 3
+serv.newitem=01063
+new.attr=attr_static 
+new.p=2088 1327 -80 3
+
+serv.newitem= 01060
+new.attr=attr_static 
+new.p=2088 1329 -80 3
+serv.newitem= 01063
+new.attr=attr_static 
+new.p=2088 1330 -80 3
+//wooden door
+serv.newitem=006EB 
+new.color=0497
+new.attr=attr_static 
+new.p=2038 1320 -85 3
+serv.newitem=006EB 
+new.color=0497
+new.attr=attr_static 
+new.p=2041 1321 -85 3
+
+//oven
+serv.newitem=0092C 
+new.color=044E
+new.attr=attr_static 
+new.p=2015 1360 -90 3
+
+//training dummy
+serv.newitem=01074 
+new.color=044F
+new.attr=attr_static 
+new.p=1961 1339 -75 3
+serv.newitem=01074 
+new.color=044F
+new.attr=attr_static 
+new.p=1977 1307 -75 3
+
+//wooden bench
+serv.newitem=00B2D 
+new.color=01A
+new.attr=attr_static 
+new.p=2040 1326 -65 3
+
+//wooden door
+serv.newitem=006EF 
+new.color=0497
+new.attr=attr_static 
+new.p=2036 1317 -85 3
+serv.newitem=006EF 
+new.color=0497
+new.attr=attr_static 
+new.p=2036 1323 -65 3
+
+//barrel
+serv.newitem=00E77 
+new.color=0497
+new.attr=attr_static 
+new.p=2059 1281 -80 3
+serv.newitem=00E77 
+new.color=0497
+new.attr=attr_static 
+new.p=2059 1280 -80 3
+serv.newitem=00E77 
+new.color=0497
+new.attr=attr_static 
+new.p=2061 1290 -80 3
+serv.newitem=00E77 
+new.color=0497
+new.attr=attr_static 
+new.p=2062 1291 -80 3
+
+//metal chest
+serv.newitem=00E40 
+new.color=0497
+new.attr=attr_static 
+new.p=1975 1365 -74 3
+serv.newitem=00E40 
+new.color=0497
+new.attr=attr_static 
+new.p=1975 1366 -74 3
+serv.newitem=00E40 
+new.color=0497
+new.attr=attr_static 
+new.p=2034 1321 -65 3
+
+//barrel
+serv.newitem=00FAE 
+new.color=0497
+new.attr=attr_static 
+new.p=1975 1369 -80 3
+serv.newitem=00FAE 
+new.color=0497
+new.attr=attr_static 
+new.p=1975 1370 -80 3
+serv.newitem=00FAE 
+new.color=0497
+new.attr=attr_static 
+new.p=1975 1370 -73 3
+serv.newitem=00FAE 
+new.color=0497
+new.attr=attr_static 
+new.p=1991 1315 -90 3
+serv.newitem= 00FAE 
+new.color=0497
+new.attr=attr_static 
+new.p=2013 1365 -90 3
+serv.newitem= 00FAE 
+new.color=0497
+new.attr=attr_static 
+new.p=2013 1366 -90 3
+serv.newitem= 00FAE 
+new.color=0497
+new.attr=attr_static 
+new.p=2014 1366 -90 3
+
+//stone wall
+serv.newitem=0005A 
+new.color=0451
+new.attr=attr_static 
+new.p=1994 1325 -90 3
+
+//chest of drawers
+serv.newitem=00A2C 
+new.color=0497
+new.attr=attr_static 
+new.p=2035 1311 -65 3
+serv.newitem=00A2C 
+new.color=0497
+new.attr=attr_static 
+new.p=2041 1311 -65 3
+
+//metal chest
+serv.newitem=00E41 
+new.color=0497
+new.attr=attr_static 
+new.p=2033 1313 -65 3
+serv.newitem=00E41 
+new.color=0497 
+new.attr=attr_static 
+new.p=2039 1313 -65 3
+
+//wooden door
+serv.newitem=006E5 
+new.color=0497
+new.attr=attr_static 
+new.p=2035 1315 -65 3
+serv.newitem=006E5 
+new.color=0497
+new.attr=attr_static 
+new.p=2040 1315 -65 3
+
+//chest of drawers
+serv.newitem=00A34 
+new.color=0497
+new.attr=attr_static 
+new.p=2032 1323 -65 3
+
+//metal chest
+serv.newitem=009AB 
+new.color=0455
+new.attr=attr_static 
+new.p=2042 1339 -80 3
+serv.newitem= 009AB 
+new.color=0455
+new.attr=attr_static 
+new.p=2043 1339 -80 3
+serv.newitem= 009AB 
+new.color=0455
+new.attr=attr_static 
+new.p=2048 1344 -80 3
+serv.newitem= 009AB 
+new.color=0455
+new.attr=attr_static 
+new.p=2048 1344 -76 3
+
+//cleaver
+serv.newitem=00EC3
+new.attr=attr_static 
+new.p=2066 1372 -74 3
+
+//bottles of liquor
+serv.newitem=0099E
+new.attr=attr_static 
+new.p=2028 1354 -81 3
+
+//butcher knife
+serv.newitem=013F7
+new.attr=attr_static 
+new.p=2070 1370 -74 3
+
+
+[EOF]

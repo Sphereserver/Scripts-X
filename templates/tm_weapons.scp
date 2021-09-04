@@ -118,8 +118,45 @@ SUBSECTION=Weapon Templates
 DESCRIPTION=All Weapon
 ITEM={ random_weapon_all_normal 1 random_weapon_all_gargish 1 }
 
-///////////
-// Other //
-///////////
+////////////////////
+// Magical Weapon //
+////////////////////
+[TEMPLATE random_weapon_magic_all]
+CATEGORY=Item Templates
+SUBSECTION=Weapon Templates
+DESCRIPTION=All Weapon Magic
+ITEM={ random_weapon_ruin 1 random_weapon_might 1 random_weapon_force 1 random_weapon_power 1 random_weapon_vanq 1 }
+
+
+[TEMPLATE random_weapon_ruin]
+CATEGORY=Item Templates
+SUBSECTION=Weapon Templates
+DESCRIPTION=All Weapon Ruin
+ITEM={ i_scimitar_ruin 1 i_halberd_ruin 1 i_bardiche_ruin 1 i_cutlass_ruin 1 i_sword_viking_ruin 1 i_katana_ruin 1 i_pitchfork_ruin 1 i_broadsword_ruin 1 i_kryss_ruin 1 i_sword_long_ruin 1 i_spear_ruin 1 i_spear_short_ruin 1 i_war_fork_ruin 1 i_mace_ruin 1 i_mace_war_ruin 1 i_maul_ruin 1 i_hammer_pick_ruin 1 i_hammer_war_ruin 1 i_axe_ruin 1 i_axe_exec_ruin 1 i_axe_battle_ruin 1 i_axe_double_ruin 1 i_axe_two_hand_ruin 1 i_axe_war_ruin 1 i_axe_battle_large_ruin 1 i_club_ruin 1 i_bow_ruin 1 i_crossbow_ruin 1 i_crossbow_heavy_ruin 1 }
+
+[TEMPLATE random_weapon_might]
+CATEGORY=Item Templates
+SUBSECTION=Weapon Templates
+DESCRIPTION=All Weapon might
+ITEM={ i_scimitar_might 1 i_halberd_might 1 i_bardiche_might 1 i_cutlass_might 1 i_sword_viking_might 1 i_katana_might 1 i_pitchfork_might 1 i_broadsword_might 1 i_kryss_might 1 i_sword_long_might 1 i_spear_might 1 i_spear_short_might 1 i_war_fork_might 1 i_mace_might 1 i_mace_war_might 1 i_maul_might 1 i_hammer_pick_might 1 i_hammer_war_might 1 i_axe_might 1 i_axe_exec_might 1 i_axe_battle_might 1 i_axe_double_might 1 i_axe_two_hand_might 1 i_axe_war_might 1 i_axe_battle_large_might 1 i_club_might 1 i_bow_might 1 i_crossbow_might 1 i_crossbow_heavy_might 1 }
+
+[TEMPLATE random_weapon_force]
+CATEGORY=Item Templates
+SUBSECTION=Weapon Templates
+DESCRIPTION=All Weapon force
+ITEM={ i_scimitar_force 1 i_halberd_force 1 i_bardiche_force 1 i_cutlass_force 1 i_sword_viking_force 1 i_katana_force 1 i_pitchfork_force 1 i_broadsword_force 1 i_kryss_force 1 i_sword_long_force 1 i_spear_force 1 i_spear_short_force 1 i_war_fork_force 1 i_mace_force 1 i_mace_war_force 1 i_maul_force 1 i_hammer_pick_force 1 i_hammer_war_force 1 i_axe_force 1 i_axe_exec_force 1 i_axe_battle_force 1 i_axe_double_force 1 i_axe_two_hand_force 1 i_axe_war_force 1 i_axe_battle_large_force 1 i_club_force 1 i_bow_force 1 i_crossbow_force 1 i_crossbow_heavy_force 1 }
+
+[TEMPLATE random_weapon_power]
+CATEGORY=Item Templates
+SUBSECTION=Weapon Templates
+DESCRIPTION=All Weapon power
+ITEM={ i_scimitar_power 1 i_halberd_power 1 i_bardiche_power 1 i_cutlass_power 1 i_sword_viking_power 1 i_katana_power 1 i_pitchfork_power 1 i_broadsword_power 1 i_kryss_power 1 i_sword_long_power 1 i_spear_power 1 i_spear_short_power 1 i_war_fork_power 1 i_mace_power 1 i_mace_war_power 1 i_maul_power 1 i_hammer_pick_power 1 i_hammer_war_power 1 i_axe_power 1 i_axe_exec_power 1 i_axe_battle_power 1 i_axe_double_power 1 i_axe_two_hand_power 1 i_axe_war_power 1 i_axe_battle_large_power 1 i_club_power 1 i_bow_power 1 i_crossbow_power 1 i_crossbow_heavy_power 1 }
+
+[TEMPLATE random_weapon_vanq]
+CATEGORY=Item Templates
+SUBSECTION=Weapon Templates
+DESCRIPTION=All Weapon vanq
+ITEM={ i_scimitar_vanq 1 i_halberd_vanq 1 i_bardiche_vanq 1 i_cutlass_vanq 1 i_sword_viking_vanq 1 i_katana_vanq 1 i_pitchfork_vanq 1 i_broadsword_vanq 1 i_kryss_vanq 1 i_sword_long_vanq 1 i_spear_vanq 1 i_spear_short_vanq 1 i_war_fork_vanq 1 i_mace_vanq 1 i_mace_war_vanq 1 i_maul_vanq 1 i_hammer_pick_vanq 1 i_hammer_war_vanq 1 i_axe_vanq 1 i_axe_exec_vanq 1 i_axe_battle_vanq 1 i_axe_double_vanq 1 i_axe_two_hand_vanq 1 i_axe_war_vanq 1 i_axe_battle_large_vanq 1 i_club_vanq 1 i_bow_vanq 1 i_crossbow_vanq 1 i_crossbow_heavy_vanq 1 }
+
 
 [EOF]

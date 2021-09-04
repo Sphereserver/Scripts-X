@@ -1,0 +1,725 @@
+[function deco_ankh_dungeon_ilshenar]
+
+// bookcase
+serv.newitem=00A97
+new.attr=attr_static 
+new.p=85 1464 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=86 1464 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=89 1464 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=90 1464 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=93 1464 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=56 1440 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=56 1464 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=58 1467 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=58 1470 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=59 1464 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=61 1464 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=61 1467 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=61 1470 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=64 1464 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=65 1470 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=66 1464 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=68 1467 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=68 1470 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=69 1464 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=80 1464 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=81 1464 -28 2
+serv.newitem= 00A97
+new.attr=attr_static 
+new.p=84 1464 -28 2
+//*	
+// whip
+serv.newitem=0166E
+new.attr=attr_static 
+new.p=98 1528 -22 2
+serv.newitem= 0166E
+new.attr=attr_static 
+new.p=103 1530 -22 2
+//*	
+// bushel
+//*	Basket
+serv.newitem=009AC
+new.attr=attr_static 
+new.p=98 1532 -28 2
+//*	
+// whip
+serv.newitem=0166F
+new.attr=attr_static 
+new.p=100 1528 -22 2
+//*	
+// cleaver
+serv.newitem=00EC3
+new.attr=attr_static 
+new.p=101 1528 -22 2
+//*	
+// butcher knife
+serv.newitem=013F6
+new.attr=attr_static 
+new.p=102 1528 -23 2
+//*	
+// bookcase
+//*	FullBookcase
+serv.newitem=00A9A
+new.attr=attr_static 
+new.p=56 1447 -28 2
+serv.newitem= 00A9A
+new.attr=attr_static 
+new.p=56 1467 -28 2
+serv.newitem= 00A9A
+new.attr=attr_static 
+new.p=56 1470 -28 2
+serv.newitem= 00A9A
+new.attr=attr_static 
+new.p=56 1473 -28 2
+serv.newitem= 00A9A
+new.attr=attr_static 
+new.p=56 1476 -28 2
+serv.newitem= 00A9A
+new.attr=attr_static 
+new.p=65 1473 -28 2
+serv.newitem= 00A9A
+new.attr=attr_static 
+new.p=65 1476 -28 2
+serv.newitem= 00A9A
+new.attr=attr_static 
+new.p=68 1473 -28 2
+serv.newitem= 00A9A
+new.attr=attr_static 
+new.p=68 1476 -28 2
+//*	
+// bookcase
+//*	FullBookcase
+serv.newitem=00A9C
+new.attr=attr_static 
+new.p=56 1448 -28 2
+serv.newitem= 00A9C
+new.attr=attr_static 
+new.p=56 1469 -28 2
+serv.newitem= 00A9C
+new.attr=attr_static 
+new.p=56 1471 -28 2
+serv.newitem= 00A9C
+new.attr=attr_static 
+new.p=56 1475 -28 2
+serv.newitem= 00A9C
+new.attr=attr_static 
+new.p=56 1477 -28 2
+serv.newitem= 00A9C
+new.attr=attr_static 
+new.p=56 1479 -28 2
+serv.newitem= 00A9C
+new.attr=attr_static 
+new.p=56 1481 -28 2
+serv.newitem= 00A9C
+new.attr=attr_static 
+new.p=65 1475 -28 2
+serv.newitem= 00A9C
+new.attr=attr_static 
+new.p=65 1477 -28 2
+serv.newitem= 00A9C
+new.attr=attr_static 
+new.p=68 1475 -28 2
+serv.newitem= 00A9C
+new.attr=attr_static 
+new.p=68 1477 -28 2
+//*	
+// barred metal door
+//*	BarredMetalDoor
+serv.newitem=00693
+new.attr=attr_static 
+new.p=15 1315 -28 2
+serv.newitem= 00693
+new.attr=attr_static 
+new.p=15 1291 -28 2
+serv.newitem= 00693
+new.attr=attr_static 
+new.p=15 1299 -28 2
+serv.newitem= 00693
+new.attr=attr_static 
+new.p=15 1307 -28 2
+serv.newitem= 00693
+new.attr=attr_static 
+new.p=55 1331 -28 2
+serv.newitem= 00693
+new.attr=attr_static 
+new.p=55 1339 -28 2
+serv.newitem= 00693
+new.attr=attr_static 
+new.p=127 1523 -28 2
+serv.newitem= 00693
+new.attr=attr_static 
+new.p=127 1531 -28 2
+serv.newitem= 00693
+new.attr=attr_static 
+new.p=127 1539 -28 2
+serv.newitem= 00693
+new.attr=attr_static 
+new.p=127 1547 -28 2
+//*	
+// barred metal door
+//*	BarredMetalDoor
+serv.newitem=00689
+new.attr=attr_static 
+new.p=35 1311 -28 2
+serv.newitem= 00689
+new.attr=attr_static 
+new.p=67 1311 -28 2
+serv.newitem= 00689
+new.attr=attr_static 
+new.p=67 1527 -28 2
+serv.newitem= 00689
+new.attr=attr_static 
+new.p=67 1551 -28 2
+serv.newitem= 00689
+new.attr=attr_static 
+new.p=75 1311 -28 2
+serv.newitem= 00689
+new.attr=attr_static 
+new.p=75 1527 -28 2
+serv.newitem= 00689
+new.attr=attr_static 
+new.p=75 1551 -28 2
+serv.newitem= 00689
+new.attr=attr_static 
+new.p=139 1527 -28 2
+serv.newitem= 00689
+new.attr=attr_static 
+new.p=147 1527 -28 2
+serv.newitem= 00689
+new.attr=attr_static 
+new.p=155 1527 -28 2
+serv.newitem= 00689
+new.attr=attr_static 
+new.p=163 1527 -28 2
+serv.newitem= 00689
+new.attr=attr_static 
+new.p=171 1527 -28 2
+//*	
+// barred metal door
+//*	BarredMetalDoor
+serv.newitem=00685
+new.attr=attr_static 
+new.p=43 1303 -28 2
+serv.newitem= 00685
+new.attr=attr_static 
+new.p=59 1263 -28 2
+serv.newitem= 00685
+new.attr=attr_static 
+new.p=67 1263 -28 2
+serv.newitem= 00685
+new.attr=attr_static 
+new.p=67 1303 -28 2
+serv.newitem= 00685
+new.attr=attr_static 
+new.p=67 1543 -28 2
+serv.newitem= 00685
+new.attr=attr_static 
+new.p=75 1263 -28 2
+serv.newitem= 00685
+new.attr=attr_static 
+new.p=75 1303 -28 2
+serv.newitem= 00685
+new.attr=attr_static 
+new.p=75 1543 -28 2
+serv.newitem= 00685
+new.attr=attr_static 
+new.p=147 1519 -28 2
+serv.newitem= 00685
+new.attr=attr_static 
+new.p=155 1519 -28 2
+serv.newitem= 00685
+new.attr=attr_static 
+new.p=163 1519 -28 2
+serv.newitem= 00685
+new.attr=attr_static 
+new.p=171 1519 -28 2
+serv.newitem= 00685
+new.attr=attr_static 
+new.p=35 1303 -28 2
+//*	
+// bucket
+serv.newitem=014E0
+new.attr=attr_static 
+new.p=139 1563 -23 2
+//*	
+// wooden door
+serv.newitem=006ED
+new.attr=attr_static 
+new.p=41 1412 -28 2
+serv.newitem= 006ED
+new.attr=attr_static 
+new.p=39 1356 -28 2
+serv.newitem= 006ED
+new.attr=attr_static 
+new.p=51 1492 -28 2
+serv.newitem= 006ED
+new.attr=attr_static 
+new.p=111 1522 -28 2
+//*	
+// sledge hammer
+serv.newitem=00FB4
+new.attr=attr_static 
+new.p=24 1406 -20 2
+serv.newitem= 00FB4
+new.attr=attr_static 
+new.p=24 1411 -22 2
+//*	
+// large battle axe
+serv.newitem=013FB
+new.attr=attr_static 
+new.p=25 1406 -28 2
+//*	
+// candle
+serv.newitem=00A0F
+new.attr=attr_static 
+new.p=31 1404 -28 2
+serv.newitem= 00A0F
+new.attr=attr_static 
+new.p=29 1421 -22 2
+serv.newitem= 00A0F
+new.attr=attr_static 
+new.p=32 1406 -28 2
+serv.newitem= 00A0F
+new.attr=attr_static 
+new.p=32 1416 -22 2
+//*	
+// plate helm
+serv.newitem=01412
+new.attr=attr_static 
+new.p=24 1412 -22 2
+//*	
+// platemail gloves
+serv.newitem=01418
+new.attr=attr_static 
+new.p=24 1413 -22 2
+//*	
+// heavy crossbow
+serv.newitem=013FC
+new.attr=attr_static 
+new.p=28 1417 -22 2
+//*	
+// barrel
+serv.newitem=00FAE
+new.attr=attr_static 
+new.p=32 1352 -28 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=32 1352 -22 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=32 1353 -28 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=32 1354 -22 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=32 1357 -28 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=33 1352 -28 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=34 1352 -28 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=35 1352 -28 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=36 1357 -28 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=37 1357 -28 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=37 1357 -22 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=32 1353 -22 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=32 1355 -28 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=65 1352 -28 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=67 1352 -28 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=68 1352 -28 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=69 1352 -28 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=32 1354 -28 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=34 1355 -28 2
+serv.newitem= 00FAE
+new.attr=attr_static 
+new.p=64 1352 -28 2
+//*	
+// wooden door
+serv.newitem=006EF
+new.attr=attr_static 
+new.p=39 1355 -28 2
+serv.newitem= 006EF
+new.attr=attr_static 
+new.p=41 1411 -28 2
+serv.newitem= 006EF
+new.attr=attr_static 
+new.p=51 1491 -28 2
+serv.newitem= 006EF
+new.attr=attr_static 
+new.p=111 1521 -28 2
+//*	
+// wooden door
+serv.newitem=006E9
+new.attr=attr_static 
+new.p=35 1451 -28 2
+serv.newitem= 006E9
+new.attr=attr_static 
+new.p=59 1499 -28 2
+serv.newitem= 006E9
+new.attr=attr_static 
+new.p=115 1499 -28 2
+serv.newitem= 006E9
+new.attr=attr_static 
+new.p=51 1349 -28 2
+//*	
+// wooden door
+serv.newitem=006EB
+new.attr=attr_static 
+new.p=36 1451 -28 2
+serv.newitem= 006EB
+new.attr=attr_static 
+new.p=60 1499 -28 2
+serv.newitem= 006EB
+new.attr=attr_static 
+new.p=116 1499 -28 2
+serv.newitem= 006EB
+new.attr=attr_static 
+new.p=52 1349 -28 2
+//*	
+// crate
+//*	MediumCrate
+serv.newitem=00E3F
+new.attr=attr_static 
+new.p=36 1352 -27 2
+serv.newitem= 00E3F
+new.attr=attr_static 
+new.p=36 1352 -30 2
+//*	
+// crate
+serv.newitem=00E7E
+new.attr=attr_static 
+new.p=36 1353 -30 2
+serv.newitem= 00E7E
+new.attr=attr_static 
+new.p=32 1356 -30 2
+//*	
+// wooden door
+serv.newitem=006E5
+new.attr=attr_static 
+new.p=51 1385 -28 2
+serv.newitem= 006E5
+new.attr=attr_static 
+new.p=59 1483 -28 2
+serv.newitem= 006E5
+new.attr=attr_static 
+new.p=83 1483 -28 2
+serv.newitem= 006E5
+new.attr=attr_static 
+new.p=107 1487 -28 2
+//*	
+// wooden door
+serv.newitem=006E7
+new.attr=attr_static 
+new.p=52 1385 -28 2
+serv.newitem= 006E7
+new.attr=attr_static 
+new.p=60 1483 -28 2
+serv.newitem= 006E7
+new.attr=attr_static 
+new.p=84 1483 -28 2
+serv.newitem= 006E7
+new.attr=attr_static 
+new.p=108 1487 -28 2
+//*	
+// barred metal door
+//*	BarredMetalDoor
+serv.newitem=0068D
+new.attr=attr_static 
+new.p=55 1515 -28 2
+serv.newitem= 0068D
+new.attr=attr_static 
+new.p=55 1523 -28 2
+serv.newitem= 0068D
+new.attr=attr_static 
+new.p=95 1291 -28 2
+serv.newitem= 0068D
+new.attr=attr_static 
+new.p=95 1299 -28 2
+serv.newitem= 0068D
+new.attr=attr_static 
+new.p=95 1307 -28 2
+serv.newitem= 0068D
+new.attr=attr_static 
+new.p=95 1315 -28 2
+serv.newitem= 0068D
+new.attr=attr_static 
+new.p=111 1539 -28 2
+serv.newitem= 0068D
+new.attr=attr_static 
+new.p=111 1547 -28 2
+//*	
+// wooden door
+serv.newitem=006F3
+new.attr=attr_static 
+new.p=63 1292 -28 2
+serv.newitem= 006F3
+new.attr=attr_static 
+new.p=63 1355 -28 2
+serv.newitem= 006F3
+new.attr=attr_static 
+new.p=57 1411 -28 2
+serv.newitem= 006F3
+new.attr=attr_static 
+new.p=127 1563 -28 2
+serv.newitem= 006F3
+new.attr=attr_static 
+new.p=55 1443 -28 2
+//*	
+// wooden door
+serv.newitem=006F1
+new.attr=attr_static 
+new.p=63 1293 -28 2
+serv.newitem= 006F1
+new.attr=attr_static 
+new.p=63 1356 -28 2
+serv.newitem= 006F1
+new.attr=attr_static 
+new.p=57 1412 -28 2
+serv.newitem= 006F1
+new.attr=attr_static 
+new.p=127 1564 -28 2
+serv.newitem= 006F1
+new.attr=attr_static 
+new.p=55 1444 -28 2
+//*	
+// metal door
+//*	MetalDoor
+serv.newitem=00675 
+new.color=08AB
+new.attr=attr_static 
+new.p=83 1384 -28 2
+//*	
+// metal door
+//*	MetalDoor
+serv.newitem=00677 
+new.color=08AB
+new.attr=attr_static 
+new.p=84 1384 -28 2
+//*	
+// metal door
+//*	MetalDoor
+serv.newitem=00679 
+new.color=058B
+new.attr=attr_static 
+new.p=83 1436 -28 2
+serv.newitem=00679 
+new.color=058B
+new.attr=attr_static 
+new.p=99 1421 -28 2
+//*	
+// metal door
+//*	MetalDoor
+serv.newitem=0067B 
+new.color=058B
+new.attr=attr_static 
+new.p=84 1436 -28 2
+serv.newitem=0067B 
+new.color=058B
+new.attr=attr_static 
+new.p=100 1421 -28 2
+//*	
+// metal door
+//*	MetalDoor
+serv.newitem=00683 
+new.color=058B
+new.attr=attr_static 
+new.p=89 1411 -28 2
+//*	
+// metal door
+//*	MetalDoor
+serv.newitem=00681 
+new.color=058B
+new.attr=attr_static 
+new.p=89 1412 -28 2
+//*	
+// bookcase
+//*	FullBookcase
+serv.newitem=00A99
+new.attr=attr_static 
+new.p=56 1446 -28 2
+serv.newitem= 00A99
+new.attr=attr_static 
+new.p=56 1468 -28 2
+serv.newitem= 00A99
+new.attr=attr_static 
+new.p=56 1472 -28 2
+serv.newitem= 00A99
+new.attr=attr_static 
+new.p=56 1474 -28 2
+serv.newitem= 00A99
+new.attr=attr_static 
+new.p=56 1478 -28 2
+serv.newitem= 00A99
+new.attr=attr_static 
+new.p=56 1480 -28 2
+serv.newitem= 00A99
+new.attr=attr_static 
+new.p=56 1482 -28 2
+serv.newitem= 00A99
+new.attr=attr_static 
+new.p=65 1474 -28 2
+serv.newitem= 00A99
+new.attr=attr_static 
+new.p=68 1474 -28 2
+//*	
+// bookcase
+//*	FullBookcase
+serv.newitem=00A98
+new.attr=attr_static 
+new.p=57 1440 -28 2
+serv.newitem= 00A98
+new.attr=attr_static 
+new.p=57 1464 -28 2
+serv.newitem= 00A98
+new.attr=attr_static 
+new.p=59 1467 -28 2
+serv.newitem= 00A98
+new.attr=attr_static 
+new.p=59 1470 -28 2
+serv.newitem= 00A98
+new.attr=attr_static 
+new.p=60 1464 -28 2
+serv.newitem= 00A98
+new.attr=attr_static 
+new.p=62 1464 -28 2
+serv.newitem= 00A98
+new.attr=attr_static 
+new.p=62 1467 -28 2
+serv.newitem= 00A98
+new.attr=attr_static 
+new.p=65 1464 -28 2
+serv.newitem= 00A98
+new.attr=attr_static 
+new.p=66 1467 -28 2
+serv.newitem= 00A98
+new.attr=attr_static 
+new.p=66 1470 -28 2
+serv.newitem= 00A98
+new.attr=attr_static 
+new.p=67 1464 -28 2
+serv.newitem= 00A98
+new.attr=attr_static 
+new.p=69 1467 -28 2
+serv.newitem= 00A98
+new.attr=attr_static 
+new.p=69 1470 -28 2
+//*	
+// bookcase
+//*	FullBookcase
+serv.newitem=00A9B
+new.attr=attr_static 
+new.p=58 1440 -28 2
+serv.newitem= 00A9B
+new.attr=attr_static 
+new.p=58 1464 -28 2
+serv.newitem= 00A9B
+new.attr=attr_static 
+new.p=60 1467 -28 2
+serv.newitem= 00A9B
+new.attr=attr_static 
+new.p=60 1470 -28 2
+serv.newitem= 00A9B
+new.attr=attr_static 
+new.p=63 1464 -28 2
+serv.newitem= 00A9B
+new.attr=attr_static 
+new.p=70 1440 -28 2
+serv.newitem= 00A9B
+new.attr=attr_static 
+new.p=67 1467 -28 2
+serv.newitem= 00A9B
+new.attr=attr_static 
+new.p=67 1470 -28 2
+serv.newitem= 00A9B
+new.attr=attr_static 
+new.p=68 1464 -28 2
+//*	
+// cleaver
+serv.newitem=00EC2
+new.attr=attr_static 
+new.p=10 1368 -22 2
+//*	
+// small crate
+serv.newitem=009A9
+new.attr=attr_static 
+new.p=64 1353 -28 2
+//*	
+// crate
+//*	LargeCrate
+serv.newitem=00E3D
+new.attr=attr_static 
+new.p=64 1354 -28 2
+serv.newitem= 00E3D
+new.attr=attr_static 
+new.p=64 1354 -25 2
+serv.newitem= 00E3D
+new.attr=attr_static 
+new.p=64 1354 -22 2
+
+[eof]

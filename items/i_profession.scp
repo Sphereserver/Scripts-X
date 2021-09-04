@@ -3093,8 +3093,13 @@ DUPEITEM=044c7
 //Small Soulforge
 DUPEITEM=044c7
 
-[ITEMDEF 044ca]
-//Small Soulforge
+[itemdef 044CA]
+defname=i_small_soul_forge
+name=small sould forge
+RESOURCES=4 i_floor_marble
+CATEGORY=Decoration - High Seas
+SUBSECTION=Forge
+DESCRIPTION=small sould forge
 DUPEITEM=044c7
 
 

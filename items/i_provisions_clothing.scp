@@ -1808,9 +1808,12 @@ ON=@Create
    HITPOINTS={36 48}
    RESPHYSICAL=1
 
-[ITEMDEF 02674]
-//haramaki-do
-DUPEITEM=02673
+[itemdef 02674] //Decoration
+defname=i_haramaki_do
+name=haramaki-do
+CATEGORY=Decoration - Samurai Empire
+SUBSECTION=Decorative Armor
+DESCRIPTION=haramaki-do
 
 
 [ITEMDEF 0267b]

@@ -319,4 +319,43 @@ ON=@Timer
    REMOVE
    RETURN 1
 
+[ITEMDEF i_addon_trash_barrel]
+ID=i_barrel_open
+NAME=trash barrel
+
+ON=@Create
+	COLOR=946
+	ATTR=010
+
+ON=@Timer
+if !(<ATTR> & attr_decay)
+	if (<COUNT>)
+		MESSAGE @,,1 Emptying the trashcan!
+		EMPTY
+	endif
+	return 1
+endif
+
+ON=@DropOn_Self
+if (<RESCOUNT> >= 50)
+	TOPOBJ.MESSAGE @,,1 The trash is full!  Emptying!
+	EMPTY
+else
+	TOPOBJ.MESSAGE @,,1 The item will be deleted in three minutes.
+	timer=180
+endif
+
+[itemdef i_solen_hive_teleporter]    //used for traversing the solen hives 
+id=01772
+name=Solen Hive Hole
+type=t_sign_gump
+
+on=@create
+attr=010
+color=01
+
+on=@dclick
+src.go <morep>
+return 1
+
 [EOF]

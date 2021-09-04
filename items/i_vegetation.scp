@@ -341,6 +341,30 @@ VALUE=2
 WEIGHT=0.1
 DUPELIST=0c63
 
+[ITEMDEF i_crop_potato1]
+ID=0c61
+NAME=potato plant
+TYPE=t_crops
+TDATA1=i_crop_potato1
+TDATA2=i_crop_potato
+TDATA3=0
+VALUE=2
+CATEGORY=Vegetation
+SUBSECTION=Fruits and Vegetables
+DESCRIPTION=Potato Crop
+
+[ITEMDEF i_crop_potato]
+ID=0c62
+NAME=potato plant
+TYPE=t_crops
+TDATA1=i_crop_potato1
+TDATA2=0
+TDATA3=i_fruit_potato
+VALUE=2
+CATEGORY=Vegetation
+SUBSECTION=Fruits and Vegetables
+DESCRIPTION=Potato Crop (mature)
+
 [ITEMDEF 0c63]
 //turnip
 DUPEITEM=0c62

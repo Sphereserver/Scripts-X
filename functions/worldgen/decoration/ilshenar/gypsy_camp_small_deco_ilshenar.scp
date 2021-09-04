@@ -1,0 +1,29 @@
+[function deco_gypsy_camp_small_ilshenar]
+
+// wooden gate
+SERV.NEWITEM=0839
+new.attr=attr_static
+new.p=1400 433 -6 2
+// wooden gate
+SERV.NEWITEM=083B
+new.attr=attr_static
+new.p=1401 433 -6 2
+// wooden gate
+SERV.NEWITEM=0841
+new.attr=attr_static
+new.p=1395 441 13 2
+// wooden gate
+SERV.NEWITEM=0843
+new.attr=attr_static
+new.p=1395 440 13 2
+// wooden gate
+SERV.NEWITEM=0866
+new.attr=attr_static
+new.p=1390 432 -16 2
+// bag
+SERV.NEWITEM=0E76
+new.color=010
+new.attr=attr_static
+new.p=1391 439 19 2
+
+[eof]

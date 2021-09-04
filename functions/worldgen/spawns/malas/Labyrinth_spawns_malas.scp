@@ -1,0 +1,33 @@
+[function spawn_labyrinth_malas]
+
+
+//##############################
+//##   XML Spawns by Erica    ##
+//## Convert/Adapted By Nerun ##
+//##############################
+//overrideid 407
+//overridemap 4
+//overridemintime 5
+//overridemaxtime 10
+//##
+//## Labyrinth
+//##
+f_create_spawner,drake:airelemental,rat:snake,,,,,366,1928,0,4,5,10,20,20,1,4,4,0,0,0,0
+f_create_spawner,minotaur,snake,,,,,384,1932,10,4,5,10,10,10,1,3,2,0,0,0,0
+f_create_spawner,miasma,,,,,,335,1920,0,4,5,10,5,5,1,1,0,0,0,0,0
+f_create_spawner,wanderinghealer,,,,,,1740,990,-80,4,5,10,15,15,1,1,0,0,0,0,0
+f_create_spawner,Scorpion,Snake,,,,,1742,990,-84,4,5,10,12,12,1,6,4,0,0,0,0
+f_create_spawner,minotaur:minotaurscout,,,,,,336,1891,0,4,5,10,12,12,1,5,0,0,0,0,0
+f_create_spawner,rend,,,,,,357,1898,5,4,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner,squirrel:rat,,,,,,346,1959,0,4,5,10,10,10,1,4,0,0,0,0,0
+f_create_spawner,minotaurscout:minotaur:minotaurcaptain,squirrel:tropicalbird:bird:cat,,,,,392,1917,0,4,5,10,20,20,1,11,9,0,0,0,0
+f_create_spawner,eagle:cat:bird:tropicalbird,,,,,,390,1883,0,4,5,10,10,10,1,8,0,0,0,0,0
+f_create_spawner,reptalon:minotaur,,,,,,355,1918,0,4,5,10,20,20,1,6,0,0,0,0,0
+f_create_spawner,tropicalbird:bird,,,,,,346,1910,0,4,5,10,12,12,1,6,0,0,0,0,0
+f_create_spawner,minotaurcaptain:minotaur:minotaurscout,rat:tropicalbird,,,,,427,1923,5,4,5,10,15,15,1,6,4,0,0,0,0
+f_create_spawner,tropicalbird:eagle:rat:bird,minotaurscout,,,,,348,1948,0,4,5,10,15,15,1,12,4,0,0,0,0
+f_create_spawner,pyre,,,,,,415,1897,5,4,5,10,5,5,1,1,0,0,0,0,0
+f_create_spawner,flurry:grim:mistral:tempest,,,,,,347,1888,5,4,5,10,20,20,1,4,0,0,0,0,0
+f_create_spawner,meraktus,,,,,,382,1913,0,4,5,10,5,5,1,0,0,0,0,0,0
+
+[EOF]

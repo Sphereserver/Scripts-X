@@ -1,0 +1,59 @@
+
+[typedef t_custom_spawner_char]
+
+on=@timer
+if (!<isempty <tag.spawn_array>>) 
+  args=<tag0.spawn_array>
+  args=<def0.<argv[<R0,<eval <argv>-1>>]>>	//pick a random spawn
+  //serv.b @040 <resourcetype <args>> == <def.res_chardef>	//<more1> <args>
+  if (<resourcetype <dargs>> == <def.res_chardef>)
+    type=t_spawn_char
+  elseif (<resourcetype <dargs>> == <def.res_itemdef>)
+    type=t_spawn_item
+  endif
+  more1=<args>	
+  for n 0 <eval <argv>-1>
+    if !(<resourceindex <argv[<dlocal.n>]>>) && !(<resourceindex <argv[<dlocal.n>]>>)
+      serv.log ERROR: <def0.<argv[<dlocal.n>]>> DOES NOT EXIST, MUST CREATE!
+    endif
+  endfor
+endif
+
+//if <count> < <amount>
+  //ref1=<at.<eval <count>-1>.uid>
+ // ref1.movenear <uid> <morez>
+//endif
+
+return 0
+
+
+[typedef t_custom_spawner_item]
+
+
+on=@click
+message @030 Spawn: <damount> <more1>
+message @0482 Min/Max/Dist: <morep> 
+message @0b5 <qval (<tag0.spawn_array>)?<tag0.spawn_array>:>
+return 1
+
+
+on=@timer
+if (!<isempty <tag.spawn_array>>) 
+  args=<tag0.spawn_array>
+  args=<def0.<argv[<R0,<eval <argv>-1>>]>>	//pick a random spawn
+  //serv.b @040 <resourcetype <args>> == <def.res_chardef>	//<more1> <args>
+  if (<resourcetype <dargs>> == <def.res_chardef>)
+    type=t_spawn_char
+  elseif (<resourcetype <dargs>> == <def.res_itemdef>)
+    type=t_spawn_item
+  endif
+  more1=<args>	
+  for n 0 <eval <argv>-1>
+    if !(<resourceindex <argv[<dlocal.n>]>>) && !(<resourceindex <argv[<dlocal.n>]>>)
+      serv.log ERROR: <def0.<argv[<dlocal.n>]>> DOES NOT EXIST, MUST CREATE!
+    endif
+  endfor
+endif
+return 0
+
+[EOF]

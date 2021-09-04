@@ -1,0 +1,59 @@
+[function spawn_vendors_ilshenar]
+
+//##############
+//## By Nerun ##
+//##############
+//overrideid 312
+//overridemintime 5
+//overridemaxtime 10
+//##
+f_create_spawner,stonecrafter,,,,,,791,618,0,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,armorer,weaponsmith,,,,,808,697,-40,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,armorer,weaponsmith,,,,,808,586,-40,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,gypsyanimaltrainer,,,,,,1225,563,-18,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,gypsyanimaltrainer,,,,,,1388,428,-23,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,armorer,weaponsmith,,,,,1497,614,-14,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,banker,minter,,,,,854,680,-40,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,banker,minter,,,,,855,603,-40,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,tinker,tinkerguildmaster,,,,,766,641,0,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,gypsybanker,,,,,,1226,554,-12,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,banker,minter,,,,,1610,556,-19,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,provisioner,cobbler,,,,,826,679,-40,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,provisioner,cobbler,,,,,824,602,-40,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,gypsymaiden,,,,,,1400,434,-11,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,innkeeper,,,,,,665,665,-35,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,healer,healerguildmaster,,,,,1364,1051,-13,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,blacksmith,blacksmithguildmaster,,,,,1261,582,-18,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,healer,healerguildmaster,,,,,284,536,-24,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,fortuneteller,,,,,,1235,543,-15,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,fortuneteller,,,,,,1407,428,-8,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,healer,healerguildmaster,,,,,1628,548,-11,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,healer,healerguildmaster,,,,,1518,619,-19,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,healer,healerguildmaster,,,,,1093,955,-38,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,healer,healerguildmaster,,,,,872,586,-40,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,innkeeper,,,,,,1620,554,-20,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,jeweler,,,,,,1605,541,-13,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,jeweler,,,,,,859,698,-40,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,scribe,,,,,,868,657,-40,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,scribe,,,,,,869,625,-40,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,gypsybanker,,,,,,1405,439,2,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,fortuneteller,,,,,,1394,441,13,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,mage,alchemist,mageguildmaster,,,,1505,611,-19,3,2,10,5,0,314,1,1,1,0,0,0
+f_create_spawner,innkeeper,,,,,,774,1144,-30,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,provisioner,cobbler,,,,,1598,539,-19,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,healer,healerguildmaster,,,,,369,1432,15,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,provisioner,cobbler,,,,,1318,1328,-14,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,tailor,weaver,,,,,896,610,-40,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,tailorguildmaster,,,,,,896,610,-40,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,animaltrainer,,,,,,1499,619,-19,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,tailor,weaver,tailorguildmaster,,,,1600,552,-16,3,2,10,5,0,314,1,1,1,0,0,0
+f_create_spawner,mage,glassblower,mageguildmaster,,,,840,571,0,3,2,10,5,0,314,1,1,1,0,0,0
+f_create_spawner,innkeeper,,,,,,840,707,0,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,tinker,tinkerguildmaster,,,,,1253,588,-19,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,innkeeper,,,,,,1566,1049,-8,3,2,10,5,0,314,1,0,0,0,0,0
+f_create_spawner,blacksmith,blacksmithguildmaster,,,,,792,665,0,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,healer,healerguildmaster,,,,,575,537,-69,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,healer,healerguildmaster,,,,,682,297,-41,3,2,10,5,0,314,1,1,0,0,0,0
+f_create_spawner,baker,,,,,,1514,611,-14,3,2,10,5,0,314,1,0,0,0,0,0
+
+[EOF]

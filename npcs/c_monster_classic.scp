@@ -143,7 +143,7 @@ ON=@Create
 ON=@CreateLoot
      ITEM=i_gold,{50 100}
      ITEM={random_body_parts_1 1 random_body_parts_2 1}
-     ITEM=random_bones
+     ITEM=random_item_bone
 
 
 [CHARDEF 04]
@@ -576,6 +576,9 @@ ON=@CreateLoot
 //[CHARDEF 023d]
 //OSI created this chardef to use it as an "new" Energy Vortex but it was never used.
 //It doesn't even have proper animations.
+//T2A ENERGY VORTEX
+//Can't be seen by non-T2A clients, so we need to fix this before it should be used.
+//Regular clients will not be able to see what is attacking them.
 
 [CHARDEF 023e]
 DEFNAME=c_blade_spirit
@@ -937,7 +940,7 @@ ON=@Create
 
 ON=@CreateLoot
      ITEM=i_gold,{50 100}
-     ITEM=random_weapon
+     ITEM=random_weapon_all_normal
      //ITEM=i_bola_ball
      ITEM=i_treasure_map1,R99
 
@@ -1034,7 +1037,7 @@ ON=@Create
 ON=@CreateLoot
      ITEM=i_gold,{125 175}
      ITEM={random_body_parts_1 1 random_body_parts_2 1}
-     ITEM=random_bones
+     ITEM=random_item_bone
 
 
 [CHARDEF 016]
@@ -1818,7 +1821,7 @@ ON=@Create
 
 ON=@CreateLoot
      ITEM=i_gold,{50 100}
-     ITEM=random_weapon
+     ITEM=random_weapon_all_normal
      ITEM=i_treasure_map1,R99
 
 
@@ -2143,7 +2146,6 @@ ON=@CreateLoot
      ITEM=i_gold,{25 50}
      ITEM=random_jewel
 
-
 [CHARDEF 034]
 DEFNAME=c_snake
 NAME=Snake
@@ -2230,7 +2232,44 @@ ON=@Create
 ON=@CreateLoot
      ITEM=i_gold,{125 175}
      ITEM=i_treasure_map1,R99
+     
+[CHARDEF c_troll_w_mace]
+defname=c_troll_w_mace
+id=c_troll_w_axe
+NAME=Troll
+SOUND=461
+ICON=i_pet_troll
+CAN=MT_WALK|MT_USEHANDS
+DAM=10,23
+ARMOR=20
+RESOURCES=10 i_ribs_raw
+FOODTYPE=15 t_meat_raw
+DESIRES=i_gold
+AVERSIONS=r_civilization
+CATEGORY=Monsters
+SUBSECTION=Ettins, Ogres, Trolls, Cyclops, and Titans
+DESCRIPTION=Troll (Mace)
 
+ON=@Create
+    NPC=brain_monster
+    str={176, 205}
+    dex={46, 65}
+    int={46, 70}
+    maxhits={106, 123}
+    resphysical={35, 45}
+    resfire={25, 35}
+    rescold={15, 25}
+    respoison={5, 15}
+    resenergy={5, 15}
+    magicresistance={45.1, 60.0}
+    tactics={50.1, 70.0}
+    wrestling={50.1, 70.0}
+    fame=3500
+    karma=-3500
+
+on=@createloot
+     item=i_gold,{125 175}
+     ITEM=i_treasure_map1,R99
 
 [CHARDEF 036]
 DEFNAME=c_troll
@@ -4040,7 +4079,7 @@ ON=@Create
 
 ON=@CreateLoot
      ITEM=i_gold,{50 100}
-     ITEM=random_weapon
+     ITEM=random_weapon_all_normal
 
 
 [CHARDEF 09b]

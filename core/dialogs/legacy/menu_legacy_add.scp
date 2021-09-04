@@ -297,11 +297,11 @@ Mythical Creatures
 ON=0 Air Elemental
 ADD c_elemental_air
 ON=0 Earth Elemental
-ADD c_elem_earth
+ADD c_elemental_earth
 ON=0 Fire Elemental
-ADD c_elem_fire
+ADD c_elemental_fire
 ON=0 Water Elemental
-ADD c_elem_water
+ADD c_elemental_water
 ON=0 Wisp
 ADD c_WISP
 ON=0 Dragon (red)
@@ -315,7 +315,7 @@ ADD c_DRAGON_SMALL_BLACK
 ON=0 Daemon
 ADD c_DAEMON
 ON=0 Balron (Elder Daemon)
-ADD c_balron
+ADD c_daemon_balron
 ON=0 Daemon (with sword)
 ADD c_DAEMON_W_SWORD
 ON=0 Gargoyle

@@ -1,0 +1,26 @@
+[function deco_rat_fortress_ilshenar]
+
+//metal door
+serv.newitem=0675
+new.attr=attr_static
+new.p=642 843 -54 2
+serv.newitem=0675
+new.attr=attr_static
+new.p=645 830 -44 2
+//metal door
+serv.newitem=0677
+new.attr=attr_static
+new.p=637 816 -44 2
+serv.newitem=0677
+new.attr=attr_static
+new.p=643 843 -54 2
+//rattan door
+serv.newitem=0697
+new.attr=attr_static
+new.p=646 830 -44 2
+//wooden door
+serv.newitem=06E7
+new.attr=attr_static
+new.p=646 816 -44 2
+
+[EOF]

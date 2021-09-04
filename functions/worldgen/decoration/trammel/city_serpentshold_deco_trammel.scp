@@ -1,0 +1,2030 @@
+[function deco_serpents_hold_trammel]	
+	
+//MetalDoor//
+serv.newitem=0675//
+new.attr=attr_static//
+new.p=3058 3351 15 1//
+serv.newitem=0675//
+new.attr=attr_static//
+new.p=3055 3407 15 1//
+//MetalDoor//
+serv.newitem=0677//
+new.attr=attr_static//
+new.p=3059 3351 15 1//
+serv.newitem=0677//
+new.attr=attr_static//
+new.p=3056 3407 15 1//
+//MetalDoor//
+serv.newitem=067D//
+new.attr=attr_static//
+new.p=3023 3432 15 1//
+//MetalDoor//
+serv.newitem=067F//
+new.attr=attr_static//
+new.p=3023 3431 15 1//
+//DarkWoodGate//
+serv.newitem=0866//
+new.attr=attr_static//
+new.p=2902 3519 10 1//
+//DarkWoodGate//
+serv.newitem=0868//
+new.attr=attr_static//
+new.p=2903 3519 10 1//
+//DarkWoodGate//
+serv.newitem=086E//
+new.attr=attr_static//
+new.p=2911 3516 10 1//
+serv.newitem=086E//
+new.attr=attr_static//
+new.p=2911 3522 10 1//
+serv.newitem=086E//
+new.attr=attr_static//
+new.p=3041 3467 15 1//
+serv.newitem=086E//
+new.attr=attr_static//
+new.p=3027 3467 15 1//
+//DarkWoodGate//
+serv.newitem=0870//
+new.attr=attr_static//
+new.p=2911 3515 10 1//
+serv.newitem=0870//
+new.attr=attr_static//
+new.p=2911 3521 10 1//
+serv.newitem=0870//
+new.attr=attr_static//
+new.p=3041 3466 15 1//
+//LightWoodDoor//
+serv.newitem=06D5//
+new.attr=attr_static//
+new.p=3051 3375 15 1//
+//LightWoodDoor//
+serv.newitem=06D7//
+new.attr=attr_static//
+new.p=3052 3375 15 1//
+//LightWoodDoor//
+serv.newitem=06DB//
+new.attr=attr_static//
+new.p=3053 3364 15 1//
+//LightWoodDoor//
+serv.newitem=06DD//
+new.attr=attr_static//
+new.p=2879 3508 10 1//
+serv.newitem=06DD//
+new.attr=attr_static//
+new.p=2887 3504 10 1//
+//LightWoodDoor//
+serv.newitem=06DF//
+new.attr=attr_static//
+new.p=2887 3503 10 1//
+//wooden door//
+serv.newitem=06E5//
+new.attr=attr_static//
+new.p=3058 3391 15 1//
+//wooden wall//
+serv.newitem=00A7//
+new.attr=attr_static//
+new.p=2879 3498 10 1//
+//wooden wall//
+serv.newitem=00AD//
+new.attr=attr_static//
+new.p=3050 3375 15 1//
+//stone wall//
+serv.newitem=00C8//
+new.attr=attr_static//
+new.p=3036 3343 35 1//
+//stone pavers//
+serv.newitem=0523//
+new.attr=attr_static//
+new.p=3016 3345 35 1//
+//thatch roof//
+serv.newitem=05A7//
+new.attr=attr_static//
+new.p=2897 3520 30 1//
+//fireplace//
+serv.newitem=08DA//
+new.attr=attr_static//
+new.p=3008 3456 15 1//
+//fireplace//
+serv.newitem=08DB//
+new.attr=attr_static//
+new.p=3008 3455 15 1//
+//oven//
+serv.newitem=092C//
+new.attr=attr_static//
+new.p=3008 3453 15 1//
+serv.newitem=092b//
+new.attr=attr_static//
+new.p=3008 3454 15 1//
+//oven//
+serv.newitem=0930//
+new.attr=attr_static//
+new.p=2974 3352 15 1//
+serv.newitem=0933//
+new.attr=attr_static//
+new.p=2973 3352 15 1//
+//fireplace//
+serv.newitem=095F//
+new.attr=attr_static//
+new.p=2976 3352 15 1//
+//fireplace//
+serv.newitem=0960//
+new.attr=attr_static//
+new.p=2975 3352 15 1//
+//jugs of cider//
+serv.newitem=098D//
+new.attr=attr_static//
+new.p=2969 3416 15 1//
+//FruitBasket//
+serv.newitem=0993//
+new.attr=attr_static//
+new.p=2969 3404 19 1//
+serv.newitem=0993//
+new.attr=attr_static//
+new.p=2969 3410 19 1//
+//CeramicMug//
+serv.newitem=0999//
+new.attr=attr_static//
+new.p=3031 3347 21 1//
+//bottles of ale//
+serv.newitem=09A2//
+new.attr=attr_static//
+new.p=2968 3416 15 1//
+//FillableMetalChest//
+serv.newitem=09AB//
+new.attr=attr_static//
+new.p=3019 3424 15 1//
+//Goblet//
+serv.newitem=09B3//
+new.attr=attr_static//
+new.p=3030 3347 21 1//
+serv.newitem=09B3//
+new.attr=attr_static//
+new.p=3030 3355 21 1//
+serv.newitem=09B3//
+new.attr=attr_static//
+new.p=3031 3355 21 1//
+//silverware//
+serv.newitem=09BD//
+new.attr=attr_static//
+new.p=2914 3484 16 1//
+serv.newitem=09BD//
+new.attr=attr_static//
+new.p=3016 3458 19 1//
+//Goblet//
+serv.newitem=09BF//
+new.attr=attr_static//
+new.p=2970 3419 21 1//
+//bottles of wine//
+serv.newitem=09C4//
+new.attr=attr_static//
+new.p=2970 3416 15 1//
+//silverware//
+serv.newitem=09D5//
+//
+new.attr=attr_static//
+new.p=2915 3484 16 1//
+//pitcher//
+serv.newitem=09D6//
+new.attr=attr_static//
+new.p=3053 3420 21 1//
+//Plate//
+serv.newitem=09D7//
+new.attr=attr_static//
+new.p=2914 3484 16 1//
+serv.newitem=09D7//
+new.attr=attr_static//
+new.p=2915 3484 16 1//
+serv.newitem=09D7//
+new.attr=attr_static//
+new.p=3016 3458 19 1//
+//pot//
+serv.newitem=09E4//
+new.attr=attr_static//
+new.p=3009 3455 15 1//
+//kettle//
+serv.newitem=09ED//
+new.attr=attr_static//
+new.p=3009 3456 15 1//
+//GlassMug//
+serv.newitem=09EE//
+new.attr=attr_static//
+new.p=2969 3419 21 1//
+//GlassMug//
+serv.newitem=09EF//
+new.attr=attr_static//
+new.p=2972 3419 21 1//
+//WallTorch//
+serv.newitem=0A0C//
+new.attr=attr_static//
+new.p=2961 3440 30 1//
+serv.newitem=0A0C//
+new.attr=attr_static//
+new.p=3049 3376 25 1//
+serv.newitem=0A0C//
+new.attr=attr_static//
+new.p=3054 3376 30 1//
+//Lantern//
+serv.newitem=0a1a//
+new.attr=attr_static//
+new.p=3016 3389 24 1//
+//Lantern//
+serv.newitem=0a1d//
+new.attr=attr_static//
+new.p=2976 3410 24 1//
+//stool//
+serv.newitem=0A2A//
+new.attr=attr_static//
+new.p=3011 3351 35 1//
+serv.newitem=0A2A//
+new.attr=attr_static//
+new.p=3052 3344 15 1//
+//Drawer//
+serv.newitem=0A2C//
+new.attr=attr_static//
+new.p=3017 3424 15 1//
+//Drawer//
+serv.newitem=0A34//
+new.attr=attr_static//
+new.p=2911 3481 10 1//
+serv.newitem=0A34//
+new.attr=attr_static//
+new.p=2936 3498 10 1//
+serv.newitem=0A34//
+new.attr=attr_static//
+new.p=2936 3503 10 1//
+serv.newitem=0A34//
+new.attr=attr_static//
+new.p=3000 3387 15 1//
+serv.newitem=0A34//
+new.attr=attr_static//
+new.p=3048 3420 15 1//
+//FancyDrawer//
+serv.newitem=0A38//
+new.attr=attr_static//
+new.p=3008 3428 15 1//
+serv.newitem=0A38//
+new.attr=attr_static//
+new.p=3032 3427 15 1//
+serv.newitem=0A38//
+new.attr=attr_static//
+new.p=3057 3388 15 1//
+//dresser//
+serv.newitem=0A44//
+new.attr=attr_static//
+new.p=2872 3509 10 1//
+//dresser//
+serv.newitem=0A45//
+new.attr=attr_static//
+new.p=2872 3508 10 1//
+//FancyArmoire//
+serv.newitem=0A4D//
+new.attr=attr_static//
+new.p=3013 3424 15 1//
+//Armoire//
+serv.newitem=0A4F//
+new.attr=attr_static//
+new.p=2915 3480 10 1//
+serv.newitem=0A4F//
+new.attr=attr_static//
+new.p=2967 3400 35 1//
+serv.newitem=0A4F//
+new.attr=attr_static//
+new.p=2967 3410 35 1//
+serv.newitem=0A4F//
+new.attr=attr_static//
+new.p=2974 3400 35 1//
+serv.newitem=0A4F//
+new.attr=attr_static//
+new.p=3054 3360 15 1//
+//Armoire//
+serv.newitem=0A53//
+new.attr=attr_static//
+new.p=3048 3349 15 1//
+//bed//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=2937 3500 10 1//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=2993 3428 15 1//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=2998 3424 15 1//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=2998 3428 15 1//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=3033 3425 15 1//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=3033 3428 15 1//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=3058 3384 15 1//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=3058 3386 15 1//
+//bed//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=3033 3352 35 1//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=3033 3354 35 1//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=3033 3356 35 1//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=3029 3352 35 1//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=3029 3354 35 1//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=3029 3356 35 1//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=3025 3352 35 1//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=3025 3354 35 1//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=3025 3356 35 1//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=3001 3348 35 1//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=3001 3351 35 1//
+serv.newitem=0A62//
+new.attr=attr_static//
+new.p=3001 3354 35 1//
+serv.newitem=0A5c//
+new.attr=attr_static//
+new.p=3010 3345 35 1//
+//bed//
+serv.newitem=0A5d//
+new.attr=attr_static//
+new.p=2936 3500 10 1//
+serv.newitem=0A5d//
+new.attr=attr_static//
+new.p=2992 3428 15 1//
+serv.newitem=0A5d//
+new.attr=attr_static//
+new.p=2997 3424 15 1//
+serv.newitem=0A5d//
+new.attr=attr_static//
+new.p=2997 3428 15 1//
+serv.newitem=0A5d//
+new.attr=attr_static//
+new.p=3032 3425 15 1//
+serv.newitem=0A5d//
+new.attr=attr_static//
+new.p=3032 3428 15 1//
+serv.newitem=0A5d//
+new.attr=attr_static//
+new.p=3057 3384 15 1//
+serv.newitem=0A5d//
+new.attr=attr_static//
+new.p=3057 3386 15 1//
+//bed//
+serv.newitem=0A5D//
+new.attr=attr_static//
+new.p=2992 3426 15 1//
+serv.newitem=0A5D//
+new.attr=attr_static//
+new.p=3000 3348 35 1//
+serv.newitem=0A5D//
+new.attr=attr_static//
+new.p=3000 3351 35 1//
+serv.newitem=0A5D//
+new.attr=attr_static//
+new.p=3000 3354 35 1//
+serv.newitem=0A5D//
+new.attr=attr_static//
+new.p=3024 3352 35 1//
+serv.newitem=0A5D//
+new.attr=attr_static//
+new.p=3024 3354 35 1//
+serv.newitem=0A5D//
+new.attr=attr_static//
+new.p=3024 3356 35 1//
+serv.newitem=0A5D//
+new.attr=attr_static//
+new.p=3028 3352 35 1//
+serv.newitem=0A5D//
+new.attr=attr_static//
+new.p=3028 3354 35 1//
+serv.newitem=0A5D//
+new.attr=attr_static//
+new.p=3028 3356 35 1//
+serv.newitem=0A5D//
+new.attr=attr_static//
+new.p=3032 3352 35 1//
+serv.newitem=0A5D//
+new.attr=attr_static//
+new.p=3032 3354 35 1//
+serv.newitem=0A5D//
+new.attr=attr_static//
+new.p=3032 3356 35 1//
+//bed//
+serv.newitem=0A5E//
+new.attr=attr_static//
+new.p=3007 3344 35 1//
+serv.newitem=0A5E//
+new.attr=attr_static//
+new.p=3013 3344 35 1//
+//bed//
+serv.newitem=0A5F//
+new.attr=attr_static//
+new.p=3007 3345 35 1//
+serv.newitem=0A5F//
+new.attr=attr_static//
+new.p=3013 3345 35 1//
+//bed//
+serv.newitem=0A63//
+new.attr=attr_static//
+new.p=2872 3505 10 1//
+serv.newitem=0A63//
+new.attr=attr_static//
+new.p=2876 3505 10 1//
+serv.newitem=0A63//
+new.attr=attr_static//
+new.p=2917 3480 10 1//
+serv.newitem=0A63//
+new.attr=attr_static//
+new.p=3010 3344 35 1//
+//bed//
+serv.newitem=0A64//
+new.attr=attr_static//
+new.p=2937 3496 10 1//
+serv.newitem=0A64//
+new.attr=attr_static//
+new.p=3000 3384 15 1//
+serv.newitem=0A64//
+new.attr=attr_static//
+new.p=3048 3344 15 1//
+serv.newitem=0A64//
+new.attr=attr_static//
+new.p=3048 3360 15 1//
+serv.newitem=0A64//
+new.attr=attr_static//
+new.p=3048 3416 15 1//
+serv.newitem=0A64//
+new.attr=attr_static//
+new.p=3050 3344 15 1//
+serv.newitem=0A64//
+new.attr=attr_static//
+new.p=3050 3416 15 1//
+serv.newitem=0A64//
+new.attr=attr_static//
+new.p=3051 3360 15 1//
+serv.newitem=0A64//
+new.attr=attr_static//
+new.p=3060 3384 15 1//
+//bed//
+serv.newitem=0A65//
+new.attr=attr_static//
+new.p=2937 3497 10 1//
+serv.newitem=0A65//
+new.attr=attr_static//
+new.p=3000 3385 15 1//
+serv.newitem=0A65//
+new.attr=attr_static//
+new.p=3048 3345 15 1//
+serv.newitem=0A65//
+new.attr=attr_static//
+new.p=3048 3361 15 1//
+serv.newitem=0A65//
+new.attr=attr_static//
+new.p=3048 3417 15 1//
+serv.newitem=0A65//
+new.attr=attr_static//
+new.p=3050 3345 15 1//
+serv.newitem=0A65//
+new.attr=attr_static//
+new.p=3050 3417 15 1//
+serv.newitem=0A65//
+new.attr=attr_static//
+new.p=3051 3361 15 1//
+serv.newitem=0A65//
+new.attr=attr_static//
+new.p=3060 3385 15 1//
+//bed//
+serv.newitem=0A6A//
+new.attr=attr_static//
+new.p=2992 3424 15 1//
+//LargeBedEastAddon//
+serv.newitem=0A7D//
+new.attr=attr_static//
+new.p=2962 3412 35 1//
+serv.newitem=0A7D//
+new.attr=attr_static//
+new.p=2969 3411 35 1//
+//LargeBedSouthAddon//
+serv.newitem=0A83//
+new.attr=attr_static//
+new.p=2962 3400 35 1//
+serv.newitem=0A83//
+new.attr=attr_static//
+new.p=2969 3400 35 1//
+serv.newitem=0A83//
+new.attr=attr_static//
+new.p=3008 3424 15 1//
+//folded sheet//
+serv.newitem=0A93//
+new.color=0546//
+new.attr=attr_static//
+new.p=3048 3416 17 1//
+serv.newitem=0A93//
+new.color=0546//
+new.attr=attr_static//
+new.p=3050 3416 17 1//
+//LibraryBookcase//
+serv.newitem=0A97//
+new.attr=attr_static//
+new.p=2941 3496 10 1//
+serv.newitem=0A97//
+new.attr=attr_static//
+new.p=2967 3400 15 1//
+//LibraryBookcase//
+serv.newitem=0A98//
+new.attr=attr_static//
+new.p=2940 3496 10 1//
+serv.newitem=0A98//
+new.attr=attr_static//
+new.p=2971 3400 15 1//
+//LibraryBookcase//
+serv.newitem=0A99//
+new.attr=attr_static//
+new.p=2992 3430 15 1//
+//LibraryBookcase//
+serv.newitem=0A9A//
+new.attr=attr_static//
+new.p=2992 3431 15 1//
+//LibraryBookcase//
+serv.newitem=0A9B//
+new.attr=attr_static//
+new.p=2939 3496 10 1//
+serv.newitem=0A9B//
+new.attr=attr_static//
+new.p=2966 3400 15 1//
+serv.newitem=0A9B//
+new.attr=attr_static//
+new.p=2968 3400 15 1//
+serv.newitem=0A9B//
+new.attr=attr_static//
+new.p=2972 3400 15 1//
+//rug//
+serv.newitem=0AB5//
+new.attr=attr_static//
+new.p=2966 3402 35 1//
+//rug//
+serv.newitem=0AB7//
+new.attr=attr_static//
+new.p=2965 3402 35 1//
+//rug//
+serv.newitem=0AB8//
+new.attr=attr_static//
+new.p=2965 3401 35 1//
+//rug//
+serv.newitem=0AB9//
+new.attr=attr_static//
+new.p=2966 3401 35 1//
+//rug//
+serv.newitem=0ABA//
+new.attr=attr_static//
+new.p=2966 3403 35 1//
+//rug//
+serv.newitem=0ABB//
+new.attr=attr_static//
+new.p=2965 3403 35 1//
+//CandleLarge//
+serv.newitem=0B1A//
+new.attr=attr_static//
+new.p=2965 3404 23 1//
+serv.newitem=0B1A//
+new.attr=attr_static//
+new.p=2965 3411 23 1//
+serv.newitem=0B1A//
+new.attr=attr_static//
+new.p=2969 3403 19 1//
+serv.newitem=0B1A//
+new.attr=attr_static//
+new.p=2969 3409 19 1//
+serv.newitem=0B1A//
+new.attr=attr_static//
+new.p=3050 3360 23 1//
+serv.newitem=0B1A//
+new.attr=attr_static//
+new.p=2962 3410 43 1//
+serv.newitem=0B1A//
+new.attr=attr_static//
+new.p=2965 3400 43 1//
+serv.newitem=0B1A//
+new.attr=attr_static//
+new.p=2969 3410 41 1//
+//LampPost1//
+serv.newitem=0B20//
+new.attr=attr_static//
+new.p=2956 3458 24 1//
+serv.newitem=0B20//
+new.attr=attr_static//
+new.p=2961 3459 34 1//
+//CandelabraStand//
+serv.newitem=0B26//
+new.attr=attr_static//
+new.p=2938 3362 15 1//
+serv.newitem=0B26//
+new.attr=attr_static//
+new.p=2939 3347 15 1//
+//counter//
+serv.newitem=0B3F//
+new.attr=attr_static//
+new.p=3000 3349 35 1//
+//counter//
+serv.newitem=0B40//
+new.attr=attr_static//
+new.p=3052 3420 15 1//
+serv.newitem=0B40//
+new.attr=attr_static//
+new.p=3053 3420 15 1//
+//WaterTroughSouthAddon//
+serv.newitem=0B43//
+new.attr=attr_static//
+new.p=2906 3520 10 1//
+serv.newitem=0B43//
+new.attr=attr_static//
+new.p=2898 3520 10 1//
+//FancyWoodenChairCushion//
+serv.newitem=0B4E//
+new.attr=attr_static//
+new.p=2913 3484 10 1//
+//FancyWoodenChairCushion//
+serv.newitem=0B4F//
+new.color=021//
+new.attr=attr_static//
+new.p=2878 3505 10 1//
+//FancyWoodenChairCushion//
+serv.newitem=0B4F//
+new.color=026//
+new.attr=attr_static//
+new.p=2874 3505 10 1//
+//FancyWoodenChairCushion//
+serv.newitem=0B51//
+new.attr=attr_static//
+new.p=2916 3484 10 1//
+//FancyWoodenChairCushion//
+serv.newitem=0B51//
+new.color=01E//
+new.attr=attr_static//
+new.p=2873 3509 10 1//
+//WoodenChair//
+serv.newitem=0B56//
+new.attr=attr_static//
+new.p=2963 3407 15 1//
+serv.newitem=0B56//
+new.attr=attr_static//
+new.p=3029 3346 15 1//
+serv.newitem=0B56//
+new.attr=attr_static//
+new.p=3029 3348 15 1//
+serv.newitem=0B56//
+new.attr=attr_static//
+new.p=3029 3350 15 1//
+serv.newitem=0B56//
+new.attr=attr_static//
+new.p=3029 3352 15 1//
+serv.newitem=0B56//
+new.attr=attr_static//
+new.p=3029 3354 15 1//
+serv.newitem=0B56//
+new.attr=attr_static//
+new.p=3029 3356 15 1//
+//WoodenChair//
+serv.newitem=0B57//
+new.attr=attr_static//
+new.p=3018 3427 15 1//
+//WoodenChair//
+serv.newitem=0B58//
+new.attr=attr_static//
+new.p=3033 3346 15 1//
+serv.newitem=0B58//
+new.attr=attr_static//
+new.p=3033 3348 15 1//
+serv.newitem=0B58//
+new.attr=attr_static//
+new.p=3033 3350 15 1//
+serv.newitem=0B58//
+new.attr=attr_static//
+new.p=3033 3352 15 1//
+serv.newitem=0B58//
+new.attr=attr_static//
+new.p=3033 3354 15 1//
+serv.newitem=0B58//
+new.attr=attr_static//
+new.p=3033 3356 15 1//
+//BambooChair//
+serv.newitem=0B5D//
+new.attr=attr_static//
+new.p=2881 3496 10 1//
+serv.newitem=0B5D//
+new.attr=attr_static//
+new.p=3049 3366 15 1//
+serv.newitem=0B5D//
+new.attr=attr_static//
+new.p=3049 3371 15 1//
+//FootStool//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=2906 3487 10 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=2909 3517 10 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=2932 3504 10 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=2939 3506 10 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=2940 3505 10 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=2968 3420 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=2970 3420 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=2972 3420 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=2994 3433 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3005 3388 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3009 3451 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3009 3460 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3010 3451 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3010 3460 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3011 3451 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3011 3460 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3013 3453 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3013 3454 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3013 3455 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3013 3456 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3013 3457 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3013 3458 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3035 3427 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3035 3428 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3037 3427 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3037 3428 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3051 3403 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3052 3419 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3052 3421 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3053 3419 15 1//
+serv.newitem=0a2b//
+new.attr=attr_static//
+new.p=3053 3421 15 1//
+//bench//
+serv.newitem=0B5F//
+new.attr=attr_static//
+new.p=2968 3403 15 1//
+serv.newitem=0B5F//
+new.attr=attr_static//
+new.p=2968 3405 15 1//
+serv.newitem=0B5F//
+new.attr=attr_static//
+new.p=2969 3425 15 1//
+serv.newitem=0B5F//
+new.attr=attr_static//
+new.p=2969 3427 15 1//
+serv.newitem=0B5F//
+new.attr=attr_static//
+new.p=2970 3403 15 1//
+serv.newitem=0B5F//
+new.attr=attr_static//
+new.p=2970 3405 15 1//
+serv.newitem=0B5F//
+new.attr=attr_static//
+new.p=2971 3425 15 1//
+serv.newitem=0B5F//
+new.attr=attr_static//
+new.p=2971 3427 15 1//
+serv.newitem=0B5F//
+new.attr=attr_static//
+new.p=2992 3437 15 1//
+serv.newitem=0B5F//
+new.attr=attr_static//
+new.p=3015 3453 15 1//
+serv.newitem=0B5F//
+new.attr=attr_static//
+new.p=3015 3455 15 1//
+serv.newitem=0B5F//
+new.attr=attr_static//
+new.p=3015 3458 15 1//
+serv.newitem=0B5F//
+new.attr=attr_static//
+new.p=3015 3460 15 1//
+serv.newitem=0B5F//
+new.attr=attr_static//
+new.p=3017 3453 15 1//
+serv.newitem=0B5F//
+new.attr=attr_static//
+new.p=3017 3455 15 1//
+serv.newitem=0B5F//
+new.attr=attr_static//
+new.p=3017 3458 15 1//
+serv.newitem=0B5F//
+new.attr=attr_static//
+new.p=3017 3460 15 1//
+//bench//
+serv.newitem=0B60//
+new.attr=attr_static//
+new.p=2968 3402 15 1//
+serv.newitem=0B60//
+new.attr=attr_static//
+new.p=2968 3404 15 1//
+serv.newitem=0B60//
+new.attr=attr_static//
+new.p=2969 3424 15 1//
+serv.newitem=0B60//
+new.attr=attr_static//
+new.p=2969 3426 15 1//
+serv.newitem=0B60//
+new.attr=attr_static//
+new.p=2970 3402 15 1//
+serv.newitem=0B60//
+new.attr=attr_static//
+new.p=2970 3404 15 1//
+serv.newitem=0B60//
+new.attr=attr_static//
+new.p=2971 3424 15 1//
+serv.newitem=0B60//
+new.attr=attr_static//
+new.p=2971 3426 15 1//
+serv.newitem=0B60//
+new.attr=attr_static//
+new.p=2992 3436 15 1//
+serv.newitem=0B60//
+new.attr=attr_static//
+new.p=3015 3452 15 1//
+serv.newitem=0B60//
+new.attr=attr_static//
+new.p=3015 3454 15 1//
+serv.newitem=0B60//
+new.attr=attr_static//
+new.p=3015 3457 15 1//
+serv.newitem=0B60//
+new.attr=attr_static//
+new.p=3015 3459 15 1//
+serv.newitem=0B60//
+new.attr=attr_static//
+new.p=3017 3452 15 1//
+serv.newitem=0B60//
+new.attr=attr_static//
+new.p=3017 3454 15 1//
+serv.newitem=0B60//
+new.attr=attr_static//
+new.p=3017 3457 15 1//
+serv.newitem=0B60//
+new.attr=attr_static//
+new.p=3017 3459 15 1//
+//metal signpost//
+serv.newitem=0BA2//
+new.attr=attr_static//
+new.p=3027 3360 15 1//
+//cards//
+serv.newitem=0E15//
+new.attr=attr_static//
+new.p=3015 3526 21 1//
+//cards//
+serv.newitem=0E16//
+new.attr=attr_static//
+new.p=3014 3527 21 1//
+serv.newitem=0E16//
+new.attr=attr_static//
+new.p=3033 3346 39 1//
+//cards//
+serv.newitem=0E17 //
+new.attr=attr_static//
+new.p=3034 3346 37 1//
+//cards//
+serv.newitem=0E19//
+new.attr=attr_static//
+new.p=3015 3525 21 1//
+//Backgammon//
+serv.newitem=0E1C//
+new.attr=attr_static//
+new.p=3035 3346 37 1//
+//bloody water//
+serv.newitem=0E23//
+new.attr=attr_static//
+new.p=2993 3432 21 1//
+//bottle//
+serv.newitem=0E26//
+new.attr=attr_static//
+new.p=3000 3349 41 1//
+//LargeCrate//
+serv.newitem=0E3C//
+new.attr=attr_static//
+new.p=2939 3381 15 1//
+serv.newitem=0E3C//
+new.attr=attr_static//
+new.p=2941 3381 15 1//
+//FillableLargeCrate//
+serv.newitem=0E3C//
+new.attr=attr_static//
+new.p=2943 3401 0 1 1//
+serv.newitem=0E3C//
+new.attr=attr_static//
+new.p=2943 3402 0 1 1//
+serv.newitem=0E3C//
+new.attr=attr_static//
+new.p=2944 3401 0 1 1//
+serv.newitem=0E3C//
+new.attr=attr_static//
+new.p=2944 3402 0 1 1//
+//LargeCrate//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2885 3420 35 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2886 3420 35 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2952 3447 15 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2952 3448 15 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2963 3492 15 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2963 3493 15 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2964 3492 15 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2964 3493 15 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2964 3493 18 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2965 3491 15 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2965 3492 15 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2965 3492 18 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2965 3493 15 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2965 3493 18 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=3011 3400 15 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=3011 3401 15 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=3011 3401 18 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=3012 3401 15 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=3012 3401 18 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=3012 3402 15 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=3013 3402 15 1//
+//FillableLargeCrate//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2940 3401 1 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2940 3402 1 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2941 3401 1 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2941 3402 1 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2942 3401 1 1//
+serv.newitem=0E3D//
+new.attr=attr_static//
+new.p=2942 3402 1 1//
+//MediumCrate//
+serv.newitem=0E3E//
+new.attr=attr_static//
+new.p=2888 3420 35 1//
+serv.newitem=0E3E//
+new.attr=attr_static//
+new.p=2952 3444 15 1//
+serv.newitem=0E3E//
+new.attr=attr_static//
+new.p=2952 3451 15 1//
+//MediumCrate//
+serv.newitem=0E3F//
+new.attr=attr_static//
+new.p=2887 3420 35 1//
+serv.newitem=0E3F//
+new.attr=attr_static//
+new.p=2943 3401 3 1//
+serv.newitem=0E3F//
+new.attr=attr_static//
+new.p=2943 3402 3 1//
+serv.newitem=0E3F//
+new.attr=attr_static//
+new.p=2943 3403 0 1 1//
+serv.newitem=0E3F//
+new.attr=attr_static//
+new.p=2944 3401 3 1//
+serv.newitem=0E3F//
+new.attr=attr_static//
+new.p=2944 3402 3 1//
+//MetalGoldenChest//
+serv.newitem=0E40//
+new.attr=attr_static//
+new.p=2872 3466 15 1//
+serv.newitem=0E40//
+new.attr=attr_static//
+new.p=2872 3476 15 1//
+//FillableMetalGoldenChest//
+serv.newitem=0E41 //
+new.attr=attr_static//
+new.p=3011 3424 15 1//
+//WoodenChest//
+serv.newitem=0E42//
+new.attr=attr_static//
+new.p=2872 3473 15 1//
+serv.newitem=0E42//
+new.attr=attr_static//
+new.p=2872 3474 15 1//
+serv.newitem=0E42//
+new.attr=attr_static//
+new.p=2873 3466 15 1//
+serv.newitem=0E42//
+new.attr=attr_static//
+new.p=2880 3415 35 1//
+serv.newitem=0E42//
+new.attr=attr_static//
+new.p=2936 3374 15 1//
+serv.newitem=0E42//
+new.attr=attr_static//
+new.p=2936 3381 15 1//
+serv.newitem=0E42//
+new.attr=attr_static//
+new.p=2952 3446 15 1//
+serv.newitem=0E42//
+new.attr=attr_static//
+new.p=2952 3450 15 1//
+serv.newitem=0E42//
+new.attr=attr_static//
+new.p=2952 3493 15 1//
+serv.newitem=0E42//
+new.attr=attr_static//
+new.p=3056 3348 15 1//
+//FillableWoodenChest//
+serv.newitem=0E42//
+new.attr=attr_static//
+new.p=3026 3352 35 1//
+serv.newitem=0E42//
+new.attr=attr_static//
+new.p=3030 3354 35 1//
+serv.newitem=0E42//
+new.attr=attr_static//
+new.p=3034 3352 35 1//
+//WoodenChest//
+serv.newitem=0E43//
+new.attr=attr_static//
+new.p=2963 3480 15 1//
+serv.newitem=0E43//
+new.attr=attr_static//
+new.p=2965 3480 15 1//
+serv.newitem=0E43//
+new.attr=attr_static//
+new.p=3064 3336 15 1//
+//Bag//
+serv.newitem=0E76//
+new.attr=attr_static//
+new.p=3009 3384 16 1//
+//FillableBarrel//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2906 3480 10 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2906 3480 15 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2906 3480 20 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2907 3480 10 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2907 3480 15 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2907 3481 10 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2932 3401 0 1 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2932 3401 5 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2932 3402 0 1 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2932 3402 5 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2932 3403 0 1 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2933 3401 0 1 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2933 3401 5 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2933 3401 10 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2933 3402 0 1 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2933 3402 5 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2934 3401 0 1 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2934 3401 5 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2934 3402 0 1 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2934 3402 5 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2934 3403 0 1 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=2935 3401 0 1 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=3008 3457 15 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=3008 3457 20 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=3012 3406 15 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=3048 3368 15 1//
+serv.newitem=0E77//
+new.attr=attr_static//
+new.p=3049 3365 15 1//
+//MetalChest//
+serv.newitem=0E7C//
+new.attr=attr_static//
+new.p=2872 3468 15 1//
+serv.newitem=0E7C//
+new.attr=attr_static//
+new.p=2873 3468 15 1//
+serv.newitem=0E7C//
+new.attr=attr_static//
+new.p=2873 3474 15 1//
+serv.newitem=0E7C//
+new.attr=attr_static//
+new.p=2873 3476 15 1//
+serv.newitem=0E7C//
+new.attr=attr_static//
+new.p=3008 3530 15 1//
+//FillableMetalChest//
+serv.newitem=0E7C//
+new.attr=attr_static//
+new.p=2904 3481 10 1//
+serv.newitem=0E7C//
+new.attr=attr_static//
+new.p=2936 3502 10 1//
+serv.newitem=0E7C//
+new.attr=attr_static//
+new.p=2962 3408 15 1//
+serv.newitem=0E7C//
+new.attr=attr_static//
+new.p=3004 3389 15 1//
+serv.newitem=0E7C//
+new.attr=attr_static//
+new.p=3048 3402 15 1//
+//FillableWoodenBox//
+serv.newitem=0E7D//
+new.attr=attr_static//
+new.p=2938 3500 10 1//
+serv.newitem=0E7D//
+new.attr=attr_static//
+new.p=3026 3354 35 1//
+//FillableSmallCrate//
+serv.newitem=0E7E//
+new.attr=attr_static//
+new.p=2904 3483 10 1//
+serv.newitem=0E7E//
+new.attr=attr_static//
+new.p=2904 3483 13 1//
+serv.newitem=0E7E//
+new.attr=attr_static//
+new.p=2904 3483 16 1//
+serv.newitem=0E7E//
+new.attr=attr_static//
+new.p=2904 3484 10 1//
+serv.newitem=0E7E//
+new.attr=attr_static//
+new.p=2904 3484 13 1//
+//FillableMetalBox//
+serv.newitem=0E80//
+new.attr=attr_static//
+new.p=3026 3356 35 1//
+serv.newitem=0E80//
+new.attr=attr_static//
+new.p=3030 3356 35 1//
+serv.newitem=0E80//
+new.attr=attr_static//
+new.p=3034 3354 35 1//
+//mortar and pestle//
+serv.newitem=0E9B//
+new.attr=attr_static//
+new.p=2992 3432 21 1//
+//dress form//
+serv.newitem=0EC6//
+new.attr=attr_static//
+new.p=2880 3502 10 1//
+//clean bandage//
+serv.newitem=0EE9//
+new.attr=attr_static//
+new.p=3012 3353 41 1//
+//scroll//
+serv.newitem=0EF6//
+new.attr=attr_static//
+new.p=2992 3434 21 1//
+//bottle//
+serv.newitem=0F03//
+new.attr=attr_static//
+new.p=3011 3349 41 1//
+serv.newitem=0F03//
+new.attr=attr_static//
+new.p=3011 3353 41 1//
+//arrows//
+serv.newitem=0F40//
+new.attr=attr_static//
+new.p=3010 3348 21 1//
+serv.newitem=0F40//
+new.attr=attr_static//
+new.p=3054 3389 43 1//
+//arrows//
+serv.newitem=0F41//
+new.attr=attr_static//
+new.p=3009 3348 21 1//
+serv.newitem=0F41//
+new.attr=attr_static//
+new.p=3054 3388 43 1//
+//arrow//
+serv.newitem=0F42//
+new.attr=attr_static//
+new.p=3054 3389 43 1//
+//hatchet//
+serv.newitem=0F43//
+new.attr=attr_static//
+new.p=2956 3481 19 1//
+serv.newitem=0F43//
+new.attr=attr_static//
+new.p=3017 3434 19 1//
+//crossbow//
+serv.newitem=0F4F//
+new.attr=attr_static//
+new.p=2880 3418 39 1//
+serv.newitem=0F4F//
+new.attr=attr_static//
+new.p=3048 3372 21 1//
+//crossbow//
+serv.newitem=0F50//
+new.attr=attr_static//
+new.p=3048 3370 21 1//
+serv.newitem=0F50//
+new.attr=attr_static//
+new.p=3054 3390 43 1//
+serv.newitem=0F50//
+new.attr=attr_static//
+new.p=3054 3391 43 1//
+//dagger//
+serv.newitem=0F52//
+new.attr=attr_static//
+new.p=3052 3401 19 1//
+//mace//
+serv.newitem=0F5D//
+new.attr=attr_static//
+new.p=3051 3397 15 1//
+////broadsword//
+serv.newitem=0F5E//
+serv.newitem= //
+new.attr=attr_static//
+new.p=2880 3417 39 1//
+////longsword//
+serv.newitem=0F60//
+new.attr=attr_static//
+new.p=2936 3377 19 1//
+serv.newitem=0F60//
+new.attr=attr_static//
+new.p=3015 3434 19 1//
+serv.newitem=0F60//
+new.attr=attr_static//
+new.p=3052 3396 15 1//
+serv.newitem=0F60//
+new.attr=attr_static//
+new.p=3060 3398 19 1//
+serv.newitem=0F60//
+new.attr=attr_static//
+new.p=3060 3403 19 1//
+////spear//
+serv.newitem=0F62//
+new.attr=attr_static//
+new.p=3053 3392 15 1//
+////bolt of cloth//
+serv.newitem=0F98//
+new.color=026//
+new.attr=attr_static//
+new.p=2880 3509 10 1//
+////bolt of cloth//
+serv.newitem=0F99//
+new.color=021//
+new.attr=attr_static//
+new.p=2880 3498 10 1//
+////bolt of cloth//
+serv.newitem=0F9A//
+new.color=01E//
+new.attr=attr_static//
+new.p=2880 3507 10 1//
+////sewing kit//
+serv.newitem=0F9D//
+new.attr=attr_static//
+new.p=2881 3504 16 1//
+////scissors//
+serv.newitem=0F9E//
+new.attr=attr_static//
+new.p=2881 3505 13 1//
+////spool of thread//
+serv.newitem=0FA0//
+new.color=021//
+new.attr=attr_static//
+new.p=2880 3503 16 1//
+////spool of thread//
+serv.newitem=0FA1//
+new.color=01E//
+new.attr=attr_static//
+new.p=2880 3503 16 1//
+////playing cards//
+serv.newitem=0FA2//
+new.attr=attr_static//
+new.p=3014 3525 21 1//
+////playing cards//
+serv.newitem=0FA3//
+new.attr=attr_static//
+new.p=2970 3425 17 1//
+serv.newitem=0FA3//
+new.attr=attr_static//
+new.p=3016 3454 18 1//
+serv.newitem=0FA3//
+new.attr=attr_static//
+new.p=3058 3341 21 1//
+//ChessBoard//
+serv.newitem=0FA6//
+new.attr=attr_static//
+new.p=3058 3343 20 1//
+//Dices//
+serv.newitem=0FA7//
+new.attr=attr_static//
+new.p=3016 3455 19 1//
+////barrel//
+serv.newitem=0FAE//
+new.attr=attr_static//
+new.p=2904 3482 10 1//
+serv.newitem=0FAE//
+new.attr=attr_static//
+new.p=3008 3531 15 1//
+//AnvilEastAddon//
+serv.newitem=0FAF//
+new.attr=attr_static//
+new.p=3001 3410 15 1//
+serv.newitem=0FAF//
+new.attr=attr_static//
+new.p=3003 3401 15 1//
+////forge//
+serv.newitem=0FB1//
+new.attr=attr_static//
+new.p=3007 3404 15 1//
+////sledge hammer//
+serv.newitem=0FB5//
+new.attr=attr_static//
+new.p=3002 3410 15 1//
+serv.newitem=0FB5//
+new.attr=attr_static//
+new.p=3004 3401 15 1//
+////horse shoes//
+serv.newitem=0FB6//
+new.attr=attr_static//
+new.p=3010 3410 15 1//
+////forged metal//
+serv.newitem=0FB7//
+new.attr=attr_static//
+new.p=3002 3401 15 1//
+////forged metal//
+serv.newitem=0FB8//
+new.attr=attr_static//
+new.p=3003 3412 15 1//
+////book//
+serv.newitem=0FBD//
+new.attr=attr_static//
+new.p=2905 3487 15 1//
+serv.newitem=0FBD//
+new.attr=attr_static//
+new.p=2930 3505 15 1//
+serv.newitem=0FBD//
+new.attr=attr_static//
+new.p=3012 3351 41 1//
+serv.newitem=0FBD//
+new.attr=attr_static//
+new.p=3030 3347 21 1//
+serv.newitem=0FBD//
+new.attr=attr_static//
+new.p=3032 3350 21 1//
+////book//
+serv.newitem=0FBE//
+new.attr=attr_static//
+new.p=2885 3497 14 1//
+serv.newitem=0FBE//
+new.attr=attr_static//
+new.p=2963 3404 23 1//
+serv.newitem=0FBE//
+new.attr=attr_static//
+new.p=3018 3429 23 1//
+////pen and ink//
+serv.newitem=0FBF//
+new.attr=attr_static//
+new.p=2905 3487 15 1//
+serv.newitem=0FBF//
+new.attr=attr_static//
+new.p=2930 3505 15 1//
+serv.newitem=0FBF//
+new.attr=attr_static//
+new.p=3031 3347 21 1//
+////pen and ink//
+serv.newitem=0FC0//
+new.attr=attr_static//
+new.p=2884 3497 14 1//
+serv.newitem=0FC0//
+new.attr=attr_static//
+new.p=2963 3404 21 1//
+serv.newitem=0FC0//
+new.attr=attr_static//
+new.p=3007 3387 25 1//
+serv.newitem=0FC0//
+new.attr=attr_static//
+new.p=3012 3352 41 1//
+serv.newitem=0FC0//
+new.attr=attr_static//
+new.p=3018 3429 23 1//
+serv.newitem=0FC0//
+new.attr=attr_static//
+new.p=3030 3346 21 1//
+serv.newitem=0FC0//
+new.attr=attr_static//
+new.p=3030 3351 21 1//
+serv.newitem=0FC0//
+new.attr=attr_static//
+new.p=3031 3355 21 1//
+serv.newitem=0FC0//
+new.attr=attr_static//
+new.p=3052 3402 19 1//
+////book//
+serv.newitem=0FF4//
+new.attr=attr_static//
+new.p=3007 3388 27 1//
+//Pitcher//
+serv.newitem=0FF6//
+new.attr=attr_static//
+new.p=3012 3453 24 1//
+////skull mug//
+serv.newitem=0FFD//
+new.attr=attr_static//
+new.p=2970 3424 19 1//
+serv.newitem=0FFD//
+new.attr=attr_static//
+new.p=3010 3452 24 1//
+serv.newitem=0FFD//
+new.attr=attr_static//
+new.p=3010 3459 23 1//
+serv.newitem=0FFD//
+new.attr=attr_static//
+new.p=3012 3458 23 1//
+serv.newitem=0FFD//
+new.attr=attr_static//
+new.p=3016 3453 19 1//
+serv.newitem=0FFD//
+new.attr=attr_static//
+new.p=3016 3459 19 1//
+serv.newitem=0FFD//
+new.attr=attr_static//
+new.p=3032 3353 21 1//
+////skull mug//
+serv.newitem=0FFE//
+new.attr=attr_static//
+new.p=3016 3458 19 1//
+serv.newitem=0FFE//
+new.attr=attr_static//
+new.p=3030 3350 21 1//
+//PewterMug//
+serv.newitem=0FFF//
+new.attr=attr_static//
+new.p=3012 3455 24 1//
+//PewterMug//
+serv.newitem= 01001//
+new.attr=attr_static//
+new.p=2970 3425 24 1//
+serv.newitem=  01001//
+new.attr=attr_static//
+new.p=3012 3456 24 1//
+serv.newitem=  01001//
+new.attr=attr_static//
+new.p=3016 3452 19 1//
+serv.newitem=  01001//
+new.attr=attr_static//
+new.p=3016 3457 19 1//
+//PewterMug//
+serv.newitem= 01002//
+new.attr=attr_static//
+new.p=2970 3426 19 1//
+////spittoon//
+serv.newitem= 01003//
+new.attr=attr_static//
+new.p=2968 3429 15 1//
+serv.newitem=  01003//
+new.attr=attr_static//
+new.p=2973 3423 15 1//
+serv.newitem=  01003//
+new.attr=attr_static//
+new.p=3008 3461 15 1//
+serv.newitem=  01003//
+new.attr=attr_static//
+new.p=3018 3450 15 1//
+//ArcheryButte//
+serv.newitem= 0100A//
+new.attr=attr_static//
+new.p=3027 3381 15 1//
+serv.newitem=  0100A//
+new.attr=attr_static//
+new.p=3048 3394 39 1//
+serv.newitem=  0100A//
+new.attr=attr_static//
+new.p=3048 3396 39 1//
+serv.newitem=  0100A//
+new.attr=attr_static//
+new.p=3048 3398 39 1//
+serv.newitem=  0100A//
+new.attr=attr_static//
+new.p=3048 3400 39 1//
+serv.newitem=  0100A//
+new.attr=attr_static//
+new.p=3048 3402 39 1//
+//ArcheryButte//
+serv.newitem= 0100B//
+new.attr=attr_static//
+new.p=3036 3379 15 1//
+//spinning wheel//
+serv.newitem= 01015//
+new.attr=attr_static//
+new.p=2880 3496 10 1//
+////pile of wool//
+serv.newitem= 0101F//
+new.attr=attr_static//
+new.p=2881 3497 10 1//
+////hammer//
+serv.newitem= 0102B//
+new.attr=attr_static//
+new.p=2938 3507 14 1//
+serv.newitem=  0102B//
+new.attr=attr_static//
+new.p=2941 3505 14 1//
+serv.newitem=  0102B//
+new.attr=attr_static//
+new.p=2941 3508 14 1//
+////dough//
+serv.newitem= 0103D//
+new.attr=attr_static//
+new.p=2972 3353 21 1//
+////globe//
+serv.newitem= 01047//
+new.attr=attr_static//
+new.p=3029 3344 15 1//
+////globe//
+serv.newitem= 01048//
+new.attr=attr_static//
+new.p=3033 3344 15 1//
+//Clock//
+serv.newitem= 0104B//
+new.attr=attr_static//
+new.p=2936 3504 10 1//
+serv.newitem=  0104B//
+new.attr=attr_static//
+new.p=2936 3506 10 1//
+//ClockFrame//
+serv.newitem= 0104E//
+new.attr=attr_static//
+new.p=2938 3505 14 1//
+serv.newitem=  0104E//
+new.attr=attr_static//
+new.p=2941 3507 14 1//
+//ClockParts//
+serv.newitem= 0104F//
+new.attr=attr_static//
+new.p=2938 3507 14 1//
+serv.newitem=  0104F//
+new.attr=attr_static//
+new.p=2941 3505 14 1//
+//AxleGears//
+serv.newitem= 01051//
+new.attr=attr_static//
+new.p=2938 3506 14 1//
+serv.newitem=  01051//
+new.attr=attr_static//
+new.p=2941 3508 14 1//
+//Gears//
+serv.newitem= 01054//
+new.attr=attr_static//
+new.p=2938 3508 14 1//
+serv.newitem=  01054//
+new.attr=attr_static//
+new.p=2941 3505 14 1//
+////sextant//
+serv.newitem= 01057//
+new.attr=attr_static//
+new.p=2938 3506 14 1//
+serv.newitem=  01057//
+new.attr=attr_static//
+new.p=2941 3507 14 1//
+////sextant parts//
+serv.newitem= 01059//
+new.attr=attr_static//
+new.p=2938 3505 14 1//
+serv.newitem=  01059//
+new.attr=attr_static//
+new.p=2941 3506 14 1//
+////springs//
+serv.newitem= 0105D//
+new.attr=attr_static//
+new.p=2938 3507 14 1//
+serv.newitem=  0105D//
+new.attr=attr_static//
+new.p=2941 3504 14 1//
+//LoomEastAddon//
+serv.newitem= 01060//
+new.color=01E//
+new.attr=attr_static//
+new.p=2873 3499 10 1//
+serv.newitem= 01063//
+new.color=01E//
+new.attr=attr_static//
+new.p=2873 3500 10 1//
+//LoomSouthAddon//
+serv.newitem= 01061//
+new.color=021//
+new.attr=attr_static//
+new.p=2875 3497 10 1//
+serv.newitem= 01066//
+new.color=021//
+new.attr=attr_static//
+new.p=2876 3497 10 1//
+//LoomSouthAddon//
+serv.newitem= 01061//
+new.color=026//
+new.attr=attr_static//
+new.p=2875 3502 10 1//
+serv.newitem= 01066//
+new.color=026//
+new.attr=attr_static//
+new.p=2876 3502 10 1//
+//TrainingDummySouthAddon//
+serv.newitem= 01070//
+new.attr=attr_static//
+new.p=3029 3389 15 1//
+//TrainingDummyEastAddon//
+serv.newitem= 01074//
+new.attr=attr_static//
+new.p=3037 3389 15 1//
+//lever//
+serv.newitem= 0108D//
+new.attr=attr_static//
+new.p=2956 3454 15 1//
+//PottedPlant//
+serv.newitem= 011CA//
+new.attr=attr_static//
+new.p=2912 3480 10 1//
+serv.newitem=  011CA//
+new.attr=attr_static//
+new.p=3048 3347 15 1//
+//PottedPlant1//
+serv.newitem= 011CB//
+new.attr=attr_static//
+new.p=2992 3435 21 1//
+////war axe//
+serv.newitem= 013AF//
+new.attr=attr_static//
+new.p=3006 3348 21 1//
+////bow//
+serv.newitem= 013B2//
+new.attr=attr_static//
+new.p=3011 3348 21 1//
+////large battle axe//
+serv.newitem= 013FB//
+new.attr=attr_static//
+new.p=3004 3348 21 1//
+////katana//
+serv.newitem= 013FF//
+new.attr=attr_static//
+new.p=3016 3434 19 1//
+////map//
+serv.newitem= 014EC//
+new.attr=attr_static//
+new.p=3030 3353 21 1//
+serv.newitem=  014EC//
+new.attr=attr_static//
+new.p=3031 3350 21 1//
+serv.newitem=  014EC//
+new.attr=attr_static//
+new.p=3032 3346 21 1//
+////rolled map//
+serv.newitem= 014ED//
+new.attr=attr_static//
+new.p=3031 3348 21 1//
+serv.newitem=  014ED//
+new.attr=attr_static//
+new.p=3031 3354 21 1//
+////rolled map//
+serv.newitem= 014EE//
+new.attr=attr_static//
+new.p=3031 3356 21 1//
+serv.newitem=  014EE//
+new.attr=attr_static//
+new.p=3032 3352 21 1//
+////water barrel//
+serv.newitem= 0154D//
+new.attr=attr_static//
+new.p=3003 3413 15 1//
+serv.newitem=  0154D//
+new.attr=attr_static//
+new.p=3004 3400 15 1//
+////flask//
+serv.newitem= 0182B//
+new.attr=attr_static//
+new.p=3000 3355 41 1//
+////flask//
+serv.newitem= 0182F//
+new.attr=attr_static//
+new.p=3011 3354 41 1//
+////flask//
+serv.newitem= 01831//
+new.attr=attr_static//
+new.p=3013 3350 41 1//
+////flask//
+serv.newitem= 01844//
+new.attr=attr_static//
+new.p=3011 3350 41 1//
+////flask//
+serv.newitem= 01847//
+new.attr=attr_static//
+new.p=3011 3344 41 1//
+//HeatingStand//
+serv.newitem= 0184A//
+new.attr=attr_static//
+new.p=3011 3350 41 1//
+////scales//
+serv.newitem= 01852//
+new.attr=attr_static//
+new.p=3012 3354 41 1//
+////empty vials//
+serv.newitem= 0185C//
+new.attr=attr_static//
+new.p=3007 3389 21 1//
+serv.newitem=  0185C//
+new.attr=attr_static//
+new.p=3012 3350 41 1//
+////full vials//
+serv.newitem= 0185D//
+new.attr=attr_static//
+new.p=3010 3353 41 1//
+////full vials//
+serv.newitem= 0185E//
+new.attr=attr_static//
+new.p=3007 3390 21 1//
+////iron wire//
+serv.newitem= 01876//
+new.attr=attr_static//
+new.p=3002 3409 15 1//
+serv.newitem=  01876//
+new.attr=attr_static//
+new.p=3003 3403 15 1//
+serv.newitem=  01876//
+new.attr=attr_static//
+new.p=3005 3409 15 1//
+serv.newitem=  01876//
+new.attr=attr_static//
+new.p=3012 3412 15 1//
+////silver wire//
+serv.newitem= 01877//
+new.attr=attr_static//
+new.p=3005 3402 15 1//
+serv.newitem=  01877//
+new.attr=attr_static//
+new.p=3005 3404 15 1//
+serv.newitem=  01877//
+new.attr=attr_static//
+new.p=3008 3412 15 1//
+////bellows//
+serv.newitem= 0197B//
+new.attr=attr_static//
+new.p=3000 3403 15 1//
+serv.newitem=  0197B//
+new.attr=attr_static//
+new.p=3000 3412 15 1//
+////forge//
+serv.newitem= 0197E//
+new.attr=attr_static//
+new.p=3001 3403 15 1//
+serv.newitem=  0197E//
+new.attr=attr_static//
+new.p=3001 3412 15 1//
+////forge//
+serv.newitem= 01982//
+new.attr=attr_static//
+new.p=3002 3403 15 1//
+serv.newitem=  01982//
+new.attr=attr_static//
+new.p=3002 3412 15 1//
+////ore//
+serv.newitem= 019B7//
+new.attr=attr_static//
+new.p=3011 3402 15 1//
+serv.newitem=  019B7//
+new.attr=attr_static//
+new.p=3012 3403 15 1//
+serv.newitem=  019B7//
+new.attr=attr_static//
+new.p=3013 3400 15 1//
+////ore//
+serv.newitem= 019B7//
+new.attr=attr_static//
+new.p=3000 3404 15 1//
+serv.newitem=  019B7//
+new.attr=attr_static//
+new.p=3001 3404 15 1//
+serv.newitem=  019B7//
+new.attr=attr_static//
+new.p=3010 3407 15 1//
+serv.newitem=  019B7//
+new.attr=attr_static//
+new.p=3011 3407 15 1//
+////ore//
+serv.newitem= 019B8//
+new.attr=attr_static//
+new.p=3010 3407 15 1//
+serv.newitem=  019B8//
+new.attr=attr_static//
+new.p=3011 3407 15 1//
+serv.newitem=  019B8//
+new.attr=attr_static//
+new.p=3011 3408 15 1//
+////ore//
+serv.newitem= 019B9//
+new.attr=attr_static//
+new.p=3000 3405 15 1//
+serv.newitem=  019B9//
+new.attr=attr_static//
+new.p=3001 3405 15 1//
+serv.newitem=  019B9//
+new.attr=attr_static//
+new.p=3010 3408 15 1//
+serv.newitem=  019B9//
+new.attr=attr_static//
+new.p=3011 3408 15 1//
+////ore//
+serv.newitem= 019BA//
+new.attr=attr_static//
+new.p=3001 3406 15 1//
+serv.newitem=  019BA//
+new.attr=attr_static//
+new.p=3010 3408 15 1//
+serv.newitem=  019BA//
+new.attr=attr_static//
+new.p=3011 3407 15 1//
+serv.newitem=  019BA//
+new.attr=attr_static//
+new.p=3011 3408 15 1//
+serv.newitem=  019BA//
+new.attr=attr_static//
+new.p=3011 3409 15 1//
+serv.newitem=  019BA//
+new.attr=attr_static//
+new.p=3012 3408 15 1//
+////ore cart//
+serv.newitem= 01A83//
+new.attr=attr_static//
+new.p=3002 3407 15 1//
+serv.newitem=  01A83//
+new.attr=attr_static//
+new.p=3012 3410 15 1//
+////keg//
+serv.newitem= 01AD6//
+new.attr=attr_static//
+new.p=3010 3400 15 1//
+////shaft//
+serv.newitem= 01BD4//
+new.attr=attr_static//
+new.p=3048 3365 21 1//
+serv.newitem=  01BD4//
+new.attr=attr_static//
+new.p=3048 3366 21 1//
+serv.newitem=  01BD4//
+new.attr=attr_static//
+new.p=3048 3367 21 1//
+//BulletinBoard//
+serv.newitem= 01E5E//
+new.attr=attr_static//
+new.p=2963 3400 15 1//
+serv.newitem=  01E5E//
+new.attr=attr_static//
+new.p=3017 3450 15 1//
+
+[EOF]		

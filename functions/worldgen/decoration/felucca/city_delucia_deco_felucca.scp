@@ -1,0 +1,370 @@
+[FUNCTION deco_delucia_felucca]
+
+//oven
+serv.newitem=0461
+new.attr=attr_static 
+new.p=5195 4058 37
+//oven
+serv.newitem=0462
+new.attr=attr_static 
+new.p=5195 4057 37
+//fireplaceSandstoneFireplaceSouthAddon 
+serv.newitem=047B
+new.attr=attr_static 
+new.p=5198 4054 37
+serv.newitem=0460
+new.attr=attr_static 
+new.p=5197 4054 37
+serv.newitem=0460
+new.attr=attr_static 
+new.p=5232 4014 37
+serv.newitem=047B
+new.attr=attr_static 
+new.p=5233 4014 37
+serv.newitem=047B
+new.attr=attr_static 
+new.p=5265 3977 41
+serv.newitem=0460
+new.attr=attr_static 
+new.p=5264 3977 41
+//wooden door
+serv.newitem=06E5 
+new.attr=attr_static 
+new.p=5233 4027 37
+serv.newitem=06E5 
+new.attr=attr_static 
+new.p=5293 4003 40
+serv.newitem=06E5 
+new.attr=attr_static 
+new.p=5272 3987 37
+//wooden door
+serv.newitem=06E7
+new.attr=attr_static 
+new.p=5273 3987 37
+//wooden door
+serv.newitem=006ED
+new.attr=attr_static 
+new.p=5295 3998 40
+//wooden door
+serv.newitem=006EF
+new.attr=attr_static 
+new.p=5295 3997 40
+//wooden door 
+serv.newitem=006F1
+new.attr=attr_static 
+new.p=5290 4008 40
+//wooden door
+serv.newitem=006F3
+new.attr=attr_static 
+new.p=5290 4007 40
+//wooden fence
+serv.newitem=0863
+new.attr=attr_static 
+new.p=5251 4021 39
+serv.newitem=0863
+new.attr=attr_static 
+new.p=5252 4021 40
+serv.newitem=0863
+new.attr=attr_static 
+new.p=5253 4002 46
+serv.newitem=0863
+new.attr=attr_static 
+new.p=5253 4021 40
+serv.newitem=0863
+new.attr=attr_static 
+new.p=5254 4002 46
+serv.newitem=0863
+new.attr=attr_static 
+new.p=5254 4021 40
+serv.newitem=0863
+new.attr=attr_static 
+new.p=5255 4021 38
+//wooden fence
+serv.newitem=0864
+new.attr=attr_static 
+new.p=5250 4015 40
+serv.newitem=0864
+new.attr=attr_static 
+new.p=5250 4016 39
+serv.newitem=0864
+new.attr=attr_static 
+new.p=5250 4017 40
+serv.newitem=0864
+new.attr=attr_static 
+new.p=5250 4018 41
+serv.newitem=0864
+new.attr=attr_static 
+new.p=5250 4019 39
+serv.newitem=0864
+new.attr=attr_static 
+new.p=5250 4020 39
+serv.newitem=0864
+new.attr=attr_static 
+new.p=5250 4021 39
+//wooden gate
+serv.newitem=0866
+new.attr=attr_static 
+new.p=5287 4015 40
+serv.newitem=0866
+new.attr=attr_static 
+new.p=5297 4003 40
+serv.newitem=0866
+new.attr=attr_static 
+new.p=5301 4003 40
+//wooden gate
+serv.newitem=0868
+new.attr=attr_static 
+new.p=5288 4015 40
+serv.newitem=0868
+new.attr=attr_static 
+new.p=5298 4003 40
+serv.newitem=0868
+new.attr=attr_static 
+new.p=5302 4003 40
+//wooden gate
+serv.newitem=086A
+new.attr=attr_static 
+new.p=5292 4012 40
+serv.newitem=086A
+new.attr=attr_static 
+new.p=5297 4006 40
+serv.newitem=086A
+new.attr=attr_static 
+new.p=5297 4012 40
+serv.newitem=086A
+new.attr=attr_static 
+new.p=5301 4006 40
+serv.newitem=086A
+new.attr=attr_static 
+new.p=5301 4012 40
+//wooden gate
+serv.newitem=086C
+new.attr=attr_static 
+new.p=5293 4012 40
+serv.newitem=086C
+new.attr=attr_static 
+new.p=5298 4006 40
+serv.newitem=086C
+new.attr=attr_static 
+new.p=5298 4012 40
+serv.newitem=086C
+new.attr=attr_static 
+new.p=5302 4006 40
+serv.newitem=086C
+new.attr=attr_static 
+new.p=5302 4012 40
+//wooden fence
+serv.newitem=088A
+new.attr=attr_static 
+new.p=5251 4014 39
+serv.newitem=088A
+new.attr=attr_static 
+new.p=5256 4021 38
+serv.newitem=088A
+new.attr=attr_static 
+new.p=5257 4021 38
+//wooden fence
+serv.newitem=088B
+new.attr=attr_static 
+new.p=5251 4006 45
+serv.newitem=088B
+new.attr=attr_static 
+new.p=5251 4007 45
+serv.newitem=088B
+new.attr=attr_static 
+new.p=5279 4009 38
+serv.newitem=088B
+new.attr=attr_static 
+new.p=5279 4010 39
+//cauldron
+serv.newitem=0975
+new.attr=attr_static 
+new.p=5195 3996 37
+serv.newitem=0975
+new.attr=attr_static 
+new.p=5293 3986 37
+//hanging lantern
+serv.newitem=0A1A
+new.attr=attr_static 
+new.p=5179 4070 40
+//chest of drawers
+serv.newitem=0A30
+new.attr=attr_static 
+new.p=5199 4061 57
+//chest of drawers
+serv.newitem=0A34
+new.attr=attr_static 
+new.p=5195 4066 57
+//armoire
+serv.newitem=0A4D
+new.attr=attr_static 
+new.p=5202 4061 57
+//armoire
+serv.newitem=0A53
+new.attr=attr_static 
+new.p=5195 4067 57
+//bookcase
+serv.newitem=0A9B
+new.attr=attr_static 
+new.p=5215 4007 37
+//crate
+serv.newitem=0E3D
+new.attr=attr_static 
+new.p=5236 4021 37
+serv.newitem=0E3D
+new.attr=attr_static 
+new.p=5236 4021 40
+serv.newitem=0E3D
+new.attr=attr_static 
+new.p=5236 4022 37
+serv.newitem=0E3D
+new.attr=attr_static 
+new.p=5236 4022 40
+serv.newitem=0E3D
+new.attr=attr_static 
+new.p=5236 4023 37
+serv.newitem=0E3D
+new.attr=attr_static 
+new.p=5237 4020 57
+serv.newitem=0E3D
+new.attr=attr_static 
+new.p=5237 4021 57
+serv.newitem=0E3D
+new.attr=attr_static 
+new.p=5237 4022 57
+serv.newitem=0E3D
+new.attr=attr_static 
+new.p=5237 4023 57
+//wooden chest
+serv.newitem=0E42
+new.attr=attr_static 
+new.p=5262 3980 38
+serv.newitem=0E42
+new.attr=attr_static 
+new.p=5262 3982 38
+serv.newitem=0E42
+new.attr=attr_static 
+new.p=5269 3977 37
+serv.newitem=0E42
+new.attr=attr_static 
+new.p=5269 3986 36
+//wooden chest
+serv.newitem=0E43
+new.attr=attr_static 
+new.p=5270 3971 37
+serv.newitem=0E43
+new.attr=attr_static 
+new.p=5276 3971 37
+//pouch
+serv.newitem=0E79
+new.attr=attr_static 
+new.p=5262 3984 42
+//water tub
+serv.newitem=0E7B
+new.attr=attr_static 
+new.p=5296 4013 40
+//empty tub
+serv.newitem=0E83
+new.attr=attr_static 
+new.p=5291 4009 40
+serv.newitem=0E83
+new.attr=attr_static 
+new.p=5291 4010 40
+serv.newitem=0E83
+new.attr=attr_static 
+new.p=5296 4007 40
+//pickaxe
+serv.newitem=0E85
+new.attr=attr_static 
+new.p=5230 4021 43
+serv.newitem=0E85
+new.attr=attr_static 
+new.p=5288 3979 37
+//pitchfork
+serv.newitem=0E87
+new.attr=attr_static 
+new.p=5287 3979 37
+//fire pit
+serv.newitem=0FAC
+new.attr=attr_static 
+new.p=5195 3996 37
+serv.newitem=0FAC
+new.attr=attr_static 
+new.p=5285 3980 37
+serv.newitem=0FAC
+new.attr=attr_static 
+new.p=5293 3986 37
+serv.newitem=0FAC
+new.attr=attr_static 
+new.p=5295 3977 37
+//barrel
+serv.newitem=0FAE
+new.attr=attr_static 
+new.p=5230 4024 37
+serv.newitem=0FAE
+new.attr=attr_static 
+new.p=5230 4025 37
+serv.newitem=0FAE
+new.attr=attr_static 
+new.p=5291 4004 40
+serv.newitem=0FAE
+new.attr=attr_static 
+new.p=5291 4005 40
+serv.newitem=0FAE
+new.attr=attr_static 
+new.p=5291 4006 40
+//anvil
+serv.newitem=0FB0
+new.attr=attr_static 
+new.p=5228 4003 37
+serv.newitem=0FB0
+new.attr=attr_static 
+new.p=5228 4005 37
+serv.newitem=0FB0
+new.attr=attr_static 
+new.p=5235 4004 38
+serv.newitem=0FB0
+new.attr=attr_static 
+new.p=5235 4006 37
+//spinning wheel ADDON
+serv.newitem=01015
+new.attr=attr_static 
+new.p=5235 4016 37
+//upright loom ADDON
+serv.newitem=01060
+new.attr=attr_static 
+new.p=5231 4015 37
+serv.newitem=01063
+new.attr=attr_static 
+new.p=5231 4016 37
+//bellows
+serv.newitem=0197B
+new.attr=attr_static 
+new.p=5226 4004 37
+serv.newitem=0197B
+new.attr=attr_static 
+new.p=5234 4005 37
+//forge
+serv.newitem=0197E
+new.attr=attr_static 
+new.p=5227 4004 37
+serv.newitem=0197E
+new.attr=attr_static 
+new.p=5235 4005 37
+//bellows
+serv.newitem=0199E
+new.attr=attr_static 
+new.p=5229 4004 37
+serv.newitem=0199E
+new.attr=attr_static 
+new.p=5237 4005 37
+//forge
+serv.newitem=019A3
+new.attr=attr_static 
+new.p=5236 4005 37
+//forge
+serv.newitem=019A4
+new.attr=attr_static 
+new.p=5228 4004 37
+
+[EOF]

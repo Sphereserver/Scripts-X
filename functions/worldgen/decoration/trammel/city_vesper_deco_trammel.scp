@@ -1,0 +1,4344 @@
+[function deco_vesper_trammel]		
+serv.newitem=0BD2//
+new.type=t_normal//
+new.attr=attr_static//
+new.p=2926 980 -23 1//
+//
+serv.newitem=0BD1//
+new.type=t_normal//
+new.attr=attr_static//
+new.p=2922 974 -23 1//
+//
+serv.newitem=0BD2//
+new.type=t_normal//
+new.attr=attr_static//
+new.p=2920 984 -24 1//
+//
+serv.newitem=0BD2//
+new.type=t_normal//
+new.attr=attr_static//
+new.p=2918 983 -20 1//
+//
+serv.newitem=0BD2//
+new.type=t_normal//
+new.attr=attr_static//
+new.p=2912 984 -24 1//
+//
+serv.newitem=0BD1//
+new.type=t_normal//
+new.attr=attr_static//
+new.p=2911 968 -22 1//
+//
+serv.newitem=0BD1//
+new.type=t_normal//
+new.attr=attr_static//
+new.p=2915 963 -14 1//
+//
+serv.newitem=0BD2//
+new.type=t_normal//
+new.attr=attr_static//
+new.p=2907 971 -22 1//
+//
+serv.newitem=0BD2//
+new.type=t_normal//
+new.attr=attr_static//
+new.p=2908 976 -22 1//
+//
+serv.newitem=0BD1//
+new.type=t_normal//
+new.attr=attr_static//
+new.p=2906 979 -27 1//
+//
+serv.newitem=0BD1//
+new.type=t_normal//
+new.attr=attr_static//
+new.p=2912 978 -27 1//
+//
+serv.newitem=0BD1 //
+new.type=t_normal//
+new.attr=attr_static//
+new.p=2916 978 -27 1//
+//
+serv.newitem=0BD1 //
+new.type=t_normal//
+new.attr=attr_static//
+new.p=2920 963 0 1 1//
+//pier//
+serv.newitem=03AE//
+new.attr=attr_static //
+new.p=3008 794 -5 1//
+serv.newitem=03AE  //
+new.attr=attr_static //
+new.p=3010 794 -5 1//
+serv.newitem=03AE  //
+new.attr=attr_static //
+new.p=3009 798 -5 1//
+serv.newitem=03AE  //
+new.attr=attr_static //
+new.p=3008 798 -5 1//
+serv.newitem=03AE  //
+new.attr=attr_static //
+new.p=3009 794 -5 1//
+serv.newitem=03AE  //
+new.attr=attr_static //
+new.p=3007 795 -5 1//
+serv.newitem=03AE  //
+new.attr=attr_static //
+new.p=3010 798 -5 1//
+serv.newitem=03AE  //
+new.attr=attr_static //
+new.p=3007 797 -5 1//
+serv.newitem=03AE  //
+new.attr=attr_static //
+new.p=3007 796 -5 1//
+//pier//
+serv.newitem=03AF//
+new.attr=attr_static //
+new.p=3019 794 -5 1//
+serv.newitem=03AF  //
+new.attr=attr_static //
+new.p=3019 798 -5 1//
+serv.newitem=03AF  //
+new.attr=attr_static //
+new.p=3020 797 -5 1//
+serv.newitem=03AF  //
+new.attr=attr_static //
+new.p=3017 794 -5 1//
+serv.newitem=03AF  //
+new.attr=attr_static //
+new.p=3018 798 -5 1//
+serv.newitem=03AF  //
+new.attr=attr_static //
+new.p=3018 794 -5 1//
+serv.newitem=03AF  //
+new.attr=attr_static //
+new.p=3020 796 -5 1//
+serv.newitem=03AF  //
+new.attr=attr_static //
+new.p=3020 795 -5 1//
+serv.newitem=03AF  //
+new.attr=attr_static //
+new.p=3017 798 -5 1//
+////
+//oven//
+serv.newitem=092C//
+new.attr=attr_static //
+new.p=2992 760 0 1 1//
+serv.newitem=092b//
+new.attr=attr_static //
+new.p=2992 761 0 1 1//
+////
+//slab of bacon//
+serv.newitem=0977//
+new.attr=attr_static //
+new.p=2987 781 6 1//
+////
+//ceramic mug//
+//CeramicMug //
+serv.newitem=0995//
+new.attr=attr_static //
+new.p=2987 832 4 1//
+serv.newitem= 00995//
+new.attr=attr_static //
+new.p=2890 784 4 1//
+//CeramicMug //
+serv.newitem=0998//
+new.attr=attr_static //
+new.p=2852 1000 -17 1//
+serv.newitem=0998  //
+new.attr=attr_static //
+new.p=2902 909 2 1//
+serv.newitem=0998  //
+new.attr=attr_static //
+new.p=2852 998 -17 1//
+serv.newitem=0998  //
+new.attr=attr_static //
+new.p=2852 997 -17 1//
+serv.newitem=0998  //
+new.attr=attr_static //
+new.p=2746 988 4 1//
+serv.newitem=0998  //
+new.attr=attr_static //
+new.p=2744 988 4 1//
+//CeramicMug //
+serv.newitem=0999//
+new.attr=attr_static //
+new.p=2744 987 4 1//
+serv.newitem= 00999//
+new.attr=attr_static //
+new.p=2903 914 4 1//
+//BeverageBottle //
+serv.newitem=099F //
+new.attr=attr_static //
+new.p=2952 699 4 1//
+serv.newitem=099F  //
+new.attr=attr_static //
+new.p=2872 715 4 1//
+serv.newitem= 0099F//
+new.attr=attr_static //
+new.p=2864 857 4 1//
+serv.newitem= 0099F//
+new.attr=attr_static //
+new.p=2920 796 4 1//
+////
+//bottles of ale//
+serv.newitem=09A2//
+new.attr=attr_static //
+new.p=2855 988 -15 1//
+serv.newitem= 09A2//
+new.attr=attr_static //
+new.p=2861 992 -15 1//
+////
+//fork//
+//Fork //
+serv.newitem=09A3//
+new.attr=attr_static //
+new.p=3006 812 6 1//
+serv.newitem= 009A3//
+new.attr=attr_static //
+new.p=2894 659 6 1//
+////
+//fork//
+//Fork //
+serv.newitem=09A4//
+new.attr=attr_static //
+new.p=2745 987 4 1//
+serv.newitem= 009A4//
+new.attr=attr_static //
+new.p=2747 987 4 1//
+//knife//
+//Knife //
+serv.newitem=09A5//
+new.attr=attr_static //
+new.p=2894 659 6 1//
+serv.newitem= 009A5//
+new.attr=attr_static //
+new.p=3006 812 6 1//
+//Knife //
+serv.newitem=09A6//
+new.attr=attr_static //
+new.p=2747 987 4 1//
+serv.newitem= 009A6//
+new.attr=attr_static //
+new.p=2745 987 4 1//
+////
+//metal box//
+//FillableMetalBox //
+serv.newitem=09A8//
+new.attr=attr_static //
+new.p=2992 640 6 1//
+serv.newitem=09A8  //
+new.attr=attr_static //
+new.p=2997 760 6 1//
+serv.newitem=09A8  //
+new.attr=attr_static //
+new.p=2990 776 6 1//
+serv.newitem=09A8  //
+new.attr=attr_static //
+new.p=2864 848 6 1//
+serv.newitem=09A8  //
+new.attr=attr_static //
+new.p=2995 832 6 1//
+serv.newitem=09A8  //
+new.attr=attr_static //
+new.p=2898 916 6 1//
+serv.newitem=09A8  //
+new.attr=attr_static //
+new.p=2839 880 6 1//
+serv.newitem=09A8  //
+new.attr=attr_static //
+new.p=2863 808 6 1//
+serv.newitem=09A8  //
+new.attr=attr_static //
+new.p=2842 864 6 1//
+serv.newitem=09A8  //
+new.attr=attr_static //
+new.p=2888 654 6 1//
+serv.newitem=09A8  //
+new.attr=attr_static //
+new.p=2877 720 6 1//
+serv.newitem=09A8  //
+new.attr=attr_static //
+new.p=2842 792 6 1//
+//small crate//
+serv.newitem=09A9//
+new.attr=attr_static //
+new.p=2873 674 0 1 1//
+serv.newitem=09A9  //
+new.attr=attr_static //
+new.p=2877 688 0 1 1//
+serv.newitem=09A9  //
+new.attr=attr_static //
+new.p=2872 672 0 1 1//
+serv.newitem=09A9  //
+new.attr=attr_static //
+new.p=2876 676 0 1 1//
+serv.newitem=09A9  //
+new.attr=attr_static //
+new.p=2875 675 0 1 1//
+////
+//spoon//
+serv.newitem=09C3//
+new.attr=attr_static //
+new.p=2745 987 4 1//
+serv.newitem= 009C3//
+new.attr=attr_static //
+new.p=2747 987 4 1//
+//bottles of wine//
+serv.newitem=09C4//
+new.attr=attr_static //
+new.p=2896 912 6 1//
+serv.newitem= 09C4//
+new.attr=attr_static //
+new.p=2892 912 6 1//
+serv.newitem= 09C4//
+new.attr=attr_static //
+new.p=2856 988 -15 1//
+serv.newitem= 09C4//
+new.attr=attr_static //
+new.p=2861 991 -15 1//
+//bottles of wine//
+serv.newitem=09C5//
+new.attr=attr_static //
+new.p=2899 905 4 1//
+////
+//bottles of wine//
+serv.newitem=09C6//
+new.attr=attr_static //
+new.p=2898 915 6 1//
+////
+//bottle of wine//
+serv.newitem=09C7//
+new.attr=attr_static //
+new.p=2903 909 2 1//
+serv.newitem=09C7  //
+new.attr=attr_static //
+new.p=2994 632 4 1//
+serv.newitem=09C7  //
+new.attr=attr_static //
+new.p=3006 811 6 1//
+serv.newitem=09C7  //
+new.attr=attr_static //
+new.p=2894 912 6 1//
+serv.newitem=09C7  //
+new.attr=attr_static //
+new.p=2952 627 4 1//
+serv.newitem=09C7  //
+new.attr=attr_static //
+new.p=2894 658 6 1//
+serv.newitem=09C7  //
+new.attr=attr_static //
+new.p=2904 904 6 1//
+//CeramicMug //
+serv.newitem=09CA//
+new.attr=attr_static //
+new.p=3006 811 6 1//
+serv.newitem= 009CA//
+new.attr=attr_static //
+new.p=2894 658 6 1//
+//Plate //
+serv.newitem=09D7//
+new.attr=attr_static //
+new.p=2995 632 4 1//
+serv.newitem=09D7  //
+new.attr=attr_static //
+new.p=2952 700 4 1//
+serv.newitem=09D7  //
+new.attr=attr_static //
+new.p=2747 987 4 1//
+serv.newitem=09D7  //
+new.attr=attr_static //
+new.p=2864 858 4 1//
+serv.newitem=09D7  //
+new.attr=attr_static //
+new.p=2894 659 6 1//
+serv.newitem=09D7  //
+new.attr=attr_static //
+new.p=2747 988 4 1//
+serv.newitem=09D7  //
+new.attr=attr_static //
+new.p=2896 708 4 1//
+serv.newitem=09D7  //
+new.attr=attr_static //
+new.p=2920 797 4 1//
+serv.newitem=09D7  //
+new.attr=attr_static //
+new.p=2745 988 4 1//
+serv.newitem=09D7  //
+new.attr=attr_static //
+new.p=2988 832 4 1//
+serv.newitem=09D7  //
+new.attr=attr_static //
+new.p=2745 987 4 1//
+serv.newitem=09D7  //
+new.attr=attr_static //
+new.p=2872 716 4 1//
+serv.newitem=09D7  //
+new.attr=attr_static //
+new.p=2891 784 4 1//
+serv.newitem=09D7  //
+new.attr=attr_static //
+new.p=2952 628 4 1//
+serv.newitem=09D7  //
+new.attr=attr_static //
+new.p=3006 812 6 1//
+////
+//kettle//
+serv.newitem=09ED//
+new.attr=attr_static //
+new.p=2992 766 6 1//
+////
+//mug of ale//
+//GlassMug //
+serv.newitem=09EE //
+new.attr=attr_static //
+new.p=2861 990 -15 1//
+serv.newitem=09EE  //
+new.attr=attr_static //
+new.p=2858 988 -15 1//
+serv.newitem=09EE  //
+new.attr=attr_static //
+new.p=2859 988 -15 1//
+serv.newitem=09EE  //
+new.attr=attr_static //
+new.p=2861 996 -15 1//
+serv.newitem=09EE  //
+new.attr=attr_static //
+new.p=2861 995 -15 1//
+serv.newitem=09EE  //
+new.attr=attr_static //
+new.p=2861 994 -15 1//
+serv.newitem=09EE  //
+new.attr=attr_static //
+new.p=2899 904 4 1//
+serv.newitem=09EE  //
+new.attr=attr_static //
+new.p=2895 908 2 1//
+serv.newitem=09EE  //
+new.attr=attr_static //
+new.p=2854 988 -15 1//
+serv.newitem=09EE  //
+new.attr=attr_static //
+new.p=2853 988 -15 1//
+serv.newitem=09EE  //
+new.attr=attr_static //
+new.p=2861 989 -15 1//
+serv.newitem=09EE  //
+new.attr=attr_static //
+new.p=2898 913 6 1//
+////
+//mug of ale//
+serv.newitem=09EF //
+new.attr=attr_static //
+new.p=2904 903 4 1//
+////
+//fork//
+//Fork //
+serv.newitem=09F4//
+new.attr=attr_static //
+new.p=2747 988 4 1//
+serv.newitem= 009F4//
+new.attr=attr_static //
+new.p=2988 832 4 1//
+serv.newitem= 009F4//
+new.attr=attr_static //
+new.p=2995 632 4 1//
+serv.newitem= 009F4//
+new.attr=attr_static //
+new.p=2891 784 4 1//
+serv.newitem= 009F4//
+new.attr=attr_static //
+new.p=2745 988 4 1//
+////
+//fork//
+//Fork //
+serv.newitem=09F5//
+new.attr=attr_static //
+new.p=2952 628 4 1//
+serv.newitem=09F5  //
+new.attr=attr_static //
+new.p=2872 716 4 1//
+serv.newitem=09F5  //
+new.attr=attr_static //
+new.p=2952 700 4 1//
+serv.newitem=09F5  //
+new.attr=attr_static //
+new.p=2864 858 4 1//
+serv.newitem=09F5  //
+new.attr=attr_static //
+new.p=2920 797 4 1//
+serv.newitem=09F5  //
+new.attr=attr_static //
+new.p=2896 708 4 1//
+////
+//knife//
+//Knife //
+serv.newitem=09F6//
+new.attr=attr_static //
+new.p=2747 988 4 1//
+serv.newitem=09F6  //
+new.attr=attr_static //
+new.p=2891 784 4 1//
+serv.newitem=09F6  //
+new.attr=attr_static //
+new.p=2988 832 4 1//
+serv.newitem=09F6  //
+new.attr=attr_static //
+new.p=2995 632 4 1//
+serv.newitem=09F6  //
+new.attr=attr_static //
+new.p=2745 988 4 1//
+////
+//knife//
+//Knife //
+serv.newitem=09F7//
+new.attr=attr_static //
+new.p=2864 858 4 1//
+serv.newitem=09F7  //
+new.attr=attr_static //
+new.p=2872 716 4 1//
+serv.newitem=09F7  //
+new.attr=attr_static //
+new.p=2952 700 4 1//
+serv.newitem=09F7  //
+new.attr=attr_static //
+new.p=2896 708 4 1//
+serv.newitem=09F7  //
+new.attr=attr_static //
+new.p=2952 628 4 1//
+serv.newitem=09F7  //
+new.attr=attr_static //
+new.p=2920 797 4 1//
+////
+//spoon//
+serv.newitem=09F8//
+new.attr=attr_static //
+new.p=2988 832 4 1//
+serv.newitem=09F8  //
+new.attr=attr_static //
+new.p=2747 988 4 1//
+serv.newitem=09F8  //
+new.attr=attr_static //
+new.p=2995 632 4 1//
+serv.newitem=09F8  //
+new.attr=attr_static //
+new.p=2745 988 4 1//
+serv.newitem=09F8  //
+new.attr=attr_static //
+new.p=2891 784 4 1//
+////
+//spoon//
+serv.newitem=09F9//
+new.attr=attr_static //
+new.p=2864 858 4 1//
+serv.newitem=09F9  //
+new.attr=attr_static //
+new.p=2872 716 4 1//
+serv.newitem=09F9  //
+new.attr=attr_static //
+new.p=2952 700 4 1//
+serv.newitem=09F9  //
+new.attr=attr_static //
+new.p=2920 797 4 1//
+serv.newitem=09F9  //
+new.attr=attr_static //
+new.p=2896 708 4 1//
+serv.newitem=09F9  //
+new.attr=attr_static //
+new.p=2952 628 4 1//
+//HangingLantern //
+serv.newitem=0A1A//
+new.attr=attr_static //
+new.p=2768 970 6 1//
+//Lantern //
+serv.newitem=0A22//
+new.attr=attr_static //
+new.p=2742 979 26 1//
+//stool//
+serv.newitem=0A2A//
+new.attr=attr_static //
+new.p=2899 706 0 1 1//
+serv.newitem=0A2A  //
+new.attr=attr_static //
+new.p=2858 989 -21 1//
+serv.newitem=0A2A  //
+new.attr=attr_static //
+new.p=2860 994 -21 1//
+serv.newitem=0A2A  //
+new.attr=attr_static //
+new.p=2860 995 -21 1//
+serv.newitem=0A2A  //
+new.attr=attr_static //
+new.p=2860 996 -21 1//
+serv.newitem=0A2A  //
+new.attr=attr_static //
+new.p=2860 993 -21 1//
+serv.newitem=0A2A  //
+new.attr=attr_static //
+new.p=2859 989 -21 1//
+serv.newitem=0A2A  //
+new.attr=attr_static //
+new.p=2860 990 -21 1//
+serv.newitem=0A2A  //
+new.attr=attr_static //
+new.p=2860 991 -21 1//
+serv.newitem=0A2A  //
+new.attr=attr_static //
+new.p=2857 989 -21 1//
+serv.newitem=0A2A  //
+new.attr=attr_static //
+new.p=2855 989 -21 1//
+serv.newitem=0A2A  //
+new.attr=attr_static //
+new.p=2860 989 -21 1//
+serv.newitem=0A2A  //
+new.attr=attr_static //
+new.p=2854 989 -21 1//
+serv.newitem=0A2A  //
+new.attr=attr_static //
+new.p=2853 989 -21 1//
+serv.newitem=0A2A  //
+new.attr=attr_static //
+new.p=2852 989 -21 1//
+////
+//chest of drawers//
+//Drawer //
+serv.newitem=0A2C//
+new.attr=attr_static //
+new.p=2789 958 0 1 1//
+serv.newitem=0A2C  //
+new.attr=attr_static //
+new.p=2789 964 0 1 1//
+serv.newitem=0A2C  //
+new.attr=attr_static //
+new.p=2789 952 0 1 1//
+serv.newitem=0A2C  //
+new.attr=attr_static //
+new.p=2779 970 0 1 1//
+serv.newitem=0A2C  //
+new.attr=attr_static //
+new.p=2789 970 0 1 1//
+serv.newitem=0A2C  //
+new.attr=attr_static //
+new.p=2778 952 0 1 1//
+serv.newitem=0A2C  //
+new.attr=attr_static //
+new.p=2779 958 0 1 1//
+////
+//chest of drawers//
+//FancyDrawer //
+serv.newitem=0A30//
+new.attr=attr_static //
+new.p=2955 870 0 1 1//
+serv.newitem=0A30  //
+new.attr=attr_static //
+new.p=2963 882 0 1 1//
+serv.newitem=0A30  //
+new.attr=attr_static //
+new.p=2954 882 0 1 1//
+serv.newitem=0A30  //
+new.attr=attr_static //
+new.p=2955 876 0 1 1//
+serv.newitem=0A30  //
+new.attr=attr_static //
+new.p=2787 976 0 1 1//
+serv.newitem=0A30  //
+new.attr=attr_static //
+new.p=2923 792 0 1 1//
+serv.newitem=0A30  //
+new.attr=attr_static //
+new.p=2913 857 0 1 1//
+serv.newitem=0A30  //
+new.attr=attr_static //
+new.p=2963 864 0 1 1//
+serv.newitem=0A30  //
+new.attr=attr_static //
+new.p=2953 696 0 1 1//
+serv.newitem=0A30  //
+new.attr=attr_static //
+new.p=2963 870 0 1 1//
+serv.newitem=0A30  //
+new.attr=attr_static //
+new.p=2955 864 0 1 1//
+serv.newitem=0A30  //
+new.attr=attr_static //
+new.p=2865 856 0 1 1//
+serv.newitem=0A30  //
+new.attr=attr_static //
+new.p=2997 632 0 1 1//
+serv.newitem=0A30  //
+new.attr=attr_static //
+new.p=2777 976 0 1 1//
+serv.newitem=0A30  //
+new.attr=attr_static //
+new.p=2889 784 0 1 1//
+serv.newitem=0A30  //
+new.attr=attr_static //
+new.p=2955 888 0 1 1//
+////
+//chest of drawers//
+//FancyDrawer //
+serv.newitem=0A38//
+new.attr=attr_static //
+new.p=2872 714 0 1 1//
+serv.newitem=0A38  //
+new.attr=attr_static //
+new.p=2962 889 0 1 1//
+serv.newitem=0A38  //
+new.attr=attr_static //
+new.p=2984 834 0 1 1//
+serv.newitem=0A38  //
+new.attr=attr_static //
+new.p=2952 626 0 1 1//
+serv.newitem=0A38  //
+new.attr=attr_static //
+new.p=2896 706 0 1 1//
+serv.newitem=0A38  //
+new.attr=attr_static //
+new.p=2888 661 0 1 1//
+serv.newitem=0A38  //
+new.attr=attr_static //
+new.p=3000 813 0 1 1//
+////
+//armoire//
+//FancyArmoire //
+serv.newitem=0A4D//
+new.attr=attr_static //
+new.p=2954 624 0 1 1//
+serv.newitem=0A4D  //
+new.attr=attr_static //
+new.p=3005 808 0 1 1//
+serv.newitem=0A4D  //
+new.attr=attr_static //
+new.p=2874 712 0 1 1//
+serv.newitem=0A4D  //
+new.attr=attr_static //
+new.p=2986 832 0 1 1//
+serv.newitem=0A4D  //
+new.attr=attr_static //
+new.p=2957 696 0 1 1//
+serv.newitem=0A4D  //
+new.attr=attr_static //
+new.p=2779 976 0 1 1//
+serv.newitem=0A4D  //
+new.attr=attr_static //
+new.p=2993 632 0 1 1//
+serv.newitem=0A4D  //
+new.attr=attr_static //
+new.p=2915 857 0 1 1//
+serv.newitem=0A4D  //
+new.attr=attr_static //
+new.p=2898 704 0 1 1//
+serv.newitem=0A4D  //
+new.attr=attr_static //
+new.p=2893 656 0 1 1//
+serv.newitem=0A4D  //
+new.attr=attr_static //
+new.p=2869 856 0 1 1//
+serv.newitem=0A4D  //
+new.attr=attr_static //
+new.p=2921 792 0 1 1//
+////
+//armoire//
+//FancyArmoire //
+serv.newitem=0A51//
+new.attr=attr_static //
+new.p=2888 786 0 1 1//
+serv.newitem=0A51  //
+new.attr=attr_static //
+new.p=2952 893 0 1 1//
+serv.newitem=0A51  //
+new.attr=attr_static //
+new.p=2962 893 0 1 1//
+serv.newitem=0A51  //
+new.attr=attr_static //
+new.p=2786 978 0 1 1//
+////
+//bookcase//
+//LibraryBookcase //
+serv.newitem=0A97//
+new.attr=attr_static //
+new.p=2918 664 20 1//
+serv.newitem=0A97  //
+new.attr=attr_static //
+new.p=2737 976 0 1 1//
+serv.newitem=0A97  //
+new.attr=attr_static //
+new.p=2886 648 0 1 1//
+serv.newitem=0A97  //
+new.attr=attr_static //
+new.p=2993 832 0 1 1//
+serv.newitem=0A97  //
+new.attr=attr_static //
+new.p=2861 728 0 1 1//
+serv.newitem=0A97  //
+new.attr=attr_static //
+new.p=2966 816 0 1 1//
+serv.newitem=0A97  //
+new.attr=attr_static //
+new.p=2847 904 0 1 1//
+serv.newitem=0A97  //
+new.attr=attr_static //
+new.p=2965 808 0 1 1//
+serv.newitem=0A97  //
+new.attr=attr_static //
+new.p=2882 744 0 1 1//
+serv.newitem=0A97  //
+new.attr=attr_static //
+new.p=2937 928 0 1 1//
+serv.newitem=0A97  //
+new.attr=attr_static //
+new.p=2865 808 0 1 1//
+serv.newitem=0A97  //
+new.attr=attr_static //
+new.p=2940 936 0 1 1//
+serv.newitem=0A97  //
+new.attr=attr_static //
+new.p=2915 664 0 1 1//
+serv.newitem=0A97  //
+new.attr=attr_static //
+new.p=2915 664 20 1//
+serv.newitem=0A97  //
+new.attr=attr_static //
+new.p=2961 816 0 1 1//
+////
+//bookcase//
+//LibraryBookcase //
+serv.newitem=0A98//
+new.attr=attr_static //
+new.p=2866 808 0 1 1//
+serv.newitem=0A98  //
+new.attr=attr_static //
+new.p=2851 728 0 1 1//
+serv.newitem=0A98  //
+new.attr=attr_static //
+new.p=2937 936 0 1 1//
+serv.newitem=0A98  //
+new.attr=attr_static //
+new.p=2962 808 0 1 1//
+serv.newitem=0A98  //
+new.attr=attr_static //
+new.p=2993 640 0 1 1//
+serv.newitem=0A98  //
+new.attr=attr_static //
+new.p=2887 648 0 1 1//
+serv.newitem=0A98  //
+new.attr=attr_static //
+new.p=2994 832 0 1 1//
+serv.newitem=0A98  //
+new.attr=attr_static //
+new.p=2997 640 0 1 1//
+serv.newitem=0A98  //
+new.attr=attr_static //
+new.p=2913 664 0 1 1//
+serv.newitem=0A98  //
+new.attr=attr_static //
+new.p=2884 744 0 1 1//
+serv.newitem=0A98  //
+new.attr=attr_static //
+new.p=2848 904 0 1 1//
+serv.newitem=0A98  //
+new.attr=attr_static //
+new.p=2996 832 0 1 1//
+serv.newitem=0A98  //
+new.attr=attr_static //
+new.p=2941 928 0 1 1//
+serv.newitem=0A98  //
+new.attr=attr_static //
+new.p=2741 976 0 1 1//
+serv.newitem=0A98  //
+new.attr=attr_static //
+new.p=2917 664 0 1 1//
+serv.newitem=0A98  //
+new.attr=attr_static //
+new.p=2967 816 0 1 1//
+serv.newitem=0A98  //
+new.attr=attr_static //
+new.p=2916 664 20 1//
+serv.newitem=0A98  //
+new.attr=attr_static //
+new.p=2960 816 0 1 1//
+serv.newitem=0A98  //
+new.attr=attr_static //
+new.p=2860 728 0 1 1//
+////
+//bookcase//
+//LibraryBookcase //
+serv.newitem=0A99//
+new.attr=attr_static //
+new.p=2992 817 0 1 1//
+serv.newitem=0A99  //
+new.attr=attr_static //
+new.p=2992 833 0 1 1//
+serv.newitem=0A99  //
+new.attr=attr_static //
+new.p=2880 745 0 1 1//
+serv.newitem=0A99  //
+new.attr=attr_static //
+new.p=2992 812 0 1 1//
+serv.newitem=0A99  //
+new.attr=attr_static //
+new.p=2768 966 0 1 1//
+serv.newitem=0A99  //
+new.attr=attr_static //
+new.p=2872 722 0 1 1//
+serv.newitem=0A99  //
+new.attr=attr_static //
+new.p=2840 947 0 1 1//
+serv.newitem=0A99  //
+new.attr=attr_static //
+new.p=2840 952 0 1 1//
+serv.newitem=0A99  //
+new.attr=attr_static //
+new.p=2872 725 0 1 1//
+serv.newitem=0A99  //
+new.attr=attr_static //
+new.p=2944 941 0 1 1//
+serv.newitem=0A99  //
+new.attr=attr_static //
+new.p=2920 667 20 1//
+serv.newitem=0A99  //
+new.attr=attr_static //
+new.p=2736 981 0 1 1//
+serv.newitem=0A99  //
+new.attr=attr_static //
+new.p=2944 936 0 1 1//
+serv.newitem=0A99  //
+new.attr=attr_static //
+new.p=2960 810 0 1 1//
+serv.newitem=0A99  //
+new.attr=attr_static //
+new.p=2912 676 20 1//
+serv.newitem=0A99  //
+new.attr=attr_static //
+new.p=2918 857 0 1 1//
+serv.newitem=0A99  //
+new.attr=attr_static //
+new.p=2840 898 0 1 1//
+////
+//bookcase//
+//LibraryBookcase //
+serv.newitem=0A9A//
+new.attr=attr_static //
+new.p=2944 930 0 1 1//
+serv.newitem=0A9A  //
+new.attr=attr_static //
+new.p=2840 899 0 1 1//
+serv.newitem=0A9A  //
+new.attr=attr_static //
+new.p=2840 950 0 1 1//
+serv.newitem=0A9A  //
+new.attr=attr_static //
+new.p=2912 665 0 1 1//
+serv.newitem=0A9A  //
+new.attr=attr_static //
+new.p=2736 977 0 1 1//
+serv.newitem=0A9A  //
+new.attr=attr_static //
+new.p=2960 813 0 1 1//
+serv.newitem=0A9A  //
+new.attr=attr_static //
+new.p=2920 668 20 1//
+serv.newitem=0A9A  //
+new.attr=attr_static //
+new.p=2736 980 0 1 1//
+serv.newitem=0A9A  //
+new.attr=attr_static //
+new.p=2918 858 0 1 1//
+serv.newitem=0A9A  //
+new.attr=attr_static //
+new.p=2840 953 0 1 1//
+serv.newitem=0A9A  //
+new.attr=attr_static //
+new.p=2872 721 0 1 1//
+serv.newitem=0A9A  //
+new.attr=attr_static //
+new.p=2768 967 0 1 1//
+serv.newitem=0A9A  //
+new.attr=attr_static //
+new.p=2840 946 0 1 1//
+serv.newitem=0A9A  //
+new.attr=attr_static //
+new.p=2992 810 0 1 1//
+serv.newitem=0A9A  //
+new.attr=attr_static //
+new.p=2880 749 0 1 1//
+serv.newitem=0A9A  //
+new.attr=attr_static //
+new.p=2944 935 0 1 1//
+serv.newitem=0A9A  //
+new.attr=attr_static //
+new.p=2992 816 0 1 1//
+serv.newitem=0A9A  //
+new.attr=attr_static //
+new.p=2936 937 0 1 1//
+////
+//bookcase//
+//LibraryBookcase //
+serv.newitem=0A9B//
+new.attr=attr_static //
+new.p=2938 936 0 1 1//
+serv.newitem=0A9B  //
+new.attr=attr_static //
+new.p=2888 648 0 1 1//
+serv.newitem=0A9B  //
+new.attr=attr_static //
+new.p=2917 664 20 1//
+serv.newitem=0A9B  //
+new.attr=attr_static //
+new.p=2997 832 0 1 1//
+serv.newitem=0A9B  //
+new.attr=attr_static //
+new.p=2914 664 0 1 1//
+serv.newitem=0A9B  //
+new.attr=attr_static //
+new.p=2968 816 0 1 1//
+serv.newitem=0A9B  //
+new.attr=attr_static //
+new.p=2962 816 0 1 1//
+serv.newitem=0A9B  //
+new.attr=attr_static //
+new.p=2849 904 0 1 1//
+serv.newitem=0A9B  //
+new.attr=attr_static //
+new.p=2852 728 0 1 1//
+serv.newitem=0A9B  //
+new.attr=attr_static //
+new.p=2889 648 0 1 1//
+serv.newitem=0A9B  //
+new.attr=attr_static //
+new.p=2941 936 0 1 1//
+serv.newitem=0A9B  //
+new.attr=attr_static //
+new.p=2916 664 0 1 1//
+////
+//bookcase//
+//LibraryBookcase //
+serv.newitem=0A9C//
+new.attr=attr_static //
+new.p=2936 941 0 1 1//
+serv.newitem=0A9C  //
+new.attr=attr_static //
+new.p=2872 724 0 1 1//
+serv.newitem=0A9C  //
+new.attr=attr_static //
+new.p=2840 948 0 1 1//
+serv.newitem=0A9C  //
+new.attr=attr_static //
+new.p=2912 674 20 1//
+serv.newitem=0A9C  //
+new.attr=attr_static //
+new.p=2768 968 0 1 1//
+serv.newitem=0A9C  //
+new.attr=attr_static //
+new.p=2912 675 20 1//
+serv.newitem=0A9C  //
+new.attr=attr_static //
+new.p=2920 669 20 1//
+serv.newitem=0A9C  //
+new.attr=attr_static //
+new.p=2840 900 0 1 1//
+serv.newitem=0A9C  //
+new.attr=attr_static //
+new.p=2918 862 0 1 1//
+serv.newitem=0A9C  //
+new.attr=attr_static //
+new.p=2840 949 0 1 1//
+serv.newitem=0A9C  //
+new.attr=attr_static //
+new.p=2912 666 0 1 1//
+serv.newitem=0A9C  //
+new.attr=attr_static //
+new.p=2880 746 0 1 1//
+serv.newitem=0A9C  //
+new.attr=attr_static //
+new.p=2912 677 20 1//
+serv.newitem=0A9C  //
+new.attr=attr_static //
+new.p=2992 821 0 1 1//
+serv.newitem=0A9C  //
+new.attr=attr_static //
+new.p=2880 748 0 1 1//
+////
+//candle//
+//CandleLarge //
+serv.newitem=0B1A//
+new.attr=attr_static //
+new.p=2971 875 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2900 789 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=3006 813 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2888 739 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2939 940 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2990 780 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2923 859 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2989 832 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2952 701 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=3015 779 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2918 852 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2907 706 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2997 763 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2992 644 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2996 632 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2952 629 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2996 813 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2939 932 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2894 660 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2995 838 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2920 798 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2896 709 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2863 812 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2955 811 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2788 963 20 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2882 674 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2864 849 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2842 868 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2860 988 -15 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2884 739 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2883 746 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2861 998 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2864 859 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2872 717 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2916 801 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2842 810 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2837 912 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2957 707 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2892 784 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2841 912 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2964 624 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2877 721 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2964 811 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2959 616 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2844 899 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2887 675 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2850 740 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2856 728 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2746 987 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2850 730 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2955 817 4 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2856 993 -15 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=3020 763 6 1//
+serv.newitem=0B1A  //
+new.attr=attr_static //
+new.p=2842 793 6 1//
+////
+//candelabra//
+//Candelabra //
+serv.newitem=0B1D//
+new.attr=attr_static //
+new.p=2790 973 6 1//
+serv.newitem=0B1D  //
+new.attr=attr_static //
+new.p=2790 955 6 1//
+serv.newitem=0B1D  //
+new.attr=attr_static //
+new.p=2790 979 6 1//
+serv.newitem=0B1D  //
+new.attr=attr_static //
+new.p=2776 978 6 1//
+serv.newitem=0B1D  //
+new.attr=attr_static //
+new.p=2778 956 6 1//
+serv.newitem=0B1D  //
+new.attr=attr_static //
+new.p=2790 961 6 1//
+serv.newitem=0B1D  //
+new.attr=attr_static //
+new.p=2778 962 6 1//
+serv.newitem=0B1D  //
+new.attr=attr_static //
+new.p=2736 988 6 1//
+serv.newitem=0B1D  //
+new.attr=attr_static //
+new.p=2778 974 6 1//
+serv.newitem=0B1D  //
+new.attr=attr_static //
+new.p=2788 968 6 1//
+////
+//lamp post//
+//LampPost2 //
+serv.newitem=0B22//
+new.attr=attr_static //
+new.p=2976 623 0 1 1//
+serv.newitem=0B22  //
+new.attr=attr_static //
+new.p=2943 624 0 1 1//
+serv.newitem=0B22  //
+new.attr=attr_static //
+new.p=2943 617 0 1 1//
+serv.newitem=0B22  //
+new.attr=attr_static //
+new.p=2982 640 0 1 1//
+////
+//lamp post//
+//LampPost3 //
+serv.newitem=0B24//
+new.attr=attr_static //
+new.p=3003 782 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2950 918 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2904 858 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2848 867 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2903 692 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2946 705 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2969 776 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2902 712 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=3006 840 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=3007 817 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2886 780 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2848 799 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2862 919 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2950 898 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2848 927 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2848 883 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2827 906 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2847 817 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2823 706 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2774 982 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2766 974 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2752 976 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2752 991 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2861 795 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2847 850 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2919 711 2 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2982 737 20 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2984 765 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2977 804 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2980 878 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2921 839 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2933 851 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2919 902 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2959 740 20 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2823 700 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2791 984 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2825 958 -1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2907 786 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2807 996 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2825 952 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2828 889 2 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2905 924 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2836 996 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2828 927 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2905 988 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2807 990 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2929 936 -1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2929 963 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2914 686 2 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2974 838 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2836 990 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2801 952 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2801 958 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2902 663 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2911 956 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=3010 762 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2953 857 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2964 718 3 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2863 876 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2872 983 -1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2879 663 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2880 790 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2866 700 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2952 837 -1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2880 850 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2721 984 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2952 943 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=3031 773 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2880 712 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2862 856 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2886 755 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2856 904 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2868 727 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2913 813 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2721 990 0 1 1//
+serv.newitem=0B24  //
+new.attr=attr_static //
+new.p=2886 912 0 1 1//
+////
+//candelabra//
+//CandelabraStand //
+serv.newitem=0B26//
+new.attr=attr_static //
+new.p=2892 918 0 1 1//
+serv.newitem=0B26  //
+new.attr=attr_static //
+new.p=2886 680 0 1 1//
+serv.newitem=0B26  //
+new.attr=attr_static //
+new.p=2832 872 0 1 1//
+serv.newitem=0B26  //
+new.attr=attr_static //
+new.p=2960 864 0 1 1//
+serv.newitem=0B26  //
+new.attr=attr_static //
+new.p=2886 686 0 1 1//
+serv.newitem=0B26  //
+new.attr=attr_static //
+new.p=2960 894 0 1 1//
+serv.newitem=0B26  //
+new.attr=attr_static //
+new.p=2784 952 0 1 1//
+serv.newitem=0B26  //
+new.attr=attr_static //
+new.p=2784 982 0 1 1//
+serv.newitem=0B26  //
+new.attr=attr_static //
+new.p=2914 910 0 1 1//
+serv.newitem=0B26  //
+new.attr=attr_static //
+new.p=2914 904 0 1 1//
+serv.newitem=0B26  //
+new.attr=attr_static //
+new.p=2872 686 0 1 1//
+serv.newitem=0B26  //
+new.attr=attr_static //
+new.p=2892 901 0 1 1//
+serv.newitem=0B26  //
+new.attr=attr_static //
+new.p=2832 879 0 1 1//
+serv.newitem=0B26  //
+new.attr=attr_static //
+new.p=2736 982 0 1 1//
+serv.newitem=0B26  //
+new.attr=attr_static //
+new.p=2872 680 0 1 1//
+serv.newitem=0B26  //
+new.attr=attr_static //
+new.p=2742 976 0 1 1//
+////
+//counter//
+serv.newitem=0B3E//
+new.attr=attr_static //
+new.p=2907 706 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2995 813 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2996 808 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2971 882 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2899 789 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2895 912 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2915 668 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2954 707 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2884 648 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2922 859 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=3019 763 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=3017 763 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2915 801 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2771 963 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2769 963 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2893 912 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2994 838 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2909 706 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2995 808 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=3014 779 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2993 813 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2913 801 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2913 668 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2898 784 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2883 674 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2858 998 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2858 989 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2963 624 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2859 989 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2900 784 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2860 998 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2956 707 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2858 988 -21 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2897 912 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2855 728 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2958 616 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2855 993 -21 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2897 789 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2961 624 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2857 728 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=2969 882 0 1 1//
+serv.newitem=0B3E  //
+new.attr=attr_static //
+new.p=3012 779 0 1 1//
+////
+//writing table//
+//WritingTable //
+serv.newitem=0B49//
+new.attr=attr_static //
+new.p=2908 709 0 1 1//
+serv.newitem= 00B49//
+new.attr=attr_static //
+new.p=2908 715 0 1 1//
+serv.newitem= 00B49//
+new.attr=attr_static //
+new.p=2908 712 0 1 1//
+////
+//chair//
+//FancyWoodenChairCushion //
+serv.newitem=0B50//
+new.attr=attr_static //
+new.p=2914 971 0 1 1//
+////
+//chair//
+//WoodenChairCushion //
+serv.newitem=0B52//
+new.attr=attr_static //
+new.p=2989 778 0 1 1//
+serv.newitem=0B52  //
+new.attr=attr_static //
+new.p=2849 735 0 1 1//
+serv.newitem=0B52  //
+new.attr=attr_static //
+new.p=2938 931 0 1 1//
+serv.newitem=0B52  //
+new.attr=attr_static //
+new.p=2996 762 0 1 1//
+serv.newitem=0B52  //
+new.attr=attr_static //
+new.p=3005 812 0 1 1//
+serv.newitem=0B52  //
+new.attr=attr_static //
+new.p=2834 912 0 1 1//
+serv.newitem=0B52  //
+new.attr=attr_static //
+new.p=2873 683 0 1 1//
+serv.newitem=0B52  //
+new.attr=attr_static //
+new.p=2921 668 0 1 1//
+serv.newitem=0B52  //
+new.attr=attr_static //
+new.p=2876 722 0 1 1//
+serv.newitem=0B52  //
+new.attr=attr_static //
+new.p=2938 939 0 1 1//
+serv.newitem=0B52  //
+new.attr=attr_static //
+new.p=2994 835 0 1 1//
+serv.newitem=0B52  //
+new.attr=attr_static //
+new.p=2881 739 0 1 1//
+serv.newitem=0B52  //
+new.attr=attr_static //
+new.p=2882 747 0 1 1//
+////
+//chair//
+//WoodenChairCushion //
+serv.newitem=0B53//
+new.attr=attr_static //
+new.p=2914 667 0 1 1//
+serv.newitem=0B53  //
+new.attr=attr_static //
+new.p=2994 812 0 1 1//
+serv.newitem=0B53  //
+new.attr=attr_static //
+new.p=2858 998 -21 1//
+serv.newitem=0B53  //
+new.attr=attr_static //
+new.p=2739 978 0 1 1//
+serv.newitem=0B53  //
+new.attr=attr_static //
+new.p=2843 898 0 1 1//
+serv.newitem=0B53  //
+new.attr=attr_static //
+new.p=2908 705 0 1 1//
+serv.newitem=0B53  //
+new.attr=attr_static //
+new.p=3018 762 0 1 1//
+serv.newitem=0B53  //
+new.attr=attr_static //
+new.p=2963 810 0 1 1//
+serv.newitem=0B53  //
+new.attr=attr_static //
+new.p=2955 809 0 1 1//
+////
+//chair//
+//WoodenChairCushion //
+serv.newitem=0B54//
+new.attr=attr_static //
+new.p=2922 861 0 1 1//
+serv.newitem=0B54  //
+new.attr=attr_static //
+new.p=2970 883 0 1 1//
+serv.newitem=0B54  //
+new.attr=attr_static //
+new.p=3013 780 0 1 1//
+serv.newitem=0B54  //
+new.attr=attr_static //
+new.p=2962 625 0 1 1//
+serv.newitem=0B54  //
+new.attr=attr_static //
+new.p=2859 999 0 1 1//
+serv.newitem=0B54  //
+new.attr=attr_static //
+new.p=2919 676 20 1//
+////
+//chair//
+//WoodenChairCushion //
+serv.newitem=0B55//
+new.attr=attr_static //
+new.p=2865 850 0 1 1//
+serv.newitem=0B55  //
+new.attr=attr_static //
+new.p=2918 804 0 1 1//
+serv.newitem=0B55  //
+new.attr=attr_static //
+new.p=2918 805 0 1 1//
+serv.newitem=0B55  //
+new.attr=attr_static //
+new.p=2993 642 0 1 1//
+serv.newitem=0B55  //
+new.attr=attr_static //
+new.p=2889 652 0 1 1//
+serv.newitem=0B55  //
+new.attr=attr_static //
+new.p=2843 866 0 1 1//
+serv.newitem=0B55  //
+new.attr=attr_static //
+new.p=2843 812 0 1 1//
+serv.newitem=0B55  //
+new.attr=attr_static //
+new.p=2843 794 0 1 1//
+serv.newitem=0B55  //
+new.attr=attr_static //
+new.p=2864 810 0 1 1//
+////
+//chair//
+//WoodenChair //
+serv.newitem=0B56//
+new.attr=attr_static //
+new.p=2886 676 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2768 973 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2768 969 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2953 818 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2849 731 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2953 816 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2924 668 20 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2849 733 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2840 937 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2849 739 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2953 810 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2916 667 20 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2953 814 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2849 737 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2912 805 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2893 659 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2944 934 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2832 873 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2851 1000 -21 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2832 878 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2840 941 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2912 804 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2832 801 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2969 875 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2953 812 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2944 937 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2832 806 0 1 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2851 998 -21 1//
+serv.newitem=0B56  //
+new.attr=attr_static //
+new.p=2851 996 -21 1//
+////
+//chair//
+//WoodenChair //
+serv.newitem=0B57//
+new.attr=attr_static //
+new.p=2842 910 0 1 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2923 673 20 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2889 737 0 1 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2971 873 0 1 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2919 673 20 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2917 673 20 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2776 964 0 1 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2841 904 0 1 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2780 964 0 1 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2887 737 0 1 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2885 737 0 1 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2921 673 20 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2893 672 0 1 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2838 910 0 1 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2914 800 0 1 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2770 962 0 1 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2898 788 0 1 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2883 737 0 1 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2955 706 0 1 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2845 904 0 1 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2889 672 0 1 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2836 910 0 1 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2915 673 20 1//
+serv.newitem=0B57  //
+new.attr=attr_static //
+new.p=2840 910 0 1 1//
+////
+//chair//
+//WoodenChair //
+serv.newitem=0B58//
+new.attr=attr_static //
+new.p=2852 739 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2888 676 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2852 733 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2921 797 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2854 996 -21 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2973 875 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2923 667 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2923 669 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2852 735 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2852 737 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2909 712 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2909 709 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2884 748 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2897 708 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2865 858 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2909 715 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2940 940 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2873 716 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2940 932 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2957 810 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2940 938 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2940 930 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2957 812 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2913 795 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2957 818 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2854 998 -21 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2884 746 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2953 700 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2953 628 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2891 739 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2854 1000 -21 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2852 731 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2957 814 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2916 794 0 1 1//
+serv.newitem=0B58  //
+new.attr=attr_static //
+new.p=2957 816 0 1 1//
+////
+//chair//
+//WoodenChair //
+serv.newitem=0B59//
+new.attr=attr_static //
+new.p=2962 812 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2971 877 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2955 819 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2964 812 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2844 900 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2842 914 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2857 729 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2855 729 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2836 914 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2838 914 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2842 900 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2840 914 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2887 741 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2883 741 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2891 785 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2885 741 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2899 785 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2858 1000 -21 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2883 675 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2889 741 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2917 676 20 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2921 676 20 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2988 833 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2914 669 0 1 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2915 676 20 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2923 676 20 1//
+serv.newitem=0B59  //
+new.attr=attr_static //
+new.p=2995 633 0 1 1//
+////
+//chair//
+//BambooChair //
+serv.newitem=0B5A//
+new.attr=attr_static //
+new.p=2912 798 0 1 1//
+serv.newitem= 00B5A//
+new.attr=attr_static //
+new.p=2912 799 0 1 1//
+////
+//chair//
+//BambooChair //
+serv.newitem=0B5B//
+new.attr=attr_static //
+new.p=2745 986 0 1 1//
+serv.newitem=0B5B //
+new.attr=attr_static //
+new.p=2747 986 0 1 1//
+////
+//chair//
+//BambooChair //
+serv.newitem=0B5C//
+new.attr=attr_static //
+new.p=2745 989 0 1 1//
+serv.newitem=0B5C //
+new.attr=attr_static //
+new.p=2739 980 0 1 1//
+serv.newitem= 00B5C//
+new.attr=attr_static //
+new.p=2747 989 0 1 1//
+////
+//chair//
+//BambooChair //
+serv.newitem=0B5D//
+new.attr=attr_static //
+new.p=2737 987 0 1 1//
+////
+//foot stool//
+//FootStool //
+serv.newitem=0a2b//
+new.attr=attr_static //
+new.p=2899 915 0 1 1//
+serv.newitem=0a2b  //
+new.attr=attr_static //
+new.p=2912 803 0 1 1//
+serv.newitem=0a2b  //
+new.attr=attr_static //
+new.p=2899 913 0 1 1//
+serv.newitem=0a2b  //
+new.attr=attr_static //
+new.p=2893 911 0 1 1//
+serv.newitem=0a2b  //
+new.attr=attr_static //
+new.p=2895 911 0 1 1//
+serv.newitem=0a2b  //
+new.attr=attr_static //
+new.p=2897 911 0 1 1//
+serv.newitem=0a2b  //
+new.attr=attr_static //
+new.p=2912 802 0 1 1//
+////
+//bench//
+serv.newitem=0B5F//
+new.attr=attr_static //
+new.p=2904 916 0 1 1//
+serv.newitem=0B5F  //
+new.attr=attr_static //
+new.p=2900 905 0 1 1//
+serv.newitem=0B5F  //
+new.attr=attr_static //
+new.p=2895 905 0 1 1//
+serv.newitem=0B5F  //
+new.attr=attr_static //
+new.p=2898 905 0 1 1//
+serv.newitem=0B5F  //
+new.attr=attr_static //
+new.p=2902 916 0 1 1//
+serv.newitem=0B5F  //
+new.attr=attr_static //
+new.p=2893 905 0 1 1//
+serv.newitem=0B5F  //
+new.attr=attr_static //
+new.p=2905 905 0 1 1//
+serv.newitem=0B5F  //
+new.attr=attr_static //
+new.p=2903 905 0 1 1//
+////
+//bench//
+serv.newitem=0B60//
+new.attr=attr_static //
+new.p=2900 902 0 1 1//
+serv.newitem=0B60  //
+new.attr=attr_static //
+new.p=2905 902 0 1 1//
+serv.newitem=0B60  //
+new.attr=attr_static //
+new.p=2904 913 0 1 1//
+serv.newitem=0B60  //
+new.attr=attr_static //
+new.p=2893 902 0 1 1//
+serv.newitem=0B60  //
+new.attr=attr_static //
+new.p=2902 913 0 1 1//
+serv.newitem=0B60  //
+new.attr=attr_static //
+new.p=2895 902 0 1 1//
+serv.newitem=0B60  //
+new.attr=attr_static //
+new.p=2898 902 0 1 1//
+serv.newitem=0B60  //
+new.attr=attr_static //
+new.p=2903 902 0 1 1//
+////
+//bench//
+serv.newitem=0B61//
+new.attr=attr_static //
+new.p=2893 903 0 1 1//
+serv.newitem=0B61  //
+new.attr=attr_static //
+new.p=2900 904 0 1 1//
+serv.newitem=0B61  //
+new.attr=attr_static //
+new.p=2900 903 0 1 1//
+serv.newitem=0B61  //
+new.attr=attr_static //
+new.p=2904 914 0 1 1//
+serv.newitem=0B61  //
+new.attr=attr_static //
+new.p=2902 914 0 1 1//
+serv.newitem=0B61  //
+new.attr=attr_static //
+new.p=2904 915 0 1 1//
+serv.newitem=0B61  //
+new.attr=attr_static //
+new.p=2893 904 0 1 1//
+serv.newitem=0B61  //
+new.attr=attr_static //
+new.p=2903 903 0 1 1//
+serv.newitem=0B61  //
+new.attr=attr_static //
+new.p=2905 904 0 1 1//
+serv.newitem=0B61  //
+new.attr=attr_static //
+new.p=2905 903 0 1 1//
+serv.newitem=0B61  //
+new.attr=attr_static //
+new.p=2898 903 0 1 1//
+serv.newitem=0B61  //
+new.attr=attr_static //
+new.p=2902 915 0 1 1//
+serv.newitem=0B61  //
+new.attr=attr_static //
+new.p=2903 904 0 1 1//
+serv.newitem=0B61  //
+new.attr=attr_static //
+new.p=2895 904 0 1 1//
+serv.newitem=0B61  //
+new.attr=attr_static //
+new.p=2898 904 0 1 1//
+serv.newitem=0B61  //
+new.attr=attr_static //
+new.p=2895 903 0 1 1//
+////
+//bench//
+serv.newitem=0B65//
+new.attr=attr_static //
+new.p=2904 910 0 1 1//
+serv.newitem= 0B65//
+new.attr=attr_static //
+new.p=2897 907 0 1 1//
+serv.newitem= 0B65//
+new.attr=attr_static //
+new.p=2904 908 0 1 1//
+serv.newitem= 0B65//
+new.attr=attr_static //
+new.p=2897 909 0 1 1//
+////
+//bench//
+serv.newitem=0B66//
+new.attr=attr_static //
+new.p=2901 908 0 1 1//
+serv.newitem= 0B66//
+new.attr=attr_static //
+new.p=2901 910 0 1 1//
+serv.newitem= 0B66//
+new.attr=attr_static //
+new.p=2894 907 0 1 1//
+serv.newitem= 0B66//
+new.attr=attr_static //
+new.p=2894 909 0 1 1//
+////
+//bench//
+serv.newitem=0B67//
+new.attr=attr_static //
+new.p=2896 909 0 1 1//
+serv.newitem=0B67  //
+new.attr=attr_static //
+new.p=2896 907 0 1 1//
+serv.newitem=0B67  //
+new.attr=attr_static //
+new.p=2902 908 0 1 1//
+serv.newitem=0B67  //
+new.attr=attr_static //
+new.p=2903 910 0 1 1//
+serv.newitem=0B67  //
+new.attr=attr_static //
+new.p=2902 910 0 1 1//
+serv.newitem=0B67  //
+new.attr=attr_static //
+new.p=2903 908 0 1 1//
+serv.newitem=0B67  //
+new.attr=attr_static //
+new.p=2895 909 0 1 1//
+serv.newitem=0B67  //
+new.attr=attr_static //
+new.p=2895 907 0 1 1//
+////
+//table//
+serv.newitem=0B7F//
+new.attr=attr_static //
+new.p=2857 999 24 1//
+////
+//broken chair//
+serv.newitem=0C10//
+new.attr=attr_static //
+new.p=2915 793 6 1//
+////
+//broken chair//
+serv.newitem=0C11//
+new.attr=attr_static //
+new.p=2912 796 6 1//
+////
+//tree//
+serv.newitem=0CCA//
+new.attr=attr_static //
+new.p=2888 642 1 1//
+////
+//tree//
+serv.newitem=0CCB//
+new.attr=attr_static //
+new.p=2884 641 1 1//
+////
+//leaves//
+serv.newitem=0CCE//
+new.attr=attr_static //
+new.p=2888 642 1 1//
+serv.newitem= 0CCE//
+new.attr=attr_static //
+new.p=2884 641 1 1//
+////
+//tree//
+serv.newitem=0CD0//
+new.attr=attr_static //
+new.p=2793 938 0 1 1//
+////
+//leaves//
+serv.newitem=0CD1//
+new.attr=attr_static //
+new.p=2793 938 0 1 1//
+////
+//knitting//
+serv.newitem=0DF7//
+new.attr=attr_static //
+new.p=2839 881 6 1//
+////
+//pile of wool//
+serv.newitem=0DF8 //
+new.color=058//
+new.attr=attr_static //
+new.p=2956 616 0 1 1//
+////
+//pile of wool//
+serv.newitem=0DF8//
+new.attr=attr_static //
+new.p=2843 881 0 1 1//
+////
+//pile of wool//
+serv.newitem=0DF8 //
+new.color=025//
+new.attr=attr_static //
+new.p=2965 627 0 1 1//
+////
+//bale of cotton//
+serv.newitem=0DF9//
+new.attr=attr_static //
+new.p=2840 880 0 1 1//
+////
+//bale of cotton//
+serv.newitem=0DF9 //
+new.color=025//
+new.attr=attr_static //
+new.p=2965 628 0 1 1//
+////
+//chessmen//
+serv.newitem=0E13//
+new.attr=attr_static //
+new.p=2894 903 4 1//
+////
+//chessmen//
+serv.newitem=0E14//
+new.attr=attr_static //
+new.p=2894 903 4 1//
+////
+//cards//
+serv.newitem=0E15//
+new.attr=attr_static //
+new.p=2971 876 4 1//
+////
+//cards//
+serv.newitem=0E16//
+new.attr=attr_static //
+new.p=2971 874 4 1//
+////
+//cards//
+serv.newitem=0E17//
+new.attr=attr_static //
+new.p=2970 874 4 1//
+////
+//cards//
+serv.newitem=0E18//
+new.attr=attr_static //
+new.p=2970 875 4 1//
+////
+//cards//
+serv.newitem=0E19//
+new.attr=attr_static //
+new.p=2972 875 4 1//
+////
+//crystal ball//
+serv.newitem=0E2F//
+new.attr=attr_static //
+new.p=2913 668 6 1//
+serv.newitem= 0E2F//
+new.attr=attr_static //
+new.p=2917 667 26 1//
+////
+//crate//
+//FillableLargeCrate //
+serv.newitem=0E3C//
+new.attr=attr_static //
+new.p=2835 864 6 1//
+serv.newitem=0E3C  //
+new.attr=attr_static //
+new.p=2835 864 0 1 1//
+serv.newitem=0E3C  //
+new.attr=attr_static //
+new.p=2835 864 3 1//
+serv.newitem=0E3C  //
+new.attr=attr_static //
+new.p=2989 776 9 1//
+serv.newitem=0E3C  //
+new.attr=attr_static //
+new.p=2989 776 6 1//
+serv.newitem=0E3C  //
+new.attr=attr_static //
+new.p=2989 776 3 1//
+serv.newitem=0E3C  //
+new.attr=attr_static //
+new.p=2989 776 0 1 1//
+////
+//crate//
+//LargeCrate //
+serv.newitem=0E3D//
+new.attr=attr_static //
+new.p=2876 673 0 1 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2874 672 0 1 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2876 672 0 1 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2874 676 0 1 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2872 676 0 1 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2874 674 0 1 1//
+////
+//crate//
+//FillableLargeCrate //
+serv.newitem=0E3D//
+new.attr=attr_static //
+new.p=2918 806 0 1 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=3016 766 6 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2833 864 0 1 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=3016 766 3 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2984 640 3 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2984 639 0 1 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=3016 766 0 1 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2918 806 3 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=3016 764 3 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=3016 764 0 1 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2918 806 9 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=3016 765 3 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=3016 765 0 1 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=3016 764 6 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2985 640 3 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2985 640 0 1 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2985 639 0 1 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2917 806 0 1 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2833 864 6 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2834 864 3 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2834 864 0 1 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2984 639 3 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2984 640 9 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2984 640 6 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2984 640 0 1 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2918 806 6 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2833 864 3 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2917 806 6 1//
+serv.newitem=0E3D  //
+new.attr=attr_static //
+new.p=2917 806 3 1//
+////
+//crate//
+//MediumCrate //
+serv.newitem=0E3E//
+new.attr=attr_static //
+new.p=2989 640 0 1 1//
+serv.newitem=0E3E  //
+new.attr=attr_static //
+new.p=2872 673 0 1 1//
+serv.newitem=0E3E  //
+new.attr=attr_static //
+new.p=2989 639 0 1 1//
+serv.newitem=0E3E  //
+new.attr=attr_static //
+new.p=2989 639 3 1//
+serv.newitem=0E3E  //
+new.attr=attr_static //
+new.p=2990 638 0 1 1//
+serv.newitem=0E3E  //
+new.attr=attr_static //
+new.p=2989 639 6 1//
+serv.newitem=0E3E  //
+new.attr=attr_static //
+new.p=2877 674 0 1 1//
+serv.newitem=0E3E  //
+new.attr=attr_static //
+new.p=2991 640 0 1 1//
+serv.newitem=0E3E  //
+new.attr=attr_static //
+new.p=2874 689 0 1 1//
+serv.newitem=0E3E  //
+new.attr=attr_static //
+new.p=2886 689 0 1 1//
+serv.newitem=0E3E  //
+new.attr=attr_static //
+new.p=2991 640 3 1//
+serv.newitem=0E3E  //
+new.attr=attr_static //
+new.p=2990 639 0 1 1//
+serv.newitem=0E3E  //
+new.attr=attr_static //
+new.p=2990 638 6 1//
+serv.newitem=0E3E  //
+new.attr=attr_static //
+new.p=2876 674 0 1 1//
+serv.newitem=0E3E  //
+new.attr=attr_static //
+new.p=2990 639 3 1//
+serv.newitem=0E3E  //
+new.attr=attr_static //
+new.p=2990 639 6 1//
+serv.newitem=0E3E  //
+new.attr=attr_static //
+new.p=2990 640 0 1 1//
+serv.newitem=0E3E  //
+new.attr=attr_static //
+new.p=2990 640 3 1//
+serv.newitem=0E3E  //
+new.attr=attr_static //
+new.p=2990 638 3 1//
+////
+//crate//
+//MediumCrate //
+serv.newitem=0E3F//
+new.attr=attr_static //
+new.p=2876 692 0 1 1//
+serv.newitem=0E3F  //
+new.attr=attr_static //
+new.p=2877 672 0 1 1//
+serv.newitem=0E3F  //
+new.attr=attr_static //
+new.p=2873 688 0 1 1//
+serv.newitem=0E3F  //
+new.attr=attr_static //
+new.p=2876 675 0 1 1//
+////
+//metal chest//
+//FillableMetalGoldenChest //
+serv.newitem=0E40//
+new.attr=attr_static //
+new.p=2736 985 0 1 1//
+serv.newitem= 00E40//
+new.attr=attr_static //
+new.p=2736 989 0 1 1//
+////
+//metal chest//
+//FillableMetalGoldenChest //
+serv.newitem=0E40//
+new.attr=attr_static //
+new.p=2952 892 0 1 1//
+serv.newitem=0E40  //
+new.attr=attr_static //
+new.p=2786 971 0 1 1//
+serv.newitem=0E40  //
+new.attr=attr_static //
+new.p=2776 955 0 1 1//
+serv.newitem=0E40  //
+new.attr=attr_static //
+new.p=2962 868 0 1 1//
+serv.newitem=0E40  //
+new.attr=attr_static //
+new.p=2962 874 0 1 1//
+serv.newitem=0E40  //
+new.attr=attr_static //
+new.p=2776 973 0 1 1//
+serv.newitem=0E40  //
+new.attr=attr_static //
+new.p=2786 954 0 1 1//
+serv.newitem=0E40  //
+new.attr=attr_static //
+new.p=2952 874 0 1 1//
+serv.newitem=0E40  //
+new.attr=attr_static //
+new.p=2952 865 0 1 1//
+serv.newitem=0E40  //
+new.attr=attr_static //
+new.p=2952 877 0 1 1//
+serv.newitem=0E40  //
+new.attr=attr_static //
+new.p=2786 960 0 1 1//
+serv.newitem=0E40  //
+new.attr=attr_static //
+new.p=2952 883 0 1 1//
+serv.newitem=0E40  //
+new.attr=attr_static //
+new.p=2786 965 0 1 1//
+serv.newitem=0E40  //
+new.attr=attr_static //
+new.p=2776 961 0 1 1//
+serv.newitem=0E40  //
+new.attr=attr_static //
+new.p=2962 886 0 1 1//
+////
+//metal chest//
+//MetalGoldenChest //
+serv.newitem=0E41//
+new.attr=attr_static //
+new.p=2885 692 0 1 1//
+serv.newitem= 00E41//
+new.attr=attr_static //
+new.p=2884 691 0 1 1//
+////
+//metal chest//
+//FillableMetalGoldenChest //
+serv.newitem=0E41//
+new.attr=attr_static //
+new.p=2963 888 0 1 1//
+////
+//wooden chest//
+//WoodenChest //
+serv.newitem=0E42//
+new.attr=attr_static //
+new.p=2880 688 0 1 1//
+serv.newitem= 00E42//
+new.attr=attr_static //
+new.p=2884 690 0 1 1//
+////
+//wooden chest//
+//WoodenChest //
+serv.newitem=0E43//
+new.attr=attr_static //
+new.p=2881 690 0 1 1//
+////
+//barrel//
+//Barrel //
+serv.newitem=0E77//
+new.attr=attr_static //
+new.p=2744 985 25 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2739 978 20 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2738 979 25 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2745 986 25 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2738 979 20 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2745 986 20 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2744 986 20 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2738 978 25 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2745 985 20 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2744 986 25 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2745 985 25 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2744 985 20 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2738 978 20 1//
+////
+//barrel//
+//FillableBarrel //
+serv.newitem=0E77//
+new.attr=attr_static //
+new.p=2958 704 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2953 704 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2892 917 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2892 914 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2958 705 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2958 705 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2958 704 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3011 832 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3016 760 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2952 704 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2953 704 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2952 704 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2892 913 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3044 836 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3035 830 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2984 633 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3036 830 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3028 835 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3043 836 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3016 776 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2959 704 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2892 913 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2959 704 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3028 835 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3012 833 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3026 824 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3012 832 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3036 830 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3012 833 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3016 760 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3011 833 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3011 833 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3011 776 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3016 761 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3012 820 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3010 776 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3041 816 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2983 632 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2893 913 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3011 819 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3009 776 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3010 776 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3009 776 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3016 761 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3004 826 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3004 826 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3011 819 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3004 827 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3005 826 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3004 827 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2845 864 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2846 870 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3014 776 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2892 914 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2844 864 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3015 776 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3015 776 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3037 830 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3044 836 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3016 779 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3043 816 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2845 870 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3011 832 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2845 865 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3029 835 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3037 830 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3025 825 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3025 825 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3029 836 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3029 836 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2846 870 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2983 632 10 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2983 633 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3012 819 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3044 837 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3011 820 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3044 837 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3043 836 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3005 826 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3026 825 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3016 760 10 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2983 632 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3016 762 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3016 762 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3026 824 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3026 825 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3017 760 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2984 632 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2846 864 10 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3016 776 10 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2846 864 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3029 835 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2984 632 10 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2844 869 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3012 832 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3012 819 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2846 870 10 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2846 869 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3043 837 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3012 820 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3041 816 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3042 816 -3 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3016 776 5 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2845 868 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3043 837 2 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2984 632 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=2845 869 0 1 1//
+serv.newitem=0E77  //
+new.attr=attr_static //
+new.p=3035 830 -3 1//
+////
+//metal chest//
+//MetalChest //
+serv.newitem=0E7C//
+new.attr=attr_static //
+new.p=2880 692 0 1 1//
+serv.newitem= 00E7C//
+new.attr=attr_static //
+new.p=2874 694 0 1 1//
+serv.newitem= 00E7C//
+new.attr=attr_static //
+new.p=2884 694 0 1 1//
+////
+//crate//
+serv.newitem=0E7E//
+new.attr=attr_static //
+new.p=2884 688 0 1 1//
+serv.newitem= 00E7E//
+new.attr=attr_static //
+new.p=2875 676 0 1 1//
+////
+//keg//
+//Keg //
+serv.newitem=0E7F//
+new.attr=attr_static //
+new.p=2736 989 20 1//
+serv.newitem=0E7F  //
+new.attr=attr_static //
+new.p=2736 990 20 1//
+serv.newitem=0E7F  //
+new.attr=attr_static //
+new.p=2748 976 20 1//
+serv.newitem=0E7F  //
+new.attr=attr_static //
+new.p=2750 976 20 1//
+serv.newitem=0E7F  //
+new.attr=attr_static //
+new.p=2736 988 20 1//
+serv.newitem=0E7F  //
+new.attr=attr_static //
+new.p=2749 976 20 1//
+////
+//strong box//
+//FillableMetalBox //
+serv.newitem=0E80//
+new.attr=attr_static //
+new.p=2921 859 6 1//
+serv.newitem=0E80  //
+new.attr=attr_static //
+new.p=2768 963 6 1//
+serv.newitem=0E80  //
+new.attr=attr_static //
+new.p=2896 789 6 1//
+serv.newitem=0E80  //
+new.attr=attr_static //
+new.p=2992 813 6 1//
+serv.newitem=0E80  //
+new.attr=attr_static //
+new.p=3016 763 6 1//
+serv.newitem=0E80  //
+new.attr=attr_static //
+new.p=2953 707 6 1//
+serv.newitem=0E80  //
+new.attr=attr_static //
+new.p=2910 706 6 1//
+serv.newitem=0E80  //
+new.attr=attr_static //
+new.p=2960 624 6 1//
+serv.newitem=0E80  //
+new.attr=attr_static //
+new.p=2968 882 6 1//
+serv.newitem=0E80  //
+new.attr=attr_static //
+new.p=3011 779 6 1//
+serv.newitem=0E80  //
+new.attr=attr_static //
+new.p=2860 998 6 1//
+serv.newitem=0E80  //
+new.attr=attr_static //
+new.p=2912 668 6 1//
+serv.newitem=0E80  //
+new.attr=attr_static //
+new.p=2912 801 6 1//
+////
+//pickaxe//
+serv.newitem=0E85//
+new.attr=attr_static //
+new.p=2985 642 3 1//
+////
+//pickaxe//
+serv.newitem=0E86//
+new.attr=attr_static //
+new.p=2857 740 5 1//
+////
+//pitchfork//
+serv.newitem=0E87//
+new.attr=attr_static //
+new.p=2984 644 4 1//
+////
+//drum//
+serv.newitem=0E9C//
+new.attr=attr_static //
+new.p=2885 740 4 1//
+////
+//tambourine//
+serv.newitem=0E9D//
+new.attr=attr_static //
+new.p=2889 740 4 1//
+////
+//tambourine//
+serv.newitem=0E9E//
+new.attr=attr_static //
+new.p=2887 740 4 1//
+////
+//standing harp//
+serv.newitem=0EB1//
+new.attr=attr_static //
+new.p=2880 736 0 1 1//
+serv.newitem= 0EB1//
+new.attr=attr_static //
+new.p=2919 983 0 1 1//
+////
+//lap harp//
+serv.newitem=0EB2//
+new.attr=attr_static //
+new.p=2887 738 4 1//
+serv.newitem= 0EB2//
+new.attr=attr_static //
+new.p=2889 738 4 1//
+////
+//lute//
+serv.newitem=0EB3//
+new.attr=attr_static //
+new.p=2885 738 4 1//
+serv.newitem= 0EB3//
+new.attr=attr_static //
+new.p=2883 740 4 1//
+////
+//music stand//
+serv.newitem=0EB6//
+new.attr=attr_static //
+new.p=2896 736 0 1 1//
+serv.newitem= 0EB6//
+new.attr=attr_static //
+new.p=2895 736 0 1 1//
+serv.newitem= 0EB6//
+new.attr=attr_static //
+new.p=2894 736 0 1 1//
+////
+//music stand//
+serv.newitem=0EBB//
+new.attr=attr_static //
+new.p=2898 736 0 1 1//
+serv.newitem= 0EBB//
+new.attr=attr_static //
+new.p=2899 736 0 1 1//
+serv.newitem= 0EBB//
+new.attr=attr_static //
+new.p=2900 736 0 1 1//
+////
+//cleaver//
+serv.newitem=0EC2//
+new.attr=attr_static //
+new.p=2987 780 6 1//
+////
+//dress form//
+serv.newitem=0EC6//
+new.attr=attr_static //
+new.p=2841 880 0 1 1//
+serv.newitem= 0EC6//
+new.attr=attr_static //
+new.p=2959 622 0 1 1//
+////
+//dress form//
+serv.newitem=0EC7//
+new.attr=attr_static //
+new.p=2960 617 0 1 1//
+////
+//easel with canvas//
+serv.newitem=0F66//
+new.attr=attr_static //
+new.p=2899 708 0 1 1//
+////
+//easel with canvas//
+serv.newitem=0F68//
+new.attr=attr_static //
+new.p=2905 715 0 1 1//
+serv.newitem= 0F68//
+new.attr=attr_static //
+new.p=2905 712 0 1 1//
+serv.newitem= 0F68//
+new.attr=attr_static //
+new.p=2905 709 0 1 1//
+////
+//scissors//
+serv.newitem=0F9E//
+new.attr=attr_static //
+new.p=2839 883 6 1//
+////
+//scissors//
+serv.newitem=0F9F//
+new.attr=attr_static //
+new.p=2952 620 6 1//
+////
+//spool of thread//
+serv.newitem=0FA1//
+new.attr=attr_static //
+new.p=2839 882 6 1//
+////
+//playing cards//
+serv.newitem=0FA3//
+new.attr=attr_static //
+new.p=2904 905 4 1//
+////
+//checkers//
+serv.newitem=0FA4//
+new.attr=attr_static //
+new.p=2895 908 2 1//
+////
+//checkers//
+serv.newitem=0FA5//
+new.attr=attr_static //
+new.p=2897 908 4 1//
+////
+//game board//
+//CheckerBoard //
+serv.newitem=0FA6//
+new.attr=attr_static //
+new.p=2896 908 2 1//
+////
+//chess board//
+//ChessBoard //
+serv.newitem=0FA6//
+new.attr=attr_static //
+new.p=2894 903 4 1//
+////
+//dice and cup//
+//Dices //
+serv.newitem=0FA7//
+new.attr=attr_static //
+new.p=2903 915 4 1//
+////
+//backgammon game//
+//Backgammon //
+serv.newitem=0FAD//
+new.attr=attr_static //
+new.p=2903 916 4 1//
+////
+//barrel//
+serv.newitem=0FAE//
+new.attr=attr_static //
+new.p=2995 760 0 1 1//
+serv.newitem=0FAE  //
+new.attr=attr_static //
+new.p=3010 838 -3 1//
+serv.newitem=0FAE  //
+new.attr=attr_static //
+new.p=3046 816 -3 1//
+serv.newitem=0FAE  //
+new.attr=attr_static //
+new.p=3012 792 0 1 1//
+serv.newitem=0FAE  //
+new.attr=attr_static //
+new.p=3015 820 -3 1//
+serv.newitem=0FAE  //
+new.attr=attr_static //
+new.p=3028 818 -3 1//
+serv.newitem=0FAE  //
+new.attr=attr_static //
+new.p=3019 797 0 1 1//
+serv.newitem=0FAE  //
+new.attr=attr_static //
+new.p=3016 781 0 1 1//
+serv.newitem=0FAE  //
+new.attr=attr_static //
+new.p=3016 780 0 1 1//
+serv.newitem=0FAE  //
+new.attr=attr_static //
+new.p=3008 795 0 1 1//
+serv.newitem=0FAE  //
+new.attr=attr_static //
+new.p=3040 825 -3 1//
+serv.newitem=0FAE  //
+new.attr=attr_static //
+new.p=3015 792 0 1 1//
+serv.newitem=0FAE  //
+new.attr=attr_static //
+new.p=3008 797 0 1 1//
+serv.newitem=0FAE  //
+new.attr=attr_static //
+new.p=3019 795 0 1 1//
+////
+//anvil//
+//AnvilSouthAddon //
+serv.newitem=0FB0//
+new.attr=attr_static //
+new.p=2869 849 0 1 1//
+serv.newitem=0FB0  //
+new.attr=attr_static //
+new.p=2845 812 0 1 1//
+serv.newitem=0FB0  //
+new.attr=attr_static //
+new.p=2845 796 0 1 1//
+serv.newitem=0FB0  //
+new.attr=attr_static //
+new.p=2869 853 0 1 1//
+////
+//forge//
+serv.newitem=0FB1//
+new.attr=attr_static //
+new.p=2845 797 0 1 1//
+serv.newitem=0FB1  //
+new.attr=attr_static //
+new.p=2869 848 0 1 1//
+serv.newitem=0FB1  //
+new.attr=attr_static //
+new.p=2869 852 0 1 1//
+serv.newitem=0FB1  //
+new.attr=attr_static //
+new.p=2845 813 0 1 1//
+////
+//sledge hammer//
+serv.newitem=0FB5//
+new.attr=attr_static //
+new.p=2843 792 0 1 1//
+serv.newitem=0FB5  //
+new.attr=attr_static //
+new.p=2864 851 6 1//
+serv.newitem=0FB5  //
+new.attr=attr_static //
+new.p=2842 811 6 1//
+serv.newitem=0FB5  //
+new.attr=attr_static //
+new.p=2868 850 0 1 1//
+////
+//tongs//
+serv.newitem=0FBB//
+new.attr=attr_static //
+new.p=2842 795 6 1//
+serv.newitem=0FBB  //
+new.attr=attr_static //
+new.p=2842 813 6 1//
+serv.newitem=0FBB  //
+new.attr=attr_static //
+new.p=2865 848 0 1 1//
+serv.newitem=0FBB  //
+new.attr=attr_static //
+new.p=2869 850 0 1 1//
+////
+//book//
+serv.newitem=0FBD//
+new.attr=attr_static //
+new.p=2842 794 6 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2850 735 4 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2922 668 4 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2842 866 6 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2835 912 4 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2842 812 6 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2990 778 6 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2992 642 6 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2864 850 6 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2939 939 4 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2908 709 5 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2997 762 6 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2908 712 5 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2908 715 5 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2995 835 6 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2939 931 4 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2877 722 6 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2883 747 4 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2887 676 6 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2888 652 6 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2863 810 6 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2882 739 4 1//
+serv.newitem=0FBD  //
+new.attr=attr_static //
+new.p=2874 683 4 1//
+////
+//book//
+serv.newitem=0FBE//
+new.attr=attr_static //
+new.p=2914 801 6 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2955 810 4 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2955 707 6 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2855 728 6 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2970 882 6 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2914 970 4 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2898 789 6 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2739 979 4 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2908 706 6 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=3018 763 6 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2859 998 6 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2994 813 6 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2883 674 6 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2766 963 0 1 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2919 675 24 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2922 859 6 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2858 999 -17 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2962 624 6 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2963 811 4 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2770 963 6 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2857 728 6 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=2843 899 4 1//
+serv.newitem=0FBE  //
+new.attr=attr_static //
+new.p=3013 779 6 1//
+////
+//pen and ink//
+serv.newitem=0FBF//
+new.attr=attr_static //
+new.p=2842 866 6 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2908 712 5 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2922 668 4 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2835 912 4 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2995 835 6 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2842 812 6 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2864 850 6 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2908 709 5 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2997 762 6 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2769 963 6 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2887 676 6 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2939 931 4 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2992 642 6 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2882 739 4 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2990 778 6 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2842 794 6 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2883 747 4 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2908 715 5 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2888 652 6 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2874 683 4 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2939 939 4 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2863 810 6 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2877 722 6 1//
+serv.newitem=0FBF  //
+new.attr=attr_static //
+new.p=2850 735 4 1//
+////
+//pen and ink//
+serv.newitem=0FC0//
+new.attr=attr_static //
+new.p=3018 763 6 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=2994 813 6 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=2739 979 4 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=2913 970 4 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=2955 707 6 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=3013 779 6 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=2922 859 6 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=2883 674 6 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=2859 998 6 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=2857 728 6 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=2962 624 6 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=2908 706 6 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=2855 728 6 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=2955 810 4 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=2914 801 6 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=2858 999 -17 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=2919 675 24 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=2963 811 4 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=2898 789 6 1//
+serv.newitem=0FC0  //
+new.attr=attr_static //
+new.p=2843 899 4 1//
+////
+//paints and brush//
+serv.newitem=0FC1//
+new.attr=attr_static //
+new.p=2905 710 0 1 1//
+serv.newitem= 0FC1//
+new.attr=attr_static //
+new.p=2905 713 0 1 1//
+serv.newitem= 0FC1//
+new.attr=attr_static //
+new.p=2905 716 0 1 1//
+////
+//book//
+//TalkingToWisps //
+serv.newitem=0FF4//
+new.attr=attr_static //
+new.p=2736 987 6 1//
+////
+//skull mug//
+serv.newitem=0FFC//
+new.attr=attr_static //
+new.p=2903 913 4 1//
+////
+//skull mug//
+serv.newitem=0FFD//
+new.attr=attr_static //
+new.p=2903 915 4 1//
+////
+//skull mug//
+serv.newitem=0FFE//
+new.attr=attr_static //
+new.p=2902 909 2 1//
+serv.newitem= 0FFE//
+new.attr=attr_static //
+new.p=2904 909 4 1//
+////
+//pewter mug//
+//PewterMug //
+serv.newitem=01001//
+new.attr=attr_static //
+new.p=2896 707 4 1//
+////
+//pewter mug//
+//PewterMug //
+serv.newitem=01002//
+new.attr=attr_static //
+new.p=2897 912 8 1//
+serv.newitem=01002  //
+new.attr=attr_static //
+new.p=2899 903 6 1//
+serv.newitem=01002  //
+new.attr=attr_static //
+new.p=2893 912 9 1//
+serv.newitem=01002  //
+new.attr=attr_static //
+new.p=2894 904 6 1//
+////
+//spittoon//
+serv.newitem=01003//
+new.attr=attr_static //
+new.p=2904 901 0 1 1//
+serv.newitem=01003  //
+new.attr=attr_static //
+new.p=2893 908 0 1 1//
+serv.newitem=01003  //
+new.attr=attr_static //
+new.p=2899 911 0 1 1//
+serv.newitem=01003  //
+new.attr=attr_static //
+new.p=2905 909 0 1 1//
+////
+//wash basin//
+serv.newitem=01008//
+new.attr=attr_static //
+new.p=2913 850 0 1 1//
+serv.newitem=01008  //
+new.attr=attr_static //
+new.p=2918 854 6 1//
+serv.newitem=01008  //
+new.attr=attr_static //
+new.p=2992 764 6 1//
+////
+//spinning wheel//
+serv.newitem=01019//
+new.attr=attr_static //
+new.p=2955 620 0 1 1//
+serv.newitem= 01019//
+new.attr=attr_static //
+new.p=2843 884 0 1 1//
+serv.newitem= 01019//
+new.attr=attr_static //
+new.p=2961 629 0 1 1//
+////
+//chisels//
+serv.newitem=01027//
+new.attr=attr_static //
+new.p=2912 793 6 1//
+////
+//dovetail saw//
+serv.newitem=01029//
+new.attr=attr_static //
+new.p=2912 795 6 1//
+////
+//hammer//
+serv.newitem=0102A//
+new.attr=attr_static //
+new.p=2899 789 6 1//
+////
+//hammer//
+serv.newitem=0102B//
+new.attr=attr_static //
+new.p=2915 794 6 1//
+////
+//nails//
+serv.newitem=0102E//
+new.attr=attr_static //
+new.p=2915 795 6 1//
+////
+//jointing plane//
+serv.newitem=01030//
+new.attr=attr_static //
+new.p=2915 801 6 1//
+////
+//smoothing plane//
+serv.newitem=01032//
+new.attr=attr_static //
+new.p=2913 801 6 1//
+////
+//saw//
+serv.newitem=01034//
+new.attr=attr_static //
+new.p=2912 794 6 1//
+////
+//sack of flour//
+serv.newitem=01039//
+new.attr=attr_static //
+new.p=2999 760 0 1 1//
+serv.newitem= 01039//
+new.attr=attr_static //
+new.p=2998 761 0 1 1//
+serv.newitem= 01039//
+new.attr=attr_static //
+new.p=2992 765 6 1//
+////
+//open sack of flour//
+serv.newitem=0103A//
+new.attr=attr_static //
+new.p=2998 760 0 1 1//
+serv.newitem= 0103A//
+new.attr=attr_static //
+new.p=2993 765 0 1 1//
+////
+//dough//
+serv.newitem=0103D//
+new.attr=attr_static //
+new.p=2992 763 6 1//
+////
+//rolling pin//
+serv.newitem=01043//
+new.attr=attr_static //
+new.p=2992 762 6 1//
+////
+//globe//
+serv.newitem=01047//
+new.attr=attr_static //
+new.p=2964 810 0 1 1//
+////
+//loom bench//
+serv.newitem=01049//
+new.attr=attr_static //
+new.p=2845 884 0 1 1//
+serv.newitem= 01049//
+new.attr=attr_static //
+new.p=2963 629 0 1 1//
+serv.newitem= 01049//
+new.attr=attr_static //
+new.p=2957 620 0 1 1//
+////
+//loom bench//
+serv.newitem=0104A//
+new.attr=attr_static //
+new.p=2954 618 0 1 1//
+serv.newitem= 0104A//
+new.attr=attr_static //
+new.p=2845 882 0 1 1//
+////
+//clock frame//
+serv.newitem=0104E//
+new.attr=attr_static //
+new.p=2898 784 6 1//
+////
+//clock parts//
+serv.newitem=01050//
+new.attr=attr_static //
+new.p=2900 784 6 1//
+////
+//axle with gears//
+serv.newitem=01051//
+new.attr=attr_static //
+new.p=2899 784 6 1//
+////
+//gears//
+serv.newitem=01053//
+new.attr=attr_static //
+new.p=2899 784 6 1//
+////
+//hinge//
+serv.newitem=01056//
+new.attr=attr_static //
+new.p=2901 784 6 1//
+////
+//sextant//
+serv.newitem=01057//
+new.attr=attr_static //
+new.p=2897 784 6 1//
+////
+//sextant parts//
+serv.newitem=0105A//
+new.attr=attr_static //
+new.p=2901 784 6 1//
+////
+//axle//
+serv.newitem=0105C//
+new.attr=attr_static //
+new.p=2899 784 6 1//
+////
+//springs//
+serv.newitem=0105E//
+new.attr=attr_static //
+new.p=2897 784 6 1//
+////
+//upright loom//
+//LoomSouthAddon //
+serv.newitem=01061//
+new.attr=attr_static //
+new.p=2844 881 0 1 1//
+serv.newitem= 01066//
+new.attr=attr_static //
+new.p=2845 881 0 1 1//
+serv.newitem= 01061//
+new.attr=attr_static //
+new.p=2953 617 0 1 1//
+serv.newitem= 01066//
+new.attr=attr_static //
+new.p=2954 617 0 1 1//
+////
+//training dummy//
+//TrainingDummy //
+serv.newitem=01070//
+new.attr=attr_static //
+new.p=2838 898 0 1 1//
+serv.newitem= 01070//
+new.attr=attr_static //
+new.p=2838 903 0 1 1//
+serv.newitem= 01070//
+new.attr=attr_static //
+new.p=2834 903 0 1 1//
+serv.newitem= 01070//
+new.attr=attr_static //
+new.p=2834 898 0 1 1//
+////
+//pile of hides//
+serv.newitem=i_hide//
+new.attr=attr_static //
+new.p=2868 1002 -21 1//
+serv.newitem= i_hide//
+new.attr=attr_static //
+new.p=2867 1003 -21 1//
+serv.newitem= i_hide//
+new.attr=attr_static //
+new.p=2869 1003 -21 1//
+serv.newitem= i_hide//
+new.attr=attr_static //
+new.p=2868 1003 -21 1//
+serv.newitem= i_hide//
+new.attr=attr_static //
+new.p=2868 1001 -21 1//
+serv.newitem= i_hide//
+new.attr=attr_static //
+new.p=2869 1002 -21 1//
+////
+//post//
+serv.newitem=01296//
+new.attr=attr_static //
+new.p=2909 597 0 1 1//
+////
+//sign//
+//LocalizedSign //
+serv.newitem=0129A//
+new.attr=attr_static //
+new.p=2909 597 15 1//
+////
+//tarot//
+serv.newitem=012A5//
+new.attr=attr_static //
+new.p=2917 675 24 1//
+serv.newitem= 012A5//
+new.attr=attr_static //
+new.p=2915 668 6 1//
+////
+//statue//
+serv.newitem=0139A//
+new.attr=attr_static //
+new.p=2952 622 0 1 1//
+serv.newitem= 0139A//
+new.attr=attr_static //
+new.p=2960 620 0 1 1//
+////
+//Pot of Wax//
+serv.newitem=0142A//
+new.attr=attr_static //
+new.p=2957 705 6 1//
+////
+//Pot of Wax//
+serv.newitem=0142B//
+new.attr=attr_static //
+new.p=2957 704 6 1//
+////
+//Candle//
+serv.newitem=01433//
+new.attr=attr_static //
+new.p=2957 706 6 1//
+////
+//moulding board//
+serv.newitem=014E9//
+new.attr=attr_static //
+new.p=2992 762 6 1//
+////
+//moulding board//
+serv.newitem=014EA//
+new.attr=attr_static //
+new.p=2997 764 6 1//
+////
+//map//
+serv.newitem=014EB//
+new.attr=attr_static //
+new.p=2995 808 6 1//
+serv.newitem= 014EB//
+new.attr=attr_static //
+new.p=2947 928 4 1//
+////
+//rolled map//
+serv.newitem=014ED//
+new.attr=attr_static //
+new.p=2962 811 4 1//
+////
+//ship model//
+serv.newitem=014F3//
+new.attr=attr_static //
+new.p=2994 808 6 1//
+serv.newitem= 014F3//
+new.attr=attr_static //
+new.p=2997 808 6 1//
+////
+//spyglass//
+serv.newitem=014F6//
+new.attr=attr_static //
+new.p=2742 980 26 1//
+////
+//rope//
+serv.newitem=014F8//
+new.attr=attr_static //
+new.p=3015 822 -3 1//
+serv.newitem= 014F8//
+new.attr=attr_static //
+new.p=3015 836 -3 1//
+////
+//rope//
+serv.newitem=014FA//
+new.attr=attr_static //
+new.p=3037 825 -3 1//
+serv.newitem= 014FA//
+new.attr=attr_static //
+new.p=3030 819 -3 1//
+////
+//water barrel//
+serv.newitem=0154D//
+new.attr=attr_static //
+new.p=2983 633 0 1 1//
+serv.newitem=0154D  //
+new.attr=attr_static //
+new.p=2845 864 0 1 1//
+serv.newitem=0154D  //
+new.attr=attr_static //
+new.p=2846 864 0 1 1//
+serv.newitem=0154D  //
+new.attr=attr_static //
+new.p=2984 633 0 1 1//
+serv.newitem=0154D  //
+new.attr=attr_static //
+new.p=2846 865 5 1//
+serv.newitem=0154D  //
+new.attr=attr_static //
+new.p=2845 870 0 1 1//
+serv.newitem=0154D  //
+new.attr=attr_static //
+new.p=2846 865 0 1 1//
+serv.newitem=0154D  //
+new.attr=attr_static //
+new.p=3011 820 -3 1//
+serv.newitem=0154D  //
+new.attr=attr_static //
+new.p=2846 869 0 1 1//
+////
+//water//
+serv.newitem=01797//
+new.attr=attr_static //
+new.p=2958 731 -5 1//
+////
+//water//
+serv.newitem=0179B//
+new.attr=attr_static //
+new.p=2964 763 -5 1//
+////
+//water//
+serv.newitem=0179C//
+new.attr=attr_static //
+new.p=2964 764 -5 1//
+serv.newitem= 0179C//
+new.attr=attr_static //
+new.p=2964 762 -5 1//
+////
+//hourglass//
+serv.newitem=01813//
+new.attr=attr_static //
+new.p=2925 669 26 1//
+serv.newitem= 01813//
+new.attr=attr_static //
+new.p=2885 648 6 1//
+////
+//scales//
+serv.newitem=01851//
+new.attr=attr_static //
+new.p=2883 648 6 1//
+serv.newitem= 01851//
+new.attr=attr_static //
+new.p=2925 667 26 1//
+////
+//skull with candle//
+//CandleSkull //
+serv.newitem=01854//
+new.attr=attr_static //
+new.p=2922 667 40 1//
+serv.newitem=01854  //
+new.attr=attr_static //
+new.p=2922 674 40 1//
+serv.newitem=01854  //
+new.attr=attr_static //
+new.p=2922 665 40 1//
+serv.newitem=01854  //
+new.attr=attr_static //
+new.p=2922 676 40 1//
+serv.newitem=01854  //
+new.attr=attr_static //
+new.p=2916 674 24 1//
+serv.newitem=01854  //
+new.attr=attr_static //
+new.p=2913 674 40 1//
+serv.newitem=01854  //
+new.attr=attr_static //
+new.p=2913 676 40 1//
+////
+//skull with candle//
+//CandleSkull //
+serv.newitem=01858//
+new.attr=attr_static //
+new.p=2924 676 40 1//
+serv.newitem=01858  //
+new.attr=attr_static //
+new.p=2915 674 40 1//
+serv.newitem=01858  //
+new.attr=attr_static //
+new.p=2922 674 24 1//
+serv.newitem=01858  //
+new.attr=attr_static //
+new.p=2915 676 40 1//
+serv.newitem=01858  //
+new.attr=attr_static //
+new.p=2924 665 40 1//
+serv.newitem=01858  //
+new.attr=attr_static //
+new.p=2924 667 40 1//
+serv.newitem=01858  //
+new.attr=attr_static //
+new.p=2924 674 40 1//
+serv.newitem=01858  //
+new.attr=attr_static //
+new.p=2888 650 6 1//
+////
+//empty vials//
+serv.newitem=0185B//
+new.attr=attr_static //
+new.p=2884 648 6 1//
+////
+//full vials//
+serv.newitem=0185E//
+new.attr=attr_static //
+new.p=2888 653 6 1//
+////
+//ore//
+serv.newitem=019B8//
+new.attr=attr_static //
+new.p=2856 740 3 1//
+//ore//
+serv.newitem=019B9//
+new.attr=attr_static //
+new.p=2851 732 4 1//
+//ore//
+serv.newitem=019BA//
+new.attr=attr_static //
+new.p=2851 738 4 1//
+//board//
+serv.newitem=01BD7//
+new.attr=attr_static //
+new.p=2917 805 0 1 1//
+//
+//BulletinBoard //
+serv.newitem=01E5E//
+new.attr=attr_static //
+new.p=2909 904 0 1 1//
+serv.newitem= 01E5E//
+new.attr=attr_static //
+new.p=2778 964 0 1 1//
+//
+//GlassMug //
+serv.newitem=01F7D//
+new.attr=attr_static //
+new.p=2895 908 2 1//
+//
+//GlassMug //
+serv.newitem=01F89//
+new.attr=attr_static //
+new.p=2898 913 6 1//
+
+[eof]		

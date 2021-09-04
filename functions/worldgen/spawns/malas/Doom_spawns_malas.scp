@@ -1,0 +1,62 @@
+[function spawn_doom_malas]
+
+
+//##############//##//##//##//###
+//## By Matador Doidão ##
+//## Adapted by Nerun  ##
+//##############//##//##//##//###
+//overrideid 401
+//##
+//## Dungeon Doom
+//##
+//## Doom Main
+//##
+f_create_spawner,patchworkskeleton,vampirebat,,,,,379,147,-1,4,1,2,40,40,1,10,10,0,0,0,0
+f_create_spawner,skeleton,boneknight,,,,,372,201,-1,4,1,2,20,20,1,3,1,0,0,0,0
+f_create_spawner,bonedemon,,,,,,442,205,-1,4,20,40,30,30,1,1,0,0,0,0,0
+f_create_spawner,patchworkskeleton,vampirebat,,,,,442,205,-1,4,1,2,30,30,1,6,5,0,0,0,0
+f_create_spawner,lich,,,,,,480,227,-1,4,3,5,20,20,1,2,0,0,0,0,0
+f_create_spawner,lichlord,,,,,,480,227,-1,4,5,10,20,20,1,1,0,0,0,0,0
+f_create_spawner,skeleton,,,,,,480,227,-1,4,1,2,20,20,1,3,0,0,0,0,0
+f_create_spawner,skeleton,,,,,,493,202,-1,4,1,2,12,12,1,6,0,0,0,0,0
+f_create_spawner,devourer,boneknight,,,,,479,168,-1,4,2,3,20,20,1,3,1,0,0,0,0
+f_create_spawner,skeleton,,,,,,479,168,-1,4,1,2,20,20,1,5,0,0,0,0,0
+f_create_spawner,lich,,,,,,468,141,-1,4,1,3,6,6,1,2,0,0,0,0,0
+f_create_spawner,skeleton,mummy,,,,,487,118,-1,4,1,2,8,8,1,3,2,0,0,0,0
+f_create_spawner,patchworkskeleton,,,,,,496,75,0,4,1,2,8,8,1,3,0,0,0,0,0
+f_create_spawner,vampirebat,,,,,,496,75,0,4,1,2,10,10,1,4,0,0,0,0,0
+f_create_spawner,skeleton,,,,,,447,25,-1,4,1,2,10,10,1,6,0,0,0,0,0
+f_create_spawner,lich,,,,,,447,25,-1,4,1,2,15,15,1,2,0,0,0,0,0
+f_create_spawner,patchworkskeleton,lich,,,,,470,30,-2,4,1,2,20,20,1,4,2,0,0,0,0
+f_create_spawner,fleshgolem,devourer,,,,,456,48,-1,4,1,2,15,15,1,6,6,0,0,0,0
+f_create_spawner,vampirebat,,,,,,395,33,-1,4,1,2,8,8,1,4,0,0,0,0,0
+f_create_spawner,vampirebat,skeleton,,,,,356,40,-1,4,1,2,8,8,1,4,2,0,0,0,0
+f_create_spawner,gibberling,,,,,,305,28,0,4,1,2,10,10,1,4,0,0,0,0,0
+f_create_spawner,gorefiend,,,,,,290,28,0,4,1,2,10,10,1,4,0,0,0,0,0
+f_create_spawner,lichlord,,,,,,266,26,0,4,1,2,8,5,1,2,0,0,0,0,0
+f_create_spawner,skeleton,bonemagi,boneknight,,,,309,15,0,4,1,2,10,10,1,4,2,1,0,0,0
+f_create_spawner,lich,,,,,,366,13,-1,4,1,2,10,10,1,3,0,0,0,0,0
+f_create_spawner,skeleton,patchworkskeleton,,,,,323,90,-1,4,1,2,40,40,1,4,5,0,0,0,0
+f_create_spawner,zombie,,,,,,320,114,-1,4,1,2,35,35,1,7,0,0,0,0,0
+f_create_spawner,mummy,,,,,,320,114,-1,4,1,2,25,25,1,3,0,0,0,0,0
+f_create_spawner,lich,,,,,,330,136,0,4,1,2,15,15,1,2,0,0,0,0,0
+f_create_spawner,lichlord,,,,,,330,136,0,4,1,2,4,4,1,1,0,0,0,0,0
+f_create_spawner,patchworkskeleton,vampirebat,,,,,325,172,-1,4,1,2,35,35,1,3,3,0,0,0,0
+f_create_spawner,lichlord,,,,,,289,154,5,4,1,2,5,5,1,1,0,0,0,0,0
+f_create_spawner,devourer,,,,,,278,233,0,4,1,2,35,35,1,3,0,0,0,0,0
+f_create_spawner,patchworkskeleton,vampirebat,,,,,278,233,0,4,1,2,30,30,1,2,2,0,0,0,0
+f_create_spawner,lich,,,,,,320,207,-1,4,1,2,15,15,1,2,0,0,0,0,0
+f_create_spawner,skeleton,,,,,,356,234,-1,4,1,2,10,10,1,3,0,0,0,0,0
+f_create_spawner,devourer,,,,,,356,234,-1,4,1,2,15,15,1,3,0,0,0,0,0
+f_create_spawner,devourer,,,,,,378,236,-1,4,1,2,8,8,1,2,0,0,0,0,0
+f_create_spawner,lichlord,restlesssoul,,,,,427,256,-1,4,1,2,30,30,1,1,3,0,0,0,0
+f_create_spawner,rottingcorpse,,,,,,427,256,-1,4,1,2,30,10,1,2,0,0,0,0,0
+f_create_spawner,rottingcorpse,,,,,,478,206,-1,4,1,2,20,20,1,2,0,0,0,0,0
+f_create_spawner,patchworkskeleton,vampirebat,rottingcorpse,,,,443,128,-1,4,1,2,40,40,1,7,7,2,0,0,0
+f_create_spawner,lich,,,,,,400,174,-1,4,1,2,5,5,1,1,0,0,0,0,0
+f_create_spawner,skeleton,,,,,,287,81,-1,4,1,2,30,30,1,6,0,0,0,0,0
+f_create_spawner,vampirebat,rottingcorpse,,,,,287,81,-1,4,1,2,40,40,1,6,2,0,0,0,0
+f_create_spawner,patchworkskeleton,rottingcorpse,,,,,441,78,-1,4,1,2,30,30,1,4,2,0,0,0,0
+f_create_spawner,vampirebat,,,,,,382,82,-1,4,1,2,40,40,1,6,0,0,0,0,0
+
+[EOF]

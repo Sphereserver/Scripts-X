@@ -10,7 +10,7 @@ ON=@Create
 timerf 1, trigger @HouseSysInit // The LINK is automatically set immediately after placement and @Create
 
 ON=@HouseSysInit
-if !<link.tag0.convert>
+if <link.isvalid> && !<link.tag0.convert>
     attr=010
     timer = -1
 else
@@ -22,8 +22,9 @@ else
 		timer =-1
     endif
 endif
-link.REGION.EVENTS=+r_house_system
-
+if <link.isvalid>
+	link.REGION.EVENTS=+r_house_system
+endif
 
 ON=@Click
 if !<link.region.tag0.forsale>

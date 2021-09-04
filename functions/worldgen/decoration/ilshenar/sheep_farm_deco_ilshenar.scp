@@ -1,0 +1,40 @@
+[function deco_sheep_farm_ilshenar]
+//front door
+serv.newitem=06ad
+new.attr=attr_static
+new.p=1313 1317 -14 2
+// wooden gate
+serv.newitem=086E
+new.attr=attr_static
+new.p=1311 1325 -14 2
+// wooden gate
+serv.newitem=086C
+new.attr=attr_static
+new.p=1328 1321 -14 2
+// upright loom
+serv.newitem=01060
+new.attr=attr_static
+new.p=1305 1319 -14 2
+// spinning wheel
+serv.newitem=01015
+new.attr=attr_static
+new.p=1306 1316 -14 2
+// chest of drawers
+serv.newitem=0A2C
+new.attr=attr_static
+new.p=1308 1314 6 2
+// scissors
+serv.newitem=0F9E
+new.attr=attr_static
+new.p=1309 1319 -10 2
+// dyeing tub
+serv.newitem=0FAB 
+new.color=15C
+new.attr=attr_static
+new.p=1311 1319 -14 2
+// upright loom
+serv.newitem=0105F
+new.attr=attr_static
+new.p=1305 1320 -14 2
+
+[eof]

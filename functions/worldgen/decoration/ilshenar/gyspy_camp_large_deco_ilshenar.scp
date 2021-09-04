@@ -1,0 +1,163 @@
+[function deco_gyspy_camp_large_ilshenar]
+
+// wooden gate
+serv.newitem=0839
+new.attr=attr_static 
+new.p=1234 543 -6 2
+serv.newitem=0839
+new.attr=attr_static 
+new.p=1253 588 -11 2
+
+// wooden gate
+serv.newitem=083B
+new.attr=attr_static 
+new.p=1235 543 -6 2
+serv.newitem=083B
+new.attr=attr_static 
+new.p=1254 588 -11 2
+
+// wooden gate
+serv.newitem=0841
+new.attr=attr_static 
+new.p=1227 555 -11 2
+
+// wooden gate
+serv.newitem=0843
+new.attr=attr_static 
+new.p=1227 554 -11 2
+
+// wooden gate
+serv.newitem=0872
+new.attr=attr_static 
+new.p=1229 563 -19 2
+
+// flowstone
+serv.newitem=08E2
+new.attr=attr_static 
+new.p=1237 582 -19 2
+serv.newitem=08E2
+new.attr=attr_static 
+new.p=1237 586 -19 2
+
+// pickaxe
+serv.newitem=0E85
+new.attr=attr_static 
+new.p=1238 580 -19 2
+
+// pickaxe
+serv.newitem=0E86
+new.attr=attr_static 
+new.p=1239 586 -19 2
+
+// anvil
+serv.newitem=0FAF
+new.attr=attr_static 
+new.p=1260 583 -19 2
+
+// tapestry
+serv.newitem=0FE3 
+NEW.COLOR=01 
+new.Name=a cave entrance
+new.attr=attr_static 
+new.p=1237 585 -22 2
+
+// tapestry
+serv.newitem=0FE4 
+NEW.COLOR=01 
+new.Name=a cave entrance
+new.attr=attr_static 
+new.p=1237 583 -22 2
+
+// boulder
+serv.newitem=01355
+new.attr=attr_static 
+new.p=1237 585 5 2
+
+// boulder
+serv.newitem=01356
+new.attr=attr_static 
+new.p=1237 584 5 2
+
+// boulder
+serv.newitem=01361
+new.attr=attr_static 
+new.p=1236 586 -6 2
+
+// boulder
+serv.newitem=01362
+new.attr=attr_static 
+new.p=1237 586 -6 2
+
+// rock
+serv.newitem=01363
+new.attr=attr_static 
+new.p=1237 582 -1 2
+
+// rock
+serv.newitem=01364
+new.attr=attr_static 
+new.p=1237 583 4 2
+
+// rock
+serv.newitem=0136B
+new.attr=attr_static 
+new.p=1237 583 1 2
+
+// rocks
+serv.newitem=0136D
+new.attr=attr_static 
+new.p=1237 586 1 2
+
+// rock
+serv.newitem=01772
+new.attr=attr_static 
+new.p=1237 583 1 2
+
+// rock
+serv.newitem=01773
+new.attr=attr_static 
+new.p=1237 585 0 2
+
+// rock
+serv.newitem=01775
+new.attr=attr_static 
+new.p=1237 585 4 2
+serv.newitem=01775
+new.attr=attr_static 
+new.p=1237 586 3 2
+
+// rock
+serv.newitem=01777
+new.attr=attr_static 
+new.p=1236 584 -1 2
+
+// bellows
+serv.newitem=0197A
+new.attr=attr_static 
+new.p=1258 585 -19 2
+
+// forge
+serv.newitem=0197E
+new.attr=attr_static 
+new.p=1259 585 -19 2
+
+// forge
+serv.newitem=01982
+new.attr=attr_static 
+new.p=1260 585 -19 2
+
+// nodraw--surface
+serv.newitem=02198
+new.attr=attr_static 
+new.p=1139 592 -80 2
+serv.newitem=02198
+new.attr=attr_static 
+new.p=1140 592 -80 2
+serv.newitem=02198
+new.attr=attr_static 
+new.p=1141 592 -80 2
+serv.newitem=02198
+new.attr=attr_static 
+new.p=1142 592 -80 2
+
+[eof]

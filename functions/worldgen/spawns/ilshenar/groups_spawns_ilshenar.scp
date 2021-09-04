@@ -1,0 +1,16 @@
+[function spawn_caves_ilshenar]
+spawn_ancient_lair_ilshenar
+spawn_mushroom_ilshenar
+spawn_ratman_cave_ilshenar
+
+[function spawn_dungeons_ilshenar]
+spawn_ankh_ilshenar
+spawn_blood_ilshenar
+spawn_exodus_ilshenar
+spawn_rock_ilshenar
+spawn_sorcerers_ilshenar
+spawn_spectre_ilshenar
+spawn_twisted_weald_ilshenar
+spawn_wisp_ilshenar
+
+[EOF]

@@ -1,0 +1,1232 @@
+[function deco_wind_felucca]
+
+//marble wall
+serv.newitem=02B5
+new.attr=attr_static
+new.p=5310 93 35
+//marble wall
+serv.newitem=02B7
+new.attr=attr_static
+new.p=5310 118 35
+//cave floor
+serv.newitem=053C
+new.attr=attr_static
+new.p=5258 198 15
+//cave floor
+serv.newitem=053D
+new.attr=attr_static
+new.p=5259 198 15
+//cave floor
+serv.newitem=053E
+new.attr=attr_static
+new.p=5258 199 15
+//cave floor
+serv.newitem=0551
+new.attr=attr_static
+new.p=5259 199 15
+//marble roof
+serv.newitem=063B
+new.attr=attr_static
+new.p=5154 107 25
+//marble
+serv.newitem=0709
+new.attr=attr_static
+new.p=5220 144 0
+serv.newitem=0709
+new.attr=attr_static
+new.p=5221 144 0
+serv.newitem=0709
+new.attr=attr_static
+new.p=5224 137 20
+serv.newitem=0709
+new.attr=attr_static
+new.p=5224 140 20
+serv.newitem=0709
+new.attr=attr_static
+new.p=5225 137 20
+serv.newitem=0709
+new.attr=attr_static
+new.p=5225 140 20
+serv.newitem=0709
+new.attr=attr_static
+new.p=5226 137 20
+serv.newitem=0709
+new.attr=attr_static
+new.p=5226 140 20
+serv.newitem=0709
+new.attr=attr_static
+new.p=5227 137 20
+serv.newitem=0709
+new.attr=attr_static
+new.p=5227 140 20
+serv.newitem=0709
+new.attr=attr_static
+new.p=5228 137 20
+serv.newitem=0709
+new.attr=attr_static
+new.p=5228 140 20
+serv.newitem=0709
+new.attr=attr_static
+new.p=5244 169 15
+serv.newitem=0709
+new.attr=attr_static
+new.p=5245 169 15
+serv.newitem=0709
+new.attr=attr_static
+new.p=5281 123 20
+serv.newitem=0709
+new.attr=attr_static
+new.p=5282 123 20
+serv.newitem=0709
+new.attr=attr_static
+new.p=5301 127 15
+serv.newitem=0709
+new.attr=attr_static
+new.p=5302 127 15
+serv.newitem=0709
+new.attr=attr_static
+new.p=5321 85 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5321 90 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5322 85 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5322 90 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5323 85 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5323 90 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5324 85 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5324 90 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5325 85 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5325 90 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5326 85 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5326 90 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5327 85 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5327 90 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5328 85 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5328 90 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5329 85 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5329 90 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5330 85 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5330 90 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5331 85 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5331 90 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5332 85 25
+serv.newitem=0709
+new.attr=attr_static
+new.p=5332 90 25
+//marble stairs
+serv.newitem=070A
+new.attr=attr_static
+new.p=5179 50 17
+serv.newitem=070A
+new.attr=attr_static
+new.p=5180 50 17
+serv.newitem=070A
+new.attr=attr_static
+new.p=5220 145 0
+serv.newitem=070A
+new.attr=attr_static
+new.p=5221 145 0
+serv.newitem=070A
+new.attr=attr_static
+new.p=5255 230 11
+serv.newitem=070A
+new.attr=attr_static
+new.p=5255 231 7
+serv.newitem=070A
+new.attr=attr_static
+new.p=5301 128 15
+serv.newitem=070A
+new.attr=attr_static
+new.p=5302 128 15
+//marble stairs
+serv.newitem=070B
+new.attr=attr_static
+new.p=5286 144 15
+serv.newitem=070B
+new.attr=attr_static
+new.p=5310 134 15
+serv.newitem=070B
+new.attr=attr_static
+new.p=5310 135 15
+//marble stairs
+serv.newitem=070C
+new.attr=attr_static
+new.p=5281 122 20
+serv.newitem=070C
+new.attr=attr_static
+new.p=5282 122 20
+//marble stairs
+serv.newitem=070D
+new.attr=attr_static
+new.p=5224 175 24
+serv.newitem=070D
+new.attr=attr_static
+new.p=5224 176 24
+serv.newitem=070D
+new.attr=attr_static
+new.p=5237 164 15
+serv.newitem=070D
+new.attr=attr_static
+new.p=5237 165 15
+serv.newitem=070D
+new.attr=attr_static
+new.p=5253 180 15
+serv.newitem=070D
+new.attr=attr_static
+new.p=5253 181 15
+serv.newitem=070D
+new.attr=attr_static
+new.p=5280 144 15
+//stalagmites
+serv.newitem=08E0
+new.attr=attr_static
+new.p=5216 203 5
+new.type=t_normal
+serv.newitem=08E0
+new.attr=attr_static
+new.p=5251 236 5
+new.type=t_normal
+//flowstone
+serv.newitem=08E3
+new.attr=attr_static
+new.p=5251 235 5
+//stalagmites
+serv.newitem=08E4
+new.attr=attr_static
+new.p=5211 233 25
+new.type=t_normal
+//stalagmites
+serv.newitem=08E7
+new.attr=attr_static
+new.p=5297 158 15
+new.type=t_normal
+//slab of bacon
+serv.newitem=0977
+new.attr=attr_static
+new.p=5348 56 19
+//raw fish steak
+serv.newitem=097A
+new.attr=attr_static
+new.p=5343 57 19
+//wedge of cheese
+serv.newitem=097D
+new.attr=attr_static
+new.p=5354 53 19
+//French bread
+serv.newitem=098C
+new.attr=attr_static
+new.p=5351 49 19
+//ceramic mug
+serv.newitem=0995
+new.attr=attr_static
+new.p=5223 175 11
+//ceramic mug
+serv.newitem=0996
+new.attr=attr_static
+new.p=5160 33 23
+serv.newitem=0996
+new.attr=attr_static
+new.p=5222 174 11
+//bottles of liquor
+serv.newitem=099D
+new.attr=attr_static
+new.p=5160 34 23
+//fork
+serv.newitem=09A4
+new.attr=attr_static
+new.p=5223 174 11
+//knife
+serv.newitem=09A6
+new.attr=attr_static
+new.p=5223 174 11
+//metal box
+serv.newitem=09A8
+new.attr=attr_static
+new.p=5167 18 27
+serv.newitem=09A8
+new.attr=attr_static
+new.p=5179 18 27
+serv.newitem=09A8
+new.attr=attr_static
+new.p=5211 167 5
+serv.newitem=09A8
+new.attr=attr_static
+new.p=5307 31 40
+serv.newitem=09A8
+new.attr=attr_static
+new.p=5307 35 40
+serv.newitem=09A8
+new.attr=attr_static
+new.p=5310 35 40
+serv.newitem=09A8
+new.attr=attr_static
+new.p=5313 31 40
+serv.newitem=09A8
+new.attr=attr_static
+new.p=5316 35 40
+//wooden box
+serv.newitem=09AA
+new.attr=attr_static
+new.p=5161 18 27
+serv.newitem=09AA
+new.attr=attr_static
+new.p=5164 18 27
+serv.newitem=09AA
+new.attr=attr_static
+new.p=5170 18 27
+serv.newitem=09AA
+new.attr=attr_static
+new.p=5173 18 27
+serv.newitem=09AA
+new.attr=attr_static
+new.p=5176 18 27
+serv.newitem=09AA
+new.attr=attr_static
+new.p=5207 167 5
+serv.newitem=09AA
+new.attr=attr_static
+new.p=5207 174 5
+serv.newitem=09AA
+new.attr=attr_static
+new.p=5209 167 5
+serv.newitem=09AA
+new.attr=attr_static
+new.p=5209 174 5
+serv.newitem=09AA
+new.attr=attr_static
+new.p=5211 174 5
+serv.newitem=09AA
+new.attr=attr_static
+new.p=5213 167 5
+serv.newitem=09AA
+new.attr=attr_static
+new.p=5213 174 5
+serv.newitem=09AA
+new.attr=attr_static
+new.p=5310 31 40
+serv.newitem=09AA
+new.attr=attr_static
+new.p=5313 35 40
+serv.newitem=09AA
+new.attr=attr_static
+new.p=5316 31 40
+//metal chest
+serv.newitem=09AB
+new.attr=attr_static
+new.p=5186 89 5
+//eggs
+serv.newitem=09B5
+new.attr=attr_static
+new.p=5355 53 19
+//cooked bird
+serv.newitem=09B7
+new.attr=attr_static
+new.p=5348 57 19
+//roast pig
+serv.newitem=09BC
+new.attr=attr_static
+new.p=5348 59 19
+//sausage
+serv.newitem=09C1 
+new.attr=attr_static
+new.p=5348 52 19
+//spoon
+serv.newitem=09C3
+new.attr=attr_static
+new.p=5223 174 11
+//bottles of wine
+serv.newitem=09C5
+new.attr=attr_static
+new.p=5160 36 23
+//apple
+serv.newitem=09D0
+new.attr=attr_static
+new.p=5345 53 19
+//ham
+serv.newitem=09D3
+new.attr=attr_static
+new.p=5348 55 19
+//plate
+serv.newitem=09D7
+new.attr=attr_static
+new.p=5223 174 11
+serv.newitem=09D7
+new.attr=attr_static
+new.p=5224 175 11
+serv.newitem=09D7
+new.attr=attr_static
+new.p=5346 74 31
+//plate of food
+serv.newitem=09D8
+new.attr=attr_static
+new.p=5342 81 31
+serv.newitem=09D8
+new.attr=attr_static
+new.p=5342 84 31
+serv.newitem=09D8
+new.attr=attr_static
+new.p=5343 78 31
+serv.newitem=09D8
+new.attr=attr_static
+new.p=5346 78 31
+//plate of food
+serv.newitem=09D9
+new.attr=attr_static
+new.p=5344 74 31
+//cake
+serv.newitem=09E9
+new.attr=attr_static
+new.p=5349 49 19
+//muffins
+serv.newitem=09EB
+new.attr=attr_static
+new.p=5346 49 19
+//milk
+serv.newitem=09F0 
+new.attr=attr_static
+new.p=5180 19 31
+//cut of ribs
+serv.newitem=09F2
+new.attr=attr_static
+new.p=5348 53 19
+//fork
+serv.newitem=09F4
+new.attr=attr_static
+new.p=5224 175 11
+serv.newitem=09F4
+new.attr=attr_static
+new.p=5344 78 31
+//fork
+serv.newitem=09F5 
+new.attr=attr_static
+new.p=5342 83 31
+//knife
+serv.newitem=09F6
+new.attr=attr_static
+new.p=5224 175 11
+serv.newitem=09F6
+new.attr=attr_static
+new.p=5345 74 31
+//knife
+serv.newitem=09F7
+new.attr=attr_static
+new.p=5342 82 31
+//spoon
+serv.newitem=09F8
+new.attr=attr_static
+new.p=5224 175 11
+//candelabra
+serv.newitem=0A29
+new.attr=attr_static
+new.p=5345 59 15
+serv.newitem=0A29
+new.attr=attr_static
+new.p=5346 50 15
+serv.newitem=0A29
+new.attr=attr_static
+new.p=5351 61 15
+//chest of drawers
+serv.newitem=0A30
+new.attr=attr_static
+new.p=5308 108 15
+//bookcase
+serv.newitem=0A9A
+new.attr=attr_static
+new.p=5258 136 20
+//bookcase
+serv.newitem=0A9C
+new.attr=attr_static
+new.p=5258 135 20
+//candelabra
+serv.newitem=0B1D
+new.attr=attr_static
+new.p=5152 53 31
+//candelabra
+serv.newitem=0B26
+new.attr=attr_static
+new.p=5305 108 15
+serv.newitem=0B26
+new.attr=attr_static
+new.p=5341 73 25
+serv.newitem=0B26
+new.attr=attr_static
+new.p=5345 85 25
+serv.newitem=0B26
+new.attr=attr_static
+new.p=5350 75 25
+//candelabra
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5150 92 5
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5154 64 25
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5163 92 5
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5210 112 0
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5217 121 0
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5225 172 5
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5236 135 15
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5238 174 15
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5238 181 15
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5241 187 15
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5246 174 15
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5246 181 15
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5146 55 25
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5151 103 5
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5157 91 5
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5177 97 5
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5187 91 5
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5197 94 5
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5198 85 5
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5207 176 5
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5208 169 5
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5213 160 5
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5234 142 15
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5234 152 15
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5241 144 15
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5241 152 15
+serv.newitem=0B27
+new.attr=attr_static
+new.p=5265 161 15
+//large vase
+serv.newitem=0B45
+new.attr=attr_static
+new.p=5177 95 5
+//chair
+serv.newitem=0B50
+new.attr=attr_static
+new.p=5151 55 25
+serv.newitem=0B50
+new.attr=attr_static
+new.p=5237 138 15
+//chair
+serv.newitem=0B52
+new.attr=attr_static
+new.p=5239 178 15
+serv.newitem=0B52
+new.attr=attr_static
+new.p=5239 180 15
+serv.newitem=0B52
+new.attr=attr_static
+new.p=5243 178 15
+serv.newitem=0B52
+new.attr=attr_static
+new.p=5243 180 15
+serv.newitem=0B52
+new.attr=attr_static
+new.p=5341 81 25
+serv.newitem=0B52
+new.attr=attr_static
+new.p=5341 83 25
+serv.newitem=0B52
+new.attr=attr_static
+new.p=5341 84 25
+//chair
+serv.newitem=0B53
+new.attr=attr_static
+new.p=5222 173 5
+serv.newitem=0B53
+new.attr=attr_static
+new.p=5224 173 5
+serv.newitem=0B53
+new.attr=attr_static
+new.p=5240 174 15
+serv.newitem=0B53
+new.attr=attr_static
+new.p=5242 174 15
+serv.newitem=0B53
+new.attr=attr_static
+new.p=5343 73 25
+serv.newitem=0B53
+new.attr=attr_static
+new.p=5343 77 25
+serv.newitem=0B53
+new.attr=attr_static
+new.p=5344 73 25
+serv.newitem=0B53
+new.attr=attr_static
+new.p=5345 77 25
+serv.newitem=0B53
+new.attr=attr_static
+new.p=5346 73 25
+serv.newitem=0B53
+new.attr=attr_static
+new.p=5346 77 25
+//chair
+serv.newitem=0B54
+new.attr=attr_static
+new.p=5222 176 5
+serv.newitem=0B54
+new.attr=attr_static
+new.p=5224 176 5
+serv.newitem=0B54
+new.attr=attr_static
+new.p=5240 176 15
+serv.newitem=0B54
+new.attr=attr_static
+new.p=5242 176 15
+serv.newitem=0B54
+new.attr=attr_static
+new.p=5268 124 20
+serv.newitem=0B54
+new.attr=attr_static
+new.p=5343 75 25
+serv.newitem=0B54
+new.attr=attr_static
+new.p=5343 79 25
+serv.newitem=0B54
+new.attr=attr_static
+new.p=5344 79 25
+serv.newitem=0B54
+new.attr=attr_static
+new.p=5345 75 25
+serv.newitem=0B54
+new.attr=attr_static
+new.p=5346 75 25
+serv.newitem=0B54
+new.attr=attr_static
+new.p=5346 79 25
+//chair
+serv.newitem=0B55
+new.attr=attr_static
+new.p=5237 145 15
+serv.newitem=0B55
+new.attr=attr_static
+new.p=5237 149 15
+serv.newitem=0B55
+new.attr=attr_static
+new.p=5240 145 15
+serv.newitem=0B55
+new.attr=attr_static
+new.p=5240 149 15
+serv.newitem=0B55
+new.attr=attr_static
+new.p=5241 178 15
+serv.newitem=0B55
+new.attr=attr_static
+new.p=5241 180 15
+serv.newitem=0B55
+new.attr=attr_static
+new.p=5245 178 15
+serv.newitem=0B55
+new.attr=attr_static
+new.p=5245 180 15
+serv.newitem=0B55
+new.attr=attr_static
+new.p=5305 31 40
+serv.newitem=0B55
+new.attr=attr_static
+new.p=5305 33 40
+serv.newitem=0B55
+new.attr=attr_static
+new.p=5305 36 40
+serv.newitem=0B55
+new.attr=attr_static
+new.p=5305 38 40
+serv.newitem=0B55
+new.attr=attr_static
+new.p=5343 81 25
+serv.newitem=0B55
+new.attr=attr_static
+new.p=5343 82 25
+serv.newitem=0B55
+new.attr=attr_static
+new.p=5343 84 25
+//metal signpost
+serv.newitem=0B9B
+new.attr=attr_static
+new.p=5158 107 5
+//metal signpost
+serv.newitem=0BA0
+new.attr=attr_static
+new.p=5200 98 5
+//metal signpost
+serv.newitem=0BA1
+new.attr=attr_static
+new.p=5267 131 20
+//metal signpost
+serv.newitem=0BA2
+new.attr=attr_static
+new.p=5217 124 0
+serv.newitem=0BA2
+new.attr=attr_static
+new.p=5236 155 15
+//wand
+serv.newitem=0DF2
+new.attr=attr_static
+new.p=5145 82 29
+//wand
+serv.newitem=0DF3
+new.attr=attr_static
+new.p=5145 74 29
+serv.newitem=0DF3
+new.attr=attr_static
+new.p=5264 163 18
+serv.newitem=0DF3
+new.attr=attr_static
+new.p=5311 114 18
+//brazier
+serv.newitem=0E31
+new.attr=attr_static
+new.p=5145 79 29
+serv.newitem=0E31
+new.attr=attr_static
+new.p=5145 62 25
+serv.newitem=0E31
+new.attr=attr_static
+new.p=5145 70 25
+serv.newitem=0E31
+new.attr=attr_static
+new.p=5177 86 5
+serv.newitem=0E31
+new.attr=attr_static
+new.p=5177 88 5
+serv.newitem=0E31
+new.attr=attr_static
+new.p=5179 86 5
+serv.newitem=0E31
+new.attr=attr_static
+new.p=5300 88 15
+//scroll
+serv.newitem=0E35
+new.attr=attr_static
+new.p=5176 90 9
+//scroll
+serv.newitem=0E38
+new.attr=attr_static
+new.p=5176 92 9
+//spellbook
+serv.newitem=0E3B
+new.attr=attr_static
+new.p=5145 64 30
+serv.newitem=0E3B
+new.attr=attr_static
+new.p=5145 76 29
+serv.newitem=0E3B
+new.attr=attr_static
+new.p=5264 162 18
+serv.newitem=0E3B
+new.attr=attr_static
+new.p=5304 36 46
+serv.newitem=0E3B
+new.attr=attr_static
+new.p=5311 113 18
+//metal chest
+serv.newitem=0E41
+new.attr=attr_static
+new.p=5261 237 5
+//barrel
+serv.newitem=0E77
+new.attr=attr_static
+new.p=5149 91 5
+//metal chest
+serv.newitem=0E7C
+new.attr=attr_static
+new.p=5261 159 15
+//wooden box
+serv.newitem=0E7D
+new.attr=attr_static
+new.p=5162 23 27
+serv.newitem=0E7D
+new.attr=attr_static
+new.p=5162 26 27
+serv.newitem=0E7D
+new.attr=attr_static
+new.p=5179 24 27
+serv.newitem=0E7D
+new.attr=attr_static
+new.p=5179 27 27
+//strong box
+serv.newitem=0E80
+new.attr=attr_static
+new.p=5308 110 15
+//strong box
+serv.newitem=0E80
+new.attr=attr_static
+new.p=5162 20 27
+serv.newitem=0E80
+new.attr=attr_static
+new.p=5215 161 5
+//clean bandage
+serv.newitem=0EE9
+new.attr=attr_static
+new.p=5259 129 20
+serv.newitem=0EE9
+new.attr=attr_static
+new.p=5259 133 20
+serv.newitem=0EE9
+new.attr=attr_static
+new.p=5260 125 20
+serv.newitem=0EE9
+new.attr=attr_static
+new.p=5264 124 20
+serv.newitem=0EE9
+new.attr=attr_static
+new.p=5267 123 26
+serv.newitem=0EE9
+new.attr=attr_static
+new.p=5269 123 26
+//scroll
+serv.newitem=0EF5
+new.attr=attr_static
+new.p=5291 93 21
+//scroll
+serv.newitem=0EF7
+new.attr=attr_static
+new.p=5149 53 30
+serv.newitem=0EF7
+new.attr=attr_static
+new.p=5292 89 21
+serv.newitem=0EF7
+new.attr=attr_static
+new.p=5292 95 21
+//scroll
+serv.newitem=0EF9
+new.attr=attr_static
+new.p=5150 54 31
+serv.newitem=0EF9
+new.attr=attr_static
+new.p=5151 53 31
+//spellbook
+serv.newitem=0EFA
+new.attr=attr_static
+new.p=5145 83 29
+serv.newitem=0EFA
+new.attr=attr_static
+new.p=5176 91 9
+serv.newitem=0EFA
+new.attr=attr_static
+new.p=5291 95 21
+serv.newitem=0EFA
+new.attr=attr_static
+new.p=5304 32 46
+//bottle
+serv.newitem=0EFD
+new.attr=attr_static
+new.p=5307 88 15
+//Orange Potion
+serv.newitem=0F07 
+new.attr=attr_static
+new.p=5301 87 19
+//Blue Potion
+serv.newitem=0F08 
+new.attr=attr_static
+new.p=5145 65 27
+serv.newitem=0F08 
+new.attr=attr_static
+new.p=5301 87 19
+//Green Potion
+serv.newitem=0F0A
+new.attr=attr_static
+new.p=5303 87 19
+//Red Potion
+serv.newitem=0F0B
+new.attr=attr_static
+new.p=5144 74 29
+serv.newitem=0F0B
+new.attr=attr_static
+new.p=5144 83 29
+serv.newitem=0F0B
+new.attr=attr_static
+new.p=5304 37 46
+//Yellow Potion
+serv.newitem=0F0C
+new.attr=attr_static
+new.p=5144 65 28
+serv.newitem=0F0C
+new.attr=attr_static
+new.p=5304 87 19
+//Purple Potion
+serv.newitem=0F0D
+new.attr=attr_static
+new.p=5144 66 25
+serv.newitem=0F0D
+new.attr=attr_static
+new.p=5304 87 19
+//empty bottle
+serv.newitem=0F0E
+new.attr=attr_static
+new.p=5145 66 28
+//Batwing
+serv.newitem=0F78
+new.attr=attr_static
+new.p=5302 88 19
+//Blackmoor
+serv.newitem=0F79
+new.attr=attr_static
+new.p=5302 87 19
+//Blood Moss
+serv.newitem=0F7B
+new.attr=attr_static
+new.p=5183 85 9
+serv.newitem=0F7B
+new.attr=attr_static
+new.p=5264 164 18
+serv.newitem=0F7B
+new.attr=attr_static
+new.p=5311 115 18
+//Daemon Blood
+serv.newitem=0F7D
+new.attr=attr_static
+new.p=5149 54 30
+serv.newitem=0F7D
+new.attr=attr_static
+new.p=5293 90 24
+serv.newitem=0F7D
+new.attr=attr_static
+new.p=5304 33 46
+//Brimstone
+serv.newitem=0F7F
+new.attr=attr_static
+new.p=5144 66 28
+//Dragon's Blood
+serv.newitem=0F82 
+new.attr=attr_static
+new.p=5292 90 23
+//Garlic
+serv.newitem=0F84
+new.attr=attr_static
+new.p=5292 94 24
+//Nightshade
+serv.newitem=0F88
+new.attr=attr_static
+new.p=5144 65 29
+serv.newitem=0F88
+new.attr=attr_static
+new.p=5145 75 29
+serv.newitem=0F88
+new.attr=attr_static
+new.p=5181 85 9
+serv.newitem=0F88
+new.attr=attr_static
+new.p=5268 123 24
+serv.newitem=0F88
+new.attr=attr_static
+new.p=5294 89 21
+//Sulfurous Ash
+serv.newitem=0F8C
+new.attr=attr_static
+new.p=5144 84 29
+//Spiders' Silk
+serv.newitem=0F8D
+new.attr=attr_static
+new.p=2685 708 0
+serv.newitem=0F8D
+new.attr=attr_static
+new.p=5145 81 29
+//Nox Crystal
+serv.newitem=0F8E
+new.attr=attr_static
+new.p=5304 37 46
+//Wyrm's Heart
+serv.newitem=0F91
+new.attr=attr_static
+new.p=5294 90 24
+//pentagram
+serv.newitem=0FEA
+new.attr=attr_static
+new.p=1361 883 0
+serv.newitem=0FEA
+new.attr=attr_static
+new.p=5191 152 0
+serv.newitem=0FEA
+new.attr=attr_static
+new.p=5200 71 17
+serv.newitem=0FEA
+new.attr=attr_static
+new.p=5217 18 15
+//entrance teleporter
+//"SkillTeleporter 0x1BC3 (Skill=Magery; RequiredFixedPoint=715; MessageNumber=503382; PointDest=(5166, 245, 15))"
+serv.newitem=01BC3
+new.attr=attr_static
+new.p=1361 883 0
+//book
+serv.newitem=0FEF
+new.name=Dimensional Travel
+new.attr=attr_static
+new.p=5241 175 22
+//book
+serv.newitem=0FEF
+new.name=The Fight
+new.attr=attr_static
+new.p=5244 179 22
+//book
+serv.newitem=0FF1
+new.name=Red Book
+new.attr=attr_static
+new.p=5239 145 19
+//book
+serv.newitem=0FF3
+new.name=Song Of Samlethe
+new.attr=attr_static
+new.p=5238 144 15
+//book
+serv.newitem=0FF3
+new.name=Major Trade Association
+new.attr=attr_static
+new.p=5240 178 21
+//book
+serv.newitem=0FF4
+new.name=Talking To Wisps 
+new.attr=attr_static
+new.p=5239 148 19
+//book
+serv.newitem=0FF4 
+new.name=Guide To Guilds
+new.attr=attr_static
+new.p=5240 179 21
+//book
+serv.newitem=0FF4
+new.name=Deceit Dungeon Of Horror
+new.attr=attr_static
+new.p=5244 178 21
+//glass pitcher
+serv.newitem=0FF6
+new.attr=attr_static
+new.p=5160 35 23
+//pitcher of water
+serv.newitem=0FF9
+new.attr=attr_static
+new.p=5180 20 31
+//skull mug
+serv.newitem=0FFC
+new.attr=attr_static
+new.p=5180 21 31
+//bread loaf
+serv.newitem=0103C
+new.attr=attr_static
+new.p=5350 49 19
+//baked pie
+serv.newitem=01041
+new.attr=attr_static
+new.p=5347 49 19
+//unbaked pie
+serv.newitem=01042
+new.attr=attr_static
+new.p=5348 49 19
+//uncooked pizza
+serv.newitem=01083
+new.attr=attr_static
+new.p=5352 49 19
+//potted tree
+serv.newitem=011C9
+new.attr=attr_static
+new.p=5160 31 17
+//flowerpot
+serv.newitem=011CA
+new.attr=attr_static
+new.p=5176 22 31
+serv.newitem=011CA
+new.attr=attr_static
+new.p=5304 29 40
+serv.newitem=011CA
+new.attr=attr_static
+new.p=5304 40 40
+//leg of lamb
+serv.newitem=0160A
+new.attr=attr_static
+new.p=5348 54 19
+//bananas
+serv.newitem=01721
+new.attr=attr_static
+new.p=5341 53 19
+//coconut
+serv.newitem=01723
+new.attr=attr_static
+new.p=5342 53 19
+//lemon
+serv.newitem=01728
+new.attr=attr_static
+new.p=5344 53 19
+//pear
+serv.newitem=0172D
+new.attr=attr_static
+new.p=5343 53 19
+//scales
+serv.newitem=01852
+new.attr=attr_static
+new.p=5144 75 29
+//skull with candle
+serv.newitem=01854
+new.attr=attr_static
+new.p=5144 81 29
+serv.newitem=01854
+new.attr=attr_static
+new.p=5145 73 29
+serv.newitem=01854
+new.attr=attr_static
+new.p=5178 91 5
+serv.newitem=01854
+new.attr=attr_static
+new.p=5180 92 5
+serv.newitem=01854
+new.attr=attr_static
+new.p=5181 88 7
+serv.newitem=01854
+new.attr=attr_static
+new.p=5182 90 5
+serv.newitem=01854
+new.attr=attr_static
+new.p=5267 153 18
+serv.newitem=01854
+new.attr=attr_static
+new.p=5268 156 15
+serv.newitem=01854
+new.attr=attr_static
+new.p=5314 104 18
+serv.newitem=01854
+new.attr=attr_static
+new.p=5315 107 15
+serv.newitem=01854
+new.attr=attr_static
+new.p=5144 64 29
+serv.newitem=01854
+new.attr=attr_static
+new.p=5270 154 15
+serv.newitem=01854
+new.attr=attr_static
+new.p=5317 105 15
+//skull with candle
+serv.newitem=01858
+new.attr=attr_static
+new.p=5179 89 6
+serv.newitem=01858
+new.attr=attr_static
+new.p=5266 155 15
+serv.newitem=01858
+new.attr=attr_static
+new.p=5269 152 15
+serv.newitem=01858
+new.attr=attr_static
+new.p=5313 106 15
+serv.newitem=01858
+new.attr=attr_static
+new.p=5316 103 15
+//raw fish
+serv.newitem=01E16
+new.attr=attr_static
+new.p=5343 58 19
+//fish heads
+serv.newitem=01E1B
+new.attr=attr_static
+new.p=5343 59 19
+//book
+serv.newitem=01E20
+new.attr=attr_static
+new.p=5236 145 19
+//books
+serv.newitem=01E21
+new.attr=attr_static
+new.p=5236 137 19
+//books
+serv.newitem=01E22
+new.attr=attr_static
+new.p=5237 137 19
+//books
+serv.newitem=01E23
+new.attr=attr_static
+new.p=5239 149 19
+//books
+serv.newitem=01E25
+new.attr=attr_static
+new.p=5236 149 19
+//Strength
+serv.newitem=01F3C
+new.attr=attr_static
+new.p=5304 38 44
+//Arch Cure
+serv.newitem=01F45
+new.attr=attr_static
+new.p=5304 88 19
+
+[eof]

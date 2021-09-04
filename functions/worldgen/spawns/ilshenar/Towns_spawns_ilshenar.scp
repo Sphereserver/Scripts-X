@@ -1,0 +1,73 @@
+[function spawn_towns_ilshenar]
+
+//##############
+//## By Nerun ##
+//##############
+//overrideid 311
+//overridemintime 5
+//overridemaxtime 10
+//##
+//## Towns
+//##
+//## Ancient Citadel
+//##
+f_create_spawner,Skeleton,,,,,,1517,558,5,3,5,10,35,20,1,6,0,0,0,0,0
+f_create_spawner,Spectre:Shade:Wraith,,,,,,1517,552,10,3,5,10,30,15,1,6,0,0,0,0,0
+f_create_spawner,Ghoul,Zombie,,,,,1516,557,4,3,5,10,35,20,1,2,5,0,0,0,0
+f_create_spawner,Skeletalknight:Boneknight,Skeletalmage:Bonemagi,,,,,1517,552,10,3,5,10,30,15,1,3,3,0,0,0,0
+f_create_spawner,Lich,,,,,,1517,541,11,3,5,10,20,10,1,2,0,0,0,0,0
+f_create_spawner,Lichlord,,,,,,1517,541,61,3,5,10,10,4,1,1,0,0,0,0,0
+//##
+//## Lakeshire
+//##
+f_create_spawner,MeerWarrior:MeerCaptain:MeerMage:MeerEternal,,,,,,1203,1138,-25,3,5,10,55,40,1,16,0,0,0,0,0
+f_create_spawner,Direwolf:Timberwolf,,,,,,1127,1112,-34,3,5,10,35,25,1,7,0,0,0,0,0
+f_create_spawner,Snake,,,,,,1180,1188,-25,3,5,10,15,15,1,5,0,0,0,0,0
+f_create_spawner,Giantserpent,,,,,,1181,1189,-25,3,5,10,12,12,1,1,0,0,0,0,0
+//##
+//## Mistas
+//##
+f_create_spawner,Ogre,Ogrelord,Ratman,Ratmanmage,Ratmanarcher,,817,1065,-30,3,5,10,70,60,1,5,2,10,5,4,0
+//##
+//## Montor
+//##
+f_create_spawner,Phoenix,Fireelemental,Hellhound,Lavaserpent,Lavalizard,Daemon,1643,310,48,3,5,10,50,30,1,2,4,5,4,4,2
+f_create_spawner,Succubus,Efreet,,,,,1643,310,48,3,5,10,50,30,1,2,2,0,0,0,0
+f_create_spawner,Earthelemental,Drake,,,,,1665,244,93,3,5,10,25,25,1,3,2,0,0,0,0
+f_create_spawner,harpy_stone,Stonegargoyle,Balron,,,,1715,228,78,3,5,10,10,10,1,3,2,1,0,0,0
+//##
+//## Req Volon
+//##
+f_create_spawner,Etherealwarrior,,,,,,1363,1046,-13,3,5,10,30,15,1,4,0,0,0,0,0
+//##
+//## Savage Camp 1
+//##
+f_create_spawner,savagerider,savage,,,,,1046,517,-80,3,5,10,15,15,1,3,4,0,0,0,0
+f_create_spawner,savageshaman,,,,,,1046,517,-80,3,5,10,10,7,1,4,0,0,0,0,0
+f_create_spawner,savage,savageridgeback,,,,,1116,527,-80,3,5,10,15,15,1,1,1,0,0,0,0
+f_create_spawner,bird,,,,,,1110,542,-77,3,5,10,25,25,1,3,0,0,0,0,0
+f_create_spawner,bird,,,,,,1108,492,-80,3,5,10,25,25,1,3,0,0,0,0,0
+f_create_spawner,hind,greathart,blackbear,direwolf,,,1110,542,-77,3,5,10,25,25,1,2,1,1,1,0,0
+f_create_spawner,hind,greathart,blackbear,direwolf,,,1108,492,-80,3,5,10,25,25,1,2,1,1,1,0,0
+//##
+//## Savage Camp 2
+//##
+f_create_spawner,savage,,,,,,1161,668,-80,3,5,10,5,5,1,1,0,0,0,0,0
+f_create_spawner,savage,,,,,,1181,691,-80,3,5,10,4,4,1,1,0,0,0,0,0
+f_create_spawner,savage,,,,,,1187,685,-80,3,5,10,4,4,1,1,0,0,0,0,0
+f_create_spawner,savage,,,,,,1191,696,-80,3,5,10,7,5,1,1,0,0,0,0,0
+f_create_spawner,savagerider,,,,,,1191,696,-80,3,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner,savage,,,,,,1203,762,-80,3,5,10,10,10,1,3,0,0,0,0,0
+f_create_spawner,savageshaman,,,,,,1234,760,-80,3,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner,savage,savagerider,,,,,1213,719,-80,3,5,10,10,10,1,3,1,0,0,0,0
+f_create_spawner,savage,,,,,,1214,744,-80,3,5,10,10,10,1,4,0,0,0,0,0
+f_create_spawner,savage,savageshaman,,,,,1231,694,-80,3,5,10,10,10,1,2,1,0,0,0,0
+f_create_spawner,savage,,,,,,1251,703,-80,3,5,10,10,10,1,3,0,0,0,0,0
+f_create_spawner,savage,,,,,,1274,728,-80,3,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner,savage,,,,,,1292,755,-80,3,5,10,4,4,1,1,0,0,0,0,0
+f_create_spawner,savage,,,,,,1280,770,-80,3,5,10,7,7,1,1,0,0,0,0,0
+f_create_spawner,ridgeback,,,,,,1279,781,-80,3,5,10,5,5,1,2,0,0,0,0,0
+f_create_spawner,savage,savageshaman,savagerider,,,,1243,732,-80,3,5,10,10,10,1,1,3,1,0,0,0
+f_create_spawner,savage,,,,,,1262,758,-80,3,5,10,10,10,1,4,0,0,0,0,0
+
+[EOF]

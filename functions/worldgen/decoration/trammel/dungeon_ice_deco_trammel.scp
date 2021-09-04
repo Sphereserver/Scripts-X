@@ -1,0 +1,325 @@
+[function deco_ice_dungeon_trammel]	
+	
+//flag stones//
+serv.newitem=04FE//
+new.attr=attr_static//
+new.p=5837 330 40 1//
+serv.newitem= 04FE//
+new.attr=attr_static//
+new.p=5838 329 40 1//
+//*//
+//wooden wall//
+serv.newitem=00336//
+new.attr=attr_static//
+new.p=5831 367 0 1 1//
+//*//
+//wooden fence//
+serv.newitem=00864//
+new.attr=attr_static//
+new.p=5820 357 1 1//
+serv.newitem= 00864//
+new.attr=attr_static//
+new.p=5836 360 6 1//
+//*//
+//metal chest//
+serv.newitem=009AB//
+new.attr=attr_static//
+new.p=5832 240 -3 1//
+serv.newitem= 009AB//
+new.attr=attr_static//
+new.p=5750 147 9 1//
+serv.newitem= 009AB//
+new.attr=attr_static//
+new.p=5682 181 -3 1//
+serv.newitem= 009AB//
+new.attr=attr_static//
+new.p=5763 145 -3 1//
+serv.newitem= 009AB//
+new.attr=attr_static//
+new.p=5822 359 -1 1//
+//*//
+//crate//
+serv.newitem=00E3C//
+new.attr=attr_static//
+new.p=5682 332 0 1 1//
+serv.newitem= 00E3C//
+new.attr=attr_static//
+new.p=5681 329 0 1 1//
+serv.newitem= 00E3C//
+new.attr=attr_static//
+new.p=5681 330 0 1 1//
+serv.newitem= 00E3C//
+new.attr=attr_static//
+new.p=5681 330 3 1//
+serv.newitem= 00E3C//
+new.attr=attr_static//
+new.p=5681 331 0 1 1//
+serv.newitem= 00E3C//
+new.attr=attr_static//
+new.p=5681 331 3 1//
+serv.newitem= 00E3C//
+new.attr=attr_static//
+new.p=5681 332 0 1 1//
+serv.newitem= 00E3C//
+new.attr=attr_static//
+new.p=5681 332 3 1//
+serv.newitem= 00E3C//
+new.attr=attr_static//
+new.p=5681 333 0 1 1//
+serv.newitem= 00E3C//
+new.attr=attr_static//
+new.p=5682 330 0 1 1//
+serv.newitem= 00E3C//
+new.attr=attr_static//
+new.p=5682 331 0 1 1//
+//*//
+//crate//
+serv.newitem=00E3E//
+new.attr=attr_static//
+new.p=5686 321 0 1 1//
+serv.newitem= 00E3E//
+new.attr=attr_static//
+new.p=5686 322 0 1 1//
+//*//
+//bookcase//
+//*	FullBookcase 	//
+serv.newitem= 00A9B//
+new.attr=attr_static//
+new.p=5658 320 0 1 1//
+serv.newitem= 00A9B//
+new.attr=attr_static//
+new.p=5657 320 0 1 1//
+serv.newitem= 00A9B//
+new.attr=attr_static//
+new.p=5659 320 0 1 1//
+serv.newitem= 00A9B//
+new.attr=attr_static//
+new.p=5660 320 0 1 1//
+serv.newitem= 00A9B//
+new.attr=attr_static//
+new.p=5661 320 0 1 1//
+serv.newitem= 00A9B//
+new.attr=attr_static//
+new.p=5662 320 0 1 1//
+//*//
+//wooden fence//
+serv.newitem=00863//
+new.attr=attr_static//
+new.p=5839 349 1 1//
+serv.newitem= 00863//
+new.attr=attr_static//
+new.p=5823 349 1 1//
+serv.newitem= 00863//
+new.attr=attr_static//
+new.p=5834 345 6 1//
+//*//
+//metal chest//
+//*	MetalGoldenChest 	//
+serv.newitem= 00E41//
+new.attr=attr_static//
+new.p=5717 144 -16 1//
+serv.newitem= 00E41//
+new.attr=attr_static//
+new.p=5851 227 0 1 1//
+serv.newitem= 00E41//
+new.attr=attr_static//
+new.p=5701 305 0 1 1//
+serv.newitem= 00E41//
+new.attr=attr_static//
+new.p=5659 302 0 1 1//
+serv.newitem= 00E41//
+new.attr=attr_static//
+new.p=5661 302 0 1 1//
+serv.newitem= 00E41//
+new.attr=attr_static//
+new.p=5852 231 -9 1//
+serv.newitem= 00E41//
+new.attr=attr_static//
+new.p=5687 311 0 1 1//
+serv.newitem= 00E41//
+new.attr=attr_static//
+new.p=5833 247 -2 1//
+serv.newitem= 00E41//
+new.attr=attr_static//
+new.p=5688 311 0 1 1//
+serv.newitem= 00E41//
+new.attr=attr_static//
+new.p=5689 311 0 1 1//
+//*//
+//palisade//
+serv.newitem=00223//
+new.attr=attr_static//
+new.p=5843 367 0 1 1//
+//*//
+//metal chest//
+//*	MetalGoldenChest 	//
+serv.newitem= 00E40//
+new.attr=attr_static//
+new.p=5702 306 0 1 1//
+serv.newitem= 00E40//
+new.attr=attr_static//
+new.p=5727 147 -2 1//
+serv.newitem= 00E40//
+new.attr=attr_static//
+new.p=5759 144 -4 1//
+serv.newitem= 00E40//
+new.attr=attr_static//
+new.p=5753 211 -7 1//
+//*//
+//wooden chest//
+//*	WoodenChest 	//
+serv.newitem= 00E42//
+new.attr=attr_static//
+new.p=5828 364 0 1 1//
+serv.newitem= 00E42//
+new.attr=attr_static//
+new.p=5832 242 -4 1//
+serv.newitem= 00E42//
+new.attr=attr_static//
+new.p=5760 187 -4 1//
+serv.newitem= 00E42//
+new.attr=attr_static//
+new.p=5656 305 0 1 1//
+serv.newitem= 00E42//
+new.attr=attr_static//
+new.p=5656 307 0 1 1//
+serv.newitem= 00E42//
+new.attr=attr_static//
+new.p=5768 189 -5 1//
+//*//
+//death vortex//
+serv.newitem=03798//
+new.attr=attr_static//
+new.p=5673 325 -3 1//
+//*//
+//wooden chest//
+//*	WoodenChest 	//
+serv.newitem= 00E43//
+new.attr=attr_static//
+new.p=5840 357 0 1 1//
+serv.newitem= 00E43//
+new.attr=attr_static//
+new.p=5770 185 -1 1//
+serv.newitem= 00E43//
+new.attr=attr_static//
+new.p=5849 233 -16 1//
+serv.newitem= 00E43//
+new.attr=attr_static//
+new.p=5840 358 1 1//
+serv.newitem= 00E43//
+new.attr=attr_static//
+new.p=5683 188 -2 1//
+//*//
+//wooden door//
+//strongWoodDoor//
+serv.newitem= 006E5//
+new.attr=attr_static//
+new.p=5831 346 15 1//
+//*//
+//wooden wall//
+serv.newitem=00334//
+new.attr=attr_static//
+new.p=5830 367 0 1 1//
+//*//
+//bookcase//
+//*	FullBookcase 	//
+serv.newitem= 00A99//
+new.attr=attr_static//
+new.p=5656 332 0 1 1//
+serv.newitem= 00A99//
+new.attr=attr_static//
+new.p=5656 329 0 1 1//
+serv.newitem= 00A99//
+new.attr=attr_static//
+new.p=5656 321 0 1 1//
+serv.newitem= 00A99//
+new.attr=attr_static//
+new.p=5656 323 0 1 1//
+serv.newitem= 00A99//
+new.attr=attr_static//
+new.p=5656 325 0 1 1//
+serv.newitem= 00A99//
+new.attr=attr_static//
+new.p=5656 327 0 1 1//
+//*//
+//bookcase//
+//*	FullBookcase 	//
+serv.newitem= 00A9A//
+new.attr=attr_static//
+new.p=5656 328 0 1 1//
+serv.newitem= 00A9A//
+new.attr=attr_static//
+new.p=5656 330 0 1 1//
+serv.newitem= 00A9A//
+new.attr=attr_static//
+new.p=5656 331 0 1 1//
+serv.newitem= 00A9A//
+new.attr=attr_static//
+new.p=5656 333 0 1 1//
+serv.newitem= 00A9A//
+new.attr=attr_static//
+new.p=5656 322 0 1 1//
+serv.newitem= 00A9A//
+new.attr=attr_static//
+new.p=5656 324 0 1 1//
+serv.newitem= 00A9A//
+new.attr=attr_static//
+new.p=5656 326 0 1 1//
+//*//
+//wooden door//
+//strongWoodDoor//
+serv.newitem= 006E7//
+new.attr=attr_static//
+new.p=5832 346 15 1//
+//*//
+//wooden gate//
+//*	DarkWoodGate 	//
+serv.newitem= 00866//
+new.attr=attr_static//
+new.p=5839 363 0 1 1//
+//*//
+//wooden gate//
+//*	DarkWoodGate 	//
+serv.newitem= 00868//
+new.attr=attr_static//
+new.p=5840 363 0 1 1//
+//*//
+//metal chest//
+serv.newitem=00E7C//
+new.attr=attr_static//
+new.p=5686 312 0 1 1//
+serv.newitem= 00E7C//
+new.attr=attr_static//
+new.p=5686 313 0 1 1//
+serv.newitem= 00E7C//
+new.attr=attr_static//
+new.p=5686 314 0 1 1//
+serv.newitem= 00E7C//
+new.attr=attr_static//
+new.p=5756 203 -2 1//
+//*//
+//stone wall//
+//secretStoneDoor3//
+serv.newitem= 00354//
+new.color=1109//
+new.attr=attr_static//
+new.p=5687 319 0 1 1//
+//*//
+//stone wall//
+//secretStoneDoor3//
+serv.newitem= 00356//
+new.color=1109//
+new.attr=attr_static//
+new.p=5688 319 0 1 1//
+//*//
+//palisade//
+serv.newitem=00424//
+new.attr=attr_static//
+new.p=5819 361 20 1//
+//*//
+//wood//
+serv.newitem=00738//
+new.attr=attr_static//
+new.p=5851 233 -13 1//
+
+[EOF]		

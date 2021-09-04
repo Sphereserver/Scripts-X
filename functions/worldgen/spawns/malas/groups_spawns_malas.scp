@@ -1,0 +1,11 @@
+[function spawn_dungeons_malas]
+spawn_bedlam_malas
+spawn_citadel_malas
+spawn_doom_malas
+spawn_labyrinth_malas
+
+[function spawn_outdoors_malas]
+spawn_north_malas
+spawn_south_malas
+
+[EOF]

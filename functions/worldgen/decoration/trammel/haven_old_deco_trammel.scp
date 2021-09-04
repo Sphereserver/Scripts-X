@@ -1,0 +1,134 @@
+[function deco_haven_old_trammel]
+
+// Old Haven //	
+// doors//
+serv.newitem=06A5//
+new.attr=attr_static 
+new.p=3739 2567 40 1//
+serv.newitem= 06A5
+new.attr=attr_static 
+new.p=3739 2695 40 1//
+serv.newitem= 06A5
+new.attr=attr_static 
+new.p=3731 2639 40 1//
+//
+serv.newitem=06AD//
+new.attr=attr_static 
+new.p=3719 2651 20 1//
+serv.newitem= 06AD
+new.attr=attr_static 
+new.p=3743 2683 40 1//
+serv.newitem= 06AD
+new.attr=attr_static 
+new.p=3710 2651 20 1//
+//
+// butcher shop sign//
+serv.newitem=0BA9//
+new.attr=attr_static 
+new.p=3720 2650 20 1//
+//
+serv.newitem=0A55//
+new.attr=attr_static 
+new.p=3689 2511 0 1//
+//
+serv.newitem=0A56//
+new.attr=attr_static 
+new.p=3700 2505 0 1//
+serv.newitem= 0A56
+new.attr=attr_static 
+new.p=3696 2505 0 1//
+//
+serv.newitem=0A1A//
+new.attr=attr_static 
+new.p=3694 2504 0 1//
+//
+serv.newitem=0B56//
+new.attr=attr_static 
+new.p=3690 2506 0 1//
+//
+serv.newitem=0B57//
+new.attr=attr_static 
+new.p=3691 2505 0 1//
+serv.newitem= 0B57
+new.attr=attr_static 
+new.p=3745 2680 40 1//
+//
+serv.newitem=0B58//
+new.attr=attr_static 
+new.p=3692 2506 0 1//
+serv.newitem= 0B58
+new.attr=attr_static 
+new.p=3737 2565 40 1//
+serv.newitem= 0B58
+new.attr=attr_static 
+new.p=3737 2563 40 1//
+//
+serv.newitem=0B34//
+new.attr=attr_static 
+new.p=3691 2506 0 1//
+serv.newitem= 0B34
+new.attr=attr_static 
+new.p=3728 2637 40 1//
+//
+serv.newitem=01E21//
+new.attr=attr_static 
+new.p=3691 2506 3 1//
+//
+serv.newitem=01041//
+new.attr=attr_static 
+new.p=3736 2563 44 1//
+//
+serv.newitem=09B7//
+new.attr=attr_static 
+new.p=3736 2564 44 1//
+//
+serv.newitem=0A4F//
+new.attr=attr_static 
+new.p=3729 2632 40 1//
+//
+serv.newitem=0A44//
+new.attr=attr_static 
+new.p=3744 2681 40 1//
+//
+serv.newitem=0A51//
+new.attr=attr_static 
+new.p=3744 2685 40 1//
+//
+serv.newitem=0B9E//
+new.attr=attr_static 
+new.p=3740 2696 44 1//
+//
+serv.newitem=0BCC//
+new.attr=attr_static 
+new.p=3740 2696 44 1//
+//
+serv.newitem=24DB//
+new.attr=attr_static 
+new.p=3736 2686 40 1//
+//
+serv.newitem=0E7F//
+new.attr=attr_static 
+new.p=3736 2685 40 1//
+//
+serv.newitem=0E3D//
+new.attr=attr_static 
+new.p=3738 2680 40 1//
+//
+serv.newitem=09A9//
+new.attr=attr_static 
+new.p=3739 2680 40 1//
+//
+serv.newitem=0E77//
+new.attr=attr_static 
+new.p=3741 2680 40 1//
+serv.newitem= 0E77
+new.attr=attr_static 
+new.p=3740 2680 40 1//
+serv.newitem= 0E77
+new.attr=attr_static 
+new.p=3734 2574 40 1//
+serv.newitem= 0E77
+new.attr=attr_static 
+new.p=3732 2640 40 1//
+
+[EOF]

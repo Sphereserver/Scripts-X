@@ -1,0 +1,19 @@
+[function spawn_ancient_lair_ilshenar]
+
+//##############
+//## By Nerun ##
+//##############
+//overrideid 301
+//##
+//## Ancient LairCave
+//##
+f_create_spawner,AncientWyrm,,,,,,50,689,-28,3,10,20,15,30,1,1,0,0,0,0,0
+//overridemintime 5
+//overridemaxtime 10
+f_create_spawner,fireelemental:lavalizard,,,,,,115,716,-28,3,5,10,15,15,1,3,0,0,0,0,0
+f_create_spawner,fireelemental:lavalizard,,,,,,131,78,0,3,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner,fireelemental:lavalizard,,,,,,54,718,-28,3,5,10,10,10,1,1,0,0,0,0,0
+f_create_spawner,fireelemental,lavalizard,,,,,82,718,-28,3,5,10,15,15,1,2,2,0,0,0,0
+f_create_spawner,fireelemental:lavalizard,,,,,,79,687,-28,3,5,10,10,10,1,1,0,0,0,0,0
+
+[EOF]

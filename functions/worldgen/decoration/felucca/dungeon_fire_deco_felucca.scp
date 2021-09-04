@@ -1,0 +1,372 @@
+[function deco_fire_dungeon_felucca]
+
+// teleporter
+serv.newitem=01BC3 
+new.morep=5690 1352 -26
+new.attr=attr_static|attr_invis
+new.p=5691 1348 0
+new.name=teleporter
+new.type=t_telepad
+// teleporter
+serv.newitem=01BC3 
+new.morep=5691 1348 0
+new.attr=attr_static|attr_invis
+new.p=5690 1352 -26
+new.name=teleporter
+new.type=t_telepad
+//////////////////////////////
+// Decorations //
+//////////////////////////////
+//bellows
+serv.newitem=01986
+new.attr=attr_static 
+new.p=5640 1410 0
+//	
+//forge
+serv.newitem=0198A
+new.attr=attr_static 
+new.p=5640 1411 0
+//	
+//forge
+serv.newitem=01996
+new.attr=attr_static 
+new.p=5640 1412 0
+//	
+//bellows
+serv.newitem=01992
+new.attr=attr_static 
+new.p=5640 1413 0
+//	
+//metal chest
+//	MetalGoldenChest
+serv.newitem=0E40
+new.attr=attr_static 
+new.p=5675 1433 0
+serv.newitem=0E40  
+new.attr=attr_static 
+new.p=5647 1434 0
+serv.newitem=0E40  
+new.attr=attr_static 
+new.p=5640 1433 0
+serv.newitem=0E40  
+new.attr=attr_static 
+new.p=5640 1435 0
+serv.newitem=0E40  
+new.attr=attr_static 
+new.p=5640 1437 0
+serv.newitem=0E40  
+new.attr=attr_static 
+new.p=5650 1438 0
+//	
+//stalagmites
+serv.newitem=08E0
+new.attr=attr_static 
+new.p=5690 1328 -1
+new.type=t_normal
+serv.newitem=08E0
+new.attr=attr_static 
+new.p=5717 1410 42
+new.type=t_normal
+serv.newitem=08E0
+new.attr=attr_static 
+new.p=5718 1409 42
+new.type=t_normal
+serv.newitem=08E0
+new.attr=attr_static 
+new.p=5718 1410 40
+new.type=t_normal
+//	
+//fire column
+//	FlameSpurtTrap
+serv.newitem=03709
+new.attr=attr_static 
+new.p=5688 1353 -26
+serv.newitem=03709
+new.attr=attr_static 
+new.p=5689 1354 -26
+serv.newitem=03709
+new.attr=attr_static 
+new.p=5690 1354 -26
+serv.newitem=03709
+new.attr=attr_static 
+new.p=5691 1354 -26
+serv.newitem=03709
+new.attr=attr_static 
+new.p=5692 1353 -26
+serv.newitem=03709
+new.attr=attr_static 
+new.p=5692 1352 -26
+serv.newitem=03709
+new.attr=attr_static 
+new.p=5689 1350 -26
+serv.newitem=03709
+new.attr=attr_static 
+new.p=5691 1350 -26
+serv.newitem=03709
+new.attr=attr_static 
+new.p=5692 1351 -26
+serv.newitem=03709
+new.attr=attr_static 
+new.p=5688 1351 -26
+serv.newitem=03709
+new.attr=attr_static 
+new.p=5688 1352 -26
+serv.newitem=03709
+new.attr=attr_static 
+new.p=5690 1350 -26
+//	
+//pentagram
+//	PentagramAddon
+serv.newitem=0FEA
+new.attr=attr_static 
+new.p=5690 1352 -26
+serv.newitem=0FEA
+new.attr=attr_static 
+new.p=5691 1348 0
+//	
+//glowing rune
+serv.newitem=0E68
+new.attr=attr_static 
+new.p=5686 1432 22
+//	
+//boulder
+serv.newitem=01362
+new.attr=attr_static 
+new.p=5696 1388 -1
+serv.newitem=01362
+new.attr=attr_static 
+new.p=5694 1388 4
+serv.newitem=01362
+new.attr=attr_static 
+new.p=5695 1388 4
+serv.newitem=01362
+new.attr=attr_static 
+new.p=5695 1387 0
+serv.newitem=01362
+new.attr=attr_static 
+new.p=5694 1387 2
+//	
+//barrel
+//	Barrel
+serv.newitem=0E77
+new.attr=attr_static 
+new.p=5645 1400 22
+serv.newitem=0E77
+new.attr=attr_static 
+new.p=5653 1400 22
+//	
+//empty tub
+serv.newitem=0E83
+new.attr=attr_static 
+new.p=5648 1400 0
+//	
+//keg
+//	Keg
+serv.newitem=0E7F
+new.attr=attr_static 
+new.p=5720 1386 2
+//	
+//wooden chest
+//	WoodenChest
+serv.newitem=0E43
+new.attr=attr_static 
+new.p=5675 1436 0
+serv.newitem=0E43
+new.attr=attr_static 
+new.p=5728 1391 -1
+serv.newitem=0E43
+new.attr=attr_static 
+new.p=5673 1434 0
+//	
+//metal door
+//	MetalDoor2
+serv.newitem=06C5
+new.attr=attr_static 
+new.p=5835 1487 -1
+serv.newitem=06C5
+new.attr=attr_static 
+new.p=5835 1431 0
+serv.newitem=06C5
+new.attr=attr_static 
+new.p=5643 1408 0
+serv.newitem=06C5
+new.attr=attr_static 
+new.p=5651 1412 0
+serv.newitem=06C5
+new.attr=attr_static 
+new.p=5643 1416 22
+serv.newitem=06C5
+new.attr=attr_static 
+new.p=5851 1431 0
+serv.newitem=06C5
+new.attr=attr_static 
+new.p=5723 1295 0
+serv.newitem=06C5
+new.attr=attr_static 
+new.p=5731 1383 0
+//	
+//metal chest
+//	Metalchest
+serv.newitem=0E7C
+new.attr=attr_static 
+new.p=5672 1434 0
+//	
+//metal chest
+//	MetalChest
+serv.newitem=09AB
+new.attr=attr_static 
+new.p=5723 1384 -2
+serv.newitem=09AB
+new.attr=attr_static 
+new.p=5673 1433 0
+//	
+//stone stairs
+serv.newitem=07A6
+new.attr=attr_static 
+new.p=5786 1337 -5
+serv.newitem=07A6
+new.attr=attr_static 
+new.p=5787 1337 -5
+serv.newitem=07A6
+new.attr=attr_static 
+new.p=5788 1337 -5
+//	
+//stone
+serv.newitem=07A3
+new.attr=attr_static 
+new.p=5786 1338 -5
+serv.newitem=07A3
+new.attr=attr_static 
+new.p=5787 1338 -5
+serv.newitem=07A3
+new.attr=attr_static 
+new.p=5788 1338 -5
+//	
+//metal door
+//	MetalDoor2
+serv.newitem=06CD
+new.attr=attr_static 
+new.p=5647 1443 0
+serv.newitem=06CD
+new.attr=attr_static 
+new.p=5642 1401 22
+serv.newitem=06CD
+new.attr=attr_static 
+new.p=5655 1402 0
+serv.newitem=06CD
+new.attr=attr_static 
+new.p=5647 1420 0
+serv.newitem=06CD
+new.attr=attr_static 
+new.p=5644 1409 22
+serv.newitem=06CD
+new.attr=attr_static 
+new.p=5655 1363 -1
+serv.newitem=06CD
+new.attr=attr_static 
+new.p=5679 1434 0
+serv.newitem=06CD 
+new.attr=attr_static 
+new.p=5679 1444 0
+serv.newitem=06CD
+new.attr=attr_static 
+new.p=5687 1441 -1
+serv.newitem=06CD
+new.attr=attr_static 
+new.p=5855 1475 0
+serv.newitem=06CD
+new.attr=attr_static 
+new.p=5855 1427 0
+serv.newitem=06CD
+new.attr=attr_static 
+new.p=5671 1315 0
+//	
+//rock
+serv.newitem=01773
+new.attr=attr_static 
+new.p=5711 1337 1
+//	
+//metal chest
+//	MetalGoldenChest
+serv.newitem=0E41
+new.attr=attr_static 
+new.p=5642 1432 0
+//	
+//vines
+serv.newitem=0CF1
+new.attr=attr_static 
+new.p=5854 1457 0
+//	
+//rock
+serv.newitem=01772
+new.attr=attr_static 
+new.p=5688 1328 1
+serv.newitem=01772
+new.attr=attr_static 
+new.p=5712 1337 -3
+//	
+//rock
+serv.newitem=01778
+new.attr=attr_static 
+new.p=5710 1336 2
+//	
+//rock
+serv.newitem=01775
+new.attr=attr_static 
+new.p=5711 1336 -1
+//	
+//metal door
+//	MetalDoor2
+serv.newitem=06D1
+new.attr=attr_static 
+new.p=5647 1410 0
+serv.newitem=06D1
+new.attr=attr_static 
+new.p=5647 1402 0
+//	
+//rock
+serv.newitem=01774
+new.attr=attr_static 
+new.p=5712 1338 -2
+//	
+//metal door
+//	MetalDoor2
+serv.newitem=06C9
+new.attr=attr_static 
+new.p=5691 1343 0
+serv.newitem=06C9
+new.attr=attr_static 
+new.p=5651 1439 0
+serv.newitem=06C9
+new.attr=attr_static 
+new.p=5650 1416 22
+//	
+//barrel
+serv.newitem=0FAE
+new.attr=attr_static 
+new.p=5645 1413 22
+serv.newitem=0FAE
+new.attr=attr_static 
+new.p=5643 1415 0
+//	
+//wooden chest
+//	WoodenChest
+serv.newitem=0E42
+new.attr=attr_static 
+new.p=5640 1403 0
+serv.newitem=0E42
+new.attr=attr_static 
+new.p=5640 1404 0
+//	
+//metal door
+//	MetalDoor2
+serv.newitem=06CB
+new.attr=attr_static 
+new.p=5651 1416 22
+//	
+//forge
+serv.newitem=0198A
+new.attr=attr_static 
+new.p=5640 1411 0
+
+[EOF]

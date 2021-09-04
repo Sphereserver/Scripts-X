@@ -1,0 +1,13 @@
+[function deco_heartwood_trammel]
+	
+//Entrance portal//
+serv.newitem=03967//
+new.attr=attr_static//
+new.p=535 992 0 1 1//
+//
+// Exit Portal//
+serv.newitem=03967//
+new.attr=attr_static//
+new.p=6984 338 0 1 1//
+
+[EOF]		
