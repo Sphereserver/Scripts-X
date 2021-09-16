@@ -529,6 +529,7 @@ DESCRIPTION=Door 1 (opened)
 [ITEMDEF 0675]
 DEFNAME=i_door_metal
 TYPE=t_door
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Metal Door
 DESCRIPTION=@ (closed)
@@ -537,6 +538,7 @@ DUPELIST=0677,0679,067b,067d,067f,0681,0683
 [ITEMDEF 0676]
 DEFNAME=i_door_metal_o
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Metal Door
 DESCRIPTION=@ (opened)
@@ -601,6 +603,7 @@ DUPEITEM=0676
 [ITEMDEF 0685]
 DEFNAME=i_door_metal_bar
 TYPE=t_door
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Barred Metal Door (tall)
 DESCRIPTION=@ (closed)
@@ -609,6 +612,7 @@ DUPELIST=0687,0689,068b,068d,068f,0691,0693
 [ITEMDEF 0686]
 DEFNAME=i_door_metal_bar_o
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Barred Metal Door (tall)
 DESCRIPTION=@ (opened)
@@ -745,6 +749,7 @@ DUPEITEM=0696
 [ITEMDEF 06a5]
 DEFNAME=i_door_wood
 TYPE=t_door
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Wooden Door (dark wood)
 DESCRIPTION=@ (closed)
@@ -753,6 +758,7 @@ DUPELIST=06a7,06a9,06ab,06ad,06af,06b1,06b3
 [ITEMDEF 06a6]
 DEFNAME=i_door_wood_o
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Wooden Door (dark wood)
 DESCRIPTION=@ (opened)
@@ -817,6 +823,7 @@ DUPEITEM=06a6
 [ITEMDEF 06b5]
 DEFNAME=i_door_wood_4
 TYPE=t_door
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Wooden Door (dark wood tall)
 DESCRIPTION=@ (closed)
@@ -825,6 +832,7 @@ DUPELIST=06b7,06b9,06bb,06bd,06bf,06c1,06c3
 [ITEMDEF 06b6]
 DEFNAME=i_door_wood_4_o
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Wooden Door (dark wood tall)
 DESCRIPTION=@ (opened)
@@ -889,6 +897,7 @@ DUPEITEM=06b6
 [ITEMDEF 06c5]
 DEFNAME=i_door_metal_2
 TYPE=t_door
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Metal Door (tall)
 DESCRIPTION=@ (closed)
@@ -897,6 +906,7 @@ DUPELIST=06c7,06c9,06cb,06cd,06cf,06d1,06d3
 [ITEMDEF 06c6]
 DEFNAME=i_door_metal_2_o
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Metal Door (tall)
 DESCRIPTION=@ (opened)
@@ -961,6 +971,7 @@ DUPEITEM=06c6
 [ITEMDEF 06d5]
 DEFNAME=i_door_wood_2
 TYPE=t_door
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Wooden Door (light wood)
 DESCRIPTION=@ (closed)
@@ -969,6 +980,7 @@ DUPELIST=06d7,06d9,06db,06dd,06df,06e1,06e3
 [ITEMDEF 06d6]
 DEFNAME=i_door_wood_2_o
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Wooden Door (light wood)
 DESCRIPTION=@ (opened)
@@ -1033,6 +1045,7 @@ DUPEITEM=06d6
 [ITEMDEF 06e5]
 DEFNAME=i_door_wood_3
 TYPE=t_door
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Heavy Wooden Door (dark wood)
 DESCRIPTION=@ (closed)
@@ -1041,6 +1054,7 @@ DUPELIST=06e7,06e9,06eb,06ed,06ef,06f1,06f3
 [ITEMDEF 06e6]
 DEFNAME=i_door_wood_3_o
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Heavy Wooden Door (dark wood)
 DESCRIPTION=@ (opened)
@@ -1393,6 +1407,7 @@ DUPEITEM=0866
 [ITEMDEF 01fed]
 DEFNAME=i_door_metal_bar_2
 TYPE=t_door
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Barred Metal Door
 DESCRIPTION=@ (closed)
@@ -1401,6 +1416,7 @@ DUPELIST=01fef,01ff1,01ff3,01ff5,01ff7,01ff9,01ffb
 [ITEMDEF 01fee]
 DEFNAME=i_door_metal_bar_2_o
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Barred Metal Door
 DESCRIPTION=@ (opened)
@@ -1465,6 +1481,7 @@ DUPEITEM=01fee
 [ITEMDEF 0241f]
 DEFNAME=i_door_wooden_dark_o
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Dark Wooden Door
 DESCRIPTION=@ (opened)
@@ -1473,6 +1490,7 @@ DUPELIST=02421,02423
 [ITEMDEF 02420]
 DEFNAME=i_door_wooden_dark
 TYPE=t_door
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Dark Wooden Door
 DESCRIPTION=@ (closed)
