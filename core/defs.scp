@@ -337,6 +337,9 @@ LAYER_SPELL_Bombard				76
 LAYER_SPELL_Spell_Plague		77
 LAYER_SPELL_Nether_Cyclone		78
 
+//Individual Spell Layers
+LAYER_SPELL_Mana_Drain			79
+
 [DEFNAME def_gumps]
 // name the gumps.
 g_btn_green_ok           081a
