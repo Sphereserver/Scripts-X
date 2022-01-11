@@ -3463,8 +3463,8 @@ ON=@Create
    ITEM=i_shepherds_crook,1,R2
 
 ON=@NPCRestock
-   SELL=VENDOR_S_RANCHER
-   BUY=VENDOR_B_RANCHER
+   SELL=VENDOR_S_BOWYER //VENDOR_S_RANCHER
+   BUY=VENDOR_B_BOWYER //VENDOR_B_RANCHER
 
 [CHARDEF c_rancher_elf_f]
 ID=c_elf_female
