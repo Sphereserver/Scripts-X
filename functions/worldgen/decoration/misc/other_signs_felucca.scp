@@ -417,7 +417,7 @@ f_add_sign 7976,1604,2484,7,A calm mind may travel where others may not tread
 [function f_add_sign]
 serv.newitem <argv[0]>
 new.attr=010
-new.name=<argv[4]>
+new.name=<argv[5]>
 new.p=<argv[1]>,<argv[2]>,<argv[3]>
 
 
