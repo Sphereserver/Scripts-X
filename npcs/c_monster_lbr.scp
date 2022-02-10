@@ -2546,7 +2546,7 @@ ON=@CreateLoot
     ITEM=i_reag_black_pearl,{6 10}
     ITEM=i_reag_mandrake_root,{6 10}
     ITEM=i_mortar_pestle
-    //ITEM=i_bola_ball
+    ITEM=i_bola_ball
 
 [CHARDEF 0b7]
 //FIXME: Bola attack vs mounted opponents
@@ -2593,8 +2593,14 @@ ON=@Create
    RESPOISON={20 30}
    ITEMNEWBIE=random_male_hair
    COLOR=colors_hair
+   item=i_spear
+   item=i_bone_arms
+   item=i_bone_leggings
+   item=i_bola_ball,R50
+   //item=i_mask_orcish_kin,R25
 ON=@CreateLoot
    ITEM=loot_savage_warrior
+   ITEM=i_gold,{50 100}
 ON=@Hit
    //Triple Damage Attack vs pets
    IF (<FLAGS>&statf_pet)
@@ -2647,9 +2653,16 @@ ON=@Create
    RESPOISON={20 30}
    ITEMNEWBIE=random_female_hair
    COLOR=colors_hair
+   item=i_spear
+   item=i_bone_arms
+   item=i_bone_leggings
+   item=i_bola_ball,R50
+   //item=i_mask_orcish_kin,R25
+   //item=i_tribal_berry,R25
 
 ON=@Createloot
    ITEM=loot_savage_warrior
+   ITEM=i_gold,{50 100}
 ON=@Hit
    //Triple Damage Attack vs pets
    IF (<FLAGS>&statf_pet)
@@ -2701,7 +2714,15 @@ ON=@Create
    RESPOISON={20 30}
    ITEMNEWBIE=random_male_hair
    COLOR=colors_hair
-   ITEM=03eba
+   item=i_spear
+   item=i_bone_arms
+   item=i_bone_leggings
+   item=i_mask_bear
+   item=i_gold,{125 175}
+   item=i_bola_ball,R25
+   //item=i_mask_orcish_kin,R25
+   //item=i_tribal_spear,R25
+   ITEMNEWBIE=i_mt_ridgeback
 
 ON=@Createloot
    ITEM=loot_savage_rider
@@ -2777,9 +2798,16 @@ ON=@Create
    RESPOISON={20 30}
    ITEMNEWBIE=random_female_hair
    COLOR=colors_hair
+   item=i_bone_arms
+   item=i_bone_leggings
+   item=i_mask_deer
+   item=random_reagent,{10 15}
+   //item=i_tribal_berry,R25
+   //item=i_mask_orcish_kin,R25
 
 ON=@Createloot
    ITEM=loot_savage_warrior
+   ITEM=i_gold,{125 127}
 ON=@Hit
    //Triple Damage Attack vs pets
    IF (<FLAGS>&statf_pet)

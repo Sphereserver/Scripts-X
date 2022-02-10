@@ -941,7 +941,7 @@ ON=@Create
 ON=@CreateLoot
      ITEM=i_gold,{50 100}
      ITEM=random_weapon_all_normal
-     //ITEM=i_bola_ball
+     ITEM=i_bola_ball
      ITEM=i_treasure_map1,R99
 
 

@@ -636,6 +636,19 @@ ON=@Create
 //spear
 DUPEITEM=0f62
 
+[ITEMDEF i_tribal_spear]
+ID=i_spear
+NAME=Tribal Spear
+TAG.DamageIncrease=80
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Tribal Spear
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=80
+
+
+
 
 [ITEMDEF 0fb4]
 DEFNAME=i_hammer_sledge
@@ -2278,5 +2291,33 @@ DUPEITEM=02d28
 [ITEMDEF 02d35]
 //elven machete
 DUPEITEM=02d29
+
+///////////////////////////////////////////////////////////////
+//////// BOLAS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 026ac]
+DEFNAME=i_bola
+NAME=bola
+TYPE=t_bola
+WEIGHT=4.0
+SKILLMAKE=Tinkering 60.0, t_tinker_tools
+RESOURCES=4 i_bola_ball, 3 i_hides_cut
+CATEGORY=Provisions - Weapons - Throwing
+SUBSECTION=Bolas
+DESCRIPTION=Bola
+
+[ITEMDEF i_bola_ball]
+//The bola ball is used to craft a bola, is is not actually ammunition
+ID=i_cannon_ball
+NAME=bola ball%s
+TYPE=t_normal
+WEIGHT=4.0
+SKILLMAKE=Tinkering 45.0, t_tinker_tools
+RESOURCES=10 i_ingot_iron
+CATEGORY=Provisions - Weapons - Throwing
+SUBSECTION=Bolas
+DESCRIPTION=Bola Ball
+ON=@Create
+   COLOR=08ac
 
 [EOF]

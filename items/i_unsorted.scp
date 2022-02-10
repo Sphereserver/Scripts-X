@@ -2503,18 +2503,6 @@ CATEGORY=Provisions - Weapons
 SUBSECTION=Decorative
 DESCRIPTION=War Mace
 
-[ITEMDEF 026ac]
-DEFNAME=i_bola
-NAME=bola
-TYPE=t_normal
-VALUE=30
-WEIGHT=4.1
-RESOURCES=3 i_hides_cut,1 i_string,4 i_ingot_iron
-SKILLMAKE=tinkering 75.0,t_tinker_tools
-CATEGORY=Provisions - Weapons
-SUBSECTION=Throwing
-DESCRIPTION=Bola
-
 [ITEMDEF 027e7]
 //hakama-shita
 DUPEITEM=0279c

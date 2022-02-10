@@ -1,0 +1,125 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+
+[COMMENT typedef_t_bola]
+This script could be improved:
+- Test it correctly and traduce some langage
+- replace the hardcoded language strings with cliloc
+
+
+[TYPEDEF t_bola]
+ON=@DClick
+if <topobj.uid> != <src.uid>
+   src.sysmessage <def.scp.bola_notinpack>
+   return 1
+endif
+if <src.ctag0.delay.bola> > <serv.time>
+   src.sysmessage <def.scp.bola_cantusenow>
+   return 1
+endif
+if <tag0.inuse>
+   src.sysmessage <def.scp.bola_inuse>
+   return 1
+endif
+//This code was removed because the system now automatically unequips the items
+//if <src.findlayer.1.uid> || <src.findlayer.2.uid>
+//   src.sysmessage <def.scp.bola_handsfree>
+//   return 1
+//endif
+if <src.flags>&statf_onhorse
+   src.sysmessage <def.scp.bola_youremounted>
+   return 1
+endif
+if <src.flags>&statf_polymorph
+   src.sysmessage <def.scp.bola_polymorphed>
+   return 1
+endif
+src.findlayer.1.unequip
+src.findlayer.2.unequip
+src.events +e_bola
+src.message <def.scp.bola_beginfrom>
+tag.inuse = 1
+timerf 2,target // <src.f_combatsys_hitspeed 3.0>
+forclients 18
+   if (<src.uid> != <uid>)
+      trysrc <uid> uid.<src.uid>.message <def.scp.bola_beginto>,<src.name>
+   endif
+endfor
+return 1
+
+ON=@TargOn_Char
+src.events -e_Bola
+tag.inuse
+if <topobj.uid> != <src.uid>
+   src.sysmessage <def.scp.bola_notinpack>
+   return 1
+endif
+//This code was removed because the system now automatically unequips the items
+//if <src.findlayer.1.uid> || <src.findlayer.2.uid>
+//   src.sysmessage <def.scp.bola_handsfree>
+//   return 1
+//endif
+if !(<argo.flags>&statf_onhorse)
+   src.sysmessage <def.scp.bola_noreason>
+   return 1
+endif
+if <src.flags>&statf_polymorph
+   src.sysmessage <def.scp.bola_polymorphed>
+   return 1
+endif
+local.plore = <eval (<src.archery> * (<argo.animallore> / 3.3)) / 100>
+local.pdex = <eval (<src.archery> * (<argo.dex> / 2)) / 100>
+local.random = <eval (<src.archery> - <local.plore> - <local.pdex>) / 10>
+src.face <argo.uid>
+src.anim 11
+argo.effect 0,026ac,10,0,0,0,0
+p = <argo.p>
+if <r100> > <local.random>
+   src.sysmessage @,,1 Has errado a <argo.name>!
+else
+   src.sysmessage @,,1 Lo embocaste!
+   argo.damage 1 dam_god <src.uid>
+   argo.dismount
+   argo.events +e_BolaHit
+   argo.timerf 3,events -e_BolaHit
+   src.tag.delay.bola = <eval <serv.time> + 2.0>
+   argo.update
+   attr |= attr_decay
+   timer = <eval <serv.decaytimer> * 60>
+   update
+endif
+
+ON=@TargOn_Ground
+src.sysmessage @,,1 Asi solo logras romper las bolas.
+src.events -e_Bola
+tag.inuse
+
+ON=@TargOn_Item
+src.sysmessage @,,1 Asi solo logras romper las bolas, o el otro objeto.
+src.events -e_Bola
+tag.inuse
+
+ON=@TargOn_Cancel
+src.events -e_Bola
+tag.inuse
+
+
+[EVENTS e_Bola]
+ON=@ItemEquipTest
+RETURN 1
+
+ON=@ItemUnEquipTest
+RETURN 1
+
+ON=@Mount
+RETURN 1
+
+[EVENTS e_BolaHit]
+ON=@Mount
+RETURN 1
+
+[eof]

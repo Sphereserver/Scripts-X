@@ -1067,7 +1067,7 @@ ON=@CreateLoot
     ITEM=i_gold,{60 60}
     //ITEM=magic_items
     ITEM=random_jewel
-    //ITEM=i_bola_ball
+    ITEM=i_bola_ball
     ITEM={i_bottle_wine 1}
     //ITEM=i_goblin_blood
 
