@@ -854,6 +854,7 @@ EMOTE_DEF_UNICODE	0
 //spell_poison_2				"very ill"
 //spell_poison_3				"extremely sick"
 //spell_poison_4				"deathly sick"
+//spell_poison_5				"lethally sick"
 //spell_osipoison_lesser		"feel a bit nauseous"
 //spell_osipoison_standard		"feel disorientated and nauseous!"
 //spell_osipoison_greater		"begin to feel pain throughout your body!"
