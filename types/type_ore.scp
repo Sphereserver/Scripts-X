@@ -17,6 +17,7 @@ elif <src.mining> >= <eval <skillmake.1.value>-100>
       args = <src.isneartype.p t_forge 2>
       forclients 18
          src.f_fireforge
+	 sound 02B
       endfor
       if <r> <= <eval (((<src.mining> - <skillmake.1.value>)*2)+50)>
          serv.newitem <tdata1>
