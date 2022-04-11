@@ -48,6 +48,7 @@ FORITEMS 3
 	   NEW.P=<P>
 	   NEW.NUDGEUP 8
 	   NEW.TIMER=1
+	   Break 
 	ENDIF
 ENDFOR
 
