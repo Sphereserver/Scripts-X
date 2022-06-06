@@ -885,6 +885,7 @@ EMOTE_DEF_UNICODE	0
 //spell_tele_jailed_1			"You feel the world is punishing you."
 //spell_tele_jailed_2			"You feel you should be ashamed of your actions."
 //spell_try_am				"An anti-magic field disturbs the spell."
+//spell_try_busyhands		"Your hands must be free to cast spells or meditate."
 //spell_try_dead				"This is beyond your ability."
 //spell_try_frozenhands			"You cannot cast spells while your hands are frozen."
 //spell_try_nobook			"You don't have a spellbook handy."
