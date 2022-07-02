@@ -190,39 +190,39 @@ dtext 525 180 1000 General
 button 490 200 4026 4028 0 2 0
 dtext 525 200 193 PROPS
 
-checkbox 15 40 210 211 <eval <SRC.TARG.ATTR>&01> 0 // Identified
+checkbox 15 40 210 211 <QVAL <EVAL <SRC.TARG.ATTR>&01 > 0 ? 1:0> 0 // Identified
 dtext 45 40 995 Identified
-checkbox 15 60 210 211 <eval <SRC.TARG.ATTR>&02> 1 // Decay
+checkbox 15 60 210 211 <QVAL <EVAL <SRC.TARG.ATTR>&02 > 0 ? 1:0> 1 // Decay
 dtext 45 60 995 Decay
-checkbox 15 80 210 211 <eval <SRC.TARG.ATTR>&04> 2 // Newbie
+checkbox 15 80 210 211 <QVAL <EVAL <SRC.TARG.ATTR>&04 > 0 ? 1:0> 2 // Newbie
 dtext 45 80 995 Newbie
-checkbox 15 100 210 211 <eval <SRC.TARG.ATTR>&08> 3 // Always Moveable
+checkbox 15 100 210 211 <QVAL <EVAL <SRC.TARG.ATTR>&08 > 0 ? 1:0> 3 // Always Moveable
 dtext 45 100 995 Always Moveable
-checkbox 15 120 210 211 <eval <SRC.TARG.ATTR>&010> 4 // Never Moveable
+checkbox 15 120 210 211 <QVAL <EVAL <SRC.TARG.ATTR>&010 > 0 ? 1:0> 4 // Never Moveable
 dtext 45 120 995 Never Moveable
-checkbox 15 140 210 211 <eval <SRC.TARG.ATTR>&020> 5 // Magic
+checkbox 15 140 210 211 <QVAL <EVAL <SRC.TARG.ATTR>&020 > 0 ? 1:0> 5 // Magic
 dtext 45 140 995 Magic
-checkbox 15 160 210 211 <eval <SRC.TARG.ATTR>&040> 6 // Town Owned
+checkbox 15 160 210 211 <QVAL <EVAL <SRC.TARG.ATTR>&040 > 0 ? 1:0> 6 // Town Owned
 dtext 45 160 995 Town Owned
-checkbox 15 180 210 211 <eval <SRC.TARG.ATTR>&080> 7 // Invisible
+checkbox 15 180 210 211 <QVAL <EVAL <SRC.TARG.ATTR>&080 > 0 ? 1:0> 7 // Invisible
 dtext 45 180 995 Invisible
-checkbox 15 200 210 211 <eval <SRC.TARG.ATTR>&0100> 8 // Cursed
+checkbox 15 200 210 211 <QVAL <EVAL <SRC.TARG.ATTR>&0100 > 0 ? 1:0> 8 // Cursed
 dtext 45 200 995 Cursed
-checkbox 15 220 210 211 <eval <SRC.TARG.ATTR>&0200> 9 // Damned
+checkbox 15 220 210 211 <QVAL <EVAL <SRC.TARG.ATTR>&0200 > 0 ? 1:0> 9 // Damned
 dtext 45 220 995 Damned
-checkbox 15 240 210 211 <eval <SRC.TARG.ATTR>&0400> 10 // Blessed
+checkbox 15 240 210 211 <QVAL <EVAL <SRC.TARG.ATTR>&0400 > 0 ? 1:0> 10 // Blessed
 dtext 45 240 995 Blessed
-checkbox 15 260 210 211 <eval <SRC.TARG.ATTR>&0800> 11 // Sacred
+checkbox 15 260 210 211 <QVAL <EVAL <SRC.TARG.ATTR>&0800 > 0 ? 1:0> 11 // Sacred
 dtext 45 260 995 Sacred
-checkbox 15 280 210 211 <eval <SRC.TARG.ATTR>&01000> 12 // For Sale
+checkbox 15 280 210 211 <QVAL <EVAL <SRC.TARG.ATTR>&01000 > 0 ? 1:0> 12 // For Sale
 dtext 45 280 995 For Sale
-checkbox 15 300 210 211 <eval <SRC.TARG.ATTR>&02000> 13 // Stolen
+checkbox 15 300 210 211 <QVAL <EVAL <SRC.TARG.ATTR>&02000 > 0 ? 1:0> 13 // Stolen
 dtext 45 300 995 Stolen
-checkbox 215 40 210 211 <eval <SRC.TARG.ATTR>&04000> 14 // Can Decay
+checkbox 215 40 210 211 <QVAL <EVAL <SRC.TARG.ATTR>&04000 > 0 ? 1:0> 14 // Can Decay
 dtext 245 40 995 Can Decay
-checkbox 215 60 210 211 <eval <SRC.TARG.ATTR>&08000> 15 // Static
+checkbox 215 60 210 211 <QVAL <EVAL <SRC.TARG.ATTR>&08000 > 0 ? 1:0> 15 // Static
 dtext 245 60 995 Static
-checkbox 215 80 210 211 <eval <SRC.TARG.ATTR>&080000000> 16 // CanUse Paralyse
+checkbox 215 80 210 211 <QVAL <EVAL <SRC.TARG.ATTR>&080000000 > 0 ? 1:0> 16 // CanUse Paralyse
 dtext 245 80 995 Canuse Paralyzed
 button 350 295 4005 4007 1 0 999
 dtext 385 295 0c1 APPLY
