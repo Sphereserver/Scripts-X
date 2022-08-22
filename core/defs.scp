@@ -109,6 +109,7 @@ spellflag_bless            010000000  // Benefitial spells like Bless,Agility,et
 spellflag_curse            020000000  // Curses just like Weaken,Purge Magic,Curse,etc.
 spellflag_heal             040000000  // spell used to heal hitpoints
 spellflag_tick			   080000000  // A spell is going to tick and causing an effect.
+spellflag_freezeoncast     0100000000 // when cast this spell gets frozen, opposite to SPELLFLAG_NOFREEZEONCAST (MAGICF_FREEZEONCAST must be disabled.)
 
 [DEFNAME mem_flags]
 memory_sawcrime      00001   // i saw them commit a crime or i was attacked criminally. i can call the guards on them.
@@ -180,7 +181,7 @@ attr_static             000008000 //WorldForge merge marker. (used for statics s
 attr_exceptional        000010000 //Is item exceptional?
 attr_enchanted          000020000 //Is item enchanted?
 attr_imbued             000040000 //Is item imbued?
-attr_questitem          000080000 //Is it a quest item?
+attr_questitem          000080000 //Is it a quest item? Items can't be dropped, traded or looted
 attr_insured            000100000 //Is item insured?
 attr_nodrop             000200000 //No-drop
 attr_notrade            000400000 //No-trade
@@ -193,7 +194,7 @@ attr_shardbound         010000000 //Unused: No info.
 attr_accountbound       020000000 //Unused: No info.
 attr_characterbound     040000000 //Unused: No info.
 attr_canuse_paralyzed	080000000 //Can item usable while paralyzed?
-//attr_cannotrepair       0400000000000 //Unused.
+attr_cannotrepair       0400000000000 //Item cannot be repair
 //attr_factionitem        080000000000000 //Unused.
 //attr_vvvitem            0100000000000000 //Unused.
 
