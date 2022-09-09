@@ -131,7 +131,6 @@ templates_special/
 
 //WorldGen Should be comment after the word generation is done
 functions/worldgen/crops/
-functions/worldgen/
 functions/worldgen/decoration/
 functions/worldgen/decoration/felucca/
 functions/worldgen/decoration/ilshenar/
