@@ -185,57 +185,64 @@ Button 5 110 4005 4006 1 0 2
 
 DText 10 142 0c1 <Def.d_admin_<Src.CTag0.AccountLang>_Character>
 
-DText 40 167 0480 <Def.d_admin_<Src.CTag0.AccountLang>_Properties>
-Button 5 165 4005 4006 0 3 0
+DORIGIN 5 167
+   DText +35 +0 0480 <Def.d_admin_<Src.CTag0.AccountLang>_Properties>
+   Button +0 -2 4005 4006 0 3 0
 
-DText 40 192 0480 <Def.d_admin_<Src.CTag0.AccountLang>_Skills>
-Button 5 190 4005 4006 0 4 0
+   DText +35 *22 0480 <Def.d_admin_<Src.CTag0.AccountLang>_Skills>
+   Button +0 -2 4005 4006 0 4 0
 
-DText 40 217 0480 <Def.d_admin_<Src.CTag0.AccountLang>_Flags>
-Button 5 215 4005 4006 0 5 0
+   DText +35 *22 0480 <Def.d_admin_<Src.CTag0.AccountLang>_Flags>
+   Button +0 -2 4005 4006 0 5 0
 
-DText 40 242 0480 <Def.d_admin_<Src.CTag0.AccountLang>_Tags>
-Button 5 240 4005 4006 1 0 3
+   DText +35 *22 0480 <Def.d_admin_<Src.CTag0.AccountLang>_Tags>
+   Button +0 -2 4005 4006 1 0 3
 
-DText 40 267 0480 <Def.d_admin_<Src.CTag0.AccountLang>_Events>
-Button 5 265 4005 4006 0 6 0
+   DText +35 *22 0480 <Def.d_admin_<Src.CTag0.AccountLang>_Events>
+   Button +0 -2 4005 4006 0 6 0
+
+   DText +35 *22 0480 <Def.d_admin_<Src.CTag0.AccountLang>_Houses>
+   Button +0 -2 4005 4006 0 7 0
+
+   DText +35 *22 0480 <Def.d_admin_<Src.CTag0.AccountLang>_Ships>
+   Button +0 -2 4005 4006 0 8 0
 
 page 1
 DText 160 35 0c1 <Def.d_admin_<Src.CTag0.AccountLang>_Account_Name>
-DText 300 35 0480 <Account.Name>
+DText 325 35 0480 <Account.Name>
 
 DText 160 55 00c1 <Def.d_admin_<Src.CTag0.AccountLang>_Status>
-DText 300 55 <QVal (<isOnline>)? 63 <Def.d_admin_<Src.CTag0.AccountLang>_Online> : 137 <Def.d_admin_<Src.CTag0.AccountLang>_Offline>>
+DText 325 55 <QVal (<isOnline>)? 63 <Def.d_admin_<Src.CTag0.AccountLang>_Online> : 137 <Def.d_admin_<Src.CTag0.AccountLang>_Offline>>
 
 DText 160 75 0c1 <Def.d_admin_<Src.CTag0.AccountLang>_Char_Account>
-DText 300 75 0480 <Account.Chars>/<Account.MaxChars>
+DText 325 75 0480 <Account.Chars>/<Account.MaxChars>
 For 0 (<Account.Chars>-1)
    DText 160  <Eval  95+(<Local._For>*20)> <QVal (<UID>==<Account.Char.<Local._For>.UID>)?00c1:03e1> <Def.d_admin_<Src.CTag0.AccountLang>_Character> #<Eval <Local._For>+1>:
-   DText 300  <Eval  95+(<Local._For>*20)> <QVal (<UID>==<Account.Char.<Local._For>.UID>)?0480:03e1> <Account.Char.<Local._For>.Name>
+   DText 325  <Eval  95+(<Local._For>*20)> <QVal (<UID>==<Account.Char.<Local._For>.UID>)?0480:03e1> <Account.Char.<Local._For>.Name>
    DText 450  <Eval  95+(<Local._For>*20)> <QVal (<UID>==<Account.Char.<Local._For>.UID>)?00c1:03e1> UID:
-   DText 490  <Eval  95+(<Local._For>*20)> <QVal (<UID>==<Account.Char.<Local._For>.UID>)?0480:03e1> <Account.Char.<Local._For>.UID>
+   DText 475  <Eval  95+(<Local._For>*20)> <QVal (<UID>==<Account.Char.<Local._For>.UID>)?0480:03e1> <Account.Char.<Local._For>.UID>
 Endfor
 
 DText 160 235 0c1 <Def.d_admin_<Src.CTag0.AccountLang>_Plevel>
-DText 300 235 0480 <Account.Plevel> (<Def.d_admin_<Src.CTag0.AccountLang>_Admin_Plevel_<Eval <Account.Plevel>>>)
+DText 325 235 0480 <Account.Plevel> (<Def.d_admin_<Src.CTag0.AccountLang>_Admin_Plevel_<Eval <Account.Plevel>>>)
 
 DText 160 255 0c1 <Def.d_admin_<Src.CTag0.AccountLang>_Client_Version>
-DText 300 255 <QVal (<isOnline>)? 0480 <Reportedcliver> (<f_Admin_GetClientType>) : 137 <Def.d_admin_<Src.CTag0.AccountLang>_Offline>>
+DText 325 255 <QVal (<isOnline>)? 0480 <Reportedcliver> (<f_Admin_GetClientType>) : 137 <Def.d_admin_<Src.CTag0.AccountLang>_Offline>>
 
 DText 160 275 0c1 Resdisp:
-DText 300 275 0480 <Account.Resdisp> (<Def0.Admin_Resdisp_<Eval <Account.Resdisp>>>)
+DText 325 275 0480 <Account.Resdisp> (<Def0.Admin_Resdisp_<Eval <Account.Resdisp>>>)
 
 DText 160 295 0c1 <Def.d_admin_<Src.CTag0.AccountLang>_First_Connect>
-DText 300 295 0480 <Account.FirstConnectDate> <Def.d_admin_<Src.CTag0.AccountLang>_From_IP> <Account.FirstIP>
+DText 325 295 0480 <Account.FirstConnectDate> <Def.d_admin_<Src.CTag0.AccountLang>_From_IP> <Account.FirstIP>
 
 DText 160 315 0c1 <Def.d_admin_<Src.CTag0.AccountLang>_Last_Connect>
-DText 300 315 0480 <Account.LastConnectDate> <Def.d_admin_<Src.CTag0.AccountLang>_From_IP> <Account.LastIP>
+DText 325 315 0480 <Account.LastConnectDate> <Def.d_admin_<Src.CTag0.AccountLang>_From_IP> <Account.LastIP>
 
 DText 160 335 00c1 <Def.d_admin_<Src.CTag0.AccountLang>_TotalConnectTime>
-DText 300 335 0480 <FormatMinutes <eval <Account.TotalConnectTime>>> // <Def.d_admin_<Src.CTag0.AccountLang>_Minute>
+DText 325 335 0480 <FormatMinutes <eval <Account.TotalConnectTime>>> // <Def.d_admin_<Src.CTag0.AccountLang>_Minute>
 
 DText 160 355 00c1 <Def.d_admin_<Src.CTag0.AccountLang>_National>
-DText 300 355 0480 <Def.d_admin_<Src.CTag0.AccountLang>_CountryName_<Account.Lang>> - <Account.Lang> 
+DText 325 355 0480 <Def.d_admin_<Src.CTag0.AccountLang>_CountryName_<Account.Lang>> - <Account.Lang> 
 
 Page 2
 DText 200 40 0480 <Def.d_admin_<Src.CTag0.AccountLang>_Go_Player>
@@ -559,8 +566,14 @@ Page 6
 If (<Src.Account.Plevel> > 4)
    DText 160 35 0c1 <Def.d_admin_<Src.CTag0.AccountLang>_Del_Events>
 Endif
-   dorigin 160 50 
+DOrigin 160 50 
    f_Split_Events <EVENTS>
+
+Page 7
+   f_Print_Houses
+
+Page 8
+   f_Print_Ships
 
 //Ben's Function
 [FUNCTION f_Split_Events]
@@ -576,6 +589,42 @@ For x 0 <Eval <ArgV>+-1>
       Endif
    Endif
 Endfor
+
+//Maluco Beleza's Function
+[FUNCTION f_Print_Houses]
+If (!<Houses>)
+   DText 180 50 0c1 <Def.d_admin_<Src.CTag0.AccountLang>_Empty_Houses>
+Else
+   DOrigin 160 50
+         DText +5 +0 0c1 #
+         DText +30 +0 0c1 Name
+         DText +280 +0 0c1 Position
+
+         For 0 <Eval <Houses>-1>
+            REF1 = <House.<DLocal._For>>
+            DText +5 *25 0480 <Eval <DLocal._For> + 1>
+            DCroppedText +30 +0 582 25 0480 <REF1.Name>
+            DCroppedText +280 +0 200 25 0480 <REF1.P> (<Serv.Map(<REF1.P.X>,<REF1.P.Y>,0,<REF1.P.M>).Region.Name>)
+         Endfor
+Endif
+
+//Maluco Beleza's Function
+[FUNCTION f_Print_Ships]
+If (!<Ships>)
+   DText 180 50 0c1 <Def.d_admin_<Src.CTag0.AccountLang>_Empty_Ships>
+Else
+   DOrigin 160 50
+         DText +5 +0 0c1 #
+         DText +30 +0 0c1 Name
+         DText +280 +0 0c1 Position
+
+         For 0 <Eval <Ships>-1>
+            REF1 = <Ship.<DLocal._For>>
+            DText +5 *25 0480 <Eval <DLocal._For> + 1>
+            DCroppedText +30 +0 582 25 0480 <REF1.Name>
+            DCroppedText +280 +0 200 25 0480 <REF1.P> (<Serv.Map(<REF1.P.X>,<REF1.P.Y>,0,<REF1.P.M>).Region.Name>)
+         Endfor
+Endif
 
 [DIALOG d_SphereAdmin_PlayerTweak BUTTON]
 On=0 1
