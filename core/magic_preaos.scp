@@ -119,13 +119,13 @@ return <qval (<argn> <= 0) ? 0 : <eval 10 + (5*<argn>)>>
 
 [TYPEDEF ei_magic_preaos]
 On=@AfterClick
-if ((<act.isweapon>) && (<act.attr>&attr_magic))
-	local.level = <act.f_magic_preaos_getlevel>
-	local.clickmsgtext=+<f_magic_preaos_weapon_getbonusdam <local.level>> <act.name>
+if ((<isweapon>) && (<attr>&attr_magic))
+	local.level = <f_magic_preaos_getlevel>
+	local.clickmsgtext=+<f_magic_preaos_weapon_getbonusdam <local.level>> <name>
 	local.clickmsghue=<f_magic_preaos_weapon_texthue <local.level>>	//different colors for each magic value (only for weapons)
-elif ((<act.isarmor>) && (<act.attr>&attr_magic))
-	local.level = <act.f_magic_preaos_getlevel>
-	local.clickmsgtext=+<f_magic_preaos_armor_getbonusdefense <local.level>> <act.name>
+elif ((<isarmor>) && (<attr>&attr_magic))
+	local.level = <f_magic_preaos_getlevel>
+	local.clickmsgtext=+<f_magic_preaos_armor_getbonusdefense <local.level>> <name>
 endif
 
 
