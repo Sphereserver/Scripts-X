@@ -951,8 +951,8 @@ endif
 local.total=<eval <value>+<tag0.boughtstorage>+<tag0.construction>>
 ref2.gold += <dlocal.total>
 ref2.sysmessage @,,1 You have been refunded <dlocal.total>gp for this property.
-ref2.sysmessage @,,1 The number of houses you own is now <ref2.houses>
 remove
+ref2.sysmessage @,,1 The number of houses you own is now <ref2.houses>
 region.allclients.update
 
 on=2 //redeed FIX ME
