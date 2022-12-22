@@ -92,7 +92,7 @@ ref2 = <act.uid>
 ref2.name = <serv.itemdef.<ref2.baseid>.name>
 
 //FIX for giving the color of folded cloth to the new item (Legacy and OSI like crafting menu)
-if <uid.<ref2>.SKILLMAKE.1.key>==Skill_Tailoring && <ARGO.baseid>==i_cloth
+if <ARGO.isvalid> && <uid.<ref2>.SKILLMAKE.1.key>==Skill_Tailoring && <ARGO.baseid>==i_cloth
 	ref2.color=<argo.color>
 endif
 
