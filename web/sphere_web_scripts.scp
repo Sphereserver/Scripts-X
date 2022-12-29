@@ -1,0 +1,100 @@
+
+
+[function f_webdate_rebuild]
+f_webdate_build_items
+f_webdate_build_chars
+
+
+[function f_webdate_build_items_xml]
+serv.deletefile scripts/web/datas/items.xml
+serv.writefile scripts/web/datas/items.xml <def.l1>?xml version="1.0" encoding="UTF-8"?<def.r1>
+serv.writefile scripts/web/datas/items.xml <def.l1>document<def.r1>
+
+	// for 0 <eval <serv.deflist.itemdef.count>-1>
+	for 0 2
+		local.item=<serv.deflist.itemdef.<dlocal._for>>
+		if (<local.item>)
+			local.name=<serv.itemdef.<local.item>.name>
+			local.defname=<qval <isempty <serv.itemdef.<local.item>.defname>>?NULL:<serv.itemdef.<local.item>.defname>>
+			local.category=<qval <isempty <serv.itemdef.<local.item>.category>>?Uncategorized:<serv.itemdef.<local.item>.category>>
+			local.subsection=<qval <isempty <serv.itemdef.<local.item>.subsection>>?Uncategorized:<serv.itemdef.<local.item>.subsection>>
+			local.description=<qval <isempty <serv.itemdef.<local.item>.description>>?Undefined:<serv.itemdef.<local.item>.description>>
+			local.x ++
+		    serv.writefile scripts/web/datas/items.xml <def.l1>row<def.r1>
+			serv.writefile scripts/web/datas/items.xml <def.l1>Id<def.r1><dlocal.x><def.l1>/Id<def.r1>
+			serv.writefile scripts/web/datas/items.xml <def.l1>Name<def.r1><local.name><def.l1>/Name<def.r1>
+			serv.writefile scripts/web/datas/items.xml <def.l1>Category<def.r1><local.category><def.l1>/Category<def.r1>
+			serv.writefile scripts/web/datas/items.xml <def.l1>Subsection<def.r1><local.subsection><def.l1>/Subsection<def.r1>
+			serv.writefile scripts/web/datas/items.xml <def.l1>Description<def.r1><local.description><def.l1>/Description<def.r1>
+			serv.writefile scripts/web/datas/items.xml <def.l1>/row<def.r1>
+		endif
+	endfor
+serv.writefile scripts/web/datas/items.xml </document>
+
+
+
+
+
+[function f_webdate_build_items_json]
+serv.deletefile scripts/web/datas/items.json
+serv.writefile scripts/web/datas/items.json {
+serv.writefile scripts/web/datas/items.json 'items': [
+
+	// for 0 <eval <serv.deflist.itemdef.count>-1>
+	for 0 2
+		local.item=<serv.deflist.itemdef.<dlocal._for>>
+		if (<local.item>)
+			local.name=<serv.itemdef.<local.item>.name>
+			local.defname=<qval <isempty <serv.itemdef.<local.item>.defname>>?NULL:<serv.itemdef.<local.item>.defname>>
+			local.category=<qval <isempty <serv.itemdef.<local.item>.category>>?Uncategorized:<serv.itemdef.<local.item>.category>>
+			local.subsection=<qval <isempty <serv.itemdef.<local.item>.subsection>>?Uncategorized:<serv.itemdef.<local.item>.subsection>>
+			local.description=<qval <isempty <serv.itemdef.<local.item>.description>>?Undefined:<serv.itemdef.<local.item>.description>>
+			local.x ++
+		    serv.writefile scripts/web/datas/items.json {
+			serv.writefile scripts/web/datas/items.json 'id': <dlocal.x>,
+			serv.writefile scripts/web/datas/items.json 'name': '<local.name>',
+			serv.writefile scripts/web/datas/items.json 'category': '<local.category>',
+			serv.writefile scripts/web/datas/items.json 'subsection': '<local.subsection>',
+			serv.writefile scripts/web/datas/items.json 'description': '<local.description>',
+			serv.writefile scripts/web/datas/items.json },
+		endif
+	endfor
+serv.writefile scripts/web/datas/items.json ]
+serv.writefile scripts/web/datas/items.json }
+
+
+
+
+[function f_webdate_build_chars]
+serv.deletefile scripts/web/datas/chars.json
+serv.writefile scripts/web/datas/chars.json {
+serv.writefile scripts/web/datas/chars.json ""chars"": [
+
+	// for 0 <eval <serv.deflist.chardef.count>-1>
+	for 0 100
+		local.char=<serv.deflist.chardef.<dlocal._for>>
+		if (<local.char>)
+			local.name=<serv.chardef.<local.char>.name>
+			local.defname=<qval <isempty <serv.chardef.<local.char>.defname>>?NULL:<serv.chardef.<local.char>.defname>>
+			local.category=<qval <isempty <serv.chardef.<local.char>.category>>?Uncategorized:<serv.chardef.<local.char>.category>>
+			local.subsection=<qval <isempty <serv.chardef.<local.char>.subsection>>?Uncategorized:<serv.chardef.<local.char>.subsection>>
+			local.description=<qval <isempty <serv.chardef.<local.char>.description>>?Uncategorized:<serv.chardef.<local.char>.description>>
+			local.x ++
+		    serv.writefile scripts/web/datas/chars.json {
+			serv.writefile scripts/web/datas/chars.json 	"id": "<dlocal.x>",
+			serv.writefile scripts/web/datas/chars.json 	"defname": "<local.defname>",
+			serv.writefile scripts/web/datas/chars.json 	"name": "<local.name>",
+			serv.writefile scripts/web/datas/chars.json 	"category": "<local.category>",
+			serv.writefile scripts/web/datas/chars.json 	"subsection": "<local.subsection>",
+			serv.writefile scripts/web/datas/chars.json 	"description": "<local.description>",
+			serv.writefile scripts/web/datas/chars.json },
+		endif
+	endfor
+	
+serv.writefile scripts/web/datas/chars.json ]
+serv.writefile scripts/web/datas/chars.json }
+
+
+
+
+[eof]

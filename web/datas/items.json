@@ -1,0 +1,25 @@
+{
+'items': [
+{
+'id': 1,
+'name': 'HelpPage stuck teleport',
+'category': 'Uncategorized',
+'subsection': 'Uncategorized',
+'description': 'Undefined',
+},
+{
+'id': 2,
+'name': 'Spelldelay',
+'category': 'Uncategorized',
+'subsection': 'Uncategorized',
+'description': 'Undefined',
+},
+{
+'id': 3,
+'name': 'Nomover',
+'category': 'Uncategorized',
+'subsection': 'Uncategorized',
+'description': 'Undefined',
+},
+]
+}
