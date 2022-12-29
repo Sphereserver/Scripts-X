@@ -1,0 +1,812 @@
+{
+data
+{
+id": "1
+defname": "C_MOTHER
+name": "Mother
+category": "Uncategorized
+subsection": "Uncategorized
+description": "Uncategorized
+},
+{
+id": "2
+defname": "C_OSTARD_MOTHER
+name": "Mother Ostard
+category": "Uncategorized
+subsection": "Uncategorized
+description": "Uncategorized
+},
+{
+id": "3
+defname": "C_STEED_MOTHER
+name": "Mother Horse
+category": "Uncategorized
+subsection": "Uncategorized
+description": "Uncategorized
+},
+{
+id": "4
+defname": "C_LLAMA_MOTHER
+name": "Mother Llama
+category": "Uncategorized
+subsection": "Uncategorized
+description": "Uncategorized
+},
+{
+id": "5
+defname": "c_removable_char
+name": "Removable CHARDEF
+category": "Uncategorized
+subsection": "Uncategorized
+description": "Uncategorized
+},
+{
+id": "6
+defname": "c_man
+name": "Man
+category": "Civilized
+subsection": "Miscellaneous
+description": "Man
+},
+{
+id": "7
+defname": "c_woman
+name": "Woman
+category": "Civilized
+subsection": "Miscellaneous
+description": "Woman
+},
+{
+id": "8
+defname": "c_ghost_man
+name": "Ghost
+category": "Civilized
+subsection": "Miscellaneous
+description": "Ghost
+},
+{
+id": "9
+defname": "c_ghost_woman
+name": "Ghost
+category": "Civilized
+subsection": "Miscellaneous
+description": "Ghost Woman
+},
+{
+id": "10
+defname": "c_orc_player_small
+name": "Orc
+category": "Uncategorized
+subsection": "Uncategorized
+description": "Uncategorized
+},
+{
+id": "11
+defname": "c_orc_player_small_mage
+name": "Orc Mage
+category": "Uncategorized
+subsection": "Uncategorized
+description": "Uncategorized
+},
+{
+id": "12
+defname": "c_orc_player_captain
+name": "Orc Captain
+category": "Uncategorized
+subsection": "Uncategorized
+description": "Uncategorized
+},
+{
+id": "13
+defname": "c_orc_player_predator
+name": "Orc Predator
+category": "Uncategorized
+subsection": "Uncategorized
+description": "Uncategorized
+},
+{
+id": "14
+defname": "c_orc_player_male_raider
+name": "Orc Raider
+category": "Uncategorized
+subsection": "Uncategorized
+description": "Uncategorized
+},
+{
+id": "15
+defname": "c_orc_player_female_raider
+name": "Orc Raider
+category": "Uncategorized
+subsection": "Uncategorized
+description": "Uncategorized
+},
+{
+id": "16
+defname": "c_elf_male
+name": "Elf Male
+category": "Civilized
+subsection": "Miscellaneous
+description": "Elf Man
+},
+{
+id": "17
+defname": "c_elf_female
+name": "Elf Female
+category": "Civilized
+subsection": "Miscellaneous
+description": "Elf Woman
+},
+{
+id": "18
+defname": "c_elf_male_wood
+name": "Wood Elf Male
+category": "Civilized
+subsection": "Miscellaneous
+description": "Elf Man
+},
+{
+id": "19
+defname": "c_elf_female_wood
+name": "Wood Elf Female
+category": "Civilized
+subsection": "Miscellaneous
+description": "Elf Woman
+},
+{
+id": "20
+defname": "c_elf_male_high
+name": "High Elf Male
+category": "Civilized
+subsection": "Miscellaneous
+description": "Elf Man
+},
+{
+id": "21
+defname": "c_elf_female_high
+name": "High Elf Female
+category": "Civilized
+subsection": "Miscellaneous
+description": "Elf Woman
+},
+{
+id": "22
+defname": "c_elf_male_dark
+name": "Dark Elf Male
+category": "Civilized
+subsection": "Miscellaneous
+description": "Elf Man
+},
+{
+id": "23
+defname": "c_elf_female_dark
+name": "Dark Elf Female
+category": "Civilized
+subsection": "Miscellaneous
+description": "Elf Woman
+},
+{
+id": "24
+defname": "c_elf_ghost_man
+name": "Elf male Ghost
+category": "Civilized
+subsection": "Miscellaneous
+description": "Elf Ghost Man
+},
+{
+id": "25
+defname": "c_elf_ghost_woman
+name": "Elf Female Ghost
+category": "Civilized
+subsection": "Miscellaneous
+description": "Elf Ghost Woman
+},
+{
+id": "26
+defname": "c_dwarf_male_player
+name": "Dwarf Male
+category": "Civilized
+subsection": "Miscellaneous
+description": "Man
+},
+{
+id": "27
+defname": "c_dwarf_female_player
+name": "Dwarf Female
+category": "Civilized
+subsection": "Miscellaneous
+description": "Woman
+},
+{
+id": "28
+defname": "c_human_male_player
+name": "Human Male
+category": "Civilized
+subsection": "Miscellaneous
+description": "Man
+},
+{
+id": "29
+defname": "c_human_female_player
+name": "Human Female
+category": "Civilized
+subsection": "Miscellaneous
+description": "Woman
+},
+{
+id": "30
+defname": "c_paladin_male_player
+name": "Paladin Male
+category": "Civilized
+subsection": "Miscellaneous
+description": "Man
+},
+{
+id": "31
+defname": "c_paladin_female_player
+name": "Paladin Female
+category": "Civilized
+subsection": "Miscellaneous
+description": "Woman
+},
+{
+id": "32
+defname": "c_gargoyle_male
+name": "Gargoyle Male
+category": "Civilized
+subsection": "Miscellaneous
+description": "Gargoyle Male
+},
+{
+id": "33
+defname": "c_gargoyle_female
+name": "Gargoyle Female
+category": "Civilized
+subsection": "Miscellaneous
+description": "Gargoyle Female
+},
+{
+id": "34
+defname": "c_garg_ghost_man
+name": "Gargoyle Male Ghost
+category": "Civilized
+subsection": "Miscellaneous
+description": "Gargoyle Ghost Male
+},
+{
+id": "35
+defname": "c_garg_ghost_woman
+name": "Gargoyle Female Ghost
+category": "Civilized
+subsection": "Miscellaneous
+description": "Gargoyle Ghost Female
+},
+{
+id": "36
+defname": "C_GOLEM_1
+name": "Golem
+category": "Animals
+subsection": "Tame
+description": "Golem 1
+},
+{
+id": "37
+defname": "C_GOLEM_2
+name": "Golem
+category": "Animals
+subsection": "Tame
+description": "Golem 2
+},
+{
+id": "38
+defname": "c_ogre
+name": "ogre
+category": "Monsters
+subsection": "Giants
+description": "Ogre
+},
+{
+id": "39
+defname": "c_ettin
+name": "ettin
+category": "Monsters
+subsection": "Giants
+description": "Ettin
+},
+{
+id": "40
+defname": "c_zombie
+name": "zombie
+category": "Monsters
+subsection": "Undead
+description": "Zombie
+},
+{
+id": "41
+defname": "c_gargoyle
+name": "gargoyle
+category": "Monsters
+subsection": "Gargoyles
+description": "Gargoyle
+},
+{
+id": "42
+defname": "c_eagle
+name": "eagle
+category": "Animals
+subsection": "Tame
+description": "Eagle
+},
+{
+id": "43
+defname": "c_bird
+name": "#NAMES_BIRDS
+category": "Animals
+subsection": "Tame
+description": "Bird
+},
+{
+id": "44
+defname": "c_orc_captain
+name": "#NAMES_ORC
+category": "Monsters
+subsection": "Orcs
+description": "Orc Captain
+},
+{
+id": "45
+defname": "c_corpser
+name": "corpser
+category": "Monsters
+subsection": "Miscellaneous
+description": "Corpser
+},
+{
+id": "46
+defname": "c_demon_summoned
+name": "#NAMES_DAEMON
+category": "Spells
+subsection": "Magery
+description": "Summon Daemon
+},
+{
+id": "47
+defname": "c_demon
+name": "#NAMES_DAEMON
+category": "Monsters
+subsection": "Demons
+description": "Daemon
+},
+{
+id": "48
+defname": "c_spider_dread
+name": "dread spider
+category": "Monsters
+subsection": "Spiders
+description": "Dread Spider
+},
+{
+id": "49
+defname": "c_dragon
+name": "dragon
+category": "Monsters
+subsection": "Dragonkind
+description": "Dragon
+},
+{
+id": "50
+defname": "c_elemental_air_summoned
+name": "summoned air elemental
+category": "Spells
+subsection": "Magery
+description": "Summoned Air Elemental
+},
+{
+id": "51
+defname": "c_elemental_earth_summoned
+name": "summoned earth elemental
+category": "Spells
+subsection": "Magery
+description": "Summoned Earth Elemental
+},
+{
+id": "52
+defname": "c_elemental_fire_summoned
+name": "summoned fire elemental
+category": "Spells
+subsection": "Magery
+description": "Summoned Fire Elemental
+},
+{
+id": "53
+defname": "c_elemental_water_summoned
+name": "summoned water elemental
+category": "Spells
+subsection": "Magery
+description": "Summoned Water Elemental
+},
+{
+id": "54
+defname": "c_orc
+name": "#NAMES_ORC
+category": "Monsters
+subsection": "Orcs
+description": "Orc
+},
+{
+id": "55
+defname": "c_ettin_w_hammer
+name": "ettin
+category": "Monsters
+subsection": "Giants
+description": "Ettin (hammer)
+},
+{
+id": "56
+defname": "c_spider_malefic
+name": "Malefic
+category": "Monsters
+subsection": "Spiders
+description": "Dread Spider (Malefic)
+},
+{
+id": "57
+defname": "c_spider_frost
+name": "frost spider
+category": "Monsters
+subsection": "Spiders
+description": "Spider (frost)
+},
+{
+id": "58
+defname": "c_snake_giant
+name": "giant serpent
+category": "Monsters
+subsection": "Reptiles
+description": "Giant Serpent
+},
+{
+id": "59
+defname": "c_gazer
+name": "gazer
+category": "Monsters
+subsection": "Miscellaneous
+description": "Gazer
+},
+{
+id": "60
+defname": "c_wolf_dire
+name": "dire wolf
+category": "Animals
+subsection": "Wild
+description": "Wolf (dire)
+},
+{
+id": "61
+defname": "c_lich
+name": "lich
+category": "Monsters
+subsection": "Undead
+description": "Lich
+},
+{
+id": "62
+defname": "c_wolf_grey
+name": "grey wolf
+category": "Animals
+subsection": "Wild
+description": "Wolf (grey)
+},
+{
+id": "63
+defname": "c_spectre
+name": "spectre
+category": "Monsters
+subsection": "Undead
+description": "Spectre
+},
+{
+id": "64
+defname": "c_familiar_dark_wolf
+name": "dark wolf familiar
+category": "Spells
+subsection": "Necromancy
+description": "Summoned Dark Wolf Familiar
+},
+{
+id": "65
+defname": "c_spider_giant
+name": "giant spider
+category": "Monsters
+subsection": "Spiders
+description": "Giant Spider
+},
+{
+id": "66
+defname": "c_gorilla
+name": "gorilla
+category": "Animals
+subsection": "Wild
+description": "Gorilla
+},
+{
+id": "67
+defname": "c_harpy
+name": "harpy
+category": "Monsters
+subsection": "Miscellaneous
+description": "Harpy
+},
+{
+id": "68
+defname": "c_headless
+name": "headless one
+category": "Monsters
+subsection": "Miscellaneous
+description": "Headless
+},
+{
+id": "69
+defname": "c_lizardman
+name": "#NAMES_LIZARDMAN
+category": "Monsters
+subsection": "Lizardmen
+description": "Lizardman
+},
+{
+id": "70
+defname": "34
+name": "unknown wolf
+category": "Animals
+subsection": "Duplicates
+description": "Unknown Wolf
+},
+{
+id": "71
+defname": "c_lizardman_spear
+name": "#NAMES_LIZARDMAN
+category": "Monsters
+subsection": "Lizardmen
+description": "Lizardman (spear)
+},
+{
+id": "72
+defname": "c_lizardman_mace
+name": "#NAMES_LIZARDMAN
+category": "Monsters
+subsection": "Lizardmen
+description": "Lizardman (mace)
+},
+{
+id": "73
+defname": "c_wolf_white
+name": "white wolf
+category": "Animals
+subsection": "Wild
+description": "Wolf (white)
+},
+{
+id": "74
+defname": "c_demon_blackgate
+name": "#NAMES_DAEMON
+category": "Monsters
+subsection": "Demons
+description": "Demon (dark)
+},
+{
+id": "75
+defname": "c_mongbat
+name": "subterranean mongbat
+category": "Monsters
+subsection": "Miscellaneous
+description": "Subterranean Mongbat
+},
+{
+id": "76
+defname": "c_demon_balron
+name": "#NAMES_BALRON
+category": "Monsters
+subsection": "Demons
+description": "Demon (balron)
+},
+{
+id": "77
+defname": "c_orc_w_club
+name": "#NAMES_ORC
+category": "Monsters
+subsection": "Orcs
+description": "Orc (club)
+},
+{
+id": "78
+defname": "c_ratman
+name": "#NAMES_RATMAN
+category": "Monsters
+subsection": "Ratmen
+description": "Ratman
+},
+{
+id": "79
+defname": "c_demon_ice
+name": "ice fiend
+category": "Monsters
+subsection": "Demons
+description": "Demon (ice)
+},
+{
+id": "80
+defname": "c_ratman_w_mace
+name": "#NAMES_RATMAN
+category": "Monsters
+subsection": "Ratmen
+description": "Ratman (mace)
+},
+{
+id": "81
+defname": "c_ratman_w_sword
+name": "#NAMES_RATMAN
+category": "Monsters
+subsection": "Ratmen
+description": "Ratman (sword)
+},
+{
+id": "82
+defname": "c_wyrm_ancient
+name": "ancient wyrm
+category": "Monsters
+subsection": "Dragonkind
+description": "Wyrm (ancient)
+},
+{
+id": "83
+defname": "c_reaper
+name": "reaper
+category": "Monsters
+subsection": "Treefolk
+description": "Reaper
+},
+{
+id": "84
+defname": "c_scorpion_giant
+name": "scorpion
+category": "Monsters
+subsection": "Insects
+description": "Giant Scorpion
+},
+{
+id": "85
+defname": "c_wyrm_white
+name": "white wyrm
+category": "Monsters
+subsection": "Dragonkind
+description": "White Wyrm
+},
+{
+id": "86
+defname": "c_skeleton
+name": "skeleton
+category": "Monsters
+subsection": "Undead
+description": "Skeleton
+},
+{
+id": "87
+defname": "c_slime
+name": "slime
+category": "Monsters
+subsection": "Miscellaneous
+description": "Slime
+},
+{
+id": "88
+defname": "c_snake
+name": "snake
+category": "Animals
+subsection": "Wild
+description": "Snake
+},
+{
+id": "89
+defname": "c_troll_w_axe
+name": "troll
+category": "Monsters
+subsection": "Giants
+description": "Troll (axe)
+},
+{
+id": "90
+defname": "c_troll
+name": "troll
+category": "Monsters
+subsection": "Giants
+description": "Troll
+},
+{
+id": "91
+defname": "c_frost_troll
+name": "frost troll
+category": "Monsters
+subsection": "Giants
+description": "Frost Troll
+},
+{
+id": "92
+defname": "c_skeleton_w_axe
+name": "skeleton
+category": "Monsters
+subsection": "Undead
+description": "Skeleton (axe)
+},
+{
+id": "93
+defname": "c_skeleton_w_sword
+name": "skeleton
+category": "Monsters
+subsection": "Undead
+description": "Skeleton (sword and shield)
+},
+{
+id": "94
+defname": "c_wisp
+name": "wisp
+category": "Monsters
+subsection": "Miscellaneous
+description": "Wisp
+},
+{
+id": "95
+defname": "c_dragon_red
+name": "dragon
+category": "Monsters
+subsection": "Dragonkind
+description": "Dragon (red)
+},
+{
+id": "96
+defname": "c_drake
+name": "drake
+category": "Monsters
+subsection": "Dragonkind
+description": "Drake
+},
+{
+id": "97
+defname": "c_drake_red
+name": "drake
+category": "Monsters
+subsection": "Dragonkind
+description": "Drake (red)
+},
+{
+id": "98
+defname": "c_wyvern
+name": "wyvern
+category": "Monsters
+subsection": "Dragonkind
+description": "Wyvern
+},
+{
+id": "99
+defname": "c_cougar
+name": "cougar
+category": "Animals
+subsection": "Wild
+description": "Cougar
+},
+{
+id": "100
+defname": "c_leopard
+name": "leopard
+category": "Animals
+subsection": "Wild
+description": "Leopard
+},
+{
+id": "101
+defname": "c_leopard_snow
+name": "snow leopard
+category": "Animals
+subsection": "Wild
+description": "Leopard (snow)
+},
+]
+}
