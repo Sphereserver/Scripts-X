@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<row>
+<Id>1</Id>
+<Name>HelpPage stuck teleport</Name>
+<Category>Uncategorized</Category>
+<Subsection>Uncategorized</Subsection>
+<Description>Undefined</Description>
+</row>
+<row>
+<Id>2</Id>
+<Name>Spelldelay</Name>
+<Category>Uncategorized</Category>
+<Subsection>Uncategorized</Subsection>
+<Description>Undefined</Description>
+</row>
+<row>
+<Id>3</Id>
+<Name>Nomover</Name>
+<Category>Uncategorized</Category>
+<Subsection>Uncategorized</Subsection>
+<Description>Undefined</Description>
+</row>
+</document>
