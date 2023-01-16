@@ -7,6 +7,8 @@
 // 2 - enable http server and webpage generation (default)
 UseHttp=2
 
+For enabling the modern status page copy paste the following entries in the sphere.ini in the WEBPAGE SETTINGS block.
+
 [WEBPAGE 1]
 // Determines what html file is used as base for the status page
 WebPageSrc=scripts/web/base/index.html
