@@ -576,4 +576,67 @@ LAYER=layer_horse
 TDATA3=c_skeletal_cat
 WEIGHT=0
 
+[ITEMDEF i_mt_coconut_crab_mount]
+ID=03ed1
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_coconut_crab_mount
+WEIGHT=0
+
+[ITEMDEF i_mt_war_boar_mount]
+ID=03ed2
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_war_boar_mount
+WEIGHT=0
+
+[ITEMDEF i_mt_capybara_mount]
+ID=03ed3
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_capybara_mount
+WEIGHT=0
+
+[ITEMDEF i_mt_newfoundland_mount]
+ID=03ed4
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_dog_newfoundland
+WEIGHT=0
+
+[ITEMDEF i_mt_malamut_mount]
+ID=03ed5
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_dog_malamut
+WEIGHT=0
+
+[ITEMDEF i_mt_dane_mount]
+ID=03ed6
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_dog_dane
+WEIGHT=0
+
+[ITEMDEF i_mt_bernard_mount]
+ID=03ed7 // to make it work need to edit tiledata anim and define item in scps
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_dog_bernard
+WEIGHT=0
+
+[ITEMDEF i_mt_terier_mount]
+ID=03ed8
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_dog_terier
+WEIGHT=0
+
+[ITEMDEF i_mt_rottweiler_mount]
+ID=03ed9
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_dog_rottweiler
+WEIGHT=0
+
 [EOF]

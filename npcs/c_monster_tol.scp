@@ -1919,7 +1919,7 @@ ON=@Create
 [CHARDEF 05a0]
 DEFNAME=c_eowmu
 NAME=Eowmu
-ICON=i_pet_ostard_forest //FIXME
+ICON=i_pet_eowmu
 SOUND=snd_animal_ostard_desert1
 CAN=mt_walk|mt_run
 
@@ -1966,7 +1966,7 @@ ON=@Create
 [CHARDEF 05a1]
 DEFNAME=c_skeletal_cat
 NAME=Skeletal Cat
-ICON=i_pet_cat //FIXME
+ICON=i_pet_skeletal_cat
 SOUND=snd_monster_skeldragon1
 CAN=mt_walk|mt_run
 
@@ -2012,7 +2012,7 @@ ON=@Create
 [CHARDEF 05c7]
 DEFNAME=c_khal_ankur
 NAME=Khal Ankur
-ICON=i_pet_ogre //fixme
+ICON=i_pet_khal_ankur
 SOUND=snd_monster_exodus1
 CAN=mt_walk|mt_run
 
@@ -2056,5 +2056,522 @@ ON=@Create
     WRESTLING=120.0
     NECROMANCY=120.0
     SPIRITSPEAK=120.0
-    
+
+[CHARDEF 05cc]
+DEFNAME=c_krumpus
+NAME=Krumpus
+SOUND=0680
+ICON=i_pet_krumpus
+CAN=mt_walk|mt_run
+ 
+DAM=3, 4
+ARMOR=9
+HEIGHT=16
+ 
+RESOURCES=
+FOODTYPE=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+DESIRES=e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+ 
+CATEGORY=Monsters
+SUBSECTION=miscellanous
+DESCRIPTION=Krumpus
+ 
+ON=@Create
+     NPC=brain_monster
+     
+     FAME=5000
+     KARMA=-5000
+     
+     STR={100, 200}
+     DEX={56, 75}
+     INT={6, 10}
+     MAXHITS={100, 200}
+ 
+[CHARDEF 05cd]
+DEFNAME=c_krumpus_small
+NAME=Krumpus small
+SOUND=0680
+ICON=i_pet_krumpus_small
+CAN=mt_walk|mt_run
+ 
+DAM=3, 4
+ARMOR=9
+HEIGHT=16
+ 
+RESOURCES=
+FOODTYPE=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+DESIRES=e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+ 
+CATEGORY=Monsters
+SUBSECTION=miscellanous
+DESCRIPTION=Krumpus small
+ 
+ON=@Create
+     NPC=brain_monster
+     
+     FAME=5000
+     KARMA=-5000
+     
+     STR={100, 200}
+     DEX={56, 75}
+     INT={6, 10}
+     MAXHITS={100, 200}
+ 
+[CHARDEF 05e6]
+DEFNAME=c_coconut_crab_mount
+NAME=Coconut crab
+SOUND=05d4
+ICON=i_pet_crab_coconut_mount
+CAN=mt_walk|mt_run
+ 
+DAM=3, 4
+ARMOR=9
+HEIGHT=16
+ 
+RESOURCES=3 i_ribs_raw, 10 i_hide
+FOODTYPE=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+DESIRES=e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+
+TEVENTS=e_horses
+
+CATEGORY=Mounts
+SUBSECTION=Domestic
+DESCRIPTION=Coconut crab
+ 
+ON=@Create
+     NPC=brain_animal
+     
+     FAME=300
+     KARMA=300
+     
+     STR={100, 200}
+     DEX={56, 75}
+     INT={6, 10}
+     MAXHITS={100, 200}
+ 
+[CHARDEF 05e7]
+DEFNAME=c_coconut_crab_small
+NAME=Coconut crab
+SOUND=05d4
+ICON=i_pet_crab_coconut_small
+CAN=mt_walk|mt_run
+ 
+DAM=3, 4
+ARMOR=9
+HEIGHT=16
+ 
+RESOURCES=3 i_ribs_raw, 10 i_hide
+FOODTYPE=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+DESIRES=e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+ 
+CATEGORY=Animal
+SUBSECTION=Domestic
+DESCRIPTION=Coconut crab small
+ 
+ON=@Create
+     NPC=brain_animal
+     
+     FAME=300
+     KARMA=300
+     
+     STR={22, 98}
+     DEX={56, 75}
+     INT={6, 10}
+     MAXHITS={28, 45}
+ 
+[CHARDEF 05e8]
+DEFNAME=c_coconut_crab_large
+NAME=Coconut crab
+SOUND=05d4
+ICON=i_pet_crab_coconut_large
+CAN=mt_walk|mt_run
+ 
+DAM=3, 4
+ARMOR=9
+HEIGHT=16
+ 
+RESOURCES=3 i_ribs_raw, 10 i_hide
+FOODTYPE=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+DESIRES=e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+ 
+CATEGORY=Animal
+SUBSECTION=Domestic
+DESCRIPTION=Coconut crab
+ 
+ON=@Create
+     NPC=brain_animal
+     
+     FAME=300
+     KARMA=300
+     
+     STR={22, 98}
+     DEX={56, 75}
+     INT={6, 10}
+     MAXHITS={28, 45}
+ 
+[CHARDEF 05f6]
+DEFNAME=c_war_boar_mount
+NAME=War Boar
+SOUND=snd_animals_horse1
+ICON=i_pet_war_boar_mount
+CAN=mt_walk|mt_run
+ 
+DAM=3, 4
+ARMOR=9
+HEIGHT=16
+ 
+RESOURCES=3 i_ribs_raw, 10 i_hide
+FOODTYPE=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+DESIRES=e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+ 
+TEVENTS=e_horses
+ 
+CATEGORY=Mounts
+SUBSECTION=Domestic
+DESCRIPTION=War Boar
+ 
+ON=@Create
+     NPC=brain_animal
+     
+     FAME=300
+     KARMA=300
+     
+     STR={22, 98}
+     DEX={56, 75}
+     INT={6, 10}
+     MAXHITS={28, 45}
+ 
+[CHARDEF 05f7]
+DEFNAME=c_capybara_mount
+NAME=Capybara
+SOUND=snd_animals_horse1
+ICON=i_pet_capybara_mount
+CAN=mt_walk|mt_run
+ 
+DAM=3, 4
+ARMOR=9
+HEIGHT=16
+ 
+RESOURCES=3 i_ribs_raw, 10 i_hide
+FOODTYPE=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+DESIRES=e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+ 
+TEVENTS=e_horses
+ 
+CATEGORY=Mounts
+SUBSECTION=Domestic
+DESCRIPTION=Capybara
+ 
+ON=@Create
+     NPC=brain_animal
+     
+     FAME=300
+     KARMA=300
+     
+     STR={22, 98}
+     DEX={56, 75}
+     INT={6, 10}
+     MAXHITS={28, 45}
+ 
+[CHARDEF 05f8]
+DEFNAME=c_capybara_baby
+NAME=Capybara baby
+SOUND=snd_animals_horse1
+ICON=i_pet_capybara_baby
+CAN=mt_walk|mt_run
+ 
+DAM=3, 4
+ARMOR=9
+HEIGHT=16
+ 
+RESOURCES=3 i_ribs_raw, 10 i_hide
+FOODTYPE=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+DESIRES=e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+ 
+CATEGORY=Animal
+SUBSECTION=Domestic
+DESCRIPTION=Capybara baby
+ 
+ON=@Create
+     NPC=brain_animal
+     
+     FAME=300
+     KARMA=300
+     
+     STR={22, 98}
+     DEX={56, 75}
+     INT={6, 10}
+     MAXHITS={28, 45}
+ 
+[CHARDEF 0605]
+DEFNAME=c_rabbit_doom
+NAME=Doom Rabbit
+SOUND=snd_animals_horse1
+ICON=i_pet_rabbit_doom
+CAN=mt_walk|mt_run
+ 
+DAM=3, 4
+ARMOR=9
+HEIGHT=16
+ 
+RESOURCES=3 i_ribs_raw, 10 i_hide
+FOODTYPE=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+DESIRES=e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+ 
+TEVENTS=e_horses
+ 
+CATEGORY=Animal
+SUBSECTION=Domestic
+DESCRIPTION=Doom Rabbit
+ 
+ON=@Create
+     NPC=brain_animal
+     
+     FAME=300
+     KARMA=300
+     
+     STR={22, 98}
+     DEX={56, 75}
+     INT={6, 10}
+     MAXHITS={28, 45}
+ 
+[CHARDEF 0606]
+DEFNAME=c_rabbit_doom_baby
+NAME=Doom Rabbit baby
+SOUND=snd_animals_horse1
+ICON=i_pet_rabbit_doom_baby
+CAN=mt_walk|mt_run
+ 
+DAM=3, 4
+ARMOR=9
+HEIGHT=16
+ 
+RESOURCES=3 i_ribs_raw, 10 i_hide
+FOODTYPE=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+DESIRES=e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+ 
+CATEGORY=Animal
+SUBSECTION=Domestic
+DESCRIPTION=Doom Rabbit baby
+ 
+ON=@Create
+     NPC=brain_animal
+     
+     FAME=300
+     KARMA=300
+     
+     STR={22, 98}
+     DEX={56, 75}
+     INT={6, 10}
+     MAXHITS={28, 45}
+ 
+[CHARDEF 060a]
+DEFNAME=c_dog_newfoundland
+NAME=Newfoundland Dog
+SOUND=snd_animals_horse1
+ICON=i_pet_dog_newfoundland
+CAN=mt_walk|mt_run
+ 
+DAM=3, 4
+ARMOR=9
+HEIGHT=16
+ 
+RESOURCES=3 i_ribs_raw, 10 i_hide
+FOODTYPE=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+DESIRES=e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+ 
+TEVENTS=e_horses
+ 
+CATEGORY=Mounts
+SUBSECTION=Domestic
+DESCRIPTION=Newfoundland Dog
+ 
+ON=@Create
+     NPC=brain_animal
+     
+     FAME=300
+     KARMA=300
+     
+     STR={22, 98}
+     DEX={56, 75}
+     INT={6, 10}
+     MAXHITS={28, 45}
+ 
+[CHARDEF 060b]
+DEFNAME=c_dog_malamut
+NAME=Alaskan Malamut Dog
+SOUND=snd_animals_horse1
+ICON=i_pet_dog_malamut
+CAN=mt_walk|mt_run
+ 
+DAM=3, 4
+ARMOR=9
+HEIGHT=16
+ 
+RESOURCES=3 i_ribs_raw, 10 i_hide
+FOODTYPE=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+DESIRES=e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+ 
+TEVENTS=e_horses
+ 
+CATEGORY=Mounts
+SUBSECTION=Domestic
+DESCRIPTION=Alaskan Malamut Dog
+ 
+ON=@Create
+     NPC=brain_animal
+     
+     FAME=300
+     KARMA=300
+     
+     STR={22, 98}
+     DEX={56, 75}
+     INT={6, 10}
+     MAXHITS={28, 45}
+ 
+[CHARDEF 060c]
+DEFNAME=c_dog_dane
+NAME=Great Dane Dog
+SOUND=snd_animals_horse1
+ICON=i_pet_dog_dane
+CAN=mt_walk|mt_run
+ 
+DAM=3, 4
+ARMOR=9
+HEIGHT=16
+ 
+RESOURCES=3 i_ribs_raw, 10 i_hide
+FOODTYPE=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+DESIRES=e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+ 
+TEVENTS=e_horses
+ 
+CATEGORY=Mounts
+SUBSECTION=Domestic
+DESCRIPTION=Great Dane Dog
+ 
+ON=@Create
+     NPC=brain_animal
+     
+     FAME=300
+     KARMA=300
+     
+     STR={22, 98}
+     DEX={56, 75}
+     INT={6, 10}
+     MAXHITS={28, 45}
+ 
+[CHARDEF 060d]
+DEFNAME=c_dog_bernard
+NAME=Bernard Dog
+SOUND=snd_animals_horse1
+ICON=i_pet_dog_bernard
+CAN=mt_walk|mt_run
+ 
+DAM=3, 4
+ARMOR=9
+HEIGHT=16
+ 
+RESOURCES=3 i_ribs_raw, 10 i_hide
+FOODTYPE=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+DESIRES=e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+ 
+TEVENTS=e_horses
+ 
+CATEGORY=Mounts
+SUBSECTION=Domestic
+DESCRIPTION=Bernard Dog
+ 
+ON=@Create
+     NPC=brain_animal
+     
+     FAME=300
+     KARMA=300
+     
+     STR={22, 98}
+     DEX={56, 75}
+     INT={6, 10}
+     MAXHITS={28, 45}
+ 
+[CHARDEF 060f]
+DEFNAME=c_dog_terier
+NAME=Black Terrier Dog
+SOUND=snd_animals_horse1
+ICON=i_pet_dog_terier
+CAN=mt_walk|mt_run
+ 
+DAM=3, 4
+ARMOR=9
+HEIGHT=16
+ 
+RESOURCES=3 i_ribs_raw, 10 i_hide
+FOODTYPE=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+DESIRES=e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+ 
+TEVENTS=e_horses
+ 
+CATEGORY=Mounts
+SUBSECTION=Domestic
+DESCRIPTION=Black Terrier Dog
+ 
+ON=@Create
+     NPC=brain_animal
+     
+     FAME=300
+     KARMA=300
+     
+     STR={22, 98}
+     DEX={56, 75}
+     INT={6, 10}
+     MAXHITS={28, 45}
+ 
+[CHARDEF 0610]
+DEFNAME=c_dog_rottweiler
+NAME=Rottweiler Dog
+SOUND=snd_animals_horse1
+ICON=i_pet_dog_rottweiler
+CAN=mt_walk|mt_run
+ 
+DAM=3, 4
+ARMOR=9
+HEIGHT=16
+ 
+RESOURCES=3 i_ribs_raw, 10 i_hide
+FOODTYPE=55 t_crops,55 t_fruit,55 t_grain, 64 t_grass
+DESIRES=e_horses,c_man,c_woman
+AVERSIONS=e_carnivores3
+ 
+TEVENTS=e_horses
+ 
+CATEGORY=Mounts
+SUBSECTION=Domestic
+DESCRIPTION=Rottweiler Dog
+ 
+ON=@Create
+     NPC=brain_animal
+     
+     FAME=300
+     KARMA=300
+     
+     STR={22, 98}
+     DEX={56, 75}
+     INT={6, 10}
+     MAXHITS={28, 45}
+
+
 [EOF]
