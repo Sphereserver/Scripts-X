@@ -69,6 +69,15 @@ mount_0x582	i_mt_windrunner
 mount_0x59a	i_mt_serpentine_dragon_ethereal
 mount_0x5a0	i_mt_eowmu
 mount_0x5a1	i_mt_skeletal_cat
-
+//??
+mount_0x5e6 i_mt_coconut_crab_mount
+mount_0x5f6 i_mt_war_boar_mount
+mount_0x5f7 i_mt_capybara_mount
+mount_0x60a i_mt_newfoundland_mount
+mount_0x60b i_mt_malamut_mount
+mount_0x60c i_mt_dane_mount
+mount_0x60d i_mt_bernard_mount
+mount_0x60f i_mt_terier_mount
+mount_0x610 i_mt_rottweiler_mount
 
 [EOF]

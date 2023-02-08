@@ -3897,4 +3897,191 @@ CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Ethereal Serpentine Dragon
 
+[ITEMDEF 0a0c0]
+DEFNAME=i_pet_eowmu
+NAME=Eowmu
+TYPE=t_figurine
+TDATA3=c_eowmu
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Eowmu
+
+[ITEMDEF 0a138]
+DEFNAME=i_pet_skeletal_cat
+NAME=Chat squelettique
+TYPE=t_figurine
+TDATA3=c_skeletal_cat
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Skeletal Cat
+
+[ITEMDEF 0a1c6]
+DEFNAME=i_pet_khal_ankur
+NAME=Khal Ankur
+TYPE=t_figurine
+TDATA3=c_khal_ankur
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Khal Ankur
+
+[ITEMDEF 0a270]
+// Krumpus_Statue
+DEFNAME=i_pet_krumpus
+NAME=Krumpus
+TYPE=t_figurine
+TDATA3=c_krumpus
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Krumpus_Statue
+ 
+[ITEMDEF 0a271]
+// Krumpus_Imp_Statue
+DEFNAME=i_pet_krumpus_small
+NAME=Krumpus
+TYPE=t_figurine
+TDATA3=c_krumpus_small
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Krumpus_Imp_Statue
+ 
+[ITEMDEF 0a335]
+// Crab_Coconut_Mount
+DEFNAME=i_pet_crab_coconut_mount
+NAME=Coconut Crab
+TYPE=t_figurine
+TDATA3=c_coconut_crab_mount
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Crab_Coconut_Mount
+ 
+[ITEMDEF 0a336]
+// Crab_Coconut_Small
+DEFNAME=i_pet_crab_coconut_small
+NAME=Coconut Crab small
+TYPE=t_figurine
+TDATA3=c_coconut_crab_small
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Crab_Coconut_Small
+ 
+[ITEMDEF 0a337]
+// Crab_Coconut_Large
+DEFNAME=i_pet_crab_coconut_large
+NAME=Coconut Crab large
+TYPE=t_figurine
+TDATA3=c_coconut_crab_large
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Crab_Coconut_Large
+ 
+[ITEMDEF 0a554]
+// war_boar_mount
+DEFNAME=i_pet_war_boar_mount
+NAME=War Boar
+TYPE=t_figurine
+TDATA3=c_war_boar_mount
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=war_boar_mount
+ 
+[ITEMDEF 0a57b]
+// Capybara_Mount_Stat
+DEFNAME=i_pet_capybara_mount
+NAME=Capybara
+TYPE=t_figurine
+TDATA3=c_capybara_mount
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Capybara_Mount_Stat
+ 
+[ITEMDEF 0a57c]
+// Capybara_Baby_Statu
+DEFNAME=i_pet_capybara_baby
+NAME=Capybara baby
+TYPE=t_figurine
+TDATA3=c_capybara_baby
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Capybara_Baby_Statu
+ 
+[ITEMDEF 0a738]
+// Rabbit_Doom
+DEFNAME=i_pet_rabbit_doom
+NAME=Doom Rabbit
+TYPE=t_figurine
+TDATA3=c_rabbit_doom
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Rabbit_Doom
+ 
+[ITEMDEF 0a739]
+// Rabbit_Doom_Baby
+DEFNAME=i_pet_rabbit_doom_baby
+NAME=Doom Rabbit baby
+TYPE=t_figurine
+TDATA3=c_rabbit_doom_baby
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Rabbit_Doom_Baby
+ 
+[ITEMDEF 0a76b]
+// Dog_Newfoundland
+DEFNAME=i_pet_dog_newfoundland
+NAME=Newfoundland Dog
+TYPE=t_figurine
+TDATA3=c_dog_newfoundland
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dog_Newfoundland
+ 
+[ITEMDEF 0a76c]
+// Dog_Alaskan Malamut
+DEFNAME=i_pet_dog_dane
+NAME=Great Dane Dog
+TYPE=t_figurine
+TDATA3=c_dog_dane
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dog_Alaskan Malamut
+ 
+[ITEMDEF 0a76d]
+// Dog_Great_Dane
+DEFNAME=i_pet_dog_malamut
+NAME=Alaskan Malamut Dog
+TYPE=t_figurine
+TDATA3=c_dog_malamut
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dog_Great_Dane
+ 
+[ITEMDEF 0a76e]
+// Dog_Saint_Bernard
+DEFNAME=i_pet_dog_bernard
+NAME=Bernard Dog
+TYPE=t_figurine
+TDATA3=c_dog_bernard
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dog_Saint_Bernard
+ 
+[ITEMDEF 0a76f]
+// Dog_Black_Russian_t
+DEFNAME=i_pet_dog_terier
+NAME=Black Terrier Dog
+TYPE=t_figurine
+TDATA3=c_dog_terier
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dog_Black_Russian_t
+ 
+[ITEMDEF 0a770]
+// Dog_Rottweiler
+DEFNAME=i_pet_dog_rottweiler
+NAME=Rottweiler Dog
+TYPE=t_figurine
+TDATA3=c_dog_rottweiler
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dog_Rottweiler
+
 [EOF]
