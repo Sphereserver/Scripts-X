@@ -818,6 +818,13 @@ CATEGORY=Provisions - Ammunition
 SUBSECTION=Archery
 DESCRIPTION=Crossbow bolt (Straight)
 
+[ITEMDEF 01bff] //Do not stack with 01bfb (normal orientation)
+// crossbow bolt_WEST
+DEFNAME=i_crossbow_bolt_west
+CATEGORY=Provisions - Ammunition
+SUBSECTION=Archery
+DESCRIPTION=Crossbow bolt (west)
+
 [ITEMDEF 02804]
 DEFNAME=i_fukiya_dartx
 NAME=fukiya dart%s

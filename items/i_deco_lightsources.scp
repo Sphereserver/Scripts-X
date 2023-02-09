@@ -189,17 +189,21 @@ DUPEITEM=0a12
 //torch lit
 DUPEITEM=0a12
 
-//[ITEMDEF 0a15]
+[ITEMDEF 0a15]
 //lantern (unused, wrong equip id)
+TYPE=t_light_lit
 
-//[ITEMDEF 0a16]
+[ITEMDEF 0a16]
 //lantern (unused, wrong equip id)
+TYPE=t_light_lit
 
-//[ITEMDEF 0a17]
+[ITEMDEF 0a17]
 //lantern (unused, wrong equip id)
+TYPE=t_light_lit
 
-//[ITEMDEF 0a18]
+[ITEMDEF 0a18]
 //lantern (unused, wrong equip id)
+TYPE=t_light_lit
 
 
 [ITEMDEF 0a1a]

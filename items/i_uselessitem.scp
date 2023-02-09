@@ -1,0 +1,1027 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[COMMENT Unsorted_Unscripted_Useless Items]
+All item in the tiledata of last OSI clients are present in sphere scriptpack.
+The extraction of all Tiledata/Art item not present in script are done with the "dui" command in console.
+After the extraction done, the items are splits in 3 differents files:
+Unsorted: Some info on items are add and correct but they are not sorted to the correct item section.
+Unscripted: Valid item present on Muls file but not yet correctly added to scriptpack
+Useless: Item generate on tiledata but seem to be useless placeholder on MULS.
+
+[ITEMDEF 0]
+DEFNAME=i_unused
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile
+
+[ITEMDEF 000c3]
+// default KR
+DEFNAME=i_default_kr
+TYPE=t_normal
+
+[ITEMDEF 000c4]
+// Missing_Name
+DEFNAME=i_missing_name
+TYPE=t_normal
+
+
+[ITEMDEF 00224]
+// Missing_Name
+DEFNAME=i_missing_name_2
+TYPE=t_normal
+
+[ITEMDEF 00225]
+// Missing_Name
+DEFNAME=i_missing_name_3
+TYPE=t_normal
+
+[ITEMDEF 0028e]
+// Missing_Name
+DEFNAME=i_missing_name_4
+TYPE=t_normal
+
+[ITEMDEF 002af]
+// Missing_Name
+DEFNAME=i_missing_name_5
+TYPE=t_normal
+
+[ITEMDEF 002c2]
+// Missing_Name
+DEFNAME=i_missing_name_6
+TYPE=t_normal
+
+[ITEMDEF 002ed]
+// Missing_Name
+DEFNAME=i_missing_name_7
+TYPE=t_normal
+
+[ITEMDEF 002f6]
+// Missing_Name
+DEFNAME=i_missing_name_8
+TYPE=t_normal
+
+[ITEMDEF 003b1]
+// Missing_Name
+DEFNAME=i_missing_name_9
+TYPE=t_normal
+
+[ITEMDEF 003e5]
+// Missing_Name
+DEFNAME=i_missing_name_10
+TYPE=t_normal
+
+[ITEMDEF 003e6]
+// Missing_Name
+DEFNAME=i_missing_name_11
+TYPE=t_normal
+
+[ITEMDEF 003e7]
+// Missing_Name
+DEFNAME=i_missing_name_12
+TYPE=t_normal
+
+[ITEMDEF 003e8]
+// Missing_Name
+DEFNAME=i_missing_name_13
+TYPE=t_normal
+
+[ITEMDEF 003ec]
+// Missing_Name
+DEFNAME=i_missing_name_14
+TYPE=t_normal
+
+[ITEMDEF 003ed]
+// Missing_Name
+DEFNAME=i_missing_name_15
+TYPE=t_normal
+
+[ITEMDEF 0063f]
+// Missing_Name
+DEFNAME=i_missing_name_16
+TYPE=t_normal
+
+[ITEMDEF 00641]
+// Missing_Name
+DEFNAME=i_missing_name_17
+TYPE=t_normal
+
+[ITEMDEF 00642]
+// Missing_Name
+DEFNAME=i_missing_name_18
+TYPE=t_normal
+
+[ITEMDEF 00643]
+// Missing_Name
+DEFNAME=i_missing_name_19
+TYPE=t_normal
+
+[ITEMDEF 00644]
+// Missing_Name
+DEFNAME=i_missing_name_20
+TYPE=t_normal
+
+[ITEMDEF 00645]
+// Missing_Name
+DEFNAME=i_missing_name_21
+TYPE=t_normal
+
+[ITEMDEF 00646]
+// Missing_Name
+DEFNAME=i_missing_name_22
+TYPE=t_normal
+
+[ITEMDEF 00647]
+// Missing_Name
+DEFNAME=i_missing_name_23
+TYPE=t_normal
+
+[ITEMDEF 007d1]
+// Missing_Name
+DEFNAME=i_missing_name_24
+TYPE=t_normal
+
+[ITEMDEF 007de]
+// Missing_Name
+DEFNAME=i_missing_name_25
+TYPE=t_normal
+
+[ITEMDEF 00afb]
+// carpet
+DEFNAME=i_carpet
+TYPE=t_normal
+
+[ITEMDEF 00b19]
+// Missing_Name
+DEFNAME=i_missing_name_26
+TYPE=t_normal
+
+[ITEMDEF 00ea9]
+// portrait
+DEFNAME=i_portrait
+TYPE=t_normal
+
+[ITEMDEF 01236]
+// wall carving
+DEFNAME=i_wall_carving_8
+TYPE=t_normal
+
+[ITEMDEF 0152b]
+// Missing_Name
+DEFNAME=i_missing_name_27
+TYPE=t_normal
+
+[ITEMDEF 01c0e]
+// Valid_Art
+DEFNAME=i_valid_art
+TYPE=t_normal
+
+[ITEMDEF 01c0f]
+// Valid_Art
+DEFNAME=i_valid_art_2
+TYPE=t_normal
+
+[ITEMDEF 01c10]
+// Valid_Art
+DEFNAME=i_valid_art_3
+TYPE=t_normal
+
+[ITEMDEF 02051]
+// Valid_Art
+DEFNAME=i_valid_art_4
+TYPE=t_normal
+
+[ITEMDEF 02052]
+// Valid_Art
+DEFNAME=i_valid_art_5
+TYPE=t_normal
+
+[ITEMDEF 02063]
+// Valid_Art
+DEFNAME=i_valid_art_6
+TYPE=t_normal
+
+[ITEMDEF 02064]
+// Valid_Art
+DEFNAME=i_valid_art_7
+TYPE=t_normal
+
+[ITEMDEF 02065]
+// Reserved for MultiT
+DEFNAME=i_reserved_for_multit
+TYPE=t_normal
+
+[ITEMDEF 02066]
+// Valid_Art
+DEFNAME=i_valid_art_8
+TYPE=t_normal
+
+[ITEMDEF 02067]
+// Valid_Art
+DEFNAME=i_valid_art_9
+TYPE=t_normal
+
+[ITEMDEF 02069]
+// Valid_Art
+DEFNAME=i_valid_art_10
+TYPE=t_normal
+
+
+[ITEMDEF 0227d]
+// close wounds
+DEFNAME=i_close_wounds
+TYPE=t_normal
+
+[ITEMDEF 0227e]
+// consecrate weapon
+DEFNAME=i_consecrate_weapon
+TYPE=t_normal
+
+[ITEMDEF 0227f]
+// dispel evil
+DEFNAME=i_dispel_evil
+TYPE=t_normal
+
+[ITEMDEF 02280]
+// divine fury
+DEFNAME=i_divine_fury
+TYPE=t_normal
+
+[ITEMDEF 02281]
+// enemy of one
+DEFNAME=i_enemy_of_one
+TYPE=t_normal
+
+[ITEMDEF 02282]
+// holy light
+DEFNAME=i_holy_light
+TYPE=t_normal
+
+[ITEMDEF 02283]
+// noble sacrifice
+DEFNAME=i_noble_sacrifice
+TYPE=t_normal
+
+[ITEMDEF 02284]
+// remove curse
+DEFNAME=i_remove_curse
+TYPE=t_normal
+
+[ITEMDEF 02285]
+// sacred journey
+DEFNAME=i_sacred_journey
+TYPE=t_normal
+
+[ITEMDEF 02286]
+// armor ignore
+DEFNAME=i_armor_ignore
+TYPE=t_normal
+
+[ITEMDEF 02287]
+// bleed attack
+DEFNAME=i_bleed_attack
+TYPE=t_normal
+
+[ITEMDEF 02288]
+// concussion blow
+DEFNAME=i_concussion_blow
+TYPE=t_normal
+
+[ITEMDEF 02289]
+// crushing blow
+DEFNAME=i_crushing_blow
+TYPE=t_normal
+
+[ITEMDEF 0228a]
+// disarm
+DEFNAME=i_disarm
+TYPE=t_normal
+
+[ITEMDEF 0228b]
+// dismount
+DEFNAME=i_dismount
+TYPE=t_normal
+
+[ITEMDEF 0228c]
+// double strike
+DEFNAME=i_double_strike
+TYPE=t_normal
+
+[ITEMDEF 0228d]
+// infecting
+DEFNAME=i_infecting
+TYPE=t_normal
+
+[ITEMDEF 0228e]
+// mortal strike
+DEFNAME=i_mortal_strike
+TYPE=t_normal
+
+[ITEMDEF 0228f]
+// moving shot
+DEFNAME=i_moving_shot
+TYPE=t_normal
+
+[ITEMDEF 02290]
+// paralyzing bow
+DEFNAME=i_paralyzing_bow
+TYPE=t_normal
+
+[ITEMDEF 02291]
+// shadow strike
+DEFNAME=i_shadow_strike
+TYPE=t_normal
+
+[ITEMDEF 02292]
+// whirlwind attack
+DEFNAME=i_whirlwind_attack
+TYPE=t_normal
+
+[ITEMDEF 023a9]
+// smoke bomb
+DEFNAME=i_smoke_bomb
+TYPE=t_normal
+
+[ITEMDEF 02408]
+// Missing_Name
+DEFNAME=i_missing_name_28
+TYPE=t_normal
+
+[ITEMDEF 024ea]
+// jungle wall
+DEFNAME=i_jungle_wall
+TYPE=t_normal
+
+[ITEMDEF 0278c]
+// Mail Haidate
+DEFNAME=i_mail_haidate
+TYPE=t_normal
+
+[ITEMDEF 0279e]
+// Kimono Male Dress
+DEFNAME=i_kimono_male_dress
+TYPE=t_normal
+
+[ITEMDEF 0279f]
+// Kimono Female Dres
+DEFNAME=i_kimono_female_dres
+TYPE=t_normal
+
+[ITEMDEF 027d7]
+// Mail Haidate
+DEFNAME=i_mail_haidate_2
+TYPE=t_normal
+
+[ITEMDEF 027e9]
+// Kimono Male Dress
+DEFNAME=i_kimono_male_dress_2
+TYPE=t_normal
+
+[ITEMDEF 027ea]
+// Kimono Female Dres
+DEFNAME=i_kimono_female_dres_2
+TYPE=t_normal
+
+
+[ITEMDEF 02822]
+// Valid_Art
+DEFNAME=i_valid_art_11
+TYPE=t_normal
+
+[ITEMDEF 02823]
+// Valid_Art
+DEFNAME=i_valid_art_12
+TYPE=t_normal
+
+[ITEMDEF 02824]
+// Valid_Art
+DEFNAME=i_valid_art_13
+TYPE=t_normal
+
+[ITEMDEF 02825]
+// Valid_Art
+DEFNAME=i_valid_art_14
+TYPE=t_normal
+
+[ITEMDEF 02826]
+// Valid_Art
+DEFNAME=i_valid_art_15
+TYPE=t_normal
+
+[ITEMDEF 02827]
+// Valid_Art
+DEFNAME=i_valid_art_16
+TYPE=t_normal
+
+[ITEMDEF 02828]
+// Valid_Art
+DEFNAME=i_valid_art_17
+TYPE=t_normal
+
+[ITEMDEF 02829]
+// Valid_Art
+DEFNAME=i_valid_art_18
+TYPE=t_normal
+
+[ITEMDEF 0282a]
+// Valid_Art
+DEFNAME=i_valid_art_19
+TYPE=t_normal
+
+[ITEMDEF 0282b]
+// Valid_Art
+DEFNAME=i_valid_art_20
+TYPE=t_normal
+
+[ITEMDEF 0282c]
+// Valid_Art
+DEFNAME=i_valid_art_21
+TYPE=t_normal
+
+[ITEMDEF 0282d]
+// Valid_Art
+DEFNAME=i_valid_art_22
+TYPE=t_normal
+
+[ITEMDEF 0282e]
+// Valid_Art
+DEFNAME=i_valid_art_23
+TYPE=t_normal
+
+[ITEMDEF 0282f]
+// Valid_Art
+DEFNAME=i_valid_art_24
+TYPE=t_normal
+
+[ITEMDEF 02ab9]
+// Valid_Art
+DEFNAME=i_valid_art_25
+TYPE=t_normal
+
+[ITEMDEF 02aba]
+// Valid_Art
+DEFNAME=i_valid_art_26
+TYPE=t_normal
+
+[ITEMDEF 02ad8]
+// Missing_Name
+DEFNAME=i_missing_name_29
+TYPE=t_normal
+
+[ITEMDEF 02ae3]
+// Missing_Name
+DEFNAME=i_missing_name_30
+TYPE=t_normal
+
+[ITEMDEF 02e57]
+// (unnamed object)
+TYPE=t_normal
+
+[ITEMDEF 02f2e]
+// Valid_Art
+DEFNAME=i_valid_art_27
+TYPE=t_normal
+
+[ITEMDEF 02f2f]
+// Valid_Art
+DEFNAME=i_valid_art_28
+TYPE=t_normal
+
+[ITEMDEF 02f3d]
+// Valid_Art
+DEFNAME=i_valid_art_29
+TYPE=t_normal
+
+[ITEMDEF 02f3e]
+// Valid_Art
+DEFNAME=i_valid_art_30
+TYPE=t_normal
+
+[ITEMDEF 02f3f]
+// Valid_Art
+DEFNAME=i_valid_art_31
+TYPE=t_normal
+
+[ITEMDEF 02f40]
+// Valid_Art
+DEFNAME=i_valid_art_32
+TYPE=t_normal
+
+[ITEMDEF 02f41]
+// Valid_Art
+DEFNAME=i_valid_art_33
+TYPE=t_normal
+
+[ITEMDEF 02f42]
+// Valid_Art
+DEFNAME=i_valid_art_34
+TYPE=t_normal
+
+[ITEMDEF 02f43]
+// Valid_Art
+DEFNAME=i_valid_art_35
+TYPE=t_normal
+
+[ITEMDEF 02fd2]
+// (unnamed object)
+TYPE=t_normal
+
+[ITEMDEF 02fd3]
+// Valid_Art
+DEFNAME=i_valid_art_36
+TYPE=t_normal
+
+[ITEMDEF 02fda]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi
+TYPE=t_normal
+
+[ITEMDEF 02fdb]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_2
+TYPE=t_normal
+
+[ITEMDEF 02fe0]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_3
+TYPE=t_normal
+
+[ITEMDEF 02fe1]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_4
+TYPE=t_normal
+
+[ITEMDEF 02fe8]
+// tall crystal MI
+DEFNAME=i_tall_crystal_mi
+TYPE=t_door
+
+[ITEMDEF 02fe9]
+// tall crystal MI
+DEFNAME=i_tall_crystal_mi_2
+TYPE=t_door_open
+
+[ITEMDEF 02fee]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_5
+TYPE=t_door
+
+[ITEMDEF 02fef]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_6
+TYPE=t_door_open
+
+[ITEMDEF 02ff0]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_7
+TYPE=t_door
+
+[ITEMDEF 02ff1]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_8
+TYPE=t_door_open
+
+[ITEMDEF 03001]
+// wall
+DEFNAME=i_wall
+TYPE=t_normal
+
+[ITEMDEF 03002]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_9
+TYPE=t_normal
+
+[ITEMDEF 03003]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_10
+TYPE=t_normal
+
+[ITEMDEF 03018]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_11
+TYPE=t_normal
+
+[ITEMDEF 03019]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_12
+TYPE=t_normal
+
+[ITEMDEF 0301a]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_13
+TYPE=t_normal
+
+[ITEMDEF 0301b]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_14
+TYPE=t_normal
+
+[ITEMDEF 0301c]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_15
+TYPE=t_normal
+
+[ITEMDEF 0301d]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_16
+TYPE=t_normal
+
+[ITEMDEF 0301e]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_17
+TYPE=t_normal
+
+[ITEMDEF 0301f]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_18
+TYPE=t_normal
+
+[ITEMDEF 0302d]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_19
+TYPE=t_normal
+
+[ITEMDEF 0302e]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_20
+TYPE=t_normal
+
+[ITEMDEF 0302f]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_21
+TYPE=t_normal
+
+[ITEMDEF 03030]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_22
+TYPE=t_normal
+
+[ITEMDEF 03031]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_23
+TYPE=t_normal
+
+[ITEMDEF 03032]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_24
+TYPE=t_normal
+
+[ITEMDEF 03033]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_25
+TYPE=t_normal
+
+[ITEMDEF 03034]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_26
+TYPE=t_normal
+
+[ITEMDEF 03035]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_27
+TYPE=t_normal
+
+[ITEMDEF 03036]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_28
+TYPE=t_normal
+
+[ITEMDEF 03037]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_29
+TYPE=t_normal
+
+[ITEMDEF 03038]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_30
+TYPE=t_normal
+
+[ITEMDEF 03039]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_31
+TYPE=t_normal
+
+[ITEMDEF 0303a]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_32
+TYPE=t_normal
+
+[ITEMDEF 0303b]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_33
+TYPE=t_normal
+
+[ITEMDEF 0303c]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_34
+TYPE=t_normal
+
+[ITEMDEF 0303d]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_35
+TYPE=t_normal
+
+[ITEMDEF 0303e]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_36
+TYPE=t_normal
+
+[ITEMDEF 0303f]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_37
+TYPE=t_normal
+
+[ITEMDEF 03040]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_38
+TYPE=t_normal
+
+[ITEMDEF 03041]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_39
+TYPE=t_normal
+
+[ITEMDEF 03042]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_40
+TYPE=t_normal
+
+[ITEMDEF 03043]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_41
+TYPE=t_normal
+
+[ITEMDEF 03044]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_42
+TYPE=t_normal
+
+[ITEMDEF 03045]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_43
+TYPE=t_normal
+
+[ITEMDEF 03046]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_44
+TYPE=t_normal
+
+[ITEMDEF 03047]
+// ASSIGNED TO CMI
+DEFNAME=i_assigned_to_cmi_45
+TYPE=t_normal
+
+
+[ITEMDEF 03064]
+// MultiTile Assets
+DEFNAME=i_multitile_assets
+TYPE=t_normal
+
+[ITEMDEF 03065]
+// MultiTile Assets
+DEFNAME=i_multitile_assets_2
+TYPE=t_normal
+
+[ITEMDEF 03125]
+// Valid_Art
+DEFNAME=i_valid_art_37
+TYPE=t_normal
+
+[ITEMDEF 03126]
+// Valid_Art
+DEFNAME=i_valid_art_38
+TYPE=t_normal
+
+[ITEMDEF 032d5]
+// dirt
+DEFNAME=i_dirt_2
+TYPE=t_normal
+
+[ITEMDEF 034d7]
+// dirt
+DEFNAME=i_dirt_3
+TYPE=t_normal
+
+[ITEMDEF 03a75]
+// sleigh h
+DEFNAME=i_sleigh_h
+TYPE=t_normal
+
+[ITEMDEF 03a78]
+// sleigh h
+DEFNAME=i_sleigh_h_2
+TYPE=t_normal
+
+[ITEMDEF 03a7f]
+// sleigh h
+DEFNAME=i_sleigh_h_3
+TYPE=t_normal
+
+[ITEMDEF 03a82]
+// sleigh h
+DEFNAME=i_sleigh_h_4
+TYPE=t_normal
+
+[ITEMDEF 03a89]
+// sleigh h
+DEFNAME=i_sleigh_h_5
+TYPE=t_normal
+
+[ITEMDEF 03a8c]
+// sleigh h
+DEFNAME=i_sleigh_h_6
+TYPE=t_normal
+
+
+[ITEMDEF 03a8f]
+// (unnamed object)
+TYPE=t_normal
+
+[ITEMDEF 03a92]
+// sleigh h
+DEFNAME=i_sleigh_h_7
+TYPE=t_normal
+
+[ITEMDEF 03a93]
+// ree
+DEFNAME=i_ree
+TYPE=t_normal
+
+[ITEMDEF 03a94]
+// ree
+DEFNAME=i_ree_2
+TYPE=t_normal
+
+[ITEMDEF 03a95]
+// ree
+DEFNAME=i_ree_3
+TYPE=t_normal
+
+[ITEMDEF 03a96]
+// ree
+DEFNAME=i_ree_4
+TYPE=t_normal
+
+[ITEMDEF 03a97]
+// ree
+DEFNAME=i_ree_5
+TYPE=t_normal
+
+[ITEMDEF 03a98]
+// ree
+DEFNAME=i_ree_6
+TYPE=t_normal
+
+[ITEMDEF 03a99]
+// ree
+DEFNAME=i_ree_7
+TYPE=t_normal
+
+[ITEMDEF 03a9a]
+// ree
+DEFNAME=i_ree_8
+TYPE=t_normal
+
+[ITEMDEF 03a9b]
+// ree
+DEFNAME=i_ree_9
+TYPE=t_normal
+
+[ITEMDEF 03d35]
+// (unnamed object)
+TYPE=t_normal
+
+[ITEMDEF 03d36]
+// (unnamed object)
+TYPE=t_normal
+
+[ITEMDEF 03d37]
+// Missing_Name
+DEFNAME=i_missing_name_31
+TYPE=t_normal
+
+[ITEMDEF 03d48]
+// Missing_Name
+DEFNAME=i_missing_name_32
+TYPE=t_normal
+
+[ITEMDEF 03dc5]
+// Missing_Name
+DEFNAME=i_missing_name_33
+TYPE=t_normal
+
+[ITEMDEF 03dc8]
+// Missing_Name
+DEFNAME=i_missing_name_34
+TYPE=t_normal
+
+[ITEMDEF 03ed6]
+// Missing_Name
+DEFNAME=i_missing_name_35
+TYPE=t_normal
+
+[ITEMDEF 03ef0]
+// Missing_Name
+DEFNAME=i_missing_name_39
+TYPE=t_normal
+
+
+[ITEMDEF 03f29]
+// Missing_Name
+DEFNAME=i_missing_name_41
+TYPE=t_normal
+
+[ITEMDEF 03f2a]
+// Missing_Name
+DEFNAME=i_missing_name_42
+TYPE=t_normal
+
+[ITEMDEF 03f2b]
+// Missing_Name
+DEFNAME=i_missing_name_43
+TYPE=t_normal
+
+[ITEMDEF 03f2c]
+// Missing_Name
+DEFNAME=i_missing_name_44
+TYPE=t_normal
+
+[ITEMDEF 03f2d]
+// Missing_Name
+DEFNAME=i_missing_name_45
+TYPE=t_normal
+
+[ITEMDEF 03f2e]
+// Missing_Name
+DEFNAME=i_missing_name_46
+TYPE=t_normal
+
+[ITEMDEF 03f2f]
+// Missing_Name
+DEFNAME=i_missing_name_47
+TYPE=t_normal
+
+[ITEMDEF 03f30]
+// Missing_Name
+DEFNAME=i_missing_name_48
+TYPE=t_normal
+
+[ITEMDEF 03f31]
+// Missing_Name
+DEFNAME=i_missing_name_49
+TYPE=t_normal
+
+[ITEMDEF 03f32]
+// Missing_Name
+DEFNAME=i_missing_name_50
+TYPE=t_normal
+
+[ITEMDEF 03f33]
+// Missing_Name
+DEFNAME=i_missing_name_51
+TYPE=t_normal
+
+[ITEMDEF 03f34]
+// Missing_Name
+DEFNAME=i_missing_name_52
+TYPE=t_normal
+
+[ITEMDEF 03f35]
+// Missing_Name
+DEFNAME=i_missing_name_53
+TYPE=t_normal
+
+[ITEMDEF 03f36]
+// Missing_Name
+DEFNAME=i_missing_name_54
+TYPE=t_normal
+
+[ITEMDEF 03f37]
+// Missing_Name
+DEFNAME=i_missing_name_55
+TYPE=t_normal
+
+[ITEMDEF 03f38]
+// Missing_Name
+DEFNAME=i_missing_name_56
+TYPE=t_normal
+
+[ITEMDEF 03f39]
+// Missing_Name
+DEFNAME=i_missing_name_57
+TYPE=t_normal
+
+[ITEMDEF 03f3a]
+// Missing_Name
+DEFNAME=i_missing_name_58
+TYPE=t_normal
+
+[ITEMDEF 03f3b]
+// Missing_Name
+DEFNAME=i_missing_name_59
+TYPE=t_normal
+
+[EOF]
