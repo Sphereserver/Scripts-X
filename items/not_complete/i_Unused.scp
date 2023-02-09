@@ -4,19 +4,19 @@
 //****************************************************************************
 VERSION=X1
 
-[COMMENT Unsorted_Unscripted_Useless Items]
+[COMMENT Unsorted_Not complete Items]
 All item in the tiledata of last OSI clients are present in sphere scriptpack.
 The extraction of all Tiledata/Art item not present in script are done with the "dui" command in console.
 After the extraction done, the items are splits in 3 differents files:
 Unsorted: Some info on items are add and correct but they are not sorted to the correct item section.
-Unscripted: Valid item present on Muls file but not yet correctly added to scriptpack
-Useless: Item generate on tiledata but seem to be useless placeholder on MULS.
+
+not_complete folder contain (Not load by default in spheretables.scp)
+toDoItems: Valid item present on Muls file but not yet correctly added to scriptpack
+Unused: Item generate on tiledata but seem to be useless placeholder on MULS. 
 
 [ITEMDEF 0]
 DEFNAME=i_unused
-CATEGORY=Miscellaneous
-SUBSECTION=Bad Tiles
-DESCRIPTION=Unused Tile
+TYPE=t_normal
 
 [ITEMDEF 000c3]
 // default KR
@@ -27,7 +27,6 @@ TYPE=t_normal
 // Missing_Name
 DEFNAME=i_missing_name
 TYPE=t_normal
-
 
 [ITEMDEF 00224]
 // Missing_Name
