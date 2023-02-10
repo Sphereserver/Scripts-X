@@ -386,9 +386,12 @@ DUPELIST=02849
 DUPEITEM=02848
 
 
-//[ITEMDEF 02a9e]	//duplicated from 012d5
-//[ITEMDEF 02a9f]	//duplicated from 012d6
-//[ITEMDEF 02aa0]	//duplicated from 012d7
+[ITEMDEF 02a9e]	//duplicated from 012d5
+TYPE=t_normal
+[ITEMDEF 02a9f]	//duplicated from 012d6
+TYPE=t_normal
+[ITEMDEF 02aa0]	//duplicated from 012d7
+TYPE=t_normal
 
 
 [ITEMDEF 02d0e]

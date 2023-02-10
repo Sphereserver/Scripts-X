@@ -210,8 +210,9 @@ DESCRIPTION=Dragon Lantern (south)(unlit)
 ON=@Create
    MOREZ=1
 
-//[ITEMDEF 04c41]
+[ITEMDEF 04c41]
 //dragon lantern (unused, replaced by 04cde)
+TYPE=t_light_lit
 
 [ITEMDEF 04c42]
 DEFNAME=i_lantern_dragon_e
@@ -225,8 +226,9 @@ DESCRIPTION=Dragon Lantern (east)(unlit)
 ON=@Create
    MOREZ=1
 
-//[ITEMDEF 04c43]
+[ITEMDEF 04c43]
 //dragon lantern (unused, replaced by 04ce2)
+TYPE=t_light_lit
 
 [ITEMDEF 04c44]
 DEFNAME=i_lamp_bird_s

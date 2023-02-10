@@ -4,11 +4,15 @@
 //****************************************************************************
 VERSION=X1
 
-[ITEMDEF 0]
-DEFNAME=i_unused
-CATEGORY=Miscellaneous
-SUBSECTION=Bad Tiles
-DESCRIPTION=Unused Tile
+[COMMENT Unsorted_Not complete Items]
+All item in the tiledata of last OSI clients are present in sphere scriptpack.
+The extraction of all Tiledata/Art item not present in script are done with the "dui" command in console.
+After the extraction done, the items are splits in 3 differents files:
+Unsorted: Some info on items are add and correct but they are not sorted to the correct item section.
+
+not_complete folder contain (Not load by default in spheretables.scp)
+toDoItems: Valid item present on Muls file but not yet correctly added to scriptpack
+Unused: Item generate on tiledata but seem to be useless placeholder on MULS.
 
 [ITEMDEF 01]
 DEFNAME=i_nodraw
@@ -1843,10 +1847,54 @@ DEFNAME=i_pillar
 CATEGORY=Miscellaneous
 SUBSECTION=Bad Tiles
 DESCRIPTION=No Draw Tile
-DUPELIST=021a4,021bc
+DUPELIST=021a4,02199,0219a,0219b,0219c,0219d,0219e,021a0,021a1,021a2,021a3,021a4,021bb,021bc
+
+[ITEMDEF 02199]
+// nodraw
+DUPEITEM=02198
+
+[ITEMDEF 0219a]
+// nodraw
+DUPEITEM=02198
+
+[ITEMDEF 0219b]
+// nodraw
+DUPEITEM=02198
+
+[ITEMDEF 0219c]
+// nodraw
+DUPEITEM=02198
+
+[ITEMDEF 0219d]
+// nodraw
+DUPEITEM=02198
+
+[ITEMDEF 0219e]
+// nodraw
+DUPEITEM=02198
+
+[ITEMDEF 021a0]
+// nodraw
+DUPEITEM=02198
+
+[ITEMDEF 021a1]
+// nodraw
+DUPEITEM=02198
+
+[ITEMDEF 021a2]
+// nodraw
+DUPEITEM=02198
+
+[ITEMDEF 021a3]
+// nodraw
+DUPEITEM=02198
 
 [ITEMDEF 021a4]
 //no draw
+DUPEITEM=02198
+
+[ITEMDEF 021bb]
+// nodraw
 DUPEITEM=02198
 
 [ITEMDEF 021bc]
