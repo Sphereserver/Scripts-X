@@ -160,6 +160,13 @@ statf_saveparity        020000000   // has this char been saved or not ?
 statf_ridden            040000000   // this is the horse. (don't display me) i am being ridden
 statf_onhorse           080000000   // mounted on horseback.
 
+[DEFNAME speedmode_defs]
+speedmode_normal		    0
+speedmode_double		    1
+speedmode_always_walk	  2
+speedmode_mixed		      3
+speedmode_still		      4
+
 [DEFNAME attr_flags]
 // apply to items
 attr_identified         000000001 //Is item identified?
