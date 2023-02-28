@@ -3,6 +3,12 @@
 // www.sphereserver.net
 //****************************************************************************
 VERSION=X1
+[ITEMDEF 0]
+DEFNAME=i_unused
+CATEGORY=Miscellanous
+SUBSECTION=Placeholder Tiles
+DESCRIPTION=Unused Tile
+TYPE=t_normal
 
 [ITEMDEF 031b0]
 CATEGORY=Miscellaneous
