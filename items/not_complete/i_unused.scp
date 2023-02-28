@@ -14,10 +14,6 @@ not_complete folder contain (Not load by default in spheretables.scp)
 toDoItems: Valid item present on Muls file but not yet correctly added to scriptpack
 Unused: Item generate on tiledata but seem to be useless placeholder on MULS. 
 
-[ITEMDEF 0]
-DEFNAME=i_unused
-TYPE=t_normal
-
 [ITEMDEF 000c3]
 // default KR
 DEFNAME=i_default_kr

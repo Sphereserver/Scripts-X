@@ -187,8 +187,8 @@ d_admin_ESP_For_Account_Sys					"Para Cuenta"
 d_admin_ESP_Added_Note_Sys					"Se ha añadido una nota."
 d_admin_ESP_Note_For_Account_Sys				"La nota para la cuenta"
 d_admin_ESP_Del_Note_Sys					"ha sido borrada."
-d_admin_CSY_Resync_Sys						"ATENCIÓN - ¡Se actualizarán los scripts del servidor! "
-d_admin_CSY_Disconnect_Sys					"ATENCIÓN - ¡En 15 minutos todos los jugadores serán desconectados del servidor!"
-d_admin_CSY_Shutdown_Sys					"ATENCIÓN - En 15 minutos el servidor se apagará, ¡desconéctese del juego!"
+d_admin_ESP_Resync_Sys						"ATENCIÓN - ¡Se actualizarán los scripts del servidor! "
+d_admin_ESP_Disconnect_Sys					"ATENCIÓN - ¡En 15 minutos todos los jugadores serán desconectados del servidor!"
+d_admin_ESP_Shutdown_Sys					"ATENCIÓN - En 15 minutos el servidor se apagará, ¡desconéctese del juego!"
 
 [Eof]
