@@ -122,4 +122,4 @@ RETURN 1
 ON=@Mount
 RETURN 1
 
-[eof]
+[EOF]

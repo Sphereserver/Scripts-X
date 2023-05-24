@@ -1,4 +1,4 @@
-[function place_doors_felucca]
+[FUNCTION place_doors_felucca]
 
 serv.newitem=1701 
 new.attr=attr_static 
@@ -5356,4 +5356,4 @@ new.p=4689 1221 0
 
 
 
-[eof]
+[EOF]

@@ -1,4 +1,4 @@
-[function spawn_dungeons_trammel]
+[FUNCTION spawn_dungeons_trammel]
 spawn_blighted_grove_trammel
 spawn_britain_sewer_trammel
 spawn_covetous_trammel

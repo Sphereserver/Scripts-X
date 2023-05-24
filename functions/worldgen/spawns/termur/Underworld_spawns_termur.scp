@@ -1,4 +1,4 @@
-[function spawn_underworld_ter_mur]
+[FUNCTION spawn_underworld_ter_mur]
 
 
 //##############//##
@@ -76,4 +76,4 @@ f_create_spawner,rotworm,,,,,,1024,1018,-42,6,5,10,10,4,1,4,0,0,0,0,0
 f_create_spawner,Vernix,GreenGoblinAlchemist:GreenGoblin,,,,,1015,976,-27,6,5,10,10,6,1,1,3,0,0,0,0
 f_create_spawner,GreenGoblinAlchemist:GreenGoblin,,,,,,1044,976,-30,6,5,10,25,17,1,12,0,0,0,0,0
 
-[eof]
+[EOF]

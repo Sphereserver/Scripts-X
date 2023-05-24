@@ -1,4 +1,4 @@
-[function deco_terrot_skitas_ilshenar]
+[FUNCTION deco_terrot_skitas_ilshenar]
 
 SERV.NEWITEM= 1701
 NEW.ATTR=ATTR_STATIC 

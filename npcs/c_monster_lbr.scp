@@ -4693,7 +4693,7 @@ ON=@Create
 ON=@CreateLoot
     ITEM=i_gold,{400 500}
 
-[chardef 805]
+[CHARDEF 805]
 defname=c_solen_worker_black
 name=black solen worker
 sound=959
@@ -4723,7 +4723,7 @@ on=@createloot
 	item=i_gold,{125 175}
 	//item=i_zoogi_fungus,{1 6}
 
-[chardef 806]
+[CHARDEF 806]
 defname=c_solen_warrior_black
 name=black solen warrior
 sound=959
@@ -4757,7 +4757,7 @@ on=@createloot
     item=random_jewel,{1 4}
     //item=i_zoogi_fungus,{3 13}
 
-[chardef 807]
+[CHARDEF 807]
 defname=c_solen_queen_black
 name=black solen queen
 sound=959

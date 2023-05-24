@@ -1,4 +1,4 @@
-[function deco_uzeraan_turmoil_quest_trammel]	
+[FUNCTION deco_uzeraan_turmoil_quest_trammel]	
 
 // a magical teleporter//
 serv.newitem=01822//

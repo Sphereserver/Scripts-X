@@ -132,7 +132,7 @@ worlddecorator_facet_5_0	Underworld,deco_underworld_ter_mur
 /////////////////////////////
 // World Decorator item
 
-[itemdef i_world_decorator]
+[ITEMDEF i_world_decorator]
 id=i_crystal_ball
 name=World Decorator
 type=t_script

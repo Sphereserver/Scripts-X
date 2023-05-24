@@ -1,5 +1,5 @@
 
-[function spawn_solen_hive_felucca]
+[FUNCTION spawn_solen_hive_felucca]
 //##############
 //## By Nerun ##
 //##############
@@ -94,4 +94,4 @@ f_create_spawner,redsoleninfiltratorqueen,redsoleninfiltratorwarrior,,,,,1940,32
 //## Wind
 f_create_spawner,redsoleninfiltratorqueen,redsoleninfiltratorwarrior,,,,,1361,894,0,2,5,10,8,4,1,1,1,0,0,0,0
 
-[eof]
+[EOF]

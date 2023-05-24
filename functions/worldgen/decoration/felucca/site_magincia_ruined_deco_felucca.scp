@@ -1,4 +1,4 @@
-[function deco_magincia_ruined_felucca]
+[FUNCTION deco_magincia_ruined_felucca]
 
 if (<reportedcliver> > 7.0.13) || (<reportedcliver> <= 6.0.4)
   serv.log Skipping Magincia Ruins, reported client version is <reportedcliver>

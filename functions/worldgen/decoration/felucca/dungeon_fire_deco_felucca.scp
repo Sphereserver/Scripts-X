@@ -1,4 +1,4 @@
-[function deco_fire_dungeon_felucca]
+[FUNCTION deco_fire_dungeon_felucca]
 
 // teleporter
 serv.newitem=01BC3 

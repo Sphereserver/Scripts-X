@@ -63,4 +63,4 @@ else
 endif
 return 0
 
-[eof]
+[EOF]

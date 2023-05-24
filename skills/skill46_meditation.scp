@@ -33,7 +33,7 @@ ON=@Success
 	//SRC.f_meditation_setup
 
 
-[function f_meditation_setup]
+[FUNCTION f_meditation_setup]
 // This enables OSI meditation, providing a passive boost to RegenMana everytime and increasing it when the skill is active instead of the old regen-when-active.
 if (<tag0.MeditBonus>)
 	RegenMana -=<tag.MeditBonus>	// Removing old bonus before applying new one.

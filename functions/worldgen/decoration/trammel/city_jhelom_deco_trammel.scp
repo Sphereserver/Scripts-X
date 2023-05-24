@@ -1,4 +1,4 @@
-[function deco_jhelom_trammel]
+[FUNCTION deco_jhelom_trammel]
 		
 //portcullis//
 serv.newitem=006F5//

@@ -1,4 +1,4 @@
-[function spawn_quest_npcs_malas]
+[FUNCTION spawn_quest_npcs_malas]
 
 f_create_spawner	c_Victoria_The_Sorceress,,,,,,422,198,-1,3,5,10,10,10,1,1,0,0,0,0,0
 f_create_spawner	c_Gorrow_The_Mayor,,,,,,988,511,-50,3,5,10,10,10,1,1,0,0,0,0,0
@@ -74,4 +74,4 @@ f_create_spawner	c_escort_female,,,,,,1155,1557,-90,3,5,10,10,10,1,1,0,0,0,0,0
 f_create_spawner	c_escort_male,,,,,,2017,1552,-90,3,5,10,10,10,1,1,0,0,0,0,0
 f_create_spawner	c_escort_female,,,,,,1297,1706,-110,3,5,10,10,10,1,1,0,0,0,0,0
 
-[eof]
+[EOF]

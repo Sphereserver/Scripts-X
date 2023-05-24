@@ -1,4 +1,4 @@
-[function deco_blood_dungeon_ilshenar]
+[FUNCTION deco_blood_dungeon_ilshenar]
 
 // stone pavers
 serv.newitem=00521 
@@ -137,4 +137,4 @@ new.color=096C
 new.attr=attr_static 
 new.p=2116 829 -13 2
 
-[eof]
+[EOF]

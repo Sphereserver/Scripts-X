@@ -1,6 +1,6 @@
 
 
-[function spawn_terathan_keep_felucca]
+[FUNCTION spawn_terathan_keep_felucca]
 //##############
 //## By Nerun ##
 //##############
@@ -64,4 +64,4 @@ f_create_spawner,Balron,Dragon,Drake,Nightmare,,,5200,1565,0,2,5,15,20,10,1,1,1,
 f_create_spawner,Ophidianarchmage,Ophidianknight,Ophidianmage,Ophidianwarrior,Ophidianmatriarch,,5201,1566,0,2,5,15,20,10,1,1,1,1,1,1,0
 f_create_spawner,Terathanavenger,Terathandrone,Terathanmatriarch,Terathanwarrior,,,5200,1568,0,2,5,15,20,10,1,1,1,1,1,0,0
 
-[eof]
+[EOF]

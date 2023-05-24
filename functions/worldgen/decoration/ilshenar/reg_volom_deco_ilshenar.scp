@@ -1,4 +1,4 @@
-[function deco_reg_volom_ilshenar]
+[FUNCTION deco_reg_volom_ilshenar]
 // metal box
 SERV.NEWITEM=009A8 
 new.color=096E

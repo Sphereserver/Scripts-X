@@ -1,4 +1,4 @@
-[function deco_wind_trammel]
+[FUNCTION deco_wind_trammel]
 		
 //marble wall//
 serv.newitem=02B5//
@@ -1232,4 +1232,4 @@ serv.newitem=01F45//
 new.attr=attr_static//
 new.p=5304 88 19 1//
 
-[eof]		
+[EOF]		

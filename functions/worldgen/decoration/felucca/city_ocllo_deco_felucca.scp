@@ -1,4 +1,4 @@
-[function deco_ocllo_felucca]
+[FUNCTION deco_ocllo_felucca]
 
 //stone wall
 serv.newitem=001A

@@ -1808,7 +1808,7 @@ ON=@Create
    HITPOINTS={36 48}
    RESPHYSICAL=1
 
-[itemdef 02674] //Decoration
+[ITEMDEF 02674] //Decoration
 defname=i_haramaki_do
 name=haramaki-do
 CATEGORY=Decoration - Samurai Empire

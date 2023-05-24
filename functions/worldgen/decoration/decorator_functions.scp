@@ -1,5 +1,5 @@
 
-[function f_decorate_facet]
+[FUNCTION f_decorate_facet]
 local.n=<args>
 while !<isempty <def.worlddecorator_facet_<dlocal.n>_<dlocal.x>>>
   args=<def0.worlddecorator_facet_<dlocal.n>_<dlocal.x>>
@@ -9,7 +9,7 @@ while !<isempty <def.worlddecorator_facet_<dlocal.n>_<dlocal.x>>>
 endwhile
 src.sysmessage @<eval 026+(<local.n>*20)> Decorating <def0.worlddecorator_facet_<dlocal.n>> complete.
 
-[function f_link_double_doors]	//And remove double door
+[FUNCTION f_link_double_doors]	//And remove double door
 //send an item to 1 1 1 <map_plane> and make it run this function, then remove the item
 local.p=<p>
 for 0 5
@@ -37,7 +37,7 @@ endfor
 p=<local.p>
 update
 
-[function f_reset_decoration_counters]
+[FUNCTION f_reset_decoration_counters]
 while !<isempty <def.worlddecorator_facet_<dlocal.n>>>
   while !<isempty <def.worlddecorator_facet_<dlocal.n>_<dlocal.x>>>
     args=<def0.worlddecorator_facet_<dlocal.n>_<dlocal.x>>
@@ -48,7 +48,7 @@ while !<isempty <def.worlddecorator_facet_<dlocal.n>>>
   local.x=
 endwhile
 
-[function f_destroy_world]
+[FUNCTION f_destroy_world]
 local.p=<P>
 p=1,1,1,0
 update
@@ -69,7 +69,7 @@ f_reset_decoration_counters
 f_reset_spawn_counters
 sysmessage @026 World completey destroyed
 
-[function f_remove_all_signs]
+[FUNCTION f_remove_all_signs]
 local.p=<P>
 p=1,1,1,0
 update
@@ -86,7 +86,7 @@ update
 sysmessage @026 All signs removed
 
 
-[function f_remove_all_doors]
+[FUNCTION f_remove_all_doors]
 local.p=<P>
 p=1,1,1,0
 update

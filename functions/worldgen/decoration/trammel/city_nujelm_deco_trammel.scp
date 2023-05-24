@@ -1,4 +1,4 @@
-[function deco_nujelm_trammel]	
+[FUNCTION deco_nujelm_trammel]	
 	
 //metal door//
 serv.newitem=0675//

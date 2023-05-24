@@ -1,4 +1,4 @@
-[function deco_minoc_felucca]
+[FUNCTION deco_minoc_felucca]
 
 //minoc camp
 //gruesome standard
@@ -3419,4 +3419,4 @@ serv.newitem=01EFD
 new.attr=attr_static 
 new.p=2541 636 0
 
-[eof]
+[EOF]

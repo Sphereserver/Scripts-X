@@ -1,4 +1,4 @@
-[function spawn_quest_npcs_felucca]
+[FUNCTION spawn_quest_npcs_felucca]
 
 f_create_spawner	c_Tiana_the_Guard,,,,,,6250,109,-5,0,5,10,10,10,1,1,0,0,0,0,0
 f_create_spawner	c_Canir_the_Thaumaturgist,,,,,,6255,114,-10,0,5,10,10,10,1,1,0,0,0,0,0
@@ -328,4 +328,4 @@ f_create_spawner	c_escort_female,,,,,,1039,2391,0,0,5,10,10,10,1,1,0,0,0,0,0
 f_create_spawner	c_escort_male,,,,,,1285,2434,5,0,5,10,10,10,1,1,0,0,0,0,0
 f_create_spawner	c_escort_female,,,,,,1508,3990,-2,0,5,10,10,10,1,1,0,0,0,0,0
 
-[eof]
+[EOF]

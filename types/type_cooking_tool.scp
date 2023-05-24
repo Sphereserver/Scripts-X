@@ -14,4 +14,4 @@ else
 endif
 return 1
 
-[eof]
+[EOF]

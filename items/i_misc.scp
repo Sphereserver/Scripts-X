@@ -351,7 +351,7 @@ else
 	timer=180
 endif
 
-[itemdef i_solen_hive_teleporter]    //used for traversing the solen hives 
+[ITEMDEF i_solen_hive_teleporter]    //used for traversing the solen hives 
 id=01772
 name=Solen Hive Hole
 type=t_sign_gump

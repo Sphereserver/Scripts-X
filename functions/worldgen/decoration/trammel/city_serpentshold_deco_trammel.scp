@@ -1,4 +1,4 @@
-[function deco_serpents_hold_trammel]	
+[FUNCTION deco_serpents_hold_trammel]	
 	
 //MetalDoor//
 serv.newitem=0675//

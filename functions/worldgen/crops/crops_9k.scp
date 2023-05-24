@@ -1,4 +1,4 @@
-[function f_worldgen_create_crops9k]
+[FUNCTION f_worldgen_create_crops9k]
 foritems 9999
   if (<type>==t_crops)
     remove

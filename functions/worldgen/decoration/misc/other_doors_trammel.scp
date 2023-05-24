@@ -1,4 +1,4 @@
-[function place_doors_trammel]
+[FUNCTION place_doors_trammel]
 
 serv.newitem=1701 
 new.attr=attr_static 
@@ -5354,4 +5354,4 @@ serv.newitem=1709
 new.attr=attr_static 
 new.p=4689 1221 0 1
 
-[eof]
+[EOF]

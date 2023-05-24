@@ -1,4 +1,4 @@
-[function spawn_abyss_ter_mur]
+[FUNCTION spawn_abyss_ter_mur]
 
 //##//##//##//##//###
 //## Abyss ##
@@ -32,4 +32,4 @@ f_create_spawner,Pixie:Wisp:DarkWisp:PixieRenowned,,,,,,440,708,24,6,5,10,35,35,
 f_create_spawner,Skeleton:PatchworkSkeleton:SkeletalKnight:BoneKnight:SkeletalMage:BoneMagi:SkeletalLich:SkeletalDragonRenowned,,,,,,674,828,-109,6,5,10,25,25,1,30,0,0,0,0,0
 f_create_spawner,FairyDragon:Wyvern:ForgottenServant:WyvernRenowned,,,,,,887,277,3,6,5,10,20,20,1,35,0,0,0,0,0
 
-[eof]
+[EOF]

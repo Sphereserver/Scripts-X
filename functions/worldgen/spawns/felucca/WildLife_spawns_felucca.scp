@@ -1,7 +1,7 @@
 
 
 
-[function spawn_wild_life_felucca]
+[FUNCTION spawn_wild_life_felucca]
 //##############
 //## By Nerun ##
 //##############
@@ -189,4 +189,4 @@ f_create_spawner,Boar:Cougar:Goat:Horse:Panther:Pig:Sheep,BlackBear:GrizzlyBear:
 f_create_spawner,Boar:Cougar:Goat:Horse:Panther:Pig:Sheep,BlackBear:GrizzlyBear:BrownBear:TimberWolf:GreyWolf,WanderingHealer,Bird:Eagle,GreatHart:Hind,Bull:Cow,2814,492,15,2,5,10,50,50,1,7,5,1,2,2,2
 f_create_spawner,Boar:Cougar:Goat:Horse:Panther:Pig:Sheep,BlackBear:GrizzlyBear:BrownBear:TimberWolf:GreyWolf,WanderingHealer,Bird:Eagle,GreatHart:Hind,Bull:Cow,2688,524,11,2,5,10,50,50,1,7,5,1,2,2,2
 
-[eof]
+[EOF]

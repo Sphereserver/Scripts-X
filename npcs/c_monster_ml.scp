@@ -138,7 +138,7 @@ ON=@PersonalSpace
       NEW.LINK=<UID>
    ENDIF
 
-[chardef c_Plague_Spawn]
+[CHARDEF c_Plague_Spawn]
 defname c_plague_spawn
 name=Plague spawn
 id=c_slime_corrosive
@@ -937,7 +937,7 @@ ON=@CreateLoot
     ITEM=random_jewel,{1 4}
     ITEM=i_gold,{80 130}
 
-[chardef c_dryad_insane]
+[CHARDEF c_dryad_insane]
 defname=c_dryad_insane
 id=c_dryad
 name=Insane Dryad

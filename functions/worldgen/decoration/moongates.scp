@@ -67,7 +67,7 @@ moongates_facet4_2 	270,628,15,4,Homare-Jima 	//homare jima
 moongates_facet5 	Ter Mur
 moongates_facet5_0 	851,3525,-38,5,Royal City	//royal city
 
-[function place_moongates]
+[FUNCTION place_moongates]
 forinstances i_moongate
   remove
 endfor
@@ -84,7 +84,7 @@ for f 0 6
 endfor
 sysmessage Moongates placed
 
-[function remove_moongates]
+[FUNCTION remove_moongates]
 forinstances i_moongate
   remove
 endfor

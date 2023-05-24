@@ -1,4 +1,4 @@
-[function deco_exodus_dungeon_ilshenar]
+[FUNCTION deco_exodus_dungeon_ilshenar]
 // marble wall
 serv.newitem=0011A 
 new.color=066D
@@ -4478,4 +4478,4 @@ new.name=a control panel
 new.attr=attr_static 
 new.p=830 779 -6 2
 
-[eof]
+[EOF]

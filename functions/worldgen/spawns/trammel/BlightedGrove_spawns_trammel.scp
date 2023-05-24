@@ -10,7 +10,7 @@
 //## Blighted Grove
 //##
 
-[function spawn_blighted_grove_trammel]
+[FUNCTION spawn_blighted_grove_trammel]
 
 f_create_spawner,tangle:bogling:alligator:reaper:corpser:changeling:whippingvine,,,,,,6507,843,0,2,5,10,10,10,1,8,0,0,0,0,0
 f_create_spawner,giantserpent:gianttoad:harpy:silverserpent:snake:bogling,,,,,,6513,871,0,2,5,10,35,35,1,17,0,0,0,0,0
@@ -21,4 +21,4 @@ f_create_spawner,thrasher:swamptentacle:reaper:bogling:alligator:coil:whippingvi
 f_create_spawner,insanedryad,,,,,,6489,897,0,2,5,10,5,5,1,1,0,0,0,0,0
 f_create_spawner,insanedryad,,,,,,6518,879,0,2,5,10,5,5,1,1,0,0,0,0,0
 
-[eof]
+[EOF]

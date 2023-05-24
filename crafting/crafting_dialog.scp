@@ -616,4 +616,4 @@ src.sysmessage @,,1 You mark the item.
 tag0.craftedby = <qval (<src.fame> < 10000) ? "<src.name>":"<src.sex Lord/Lady> <src.name>">
 resendtooltip 1
 
-[eof]
+[EOF]

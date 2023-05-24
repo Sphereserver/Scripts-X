@@ -1,4 +1,4 @@
-[function deco_magincia_trammel]	
+[FUNCTION deco_magincia_trammel]	
 	
 // Signs
 serv.newitem=0BCF

@@ -141,7 +141,7 @@ return <local.typename>
 
 // ------------------------------------------------------
 
-[function f_stonesys_updatenoto]
+[FUNCTION f_stonesys_updatenoto]
 ref1 = <argv[0]> // The stone
 if (<ref1.IsChar>)
 	return 0

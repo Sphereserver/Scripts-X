@@ -1,4 +1,4 @@
-[function deco_buccaneers_den_trammel]
+[FUNCTION deco_buccaneers_den_trammel]
 	
 // stone pavers//
 serv.newitem=051E//
@@ -1090,4 +1090,4 @@ serv.newitem=01F91//
 new.attr=attr_static//
 new.p=2679 2233 4 1//
 
-[eof]		
+[EOF]		

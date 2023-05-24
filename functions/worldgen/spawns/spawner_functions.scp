@@ -4,7 +4,7 @@
 //*|List1|List2|List3|List4|List5|List6|X|Y|Z|facet|MinTime|MaxTime|WalkingRange|HomeRange|SpawnID|Count1|Count2|Count3|Count4|Count5|Count6
 
 
-[function f_create_spawner]
+[FUNCTION f_create_spawner]
 for 0 5
   if !(<isempty <argv<dlocal._for>>>)
     if (strmatch(*:*,<argv<dlocal._for>>))	//check to see if more than one npc on the spawner
@@ -54,7 +54,7 @@ endfor
 
 
 ////VALIDATION
-[function f_validate_spawn]
+[FUNCTION f_validate_spawn]
 for n 0 <eval <argv> -1>
   local.spawn=<def0.<argv[<dlocal.n>]>>
   if !(<resourceindex <local.spawn>>) && !(<resourceindex <local.spawn>>)
@@ -64,7 +64,7 @@ endfor
 ////VALIDATION
 
 
-[function f_remove_all_spawns]
+[FUNCTION f_remove_all_spawns]
 forinstances i_worldgem_bit
   if (<type>==t_spawn_char) || (<type>==t_spawn_item)
     remove
@@ -74,7 +74,7 @@ f_reset_spawn_counters
 sysmessage @026 All spawns removed
 
 
-[function f_reset_spawn_counters]
+[FUNCTION f_reset_spawn_counters]
 while !<isempty <def.worldspawner_facet_<dlocal.n>>>
   while !<isempty <def.worldspawner_facet_<dlocal.n>_<dlocal.x>>>
     args=<def0.worldspawner_facet_<dlocal.n>_<dlocal.x>>

@@ -1,4 +1,4 @@
-[function deco_britain_trammel]
+[FUNCTION deco_britain_trammel]
 
 //rock stairs//
 serv.newitem=07A7//

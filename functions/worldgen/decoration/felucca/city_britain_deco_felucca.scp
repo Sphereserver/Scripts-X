@@ -1,4 +1,4 @@
-[function deco_britain_felucca]
+[FUNCTION deco_britain_felucca]
 
 //rock stairs
 serv.newitem=07A7

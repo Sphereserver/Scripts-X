@@ -1,6 +1,6 @@
 
 
-[function spawn_lost_lands_felucca]
+[FUNCTION spawn_lost_lands_felucca]
 //##############
 //## By Nerun ##
 //##############
@@ -343,4 +343,4 @@ f_create_spawner,Ophidianmatriarch:Ophidianarchmage,Ophidianmage,Ophidianknight:
 f_create_spawner,Ophidianmatriarch:Ophidianarchmage,Ophidianmage,Ophidianknight:Ophidianwarrior,,,,5432,3079,-4,2,5,10,25,5,1,1,1,2,0,0,0
 f_create_spawner,Ophidianmatriarch:Ophidianarchmage,Ophidianmage,Ophidianknight:Ophidianwarrior,,,,5408,3077,16,2,5,10,25,5,1,1,1,2,0,0,0
 
-[eof]
+[EOF]

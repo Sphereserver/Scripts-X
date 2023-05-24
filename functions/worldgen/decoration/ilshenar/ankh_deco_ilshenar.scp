@@ -1,4 +1,4 @@
-[function deco_ankh_dungeon_ilshenar]
+[FUNCTION deco_ankh_dungeon_ilshenar]
 
 // bookcase
 serv.newitem=00A97
@@ -722,4 +722,4 @@ serv.newitem= 00E3D
 new.attr=attr_static 
 new.p=64 1354 -22 2
 
-[eof]
+[EOF]

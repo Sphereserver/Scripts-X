@@ -1,4 +1,4 @@
-[function deco_hedge_maze_felucca]
+[FUNCTION deco_hedge_maze_felucca]
 
 // teleporter
 serv.newitem=01BC3 
@@ -1162,4 +1162,4 @@ serv.newitem=0A9C
 new.attr=attr_static 
 new.p=1160 2208 40
 
-[eof]
+[EOF]

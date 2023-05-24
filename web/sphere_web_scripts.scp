@@ -1,11 +1,11 @@
 
 
-[function f_webdate_rebuild]
+[FUNCTION f_webdate_rebuild]
 f_webdate_build_items
 f_webdate_build_chars
 
 
-[function f_webdate_build_items_xml]
+[FUNCTION f_webdate_build_items_xml]
 serv.deletefile scripts/web/datas/items.xml
 serv.writefile scripts/web/datas/items.xml <def.l1>?xml version="1.0" encoding="UTF-8"?<def.r1>
 serv.writefile scripts/web/datas/items.xml <def.l1>document<def.r1>
@@ -35,7 +35,7 @@ serv.writefile scripts/web/datas/items.xml </document>
 
 
 
-[function f_webdate_build_items_json]
+[FUNCTION f_webdate_build_items_json]
 serv.deletefile scripts/web/datas/items.json
 serv.writefile scripts/web/datas/items.json {
 serv.writefile scripts/web/datas/items.json 'items': [
@@ -65,7 +65,7 @@ serv.writefile scripts/web/datas/items.json }
 
 
 
-[function f_webdate_build_chars]
+[FUNCTION f_webdate_build_chars]
 serv.deletefile scripts/web/datas/chars.json
 serv.writefile scripts/web/datas/chars.json {
 serv.writefile scripts/web/datas/chars.json ""chars"": [
@@ -97,4 +97,4 @@ serv.writefile scripts/web/datas/chars.json }
 
 
 
-[eof]
+[EOF]

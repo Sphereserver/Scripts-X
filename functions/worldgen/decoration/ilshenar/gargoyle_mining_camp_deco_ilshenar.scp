@@ -1,4 +1,4 @@
-[function deco_gargoyle_mining_camp]
+[FUNCTION deco_gargoyle_mining_camp]
 
 // stalagmites
 SERV.NEWITEM=008E1

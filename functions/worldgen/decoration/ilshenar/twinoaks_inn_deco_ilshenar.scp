@@ -1,4 +1,4 @@
-[function deco_twinoaks_inn_ilshenar]
+[FUNCTION deco_twinoaks_inn_ilshenar]
 
 // fireplace
 serv.newitem=0959
@@ -124,4 +124,4 @@ serv.newitem=095F
 new.attr=attr_static 
 new.p=1556 1038 13 2
 
-[eof]
+[EOF]

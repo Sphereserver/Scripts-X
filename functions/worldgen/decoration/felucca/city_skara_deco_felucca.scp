@@ -1,4 +1,4 @@
-[function deco_skara_brae_felucca]
+[FUNCTION deco_skara_brae_felucca]
 
 //Teleporters //
 serv.newitem=01BC3 
@@ -4582,4 +4582,4 @@ serv.newitem=03ED4
 new.attr=attr_static 
 new.p=711 2238 -5
 
-[eof]
+[EOF]

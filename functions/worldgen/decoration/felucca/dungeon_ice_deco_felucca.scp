@@ -1,4 +1,4 @@
-[function deco_ice_dungeon_felucca]
+[FUNCTION deco_ice_dungeon_felucca]
 
 //flag stones
 serv.newitem=04FE

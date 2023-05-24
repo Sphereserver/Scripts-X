@@ -2327,7 +2327,7 @@ ON=@CreateLoot
    ITEM=loot_ai_hard
    ITEMNEWBIE=i_mt_horse_gray
 
-[chardef c_Cursed]
+[CHARDEF c_Cursed]
 defname=c_Cursed
 id=c_man
 name=#names_humanmale
@@ -2365,7 +2365,7 @@ on=@create
 	color=colors_neutral
 	item=random_weapon_all_normal
 
-[chardef c_Cursed_f]
+[CHARDEF c_Cursed_f]
 defname=c_Cursed_f
 id=c_woman
 name=#names_humanmale
@@ -2404,7 +2404,7 @@ on=@create
 	item=random_weapon_all_normal
 
 
-[chardef c_Khaldun_Summoner]
+[CHARDEF c_Khaldun_Summoner]
 defname=c_Khaldun_Summoner
 id=c_man
 name=Zealot of Khaldun
@@ -2450,7 +2450,7 @@ on=@create
 	color=066d
 
 
-[chardef c_Khaldun_Zealot]
+[CHARDEF c_Khaldun_Zealot]
 defname=c_Khaldun_Zealot
 id=c_man
 name=Zealot of Khaldun

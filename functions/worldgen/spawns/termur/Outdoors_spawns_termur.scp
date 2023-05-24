@@ -1,4 +1,4 @@
-[function spawn_outdoors_ter_mur]
+[FUNCTION spawn_outdoors_ter_mur]
 
 //##//##//##//##//##//##
 //## TerMur ##
@@ -75,4 +75,4 @@ f_create_spawner,UndeadGuardian:SilverSerpent,,,,,,35,99,-5,6,5,10,15,15,1,10,0,
 f_create_spawner,undeadguardian:gargoyleshade:putridundeadguardian,,,,,,35,159,0,6,5,10,40,40,1,13,0,0,0,0,0
 f_create_spawner,Niporailem,,,,,,143,158,-20,6,5,10,5,5,1,1,0,0,0,0,0
 
-[eof]
+[EOF]

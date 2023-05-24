@@ -1,4 +1,4 @@
-[function deco_sea_market_trammel]
+[FUNCTION deco_sea_market_trammel]
 		
 // Sea Market / Dock Town//		
 serv.newitem=01E5E//

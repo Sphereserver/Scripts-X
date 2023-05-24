@@ -117,57 +117,57 @@ bowcraft_material_6_color		"color_log_frostwood"
 bowcraft_material_6_resourceid	"i_log_frostwood"
 
 
-[function f_colored_weaps_oak]
+[FUNCTION f_colored_weaps_oak]
 if !<istevent.ei_equipitem>
 events +ei_equipitem
 endif
 Luck = <eval <Luck> + 40>
 IncreaseDam = 5
 
-[function f_colored_armor_ash]
+[FUNCTION f_colored_armor_ash]
 LowerReq = 20
 
-[function f_colored_weaps_ash]
+[FUNCTION f_colored_weaps_ash]
 if !<istevent.ei_equipitem>
 events +ei_equipitem
 endif
 IncreaseSwingSpeed = 10
 LowerReq = 20
 
-[function f_colored_armor_yew]
+[FUNCTION f_colored_armor_yew]
 if !<istevent.ei_equipitem>
 events +ei_equipitem
 endif
 RegenHits = 1
 
-[function f_colored_weaps_yew]
+[FUNCTION f_colored_weaps_yew]
 if !<istevent.ei_equipitem>
 events +ei_equipitem
 endif
 IncreaseHitChance = 5
 IncreaseDam = 10
 
-[function f_colored_armor_bloodwood]
+[FUNCTION f_colored_armor_bloodwood]
 if !<istevent.ei_equipitem>
 events +ei_equipitem
 endif
 RegenHits = 2
 
-[function f_colored_shield_bloodwood]
+[FUNCTION f_colored_shield_bloodwood]
 if !<istevent.ei_equipitem>
 events +ei_equipitem
 endif
 Luck = 40
 RegenHits = 2
 
-[function f_colored_weaps_bloodwood]
+[FUNCTION f_colored_weaps_bloodwood]
 if !<istevent.ei_equipitem>
 events +ei_equipitem
 endif
 RegenHits = 2
 HitLeechLife = 16
 
-[function f_colored_armor_heartwood]
+[FUNCTION f_colored_armor_heartwood]
 if !<istevent.ei_equipitem>
 events +ei_equipitem
 endif
@@ -180,7 +180,7 @@ dorand 6
 	MageArmor = 1
 enddo
 
-[function f_colored_shield_heartwood]
+[FUNCTION f_colored_shield_heartwood]
 if !<istevent.ei_equipitem>
 events +ei_equipitem
 endif
@@ -194,7 +194,7 @@ dorand 7
 	SpellChanneling = 1
 enddo
 
-[function f_colored_weaps_heartwood]
+[FUNCTION f_colored_weaps_heartwood]
 if !<istevent.ei_equipitem>
 events +ei_equipitem
 endif
@@ -208,18 +208,18 @@ dorand 7
 	Luck = 10
 enddo
 
-[function f_colored_shield_frostwood]
+[FUNCTION f_colored_shield_frostwood]
 if !<istevent.ei_equipitem>
 events +ei_equipitem
 endif
 SpellChanneling = 1
 FasterCasting = -1
 
-[function f_colored_weaps_frostwood]
+[FUNCTION f_colored_weaps_frostwood]
 if !<istevent.ei_equipitem>
 events +ei_equipitem
 endif
 IncreaseDam = 12
 DamCold = 40
 
-[eof]
+[EOF]

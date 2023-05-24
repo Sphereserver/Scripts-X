@@ -1,4 +1,4 @@
-[function deco_vesper_felucca]
+[FUNCTION deco_vesper_felucca]
 
 serv.newitem=0BD2
 new.type=t_normal
@@ -4342,4 +4342,4 @@ serv.newitem=01F89
 new.attr=attr_static 
 new.p=2898 913 6
 
-[eof]
+[EOF]

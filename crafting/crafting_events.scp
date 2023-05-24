@@ -136,4 +136,4 @@ ref2.resendtooltip 1
 f_resenddialog d_craft_menu
 return 0
 
-[eof]
+[EOF]

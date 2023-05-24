@@ -1,5 +1,5 @@
 
-[function deco_all_malas]
+[FUNCTION deco_all_malas]
 //added
 serv.newitem=01062
 new.attr=attr_static

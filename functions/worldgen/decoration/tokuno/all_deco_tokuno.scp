@@ -1,4 +1,4 @@
-[function deco_all_tokuno]
+[FUNCTION deco_all_tokuno]
 
 serv.newitem=2996 
 new.name=Miyabi Inn
@@ -272,4 +272,4 @@ new.attr=attr_static
 new.p=748 1231 25 4
 new.name=May the town of Zento prosper.  Memorial tree planted by Dept and maha.
 
-[eof]
+[EOF]

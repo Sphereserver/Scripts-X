@@ -1,6 +1,6 @@
 
 
-[function spawn_fire_dungeon_felucca]
+[FUNCTION spawn_fire_dungeon_felucca]
 //##############
 //## By Nerun ##
 //##############
@@ -75,4 +75,4 @@ f_create_spawner,TreasureLevel3,,,,,,5679,1439,0,2,60,120,5,5,1,2,0,0,0,0,0
 f_create_spawner,TreasureLevel3,,,,,,5650,1434,0,2,60,120,2,2,1,1,0,0,0,0,0
 f_create_spawner,TreasureLevel4,,,,,,5643,1435,0,2,60,120,2,2,1,2,0,0,0,0,0
 
-[eof]
+[EOF]

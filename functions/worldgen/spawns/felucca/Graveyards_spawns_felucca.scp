@@ -1,6 +1,6 @@
 
 
-[function spawn_graveyards_felucca]
+[FUNCTION spawn_graveyards_felucca]
 //##############
 //## By Nerun ##
 //##############
@@ -33,4 +33,4 @@ f_create_spawner,Skeleton,,,,,,722,1119,0,2,5,10,20,20,1,10,0,0,0,0,0
 //## Haven Graveyard
 f_create_spawner,zombie:skeleton,,,,,,3407,2652,48,2,5,10,15,10,1,4,0,0,0,0,0
 
-[eof]
+[EOF]

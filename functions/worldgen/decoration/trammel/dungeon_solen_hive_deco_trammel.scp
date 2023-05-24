@@ -1,4 +1,4 @@
-[function deco_solen_hive_trammel]	
+[FUNCTION deco_solen_hive_trammel]	
 	
 //Water Vats//
 serv.newitem=014d7//

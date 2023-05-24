@@ -1,4 +1,4 @@
-[function deco_rat_cave_ilshenar]
+[FUNCTION deco_rat_cave_ilshenar]
 
 // crate
 sERV.NEWITEM=00E3E

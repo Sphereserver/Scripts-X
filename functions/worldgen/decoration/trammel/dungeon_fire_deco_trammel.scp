@@ -1,4 +1,4 @@
-[function deco_fire_dungeon_trammel]	
+[FUNCTION deco_fire_dungeon_trammel]	
 	
 // teleporter//
 serv.newitem=01BC3//

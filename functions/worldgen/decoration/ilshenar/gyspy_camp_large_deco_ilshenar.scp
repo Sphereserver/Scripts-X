@@ -1,4 +1,4 @@
-[function deco_gyspy_camp_large_ilshenar]
+[FUNCTION deco_gyspy_camp_large_ilshenar]
 
 // wooden gate
 serv.newitem=0839
@@ -160,4 +160,4 @@ serv.newitem=02198
 new.attr=attr_static 
 new.p=1142 592 -80 2
 
-[eof]
+[EOF]

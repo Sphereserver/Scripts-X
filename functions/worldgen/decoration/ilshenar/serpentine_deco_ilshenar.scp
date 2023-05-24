@@ -1,4 +1,4 @@
-[function deco_serpentine_passage_ilshenar]
+[FUNCTION deco_serpentine_passage_ilshenar]
 // lute
 SERV.NEWITEM=00EB3
 new.attr=attr_static

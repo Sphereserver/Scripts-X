@@ -1,4 +1,4 @@
-[function deco_gweno_memoral_ilshenar]
+[FUNCTION deco_gweno_memoral_ilshenar]
 
 // no draw
 serv.newitem=021A4

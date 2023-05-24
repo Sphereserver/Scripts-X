@@ -42,7 +42,7 @@ IF (<ISEVENT.e_undead>) || (<ISTEVENT.e_undead>) // || (<NPC>==brain_undead)
 ENDIF
 RETURN 0
 
-[function f_isContainer] // same ISCONT	R Returns 1 if the object is a container.
+[FUNCTION f_isContainer] // same ISCONT	R Returns 1 if the object is a container.
 if <isitem>
 	if ((<type>==t_container) || (<type>==t_container_locked))
 		return 1

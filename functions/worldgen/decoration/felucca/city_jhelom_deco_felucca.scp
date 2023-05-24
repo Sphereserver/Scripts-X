@@ -1,4 +1,4 @@
-[function deco_jhelom_felucca]
+[FUNCTION deco_jhelom_felucca]
 
 //portcullis
 serv.newitem=006F5

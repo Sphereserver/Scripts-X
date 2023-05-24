@@ -1,6 +1,6 @@
 
 
-[function spawn_destard_felucca]
+[FUNCTION spawn_destard_felucca]
 //##############
 //## By Nerun ##
 //##############
@@ -57,4 +57,4 @@ f_create_spawner,Ancientwyrm,,,,,,5185,1006,0,2,2,10,50,20,1,1,0,0,0,0,0
 f_create_spawner,TreasureLevel3,TreasureLevel4,,,,,5143,986,0,2,60,120,10,10,1,1,2,0,0,0,0
 f_create_spawner,TreasureLevel3,TreasureLevel4,,,,,5183,1007,0,2,60,120,10,10,1,1,2,0,0,0,0
 
-[eof]
+[EOF]

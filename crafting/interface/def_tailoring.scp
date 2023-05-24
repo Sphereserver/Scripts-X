@@ -236,10 +236,10 @@ tailoring_material_3_weaps_dam	    "0,0,0,0,0"
 tailoring_material_3_color	        "color_hide_barbed"
 tailoring_material_3_resourceid	    "i_leather_barbed"
 
-[function f_colored_armor_spined]
+[FUNCTION f_colored_armor_spined]
 if !<istevent.ei_equipitem>
 events +ei_equipitem
 endif
 Luck = <eval <Luck> + 40>
 
-[eof]
+[EOF]

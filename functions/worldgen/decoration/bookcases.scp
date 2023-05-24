@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[function f_clearout_bookcases]
+[FUNCTION f_clearout_bookcases]
 ref1=<uid>
 foritems 9999
 if (<baseid>==i_bookcase_full)
@@ -14,7 +14,7 @@ if (<baseid>==i_bookcase_full)
 endif
 endfor
 
-[function f_stock_bookcases]
+[FUNCTION f_stock_bookcases]
 ref1=<uid>
 foritems 9999
 if (<baseid>==i_bookcase_full)
@@ -30,7 +30,7 @@ endif
 endfor
 
 
-[function f_populate_book_writing]
+[FUNCTION f_populate_book_writing]
 dorand 44
   new.more1=b_sphere
   new.more1=b_hitchhiker

@@ -1,4 +1,4 @@
-[function deco_khaldun_felucca]
+[FUNCTION deco_khaldun_felucca]
 
 // teleporter
 serv.newitem=017ee 
@@ -1966,4 +1966,4 @@ new.color=01
 new.attr=attr_static
 new.p=5564 1354 -3
 
-[eof]
+[EOF]

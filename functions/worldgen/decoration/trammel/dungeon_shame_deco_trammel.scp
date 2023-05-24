@@ -1,4 +1,4 @@
-[function deco_shame_trammel]	
+[FUNCTION deco_shame_trammel]	
 	
 // stone pavers//
 serv.newitem=071e//
@@ -1825,4 +1825,4 @@ serv.newitem=0112B//
 new.attr=attr_static//
 new.p=5589 192 0 1 1//
 
-[eof]		
+[EOF]		

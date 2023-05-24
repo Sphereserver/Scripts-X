@@ -1,4 +1,4 @@
-[function deco_deceit_felucca]
+[FUNCTION deco_deceit_felucca]
 
 //stone pavers
 //sign
@@ -1555,4 +1555,4 @@ serv.newitem= 0144F
 new.attr=attr_static
 new.p=5289 542 0
 
-[eof]
+[EOF]

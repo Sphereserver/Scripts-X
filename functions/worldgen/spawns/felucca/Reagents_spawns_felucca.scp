@@ -1,6 +1,6 @@
 
 
-[function spawn_reagents_felucca]
+[FUNCTION spawn_reagents_felucca]
 //##############
 //## By Nerun ##
 //##############
@@ -72,4 +72,4 @@ f_create_spawner,BlackPearl:Bloodmoss:SpidersSilk:SulfurousAsh:Garlic:Ginseng:Ni
 f_create_spawner,BlackPearl:Bloodmoss:SpidersSilk:SulfurousAsh:Garlic:Ginseng:Nightshade:MandrakeRoot,,,,,,4570,3340,0,1,11,23,200,200,1,160,0,0,0,0,0
 f_create_spawner,BlackPearl:Bloodmoss:SpidersSilk:SulfurousAsh:Garlic:Ginseng:Nightshade:MandrakeRoot,,,,,,4282,3700,0,1,11,23,200,200,1,160,0,0,0,0,0
 
-[eof]
+[EOF]

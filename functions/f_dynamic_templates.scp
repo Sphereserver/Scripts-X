@@ -30,7 +30,7 @@ DTL_flag_artifact			0040000000
 DTL_flag_equipment_special	0080000000
 DTL_flag_equipment_3donly	0100000000
 
-[function f_DTL_mdb_update]
+[FUNCTION f_DTL_mdb_update]
 if !(<serv.OptionFlags>& 080)	//check if is enabled OF_FileCommands
 	serv.log To use dynamic loot templates, enable OF_FileCommands in sphere.ini.
 	return 1
@@ -52,7 +52,7 @@ return 0
 // DynamicTemplateLoot
 // f_DTLoot arguments: class, race, sex ID (0=male, 1=female), expansion ID (optional)
 // Example of usage: ITEM=<f_DTLoot <StrRandRange "weapon_sword" 1 "armor_leather" 1>, any, 0>
-[function f_DTLoot]
+[FUNCTION f_DTLoot]
 // class: weapon_fence, armor...
 // race: any, human, elf, garg, nohuman, noelf, nogarg
 // sex: female (female-only items), male (male + female)
@@ -78,7 +78,7 @@ endif
 return <mdb.row.<R0,<mdb.row.numrows>>.defname>
 
 
-[function f_reserved_DTL_ldb_setup]
+[FUNCTION f_reserved_DTL_ldb_setup]
 if !(<ldb.connected>)
 	ldb.connect "<serv.scpfiles><def.DTL_DB_File>"
 	if !<ldb.connected>

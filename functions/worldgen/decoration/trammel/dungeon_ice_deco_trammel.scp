@@ -1,4 +1,4 @@
-[function deco_ice_dungeon_trammel]	
+[FUNCTION deco_ice_dungeon_trammel]	
 	
 //flag stones//
 serv.newitem=04FE//

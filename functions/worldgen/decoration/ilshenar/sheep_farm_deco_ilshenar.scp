@@ -1,4 +1,4 @@
-[function deco_sheep_farm_ilshenar]
+[FUNCTION deco_sheep_farm_ilshenar]
 //front door
 serv.newitem=06ad
 new.attr=attr_static
@@ -37,4 +37,4 @@ serv.newitem=0105F
 new.attr=attr_static
 new.p=1305 1320 -14 2
 
-[eof]
+[EOF]

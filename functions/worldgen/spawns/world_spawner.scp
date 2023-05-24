@@ -51,7 +51,7 @@ Worldspawner_facet_5_2		Underworld,spawn_underworld_ter_mur
 Worldspawner_facet_5_3		Abyss,spawn_abyss_ter_mur
 
 
-[itemdef i_world_spawner]
+[ITEMDEF i_world_spawner]
 id=i_deed
 name=World Spawner
 type=t_script

@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[function f_house_timer_reset_all]
+[FUNCTION f_house_timer_reset_all]
 local.p <src.p>
 for 0 254
 	if (<serv.maplist.<dlocal._for>>)
@@ -33,7 +33,7 @@ IF (<REF1.DISPID>==<STRARG <ARGS>>)
 ENDIF
 NEW.REMOVE
 
-[function f_house_timer_activate]
+[FUNCTION f_house_timer_activate]
 foritems 7168
 	if (<type>==t_multi) || (<type>==t_multi_custom)
 		ref1 <region.link>
@@ -41,7 +41,7 @@ foritems 7168
 	endif
 endfor
 
-[function f_house_can_access]
+[FUNCTION f_house_can_access]
 ref1 = <region.uid>
 if (<tag0.access>==<def.house_access_all> || <src.IsGM>)
     return 1
@@ -66,7 +66,7 @@ elseif (<tag0.access>==<def.house_access_guild>)
 endif
 return 0
  
-[function f_house_get_priv]
+[FUNCTION f_house_get_priv]
 if (<IsOwner <src>>)
     return <def.house_access_owner>
 elseif (<getCoownerpos <src>> >= 0)
@@ -128,7 +128,7 @@ if <<local.list><qval (strmatch(*access*,<local.list>))?es:s>>
 	endfor
 endif
 
-[function f_house_render_signs]
+[FUNCTION f_house_render_signs]
 local.y=157
 local.btn1 = 7
 local.btn2 = 37
@@ -270,7 +270,7 @@ else
 	return 1
 endif
 
-[function f_house_item_lock]
+[FUNCTION f_house_item_lock]
 ref1=<region.uid>
 if !(<ref1.IsOwner <uid>> || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || <IsGM>) // Double check to prevent players to get the target on their house and use it on another.
     return
@@ -293,7 +293,7 @@ if (<argo.isitem> && <argo.region.uid>==<ref1>)
 	endif
 endif
  
-[function f_house_item_unlock]
+[FUNCTION f_house_item_unlock]
 ref1=<region.uid>
 if !(<ref1.IsOwner <uid>> || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || <IsGM>) // Double check to prevent players to get the target on their house and use it on another.
     return
@@ -314,7 +314,7 @@ if (<argo.tag0.decay>)
 		argo.attr |= attr_decay
 endif
 
-[function f_house_item_secure]
+[FUNCTION f_house_item_secure]
 ref1=<region.uid>
 if !(<ref1.IsOwner <uid>> || (<ref1.GetCoownerPos <uid>> >= 0) || <IsGM>) // Double check to prevent players to get the target on their house and use it on another.
 	sysmessage @32,,1 Only owner and co-owner can secure items.
@@ -340,7 +340,7 @@ if (<argo.isitem> && <argo.region.uid>==<ref1>)
 endif
 
 
-[function f_d_house_secure]
+[FUNCTION f_d_house_secure]
 ref1= <argo.region.uid>
 if <src> == <ref1.owner>
 	if (<argo.type>==t_door) || (<argo.type>==t_door_locked) || (<argo.type>==t_telepad)
@@ -512,7 +512,7 @@ ref8=<argo>
 ref8.flip
 return 1
 
-[function f_house_visitor_count]
+[FUNCTION f_house_visitor_count]
 ref1 = <region.uid>
 if !<src.isgm>
 	uid.<ref1.link>.more2 +=1

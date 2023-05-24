@@ -11,7 +11,7 @@ VERSION=X1
 //redid dialogs, generates the whole thing at once, no more bliping on the screen when selecting facets
 
 
-[itemdef i_moongate]
+[ITEMDEF i_moongate]
 id=i_moongate_blue
 type=t_script
 name=Moongate

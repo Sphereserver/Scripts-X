@@ -1,4 +1,4 @@
-[function deco_palace_of_proxysmus_felucca]
+[FUNCTION deco_palace_of_proxysmus_felucca]
 
 //Items
 serv.newitem=0857

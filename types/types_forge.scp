@@ -10,4 +10,4 @@ ON=@DCLICK
 RETURN 1
 
 
-[eof]
+[EOF]

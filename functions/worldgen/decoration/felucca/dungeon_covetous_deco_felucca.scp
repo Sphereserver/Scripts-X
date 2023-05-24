@@ -1,4 +1,4 @@
-[function deco_covetous_felucca]
+[FUNCTION deco_covetous_felucca]
 
 //switch
 serv.newitem=0108F
@@ -1825,4 +1825,4 @@ serv.newitem=0991
 new.attr=attr_static
 new.p=5619 1877 6
 
-[eof]
+[EOF]

@@ -1,4 +1,4 @@
-[function deco_skara_brae_trammel]	
+[FUNCTION deco_skara_brae_trammel]	
 	
 //Teleporters////
 serv.newitem=01BC3//
@@ -4582,4 +4582,4 @@ serv.newitem=03ED4//
 new.attr=attr_static//
 new.p=711 2238 -5 1//
 
-[eof]		
+[EOF]		

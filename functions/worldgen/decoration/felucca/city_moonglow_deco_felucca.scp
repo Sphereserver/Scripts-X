@@ -1,4 +1,4 @@
-[function deco_moonglow_felucca]
+[FUNCTION deco_moonglow_felucca]
 
 // Signs
 serv.newitem=0BCF //(LabelNumber=1074717)

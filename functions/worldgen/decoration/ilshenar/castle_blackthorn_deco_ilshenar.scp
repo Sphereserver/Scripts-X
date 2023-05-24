@@ -1,4 +1,4 @@
-[function deco_castle_blackthorn_ilshenar]
+[FUNCTION deco_castle_blackthorn_ilshenar]
 
 // metal door
 serv.newitem= 067D 

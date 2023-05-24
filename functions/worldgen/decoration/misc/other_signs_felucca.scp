@@ -1,5 +1,5 @@
  
-[function place_signs_felucca]
+[FUNCTION place_signs_felucca]
 f_add_sign 3032,373,904,-1,Court of Truth
 f_add_sign 2996,2769,976,0,The Ironwood Inn
 f_add_sign 3016,2634,2088,10,Cutlass Smithing
@@ -414,7 +414,7 @@ f_add_sign 7976,1580,2484,4,Only a mind at peace can approach the shrine
 f_add_sign 7976,1604,2484,7,A calm mind may travel where others may not tread
 
 
-[function f_add_sign]
+[FUNCTION f_add_sign]
 serv.newitem <argv[0]>
 new.attr=attr_static|attr_move_never
 if (<isnum <argv[4]>>) //other Map

@@ -1,4 +1,4 @@
-[function deco_dueces_vinculum_inn_ilshenar]
+[FUNCTION deco_dueces_vinculum_inn_ilshenar]
 
 //chest of drawers
 serv.newitem=00A34

@@ -14,7 +14,7 @@ VERSION=X1
 // --------------------
 // OSI Crafting System
 
-[function craftskill]
+[FUNCTION craftskill]
 if strcmp("<argv[0]>","<ctag.craft.skill>")
    ctag.craft.last
    ctag.craft.page.sidebar
@@ -27,7 +27,7 @@ endif
 f_resenddialog d_craft_menu
 
 
-[function f_craft]
+[FUNCTION f_craft]
 //<args> = Item ID need to be craft
 local.recipe = <getargv 3 <ctag0.craft.item.options>>
 if <local.recipe> == 1
@@ -73,7 +73,7 @@ endfor
 TAG.craft.lastTen.<ctag0.craft.skill>=<LOCAL.NewLastTen>
 
 
-[function craftcooking]
+[FUNCTION craftcooking]
 if (<canmake <argv[0]>>) && (<argv[1]> > 0)
    serv.newitem <argv[0]>
    consume <new.resources>
@@ -85,7 +85,7 @@ else
 endif
 craftskill cooking
 
-[function cancraft]
+[FUNCTION cancraft]
 IF (STRMATCH("*t_masonry_tool*","<SERV.ITEMDEF.<ARGS>.SKILLMAKE>") && !(<TAG0.crafting.masonry>))
    RETURN 0
 ENDIF
@@ -118,7 +118,7 @@ ELSE
    RETURN <LOCAL.R>
 ENDIF
 
-[function craftsuccesschance]
+[FUNCTION craftsuccesschance]
 if (<src.<serv.skill.<serv.itemdef.<args>.skillmake.1.key>.key>> >= <serv.itemdef.<args>.skillmake.1.val>)
    local.r = <eval (<src.<serv.skill.<serv.itemdef.<args>.skillmake.1.key>.key>> - <serv.itemdef.<args>.skillmake.1.val>) * 2>
    local.r += <def.<src.ctag0.craft.skill>_chanceatmin>
@@ -139,7 +139,7 @@ else
    return <local.r>
 endif
 
-[function craft_exceptionalchance]
+[FUNCTION craft_exceptionalchance]
 if !(<getargv 1 <src.ctag0.craft.item.options>>)
    return 0
 endif
@@ -154,7 +154,7 @@ elif <local.r> > 1000
 endif
 return <local.r>
 
-[function f_crafting_render_materials]
+[FUNCTION f_crafting_render_materials]
 xmfhtmlgumpcolor 175 40 370 20 1044011 0 0 <ddef.dcolor_white>
 local.x = 180
 dorigin 180 45
@@ -168,7 +168,7 @@ endif
 local.n ++
 endwhile
 
-[function f_craft_exceptionalbonus] // ITEM.f_craft_exceptionalbonus <UID>
+[FUNCTION f_craft_exceptionalbonus] // ITEM.f_craft_exceptionalbonus <UID>
 ref1 = <args>
 if <isweapon>
 	local.totalbonus = <min 40,<eval 35 + (<ref1.armslore> / 200)>>
@@ -329,4 +329,4 @@ else
 endif
 
 
-[eof]
+[EOF]
