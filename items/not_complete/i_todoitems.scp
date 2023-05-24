@@ -6279,16 +6279,6 @@ TYPE=t_normal
 DEFNAME=i_partialhue_vanillap_2
 TYPE=t_normal
 
-[ITEMDEF 0a12c]
-// telescope_south
-DEFNAME=i_telescope_south
-TYPE=t_normal
-
-[ITEMDEF 0a12d]
-// telescope_east
-DEFNAME=i_telescope_east
-TYPE=t_normal
-
 [ITEMDEF 0a12e]
 // christmas wreath ea
 DEFNAME=i_christmas_wreath_ea
@@ -6669,151 +6659,6 @@ TYPE=t_normal
 DEFNAME=i_trex_skull_south
 TYPE=t_normal
 
-[ITEMDEF 0a17b]
-// Orrery_1
-DEFNAME=i_orrery
-TYPE=t_normal
-
-[ITEMDEF 0a17c]
-// Orrery_2_off
-DEFNAME=i_orrery_off
-TYPE=t_normal
-
-[ITEMDEF 0a17d]
-// Orrery_3
-DEFNAME=i_orrery_2
-TYPE=t_normal
-
-[ITEMDEF 0a17e]
-// Orrery_4
-DEFNAME=i_orrery_3
-TYPE=t_normal
-
-[ITEMDEF 0a17f]
-// Orrery_5
-DEFNAME=i_orrery_4
-TYPE=t_normal
-
-[ITEMDEF 0a180]
-// Orrery_6
-DEFNAME=i_orrery_5
-TYPE=t_normal
-
-[ITEMDEF 0a181]
-// Orrery_7
-DEFNAME=i_orrery_6
-TYPE=t_normal
-
-[ITEMDEF 0a182]
-// Orrery_8
-DEFNAME=i_orrery_7
-TYPE=t_normal
-
-[ITEMDEF 0a183]
-// Orrery_9
-DEFNAME=i_orrery_8
-TYPE=t_normal
-
-[ITEMDEF 0a184]
-// Orrery_10
-DEFNAME=i_orrery_9
-TYPE=t_normal
-
-[ITEMDEF 0a185]
-// Orrery_11
-DEFNAME=i_orrery_10
-TYPE=t_normal
-
-[ITEMDEF 0a186]
-// Orrery_12
-DEFNAME=i_orrery_11
-TYPE=t_normal
-
-[ITEMDEF 0a187]
-// Orrery_13
-DEFNAME=i_orrery_12
-TYPE=t_normal
-
-[ITEMDEF 0a188]
-// Orrery_14
-DEFNAME=i_orrery_13
-TYPE=t_normal
-
-[ITEMDEF 0a189]
-// Orrery_15
-DEFNAME=i_orrery_14
-TYPE=t_normal
-
-[ITEMDEF 0a18a]
-// Orrery_16
-DEFNAME=i_orrery_15
-TYPE=t_normal
-
-[ITEMDEF 0a18b]
-// Orrery_17
-DEFNAME=i_orrery_16
-TYPE=t_normal
-
-[ITEMDEF 0a18c]
-// Orrery_18
-DEFNAME=i_orrery_17
-TYPE=t_normal
-
-[ITEMDEF 0a18d]
-// Orrery_19
-DEFNAME=i_orrery_18
-TYPE=t_normal
-
-[ITEMDEF 0a18e]
-// Orrery_20
-DEFNAME=i_orrery_19
-TYPE=t_normal
-
-[ITEMDEF 0a18f]
-// Orrery_21
-DEFNAME=i_orrery_20
-TYPE=t_normal
-
-[ITEMDEF 0a190]
-// Orrery_22
-DEFNAME=i_orrery_21
-TYPE=t_normal
-
-[ITEMDEF 0a191]
-// Orrery_23
-DEFNAME=i_orrery_22
-TYPE=t_normal
-
-[ITEMDEF 0a192]
-// Orrery_24
-DEFNAME=i_orrery_23
-TYPE=t_normal
-
-[ITEMDEF 0a193]
-// Orrery_25
-DEFNAME=i_orrery_24
-TYPE=t_normal
-
-[ITEMDEF 0a194]
-// Orrery_26
-DEFNAME=i_orrery_25
-TYPE=t_normal
-
-[ITEMDEF 0a195]
-// Orrery_27
-DEFNAME=i_orrery_26
-TYPE=t_normal
-
-[ITEMDEF 0a196]
-// Orrery_28
-DEFNAME=i_orrery_27
-TYPE=t_normal
-
-[ITEMDEF 0a197]
-// Orrery_29
-DEFNAME=i_orrery_28
-TYPE=t_normal
-
 [ITEMDEF 0a198]
 // Pumpkin_Dragon_off
 DEFNAME=i_pumpkin_dragon_off_2
@@ -7177,16 +7022,6 @@ TYPE=t_normal
 [ITEMDEF 0a1e3]
 // Lich_painting_East
 DEFNAME=i_lich_painting_east
-TYPE=t_normal
-
-[ITEMDEF 0a1e4]
-// Star Map East
-DEFNAME=i_star_map_east
-TYPE=t_normal
-
-[ITEMDEF 0a1e5]
-// Star Map South
-DEFNAME=i_star_map_south
 TYPE=t_normal
 
 [ITEMDEF 0a1e6]
@@ -9009,16 +8844,6 @@ TYPE=t_normal
 DEFNAME=i_day_of_the_dead_eas_9
 TYPE=t_normal
 
-[ITEMDEF 0a35d]
-// copper_sunflower_in
-DEFNAME=i_copper_sunflower_in
-TYPE=t_normal
-
-[ITEMDEF 0a35e]
-// copper_sunflower_in
-DEFNAME=i_copper_sunflower_in_2
-TYPE=t_normal
-
 [ITEMDEF 0a393]
 // Golden_Chest_South
 DEFNAME=i_golden_chest_south
@@ -9109,36 +8934,6 @@ TYPE=t_normal
 DEFNAME=i_elemantal_crystal_s_2
 TYPE=t_normal
 
-[ITEMDEF 0a3de]
-// anniversary_copper_
-DEFNAME=i_anniversary_copper
-TYPE=t_normal
-
-[ITEMDEF 0a3df]
-// anniversary_copper_
-DEFNAME=i_anniversary_copper_2
-TYPE=t_normal
-
-[ITEMDEF 0a3e0]
-// anniversary_copper_
-DEFNAME=i_anniversary_copper_3
-TYPE=t_normal
-
-[ITEMDEF 0a3e1]
-// anniversary_copper_
-DEFNAME=i_anniversary_copper_4
-TYPE=t_normal
-
-[ITEMDEF 0a3e2]
-// anniversary_copper_
-DEFNAME=i_anniversary_copper_5
-TYPE=t_normal
-
-[ITEMDEF 0a3e3]
-// anniversary_copper_
-DEFNAME=i_anniversary_copper_6
-TYPE=t_normal
-
 [ITEMDEF 0a3e4]
 // anniversary_copper_
 DEFNAME=i_anniversary_copper_7
@@ -9152,11 +8947,6 @@ TYPE=t_normal
 [ITEMDEF 0a3e6]
 // anniversary_copper_
 DEFNAME=i_anniversary_copper_9
-TYPE=t_normal
-
-[ITEMDEF 0a3e7]
-// anniversary_copper_
-DEFNAME=i_anniversary_copper_10
 TYPE=t_normal
 
 [ITEMDEF 0a3e8]
