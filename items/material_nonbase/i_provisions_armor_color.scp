@@ -1811,7 +1811,7 @@ RESOURCES=25 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 75.0
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=51
 
 [ITEMDEF i_DULL_COPPER_PLATEMAIL_ARMS]
@@ -1828,7 +1828,7 @@ RESOURCES=18 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 63.5
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=51
 
 [ITEMDEF i_DULL_COPPER_PLATEMAIL_leggings]
@@ -1845,7 +1845,7 @@ RESOURCES=20 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 66.8
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=51
 
 [ITEMDEF i_DULL_COPPER_PLATE_HELM]
@@ -1862,7 +1862,7 @@ RESOURCES=15 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 58.6
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=46
 
 [ITEMDEF i_DULL_COPPER_PLATEMAIL_GORGET]
@@ -1879,7 +1879,7 @@ RESOURCES=10 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 50.4
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=51
 
 [ITEMDEF i_DULL_COPPER_PLATEMAIL_GAUNTLETS]
@@ -1896,7 +1896,7 @@ RESOURCES=12 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 53.7
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=51
 
 [ITEMDEF i_DULL_COPPER_FEMALE_PLATEMAIL]
@@ -1913,7 +1913,7 @@ RESOURCES=22 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 70.0
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=51
 
 [ITEMDEF i_DULL_COPPER_CHAINMAIL_COIF]
@@ -1930,7 +1930,7 @@ RESOURCES=10 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 27.6
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=36
 
 [ITEMDEF i_DULL_COPPER_CHAINMAIL_LEGGINGS]
@@ -1947,7 +1947,7 @@ RESOURCES=18 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 31.1
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=46
 
 [ITEMDEF i_DULL_COPPER_CHAINMAIL_TUNIC]
@@ -1964,7 +1964,7 @@ RESOURCES=20 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 43.8
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=46
 
 [ITEMDEF i_DULL_COPPER_RINGMAIL_LEGGINGS]
@@ -1981,7 +1981,7 @@ RESOURCES=16 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 27.6
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=46
 
 [ITEMDEF i_DULL_COPPER_RINGMAIL_SLEEVES]
@@ -1998,7 +1998,7 @@ RESOURCES=14 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 24.3
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=41
 
 [ITEMDEF i_DULL_COPPER_RINGMAIL_GLOVES]
@@ -2015,7 +2015,7 @@ RESOURCES=10 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 17.8
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=41
 
 [ITEMDEF i_DULL_COPPER_RINGMAIL_TUNIC]
@@ -2032,7 +2032,7 @@ RESOURCES=18 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 31.1
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=41
 
 [ITEMDEF i_DULL_COPPER_BUCKLER_shield]
@@ -2049,7 +2049,7 @@ RESOURCES=10 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 5.0
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=41
 
 [ITEMDEF i_DULL_COPPER_HEATER_SHIELD]
@@ -2066,7 +2066,7 @@ RESOURCES=18 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 40.6
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=31
 
 [ITEMDEF i_DULL_COPPER_METAL_SHIELD]
@@ -2083,7 +2083,7 @@ RESOURCES=14 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 15.0
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=51
 
 [ITEMDEF i_DULL_COPPER_CLOSED_HELM]
@@ -2100,7 +2100,7 @@ RESOURCES=15 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 58.6
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=30
 
 [ITEMDEF i_DULL_COPPER_HELMET]
@@ -2117,7 +2117,7 @@ RESOURCES=15 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 58.6
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=51
 
 [ITEMDEF i_DULL_COPPER_BASCINET]
@@ -2134,7 +2134,7 @@ RESOURCES=15 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 19.2
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=30
 
 [ITEMDEF i_DULL_COPPER_NOSE_HELM]
@@ -2151,7 +2151,7 @@ RESOURCES=15 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 58.6
 
 ON=@Create
-	COLOR=color_o_dullcopper
+	COLOR=color_o_dull_copper
 	HITPOINTS=30
 
 [ITEMDEF i_BLOODROCK_PLATEMAIL]

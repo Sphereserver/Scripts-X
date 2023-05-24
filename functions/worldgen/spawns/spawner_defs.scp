@@ -1,5 +1,5 @@
 
-[defname world_spawner]
+[DEFNAME world_spawner]
 alchemist			{c_alchemist 1 c_alchemist_f 1}
 alchemistgm			{c_alchem_gm 1 c_alchem_gm_f 1} //No c_alchem_gm
 animaltrainer		{c_animaltrainer 1 c_animaltrainer_f 1}
@@ -9,12 +9,12 @@ artist				{c_ARTIST 1 c_ARTIST_F 1}
 baker				{c_baker 1 c_baker_f 1}
 banker				{c_banker 1 c_banker_f 1}
 bard				{c_BARD 1 c_BARD_F 1}
-bardguildmaster 	{c_BARD 1 c_BARD_F 1} 
+bardguildmaster 	{c_BARD 1 c_BARD_F 1}
 barkeeper			{c_tavernkeeper 1 c_tavernkeeper_f 1}
 beekeeper			{c_beekeeper 1 c_beekeeper_f 1}
 blacksmith			{c_blacksmith 1 c_blacksmith_f 1}
 blacksmithguildmaster		{c_blacksmith 1 c_blacksmith 1}// no c_guild_blacksmith
-boatpainter		{c_SHIPWRIGHT 1 c_SHIPWRIGHT_F 1} // No boatpainter 
+boatpainter		{c_SHIPWRIGHT 1 c_SHIPWRIGHT_F 1} // No boatpainter
 bodysculptor		{c_BODY_SCULPTOR 1 c_BODY_SCULPTOR_F 1}
 bowyer				{c_bowyer 1 c_bowyer_f 1}
 bridegroom			{c_noble 1 c_noble_f 1}	//no bridegroom using noble
@@ -206,11 +206,11 @@ redsoleninfiltratorwarrior	{c_solen_warrior}
 gianttoad	{c_toad_giant}
 snake		{c_snake}
 bogling		{c_bogling}
-tangle		{c_bog_thing}	//no tangle	//named bog thing TODO Script this one	
+tangle		{c_bog_thing}	//no tangle	//named bog thing TODO Script this one
 alligator	{c_alligator}
 reaper		{c_reaper}
 changeling	{c_changeling}
-whippingvine	{c_toad_giant}	
+whippingvine	{c_toad_giant}
 abscess		{c_abscess}
 hydra		{c_hydra}
 bogthing	{c_bog_thing}
@@ -235,7 +235,7 @@ Skeletalmage 	{c_skeleton_mage}
 
 [DEFNAME HythlothDungeon]
 Imp		{c_imp}
-Firegargoyle	{c_gargoyle_fire}	
+Firegargoyle	{c_gargoyle_fire}
 Gargoyle	{c_gargoyle}
 Stonegargoyle	{c_gargoyle_stone}
 
@@ -250,11 +250,11 @@ orcishmage		{c_orc_shaman}
 orcscout		{c_orc_scout}
 ogrelord		{c_ogre_lord}
 orcishlord		{c_orc_lord}
-mougguur		{c_ettin} 	//no moug-guur	//named ettin	
+mougguur		{c_ettin} 	//no moug-guur	//named ettin
 orcbomber		{c_orc_bomber}
 orcbrute 		{c_orc_brute}
 orc				{c_orc}
-szavetra		{c_doppleganger}	//no szavetra	//named doppleganger	
+szavetra		{c_doppleganger}	//no szavetra	//named doppleganger
 orccaptain		{c_orc_captain}
 gargoyleenforcer	{c_gargoyle_enforcer}
 gargoyledestroyer	{c_gargoyle_destroyer}
@@ -278,7 +278,7 @@ lurg 		{c_lurg}
 
 [DEFNAME KHALDUN]
 Shadowfiend			{c_shadow_fiend}
-Cursed				{c_cursed 1 c_cursed_f 1}	
+Cursed				{c_cursed 1 c_cursed_f 1}
 LysanderGathenwale	{c_cursed}	//no Lysander Gathenwale 	//named cursed
 MorgBergen			{c_cursed}	//no Morg Bergen 	//named cursed
 TavaraSewel			{c_spectre}	//no tavar sewel
@@ -318,8 +318,8 @@ HireSailor		{c_sailor 1 c_sailor_f 1}      // no hire npcs using base ones.
 HireThief		{c_thief 1 c_thief_f 1}      // no hire npcs using base ones.
 HirePaladin		{c_paladin 1 c_paladin_f 1}      // no hire npcs using base ones.
 Escortablemage		{c_mage 1 c_mage_f 1}      // no hire npcs using base ones.
-Seekerofadventure	{c_noble 1 c_noble_f 1}      // no hire npcs using base ones. 
-Noble			{c_noble 1 c_noble_f 1}	
+Seekerofadventure	{c_noble 1 c_noble_f 1}      // no hire npcs using base ones.
+Noble			{c_noble 1 c_noble_f 1}
 olaeni			{c_bird 1 c_bird_crow 1 C_BIRD_MAGPIE 1 C_BIRD_TROPICAL 1 C_BIRD_JUNGLE 1 c_bird_raven 1}      //not present using birds instead lol! ;D
 bolaevin		{c_bird 1 c_bird_crow 1 C_BIRD_MAGPIE 1 C_BIRD_TROPICAL 1 C_BIRD_JUNGLE 1 c_bird_raven 1} //not present using birds instead lol! ;D
 athialon		{c_bird 1 c_bird_crow 1 C_BIRD_MAGPIE 1 C_BIRD_TROPICAL 1 C_BIRD_JUNGLE 1 c_bird_raven 1}      //not present using birds instead lol! ;D
@@ -349,7 +349,7 @@ Gorilla		{c_gorilla}
 Savagerider	{c_savage_rider}
 Savage		{c_savage_warrior_male 1 c_savage_warrior_female 1}
 Savageshaman	{c_Savage_Shaman}
-Ridablellama	{c_llama} 	
+Ridablellama	{c_llama}
 Rabbit		{c_rabbit}
 JackRabbit	{c_jackrabbit}
 Frenziedostard  {c_ostard_frenzied}
@@ -456,15 +456,15 @@ CuSidhe				{c_cu_sidhe}
 DryadA				{c_dryad}
 Satyr				{c_satyr}
 LadyLissith			{c_lady_lissith}
-LadySabrix			{c_lady_sabrix}		
-Irk					{c_irk}			
-Swoop				{c_swoop}		
-Gnaw				{c_gnaw}		
-spite				{c_spite}		
-guile				{c_guile}		
-Malefic				{c_spider_malefic} 	
-Virulent			{c_spider_virulent} 	
-silk				{c_spider_silk} 	
+LadySabrix			{c_lady_sabrix}
+Irk					{c_irk}
+Swoop				{c_swoop}
+Gnaw				{c_gnaw}
+spite				{c_spite}
+guile				{c_guile}
+Malefic				{c_spider_malefic}
+Virulent			{c_spider_virulent}
+silk				{c_spider_silk}
 giantblackwidow		{c_spider_dread}	//no black widow using dread spider
 keeperofchivalry	{c_paladin}		//no keeper of chivalry using paladin
 holymage			{c_mage 1 c_mage_f 1}	//no holy mage using mage
@@ -505,7 +505,7 @@ Crystalelemental		{c_crystal_elemental}
 Dryad				{c_dryad}
 
 merchant		{c_provis 1 c_provis_f 1}
-actor			{c_actor 1 c_actor_f 1}		
+actor			{c_actor 1 c_actor_f 1}
 thief			{c_thief 1 c_thief_f 1}
 leatherworker	{c_tanner 1 c_tanner_f 1}
 miner			{c_miner 1 c_miner_f 1}
@@ -544,7 +544,7 @@ hiryu				{c_hiryu}
 raiju				{c_rai_ju}
 
 [DEFNAME TerMerSpawns]		//none of this exists, create it
-AcidElementalRenowned		{c_rat}		
+AcidElementalRenowned		{c_rat}
 AcidSlug			{c_rat}
 AncientLichRenowned		{c_rat}
 Barreraak			{c_rat}

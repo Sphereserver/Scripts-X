@@ -18,10 +18,23 @@ color_snow                   1153
 color_rock                   1154
 color_spectral               16385
 
+// Ores
+color_o_iron       	0 //option: 0763
+color_o_dull_copper 060a
+color_o_shadow     	0770
+color_o_copper     	0641 //option: 060c
+color_o_bronze     	06d6
+color_o_gold       	045e //option: 084d
+color_o_agapite    	0400
+color_o_verite     	07d1
+color_o_valorite   	0515
+
+// Hide
 color_hide_spined            08ac	//pre-AOS: 0283
 color_hide_horned            0845	//pre-AOS: 0227
 color_hide_barbed            0851	//pre-AOS: 01c1
 
+// Logs
 color_log_oak                07da
 color_log_ash                04a7
 color_log_yew                04a8
@@ -29,6 +42,7 @@ color_log_heartwood          04a9
 color_log_bloodwood          04aa
 color_log_frostwood          047f
 
+// Dragon Scale
 color_dragonscale_red        066d
 color_dragonscale_yellow     08a8
 color_dragonscale_black      0455

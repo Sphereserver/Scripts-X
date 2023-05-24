@@ -1,4 +1,4 @@
-[defname world_decorator_settings]
+[DEFNAME world_decorator_settings]
 
 worlddecorator_facet_0		Felucca
 worlddecorator_facet_0_0	Britain,deco_britain_felucca
@@ -159,7 +159,7 @@ return 1
 220,30
 
 page 0
-resizepic 10 10 9200 360 520		
+resizepic 10 10 9200 360 520
 
 page 1
 
@@ -167,10 +167,10 @@ resizepic 40 20 9200 300 30
 dtext 140 25 1263 World Decorator
 
 resizepic 140 55 9350 100 30
-dtext 150 60 1000 Version: 
+dtext 150 60 1000 Version:
 dtext 200 60 036 4.0
 
-resizepic 30 90 9350 320 50		
+resizepic 30 90 9350 320 50
 dtext 95 95 1000 Special Thanks to:
 dtext 215 95 17 Nerun's Distro
 dtext 90 110 1000 and to            for inspiring
@@ -181,27 +181,27 @@ dtext 150 150 1263 Basic Items
 resizepic 29 169 3000 320 100
 
 
-button 30 170 4006 4007 1 0 1		
+button 30 170 4006 4007 1 0 1
 dtext 65 170 1000 Generate Doors
-button 30 195 4006 4007 1 0 2		
-dtext 65 195 1000 Generate Signs 
-button 30 220 4006 4007 1 0 3		
+button 30 195 4006 4007 1 0 2
+dtext 65 195 1000 Generate Signs
+button 30 220 4006 4007 1 0 3
 dtext 65 220 1000 Generate Moongates
-button 30 245 4006 4007 1 0 7	
+button 30 245 4006 4007 1 0 7
 dtext 65 245 1000 Generate Book
-	
-button 200 170 4006 4007 1 0 4		
-dtext 235 170 1000 Remove Doors 	
-button 200 195 4006 4007 1 0 5		
-dtext 235 195 1000 Remove Signs		
-button 200 220 4006 4007 1 0 6		
+
+button 200 170 4006 4007 1 0 4
+dtext 235 170 1000 Remove Doors
+button 200 195 4006 4007 1 0 5
+dtext 235 195 1000 Remove Signs
+button 200 220 4006 4007 1 0 6
 dtext 235 220 1000 Remove Moongates
-button 200 245 4006 4007 1 0 8		
-dtext 235 245 1000 Remove Book 	
+button 200 245 4006 4007 1 0 8
+dtext 235 245 1000 Remove Book
 
 
-dtext 155 275 1263 Decoration	
-resizepic 30 295 3000 330 150	
+dtext 155 275 1263 Decoration
+resizepic 30 295 3000 330 150
 while !<isempty <def.worlddecorator_facet_<dlocal.n>>>
   args=<def0.worlddecorator_facet_<dlocal.n>>
   button 30 <eval 295+(<local.n>*25)> 4006 4007 1 0 <eval <local.n>+9>
@@ -212,7 +212,7 @@ while !<isempty <def.worlddecorator_facet_<dlocal.n>>>
 endwhile
 
 resizepic 30 470 3000 260 20
-button 30 470 4006 4007 1 0 999999	
+button 30 470 4006 4007 1 0 999999
 dtext 65 470 1000 Remove    items from the server
 dtext 110 470 026 ALL
 
@@ -221,10 +221,10 @@ tilepic 310 470 13945 1
 local.n=
 local.x=2
 while !<isempty <def.worlddecorator_facet_<dlocal.n>>>
-  page=<local.x>		
-  resizepic 85 20 9200 205 20	
-  args=<def0.worldspawner_facet_<dlocal.n>>		
-  dtext 140 20 <eval 026+(<local.n>*20)> <argv[0]> Decorator		
+  page=<local.x>
+  resizepic 85 20 9200 205 20
+  args=<def0.worldspawner_facet_<dlocal.n>>
+  dtext 140 20 <eval 026+(<local.n>*20)> <argv[0]> Decorator
   button 20 470 4015 4016 0 1
   dtext 60 470 1263 Go Back
   while !<isempty <def.worlddecorator_facet_<dlocal.n>_<dlocal.y>>>
@@ -245,11 +245,11 @@ while !<isempty <def.worlddecorator_facet_<dlocal.n>>>
   local.z=
   local.q=
 endwhile
-	
+
 
 [dialog d_world_decorator button]
 
-onbutton=1,99	
+onbutton=1,99
 doswitch <eval <argn>-1>
   begin
     src.place_doors_felucca
@@ -292,7 +292,7 @@ src.sysmessage @<eval 026+(<local.n>*20)> Decorating <argv[0]> in <def0.worldspa
 var0.decorator_facet=
 sdialog d_world_decorator <eval <local.n>+2>
 
-onbutton=999999	
+onbutton=999999
 sdialog d_f_destroy_world
 
 

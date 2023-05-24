@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[defname tailoring_options]
+[DEFNAME tailoring_options]
 // $skill_category_#_#_opt "mark,exceptional,colored,recipe,expansion"
 
 tailoring_category_1_1_opt  "1,1,1,0,0"

@@ -76,7 +76,7 @@ VERSION=X1
 //              crafted.
 
 
-[defname sphere_crafting_blacksmithing_defaults]
+[DEFNAME sphere_crafting_blacksmithing_defaults]
 blacksmithing_marking		"1" // 1 or 0
 blacksmithing_firstmaterial	"1" // 1 or 0
 blacksmithing_secondmaterial	"0" // 1 or 0
@@ -102,8 +102,9 @@ blacksmithing_category_9_name	"1011084" // Polearms
 blacksmithing_category_10_name	"1060885" // Dragon Scale Armor
 blacksmithing_category_11_name	"1044117" // Throwing
 blacksmithing_category_12_name	"1044290" // Misc. Add-Ons
+blacksmithing_category_10_name	"1044290" // Misc. Add-Ons
 
-[defname sphere_crafting_blacksmithing_skillmenu_items]
+[DEFNAME sphere_crafting_blacksmithing_skillmenu_items]
 //
 // The format of specific items is: SKILL_category_#_# "ID"
 // - Replace SKILL with your crafting skill (sample: blacksmithing)
@@ -272,133 +273,105 @@ blacksmithing_category_11_3	"i_soul_glaive"
 blacksmithing_category_12_1	"i_deed_anvil"
 blacksmithing_category_12_2	"i_deed_forge"
 
-[defname sphere_crafting_blacksmithing_colored]
-blacksmithing_material_0		""
-blacksmithing_material_0_name		"Iron"
-blacksmithing_material_0_skill		"Blacksmithing 0.0"
-blacksmithing_resourceid		"i_ingot_iron"
+[DEFNAME sphere_crafting_blacksmithing_colored]
+blacksmithing_material_0		        ""
+blacksmithing_material_0_name		    "Iron"
+blacksmithing_material_0_skill		    "Blacksmithing 0.0"
+blacksmithing_resourceid		        "i_ingot_iron"
 
-blacksmithing_material_1_name		"Rusty"
-blacksmithing_material_1_skill		"Blacksmithing 15.0"
-blacksmithing_material_1_resourceid	"i_ingot_rusty"
+blacksmithing_material_1			    "dull_copper"
+blacksmithing_material_1_name		    "Dull Copper"
+blacksmithing_material_1_skill		    "Blacksmithing 65.0"
+blacksmithing_material_1_armor_res		"6,0,0,0,0,f_colored_armor_dullcopper"
+blacksmithing_material_1_weaps_dam		"0,0,0,0,0,f_colored_weaps_dullcopper"
+blacksmithing_material_1_color		    "color_o_dull_copper"
+blacksmithing_material_1_resourceid	    "i_ingot_dull_copper"
 
-blacksmithing_material_2_name		"Old Copper"
-blacksmithing_material_2_skill		"Blacksmithing 25.0"
-blacksmithing_material_2_resourceid	"i_ingot_old_copper"
+blacksmithing_material_2		        "shadow"
+blacksmithing_material_2_name		    "Shadow"
+blacksmithing_material_2_skill		    "Blacksmithing 70.0"
+blacksmithing_material_2_armor_res		"2,1,0,0,5,f_colored_armor_shadow"
+blacksmithing_material_2_weaps_dam		"0,0,20,0,0,f_colored_weaps_shadow"
+blacksmithing_material_2_color		    "color_o_shadow"
+blacksmithing_material_2_resourceid	    "i_ingot_shadow"
 
-blacksmithing_material_3			"dullcopper"
-blacksmithing_material_3_name		"Dull Copper"
-blacksmithing_material_3_skill		"Blacksmithing 65.0"
-blacksmithing_material_3_armor_res	"6,0,0,0,0,f_colored_armor_dullcopper"
-blacksmithing_material_3_weaps_dam	"0,0,0,0,0,f_colored_weaps_dullcopper"
-blacksmithing_material_3_color		"color_o_dull_copper"
-blacksmithing_material_3_resourceid	"i_ingot_dull_copper"
+blacksmithing_material_3		        "copper"
+blacksmithing_material_3_name		    "Copper"
+blacksmithing_material_3_skill		    "Blacksmithing 75.0"
+blacksmithing_material_3_armor_res		"1,1,0,5,2"
+blacksmithing_material_3_weaps_dam		"0,0,0,10,20"
+blacksmithing_material_3_color		    "color_o_copper"
+blacksmithing_material_3_resourceid	    "i_ingot_copper"
 
-blacksmithing_material_4		"shadow"
-blacksmithing_material_4_name		"Shadow"
-blacksmithing_material_4_skill		"Blacksmithing 70.0"
-blacksmithing_material_4_armor_res	"2,1,0,0,5,f_colored_armor_shadow"
-blacksmithing_material_4_weaps_dam	"0,0,20,0,0,f_colored_weaps_shadow"
-blacksmithing_material_4_color		"color_o_shadow"
-blacksmithing_material_4_resourceid	"i_ingot_shadow"
+blacksmithing_material_4			    "bronze"
+blacksmithing_material_4_name		    "Bronze"
+blacksmithing_material_4_skill		    "Blacksmithing 80.0"
+blacksmithing_material_4_armor_res		"3,0,5,1,1"
+blacksmithing_material_4_weaps_dam		"0,40,0,0,0"
+blacksmithing_material_4_color		    "color_o_bronze"
+blacksmithing_material_4_resourceid	    "i_ingot_bronze"
 
-blacksmithing_material_5		"copper"
-blacksmithing_material_5_name		"Copper"
-blacksmithing_material_5_skill		"Blacksmithing 75.0"
-blacksmithing_material_5_armor_res	"1,1,0,5,2"
-blacksmithing_material_5_weaps_dam	"0,0,0,10,20"
-blacksmithing_material_5_color		"color_o_copper"
-blacksmithing_material_5_resourceid	"i_ingot_copper"
+blacksmithing_material_5		        "golden"
+blacksmithing_material_5_name		    "Golden"
+blacksmithing_material_5_skill		    "Blacksmithing 85.0"
+blacksmithing_material_5_armor_res		"1,1,2,0,2,f_colored_armor_golden"
+blacksmithing_material_5_weaps_dam		"0,0,0,0,0,f_colored_weaps_golden"
+blacksmithing_material_5_color		    "color_o_gold"
+blacksmithing_material_5_resourceid	    "i_ingot_gold"
 
-blacksmithing_material_6_name		"Rose"
-blacksmithing_material_6_skill		"Blacksmithing 45.0"
-blacksmithing_material_6_resourceid	"i_ingot_rose"
+blacksmithing_material_6		        "agapite"
+blacksmithing_material_6_name		    "Agapite"
+blacksmithing_material_6_skill		    "Blacksmithing 90.0"
+blacksmithing_material_6_armor_res		"2,3,2,2,2"
+blacksmithing_material_6_weaps_dam		"0,0,30,0,20"
+blacksmithing_material_6_color		    "color_o_agapite"
+blacksmithing_material_6_resourceid	    "i_ingot_agapite"
 
-blacksmithing_material_7			"bronze"
-blacksmithing_material_7_name		"Bronze"
-blacksmithing_material_7_skill		"Blacksmithing 80.0"
-blacksmithing_material_7_armor_res	"3,0,5,1,1"
-blacksmithing_material_7_weaps_dam	"0,40,0,0,0"
-blacksmithing_material_7_color		"color_o_bronze"
-blacksmithing_material_7_resourceid	"i_ingot_bronze"
+blacksmithing_material_7			    "verite"
+blacksmithing_material_7_name		    "Verite"
+blacksmithing_material_7_skill		    "Blacksmithing 95.0"
+blacksmithing_material_7_armor_res		"3,3,2,3,1"
+blacksmithing_material_7_weaps_dam		"0,0,0,40,20"
+blacksmithing_material_7_color		    "color_o_verite"
+blacksmithing_material_7_resourceid		"i_ingot_verite"
 
-blacksmithing_material_8		"golden"
-blacksmithing_material_8_name		"Golden"
-blacksmithing_material_8_skill		"Blacksmithing 85.0"
-blacksmithing_material_8_armor_res	"1,1,2,0,2,f_colored_armor_golden"
-blacksmithing_material_8_weaps_dam	"0,0,0,0,0,f_colored_weaps_golden"
-blacksmithing_material_8_color		"color_o_gold"
-blacksmithing_material_8_resourceid	"i_ingot_gold"
+blacksmithing_material_8			    "valorite"
+blacksmithing_material_8_name		    "Valorite"
+blacksmithing_material_8_skill		    "Blacksmithing 99.0"
+blacksmithing_material_8_armor_res		"4,0,3,3,3,f_colored_armor_valorite"
+blacksmithing_material_8_weaps_dam		"0,10,20,10,20"
+blacksmithing_material_8_color		    "color_o_valorite"
+blacksmithing_material_8_resourceid    	"i_ingot_valorite"
 
-blacksmithing_material_9		"agapite"
-blacksmithing_material_9_name		"Agapite"
-blacksmithing_material_9_skill		"Blacksmithing 90.0"
-blacksmithing_material_9_armor_res	"2,3,2,2,2"
-blacksmithing_material_9_weaps_dam	"0,0,30,0,20"
-blacksmithing_material_9_color		"color_o_agapite"
-blacksmithing_material_9_resourceid	"i_ingot_agapite"
-
-blacksmithing_material_10_name		"Silver"
-blacksmithing_material_10_skill		"Blacksmithing 90.0"
-blacksmithing_material_10_resourceid "i_ingot_silver"
-
-blacksmithing_material_11			"verite"
-blacksmithing_material_11_name		"Verite"
-blacksmithing_material_11_skill		"Blacksmithing 95.0"
-blacksmithing_material_11_armor_res	"3,3,2,3,1"
-blacksmithing_material_11_weaps_dam	"0,0,0,40,20"
-blacksmithing_material_11_color		"color_o_verite"
-blacksmithing_material_11_resourceid	"i_ingot_verite"
-
-blacksmithing_material_12			"valorite"
-blacksmithing_material_12_name		"Valorite"
-blacksmithing_material_12_skill		"Blacksmithing 99.0"
-blacksmithing_material_12_armor_res	"4,0,3,3,3,f_colored_armor_valorite"
-blacksmithing_material_12_weaps_dam	"0,10,20,10,20"
-blacksmithing_material_12_color		"color_o_valorite"
-blacksmithing_material_12_resourceid	"i_ingot_valorite"
-
-blacksmithing_material_13_name		"Bloodrock"
-blacksmithing_material_13_skill		"Blacksmithing 99.0"
-blacksmithing_material_13_resourceid	"i_ingot_bloodrock"
-
-blacksmithing_material_14_name		"Blackrock"
-blacksmithing_material_14_skill		"Blacksmithing 99.0"
-blacksmithing_material_14_resourceid	"i_ingot_blackrock"
-
-blacksmithing_material_15_name		"Mytheril"
-blacksmithing_material_15_skill		"Blacksmithing 99.0"
-blacksmithing_material_15_resourceid	"i_ingot_mytheril"
-
-[function f_colored_armor_dullcopper]
+[FUNCTION f_colored_armor_dull_copper]
 LowerReq = 20
 hitpoints += 50
 
-[function f_colored_weaps_dullcopper]
+[FUNCTION f_colored_weaps_dull_copper]
 LowerReq = 50
 hitpoints += 100
 
-[function f_colored_armor_shadow]
+[FUNCTION f_colored_armor_shadow]
 hitpoints += 100
 
-[function f_colored_weaps_shadow]
+[FUNCTION f_colored_weaps_shadow]
 hitpoints += 50
 
-[function f_colored_armor_golden]
+[FUNCTION f_colored_armor_golden]
 if !<istevent.ei_equipitem>
 events +ei_equipitem
 endif
 Luck = <eval <Luck> + 40>
 LowerReq = 30
 
-[function f_colored_weaps_golden]
+[FUNCTION f_colored_weaps_golden]
 if !<istevent.ei_equipitem>
 events +ei_equipitem
 endif
 Luck = <eval <Luck> + 40>
 LowerReq = 50
 
-[function f_colored_armor_valorite]
+[FUNCTION f_colored_armor_valorite]
 hitpoints += 50
 
-[eof]
+[EOF]

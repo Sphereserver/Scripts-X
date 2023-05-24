@@ -4,9 +4,15 @@
 //****************************************************************************
 VERSION=X1
 
-[defname blacksmithing_options]
-// $skill_category_#_#_opt	"mark,exceptional,colored,recipe,expansion"
+[DEFNAME blacksmithing_options]
+// $skill_category_#_opt = "colored"
+blacksmithing_category_1_opt	"1"
+blacksmithing_category_2_opt	"1"
+blacksmithing_category_3_opt	"1"
+blacksmithing_category_4_opt	"1"
+blacksmithing_category_5_opt	"1"
 
+// $skill_category_#_#_opt	"mark,exceptional,colored,recipe,expansion"
 blacksmithing_category_1_1_opt	"1,1,1,0,0"
 blacksmithing_category_1_2_opt	"1,1,1,0,0"
 blacksmithing_category_1_3_opt	"1,1,1,0,0"
@@ -133,4 +139,4 @@ blacksmithing_category_11_1_opt	"1,1,1,0,7"
 blacksmithing_category_11_2_opt	"1,1,1,0,7"
 blacksmithing_category_11_3_opt	"1,1,1,0,7"
 
-[eof]
+[EOF]
