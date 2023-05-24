@@ -10,7 +10,7 @@ used by the crafting system so that material is used in the crafting dialog.
 The script assumes no more than 20 ingot types are defined in the crafting
 file for blacksmithing (likely named sphere_skillmenu_blacksmithing.scp)
 
-[typedef t_ingot]
+[TYPEDEF t_ingot]
 on=@dclick
 if <def0.scp.CraftingSystem> == 0
    return 0

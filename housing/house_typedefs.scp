@@ -269,7 +269,7 @@ endif
 return 1
 
 // Telepad for multis.
-[typedef ei_house_telepad]
+[TYPEDEF ei_house_telepad]
 ON=@Click	
 if (<tag0.guild>)
 	message @,,1 [<uid.<tag0.guild>.abbrev>] Guild Members Only.

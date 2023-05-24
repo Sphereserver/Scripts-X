@@ -326,7 +326,7 @@ UPDATE
 
 //////////////////////////
 // Dungeon Chest Typedefs
-[typedef t_dungeon_chest]
+[TYPEDEF t_dungeon_chest]
 on=@click
 message <serv.itemdef.<dispid>.name>
 return 1
@@ -342,7 +342,7 @@ if (<argn1>==23) && ((<type>==t_container_locked) || (<isevent.t_container_locke
   return 1
 endif
 
-[typedef t_trapped_container]
+[TYPEDEF t_trapped_container]
 //only can place traps on lockable boxes. not bags or doors.
 //damage varies on skill of the tinkerer
 //explosion traps do the most damage, grandmaster explosions traps will almost always kill the opener

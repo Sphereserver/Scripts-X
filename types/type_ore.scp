@@ -5,7 +5,7 @@
 VERSION=X1
 
 
-[typedef t_ore]
+[TYPEDEF t_ore]
 on=@dclick
 if <def0.scp.OSIOreFormula> < 1
    return 0

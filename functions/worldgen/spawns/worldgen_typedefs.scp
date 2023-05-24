@@ -1,5 +1,5 @@
 
-[typedef t_custom_spawner_char]
+[TYPEDEF t_custom_spawner_char]
 
 on=@timer
 if (!<isempty <tag.spawn_array>>) 
@@ -27,7 +27,7 @@ endif
 return 0
 
 
-[typedef t_custom_spawner_item]
+[TYPEDEF t_custom_spawner_item]
 
 
 on=@click
