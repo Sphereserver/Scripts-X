@@ -52,11 +52,6 @@ REAPAMOUNT=1       // ...can be harvested this many at a time...
 //SKILL=0.0        // ...and it takes no skill to do it.
 REGEN=60*60*10
 
-[REGIONTYPE r_default_grass t_grass]
-// All grass can be eaten by default.
-RESOURCES=1.0 mr_grass
-
-
 /////////////////////////////////
 // Resources for fishing skill //
 /////////////////////////////////
@@ -89,25 +84,6 @@ REAPAMOUNT=1,3
 SKILL=1.0,100.0
 REGEN=60*60*10
 
-[REGIONTYPE r_default_water t_water]
-RESOURCES=60.0 mr_nothing  // Most of the time fishing produces nothing.
-RESOURCES=10.0 mr_fish1
-RESOURCES=10.0 mr_fish2
-RESOURCES=10.0 mr_fish3
-RESOURCES=10.0 mr_fish4
-
-[REGIONTYPE r_water t_water]
-RESOURCES=60.0 mr_nothing
-RESOURCES=10.0 mr_fish1
-RESOURCES=10.0 mr_fish2
-RESOURCES=10.0 mr_fish3
-RESOURCES=10.0 mr_fish4
-
-ON=@RegPeriodic
-// Water/Ocean boat sounds
-SRC.SOUND={025 1 026 1 027 1 010 1 011 1 012 1 013 1}
-
-
 ///////////////////////////////////////
 // Resources for lumberjacking skill //
 ///////////////////////////////////////
@@ -119,10 +95,6 @@ REAPAMOUNT=1,3
 SKILL=1.0,80.0
 REGEN=60*60*10
 
-[REGIONTYPE r_default_tree t_tree]
-// All trees produce wood by default.
-RESOURCES=60.0 mr_nothing
-RESOURCES=40.0 mr_tree
 
 ////////////////////////////////
 // Resources for mining skill //

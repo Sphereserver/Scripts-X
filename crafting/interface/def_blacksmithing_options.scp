@@ -4,9 +4,15 @@
 //****************************************************************************
 VERSION=X1
 
-[defname blacksmithing_options]
-// $skill_category_#_#_opt	"mark,exceptional,colored,recipe,expansion"
+[DEFNAME blacksmithing_options]
+// $skill_category_#_opt = "colored"
+blacksmithing_category_1_opt	"1"
+blacksmithing_category_2_opt	"1"
+blacksmithing_category_3_opt	"1"
+blacksmithing_category_4_opt	"1"
+blacksmithing_category_5_opt	"1"
 
+// $skill_category_#_#_opt	"mark,exceptional,colored,recipe,expansion"
 blacksmithing_category_1_1_opt	"1,1,1,0,0"
 blacksmithing_category_1_2_opt	"1,1,1,0,0"
 blacksmithing_category_1_3_opt	"1,1,1,0,0"
@@ -116,21 +122,5 @@ blacksmithing_category_8_7_opt	"1,1,1,0,0"
 blacksmithing_category_8_8_opt	"1,1,1,0,3"
 blacksmithing_category_8_9_opt	"1,1,1,0,0"
 blacksmithing_category_8_10_opt	"1,1,1,0,0"
-
-// blacksmithing_category_9_9_opt	"0,0,0,1,5"
-// blacksmithing_category_9_10_opt	"1,1,1,1,5"
-// blacksmithing_category_9_11_opt	"1,1,1,1,5"
-// blacksmithing_category_9_12_opt	"1,1,1,1,5"
-// blacksmithing_category_9_13_opt	"1,1,1,1,5"
-
-blacksmithing_category_10_1_opt	"1,1,0,0,5"
-blacksmithing_category_10_2_opt	"1,1,0,0,5"
-blacksmithing_category_10_3_opt	"1,1,0,0,5"
-blacksmithing_category_10_4_opt	"1,1,0,0,5"
-blacksmithing_category_10_5_opt	"1,1,0,0,5"
-
-blacksmithing_category_11_1_opt	"1,1,1,0,7"
-blacksmithing_category_11_2_opt	"1,1,1,0,7"
-blacksmithing_category_11_3_opt	"1,1,1,0,7"
 
 [eof]

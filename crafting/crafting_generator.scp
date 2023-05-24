@@ -72,7 +72,7 @@ local.material = <argv[1]>
 local.topen = "scripts/add-on/skillmenu/sphere_skillmenu_<local.skill>_colored.scp" // _<def.<local.skill>_material_<dlocal.material>>
 file.mode.append = 1
 if <file.open <local.topen>>
-   file.writeline "[defname sphere_crafting_blacksmithing_<def.<local.skill>_material_<dlocal.material>>]"
+   file.writeline "[DEFNAME sphere_crafting_blacksmithing_<def.<local.skill>_material_<dlocal.material>>]"
    for y 1 20
       if !<isempty <def.<local.skill>_category_<dlocal.y>_1>>
          local.items = 1
