@@ -14,7 +14,7 @@ VERSION=X1
 // --------------------
 // OSI Crafting System
 
-[events e_player_crafting_event]
+[EVENTS e_player_crafting_event]
 on=@skillmenu
 if <def.scp.CraftingSystem> == 0
 return 0
