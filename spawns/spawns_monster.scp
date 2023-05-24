@@ -392,7 +392,7 @@ ID=c_lich_ancient          2
 ID=c_lich_primeval         1
 ID=c_skeletal_dragon       1
 
-[comment SPAWN spawn_Void]
+[Comment SPAWN spawn_Void]
 CATEGORY=Spawn Groups
 SUBSECTION=Monsters
 DESCRIPTION=Void Monsters
