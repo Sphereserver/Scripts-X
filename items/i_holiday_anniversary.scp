@@ -1313,6 +1313,364 @@ ON=@DClick
    EFFECT 2,i_confetti_explosion,16,24
    return 1
 
+[ITEMDEF 0a12c]
+DEFNAME=i_telescope
+NAME=telescope
+FLIP=1
+RESOURCES=25 i_ingot_iron, 1 i_workable_glass, 1 i_sextant_parts
+SKILLMAKE=Tinkering 100.0,t_tinker_tools
+CATEGORY=Anniversary Gifts
+SUBSECTION=21th Anniversary
+DESCRIPTION=Telescope
+DUPELIST=0a12d
+ON=@DClick
+   SDIALOG d_telescope
+   return 1
+
+[ITEMDEF 0a12d]
+NAME=telescope
+DUPEITEM=0a12c
+
+[DIALOG d_telescope]
+30,30
+
+IF (<SERV.RTIME.FORMAT %H> == 0)	//Midnight
+   gumppic 0 0 0686
+ELIF (<SERV.RTIME.FORMAT %H> <= 4)	//Middle of the night
+   gumppic 0 0 0680
+ELIF (<SERV.RTIME.FORMAT %H> <= 16)	//Daylight
+   gumppic 0 0 067e
+   LOCAL.Daylight=1
+ELIF (<SERV.RTIME.FORMAT %H> <= 20)	//Evening
+   gumppic 0 0 067f
+ELSE					//Late at night
+   gumppic 0 0 0684
+ENDIF
+
+gumppic 222 597 0694
+button 222 584 0697 0698 1 0 1
+button 222 631 0699 069a 1 0 2
+gumppic 229 600 <eval 058f + (<TAG0.RA> / 10)>
+
+gumppic 256 597 0694
+button 256 584 0697 0698 1 0 3
+button 256 631 0699 069a 1 0 4
+gumppic 263 600 <eval 058f + (<TAG0.RA> % 10)>
+
+gumppic 332 597 0694
+button 332 584 0697 0698 1 0 5
+button 332 631 0699 069a 1 0 6
+gumppic 339 600 <eval 058f + ((<TAG0.DEC> / 10) / 10)>
+
+gumppic 366 597 0694
+button 366 584 0697 0698 1 0 7
+button 366 631 0699 069a 1 0 8
+gumppic 373 600 <eval 058f + ((<TAG0.DEC> / 10) % 10)>
+
+gumppic 400 597 0694
+button 400 584 0697 0698 1 0 9
+button 400 631 0699 069a 1 0 10
+gumppic 407 600 <eval 058f + (<TAG0.DEC> % 10)>
+
+gumppic 397 623 0696
+button 291 597 069b 069c 1 0 11
+dhtmlgump 251 651 30 20 0 0 <DEF.L1>basefont color="#d6d6ad"<DEF.R1>RA<DEF.BFONTE>
+dhtmlgump 371 651 30 20 0 0 <DEF.L1>basefont color="#d6d6ad"<DEF.R1>DEC<DEF.BFONTE>
+
+//TO-DO: Add all missing coords
+IF (<LOCAL.Daylight>)
+   SRC.SYSMESSAGE You won't have much luck seeing the night sky during the day...
+ELIF ((<TAG0.RA> == 5) && (<TAG0.DEC> == 488))
+   gumppic 260 260 <R068d,0693>
+   SRC.SYSMESSAGE You peer into the heavens and see...a comet!
+ELIF ((<TAG0.RA> == 8) && (<TAG0.DEC> == 312))
+   gumppic 180 180 <R069f,06a6>
+   SRC.SYSMESSAGE You peer into the heavens and see...Felucca!
+ELIF ((<TAG0.RA> == 11) && (<TAG0.DEC> == 466))
+   gumppic 180 160 <R06bd,06cd>
+   SRC.SYSMESSAGE You peer into the heavens and see...a planet!
+   return 0
+ELIF ((<TAG0.RA> == 14) && (<TAG0.DEC> == 664))
+   gumppic 150 130 <R06af,06bc>
+   SRC.SYSMESSAGE You peer into the heavens and see...a galaxy!
+ELIF ((<TAG0.RA> == 15) && (<TAG0.DEC> == 790))
+   FOR 10
+      gumppic <R150,450> <R150,450> <R0668,067d>
+   ENDFOR
+   SRC.SYSMESSAGE You peer into the heavens and see...a constellation!
+ELIF ((<TAG0.RA> == 16) && (<TAG0.DEC> == 624))
+   gumppic 180 180 <R06a7,06ae>
+   SRC.SYSMESSAGE You peer into the heavens and see...Trammel!
+ELIF ((<TAG0.RA> == 20) && (<TAG0.DEC> == 332) && (<SERV.RTIME.FORMAT %m> == 12))
+   // OSI easter egg: Santa Claus can be seen here at Christmas (december)
+   gumppic 100 260 06d7
+   SRC.SYSMESSAGE You peer into the heavens and see...something very odd in a far away realm!
+ELSE
+   SRC.SYSMESSAGE You peer into the heavens and see...only empty space...
+ENDIF
+
+[DIALOG d_telescope BUTTON]
+ON=1 11
+IF (<ARGN> == 1)
+   IF (<eval <TAG0.RA> + 10> <= 24)
+      TAG0.RA += 10
+   ENDIF
+ELIF (<ARGN> == 2)
+   IF (<eval <TAG0.RA> - 10> >= 0)
+      TAG0.RA -= 10
+   ENDIF
+ELIF (<ARGN> == 3)
+   IF (<eval <TAG0.RA> + 1> <= 24)
+      TAG0.RA += 1
+   ENDIF
+ELIF (<ARGN> == 4)
+   IF (<eval <TAG0.RA> - 1> >= 0)
+      TAG0.RA -= 1
+   ENDIF
+ELIF (<ARGN> == 5)
+   IF (<eval <TAG0.DEC> + 100> <= 900)
+      TAG0.DEC += 100
+   ENDIF
+ELIF (<ARGN> == 6)
+   IF (<eval <TAG0.DEC> - 100> >= 0)
+      TAG0.DEC -= 100
+   ENDIF
+ELIF (<ARGN> == 7)
+   IF (<eval <TAG0.DEC> + 10> <= 900)
+      TAG0.DEC += 10
+   ENDIF
+ELIF (<ARGN> == 8)
+   IF (<eval <TAG0.DEC> - 10> >= 0)
+      TAG0.DEC -= 10
+   ENDIF
+ELIF (<ARGN> == 9)
+   IF (<eval <TAG0.DEC> + 2> <= 900)
+      TAG0.DEC += 2
+   ENDIF
+ELIF (<ARGN> == 10)
+   IF (<eval <TAG0.DEC> - 2> >= 0)
+      TAG0.DEC -= 2
+   ENDIF
+ELIF (<ARGN> == 11)
+   TAG.RA=
+   TAG.DEC=
+ENDIF
+SDIALOG d_telescope
+
+
+[ITEMDEF i_book_telescope]
+ID=0ff0
+CATEGORY=Anniversary Gifts
+SUBSECTION=21th Anniversary
+DESCRIPTION=Book (telescope guide)
+ON=@Create
+   COLOR=012a
+ON=@ClientTooltip
+   SRC.ADDCLILOC 1158515				//Looking to the Heavens: A Primer on Britannian Astronomy
+   SRC.ADDCLILOC 1154760,Willebrord the Astronomer	//By: ~1_NAME~
+ON=@DClick
+   SDIALOG d_book_telescope
+   return 1
+
+[DIALOG d_book_telescope]
+100,100
+gumppic 0 0 0761c
+gumppic 95 40 069e
+xmfhtmltok 115 200 350 400 0 1 1 1158516
+
+
+[ITEMDEF 0a17b]
+//orrery (anim)
+
+[ITEMDEF 0a17c]
+DEFNAME=i_orrery
+NAME=orrery
+CATEGORY=Anniversary Gifts
+SUBSECTION=21th Anniversary
+DESCRIPTION=Orrery
+ON=@DClick
+   IF (<DISPID> == i_orrery)
+      DISPID=0a17b
+      SOUND 01e0
+   ELSE
+      DISPID=i_orrery
+      SOUND 01e2
+   ENDIF
+   UPDATE
+   return 1
+
+[ITEMDEF 0a17d]
+//orrery (anim)
+
+[ITEMDEF 0a17e]
+//orrery (anim)
+
+[ITEMDEF 0a17f]
+//orrery (anim)
+
+[ITEMDEF 0a180]
+//orrery (anim)
+
+[ITEMDEF 0a181]
+//orrery (anim)
+
+[ITEMDEF 0a182]
+//orrery (anim)
+
+[ITEMDEF 0a183]
+//orrery (anim)
+
+[ITEMDEF 0a184]
+//orrery (anim)
+
+[ITEMDEF 0a185]
+//orrery (anim)
+
+[ITEMDEF 0a186]
+//orrery (anim)
+
+[ITEMDEF 0a187]
+//orrery (anim)
+
+[ITEMDEF 0a188]
+//orrery (anim)
+
+[ITEMDEF 0a189]
+//orrery (anim)
+
+[ITEMDEF 0a18a]
+//orrery (anim)
+
+[ITEMDEF 0a18b]
+//orrery (anim)
+
+[ITEMDEF 0a18c]
+//orrery (anim)
+
+[ITEMDEF 0a18d]
+//orrery (anim)
+
+[ITEMDEF 0a18e]
+//orrery (anim)
+
+[ITEMDEF 0a18f]
+//orrery (anim)
+
+[ITEMDEF 0a190]
+//orrery (anim)
+
+[ITEMDEF 0a191]
+//orrery (anim)
+
+[ITEMDEF 0a192]
+//orrery (anim)
+
+[ITEMDEF 0a193]
+//orrery (anim)
+
+[ITEMDEF 0a194]
+//orrery (anim)
+
+[ITEMDEF 0a195]
+//orrery (anim)
+
+[ITEMDEF 0a196]
+//orrery (anim)
+
+[ITEMDEF 0a197]
+//orrery (anim)
+
+
+[ITEMDEF 0a1e4]
+DEFNAME=i_star_chart
+NAME=star chart
+CATEGORY=Anniversary Gifts
+SUBSECTION=21th Anniversary
+DESCRIPTION=Star Chart
+DUPELIST=0a1e5
+
+[ITEMDEF 0a1e5]
+//star chart
+DUPEITEM=0a1e4
+
+
+[ITEMDEF 0a35d]
+DEFNAME=i_copper_flower_pot
+NAME=copper flower pot
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=22th Anniversary
+DESCRIPTION=Copper Flower Pot
+DUPELIST=0a35e
+ON=@Create
+   ATTR=attr_move_always
+
+[ITEMDEF 0a35e]
+//copper flower pot
+DUPEITEM=0a35d
+
+
+[ITEMDEF 0a3de]
+DEFNAME=i_copper_wings
+NAME=copper wings
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=22th Anniversary
+DESCRIPTION=Copper Wings
+DUPELIST=0a3df
+ON=@Create
+   ATTR=attr_move_always
+
+[ITEMDEF 0a3df]
+//copper wings
+DUPEITEM=0a3de
+
+
+[ITEMDEF 0a3e0]
+DEFNAME=i_copper_portrait_1
+NAME=copper portrait
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=22th Anniversary
+DESCRIPTION=Copper Portrait 1
+DUPELIST=0a3e4
+ON=@Create
+   ATTR=attr_move_always
+
+[ITEMDEF 0a3e1]
+//copper ship relief (multi-part)(south)
+NAME=copper ship relief
+
+[ITEMDEF 0a3e2]
+//copper ship relief (multi-part)(south)
+NAME=copper ship relief
+
+[ITEMDEF 0a3e3]
+DEFNAME=i_copper_portrait_2
+NAME=copper portrait
+FLIP=1
+CATEGORY=Anniversary Gifts
+SUBSECTION=22th Anniversary
+DESCRIPTION=Copper Portrait 2
+DUPELIST=0a3e7
+ON=@Create
+   ATTR=attr_move_always
+
+[ITEMDEF 0a3e4]
+//copper portrait
+DUPEITEM=0a3e0
+
+[ITEMDEF 0a3e5]
+//copper ship relief (multi-part)(east)
+NAME=copper ship relief
+
+[ITEMDEF 0a3e6]
+//copper ship relief (multi-part)(east)
+NAME=copper ship relief
+
+[ITEMDEF 0a3e7]
+//copper portrait
+DUPEITEM=0a3e3
 
 ////////////
 // Multis //
