@@ -99,6 +99,9 @@ blacksmithing_category_6_name	"1011081" // Bladed
 blacksmithing_category_7_name	"1011082" // Bashing
 blacksmithing_category_8_name	"1011083" // Axes
 blacksmithing_category_9_name	"1011084" // Polearms
+blacksmithing_category_10_name	"1060885" // Dragon Scale Armor
+blacksmithing_category_11_name	"1044117" // Throwing
+blacksmithing_category_12_name	"1044290" // Misc. Add-Ons
 blacksmithing_category_10_name	"1044290" // Misc. Add-Ons
 
 [DEFNAME sphere_crafting_blacksmithing_skillmenu_items]
@@ -269,9 +272,6 @@ blacksmithing_category_11_3	"i_soul_glaive"
 
 blacksmithing_category_12_1	"i_deed_anvil"
 blacksmithing_category_12_2	"i_deed_forge"
-
-blacksmithing_category_10_1	"i_deed_anvil"
-blacksmithing_category_10_2	"i_deed_forge"
 
 [DEFNAME sphere_crafting_blacksmithing_colored]
 blacksmithing_material_0		        ""
