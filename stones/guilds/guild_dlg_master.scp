@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[dialog d_Guild_Master]
+[DIALOG d_Guild_Master]
 5,25
 If (<type>!=t_stone_guild)
   return 1
@@ -88,7 +88,7 @@ dhtmlgump 335 360 100 30 0 0 EXIT
   button 300 360 4005 4007 1 0 0 // Exit
   
 
-[dialog d_Guild_Master Button]
+[DIALOG d_Guild_Master Button]
 ON=0 12
   If (<argn1>==0) // Exit Gump
     //sdialog d_Guild_Main,0

@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[dialog d_Guild_WarfareStatus]
+[DIALOG d_Guild_WarfareStatus]
 5,25
 If (<type>!=t_stone_guild)
   return 1
@@ -90,7 +90,7 @@ endif
 
 
   
-[dialog d_Guild_WarfareStatus Button]
+[DIALOG d_Guild_WarfareStatus Button]
 ON=0
   sdialog d_Guild_Main,0
   return 1

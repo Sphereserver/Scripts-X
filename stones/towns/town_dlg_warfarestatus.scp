@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[dialog d_Town_WarfareStatus]
+[DIALOG d_Town_WarfareStatus]
 5,25
 If (<type>!=t_stone_town)
   return 1
@@ -90,7 +90,7 @@ endif
 
 
   
-[dialog d_Town_WarfareStatus Button]
+[DIALOG d_Town_WarfareStatus Button]
 ON=0
   sdialog d_Town_Main,0
   return 1

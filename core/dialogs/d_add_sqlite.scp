@@ -364,7 +364,7 @@ IF !(<isempty <ctag.add_show>>)
 	endif
 endif
 
-[dialog d_add]
+[DIALOG d_add]
 6,32
 ldb.close
 ldb.connect "<serv.scpfiles><def.AddDLG_DB_File>"

@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[dialog d_Guild_ChangeAlign]
+[DIALOG d_Guild_ChangeAlign]
 5,25
 If (<type>!=t_stone_guild)
   return 1
@@ -37,7 +37,7 @@ While (!<isempty <def.guildconfig_align_<dlocal.align>>>)
   local.align += 1
 endwhile
 
-[dialog d_Guild_ChangeAlign Button]
+[DIALOG d_Guild_ChangeAlign Button]
 on=0 3
   If (<masteruid>!=<src.uid>)&&(!<src.isgm>)
     return 1

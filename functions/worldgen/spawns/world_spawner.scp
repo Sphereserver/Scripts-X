@@ -72,7 +72,7 @@ endif
 sdialog d_world_spawner
 return 1
 
-[dialog d_world_spawner]
+[DIALOG d_world_spawner]
 200,100
 
 page 0
@@ -135,7 +135,7 @@ while !<isempty <def.worldspawner_facet_<dlocal.n>>>
   local.y=
 endwhile
 
-[dialog d_world_spawner button]
+[DIALOG d_world_spawner button]
 
 onbutton=1,100000
 argn -= 1

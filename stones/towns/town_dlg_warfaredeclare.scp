@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[dialog d_Town_Master_Warfare_DeclareWar]
+[DIALOG d_Town_Master_Warfare_DeclareWar]
 5,25
 local.tosearch=<args>
 If (<type>!=t_stone_town)
@@ -63,7 +63,7 @@ endfor
 
 
 
-[dialog d_Town_Master_Warfare_DeclareWar Button]
+[DIALOG d_Town_Master_Warfare_DeclareWar Button]
 ON=0 1
   If (!<src.ctag.dialog_townmasterwarfaredclarewar_townlist>)
     serv.log Declare war search function improperly returned info!!  Ctag not set!

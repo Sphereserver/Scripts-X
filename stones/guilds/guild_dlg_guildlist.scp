@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[dialog d_Guild_GuildList]
+[DIALOG d_Guild_GuildList]
 5,25
 local.listtype=<args>
 If (<local.listtype> <= 0)||(<local.listtype> > 4)
@@ -115,7 +115,7 @@ endwhile
 
 
   
-[dialog d_Guild_GuildList Button]
+[DIALOG d_Guild_GuildList Button]
 ON=0 1
   If (!<src.ctag0.dialog_guildguildlist_type>)
     serv.log sdialog d_Guild_GuildList called without src.ctag.dialog_guildguildlist_type !!

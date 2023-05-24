@@ -247,7 +247,7 @@ while !<isempty <def.worlddecorator_facet_<dlocal.n>>>
 endwhile
 
 
-[dialog d_world_decorator button]
+[DIALOG d_world_decorator button]
 
 onbutton=1,99
 doswitch <eval <argn>-1>

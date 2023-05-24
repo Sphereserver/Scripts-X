@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 	
-[dialog d_Town_Main]
+[DIALOG d_Town_Main]
 5,25
 If (<type>!=t_stone_town)
   return 1
@@ -70,7 +70,7 @@ dhtmlgump 55 360 470 30 0 0 EXIT
   button 20 360 4005 4007 1 0 0
 
 
-[dialog d_Town_Main Button]
+[DIALOG d_Town_Main Button]
 ON=0 9
 If (<argn1>==0) // Exit Gump
   return 1

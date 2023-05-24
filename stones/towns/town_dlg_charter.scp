@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[dialog d_Town_ViewCharter]
+[DIALOG d_Town_ViewCharter]
 5,25
 If (<type>!=t_stone_town)
   return 1
@@ -53,7 +53,7 @@ dhtmlgump 55 200 300 20 0 0 Visit the town website :
   dhtmlgump 50 220 300 20 0 0 <local.website>
 
 
-[dialog d_Town_ViewCharter Button]
+[DIALOG d_Town_ViewCharter Button]
 ON=0 1    
   If (<argn1>==0)	// Exit Gump
     sdialog d_Town_Main,0
@@ -68,7 +68,7 @@ ON=0 1
 
 
 //------------------------------------------------------------------------
-[dialog d_Town_SetCharter]
+[DIALOG d_Town_SetCharter]
 110, 70
 If (<type>!=t_stone_town)
   return 1
@@ -110,7 +110,7 @@ gumppic 40 328 1143
 dtextentry 50 331 250 32 0 1006 <webpage>
 
 
-[dialog d_Town_SetCharter Button]
+[DIALOG d_Town_SetCharter Button]
 ON=0 1
   If (<masteruid>!=<src.uid>)&&(!<src.isgm>)
     return 1

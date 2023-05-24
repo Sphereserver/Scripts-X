@@ -49,7 +49,7 @@ VERSION=X1
 //////// MAIN CRAFTING MENU
 ///////////////////////////////////////////////////////////////
 // This is the main menu, contains the list of items.
-[dialog d_craft_menu]
+[DIALOG d_craft_menu]
 40,40
 
 page 0
@@ -154,7 +154,7 @@ button 270 402 4005 4007 1 0 508
 xmfhtmlgumpcolor 305 403 150 20 <ddef.scp.craft_button_makelast> 0 0 <ddef.dcolor_white>
 
 
-[dialog d_craft_menu button]
+[DIALOG d_craft_menu button]
 on=0 // exit
 ctag.craft.message
 
@@ -270,7 +270,7 @@ f_craft <ctag0.craft.last.<ctag0.craft.skill>>
 //////// MATERIAL CRAFTING MENU
 ///////////////////////////////////////////////////////////////
 // This is the main menu, contains the list of items.
-[dialog d_craft_material]
+[DIALOG d_craft_material]
 40,40
 
 page 0
@@ -371,7 +371,7 @@ xmfhtmlgumpcolor 305 383 150 20 <ddef.scp.craft_button_enhance> 0 0 <ddef.dcolor
 button 270 402 4005 4007 1 0 508
 xmfhtmlgumpcolor 305 403 150 20 <ddef.scp.craft_button_makelast> 0 0 <ddef.dcolor_white>
 
-[dialog d_craft_material button]
+[DIALOG d_craft_material button]
 on=0 // exit
 ctag.craft.message
 
@@ -475,7 +475,7 @@ f_resenddialog d_craft_menu
 //////// ITEM PROPERTIES CRAFTING MENU
 ///////////////////////////////////////////////////////////////
 // This menu displays the requirements of the item to craft
-[dialog d_craft_itemprop]
+[DIALOG d_craft_itemprop]
 40,40
 
 page 0 // Basic Layout
@@ -577,7 +577,7 @@ IF (STRMATCH("*t_glassblowing*","<REF1.SKILLMAKE>"))
 ENDIF
 
 
-[dialog d_craft_itemprop button]
+[DIALOG d_craft_itemprop button]
 on=0
 ctag.craft.item
 dialogclose d_craft_itemprop
@@ -596,7 +596,7 @@ f_craft <ctag0.craft.item>
 /////////////////////////////////////////
 /////////////////////////////////////////
 
-[dialog d_craft_prompt]
+[DIALOG d_craft_prompt]
 100,200
 
 resizepic 0 0 5054 220 170
@@ -607,7 +607,7 @@ button 20 100 4005 4007 1 0 1
 xmfhtmlgump 55 125 140 25 1011012 0 0 // CANCEL
 button 20 125 4005 4007 1 0 0
 
-[dialog d_craft_prompt button]
+[DIALOG d_craft_prompt button]
 on=0
 src.sysmessage @,,1 Cancelled mark.
 

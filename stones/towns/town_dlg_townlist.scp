@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[dialog d_Town_TownList]
+[DIALOG d_Town_TownList]
 5,25
 local.listtype=<args>
 If (<local.listtype> <= 0)||(<local.listtype> > 4)
@@ -115,7 +115,7 @@ endwhile
 
 
   
-[dialog d_Town_TownList Button]
+[DIALOG d_Town_TownList Button]
 ON=0 1
   If (!<src.ctag0.dialog_towntownlist_type>)
     serv.log sdialog d_Town_TownList called without src.ctag.dialog_towntownlist_type !!

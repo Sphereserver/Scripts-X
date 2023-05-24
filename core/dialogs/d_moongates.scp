@@ -33,7 +33,7 @@ if (!<argn1>==1)
   sound snd_spell_gate_travel
 endif 
 
-[dialog d_moongates]
+[DIALOG d_moongates]
 90,90 
 
 PAGE 0 
@@ -72,7 +72,7 @@ while !<isempty <def.moongates_facet<dlocal.f>_<dlocal.n>>>
   local.n += 1
 endwhile
 
-[dialog d_moongates button]
+[DIALOG d_moongates button]
 
 onbutton=1,6
 sdialog d_moongates <argn1>
