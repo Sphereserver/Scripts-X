@@ -27,20 +27,20 @@ sound snd_spell_gate_travel
 return 1
 
 
-on=@step 
-if (!<argn1>==1) 
+on=@step
+if (!<argn1>==1)
   sdialog d_moongates <eval <src.p.m>+1>
   sound snd_spell_gate_travel
-endif 
+endif
 
 [DIALOG d_moongates]
-90,90 
+90,90
 
-PAGE 0 
-resizepic 10 10 9200 420 300 
+PAGE 0
+resizepic 10 10 9200 420 300
 //resizepic 20 20 3000 400 280
 
-dtext 50 30 1263 Pick your destination: 
+dtext 50 30 1263 Pick your destination:
 
 button 35 220 4005 4007 1 0 1000
 dtext 70 220 1263 OKAY
@@ -67,7 +67,7 @@ dtext 50 <eval 60+(<local.f>*25)> 044 <def0.moongates_facet<dlocal.f>>
 while !<isempty <def.moongates_facet<dlocal.f>_<dlocal.n>>>
   //serv.b <eval (<dlocal.f>*100)+(<local.n>+1)>
   radio 210 <eval 42+(<local.y>*25)> 9026 9027 0 <eval (<dlocal.f>*100)+(<local.n>+1)>
-  dtext 233 <eval 45+(<local.y>*25)> <qval (<def0.moongates_facet<dlocal.f>_<dlocal.n>_hue>)?<def0.moongates_facet<dlocal.f>_<dlocal.n>_hue>:0> <streat <streat <streat <streat <def0.moongates_facet<dlocal.f>_<dlocal.n>>>>>> 
+  dtext 233 <eval 45+(<local.y>*25)> <qval (<def0.moongates_facet<dlocal.f>_<dlocal.n>_hue>)?<def0.moongates_facet<dlocal.f>_<dlocal.n>_hue>:0> <streat <streat <streat <streat <def0.moongates_facet<dlocal.f>_<dlocal.n>>>>>>
   local.y += 1
   local.n += 1
 endwhile

@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[Comment typedef_t_ingot]
+[COMMENT typedef_t_ingot]
 This event override detects when an ingot is double clicked and sets the ctag
 used by the crafting system so that material is used in the crafting dialog.
 The script assumes no more than 20 ingot types are defined in the crafting

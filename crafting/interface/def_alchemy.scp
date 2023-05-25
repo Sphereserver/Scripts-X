@@ -87,7 +87,7 @@ alchemy_category_10_1	"i_potion_invisibility"		// 1074860
 //Bottle of Ichor
 
 
-[Comment several potions from sphere]
+[COMMENT several potions from sphere]
 // add them in the category you like.
 // the numbers and categories listed below are from an older file.
 //alchemy_category_1_3	"i_potion_forget_less"

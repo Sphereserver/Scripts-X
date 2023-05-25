@@ -3173,7 +3173,7 @@ CanUse=can_u_human|can_u_elf
 CATEGORY=Provisions - Clothes
 SUBSECTION=Shirts & Robes
 DESCRIPTION=Hooded Britannia Robe (1)
-Expansion=RDS_TOL 
+Expansion=RDS_TOL
 ON=@Create
    HITPOINTS={36 48}
 

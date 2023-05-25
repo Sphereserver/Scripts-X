@@ -362,7 +362,7 @@ if (<type>!=t_container_locked) 	//don't fire if the container is locked and doe
   args=<morep>
   if (<morex>==1)	//dart trap
     src.damage <qval <local.telekinesis>?0:<morey>> dam_physical <link>
-    src.effect 3,i_xbolt,6,15,1,0	
+    src.effect 3,i_xbolt,6,15,1,0
     src.sound 548
   elseif (<morex>==3)	//poison trap
     src.damage <qval <local.telekinesis>?0:<morey>> dam_poison <link>

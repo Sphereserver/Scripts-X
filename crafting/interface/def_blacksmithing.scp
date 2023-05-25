@@ -282,8 +282,8 @@ blacksmithing_resourceid		        "i_ingot_iron"
 blacksmithing_material_1			    "dull_copper"
 blacksmithing_material_1_name		    "Dull Copper"
 blacksmithing_material_1_skill		    "Blacksmithing 65.0"
-blacksmithing_material_1_armor_res		"6,0,0,0,0,f_colored_armor_dullcopper"
-blacksmithing_material_1_weaps_dam		"0,0,0,0,0,f_colored_weaps_dullcopper"
+blacksmithing_material_1_armor_res		"6,0,0,0,0,f_colored_armor_dull_copper"
+blacksmithing_material_1_weaps_dam		"0,0,0,0,0,f_colored_weaps_dull_copper"
 blacksmithing_material_1_color		    "color_o_dull_copper"
 blacksmithing_material_1_resourceid	    "i_ingot_dull_copper"
 
@@ -311,11 +311,11 @@ blacksmithing_material_4_weaps_dam		"0,40,0,0,0"
 blacksmithing_material_4_color		    "color_o_bronze"
 blacksmithing_material_4_resourceid	    "i_ingot_bronze"
 
-blacksmithing_material_5		        "golden"
-blacksmithing_material_5_name		    "Golden"
+blacksmithing_material_5		        "gold"
+blacksmithing_material_5_name		    "Gold"
 blacksmithing_material_5_skill		    "Blacksmithing 85.0"
-blacksmithing_material_5_armor_res		"1,1,2,0,2,f_colored_armor_golden"
-blacksmithing_material_5_weaps_dam		"0,0,0,0,0,f_colored_weaps_golden"
+blacksmithing_material_5_armor_res		"1,1,2,0,2,f_colored_armor_gold"
+blacksmithing_material_5_weaps_dam		"0,0,0,0,0,f_colored_weaps_gold"
 blacksmithing_material_5_color		    "color_o_gold"
 blacksmithing_material_5_resourceid	    "i_ingot_gold"
 
@@ -357,14 +357,14 @@ hitpoints += 100
 [FUNCTION f_colored_weaps_shadow]
 hitpoints += 50
 
-[FUNCTION f_colored_armor_golden]
+[FUNCTION f_colored_armor_gold]
 if !<istevent.ei_equipitem>
 events +ei_equipitem
 endif
 Luck = <eval <Luck> + 40>
 LowerReq = 30
 
-[FUNCTION f_colored_weaps_golden]
+[FUNCTION f_colored_weaps_gold]
 if !<istevent.ei_equipitem>
 events +ei_equipitem
 endif

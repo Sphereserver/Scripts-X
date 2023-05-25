@@ -27,7 +27,7 @@ f_create_spawner,Redsolenwarrior,,,,,,5681,1886,2,2,5,10,50,10,1,1,0,0,0,0,0
 f_create_spawner,Redsolenwarrior,,,,,,5756,1857,4,2,5,10,50,10,1,1,0,0,0,0,0
 //##
 //## AREA B - Between Minoc/Covetous (2609 764 0)
-//## 
+//##
 //## Level 1
 //##
 f_create_spawner,Redsolenworker,,,,,,5912,1800,1,2,5,10,30,20,1,1,0,0,0,0,0
@@ -45,7 +45,7 @@ f_create_spawner,Redsolenwarrior,,,,,,5815,1881,2,2,5,10,20,7,1,1,0,0,0,0,0
 f_create_spawner,Beetle,,,,,,5831,1910,3,2,5,10,15,10,1,2,0,0,0,0,0
 //##
 //## AREA C - West Trinsic Main Gate (1691 2790 0)
-//## 
+//##
 //## Level 1
 //##
 f_create_spawner,Redsolenworker,,,,,,5718,2024,4,2,5,10,25,15,1,2,0,0,0,0,0
@@ -62,7 +62,7 @@ f_create_spawner,Redsolenwarrior,,,,,,5748,1923,0,2,5,10,20,5,1,1,0,0,0,0,0
 f_create_spawner,Redsolenqueen,Redsolenworker,,,,,5736,1939,7,2,5,10,20,10,1,1,2,0,0,0,0
 //##
 //## AREA D - South Chaos/Compassion Road (1725 815 0)
-//## 
+//##
 //## Level 1
 //##
 f_create_spawner,Redsolenworker,,,,,,5876,2018,3,2,5,10,20,10,1,1,0,0,0,0,0

@@ -25,13 +25,13 @@ resizepic 10 10 3000 530 420
 dhtmlgump 20 10 500 35 0 0 <def0.center>WARFARE STATUS<def0.centere>
 dhtmlgump 55 400 300 35 0 0 Return to the main menu.
 button 20 400 4005 4007 1 0 0 // Quit
-  
+
 page 1
 button 375 375 5224 5224 0 2 0 // Next Page
 dhtmlgump 410 373 100 25 0 0 Next page
-dhtmlgump 20 45 400 20 0 0 We are at war with: 
+dhtmlgump 20 45 400 20 0 0 We are at war with:
 // At War List
-If (<guild.count <def0.STONEPRIV_ENEMY>>==0)  
+If (<guild.count <def0.STONEPRIV_ENEMY>>==0)
   dhtmlgump 20 65 400 20 0 0 - No current wars
 else
   local.gicurrent=0
@@ -45,15 +45,15 @@ else
     local.gicurrent += 1
   ENDWHILE
 endif
-  
+
 page 2
 button 30 375 5223 5223 0 1 0 // Previous Page
 dhtmlgump 65 373 150 25 0 0 Previous page
 button 375 375 5224 5224 0 3 0 // Next Page
 dhtmlgump 410 373 100 25 0 0 Next page
-dhtmlgump 20 45 400 20 0 0 Towns that we have declared war on: 
+dhtmlgump 20 45 400 20 0 0 Towns that we have declared war on:
 // We Declare List
-If (<guild.count <def0.STONEPRIV_WEDECLARED>>==0)  
+If (<guild.count <def0.STONEPRIV_WEDECLARED>>==0)
   dhtmlgump 20 65 400 20 0 0 - No current invitations sent for war.
 else
   local.gicurrent=0
@@ -67,13 +67,13 @@ else
     local.gicurrent += 1
   ENDWHILE
 endif
-  
+
 page 3
 button 30 375 5223 5223 0 2 0 // Previous Page
 dhtmlgump 65 373 150 25 0 0 Previous page
-dhtmlgump 20 45 400 20 0 0 Towns that have declared war on us: 
+dhtmlgump 20 45 400 20 0 0 Towns that have declared war on us:
 // They Declared List
-If (<guild.count <def0.STONEPRIV_THEYDECLARED>>==0)  
+If (<guild.count <def0.STONEPRIV_THEYDECLARED>>==0)
     dhtmlgump 20 65 400 20 0 0 - No current invitations received for war.
 else
   local.gicurrent=0
@@ -89,10 +89,10 @@ else
 endif
 
 
-  
+
 [DIALOG d_Town_WarfareStatus Button]
 ON=0
   sdialog d_Town_Main,0
   return 1
-  
+
 [EOF]

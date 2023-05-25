@@ -420,8 +420,8 @@ ON=@Create
    RESFIRE=6
    RESPHYSICAL=8
    RESPOISON=6
-   
-   
+
+
 [ITEMDEF 0403]
 DEFNAME=i_gargish_cloth_arms_female
 NAME=Gargish female cloth arms

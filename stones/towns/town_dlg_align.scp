@@ -11,7 +11,7 @@ If (<type>!=t_stone_town)
 elif (<memberfromuid.<src.uid>.uid>!=<src.uid>)&&(!<src.isgm>)
   return 1
 endif
-  
+
 page 0
 resizepic 0 0 5054 550 400
 resizepic 10 10 3000 530 380

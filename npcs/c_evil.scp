@@ -1316,7 +1316,7 @@ ON=@Create
    ITEM=i_leather_gorget
    ITEM=i_leather_leggings
    ITEM=random_boots_elven
-   ITEM=i_spear  
+   ITEM=i_spear
 
 ON=@CreateLoot
    ITEM=i_gold,{25 70}
@@ -2093,7 +2093,7 @@ ON=@Create
    COLOR=colors_all
    ITEM=random_footwear_human
    COLOR=colors_neutral
-   ITEM=i_cutlass 
+   ITEM=i_cutlass
 
 ON=@CreateLoot
    ITEM={ i_servered_human_ears 1 0 9 }
@@ -2496,7 +2496,7 @@ on=@create
 	item=i_sword_viking
 	color=0835
 	item=i_shield_round_metal
-	color=0835	
+	color=0835
 
 
 [EOF]

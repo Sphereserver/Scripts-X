@@ -15,7 +15,7 @@ endif
 If (<local.charpriv>!=<def0.STONEPRIV_MEMBER>)&&(<local.charpriv>!=<def0.STONEPRIV_MASTER>)
   return 1
 endif
-  
+
 page 0
 resizepic 0 0 5054 550 400
 resizepic 10 10 3000 530 380
@@ -44,7 +44,7 @@ else
   dhtmlgump 20 20 500 150 0 1 <local.chartertext>
 endif
 
-dhtmlgump 55 200 300 20 0 0 Visit the town website : 
+dhtmlgump 55 200 300 20 0 0 Visit the town website :
   button 20 200 4005 4007 1 0 1 // Website
   local.website=<webpage>
   If (<eval Strlen(<local.website>)> <= 3) // A website cant be that small
@@ -54,7 +54,7 @@ dhtmlgump 55 200 300 20 0 0 Visit the town website :
 
 
 [DIALOG d_Town_ViewCharter Button]
-ON=0 1    
+ON=0 1
   If (<argn1>==0)	// Exit Gump
     sdialog d_Town_Main,0
   elif (<argn1>==1)	// Website
@@ -115,7 +115,7 @@ ON=0 1
   If (<masteruid>!=<src.uid>)&&(!<src.isgm>)
     return 1
   endif
-  
+
   If ( <argn1> == 1 ) // Set the values
     charter0=<argtxt[1000]>
     charter1=<argtxt[1001]>

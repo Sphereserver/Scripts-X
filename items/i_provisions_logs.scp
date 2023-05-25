@@ -13,15 +13,6 @@ For more information on how wood is choped, check the COMMENT section of the
 sphere_region.scp file.
 
 
-[DEFNAME colors_resources_wood]
-color_l_ash        04a7
-color_l_oak        07da
-color_l_yew        04a8
-color_l_bloodwood  04aa
-color_l_frostwood  047f
-color_l_heartwood  04a9
-
-
 [ITEMDEF 01bd7]
 DEFNAME=i_board
 TYPE=t_board
@@ -98,7 +89,7 @@ SUBSECTION=Wood
 DESCRIPTION=Ash Log
 
 ON=@Create
-COLOR=color_l_ash
+COLOR=color_log_ash
 
 [ITEMDEF i_board_ash]
 ID=i_board
@@ -109,8 +100,7 @@ SUBSECTION=Boards
 DESCRIPTION=Ash Board
 
 ON=@Create
-COLOR=color_l_ash
-
+COLOR=color_log_ash
 
 [ITEMDEF i_log_oak]
 ID=i_log
@@ -121,7 +111,7 @@ SUBSECTION=Wood
 DESCRIPTION=Oak Log
 
 ON=@Create
-COLOR=color_l_oak
+COLOR=color_log_oak
 
 [ITEMDEF i_board_oak]
 ID=i_board
@@ -132,7 +122,7 @@ SUBSECTION=Boards
 DESCRIPTION=Oak Board
 
 ON=@Create
-COLOR=color_l_oak
+COLOR=color_log_oak
 
 
 [ITEMDEF i_log_yew]
@@ -144,7 +134,7 @@ SUBSECTION=Wood
 DESCRIPTION=Yew Log
 
 ON=@Create
-COLOR=color_l_yew
+COLOR=color_log_yew
 
 [ITEMDEF i_board_yew]
 ID=i_board
@@ -155,7 +145,7 @@ SUBSECTION=Boards
 DESCRIPTION=Yew Board
 
 ON=@Create
-COLOR=color_l_yew
+COLOR=color_log_yew
 
 
 [ITEMDEF i_log_heartwood]
@@ -167,7 +157,7 @@ SUBSECTION=Wood
 DESCRIPTION=Heartwood Log
 
 ON=@Create
-COLOR=color_l_heartwood
+COLOR=color_log_heartwood
 
 [ITEMDEF i_board_heartwood]
 ID=i_board
@@ -178,7 +168,7 @@ SUBSECTION=Boards
 DESCRIPTION=Heartwood Board
 
 ON=@Create
-COLOR=color_l_heartwood
+COLOR=color_log_heartwood
 
 
 [ITEMDEF i_log_frostwood]
@@ -190,7 +180,7 @@ SUBSECTION=Wood
 DESCRIPTION=Frostwood Log
 
 ON=@Create
-COLOR=color_l_frostwood
+COLOR=color_log_frostwood
 
 [ITEMDEF i_board_frostwood]
 ID=i_board
@@ -201,7 +191,7 @@ SUBSECTION=Boards
 DESCRIPTION=Frostwood Board
 
 ON=@Create
-COLOR=color_l_frostwood
+COLOR=color_log_frostwood
 
 
 [ITEMDEF i_log_bloodwood]
@@ -213,7 +203,7 @@ SUBSECTION=Wood
 DESCRIPTION=Bloodwood Log
 
 ON=@Create
-COLOR=color_l_bloodwood
+COLOR=color_log_bloodwood
 
 [ITEMDEF i_board_bloodwood]
 ID=i_board
@@ -224,6 +214,6 @@ SUBSECTION=Boards
 DESCRIPTION=Bloodwood Board
 
 ON=@Create
-COLOR=color_l_bloodwood
+COLOR=color_log_bloodwood
 
 [EOF]

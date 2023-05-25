@@ -521,7 +521,7 @@ dtext 305 388 0480 Make Item
 args = <ref1.skillmake>
 dorigin 170 112
 for 1 <argv>
-   if (<ref1.skillmake.<local._for>.key>==i_pen_and_ink) 
+   if (<ref1.skillmake.<local._for>.key>==i_pen_and_ink)
       dcroppedtext 170 *20 170 20 0480 Need Pen and ink
       continue
    endif

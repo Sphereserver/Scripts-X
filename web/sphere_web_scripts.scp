@@ -90,7 +90,7 @@ serv.writefile scripts/web/datas/chars.json ""chars"": [
 			serv.writefile scripts/web/datas/chars.json },
 		endif
 	endfor
-	
+
 serv.writefile scripts/web/datas/chars.json ]
 serv.writefile scripts/web/datas/chars.json }
 

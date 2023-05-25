@@ -36,19 +36,19 @@ ITEM={ 0223b 1 0223c 1 0223d 1 0223e 1 0223f 1 02240 1 02241 1 02242 1 02243 1 0
 CATEGORY=Random Item Templates
 SUBSECTION=Natural
 DESCRIPTION=Ore (all)
-ITEM={ i_ore_iron 512 i_ore_copper 256 i_ore_gold 256 i_ore_rose 128 i_ore_agapite 64 i_ore_silver 32 i_ore_shadow 16 i_ore_verite 8 i_ore_bloodrock 4 i_ore_blackrock 2 i_ore_valorite 1 }
+ITEM={ i_ore_iron 512 i_ore_copper 256 i_ore_gold 256 i_ore_agapite 64 i_ore_shadow 16 i_ore_verite 8 i_ore_valorite 1 }
 
 [TEMPLATE random_ore_common]
 CATEGORY=Random Item Templates
 SUBSECTION=Natural
 DESCRIPTION=Ore (common)
-ITEM={ i_ore_iron 128 i_ore_copper 64 i_ore_gold 32 i_ore_rose 16 i_ore_agapite 8 i_ore_silver 4 i_ore_shadow 2 i_ore_verite 1 }
+ITEM={ i_ore_iron 128 i_ore_copper 64 i_ore_gold 32 i_ore_agapite 8 i_ore_shadow 2 i_ore_verite 1 }
 
 [TEMPLATE random_ore_rare]
 CATEGORY=Random Item Templates
 SUBSECTION=Natural
 DESCRIPTION=Ore (rare)
-ITEM={ i_ore_verite 8 i_ore_bloodrock 4 i_ore_blackrock 2 i_ore_valorite 1 }
+ITEM={ i_ore_verite 8 i_ore_valorite 1 }
 
 [TEMPLATE random_log]
 CATEGORY=Random Item Templates

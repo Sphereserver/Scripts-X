@@ -66,7 +66,7 @@ for 0 <eval <serv.deflist.chardef.count>-1>
 endfor
 LDB.EXECUTE COMMIT
 serv.log Database rebuilt in <eval <serv.rticks>-<local.hour>> seconds.
-	
+
 ldb.close
 return 1
 
@@ -142,7 +142,7 @@ if !(<isempty <ctag.add_show>>)
 	gumppictiled 10 32 780 5 5058   // 1 grey separators - start here
 	gumppictiled 230 37 5 400 5058   // 1
 	gumppictiled 510 37 5 400 5058   // 2
-	gumppictiled 10 32 510 5 5058   // 4 
+	gumppictiled 10 32 510 5 5058   // 4
 	gumppictiled 10 432 780 5 5058   // 5
 	gumppictiled 120 432 5 150 5058   // 5
 	checkertrans 10 10 780 567   // transparency layer
@@ -152,7 +152,7 @@ elseif !(<isempty <ctag.add_sub>>)		//Dynamic gump, more info = more gump, no mo
 	gumppictiled 10 32 780 5 5058   // 1 grey separators - start here
 	gumppictiled 230 37 5 400 5058   // 1
 	gumppictiled 510 37 5 400 5058   // 2
-	gumppictiled 10 32 510 5 5058   // 4 
+	gumppictiled 10 32 510 5 5058   // 4
 	checkertrans 10 10 780 417   // transparency layer
 elseif !(<isempty <ctag.add_cat>>)
 	resizepic 0 0 9200 530 437   // background/border
@@ -173,7 +173,7 @@ if (STRMATCH("<def.AddDLG_DB_Table_Item>","<ctag.add_mode>")==1)
 else
 	local.header = Npcs
 endif
-dtext 40 10 0480 <local.header> 
+dtext 40 10 0480 <local.header>
 button 10 10 4014 4045 1 0 3		//Change between items/npcs
 dtext 170 10 0480 Search
 button 140 10 4011 4012 1 0 10		//Change between items/npcs
@@ -262,7 +262,7 @@ IF !(<isempty <ctag.add_cat>>)
 	if <LDB.Row.Numrows>
 		IF (<LDB.Row.Numrows> > <eval <local.index>+13>)
 			button 480 400 4005 4007 1 0 6
-			dtext 410 400 0480 Next Page	
+			dtext 410 400 0480 Next Page
 		endif
 	endif
 	if (<ctag0.add_cat_page>> 0)
@@ -302,7 +302,7 @@ IF !(<isempty <ctag.add_sub>>)
 		IF (<ldb.row.numrows> > <eval <local.index>+14>)
 			button 760 400 4005 4007 1 0 8
 			dtext 690 400 0480 Next Page
-		endif				
+		endif
 	endif
 	if (<ctag0.add_sub_page>)
 		button 515 400 4014 4045 1 0 9
@@ -345,20 +345,20 @@ IF !(<isempty <ctag.add_show>>)
 		dtext 126 440 0480 ID: <LOCAL.id>
 		dtext 126 460 0480 Name: <serv.chardef.<LOCAL.id>.name>
 		dtext 126 480 0480 //Tevents: <serv.chardef.<LOCAL.id>.tevents>
-		dtext 126 500 0480 
+		dtext 126 500 0480
 		local.y=440
 		tilepic 30 440 <serv.chardef.<LOCAL.id>.icon>
 		button 126 554 4005 4007 1 0 <eval 100000+<ctag.add_show>>
 		dtext 156 554 0480 Create
 		dtext 626 440 0480 Create spawn
 		dtext 600 460 0480 Amount
-		dtextentry 680 460 20 20 33 1 1 
+		dtextentry 680 460 20 20 33 1 1
 		dtext 600 480 0480 Min Time
-		dtextentry 680 480 20 20 33 2 5 
+		dtextentry 680 480 20 20 33 2 5
 		dtext 600 500 0480 Max Time
-		dtextentry 680 500 20 20 33 3 15 
+		dtextentry 680 500 20 20 33 3 15
 		dtext 600 520 0480 Max Distance
-		dtextentry 680 520 20 20 33 4 15 
+		dtextentry 680 520 20 20 33 4 15
 		button 600 554 4005 4007 1 0 <eval 300000+<ctag.add_show>>
 		dtext 630 554 0480 Create Spawn
 	endif

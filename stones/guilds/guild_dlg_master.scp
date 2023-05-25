@@ -12,20 +12,20 @@ elif (<masteruid>!=<src.uid>)&&(!<src.isgm>)
   return 1
 endif
 
-  
+
 page 0
 resizepic 0 0 5054 570 400
 resizepic 10 10 3000 550 380
 dhtmlgump 20 15 510 25 0 0 <def0.center>GUILDMASTER FUNCTIONS<def0.centere>
 If (<tag0.changename_time> <= <serv.time>)	// Set Guild Name
-  button 20 40 4005 4007 1 0 1 
+  button 20 40 4005 4007 1 0 1
   dhtmlgump 55 40 240 30 0 0 Set the guild name.
 else
   gumppic 20 40 4020
   dhtmlgump 55 40 370 30 0 0 Set the guild name. N/A FOR <f_stonesys_determine_timeleft <tag0.changename_time>>
 endif
 If (<tag0.changeabbrev_time> <= <serv.time>)	// Set Guild Abbrev
-  button 20 70 4005 4007 1 0 2 
+  button 20 70 4005 4007 1 0 2
   dhtmlgump 55 70 240 30 0 0 Set the guild's abbreviation.
 else
   gumppic 20 70 4020
@@ -86,7 +86,7 @@ dhtmlgump 55 360 175 30 0 0 Return to the main menu.
   button 20 360 4005 4007 1 0 11 // Return
 dhtmlgump 335 360 100 30 0 0 EXIT
   button 300 360 4005 4007 1 0 0 // Exit
-  
+
 
 [DIALOG d_Guild_Master Button]
 ON=0 12
@@ -98,7 +98,7 @@ ON=0 12
     return 1
   endif
 
-  If (<argn1>==1)	// Guild Name    
+  If (<argn1>==1)	// Guild Name
     If (<tag0.changename_time> <= <serv.time>)
       src.ctag.guild_prompthandler_guilduid=<uid>
       try src.promptconsole f_prompthandler_guildname,Enter new guild name (min: <dDEF0.GUILDCONFIG_NAME_MINLENGTH> max: <dDEF0.GUILDCONFIG_NAME_MAXLENGTH>):
@@ -106,7 +106,7 @@ ON=0 12
   elif (<argn1>==2)	// Guild Abbrev
     If (<tag0.changeabbrev_time> <= <serv.time>)
       src.ctag.guild_prompthandler_guilduid=<uid>
-      try src.promptconsole f_prompthandler_guildabbrev,Enter new guild abbreviation (min: <dDEF0.GUILDCONFIG_ABBREV_MINLENGTH> max: <dDEF0.GUILDCONFIG_ABBREV_MAXLENGTH>):    
+      try src.promptconsole f_prompthandler_guildabbrev,Enter new guild abbreviation (min: <dDEF0.GUILDCONFIG_ABBREV_MINLENGTH> max: <dDEF0.GUILDCONFIG_ABBREV_MAXLENGTH>):
     endif
   elif (<argn1>==3)	// Guild  Type
     If ((!<f_guildsys_iswarring>) || (<tag0.changealign_time> <= <serv.time>))
@@ -133,7 +133,7 @@ ON=0 12
         ref1.link = 0
         ref1.remove
       endif
-      
+
       serv.newitem i_stone_mover
       new.link = <uid>
       new.attr = attr_newbie
@@ -150,6 +150,6 @@ ON=0 12
     endif
   endif
   return 1
-  
+
 [EOF]
-  
+

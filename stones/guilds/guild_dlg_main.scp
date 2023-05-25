@@ -3,7 +3,7 @@
 // www.sphereserver.net
 //****************************************************************************
 VERSION=X1
-	
+
 [DIALOG d_Guild_Main]
 5,25
 If (<type>!=t_stone_guild)
@@ -26,10 +26,10 @@ dhtmlgump 20 15 220 35 0 0 Guild: <name>
     dhtmlgump 275 15 250 20 0 0 <local.mastername>
   endif
 
-dhtmlgump 55 50 100 20 0 0 Loyal to: 
+dhtmlgump 55 50 100 20 0 0 Loyal to:
 local.loyalto=<memberfromuid.<src.uid>.loyalto>
 dhtmlgump 55 70 470 20 0 0 <qval (!<local.loyalto>)||(<local.loyalto>==<src.uid>) ? yourself:<uid.<local.loyalto>.name>>
-  button 20 50 4005 4007 1 0 1 
+  button 20 50 4005 4007 1 0 1
 
 dhtmlgump 275 50 470 20 0 0 Display guild abbreviation: <abbrev>
 dhtmlgump 275 70 90 20 0 0 Currently: <AbbreviationToggle>
@@ -45,7 +45,7 @@ If (<member.count <def0.STONEPRIV_CANDIDATE>>)
   button 20 160 4005 4007 1 0 5
   dhtmlgump 55 160 380 30 0 0 View list of candidates who have been sponsored to the guild.
 else
-  button 20 160 4020 4020 0 0 0 
+  button 20 160 4020 4020 0 0 0
   dhtmlgump 55 160 320 30 0 0 There are currently no candidates for membership.
 endif
 
@@ -98,5 +98,5 @@ elif (<argn1>==9)	// Guildmaster Menu
   endif
 endif
 return 1
-	
+
 [EOF]

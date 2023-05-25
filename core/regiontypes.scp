@@ -49,8 +49,13 @@ SRC.SOUND={0e 10 0f 10 022 1 023 1 024 1 0267 1}
 
 [REGIONTYPE r_default_tree t_tree]
 // All trees produce wood by default.
-RESOURCES=60.0 mr_nothing
-RESOURCES=40.0 mr_tree
+RESOURCES=49.0 mr_tree
+RESOURCES=30.0 mr_tree_oak
+RESOURCES=10.0 mr_tree_ash
+RESOURCES=5.0 mr_tree_yew
+RESOURCES=3.0 mr_tree_heartwood
+RESOURCES=2.0 mr_tree_bloodwood
+RESOURCES=1.0 mr_tree_frostwood
 
 ///////////////////////////////////
 // Region Type for fishing skill //

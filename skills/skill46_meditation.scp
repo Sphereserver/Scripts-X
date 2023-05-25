@@ -43,7 +43,7 @@ if (<tag0.MeditPenalty>)			// No Bonus when wearing plate armor
 	return 0
 endif
 local.baseBonus=<eval ((<Meditation>/10) * 3) + <int>>	// Bonus given by meditation and int
-if (<Meditation> >= 1000)	// GM medit gets a +10% bonus 
+if (<Meditation> >= 1000)	// GM medit gets a +10% bonus
 	local.baseBonus += <muldiv <dlocal.baseBonus>,10,100>
 endif
 tag.MeditBonus=<eval 2 + <local.baseBonus> / 40>	// This is the value applied to RegenMana

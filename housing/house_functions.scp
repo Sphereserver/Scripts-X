@@ -65,7 +65,7 @@ elseif (<tag0.access>==<def.house_access_guild>)
     endif
 endif
 return 0
- 
+
 [FUNCTION f_house_get_priv]
 if (<IsOwner <src>>)
     return <def.house_access_owner>
@@ -98,7 +98,7 @@ endif
 local.y=170
 if <<local.list><qval (strmatch(*access*,<local.list>))?es:s>>
 	for  0 <eval <<local.list><qval (strmatch(*access*,<local.list>))?es:s>>-1>
-		if (<local._for> < 11)	
+		if (<local._for> < 11)
 			local.txt = 57
 			local.btn = 7
 		else
@@ -123,7 +123,7 @@ if <<local.list><qval (strmatch(*access*,<local.list>))?es:s>>
 			if <argv[1]>
 				button 7 <local.y> 4017 4018 1 0 <eval (100+<local._for>)>
 			endif
-		endif	
+		endif
 	local.y += 20
 	endfor
 endif
@@ -150,7 +150,7 @@ for 1 112
 	if (<dlocal.sign> == 3087)
 		local.sign = 3139
 	elif (<dlocal.sign> > 3140)
-		return 
+		return
 	endif
 endfor
 
@@ -211,7 +211,7 @@ if <ref2.isplayer>
 			ref2.go <link.p>
 			return 1
 		else
-			src.sysmessage @32,,1 Your Ban list is full. 
+			src.sysmessage @32,,1 Your Ban list is full.
 			src.sysmessage @32,,1 Remove someone from the list and try again.
 			return 1
 		endif
@@ -222,7 +222,7 @@ if <ref2.isplayer>
 			ref2.sysmessage @367,,1 You have been granted access to the property.
 			return 1
 		else
-			src.sysmessage @32,,1 Your Access list is full. 
+			src.sysmessage @32,,1 Your Access list is full.
 			src.sysmessage @32,,1 Remove someone from the list and try again.
 			return 1
 		endif
@@ -262,7 +262,7 @@ if (<src.gold> >= <dlocal.value>)
 		local.storage=75
 	else
 		local.storage=100
-	endif 
+	endif
 	IncreasedStorage += <dlocal.storage>
 	src.sysmessage @,,1 <dlocal.value> gp has been deducted from your bank to pay for this upgrade.
 else
@@ -292,7 +292,7 @@ if (<argo.isitem> && <argo.region.uid>==<ref1>)
 		endif
 	endif
 endif
- 
+
 [FUNCTION f_house_item_unlock]
 ref1=<region.uid>
 if !(<ref1.IsOwner <uid>> || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || <IsGM>) // Double check to prevent players to get the target on their house and use it on another.
@@ -392,7 +392,7 @@ if (<argo.ischar>) || (<argo.topobj.ischar>)
 	src.sysmessage @32,,1 That is not allowed
 	return 1
 endif
-if (<argo.type>!=t_stone_guild)	
+if (<argo.type>!=t_stone_guild)
 	src.sysmessage @32,,1 That is not allowed
 	return 1
 endif
@@ -405,7 +405,7 @@ endif
 
 [FUNCTION f_house_moven]
 ref1=<src.region.uid>
-if (<argo.uid>==<src.uid>) || (<argo.isplayer>) 
+if (<argo.uid>==<src.uid>) || (<argo.isplayer>)
 	src.sysmessage @32,,1 You cannot move that.
 	return 1
 elif (<argo.link>==<ref1>)
@@ -428,7 +428,7 @@ endif
 
 [FUNCTION f_house_moves]
 ref1=<src.region.uid>
-if (<argo.uid>==<src.uid>) || (<argo.isplayer>) 
+if (<argo.uid>==<src.uid>) || (<argo.isplayer>)
 	src.sysmessage @32,,1 You cannot move that.
 	return 1
 elif (<argo.link>==<ref1>)
@@ -451,7 +451,7 @@ endif
 
 [FUNCTION f_house_movee]
 ref1=<src.region.uid>
-if (<argo.uid>==<src.uid>) || (<argo.isplayer>) 
+if (<argo.uid>==<src.uid>) || (<argo.isplayer>)
 	src.sysmessage @32,,1 You cannot move that.
 	return 1
 elif (<argo.link>==<ref1>)
@@ -474,7 +474,7 @@ endif
 
 [FUNCTION f_house_movew]
 ref1=<src.region.uid>
-if (<argo.uid>==<src.uid>) || (<argo.isplayer>) 
+if (<argo.uid>==<src.uid>) || (<argo.isplayer>)
 	src.sysmessage @32,,1 You cannot move that.
 	return 1
 elif (<argo.link>==<ref1>)
@@ -497,7 +497,7 @@ endif
 
 [FUNCTION f_house_flip] // unused function?
 ref1=<src.region.uid>
-if (<argo.uid>==<src.uid>) || (<argo.isplayer>) 
+if (<argo.uid>==<src.uid>) || (<argo.isplayer>)
 	src.sysmessage @32,,1 You cannot flip that.
 	return 1
 elif (<argo.link>==<ref1>)
@@ -586,11 +586,11 @@ if (<baseid>==m_tower)
 	local.xy=16x14
 else
 	args = <multiregion>
-	local.left=<argv[0]> 
+	local.left=<argv[0]>
 	local.top=<argv[1]>
-	local.right=<argv[2]> 
+	local.right=<argv[2]>
 	local.bottom= <argv[3]>
-	local.x <eval (<local.bottom> - <local.top>) + 1> 
+	local.x <eval (<local.bottom> - <local.top>) + 1>
 	local.y <eval (<local.right> - <local.left>) + 1>
     local.x /= 2
     local.y /= 2
@@ -611,7 +611,7 @@ forchars <eval (((<argv[2]>+<argv[3]>)/2)+2)>
 endfor
 if (<eval <value>+<increasedstorage>> < <serv.multidef.m_foundation_<local.xy>.value>)
 	local.extra=<serv.multidef.m_foundation_<local.xy>.value>-<eval (<value>+<tag0.boughtstorage>)>>
-	if (<ref2.gold> >= <dlocal.extra>) 
+	if (<ref2.gold> >= <dlocal.extra>)
 		ref2.gold -= <dlocal.extra>
 		ref2.sysmessage @,,1 <dlocal.extra> gp has been deducted from your bank for this conversion.
 		local.p=<p>
