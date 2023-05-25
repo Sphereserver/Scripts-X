@@ -1,0 +1,313 @@
+// Generator
+// Author: Raylde
+//
+// Generate files with armors, weapons, etc.
+//
+// Generate:
+//	- Platemail
+//	- Shields
+// TODO:
+// 	- Resources: ore,ingot,leather
+// 	- Leather armors
+// 	- Weapons
+// 	- Crafting options
+//
+// Version: 0.1
+
+
+[DEFNAME def_generator]
+// Quantity of ore to generate
+generator_platemail_quantity = 8
+
+// resource to generate: Name,Id,Type,Color
+// Tyoes: 1 = ore, 2 = leather, 3 = logs
+generator_resource_1 = Dull Copper,dull_copper,1,060a
+generator_resource_2 = Shadow,shadow,1,0770
+generator_resource_3 = Copper,copper,1,0641
+generator_resource_4 = Bronze,bronze,1,06d6
+generator_resource_5 = Gold,gold,1,045e
+generator_resource_6 = Agapite,agapite,1,0400
+generator_resource_7 = Verite,verite,1,07d1
+generator_resource_8 = Valorite,valorite,1,0515
+
+// platemail to generate: OreName,Ore,Armor
+generator_platemail_1 = Dull Copper,dull_copper,32
+generator_platemail_2 = Shadow,shadow,34
+generator_platemail_3 = Copper,copper,36
+generator_platemail_4 = Bronze,bronze,38
+generator_platemail_5 = Gold,gold,40
+generator_platemail_6 = Agapite,agapite,42
+generator_platemail_7 = Verite,verite,44
+generator_platemail_8 = Valorite,valorite,46
+
+// shield to generate: OreName,Ore,Armor1,Armor2,Armor3
+generator_shield_1 = Dull Copper,dull_copper,9,13,25
+generator_shield_2 = Shadow,shadow,11,15,27
+generator_shield_3 = Copper,copper,13,17,29
+generator_shield_4 = Bronze,bronze,15,19,31
+generator_shield_5 = Gold,gold,17,21,33
+generator_shield_6 = Agapite,agapite,19,23,35
+generator_shield_7 = Verite,verite,21,25,37
+generator_shield_8 = Valorite,valorite,23,27,39
+
+[FUNCTION f_generator_files]
+SERV.LOG @Generator :: Starting generation scripts...
+LOCAL.AMOUNT = <DEF.generator_platemail_quantity>
+
+FILE.DELETEFILE "scripts/add-on/generator/generate_armor_colored.scp"
+IF <FILE.OPEN "scripts/add-on/generator/generate_armor_colored.scp">
+	FOR 1 <LOCAL.AMOUNT>
+		// Resources
+		IF (!<ISEMPTY <DEF.generator_resource_<dlocal._for>>>)
+			SERV.LOG @Generator :: Generating resource <def.generator_resource_<dlocal._for>>
+			f_generator_resource <DEF.generator_resource_<dlocal._for>>
+		ENDIF
+
+		// Platemail
+		IF (!<ISEMPTY <DEF.generator_platemail_<dlocal._for>>>)
+			SERV.LOG @Generator :: Generating platemail <def.generator_platemail_<dlocal._for>>
+			f_generator_platemail <DEF.generator_platemail_<dlocal._for>>
+		ENDIF
+
+		// Shields
+		IF (!<ISEMPTY <DEF.generator_shield_<dlocal._for>>>)
+			SERV.LOG @Generator :: Generating shield <def.generator_shield_<dlocal._for>>
+			f_generator_shields <DEF.generator_shield_<dlocal._for>>
+		ENDIF
+	ENDFOR
+
+	FILE.WRITELINE "[EOF]"
+	FILE.CLOSE
+ENDIF
+
+
+//Generate resource
+[FUNCTION f_generator_resource]
+LOCAL.RESOURCE_TYPE = <argv[0]>
+LOCAL.NAME = <argv[1]>
+LOCAL.ID = <argv[2]>
+LOCAL.COLOR = <argv[3]>
+
+IF (<DLOCAL.RESOURCE_TYPE> == 1) //Ingot
+
+	FILE.WRITELINE "[ITEMDEF i_ingot_<LOCAL.ID>]"
+	FILE.WRITELINE "ID=i_ingot_iron"
+	FILE.WRITELINE "NAME=<LOCAL.NAME> Ingot"
+	FILE.WRITELINE " "
+	FILE.WRITELINE "RESOURCES=i_ore_<LOCAL.ID>"
+	FILE.WRITELINE "SKILLMAKE=Mining 87.0"
+	FILE.WRITELINE " "
+	FILE.WRITELINE "TDATA1=80.0"
+	FILE.WRITELINE "TDATA2=100.0"
+	FILE.WRITELINE " "
+	FILE.WRITELINE "CATEGORY=Items by Professions"
+	FILE.WRITELINE "SUBSECTION=Blacksmiths"
+	FILE.WRITELINE "DESCRIPTION=<LOCAL.NAME> Ingot"
+	FILE.WRITELINE " "
+	FILE.WRITELINE "ON=@Create"
+	FILE.WRITELINE "   COLOR=<LOCAL.COLOR>"
+	FILE.WRITELINE " "
+
+ELIF (<DLOCAL.RESOURCE_TYPE> == 2) //Leather
+
+ELIF (<DLOCAL.RESOURCE_TYPE> == 3) //Logs
+
+ENDIF
+
+
+//Generate platemail armor
+[FUNCTION f_generator_platemail]
+LOCAL.ORENAME = <argv[0]>
+LOCAL.ORE = <argv[1]>
+LOCAL.ARMOR = <argv[2]>
+
+FILE.WRITELINE "//Platemail"
+FILE.WRITELINE "[ITEMDEF i_platemail_arms_<LOCAL.ORE>]"
+FILE.WRITELINE "NAME=<LOCAL.ORENAME> Platemail Arms"
+FILE.WRITELINE "ID=i_platemail_arms"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
+FILE.WRITELINE "REQSTR=40"
+FILE.WRITELINE "WEIGHT=5"
+FILE.WRITELINE "RESOURCES=18 i_ingot_<LOCAL.ORE>"
+FILE.WRITELINE "SKILLMAKE=BLACKSMITHING 64.5"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=<LOCAL.ORENAME>"
+FILE.WRITELINE "DESCRIPTION=Platemail Arms"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@Create"
+FILE.WRITELINE "	COLOR=color_o_<LOCAL.ORE>"
+FILE.WRITELINE "	HITPOINTS={51 65}"
+FILE.WRITELINE " "
+FILE.WRITELINE "[ITEMDEF i_platemail_leggings_<LOCAL.ORE>]"
+FILE.WRITELINE "NAME=<LOCAL.ORENAME> Platemail Legs"
+FILE.WRITELINE "ID=i_platemail_leggings"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
+FILE.WRITELINE "REQSTR=60"
+FILE.WRITELINE "WEIGHT=15"
+FILE.WRITELINE "RESOURCES=20 i_ingot_<LOCAL.ORE>"
+FILE.WRITELINE "SKILLMAKE=BLACKSMITHING 67.8"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=<LOCAL.ORENAME>"
+FILE.WRITELINE "DESCRIPTION=Platemail Legs"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@Create"
+FILE.WRITELINE "	COLOR=color_o_<LOCAL.ORE>"
+FILE.WRITELINE "	HITPOINTS={51 65}"
+FILE.WRITELINE " "
+FILE.WRITELINE "[ITEMDEF i_platemail_helm_<LOCAL.ORE>]"
+FILE.WRITELINE "NAME=<LOCAL.ORENAME> Platemail Helm"
+FILE.WRITELINE "ID=i_platemail_helm"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
+FILE.WRITELINE "REQSTR=40"
+FILE.WRITELINE "WEIGHT=5"
+FILE.WRITELINE " "
+FILE.WRITELINE "RESOURCES=15 i_ingot_<LOCAL.ORE>"
+FILE.WRITELINE "SKILLMAKE=BLACKSMITHING 59.6"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=<LOCAL.ORENAME>"
+FILE.WRITELINE "DESCRIPTION=Plate Helm"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@Create"
+FILE.WRITELINE "	COLOR=color_o_<LOCAL.ORE>"
+FILE.WRITELINE "	HITPOINTS={46 58}"
+FILE.WRITELINE " "
+FILE.WRITELINE "[ITEMDEF i_platemail_gorget_<LOCAL.ORE>]"
+FILE.WRITELINE "NAME=<LOCAL.ORENAME> Platemail Gorget"
+FILE.WRITELINE "ID=i_platemail_gorget"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
+FILE.WRITELINE "REQSTR=30"
+FILE.WRITELINE "WEIGHT=2"
+FILE.WRITELINE " "
+FILE.WRITELINE "RESOURCES=10 i_ingot_<LOCAL.ORE>"
+FILE.WRITELINE "SKILLMAKE=BLACKSMITHING 51.4"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=<LOCAL.ORENAME>"
+FILE.WRITELINE "DESCRIPTION=Platemail Gorget"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@Create"
+FILE.WRITELINE "	COLOR=color_o_<LOCAL.ORE>"
+FILE.WRITELINE "	HITPOINTS={51 65}"
+FILE.WRITELINE " "
+FILE.WRITELINE "[ITEMDEF i_platemail_gauntlets_<LOCAL.ORE>]"
+FILE.WRITELINE "NAME=<LOCAL.ORENAME> Platemail Gauntlets"
+FILE.WRITELINE "ID=i_platemail_gloves"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
+FILE.WRITELINE "REQSTR=30"
+FILE.WRITELINE "WEIGHT=2"
+FILE.WRITELINE " "
+FILE.WRITELINE "RESOURCES=12 i_ingot_<LOCAL.ORE>"
+FILE.WRITELINE "SKILLMAKE=BLACKSMITHING 54.7"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=<LOCAL.ORENAME>"
+FILE.WRITELINE "DESCRIPTION=Platemail Gauntlets"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@Create"
+FILE.WRITELINE "	COLOR=color_o_<LOCAL.ORE>"
+FILE.WRITELINE "	HITPOINTS={51 65}"
+FILE.WRITELINE " "
+FILE.WRITELINE "[ITEMDEF i_platemail_chest_<LOCAL.ORE>]"
+FILE.WRITELINE "NAME=<LOCAL.ORENAME> Platemail Chest"
+FILE.WRITELINE "ID=i_platemail_chest"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
+FILE.WRITELINE "REQSTR=60"
+FILE.WRITELINE "WEIGHT=10"
+FILE.WRITELINE " "
+FILE.WRITELINE "RESOURCES=26 i_ingot_<LOCAL.ORE>"
+FILE.WRITELINE "SKILLMAKE=BLACKSMITHING 76.0"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=<LOCAL.ORENAME>"
+FILE.WRITELINE "DESCRIPTION=Platemail Chest"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@Create"
+FILE.WRITELINE "	COLOR=color_o_<LOCAL.ORE>"
+FILE.WRITELINE "	HITPOINTS={51 65}"
+FILE.WRITELINE " "
+
+
+[FUNCTION f_generator_shields]
+LOCAL.ORENAME = <argv[0]>
+LOCAL.ORE = <argv[1]>
+LOCAL.ARMOR1 = <argv[2]>
+LOCAL.ARMOR2 = <argv[3]>
+LOCAL.ARMOR3 = <argv[4]>
+
+FILE.WRITELINE "//Shields"
+FILE.WRITELINE "[ITEMDEF i_shield_buckler_<LOCAL.ORE>]"
+FILE.WRITELINE "NAME=<LOCAL.ORENAME> Buckler"
+FILE.WRITELINE "ID=i_shield_buckler"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR1>"
+FILE.WRITELINE "REQSTR=15"
+FILE.WRITELINE "WEIGHT=5"
+FILE.WRITELINE " "
+FILE.WRITELINE "RESOURCES=10 i_ingot_<LOCAL.ORE>"
+FILE.WRITELINE "SKILLMAKE=BLACKSMITHING 6.0"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=<LOCAL.ORENAME>"
+FILE.WRITELINE "DESCRIPTION=Buckler"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@Create"
+FILE.WRITELINE "	COLOR=color_o_<LOCAL.ORE>"
+FILE.WRITELINE "	HITPOINTS={41 51}"
+FILE.WRITELINE " "
+FILE.WRITELINE "[ITEMDEF i_shield_metal_<LOCAL.ORE>]"
+FILE.WRITELINE "NAME=<LOCAL.ORENAME> Metal Shield"
+FILE.WRITELINE "ID=i_shield_round_metal"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR2>"
+FILE.WRITELINE "REQSTR=15"
+FILE.WRITELINE "WEIGHT=6"
+FILE.WRITELINE " "
+FILE.WRITELINE "RESOURCES=14 i_ingot_<LOCAL.ORE>"
+FILE.WRITELINE "SKILLMAKE=BLACKSMITHING 16.0"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=<LOCAL.ORENAME>"
+FILE.WRITELINE "DESCRIPTION=Metal Shield"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@Create"
+FILE.WRITELINE "	HITPOINTS={51 65}"
+FILE.WRITELINE "	COLOR=color_o_<LOCAL.ORE>"
+FILE.WRITELINE " "
+FILE.WRITELINE "[ITEMDEF i_shield_heater_<LOCAL.ORE>]"
+FILE.WRITELINE "NAME=<LOCAL.ORENAME> Heater Shield"
+FILE.WRITELINE "ID=I_SHIELD_HEATER"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR3>"
+FILE.WRITELINE "REQSTR=30"
+FILE.WRITELINE "WEIGHT=8"
+FILE.WRITELINE " "
+FILE.WRITELINE "RESOURCES=18 i_ingot_<LOCAL.ORE>"
+FILE.WRITELINE "SKILLMAKE=BLACKSMITHING 41.6"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=Golden"
+FILE.WRITELINE "DESCRIPTION=Heater Shield"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@Create"
+FILE.WRITELINE "	HITPOINTS=31"
+FILE.WRITELINE "	COLOR=color_o_<LOCAL.ORE>"
+
+[EOF]

@@ -149,6 +149,9 @@ functions/worldgen/spawns/tokuno/
 functions/worldgen/spawns/trammel/
 functions/worldgen/spawns/uoclassic/
 
+//add-on
+add-on/generator/
+
 //custom/
 
 [OBSCENE]
