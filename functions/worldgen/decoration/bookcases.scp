@@ -19,7 +19,7 @@ ref1=<uid>
 foritems 9999
 if (<baseid>==i_bookcase_full)
   for 5
-    serv.newitem { i_book_lg_pub 1 i_book_sm_pub 1 i_book_sm 1 i_book_lg 1},1,<uid>     
+    serv.newitem { i_book_lg_pub 1 i_book_sm_pub 1 i_book_sm 1 i_book_lg 1},1,<uid>
     new.attr |= attr_static
     new.type=t_book
     new.f_populate_book_writing

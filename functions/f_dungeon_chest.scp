@@ -4,9 +4,9 @@
 //****************************************************************************
 VERSION=X1
 
-[FUNCTION f_dungeon_chest_additem]	//command usage : itemid,amount,odds,rolls,function	
+[FUNCTION f_dungeon_chest_additem]	//command usage : itemid,amount,odds,rolls,function
 for <argv[3]>
-  if (<argv[2]> <= 0) || !(<R<argv[2]>>) 
+  if (<argv[2]> <= 0) || !(<R<argv[2]>>)
     serv.newitem <argv[0]>,<argv[1]>,<uid>
     if !(<isempty <argv[4]>>)	//function
       new.<argv[4]>
@@ -16,7 +16,7 @@ endfor
 
 
 [FUNCTION remove_dungeon_chests]
-for n 5 
+for n 5
   forinstances i_dungeon_chest<dlocal.n>
     remove
   endfor

@@ -1,5 +1,5 @@
-[FUNCTION deco_fire_dungeon_trammel]	
-	
+[FUNCTION deco_fire_dungeon_trammel]
+
 // teleporter//
 serv.newitem=01BC3//
 new.morep=5690 1352 -26 1//
@@ -369,4 +369,4 @@ serv.newitem=0198A//
 new.attr=attr_static//
 new.p=5640 1411 0 1 1//
 
-[EOF]		
+[EOF]

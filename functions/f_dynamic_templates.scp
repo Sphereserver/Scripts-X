@@ -121,15 +121,15 @@ for 0 <eval <serv.deflist.itemdef.count>-1>
 	if !<local._item>
 		continue
 	endif
-	
+
 	local._d = serv.itemdef.<local._item>
-	
+
 	local._cu=<<local._d>.canuse>
 	// Not interested in unequippable/unusable items
 	if (<local._cu>&<def.can_u_none>)
 		continue
 	endif
-	
+
 	// Get the Class
 	local._t=<resdef.<<local._d>.type>>
 	if <local._t>==<local._t_normal>
@@ -151,9 +151,9 @@ for 0 <eval <serv.deflist.itemdef.count>-1>
 		local.c="weapon_mace_crook"
 	elif <local._t>==<resdef.t_weapon_mace_pick>
 		local.c="weapon_mace_pick"
-	elif (<local._t>==<resdef.t_weapon_bow>) || (<local._t>==<resdef.t_weapon_xbow>) || (<local._t>==<resdef.t_weapon_throwing>) 
+	elif (<local._t>==<resdef.t_weapon_bow>) || (<local._t>==<resdef.t_weapon_xbow>) || (<local._t>==<resdef.t_weapon_throwing>)
 		local.c="weapon_ranged"
-	elif <local._t>==<resdef.t_weapon_thrown> 
+	elif <local._t>==<resdef.t_weapon_thrown>
 		local.c="weapon_thrown"
 	elif (<local._t>==<resdef.t_weapon_whip>) || (<local._t>==<resdef.t_fish_pole>) // is it even a weapon?
 		local.c="weapon_other"
@@ -186,7 +186,7 @@ for 0 <eval <serv.deflist.itemdef.count>-1>
 		local.s="male" // male + female
 		local.sid=0
 	endif
-	
+
 	// Get the Race
 	if ((<local._cu>&<def.can_u_human>) && !(<local._cu>&(<def.can_u_elf>|<def.can_u_gargoyle>)))
 		local.r="human"	// human only
@@ -203,10 +203,10 @@ for 0 <eval <serv.deflist.itemdef.count>-1>
 	else
 		local.r="any"
 	endif
-	
+
 	// Get the Expansion
 	local.e=<<local._d>.expansion>
-	
+
 	// Get the Flags
 	local.f=0
 	if <<local._d>.istevent.<resdef.ei_material_nonbase>>
@@ -224,12 +224,12 @@ for 0 <eval <serv.deflist.itemdef.count>-1>
 	if <<local._d>.istevent.<resdef.ei_equipment_3donly>>
 		local.f |= <def.DTL_flag_equipment_3donly>
 	endif
-	
+
 	local.defname=<<local._d>.defname>
 	if <isempty <local.defname>>
 		local.defname=<<local._d>.id>
 	endif
-	
+
 	if <local.file> && !<local.f> // don't dump artifacts or items with a non-base material ("colored")
 		if !<file.open dump_<local.c>_<local.r>_<local.s>.txt>
 			serv.log Couldn't open file with c=<local.c>, race=<local.r>, sex=<local.s>

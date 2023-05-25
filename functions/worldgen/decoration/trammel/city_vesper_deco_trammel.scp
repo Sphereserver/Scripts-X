@@ -1,4 +1,4 @@
-[FUNCTION deco_vesper_trammel]		
+[FUNCTION deco_vesper_trammel]
 serv.newitem=0BD2//
 new.type=t_normal//
 new.attr=attr_static//
@@ -4341,4 +4341,4 @@ serv.newitem=01F89//
 new.attr=attr_static //
 new.p=2898 913 6 1//
 
-[EOF]		
+[EOF]

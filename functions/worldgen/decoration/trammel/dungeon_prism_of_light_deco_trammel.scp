@@ -1,5 +1,5 @@
 [FUNCTION deco_prism_of_light_trammel]
-		
+
 //Items//
 //Signs//
 serv.newitem= 0BCF// (LabelNumber=1073037//
@@ -70,4 +70,4 @@ serv.newitem=0DDA//
 new.attr=attr_static//
 new.p=6523 136 -20 1//
 
-[EOF]		
+[EOF]

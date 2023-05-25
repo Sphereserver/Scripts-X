@@ -1,5 +1,5 @@
-[FUNCTION deco_orc_cave_trammel]	
-	
+[FUNCTION deco_orc_cave_trammel]
+
 // teleporter//
 serv.newitem=01BC3//
 new.morep=5138 2016 0 1 1//
@@ -8640,4 +8640,4 @@ serv.newitem=0E86//
 new.attr=attr_static//
 new.p=5315 1994 0 1 1//
 
-[EOF]		
+[EOF]

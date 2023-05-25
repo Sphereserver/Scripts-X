@@ -44,7 +44,7 @@ serv.newitem=0307F
 new.attr=attr_static
 new.p=6589 178 25
 
-//Ankh 
+//Ankh
 serv.newitem=0003
 new.attr=attr_static
 new.p=6540 138 -15
@@ -53,11 +53,11 @@ new.attr=attr_static
 new.p=6540 139 -15
 
 //Key room moongate
-serv.newitem=0F6C 
+serv.newitem=0F6C
 new.color=0481
 new.attr=attr_static
 new.p=6515 184 0
-serv.newitem=0F6C 
+serv.newitem=0F6C
 new.color=0481
 new.attr=attr_static
 new.p=6537 175 0

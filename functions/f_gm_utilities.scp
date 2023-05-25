@@ -63,7 +63,7 @@ update
 for 0 5
   p=1,1,1,<dlocal._for>
   forchars 10000
-    if (<npc>) 
+    if (<npc>)
       if !(<owner>) && !(<flags>&statf_invul)
         remove
       else
@@ -82,7 +82,7 @@ update
 for 0 5
 p=1,1,1,<dlocal._for>
   forchars 10000
-    if (<npc>) 
+    if (<npc>)
       if !(<owner>) && !(<flags>&statf_invul)
         hits=0
       else

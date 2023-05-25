@@ -18,7 +18,7 @@ f_create_spawner,minerguildmaster,,,,,,3665,2140,20,1,5,10,5,0,1,1,0,0,0,0,0
 f_create_spawner,mage,alchemist,mageguildmaster,,,,3699,2218,20,1,5,10,5,0,1,1,1,1,0,0,0
 f_create_spawner,merchantguildmaster,,,,,,3703,2249,20,1,5,10,5,0,1,1,0,0,0,0,0
 
-[FUNCTION f_spawn_npcs_oldmagincia]  
+[FUNCTION f_spawn_npcs_oldmagincia]
 f_create_spawner,innkeeper,,,,,,3699,2163,20,1,5,10,5,0,1,1,0,0,0,0,0
 f_create_spawner,tailor,weaver,tailorguildmaster,,,,3666,2235,20,1,5,10,5,0,1,1,1,1,0,0,0
 f_create_spawner,tinker,tinkerguildmaster,,,,,3720,2126,20,1,5,10,5,0,1,1,1,0,0,0,0

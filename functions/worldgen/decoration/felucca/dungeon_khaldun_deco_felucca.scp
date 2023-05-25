@@ -1,104 +1,104 @@
 [FUNCTION deco_khaldun_felucca]
 
 // teleporter
-serv.newitem=017ee 
+serv.newitem=017ee
 new.type=t_normal
 new.attr=attr_static|attr_invis
 new.p=5387 1325 1
 //
-serv.newitem=017ee 
+serv.newitem=017ee
 new.type=t_normal
 new.attr=attr_static|attr_invis
 new.p=5388 1325 1
 //
-serv.newitem=017ee 
+serv.newitem=017ee
 new.type=t_normal
 new.attr=attr_static|attr_invis
 new.p=5387 1326 1
 //
-serv.newitem=017ee 
+serv.newitem=017ee
 new.type=t_normal
 new.attr=attr_static|attr_invis
 new.p=5388 1326 1
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.type=t_telepad
 new.morep=6012 3786 25
 new.attr=attr_static|attr_invis
 new.p=5571 1299 0
 
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.type=t_telepad
 new.morep=6013 3786 25
 new.attr=attr_static|attr_invis
 new.p=5572 1299 0
 
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.type=t_telepad
 new.morep=5570 1300 0
 new.attr=attr_static|attr_invis
 new.p=6011 3787 22
 
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.type=t_telepad
 new.morep=5571 1300 0
 new.attr=attr_static|attr_invis
 new.p=6012 3787 20
 
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.type=t_telepad
 new.morep=5572 1300 0
 new.attr=attr_static|attr_invis
 new.p=6013 3787 20
 
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.type=t_telepad
 new.morep=5573 1300 0
 new.attr=attr_static|attr_invis
 new.p=6014 3787 21
 
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.type=t_telepad
 new.morep=5402 1289 0
 new.attr=attr_static|attr_invis
 new.p=5878 3817 -2
 
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.type=t_telepad
 new.morep=5402 1290 0
 new.attr=attr_static|attr_invis
 new.p=5878 3818 -2
 
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.type=t_telepad
 new.morep=5881 3818 0
 new.attr=attr_static|attr_invis
 new.p=5403 1288 0
 
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.type=t_telepad
 new.morep=5881 3819 0
 new.attr=attr_static|attr_invis
 new.p=5403 1289 0
 
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.type=t_telepad
 new.morep=5881 3820 0
 new.attr=attr_static|attr_invis
 new.p=5403 1290 0
 /////////////////////
 // tent wall
-serv.newitem=036F 
+serv.newitem=036F
 new.color=0455
 new.attr=attr_static
 new.p=5998 3764 20
@@ -107,7 +107,7 @@ new.attr=attr_static
 new.p=5998 3766 20
 
 // tent wall
-serv.newitem=036F 
+serv.newitem=036F
 new.color=0973
 new.attr=attr_static
 new.p=5998 3763 20
@@ -121,7 +121,7 @@ new.attr=attr_static
 new.p=5998 3762 20
 
 // tent wall
-serv.newitem=036E 
+serv.newitem=036E
 new.color=0455
 new.attr=attr_static
 new.p=5999 3762 20
@@ -130,7 +130,7 @@ new.attr=attr_static
 new.p=6001 3762 20
 
 // tent wall
-serv.newitem=036E 
+serv.newitem=036E
 new.color=0973
 new.attr=attr_static
 new.p=6000 3762 20
@@ -139,13 +139,13 @@ new.attr=attr_static
 new.p=6002 3762 20
 
 // tent wall
-serv.newitem=036D 
+serv.newitem=036D
 new.color=0973
 new.attr=attr_static
 new.p=6003 3762 20
 
 // tent wall
-serv.newitem=036A 
+serv.newitem=036A
 new.color=0455
 new.attr=attr_static
 new.p=6003 3763 20
@@ -154,7 +154,7 @@ new.attr=attr_static
 new.p=6003 3765 20
 
 // tent wall
-serv.newitem=036A 
+serv.newitem=036A
 new.color=0973
 new.attr=attr_static
 new.p=6003 3764 20
@@ -163,13 +163,13 @@ new.attr=attr_static
 new.p=6003 3766 20
 
 // tent wall
-serv.newitem=0368 
+serv.newitem=0368
 new.color=0455
 new.attr=attr_static
 new.p=6003 3767 20
 
 // tent wall
-serv.newitem=0369 
+serv.newitem=0369
 new.color=0455
 new.attr=attr_static
 new.p=6002 3767 20
@@ -319,7 +319,7 @@ new.attr=attr_static
 new.p=6008 3787 30
 
 // tapestry
-serv.newitem=0FE3 
+serv.newitem=0FE3
 new.color=01
 new.Name=a dark cavern
 new.attr=attr_static
@@ -329,12 +329,12 @@ new.attr=attr_static
 new.p=5878 3818 -5
 
 // tapestry
-serv.newitem=0FE4 
+serv.newitem=0FE4
 new.color=01
 new.Name=a dark cavern
 new.attr=attr_static
 new.p=5878 3817 -5
-serv.newitem=0FE4 
+serv.newitem=0FE4
 new.color=01
 new.Name=a dark cavern
 new.attr=attr_static
@@ -473,23 +473,23 @@ new.attr=attr_static
 new.p=6011 3786 21
 
 // stone pavers
-serv.newitem=0521 
+serv.newitem=0521
 new.color=01
 new.attr=attr_static
 new.p=6013 3787 20
-serv.newitem=0521 
+serv.newitem=0521
 new.color=01
 new.attr=attr_static
 new.p=6011 3787 22
-serv.newitem=0521 
+serv.newitem=0521
 new.color=01
 new.attr=attr_static
 new.p=6012 3787 20
-serv.newitem=0521 
+serv.newitem=0521
 new.color=01
 new.attr=attr_static
 new.p=6012 3786 20
-serv.newitem=0521 
+serv.newitem=0521
 new.color=01
 new.attr=attr_static
 new.p=6013 3786 19
@@ -661,13 +661,13 @@ new.attr=attr_static
 new.p=6012 3792 44
 
 // tent roof
-serv.newitem=0665 
+serv.newitem=0665
 new.color=0973
 new.attr=attr_static
 new.p=5999 3763 38
 
 // tent roof
-serv.newitem=0600 
+serv.newitem=0600
 new.color=0455
 new.attr=attr_static
 new.p=6000 3763 38
@@ -676,7 +676,7 @@ new.attr=attr_static
 new.p=6002 3763 38
 
 // tent roof
-serv.newitem=0600 
+serv.newitem=0600
 new.color=0973
 new.attr=attr_static
 new.p=6001 3763 38
@@ -685,13 +685,13 @@ new.attr=attr_static
 new.p=6001 3764 41
 
 // tent roof
-serv.newitem=0664 
+serv.newitem=0664
 new.color=0973
 new.attr=attr_static
 new.p=6003 3763 38
 
 // tent roof
-serv.newitem=05FF 
+serv.newitem=05FF
 new.color=0455
 new.attr=attr_static
 new.p=5999 3764 38
@@ -700,19 +700,19 @@ new.attr=attr_static
 new.p=5999 3766 38
 
 // tent roof
-serv.newitem=0665 
+serv.newitem=0665
 new.color=0455
 new.attr=attr_static
 new.p=6000 3764 41
 
 // tent roof
-serv.newitem=0664 
+serv.newitem=0664
 new.color=0455
 new.attr=attr_static
 new.p=6002 3764 41
 
 // tent roof
-serv.newitem=0602 
+serv.newitem=0602
 new.color=0455
 new.attr=attr_static
 new.p=6003 3764 38
@@ -721,7 +721,7 @@ new.attr=attr_static
 new.p=6003 3766 38
 
 // tent roof
-serv.newitem=05FF 
+serv.newitem=05FF
 new.color=0973
 new.attr=attr_static
 new.p=5999 3765 38
@@ -730,73 +730,73 @@ new.attr=attr_static
 new.p=6000 3765 41
 
 // tent roof
-serv.newitem=0608 
+serv.newitem=0608
 new.color=0973
 new.attr=attr_static
 new.p=6001 3765 49
 
 // tent roof
-serv.newitem=0602 
+serv.newitem=0602
 new.color=0973
 new.attr=attr_static
 new.p=6002 3765 41
-serv.newitem=0602 
+serv.newitem=0602
 new.color=0973
 new.attr=attr_static
 new.p=6003 3765 38
 
 // tent roof
-serv.newitem=0666 
+serv.newitem=0666
 new.color=0455
 new.attr=attr_static
 new.p=6000 3766 41
 
 // tent roof
-serv.newitem=0601 
+serv.newitem=0601
 new.color=0973
 new.attr=attr_static
 new.p=6001 3766 41
-serv.newitem=0601 
+serv.newitem=0601
 new.color=0973
 new.attr=attr_static
 new.p=6001 3767 38
 
 // tent roof
-serv.newitem=0663 
+serv.newitem=0663
 new.color=0455
 new.attr=attr_static
 new.p=6002 3766 41
 
 // tent roof
-serv.newitem=0666 
+serv.newitem=0666
 new.color=0973
 new.attr=attr_static
 new.p=5999 3767 38
 
 // tent roof
-serv.newitem=0601 
+serv.newitem=0601
 new.color=0455
 new.attr=attr_static
 new.p=6000 3767 38
-serv.newitem=0601 
+serv.newitem=0601
 new.color=0455
 new.attr=attr_static
 new.p=6002 3767 38
 
 // tent roof
-serv.newitem=0663 
+serv.newitem=0663
 new.color=0973
 new.attr=attr_static
 new.p=6003 3767 38
 
 // tent wall
-serv.newitem=036C 
+serv.newitem=036C
 new.color=0973
 new.attr=attr_static
 new.p=5998 3767 20
 
 //teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.morep=5572 1307 0
 new.attr=attr_static|attr_invis
 new.type=t_telepad
@@ -954,7 +954,7 @@ serv.newitem=0E3C
 new.attr=attr_static
 new.p=5520 1289 0
 //scimitar
-serv.newitem=013B6 
+serv.newitem=013B6
 new.attr=attr_static
 new.p=5405 1352 5
 serv.newitem=013B6
@@ -1106,7 +1106,7 @@ new.attr=attr_static
 new.p=5431 1287 2
 new.type=t_normal
 //wall carving
-serv.newitem=012CC 
+serv.newitem=012CC
 new.color=0978
 new.attr=attr_static
 new.p=5395 1311 2
@@ -1254,7 +1254,7 @@ new.color=021
 new.attr=attr_static
 new.p=5605 1343 0
 //blank scroll
-serv.newitem=0E34 
+serv.newitem=0E34
 new.color=066D
 new.attr=attr_static
 new.p=5561 1352 5
@@ -1317,22 +1317,22 @@ serv.newitem=01AE2
 new.attr=attr_static
 new.p=5369 1343 11
 //wall carving
-serv.newitem=012D3 
+serv.newitem=012D3
 new.color=0978
 new.attr=attr_static
 new.p=5391 1296 2
 //wall carving
-serv.newitem=012D3 
+serv.newitem=012D3
 new.color=0978
 new.attr=attr_static
 new.p=5407 1308 2
 //wall carving
-serv.newitem=01265 
+serv.newitem=01265
 new.color=0978
 new.attr=attr_static
 new.p=5391 1297 2
 //bone gloves
-serv.newitem=01455 
+serv.newitem=01455
 new.color=0835
 new.attr=attr_static
 new.p=5391 1338 6
@@ -1363,46 +1363,46 @@ serv.newitem=0FFB
 new.attr=attr_static
 new.p=5544 1290 7
 //wall carving
-serv.newitem=012CF 
+serv.newitem=012CF
 new.color=0978
 new.attr=attr_static
 new.p=5441 1287 3
 //wall carving
-serv.newitem=012CF 
+serv.newitem=012CF
 new.color=0978
 new.attr=attr_static
 new.p=5556 1313 2
 //wall carving
-serv.newitem=012D0 
+serv.newitem=012D0
 new.color=0978
 new.attr=attr_static
 new.p=5443 1287 3
-serv.newitem=012D0 
+serv.newitem=012D0
 new.color=0978
 new.attr=attr_static
 new.p=5442 1287 3
 //wall carving
-serv.newitem=012D0 
+serv.newitem=012D0
 new.color=0978
 new.attr=attr_static
 new.p=5557 1313 2
 //wall carving
-serv.newitem=012CE 
+serv.newitem=012CE
 new.color=0978
 new.attr=attr_static
 new.p=5558 1313 2
 //wall carving
-serv.newitem=012CE 
+serv.newitem=012CE
 new.color=0978
 new.attr=attr_static
 new.p=5433 1287 2
 //wall carving
-serv.newitem=012CE 
-new.color=0978 
+serv.newitem=012CE
+new.color=0978
 new.attr=attr_static
 new.p=5397 1311 2
 //puzzlechest
-serv.newitem=0E40 
+serv.newitem=0E40
 new.color=0839
 new.attr=attr_static
 new.p=5392 1468 0
@@ -1528,7 +1528,7 @@ serv.newitem=01C52
 new.attr=attr_static
 new.p=5491 1392 -4
 //double axe
-serv.newitem=0F4C 
+serv.newitem=0F4C
 new.attr=attr_static
 new.p=5456 1409 3
 serv.newitem=0F4C
@@ -1578,7 +1578,7 @@ serv.newitem=0E9B
 new.attr=attr_static
 new.p=5432 1339 5
 //scales
-serv.newitem=01852 
+serv.newitem=01852
 new.attr=attr_static
 new.p=5432 1342 5
 //book
@@ -1590,7 +1590,7 @@ serv.newitem=0121E
 new.attr=attr_static
 new.p=5406 1295 2
 //wall carving
-serv.newitem=0121E 
+serv.newitem=0121E
 new.attr=attr_static
 new.p=5573 1299 34
 //wall carving
@@ -1614,84 +1614,84 @@ serv.newitem=01414
 new.attr=attr_static
 new.p=5391 1343 5
 //bone arms
-serv.newitem=01453 
+serv.newitem=01453
 new.color=0835
 new.attr=attr_static
 new.p=5384 1339 5
 //swamp
-serv.newitem=0326D 
-new.color=021 
+serv.newitem=0326D
+new.color=021
 new.Name=Blood
 new.attr=attr_static
 new.p=5424 1489 0
-serv.newitem=0326D 
-new.color=021 
+serv.newitem=0326D
+new.color=021
 new.Name=Blood
 new.attr=attr_static
 new.p=5420 1492 0
-serv.newitem=0326D 
-new.color=021 
+serv.newitem=0326D
+new.color=021
 new.Name=Blood
 new.attr=attr_static
 new.p=5421 1492 0
-serv.newitem=0326D 
-new.color=021 
+serv.newitem=0326D
+new.color=021
 new.Name=Blood
 new.attr=attr_static
 new.p=5421 1489 0
 //swamp
-serv.newitem=0326E 
-new.color=021 
+serv.newitem=0326E
+new.color=021
 new.Name=Blood
 new.attr=attr_static
 new.p=5424 1488 0
-serv.newitem=0326E 
-new.color=021 
+serv.newitem=0326E
+new.color=021
 new.Name=Blood
 new.attr=attr_static
 new.p=5422 1488 0
 //metal chest
-serv.newitem=0E41 
+serv.newitem=0E41
 new.color=0973
 new.attr=attr_static
 new.p=5416 1343 5
-serv.newitem=0E41 
+serv.newitem=0E41
 new.color=0973
 new.attr=attr_static
 new.p=5444 1392 5
-serv.newitem=0E41 
+serv.newitem=0E41
 new.color=0973
 new.attr=attr_static
 new.p=5443 1392 5
-serv.newitem=0E41 
+serv.newitem=0E41
 new.color=0973
 new.attr=attr_static
 new.p=5442 1392 5
-serv.newitem=0E41 
+serv.newitem=0E41
 new.color=0973
 new.attr=attr_static
 new.p=5445 1392 20
-serv.newitem=0E41 
+serv.newitem=0E41
 new.color=0973
 new.attr=attr_static
 new.p=5443 1392 20
-serv.newitem=0E41 
+serv.newitem=0E41
 new.color=0973
 new.attr=attr_static
 new.p=5442 1392 20
-serv.newitem=0E41 
+serv.newitem=0E41
 new.color=0973
 new.attr=attr_static
 new.p=5445 1392 5
-serv.newitem=0E41 
+serv.newitem=0E41
 new.color=0973
 new.attr=attr_static
 new.p=5418 1343 5
-serv.newitem=0E41 
+serv.newitem=0E41
 new.color=0973
 new.attr=attr_static
 new.p=5444 1392 20
-serv.newitem=0E41 
+serv.newitem=0E41
 new.color=0973
 new.attr=attr_static
 new.p=5420 1440 0
@@ -1699,7 +1699,7 @@ new.p=5420 1440 0
 serv.newitem=0EF3
 new.attr=attr_static
 new.p=5436 1336 7
-//metal chest 
+//metal chest
 serv.newitem=0E40
 new.color=0974
 new.attr=attr_static
@@ -1734,7 +1734,7 @@ serv.newitem=01566
 new.attr=attr_static
 new.p=5416 1358 0
 //large battle axe
-serv.newitem=013FA 
+serv.newitem=013FA
 new.color=0835
 new.attr=attr_static
 new.p=5395 1448 5
@@ -1743,21 +1743,21 @@ serv.newitem=0F52
 new.attr=attr_static
 new.p=5623 1329 5
 //bone legs
-serv.newitem=01457 
+serv.newitem=01457
 new.color=0835
 new.attr=attr_static
 new.p=5517 1338 5
 //bone arms
-serv.newitem=0144E 
+serv.newitem=0144E
 new.color=0835
 new.attr=attr_static
 new.p=5516 1339 5
 //viking sword
-serv.newitem=013BA 
+serv.newitem=013BA
 new.color=0835
 new.attr=attr_static
 new.p=5517 1339 5
-//khaldun puzzle chest 
+//khaldun puzzle chest
 serv.newitem=0E80
 new.color=066D
 new.attr=attr_static
@@ -1775,7 +1775,7 @@ serv.newitem=01562
 new.attr=attr_static
 new.p=5416 1354 0
 //wall carving
-serv.newitem=012CD 
+serv.newitem=012CD
 new.color=0978
 new.attr=attr_static
 new.p=5432 1287 2
@@ -1784,17 +1784,17 @@ serv.newitem=0156B
 new.attr=attr_static
 new.p=5416 1355 0
 //statue
-serv.newitem=0139D 
+serv.newitem=0139D
 new.color=096E
 new.attr=attr_static
 new.p=5491 1395 6
 //metal chest
-serv.newitem=0E40 
+serv.newitem=0E40
 new.color=0962
 new.attr=attr_static
 new.p=5400 1409 5
 //Corpser Frame
-serv.newitem=020D2 
+serv.newitem=020D2
 new.color=0482
 new.attr=attr_static
 new.p=5564 1354 6
@@ -1813,7 +1813,7 @@ serv.newitem=0198e
 new.attr=attr_static
 new.p=5387 1341 0
 //wall carving
-serv.newitem=012D4 
+serv.newitem=012D4
 new.color=0978
 new.attr=attr_static
 new.p=5407 1307 2
@@ -1826,8 +1826,8 @@ serv.newitem=01418
 new.attr=attr_static
 new.p=5391 1341 5
 //swamp
-serv.newitem=0326B 
-new.color=021 
+serv.newitem=0326B
+new.color=021
 new.name=Blood
 new.attr=attr_static
 new.p=5420 1489 0
@@ -1840,18 +1840,18 @@ serv.newitem=0A25
 new.attr=attr_static
 new.p=5543 1287 5
 //khaldun puzzle chest
-serv.newitem=0E7C 
+serv.newitem=0E7C
 new.color=089E
 new.attr=attr_static
 new.p=5445 1503 0
-serv.newitem=0E7C 
-new.color=089E 
+serv.newitem=0E7C
+new.color=089E
 new.attr=attr_static
 new.p=5457 1503 0
 //wave
-serv.newitem=01FBC 
-new.color=021 
-new.name=Blood 
+serv.newitem=01FBC
+new.color=021
+new.name=Blood
 new.attr=attr_static
 new.p=5422 1491 0
 //wooden chest
@@ -1862,36 +1862,36 @@ serv.newitem=0E43
 new.attr=attr_static
 new.p=5541 1287 0
 //swamp
-serv.newitem=03241 
-new.color=021 
-new.name=Blood 
+serv.newitem=03241
+new.color=021
+new.name=Blood
 new.attr=attr_static
 new.p=5423 1488 0
-serv.newitem=03241 
-new.color=021 
+serv.newitem=03241
+new.color=021
 new.name=Blood
 new.attr=attr_static
 new.p=5422 1492 0
 //swamp
-serv.newitem=03228 
-new.color=021 
+serv.newitem=03228
+new.color=021
 new.name=Blood
 new.attr=attr_static
 new.p=5420 1491 0
 //no draw
-serv.newitem=021A4 
-new.color=044= 
+serv.newitem=021A4
+new.color=044=
 new.attr=attr_static
 new.p=5392 1290 0
 //wave
-serv.newitem=01FA3 
-new.color=021 
+serv.newitem=01FA3
+new.color=021
 new.name=Blood
 serv.newitem=
 new.attr=attr_static
 new.p=5422 1489 0
 //decorative weapons
-serv.newitem=01567 
+serv.newitem=01567
 new.attr=attr_static
 new.p=5416 1357 0
 //axe
@@ -1909,7 +1909,7 @@ serv.newitem=01569
 new.attr=attr_static
 new.p=5423 1344 0
 //decorative weapons
-serv.newitem=01560 
+serv.newitem=01560
 new.attr=attr_static
 new.p=5414 1360 0
 //table
@@ -1917,7 +1917,7 @@ serv.newitem=0B34
 new.attr=attr_static
 new.p=5517 1296 0
 //Pot of Wax
-serv.newitem=0142A 
+serv.newitem=0142A
 new.color=0835
 new.attr=attr_static
 new.p=5389 1347 5
@@ -1926,8 +1926,8 @@ serv.newitem=01C54
 new.attr=attr_static
 new.p=5491 1394 -5
 //swamp
-serv.newitem=03236 
-new.color=021 
+serv.newitem=03236
+new.color=021
 new.name=Blood
 new.attr=attr_static
 new.p=5422 1490 0
@@ -1944,7 +1944,7 @@ serv.newitem=01222
 new.attr=attr_static
 new.p=5419 1295 3
 //blank scroll
-serv.newitem=0EF3 
+serv.newitem=0EF3
 new.color=044E
 new.attr=attr_static
 new.p=5562 1352 7
@@ -1953,7 +1953,7 @@ serv.newitem=0139B
 new.attr=attr_static
 new.p=5552 1331 16
 //decorative weapons
-serv.newitem=0155E 
+serv.newitem=0155E
 new.attr=attr_static
 new.p=5400 1350 0
 //decorative weapons
@@ -1961,7 +1961,7 @@ serv.newitem=0155F
 new.attr=attr_static
 new.p=5400 1347 0
 //stone
-serv.newitem=0788 
+serv.newitem=0788
 new.color=01
 new.attr=attr_static
 new.p=5564 1354 -3

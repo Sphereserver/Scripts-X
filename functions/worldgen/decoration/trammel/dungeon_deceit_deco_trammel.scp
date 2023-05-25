@@ -1,5 +1,5 @@
 [FUNCTION deco_deceit_trammel]
-		
+
 //stone pavers//
 //sign//
 serv.newitem= 01F29//
@@ -1555,4 +1555,4 @@ serv.newitem= 0144F//
 new.attr=attr_static//
 new.p=5289 542 0 1 1//
 
-[EOF]		
+[EOF]

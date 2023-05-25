@@ -1,6 +1,6 @@
-[FUNCTION deco_terathan_keep_trammel]		
+[FUNCTION deco_terathan_keep_trammel]
 
-//terathan keep		
+//terathan keep
 //tightrope//
 serv.newitem=02710//
 new.attr=attr_static//
@@ -299,4 +299,4 @@ serv.newitem=06E5//
 new.attr=attr_static//
 new.p=5292 1560 0 1 1//
 
-[EOF]		
+[EOF]

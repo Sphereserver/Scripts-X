@@ -1,18 +1,18 @@
 [FUNCTION deco_all_tokuno]
 
-serv.newitem=2996 
+serv.newitem=2996
 new.name=Miyabi Inn
 new.attr=attr_static
 new.p=677 1220 25 4
-serv.newitem=2966 
+serv.newitem=2966
 new.name=Rokuon Cultural Center and Shops
 new.attr=attr_static
 new.p=675 1280 32 4
-serv.newitem=2966 
+serv.newitem=2966
 new.name=Rokuon Cultural Center and Shops
 new.attr=attr_static
 new.p=680 1280 32 4
-serv.newitem=3012 
+serv.newitem=3012
 new.name=Sake Saka Tavern
 new.attr=attr_static
 new.p=694 1229 25 4
@@ -213,17 +213,17 @@ serv.newitem=0197D
 new.attr=attr_static
 new.p=767 1257 25 4
 // forge
-serv.newitem=0197E 
+serv.newitem=0197E
 new.attr=attr_static
 new.p=768 1257 25 4
-serv.newitem=0197E 
+serv.newitem=0197E
 new.attr=attr_static
 new.p=768 1262 25 4
 // forge
-serv.newitem=01982 
+serv.newitem=01982
 new.attr=attr_static
 new.p=769 1257 25 4
-serv.newitem=01982 
+serv.newitem=01982
 new.attr=attr_static
 new.p=769 1262 25 4
 // bellows
@@ -234,18 +234,18 @@ serv.newitem=01986
 new.attr=attr_static
 new.p=638 1208 32 4
 // forge
-serv.newitem=0198A 
+serv.newitem=0198A
 new.attr=attr_static
 new.p=638 1205 52 4
-serv.newitem=0198A 
+serv.newitem=0198A
 new.attr=attr_static
 new.p=638 1209 32 4
 // forge
-serv.newitem=0198E 
+serv.newitem=0198E
 new.attr=attr_static
 new.p=764 1258 25 4
 // forge
-serv.newitem=01991 
+serv.newitem=01991
 new.attr=attr_static
 new.p=764 1258 25 4
 // bellows
@@ -256,14 +256,14 @@ serv.newitem=01992
 new.attr=attr_static
 new.p=638 1211 32 4
 // forge
-serv.newitem=01996 
+serv.newitem=01996
 new.attr=attr_static
 new.p=638 1206 52 4
-serv.newitem=01996 
+serv.newitem=01996
 new.attr=attr_static
 new.p=638 1210 32 4
 // forge
-serv.newitem=0199D 
+serv.newitem=0199D
 new.attr=attr_static
 new.p=764 1257 25 4
 // tower sculpture

@@ -1,5 +1,5 @@
 [FUNCTION deco_trinsic_trammel]
-		
+
 //battlement//
 serv.newitem=0173//
 new.attr=attr_static//
@@ -4605,5 +4605,5 @@ new.p=1992 2893 11 1//
 serv.newitem=01E5E//
 new.attr=attr_static//
 new.p=1932 2786 0 1 1//
-		
-[EOF]		
+
+[EOF]

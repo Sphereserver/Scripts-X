@@ -35,7 +35,7 @@ for 0 5
       new.events=+t_custom_spawner_char
     else
       new.events=+t_custom_spawner_item		//this will apply for items/multis
-      new.attr=090    
+      new.attr=090
     endif
     if (<local.spawn_array>)
       new.tag.spawn_array=<local.spawn_array>
@@ -46,7 +46,7 @@ for 0 5
     new.p=<argv[6]>,<argv[7]>,<argv[8]>,<dvar0.spawner_facet>	//<argv[9]>	//p
     new.morep=<argv[10]>,<argv[11]>,<argv[12]>				//morep
     new.amount=<argv[<eval 15 + <local._for>>]>				//amount
-    new.update	
+    new.update
     new.timer=<R<argv[10]>,<argv[11]>>
   endif
   local.spawn_array=

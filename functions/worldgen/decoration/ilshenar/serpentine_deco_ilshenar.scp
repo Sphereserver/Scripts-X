@@ -19,12 +19,12 @@ SERV.NEWITEM=00EB1
 new.attr=attr_static
 new.p=436 1557 -22 2
 // metal door
-SERV.NEWITEM=00675 
+SERV.NEWITEM=00675
 new.color=08AB
 new.attr=attr_static
 new.p=478 1527 -27 2
 // metal door
-SERV.NEWITEM=00677 
+SERV.NEWITEM=00677
 new.color=08AB
 new.attr=attr_static
 new.p=479 1527 -27 2
