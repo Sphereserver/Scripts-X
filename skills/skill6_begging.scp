@@ -33,7 +33,7 @@ if <def.scp.NewSkills_Begging> == 1
 		sysmessage <def.scp.begging_isplayer>
 		f_skill_delay <getargv 2 <def.skill.6.waittime>>
 		return 1
-	elseif !((<act.ismale>) || (<act.isfemale>))
+	elseif !((<act.f_ismale>) || (<act.f_isfemale>))
 		sysmessage <def.scp.begging_ismonster>
 		f_skill_delay <getargv 2 <def.skill.6.waittime>>
 		return 1
