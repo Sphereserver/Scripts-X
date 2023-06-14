@@ -38,25 +38,6 @@ scp.NewBarding_Peacemaking=1
 scp.NewBarding_Provocation=0 // NOT TESTED. USE AT OWN RISK. (Report bugs if any)
 scp.NewBarding_Discordance=0 // NOT DONE!!
 
-// Enables, switch or disable the new crafting system
-// 0 = Default. 1 = OSI-Like.
-scp.CraftingSystem=1
-
-// Enable or disable the crafting menu for specific skill.
-// <boolean> (1 if enable, 0 if not). Default = 1
-scp.NewCrafting_Alchemy=1
-scp.NewCrafting_Blacksmithing=1
-scp.NewCrafting_Bowcraft=1
-scp.NewCrafting_Carpentry=1
-scp.NewCrafting_Cooking=0 // NOT DONE!!
-scp.NewCrafting_Inscription=1
-scp.NewCrafting_Tailoring=1
-scp.NewCrafting_Tinkering=1
-
-// If the item needs a recipe and the player doesn't have it, display resources as "????"
-// If this is 0, it will display the skillmake/resources normally.
-scp.NewCrafting_RecipeNeeded=1
-
 ///////////////////////////////////////////////////////////////
 //////// Skills Settings - Resource Gathering
 ///////////////////////////////////////////////////////////////
