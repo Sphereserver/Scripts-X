@@ -19,8 +19,15 @@ BONUS_INT=100
 BONUS_STATS=25
 ADV_RATE=2.5,50.0,200.0
 
+on=@select
+f_skill_delay <getargv 0 <def.skill.19.waittime>>
+
+on=@success
+f_skill_delay <getargv 1 <def.skill.19.waittime>>
+
 ON=@Fail
-	SRC.SYSMESSAGE You can tell nothing about the corpse.
+src.sysmessage @,,2 1055048
+f_skill_delay <getargv 2 <def.skill.19.waittime>>
 
 ON=@Abort
 	SRC.SYSMESSAGE You decide you'd rather not look at that.

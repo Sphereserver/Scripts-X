@@ -18,11 +18,65 @@ BONUS_INT=80
 BONUS_STATS=25
 ADV_RATE=2.5,50.0,200.0
 
+on=@wait
+if <def.scp.NewSkills_DetectHidden>
+f_skill_delay <getargv 0 <def.skill.14.waittime>>
+targetfg f_detecthidden_start
+sysmessage <def.scp.detecthidden_start>
+return 1
+endif
+
+on=@select
+f_skill_delay <getargv 0 <def.skill.14.waittime>>
+
+on=@success
+f_skill_delay <getargv 1 <def.skill.14.waittime>>
+
 ON=@Fail
-	SRC.SYSMESSAGE You can see nothing hidden there.
+f_skill_delay <getargv 2 <def.skill.14.waittime>>
+	SRC.MESSAGE @,,2 500817
 
 ON=@Abort
 	SRC.SYSMESSAGE You stop looking for anything hidden.
+
+[function f_detecthidden_start]
+local.range = <eval (<detectinghidden> / 2)>
+	if !<skillusequick detectinghidden <r1000>>
+	local.range /= 2
+	skillgain detectinghidden <eval ((<detectinghidden> / 7) + 1)>
+	else
+	skillgain detectinghidden <eval ((<detectinghidden> / 10) + 1)>
+	endif
+	if (<uid.<region.uid>.type> == t_multi) || (<uid.<region.uid>.type> == t_multi_custom)
+		if <uid.<region.uid>.link.houseplayeraccess <uid>> >= 2
+		local.inhouse = 1
+		local.range = 22
+		endif
+	endif
+	if <local.range>
+	serv.newitem i_gold
+	new.attr |= attr_invis
+	new.p = <targp>
+		if !<new.f_checkforhidden <local.range>,<uid>,<local.inhouse>>
+		sysmessage <def.scp.detecthidden_foundnobody>
+		endif
+	new.remove
+	endif
+f_skill_delay <getargv 1 <def.skill.14.waittime>>
+
+[function f_checkforhidden]
+ref1 = <argv[1]>
+forchars <argv[0]>
+	if <flags>&statf_hidden
+	local.ss = <eval (<ref1.detectinghidden> + <r21> - 10)>
+	local.ts = <eval (<hiding> + <r21> - 10)>
+		if (<isplayer> && <ref1.account.plevel> >= <account.plevel>) && ((<local.ss> >= <local.ts>) || ((<argv[2]>) && (<region.uid> == <ref1.region.uid>)))
+		f_reveal
+		local.found = 1
+		endif
+	endif
+endfor
+return <local.found>
 
 
 [EOF]

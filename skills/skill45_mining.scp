@@ -4,11 +4,20 @@
 //****************************************************************************
 VERSION=X1
 
+// SCRIPT CREDITS
+// --------------
+// ShiryuX - All the script
+//
+// SCRIPT DOCUMENTATION
+// --------------------
+// Sand Mining Functions
+//
+
 [SKILL 45]
 DEFNAME=Skill_Mining
 KEY=Mining
 TITLE=Miner
-PROMPT_MSG=Where would you like to mine?
+PROMPT_MSG=@,,2 503033 //Where would you like to mine?
 FLAGS=skf_gather
 DELAY=1.6
 STAT_STR=85
@@ -24,9 +33,15 @@ RANGE=2
 
 ON=@PreStart
 	IF (<SRC.FINDLAYER.layer_horse>)
-		SRC.SYSMESSAGE You can't mine while riding.
+		SRC.SYSMESSAGE <DEF.scp.mining_mounted>
 		return 1
 	ENDIF
+	if (<DEF.scp.mining_polymorph> == 0)
+		if (<SRC.flags>&statf_polymorph)
+			SRC.SYSMESSAGE <DEF.scp.mining_polymorphed>
+			RETURN 1
+		endif
+	endif
 	IF (<SRC.WEAPON.USESCUR>< 1)
 		SRC.SYSMESSAGE The tool is out of charges.
 		return 1
@@ -38,6 +53,19 @@ ON=@Success
 		SRC.WEAPON.DESTROY 1
 	ENDIF
 
+	if (<DEF.scp.mining_stop_nocarry> == 0)
+		if (<eval <SRC.WEIGHT>+10> > <SRC.MAXWEIGHT>)
+			SRC.SYSMESSAGE <DEF.scp.mining_nocarry>
+			RETURN 1
+		endif
+	endif
+	if <def.scp.Mining_Bonus_1>  == 1
+	LOCAL.bonusharvest <f_FindBonusHarvest Mining>
+	if <LOCAL.bonusharvest>
+		SERV.NEWITEM <getargv 3 <DEF.scp.Mining_Bonus_1_<dLOCAL.bonusharvest>>>,1,<SRC.FINDLAYER.layer_pack>
+		SRC.SYSMESSAGE "@,,3 <getargv 2 <DEF.scp.Mining_Bonus_1_<dLOCAL.bonusharvest>>>"
+	endif
+	endif
 	
 ON=@Fail
 	SRC.SYSMESSAGE You loosen some rocks but fail to find any useable ore.
@@ -58,4 +86,59 @@ ON=@Stroke
 		ENDIF
 	ENDIF
 
+[FUNCTION f_FindBonusHarvest]
+float.randomValue <floatval <RANDOMDOUBLE> * 100>
+local.bonusno 0
+while (!<ISEMPTY <DEF.scp.<args>_Bonus_1_<dlocal.bonusno>>> )
+if ( <float.randomValue>  <= <floatval <getargv 1 <DEF.scp.<args>_Bonus_1_<dlocal.bonusno>>>> )
+		return <dlocal.bonusno>
+	endif
+	float.randomValue -= <floatval <getargv 1 <DEF.scp.<args>_Bonus_1_<dlocal.bonusno>>>>
+	local.bonusno += 1
+endwhile
+
+// f_FindResourceWorldgem $targp
+[function f_FindResourceWorldgem]
+serv.newitem i_memory
+new.p <args>
+call new.f_FindResourceWorldgem2
+return <local.foundbit>
+
+// USE f_FindResourceWorldgem
+[function f_FindResourceWorldgem2]
+local.foundbit = 0
+foritems 0
+if <baseid> == i_worldgem_bit
+	if <type> == t_sand
+	local.foundbit = <uid>
+	endif
+endif
+endfor
+
+// f_MiningSuccess $gem_uid
+[function f_MiningSuccess]
+ref5 = <args>
+if <ref5.amount> > 1
+serv.newitem <serv.regionresource.<ref5.more1>.reap>
+local.toget = <r<serv.regionresource.<ref5.more1>.reapamount>>
+	if <ref5.amount> < <local.toget>
+	local.toget = <ref5.amount>
+	endif
+new.amount = <local.toget>
+ref5.amount -= <local.toget>
+new.cont = <uid>
+else
+sysmessage <def.scp.mining_nosand>
+endif
+
+// f_AddMiningBit $resource_defname
+[function f_AddMiningBit]
+serv.newitem i_worldgem_bit
+new.type = t_sand
+new.more1 = <args>
+new.amount = <serv.regionresource.<args>.amount>
+new.attr = attr_invis|attr_decay
+new.p <targp>
+new.timer = <serv.regionresource.<args>.regen>
+return <new.uid>
 [EOF]

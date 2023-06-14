@@ -4,6 +4,16 @@
 //****************************************************************************
 VERSION=X1
 
+// SCRIPT CREDITS
+// --------------
+// ShiryuX 
+// WildGenie - update
+//
+// SCRIPT DOCUMENTATION
+// --------------------
+// TODO: Disruptive Action Config
+//
+
 [SKILL 46]
 DEFNAME=Skill_Meditation
 KEY=Meditation
@@ -18,38 +28,130 @@ BONUS_INT=5
 BONUS_STATS=20
 ADV_RATE=10.0,200.0,800.0
 
-ON=@Fail
-	//SRC.f_meditation_setup
-	SRC.SYSMESSAGE You lose your concentration.
-
-ON=@Abort
-	//SRC.f_meditation_setup
-	SRC.SYSMESSAGE You stop concentrating.
-
-ON=@Start
-	//SRC.f_meditation_setup
-
-ON=@Success
-	//SRC.f_meditation_setup
-
-
-[function f_meditation_setup]
-// This enables OSI meditation, providing a passive boost to RegenMana everytime and increasing it when the skill is active instead of the old regen-when-active.
-if (<tag0.MeditBonus>)
-	RegenMana -=<tag.MeditBonus>	// Removing old bonus before applying new one.
+on=@wait
+if <def.scp.NewSkills_Meditation> == 1
+	if <action> != -1
+	sysmessage <def.scp.meditation_activeskill>
+	f_skill_delay <getargv 3 <def.skill.46.waittime>>
+	elif <mana> >= <maxmana>
+	sysmessage <def.scp.meditation_maxmana>
+	f_skill_delay <getargv 2 <def.skill.46.waittime>>
+	elif <medi_armorpenalty>
+	sysmessage <def.scp.meditation_armorpenalty>
+	f_skill_delay <getargv 2 <def.skill.46.waittime>>
+	else
+		if <medi_weaponholding 1>
+		findlayer(1).bounce
+		elif <medi_weaponholding 2>
+		findlayer(2).bounce
+		endif
+	local.chance <eval (500 + ((<meditation> - ((<maxmana> - <mana>) * 10)) * 2))>
+		if <local.chance> > <r>
+		skillgain meditation <min 100,<eval (<meditation> / 10)>>
+		sysmessage <def.scp.meditation_success>
+		f_skill_delay <getargv 1 <def.skill.46.waittime>>
+		//f_AddBuff ActiveMeditation,-1 // Can't find the clilocs
+			addbuff <def.bufficon_activemeditation>,1075657,1075658,0,0
+		tag.meditation.active = 1
+			if <isplayer>
+			sfx 0f9
+			endif
+			EVENTS=+e_medi_active
+			f_PlayerCheckStats
+			TIMERF 2,trigger @meditationtick
+		else
+		sysmessage <def.scp.meditation_fail>
+		skillgain meditation <eval (<meditation> / 7) + 1>
+		f_skill_delay <getargv 2 <def.skill.46.waittime>>
+		endif
+	endif
+	return 1
 endif
-tag.MeditBonus
-if (<tag0.MeditPenalty>)			// No Bonus when wearing plate armor
-	return 0
+
+on=@select
+f_skill_delay <getargv 0 <def.skill.46.waittime>>
+
+ON=@START
+addbuff <def.bufficon_activemeditation>,1075657,1075658,0,0
+
+ON=@success
+if <mana> >= <maxmana>
+f_skill_delay <getargv 1 <def.skill.46.waittime>>
+RemoveBuff <DEF.bufficon_activemeditation>
+tag.meditation.active
 endif
-local.baseBonus=<eval ((<Meditation>/10) * 3) + <int>>	// Bonus given by meditation and int
-if (<Meditation> >= 1000)	// GM medit gets a +10% bonus 
-	local.baseBonus += <muldiv <dlocal.baseBonus>,10,100>
+
+ON=@fail
+f_skill_delay <getargv 2 <def.skill.46.waittime>>
+SRC.SYSMESSAGE <def.scp.meditation_fail>
+RemoveBuff <DEF.bufficon_activemeditation>
+tag.meditation.active
+
+on=@abort
+f_skill_delay <getargv 2 <def.skill.46.waittime>>
+src.sysmessage <def.scp.meditation_abort>
+RemoveBuff <DEF.bufficon_activemeditation>
+tag.meditation.active
+
+[function f_medi_false]
+EVENTS -e_medi_active
+tag.meditation.active
+RemoveBuff <DEF.bufficon_activemeditation>
+f_PlayerCheckStats
+
+[EVENTS e_medi_active]
+
+ON=@meditationtick
+if <mana> >= <maxmana>
+	sysmessage <def.scp.meditation_maxmana>
+	f_medi_false
+else
+	skillgain meditation <eval (<meditation> / 7) + 1>
+	TIMERF 2,trigger @meditationtick
 endif
-tag.MeditBonus=<eval 2 + <local.baseBonus> / 40>	// This is the value applied to RegenMana
-if (<action>==Meditation)	// If we are meditating the bonus gets doubled.
-	tag.MeditBonus *=2
+
+ON=@skillwait
+if (<argn>!=46)
+sysmessage <def.scp.meditation_stop>
+f_medi_false
 endif
-RegenMana += <tag.MeditBonus>
+
+ON=@skillstart
+sysmessage <def.scp.meditation_stop>
+f_medi_false
+
+ON=@itemEQUIP
+if ((<ACT.layer> <= 24) && (<ACT.layer> >= 1))
+sysmessage <def.scp.meditation_stop>
+f_medi_false
+endif
+
+ON=@itemPICKUP_SELF
+sysmessage <def.scp.meditation_stop>
+f_medi_false
+
+ON=@itemPICKUP_GROUND
+sysmessage <def.scp.meditation_stop>
+f_medi_false
+
+ON=@UserStats
+if <mana> >= <maxmana>
+sysmessage <def.scp.meditation_maxmana>
+f_medi_false
+endif
+
+[function medi_armorpenalty]
+for 1 24
+	if <findlayer(<dlocal._for>).tag0.penalty.meditation> && !<findlayer(<dlocal._for>).tag0.magearmor>
+	return 1
+	endif
+endfor
+return 0
+
+[function medi_weaponholding]
+if <findlayer(<args>).uid> && (<findlayer(<args>).isweapon> || <findlayer(<args>).type> == t_shield) && !<findlayer(<args>).tag0.spellchanneling>
+return 1
+endif
+return 0
 
 [EOF]

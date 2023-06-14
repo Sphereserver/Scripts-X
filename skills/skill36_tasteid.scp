@@ -4,11 +4,21 @@
 //****************************************************************************
 VERSION=X1
 
+// SCRIPT CREDITS
+// --------------
+// jeem - all the script
+//
+// SCRIPT DOCUMENTATION
+// --------------------
+// Taste Identifation, yeah, it works actually.
+//
+
+
 [SKILL 36]
 DEFNAME=Skill_TasteId
 KEY=TasteID
 TITLE=Praegustator
-PROMPT_MSG=What would you like to taste?
+PROMPT_MSG=@,,2 502807 // What would you like to taste?
 DELAY=1.0
 STAT_STR=25
 STAT_DEX=15
@@ -19,10 +29,61 @@ BONUS_INT=80
 BONUS_STATS=50
 ADV_RATE=2.5,50.0,200.0
 
-ON=@Fail
-	SRC.SYSMESSAGE You cannot discern anything about this substance.
+on=@wait
+if <def.scp.NewSkills_TasteID> == 1
+targetf f_start_tasteid
+sysmessage <def.scp.tasteid_targ>
+f_skill_delay <getargv 0 <def.skill.36.waittime>>
+return 1
+endif
 
-ON=@Abort
-	SRC.SYSMESSAGE You decide against tasting anything.
+on=@select
+f_skill_delay <getargv 0 <def.skill.36.waittime>>
+
+on=@success
+f_skill_delay <getargv 1 <def.skill.36.waittime>>
+
+on=@fail
+f_skill_delay <getargv 2 <def.skill.36.waittime>>
+src.sysmessage <def.scp.tasteid_fail>
+
+[function f_start_tasteid]
+ref15 = <args>
+if <ref15.ischar>
+sysmessage <def.scp.tasteid_ischar>
+f_skill_delay <getargv 2 <def.skill.36.waittime>>
+return 1
+endif
+if <skillusequick tasteid <r1000>>
+	if <ref15.isfood>
+		if <ref15.morez>
+		sysmessage <def.scp.tasteid_ispoisoned>
+		else
+		sysmessage <def.scp.tasteid_notpoisoned>
+		endif
+	f_skill_delay <getargv 1 <def.skill.36.waittime>>
+	skillgain tasteid <eval (<tasteid> / 10) + 1>
+	elif <ref15.type> == t_potion
+	sysmessage <def.scp.tasteid_ispotion>
+	f_skill_delay <getargv 1 <def.skill.36.waittime>>
+	skillgain tasteid <eval (<tasteid> / 10) + 1>
+	elif <ref15.baseid> == i_keg_potion
+		if !<ref15.morex>
+		sysmessage <def.scp.tasteid_kegempty>
+		else
+		sysmessage <def.scp.tasteid_knowkeg>
+		sysmessage @,,1 A keg of <serv.itemdef.<ref15.more1>.name>
+		endif
+	f_skill_delay <getargv 1 <def.skill.36.waittime>>
+	skillgain tasteid <eval (<tasteid> / 10) + 1>
+	else
+	sysmessage <def.scp.tasteid_cannot>
+	skillgain tasteid <eval (<tasteid> / 7) + 1>
+	f_skill_delay <getargv 2 <def.skill.36.waittime>>
+	endif
+else
+	sysmessage <def.scp.tasteid_fail>
+	f_skill_delay <getargv 2 <def.skill.36.waittime>>
+endif
 
 [EOF]

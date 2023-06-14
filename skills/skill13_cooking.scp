@@ -22,7 +22,7 @@ ADV_RATE=2.5,50.0,200.0
 VALUES=1,20,80
 
 ON=@Fail
-	SRC.SYSMESSAGE You burn the food to a crisp! It's ruined.
+	SRC.MESSAGE @,,2 500686
 
 ON=@Abort
 	SRC.SYSMESSAGE You stop cooking the food.

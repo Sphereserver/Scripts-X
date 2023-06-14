@@ -72,6 +72,14 @@ for 0 9
 endfor
 TAG.craft.lastTen.<ctag0.craft.skill>=<LOCAL.NewLastTen>
 
+[function f_craft_carpentry_checkboard]
+if <args> == i_board
+   serv.newitem i_board
+   new.amount = <findid.i_log.amount>
+   findid.i_log.remove
+   ctag.craft.message = You've created the boards succesfully.
+   return 1
+endif
 
 [function craftcooking]
 if (<canmake <argv[0]>>) && (<argv[1]> > 0)
@@ -313,12 +321,10 @@ ENDIF
 [FUNCTION f_craft_cooking_checkfire]
 if (<serv.itemdef.<STREAT <serv.itemdef.<args>.resources>>.type> == t_meat_raw) || (<serv.itemdef.<STREAT <serv.itemdef.<args>.resources>>.type> == t_food_raw)
    IF !((<ISNEARTYPE t_fire 3>) || (<ISNEARTYPE t_forge 3>) || (<ISNEARTYPE t_campfire 3>))
-      serv.log non
       CTAG.craft.message=<DEF.cooking_check_notice>
       RETURN 1
    ENDIF
 endif
-serv.log ok
 RETURN 0
 
 [FUNCTION f_check_recipe] //Verification if player have the recipe of the item
@@ -329,6 +335,136 @@ if <tag0.recipe.<ARGS>>
 else
    return 1
 endif
+
+///////////////////blacksmith_enhance///////////////////
+////////////////////////////////////////////////////////
+[FUNCTION f_craft_blacksmith_enhance]
+LOCAL.DefnameValue=<SRC.CTAG0.craft.skill>_material_<SRC.dCTAG.craft.material.<SRC.CTAG.craft.skill>>
+
+IF (!<ISNEARTYPE t_forge 3>) || (!<ISNEARTYPE t_anvil 3>)
+   CTAG.craft.message=<DEF.SCP.craft_msg_smithenhanceneeds>
+   LOCAL.FailedRequirement=1
+ELIF !(<FINDLAYER(layer_hand1).ISTEVENT.t_runic_smith_hammer>)
+   CTAG.Craft.Message=<DEF.SCP.craft_enhance_notrunicB>
+   LOCAL.FailedRequirement=1
+ELIF (STRMATCH(<DEF.<LOCAL.DefnameValue>_resourceid>,))
+   CTAG.Craft.Message=<DEF.SCP.craft_enhance_notspecial>
+   LOCAL.FailedRequirement=1
+ELIF !(<SRC.RESTEST 5 <DEF.<LOCAL.DefnameValue>_resourceid>>)
+   CTAG.Craft.Message=<DEF.SCP.craft_enhance_nomaterial>
+   LOCAL.FailedRequirement=1
+ENDIF
+IF (<LOCAL.FailedRequirement>)
+   f_resenddialog d_craft_menu
+   RETURN 1
+ENDIF
+TARGETF f_craft_blacksmith_enhance_targ
+SYSMESSAGE <DEF.SCP.craft_enhance_targ>
+
+[FUNCTION f_craft_blacksmith_enhance_targ]
+LOCAL.DefnameValue=<SRC.CTAG0.craft.skill>_material_<SRC.dCTAG.craft.material.<SRC.CTAG.craft.skill>>
+
+IF (!<ISNEARTYPE t_forge 3>) || (!<ISNEARTYPE t_anvil 3>)
+   CTAG.craft.message=<DEF.SCP.craft_msg_smithenhanceneeds>
+   LOCAL.FailedRequirement=1
+ELIF !(<FINDLAYER(layer_hand1).ISTEVENT.t_runic_smith_hammer>)
+   CTAG.Craft.Message=<DEF.SCP.craft_enhance_notrunicB>
+   LOCAL.FailedRequirement=1
+ELIF (STRMATCH(<DEF.<LOCAL.DefnameValue>_resourceid>,))
+   CTAG.Craft.Message=<DEF.SCP.craft_enhance_notspecial>
+   LOCAL.FailedRequirement=1
+ELIF !(<SRC.RESTEST 5 <DEF.<LOCAL.DefnameValue>_resourceid>>)
+   CTAG.Craft.Message=<DEF.SCP.craft_enhance_nomaterial>
+   LOCAL.FailedRequirement=1
+ELIF (<ARGO.f_craft_blacksmith_alreadyEnhanced>)
+   CTAG.Craft.Message=<DEF.SCP.craft_enhance_already>
+   LOCAL.FailedRequirement=1
+ELIF (<ARGO.ATTR>&attr_magic)
+   CTAG.Craft.Message=<DEF.SCP.craft_enhance_enchanted>
+   LOCAL.FailedRequirement=1
+ELIF !(<ARGO.ISTEVENT.e_equipitem>)
+   CTAG.Craft.Message=<DEF.SCP.craft_enhance_notitem>
+   LOCAL.FailedRequirement=1
+ELIF (<ARGO.SKILLMAKE.1.KEY>!=<SRC.CTAG0.craft.skill>)
+   CTAG.Craft.Message=<DEF.SCP.craft_enhance_notitem>
+   LOCAL.FailedRequirement=1
+ELIF (<ARGO.CONT> != <FINDLAYER(layer_pack).UID>)
+   CTAG.Craft.Message=<DEF.SCP.craft_enhance_inpack>
+   LOCAL.FailedRequirement=1
+ENDIF
+IF (<LOCAL.FailedRequirement>)
+   f_resenddialog d_craft_menu
+   RETURN 1
+ENDIF
+SRC.CONSUME 5 <DEF.<LOCAL.DefnameValue>_resourceid>
+f_loopanim 11,3,1
+f_loopsound 42,3,1
+LOCAL.materialPenalty=<EVAL <STREAT <DEF.<LOCAL.DefnameValue>_skill>>>
+LOCAL.difficulty=<EVAL <Blacksmithing>-<ARGO.SKILLMAKE.1.VALUE>-<LOCAL.materialPenalty>>
+LOCAL.chance=<R1000>
+
+IF (<LOCAL.difficulty> < 0)
+   SYSMESSAGE <DEF.SCP.craft_enhance_totalfail>
+   ARGO.CONSUME
+   RETURN 1
+ENDIF
+IF (<LOCAL.Chance> > <LOCAL.difficulty>)
+   SYSMESSAGE <DEF.SCP.craft_enhance_fail>
+   RETURN 1
+ELSE
+   ARGO.f_craft_blacksmith_enhance_item
+   SYSMESSAGE <DEF.SCP.craft_enhance_success>
+ENDIF
+
+[FUNCTION f_craft_blacksmith_alreadyEnhanced]
+LOCAL.BadResources="i_ingot_copper,i_ingot_gold,i_ingot_rose,i_ingot_agapite,i_ingot_tyrian,i_ingot_silver,i_ingot_shadow,i_ingot_byzantine,i_ingot_magmite,i_ingot_verite,i_ingot_bloodrock,i_ingot_blackrock,i_ingot_valorite,i_ingot_lavarock,i_ingot_royal,i_ingot_mytheril,i_ingot_titanium,i_ingot_zanite"
+IF (<TAG0.Enhanced>)
+   RETURN 1
+ENDIF
+ARGS=<SERV.ITEMDEF.<DEFNAME>.RESOURCES>
+FOR 1 <ARGV>
+   IF (STRMATCH(*<SERV.ITEMDEF.<DEFNAME>.RESOURCES.<LOCAL._FOR>.KEY>*,<LOCAL.BadResources>))
+      RETURN 1
+   ENDIF
+ENDFOR
+RETURN 0
+
+[FUNCTION f_craft_blacksmith_enhance_item]
+LOCAL.DefnameValue=<SRC.CTAG0.craft.skill>_material_<SRC.dCTAG.craft.material.<SRC.CTAG.craft.skill>>
+LOCAL.Material=<DEF.<LOCAL.DefnameValue>_resourceid>
+
+TAG.Enhanced=<LOCAL.Material>
+IF (<TAG0.REQSTR>)
+   TAG0.REQSTR += <EVAL <DEF.<LOCAL.DefnameValue>_modreqstr>>
+ENDIF
+IF (<HITPOINTS>)
+   IF (<DEF.<LOCAL.DefnameValue>_durability>==3)
+      LOCAL.DurabilityIncrease=<R24,36>
+      MORE1L += <LOCAL.DurabilityIncrease>
+      MORE1H += <LOCAL.DurabilityIncrease>
+   ELSEIF (<DEF.<LOCAL.DefnameValue>_durability>==4)
+      LOCAL.DurabilityIncrease=<R24,36>
+      MORE1L += <LOCAL.DurabilityIncrease>
+      MORE1H += <LOCAL.DurabilityIncrease>
+   ENDIF
+ENDIF
+NAME=<DEF.<LOCAL.DefnameValue>> <NAME>
+COLOR=<DEF.<LOCAL.DefnameValue>_color>
+ATTR |= attr_identified
+
+IF (<ISWEAPON>)
+   TAG0.PhysicalDamagePercent += <EVAL <getargv 0 <DEF.<LOCAL.DefnameValue>_moddamage>>>
+   TAG0.FireDamagePercent += <EVAL <getargv 1 <DEF.<LOCAL.DefnameValue>_moddamage>>>
+   TAG0.ColdDamagePercent += <EVAL <getargv 2 <DEF.<LOCAL.DefnameValue>_moddamage>>>
+   TAG0.PoisonDamagePercent += <EVAL <getargv 3 <DEF.<LOCAL.DefnameValue>_moddamage>>>
+   TAG0.EnergyDamagePercent += <EVAL <getargv 4 <DEF.<LOCAL.DefnameValue>_moddamage>>>
+ELSEIF (<ISARMOR>)
+   TAG0.ResPhysical += <EVAL <getargv 0 <DEF.<LOCAL.DefnameValue>_modresist>>>
+   TAG0.ResFire += <EVAL <getargv 1 <DEF.<LOCAL.DefnameValue>_modresist>>>
+   TAG0.ResCold += <EVAL <getargv 2 <DEF.<LOCAL.DefnameValue>_modresist>>>
+   TAG0.ResPoison += <EVAL <getargv 3 <DEF.<LOCAL.DefnameValue>_modresist>>>
+   TAG0.ResEnergy += <EVAL <getargv 4 <DEF.<LOCAL.DefnameValue>_modresist>>>
+ENDIF
 
 
 [eof]

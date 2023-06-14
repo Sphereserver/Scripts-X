@@ -8,7 +8,7 @@ VERSION=X1
 DEFNAME=Skill_Animal_Lore
 KEY=AnimalLore
 TITLE=Naturalist
-PROMPT_MSG=What animal should I look at?
+PROMPT_MSG=@,,2 500328 //What animal should I look at?
 DELAY=3.0,1.0
 STAT_STR=0
 STAT_DEX=0
@@ -19,10 +19,122 @@ BONUS_INT=100
 BONUS_STATS=50
 ADV_RATE=2.5,50.0,200.0
 
-ON=@Fail
-	SRC.SYSMESSAGE You can't think of anything off hand
+on=@wait
+if <def.scp.NewSkills_AnimalLore> == 1
+sysmessage <def.scp.animallore_targ>
+targetf f_animallore_start
+f_skill_delay <getargv 0 <def.skill.2.waittime>>
+return 1
+endif
 
-ON=@Abort
-	SRC.SYSMESSAGE You stop trying to understand the creature.
+on=@select
+f_skill_delay <getargv 0 <def.skill.2.waittime>>
+
+on=@success
+f_skill_delay <getargv 1 <def.skill.2.waittime>>
+
+ON=@fail
+f_skill_delay <getargv 2 <def.skill.2.waittime>>
+sysmessage <def.scp.animallore_fail>
+
+[function f_animallore_start]
+if <skillusequick animallore <r60>>
+	if <argo.brain>
+	argo.f_resenddialog d_animal_lore
+	skillgain animallore <eval (<animallore> / 10) + 1>
+	f_skill_delay <getargv 1 <def.skill.2.waittime>>
+	return 1
+	endif
+endif
+f_skill_delay <getargv 2 <def.skill.2.waittime>>
+skillgain animallore <eval (<animallore> / 7) + 1>
+sysmessage <def.scp.animallore_fail>
+
+
+[dialog d_animal_lore]
+10,10
+
+page 0
+resizepic 0 0 9390 250 265
+dhtmlgump 28 5 200 25 0 0 <def0.center><def.i><argo.name><def.ie><def0.centere>
+
+page 1
+gumppic 25 35 2086
+dhtmlgump 43 32 200 20 0 0 <def.bfont_dblue><def.big>Attributes
+xmfhtmlgump 35 50 200 20 1049578 0 0 // Hits
+dhtmlgump 180 50 100 20 0 0 <argo.hits>/<argo.maxhits>
+xmfhtmlgump 35 65 200 20 1049579 0 0 // Stamina
+dhtmlgump 180 65 100 20 0 0 <argo.stam>/<argo.maxstam>
+xmfhtmlgump 35 80 200 20 1049580 0 0 // Mana
+dhtmlgump 180 80 100 20 0 0 <argo.mana>/<argo.maxmana>
+xmfhtmlgump 35 95 200 20 1061146 0 0 // Strength
+dhtmlgump 180 95 100 20 0 0 <argo.str>
+xmfhtmlgump 35 110 200 20 1061147 0 0 // Dexterity
+dhtmlgump 180 110 100 20 0 0 <argo.dex>
+xmfhtmlgump 35 125 200 20 1061148 0 0 // Intelligence
+dhtmlgump 180 125 100 20 0 0 <argo.int>
+gumppic 25 155 2086
+dhtmlgump 43 152 200 20 0 0 <def.bfont_dblue><def.big>Loyalty Rating
+xmfhtmlgump 35 172 200 20 1049601 0 0 // TO-DO: Fix this according to NPC's food.
+gumppic 25 200 2086
+dhtmlgump 43 197 200 20 0 0 <def.bfont_dblue><def.big>Miscellaneous
+xmfhtmlgump 35 217 200 20 1049581 0 0
+dhtmlgump 180 217 100 20 0 0 <argo.ar>
+button 210 244 5601 5605 0 2 0
+button 185 244 5603 5607 0 1 0
+
+page 2
+gumppic 25 35 2086
+dhtmlgump 43 32 200 20 0 0 <def.bfont_dblue><def.big>Combat Ratings
+xmfhtmlgump 35 50 150 20 1044103 0 0
+dhtmlgump 180 50 100 20 0 0 <argo.wrestling>
+xmfhtmlgump 35 65 150 20 1044087 0 0
+dhtmlgump 180 65 100 20 0 0 <argo.tactics>
+xmfhtmlgump 35 80 150 20 1044086 0 0
+dhtmlgump 180 80 100 20 0 0 <argo.magicresistance>
+xmfhtmlgump 35 95 150 20 1044061 0 0
+dhtmlgump 180 95 100 20 0 0 <argo.anatomy>
+xmfhtmlgump 35 110 150 20 1044090 0 0
+dhtmlgump 180 110 100 20 0 0 <argo.poisoning>
+gumppic 25 148 2086
+dhtmlgump 43 145 200 20 0 0 <def.bfont_dblue><def.big>Lore & Knowledge
+xmfhtmlgump 35 160 150 20 1044085 0 0
+dhtmlgump 180 160 100 20 0 0 <argo.magery>
+xmfhtmlgump 35 175 150 20 1044076 0 0
+dhtmlgump 180 175 100 20 0 0 <argo.evaluatingintel>
+xmfhtmlgump 35 190 150 20 1044106 0 0
+dhtmlgump 180 190 100 20 0 0 <argo.meditation>
+button 210 244 5601 5605 0 3 0
+button 185 244 5603 5607 0 1 0
+
+page 3
+gumppic 25 35 2086
+dhtmlgump 43 32 200 20 0 0 <def.bfont_dblue><def.big>Preferred Foods
+xmfhtmlgump 35 50 150 20 <foodcheck <argo.foodtype>> 0 0
+gumppic 25 83 2086
+dhtmlgump 43 80 200 20 0 0 <def.bfont_dblue><def.big>Pack Instincts
+xmfhtmlgump 35 100 150 20 3000340 0 0
+button 210 244 5601 5605 0 1 0
+button 185 244 5603 5607 0 2 0
+
+// SCRIPT DOCUMENTATION
+// --------------------
+// foodcheck (function)
+// - returns the cliloc used to display the foodtype
+[FUNCTION foodcheck]
+IF (<isempty <ARGV[0]>>)
+	return 3000340
+ELIF  (<STREAT <ARGV[0]>>== t_meat_raw)
+	return 1049564
+ELIF ((<STREAT <ARGV[0]>>== t_fruit) || (<STREAT <ARGV[0]>>== t_crops))
+	return 1049565
+ELIF ((<STREAT <ARGV[0]>>== t_grass) || (<STREAT <ARGV[0]>>== t_grain))
+	return 1049566
+ELSE
+	return 3000340
+ENDIF
+
+[comment animallore]
+animallore.start	1049594
 
 [EOF]

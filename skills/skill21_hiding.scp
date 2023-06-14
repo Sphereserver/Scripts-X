@@ -18,10 +18,126 @@ BONUS_INT=20
 BONUS_STATS=25
 ADV_RATE=2.5,50.0,200.0
 
+
+on=@Wait
+if <def.scp.NewSkills_Hiding> == 1
+f_start_hiding
+f_skill_delay <getargv 0 <def.skill.21.waittime>>
+return 1
+endif
+
+on=@select
+f_skill_delay <getargv 0 <def.skill.21.waittime>>
+
+on=@success
+f_skill_delay <getargv 1 <def.skill.21.waittime>>
+
 ON=@Fail
-	SRC.SYSMESSAGE You can't seem to hide here.
+message <def.scp.hiding_fail>
+f_skill_delay <getargv 2 <def.skill.21.waittime>>
 
 ON=@Abort
-	SRC.SYSMESSAGE You stop trying to hide.
+message <def.scp.hiding_abort>
+
+
+[function f_start_hiding]
+if (<action> == skill_magery) || (<action> == skill_necromancy) ||  (<action> == skill_chivalry) || (<action> == skill_spellweaving) || (<action> == skill_mysticism) // do bushido and ninjitsu count as spell casting?
+sysmessage <def.scp.hiding_spellactive>
+return 1
+endif
+if (<uid.<region.uid>.type> == t_multi) || (<uid.<region.uid>.type> == t_multi_custom)
+	if <uid.<region.uid>.link.houseplayeraccess <uid>> >= 2
+	local.inhouse = 1
+	endif
+endif
+local.range = <eval (18 - (<hiding> / 100))>
+forchars <dlocal.range>
+	if (<memoryfindtype.memory_war_targ.link> == <src>) && (<canseelos <src>>)
+	local.combat = 1
+	endif
+endfor
+if <local.combat>
+	sysmessage <def.scp.hiding_activecombat>
+	return 1
+endif
+if !<local.inhouse>
+	if !<r0,<eval ((<hiding> / 100) - 1)>> // we might need a better success chance formula
+	local.fail = 1
+	else
+	skillgain hiding <min 100,<eval (<hiding> / 10)>>
+	endif
+endif
+if <local.fail>
+skillgain hiding <eval (<hiding> / 7) +1>
+sysmessage <def.scp.hiding_fail>
+f_skill_delay <getargv 2 <def.skill.21.waittime>>
+else
+sysmessage <def.scp.hiding_success>
+f_skill_delay <getargv 1 <def.skill.21.waittime>>
+f_hide
+endif
+
+[function f_hide]
+addbuff 1012,1075655,1075656,0,0
+removefromview
+flags |= statf_hidden
+events +e_skill_hiding
+update
+
+[function f_reveal]
+if <flags>&statf_hidden
+sysmessage <def.scp.hiding_reveal>
+endif
+flags &= ~statf_hidden
+events -e_skill_hiding
+events -e_skill_stealth
+dspeech -spk_hidden
+tag.stepstealth =
+removebuff 1012
+update
+
+[events e_skill_hiding]
+on=@stepstealth
+if <flags>&statf_onhorse
+f_reveal
+endif
+if <stealth> >= 25.0
+f_start_stealth
+argn1 = 0
+endif
+events -e_skill_hiding
+
+on=@skillstart
+if !((<argn1> == detectinghidden) || (<argn1> == itemid) || (<argn1> == anatomy) || (<argn1> == armslore) || (<argn1> == animallore) || (<argn1> == evaluatingintel) || (<argn1> == forensics) || (<argn1> == poisoning))
+f_reveal
+endif
+
+on=@skillwait
+if !((<argn1> == detectinghidden) || (<argn1> == itemid) || (<argn1> == anatomy) || (<argn1> == armslore) || (<argn1> == animallore) || (<argn1> == evaluatingintel) || (<argn1> == forensics) || (<argn1> == poisoning))
+f_reveal
+endif
+
+on=@personalspace
+src.sysmessage <def.scp.hiding_shoveinvis>
+return 1
+
+on=@spelleffect
+if <argn1> == s_reveal
+local.divisor = <eval (<hiding> + <stealth>)>
+	if <local.divisor> > 0
+	local.chance = <eval ((50 * (<src.magery> + <src.detectinghidden>)) / <local.divisor>)>
+	else
+	local.chance = 1000
+	endif
+	if <local.chance> > <r1000>
+	f_reveal
+	else
+	return 1
+	endif
+endif
+
+[speech spk_hidden]
+on=*
+f_reveal
 
 [EOF]

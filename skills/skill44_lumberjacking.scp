@@ -35,7 +35,7 @@ ON=@Success
 
 	
 ON=@Fail
-	SRC.SYSMESSAGE You hack at the tree for a while, but fail to produce any useable wood.
+	SRC.SYSMESSAGE @,,2 500495
 
 ON=@Abort
 	SRC.SYSMESSAGE You decide not to chop wood for now.

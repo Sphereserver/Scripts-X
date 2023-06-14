@@ -25,7 +25,7 @@ ON=@Select
 	return 1
 
 ON=@Fail
-	SRC.SYSMESSAGE Thy trembling hand results in an unusable map.
+	SRC.MESSAGE @,,2 501793
 
 ON=@Abort
 	SRC.SYSMESSAGE You fail to complete the map.

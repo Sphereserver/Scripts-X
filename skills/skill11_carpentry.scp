@@ -21,10 +21,10 @@ ADV_RATE=2.5,50.0,200.0
 VALUES=1,20,80
 
 ON=@Fail
-	SRC.SYSMESSAGE You fail to create the item
+src.sysmessage @,,2 <def.scp.craft_msg_fail>
 
 ON=@Abort
-	SRC.SYSMESSAGE You fail to complete the item.
+src.sysmessage @,,2 <def.scp.craft_msg_fail>
 
 
 [EOF]

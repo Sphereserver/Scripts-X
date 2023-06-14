@@ -42,6 +42,7 @@ core/defs_mounts.scp
 core/defs_sounds.scp
 core/defs_types_hardcoded.scp
 core/messages.scp
+core/messages_scripts.scp
 core/serv_triggers.scp
 core/magic_preaos.scp
 core/dialogs/
@@ -49,6 +50,7 @@ core/dialogs/admin/
 core/dialogs/admin/language/
 core/dialogs/region_creator/
 //core/dialogs/legacy/
+core/script_setting/
 skills/
 speech/
 speech/human/

@@ -30,8 +30,14 @@ if (<serv.chardef.<obody>.can>&mt_female)	//Checking on chardef directly here be
 endif
 return 0
 
+[FUNCTION f_ishumanoid]
+if (<f_ismale> || <f_isfemale>)
+RETURN 1
+endif
+RETURN 0
+
 [FUNCTION f_isPlayableChar]
-IF <IsHuman> || <IsElf> || <IsGargoyle>
+IF <f_IsHuman> || <f_IsElf> || <f_IsGargoyle>
 	RETURN 1
 ENDIF
 RETURN 0

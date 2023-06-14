@@ -4,6 +4,15 @@
 //****************************************************************************
 VERSION=X1
 
+//
+// SCRIPT CREDITS
+// --------------
+// Pyromapes2k - All the script
+//
+// SCRIPT DOCUMENTATION
+// --------------------
+// OSI-Like & Customizable Veterinary system
+
 [SKILL 39]
 DEFNAME=Skill_Vet
 KEY=Veterinary
@@ -19,10 +28,110 @@ BONUS_INT=60
 BONUS_STATS=20
 ADV_RATE=10.0,200.0,800.0
 
+ON=@Success
+if <def.scp.NewSkills_Poisoning> == 0
+return 0
+endif
+if <act.f_veterinary_bandage_cure> && <def0.scp.Veterinary_PoisonNoBandage>
+return 1
+endif
+
 ON=@Fail
-	SRC.SYSMESSAGE You apply the bandages, but they barely help.
+    SRC.SYSMESSAGE You apply the bandages, but they barely help.
 
 ON=@Abort
-	SRC.SYSMESSAGE You stop applying the bandages.
+    SRC.SYSMESSAGE You stop applying the bandages.
+	
+[DEFNAME Veterinary]
+//General Defs
+
+//Is Healing your pet always legal regardless of its status?
+VetSys_PetAlwaysLegal = 1
+//Is Healing Red Creatures a crime (murderers/evil)?
+VetSys_RedCrime = 0
+//Is Healing Criminal Creatures a crime (criminals)?
+VetSys_GrayCrime = 0
+//Is Healing Orange Creatures a crime (enemy guild/faction)?
+VetSys_OrangeCrime = 0
+//Is Healing Neutral Creatures a crime (neutral)?
+VetSys_NeutralCrime = 0
+
+//Player must stay within this amount of tiles to heal a target
+//Start: Max distance when targetting someone to heal
+//During: Max distance to stay within while healing
+//End: Distance you be be within when the heal ends
+VetSys_HealDistStart = 3
+VetSys_HealDistDuring = 4
+VetSys_HealDistEnd = 3
+
+//If the animal is poisoned can the bandages heal as well as cure? (1 = yes, 0 = no)
+//This overrides the poison system def for this.
+VetSys_CureStillHeals = 0
+
+//Base percent chance to heal
+VetSys_HealChance_Base = 33
+
+//Amount to divide veterinary and animal lore by before applying the result to the heal chance
+//The results of each are added together to form the additional percentage
+VetSys_HealChanceDivide_Vet = 60
+VetSys_HealChanceDivide_AnLo = 15
+
+//Healing Defs (Time to Heal)
+
+//The maximum time it can take to heal yourself in seconds.
+//(Healing yourself with vet is unlikely, but I kept it in just in case)
+VetSys_Self_BaseTime = 11
+//This is what to divide dexterity by before subtracting the result from the base time.
+VetSys_Self_DexDivide = 20
+
+//Same as above, but for healing others.
+//As per OSI standard, the settings here set the heal time as 2 seconds with no alterations from dex
+VetSys_Other_BaseTime = 2
+VetSys_Other_DexDivide = 30000
+
+
+//Healing Defs (Amount to Heal)
+
+//Formula for min & max healed is (Animal Lore/<AnLoDivide> + Veterinary/<VetDivide> + <Base>)
+VetSys_Min_Base = 3
+VetSys_Min_AnLoDivide = 60
+VetSys_Min_VetDivide = 60
+
+VetSys_Max_Base = 10
+VetSys_Max_AnLoDivide = 60
+VetSys_Max_VetDivide = 30
+
+//This is the amount to divide the pets max health with before adding it to the amount healed
+//OSI default for this is 100
+VetSys_Max_VetHealthDivide = 100
+
+
+//Healing Defs (Interruption)
+
+//The percent of healing lost when you are interrupted
+VetSys_HealLoss = 35
+
+//The amount of damage a monster/player must deal to interrupt healing (This is checked before armor)
+VetSys_InterruptMonster = 26
+VetSys_InterruptPlayer = 19
+
+
+//Healing Defs (Curing)
+//NOTE: I have not added support for resurrecting bonded pets (since there aren't any by default). I will do this if I also script a taming system.
+
+//Minimum Animal Lore and Veterinary needed to cure
+//These override the poison system defs for this.
+VetSys_Cure_MinAnLo = 600
+VetSys_Cure_MinVet = 600
+
+//Chance to cure is only used for default poison. The new poison system uses its own formula.
+//Percent chance to cure at the minimum skill
+//Base percent chance to cure
+VetSys_CureChance_Base = 33
+
+//Amount to divide additional veterinary and animal lore by before applying the result to the cure chance
+//The results of each are added together to form the additional percentage
+VetSys_CureChanceDivide_AnLo = 12
+VetSys_CureChanceDivide_Vet = 11
 
 [EOF]

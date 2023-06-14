@@ -8,7 +8,7 @@ VERSION=X1
 DEFNAME=Skill_Begging
 KEY=Begging
 TITLE=Beggar
-PROMPT_MSG=To whom do you wish to grovel?
+PROMPT_MSG=@,,2 500397 // To whom do you wish to grovel?
 DELAY=2.0
 STAT_STR=5
 STAT_DEX=25
@@ -19,7 +19,78 @@ BONUS_INT=50
 BONUS_STATS=10
 ADV_RATE=2.5,50.0,200.0
 
-ON=@Abort
-	SRC.SYSMESSAGE You fail utterly in your attempt to grovel.
+on=@select
+f_skill_delay <getargv 0 <def.skill.6.waittime>>
+
+on=@start
+if <def.scp.NewSkills_Begging> == 1
+	if <act.isitem>
+		sysmessage <def.scp.begging_isitem>
+		f_skill_delay <getargv 2 <def.skill.6.waittime>>
+		return 1
+	endif
+	if !<act.brain>
+		sysmessage <def.scp.begging_isplayer>
+		f_skill_delay <getargv 2 <def.skill.6.waittime>>
+		return 1
+	elseif !((<act.ismale>) || (<act.isfemale>))
+		sysmessage <def.scp.begging_ismonster>
+		f_skill_delay <getargv 2 <def.skill.6.waittime>>
+		return 1
+	elseif <distance <act.uid>> > 4
+		sysmessage @,,2 <act.sex 500401/500402> // You are too far away to beg from him/her.
+		f_skill_delay <getargv 2 <def.skill.6.waittime>>
+		return 1
+	elseif <findlayer.layer_horse.uid>
+		sysmessage <def.scp.begging_mounted>
+		f_skill_delay <getargv 2 <def.skill.6.waittime>>
+		return 1
+	endif
+face <act.uid>
+f_loopanim 32,4,1
+	if <skillusequick begging <act.int>>
+		timerf 4,f_begging_success <act>
+	else
+		timerf 4,f_begging_fail <act>
+	endif
+	return 1
+endif
+
+on=@success
+f_skill_delay <getargv 1 <def.skill.6.waittime>>
+
+on=@fail
+sysmessage <def.scp.begging_fail>
+f_skill_delay <getargv 2 <def.skill.6.waittime>>
+
+on=@targetcancel
+f_skill_delay <getargv 3 <def.skill.6.waittime>>
+
+
+[function f_begging_success]
+ref1 = <args>
+if <ref1.gold> < 10
+	ref1.say <def.scp.begging_withoutgold>
+else
+	local.getgold = <eval <ref1.gold>/10>
+	local.max = <eval (10 + (<fame> / 2500))>
+	if <local.max> > 14
+		local.max = 14
+	elseif <local.max> < 10
+		local.max = 10
+	endif
+	if <local.getgold> > <local.max>
+		local.getgold = <local.max>
+	endif
+	ref1.consume <dlocal.getgold> i_gold
+	newgold <dlocal.getgold>
+	f_skill_delay <eval <getargv 1 <def.skill.6.waittime>>>
+	skillgain begging <eval (<begging> / 10) + 1>
+endif
+
+[function f_begging_fail]
+sysmessage <def.scp.begging_fail>
+skillgain begging <eval (<begging> / 7) + 1>
+f_skill_delay <getargv 2 <def.skill.6.waittime>>
 
 [EOF]

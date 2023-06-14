@@ -18,4 +18,8 @@ BONUS_INT=0
 BONUS_STATS=10
 ADV_RATE=8.5,120.0,680.0
 
+//on=@start
+//timerd = <eval <f_combatsys_hitspeed> / 2>
+//return 2
+
 [EOF]

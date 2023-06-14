@@ -8,7 +8,7 @@ VERSION=X1
 DEFNAME=Skill_Appraise
 KEY=ItemID
 TITLE=Merchant
-PROMPT_MSG=What do you wish to appraise and identify?
+PROMPT_MSG=@,,2 500343 //What do you wish to appraise and identify?
 DELAY=1.0
 STAT_STR=0
 STAT_DEX=0
@@ -19,10 +19,45 @@ BONUS_INT=100
 BONUS_STATS=25
 ADV_RATE=2.5,50.0,200.0
 
-ON=@Fail
-	SRC.SYSMESSAGE You can't think of anything off hand
 
-ON=@Abort
-	SRC.SYSMESSAGE You stop trying to appraise the item.
+on=@wait
+IF <def.scp.NewSkills_ItemID> == 1
+	sysmessage @,,2 500343
+	targetf f_itemid_start
+	f_skill_delay <getargv 0 <def.skill.3.waittime>>
+	return 1
+ENDIF
+
+ON=@Select
+f_skill_delay <getargv 0 <def.skill.3.waittime>>
+
+ON=@Success
+f_skill_delay <getargv 1 <def.skill.3.waittime>>
+
+ON=@Fail
+f_skill_delay <getargv 2 <def.skill.3.waittime>>
+SRC.MESSAGE @,,2 500334
+
+[function f_itemid_start]
+if <skillusequick itemid <r60>>
+	if <argo.isitem>
+		if (<argo.isarmor>) || (<argo.isweapon>)
+		argo.attr |= attr_identified
+		argo.trigger @click
+		skillgain itemid <eval (<itemid> / 10) + 1>
+		f_skill_delay <getargv 1 <def.skill.3.waittime>>
+		else
+		sysmessage @,,2 500353 // You are not certain...
+		f_skill_delay <getargv 2 <def.skill.3.waittime>>
+		endif
+	elif <argo.ischar>
+		argo.trigger @click
+		f_skill_delay <getargv 1 <def.skill.3.waittime>>
+	endif
+else
+	sysmessage @,,2 500353 // You are not certain...
+	skillgain itemid <eval (<itemid> / 7) + 1>
+	f_skill_delay <getargv 2 <def.skill.3.waittime>>
+endif
 
 [EOF]

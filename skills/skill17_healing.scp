@@ -4,6 +4,14 @@
 //****************************************************************************
 VERSION=X1
 
+// SCRIPT CREDITS
+// --------------
+// Pyromapes2k - All the script
+//
+// SCRIPT DOCUMENTATION
+// --------------------
+// OSI-Like but at the same time a custom healing system.
+
 [SKILL 17]
 DEFNAME=Skill_Healing
 KEY=Healing
@@ -20,10 +28,686 @@ BONUS_INT=70
 BONUS_STATS=20
 ADV_RATE=10.0,100.0,250.0
 
+on=@success
+if <def.scp.NewSkills_Poisoning> == 0
+return 0
+endif
+if <act.f_bandage_cure> && <def.scp.Healing_PoisonNoBandage>
+return 1
+endif
+
 ON=@Fail
-	SRC.SYSMESSAGE You apply the bandages, but they barely help.
+    SRC.SYSMESSAGE You apply the bandages, but they barely help.
 
 ON=@Abort
-	SRC.SYSMESSAGE You stop applying the bandages.
+    SRC.SYSMESSAGE You stop applying the bandages.
+
+[defname healing]
+//general defs
+//healing item used for each brain type (0 = healing not permitted)
+//note: please only use the two items provided here or zero for each brain
+healsys_brain_0 = i_new_bandageheal  //players
+healsys_brain_1 = i_new_bandagevet  //animal
+healsys_brain_2 = i_new_bandageheal  //human
+healsys_brain_3 = i_new_bandageheal  //healer
+healsys_brain_4 = i_new_bandageheal  //guard
+healsys_brain_5 = i_new_bandageheal  //banker
+healsys_brain_6 = i_new_bandageheal  //vendor
+healsys_brain_7 = i_new_bandageheal  //beggar
+healsys_brain_8 = i_new_bandageheal  //animal trainer
+healsys_brain_9 = i_new_bandageheal  //thief
+healsys_brain_10 = 0  //monster
+healsys_brain_11 = 0  //berserk
+healsys_brain_12 = 0  //undead
+healsys_brain_13 = i_new_bandagevet  //dragon
+healsys_brain_14 = i_new_bandageheal  //vendor offduty
+
+//////////////////////(end) defs for both healing & vet (end)///////////////////////////
+
+//is healing red players a crime (murderers)?
+healsys_redcrime = 1
+//is healing gray players a crime (criminals)?
+healsys_graycrime = 1
+//is healing orange players a crime (enemy guild/faction)?
+healsys_orangecrime = 1
+//is healing red monsters a crime (evil)?
+healsys_redmonstercrime = 0
+//is healing gray monsters a crime (neutral)?
+healsys_graymonstercrime = 0
+
+//player must stay within this amount of tiles to heal a target
+//start: max distance when targetting someone to heal
+//during: max distance to stay within while healing
+//end: distance you must be within when the heal ends
+healsys_healdiststart = 2
+healsys_healdistduring = 4
+healsys_healdistend = 3
+
+//if the player is poisoned can the bandages heal as well as cure? (1 = yes, 0 = no)
+//this overrides the poison system def for this.
+healsys_curestillheals = 0
+
+//base percent chance to heal
+healsys_healchance_base = 33
+
+//amount to divide healing and anatomy by before applying the result to the heal chance
+//the results of each are added together to form the additional percentage
+healsys_healchancedivide_anat = 60
+healsys_healchancedivide_heal = 15
+
+//healing defs (time to heal)
+
+//the maximum time it can take to heal yourself in seconds.
+healsys_self_basetime = 11
+//this is what to divide dexterity by before subtracting the result from the base time.
+healsys_self_dexdivide = 20
+
+//same as above, but for healing others.
+healsys_other_basetime = 4
+healsys_other_dexdivide = 60
+
+//healing defs (amount to heal)
+
+//formula for min & max healed is (anatomy/<anatdivide> + healing/<healdivide> + <base>)
+//below values are osi defaults.
+healsys_min_base = 3
+healsys_min_anatdivide = 60
+healsys_min_healdivide = 60
+
+healsys_max_base = 10
+healsys_max_anatdivide = 60
+healsys_max_healdivide = 30
+
+//healing defs (interruption)
+
+//the percent of healing lost when you are interrupted
+healsys_healloss = 35
+
+//the amount of damage a monster/player must deal to interrupt healing (this is checked before armor)
+healsys_interruptmonster = 26
+healsys_interruptplayer = 19
+
+//healing defs (curing & resurrecting)
+
+//minimum anatomy and healing needed to cure
+//these override the poison system defs for this.
+healsys_cure_minanat = 610
+healsys_cure_minheal = 610
+
+//chance to cure is only used for default poison. the new poison system uses its own formula.
+//percent chance to cure at the minimum skill
+//base percent chance to cure
+healsys_curechance_base = 33
+
+//amount to divide additional healing and anatomy by before applying the result to the cure chance
+//the results of each are added together to form the additional percentage
+healsys_curechancedivide_anat = 12
+healsys_curechancedivide_heal = 11
+
+//minimum anatomy and healing needed to resurrect
+healsys_res_minanat = 810
+healsys_res_minheal = 810
+
+//additional time it takes to resurrect a target in seconds
+healsys_resdelay = 5
+
+//percent chance to resurrect at the minimum skill
+healsys_reschance_base = 25
+
+//amount to divide additional healing and anatomy by before applying the result to the resurrection chance
+//the results of each are added together to form the additional percentage
+healsys_reschancedivide_anat = 15
+healsys_reschancedivide_heal = 15
+
+//clilocs
+healcliloc_towhoapply = 500948
+healcliloc_cannotuseonthat = 500970
+healcliloc_cannothealthat = 500951
+healcliloc_toofaraway = 500446
+healcliloc_beingnotdamaged = 500955
+healcliloc_youbeginapply = 500956
+healcliloc_attemptingtoheal = 1008078 //uses an argument (name of healer)
+healcliloc_didnotstayclose = 500963
+
+healcliloc_youfinishapply = 500969
+healcliloc_youhavebeenhealedfor = 1060203 //uses an argument (amount healed)
+
+healcliloc_youapplybut = 500968
+healcliloc_healwhatlittle = 500967
+
+healcliloc_beencured = 1010059
+healcliloc_curedtarget = 1010058
+healcliloc_failcuretarget = 1010650
+
+healcliloc_abletores = 500965
+healcliloc_unabletores = 500966
+
+healcliloc_fingersslip = 503251
+
+[function getbandageitem]
+if <def0.scp.healing_basedonform>
+//FIXME: I removed the following code, but the new line replacing it needs to be tested...
+//serv.newnpc = <body>
+//new.p = 1,1
+//local.brain = <new.npc>
+//new.remove
+local.brain=<SERV.CHARDEF.<BODY>.brain>//FIXME: Needs testing with base and derivitive creatures
+return <def0.healsys_brain_<dlocal.brain>>
+endif
+return <def0.healsys_brain_<npc>>
+
+[typedef t_bandage]
+on=@dclick
+if <def0.scp.newskills_healing>
+src.sysmessage @,,2 <def0.healcliloc_towhoapply>
+target
+return 1
+endif
+
+on=@targon_char
+if <def0.scp.newskills_healing>
+ref1 = <src.targ.uid>
+src.consume i_new_bandageheal
+src.consume i_new_bandagevet
+local.healitem=<ref1.getbandageitem>
+	if <serv.itemdef.<local.healitem>>
+	serv.newitem = <local.healitem>
+	new.link = <ref1.uid>
+	src.equip <new.uid>
+		if <src.restest <local.healitem>>
+		consume
+		endif
+	else
+	src.sysmessage @,,2 <def0.healcliloc_cannothealthat>
+	endif
+return 1
+endif
+
+on=@targon_item
+if <def0.scp.newskills_healing>
+	if <src.distance <src.targ.uid>> > <def0.healsys_healdiststart>
+	src.sysmessage @,,2 <def0.healcliloc_toofaraway>
+	else
+	src.sysmessage @,,2 <def0.healcliloc_cannotuseonthat>
+	endif
+return 1
+endif
+
+[ITEMDEF i_new_bandageheal]
+ID=i_memory
+TYPE=t_eq_script
+NAME=bandage memory
+
+on=@equip
+if <src.distance <link.uid>> > <def0.healsys_healdiststart>
+src.sysmessage @,,2 <def0.healcliloc_toofaraway>
+remove
+return 1
+endif
+if <link.hits> >= <link.maxhits>
+	if ((!<link.restest i_memory_poison_new>) && (!<link.restest i_rune_poison>))
+	src.sysmessage @,,2 <def0.healcliloc_beingnotdamaged>
+	remove
+	return 1
+	endif
+endif
+if <link.tag0.noheal>
+	src.sysmessage @,,2 <qval (<link> == <src>) ? 1005000:1010398>
+	return 1
+endif
+
+src.sysmessage @,,2 <def0.healcliloc_youbeginapply>
+
+local.flag = <link.notogetflag>
+if <link.isplayer>
+	if ((<local.flag>==6) && (<def0.healsys_redcrime>))
+	src.criminal
+	elif ((<local.flag>==4) && (<def0.healsys_graycrime>))
+	src.criminal
+	elif ((<local.flag>==5) && (<def0.healsys_orangecrime>))
+	src.criminal
+	endif
+elif <link.ischar>
+	if ((<local.flag>==6) && (<def0.healsys_redmonstercrime>))
+	src.criminal
+	elif ((<local.flag>==3) && (<def0.healsys_graymonstercrime>))
+	src.criminal
+	endif
+endif
+
+if <link.uid>!=<src.uid>
+link.sysmessage @,,2 <def0.healcliloc_attemptingtoheal>
+endif
+
+//add event
+src.events +e_healing_bandage
+
+//set healing time
+if <link.uid> == <src.uid>
+more = <def0.healsys_self_basetime> +- (<src.dex> / <def0.healsys_self_dexdivide>)
+else
+more = <def0.healsys_other_basetime> +- (<src.dex> / <def0.healsys_other_dexdivide>)
+	if <link.flags>==<link.flags>|02
+	more += <def0.healsys_resdelay>
+	endif
+endif
+
+//set healing amount
+local.minheal = <eval ((<src.anatomy>/<def0.healsys_min_anatdivide>) + (<src.healing>/<def0.healsys_min_healdivide>) + <def0.healsys_min_base>)>
+local.maxheal = <eval ((<src.anatomy>/<def0.healsys_max_anatdivide>) + (<src.healing>/<def0.healsys_max_healdivide>) + <def0.healsys_max_base>)>
+more2 = <eval {<dlocal.minheal> <dlocal.maxheal>}>
+timer = 1
+
+on=@unequip
+src.events -e_healing_bandage
+
+on=@timer
+if ((!<link.ischar>) || (!<cont.ischar>))
+remove
+return 1
+endif
+if <cont.flags>==<cont.flags>|02
+remove
+return 1
+endif
+more -= 1
+if <more> > 0
+	if <cont.distance <link.uid>> > <def0.healsys_healdistduring>
+	cont.sysmessage @,,2 <def0.healcliloc_didnotstayclose>
+	remove
+	return 1
+	endif
+//attempt to gain skills while healing
+	if rand(5)==0
+	cont.skillgain healing,50
+	cont.skillgain anatomy,50
+	endif
+timer = 1
+return 1
+else
+	if <cont.distance <link.uid>> > <def0.healsys_healdistend>
+	cont.sysmessage @,,2 <def0.healcliloc_didnotstayclose>
+	remove
+	return 1
+	endif
+local.healchance = <eval <def0.healsys_healchance_base> + (<cont.healing>/<def0.healsys_healchancedivide_heal>) + (<cont.anatomy>/<def0.healsys_healchancedivide_anat>)>
+link.sound 87
+	if rand(100) < <local.healchance>
+	//success
+	cont.sysmessage @,,2 <def0.healcliloc_youfinishapply>
+		if <link.flags>==<link.flags>|02
+		//target is dead, try to resurrect
+			if ((<cont.anatomy> >= <def0.healsys_res_minanat>) && (<cont.healing> >= <def0.healsys_res_minheal>))
+			local.reschance = <eval <def0.healsys_reschance_base> + ((<cont.healing>+-<def0.healsys_res_minheal>)/<def0.healsys_reschancedivide_heal>) + ((<cont.anatomy>+-<def0.healsys_res_minanat>)/<def0.healsys_reschancedivide_anat>)>
+			endif
+			if rand(100) < <local.reschance>
+			//success
+			cont.sysmessage @,,2 <def0.healcliloc_abletores>
+			cont.skillgain healing,50
+			cont.skillgain healing,50
+			cont.skillgain anatomy,50
+			link.new_resurrect
+			else
+			//fail
+			cont.sysmessage @,,2 <def0.healcliloc_unabletores>
+				if <local.reschance>
+				cont.skillgain healing,50
+				cont.skillgain anatomy,50
+				endif
+			endif
+		else
+		cont.skillgain healing,50
+		cont.skillgain anatomy,50
+			//default curing
+			if <link.restest i_rune_poison>
+			local.poisoned = 1
+				if ((<cont.anatomy> >= <def0.healsys_cure_minanat>) && (<cont.healing> >= <def0.healsys_cure_minheal>))
+				local.curechance = <eval <def0.healsys_curechance_base> + ((<cont.healing>+-<def0.healsys_cure_minheal>)/<def0.healsys_curechancedivide_heal>) + ((<cont.anatomy>+-<def0.healsys_cure_minanat>)/<def0.healsys_curechancedivide_anat>)>
+				endif
+				if rand(100) < <local.curechance>
+				//success
+				cont.sysmessage @,,2 <def0.healcliloc_curedtarget>
+				link.sysmessage @,,2 <def0.healcliloc_beencured>
+				link.consume i_rune_poison
+				else
+				//fail
+				cont.sysmessage @,,2 <def0.healcliloc_failcuretarget>
+				endif
+			endif
+			//poison system curing
+			if <link.restest i_memory_poison_new>
+			local.poisoned = 1
+				if ((<cont.anatomy> < <def0.healsys_cure_minanat>) || (<cont.healing> < <def0.healsys_cure_minheal>))
+				cont.sysmessage @,,2 <def0.healcliloc_failcuretarget>
+				else
+				local.skill = <cont.healing>
+					if <def0.scp.healing_useanatomy>
+					local.skill += <cont.anatomy>
+					else
+					local.skill *= 2
+					endif
+				local.cured = <link.findid.i_memory_poison_new.trigger @cure,<def0.tat_as_argn>,<local.skill> / 2>
+					if <local.cured>
+					cont.sysmessage @,,2 <def0.healcliloc_curedtarget>
+					else
+					cont.sysmessage @,,2 <def0.healcliloc_failcuretarget>
+					endif
+				endif
+			endif
+
+			if ((<def0.healsys_curestillheals>) || (!<local.poisoned>))
+				if <link.hits> < <link.maxhits>
+				link.hits += <more2>
+					if <link.hits> > <link.maxhits>
+					link.hits = <link.maxhits>
+					endif
+				link.sysmessage @,,2 <def0.healcliloc_youhavebeenhealedfor>,<dmore2>
+				else
+				cont.sysmessage @,,2 <def0.healcliloc_healwhatlittle>
+				endif
+			endif
+		endif
+	else
+	//fail
+		if <cont.healing> < 200
+		cont.skillgain healing,50
+		cont.skillgain anatomy,50
+		endif
+	cont.sysmessage @,,2 <def0.healcliloc_youapplybut>
+	endif
+remove
+return 1
+endif
+
+[events e_healing_bandage]
+on=@gethit
+if <restest i_new_bandageheal>
+sysmessage @,,2 <def0.healcliloc_fingersslip>
+	if <src.npc>
+		if <argn1> >= <def0.healsys_interruptmonster>
+		findid.i_new_bandageheal.more2 -= (<findid.i_new_bandageheal.more2>*<def0.healsys_healloss>)/100
+		endif
+	else
+		if <argn1> >= <def0.healsys_interruptplayer>
+		findid.i_new_bandageheal.more2 -= (<findid.i_new_bandageheal.more2>*<def0.healsys_healloss>)/100
+		endif
+	endif
+else
+events -e_healing_bandage
+endif
+
+[ITEMDEF i_new_bandagevet]
+ID=i_memory
+TYPE=t_eq_script
+NAME=bandage memory
+
+on=@equip
+if <src.distance <link.uid>> > <def0.vetsys_healdiststart>
+src.sysmessage @,,2 <def0.healcliloc_toofaraway>
+remove
+return 1
+endif
+if <link.hits> >= <link.maxhits>
+	if ((!<link.restest i_memory_poison_new>) && (!<link.restest i_rune_poison>))
+	src.sysmessage @,,2 <def0.healcliloc_beingnotdamaged>
+	remove
+	return 1
+	endif
+endif
+
+src.sysmessage @,,2 <def0.healcliloc_youbeginapply>
+local.flag = <link.notogetflag>
+if <link.ischar>
+	if ((<link.owner>!=<src.uid>) || (!<def0.vetsys_petalwayslegal>))
+		if ((<local.flag>==6) && (<def0.vetsys_redcrime>))
+		src.criminal
+		elif ((<local.flag>==4) && (<def0.vetsys_graycrime>))
+		src.criminal
+		elif ((<local.flag>==5) && (<def0.vetsys_orangecrime>))
+		src.criminal
+		elif ((<local.flag>==3) && (<def0.vetsys_neutralcrime>))
+		src.criminal
+		endif
+	endif
+endif
+
+if <link.uid>!=<src.uid>
+link.sysmessage @,,2 <def0.healcliloc_attemptingtoheal>
+endif
+
+//add event
+src.events +e_vet_bandage
+
+//set healing time
+if <link.uid> == <src.uid>
+more = <def0.vetsys_self_basetime> +- (<src.dex> / <def0.vetsys_self_dexdivide>)
+else
+more = <def0.vetsys_other_basetime> +- (<src.dex> / <def0.vetsys_other_dexdivide>)
+	if <link.flags>==<link.flags>|02
+	more += <def0.vetsys_resdelay>
+	endif
+endif
+
+//set healing amount
+local.minheal = <eval ((<src.animallore>/<def0.vetsys_min_anlodivide>) + (<src.veterinary>/<def0.vetsys_min_vetdivide>) + <def0.vetsys_min_base>)>
+local.maxheal = <eval ((<src.animallore>/<def0.vetsys_max_anlodivide>) + (<src.veterinary>/<def0.vetsys_max_vetdivide>) + <def0.vetsys_max_base>)>
+local.petheal = <eval <link.maxhits> / <def0.vetsys_max_vethealthdivide>>
+
+more2 = <eval {<dlocal.minheal> <dlocal.maxheal>}>
+more2 += <local.petheal>
+timer = 1
+
+on=@unequip
+src.events -e_vet_bandage
+
+on=@timer
+if ((!<link.ischar>) || (!<cont.ischar>))
+remove
+return 1
+endif
+if <cont.flags>==<cont.flags>|02
+remove
+return 1
+endif
+more -= 1
+if <more> > 0
+	if <cont.distance <link.uid>> > <def0.vetsys_healdistduring>
+	cont.sysmessage @,,2 <def0.healcliloc_didnotstayclose>
+	remove
+	return 1
+	endif
+	//attempt to gain skills while healing
+	if rand(7)==0
+	cont.skillgain veterinary,50
+	cont.skillgain animallore,50
+	endif
+timer = 1
+return 1
+else
+	if <cont.distance <link.uid>> > <def0.vetsys_healdistend>
+	cont.sysmessage @,,2 <def0.healcliloc_didnotstayclose>
+	remove
+	return 1
+	endif
+local.healchance = <eval <def0.vetsys_healchance_base> + (<cont.veterinary>/<def0.vetsys_healchancedivide_vet>) + (<cont.animallore>/<def0.vetsys_healchancedivide_anlo>)>
+link.sound 87
+	if rand(100) < <local.healchance>
+	//success
+	cont.sysmessage @,,2 <def0.healcliloc_youfinishapply>
+		if <link.flags>==<link.flags>|02
+		//target is dead, try to resurrect
+		return 1 //stops healing. there is currently no resurrection for veterinary
+			// if ((<cont.animallore> >= <def0.vetsys_res_minanlo>) && (<cont.veterinary> >= <def0.vetsys_res_minvet>))
+			// serv.log res success chance is <ddef0.vetsys_reschance_base> + ((<cont.veterinary>+-<ddef0.vetsys_res_minvet>)/<ddef0.vetsys_reschancedivide_vet>) + ((<cont.animallore>+-<ddef0.vetsys_res_minanlo>)/<ddef0.vetsys_reschancedivide_anlo>)
+			// local.reschance = <eval <def0.vetsys_reschance_base> + ((<cont.veterinary>+-<def0.vetsys_res_minvet>)/<def0.vetsys_reschancedivide_vet>) + ((<cont.animallore>+-<def0.vetsys_res_minanlo>)/<def0.vetsys_reschancedivide_anlo>)>
+			// serv.log :: = <dlocal.reschance>%
+			// endif
+			// if rand(100) < <local.reschance>
+			//// success
+			// cont.sysmessage @,,2 <def0.healcliloc_abletores>
+			// link.resdialog
+			// else
+			//// fail
+			// cont.sysmessage @,,2 <def0.healcliloc_unabletores>
+			// endif
+		else
+		cont.skillgain veterinary,50
+		cont.skillgain animallore,50
+			//default curing
+			if <link.restest i_rune_poison>
+			local.poisoned = 1
+				if ((<cont.animallore> >= <def0.vetsys_cure_minanlo>) && (<cont.veterinary> >= <def0.vetsys_cure_minvet>))
+				local.curechance = <eval <def0.vetsys_curechance_base> + ((<cont.veterinary>+-<def0.vetsys_cure_minvet>)/<def0.vetsys_curechancedivide_vet>) + ((<cont.animallore>+-<def0.vetsys_cure_minanlo>)/<def0.vetsys_curechancedivide_anlo>)>
+				endif
+				if rand(100) < <local.curechance>
+				//success
+				cont.sysmessage @,,2 <def0.healcliloc_curedtarget>
+				link.sysmessage @,,2 <def0.healcliloc_beencured>
+				link.consume i_rune_poison
+				else
+				//fail
+				cont.sysmessage @,,2 <def0.healcliloc_failcuretarget>
+				endif
+			endif
+
+			//poison system curing
+			if <link.restest i_memory_poison_new>
+			local.poisoned = 1
+				if ((<cont.animallore> < <def0.vetsys_cure_minanlo>) || (<cont.veterinary> < <def0.vetsys_cure_minvet>))
+				cont.sysmessage @,,2 <def0.healcliloc_failcuretarget>
+				else
+				local.skill = <cont.veterinary>
+					if <def0.scp.veterinary_useanimallore>
+					local.skill += <cont.animallore>
+					else
+					local.skill *= 2
+					endif
+				local.cured = <link.findid.i_memory_poison_new.trigger @cure,<def0.tat_as_argn>,<local.skill> / 2>
+					if <local.cured>
+					cont.sysmessage @,,2 <def0.healcliloc_curedtarget>
+					else
+					cont.sysmessage @,,2 <def0.healcliloc_failcuretarget>
+					endif
+				endif
+			endif
+
+			if ((<def0.vetsys_curestillheals>) || (!<local.poisoned>))
+				if <link.hits> < <link.maxhits>
+				link.hits += <more2>
+					if <link.hits> > <link.maxhits>
+					link.hits = <link.maxhits>
+					endif
+				link.sysmessage @,,2 <def0.healcliloc_youhavebeenhealedfor>,<dmore2>
+				else
+				cont.sysmessage @,,2 <def0.healcliloc_healwhatlittle>
+				endif
+			endif
+		endif
+	else
+	//fail
+		if <cont.veterinary> < 250
+		cont.skillgain veterinary,50
+		cont.skillgain animallore,50
+		endif
+	cont.sysmessage @,,2 <def0.healcliloc_youapplybut>
+	endif
+remove
+return 1
+endif
+
+[events e_vet_bandage]
+on=@gethit
+if <restest i_new_bandagevet>
+sysmessage @,,2 <def0.healcliloc_fingersslip>
+	if <src.npc>
+		if <argn1> >= <def0.vetsys_interruptmonster>
+		findid.i_new_bandagevet.more2 -= (<findid.i_new_bandagevet.more2>*<def0.vetsys_healloss>)/100
+		endif
+	else
+		if <argn1> >= <def0.vetsys_interruptplayer>
+		findid.i_new_bandagevet.more2 -= (<findid.i_new_bandagevet.more2>*<def0.vetsys_healloss>)/100
+		endif
+	endif
+else
+events -e_vet_bandage
+endif
+
+[function new_resurrect]
+if <isplayer>
+	if <flags>==<flags>|02
+		if !<restest i_new_resurrection>
+		serv.newitem = i_new_resurrection
+		equip <new.uid>
+		else
+		findid.i_new_resurrection.more=30
+		endif
+	endif
+endif
+
+[dialog d_newresurrect_dialog]
+40, 20 
+page 0 
+resizepic 0 0 2600 400 350 
+dhtmlgump 10 22 380 30 0 0 <def0.center>resurrection<def0.centere>
+
+dhtmlgump 50 55 300 140 1 1 it is possible for you to be resurrected here by this healer. do you wish to try? <def0.br>continue - you chose to try to come back to life now.<def0.br>cancel - you prefer to remain a ghost for now.
+
+button 65 227 4005 4006 1 0 1
+dtext 99 229 0 continue
+
+button 200 227 4005 4006 1 0 0
+dtext 234 229 0 cancel
+
+[dialog d_newresurrect_dialog button] 
+on=0
+if <restest i_new_resurrection>
+	if !<findid.i_new_resurrection.more2>
+	consume i_new_resurrection
+	endif
+endif
+
+on=1
+if <restest i_new_resurrection>
+findid.i_new_resurrection.morez = 1
+resurrect
+consume i_new_resurrection
+sound snd_spell_resurrection
+effect 3,i_fx_heal,20,25,0
+endif
+
+[ITEMDEF i_new_resurrection]
+ID=i_memory
+TYPE=t_eq_script
+NAME=resurrection memory
+
+on=@equip
+src.sound snd_spell_resurrection
+src.effect 3,i_fx_heal,20,25,0
+src.dialogclose d_newresurrect_dialog
+src.dialog d_newresurrect_dialog
+more = 30
+timer = 3
+src.flags = <src.flags>|04
+
+on=@unequip
+more2=1
+src.dialogclose d_newresurrect_dialog
+src.flags = <src.flags>&~04
+
+on=@timer
+more -= 1
+if <cont.flags>==<cont.flags>&~02
+remove
+return 1
+endif
+if <more><=0
+remove
+return 1
+endif
+cont.dialogclose d_newresurrect_dialog
+cont.dialog d_newresurrect_dialog
+cont.flags = <cont.flags>|04
+timer = 3
+return 1
 
 [EOF]

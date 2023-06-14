@@ -19,7 +19,23 @@ BONUS_INT=50
 BONUS_STATS=5
 ADV_RATE=2.5,50.0,200.0
 
+on=@wait
+if <def.scp.BardingSystem> == 1
+	if <def.scp.NewBarding_Discordance> == 1
+	f_onbarding_start 15
+	f_skill_delay <getargv 0 <def.skill.15.waittime>>
+	return 1
+	endif
+endif
+
+on=@select
+f_skill_delay <getargv 0 <def.skill.15.waittime>>
+
+on=@success
+f_skill_delay <getargv 1 <def.skill.15.waittime>>
+
 ON=@Fail
+f_skill_delay <getargv 2 <def.skill.15.waittime>>
 	SRC.SYSMESSAGE Your music fails to attract anyone.
 
 ON=@Abort

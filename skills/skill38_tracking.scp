@@ -24,15 +24,229 @@ ON=@PreStart
 	 return 1
 	ENDIF
 
-ON=@Stroke
-	LOCAL.ModZ=<eval <ACT.P.Z>/-10>
-	SRC.ARROWQUEST <eval <ACT.P.X>+<LOCAL.ModZ>>,<eval <ACT.P.Y>+<LOCAL.ModZ>>,38
+//ON=@Stroke
+///	LOCAL.ModZ=<eval <ACT.P.Z>/-10>
+//	SRC.ARROWQUEST <eval <ACT.P.X>+<LOCAL.ModZ>>,<eval <ACT.P.Y>+<LOCAL.ModZ>>,38
 
 ON=@Fail
+f_skill_delay <getargv 2 <def.skill.38.waittime>>
 	SRC.SYSMESSAGE Tracking failed.
 
 ON=@Abort
+f_skill_delay <getargv 2 <def.skill.38.waittime>>
 	SRC.SYSMESSAGE You stop tracking.
-	SRC.ARROWQUEST 0,0,38
+
+on=@wait
+if <def.scp.NewSkills_Tracking>
+f_skill_delay <getargv 0 <def.skill.38.waittime>>
+f_resenddialog d_tracking_what
+sysmessage <def.scp.tracking_what_prompt>
+return 1
+endif
+
+on=@select
+f_skill_delay <getargv 0 <def.skill.38.waittime>>
+
+on=@success
+f_skill_delay <getargv 1 <def.skill.38.waittime>>
+
+
+[DIALOG d_tracking_what]
+0,0
+page 0
+
+RESIZEPIC 0 0 5054 440 135
+
+RESIZEPIC 10 10 2620 420 75
+RESIZEPIC 10 85 3000 420 25
+
+tilepic 20 20 9682
+button 20 110 4005 4007 1 0 1
+xmfhtmlgump  20 90 100 20 1018087 0 0  // Animals
+
+tilepic 120 20 9607
+button 120 110 4005 4007 1 0 2
+xmfhtmlgump  120 90 100 20 1018088 0 0  // Monsters
+
+tilepic 220 20 8454
+button 220 110 4005 4007 1 0 3
+xmfhtmlgump  220 90 100 20 1018089 0 0  // Human NPCs
+
+tilepic 320 20 8455
+button 320 110 4005 4007 1 0 4
+xmfhtmlgump  320 90 100 20 1018090 0 0  // Players
+
+[DIALOG d_tracking_what button]
+ON=1 4
+if <skillusequick tracking <r20>>
+	LOCAL.range = <EVAL 10 + (<Tracking> / 100)>
+	LOCAL.TYPE <EVAL <argn>-1>
+	LOCAL.tracklist 0
+	CALL f_tracking_list <LOCAL.TYPE>
+	ARGS=<local.tracklist>
+	if (<argv> > 1)
+		SRC.CTAG.tracking_list = <args>
+		f_resenddialog d_tracking_who
+		sysmessage <def.scp.tracking_who_prompt>
+	else
+		if ( <LOCAL.TYPE> == 0 )
+			SYSMESSAGE <DEF.scp.tracking_notseeanimals>
+		elseif ( <LOCAL.TYPE> == 1 )
+			SYSMESSAGE <DEF.scp.tracking_notseecreatures>
+		else
+			SYSMESSAGE <DEF.scp.tracking_notseepeople>
+		endif
+	endif
+skillgain tracking <eval (<tracking> / 10) + 1>
+else
+skillgain tracking <eval (<tracking> / 7) + 1>
+sysmessage <def.scp.tracking_fail>
+endif
+
+[DIALOG d_tracking_who]
+0,0
+Page 0
+
+RESIZEPIC 0 0 5054 440 155
+
+RESIZEPIC 10 10 2620 420 75
+RESIZEPIC 10 85 3000 420 45
+args= <StrEat <SRC.CTAG.tracking_list>>
+if ( <argv> > 4 )
+	RESIZEPIC 0 155 5054 440 155
+
+	RESIZEPIC 10 165 2620 420 75
+	RESIZEPIC 10 240 3000 420 45
+
+	if ( <argv> > 8 )
+		RESIZEPIC 0 310 5054 440 155
+
+		RESIZEPIC 10 320 2620 420 75
+		RESIZEPIC 10 395 3000 420 45
+	endif
+endif
+
+for i 0 11
+	ref73 = <argv[<LOCAL.i>]>
+	if <ref73.isvalid> && <ref73.ischar>
+		tilepic <EVAL 20 + ((<LOCAL.i> % 4) * 100)> <EVAL 20 + ((<LOCAL.i> / 4) * 155)> <ref73.icon>
+		button <EVAL 20 + ((<LOCAL.i> % 4) * 100)> <EVAL 130 + ((<LOCAL.i> / 4) * 155)> 4005 4007 1 0 <EVAL <LOCAL.i>+1>
+		dhtmlgump <EVAL 20 + ((<LOCAL.i> % 4) * 100)> <EVAL 90 + ((<LOCAL.i> / 4) * 155)> 90 40 0 0  <ref73.name>
+	endif
+endfor
+
+[DIALOG d_tracking_who button]
+ON=1 12
+ref73=<getargv <argn> <SRC.CTAG.tracking_list>>
+SRC.EVENTS +e_tracking
+SRC.trigger @trackingstart,<def0.tat_as_argo>,<ref73>
+RETURN 1
+
+[EVENTS e_tracking]
+
+ON=@trackingstart
+CTAG.tracking_list
+CTAG.tracking_who <argo>
+ARROWQUESTN 100
+ARROWQUESTN 100 <argo.P.x>,<argo.P.y>
+TIMERF 2,trigger @trackingtick,<def0.tat_as_argo>,<argo>
+
+ON=@UserQuestArrowClick
+if (<argn1>==0)
+	trigger @trackingstop,<def0.tat_as_argo>,<argo>
+	RETURN 1
+endif
+
+ON=@trackingtick
+if (<DISTANCE <argo>> > 50)
+elseif !(<ARGO.isonline>)
+elseif (<ARGO.flags>&statf_insubstantial)
+elseif (<ARGO.flags>&statf_hidden)
+	if (<r5>)
+		if (<EVAL ((50 * ((<SRC.tracking> * 2) + <SRC.detectingHidden> + 1)) / (<ARGO.hiding> + <ARGO.stealth> + 1))> < <R100>)
+			trigger @trackingstop,<def0.tat_as_argo>,<argo>
+			return
+		endif
+	endif
+	ARROWQUESTN 100 <argo.P.x>,<argo.P.y>
+	TIMERF 2,trigger @trackingtick,<def0.tat_as_argo>,<argo>
+	return
+else
+		ARROWQUESTN 100 <argo.P.x>,<argo.P.y>
+		TIMERF 2,trigger @trackingtick,<def0.tat_as_argo>,<argo>
+		return
+endif
+trigger @trackingstop,<def0.tat_as_argo>,<argo>
+return
+
+ON=@trackingstop
+CTAG.tracking_who
+ARROWQUESTN 100 0,0
+SYSMESSAGE <DEF.scp.tracking_lost>
+EVENTS -e_tracking
+
+ON=@LogOut
+trigger @trackingstop,<def0.tat_as_argo>,<CTAG.tracking_who>
+
+ON=@skillwait
+trigger @trackingstop,<def0.tat_as_argo>,<CTAG.tracking_who>
+
+[FUNCTION f_tracking_list]
+FORCHARS <LOCAL.range>
+	IF (<UID> == <SRC.UID>)
+	ELSEIF (<ISGM>)
+	ELSEIF (<TRACKING> >= <SRC.TRACKING>)
+	elseif (<flags>&statf_insubstantial)
+	elseif (<flags>&statf_hidden)
+		if (<EVAL ((50 * ((<SRC.tracking> * 2) + <SRC.detectingHidden> + 1)) / (<hiding> + <stealth> + 1))> > <R100>
+			CALL f_tracking_trackchar <argn>
+		endif
+	else
+		CALL f_tracking_trackchar <argn>
+	endif
+endfor
+
+[FUNCTION f_tracking_trackchar]
+
+doswitch <argn>
+begin
+	IF (<NPC> == brain_animal)
+		LOCAL.tracklist .= ,<uid>
+	endif
+end
+begin
+	IF (<isplayer>)
+	elseif (<f_ishumanoid>)
+	elseif (<NPC> == brain_animal)
+	else
+		LOCAL.tracklist .= ,<uid>
+	endif
+end
+begin
+	IF (<isplayer>)
+	elseif (<f_ishumanoid>)
+		LOCAL.tracklist .= ,<uid>
+	endif
+end
+begin
+	if (<isplayer>)
+		LOCAL.tracklist .= ,<uid>
+	endif
+end
+enddo
+
+[FUNCTION ARROWQUESTN] // call method : "ARROWQUESTN 5 <p>" (5 is arrow no) 
+ARROWQUEST <StrEat <args>>,<StrArg <args>>
+return 0
+// for > 7.0.x client packet need for core check
+LOCAL.arrowno <StrArg <args>>
+ARGS=<StrEat <args>>
+LOCAL.X <argn1>
+LOCAL.Y <argn2>
+if <LOCAL.X>==0
+SENDPACKET 0ba 00 W0 W0 B<LOCAL.arrowno> 00 0 0
+else
+SENDPACKET 0ba 01 W<LOCAL.X> W<LOCAL.Y> B<LOCAL.arrowno> 00 0 0
+endif
 
 [EOF]

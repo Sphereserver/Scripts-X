@@ -21,9 +21,9 @@ ADV_RATE=2.5,50.0,200.0
 VALUES=1,20,80
 
 ON=@Fail
-	SRC.SYSMESSAGE Tinkering failed.
+	src.sysmessage @,,2 <def.scp.craft_msg_fail>
 
 ON=@Abort
-	SRC.SYSMESSAGE You stop trying to make anything.
+	src.sysmessage @,,2 <def.scp.craft_msg_fail>
 
 [EOF]

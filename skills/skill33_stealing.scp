@@ -19,10 +19,38 @@ BONUS_INT=0
 BONUS_STATS=10
 ADV_RATE=10.0,200.0,800.0
 
+ON=@Start
+//IF (<TARG.TOPOBJ.ISEVENT.e_custom_vendor>)
+//ACTION=-1
+//return 1
+//ENDIF
+IF (<ACT.TAG0.DOOMARTIFACT>) && !(<STEALING> >= 900)
+SRC.SYSMESSAGE You need 90.0 or more on stealing to take this artifact.
+RETURN 1
+ELIF (<ACT.TAG0.DOOMARTIFACT>) && !(<ACT.TAG0.DOOMJAFOIPEGO>)
+	IF !(<R5>)
+	ACT.TAG.DOOMJAFOIPEGO=1
+	ACT.ATTR &= ~attr_move_never
+	LOCAL.P=<ACT.P>
+	SERV.NEWITEM=i_doomartifact_spawn
+		IF ((<ACT.P.X>==471) && (<ACT.P.Y>==99)) || ((<ACT.P.X>==472) && (<ACT.P.Y>==96)) || (STRCMPI(<REGION.NAME>,Doom))
+		NEW.P=<ACT.P>
+		ELSE
+		NEW.DOOMLOCATION
+		ENDIF
+	ACT.BOUNCE
+	NEW.MORE1=<ACT.BASEID>
+	NEW.TIMER=<EVAL 60*60*<ACT.TAG0.DOOMARTIFACT>>
+	RETURN 1
+	ELSE
+	SYSMESSAGE @55 You fail!
+	RETURN 1
+	ENDIF
+ENDIF
+
 ON=@Fail
 	SRC.SYSMESSAGE You fail to steal the item.
 
 ON=@Abort
 	SRC.SYSMESSAGE You give up trying to steal the item.
-
 [EOF]

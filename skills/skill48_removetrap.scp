@@ -19,10 +19,60 @@ BONUS_INT=20
 BONUS_STATS=25
 ADV_RATE=2.5,50.0,200.0
 
+
+on=@wait
+if <def.scp.NewSkills_RemoveTrap> == 1
+	if <lockpicking> < 50.0
+	sysmessage <def.scp.removetrap_lackslockpicking>
+	elif <detectinghidden> < 50.0
+	sysmessage <def.scp.removetrap_lacksdetectinghidden>
+	else
+	targetf f_start_removetrap
+	sysmessage <def.scp.removetrap_start>
+	f_skill_delay <getargv 0 <def.skill.48.waittime>>
+	endif
+	return 1
+endif
+
+on=@select
+f_skill_delay <getargv 0 <def.skill.48.waittime>>
+
+on=@success
+f_skill_delay <getargv 1 <def.skill.48.waittime>>
+
 ON=@Fail
+f_skill_delay <getargv 2 <def.skill.48.waittime>>
 	SRC.SYSMESSAGE You fail to disarm the trap.
 
 ON=@Abort
 	SRC.SYSMESSAGE You give up trying to disarm the trap.
+
+[function f_start_removetrap]
+if <argo.ischar>
+sysmessage <def.scp.removetrap_ischar>
+elif <argo.type> == t_container
+	if !<argo.isevent.t_trapped>
+	sysmessage <def.scp.removetrap_nottrapped>
+	f_skill_delay <getargv 2 <def.skill.48.waittime>>
+	return 1
+	endif
+sfx 0241
+	if <skillusequick removetrap <r<eval (<argo.more2> * 10)>,<eval ((<argo.more2> * 10) + 300)>>
+	argo.cleartags Trap
+	argo.events -t_trapped
+	sysmessage <def.scp.removetrap_success>
+	skillgain removetrap <min 100,<eval ((<removetrap> / 10) + 1)>>
+	f_skill_delay <getargv 1 <def.skill.48.waittime>>
+	else
+	sysmessage <def.scp.removetrap_fail>
+	skillgain removetrap <eval (<removetrap> / 7) + 1>
+	f_skill_delay <getargv 2 <def.skill.48.waittime>>
+	endif
+// to-do here: faction traps
+else
+sysmessage <def.scp.removetrap_nottrapped>
+f_skill_delay <getargv 2 <def.skill.48.waittime>>
+endif
+
 
 [EOF]

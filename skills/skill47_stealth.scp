@@ -32,16 +32,112 @@ ON=@PreStart
 		return 1
 	ENDIF
 
-ON=@Success
-	STEPSTEALTH = <eval <STEALTH>/50>
-	SYSMESSAGE You begin to move quietly.
+ON=@Wait
+if <def.scp.NewSkills_Stealth>
+f_start_stealth
+f_skill_delay <getargv 0 <def.skill.47.waittime>>
+return 1
+endif
+
+on=@select
+f_skill_delay <getargv 0 <def.skill.47.waittime>>
+
+on=@success
+f_skill_delay <getargv 1 <def.skill.47.waittime>>
 
 ON=@Fail
-	SYSMESSAGE You fail in your attempt to move unnoticed.
-	REVEAL
+SRC.SYSMESSAGE You can't seem to hide here.
+f_skill_delay <getargv 0 <def.skill.47.waittime>>
 
 ON=@Abort
-	SYSMESSAGE You give up trying to hide here.
+SRC.SYSMESSAGE You give up trying to hide here.
+
+[function f_start_stealth]
+if !<flags>&statf_hidden
+sysmessage <def.scp.stealth_nothidden>
+f_reveal
+f_skill_delay <getargv 2 <def.skill.47.waittime>>
+elseif <hiding> < <def.scp.stealth_hidingreq>
+sysmessage <def.scp.stealth_reqhiding>
+f_reveal
+f_skill_delay <getargv 2 <def.skill.47.waittime>>
+else
+	if <f_armor_rating> >= 42
+	sysmessage <def.scp.stealth_armorcheck>
+	f_reveal
+	f_skill_delay <getargv 2 <def.skill.47.waittime>>
+	else
+		if <r1,1200> > <max 150,<stealth>> // we might need a better success chance formula
+		sysmessage <def.scp.stealth_fail>
+		skillgain stealth <eval (<stealth> / 7) + 1>
+		f_reveal
+		f_skill_delay <getargv 2 <def.skill.47.waittime>>
+		else
+		sysmessage <def.scp.stealth_success>
+		skillgain stealth <min 100,<eval (<stealth> / 10)>>
+		f_stealth
+		f_skill_delay <getargv 1 <def.skill.47.waittime>>
+		endif
+	endif
+endif
+
+[function f_stealth]
+addbuff 1012,1075655,1075656,0,0
+tag.stepstealth = <eval (<stealth> / 5.0)>
+events +e_skill_stealth
+flags |= statf_hidden
+dspeech +spk_hidden
+update
+
+[events e_skill_stealth]
+on=@stepstealth
+if <flags>&statf_onhorse
+f_reveal
+endif
+tag0.stepstealth -= <qval (<flags>&statf_fly) ? 2:1>
+if <tag0.stepstealth> <= 0
+	if !<flags>&statf_fly
+	f_start_stealth
+	else
+	f_reveal
+	endif
+endif
+argn1 = 0
+
+on=@skillstart
+if !((<argn1> == detectinghidden) || (<argn1> == itemid) || (<argn1> == anatomy) || (<argn1> == armslore) || (<argn1> == animallore) || (<argn1> == evaluatingintel) || (<argn1> == forensics) || (<argn1> == poisoning))
+f_reveal
+endif
+
+on=@skillwait
+if !((<argn1> == detectinghidden) || (<argn1> == itemid) || (<argn1> == anatomy) || (<argn1> == armslore) || (<argn1> == animallore) || (<argn1> == evaluatingintel) || (<argn1> == forensics) || (<argn1> == poisoning))
+f_reveal
+endif
+
+on=@personalspace
+src.sysmessage <def.scp.hiding_shoveinvis>
+return 1
+
+on=@spelleffect
+if <argn1> == s_reveal
+local.divisor = <eval (<hiding> + <stealth>)>
+	if <local.divisor> > 0
+	local.chance = <eval ((50 * (<src.magery> + <src.detectinghidden>)) / <local.divisor>)>
+	else
+	local.chance = 1000
+	endif
+	if <local.chance> > <r1000>
+	f_reveal
+	else
+	return 1
+	endif
+endif
+
+[function f_armor_rating]
+for 3 24
+	local.penaltytotal += <findlayer(<dlocal._for>).tag0.penalty.stealth>
+endfor
+return <dlocal.penaltytotal>
 
 [FUNCTION GetCharArmorRating]
 ARGS=4,6,7,10,13,19,24

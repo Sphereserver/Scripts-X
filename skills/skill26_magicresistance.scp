@@ -4,6 +4,16 @@
 //****************************************************************************
 VERSION=X1
 
+// SCRIPT CREDITS
+// --------------
+// Gygrazork - All the script
+//
+// SCRIPT DOCUMENTATION
+// --------------------
+// The event is in e_PlayerGenericEvent
+// sphere_events_player.scp file
+// But the skill is done and this function below is needed
+
 [SKILL 26]
 DEFNAME=Skill_MagicResist
 KEY=MagicResistance
@@ -18,5 +28,12 @@ BONUS_INT=100
 BONUS_STATS=50
 ADV_RATE=10.0,200.0,800.0
 
+[function spellcircle] //argn1=spell number
+// Return the spell circle 
+if (<argn1> >= 1) && (<argn1> <= 64) //only with default (mage) spells
+return <eval ((<argn1>-1)/8)+1>
+else
+return 1
+endif
 
 [EOF]

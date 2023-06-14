@@ -4,6 +4,15 @@
 //****************************************************************************
 VERSION=X1
 
+// SCRIPT CREDITS
+// --------------
+// ShiryuX - Complete Barding System
+//
+// SCRIPT DOCUMENTATION
+// --------------------
+// New Peacemaking System. OSI-Like but still a little custom.
+// Because some formulas are missing.
+
 [SKILL 9]
 DEFNAME=Skill_Peacemaking
 KEY=Peacemaking
@@ -18,11 +27,116 @@ BONUS_INT=50
 BONUS_STATS=5
 ADV_RATE=2.5,50.0,200.0
 
-ON=@Fail
-	SRC.SYSMESSAGE You attempt to calm everyone, but fail.
+on=@wait
+if <def.scp.BardingSystem> == 1
+	if <def.scp.NewBarding_Peacemaking> == 1
+	f_onbarding_start 9
+	return 1
+	endif
+endif
 
-ON=@Abort
-	SRC.SYSMESSAGE You fail to complete the song.
+on=@select
+f_skill_delay <getargv 0 <def.skill.9.waittime>>
+
+on=@success
+f_skill_delay <getargv 1 <def.skill.9.waittime>>
+
+on=@fail
+f_skill_delay <getargv 2 <def.skill.9.waittime>>
+
+[function f_start_peacemaking]
+ref10 = <args>
+if <ref10.isitem>
+sysmessage <def.scp.bard_peacemaking_isitem>
+return 1
+endif
+f_skill_delay <getargv 0 <def.skill.9.waittime>>
+// Standard mode : reset combatants for everyone in the area
+if <ref10.uid> == <uid>
+local.chance = <eval (<peacemaking> / 2) + (<musicianship> / 2)>
+	if <local.chance> < 400
+	local.chance = 400
+	endif
+	if <r<local.chance>> > 290
+	timerf <serv.skill.peacemaking.delay>,f_peacemaking_success_area
+	else
+	sysmessage <def.scp.bard_peacemaking_fail>
+	skillgain peacemaking <eval (<peacemaking> / 7) + 1>
+	f_skill_delay <getargv 1 <def.skill.9.waittime>>
+	endif
+else
+// Target mode : pacify a single target for a longer duration
+	if !<ref10.isplayer>
+	local.chance = <f_barding_calculation <ref10.uid>,<tag0.instrument>,peacemaking>
+		if <local.chance> < <r>
+		sysmessage <def.scp.bard_peacemaking_tfail>
+		f_skill_delay <getargv 2 <def.skill.9.waittime>>
+		return 1
+		endif
+	timerf <serv.skill.peacemaking.delay>,f_peacemaking_success_targ <ref10.uid>
+	endif
+endif
+return 1
+
+[function f_peacemaking_success_area]
+ref12 = <uid>
+local.chars = 0
+forchars <eval 8 + (<peacemaking> / 150)>
+	if <ref12.uid> != <uid>
+	local.chars ++
+		if !<isplayer>
+		action  = 06d
+		endif
+	flags &= ~statf_war
+	memoryfindtype.memory_war_targ.remove
+	sysmessage <def.scp.bard_peacemaking_peaced>
+	endif
+endfor
+ref12.skillgain peacemaking <eval (<ref12.peacemaking> / 10) + 1>
+ref12.f_skill_delay <getargv 1 <def.skill.9.waittime>>
+ref12.sysmessage <qval (<local.chars> > 0) ? <def.scp.bard_peacemaking_success> : <def.scp.bard_peacemaking_norange>
+
+[function f_peacemaking_success_targ]
+ref11 = <args>
+serv.newitem i_new_peacemaking,1,<ref11.uid>
+new.timer = <eval (<peacemaking> / 10) + 30>
+ref11.tag0.nomovetill = <eval <new.timer> + <serv.time>>
+ref11.events +e_peacemaked
+ref11.flags &= ~statf_war
+ref11.memoryfindtype.memory_war_targ.remove
+ref11.action = -1
+skillgain peacemaking <eval (<peacemaking> / 10) + 1>
+sysmessage <def.scp.bard_peacemaking_tsuccess>
+f_skill_delay <getargv 1 <def.skill.9.waittime>>
+
+[events e_peacemaked]
+on=@npcactfight
+action -1
+return 1
+
+on=@attack
+action -1
+return 1
+
+on=@hittry
+action -1
+return 1
+
+on=@gethit
+findid.i_new_peacemaking.remove
+attack <src.uid>
+events -e_peacemaked
+
+[ITEMDEF i_new_peacemaking]
+ID=i_memory
+NAME=new peacemaking
+TYPE=T_EQ_SCRIPT
+
+on=@timer
+cont.events -e_peacemaked
+cont.tag0.nomovetill
+remove
+return 1
 
 
 [EOF]

@@ -4,6 +4,16 @@
 //****************************************************************************
 VERSION=X1
 
+// SCRIPT CREDITS
+// --------------
+// jeem - All the new taming skill script
+// ShiryuX - Adapted to the script pack.
+//
+// SCRIPT DOCUMENTATION
+// --------------------
+// OSI-Like Animal Taming
+//
+
 [SKILL 35]
 DEFNAME=Skill_Taming
 KEY=Taming
@@ -19,10 +29,295 @@ BONUS_INT=60
 BONUS_STATS=20
 ADV_RATE=10.0,200.0,800.0
 
-ON=@Fail
-	SRC.SYSMESSAGE You fail to tame the creature.
+on=@wait
+if <def.scp.NewSkills_AnimalTaming> == 1
+sysmessage @,,1 Tame which animal?
+targetf f_start_taming
+return 1
+endif
 
-ON=@Abort
-	SRC.SYSMESSAGE You give up trying to tame the creature.
+on=@start
+if (<def.scp.Followers> == 1) && (<def.scp.NewSkills_AnimalTaming> == 0)
+local.slots = <qval <src.targ.tag0.control.slots> ? <src.targ.tag0.control.slots> : 1>
+	if <eval <src.curfollower>+<local.slots>> > <src.maxfollower>
+	src.sysmessage <def.scp.taming_manyfollowers>
+	return 1
+	endif
+endif
+if <src.taming> < <src.targ.taming>
+src.sysmessage <def.scp.taming_nochance>
+return 1
+endif
+
+on=@success
+if <def.scp.Followers> == 1
+curfollower += <qval <src.targ.tag0.control.slots> ? <src.targ.tag0.control.slots> : 1>
+endif
+f_skill_delay <getargv 1 <def.skill.35.waittime>>
+
+on=@fail
+sysmessage <def.scp.taming_failed>
+f_skill_delay <getargv 2 <def.skill.35.waittime>>
+
+on=@abort
+sysmessage <def.scp.taming_abort>
+
+[function f_start_taming]
+if <argo.uid> == <uid>
+	sysmessage <def.scp.taming_tameself>
+	f_skill_delay <getargv 2 <def.skill.35.waittime>>
+	return 1
+elif <argo.isplayer>
+	sysmessage <def.scp.taming_player>
+	f_skill_delay <getargv 2 <def.skill.35.waittime>>
+	return 1
+elif !<argo.ischar>
+	sysmessage <def.scp.taming_notchar>
+	f_skill_delay <getargv 2 <def.skill.35.waittime>>
+	return 1
+elif !<argo.taming>
+	argo.message <def.scp.taming_notameable>
+	f_skill_delay <getargv 2 <def.skill.35.waittime>>
+	return 1
+elif <argo.owner>
+	argo.message <def.scp.taming_alreadytamed>
+	f_skill_delay <getargv 2 <def.skill.35.waittime>>
+	return 1
+elif !<argo.allow_female_tamer> && <isfemale>
+	argo.message <def.scp.taming_onlymale>
+	f_skill_delay <getargv 2 <def.skill.35.waittime>>
+	return 1
+elif !<argo.allow_male_tamer> && <ismale>
+	argo.message <def.scp.taming_onlyfemale>
+	f_skill_delay <getargv 2 <def.skill.35.waittime>>
+	return 1
+elif <argo.baseid> == c_cu_sidhe && !<iselven>
+	argo.message <def.scp.taming_onlyelf>
+	f_skill_delay <getargv 2 <def.skill.35.waittime>>
+	return 1
+elif <argo.taming_min_skill> > <taming>
+	argo.message <def.scp.taming_nochance>
+	f_skill_delay <getargv 2 <def.skill.35.waittime>>
+	return 1
+elif <def.scp.Followers> == 1
+	if (<argo.followerslot> + <curfollower>) > <maxfollower>
+		sysmessage <def.scp.taming_manyfollowers>
+		f_skill_delay <getargv 2 <def.skill.35.waittime>>
+		return 1
+	endif
+elif <argo.owners_count> >= <argo.maxowners>
+	argo.message <def.scp.taming_manyowners>
+	f_skill_delay <getargv 2 <def.skill.35.waittime>>
+	return 1
+elif <argo.isevent.e_Subdued>
+	if !<argo.tag.issubdue>
+		argo.message <def.scp.taming_mustsubdue>
+		f_skill_delay <getargv 2 <def.skill.35.waittime>>
+		return 1
+	endif
+elif <argo.tag0.beingtamed>
+	argo.message <def.scp.taming_ontame>
+	f_skill_delay <getargv 2 <def.skill.35.waittime>>
+	return 1
+elif <argo.can_anger_on_tame> && !<argo.isevent.e_peacemaked>
+	if <r1,100> <= 95
+		argo.message <def.scp.taming_getanger>
+		argo.face <uid>
+		argo.attack <uid>
+		f_skill_delay <getargv 2 <def.skill.35.waittime>>
+		return 1
+	endif
+endif
+f_skill_delay <getargv 0 <def.skill.35.waittime>>
+message <def.scp.taming_started>
+forplayers
+	if <uid> != <src.uid>
+	trysrc <uid> uid.<src.uid>.message <def.scp.taming_he_started>
+	endif
+endfor
+tag.totame = <argo.uid>
+argo.tag.beingtamed = 1
+serv.newitem i_tamefix
+new.link = <argo.uid>
+if <argo.flags>&statf_freeze
+new.tag.paralyzed = 1
+endif
+new.tag.starttime = <serv.time>
+equip <new>
+new.more1 = {4 5}
+return 1
+
+[itemdef i_tamefix]
+id=i_memory
+type=t_eq_script
+name=tamefix
+
+on=@equip
+timer=3
+
+on=@timer
+if <more1>
+	if <cont.distance <link>> > 3
+	link.message <def.scp.taming_toofaraway>
+	cont.tamingfail <link>
+	f_skill_delay <getargv 2 <def.skill.35.waittime>>
+	remove
+	return 1
+	elif <cont.flags>&statf_dead
+	link.message <def.scp.taming_youdead>
+	cont.tamingfail <link>
+	remove
+	return 1
+	elif !(<cont.canseelos <link>>)
+	link.message <def.scp.taming_cantseelos>
+	cont.tamingfail <link>
+	remove
+	return 1
+	elif <link.attacker>
+		if <eval (<serv.time> - (<link.attacker.last.elapsed> * 10))> > <tag0.starttime>
+		link.message <def.scp.taming_isangry>
+		cont.tamingfail <link>
+		remove
+		return 1
+		endif
+	endif
+cont.say @,,2 { {502790 502793} 1 {1005608 1005613} 1 {1010593 1010596} 1 }
+cont.face <link>
+more1 --
+timer = {2 3}
+cont.skillgain animallore <min 100,<eval (<cont.animallore> / 10)>>
+if <link.flags>&statf_freeze
+tag.paralyzed = 1
+endif
+else
+	if <link.flags>&statf_freeze
+	tag.paralyzed = 1
+	endif
+	if <r> <= <cont.tamingsuccesschance <link>>
+	link.removeallmemories
+	link.makemypet <cont>,<dtag0.paralyzed>
+	cont.f_skill_delay <getargv 1 <def.skill.35.waittime>>
+	else
+	cont.tamingfail <link>
+	cont.sysmessage <def.scp.taming_failed>
+	endif
+remove
+endif
+return 1
+
+[function removeallmemories]
+while (<findid.i_memory>)
+	findid(i_memory).remove
+endwhile
+
+[function makemypet]
+ref1=<argv[0]>
+serv.newitem i_memory
+new.attr=04
+new.more1=04
+new.more2=<serv.time>
+new.morep=<p>
+new.color=memory_ipet
+new.timer=-1
+new.link=<ref1>
+new.cont=<uid>
+flags |= statf_pet
+tag.beingtamed=
+home = -1,-1
+if <owners_count> == 0
+	if <argv[1]>
+	f_skill_loss 86
+	else
+	f_skill_loss 90
+	endif
+	if <tag0.taming_stat_loss>
+	f_stat_loss 50
+	endif
+endif
+if !(<tag0.owner.<ref1>>)
+ref1.sysmessage @,,2 502799 // It seems to accept you as master.
+local.gaindifficulty = <eval (<ref1.tamingsuccesschance <uid>> / 10)>
+	if !(<local.gaindifficulty>)
+	local.gaindifficulty ++
+	endif
+ref1.skillgain taming <min 100,<dlocal.gaindifficulty>>
+ref1.skillgain animallore <min 100,<eval ((<ref1.animallore> / 10) + 1)>>
+else
+ref1.sysmessage @,,2 502797 // That wasn't even challenging.
+endif
+if !(<tag0.owner.<ref1>>)
+owners_count=1
+tag.owner.<ref1> = 1
+endif
+ref1.curfollower += <followerslot>
+ref1.tag.totame=
+update
+
+[function tamingfail]
+ref1=<args>
+ref1.tag.beingtamed=
+tag.totame=
+skillgain taming <eval (<taming> / 7) + 1>
+f_skill_delay <getargv 2 <def.skill.35.waittime>>
+
+[function allow_female_tamer]
+if (<baseid> == c_kirin)
+return 0
+else
+return 1
+endif
+
+[function allow_male_tamer]
+if (<baseid> == c_unicorn)
+return 0
+else
+return 1
+endif
+
+[function followerslot]
+if !(<tag0.control.slots>)
+return 1
+else
+return <tag.control.slots>
+endif
+
+[function owners_count]
+if (<argn>)
+tag0.owner_count += 1
+else
+return <tag0.owner_count>
+endif
+
+[function maxowners]
+return 5
+
+[function can_anger_on_tame]
+if (<baseid> == c_hiryu) || (<baseid> == c_nightmare) || (<baseid> == c_armored_swamp_dragon) || (<baseid> == c_swamp_dragon) || (<body> == c_dragon_red) || (<body> == c_dragon) || (<body> == c_drake) || (<body> == c_drake_red)
+return 1
+else
+return 0
+endif
+
+[function taming_min_skill]
+return <eval (<taming> + (<owners_count> * 60))>
+
+[function tamingsuccesschance]
+ref1=<args>
+doswitch <ref1.tag0.owner.<uid>>
+	local.successchance=<eval (((<taming> - <ref1.taming_min_skill>) + 1) * 2)>
+	local.successchance=1000
+enddo
+return <dlocal.successchance>
+
+[function f_skill_loss]
+for 0 57
+	<dlocal._for> = <muldiv <<dlocal._for>>,<args>,100>
+endfor
+
+[function f_stat_loss]
+str = <muldiv <str>,<args>,100>
+dex = <muldiv <dex>,<args>,100>
+int = <muldiv <int>,<args>,100>
+
 
 [EOF]

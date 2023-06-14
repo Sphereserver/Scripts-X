@@ -18,7 +18,7 @@ carpentry_options_default	"1,1,0,0,0" //"mark,exceptional,colored,recipe,expansi
 
 carpentry_smelt			""
 carpentry_repair		""
-carpentry_check			""//f_craft_carpentry_checkboard"
+carpentry_check			"f_craft_carpentry_checkboard"
 carpentry_check_notice		""
 carpentry_chanceatmin		"50.0"
 carpentry_exceptional_bonus	"f_craft_exceptionalbonus"

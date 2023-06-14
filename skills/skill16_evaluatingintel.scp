@@ -4,11 +4,20 @@
 //****************************************************************************
 VERSION=X1
 
+// SCRIPT CREDITS
+// --------------
+// ShiryuX - all the script
+//
+// SCRIPT DOCUMENTATION
+// --------------------
+// - Level is Target's Int / 10
+// - For womans the cliloc is +11 and for non-human monsters is +22
+
 [SKILL 16]
 DEFNAME=Skill_EvalInt
 KEY=EvaluatingIntel
 TITLE=Scholar
-PROMPT_MSG=Select char to inspect.
+PROMPT_MSG=@,,2 500906 //*Select char to inspect.
 DELAY=1.0
 STAT_STR=5
 STAT_DEX=10
@@ -19,10 +28,65 @@ BONUS_INT=100
 BONUS_STATS=50
 ADV_RATE=2.5,50.0,200.0
 
-ON=@Fail
-	SRC.SYSMESSAGE You cannot seem to judge the creature correctly.
+on=@wait
+if <def.scp.NewSkills_EvalInt> == 1
+	targetf f_start_evaluatingintel
+	sysmessage @,,2 500906
+	f_skill_delay <getargv 0 <def.skill.16.waittime>>
+	return 1
+endif
 
-ON=@Abort
-	SRC.SYSMESSAGE You fail to inspect the creature completely.
+on=@select
+f_skill_delay <getargv 0 <def.skill.16.waittime>>
+
+on=@success
+f_skill_delay <getargv 1 <def.skill.16.waittime>>
+
+on=@fail
+f_skill_delay <getargv 2 <def.skill.16.waittime>>
+
+[function f_start_evaluatingintel]
+if <argo.isitem>
+sysmessage <def.evalint_item>
+return 1
+endif
+if <argo.uid> == <uid>
+local.chance = <r2>
+local.gain = 7
+else
+local.chance = <r60>
+local.gain = 10
+endif
+if <skillusequick evaluatingintel <local.chance>>
+local.level = <eval (<argo.int>/10)+1>
+	if <local.level> > 11
+	local.level = 11
+	endif
+local.cliloc = <eval <def.scp.evalint_start> + <local.level>>
+	if <argo.brain>
+		if !<argo.f_ishuman>
+		local.cliloc += 22
+		endif
+	endif
+	if <argo.id> == c_woman
+	local.cliloc += 11
+	endif
+sysmessage @,,2 <local.cliloc>
+skillgain evaluatingintel <eval (<evaluatingintel> / <local.gain>)>
+f_skill_delay <getargv 1 <def.skill.16.waittime>>
+else
+local.cliloc = <def.scp.evalint_fail>
+if <argo.brain>
+	if !<argo.f_ishuman>
+	local.cliloc += 2
+	endif
+endif
+if <argo.id> == c_woman
+local.cliloc += 1
+endif
+sysmessage @,,2 <local.cliloc>
+skillgain evaluatingintel <eval (<evaluatingintel> / 7)>
+f_skill_delay <getargv 2 <def.skill.16.waittime>>
+endif
 
 [EOF]

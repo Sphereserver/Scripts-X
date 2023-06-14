@@ -8,7 +8,7 @@ VERSION=X1
 DEFNAME=Skill_ArmsLore
 KEY=ArmsLore
 TITLE=Weapon Master
-PROMPT_MSG=What would you like to evaluate?
+PROMPT_MSG=@,,2 500906 //What would you like to evaluate?
 DELAY=1.0
 STAT_STR=10
 STAT_DEX=15
@@ -19,10 +19,55 @@ BONUS_INT=34
 BONUS_STATS=25
 ADV_RATE=2.5,50.0,200.0
 
-ON=@Fail
-	SRC.SYSMESSAGE You are uncertain about this item 
+on=@wait
+if <def.scp.NewSkills_ArmsLore> == 1
+	targetf f_armslore_start
+	sysmessage <def.scp.armslore_targ>
+	f_skill_delay <getargv 0 <def.skill.4.waittime>>
+	return 1
+endif
 
-ON=@Abort
-	SRC.SYSMESSAGE You stop trying to evaluate the item.
+on=@select
+f_skill_delay <getargv 0 <def.skill.4.waittime>>
+
+on=@success
+f_skill_delay <getargv 1 <def.skill.4.waittime>>
+
+ON=@fail
+f_skill_delay <getargv 2 <def.skill.4.waittime>>
+sysmessage <def.scp.armslore_fail>
+
+
+[function f_armslore_start]
+if !<skillusequick armslore <r60>>
+	f_skill_delay <getargv 2 <def.skill.4.waittime>>
+	skillgain armslore <eval (<armslore> / 7) + 1>
+	sysmessage <def.scp.armslore_fail>
+else
+	local.percent = <eval (<argo.more1l> * 100) / (<argo.more1h> + 1)>
+	local.dcliloc = <eval (<local.percent>/10)+<def.scp.armslore_durability>>
+	sysmessage @,,2 <local.dcliloc>
+	if <argo.isweapon>
+		local.wcliloc = <def.scp.armslore_weapon>
+		local.weapdam = <eval (<argo.dam.lo>+<argo.dam.hi>)/2>
+		local.wcliloc += <eval ((<local.weapdam>/5)+1)*9>
+		if <argo.layer> == 2
+			if (<argo.type> == t_weapon_bow) || (<argo.type> == t_weapon_xbow)
+				local.wcliloc += 9
+			else
+				local.wcliloc += 2
+			endif
+		else
+			local.wcliloc ++
+		endif
+		sysmessage @,,2 <local.wcliloc>
+	elif <argo.isarmor>
+		local.armor = <eval ((<argo.armor.high>+<argo.tag0.modar>)*<def.armor_<argo.layer>>)/100>
+		local.acliloc = <eval ((<local.armor>/5)+1)+<def.scp.armslore_armor>>
+		sysmessage @,,2 <local.acliloc>
+	endif
+	skillgain armslore <eval (<armslore> / 10) + 1>
+	f_skill_delay <getargv 1 <def.skill.4.waittime>>
+endif
 
 [EOF]

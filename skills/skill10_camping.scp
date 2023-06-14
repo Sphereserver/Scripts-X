@@ -4,6 +4,15 @@
 //****************************************************************************
 VERSION=X1
 
+// SCRIPT CREDITS
+// --------------
+// pyromapes2k - All the script
+//
+// SCRIPT DOCUMENTATION
+// --------------------
+// OSI-Like Camping
+
+
 [SKILL 10]
 DEFNAME=Skill_Camping
 KEY=Camping
@@ -18,11 +27,189 @@ BONUS_INT=34
 BONUS_STATS=50
 ADV_RATE=2.5,50.0,200.0
 
-ON=@Fail
-	SRC.SYSMESSAGE You fail to ignite the campfire.
+ON=@fail
+src.message <def.scp.camping_fail>
 
 ON=@Abort
-	SRC.SYSMESSAGE You give up trying to light the campfire.
+SRC.SYSMESSAGE You give up trying to light the campfire.
+
+
+//will create a worldgem and harvest it (you cannot collect much kindling from a tree, so kindling drains 5 of the resource each time)
+[function camping_harvestkindling]
+ref1=<argv[0]>
+local.harvest = 0
+p=<argv[1]>
+updatex
+foritems 0
+	if ((<baseid>==i_worldgem_bit) && (<type>==t_tree))
+	local.harvest=<uid>
+	endif
+endfor
+if <local.harvest>==0
+serv.newitem=i_worldgem_bit
+new.p=<p>
+new.type=t_tree
+new.amount={5 15}
+new.more1=mr_tree
+new.attr=092
+new.timer=3000
+local.harvest = <new.uid>
+endif
+ref2=<local.harvest>
+if <ref2.amount> > 4
+ref2.amount -= 5
+serv.newitem = i_kindling
+new.cont=<ref1.findlayer.21>
+ref1.sysmessage <def.scp.camping_getkindling>
+ref1.sysmessage <def.scp.camping_useaxe>
+else
+ref1.sysmessage <def.scp.camping_nokindling>
+endif
+remove
+
+[typedef t_kindling]
+on=@dclick
+if <r1000> < (300 + <src.camping>) //it isn't hard to succeed even at 0%
+src.skillgain camping <eval (<src.camping> / 10)>
+serv.newitem=i_campfire
+new.tag.secure=-9
+new.timer=2
+new.events +t_camping_campfire
+new.movenear <src.uid>,1
+consume
+else
+src.skillgain camping <eval (<src.camping> / 7)>
+src.sysmessage <def.scp.camping_fail>
+endif
+return 1
+
+[TYPEDEF t_camping_campfire]
+on=@timer
+if <tag0.secure> < 0
+	if <tag0.secure> < -20 //camp left alone
+	remove
+	return 1
+	endif
+local.securing = 0
+	forplayers 7
+		if <restest i_camping_timer>
+		findid.i_camping_timer.timer = 4
+		local.securing = 1
+		else
+		serv.newitem = i_camping_timer
+		equip <new.uid>
+		endif
+	endfor
+	if !<local.securing>
+	tag.secure -= 2
+	endif
+tag.secure ++
+timer = 3
+else
+	forplayers 7
+	sysmessage <def.scp.camping_secure>
+	endfor
+timer = 300
+tag.secure = 1
+events -t_camping_campfire
+endif
+return 1
+
+[itemdef i_camping_timer]
+id=i_memory
+type=t_eq_script
+name=camping timer
+
+on=@equip
+src.sysmessage <def.scp.camping_securing>
+timer=4
+
+on=@timer
+remove
+return 1
+
+[typedef t_bedroll]
+on=@dclick
+if ((<dispid>==0a56) || (<dispid>==i_bedroll)) //unrolled
+local.secure = 0
+	foritems 7
+		if ((<baseid>==i_campfire) && (<tag0.secure>))
+		local.secure = <uid>
+		endif
+	endfor
+	if ((<local.secure>) && (!<src.restest i_logout_camping>)) //secure camp found
+	serv.newitem = i_logout_camping
+	new.tag.campfire = <local.secure>
+	new.tag.bedroll = <uid>
+	src.equip <new.uid>
+	return 1
+	endif
+endif
+
+[itemdef i_logout_camping]
+id=i_memory
+type=t_eq_script
+name=logout camping
+
+on=@equip
+timer=12
+dialogclose d_camping_dialog
+f_resenddialog d_camping_dialog
+
+on=@timer
+dialogclose d_camping_dialog
+//reset the camp
+ref1=<tag0.campfire>
+if <ref1.isitem>
+	if <ref1.baseid>==i_campfire
+	ref1.tag.secure=-9
+	ref1.timer=1
+	ref1.events +t_camping_campfire
+	endif
+endif
+remove
+return 1
+
+[dialog d_camping_dialog]
+40, 20
+page 0
+resizepic 0 0 2600 400 350
+xmfhtmlgump 10 22 380 30 1011015 0 0
+xmfhtmlgump 50 55 300 140 1011016 1 1
+button 65 297 4005 4006 1 0 1
+xmfhtmlgump 99 299 100 30 1011011 0 0
+button 200 297 4005 4006 1 0 0
+xmfhtmlgump 234 299 100 30 1011012 0 0
+
+[dialog d_camping_dialog button]
+on=0
+ref1=<tag0.campfire>
+if <ref1.isitem>
+	if <ref1.baseid>==i_campfire
+	ref1.tag.secure=-9
+	ref1.timer=1
+	ref1.events +t_camping_campfire
+	endif
+endif
+remove
+
+on=1
+//place bedroll back in pack
+ref1=<tag0.bedroll>
+if <ref1.isitem>
+	if <ref1.baseid>==i_bedroll
+	ref1.cont = <src.findlayer.21>
+	endif
+endif
+//disconnect client
+src.events +e_camping_logout
+src.timerf 1,sendpacket 0d1 01
+remove
+
+[events e_camping_logout]
+on=@logout
+argn2=1
+events -e_camping_logout
 
 
 [EOF]

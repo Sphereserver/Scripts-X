@@ -8,7 +8,7 @@ VERSION=X1
 DEFNAME=Skill_Anatomy
 KEY=Anatomy
 TITLE=Biologist
-PROMPT_MSG=Whom shall I examine?
+PROMPT_MSG=@,,2 500321 //Whom shall I examine?
 DELAY=3.0,1.0
 STAT_STR=15
 STAT_DEX=15
@@ -19,10 +19,53 @@ BONUS_INT=100
 BONUS_STATS=50
 ADV_RATE=2.5,50.0,200.0
 
-ON=@Fail
-	SRC.SYSMESSAGE You can't think of anything about this creature
+on=@wait
+	serv.log wait
+	if <def.scp.NewSkills_Anatomy> == 1
+		sysmessage <def.scp.anatomy_targ>
+		targetf f_anatomy_start
+		f_skill_delay <getargv 0 <def.skill.1.waittime>>
+		return 1
+	endif
 
-ON=@Abort
-	SRC.SYSMESSAGE You fail to examine the creature fully.
+on=@select
+serv.log select
+	f_skill_delay <getargv 0 <def.skill.1.waittime>>
+
+on=@success
+	f_skill_delay <getargv 1 <def.skill.1.waittime>>
+
+on=@fail
+	f_skill_delay <getargv 2 <def.skill.1.waittime>>
+	sysmessage <def.scp.anatomy_fail>
+
+[function f_anatomy_start]
+serv.log anatomystart
+if <argo.uid> == <uid>
+	local.chance = <r2>
+	local.gain = 7
+else
+	local.chance = <r60>
+	local.gain = 10
+endif
+if <skillusequick anatomy <local.chance>>
+	local.toadd.str = <eval ((<argo.str> / 10) + 1) * 11>
+	local.toadd.dex = <eval (<argo.dex> / 10) + 1)>
+	if <local.toadd.str> > 121
+		local.toadd.str = 121
+	endif
+	if <local.toadd.dex> > 11
+		local.toadd.dex = 11
+	endif
+	serv.log <def.scp.anatomy_start>
+	local.cliloc = <eval <def.scp.anatomy_start> + <local.toadd.str> + <local.toadd.dex>>
+	sysmessage @,,2 <local.cliloc>
+	skillgain anatomy <eval (<anatomy> / <local.gain>) + 1>
+	f_skill_delay <getargv 1 <def.skill.1.waittime>>
+else
+	sysmessage <def.scp.anatomy_fail>
+	skillgain anatomy <eval (<anatomy> / 7) + 1>
+	f_skill_delay <getargv 2 <def.skill.1.waittime>>
+endif
 
 [EOF]

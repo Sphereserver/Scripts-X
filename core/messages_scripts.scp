@@ -1,0 +1,471 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+// SCRIPT DOCUMENTATION
+// --------------------
+// "@hue,font,2 clilocid[,arguments]"
+// "@hue,font,3 clilocid,flags,affix[,arguments]"
+// Known possible values for flags are:
+//    0x00 = Append text to message
+//    0x01 = Prepend text to message
+//    0x02 = Forces message to show as a system message
+
+[DEFNAME SphereCommunityPack_Ranges]
+// The following are RANGES of cliloc. They just determine a start of a range.
+// Used for certain skills which using math calculations return the according cliloc.
+scp.anatomy_start      "1038033"
+scp.evalint_start      "1038168"
+scp.evalint_fail       "1038166"
+
+scp.armslore_durability  "1038284"
+scp.armslore_weapon      "1038215"
+scp.armslore_armor       "1038295"
+
+
+[DEFNAME SphereCommunityPack_Clilocs]
+// The following are ONLY clilocs used by some dialogs or other things
+// Just remember, only clilocs if you're not sure of how it works.
+scp.craft_msg_fail		"1044043" // You failed to create the item, and some of your materials are lost.
+scp.craft_msg_noskill		"1044153" // You don't have the required skills to attempt this item.
+scp.craft_msg_success		"1044154" // You create the item.
+scp.craft_msg_exceptional	"1044155" // You create an exceptional quality item.
+scp.craft_msg_excepmark		"1044156" // You create an exceptional quality item and affix your maker's mark.
+
+scp.craft_msg_smithingneeds      "1044267" // You must be near an anvil and a forge to smith items.
+scp.craft_msg_smithsmeltneeds    "1044265" // You must be near a forge.
+scp.craft_msg_smithenhanceneeds  "1042678" // You are not near an anvil or a forge.
+scp.craft_msg_smithrepairneeds   "1044282" // You must be near a forge and and anvil to repair items.
+
+scp.craft_msg_noresources	"1044253" // You don't have the components needed to make that.
+scp.craft_msg_nomana		"1044380" // You don't have enough mana to inscribe that spell.
+scp.craft_msg_norecipe		"1073620"	// You have not learned this recipe.
+scp.craft_msg_nocast		"You need to be able to cast this spell in order to inscribe it."
+scp.craft_msg_noexpansion	"You don't have the expansion pack needed."
+
+
+scp.craft_title_alchemy		"1044001" // <CENTER>ALCHEMY MENU</CENTER>
+scp.craft_title_blacksmithing	"1044002" // <CENTER>BLACKSMITHY MENU</CENTER>
+scp.craft_title_cooking		"1044003" // <CENTER>COOKING MENU</CENTER>
+scp.craft_title_carpentry	"1044004" // <CENTER>CARPENTRY MENU</CENTER>
+scp.craft_title_tailoring	"1044005" // <CENTER>TAILORING MENU</CENTER>
+scp.craft_title_bowcraft	"1044006" // <CENTER>BOWCRAFT AND FLETCHING MENU</CENTER>
+scp.craft_title_tinkering	"1044007" // <CENTER>TINKERING MENU</CENTER>
+scp.craft_title_cartography	"1044008" // <CENTER>CARTOGRAPHY MENU</CENTER>
+scp.craft_title_inscription	"1044009" // <CENTER>INSCRIPTION MENU</CENTER>
+scp.craft_title_masonry		"1044500" // <CENTER>MASONRY MENU</CENTER>
+scp.craft_title_glassblowing	"1044622" // <CENTER>GLASSBLOWING MENU</CENTER>
+scp.craft_title_dragonscale	"1053135" // <CENTER>DRAGON SCALE ARMOR MENU</CENTER>
+
+scp.craft_head_categories	"1044010"	// <CENTER>CATEGORIES</CENTER>
+scp.craft_head_selections	"1044011"	// <CENTER>SELECTIONS</CENTER>
+scp.craft_head_notices		"1044012"	// <CENTER>NOTICES</CENTER>
+
+scp.craft_button_makelast	"1044013"	// MAKE LAST
+scp.craft_button_lastten	"1044014"	// LAST TEN
+scp.craft_button_repair		"1044015"	// REPAIR ITEM
+scp.craft_button_smelt		"1044016"	// SMELT ITEM
+scp.craft_button_enhance	"1061001"	// ENHANCE ITEM
+scp.craft_button_nextpage	"1044045"	// NEXT PAGE
+scp.craft_button_prevpage	"1044044"	// PREV PAGE
+scp.craft_button_exit		"1011441"	// EXIT
+
+scp.craft_resdisp_4		"1063363"	// * Requires the "Samurai Empire" expansion
+scp.craft_resdisp_5		"1072651"	// * Requires the "Mondain's Legacy" expansion
+scp.craft_resdisp_7		"1094732"	// * Requires the "Stygian Abyss" expansion
+scp.craft_resdisp_8      "1116296" // * Requires the "High Seas" booster
+scp.craft_colored		"1044152"	// * The item retains the color of this material
+scp.craft_markable		"1044059"	// This item may hold its maker's mark
+scp.craft_msg_gotrecipe		"1073427"	// You already know this recipe.
+
+
+[DEFNAME SphereCommunityPack_Messages]
+// The following are sysmessages, messages, say, etc.
+// You can change it for everything, even for text.
+scp.alchemy_abort		"@33,,2 500290"	// You stop mixing and empty the mortar.
+
+scp.anatomy_targ		"@,,2 500321"	// Whom shall I examine?
+scp.anatomy_fail		"@,,2 1042915"	// Although you know this creature, you can't seem to think of any uses for it.
+
+scp.animallore_targ		"@,,2 500328"	// What animal should I look at?
+scp.animallore_fail		"@,,2 500334"	// You can't think of anything you know offhand.
+
+scp.armslore_targ		"@,,2 500906"	// What would you like to evaluate?
+scp.armslore_fail		"@,,2 500353"	// You are not certain...
+
+scp.bard_noinstrument		"@,,2 1062488"	// The instrument you are trying to play is no longer in your backpack!
+scp.bard_instrument_targ	"@,,2 500617"	// What instrument shall you play?
+scp.bard_instrument_wrong	"@,,2 500619"	// That is not a musical instrument.
+scp.bard_toofaraway		"@,,2 501816"	// You are too far away to do that.
+
+scp.bard_peacemaking_targ	"@,,2 1049525"	// Whom do you wish to calm?
+scp.bard_peacemaking_isitem	"@,,2 1049528"	// You cannot calm that!
+scp.bard_peacemaking_peaced	"@,,2 500616"	// You hear lovely music, and forget to continue battling!
+scp.bard_peacemaking_success	"@,,2 500615"	// You play your hypnotic music, stopping the battle.
+scp.bard_peacemaking_fail	"@,,2 500613"	// You attempt to calm everyone, but fail.
+scp.bard_peacemaking_norange	"@,,2 1049648"	// You play hypnotic music, but there is nothing in range for you to calm.
+scp.bard_peacemaking_tfail	"@,,2 1049531"	// You attempt to calm your target, but fail.
+scp.bard_peacemaking_tsuccess	"@,,2 1049532"	// You play hypnotic music, calming your target.
+
+scp.bard_provocation_cannot	"@,,2 1049446"	// You have no chance of provoking those creatures.
+scp.bard_provocation_tamed	"@,,2 501590"	// They are too loyal to their master to be provoked.
+scp.bard_provocation_fail	"@,,2 501599"	// Your music fails to incite enough anger.
+scp.bard_provocation_notevil	"@,,2 501589"	// You can't incite that!
+scp.bard_provocation_nochance	"@,,2 1049446"	// You have no chance of provoking those creatures.
+scp.bard_provocation_2ndtarg	"@,,2 1008085"	// You play your music and your target becomes angered.  Whom do you wish them to attack?
+scp.bard_provocation_faraway	"@,,2 1049450"	// The creatures you are trying to provoke are too far away from each other for your music to have an effect.
+scp.bard_provocation_success	"@,,2 501602"	// Your music succeeds, as you start a fight.
+scp.bard_provocation_sametarg	"@,,2 501593"	// You can't tell someone to attack themselves!
+scp.bard_provocation_nonpc	"@,,2 501589"	// You can't incite that!
+
+scp.begging_isplayer		"@,,2 500398"	// Perhaps just asking would work better.
+scp.begging_ismonster		"@,,2 500399"	// There is little chance of getting money from that!
+scp.begging_isitem		"@,,2 500400"	// There is little chance of getting money from that!
+scp.begging_mounted		"@,,2 500404"	// They seem unwilling to give you any money.
+scp.begging_fail		"@,,2 500404"	// They seem unwilling to give you any money.
+scp.begging_withoutgold		"@,,2 500407"	// I have not enough money to give thee any!
+
+scp.bola_notinpack		"@,,2 1040019"	// The bola must be in your pack to use it.
+scp.bola_cantusenow		"@,,2 1049624"	// You have to wait a few moments before you can use another bola!
+scp.bola_inuse			"@,,2 1049631"	// This bola is already being used.
+scp.bola_handsfree		"@,,2 1040015"	// Your hands must be free to use this
+scp.bola_youremounted		"@,,2 1040016"	// You cannot use this while riding a mount
+scp.bola_polymorphed		"@,,2 1070902"	// You can't use this while in an animal form!
+scp.bola_beginfrom		"@03b2,,2 1049632"	// * You begin to swing the bola...*"
+scp.bola_beginto		"@03b2,,2 1049633"	// ~1_NAME~ begins to menacingly swing a bola...
+scp.bola_noreason		"@,,2 1049628"	// You have no reason to throw a bola at that.
+scp.bola_knocked		"@,,2 1040023"	// You have been knocked off of your mount!
+
+scp.camping_fail		"@,,2 501696"	// You fail to ignite the campfire.
+scp.camping_getkindling		"@,,2 500491"	// You harvest some kindling
+scp.camping_useaxe		"@,,2 500492"	// You could use an axe to...
+scp.camping_nokindling		"@,,2 500488"	// Nothing here to harvest
+scp.camping_secure		"@,,2 500621"	// Camp now secure
+scp.camping_securing		"@,,2 500620"	// You feel it will take a few moment to secure the camp
+
+scp.craft_repair_targ        "@,,2 1044276"   // Target an item to repair.
+scp.craft_repair_notitem     "1044283"   // You cannot repair that.
+scp.craft_repair_inpack      "1044275"   // The item must be in your backpack to repair it.
+scp.craft_repair_wrongskill  "1044277"   // That item cannot be repaired.
+scp.craft_repair_fullrepair  "1044281"   // That item is in full repair
+scp.craft_repair_cannot      "1044278"   // That item has been repaired many times, and will break if repairs are attempted again.
+scp.craft_repair_fail        "1044280"   // You fail to repair the item.
+scp.craft_repair_success     "1044279"   // You repair the item.
+
+scp.craft_smelt_targ         "@,,2 1044273"   // Target an item to recycle.
+scp.craft_smelt_notitem      "@,,2 1044272"   // You can't melt that down into ingots.
+scp.craft_smelt_notsmeltable "@,,2 1044272"   // You can't melt that down into ingots.
+scp.craft_smelt_success      "@,,2 1044270"   // You melt the item down into ingots.
+
+scp.craft_enhance_targ       "@,,2 1061004"   //"Target an item to enhance with your chosen material."
+scp.craft_enhance_notitem    "1061011"   //"You cannot enhance this type of item with the properties of the selected special material."
+scp.craft_enhance_nomaterial "1074861"   //"You do not have everything you need!"
+scp.craft_enhance_inpack     "1061005"   //"The item must be in your backpack to enhance it."
+scp.craft_enhance_already    "1061012"   //"This item is already enhanced with the properties of a special material."
+scp.craft_enhance_enchanted  "1080131"   //"You cannot enhance an item that is currently enchanted."
+scp.craft_enhance_notrunicT  "1061002"   //"You must use a runic tailoring kit to enhance a tailored item."
+scp.craft_enhance_notrunicB  "1061003"   //"You must be using a runic hammer to enhance a smithed item."
+scp.craft_enhance_notspecial "1061010"   //"You must select a special material in order to enhance an item with its properties."
+scp.craft_enhance_fail       "@,,2 1061082"   //"You attempt to enhance the item, but fail. Some material is lost in the process."
+scp.craft_enhance_totalfail  "@,,2 1061080"   //"You attempt to enhance the item, but fail catastrophically. The item is lost."
+scp.craft_enhance_success    "@,,2 1061008"   //"You enhance the item with the properties of the special material."
+
+scp.detecthidden_start		"@,,2 500819"	// Where will you search?
+scp.detecthidden_foundnobody	"@,,2 500817"	// You can see nothing hidden there.
+
+scp.evalint_item		"@,,2 500908"	// It looks smarter than a rock, but dumber than a piece of wood.
+
+scp.fishing_treasure		"@,,2 503175"	// You pull up a heavy chest from the depths of the ocean!
+scp.fishing_nofish		"@,,2 503168"	// The fish don't seem to be biting here.
+scp.fishing_ischar		""
+scp.fishing_fail		"@,,2 503171"	// You fish a while, but fail to catch anything.
+
+scp.guild_alliance_already	"@,,2 1063426"	// ~1_val~ already belongs to an alliance.
+scp.guild_alliance_consider	"@,,2 1063416"	// ~1_val~ is currently considering another alliance proposal.
+scp.guild_alliance_nopriv	"@,,2 1063436"	// You don't have permission to negotiate an alliance.
+
+scp.hiding_fail			"@,,2 501241"		// You fail to hide.
+scp.hiding_abort		"@,,2 501241"		// You fail to hide.
+scp.hiding_spellactive		"@,,2 501238"		// You are busy doing something else and cannot hide.
+scp.hiding_activecombat		"@022,,2 501237"	// You can't seem to hide right now.
+scp.hiding_success		"@01f4,,2 501240"	// You have hidden yourself well.
+scp.hiding_fail			"@022,,2 501241"	// You fail to hide.
+scp.hiding_reveal		"@,,2 501242"		// You are no longer hidden.
+scp.hiding_shoveinvis		"@,,2 1019041"		// You shove something invisible out of the way.
+
+scp.house_msg_welcomeback	"@,,2 501293"	// Welcome back to the house, friend!
+scp.house_msg_housedistance	"@,,2 1062429"	// You must be within five paces of the house sign to use this option.
+scp.house_msg_ejectitem		"@,,2 501347"	// You cannot eject that from the house!
+scp.house_msg_ejectvendor	"@,,2 501351"	// You cannot eject a vendor.
+scp.house_msg_ejectfriend	"@,,2 501348"	// You cannot eject a friend of the house!
+scp.house_msg_ejectnotinside	"@,,2 501352"	// You may not eject someone who is not in your house!
+scp.house_msg_banlimit		"@,,2 501355"	// The ban limit for this house has been reached!
+
+scp.jail_cancelled		"@,,2 503314"	// Imprisoning Cancelled
+scp.jail_notplayer		"@,,2 503312"	// Only players can be jailed.
+scp.jail_cannotmyself		"@,,2 503315"	// Congrats, you've successfully jailed yourself!
+scp.jail_jailed			"@,,2 503268"	// You've been jailed!
+scp.jail_unjailed		"@,,2 503267"	// You've been unjailed!
+
+scp.meditation_activeskill	"@,,2 501845" // You are busy doing something else and cannot focus.
+scp.meditation_maxmana		"@,,2 501846" // You are at peace.
+scp.meditation_armorpenalty	"@,,2 500135"	// Regenerative forces cannot penetrate your armor.
+scp.meditation_success		"@,,2 501851" // You enter a meditative trance.
+scp.meditation_fail		"@,,2 501850" // You cannot focus your concentration.
+scp.meditation_abort		"@,,2 501848" // You cannot focus your concentration.
+scp.meditation_stop		"@,,2 500134" // // You stop meditating.
+
+scp.mining_nosand		"@,,2 1044629"	// There is no sand here to mine.
+scp.mining_mounted		"@,,2 501864"	// You can't mine while riding.
+scp.mining_polymorphed		"@,,2 501865"  // You can't mine while polymorphed.
+scp.mining_faraway		"@,,2 500295"	// You are too far away to do that.
+scp.mining_canseelos		"@,,2 500346"	// Target cannot be seen.
+scp.mining_sand_fail		"@,,2 1044630"	// You dig for a while but fail to find any of sufficient quality for glassblowing.
+scp.mining_fail			"@,,2 503043"	// You loosen some rocks but fail to find any useable ore.
+scp.mining_nocarry		"@,,2 1010481" // Your backpack is full, so the ore you mined is lost.
+scp.mining_smelt_target		"What do you want to smelt?"
+scp.mining_smelt_notinpack	"@,,2 1042010"
+scp.mining_smelt_fail		"@,,2 501989"	// You burn away the impurities but are left with no useable metal.
+scp.mining_smelt_success	"@,,2 501988"	// You smelt the ore removing the impurities and put the metal in your backpack.
+scp.mining_smelt_noforge	"You must be near a forge to smelt."
+scp.mining_smelt_noskill	"@,,2 501986"	// You have no idea how to smelt this strange ore!
+
+scp.poisoning_immune		"@,,2 1005534"	// * The poison seems to have no effect. *
+scp.poisoning_beenpoisoned	"@,,2 1010512"	// You have been poisoned!
+scp.poisoning_beencured		"@,,2 1010059"	// You have been cured of all poisons!
+scp.poisoning_wornoff		"@,,2 502136"	// The poison seems to have worn off.
+scp.poisoning_curedtarget	"@,,2 1010058"	// You have cured the target of all poisons!
+scp.poisoning_failcuretarg	"@,,2 1010650"	// You have failed to cure your target!
+scp.poisoning_notpoisoned	"@,,2 1042000"	// You are not poisoned.
+scp.poisoning_targnotpoisoned	"@,,2 1060176"	// That creature is not poisoned!
+scp.poisoning_poisonwhat	"@,,2 502142"	// To what do you wish to apply the poison?
+scp.poisoning_youmustwait	"@,,2 501789"	// You must wait before trying again.
+scp.poisoning_failtoapply	"@,,2 1010518"	// You fail to apply a sufficient dose of poison.
+scp.poisoning_mustbeinpack	"@,,2 1062334"	// This item must be in your backpack to be used.
+scp.poisoning_cantworkonthat	"@,,2 500422"	// You can't work on that item.
+scp.poisoning_notpoisonable	"@,,2 500422"	// You can't work on that item.
+scp.poisoning_notpoison2hands	"@,,2 500422"	// You can't work on that item.
+scp.poisoning_whatpoisonuse	"@,,2 1010611"	// Which poison potion will you use?
+scp.poisoning_targettoofar	"@,,2 501853"	// Target is too far away.
+scp.poisoning_notpoisonpot	"@,,2 502139"	// That is not a poison potion.
+scp.poisoning_youapplypoison	"@,,2 1010517"	// You apply the poison.
+scp.poisoning_gravemistake	"@,,2 502152"	// You make a grave mistake while applying the poison.
+scp.poisoning_failapplypoison	"@,,2 1010518"	// You fail to apply a sufficient dose of poison.
+scp.poisoning_bloodmixpoison	"@,,2 1005537"	// Blood mixes with poison and begins to corrode your weapon.
+scp.poisoning_cleaneditem	"@,,2 1010496"	// You have cleaned the item, but you have used up the rag.
+scp.poisoning_mustbecleaned	"@,,2 1005536"	// This weapon must be wiped clean before it can be poisoned.
+scp.poisoning_usethison		"@,,2 1010086"	// What do you want to use this on?
+
+scp.quest_alreaydoing		"@88,3,1 It looks like you're already doing this task for someone else."
+scp.quest_failed		"@33,3,1 You have failed your quest objectives!"
+scp.quest_nothaveitem		"@33,3,1 You don't seem to actually have all those items..."
+
+scp.removetrap_start			"@,,2 502368" // Which trap will you attempt to disarm?
+scp.removetrap_lackslockpicking		"@,,2 502366" // You do not know enough about locks.  Become better at picking locks.
+scp.removetrap_lacksdetectinghidden	"@,,2 502367" // You are not perceptive enough.  Become better at detect hidden.
+scp.removetrap_ischar			"@,,2 502816" // You feel that such an action would be inappropriate
+scp.removetrap_nottrapped		"@,,2 502373" // That doesn't appear to be trapped
+scp.removetrap_success			"@,,2 502377" // You successfully render the trap harmless
+scp.removetrap_fail			"@,,2 502372" // You fail to disarm the trap... but you don't set it off
+
+scp.runes_entername		"@88,,1 Type in a name for the rune"
+
+scp.tailor_cut_inpack		"@,,2 502437"	// Items you wish to cut must be in your backpack.
+scp.tailor_cut_invalid		"@,,2 502440"	// Scissors cannot be used on that to produce anything.
+
+scp.skill_youaredead		"@,,2 500949"	// You can't do that when you're dead.
+scp.skill_mustwait		"@,,2 500118"	// You must wait a few moments to use another skill.
+
+scp.stealth_nothidden		"@,,2 502725" // You must hide first
+scp.stealth_reqhiding		"@,,2 502726" // You are not hidden well enough.  Become better at hiding.
+scp.stealth_armorcheck		"@,,2 502727" // You could not hope to move quietly wearing this much armor.
+scp.stealth_success		"@,,2 502730" // You begin to move quietly.
+scp.stealth_fail		"@,,2 502731" // You fail in your attempt to move unnoticed.
+
+scp.spell_animatedead_target	"@,,2 1061083"	// Animate what corpse?
+scp.spell_curseweapon_noweap	"@,,2 501078"	// You must be holding a weapon.
+scp.spell_arcanecircle_notin	"@,,2 1072705"	// You must be standing on an arcane circle, pentagram or abbatoir to use this spell.
+scp.spell_arcanecircle_noplayer	"@,,2 1080452"	// There are not enough spellweavers present to create an Arcane Focus.
+
+scp.spiritspeak_fullhealed	"@03c1,3,2 502444"	// You establish contact with the netherworld.
+scp.spiritspeak_nomana		"@03c1,3,2 1061285"	// You lack the mana required to use this skill.
+scp.spiritspeak_wop		"@03b2,3,2 1062074"	// Anh Mi Sah Ko
+scp.spiritspeak_healcorpse	"@03c1,3,2 1061287"	// You channel energy from a nearby corpse to heal your wounds.
+scp.spiritspeak_healself	"@03c1,3,2 1061286"	// You channel your own spiritual energy to heal your wounds.
+
+scp.taming_tameself		"@,,1 You are your own master."
+scp.taming_notchar		"@,,2 502801"	// You can't tame that!
+scp.taming_notameable		"@,,2 1049655"	// That creature cannot be tamed.
+scp.taming_alreadytamed		"@,,2 502804"	// That animal looks tame already.
+scp.taming_onlymale		"@,,2 1049653"	// That creature can only be tamed by males.
+scp.taming_onlyfemale		"@,,2 1049652"	// That creature can only be tamed by females.
+scp.taming_onlyelf		"@03b2,,2 502801"	// You can't tame that!
+scp.taming_nochance		"@,,2 502806"	// You have no chance of taming this creature.
+scp.taming_manyfollowers	"@,,2 1049611"	// You have too many followers to tame that creature.
+scp.taming_manyowners		"@,,2 1005615"	// This animal has had too many owners and is too upset for you to tame.
+scp.taming_mustsubdue		"@,,2 1054025"	// You must subdue this creature before you can tame it!
+scp.taming_ontame		"@,,2 502802"	// Someone else is already taming this.
+scp.taming_getanger		"@,,2 502805"	// You seem to anger the beast!
+scp.taming_started		"@059,,2 1010597"	// *You start to tame the creature.*
+scp.taming_hestarted		"@059,,2 1010598"	// *begins taming a creature.*
+scp.taming_failed		"@,,2 502798"	// You fail to tame the creature.
+scp.taming_toofaraway		"@,,2 502795"	// You are too far away to continue taming.
+scp.taming_abort		"You give up trying to tame the creature."
+scp.taming_youdead		"@,,2 502796"	// You are dead, and cannot continue taming.
+scp.taming_cantseelos		"@,,2 1049654"	// You do not have a clear path to the animal you are taming, and must cease your attempt.
+scp.taming_isangry		"@,,2 502794"	// The animal is too angry to continue taming.
+scp.taming_player		"@,,2 502801"	// You can't tame that!
+scp.taming_subdued		"@,,2 1080057"	// * The creature has been beaten into subjugation! *
+
+scp.tasteid_targ		"@,,2 502807"	// What would you like to taste?
+scp.tasteid_ischar		"@,,2 502816"	// You feel that such an action would be inappropriate.
+scp.tasteid_ispoisoned		"@,,2 1038284"	// It appears to have poison smeared on it.
+scp.tasteid_notpoisoned		"@,,2 1010600"	// You detect nothing unusual about this substance.
+scp.tasteid_ispotion		"@,,2 502813"	// You already know what kind of potion that is.
+scp.tasteid_kegempty		"@,,2 502228"	// There is nothing in the keg to taste!
+scp.tasteid_knowkeg		"@,,2 502229"	// You are already familiar with this keg's contents.
+scp.tasteid_cannot		"@,,2 502820"	// That's not something you can taste.
+scp.tasteid_fail		"@,,2 502823"	// You cannot discern anything about this substance.
+
+scp.quest_complete		"@,,2 1075050"	// You have killed all the required quest creatures of this type.
+
+scp.vendor_contractinpack	"@,,2 1047012"	// The contract must be in your backpack to use it.
+
+scp.tracking_what_prompt	"@,,2 1011350" // What do you wish to track?
+scp.tracking_who_prompt		"@,,2 101809" // Select the one you would like to track.
+scp.tracking_fail		"@,,2 1018092" // You see no evidence of those in the area.
+scp.tracking_notseeanimals "@,,2 502991" // You see no evidence of animals in the area.
+scp.tracking_notseecreatures "@,,2 502993" // You see no evidence of creatures in the area.
+scp.tracking_notseepeople "@,,2 502995" // You see no evidence of people in the area.
+scp.tracking_lost "@,,2 503177" // You have lost your quarry.
+
+[DEFNAME SphereCommunityPack_WordsOfPower]
+// Words of Power for spells. Necromancy, Chivalry and Spellweaving.
+// Chivalry is the only one using clilocs.
+// *Update: Spell Says Move to Spells Script ( like Runes=.@,,2 1060718 )
+//scp.spell_101_wop	"Uus Corp"		// Animate Dead
+//scp.spell_102_wop	"In Jux Mani Xen"	// Blood Oath
+//scp.spell_103_wop	"In Agle Corp Ylem"	// Corpse Skin
+//scp.spell_104_wop	"An Sanct Gra Char"	// Curse Weapon
+//scp.spell_105_wop	"Pas Tym An Sanct"	// Evil Omen
+//scp.spell_106_wop	"Rel Xen Vas Bal"	// Horrific Beast
+//scp.spell_107_wop	"Rel Xen Corp Ort"	// Liche Form
+//scp.spell_108_wop	"Wis An Ben"		// Mind Rot
+//scp.spell_109_wop	"In Sar"		// Pain Spike
+//scp.spell_110_wop	"In Vas Nox"		// Poison Strike
+//scp.spell_111_wop	"In Bal Nox"		// Strangle
+//scp.spell_112_wop	"Kal Xen Bal"		// Summon Familiar
+//scp.spell_113_wop	"Rel Xen An Sanct"	// Vampiric Embrace
+//scp.spell_114_wop	"Kal Xen Bal Beh"	// Vengeful Spirit
+//scp.spell_115_wop	"Kal Vas An Flam"	// Wither
+//scp.spell_116_wop	"Rel Xen Um"		// Wraith Form
+//scp.spell_117_wop	"Ort Corp Grav"		// Exorcism
+
+//scp.spell_201_wop	"1060718"		// Cleanse by Fire
+//scp.spell_202_wop	"1060719"		// Close Wounds
+//scp.spell_203_wop	"1060720"		// Consecrate Weapon
+//scp.spell_204_wop	"1060721"		// Dispel Evil
+//scp.spell_205_wop	"1060722"		// Divine Fury
+//scp.spell_206_wop	"1060723"		// Enemy of One
+//scp.spell_207_wop	"1060724"		// Holy Light
+//scp.spell_208_wop	"1060725"		// Noble Sacrifice
+//scp.spell_209_wop	"1060726"		// Remove Curse
+//scp.spell_210_wop	"1060727"		// Sacred Journey
+
+//scp.spell_601_wop	"Myrshalee"		// Arcane Circle
+//scp.spell_602_wop	"Olorisstra"		// Gift of Renewal
+//scp.spell_603_wop	"Thalshara"		// Immolating Weapon
+//scp.spell_604_wop	"Haeldril"		// Attune Weapon
+//scp.spell_605_wop	"Erelonia"		// Thunderstorm
+//scp.spell_606_wop	"Rauvvrae"		// Nature's Fury
+//scp.spell_607_wop	"Alalithra"		// Summon Fey
+//scp.spell_608_wop	"Nylisstra"		// Summon Fiend
+//scp.spell_609_wop	"Tarisstree"		// Reaper Form
+//scp.spell_610_wop	"Haelyn"		// Wildfire
+//scp.spell_611_wop	"Anathrae"		// Essence of Wind
+//scp.spell_612_wop	"Rathril"		// Dryad Allure
+//scp.spell_613_wop	"Orlavdra"		// Ethereal Voyage
+//scp.spell_614_wop	"Nyraxle"		// Word of Death
+//scp.spell_615_wop	"Illorae"		// Gift of Life
+//scp.spell_616_wop	"Aslavdra"		// Arcane Empowerment
+
+//scp.spell_678_wop	"In Corp Ylem"		// Nether Bolt
+//scp.spell_679_wop	"Kal In Mani"		// Healing Stone
+//scp.spell_680_wop	"An Ort Sanct"		// Purge Magic
+//scp.spell_681_wop	"In Ort Ylem"		// Enchant
+//scp.spell_682_wop	"In Zu"			// Sleep
+//scp.spell_683_wop	"Kal Por Xen"		// Eagle Strike
+//scp.spell_684_wop	"In Jux Por Ylem"	// Animated Weapon
+//scp.spell_685_wop	"In Rel Ylem"		// Stone Form
+//scp.spell_686_wop	"In Vas Ort Ex"		// Spell Trigger
+//scp.spell_687_wop	"Vas Zu"		// Mass Sleep
+//scp.spell_688_wop	"In Vas Mani Hur"	// Cleansing Winds
+//scp.spell_689_wop	"Corp Por Ylem"		// Bombard
+//scp.spell_690_wop	"Vas Rel Jux Ort"	// Spell Plague
+//scp.spell_691_wop	"Kal Des Ylem"		// Hail Storm
+//scp.spell_692_wop	"Grav Hur"		// Nether Cyclone
+//scp.spell_693_wop	"Kal Vas Xen Corp Ylem"	// Rising Colossus
+
+[DEFNAME SphereCommunityPack_HUNGERSYSTEM_messages]
+//////FOOD MESSAGES
+SCP.FOOD_1 You are starving!
+SCP.FOOD_2 You are VERY VERY hungry.
+SCP.FOOD_3 You are VERY VERY hungry.
+SCP.FOOD_4 You are VERY hungry.
+SCP.FOOD_5 You are VERY hungry.
+SCP.FOOD_6 You are hungry.
+SCP.FOOD_7 You are hungry.
+SCP.FOOD_8 You are some hungry.
+SCP.FOOD_9 You are some hungry.
+SCP.FOOD_10 You are a little hungry.
+SCP.FOOD_11 You are a little hungry.
+SCP.FOOD_12 You are nearly satiated.
+SCP.FOOD_13 You are nearly satiated.
+SCP.FOOD_14 You are nearly satiated.
+SCP.FOOD_15 You are satiated.
+
+//DRINK MESSAGES
+SCP.DRINK_1 You are dying of thirst!
+SCP.DRINK_2 You are VERY VERY thirsty.
+SCP.DRINK_3 You are VERY VERY thirsty.
+SCP.DRINK_4 You are VERY thirsty.
+SCP.DRINK_5 You are VERY thirsty.
+SCP.DRINK_6 You are thirsty.
+SCP.DRINK_7 You are thirsty.
+SCP.DRINK_8 You are some thirsty.
+SCP.DRINK_9 You are some thirsty.
+SCP.DRINK_10 You are a little thirsty.
+SCP.DRINK_11 You are a little thirsty.
+SCP.DRINK_12 You are nearly thirsty.
+SCP.DRINK_13 You are nearly thirsty.
+SCP.DRINK_14 You are nearly thirsty.
+SCP.DRINK_15 You aren't thirsty.
+
+//SCABIES ILLINESS MESSAGES
+//FORMAT: SCABIES LEVEL | RANGE OF MANA MALUS | MESSAGE
+SCP.SCABIES_1 15 You are very very weak and must search a healer!
+SCP.SCABIES_2 12 Search a healer you have a dangerous ill!
+SCP.SCABIES_3 11 You are tired! You must search a healer!
+SCP.SCABIES_4 10 Search a healer! You're ill!
+SCP.SCABIES_5 8 You are very tired!
+SCP.SCABIES_6 7 You are tired and begin to be weak!
+SCP.SCABIES_7 6 You are tired and ill!
+SCP.SCABIES_8 5 You're tired! Perhaps you have some dangerous illiness!
+SCP.SCABIES_9 4 Begin to be tired!
+SCP.SCABIES_10 2 You're illed!
+
+//ANEMIA ILLINESS MESSAGES
+//FORMAT: ANEMIA LEVEL | RANGE OF STAMINA MALUS | MESSAGE
+SCP.anemia_1 8 You are very very weak and must search a healer!
+SCP.anemia_2 7 Search a healer you have a dangerous ill!
+SCP.anemia_3 7 You are tired! You must search a healer!
+SCP.anemia_4 6 Search a healer! You're ill!
+SCP.anemia_5 6 You are very tired!
+SCP.anemia_6 6 You are tired and begin to be weak!
+SCP.anemia_7 5 You are tired and ill!
+SCP.anemia_8 5 You're tired! Perhaps you have some dangerous illiness!
+SCP.anemia_9 4 Begin to be tired!
+SCP.anemia_10 4 You're illed!
+
+[EOF]

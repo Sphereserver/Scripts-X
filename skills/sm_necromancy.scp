@@ -12,24 +12,270 @@ sm_summon_familiar	= Triggered by the Necromancy "Summon Familiar" spell
 [SKILLMENU sm_Summon_Familiar]
 What do you want to summon ?
 
-ON=i_pet_daemon_horde <name>
-TEST=NECROMANCY 30.0,SPIRITSPEAK 30.0
-SUMMON=c_daemon_horde_minion
+ON=i_pet_daemon_horde Horde Minion
+TEST=necromancy 30.0 spiritspeak 30.0
+SUMMON=c_familiar_horde_minion
 
-ON=i_pet_wisp <name>
-TEST=NECROMANCY 50.0,SPIRITSPEAK 50.0
-SUMMON=c_wisp_dark	//Should be c_wisp_shadow ?
+ON=i_pet_wisp Shadow Wisp
+TEST=necromancy 50.0 spiritspeak 50.0
+SUMMON=c_familiar_shadow_wisp
 
-ON=i_pet_wolf_grey <name>
-TEST=NECROMANCY 60.0,SPIRITSPEAK 60.0
-SUMMON=c_wolf_dark
+ON=i_pet_wolf_grey Dark Wolf
+TEST=necromancy 60.0 spiritspeak 60.0
+SUMMON=c_familiar_dark_wolf
 
-//ON=i_pet_death_adder <name>
-//TEST=NECROMANCY 80.0,SPIRITSPEAK 80.0
-//SUMMON=c_Death_adder
+ON=i_pet_snake Death Adder
+TEST=necromancy 80.0 spiritspeak 80.0
+SUMMON=c_familiar_death_adder
 
-ON=i_pet_vampirebat <name>
-TEST=NECROMANCY 100.0,SPIRITSPEAK 100.0
-SUMMON=c_vampire_bat
+ON=i_pet_vampirebat Vampire Bat
+TEST=necromancy 100.0 spiritspeak 100.0
+SUMMON=c_familiar_vampire_bat
+
+//ON=@Cancel
+//   SRC.SYSMESSAGELOC color_text,1061825//"You decide not to summon a familiar."
+
+
+[CHARDEF c_familiar_horde_minion]
+//"The Horde Minion Familiar will attack the foes that its master attacks,
+// and as an extra bonus it will pick up any items it comes across on the
+// ground and put them in its little backpack."
+//FIXME: Limited verbal commands
+ID=c_horde_minion
+NAME=horde minion familiar
+ICON=i_pet_demon_horde
+SOUND=snd_monster_headls1
+CAN=MT_WALK|MT_RUN|MT_USEHANDS
+DAM=14,20
+ARMOR=50
+//DESIRES=
+//AVERSIONS=
+//FOODTYPE=
+//RESOURCES=
+BLOODCOLOR=colors_blood
+MOVERATE=100
+TAG.Slayer=SLAYER_DEMON
+TAG.Control.Slots=1
+CATEGORY=Spells
+SUBSECTION=Necromancy
+DESCRIPTION=Familiar, Horde Minion
+ON=@Create
+   NPC=brain_monster
+//   TAG.Level=
+//   EVENTS=+e_monster_level_system
+   EVENTS=+e_looter
+   FAME={1000 1499}
+   KARMA={-1000 -1499}
+   STR={95 105}
+   MAXHITS={65 75}
+   DEX={100 110}
+   MAXSTAM={105 115}
+   INT={95 105}
+   MAXMANA={25 35}
+   TACTICS={70.0 80.0}
+   WRESTLING={70.0 80.0}
+   MODAR={0 10}
+   RESCOLD=0
+   RESENERGY={25 30}
+   RESFIRE={50 60}
+   RESPOISON={25 30}
+ON=@ItemStep
+   IF !(<ARGN1>)
+      IF !(<ACT.ATTR>&attr_move_never) && !(<ACT.ATTR>&attr_owned) && !(<ACT.ATTR>&attr_invis) && !(<ACT.ATTR>&attr_static)
+         ACT.BOUNCE
+      ENDIF
+   ENDIF
+ON=@ContextMenuRequest
+   IF (<IsMyPet>)
+      SRC.AddContextEntry 101,6194//"Get scavenged loot"
+      RETURN 1
+   ENDIF
+ON=@ContextMenuSelect
+   IF (<IsMyPet>)
+      IF (<ARGN>==101)
+         FORCONT <FINDLAYER(layer_pack).UID> 0
+            BOUNCE
+         ENDFOR
+      ENDIF
+   ENDIF
+
+[CHARDEF c_familiar_shadow_wisp]
+//"The Shadow Wisp Familiar will attack the foes that its master attacks,
+// and as an extra bonus it will periodically heal the mana of the caster
+// (and the casters friends) IF they have negative Karma...
+//   at -500 karma: 1-5 mana
+//   at -10,000 karma: 1-10 mana"
+//FIXME: Heals based on Karma
+ID=c_wisp
+NAME=shadow wisp familiar
+ICON=i_pet_wisp
+SOUND=snd_monster_wisp1
+CAN=MT_WALK|MT_FLY|MT_USEHANDS
+
+DAM=2,8
+ARMOR=10
+
+
+BLOODCOLOR=-1
+MOVERATE=100
+TAG.Control.Slots=1
+TAG.DamEnergy=100
+TAG.Slayer=SLAYER_FEY
+
+CATEGORY=Spells
+SUBSECTION=Necromancy
+DESCRIPTION=Familiar, Shadow Wisp
+ON=@Create
+   NPC=brain_animal
+   FAME={1000 1499}
+   KARMA={-1000 -1499}
+   STR={45 55}
+   MAXHITS={45 55}
+   DEX={55 65}
+   MAXSTAM={55 65}
+   INT={95 105}
+   MAXMANA={25 35}
+   TACTICS={35.0 45.0}
+   WRESTLING={35.0 45.0}
+   MODAR={0 5}
+   RESCOLD={10 15}
+   RESENERGY={95 100}
+   RESFIRE={10 15}
+   RESPOISON={10 15}
+   ITEMNEWBIE=i_light_source
+   ATTR=attr_magic|attr_newbie
+ON=@NPCAction
+   SERV.LOG <NAME> is about to take action
+
+[CHARDEF 01b]
+//"The Dark Wolf Familiar will attack the foes that its master attacks,
+// and as an extra bonus it will allow its master to tame any wolf he meets
+// in his travels."
+//FIXME: "Gives wolf training skill to summoner."
+//FIXME: "Abilities: +1 stamina every 2 seconds."
+
+DEFNAME=c_familiar_dark_wolf
+NAME=dark wolf familiar
+ICON=i_pet_wolf_grey
+SOUND=snd_animals_wolf1
+CAN=MT_WALK|MT_RUN
+
+DAM=15,33
+ARMOR=40
+
+TAG.Barding.Diff=10000	//Immune to barding
+FollowerSlots=1
+FACTION = faction_wolf
+
+CATEGORY=Spells
+SUBSECTION=Necromancy
+DESCRIPTION=Familiar, Dark Wolf
+ON=@Create
+   NPC=brain_animal
+   
+   FAME={500 999}
+   KARMA={-800 -999}
+   
+   STR={95 105}
+   MAXHITS={55 65}
+   DEX={85 95}
+   MAXSTAM={85 95}
+   INT={85 95}
+   MAXMANA={25 35}
+   
+   TACTICS={45.0 55.0}
+   WRESTLING={85.0 90.0}
+   RESPHYSICAL={0 10}
+   RESCOLD={25 40}
+   RESENERGY={25 40}
+   RESFIRE={25 40}
+   RESPOISON={25 40}
+
+[CHARDEF c_familiar_death_adder]
+//"The Death Adder Familiar will attack the foes that its master attacks,
+// and as an extra bonus it will allow its master to command any snakes in
+// the area by doubleclicking them."
+//"FIXME: Snake Charming. Allows caster to double click snakes and serpents
+// in the area and target what they want them to kill."
+ID=c_snake
+NAME=death adder familiar
+ICON=i_pet_snake
+SOUND=snd_animals_snake1
+CAN=MT_WALK|MT_RUN
+
+DAM=1,4
+ARMOR=10
+
+
+BLOODCOLOR=colors_blood
+MOVERATE=100
+TAG.Control.Slots=1
+TAG.HitPoison=3
+TAG.Slayer=SLAYER_SNAKE
+
+CATEGORY=Spells
+SUBSECTION=Necromancy
+DESCRIPTION=Familiar, Death Adder
+ON=@Create
+   COLOR=colors_snake
+   NPC=brain_monster
+   FAME={1000 1499}
+   KARMA={-1000 -1499}
+   STR={65 80}
+   MAXHITS={45 55}
+   DEX={145 155}
+   MAXSTAM={145 155}
+   INT={95 105}
+   MAXMANA={25 35}
+   POISONING={145.0 155.0}
+   TACTICS={45.0 55.0}
+   WRESTLING={85.0 95.0}
+   MODAR=0
+   RESCOLD=0
+   RESENERGY=0
+   RESFIRE=0
+   RESPOISON=100
+ON=@NPCRestock
+   ITEM=loot_snake_giant
+
+[CHARDEF c_familiar_vampire_bat]
+//"The Vampire Bat Familiar will attack the foes that its master attacks,
+// and as an extra bonus it will heal its master for as much as it damages
+// his foe."
+//FIXME: Leech life to owner
+ID=c_vampire_bat
+NAME=vampire bat familiar
+ICON=i_pet_vampirebat
+SOUND=snd_monster_mngbat1
+CAN=MT_WALK|MT_FLY
+DAM=7,21
+ARMOR=10
+
+BLOODCOLOR=colors_blood
+MOVERATE=100
+TAG.Control.Slots=1
+
+CATEGORY=Spells
+SUBSECTION=Necromancy
+DESCRIPTION=Familiar, Vampire Bat
+ON=@Create
+   NPC=brain_animal
+   FAME={1000 1499}
+   KARMA={-1000 -1499}
+   STR={115 125}
+   MAXHITS={85 95}
+   DEX={115 125}
+   MAXSTAM={115 125}
+   INT={95 105}
+   MAXMANA={25 35}
+   TACTICS={45.0 55.0}
+   WRESTLING={90.0 100.0}
+   MODAR={0 10}
+   RESCOLD={10 20}
+   RESENERGY={10 20}
+   RESFIRE={10 20}
+   RESPOISON={10 20}
+
+
 
 [EOF]

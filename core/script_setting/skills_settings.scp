@@ -1,0 +1,218 @@
+
+[DEFNAME SPHERE_COMMUNITY_PACK_SETTINGS]
+///////////////////////////////////////////////////////////////
+//////// Skills Settings
+///////////////////////////////////////////////////////////////
+// Choose if you want to use OSI skill wait times instead of sphere's default skill delays
+scp.SkillWaitingTimes=1
+
+// Choose between using new or default skills. Most of them are OSI-Like
+// If not, you can find documentation in the forums.
+scp.NewSkills_Anatomy=1
+scp.NewSkills_AnimalLore=1
+scp.NewSkills_ItemID=1
+scp.NewSkills_AnimalTaming=1
+scp.NewSkills_ArmsLore=1
+scp.NewSkills_Begging=1
+scp.NewSkills_DetectHidden=1
+scp.NewSkills_EvalInt=1
+scp.NewSkills_SpiritSpeak=1
+scp.NewSkills_ResistingSpells=1
+scp.NewSkills_Poisoning=1
+scp.NewSkills_Healing=1
+scp.NewSkills_TasteID=1
+scp.NewSkills_Hiding=1
+scp.NewSkills_Stealth=1
+scp.NewSkills_RemoveTrap=1
+scp.NewSkills_Meditation=1
+scp.NewSkills_Focus=1
+scp.NewSkills_Tracking=1
+
+// Enables, switch or disable the new barding system
+// 0 = Default. 1 = OSI-Like.
+scp.BardingSystem=1
+
+// Enable or disable a specific skill from the barding system
+// <boolean> (1 if enable, 0 if not). Default = 1
+scp.NewBarding_Peacemaking=1
+scp.NewBarding_Provocation=0 // NOT TESTED. USE AT OWN RISK. (Report bugs if any)
+scp.NewBarding_Discordance=0 // NOT DONE!!
+
+// Enables, switch or disable the new crafting system
+// 0 = Default. 1 = OSI-Like.
+scp.CraftingSystem=1
+
+// Enable or disable the crafting menu for specific skill.
+// <boolean> (1 if enable, 0 if not). Default = 1
+scp.NewCrafting_Alchemy=1
+scp.NewCrafting_Blacksmithing=1
+scp.NewCrafting_Bowcraft=1
+scp.NewCrafting_Carpentry=1
+scp.NewCrafting_Cooking=0 // NOT DONE!!
+scp.NewCrafting_Inscription=1
+scp.NewCrafting_Tailoring=1
+scp.NewCrafting_Tinkering=1
+
+// If the item needs a recipe and the player doesn't have it, display resources as "????"
+// If this is 0, it will display the skillmake/resources normally.
+scp.NewCrafting_RecipeNeeded=1
+
+///////////////////////////////////////////////////////////////
+//////// Skills Settings - Resource Gathering
+///////////////////////////////////////////////////////////////
+// Allow shovels to dig in sand?
+// <boolean> (1 if enable, 0 if not). Default = 1
+scp.Mining_AllowSand=1
+
+// The percent of resources to recover when you "re-smelt" a crafted item.
+// From 0 to 100%.
+scp.Mining_SmeltingPercent=75
+
+// Allow collect resource on ride?
+// <boolean> (1 if enable, 0 if not). Default = 0
+scp.mining_on_mount=0
+
+// Allow collect resource with poly?
+// <boolean> (1 if enable, 0 if not). Default = 0
+scp.mining_polymorph=0
+
+// Allow collect resource with no carry?
+// <boolean> (1 if enable, 0 if not). Default = 0
+scp.mining_stop_nocarry=0
+
+// Allow bonus to dig in stone?
+// <boolean> (1 if enable, 0 if not). Default = 0
+// NOT TESTED. USE AT OWN RISK. (Report bugs if any)
+scp.Mining_Bonus_1=0
+
+// minskill,chance,message,id
+scp.Mining_Bonus_1_0 0, 97.6, ,  //Nothing
+scp.Mining_Bonus_1_1 100, 0.4, 1072562, i_gem_blue_diamond
+scp.Mining_Bonus_1_2 100, 0.4, 1072567, i_gem_dark_sapphire
+scp.Mining_Bonus_1_3 100, 0.4, 1072570, i_gem_ecru_citrine
+scp.Mining_Bonus_1_4 100, 0.4, 1072564, i_gem_fire_ruby
+scp.Mining_Bonus_1_5 100, 0.4, 1072566, i_gem_perfect_emerald
+scp.Mining_Bonus_1_6 100, 0.4, 1072568, i_gem_turquoise
+
+// Allow collect granit to dig in stone?
+// <boolean> (1 if enable, 0 if not). Default = 0
+// NOT TESTED. USE AT OWN RISK. (Report bugs if any)
+scp.Mining_Granit=0
+
+// Chance for ore to granit consumer (Percent value)
+// From 0 to 100%. Default = 5
+scp.Mining_ChanceGranit=5
+
+// Minimum Mining skill at which you can ore to granit
+// From 0 to 100.0 - Default = 90.0
+scp.Mining_MinToGranit=90.0
+
+// Fishing makes a difference between coast lines and deep ocean.
+// Will use r_water as deep ocean. And r_default_water as coast lines.
+// <boolean> (1 if enable, 0 if not). Default = 1
+scp.Fishing_CoastLines=1
+
+// Allow the new SOS fishing treasure system?
+// <boolean> (1 if enable, 0 if not). Default = 1
+scp.Fishing_SOSTreasure=1
+
+// Can SeaSerpent appear when you fail at fishing?
+// <boolean> (1 if enable, 0 if not). Default = 1
+scp.Fishing_SeaSerpent=1
+
+// Minimum fishing skill at which you can disturb Sea Serpents
+// From 0 to 100.0 - Default = 80.0
+scp.Fishing_MinToDisturbSerpent=80.0
+
+// Chance to disturb a Sea Serpent when you fail.
+// From 0 to 100 (percent). Default = 5%
+scp.Fishing_ChanceSeaSerpent=5
+
+// Chance to transform a SOS into an Ancient SOS
+// From 0 to 100 (percent). Default = 4%
+scp.Fishing_ChanceToAncient=4
+
+// Minimum fishing skill to be able to open a SOS Bottle
+// Setting this to 0 disables it.
+scp.Fishing_MinToSosBottle=0
+
+///////////////////////////////////////////////////////////////
+//////// Skills Settings - Poisoning/Healing/Veterinary
+///////////////////////////////////////////////////////////////
+// Undead monsters are immune to poison
+// <boolean> (0 = No / 1 = Yes)
+scp.Poisoning_MonsterImmuneUndead=1
+
+// Poisonous monsters are immune to poison
+// <boolean> (0 = No / 1 = Yes)
+scp.Poisoning_MonsterImmunePoisonous=1
+
+// Monsters are immune to poison if they have 100 ResPoison or more
+// <boolean> (0 = No / 1 = Yes)
+scp.Poisoning_MonsterImmuneResist=1
+
+// Minimum Poisoning for monsters to required to be classed as poisonous (able to poison)
+// From 0 to 1000. Default = 200 (20.0%)
+scp.Poisoning_MonsterPoisonous=200
+
+// Two Handed weapons can be poisoned
+// <boolean> (0 = No / 1 = Yes)
+scp.Poisoning_WeaponTwoHands=0
+
+// Chance for food to poison consumer (Percent value)
+// From 0 to 100%. Default = 100
+scp.Poisoning_FoodChance=100
+
+// If a weapon is poisoned it required cleaning to be poisoned again (1 = yes, 0 = no)
+// Item for cleaning is i_cloth_oil, needs adding to a craft or vendor for use.
+scp.Poisoning_CleanWeapons=0
+
+// Weapons poison on hit (1 = yes, 0 = no) (NOTE: Turning this off will still poison the weapon)
+// Leave this on unless you plan on using things like Infectious Strike from the maneuvers system.
+scp.Poisoning_WeaponsPoison=1
+
+// Minimum Healing required to cure
+// From 0 to 1000. Default = 0 (0.0%)
+scp.Healing_MinToCure=0
+
+// Minimum Anatomy required to cure
+// From 0 to 1000. Default = 620 (62.0%)
+scp.Healing_MinAnatomyToCure=620
+
+// Is anatomy skill used in the cure chance?
+// <boolean> (0 = No / 1 = Yes)
+scp.Healing_UseAnatomy=1
+
+// Poison prevents healing from bandages
+// <boolean> (0 = No / 1 = Yes)
+scp.Healing_PoisonNoBandage=1
+
+// Healing uses your form's brain?
+// Example: if you polymorphed into a bear, you would heal with veterinary
+// <boolean> (0 = No / 1 = Yes)
+scp.Healing_BasedOnForm=0
+
+// Minimum Veterinary required to cure
+// From 0 to 1000. Default = 0 (0.0%)
+scp.Veterinary_MinToCure=0
+
+// Minimum Animal Lore required to cure
+// From 0 to 1000. Default = 620 (62.0%)
+scp.Veterinary_MinAnimalLoreToCure=620
+
+// Is animal lore skill used in the cure chance?
+// <boolean> (0 = No / 1 = Yes)
+scp.Veterinary_UseAnimalLore=1
+
+// Poison prevents veterinary healing from bandages
+// <boolean> (0 = No / 1 = Yes)
+scp.Veterinary_PoisonNoBandage=1
+
+///////////////////////////////////////////////////////////////
+//////// Skills Settings - Other Settings
+///////////////////////////////////////////////////////////////
+// Required hiding for stealth to begin
+// Defaults After SE: 50.0 Before SE: 80.0
+scp.Stealth_HidingReq=50.0
+
+[EOF]
