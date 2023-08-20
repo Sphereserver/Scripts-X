@@ -333,9 +333,6 @@ SKILLMAKE=ALCHEMY 0, t_mortar
 ON=@Create
    MORE1=s_poison
    MORE2=40.0
-on=@dclick
-    src.sysmessage You decided against trying the poison yourself. Try applying it to something instead.
-    return 1
 
 [ITEMDEF i_potion_Poison]
 NAME=Poison
@@ -347,9 +344,6 @@ SKILLMAKE=ALCHEMY 15.1, t_mortar
 ON=@Create
    MORE1=s_poison
    MORE2=50.0
-on=@dclick
-    src.sysmessage You decided against trying the poison yourself. Try applying it to something instead.
-    return 1
 
 [ITEMDEF i_potion_PoisonGreat]
 NAME=Greater Poison
@@ -361,9 +355,6 @@ SKILLMAKE=ALCHEMY 55.1, t_mortar
 ON=@Create
    MORE1=s_poison
    MORE2=90.0
-on=@dclick
-    src.sysmessage You decided against trying the poison yourself. Try applying it to something instead.
-    return 1
 
 [ITEMDEF i_potion_PoisonDeadly]
 NAME=Deadly Poison
@@ -375,10 +366,7 @@ SKILLMAKE=ALCHEMY 90.1, t_mortar
 ON=@Create
    MORE1=s_poison
    MORE2=105.0
-on=@dclick
-    src.sysmessage You decided against trying the poison yourself. Try applying it to something instead.
-    return 1
-    
+
 [ITEMDEF i_potion_Refresh]
 NAME=Refresh
 ID=i_bottle_red
