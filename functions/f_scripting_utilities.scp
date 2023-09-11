@@ -119,6 +119,32 @@ RETURN <QVAL <ARGN2> < <ARGN1>? <ARGN1> : <ARGN2>>
 [FUNCTION min]
 RETURN <QVAL <ARGN2> < <ARGN1>? <ARGN2> : <ARGN1>>
 
+[FUNCTION F_Round_Up]
+//This function will round UP any positive number to the nearest whole number. Ex: 1.12 = 2
+IF <floatval <ARGS>> < <floatval 1>
+	RETURN 1
+else
+	LOCAL.INT = <FEVAL <FLOATVAL <ARGS>>>
+ENDIF
+
+IF (<FLOATVAL <ARGS>/<LOCAL.INT>> > <floatval 1>)
+    RETURN <FEVAL <FLOATVAL (<ARGS>) + 1>>
+else
+	RETURN <LOCAL.INT>
+ENDIF
+
+[FUNCTION F_Round]
+//This function will round any positive number to the nearest whole number.
+IF (STRREGEX(^[0-9]*\.?[0-4][0-9]*$, <ARGS>))
+    LOCAL.RESULT=<FEVAL <ARGS>>
+    RETURN <LOCAL.RESULT>
+ELSEIF (STRREGEX(^[0-9]*\.?[5-9][0-9]*$, <ARGS>))
+    LOCAL.RESULT=<FEVAL <ARGS>> + 1
+    RETURN <LOCAL.RESULT>
+
+ELSE
+    SRC.SYSMESSAGE This input is not compatible.
+ENDIF
 
 
 [FUNCTION getargv]
