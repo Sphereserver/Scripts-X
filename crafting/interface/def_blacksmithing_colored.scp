@@ -61,9 +61,6 @@ blacksmithing_1_category_9_4 "i_scepter_dull_copper"
 blacksmithing_1_category_9_5 "i_mace_war_dull_copper"
 blacksmithing_1_category_9_6 "i_hammer_war_dull_copper"
 
-blacksmithing_1_category_10_1 "i_deed_anvil_dull_copper"
-blacksmithing_1_category_10_2 "i_deed_forge_dull_copper"
-
 
 [DEFNAME sphere_crafting_blacksmithing_shadow]
 blacksmithing_2_category_1_1 "i_ringmail_gloves_shadow"
@@ -127,9 +124,6 @@ blacksmithing_2_category_9_3 "i_maul_shadow"
 blacksmithing_2_category_9_4 "i_scepter_shadow"
 blacksmithing_2_category_9_5 "i_mace_war_shadow"
 blacksmithing_2_category_9_6 "i_hammer_war_shadow"
-
-blacksmithing_2_category_10_1 "i_deed_anvil_shadow"
-blacksmithing_2_category_10_2 "i_deed_forge_shadow"
 
 
 [DEFNAME sphere_crafting_blacksmithing_copper]
@@ -195,10 +189,6 @@ blacksmithing_3_category_9_4 "i_scepter_copper"
 blacksmithing_3_category_9_5 "i_mace_war_copper"
 blacksmithing_3_category_9_6 "i_hammer_war_copper"
 
-blacksmithing_3_category_10_1 "i_deed_anvil_copper"
-blacksmithing_3_category_10_2 "i_deed_forge_copper"
-
-
 [DEFNAME sphere_crafting_blacksmithing_bronze]
 blacksmithing_4_category_1_1 "i_ringmail_gloves_bronze"
 blacksmithing_4_category_1_2 "i_ringmail_leggings_bronze"
@@ -261,10 +251,6 @@ blacksmithing_4_category_9_3 "i_maul_bronze"
 blacksmithing_4_category_9_4 "i_scepter_bronze"
 blacksmithing_4_category_9_5 "i_mace_war_bronze"
 blacksmithing_4_category_9_6 "i_hammer_war_bronze"
-
-blacksmithing_4_category_10_1 "i_deed_anvil_bronze"
-blacksmithing_4_category_10_2 "i_deed_forge_bronze"
-
 
 [DEFNAME sphere_crafting_blacksmithing_gold]
 blacksmithing_5_category_1_1 "i_ringmail_gloves_gold"
@@ -329,10 +315,6 @@ blacksmithing_5_category_9_4 "i_scepter_gold"
 blacksmithing_5_category_9_5 "i_mace_war_gold"
 blacksmithing_5_category_9_6 "i_hammer_war_gold"
 
-blacksmithing_5_category_10_1 "i_deed_anvil_gold"
-blacksmithing_5_category_10_2 "i_deed_forge_gold"
-
-
 [DEFNAME sphere_crafting_blacksmithing_agapite]
 blacksmithing_6_category_1_1 "i_ringmail_gloves_agapite"
 blacksmithing_6_category_1_2 "i_ringmail_leggings_agapite"
@@ -395,10 +377,6 @@ blacksmithing_6_category_9_3 "i_maul_agapite"
 blacksmithing_6_category_9_4 "i_scepter_agapite"
 blacksmithing_6_category_9_5 "i_mace_war_agapite"
 blacksmithing_6_category_9_6 "i_hammer_war_agapite"
-
-blacksmithing_6_category_10_1 "i_deed_anvil_agapite"
-blacksmithing_6_category_10_2 "i_deed_forge_agapite"
-
 
 [DEFNAME sphere_crafting_blacksmithing_verite]
 blacksmithing_7_category_1_1 "i_ringmail_gloves_verite"
@@ -463,10 +441,6 @@ blacksmithing_7_category_9_4 "i_scepter_verite"
 blacksmithing_7_category_9_5 "i_mace_war_verite"
 blacksmithing_7_category_9_6 "i_hammer_war_verite"
 
-blacksmithing_7_category_10_1 "i_deed_anvil_verite"
-blacksmithing_7_category_10_2 "i_deed_forge_verite"
-
-
 [DEFNAME sphere_crafting_blacksmithing_valorite]
 blacksmithing_8_category_1_1 "i_ringmail_gloves_valorite"
 blacksmithing_8_category_1_2 "i_ringmail_leggings_valorite"
@@ -529,8 +503,5 @@ blacksmithing_8_category_9_3 "i_maul_valorite"
 blacksmithing_8_category_9_4 "i_scepter_valorite"
 blacksmithing_8_category_9_5 "i_mace_war_valorite"
 blacksmithing_8_category_9_6 "i_hammer_war_valorite"
-
-blacksmithing_8_category_10_1 "i_deed_anvil_valorite"
-blacksmithing_8_category_10_2 "i_deed_forge_valorite"
 
 [EOF]

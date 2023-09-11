@@ -4,10 +4,10 @@
 // Generate files with armors, weapons, etc.
 //
 // Generate:
+//	- RESOURCES: ore,ingot,leather
 //	- Platemail
 //	- Shields
 // TODO:
-// 	- Resources: ore,ingot,leather
 // 	- Leather armors
 // 	- Weapons
 // 	- Crafting options
@@ -17,20 +17,34 @@
 
 [DEFNAME def_generator]
 // Quantity of ore to generate
+generator_resources_quantity = 17
 generator_platemail_quantity = 8
+generator_leather_quantity = 3
 
-// resource to generate: Name,Id,Type,Color
-// Tyoes: 1 = ore, 2 = leather, 3 = logs
-generator_resource_1 = Dull Copper,dull_copper,1,060a
-generator_resource_2 = Shadow,shadow,1,0770
-generator_resource_3 = Copper,copper,1,0641
-generator_resource_4 = Bronze,bronze,1,06d6
-generator_resource_5 = Gold,gold,1,045e
-generator_resource_6 = Agapite,agapite,1,0400
-generator_resource_7 = Verite,verite,1,07d1
-generator_resource_8 = Valorite,valorite,1,0515
+// resource to generate: NAME,ID,TYPE,COLOR
+// Types: 1 = ore, 2 = leather, 3 = logs
+//ores/ingot
+generator_resource_1 = Dull Copper,dull_copper,1,65.0
+generator_resource_2 = Shadow,shadow,1,70.0
+generator_resource_3 = Copper,copper,1,75.0
+generator_resource_4 = Bronze,bronze,1,80.0
+generator_resource_5 = Gold,gold,1,85.0
+generator_resource_6 = Agapite,agapite,1,90.0
+generator_resource_7 = Verite,verite,1,95.0
+generator_resource_8 = Valorite,valorite,1,99.0
+//leather
+generator_resource_9 = Spined,spined,2
+generator_resource_10 = Horned,Horned,2
+generator_resource_11 = Barbed,barbed,2
+//wood
+generator_resource_12 = Oak,oak,3
+generator_resource_13 = Ash,ash,3
+generator_resource_14 = Yew,yew,3
+generator_resource_15 = Heartwood,heartwood,3
+generator_resource_16 = Bloodwood,bloodwood,3
+generator_resource_17 = Frostwood,frostwood,3
 
-// platemail to generate: OreName,Ore,Armor
+// platemail to generate: OreName,Ore,ARMOR
 generator_platemail_1 = Dull Copper,dull_copper,32
 generator_platemail_2 = Shadow,shadow,34
 generator_platemail_3 = Copper,copper,36
@@ -50,29 +64,62 @@ generator_shield_6 = Agapite,agapite,19,23,35
 generator_shield_7 = Verite,verite,21,25,37
 generator_shield_8 = Valorite,valorite,23,27,39
 
+// leather to generate: HideName,Hide,ARMOR
+generator_leather_1 = Spined,spined,23
+generator_leather_2 = Horned,horned,26
+generator_leather_3 = Barbed,barbed,29
+
 [FUNCTION f_generator_files]
 SERV.LOG @Generator :: Starting generation scripts...
-LOCAL.AMOUNT = <DEF.generator_platemail_quantity>
 
-FILE.DELETEFILE "scripts/add-on/generator/generate_armor_colored.scp"
-IF <FILE.OPEN "scripts/add-on/generator/generate_armor_colored.scp">
+//RESOURCES
+SERV.LOG @Generator :: Generating RESOURCES...
+LOCAL.AMOUNT = <DEF.generator_resources_quantity>
+FILE.DELETEFILE "scripts/add-on/generator/i_resources.scp"
+IF <FILE.OPEN "scripts/add-on/generator/i_resources.scp">
 	FOR 1 <LOCAL.AMOUNT>
-		// Resources
 		IF (!<ISEMPTY <DEF.generator_resource_<dlocal._for>>>)
-			SERV.LOG @Generator :: Generating resource <def.generator_resource_<dlocal._for>>
+			SERV.LOG @Generator :: Generating resource <DEF.generator_resource_<dlocal._for>>
 			f_generator_resource <DEF.generator_resource_<dlocal._for>>
 		ENDIF
+	ENDFOR
 
+	FILE.WRITELINE "[EOF]"
+	FILE.CLOSE
+ENDIF
+
+//Platemail
+SERV.LOG @Generator :: Generating platemail...
+LOCAL.AMOUNT = <DEF.generator_platemail_quantity>
+FILE.DELETEFILE "scripts/add-on/generator/i_armor_platemail_colored.scp"
+IF <FILE.OPEN "scripts/add-on/generator/i_armor_platemail_colored.scp">
+	FOR 1 <LOCAL.AMOUNT>
 		// Platemail
 		IF (!<ISEMPTY <DEF.generator_platemail_<dlocal._for>>>)
-			SERV.LOG @Generator :: Generating platemail <def.generator_platemail_<dlocal._for>>
+			SERV.LOG @Generator :: Generating platemail <DEF.generator_platemail_<dlocal._for>>
 			f_generator_platemail <DEF.generator_platemail_<dlocal._for>>
 		ENDIF
 
 		// Shields
 		IF (!<ISEMPTY <DEF.generator_shield_<dlocal._for>>>)
-			SERV.LOG @Generator :: Generating shield <def.generator_shield_<dlocal._for>>
+			SERV.LOG @Generator :: Generating shield <DEF.generator_shield_<dlocal._for>>
 			f_generator_shields <DEF.generator_shield_<dlocal._for>>
+		ENDIF
+	ENDFOR
+
+	FILE.WRITELINE "[EOF]"
+	FILE.CLOSE
+ENDIF
+
+//Leather
+SERV.LOG @Generator :: Generating leather...
+LOCAL.AMOUNT = <DEF.generator_leather_quantity>
+FILE.DELETEFILE "scripts/add-on/generator/i_armor_leather_colored.scp"
+IF <FILE.OPEN "scripts/add-on/generator/i_armor_leather_colored.scp">
+	FOR 1 <LOCAL.AMOUNT>
+		IF (!<ISEMPTY <DEF.generator_leather_<dlocal._for>>>)
+			SERV.LOG @Generator :: Generating leather <DEF.generator_leather_<dlocal._for>>
+			f_generator_leather <DEF.generator_leather_<dlocal._for>>
 		ENDIF
 	ENDFOR
 
@@ -83,47 +130,102 @@ ENDIF
 
 //Generate resource
 [FUNCTION f_generator_resource]
-LOCAL.RESOURCE_TYPE = <argv[0]>
-LOCAL.NAME = <argv[1]>
-LOCAL.ID = <argv[2]>
-LOCAL.COLOR = <argv[3]>
+LOCAL.NAME = <ARGV[0]>
+LOCAL.ID = <ARGV[1]>
+LOCAL.RESOURCE_TYPE = <ARGV[2]>
+LOCAL.SKILL = <ARGV[3]>
 
 IF (<DLOCAL.RESOURCE_TYPE> == 1) //Ingot
-
+	FILE.WRITELINE "[ITEMDEF i_ore_<LOCAL.ID>]"
+	FILE.WRITELINE "ID=i_ore_iron"
+	FILE.WRITELINE "NAME=<LOCAL.NAME> ore"
+	FILE.WRITELINE "SKILLMAKE=MINING <LOCAL.SKILL>"
+	FILE.WRITELINE "TDATA1=i_ingot_<LOCAL.ID>"
+	FILE.WRITELINE "VALUE=15"
+	FILE.WRITELINE " "
+	FILE.WRITELINE "CATEGORY=RESOURCES"
+	FILE.WRITELINE "SUBSECTION=MINING"
+	FILE.WRITELINE "DESCRIPTION=<LOCAL.NAME> ore"
+	FILE.WRITELINE " "
+	FILE.WRITELINE "ON=@CREATE"
+	FILE.WRITELINE "   COLOR=color_o_<LOCAL.ID>"
+	FILE.WRITELINE " "
+	FILE.WRITELINE " "
 	FILE.WRITELINE "[ITEMDEF i_ingot_<LOCAL.ID>]"
 	FILE.WRITELINE "ID=i_ingot_iron"
-	FILE.WRITELINE "NAME=<LOCAL.NAME> Ingot"
-	FILE.WRITELINE " "
+	FILE.WRITELINE "NAME=<LOCAL.NAME> ingot"
 	FILE.WRITELINE "RESOURCES=i_ore_<LOCAL.ID>"
-	FILE.WRITELINE "SKILLMAKE=Mining 87.0"
+	FILE.WRITELINE "SKILLMAKE=MINING <LOCAL.SKILL>"
 	FILE.WRITELINE " "
 	FILE.WRITELINE "TDATA1=80.0"
 	FILE.WRITELINE "TDATA2=100.0"
 	FILE.WRITELINE " "
-	FILE.WRITELINE "CATEGORY=Items by Professions"
-	FILE.WRITELINE "SUBSECTION=Blacksmiths"
-	FILE.WRITELINE "DESCRIPTION=<LOCAL.NAME> Ingot"
+	FILE.WRITELINE "CATEGORY=RESOURCES"
+	FILE.WRITELINE "SUBSECTION=MINING"
+	FILE.WRITELINE "DESCRIPTION=<LOCAL.NAME> ingot"
 	FILE.WRITELINE " "
-	FILE.WRITELINE "ON=@Create"
-	FILE.WRITELINE "   COLOR=<LOCAL.COLOR>"
+	FILE.WRITELINE "ON=@CREATE"
+	FILE.WRITELINE "   COLOR=color_o_<LOCAL.ID>"
 	FILE.WRITELINE " "
-
+	FILE.WRITELINE " "
 ELIF (<DLOCAL.RESOURCE_TYPE> == 2) //Leather
-
+	FILE.WRITELINE "[ITEMDEF i_hide_<LOCAL.ID>]"
+	FILE.WRITELINE "ID=i_hide"
+	FILE.WRITELINE "NAME=<LOCAL.NAME> hide%s"
+	FILE.WRITELINE "TYPE=t_hide"
+	FILE.WRITELINE "TDATA1=i_hides_cut_barbed"
+	FILE.WRITELINE "VALUE=5"
+	FILE.WRITELINE "WEIGHT=2.0"
+	FILE.WRITELINE " "
+	FILE.WRITELINE "CATEGORY=RESOURCES"
+	FILE.WRITELINE "SUBSECTION=Leather"
+	FILE.WRITELINE "DESCRIPTION=<LOCAL.NAME> Hides"
+	FILE.WRITELINE " "
+	FILE.WRITELINE "ON=@CREATE"
+	FILE.WRITELINE "   COLOR=color_hide_<LOCAL.ID>"
+	FILE.WRITELINE " "
+	FILE.WRITELINE "[ITEMDEF i_hides_cut_<LOCAL.ID>]"
+	FILE.WRITELINE "ID=i_hides_cut"
+	FILE.WRITELINE "NAME=<LOCAL.NAME> cut up leather%s"
+	FILE.WRITELINE "TYPE=t_leather"
+	FILE.WRITELINE "VALUE=5"
+	FILE.WRITELINE "WEIGHT=1.0"
+	FILE.WRITELINE "RESOURCES=1 i_hide_<LOCAL.ID>"
+	FILE.WRITELINE " "
+	FILE.WRITELINE "CATEGORY=RESOURCES"
+	FILE.WRITELINE "SUBSECTION=Leather"
+	FILE.WRITELINE "DESCRIPTION=<LOCAL.NAME> Cut-up Leather"
+	FILE.WRITELINE " "
+	FILE.WRITELINE "ON=@CREATE"
+	FILE.WRITELINE "   COLOR=color_hide_<LOCAL.ID>"
+	FILE.WRITELINE " "
+	FILE.WRITELINE " "
 ELIF (<DLOCAL.RESOURCE_TYPE> == 3) //Logs
-
+	FILE.WRITELINE "[ITEMDEF i_log_<LOCAL.ID>]"
+	FILE.WRITELINE "ID=i_log"
+	FILE.WRITELINE "NAME=<LOCAL.NAME> log%s"
+	FILE.WRITELINE "TYPE=t_log"
+	FILE.WRITELINE " "
+	FILE.WRITELINE "CATEGORY=RESOURCES"
+	FILE.WRITELINE "SUBSECTION=Wood"
+	FILE.WRITELINE "DESCRIPTION=<LOCAL.NAME> log"
+	FILE.WRITELINE " "
+	FILE.WRITELINE "ON=@CREATE"
+	FILE.WRITELINE "   COLOR=color_log_<LOCAL.ID>"
+	FILE.WRITELINE " "
+	FILE.WRITELINE " "
 ENDIF
 
 
-//Generate platemail armor
+//Generate platemail ARMOR
 [FUNCTION f_generator_platemail]
-LOCAL.ORENAME = <argv[0]>
-LOCAL.ORE = <argv[1]>
-LOCAL.ARMOR = <argv[2]>
+LOCAL.ORENAME = <ARGV[0]>
+LOCAL.ORE = <ARGV[1]>
+LOCAL.ARMOR = <ARGV[2]>
 
 FILE.WRITELINE "//Platemail"
 FILE.WRITELINE "[ITEMDEF i_platemail_arms_<LOCAL.ORE>]"
-FILE.WRITELINE "NAME=<LOCAL.ORENAME> Platemail Arms"
+FILE.WRITELINE "NAME=<LOCAL.ORENAME> platemail arms"
 FILE.WRITELINE "ID=i_platemail_arms"
 FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
 FILE.WRITELINE "REQSTR=40"
@@ -137,12 +239,13 @@ FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
 FILE.WRITELINE "SUBSECTION=<LOCAL.ORENAME>"
 FILE.WRITELINE "DESCRIPTION=Platemail Arms"
 FILE.WRITELINE " "
-FILE.WRITELINE "ON=@Create"
+FILE.WRITELINE "ON=@CREATE"
 FILE.WRITELINE "	COLOR=color_o_<LOCAL.ORE>"
 FILE.WRITELINE "	HITPOINTS={51 65}"
 FILE.WRITELINE " "
+FILE.WRITELINE " "
 FILE.WRITELINE "[ITEMDEF i_platemail_leggings_<LOCAL.ORE>]"
-FILE.WRITELINE "NAME=<LOCAL.ORENAME> Platemail Legs"
+FILE.WRITELINE "NAME=<LOCAL.ORENAME> platemail legs"
 FILE.WRITELINE "ID=i_platemail_leggings"
 FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
 FILE.WRITELINE "REQSTR=60"
@@ -156,12 +259,13 @@ FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
 FILE.WRITELINE "SUBSECTION=<LOCAL.ORENAME>"
 FILE.WRITELINE "DESCRIPTION=Platemail Legs"
 FILE.WRITELINE " "
-FILE.WRITELINE "ON=@Create"
+FILE.WRITELINE "ON=@CREATE"
 FILE.WRITELINE "	COLOR=color_o_<LOCAL.ORE>"
 FILE.WRITELINE "	HITPOINTS={51 65}"
 FILE.WRITELINE " "
+FILE.WRITELINE " "
 FILE.WRITELINE "[ITEMDEF i_platemail_helm_<LOCAL.ORE>]"
-FILE.WRITELINE "NAME=<LOCAL.ORENAME> Platemail Helm"
+FILE.WRITELINE "NAME=<LOCAL.ORENAME> platemail helm"
 FILE.WRITELINE "ID=i_platemail_helm"
 FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
 FILE.WRITELINE "REQSTR=40"
@@ -176,12 +280,13 @@ FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
 FILE.WRITELINE "SUBSECTION=<LOCAL.ORENAME>"
 FILE.WRITELINE "DESCRIPTION=Plate Helm"
 FILE.WRITELINE " "
-FILE.WRITELINE "ON=@Create"
+FILE.WRITELINE "ON=@CREATE"
 FILE.WRITELINE "	COLOR=color_o_<LOCAL.ORE>"
 FILE.WRITELINE "	HITPOINTS={46 58}"
 FILE.WRITELINE " "
+FILE.WRITELINE " "
 FILE.WRITELINE "[ITEMDEF i_platemail_gorget_<LOCAL.ORE>]"
-FILE.WRITELINE "NAME=<LOCAL.ORENAME> Platemail Gorget"
+FILE.WRITELINE "NAME=<LOCAL.ORENAME> platemail gorget"
 FILE.WRITELINE "ID=i_platemail_gorget"
 FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
 FILE.WRITELINE "REQSTR=30"
@@ -196,12 +301,13 @@ FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
 FILE.WRITELINE "SUBSECTION=<LOCAL.ORENAME>"
 FILE.WRITELINE "DESCRIPTION=Platemail Gorget"
 FILE.WRITELINE " "
-FILE.WRITELINE "ON=@Create"
+FILE.WRITELINE "ON=@CREATE"
 FILE.WRITELINE "	COLOR=color_o_<LOCAL.ORE>"
 FILE.WRITELINE "	HITPOINTS={51 65}"
 FILE.WRITELINE " "
+FILE.WRITELINE " "
 FILE.WRITELINE "[ITEMDEF i_platemail_gauntlets_<LOCAL.ORE>]"
-FILE.WRITELINE "NAME=<LOCAL.ORENAME> Platemail Gauntlets"
+FILE.WRITELINE "NAME=<LOCAL.ORENAME> platemail gauntlets"
 FILE.WRITELINE "ID=i_platemail_gloves"
 FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
 FILE.WRITELINE "REQSTR=30"
@@ -216,12 +322,13 @@ FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
 FILE.WRITELINE "SUBSECTION=<LOCAL.ORENAME>"
 FILE.WRITELINE "DESCRIPTION=Platemail Gauntlets"
 FILE.WRITELINE " "
-FILE.WRITELINE "ON=@Create"
+FILE.WRITELINE "ON=@CREATE"
 FILE.WRITELINE "	COLOR=color_o_<LOCAL.ORE>"
 FILE.WRITELINE "	HITPOINTS={51 65}"
 FILE.WRITELINE " "
+FILE.WRITELINE " "
 FILE.WRITELINE "[ITEMDEF i_platemail_chest_<LOCAL.ORE>]"
-FILE.WRITELINE "NAME=<LOCAL.ORENAME> Platemail Chest"
+FILE.WRITELINE "NAME=<LOCAL.ORENAME> platemail chest"
 FILE.WRITELINE "ID=i_platemail_chest"
 FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
 FILE.WRITELINE "REQSTR=60"
@@ -236,22 +343,22 @@ FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
 FILE.WRITELINE "SUBSECTION=<LOCAL.ORENAME>"
 FILE.WRITELINE "DESCRIPTION=Platemail Chest"
 FILE.WRITELINE " "
-FILE.WRITELINE "ON=@Create"
+FILE.WRITELINE "ON=@CREATE"
 FILE.WRITELINE "	COLOR=color_o_<LOCAL.ORE>"
 FILE.WRITELINE "	HITPOINTS={51 65}"
 FILE.WRITELINE " "
 
 
 [FUNCTION f_generator_shields]
-LOCAL.ORENAME = <argv[0]>
-LOCAL.ORE = <argv[1]>
-LOCAL.ARMOR1 = <argv[2]>
-LOCAL.ARMOR2 = <argv[3]>
-LOCAL.ARMOR3 = <argv[4]>
+LOCAL.ORENAME = <ARGV[0]>
+LOCAL.ORE = <ARGV[1]>
+LOCAL.ARMOR1 = <ARGV[2]>
+LOCAL.ARMOR2 = <ARGV[3]>
+LOCAL.ARMOR3 = <ARGV[4]>
 
 FILE.WRITELINE "//Shields"
 FILE.WRITELINE "[ITEMDEF i_shield_buckler_<LOCAL.ORE>]"
-FILE.WRITELINE "NAME=<LOCAL.ORENAME> Buckler"
+FILE.WRITELINE "NAME=<LOCAL.ORENAME> buckler"
 FILE.WRITELINE "ID=i_shield_buckler"
 FILE.WRITELINE "ARMOR=<LOCAL.ARMOR1>"
 FILE.WRITELINE "REQSTR=15"
@@ -266,12 +373,12 @@ FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
 FILE.WRITELINE "SUBSECTION=<LOCAL.ORENAME>"
 FILE.WRITELINE "DESCRIPTION=Buckler"
 FILE.WRITELINE " "
-FILE.WRITELINE "ON=@Create"
+FILE.WRITELINE "ON=@CREATE"
 FILE.WRITELINE "	COLOR=color_o_<LOCAL.ORE>"
 FILE.WRITELINE "	HITPOINTS={41 51}"
 FILE.WRITELINE " "
 FILE.WRITELINE "[ITEMDEF i_shield_metal_<LOCAL.ORE>]"
-FILE.WRITELINE "NAME=<LOCAL.ORENAME> Metal Shield"
+FILE.WRITELINE "NAME=<LOCAL.ORENAME> metal shield"
 FILE.WRITELINE "ID=i_shield_round_metal"
 FILE.WRITELINE "ARMOR=<LOCAL.ARMOR2>"
 FILE.WRITELINE "REQSTR=15"
@@ -286,12 +393,12 @@ FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
 FILE.WRITELINE "SUBSECTION=<LOCAL.ORENAME>"
 FILE.WRITELINE "DESCRIPTION=Metal Shield"
 FILE.WRITELINE " "
-FILE.WRITELINE "ON=@Create"
+FILE.WRITELINE "ON=@CREATE"
 FILE.WRITELINE "	HITPOINTS={51 65}"
 FILE.WRITELINE "	COLOR=color_o_<LOCAL.ORE>"
 FILE.WRITELINE " "
 FILE.WRITELINE "[ITEMDEF i_shield_heater_<LOCAL.ORE>]"
-FILE.WRITELINE "NAME=<LOCAL.ORENAME> Heater Shield"
+FILE.WRITELINE "NAME=<LOCAL.ORENAME> heater shield"
 FILE.WRITELINE "ID=I_SHIELD_HEATER"
 FILE.WRITELINE "ARMOR=<LOCAL.ARMOR3>"
 FILE.WRITELINE "REQSTR=30"
@@ -303,11 +410,200 @@ FILE.WRITELINE " "
 FILE.WRITELINE "TEVENTS=ei_material_nonbase"
 FILE.WRITELINE " "
 FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
-FILE.WRITELINE "SUBSECTION=Golden"
+FILE.WRITELINE "SUBSECTION=<LOCAL.ORENAME>"
 FILE.WRITELINE "DESCRIPTION=Heater Shield"
 FILE.WRITELINE " "
-FILE.WRITELINE "ON=@Create"
-FILE.WRITELINE "	HITPOINTS=31"
+FILE.WRITELINE "ON=@CREATE"
+FILE.WRITELINE "	HITPOINTS={50 65}"
 FILE.WRITELINE "	COLOR=color_o_<LOCAL.ORE>"
+
+
+//Generate leather ARMOR
+[FUNCTION f_generator_leather]
+LOCAL.HIDENAME = <ARGV[0]>
+LOCAL.HIDE = <ARGV[1]>
+LOCAL.ARMOR = <ARGV[2]>
+
+FILE.WRITELINE "//Leather"
+FILE.WRITELINE "[ITEMDEF i_leather_sleeves_<LOCAL.HIDE>]"
+FILE.WRITELINE "ID=i_leather_sleeves"
+FILE.WRITELINE "NAME=<LOCAL.HIDENAME> leather sleeves"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
+FILE.WRITELINE " "
+FILE.WRITELINE "RESOURCES=4 i_hides_cut_<LOCAL.HIDE>"
+FILE.WRITELINE "SKILLMAKE=TAILORING 53.9"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=<LOCAL.HIDENAME>"
+FILE.WRITELINE "DESCRIPTION=Leather Sleeves"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@CREATE"
+FILE.WRITELINE "	HITPOINTS={31 37}"
+FILE.WRITELINE "	COLOR=color_hide_<LOCAL.HIDE>"
+FILE.WRITELINE " "
+FILE.WRITELINE "[ITEMDEF i_leather_gorget_<LOCAL.HIDE>]"
+FILE.WRITELINE "ID=i_leather_gorget"
+FILE.WRITELINE "NAME=<LOCAL.HIDENAME> leather gorget"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
+FILE.WRITELINE " "
+FILE.WRITELINE "RESOURCES=4 i_hides_cut_<LOCAL.HIDE>"
+FILE.WRITELINE "SKILLMAKE=TAILORING 53.9"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=<LOCAL.HIDENAME>"
+FILE.WRITELINE "DESCRIPTION=Leather Gorget"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@CREATE"
+FILE.WRITELINE "	HITPOINTS={31 37}"
+FILE.WRITELINE "	COLOR=color_hide_<LOCAL.HIDE>"
+FILE.WRITELINE " "
+FILE.WRITELINE "[ITEMDEF i_leather_leggings_<LOCAL.HIDE>]"
+FILE.WRITELINE "ID=i_leather_leggings"
+FILE.WRITELINE "NAME=<LOCAL.HIDENAME> leather leggings"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
+FILE.WRITELINE " "
+FILE.WRITELINE "RESOURCES=10 i_hides_cut_<LOCAL.HIDE>"
+FILE.WRITELINE "SKILLMAKE=TAILORING 66.3"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=<LOCAL.HIDENAME>"
+FILE.WRITELINE "DESCRIPTION=Leather Leggings"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@CREATE"
+FILE.WRITELINE "	HITPOINTS={31 37}"
+FILE.WRITELINE "	COLOR=color_hide_<LOCAL.HIDE>"
+FILE.WRITELINE " "
+FILE.WRITELINE "[ITEMDEF i_leather_tunic_<LOCAL.HIDE>]"
+FILE.WRITELINE "ID=i_leather_tunic"
+FILE.WRITELINE "NAME=<LOCAL.HIDENAME> leather tunic"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
+FILE.WRITELINE " "
+FILE.WRITELINE "RESOURCES=12 i_hides_cut_<LOCAL.HIDE>"
+FILE.WRITELINE "SKILLMAKE=TAILORING 70.5"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=<LOCAL.HIDENAME>"
+FILE.WRITELINE "DESCRIPTION=Leather Tunic"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@CREATE"
+FILE.WRITELINE "	HITPOINTS={31 37}"
+FILE.WRITELINE "	COLOR=color_hide_<LOCAL.HIDE>"
+FILE.WRITELINE " "
+FILE.WRITELINE "[ITEMDEF i_leather_gloves_<LOCAL.HIDE>]"
+FILE.WRITELINE "ID=i_leather_gloves"
+FILE.WRITELINE "NAME=<LOCAL.HIDENAME> leather gloves"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
+FILE.WRITELINE " "
+FILE.WRITELINE "RESOURCES=3 i_hides_cut_<LOCAL.HIDE>"
+FILE.WRITELINE "SKILLMAKE=TAILORING 51.8"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=<LOCAL.HIDENAME>"
+FILE.WRITELINE "DESCRIPTION=Leather Gloves"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@CREATE"
+FILE.WRITELINE "	HITPOINTS={31 37}"
+FILE.WRITELINE "	COLOR=color_hide_<LOCAL.HIDE>"
+FILE.WRITELINE " "
+FILE.WRITELINE "[ITEMDEF i_leather_cap_<LOCAL.HIDE>]"
+FILE.WRITELINE "ID=i_leather_cap"
+FILE.WRITELINE "NAME=<LOCAL.HIDENAME> leather cap"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
+FILE.WRITELINE " "
+FILE.WRITELINE "RESOURCES=2 i_hides_cut_<LOCAL.HIDE>"
+FILE.WRITELINE "SKILLMAKE=TAILORING 6.2"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=<LOCAL.HIDENAME>"
+FILE.WRITELINE "DESCRIPTION=Leather Cap"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@CREATE"
+FILE.WRITELINE "	HITPOINTS={31 37}"
+FILE.WRITELINE "	COLOR=color_hide_<LOCAL.HIDE>"
+FILE.WRITELINE " "
+FILE.WRITELINE "[ITEMDEF i_leather_shorts_<LOCAL.HIDE>]"
+FILE.WRITELINE "ID=i_armor_female_shorts"
+FILE.WRITELINE "NAME=<LOCAL.HIDENAME> leather shorts"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
+FILE.WRITELINE " "
+FILE.WRITELINE "RESOURCES=8 i_hides_cut_<LOCAL.HIDE>"
+FILE.WRITELINE "SKILLMAKE=TAILORING 62.2"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=<LOCAL.HIDENAME>"
+FILE.WRITELINE "DESCRIPTION=Leather Shorts"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@CREATE"
+FILE.WRITELINE "	HITPOINTS={31 37}"
+FILE.WRITELINE "	COLOR=color_hide_<LOCAL.HIDE>"
+FILE.WRITELINE " "
+FILE.WRITELINE "[ITEMDEF i_leather_armor_female_<LOCAL.HIDE>]"
+FILE.WRITELINE "ID=i_armor_female_leather"
+FILE.WRITELINE "NAME=<LOCAL.HIDENAME> female leather tunic"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
+FILE.WRITELINE " "
+FILE.WRITELINE "RESOURCES=8 i_hides_cut_<LOCAL.HIDE>"
+FILE.WRITELINE "SKILLMAKE=TAILORING 62.2"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=<LOCAL.HIDENAME>"
+FILE.WRITELINE "DESCRIPTION=Female Leather Tunic"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@CREATE"
+FILE.WRITELINE "	HITPOINTS={31 37}"
+FILE.WRITELINE "	COLOR=color_hide_<LOCAL.HIDE>"
+FILE.WRITELINE " "
+FILE.WRITELINE "[ITEMDEF i_leather_skirt_<LOCAL.HIDE>]"
+FILE.WRITELINE "ID=i_armor_female_skirt"
+FILE.WRITELINE "NAME=<LOCAL.HIDENAME> leather skirt"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
+FILE.WRITELINE " "
+FILE.WRITELINE "RESOURCES=6 i_hides_cut_<LOCAL.HIDE>"
+FILE.WRITELINE "SKILLMAKE=TAILORING 58.0"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=<LOCAL.HIDENAME>"
+FILE.WRITELINE "DESCRIPTION=Leather Skirt"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@CREATE"
+FILE.WRITELINE "	HITPOINTS={31 37}"
+FILE.WRITELINE "	COLOR=color_hide_<LOCAL.HIDE>"
+FILE.WRITELINE " "
+FILE.WRITELINE "[ITEMDEF i_leather_bustier_<LOCAL.HIDE>]"
+FILE.WRITELINE "ID=i_armor_female_bustier"
+FILE.WRITELINE "NAME=<LOCAL.HIDENAME> leather bustier"
+FILE.WRITELINE "ARMOR=<LOCAL.ARMOR>"
+FILE.WRITELINE " "
+FILE.WRITELINE "RESOURCES=6 i_hides_cut_<LOCAL.HIDE>"
+FILE.WRITELINE "SKILLMAKE=TAILORING 58.0"
+FILE.WRITELINE " "
+FILE.WRITELINE "TEVENTS=ei_material_nonbase"
+FILE.WRITELINE " "
+FILE.WRITELINE "CATEGORY=Provisions - Armor - Colored"
+FILE.WRITELINE "SUBSECTION=<LOCAL.HIDENAME>"
+FILE.WRITELINE "DESCRIPTION=Leather Bustier"
+FILE.WRITELINE " "
+FILE.WRITELINE "ON=@CREATE"
+FILE.WRITELINE "	HITPOINTS={31 37}"
+FILE.WRITELINE "	COLOR=color_hide_<LOCAL.HIDE>"
+FILE.WRITELINE " "
 
 [EOF]

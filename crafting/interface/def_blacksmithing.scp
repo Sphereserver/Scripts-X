@@ -102,7 +102,6 @@ blacksmithing_category_9_name	"1011084" // Polearms
 blacksmithing_category_10_name	"1060885" // Dragon Scale Armor
 blacksmithing_category_11_name	"1044117" // Throwing
 blacksmithing_category_12_name	"1044290" // Misc. Add-Ons
-blacksmithing_category_10_name	"1044290" // Misc. Add-Ons
 
 [DEFNAME sphere_crafting_blacksmithing_skillmenu_items]
 //
