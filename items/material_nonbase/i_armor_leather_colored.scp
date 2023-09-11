@@ -1,6 +1,6 @@
 [ITEMDEF i_leather_sleeves_spined]
 ID=i_leather_sleeves
-NAME=Spined leather sleeves
+NAME=spined leather sleeves
 ARMOR=23
 
 RESOURCES=4 i_hides_cut_spined
@@ -9,7 +9,7 @@ SKILLMAKE=TAILORING 53.9
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Spined
+SUBSECTION=spined
 DESCRIPTION=Leather Sleeves
 
 ON=@CREATE
@@ -18,7 +18,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_gorget_spined]
 ID=i_leather_gorget
-NAME=Spined leather gorget
+NAME=spined leather gorget
 ARMOR=23
 
 RESOURCES=4 i_hides_cut_spined
@@ -27,7 +27,7 @@ SKILLMAKE=TAILORING 53.9
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Spined
+SUBSECTION=spined
 DESCRIPTION=Leather Gorget
 
 ON=@CREATE
@@ -36,7 +36,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_leggings_spined]
 ID=i_leather_leggings
-NAME=Spined leather leggings
+NAME=spined leather leggings
 ARMOR=23
 
 RESOURCES=10 i_hides_cut_spined
@@ -45,7 +45,7 @@ SKILLMAKE=TAILORING 66.3
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Spined
+SUBSECTION=spined
 DESCRIPTION=Leather Leggings
 
 ON=@CREATE
@@ -54,7 +54,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_tunic_spined]
 ID=i_leather_tunic
-NAME=Spined leather tunic
+NAME=spined leather tunic
 ARMOR=23
 
 RESOURCES=12 i_hides_cut_spined
@@ -63,7 +63,7 @@ SKILLMAKE=TAILORING 70.5
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Spined
+SUBSECTION=spined
 DESCRIPTION=Leather Tunic
 
 ON=@CREATE
@@ -72,7 +72,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_gloves_spined]
 ID=i_leather_gloves
-NAME=Spined leather gloves
+NAME=spined leather gloves
 ARMOR=23
 
 RESOURCES=3 i_hides_cut_spined
@@ -81,7 +81,7 @@ SKILLMAKE=TAILORING 51.8
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Spined
+SUBSECTION=spined
 DESCRIPTION=Leather Gloves
 
 ON=@CREATE
@@ -90,7 +90,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_cap_spined]
 ID=i_leather_cap
-NAME=Spined leather cap
+NAME=spined leather cap
 ARMOR=23
 
 RESOURCES=2 i_hides_cut_spined
@@ -99,7 +99,7 @@ SKILLMAKE=TAILORING 6.2
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Spined
+SUBSECTION=spined
 DESCRIPTION=Leather Cap
 
 ON=@CREATE
@@ -108,7 +108,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_shorts_spined]
 ID=i_armor_female_shorts
-NAME=Spined leather shorts
+NAME=spined leather shorts
 ARMOR=23
 
 RESOURCES=8 i_hides_cut_spined
@@ -117,7 +117,7 @@ SKILLMAKE=TAILORING 62.2
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Spined
+SUBSECTION=spined
 DESCRIPTION=Leather Shorts
 
 ON=@CREATE
@@ -126,7 +126,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_armor_female_spined]
 ID=i_armor_female_leather
-NAME=Spined female leather tunic
+NAME=spined female leather tunic
 ARMOR=23
 
 RESOURCES=8 i_hides_cut_spined
@@ -135,7 +135,7 @@ SKILLMAKE=TAILORING 62.2
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Spined
+SUBSECTION=spined
 DESCRIPTION=Female Leather Tunic
 
 ON=@CREATE
@@ -144,7 +144,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_skirt_spined]
 ID=i_armor_female_skirt
-NAME=Spined leather skirt
+NAME=spined leather skirt
 ARMOR=23
 
 RESOURCES=6 i_hides_cut_spined
@@ -153,7 +153,7 @@ SKILLMAKE=TAILORING 58.0
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Spined
+SUBSECTION=spined
 DESCRIPTION=Leather Skirt
 
 ON=@CREATE
@@ -162,7 +162,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_bustier_spined]
 ID=i_armor_female_bustier
-NAME=Spined leather bustier
+NAME=spined leather bustier
 ARMOR=23
 
 RESOURCES=6 i_hides_cut_spined
@@ -171,7 +171,7 @@ SKILLMAKE=TAILORING 58.0
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Spined
+SUBSECTION=spined
 DESCRIPTION=Leather Bustier
 
 ON=@CREATE
@@ -180,7 +180,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_sleeves_horned]
 ID=i_leather_sleeves
-NAME=Horned leather sleeves
+NAME=horned leather sleeves
 ARMOR=26
 
 RESOURCES=4 i_hides_cut_horned
@@ -189,7 +189,7 @@ SKILLMAKE=TAILORING 53.9
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Horned
+SUBSECTION=horned
 DESCRIPTION=Leather Sleeves
 
 ON=@CREATE
@@ -198,7 +198,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_gorget_horned]
 ID=i_leather_gorget
-NAME=Horned leather gorget
+NAME=horned leather gorget
 ARMOR=26
 
 RESOURCES=4 i_hides_cut_horned
@@ -207,7 +207,7 @@ SKILLMAKE=TAILORING 53.9
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Horned
+SUBSECTION=horned
 DESCRIPTION=Leather Gorget
 
 ON=@CREATE
@@ -216,7 +216,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_leggings_horned]
 ID=i_leather_leggings
-NAME=Horned leather leggings
+NAME=horned leather leggings
 ARMOR=26
 
 RESOURCES=10 i_hides_cut_horned
@@ -225,7 +225,7 @@ SKILLMAKE=TAILORING 66.3
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Horned
+SUBSECTION=horned
 DESCRIPTION=Leather Leggings
 
 ON=@CREATE
@@ -234,7 +234,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_tunic_horned]
 ID=i_leather_tunic
-NAME=Horned leather tunic
+NAME=horned leather tunic
 ARMOR=26
 
 RESOURCES=12 i_hides_cut_horned
@@ -243,7 +243,7 @@ SKILLMAKE=TAILORING 70.5
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Horned
+SUBSECTION=horned
 DESCRIPTION=Leather Tunic
 
 ON=@CREATE
@@ -252,7 +252,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_gloves_horned]
 ID=i_leather_gloves
-NAME=Horned leather gloves
+NAME=horned leather gloves
 ARMOR=26
 
 RESOURCES=3 i_hides_cut_horned
@@ -261,7 +261,7 @@ SKILLMAKE=TAILORING 51.8
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Horned
+SUBSECTION=horned
 DESCRIPTION=Leather Gloves
 
 ON=@CREATE
@@ -270,7 +270,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_cap_horned]
 ID=i_leather_cap
-NAME=Horned leather cap
+NAME=horned leather cap
 ARMOR=26
 
 RESOURCES=2 i_hides_cut_horned
@@ -279,7 +279,7 @@ SKILLMAKE=TAILORING 6.2
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Horned
+SUBSECTION=horned
 DESCRIPTION=Leather Cap
 
 ON=@CREATE
@@ -288,7 +288,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_shorts_horned]
 ID=i_armor_female_shorts
-NAME=Horned leather shorts
+NAME=horned leather shorts
 ARMOR=26
 
 RESOURCES=8 i_hides_cut_horned
@@ -297,7 +297,7 @@ SKILLMAKE=TAILORING 62.2
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Horned
+SUBSECTION=horned
 DESCRIPTION=Leather Shorts
 
 ON=@CREATE
@@ -306,7 +306,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_armor_female_horned]
 ID=i_armor_female_leather
-NAME=Horned female leather tunic
+NAME=horned female leather tunic
 ARMOR=26
 
 RESOURCES=8 i_hides_cut_horned
@@ -315,7 +315,7 @@ SKILLMAKE=TAILORING 62.2
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Horned
+SUBSECTION=horned
 DESCRIPTION=Female Leather Tunic
 
 ON=@CREATE
@@ -324,7 +324,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_skirt_horned]
 ID=i_armor_female_skirt
-NAME=Horned leather skirt
+NAME=horned leather skirt
 ARMOR=26
 
 RESOURCES=6 i_hides_cut_horned
@@ -333,7 +333,7 @@ SKILLMAKE=TAILORING 58.0
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Horned
+SUBSECTION=horned
 DESCRIPTION=Leather Skirt
 
 ON=@CREATE
@@ -342,7 +342,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_bustier_horned]
 ID=i_armor_female_bustier
-NAME=Horned leather bustier
+NAME=horned leather bustier
 ARMOR=26
 
 RESOURCES=6 i_hides_cut_horned
@@ -351,7 +351,7 @@ SKILLMAKE=TAILORING 58.0
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Horned
+SUBSECTION=horned
 DESCRIPTION=Leather Bustier
 
 ON=@CREATE
@@ -360,7 +360,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_sleeves_barbed]
 ID=i_leather_sleeves
-NAME=Barbed leather sleeves
+NAME=barbed leather sleeves
 ARMOR=29
 
 RESOURCES=4 i_hides_cut_barbed
@@ -369,7 +369,7 @@ SKILLMAKE=TAILORING 53.9
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Barbed
+SUBSECTION=barbed
 DESCRIPTION=Leather Sleeves
 
 ON=@CREATE
@@ -378,7 +378,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_gorget_barbed]
 ID=i_leather_gorget
-NAME=Barbed leather gorget
+NAME=barbed leather gorget
 ARMOR=29
 
 RESOURCES=4 i_hides_cut_barbed
@@ -387,7 +387,7 @@ SKILLMAKE=TAILORING 53.9
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Barbed
+SUBSECTION=barbed
 DESCRIPTION=Leather Gorget
 
 ON=@CREATE
@@ -396,7 +396,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_leggings_barbed]
 ID=i_leather_leggings
-NAME=Barbed leather leggings
+NAME=barbed leather leggings
 ARMOR=29
 
 RESOURCES=10 i_hides_cut_barbed
@@ -405,7 +405,7 @@ SKILLMAKE=TAILORING 66.3
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Barbed
+SUBSECTION=barbed
 DESCRIPTION=Leather Leggings
 
 ON=@CREATE
@@ -414,7 +414,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_tunic_barbed]
 ID=i_leather_tunic
-NAME=Barbed leather tunic
+NAME=barbed leather tunic
 ARMOR=29
 
 RESOURCES=12 i_hides_cut_barbed
@@ -423,7 +423,7 @@ SKILLMAKE=TAILORING 70.5
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Barbed
+SUBSECTION=barbed
 DESCRIPTION=Leather Tunic
 
 ON=@CREATE
@@ -432,7 +432,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_gloves_barbed]
 ID=i_leather_gloves
-NAME=Barbed leather gloves
+NAME=barbed leather gloves
 ARMOR=29
 
 RESOURCES=3 i_hides_cut_barbed
@@ -441,7 +441,7 @@ SKILLMAKE=TAILORING 51.8
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Barbed
+SUBSECTION=barbed
 DESCRIPTION=Leather Gloves
 
 ON=@CREATE
@@ -450,7 +450,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_cap_barbed]
 ID=i_leather_cap
-NAME=Barbed leather cap
+NAME=barbed leather cap
 ARMOR=29
 
 RESOURCES=2 i_hides_cut_barbed
@@ -459,7 +459,7 @@ SKILLMAKE=TAILORING 6.2
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Barbed
+SUBSECTION=barbed
 DESCRIPTION=Leather Cap
 
 ON=@CREATE
@@ -468,7 +468,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_shorts_barbed]
 ID=i_armor_female_shorts
-NAME=Barbed leather shorts
+NAME=barbed leather shorts
 ARMOR=29
 
 RESOURCES=8 i_hides_cut_barbed
@@ -477,7 +477,7 @@ SKILLMAKE=TAILORING 62.2
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Barbed
+SUBSECTION=barbed
 DESCRIPTION=Leather Shorts
 
 ON=@CREATE
@@ -486,7 +486,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_armor_female_barbed]
 ID=i_armor_female_leather
-NAME=Barbed female leather tunic
+NAME=barbed female leather tunic
 ARMOR=29
 
 RESOURCES=8 i_hides_cut_barbed
@@ -495,7 +495,7 @@ SKILLMAKE=TAILORING 62.2
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Barbed
+SUBSECTION=barbed
 DESCRIPTION=Female Leather Tunic
 
 ON=@CREATE
@@ -504,7 +504,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_skirt_barbed]
 ID=i_armor_female_skirt
-NAME=Barbed leather skirt
+NAME=barbed leather skirt
 ARMOR=29
 
 RESOURCES=6 i_hides_cut_barbed
@@ -513,7 +513,7 @@ SKILLMAKE=TAILORING 58.0
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Barbed
+SUBSECTION=barbed
 DESCRIPTION=Leather Skirt
 
 ON=@CREATE
@@ -522,7 +522,7 @@ ON=@CREATE
 
 [ITEMDEF i_leather_bustier_barbed]
 ID=i_armor_female_bustier
-NAME=Barbed leather bustier
+NAME=barbed leather bustier
 ARMOR=29
 
 RESOURCES=6 i_hides_cut_barbed
@@ -531,7 +531,7 @@ SKILLMAKE=TAILORING 58.0
 TEVENTS=ei_material_nonbase
 
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Barbed
+SUBSECTION=barbed
 DESCRIPTION=Leather Bustier
 
 ON=@CREATE

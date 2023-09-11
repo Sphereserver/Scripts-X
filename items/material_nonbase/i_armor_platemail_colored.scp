@@ -1,1456 +1,1616 @@
 [ITEMDEF i_platemail_arms_dull_copper]
-NAME=Dull Copper platemail arms
+NAME=dull copper platemail arms
 ID=i_platemail_arms
 ARMOR=32
 REQSTR=40
 WEIGHT=5
 RESOURCES=18 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 64.5
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Dull Copper
+SUBSECTION=dull copper
 DESCRIPTION=Platemail Arms
- 
+
 ON=@CREATE
 	COLOR=color_o_dull_copper
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_leggings_dull_copper]
-NAME=Dull Copper platemail legs
+NAME=dull copper platemail legs
 ID=i_platemail_leggings
 ARMOR=32
 REQSTR=60
 WEIGHT=15
 RESOURCES=20 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 67.8
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Dull Copper
+SUBSECTION=dull copper
 DESCRIPTION=Platemail Legs
- 
+
 ON=@CREATE
 	COLOR=color_o_dull_copper
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_helm_dull_copper]
-NAME=Dull Copper platemail helm
+NAME=dull copper platemail helm
 ID=i_platemail_helm
 ARMOR=32
 REQSTR=40
 WEIGHT=5
- 
+
 RESOURCES=15 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 59.6
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Dull Copper
+SUBSECTION=dull copper
 DESCRIPTION=Plate Helm
- 
+
 ON=@CREATE
 	COLOR=color_o_dull_copper
 	HITPOINTS={46 58}
- 
- 
+
+
 [ITEMDEF i_platemail_gorget_dull_copper]
-NAME=Dull Copper platemail gorget
+NAME=dull copper platemail gorget
 ID=i_platemail_gorget
 ARMOR=32
 REQSTR=30
 WEIGHT=2
- 
+
 RESOURCES=10 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 51.4
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Dull Copper
+SUBSECTION=dull copper
 DESCRIPTION=Platemail Gorget
- 
+
 ON=@CREATE
 	COLOR=color_o_dull_copper
 	HITPOINTS={51 65}
- 
- 
-[ITEMDEF i_platemail_gauntlets_dull_copper]
-NAME=Dull Copper platemail gauntlets
+
+
+[ITEMDEF i_platemail_gloves_dull_copper]
+NAME=dull copper platemail gloves
 ID=i_platemail_gloves
 ARMOR=32
 REQSTR=30
 WEIGHT=2
- 
+
 RESOURCES=12 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 54.7
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Dull Copper
-DESCRIPTION=Platemail Gauntlets
- 
+SUBSECTION=dull copper
+DESCRIPTION=Platemail Gloves
+
 ON=@CREATE
 	COLOR=color_o_dull_copper
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_chest_dull_copper]
-NAME=Dull Copper platemail chest
+NAME=dull copper platemail chest
 ID=i_platemail_chest
 ARMOR=32
 REQSTR=60
 WEIGHT=10
- 
+
 RESOURCES=26 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 76.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Dull Copper
+SUBSECTION=dull copper
 DESCRIPTION=Platemail Chest
- 
+
 ON=@CREATE
 	COLOR=color_o_dull_copper
 	HITPOINTS={51 65}
- 
+
+[ITEMDEF i_armor_female_plate_dull_copper]
+NAME=dull copper female platemail chest
+ID=i_armor_female_plate
+ARMOR=32
+REQSTR=95
+WEIGHT=4.0
+
+RESOURCES=20 i_ingot_dull_copper
+SKILLMAKE=BLACKSMITHING 44.1
+
+TEVENTS=ei_material_nonbase
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=dull copper
+DESCRIPTION=Female Platemail Chest
+
+ON=@CREATE
+	COLOR=color_o_dull_copper
+	HITPOINTS={36 48}
+
 [ITEMDEF i_shield_buckler_dull_copper]
-NAME=Dull Copper buckler
+NAME=dull copper buckler
 ID=i_shield_buckler
 ARMOR=9
 REQSTR=15
 WEIGHT=5
- 
+
 RESOURCES=10 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 6.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Dull Copper
+SUBSECTION=dull copper
 DESCRIPTION=Buckler
- 
+
 ON=@CREATE
 	COLOR=color_o_dull_copper
 	HITPOINTS={41 51}
- 
+
 [ITEMDEF i_shield_metal_dull_copper]
-NAME=Dull Copper metal shield
+NAME=dull copper metal shield
 ID=i_shield_round_metal
 ARMOR=13
 REQSTR=15
 WEIGHT=6
- 
+
 RESOURCES=14 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 16.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Dull Copper
+SUBSECTION=dull copper
 DESCRIPTION=Metal Shield
- 
+
 ON=@CREATE
 	HITPOINTS={51 65}
 	COLOR=color_o_dull_copper
- 
+
 [ITEMDEF i_shield_heater_dull_copper]
-NAME=Dull Copper heater shield
-ID=I_SHIELD_HEATER
+NAME=dull copper heater shield
+ID=i_shield_heater
 ARMOR=25
 REQSTR=30
 WEIGHT=8
- 
+
 RESOURCES=18 i_ingot_dull_copper
 SKILLMAKE=BLACKSMITHING 41.6
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Dull Copper
+SUBSECTION=dull copper
 DESCRIPTION=Heater Shield
- 
+
 ON=@CREATE
 	HITPOINTS={50 65}
 	COLOR=color_o_dull_copper
 [ITEMDEF i_platemail_arms_shadow]
-NAME=Shadow platemail arms
+NAME=shadow platemail arms
 ID=i_platemail_arms
 ARMOR=34
 REQSTR=40
 WEIGHT=5
 RESOURCES=18 i_ingot_shadow
 SKILLMAKE=BLACKSMITHING 64.5
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Shadow
+SUBSECTION=shadow
 DESCRIPTION=Platemail Arms
- 
+
 ON=@CREATE
 	COLOR=color_o_shadow
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_leggings_shadow]
-NAME=Shadow platemail legs
+NAME=shadow platemail legs
 ID=i_platemail_leggings
 ARMOR=34
 REQSTR=60
 WEIGHT=15
 RESOURCES=20 i_ingot_shadow
 SKILLMAKE=BLACKSMITHING 67.8
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Shadow
+SUBSECTION=shadow
 DESCRIPTION=Platemail Legs
- 
+
 ON=@CREATE
 	COLOR=color_o_shadow
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_helm_shadow]
-NAME=Shadow platemail helm
+NAME=shadow platemail helm
 ID=i_platemail_helm
 ARMOR=34
 REQSTR=40
 WEIGHT=5
- 
+
 RESOURCES=15 i_ingot_shadow
 SKILLMAKE=BLACKSMITHING 59.6
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Shadow
+SUBSECTION=shadow
 DESCRIPTION=Plate Helm
- 
+
 ON=@CREATE
 	COLOR=color_o_shadow
 	HITPOINTS={46 58}
- 
- 
+
+
 [ITEMDEF i_platemail_gorget_shadow]
-NAME=Shadow platemail gorget
+NAME=shadow platemail gorget
 ID=i_platemail_gorget
 ARMOR=34
 REQSTR=30
 WEIGHT=2
- 
+
 RESOURCES=10 i_ingot_shadow
 SKILLMAKE=BLACKSMITHING 51.4
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Shadow
+SUBSECTION=shadow
 DESCRIPTION=Platemail Gorget
- 
+
 ON=@CREATE
 	COLOR=color_o_shadow
 	HITPOINTS={51 65}
- 
- 
-[ITEMDEF i_platemail_gauntlets_shadow]
-NAME=Shadow platemail gauntlets
+
+
+[ITEMDEF i_platemail_gloves_shadow]
+NAME=shadow platemail gloves
 ID=i_platemail_gloves
 ARMOR=34
 REQSTR=30
 WEIGHT=2
- 
+
 RESOURCES=12 i_ingot_shadow
 SKILLMAKE=BLACKSMITHING 54.7
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Shadow
-DESCRIPTION=Platemail Gauntlets
- 
+SUBSECTION=shadow
+DESCRIPTION=Platemail Gloves
+
 ON=@CREATE
 	COLOR=color_o_shadow
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_chest_shadow]
-NAME=Shadow platemail chest
+NAME=shadow platemail chest
 ID=i_platemail_chest
 ARMOR=34
 REQSTR=60
 WEIGHT=10
- 
+
 RESOURCES=26 i_ingot_shadow
 SKILLMAKE=BLACKSMITHING 76.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Shadow
+SUBSECTION=shadow
 DESCRIPTION=Platemail Chest
- 
+
 ON=@CREATE
 	COLOR=color_o_shadow
 	HITPOINTS={51 65}
- 
+
+[ITEMDEF i_armor_female_plate_shadow]
+NAME=shadow female platemail chest
+ID=i_armor_female_plate
+ARMOR=34
+REQSTR=95
+WEIGHT=4.0
+
+RESOURCES=20 i_ingot_shadow
+SKILLMAKE=BLACKSMITHING 44.1
+
+TEVENTS=ei_material_nonbase
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=shadow
+DESCRIPTION=Female Platemail Chest
+
+ON=@CREATE
+	COLOR=color_o_shadow
+	HITPOINTS={36 48}
+
 [ITEMDEF i_shield_buckler_shadow]
-NAME=Shadow buckler
+NAME=shadow buckler
 ID=i_shield_buckler
 ARMOR=11
 REQSTR=15
 WEIGHT=5
- 
+
 RESOURCES=10 i_ingot_shadow
 SKILLMAKE=BLACKSMITHING 6.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Shadow
+SUBSECTION=shadow
 DESCRIPTION=Buckler
- 
+
 ON=@CREATE
 	COLOR=color_o_shadow
 	HITPOINTS={41 51}
- 
+
 [ITEMDEF i_shield_metal_shadow]
-NAME=Shadow metal shield
+NAME=shadow metal shield
 ID=i_shield_round_metal
 ARMOR=15
 REQSTR=15
 WEIGHT=6
- 
+
 RESOURCES=14 i_ingot_shadow
 SKILLMAKE=BLACKSMITHING 16.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Shadow
+SUBSECTION=shadow
 DESCRIPTION=Metal Shield
- 
+
 ON=@CREATE
 	HITPOINTS={51 65}
 	COLOR=color_o_shadow
- 
+
 [ITEMDEF i_shield_heater_shadow]
-NAME=Shadow heater shield
-ID=I_SHIELD_HEATER
+NAME=shadow heater shield
+ID=i_shield_heater
 ARMOR=27
 REQSTR=30
 WEIGHT=8
- 
+
 RESOURCES=18 i_ingot_shadow
 SKILLMAKE=BLACKSMITHING 41.6
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Shadow
+SUBSECTION=shadow
 DESCRIPTION=Heater Shield
- 
+
 ON=@CREATE
 	HITPOINTS={50 65}
 	COLOR=color_o_shadow
 [ITEMDEF i_platemail_arms_copper]
-NAME=Copper platemail arms
+NAME=copper platemail arms
 ID=i_platemail_arms
 ARMOR=36
 REQSTR=40
 WEIGHT=5
 RESOURCES=18 i_ingot_copper
 SKILLMAKE=BLACKSMITHING 64.5
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Copper
+SUBSECTION=copper
 DESCRIPTION=Platemail Arms
- 
+
 ON=@CREATE
 	COLOR=color_o_copper
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_leggings_copper]
-NAME=Copper platemail legs
+NAME=copper platemail legs
 ID=i_platemail_leggings
 ARMOR=36
 REQSTR=60
 WEIGHT=15
 RESOURCES=20 i_ingot_copper
 SKILLMAKE=BLACKSMITHING 67.8
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Copper
+SUBSECTION=copper
 DESCRIPTION=Platemail Legs
- 
+
 ON=@CREATE
 	COLOR=color_o_copper
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_helm_copper]
-NAME=Copper platemail helm
+NAME=copper platemail helm
 ID=i_platemail_helm
 ARMOR=36
 REQSTR=40
 WEIGHT=5
- 
+
 RESOURCES=15 i_ingot_copper
 SKILLMAKE=BLACKSMITHING 59.6
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Copper
+SUBSECTION=copper
 DESCRIPTION=Plate Helm
- 
+
 ON=@CREATE
 	COLOR=color_o_copper
 	HITPOINTS={46 58}
- 
- 
+
+
 [ITEMDEF i_platemail_gorget_copper]
-NAME=Copper platemail gorget
+NAME=copper platemail gorget
 ID=i_platemail_gorget
 ARMOR=36
 REQSTR=30
 WEIGHT=2
- 
+
 RESOURCES=10 i_ingot_copper
 SKILLMAKE=BLACKSMITHING 51.4
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Copper
+SUBSECTION=copper
 DESCRIPTION=Platemail Gorget
- 
+
 ON=@CREATE
 	COLOR=color_o_copper
 	HITPOINTS={51 65}
- 
- 
-[ITEMDEF i_platemail_gauntlets_copper]
-NAME=Copper platemail gauntlets
+
+
+[ITEMDEF i_platemail_gloves_copper]
+NAME=copper platemail gloves
 ID=i_platemail_gloves
 ARMOR=36
 REQSTR=30
 WEIGHT=2
- 
+
 RESOURCES=12 i_ingot_copper
 SKILLMAKE=BLACKSMITHING 54.7
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Copper
-DESCRIPTION=Platemail Gauntlets
- 
+SUBSECTION=copper
+DESCRIPTION=Platemail Gloves
+
 ON=@CREATE
 	COLOR=color_o_copper
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_chest_copper]
-NAME=Copper platemail chest
+NAME=copper platemail chest
 ID=i_platemail_chest
 ARMOR=36
 REQSTR=60
 WEIGHT=10
- 
+
 RESOURCES=26 i_ingot_copper
 SKILLMAKE=BLACKSMITHING 76.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Copper
+SUBSECTION=copper
 DESCRIPTION=Platemail Chest
- 
+
 ON=@CREATE
 	COLOR=color_o_copper
 	HITPOINTS={51 65}
- 
+
+[ITEMDEF i_armor_female_plate_copper]
+NAME=copper female platemail chest
+ID=i_armor_female_plate
+ARMOR=36
+REQSTR=95
+WEIGHT=4.0
+
+RESOURCES=20 i_ingot_copper
+SKILLMAKE=BLACKSMITHING 44.1
+
+TEVENTS=ei_material_nonbase
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=copper
+DESCRIPTION=Female Platemail Chest
+
+ON=@CREATE
+	COLOR=color_o_copper
+	HITPOINTS={36 48}
+
 [ITEMDEF i_shield_buckler_copper]
-NAME=Copper buckler
+NAME=copper buckler
 ID=i_shield_buckler
 ARMOR=13
 REQSTR=15
 WEIGHT=5
- 
+
 RESOURCES=10 i_ingot_copper
 SKILLMAKE=BLACKSMITHING 6.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Copper
+SUBSECTION=copper
 DESCRIPTION=Buckler
- 
+
 ON=@CREATE
 	COLOR=color_o_copper
 	HITPOINTS={41 51}
- 
+
 [ITEMDEF i_shield_metal_copper]
-NAME=Copper metal shield
+NAME=copper metal shield
 ID=i_shield_round_metal
 ARMOR=17
 REQSTR=15
 WEIGHT=6
- 
+
 RESOURCES=14 i_ingot_copper
 SKILLMAKE=BLACKSMITHING 16.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Copper
+SUBSECTION=copper
 DESCRIPTION=Metal Shield
- 
+
 ON=@CREATE
 	HITPOINTS={51 65}
 	COLOR=color_o_copper
- 
+
 [ITEMDEF i_shield_heater_copper]
-NAME=Copper heater shield
-ID=I_SHIELD_HEATER
+NAME=copper heater shield
+ID=i_shield_heater
 ARMOR=29
 REQSTR=30
 WEIGHT=8
- 
+
 RESOURCES=18 i_ingot_copper
 SKILLMAKE=BLACKSMITHING 41.6
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Copper
+SUBSECTION=copper
 DESCRIPTION=Heater Shield
- 
+
 ON=@CREATE
 	HITPOINTS={50 65}
 	COLOR=color_o_copper
 [ITEMDEF i_platemail_arms_bronze]
-NAME=Bronze platemail arms
+NAME=bronze platemail arms
 ID=i_platemail_arms
 ARMOR=38
 REQSTR=40
 WEIGHT=5
 RESOURCES=18 i_ingot_bronze
 SKILLMAKE=BLACKSMITHING 64.5
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Bronze
+SUBSECTION=bronze
 DESCRIPTION=Platemail Arms
- 
+
 ON=@CREATE
 	COLOR=color_o_bronze
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_leggings_bronze]
-NAME=Bronze platemail legs
+NAME=bronze platemail legs
 ID=i_platemail_leggings
 ARMOR=38
 REQSTR=60
 WEIGHT=15
 RESOURCES=20 i_ingot_bronze
 SKILLMAKE=BLACKSMITHING 67.8
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Bronze
+SUBSECTION=bronze
 DESCRIPTION=Platemail Legs
- 
+
 ON=@CREATE
 	COLOR=color_o_bronze
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_helm_bronze]
-NAME=Bronze platemail helm
+NAME=bronze platemail helm
 ID=i_platemail_helm
 ARMOR=38
 REQSTR=40
 WEIGHT=5
- 
+
 RESOURCES=15 i_ingot_bronze
 SKILLMAKE=BLACKSMITHING 59.6
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Bronze
+SUBSECTION=bronze
 DESCRIPTION=Plate Helm
- 
+
 ON=@CREATE
 	COLOR=color_o_bronze
 	HITPOINTS={46 58}
- 
- 
+
+
 [ITEMDEF i_platemail_gorget_bronze]
-NAME=Bronze platemail gorget
+NAME=bronze platemail gorget
 ID=i_platemail_gorget
 ARMOR=38
 REQSTR=30
 WEIGHT=2
- 
+
 RESOURCES=10 i_ingot_bronze
 SKILLMAKE=BLACKSMITHING 51.4
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Bronze
+SUBSECTION=bronze
 DESCRIPTION=Platemail Gorget
- 
+
 ON=@CREATE
 	COLOR=color_o_bronze
 	HITPOINTS={51 65}
- 
- 
-[ITEMDEF i_platemail_gauntlets_bronze]
-NAME=Bronze platemail gauntlets
+
+
+[ITEMDEF i_platemail_gloves_bronze]
+NAME=bronze platemail gloves
 ID=i_platemail_gloves
 ARMOR=38
 REQSTR=30
 WEIGHT=2
- 
+
 RESOURCES=12 i_ingot_bronze
 SKILLMAKE=BLACKSMITHING 54.7
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Bronze
-DESCRIPTION=Platemail Gauntlets
- 
+SUBSECTION=bronze
+DESCRIPTION=Platemail Gloves
+
 ON=@CREATE
 	COLOR=color_o_bronze
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_chest_bronze]
-NAME=Bronze platemail chest
+NAME=bronze platemail chest
 ID=i_platemail_chest
 ARMOR=38
 REQSTR=60
 WEIGHT=10
- 
+
 RESOURCES=26 i_ingot_bronze
 SKILLMAKE=BLACKSMITHING 76.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Bronze
+SUBSECTION=bronze
 DESCRIPTION=Platemail Chest
- 
+
 ON=@CREATE
 	COLOR=color_o_bronze
 	HITPOINTS={51 65}
- 
+
+[ITEMDEF i_armor_female_plate_bronze]
+NAME=bronze female platemail chest
+ID=i_armor_female_plate
+ARMOR=38
+REQSTR=95
+WEIGHT=4.0
+
+RESOURCES=20 i_ingot_bronze
+SKILLMAKE=BLACKSMITHING 44.1
+
+TEVENTS=ei_material_nonbase
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=bronze
+DESCRIPTION=Female Platemail Chest
+
+ON=@CREATE
+	COLOR=color_o_bronze
+	HITPOINTS={36 48}
+
 [ITEMDEF i_shield_buckler_bronze]
-NAME=Bronze buckler
+NAME=bronze buckler
 ID=i_shield_buckler
 ARMOR=15
 REQSTR=15
 WEIGHT=5
- 
+
 RESOURCES=10 i_ingot_bronze
 SKILLMAKE=BLACKSMITHING 6.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Bronze
+SUBSECTION=bronze
 DESCRIPTION=Buckler
- 
+
 ON=@CREATE
 	COLOR=color_o_bronze
 	HITPOINTS={41 51}
- 
+
 [ITEMDEF i_shield_metal_bronze]
-NAME=Bronze metal shield
+NAME=bronze metal shield
 ID=i_shield_round_metal
 ARMOR=19
 REQSTR=15
 WEIGHT=6
- 
+
 RESOURCES=14 i_ingot_bronze
 SKILLMAKE=BLACKSMITHING 16.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Bronze
+SUBSECTION=bronze
 DESCRIPTION=Metal Shield
- 
+
 ON=@CREATE
 	HITPOINTS={51 65}
 	COLOR=color_o_bronze
- 
+
 [ITEMDEF i_shield_heater_bronze]
-NAME=Bronze heater shield
-ID=I_SHIELD_HEATER
+NAME=bronze heater shield
+ID=i_shield_heater
 ARMOR=31
 REQSTR=30
 WEIGHT=8
- 
+
 RESOURCES=18 i_ingot_bronze
 SKILLMAKE=BLACKSMITHING 41.6
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Bronze
+SUBSECTION=bronze
 DESCRIPTION=Heater Shield
- 
+
 ON=@CREATE
 	HITPOINTS={50 65}
 	COLOR=color_o_bronze
 [ITEMDEF i_platemail_arms_gold]
-NAME=Gold platemail arms
+NAME=gold platemail arms
 ID=i_platemail_arms
 ARMOR=40
 REQSTR=40
 WEIGHT=5
 RESOURCES=18 i_ingot_gold
 SKILLMAKE=BLACKSMITHING 64.5
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Gold
+SUBSECTION=gold
 DESCRIPTION=Platemail Arms
- 
+
 ON=@CREATE
 	COLOR=color_o_gold
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_leggings_gold]
-NAME=Gold platemail legs
+NAME=gold platemail legs
 ID=i_platemail_leggings
 ARMOR=40
 REQSTR=60
 WEIGHT=15
 RESOURCES=20 i_ingot_gold
 SKILLMAKE=BLACKSMITHING 67.8
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Gold
+SUBSECTION=gold
 DESCRIPTION=Platemail Legs
- 
+
 ON=@CREATE
 	COLOR=color_o_gold
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_helm_gold]
-NAME=Gold platemail helm
+NAME=gold platemail helm
 ID=i_platemail_helm
 ARMOR=40
 REQSTR=40
 WEIGHT=5
- 
+
 RESOURCES=15 i_ingot_gold
 SKILLMAKE=BLACKSMITHING 59.6
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Gold
+SUBSECTION=gold
 DESCRIPTION=Plate Helm
- 
+
 ON=@CREATE
 	COLOR=color_o_gold
 	HITPOINTS={46 58}
- 
- 
+
+
 [ITEMDEF i_platemail_gorget_gold]
-NAME=Gold platemail gorget
+NAME=gold platemail gorget
 ID=i_platemail_gorget
 ARMOR=40
 REQSTR=30
 WEIGHT=2
- 
+
 RESOURCES=10 i_ingot_gold
 SKILLMAKE=BLACKSMITHING 51.4
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Gold
+SUBSECTION=gold
 DESCRIPTION=Platemail Gorget
- 
+
 ON=@CREATE
 	COLOR=color_o_gold
 	HITPOINTS={51 65}
- 
- 
-[ITEMDEF i_platemail_gauntlets_gold]
-NAME=Gold platemail gauntlets
+
+
+[ITEMDEF i_platemail_gloves_gold]
+NAME=gold platemail gloves
 ID=i_platemail_gloves
 ARMOR=40
 REQSTR=30
 WEIGHT=2
- 
+
 RESOURCES=12 i_ingot_gold
 SKILLMAKE=BLACKSMITHING 54.7
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Gold
-DESCRIPTION=Platemail Gauntlets
- 
+SUBSECTION=gold
+DESCRIPTION=Platemail Gloves
+
 ON=@CREATE
 	COLOR=color_o_gold
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_chest_gold]
-NAME=Gold platemail chest
+NAME=gold platemail chest
 ID=i_platemail_chest
 ARMOR=40
 REQSTR=60
 WEIGHT=10
- 
+
 RESOURCES=26 i_ingot_gold
 SKILLMAKE=BLACKSMITHING 76.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Gold
+SUBSECTION=gold
 DESCRIPTION=Platemail Chest
- 
+
 ON=@CREATE
 	COLOR=color_o_gold
 	HITPOINTS={51 65}
- 
+
+[ITEMDEF i_armor_female_plate_gold]
+NAME=gold female platemail chest
+ID=i_armor_female_plate
+ARMOR=40
+REQSTR=95
+WEIGHT=4.0
+
+RESOURCES=20 i_ingot_gold
+SKILLMAKE=BLACKSMITHING 44.1
+
+TEVENTS=ei_material_nonbase
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=gold
+DESCRIPTION=Female Platemail Chest
+
+ON=@CREATE
+	COLOR=color_o_gold
+	HITPOINTS={36 48}
+
 [ITEMDEF i_shield_buckler_gold]
-NAME=Gold buckler
+NAME=gold buckler
 ID=i_shield_buckler
 ARMOR=17
 REQSTR=15
 WEIGHT=5
- 
+
 RESOURCES=10 i_ingot_gold
 SKILLMAKE=BLACKSMITHING 6.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Gold
+SUBSECTION=gold
 DESCRIPTION=Buckler
- 
+
 ON=@CREATE
 	COLOR=color_o_gold
 	HITPOINTS={41 51}
- 
+
 [ITEMDEF i_shield_metal_gold]
-NAME=Gold metal shield
+NAME=gold metal shield
 ID=i_shield_round_metal
 ARMOR=21
 REQSTR=15
 WEIGHT=6
- 
+
 RESOURCES=14 i_ingot_gold
 SKILLMAKE=BLACKSMITHING 16.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Gold
+SUBSECTION=gold
 DESCRIPTION=Metal Shield
- 
+
 ON=@CREATE
 	HITPOINTS={51 65}
 	COLOR=color_o_gold
- 
+
 [ITEMDEF i_shield_heater_gold]
-NAME=Gold heater shield
-ID=I_SHIELD_HEATER
+NAME=gold heater shield
+ID=i_shield_heater
 ARMOR=33
 REQSTR=30
 WEIGHT=8
- 
+
 RESOURCES=18 i_ingot_gold
 SKILLMAKE=BLACKSMITHING 41.6
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Gold
+SUBSECTION=gold
 DESCRIPTION=Heater Shield
- 
+
 ON=@CREATE
 	HITPOINTS={50 65}
 	COLOR=color_o_gold
 [ITEMDEF i_platemail_arms_agapite]
-NAME=Agapite platemail arms
+NAME=agapite platemail arms
 ID=i_platemail_arms
 ARMOR=42
 REQSTR=40
 WEIGHT=5
 RESOURCES=18 i_ingot_agapite
 SKILLMAKE=BLACKSMITHING 64.5
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Agapite
+SUBSECTION=agapite
 DESCRIPTION=Platemail Arms
- 
+
 ON=@CREATE
 	COLOR=color_o_agapite
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_leggings_agapite]
-NAME=Agapite platemail legs
+NAME=agapite platemail legs
 ID=i_platemail_leggings
 ARMOR=42
 REQSTR=60
 WEIGHT=15
 RESOURCES=20 i_ingot_agapite
 SKILLMAKE=BLACKSMITHING 67.8
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Agapite
+SUBSECTION=agapite
 DESCRIPTION=Platemail Legs
- 
+
 ON=@CREATE
 	COLOR=color_o_agapite
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_helm_agapite]
-NAME=Agapite platemail helm
+NAME=agapite platemail helm
 ID=i_platemail_helm
 ARMOR=42
 REQSTR=40
 WEIGHT=5
- 
+
 RESOURCES=15 i_ingot_agapite
 SKILLMAKE=BLACKSMITHING 59.6
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Agapite
+SUBSECTION=agapite
 DESCRIPTION=Plate Helm
- 
+
 ON=@CREATE
 	COLOR=color_o_agapite
 	HITPOINTS={46 58}
- 
- 
+
+
 [ITEMDEF i_platemail_gorget_agapite]
-NAME=Agapite platemail gorget
+NAME=agapite platemail gorget
 ID=i_platemail_gorget
 ARMOR=42
 REQSTR=30
 WEIGHT=2
- 
+
 RESOURCES=10 i_ingot_agapite
 SKILLMAKE=BLACKSMITHING 51.4
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Agapite
+SUBSECTION=agapite
 DESCRIPTION=Platemail Gorget
- 
+
 ON=@CREATE
 	COLOR=color_o_agapite
 	HITPOINTS={51 65}
- 
- 
-[ITEMDEF i_platemail_gauntlets_agapite]
-NAME=Agapite platemail gauntlets
+
+
+[ITEMDEF i_platemail_gloves_agapite]
+NAME=agapite platemail gloves
 ID=i_platemail_gloves
 ARMOR=42
 REQSTR=30
 WEIGHT=2
- 
+
 RESOURCES=12 i_ingot_agapite
 SKILLMAKE=BLACKSMITHING 54.7
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Agapite
-DESCRIPTION=Platemail Gauntlets
- 
+SUBSECTION=agapite
+DESCRIPTION=Platemail Gloves
+
 ON=@CREATE
 	COLOR=color_o_agapite
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_chest_agapite]
-NAME=Agapite platemail chest
+NAME=agapite platemail chest
 ID=i_platemail_chest
 ARMOR=42
 REQSTR=60
 WEIGHT=10
- 
+
 RESOURCES=26 i_ingot_agapite
 SKILLMAKE=BLACKSMITHING 76.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Agapite
+SUBSECTION=agapite
 DESCRIPTION=Platemail Chest
- 
+
 ON=@CREATE
 	COLOR=color_o_agapite
 	HITPOINTS={51 65}
- 
+
+[ITEMDEF i_armor_female_plate_agapite]
+NAME=agapite female platemail chest
+ID=i_armor_female_plate
+ARMOR=42
+REQSTR=95
+WEIGHT=4.0
+
+RESOURCES=20 i_ingot_agapite
+SKILLMAKE=BLACKSMITHING 44.1
+
+TEVENTS=ei_material_nonbase
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=agapite
+DESCRIPTION=Female Platemail Chest
+
+ON=@CREATE
+	COLOR=color_o_agapite
+	HITPOINTS={36 48}
+
 [ITEMDEF i_shield_buckler_agapite]
-NAME=Agapite buckler
+NAME=agapite buckler
 ID=i_shield_buckler
 ARMOR=19
 REQSTR=15
 WEIGHT=5
- 
+
 RESOURCES=10 i_ingot_agapite
 SKILLMAKE=BLACKSMITHING 6.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Agapite
+SUBSECTION=agapite
 DESCRIPTION=Buckler
- 
+
 ON=@CREATE
 	COLOR=color_o_agapite
 	HITPOINTS={41 51}
- 
+
 [ITEMDEF i_shield_metal_agapite]
-NAME=Agapite metal shield
+NAME=agapite metal shield
 ID=i_shield_round_metal
 ARMOR=23
 REQSTR=15
 WEIGHT=6
- 
+
 RESOURCES=14 i_ingot_agapite
 SKILLMAKE=BLACKSMITHING 16.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Agapite
+SUBSECTION=agapite
 DESCRIPTION=Metal Shield
- 
+
 ON=@CREATE
 	HITPOINTS={51 65}
 	COLOR=color_o_agapite
- 
+
 [ITEMDEF i_shield_heater_agapite]
-NAME=Agapite heater shield
-ID=I_SHIELD_HEATER
+NAME=agapite heater shield
+ID=i_shield_heater
 ARMOR=35
 REQSTR=30
 WEIGHT=8
- 
+
 RESOURCES=18 i_ingot_agapite
 SKILLMAKE=BLACKSMITHING 41.6
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Agapite
+SUBSECTION=agapite
 DESCRIPTION=Heater Shield
- 
+
 ON=@CREATE
 	HITPOINTS={50 65}
 	COLOR=color_o_agapite
 [ITEMDEF i_platemail_arms_verite]
-NAME=Verite platemail arms
+NAME=verite platemail arms
 ID=i_platemail_arms
 ARMOR=44
 REQSTR=40
 WEIGHT=5
 RESOURCES=18 i_ingot_verite
 SKILLMAKE=BLACKSMITHING 64.5
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Verite
+SUBSECTION=verite
 DESCRIPTION=Platemail Arms
- 
+
 ON=@CREATE
 	COLOR=color_o_verite
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_leggings_verite]
-NAME=Verite platemail legs
+NAME=verite platemail legs
 ID=i_platemail_leggings
 ARMOR=44
 REQSTR=60
 WEIGHT=15
 RESOURCES=20 i_ingot_verite
 SKILLMAKE=BLACKSMITHING 67.8
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Verite
+SUBSECTION=verite
 DESCRIPTION=Platemail Legs
- 
+
 ON=@CREATE
 	COLOR=color_o_verite
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_helm_verite]
-NAME=Verite platemail helm
+NAME=verite platemail helm
 ID=i_platemail_helm
 ARMOR=44
 REQSTR=40
 WEIGHT=5
- 
+
 RESOURCES=15 i_ingot_verite
 SKILLMAKE=BLACKSMITHING 59.6
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Verite
+SUBSECTION=verite
 DESCRIPTION=Plate Helm
- 
+
 ON=@CREATE
 	COLOR=color_o_verite
 	HITPOINTS={46 58}
- 
- 
+
+
 [ITEMDEF i_platemail_gorget_verite]
-NAME=Verite platemail gorget
+NAME=verite platemail gorget
 ID=i_platemail_gorget
 ARMOR=44
 REQSTR=30
 WEIGHT=2
- 
+
 RESOURCES=10 i_ingot_verite
 SKILLMAKE=BLACKSMITHING 51.4
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Verite
+SUBSECTION=verite
 DESCRIPTION=Platemail Gorget
- 
+
 ON=@CREATE
 	COLOR=color_o_verite
 	HITPOINTS={51 65}
- 
- 
-[ITEMDEF i_platemail_gauntlets_verite]
-NAME=Verite platemail gauntlets
+
+
+[ITEMDEF i_platemail_gloves_verite]
+NAME=verite platemail gloves
 ID=i_platemail_gloves
 ARMOR=44
 REQSTR=30
 WEIGHT=2
- 
+
 RESOURCES=12 i_ingot_verite
 SKILLMAKE=BLACKSMITHING 54.7
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Verite
-DESCRIPTION=Platemail Gauntlets
- 
+SUBSECTION=verite
+DESCRIPTION=Platemail Gloves
+
 ON=@CREATE
 	COLOR=color_o_verite
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_chest_verite]
-NAME=Verite platemail chest
+NAME=verite platemail chest
 ID=i_platemail_chest
 ARMOR=44
 REQSTR=60
 WEIGHT=10
- 
+
 RESOURCES=26 i_ingot_verite
 SKILLMAKE=BLACKSMITHING 76.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Verite
+SUBSECTION=verite
 DESCRIPTION=Platemail Chest
- 
+
 ON=@CREATE
 	COLOR=color_o_verite
 	HITPOINTS={51 65}
- 
+
+[ITEMDEF i_armor_female_plate_verite]
+NAME=verite female platemail chest
+ID=i_armor_female_plate
+ARMOR=44
+REQSTR=95
+WEIGHT=4.0
+
+RESOURCES=20 i_ingot_verite
+SKILLMAKE=BLACKSMITHING 44.1
+
+TEVENTS=ei_material_nonbase
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=verite
+DESCRIPTION=Female Platemail Chest
+
+ON=@CREATE
+	COLOR=color_o_verite
+	HITPOINTS={36 48}
+
 [ITEMDEF i_shield_buckler_verite]
-NAME=Verite buckler
+NAME=verite buckler
 ID=i_shield_buckler
 ARMOR=21
 REQSTR=15
 WEIGHT=5
- 
+
 RESOURCES=10 i_ingot_verite
 SKILLMAKE=BLACKSMITHING 6.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Verite
+SUBSECTION=verite
 DESCRIPTION=Buckler
- 
+
 ON=@CREATE
 	COLOR=color_o_verite
 	HITPOINTS={41 51}
- 
+
 [ITEMDEF i_shield_metal_verite]
-NAME=Verite metal shield
+NAME=verite metal shield
 ID=i_shield_round_metal
 ARMOR=25
 REQSTR=15
 WEIGHT=6
- 
+
 RESOURCES=14 i_ingot_verite
 SKILLMAKE=BLACKSMITHING 16.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Verite
+SUBSECTION=verite
 DESCRIPTION=Metal Shield
- 
+
 ON=@CREATE
 	HITPOINTS={51 65}
 	COLOR=color_o_verite
- 
+
 [ITEMDEF i_shield_heater_verite]
-NAME=Verite heater shield
-ID=I_SHIELD_HEATER
+NAME=verite heater shield
+ID=i_shield_heater
 ARMOR=37
 REQSTR=30
 WEIGHT=8
- 
+
 RESOURCES=18 i_ingot_verite
 SKILLMAKE=BLACKSMITHING 41.6
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Verite
+SUBSECTION=verite
 DESCRIPTION=Heater Shield
- 
+
 ON=@CREATE
 	HITPOINTS={50 65}
 	COLOR=color_o_verite
 [ITEMDEF i_platemail_arms_valorite]
-NAME=Valorite platemail arms
+NAME=valorite platemail arms
 ID=i_platemail_arms
 ARMOR=46
 REQSTR=40
 WEIGHT=5
 RESOURCES=18 i_ingot_valorite
 SKILLMAKE=BLACKSMITHING 64.5
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Valorite
+SUBSECTION=valorite
 DESCRIPTION=Platemail Arms
- 
+
 ON=@CREATE
 	COLOR=color_o_valorite
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_leggings_valorite]
-NAME=Valorite platemail legs
+NAME=valorite platemail legs
 ID=i_platemail_leggings
 ARMOR=46
 REQSTR=60
 WEIGHT=15
 RESOURCES=20 i_ingot_valorite
 SKILLMAKE=BLACKSMITHING 67.8
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Valorite
+SUBSECTION=valorite
 DESCRIPTION=Platemail Legs
- 
+
 ON=@CREATE
 	COLOR=color_o_valorite
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_helm_valorite]
-NAME=Valorite platemail helm
+NAME=valorite platemail helm
 ID=i_platemail_helm
 ARMOR=46
 REQSTR=40
 WEIGHT=5
- 
+
 RESOURCES=15 i_ingot_valorite
 SKILLMAKE=BLACKSMITHING 59.6
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Valorite
+SUBSECTION=valorite
 DESCRIPTION=Plate Helm
- 
+
 ON=@CREATE
 	COLOR=color_o_valorite
 	HITPOINTS={46 58}
- 
- 
+
+
 [ITEMDEF i_platemail_gorget_valorite]
-NAME=Valorite platemail gorget
+NAME=valorite platemail gorget
 ID=i_platemail_gorget
 ARMOR=46
 REQSTR=30
 WEIGHT=2
- 
+
 RESOURCES=10 i_ingot_valorite
 SKILLMAKE=BLACKSMITHING 51.4
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Valorite
+SUBSECTION=valorite
 DESCRIPTION=Platemail Gorget
- 
+
 ON=@CREATE
 	COLOR=color_o_valorite
 	HITPOINTS={51 65}
- 
- 
-[ITEMDEF i_platemail_gauntlets_valorite]
-NAME=Valorite platemail gauntlets
+
+
+[ITEMDEF i_platemail_gloves_valorite]
+NAME=valorite platemail gloves
 ID=i_platemail_gloves
 ARMOR=46
 REQSTR=30
 WEIGHT=2
- 
+
 RESOURCES=12 i_ingot_valorite
 SKILLMAKE=BLACKSMITHING 54.7
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Valorite
-DESCRIPTION=Platemail Gauntlets
- 
+SUBSECTION=valorite
+DESCRIPTION=Platemail Gloves
+
 ON=@CREATE
 	COLOR=color_o_valorite
 	HITPOINTS={51 65}
- 
- 
+
+
 [ITEMDEF i_platemail_chest_valorite]
-NAME=Valorite platemail chest
+NAME=valorite platemail chest
 ID=i_platemail_chest
 ARMOR=46
 REQSTR=60
 WEIGHT=10
- 
+
 RESOURCES=26 i_ingot_valorite
 SKILLMAKE=BLACKSMITHING 76.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Valorite
+SUBSECTION=valorite
 DESCRIPTION=Platemail Chest
- 
+
 ON=@CREATE
 	COLOR=color_o_valorite
 	HITPOINTS={51 65}
- 
+
+[ITEMDEF i_armor_female_plate_valorite]
+NAME=valorite female platemail chest
+ID=i_armor_female_plate
+ARMOR=46
+REQSTR=95
+WEIGHT=4.0
+
+RESOURCES=20 i_ingot_valorite
+SKILLMAKE=BLACKSMITHING 44.1
+
+TEVENTS=ei_material_nonbase
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=valorite
+DESCRIPTION=Female Platemail Chest
+
+ON=@CREATE
+	COLOR=color_o_valorite
+	HITPOINTS={36 48}
+
 [ITEMDEF i_shield_buckler_valorite]
-NAME=Valorite buckler
+NAME=valorite buckler
 ID=i_shield_buckler
 ARMOR=23
 REQSTR=15
 WEIGHT=5
- 
+
 RESOURCES=10 i_ingot_valorite
 SKILLMAKE=BLACKSMITHING 6.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Valorite
+SUBSECTION=valorite
 DESCRIPTION=Buckler
- 
+
 ON=@CREATE
 	COLOR=color_o_valorite
 	HITPOINTS={41 51}
- 
+
 [ITEMDEF i_shield_metal_valorite]
-NAME=Valorite metal shield
+NAME=valorite metal shield
 ID=i_shield_round_metal
 ARMOR=27
 REQSTR=15
 WEIGHT=6
- 
+
 RESOURCES=14 i_ingot_valorite
 SKILLMAKE=BLACKSMITHING 16.0
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Valorite
+SUBSECTION=valorite
 DESCRIPTION=Metal Shield
- 
+
 ON=@CREATE
 	HITPOINTS={51 65}
 	COLOR=color_o_valorite
- 
+
 [ITEMDEF i_shield_heater_valorite]
-NAME=Valorite heater shield
-ID=I_SHIELD_HEATER
+NAME=valorite heater shield
+ID=i_shield_heater
 ARMOR=39
 REQSTR=30
 WEIGHT=8
- 
+
 RESOURCES=18 i_ingot_valorite
 SKILLMAKE=BLACKSMITHING 41.6
- 
+
 TEVENTS=ei_material_nonbase
- 
+
 CATEGORY=Provisions - Armor - Colored
-SUBSECTION=Valorite
+SUBSECTION=valorite
 DESCRIPTION=Heater Shield
- 
+
 ON=@CREATE
 	HITPOINTS={50 65}
 	COLOR=color_o_valorite
