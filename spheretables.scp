@@ -50,6 +50,8 @@ core/dialogs/admin/language/
 core/dialogs/region_creator/
 //core/dialogs/legacy/
 skills/
+skills/menus/
+core/skillclasses.scp
 speech/
 speech/human/
 speech/jobs/
@@ -127,8 +129,9 @@ maps/map5/map5_moongates.scp
 maps/map5/map5_moongates_tol.scp
 
 //templates
+templates/tm_generic.scp
 templates/
-templates_special/
+templates/special/
 
 //WorldGen Should be comment after the word generation is done
 functions/worldgen/crops/
@@ -150,7 +153,7 @@ functions/worldgen/spawns/trammel/
 functions/worldgen/spawns/uoclassic/
 
 //add-on
-add-on/generator/
+add-on/generator/generator.scp
 
 //custom/
 
