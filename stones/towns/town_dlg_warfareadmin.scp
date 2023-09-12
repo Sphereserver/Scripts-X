@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[dialog d_Town_Master_Warfare]
+[DIALOG d_Town_Master_Warfare]
 5,25
 If (<type>!=t_stone_town)
   return 1
@@ -28,7 +28,7 @@ else
   dhtmlgump 55 <eval (160 + (<local.gcount> * 30))> 400 30 0 0 No current wars
   local.gcount += 1
 endif
-  
+
 If (<guild.count <def0.STONEPRIV_THEYDECLARED>>)
   button 20 <eval (160 + (<local.gcount> * 30))> 4005 4007 1 0 3
   dhtmlgump 55 <eval (160 + (<local.gcount> * 30))> 400 30 0 0 Accept war invitations.
@@ -56,12 +56,12 @@ button 20 400 4005 4007 1 0 0
 dhtmlgump 55 400 400 35 0 0 Return to the previous menu.
 
 
-[dialog d_Town_Master_Warfare Button]
-ON=0 5  
+[DIALOG d_Town_Master_Warfare Button]
+ON=0 5
   If (<masteruid>!=<src.uid>)&&(!<src.isgm>)
     return 1
   endif
-  
+
   If (<argn1>==0)
     If (<masteruid>==<src.uid>)||(<src.isgm>)
       sdialog d_Town_Master,0
@@ -91,4 +91,4 @@ ON=0 5
 [EOF]
 
 
-  
+

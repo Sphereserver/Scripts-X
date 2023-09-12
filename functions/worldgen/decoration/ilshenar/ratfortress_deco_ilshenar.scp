@@ -1,4 +1,4 @@
-[function deco_rat_fortress_ilshenar]
+[FUNCTION deco_rat_fortress_ilshenar]
 
 //metal door
 serv.newitem=0675

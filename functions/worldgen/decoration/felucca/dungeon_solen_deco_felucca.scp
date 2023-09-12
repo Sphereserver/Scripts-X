@@ -1,4 +1,4 @@
-[function deco_solen_hive_felucca]
+[FUNCTION deco_solen_hive_felucca]
 
 //Water Vats
 serv.newitem=014d7

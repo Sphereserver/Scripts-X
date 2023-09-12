@@ -1,120 +1,120 @@
-[function place_terrain_fixes_felucca]
+[FUNCTION place_terrain_fixes_felucca]
 
 //Champions Teleporters
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.morep=5814 3548 0
 new.attr=attr_static|attr_invis
 new.type=t_telepad
 new.name=teleporter
 new.p=5443 2325 35
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.morep=5522 3921 37
 new.attr=attr_static|attr_invis
 new.type=t_telepad
 new.name=teleporter
 new.p=5996 2367 45
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.morep=5958 2345 25
 new.attr=attr_static|attr_invis
 new.type=t_telepad
 new.name=teleporter
 new.p=6053 2407 27
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.morep=6089 2400 24
 new.attr=attr_static|attr_invis
 new.type=t_telepad
 new.name=teleporter
 new.p=6080 2340 26
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.morep=5972 2418 26
 new.attr=attr_static|attr_invis
 new.type=t_telepad
 new.name=teleporter
 new.p=5503 3971 40
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.morep=5490 2348 20
 new.attr=attr_static|attr_invis
 new.type=t_telepad
 new.name=teleporter
 new.p=5731 3420 14
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.morep=5606 802 60
 new.attr=attr_static|attr_invis
 new.type=t_telepad
 new.name=teleporter
 new.p=5265 683 0
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.morep=5876 1378 0
 new.attr=attr_static|attr_invis
 new.type=t_telepad
 new.name=teleporter
 new.p=5265 669 0
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.morep=5164 1009 0
 new.attr=attr_static|attr_invis
 new.type=t_telepad
 new.name=teleporter
 new.p=5506 814 60
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.morep=5201 1564 0
 new.attr=attr_static|attr_invis
 new.type=t_telepad
 new.name=teleporter
 new.p=5506 817 60
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.morep=5201 1564 0
 new.attr=attr_static|attr_invis
 new.type=t_telepad
 new.name=teleporter
 new.p=5145 973 0
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.morep=5331 707 0
 new.attr=attr_static|attr_invis
 new.type=t_telepad
 new.name=teleporter
 new.p=5140 973 0
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.morep=5606 802 60
 new.attr=attr_static|attr_invis
 new.type=t_telepad
 new.name=teleporter
 new.p=5682 1440 0
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.morep=5164 1009 0
 new.attr=attr_static|attr_invis
 new.type=t_telepad
 new.name=teleporter
 new.p=5682 1437 0
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.morep=5977 169 0
 new.attr=attr_static|attr_invis
 new.type=t_telepad
 new.name=teleporter
 new.p=5905 97 0
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.morep=5876 1378 0
 new.attr=attr_static|attr_invis
 new.type=t_telepad
 new.name=teleporter
 new.p=5360 1540 0
 // teleporter
-serv.newitem=01BC3 
+serv.newitem=01BC3
 new.morep=5331 707 0
 new.attr=attr_static|attr_invis
 new.type=t_telepad
@@ -396,7 +396,7 @@ serv.newitem=005
 new.type=t_shrine
 new.attr=attr_static
 new.p=1301 629 21
-//Valor 
+//Valor
 serv.newitem=003
 new.type=t_shrine
 new.attr=attr_static
@@ -1337,4 +1337,4 @@ new.p=3472 512 -5
 serv.newitem=0179a
 new.attr=attr_static
 new.p=3488 580 -5
-[eof]
+[EOF]

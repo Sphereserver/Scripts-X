@@ -418,7 +418,7 @@ NAME=shadow banner
 //shadow banner (multi-part)(east)
 NAME=shadow banner
 
-[itemdef 03660]
+[ITEMDEF 03660]
 defname=i_globe_of_sosaria
 NAME=Globe of Sosaria //(multi-part)(anim)
 CATEGORY=Decoration - HS

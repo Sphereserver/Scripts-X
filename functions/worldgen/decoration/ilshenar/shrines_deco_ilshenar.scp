@@ -1,4 +1,4 @@
-[function deco_shrines_ilshenar]
+[FUNCTION deco_shrines_ilshenar]
 
 //Compassion
 serv.newitem=0003

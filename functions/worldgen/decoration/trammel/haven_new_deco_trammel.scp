@@ -1,233 +1,233 @@
-[function deco_haven_new_trammel]
+[FUNCTION deco_haven_new_trammel]
 
-// New Haven's Doors //	
+// New Haven's Doors //
 //*	MetalDoor 0//
 serv.newitem= 0675
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3481 2579 20 1//
 serv.newitem= 0675
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3481 2568 20 1//
 //*	//
 //*	DarkWoodDoor 0//
 serv.newitem= 06A7
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3436 2572 53 1//
 serv.newitem= 06A7
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3436 2563 53 1//
 //*	//
 //*	DarkWoodDoor 0//
 serv.newitem= 06A5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3458 2526 53 1//
 serv.newitem= 06A5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3458 2531 53 1//
 serv.newitem= 06A5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3435 2572 53 1//
 serv.newitem= 06A5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3435 2563 53 1//
 //*	//
 //*	DarkWoodDoor 0//
 serv.newitem= 06AF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3491 2571 21 1//
 serv.newitem= 06AF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3491 2547 17 1//
 //*	//
 //*	DarkWoodDoor 0//
 serv.newitem= 06AF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3461 2524 73 1//
 //*	//
 //*	DarkWoodDoor 0//
 serv.newitem= 06AD
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3473 2530 68 1//
 //*	//
 //*	DarkWoodDoor 0//
 serv.newitem= 06AD
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3509 2518 27 1//
 serv.newitem= 06AD
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3509 2513 47 1//
 //*	//
 // Bakery (1st line//
 //*	"// It open to inside, but DoorGen make open to outside"//
 //*	DarkWoodDoor 0//
 serv.newitem= 06AD
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3468 2577 35 1//
 serv.newitem= 06AD
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3491 2573 21 1//
 serv.newitem= 06AD
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3468 2559 35 1//
 //*	//
 //*	StrongWoodDoor 0//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3465 2567 35 1//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3496 2589 35 1//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3462 2551 35 1//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3447 2589 35 1//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3446 2582 35 1//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3446 2579 35 1//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3439 2569 53 1//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3459 2558 35 1//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3456 2567 35 1//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3501 2547 40 1//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3504 2547 40 1//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3495 2547 40 1//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3497 2534 27 1//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3496 2517 27 1//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3504 2522 47 1//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3504 2527 47 1//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3483 2533 38 1//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3477 2527 48 1//
 serv.newitem= 06EF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3474 2519 48 1//
 //*	//
 //*	StrongWoodDoor 0//
 serv.newitem= 06E5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3445 2563 35 1//
 serv.newitem= 06E5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3442 2570 35 1//
 serv.newitem= 06E5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3462 2562 35 1//
 serv.newitem= 06E5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3457 2555 35 1//
 serv.newitem= 06E5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3497 2556 20 1//
 serv.newitem= 06E5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3508 2556 20 1//
 serv.newitem= 06E5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3497 2554 40 1//
 serv.newitem= 06E5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3503 2549 40 1//
 serv.newitem= 06E5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3497 2549 20 1//
 serv.newitem= 06E5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3508 2549 20 1//
 serv.newitem= 06E5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3506 2526 27 1//
 serv.newitem= 06E5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3495 2516 47 1//
 serv.newitem= 06E5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3500 2516 47 1//
 serv.newitem= 06E5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3469 2522 68 1//
 //*	//
 //*	StrongWoodDoor 0//
 serv.newitem= 06E5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3500 2518 47 1//
 serv.newitem= 06E5
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3495 2518 47 1//
 //*	//
 //*	StrongWoodDoor 0//
 serv.newitem= 06ED
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3496 2518 27 1//
 //*	//
 //*	StrongWoodDoor 0//
 serv.newitem= 06E7
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3470 2522 68 1//
 // Other ////
 //*	Forge //
 serv.newitem= 04017
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3468 2535 41 1//
 serv.newitem= 04017
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3467 2540 36 1//
 serv.newitem= 04017
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3470 2535 41 1//
 //*	//
 //*	Anvil //
 serv.newitem= 04015
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3469 2535 41 1//
 serv.newitem= 04015
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3467 2539 36 1//
 serv.newitem= 04015
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3467 2541 36 1//
 //*	//
 // loom//
 //*	Static //
 serv.newitem= 01062
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3499 2546 20 1//
 //*	//
 //*	Static //
 serv.newitem= 01061
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3498 2546 20 1//
 //*	//
 // Warriors Guild Hall//
 //*	AnkhNorth 4//
 serv.newitem= 0004
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3526 2516 25 1//
 //*	//
 ////////////////////
@@ -235,205 +235,205 @@ new.p=3526 2516 25 1//
 ////////////////////
 //*	//
 //*	Static  //
-//*	
+//*
 serv.newitem= 0BC0
-new.attr=attr_static 
+new.attr=attr_static
 new.name=Warriors Guild Hall//
 new.p=3521 2565 20 1//
 //*	//
 //*	Static  //
-//*	
+//*
 serv.newitem= 0BAE
-new.attr=attr_static 
+new.attr=attr_static
 new.name=New Haven Magery School//
 new.p=3483 2504 46 1//
 //*	//
 //*	Static  //
-//*	
+//*
 serv.newitem= 0B95
 new.name=Librium Arcanos//
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3478 2526 47 1//
 //*	//
 //*	Static  //
-//*	
+//*
 serv.newitem= 0BB3
 new.name=Gentle Rest//
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3510 2526 27 1//
 //*	//
 //*	Static  //
-//*	
+//*
 serv.newitem= 0BD0
 new.name=Springs N Things//
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3457 2532 55 1//
 //*	//
 //*	Static  //
-//*	
+//*
 serv.newitem= 0B95
 new.name=Ink And Quill//
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3484 2532 38 1//
 //*	//
 //*	Static  //
-//*	
+//*
 serv.newitem= 0BCC
 new.name=Bag Of Many Things//
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3510 2557 21 1//
 //*	//
 //*	Static  //
-//*	
+//*
 serv.newitem= 0BA6
 new.name=Finely Woven//
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3493 2557 21 1//
 serv.newitem= 0BC8
 new.name=Forge And Anvil//
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3473 2543 36 1//
 //*	//
 // Bakery//
 //*	Static //
 serv.newitem= 0BA3
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3469 2580 36 1//
 //*	//
 //*	Static  //
-//*	
+//*
 serv.newitem= 0BB7
 new.attr=attr_static
-new.name=Bit And Bridle// 
+new.name=Bit And Bridle//
 new.p=3523 2575 7 1//
 //*	//
 //*	Static  //
-//*	
+//*
 serv.newitem= 0BAB
 new.name=Healers Of New Haven//
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3469 2558 37 1//
 //*	//
 //*	Static  //
-//*	
+//*
 serv.newitem= 00BB5
-new.attr=attr_static 
+new.attr=attr_static
 new.name=New Haven Bay Port Authority//
 new.p=3498 2588 65 1//
 //*	//
 //*	Static  //
-//*	
+//*
 serv.newitem= 00BB2
 new.name=New Haven Bank//
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3494 2572 29 1//
 //*	//
 //*	Static  //
-//*	
+//*
 serv.newitem= 00BA5
 new.name=Thick Hide//
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3450 2601 27 1//
 //*	//
 //*	Static  //
-//*	
+//*
 serv.newitem= 00BAF
 new.name=The West Mill//
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3448 2642 22 1//
 //*	//
 //*	Static  //
-//*	
+//*
 serv.newitem= 00C0D
 new.name=The Proscenium//
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3421 2599 49 1//
 //*	//
-//*	
-//*	
+//*
+//*
 serv.newitem= 00BB3 //
 new.name=Lion's Den//
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3440 2572 53 1//
 //*	//
 //*	Static  //
-//*	
+//*
 serv.newitem= 00BB1
 new.name=The Bottled Imp//
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3466 2566 36 1//
 //*	//
 //*	Static  //
-//*	
+//*
 serv.newitem= 00BD1
 new.name=Pressure Point//
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3463 2547 30 1//
 //*	//
 // Metal Signpost NS //
 //*	Static //
 serv.newitem= 0B9C
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3473 2543 36 1//
 serv.newitem= 0B9C
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3493 2557 21 1//
 serv.newitem= 0B9C
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3510 2557 21 1//
 serv.newitem= 0B9C
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3457 2532 55 1//
 serv.newitem= 0B9C
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3483 2504 46 1//
 serv.newitem= 0B9C
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3521 2565 20 1//
 //*	//
 // Metal Signpost WE//
 //*	Static //
 serv.newitem= 0B9B
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3497 2587 55 1//
 serv.newitem= 0B9B
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3469 2558 37 1//
 serv.newitem= 0B9B
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3466 2566 36 1//
 serv.newitem= 0B9B
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3463 2547 30 1//
 serv.newitem= 0B9B
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3484 2532 38 1//
 serv.newitem= 0B9B
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3510 2526 27 1//
 serv.newitem= 0B9B
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3478 2526 47 1//
 //*	//
 // Metal Signpost WE//
 //*	Static //
 serv.newitem= 0BA1
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3440 2572 53 1//
 serv.newitem= 0BA1
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3421 2599 49 1//
 serv.newitem= 0BA1
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3448 2642 22 1//
 serv.newitem= 0BA1
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3523 2575 7 1//
 serv.newitem= 0BA1
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3450 2601 27 1//
 serv.newitem= 0BA1
-new.attr=attr_static 
+new.attr=attr_static
 new.p=3469 2580 36 1//
 
 [EOF]

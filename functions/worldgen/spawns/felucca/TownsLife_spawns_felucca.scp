@@ -1,6 +1,6 @@
 
 
-[function spawn_towns_life_felucca]
+[FUNCTION spawn_towns_life_felucca]
 //##############
 //## By Nerun ##
 //##############
@@ -263,4 +263,4 @@ f_create_spawner,Bird,Cat,Dog,Rat,,,5726,3211,-2,2,5,15,100,100,1,12,12,12,12,0,
 f_create_spawner,Bird,Cat,Dog,Rat,,,5255,4000,37,2,5,15,80,80,1,6,6,6,6,0,0
 f_create_spawner,Chicken:Sheep:Cow:Bull,,,,,,5267,4012,40,2,5,10,15,15,1,5,0,0,0,0,0
 
-[eof]
+[EOF]

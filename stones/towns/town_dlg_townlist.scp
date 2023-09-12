@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[dialog d_Town_TownList]
+[DIALOG d_Town_TownList]
 5,25
 local.listtype=<args>
 If (<local.listtype> <= 0)||(<local.listtype> > 4)
@@ -29,21 +29,21 @@ If ( <local.listtype>==<def0.TOWNSDLG_LISTTYPE_G_DECLAREPEACE> )
   dhtmlgump 55 400 245 30 0 0 Send the olive branch.
 elif ( <local.listtype>==<def0.TOWNSDLG_LISTTYPE_G_ACCEPTWAR> )
   local.privtolist=<def0.STONEPRIV_THEYDECLARED>
-  dhtmlgump 20 10 400 25 0 0 Select the town to accept the invitations: 
+  dhtmlgump 20 10 400 25 0 0 Select the town to accept the invitations:
   button 20 400 4005 4007 1 0 1
   dhtmlgump 55 400 245 30 0 0 Accept war invitations.
 elif ( <local.listtype>==<def0.TOWNSDLG_LISTTYPE_G_REJECTWAR> )
   local.privtolist=<def0.STONEPRIV_THEYDECLARED>
-  dhtmlgump 20 10 400 25 0 0 Select the town to reject their invitations: 
+  dhtmlgump 20 10 400 25 0 0 Select the town to reject their invitations:
   button 20 400 4005 4007 1 0 1
   dhtmlgump 55 400 245 30 0 0 Reject war invitations.
 elif ( <local.listtype>==<def0.TOWNSDLG_LISTTYPE_G_RESCIND> )
   local.privtolist=<def0.STONEPRIV_WEDECLARED>
-  dhtmlgump 20 10 400 25 0 0 Select the town to rescind our invitations: 
+  dhtmlgump 20 10 400 25 0 0 Select the town to rescind our invitations:
   button 20 400 4005 4007 1 0 1
   dhtmlgump 55 400 245 30 0 0 Rescind your war declarations.
 endif
-  
+
 button 300 400 4005 4007 1 0 0
 dhtmlgump 335 400 100 35 0 0 CANCEL
 
@@ -71,7 +71,7 @@ while ( <local.currentgump> < <local.totalprivcount> )
     local.ifisok=<local.ifisok> && <guild.<local.current>.wewar> && !<guild.<local.current>.theywar>
   endif
   // ----------------------------------
-  
+
   If ( <local.ifisok> )
     // ----- Page ------
     If ( (<local.currentgump> % 11)==0 )
@@ -79,9 +79,9 @@ while ( <local.currentgump> < <local.totalprivcount> )
         button 300 370 4005 4007 0 <EVAL ((<local.currentgump>/11)+1)> 0
         dhtmlgump 335 370 300 35 0 0 Next page
       endif
-        
+
       page <EVAL ((<local.currentgump>/11)+1)>
-        
+
       If ( <local.currentgump> != 0 )
         button 20 370 4014 4016 0 <EVAL (<local.currentgump>/11)> 0
         dhtmlgump 335 370 300 35 0 0 1011067 Previous page
@@ -92,9 +92,9 @@ while ( <local.currentgump> < <local.totalprivcount> )
     If ( <local.showcheckbox> )
       radio 20 <EVAL (35 + <EVAL ((<local.currentgump> % 11) * 30)>)> 208 209 0 <EVAL (<local.current> + 10)>
     endif
-    
-    local.currenttownuid=<guild.<local.current>.uid>  
-    
+
+    local.currenttownuid=<guild.<local.current>.uid>
+
     If (<eval strlen(<uid.<local.currenttownuid>.name>)>)
       dtext <QVAL <local.showcheckbox> ? 55 : 20> <EVAL (35 + <EVAL ((<local.currentgump> % 11) * 30)>)> 0 <uid.<local.currenttownuid>.name> <qval (strlen(<uid.<local.currenttownuid>.abbrev>))&&(<DEF0.TOWNSCONFIG_TOWNLIST_SHOWABBREV>) ? [<uid.<local.currenttownuid>.abbrev>]:>
     else
@@ -114,8 +114,8 @@ while ( <local.currentgump> < <local.totalprivcount> )
 endwhile
 
 
-  
-[dialog d_Town_TownList Button]
+
+[DIALOG d_Town_TownList Button]
 ON=0 1
   If (!<src.ctag0.dialog_towntownlist_type>)
     serv.log sdialog d_Town_TownList called without src.ctag.dialog_towntownlist_type !!
@@ -129,14 +129,14 @@ ON=0 1
   src.ctag.dialog_towntownlist_type=
   try src.ctag.dialog_towntownlist_<dLOCAL.listtype>_count=
   try src.ctag.dialog_towntownlist_<dLOCAL.listtype>_radio=
-  
+
   If (<masteruid>!=<src.uid>)&&(!<src.isgm>)
     return 1
   endif
-  
+
   If (<argn1>==0) // Exit
     sdialog d_Town_Master_Warfare,0
-    return 1  
+    return 1
   endif
 
   local.townuid=0
@@ -151,9 +151,9 @@ ON=0 1
       return 1
     elif ( <uid.<local.townuid>.type>!=T_STONE_TOWN )
       return 1
-    endIf  
+    endIf
   endif
-  
+
   If ( <local.listtype>==<def0.TOWNSDLG_LISTTYPE_G_DECLAREPEACE> )
     If ( <f_townsys_isatwarwith <uid>,<local.townuid>> )
       f_townsys_declarepeace <uid>,<local.townuid>,1
@@ -172,7 +172,7 @@ ON=0 1
       f_townsys_declarepeace <uid>,<local.townuid>,0
     endif
   endif
-  
+
   local.listtypecount -= 1
   If ( <local.listtypecount> )
     sdialog d_Town_TownList,0,<local.listtype>

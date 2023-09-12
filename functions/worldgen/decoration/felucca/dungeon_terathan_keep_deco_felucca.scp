@@ -1,4 +1,4 @@
-[function deco_terathan_keep_felucca]
+[FUNCTION deco_terathan_keep_felucca]
 
 ////terathan keep
 //tightrope
@@ -222,13 +222,13 @@ serv.newitem=067F
 new.attr=attr_static
 new.p=5242 1602 0
 //metal door
-serv.newitem=067D 
+serv.newitem=067D
 new.attr=attr_static
 new.p=5356 1556 0
-serv.newitem=067D 
+serv.newitem=067D
 new.attr=attr_static
 new.p=5356 1548 0
-serv.newitem=067D 
+serv.newitem=067D
 new.attr=attr_static
 new.p=5242 1603 0
 //lever

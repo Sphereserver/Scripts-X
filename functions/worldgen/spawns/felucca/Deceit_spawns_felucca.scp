@@ -1,6 +1,6 @@
 
 
-[function spawn_deceit_felucca]
+[FUNCTION spawn_deceit_felucca]
 //##############
 //## By Nerun ##
 //##############
@@ -59,4 +59,4 @@ f_create_spawner,Lich,,,,,,5320,708,0,2,2,10,25,10,1,2,0,0,0,0,0
 f_create_spawner,TreasureLevel3,TreasureLevel4,Lich,Lichlord,Silverserpent,,5314,748,-20,2,60,120,25,8,1,1,2,3,1,2,0
 f_create_spawner,TreasureLevel2,TreasureLevel3,Lich,,,,5267,690,0,2,60,120,35,2,1,1,2,2,0,0,0
 
-[eof]
+[EOF]

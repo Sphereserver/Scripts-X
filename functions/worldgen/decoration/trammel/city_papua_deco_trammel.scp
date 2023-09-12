@@ -1,5 +1,5 @@
-[function deco_papua_trammel]	
-	
+[FUNCTION deco_papua_trammel]
+
 //stone pavers//
 SERV.NEWitem=0521//
 new.attr=attr_static//

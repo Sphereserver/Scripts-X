@@ -4,26 +4,22 @@
 //****************************************************************************
 VERSION=X1
 
+//////////////////////////////////
+// Region Type for mining skill //
+//////////////////////////////////
+
 [REGIONTYPE r_default_rock t_rock]
 // By default, iron is most common, sometimes nothing can be mined, but there
 // is a small chance of a rare diamond.  Shadow ore is cannot be mined.
-RESOURCES=50.0 mr_iron    // This large number makes this very common.
-RESOURCES=10.0 mr_nothing
-RESOURCES=8.0 mr_rusty
-RESOURCES=6.0 mr_old_copper
-RESOURCES=6.0 mr_dull_copper
-RESOURCES=5.0 mr_bronze
-RESOURCES=5.0 mr_copper
-RESOURCES=2.0 mr_gold
-RESOURCES=2.0 mr_rose
-RESOURCES=2.0 mr_agapite
-RESOURCES=1.0 mr_bloodrock
-RESOURCES=1.0 mr_silver
-RESOURCES=0.5 mr_verite
-RESOURCES=0.2 mr_valorite
-RESOURCES=0.1 mr_mytheril
-RESOURCES=0.1 mr_blackrock
-RESOURCES=0.1 mr_diamond    // The small number means this is very rare.
+RESOURCES=49.6 mr_iron    // This large number makes this very common.
+RESOURCES=11.2 mr_dull_copper
+RESOURCES=9.8 mr_shadow
+RESOURCES=8.4 mr_copper
+RESOURCES=7.0 mr_bronze
+RESOURCES=5.6 mr_gold
+RESOURCES=4.2 mr_agapite
+RESOURCES=2.8 mr_verite
+RESOURCES=1.4 mr_valorite
 
 [REGIONTYPE r_dungeon t_rock]
 // Usually Iron, but sometimes Shadow ore can be mined in dungeons.
@@ -46,6 +42,50 @@ RESOURCES=100.0 mr_nothing
 
 ON=@RegPeriodic
 SRC.SOUND={0e 10 0f 10 022 1 023 1 024 1 0267 1}
+
+/////////////////////////////////////////
+// Region Type for lumberjacking skill //
+/////////////////////////////////////////
+
+[REGIONTYPE r_default_tree t_tree]
+// All trees produce wood by default.
+RESOURCES=49.0 mr_tree
+RESOURCES=30.0 mr_tree_oak
+RESOURCES=10.0 mr_tree_ash
+RESOURCES=5.0 mr_tree_yew
+RESOURCES=3.0 mr_tree_heartwood
+RESOURCES=2.0 mr_tree_bloodwood
+RESOURCES=1.0 mr_tree_frostwood
+
+///////////////////////////////////
+// Region Type for fishing skill //
+///////////////////////////////////
+
+[REGIONTYPE r_default_water t_water]
+RESOURCES=60.0 mr_nothing  // Most of the time fishing produces nothing.
+RESOURCES=10.0 mr_fish1
+RESOURCES=10.0 mr_fish2
+RESOURCES=10.0 mr_fish3
+RESOURCES=10.0 mr_fish4
+
+[REGIONTYPE r_water t_water]
+RESOURCES=60.0 mr_nothing
+RESOURCES=10.0 mr_fish1
+RESOURCES=10.0 mr_fish2
+RESOURCES=10.0 mr_fish3
+RESOURCES=10.0 mr_fish4
+
+ON=@RegPeriodic
+// Water/Ocean boat sounds
+SRC.SOUND={025 1 026 1 027 1 010 1 011 1 012 1 013 1}
+
+////////////////////////////////////////
+//  Region Type for herbivores to eat //
+////////////////////////////////////////
+
+[REGIONTYPE r_default_grass t_grass]
+// All grass can be eaten by default.
+RESOURCES=1.0 mr_grass
 
 
 /////////////////////

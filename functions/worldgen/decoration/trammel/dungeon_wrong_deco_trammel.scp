@@ -1,5 +1,5 @@
-[function deco_wrong_trammel]	
-	
+[FUNCTION deco_wrong_trammel]
+
 //teleporter//
 serv.newitem= 01BC3//
 new.morep=5690 569 25 1//
@@ -796,4 +796,4 @@ serv.newitem=01778//
 new.attr=attr_static//
 new.p=5694 566 20 1//
 
-[eof]		
+[EOF]

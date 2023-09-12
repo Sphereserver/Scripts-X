@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[defname sphere_crafting_bowcraft_options]
+[DEFNAME sphere_crafting_bowcraft_options]
 // $skill_category_#_#_opt	"mark,exceptional,colored,recipe,expansion"
 bowcraft_category_3_1_opt	"1,1,1,0,0"
 bowcraft_category_3_2_opt	"1,1,1,0,0"
@@ -28,4 +28,4 @@ bowcraft_category_3_19_opt	"1,1,1,1,5"
 bowcraft_category_3_20_opt	"1,1,1,1,5"
 bowcraft_category_3_21_opt	"1,1,1,1,5"
 
-[eof]
+[EOF]

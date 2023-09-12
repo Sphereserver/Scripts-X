@@ -3093,7 +3093,7 @@ DUPEITEM=044c7
 //Small Soulforge
 DUPEITEM=044c7
 
-//[itemdef 044CA] //Temporary comment because it make crash Levianthan assistant
+//[ITEMDEF 044CA] //Temporary comment because it make crash Levianthan assistant
 //defname=i_small_soul_forge
 //name=small sould forge
 //RESOURCES=4 i_floor_marble

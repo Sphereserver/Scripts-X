@@ -420,8 +420,8 @@ ON=@Create
    RESFIRE=6
    RESPHYSICAL=8
    RESPOISON=6
-   
-   
+
+
 [ITEMDEF 0403]
 DEFNAME=i_gargish_cloth_arms_female
 NAME=Gargish female cloth arms
@@ -772,7 +772,7 @@ ON=@Create
 DUPEITEM=042de
 
 // Gargish Leather Arms
-[itemdef 0301]
+[ITEMDEF 0301]
 defname=i_gargish_leather_arms_f
 name=gargish leather arms
 nameloc=1020769
@@ -800,12 +800,12 @@ rescold=7
 respoison=6
 resenergy=6
 
-[itemdef 04047]
+[ITEMDEF 04047]
 dupeitem=0301
 nameloc=1095327
 
 // Gargish Leather Arms
-[itemdef 0302]
+[ITEMDEF 0302]
 defname=i_gargish_leather_arms
 name=gargish leather arms
 nameloc=1020770
@@ -833,12 +833,12 @@ rescold=7
 respoison=6
 resenergy=6
 
-[itemdef 04048]
+[ITEMDEF 04048]
 dupeitem=0302
 nameloc=1095328
 
 // Gargish Leather Chest
-[itemdef 0303]
+[ITEMDEF 0303]
 defname=i_gargish_leather_chest_f
 name=gargish leather chest
 nameloc=1020771
@@ -866,12 +866,12 @@ rescold=7
 respoison=6
 resenergy=6
 
-[itemdef 04049]
+[ITEMDEF 04049]
 dupeitem=0303
 nameloc=1095329
 
 // Gargish Leather Chest
-[itemdef 0304]
+[ITEMDEF 0304]
 defname=i_gargish_leather_chest
 name=gargish leather chest
 nameloc=1020772
@@ -899,12 +899,12 @@ rescold=7
 respoison=6
 resenergy=6
 
-[itemdef 0404a]
+[ITEMDEF 0404a]
 dupeitem=0304
 nameloc=1095330
 
 // Gargish Leather Leggings
-[itemdef 0305]
+[ITEMDEF 0305]
 defname=i_gargish_leather_leggings_f
 name=gargish leather leggings
 nameloc=1020773
@@ -932,12 +932,12 @@ rescold=7
 respoison=6
 resenergy=6
 
-[itemdef 0404d]
+[ITEMDEF 0404d]
 dupeitem=0305
 nameloc=1095333
 
 // Gargish Leather Leggings
-[itemdef 0306]
+[ITEMDEF 0306]
 defname=i_gargish_leather_leggings
 name=gargish leather leggings
 nameloc=1020774
@@ -965,12 +965,12 @@ rescold=7
 respoison=6
 resenergy=6
 
-[itemdef 0404e]
+[ITEMDEF 0404e]
 dupeitem=0306
 nameloc=1095334
 
 // Gargish Leather Kilt
-[itemdef 0310]
+[ITEMDEF 0310]
 defname=i_gargish_leather_kilt_f
 name=gargish leather kilt
 nameloc=1020784
@@ -998,12 +998,12 @@ rescold=7
 respoison=6
 resenergy=6
 
-[itemdef 0404b]
+[ITEMDEF 0404b]
 dupeitem=0310
 nameloc=1095331
 
 // Gargish Leather Kilt
-[itemdef 0311]
+[ITEMDEF 0311]
 defname=i_gargish_leather_kilt
 name=gargish leather kilt
 nameloc=1020785
@@ -1031,12 +1031,12 @@ rescold=7
 respoison=6
 resenergy=6
 
-[itemdef 0404c]
+[ITEMDEF 0404c]
 dupeitem=0311
 nameloc=1095332
 
 // Gargish Leather Talons
-[itemdef 041d8]
+[ITEMDEF 041d8]
 defname=i_gargish_leather_talons
 name=gargish leather talons
 nameloc=1095728
@@ -1058,12 +1058,12 @@ description=Gargish Leather Talons
 on=@Create
 hitpoints={ 36 48 }
 
-[itemdef 041d9]
+[ITEMDEF 041d9]
 dupeitem=041d8
 nameloc=1095729
 
 // Gargish Leather Wing Armor
-[itemdef 0457e]
+[ITEMDEF 0457e]
 defname=i_gargish_leather_wing_armor
 name=gargish leather wing armor
 nameloc=1096662
@@ -1091,12 +1091,12 @@ rescold=7
 respoison=6
 resenergy=6
 
-[itemdef 0457f]
+[ITEMDEF 0457f]
 dupeitem=0457e
 nameloc=1096663
 
 // Gargish Belt
-[itemdef 0450d]
+[ITEMDEF 0450d]
 defname=i_gargish_belt
 name=gargish belt
 nameloc=1096549
@@ -1118,7 +1118,7 @@ description=Gargish Belt
 on=@Create
 hitpoints={ 36 48 }
 
-[itemdef 0450e]
+[ITEMDEF 0450e]
 dupeitem=0450d
 nameloc=1096550
 [EOF]

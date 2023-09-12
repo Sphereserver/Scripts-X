@@ -51,7 +51,7 @@ while (<local.index> < <local.totalstones>)
       local.index=<local.totalstones> + 1
     endif
   endif
-  
+
   local.index += 1
 endwhile
 
@@ -75,7 +75,7 @@ while (<local.index> < <local.totalstones>)
       local.index=<local.totalstones> + 1
     endif
   endif
-  
+
   local.index += 1
 endwhile
 
@@ -141,7 +141,7 @@ return <local.typename>
 
 // ------------------------------------------------------
 
-[function f_stonesys_updatenoto]
+[FUNCTION f_stonesys_updatenoto]
 ref1 = <argv[0]> // The stone
 if (<ref1.IsChar>)
 	return 0
@@ -171,17 +171,17 @@ If ((<type> == t_stone_guild) && (<argo.type> == t_stone_guild))
 	If (<align> && <argo.align>)
 	  return (<align>!=<argo.align>)
 	endif
-	
+
 	If (<guildfromuid.<argo.uid>.isenemy> && <argo.guildfromuid.<uid>.isenemy>)
 	  return 1
 	endif
-	
+
 	return 0
 else If ((<type> == t_stone_town) && (<argo.type> == t_stone_town))
 	If (<guildfromuid.<argo.uid>.isenemy> && <argo.guildfromuid.<uid>.isenemy>)
 	  return 1
 	endif
-	
+
 	return 0
 endif
 

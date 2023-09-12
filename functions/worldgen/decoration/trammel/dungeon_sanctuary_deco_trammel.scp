@@ -1,5 +1,5 @@
-[function deco_sanctuary_trammel]
-		
+[FUNCTION deco_sanctuary_trammel]
+
 // Items//
 // Traps//
 serv.newitem=01D99//
@@ -24,4 +24,4 @@ serv.newitem=01D99//
 new.attr=attr_static//
 new.p=6327 140 -20 1//
 
-[EOF]		
+[EOF]

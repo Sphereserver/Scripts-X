@@ -1,4 +1,4 @@
-[function deco_palace_of_paroxysmus_trammel]
+[FUNCTION deco_palace_of_paroxysmus_trammel]
 
 //Items
 serv.newitem=0857

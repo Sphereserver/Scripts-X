@@ -1,6 +1,6 @@
 
 
-[function spawn_sea_life_felucca]
+[FUNCTION spawn_sea_life_felucca]
 //##############
 //## By Nerun ##
 //##############
@@ -126,4 +126,4 @@ f_create_spawner,DeepSeaSerpent:SeaSerpent:WaterElemental:Kraken,Dolphin,SeaHors
 f_create_spawner,DeepSeaSerpent:SeaSerpent:WaterElemental:Kraken,Dolphin,SeaHorse,,,,2288,3767,-5,2,5,10,100,100,1,10,2,1,0,0,0
 f_create_spawner,DeepSeaSerpent:SeaSerpent:WaterElemental:Kraken,Dolphin,SeaHorse,,,,496,1879,-5,2,5,10,100,100,1,10,2,1,0,0,0
 
-[eof]
+[EOF]

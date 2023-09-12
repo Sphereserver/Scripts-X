@@ -127,7 +127,6 @@ SUBSECTION=Weapon Templates
 DESCRIPTION=All Weapon Magic
 ITEM={ random_weapon_ruin 1 random_weapon_might 1 random_weapon_force 1 random_weapon_power 1 random_weapon_vanq 1 }
 
-
 [TEMPLATE random_weapon_ruin]
 CATEGORY=Item Templates
 SUBSECTION=Weapon Templates

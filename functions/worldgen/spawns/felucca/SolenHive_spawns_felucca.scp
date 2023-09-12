@@ -1,5 +1,5 @@
 
-[function spawn_solen_hive_felucca]
+[FUNCTION spawn_solen_hive_felucca]
 //##############
 //## By Nerun ##
 //##############
@@ -28,7 +28,7 @@ f_create_spawner,Blacksolenwarrior,,,,,,5681,1886,2,2,5,10,50,10,1,1,0,0,0,0,0
 f_create_spawner,Blacksolenwarrior,,,,,,5756,1857,4,2,5,10,50,10,1,1,0,0,0,0,0
 //##
 //## AREA B - Between Minoc/Covetous (2609 764 0)
-//## 
+//##
 //## Level 1
 //##
 f_create_spawner,Blacksolenworker,,,,,,5912,1800,1,2,5,10,30,20,1,1,0,0,0,0,0
@@ -46,7 +46,7 @@ f_create_spawner,Blacksolenwarrior,,,,,,5815,1881,2,2,5,10,20,7,1,1,0,0,0,0,0
 f_create_spawner,Beetle,,,,,,5831,1910,3,2,5,10,15,10,1,2,0,0,0,0,0
 //##
 //## AREA C - West Trinsic Main Gate (1691 2790 0)
-//## 
+//##
 //## Level 1
 //##
 f_create_spawner,Blacksolenworker,,,,,,5718,2024,4,2,5,10,25,15,1,2,0,0,0,0,0
@@ -63,7 +63,7 @@ f_create_spawner,Blacksolenwarrior,,,,,,5748,1923,0,2,5,10,20,5,1,1,0,0,0,0,0
 f_create_spawner,Blacksolenqueen,Blacksolenworker,,,,,5736,1939,7,2,5,10,20,10,1,1,2,0,0,0,0
 //##
 //## AREA D - South Chaos/Compassion Road (1725 815 0)
-//## 
+//##
 //## Level 1
 //##
 f_create_spawner,Blacksolenworker,,,,,,5876,2018,3,2,5,10,20,10,1,1,0,0,0,0,0
@@ -94,4 +94,4 @@ f_create_spawner,redsoleninfiltratorqueen,redsoleninfiltratorwarrior,,,,,1940,32
 //## Wind
 f_create_spawner,redsoleninfiltratorqueen,redsoleninfiltratorwarrior,,,,,1361,894,0,2,5,10,8,4,1,1,1,0,0,0,0
 
-[eof]
+[EOF]

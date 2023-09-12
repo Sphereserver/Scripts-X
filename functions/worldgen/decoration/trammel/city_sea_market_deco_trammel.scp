@@ -1,6 +1,6 @@
-[function deco_sea_market_trammel]
-		
-// Sea Market / Dock Town//		
+[FUNCTION deco_sea_market_trammel]
+
+// Sea Market / Dock Town//
 serv.newitem=01E5E//
 new.attr=attr_static//
 new.p=4544 2298 -1 1//
@@ -279,4 +279,4 @@ serv.newitem=014EC//
 new.attr=attr_static//
 new.p=4552 2318 2 1//
 
-[EOF]		
+[EOF]

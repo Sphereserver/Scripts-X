@@ -16,7 +16,7 @@ if <link.isvalid> && !<link.tag0.convert>
 else
     if <def.hs_can_decay>
         attr=02|010
-        timer=60*60*24*<def.hs_can_decay>    
+        timer=60*60*24*<def.hs_can_decay>
     else
         attr=010
 		timer =-1
@@ -39,7 +39,7 @@ else
     message For Sale
     message <link.dtag0.price> gp
     return 1
-endif    
+endif
 
 
 ON=@ClientToolTip
@@ -78,8 +78,8 @@ if (<link>!=<def.link_invalid>)
 endif
 if (<link.isowner <src>>) || (<link.GetCoownerPos <src>> >= 0) || (<link.GetFriendPos <src>> >= 0) || (<src.isgm>)
     if (<src.region.uid>==<link>)
-        link.dialog d_house_menu 
-        return 1        
+        link.dialog d_house_menu
+        return 1
     else
         src.sysmessage @32,,1 You must be standing on your doorstep to access the house menu.
         return 1
@@ -115,17 +115,17 @@ endif
 [TYPEDEF ei_house_lockdown]
 ON=@ClientToolTip
 addcliloc 501643
- 
+
 ON=@PickUp_Ground   // Do not allow to move this item
 if (!<src.IsGM>)
     return 1
 endif
- 
+
 ON=@PickUp_Self // For containers only, do not allow to pick up items
 if (!<src.IsGM>)
     return 1
 endif
- 
+
 // When entering customize mode, all locked down items and containers are being moved to the Moving Crate
 // but they are still Locked Down items, counting as so and having their properties
 // so they can't be moved from ground nor items can be dragged from them
@@ -135,15 +135,15 @@ ON=@DropOn_Ground
 if (<region.uid> != <link.region.uid>)
     return 1
 endif
- 
+
 ON=@DropOn_Item
 if (<argo.region.uid> != <link.region.uid>)
     return 1
 endif
- 
-// Doors event 
+
+// Doors event
 [TYPEDEF ei_house_door]
-ON=@Click	
+ON=@Click
 if (<tag0.guild>)
 	message @,,1 [<uid.<tag0.guild>.abbrev>] Guild Members Only.
 	message @,,1 <name>
@@ -184,7 +184,7 @@ endif
 
 ON=@DClick
 ref1=<region.uid>
-if <def.hs_can_decay> 
+if <def.hs_can_decay>
 	if (<ref1.tag0.decay_exempt>)
 		ref1.link.timer=-1
 	else
@@ -217,7 +217,7 @@ endif
 
 // House container created from COMPONENTs from [MULTIDEF ] (this also have 'ei_house_component').
 [TYPEDEF ei_house_container]
- 
+
 // House Component created from [MULTIDEF ].
 [TYPEDEF ei_house_component]
 
@@ -250,7 +250,7 @@ attr |= <def.attr_invis>
 [TYPEDEF ei_house_secure]
 ON=@clienttooltip
 addcliloc 501644
- 
+
 ON=@PickUp_ground
 if (!<src.IsGM>)
     return 1
@@ -261,7 +261,7 @@ if (<f_house_can_access>)
     return 0
 endif
 return 1
- 
+
 ON=@PickUp_Self
 if (<f_house_can_access>)
     return 0
@@ -269,8 +269,8 @@ endif
 return 1
 
 // Telepad for multis.
-[typedef ei_house_telepad]
-ON=@Click	
+[TYPEDEF ei_house_telepad]
+ON=@Click
 if (<tag0.guild>)
 	message @,,1 [<uid.<tag0.guild>.abbrev>] Guild Members Only.
 	message @,,1 <name>
@@ -309,7 +309,7 @@ endif
 
 
 ON=@step
-if !(<link>==<def.link_invalid>) 
+if !(<link>==<def.link_invalid>)
 	if !(<src.isgm>)
 		if (<f_house_can_access>)
 			return 0
@@ -416,7 +416,7 @@ if <src.isplayer>
 	ref1=<uid>
 	if !<src.isgm>
 		if <ref1.housetype>==house_private
-			if (<ref1.isowner <src>>) || (<ref1.getcoownerpos <src>> >= 0) || (<ref1.getfriendpos <src>> >= 0) || (<src.isgm>) 
+			if (<ref1.isowner <src>>) || (<ref1.getcoownerpos <src>> >= 0) || (<ref1.getfriendpos <src>> >= 0) || (<src.isgm>)
 				return 0
 			elif (<ref1.housetype>==house_guild)
 				if (<src.guild>==<ref1.tag0.is_guild>)
@@ -441,9 +441,9 @@ if <src.isplayer>
 	endif
 endif
 
-ON=@Exit	
-	src.dialogclose d_house_menu 
-	src.events -e_house_player_events	
+ON=@Exit
+	src.dialogclose d_house_menu
+	src.events -e_house_player_events
 
 
 //////////////////////////////////////////////////////////////////////////////////////events///////////////////////////////////////////////////
@@ -472,7 +472,7 @@ if (<act.defname>==<def.vendor_deed_id>)
 			if <ref1.housetype>==house_private
 				src.sysmessage @32,,1 You must set your building to public before you can place vendors here.
 				return 1
-			else 
+			else
 				if (<ref1.vendors> < <ref1.maxvendors>)
 					return 0
 				else
@@ -490,7 +490,7 @@ if (<act.defname>==<def.vendor_deed_id>)
 			if <ref1.housetype>==house_private
 				src.sysmessage @32,,1 You must set your building to public before you can place vendors here.
 				return 1
-			else 		
+			else
 				if (<ref1.vendors> < <ref1.maxvendors>)
 					return 0
 				else

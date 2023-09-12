@@ -1,5 +1,5 @@
-[function deco_destard_trammel]	
-	
+[FUNCTION deco_destard_trammel]
+
 //crate//
 serv.newitem=0E3C//
 new.attr=attr_static//
@@ -1322,4 +1322,4 @@ serv.newitem=09DE//
 new.attr=attr_static//
 new.p=5201 912 -40 1//
 
-[eof]		
+[EOF]

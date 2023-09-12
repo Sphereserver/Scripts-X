@@ -1,4 +1,4 @@
-[function deco_buccaneers_den_felucca]
+[FUNCTION deco_buccaneers_den_felucca]
 // stone pavers
 serv.newitem=051E
 new.attr=attr_static
@@ -357,7 +357,7 @@ new.p=2752 2217 0
 serv.newitem=0A63
 new.attr=attr_static
 new.p=2752 2216 0
-// folded sheet 
+// folded sheet
 serv.newitem=0A92
 new.attr=attr_static
 new.p=2632 2080 12
@@ -1088,4 +1088,4 @@ new.p=2679 2233 4
 serv.newitem=01F91
 new.attr=attr_static
 new.p=2679 2233 4
-[eof]
+[EOF]

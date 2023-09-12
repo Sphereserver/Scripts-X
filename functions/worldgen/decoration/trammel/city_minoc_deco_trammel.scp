@@ -1,5 +1,5 @@
-[function deco_minoc_trammel]	
-	
+[FUNCTION deco_minoc_trammel]
+
 //minoc camp//
 //gruesome standard//
 serv.newitem=0041F//
@@ -3419,4 +3419,4 @@ serv.newitem=01EFD//
 new.attr=attr_static //
 new.p=2541 636 0 1 1//
 
-[eof]
+[EOF]

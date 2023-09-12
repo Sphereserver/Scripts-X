@@ -1,5 +1,5 @@
 
-[function spawn_blighted_grove_felucca]
+[FUNCTION spawn_blighted_grove_felucca]
 //##############################
 //##   XML Spawns by Erica    ##
 //## Convert/Adapted By Nerun ##
@@ -20,4 +20,4 @@ f_create_spawner,harpy:saliva:changeling,,,,,,6585,878,0,1,5,10,10,10,1,7,0,0,0,
 f_create_spawner,insanedryad,,,,,,6489,897,0,1,5,10,5,5,1,1,0,0,0,0,0
 f_create_spawner,insanedryad,,,,,,6518,879,0,1,5,10,5,5,1,1,0,0,0,0,0
 
-[eof]
+[EOF]

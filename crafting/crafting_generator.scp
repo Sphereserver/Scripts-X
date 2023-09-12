@@ -33,13 +33,13 @@ VERSION=X1
 // To start the whole proccess, just write "ScriptCrafting" in the console
 // Good luck and enjoy it.
 
-[function ScriptCrafting]
+[FUNCTION ScriptCrafting]
 f_crafting_generate blacksmithing
 f_crafting_generate bowcraft
 f_crafting_generate carpentry
 f_crafting_generate tailoring
 
-[function f_crafting_generate]
+[FUNCTION f_crafting_generate]
 local.skill = <args>
 serv.log @CraftingGenerator :: Starting generation of <local.skill>.
 for 1 10
@@ -66,13 +66,13 @@ for 1 10
    endfor
 endfor
 
-[function f_make_craftinglist]
+[FUNCTION f_make_craftinglist]
 local.skill = <argv[0]>
 local.material = <argv[1]>
 local.topen = "scripts/add-on/skillmenu/sphere_skillmenu_<local.skill>_colored.scp" // _<def.<local.skill>_material_<dlocal.material>>
 file.mode.append = 1
 if <file.open <local.topen>>
-   file.writeline "[defname sphere_crafting_blacksmithing_<def.<local.skill>_material_<dlocal.material>>]"
+   file.writeline "[DEFNAME sphere_crafting_blacksmithing_<def.<local.skill>_material_<dlocal.material>>]"
    for y 1 20
       if !<isempty <def.<local.skill>_category_<dlocal.y>_1>>
          local.items = 1
@@ -99,7 +99,7 @@ if <file.open <local.topen>>
 endif
 
 // f_craft_item $item,$skill,$resource
-[function f_craft_item]
+[FUNCTION f_craft_item]
 local.item = <argv[0]>
 local.skill = <argv[1]>
 local.material = <argv[2]>
@@ -140,7 +140,7 @@ endif
 call f_script_item <new.uid>
 new.remove
 
-[function f_script_item]
+[FUNCTION f_script_item]
 ref1 = <args>
 file.close
 file.mode.append = 1
@@ -255,4 +255,4 @@ if <file.open <local.topen>>
    file.close
 endif
 
-[eof]
+[EOF]

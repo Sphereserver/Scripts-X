@@ -1269,7 +1269,7 @@ CATEGORY=Decoration - Dungeons and The Dead
 SUBSECTION=Graves & Gravestones
 DESCRIPTION=Gravestone
 
-[itemdef 01185]
+[ITEMDEF 01185]
 defname=i_memorial_gwenn
 name=Memorial to Gween
 RESOURCES=4 i_floor_marble

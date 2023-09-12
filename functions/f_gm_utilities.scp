@@ -31,7 +31,7 @@ FOR (<SERV.CLIENTS>)
 ENDFOR
 
 //Function for reinitialise all NPC spawn point
-[function f_resetAllSpawnNPC]
+[FUNCTION f_resetAllSpawnNPC]
 SRC.SYSMESSAGE @032 REINITIALISATION OF SPAWNS ...
 local.servertick=<serv.rticks>
 forinstances i_worldgem_bit
@@ -44,7 +44,7 @@ endfor
 SRC.SYSMESSAGE @032 <EVAL <local.count>> Spawn of NPC reset in <EVAL <serv.rticks>-<dlocal.servertick>> secs
 
 //Function for reinitialise all ITEM spawn point
-[function f_resetAllSpawnItem]
+[FUNCTION f_resetAllSpawnItem]
 SRC.SYSMESSAGE @032 REINITIALISATION OF SPAWNS ...
 local.servertick=<serv.rticks>
 forinstances i_worldgem_bit
@@ -56,14 +56,14 @@ forinstances i_worldgem_bit
 endfor
 SRC.SYSMESSAGE @032 <EVAL <local.count>> Spawn of ITEM reset in <EVAL <serv.rticks>-<dlocal.servertick>> secs
 
-[function f_remove_all_npcs]	//removes all npcs that are not invul, or owned
+[FUNCTION f_remove_all_npcs]	//removes all npcs that are not invul, or owned
 local.p=<P>
 p=1,1,1,0
 update
 for 0 5
   p=1,1,1,<dlocal._for>
   forchars 10000
-    if (<npc>) 
+    if (<npc>)
       if !(<owner>) && !(<flags>&statf_invul)
         remove
       else
@@ -75,14 +75,14 @@ p=<local.p>
 update
 sysmessage @026 All NPCs removed
 
-[function f_kill_all_npcs]
+[FUNCTION f_kill_all_npcs]
 local.p=<P>
 p=1,1,1,0
 update
 for 0 5
 p=1,1,1,<dlocal._for>
   forchars 10000
-    if (<npc>) 
+    if (<npc>)
       if !(<owner>) && !(<flags>&statf_invul)
         hits=0
       else
@@ -95,7 +95,7 @@ p=<local.p>
 update
 sysmessage @026 All NPCs killed
 
-[function f_remove_all_corpses]
+[FUNCTION f_remove_all_corpses]
 foritems 9999
   if (<type>==t_corpse)
     timer=1

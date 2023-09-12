@@ -1,4 +1,4 @@
-[function deco_nujelm_felucca]
+[FUNCTION deco_nujelm_felucca]
 
 //metal door
 serv.newitem=0675

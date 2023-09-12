@@ -1,6 +1,6 @@
 
 
-[function spawn_palace_of_paroxysmus_felucca]
+[FUNCTION spawn_palace_of_paroxysmus_felucca]
 //##############################
 //##   XML Spawns by Erica    ##
 //## Convert/Adapted By Nerun ##
@@ -27,4 +27,4 @@ f_create_spawner,AcidElemental:earthelemental:corrosiveslime,AcidElemental,earth
 f_create_spawner,poisonelemental,,,,,,6285,353,60,1,5,10,5,5,1,1,0,0,0,0,0
 f_create_spawner,earthelemental:corrosiveslime,,,,,,6353,400,60,1,5,10,10,10,1,4,0,0,0,0,0
 
-[eof]
+[EOF]

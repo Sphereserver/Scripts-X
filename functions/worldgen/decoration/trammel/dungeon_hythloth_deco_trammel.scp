@@ -1,5 +1,5 @@
-[function deco_hythloth_trammel]
-		
+[FUNCTION deco_hythloth_trammel]
+
 //Teleporter//
 serv.newitem=01BC3//
 NEW.MOREP= 5970 147 22 1//
@@ -3477,4 +3477,4 @@ serv.newitem=01CE8//
 new.attr=attr_static //
 new.p=6118 226 22 1//
 
-[EOF]		
+[EOF]

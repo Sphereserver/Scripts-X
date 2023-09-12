@@ -5,7 +5,7 @@
 VERSION=X1
 
 
-[typedef t_ore]
+[TYPEDEF t_ore]
 on=@dclick
 if <def0.scp.OSIOreFormula> < 1
    return 0
@@ -42,15 +42,15 @@ return 1
 
 [FUNCTION f_fireforge] //Make fire on the forge
 FORITEMS 3
-	IF (<TYPE> == t_forge) 
+	IF (<TYPE> == t_forge)
 	   SERV.NEWITEM i_fire
 	   NEW.ATTR=attr_move_never|attr_decay
 	   NEW.P=<P>
 	   NEW.NUDGEUP 8
 	   NEW.TIMER=1
-	   Break 
+	   Break
 	ENDIF
 ENDFOR
 
 
-[eof]
+[EOF]

@@ -16,7 +16,7 @@ sysmessage <defmsg.cmd_invalid>
 [FUNCTION tweak]
 INFO
 
-[function brain]
+[FUNCTION brain]
 if (<argn>)
 	npc = <argn>
 else

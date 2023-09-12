@@ -1,4 +1,4 @@
-[function deco_wind_felucca]
+[FUNCTION deco_wind_felucca]
 
 //marble wall
 serv.newitem=02B5
@@ -1229,4 +1229,4 @@ serv.newitem=01F45
 new.attr=attr_static
 new.p=5304 88 19
 
-[eof]
+[EOF]

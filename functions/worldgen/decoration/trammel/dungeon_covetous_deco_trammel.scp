@@ -1,5 +1,5 @@
-[function deco_covetous_trammel]
-		
+[FUNCTION deco_covetous_trammel]
+
 // Items
 // Bones Of Frederic Smithson
 serv.newitem=0ECE
@@ -1830,4 +1830,4 @@ serv.newitem=0991//
 new.attr=attr_static//
 new.p=5619 1877 6 1//
 
-[eof]		
+[EOF]

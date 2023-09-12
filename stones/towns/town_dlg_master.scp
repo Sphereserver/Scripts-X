@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[dialog d_Town_Master]
+[DIALOG d_Town_Master]
 5,25
 If (<type>!=t_stone_town)
   return 1
@@ -12,7 +12,7 @@ elif (<masteruid>!=<src.uid>)&&(!<src.isgm>)
   return 1
 endif
 
-  
+
 page 0
 resizepic 0 0 5054 570 400
 resizepic 10 10 3000 550 380
@@ -20,7 +20,7 @@ dhtmlgump 20 15 510 25 0 0 <def0.center>TOWNMASTER FUNCTIONS<def0.centere>
 
 If (<def0.TOWNSCONFIG_ALLOW_CHANGENAME> || <src.isgm>)
 	If (<tag0.changename_time> <= <serv.time>)	// Set Town Name
-	  button 20 40 4005 4007 1 0 1 
+	  button 20 40 4005 4007 1 0 1
 	  dhtmlgump 55 40 240 30 0 0 Set the town name.
 	else
 	  gumppic 20 40 4020
@@ -33,7 +33,7 @@ endif
 
 If (<def0.TOWNSCONFIG_ALLOW_CHANGEABBR> || <src.isgm>)
 	If (<tag0.changeabbrev_time> <= <serv.time>)	// Set Town Abbrev
-	  button 20 70 4005 4007 1 0 2 
+	  button 20 70 4005 4007 1 0 2
 	  dhtmlgump 55 70 240 30 0 0 Set the town's abbreviation.
 	else
 	  gumppic 20 70 4020
@@ -62,7 +62,7 @@ endif
 
 dhtmlgump 55 130 200 30 0 0 Set the town's charter.
   button 20 130 4005 4007 1 0 4	// Set Charter
-  
+
 If (<member.count> > 1)	// Dismiss a member
   dhtmlgump 55 160 200 30 0 0 Dismiss a member.
   button 20 160 4005 4007 1 0 5
@@ -113,9 +113,9 @@ dhtmlgump 55 360 175 30 0 0 Return to the main menu.
   button 20 360 4005 4007 1 0 11 // Return
 dhtmlgump 335 360 100 30 0 0 EXIT
   button 300 360 4005 4007 1 0 0 // Exit
-  
 
-[dialog d_Town_Master Button]
+
+[DIALOG d_Town_Master Button]
 ON=0 12
   If (<argn1>==0) // Exit Gump
     return 1
@@ -124,7 +124,7 @@ ON=0 12
     return 1
   endif
 
-  If (<argn1>==1)	// Town Name    
+  If (<argn1>==1)	// Town Name
     If ((<def0.TOWNSCONFIG_ALLOW_CHANGENAME> || <src.isgm>) && (<tag0.changename_time> <= <serv.time>))
       src.ctag.town_prompthandler_townuid=<uid>
       try src.promptconsole f_prompthandler_townname,Enter new town name (min: <dDEF0.TOWNSCONFIG_NAME_MINLENGTH> max: <dDEF0.TOWNSCONFIG_NAME_MAXLENGTH>):
@@ -132,7 +132,7 @@ ON=0 12
   elif (<argn1>==2)	// Town Abbrev
     If ((<def0.TOWNSCONFIG_ALLOW_CHANGEABBR> || <src.isgm>) && (<tag0.changeabbrev_time> <= <serv.time>))
       src.ctag.town_prompthandler_townuid=<uid>
-      try src.promptconsole f_prompthandler_townabbrev,Enter new town abbreviation (min: <dDEF0.TOWNSCONFIG_ABBREV_MINLENGTH> max: <dDEF0.TOWNSCONFIG_ABBREV_MAXLENGTH>):    
+      try src.promptconsole f_prompthandler_townabbrev,Enter new town abbreviation (min: <dDEF0.TOWNSCONFIG_ABBREV_MINLENGTH> max: <dDEF0.TOWNSCONFIG_ABBREV_MAXLENGTH>):
     endif
   elif (<argn1>==3)	// Town Type
     If ((<def0.TOWNSCONFIG_ALLOW_CHANGEALIGN> || <src.isgm>) && ((!<f_townsys_iswarring>) || (<tag0.changealign_time> <= <serv.time>)))
@@ -161,7 +161,7 @@ ON=0 12
         ref1.link = 0
         ref1.remove
       endif
-      
+
       serv.newitem i_stone_mover
       new.link = <uid>
       new.attr = attr_newbie
@@ -178,6 +178,6 @@ ON=0 12
     endif
   endif
   return 1
-  
+
 [EOF]
-  
+

@@ -1,6 +1,6 @@
 
 
-[function spawn_covetous_felucca]
+[FUNCTION spawn_covetous_felucca]
 //##############
 //## By Nerun ##
 //##############
@@ -75,4 +75,4 @@ f_create_spawner,Rottingcorpse,TreasureLevel3,TreasureLevel4,,,,5504,1808,0,2,2,
 f_create_spawner,Dragon,Drake,,,,,5452,1799,0,2,2,10,30,20,1,1,2,0,0,0,0
 f_create_spawner,TreasureLevel3,TreasureLevel4,,,,,5461,1818,0,2,60,120,8,8,1,1,2,0,0,0,0
 
-[eof]
+[EOF]

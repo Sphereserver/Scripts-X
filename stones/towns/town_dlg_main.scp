@@ -3,8 +3,8 @@
 // www.sphereserver.net
 //****************************************************************************
 VERSION=X1
-	
-[dialog d_Town_Main]
+
+[DIALOG d_Town_Main]
 5,25
 If (<type>!=t_stone_town)
   return 1
@@ -26,10 +26,10 @@ dhtmlgump 20 15 220 35 0 0 Town: <name>
     dhtmlgump 275 15 250 20 0 0 <local.mastername>
   endif
 
-dhtmlgump 55 50 100 20 0 0 Loyal to: 
+dhtmlgump 55 50 100 20 0 0 Loyal to:
 local.loyalto=<memberfromuid.<src.uid>.loyalto>
 dhtmlgump 55 70 470 20 0 0 <qval (!<local.loyalto>)||(<local.loyalto>==<src.uid>) ? yourself:<uid.<local.loyalto>.name>>
-  button 20 50 4005 4007 1 0 1 
+  button 20 50 4005 4007 1 0 1
 
 if (<def0.TOWNSCONFIG_ALLOW_CHANGEABBR>)
 	dhtmlgump 275 50 470 20 0 0 Display town abbreviation: <abbrev>
@@ -47,7 +47,7 @@ If (<member.count <def0.STONEPRIV_CANDIDATE>>)
   button 20 160 4005 4007 1 0 5
   dhtmlgump 55 160 380 30 0 0 View list of candidates who have been sponsored to the town.
 else
-  button 20 160 4020 4020 0 0 0 
+  button 20 160 4020 4020 0 0 0
   dhtmlgump 55 160 320 30 0 0 There are currently no candidates for membership.
 endif
 
@@ -70,7 +70,7 @@ dhtmlgump 55 360 470 30 0 0 EXIT
   button 20 360 4005 4007 1 0 0
 
 
-[dialog d_Town_Main Button]
+[DIALOG d_Town_Main Button]
 ON=0 9
 If (<argn1>==0) // Exit Gump
   return 1
@@ -102,5 +102,5 @@ elif (<argn1>==9)	// Townmaster Menu
   endif
 endif
 return 1
-	
+
 [EOF]

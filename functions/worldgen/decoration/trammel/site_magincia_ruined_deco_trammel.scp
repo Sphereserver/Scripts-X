@@ -1,9 +1,9 @@
-[function deco_magincia_ruined_trammel]
+[FUNCTION deco_magincia_ruined_trammel]
 
 if (<reportedcliver> > 7.0.13) || (<reportedcliver> <= 6.0.4)
   serv.log Skipping Magincia Ruins, reported client version is <reportedcliver>
   return 1
-endif		
+endif
 
 //stone ruins//
 serv.newitem=03B9//
@@ -16508,4 +16508,4 @@ serv.newitem=0AE7//
 new.attr=attr_static//
 new.p=3697 2218 41 1//
 
-[EOF]		
+[EOF]

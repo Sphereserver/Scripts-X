@@ -41,23 +41,23 @@ DESCRIPTION=Spider, Dread
 
 ON=@Create
    NPC=brain_monster
-   
+
    FAME={2500 2999}
    KARMA={-2500 -2999}
-   
+
    STR={196 220}
    MAXHITS={118 132}
    DEX={126 145}
    MAXSTAM={126 145}
    INT={286 310}
    MAXMANA={286 310}
-   
+
    RESPHYSICAL={0 10}
    RESCOLD={20 30}
    RESENERGY={20 30}
    RESFIRE={20 30}
    RESPOISON=100
-   
+
    EVALUATINGINTEL={65.0 80.0}
    MAGERY={65.0 80.0}
    MAGICRESISTANCE={45.0 60.0}
@@ -65,10 +65,10 @@ ON=@Create
    TACTICS={55.0 70.0}
    WRESTLING={60.0 75.0}
    TAMING=95.1
-   
+
 ON=@CreateLoot
    ITEM=loot_spider_dread
-   
+
 
 [CHARDEF 026]
 //FIXME: No Stratics data yet
@@ -318,15 +318,15 @@ DESCRIPTION=Kraken
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME=10000
     KARMA=-10000
-    
+
     STR={756 780}
     MAXHITS={454 468}
     INT={26 40}
     DEX={226 245}
-    
+
     MAGICRESISTANCE={15.0 20.0}
     TACTICS={45.0 60.0}
     WRESTLING={45.0 60.0}
@@ -367,7 +367,7 @@ DESCRIPTION=Centaur
 ON=@Create
     NPC=brain_monster
     FAME=6500
-    
+
     STR={202 300}
     MAXHITS={130 172}
     INT={91 100}
@@ -410,15 +410,15 @@ DESCRIPTION=Exodus
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME={100 3000}
     KARMA={-5000 -6999}
-    
+
     STR={550 690}
     MAXHITS=1500
     INT={250 390}
     DEX={110 130}
-    
+
     PARRYING={60.0 95.0}
     MAGICRESISTANCE={80.0 100.0}
     TACTICS=1000
@@ -604,7 +604,7 @@ ON=@Create
    //BREATH.TYPE=3				// Follow target
 ON=@CreateLoot
    ITEM=loot_dragon
-   
+
 [CHARDEF 072]
 //FIXME: No Stratics data
 DEFNAME=c_steed_dark
@@ -634,17 +634,17 @@ SUBSECTION=Wild
 DESCRIPTION=Steed, Dark
 ON=@Create
    NPC=brain_dragon
-   
+
    FAME={3000 3499}
    KARMA={-3000 -2499}
-   
+
    STR={496 525}
    MAXHITS={298 315}
    DEX={86 105}
    MAXSTAM={86 105}
    INT={86 125}
    MAXMANA={86 125}
-   
+
    EVALUATINGINTEL={10.0 50.0}
    MAGICRESISTANCE={84.0 100.0}
    TACTICS={97.0 100.0}
@@ -655,10 +655,10 @@ ON=@Create
    RESENERGY={20 30}
    RESFIRE={30 40}
    RESPOISON={30 40}
-   
+
    //BREATH.ANIM=i_fx_explode		//explosion id
    //BREATH.TYPE=3				// Follow target
-   
+
 ON=@CreateLoot
    ITEM=loot_steed_dark
 
@@ -675,7 +675,7 @@ DESCRIPTION=Steed
 ON=@Create
    NPC=brain_animal
    STR=1
-   
+
 [CHARDEF 075]
 //FIXME: No Stratics data
 //FIXME: Attacks evil creatures on sight
@@ -726,7 +726,7 @@ ON=@Create
    RESPOISON={30 40}
    //BREATH.ANIM=i_fx_explode		//explosion id
    //BREATH.TYPE=3				// Follow target
-   
+
 ON=@CreateLoot
    ITEM=loot_steed_silver
 
@@ -758,28 +758,28 @@ DESCRIPTION=Warhorse, True Britannians
 
 ON=@Create
    NPC=brain_animal
-   
+
    FAME={3000 3499}
    KARMA={-3000 -2499}
-   
+
    STR={390 410}
    MAXHITS={230 250}
    DEX={120 130}
    MAXSTAM={120 130}
    INT={51 55}
    MAXMANA={51 55}
-   
+
    MAGICRESISTANCE={25.0 30.0}
    TACTICS={29.0 44.0}
    TAMING={25.0 30.0}
    WRESTLING={29.0 44.0}
-   
+
    RESPHYSICAL={0 10}
    RESCOLD={30 40}
    RESENERGY={30 40}
    RESFIRE={30 40}
    RESPOISON={30 40}
-   
+
 [CHARDEF 077]
 //FIXME: Only usable by faction
 DEFNAME=c_warhorse_magecouncil
@@ -808,22 +808,22 @@ DESCRIPTION=Warhorse, Council of Mages
 
 ON=@Create
    NPC=brain_animal
-   
+
    FAME={3000 3499}
    KARMA={-3000 -2499}
-   
+
    STR={390 410}
    MAXHITS={230 250}
    DEX={120 130}
    MAXSTAM={120 130}
    INT={51 55}
    MAXMANA={51 55}
-   
+
    MAGICRESISTANCE={25.0 30.0}
    TACTICS={29.0 44.0}
    TAMING={25.0 30.0}
    WRESTLING={29.0 44.0}
-   
+
    RESPHYSICAL={0 10}
    RESCOLD={30 40}
    RESENERGY={30 40}
@@ -859,22 +859,22 @@ DESCRIPTION=Warhorse, Minax
 
 ON=@Create
    NPC=brain_animal
-   
+
    FAME={3000 3499}
    KARMA={-3000 -2499}
-   
+
    STR={390 410}
    MAXHITS={230 250}
    DEX={120 130}
    MAXSTAM={120 130}
    INT={51 55}
    MAXMANA={51 55}
-   
+
    MAGICRESISTANCE={25.0 30.0}
    TACTICS={29.0 44.0}
    TAMING={25.0 30.0}
    WRESTLING={29.0 44.0}
-   
+
    RESPHYSICAL={0 10}
    RESCOLD={30 40}
    RESENERGY={30 40}
@@ -909,28 +909,28 @@ DESCRIPTION=Warhorse, Shadowlords
 
 ON=@Create
    NPC=brain_animal
-   
+
    FAME={3000 3499}
    KARMA={-3000 -2499}
-   
+
    STR={390 410}
    MAXHITS={230 250}
    DEX={120 130}
    MAXSTAM={120 130}
    INT={51 55}
    MAXMANA={51 55}
-   
+
    MAGICRESISTANCE={25.0 30.0}
    TACTICS={29.0 44.0}
    TAMING={25.0 30.0}
    WRESTLING={29.0 44.0}
-   
+
    RESPHYSICAL={0 10}
    RESCOLD={30 40}
    RESENERGY={30 40}
    RESFIRE={30 40}
    RESPOISON={30 40}
-   
+
 [CHARDEF 07a]
 DEFNAME=c_unicorn
 NAME=Unicorn
@@ -964,14 +964,14 @@ DESCRIPTION=Unicorn
 
 ON=@Create
     NPC=brain_animal
-    
+
     KARMA=-2000
     FAME=3000
-    
+
     STR={100 150}
     INT={200 240}
     DEX={100 150}
-    
+
     PARRYING={40.0 50.0}
     MAGICRESISTANCE={25.0 30.0}
     TACTICS={30.0 50.0}
@@ -1015,17 +1015,17 @@ DESCRIPTION=Ethereal, Warrior
 
 ON=@Create
    NPC=brain_monster
-   
+
    FAME={4500 4999}
    KARMA={-4500 -4999}
-   
+
    STR={586 785}
    MAXHITS={352 471}
    DEX={177 255}
    MAXSTAM={177 255}
    INT={351 450}
    MAXMANA={351 450}
-   
+
    ANATOMY={50.0 75.0}
    ARCHERY={97.0 100.0}
    EVALUATINGINTEL={90.0 100.0}
@@ -1038,17 +1038,17 @@ ON=@Create
    SWORDSMANSHIP={97.0 100.0}
    TACTICS={90.0 100.0}
    WRESTLING={97.0 100.0}
-   
+
    RESPHYSICAL={0 10}
    RESCOLD={40 50}
    RESENERGY={40 50}
    RESFIRE={40 50}
    RESPOISON={40 50}
-   
+
 ON=@CreateLoot
    ITEM=loot_ethereal_warrior
    ITEM=loot_ai_healer
-   
+
 
 [CHARDEF 07d]
 DEFNAME=c_evilmage
@@ -1182,22 +1182,22 @@ DESCRIPTION=Pixie
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME=7000
     KARMA=-7000
-    
+
     STR={21 30}
     MAXHITS=18
     INT={201 250}
     DEX={301 400}
-    
+
     MAGICRESISTANCE={100.0 150.0}
     TACTICS={10.0 20.0}
     WRESTLING={10.0 12.0}
     MAGERY={90.0 100.0}
     EVALUATINGINTEL={90.0 100.0}
     MEDITATION={90.0 100.0}
-    
+
     ITEMNEWBIE=i_spellbook
     ADDCIRCLE 8,1
 
@@ -1240,29 +1240,29 @@ DESCRIPTION=Tentacles of the Harrower
 
 ON=@Create
    NPC=brain_monster
-   
+
    KARMA={-7000 -7999}
    FAME={7000 7999}
-   
+
    STR={901 1000}
    MAXHITS={541 600}
    DEX={126 140}
    MAXSTAM={126 140}
    INT={1001 1200}
    MAXMANA={1001 1200}
-   
+
    DETECTINGHIDDEN={90.0 100.0}
    MAGICRESISTANCE={120.0 140.0}
    POISONING={100.0 110.0}
    TACTICS={90.0 100.0}
    WRESTLING={90.0 100.0}
-   
+
    RESPHYSICAL={0 10}
    RESCOLD={35 45}
    RESENERGY={35 45}
    RESFIRE={35 45}
    RESPOISON={35 45}
-   
+
 ON=@CreateLoot
    ITEM=loot_harrower_tentacles
 
@@ -1297,15 +1297,15 @@ DESCRIPTION=Gargoyle, Fire
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME=3500
     KARMA=-3500
-    
+
     STR={351 400}
     MAXHITS={211 244}
     INT={226 250}
     DEX={126 145}
-    
+
     MAGICRESISTANCE={90.0 105.0}
     ANATOMY={75.0 85.0}
     MAGERY={90.0 105.0}
@@ -1313,7 +1313,7 @@ ON=@Create
     MEDITATION={90.0 105.0}
     TACTICS={80.0 100.0}
     WRESTLING={40.0 80.0}
-    
+
     ITEMNEWBIE=i_spellbook
     ADDCIRCLE 6,1
     ADDSPELL=S_FLAMESTRIKE
@@ -1356,15 +1356,15 @@ DESCRIPTION=Kirin
 
 ON=@Create
     NPC=brain_animal
-    
+
     KARMA=-2000
     FAME={100 3000}
-    
+
     STR={150 200}
     MAXHITS=300
     INT={300 340}
     DEX={90 110}
-    
+
     PARRYING={60.0 95.0}
     MAGICRESISTANCE={99.0 100.0}
     TACTICS={98.0 100.0}
@@ -1400,29 +1400,29 @@ CATEGORY=Monsters
 SUBSECTION=Orcs
 DESCRIPTION=Orc, Chopper
 ON=@Create
-  
+
    NPC=brain_monster
    FAME={2000 2499}
    KARMA={-2000 -2499}
-   
+
    STR={145 245}
    MAXHITS={95 130}
    DEX={90 115}
    MAXSTAM={90 115}
    INT={60 85}
    MAXMANA={60 85}
-   
+
    MAGICRESISTANCE={60.0 85.0}
    SWORDSMANSHIP={60.0 85.0}
    TACTICS={75.0 90.0}
    WRESTLING={60.0 85.0}
-   
+
    RESPHYSICAL={0 10}
    RESCOLD={15 25}
    RESENERGY={25 30}
    RESFIRE={30 40}
    RESPOISON={15 20}
-   
+
 ON=@CreateLoot
    ITEM=loot_orc_chopper
 
@@ -1453,17 +1453,17 @@ DESCRIPTION=Paladin, 3D CLIENT ONLY
 
 ON=@Create
    NPC=brain_human
-   
+
    KARMA={1000 1499}
    FAME={1000 1499}
-   
+
    STR={100 125}
    MAXHITS={125 150}
    DEX={76 100}
    MAXSTAM={76 100}
    INT={76 100}
    MAXMANA={76 100}
-   
+
    ANATOMY={50.0 100.0}
    ARCHERY={50.0 100.0}
    CHIVALRY={50.0 100.0}
@@ -1477,13 +1477,13 @@ ON=@Create
    SWORDSMANSHIP={90.0 100.0}
    TACTICS={90.0 100.0}
    WRESTLING={90.0 100.0}
-   
+
    RESPHYSICAL={0 10}
    RESCOLD={5 10}
    RESENERGY={5 10}
    RESFIRE={5 10}
    RESPOISON={5 10}
-   
+
 ON=@CreateLoot
    ITEM=loot_paladin
    ITEM=loot_ai_healer
@@ -1512,29 +1512,29 @@ DESCRIPTION=Nameless One
 
 ON=@Create
    NPC=brain_monster
-   
+
    FAME={1500 1999}
    KARMA={-1500 -1999}
-   
+
    STR={105 135}
    MAXHITS={136 165}
    DEX={66 95}
    MAXSTAM={66 95}
    INT={175 205}
    MAXMANA={175 205}
-   
+
    RESPHYSICAL={0 10}
    RESCOLD={30 40}
    RESENERGY={1 10}
    RESFIRE={10 20}
    RESPOISON={10 20}
-   
+
    EVALUATINGINTEL={70.0 80.0}
    MAGERY={70.0 80.0}
    MAGICRESISTANCE={70.0 90.0}
    TACTICS={70.0 90.0}
    WRESTLING={50.0 70.0}
- 
+
 ON=@Createloot
    ITEM=loot_skeletal_mage
 
@@ -1631,7 +1631,7 @@ karma=-3000
 
 ON=@createloot
 	item=i_gold,{125 150}
-	item={random_fourth_circle 1 random_fifth_circle 1}	
+	item={random_fourth_circle 1 random_fifth_circle 1}
 	item=random_reagent,3
 	item=random_reagent_necro,{3 10}
 
@@ -1722,22 +1722,22 @@ DESCRIPTION=Terathan Avenger
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME=15000
     KARMA=-15000
-    
+
     STR={467, 645}
     DEX={77, 95}
     INT={126, 150}
     MAXHITS={296, 372}
     MAXMANA={46, 70}
-    
+
     RESPHYSICAL={40, 50}
     RESFIRE={30, 40}
     RESCOLD={35, 45}
     RESPOISON={90, 100}
     RESENERGY={35, 45}
-    
+
     EVALUATINGINTEL={70.3, 100.0}
     MAGERY={70.3, 100.0}
     POISONING={ 60.1, 80.0}
@@ -1910,7 +1910,7 @@ ON=@createloot
     ITEM=i_reag_spider_silk,5
     ITEM=random_potion,2    //lesser
     ITEM=i_lissith_silk
-    
+
 [CHARDEF 0a8]
 //FIXME: attracted by hidden players and will reveal them when they are close enough.
 DEFNAME=c_shadow_fiend
@@ -1986,23 +1986,23 @@ DESCRIPTION=Beetle, Fire
 
 ON=@create
     NPC=brain_monster
-    
+
     FAME=4000
     KARMA=-4000
-    
+
     COLOR=0489
-    
+
     STR=300
     DEX=100
     INT=500
     MAXHITS=200
-    
+
     RESPHYSICAL=40
     RESFIRE={70, 75}
     RESCOLD=10
     RESPOISON=30
     RESENERGY=30
-    
+
     MAGICRESISTANCE={90.0}
     TACTICS={100.0}
     WRESTLING={100.0}
@@ -2163,15 +2163,15 @@ DESCRIPTION=Mephitis
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME=3500
     KARMA=-3500
-    
+
     STR={76 100}
     MAXHITS={46 60}
     INT={36 60}
     DEX={96 115}
-    
+
     MAGICRESISTANCE={45.0 60.0}
     TACTICS={65.0 85.0}
     WRESTLING={70.0 85.0}
@@ -2230,21 +2230,21 @@ DESCRIPTION=Semidar
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME={100 3000}
     KARMA={-5000 -6999}
-    
+
     STR={200 300}
     MAXHITS=800
     INT={130 200}
     DEX={40 60}
-    
+
     PARRYING={60.0 95.0}
     MAGICRESISTANCE={50.0 70.0}
     TACTICS=70.0
     WRESTLING={65.0 80.0}
     MAGERY=1000
-    
+
     ITEMNEWBIE=i_spellbook
     ADDCIRCLE 8,1
 
@@ -2305,15 +2305,15 @@ DESCRIPTION=Lord Oak
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME=7000
     KARMA=-7000
-    
+
     STR={586 785}
     MAXHITS={352 471}
     INT={351 450}
     DEX={177 255}
-    
+
     MAGICRESISTANCE={90.0 100.0}
     ANATOMY={50.0 75.0}
     TACTICS={90.0 100.0}
@@ -2321,9 +2321,9 @@ ON=@Create
     MAGERY={99.0 100.0}
     EVALUATINGINTEL={90.0 100.0}
     MEDITATION={90.0 100.0}
-	
+
     f_addExtendedAIEvent e_extendedAI_hit_etherealWarrior
-    
+
     ITEMNEWBIE=i_spellbook
     ADDCIRCLE 8,1
 
@@ -2356,16 +2356,16 @@ ON=@GetHit
    ENDIF
 
 
-[comment notes]
+[COMMENT notes]
 Lord Oaks will take very little damage by any means while Silvani is alive. While it is possible to kill him without first killing Silvani, it will take a vast amount of time. Lord Oaks will
  ressurrect blue characters in the same way of an Ethereal Warrior. However, if you are blue with negative karma, he will most likely kill you upon ressurrection.
 
-Lord Oaks' slayer vulnerability is Fey, which currently is only available on the Pixie Swatter artifact. On some shards, Animal Tamers with Alchemy and high Enhance Potions mod are used to 
+Lord Oaks' slayer vulnerability is Fey, which currently is only available on the Pixie Swatter artifact. On some shards, Animal Tamers with Alchemy and high Enhance Potions mod are used to
 quickly kill this boss.
 
 The skull of Enlightenment, which upon Oaks' death is given to the player who dealt the highest amount of damage, is highly sought after. This skull is regarded as the ticket to the Harrower.
 
-Lord Oaks is exclusively located in the Lost Lands of T2A, north of the Tortoise Champion Spawn area. Lord Oaks' also spawns in Ilshenar Spirituality, north of the moongate. The Ilshenar 
+Lord Oaks is exclusively located in the Lost Lands of T2A, north of the Tortoise Champion Spawn area. Lord Oaks' also spawns in Ilshenar Spirituality, north of the moongate. The Ilshenar
 spawn, however, will not grant the skull of Enlightenment.
 
 A very small number of Lord Oaks corpses will contain a Dirt Patch, a highly sought after rare item. Lord Oaks and The True Harrower are the only creatures known to drop this item as loot.
@@ -2401,20 +2401,20 @@ DESCRIPTION=Forest Queen
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME={100 3000}
     KARMA={-5000 -6999}
-    
+
     STR={200 400}
     MAXHITS=1100
     INT={550 690}
     DEX={100 120}
-    
+
     MAGICRESISTANCE=1250
     TACTICS=1000
     WRESTLING=1000
     MAGERY=1250
-    
+
     ITEMNEWBIE=i_spellbook
     ADDCIRCLE 8,1
 
@@ -2519,21 +2519,21 @@ DESCRIPTION=Orc, Bomber
 
 ON=@create
     NPC=brain_monster
-    
+
     FAME=2500
     KARMA=-2500
-    
+
     STR={147, 215}
     DEX={91, 115}
     INT={61, 85}
     MAXHITS={95, 123}
-    
+
     RESPHYSICAL={25, 35}
     RESFIRE={30, 40}
     RESCOLD={15, 25}
     RESPOISON={15, 20}
     RESENERGY={25, 30}
-    
+
     MAGICRESISTANCE={70.1, 85.0}
     SWORDSMANSHIP={60.1, 85.0}
     TACTICS={75.1, 90.0}
@@ -2849,13 +2849,13 @@ DESCRIPTION=Ridgeback
 
 ON=@Create
     NPC=brain_animal
-    
+
     KARMA=-2000
-    
+
     STR={94 170}
     DEX={36 55}
     INT={6 10}
-    
+
     PARRYING={35.0 45.0}
     MAGICRESISTANCE={25.0 30.0}
     TACTICS={29.0 44.0}
@@ -2895,13 +2895,13 @@ DESCRIPTION=Ridgeback, Savage
 
 ON=@Create
     NPC=brain_animal
-    
+
     KARMA=-2000
-    
+
     STR={94 170}
     DEX={96 115}
     INT={6 10}
-    
+
     PARRYING={75.0 85.0}
     MAGICRESISTANCE={75.0 80.0}
     TACTICS={79.0 94.0}
@@ -3162,27 +3162,27 @@ DESCRIPTION=Wraith
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME=4000
     KARMA=-4000
 
     COLOR=04001
-    
+
     STR={76, 100}
     DEX={76, 95}
     INT={36, 60}
     MAXHITS={46, 60}
-    
+
     RESPHYSICAL={25, 30}
     RESCOLD={15, 25}
     RESPOISON={10, 20}
-    
+
     EVALUATINGINTEL={55.1, 70.0}
     MAGERY={55.1, 70.0}
     MAGICRESISTANCE={55.1, 70.0}
     TACTICS={45.1, 60.0}
     WRESTLING={45.1, 55.0}
-    
+
 ON=@CreateLoot
     ITEM=i_gold,{50 100}
     ITEM=random_reagent,10
@@ -3221,21 +3221,21 @@ DESCRIPTION=Golem, Iron
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME={100 3000}
     KARMA={-5000 -6999}
-    
+
     STR={251 350}
     MAXHITS={151 210}
     INT={101 150}
     DEX={76 100}
-    
+
     RESPHYSICAL={35 55}
     RESFIRE={50 60}
     RESCOLD={10 30}
     RESPOISON={10 25}
     RESENERGY={30 40}
-    
+
     MAGICRESISTANCE={150.0 190.0}
     TACTICS={60.0 100.0}
     WRESTLING={60.0 100.0}
@@ -3363,15 +3363,15 @@ DESCRIPTION=Gargoyle, Destroyer
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME=8000
     KARMA=-8000
-    
+
     STR={760 850}
     MAXHITS=485
     INT={152 200}
     DEX={102 150}
-    
+
     MAGICRESISTANCE={120.0 160.0}
     MAGERY={91.0 100.0}
     EVALUATINGINTEL={91.0 100.0}
@@ -3379,7 +3379,7 @@ ON=@Create
     TACTICS={90.0 100.0}
     WRESTLING={90.0 100.0}
     ANATOMY={50.0 100.0}
-    
+
     ITEMNEWBIE=i_spellbook
     ADDCIRCLE 8,1
 
@@ -3478,21 +3478,21 @@ DESCRIPTION=Exodus, Minion
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME=18000
     KARMA=-18000
-    
+
     STR={851, 950}
     DEX={71, 80}
     INT={61, 90}
     MAXHITS={511, 570}
-    
+
     RESPHYSICAL={60, 70}
     RESFIRE={40, 50}
     RESCOLD={15, 25}
     RESPOISON={15, 25}
     RESENERGY={15, 25}
-    
+
     MAGICRESISTANCE={90.1, 100.0}
     TACTICS={90.1, 100.0}
     WRESTLING={90.1, 100.0}
@@ -3585,23 +3585,23 @@ DESCRIPTION=Juka, Warrior
 
 ON=@Create
    NPC=brain_monster
-   
+
    FAME={2000 2499}
    KARMA={-2000 -2499}
-   
+
    STR={251 350}
    MAXHITS={151 210}
    DEX={61 80}
    MAXSTAM={61 80}
    INT={101 150}
    MAXMANA={101 150}
-   
+
    RESPHYSICAL={0 10}
    RESCOLD={25 35}
    RESENERGY={10 20}
    RESFIRE={30 40}
    RESPOISON={10 20}
-   
+
    ANATOMY={80.0 90.0}
    MAGICRESISTANCE={120.0 130.0}
    TACTICS={80.0 90.0}
@@ -3609,7 +3609,7 @@ ON=@Create
 
 ON=@Createloot
    ITEM=loot_juka_warrior
-   
+
 [CHARDEF 02fd]
 DEFNAME=c_juka_mage
 NAME=juka mage
@@ -3772,20 +3772,20 @@ DESCRIPTION=Betrayer
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME={100 3000}
     KARMA={-5000 -6999}
-    
+
     STR={401, 500}
     DEX={81, 100}
     INT={151, 200}
     MAXHITS={241, 300}
-    
+
     RESFIRE={60, 70}
     RESCOLD={60, 70}
     RESPOISON={30, 40}
     RESENERGY={20, 30}
-    
+
     ANATOMY={90.1, 100.0}
     EVALUATINGINTEL={90.1, 100.0}
     MAGERY={50.1, 100.0}
@@ -4130,14 +4130,14 @@ ON=@Create
    NPC=brain_monster
    FAME={8000 8999}
    KARMA={-8000 -8999}
-   
+
    STR={750 900}
    MAXHITS={4000 5000}
    DEX={265 290}
    MAXSTAM={265 290}
    INT={995 1190}
    MAXMANA={995 1190}
-   
+
    RESPHYSICAL={0 10}
    RESCOLD={50 60}
    RESENERGY={40 50}
@@ -4145,7 +4145,7 @@ ON=@Create
    RESPOISON=100
    ANATOMY={90.0 100.0}
    ARCHERY={60.0 80.0}
-   
+
    EVALUATINGINTEL={70.0 80.0}
    FENCING={110.0 120.0}
    MACEFIGHTING={110.0 120.0}
@@ -4156,11 +4156,11 @@ ON=@Create
    POISONING={100.0 125.0}
    SWORDSMANSHIP={100.0 125.0}
    TACTICS={100.0 125.0}
- 
+
 ON=@Createloot
    ITEM=loot_dawn
    ITEM=loot_ai_hard
-   
+
 
 [CHARDEF 0307]
 DEFNAME=c_plague_beast
@@ -4189,21 +4189,21 @@ DESCRIPTION=Plague Beast
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME=10000
     KARMA=-10000
-    
+
     STR={302 500}
     MAXHITS={318 404}
     INT={16 20}
     DEX=80
-    
+
     MAGICRESISTANCE=35.0
     TACTICS=1000
     WRESTLING=1000
 
     f_addExtendedAIEvent e_extendedAI_plageBeast_eatCorpse
-    
+
 ON=@CreateLoot
     ITEM=random_jewel, {1 2}
     ITEM=random_jewel, {1 2},R3
@@ -4233,20 +4233,20 @@ DESCRIPTION=Plague Beast, Lord
 
 ON=@create
     NPC=brain_monster
-    
+
     FAME=2000
     KARMA=-2000
-    
+
     STR=500
     DEX=100
     INT=30
     MAXHITS=1800
-    
+
     RESFIRE={40, 50}
     RESCOLD={25, 35}
     RESPOISON={75, 85}
     RESENERGY={25, 35}
-    
+
     TACTICS=100
     WRESTLING=100
 
@@ -4376,15 +4376,15 @@ DESCRIPTION=Doppleganger
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME=1000
     KARMA=-1000
-    
+
     STR={81 110}
     MAXHITS={100 120}
     INT={81 105}
     DEX={56 75}
-    
+
     TACTICS={70.0 80.0}
     MAGICRESISTANCE={75.0 85.0}
     WRESTLING={80.0 90.0}
@@ -4421,15 +4421,15 @@ DESCRIPTION=Gazer, Larva
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME=900
     KARMA=-900
-    
+
     STR={76 100}
     MAXHITS={36 47}
     INT={56 80}
     DEX={51 75}
-    
+
     MAGICRESISTANCE=70.0
     TACTICS=70.0
     WRESTLING=70.0
@@ -4470,27 +4470,27 @@ ON=@Create
    FAME={1000 1499}
    KARMA={-1000 -1499}
    BLOODCOLOR=colors_green
-   
+
    STR={96 120}
    MAXHITS={58 72}
    DEX={91 115}
    MAXSTAM={91 115}
    INT={21 45}
    MAXMANA={21 45}
-   
+
    RESPHYSICAL={0 5}
    RESCOLD={15 25}
    RESENERGY={15 25}
    RESFIRE={10 20}
    RESPOISON={15 25}
-   
+
    MAGICRESISTANCE={75.0 100.0}
    TACTICS={55.0 80.0}
    WRESTLING={55.0 75.0}
 
 ON=@Createloot
    ITEM=loot_bogling
-   
+
 [CHARDEF 030c]
 DEFNAME=c_bog_thing
 NAME=Bog Thing
@@ -4519,15 +4519,15 @@ DESCRIPTION=Bog Thing
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME={100 3000}
     KARMA={-5000 -6999}
-    
+
     STR={801 900}
     MAXHITS={481 540}
     INT={36 50}
     DEX={46 65}
-    
+
     MAGICRESISTANCE={90.0 95.0}
     TACTICS={70.1 85.0}
     WRESTLING={65.0 80.0}
@@ -4689,11 +4689,11 @@ ON=@Create
     WRESTLING={90.0}
 
     f_addExtendedAIEvent e_extendedAI_aura_summon_fireAntWorker
-    
+
 ON=@CreateLoot
     ITEM=i_gold,{400 500}
 
-[chardef 805]
+[CHARDEF 805]
 defname=c_solen_worker_black
 name=black solen worker
 sound=959
@@ -4723,7 +4723,7 @@ on=@createloot
 	item=i_gold,{125 175}
 	//item=i_zoogi_fungus,{1 6}
 
-[chardef 806]
+[CHARDEF 806]
 defname=c_solen_warrior_black
 name=black solen warrior
 sound=959
@@ -4757,7 +4757,7 @@ on=@createloot
     item=random_jewel,{1 4}
     //item=i_zoogi_fungus,{3 13}
 
-[chardef 807]
+[CHARDEF 807]
 defname=c_solen_queen_black
 name=black solen queen
 sound=959
@@ -4897,7 +4897,7 @@ ON=@Create
 
 ON=@CreateLoot
     ITEM=i_gold,{250 300}
-    ITEM={i_ore_iron 1 i_ore_copper 1 i_ore_silver 1 i_ore_gold 1},{1-10}
+    ITEM={i_ore_iron 1 i_ore_copper 1 i_ore_gold 1},{1-10}
     ITEM=i_reag_fertile_dirt,{1 5}
     ITEM=random_item_bone
 
@@ -4933,14 +4933,14 @@ DESCRIPTION=Sphynx
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME=10000
-    
-    
+
+
     STR={1001 1200}
     INT={301 400}
     DEX={176 195}
-    
+
     MAGICRESISTANCE={100.0 150.0}
     TACTICS={90.0 100.0}
     WRESTLING={90.0 100.0}
@@ -4982,19 +4982,19 @@ DESCRIPTION=Quagmire
 
 ON=@Create
     NPC=brain_monster
-    
+
     FAME=1500
     KARMA=-1500
-    
+
     STR={101 130}
     MAXHITS={91 105}
     INT={31 55}
     DEX={66 85}
-    
+
     MAGICRESISTANCE={65.0 75.0}
     TACTICS={50.0 60.0}
     WRESTLING={60.0 80.0}
-    
+
     POISONING=500
 
 ON=@CreateLoot
@@ -5030,20 +5030,20 @@ ON=@Create
    FAME={1500 1999}
    KARMA={-1500 -1999}
    BLOODCOLOR=colors_white
-   
+
    STR={96 120}
    MAXHITS={51 62}
    DEX={171 195}
    MAXSTAM={171 195}
    INT={76 100}
    MAXMANA={76 100}
-   
+
    RESPHYSICAL={0 10}
    RESCOLD={60 70}
    RESENERGY={60 70}
    RESFIRE={60 70}
    RESPOISON={60 70}
-   
+
    MAGICRESISTANCE={145.0 155.0}
    TACTICS={66.0 75.0}
    WRESTLING={75.0 85.0}
@@ -5051,7 +5051,7 @@ ON=@Create
 ON=@Createloot
    ITEM=loot_elem_sand_vortex
    ITEM=i_sand,{1 3}
-   
+
 [CHARDEF 0317]
 DEFNAME=c_giant_beetle
 NAME=Giant Beetle
@@ -5088,21 +5088,21 @@ DESCRIPTION=Beetle, Giant
 
 ON=@Create
     NPC=brain_animal
-    
+
     FAME=4000
     KARMA=-4000
-    
+
     STR=300
     DEX=100
     INT=500
     MAXHITS=200
-    
+
     RESPHYSICAL={30, 40}
     RESFIRE={20, 30}
     RESCOLD={20, 30}
     RESPOISON={20, 30}
     RESENERGY={20, 30}
-    
+
     MAGICRESISTANCE={80.0}
     TACTICS={100.0}
     WRESTLING={100.0}
@@ -5195,14 +5195,14 @@ DESCRIPTION=Skeletal Mount
 
 ON=@Create
     NPC=brain_animal
-    
+
     KARMA=-2000
     FAME={100 2000}
-    
+
     STR={200 230}
     INT={300 340}
     DEX={86 105}
-    
+
     PARRYING={55.0 95.0}
     MAGICRESISTANCE={99.0 100.0}
     TACTICS={98.0 100.0}
@@ -5449,14 +5449,14 @@ DESCRIPTION=Swamp Dragon, Armoured
 
 ON=@Create
     NPC=brain_animal
-    
+
     KARMA=-2000
     FAME={3000 9000}
-    
+
     STR={150 230}
     DEX={73 82}
     INT={51 90}
-    
+
     PARRYING={65.0 80.0}
     MAGICRESISTANCE={65.0 80.0}
     TACTICS={65.0 90.0}
@@ -5499,33 +5499,33 @@ DESCRIPTION=Lizard, Lava
 
 ON=@Create
    NPC=brain_dragon
-   
+
    FAME={1500 1999}
    KARMA={-1500 -1999}
-   
+
    COLOR={ colors_lava 1 color_none 1 }
-   
+
    STR={126 150}
    MAXHITS={76 90}
    DEX={56 75}
    MAXSTAM={56 75}
    INT={11 20}
    MAXMANA={11 20}
-   
+
    RESPHYSICAL={0 10}
-   
+
    RESENERGY={25 35}
    RESFIRE={30 45}
    RESPOISON={25 35}
-   
+
    MAGICRESISTANCE={55.0 70.0}
    TACTICS={60.0 80.0}
    TAMING=80.7
    WRESTLING={60.0 80.0}
-   
+
    //BREATH.ANIM=i_fx_explode        //explosion id
    //BREATH.TYPE=3                // Follow target
-   
+
 ON=@CreateLoot
    ITEM=loot_lava_lizard
 

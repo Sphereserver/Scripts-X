@@ -13,30 +13,6 @@ REGIONTYPE must be associated to the t_rock Terrain TYPEDEF.
 For more information on how ore is mined, check the COMMENT section of the
 sphere_region.scp file.
 
-
-[DEFNAME COLOR_ORE]
-color_o_iron          0 //option: 0763
-color_o_bronze     06d6
-color_o_gold       045e //option: 084d
-color_o_copper     0641 //option: 060c
-color_o_oldcopper  0590
-color_o_dullcopper 060a
-color_o_silver     0482 //option: 0231
-color_o_shadow     0770
-color_o_bloodrock  04c2
-color_o_blackrock  0455
-color_o_mytheril   052d //option: 0528
-color_o_rose       0665
-color_o_verite     07d1
-color_o_agapite    0400
-color_o_rusty      0750
-color_o_valorite   0515
-
-
-//////////
-// Ores //
-//////////
-
 [ITEMDEF 019b7]
 DEFNAME=i_ore_iron
 NAME=Iron Ore
@@ -71,7 +47,6 @@ CATEGORY=Items by Professions
 SUBSECTION=Blacksmiths
 DESCRIPTION=Ore
 
-
 [ITEMDEF i_ore_copper]
 // copper makes terrible armor.
 ID=i_ore_iron
@@ -92,15 +67,6 @@ VALUE=10
 WEIGHT=3
 ON=@Create
    COLOR=color_o_gold
-
-[ITEMDEF i_ore_silver]
-ID=i_ore_iron
-NAME=Silver Ore
-SKILLMAKE=mining 95.0
-TDATA1=i_ingot_silver
-VALUE=7
-ON=@Create
-   COLOR=color_o_silver
 
 [ITEMDEF i_ore_shadow]
 ID=i_ore_iron
@@ -127,43 +93,6 @@ SKILLMAKE=mining 95.0
 TDATA1=i_ingot_verite
 VALUE=15
 ON=@Create
-   COLOR=color_o_verite
-
-[ITEMDEF i_ore_rose]
-ID=i_ore_iron
-NAME=Rose Ore
-SKILLMAKE=mining 87.0
-TDATA1=i_ingot_rose
-VALUE=15
-ON=@Create
-   COLOR=color_o_rose
-
-[ITEMDEF i_ore_mytheril]
-ID=i_ore_iron
-NAME=Mytheril Ore
-SKILLMAKE=mining 99.5
-TDATA1=i_ingot_mytheril
-VALUE=15
-ON=@Create
-   COLOR=color_o_mytheril
-
-[ITEMDEF i_ore_blackrock]
-ID=i_ore_iron
-NAME=Blackrock Ore
-SKILLMAKE=mining 100.0
-TDATA1=i_ingot_blackrock
-VALUE=18
-ON=@Create
-   COLOR=color_o_blackrock
-
-[ITEMDEF i_ore_bloodrock]
-ID=i_ore_iron
-NAME=Bloodrock Ore
-SKILLMAKE=mining 93.0
-TDATA1=i_ingot_bloodrock
-VALUE=15
-ON=@Create
-   COLOR=color_o_bloodrock
 
 [ITEMDEF i_ore_valorite]
 ID=i_ore_iron
@@ -183,25 +112,6 @@ VALUE=7
 ON=@Create
    COLOR=color_o_bronze
 
-[ITEMDEF i_ore_rusty]
-ID=i_ore_iron
-NAME=Rusty Ore
-SKILLMAKE=mining 50.0
-TDATA1=i_ingot_rusty
-VALUE=15
-ON=@Create
-   COLOR=color_o_rusty
-
-[ITEMDEF i_ore_old_copper]
-// this is really just a variety of copper. copper makes terrible armor
-ID=i_ore_iron
-NAME=Old Copper Ore
-SKILLMAKE=mining 60.0
-TDATA1=i_ingot_old_copper
-VALUE=15
-ON=@Create
-   COLOR=color_o_oldcopper
-
 [ITEMDEF i_ore_dull_copper]
 // this is really just a variety of copper. copper makes terrible armor
 ID=i_ore_iron
@@ -210,8 +120,7 @@ SKILLMAKE=mining 65.0
 TDATA1=i_ingot_dull_copper
 VALUE=15
 ON=@Create
-   COLOR=color_o_dullcopper
-
+   COLOR=color_o_dull_copper
 
 ////////////
 // Ingots //
@@ -250,7 +159,6 @@ DUPEITEM=01bef
 //Pile of 5 iron ingots facing SW
 DUPEITEM=01bef
 
-
 [ITEMDEF 01be3]
 DEFNAME=i_ingot_copper
 TYPE=t_ingot
@@ -283,7 +191,6 @@ DUPEITEM=01be3
 [ITEMDEF 01be8]
 //Pile of 5 copper ingots facing SW
 DUPEITEM=01be3
-
 
 [ITEMDEF 01be9]
 DEFNAME=i_ingot_gold
@@ -318,14 +225,13 @@ DUPEITEM=01be9
 //Pile of 5 gold ingots facing SW
 DUPEITEM=01be9
 
-
 [ITEMDEF 01bf5]
 DEFNAME=i_ingot_silver
 TYPE=t_ingot
 SKILLMAKE=mining 95.0
 TDATA1=90.0
 TDATA2=100.0
-RESOURCES=i_ore_silver
+
 WEIGHT=2
 DUPELIST=01bf6,01bf7,01bf8,01bf9,01bfa
 CATEGORY=Items by Professions
@@ -351,7 +257,6 @@ DUPEITEM=01bf5
 [ITEMDEF 01bfa]
 //Pile of 5 silver ingots facing SW
 DUPEITEM=01bf5
-
 
 [ITEMDEF i_ingot_shadow]
 NAME=Shadow Ingot
@@ -392,58 +297,6 @@ DESCRIPTION=Verite Ingot
 ON=@Create
    COLOR=color_o_verite
 
-[ITEMDEF i_ingot_rose]
-ID=i_ingot_iron
-NAME=Rose Ingot
-RESOURCES=i_ore_rose
-SKILLMAKE=mining 87.0
-TDATA1=80.0
-TDATA2=100.0
-CATEGORY=Items by Professions
-SUBSECTION=Blacksmiths
-DESCRIPTION=Rose Ingot
-ON=@Create
-   COLOR=color_o_rose
-
-[ITEMDEF i_ingot_mytheril]
-ID=i_ingot_iron
-NAME=Mytheril Ingot
-RESOURCES=i_ore_mytheril
-SKILLMAKE=mining 99.5
-TDATA1=90.0
-TDATA2=120.0
-CATEGORY=Items by Professions
-SUBSECTION=Blacksmiths
-DESCRIPTION=Mytheril Ingot
-ON=@Create
-   COLOR=color_o_mytheril
-
-[ITEMDEF i_ingot_blackrock]
-ID=i_ingot_iron
-NAME=Black Rock Ingot
-RESOURCES=i_ore_blackrock
-SKILLMAKE=mining 100.0
-TDATA1=90.0
-TDATA2=120.0
-CATEGORY=Items by Professions
-SUBSECTION=Blacksmiths
-DESCRIPTION=Black Rock Ingot
-ON=@Create
-   COLOR=color_o_blackrock
-
-[ITEMDEF i_ingot_bloodrock]
-ID=i_ingot_iron
-NAME=Blood Rock Ingot
-RESOURCES=i_ore_bloodrock
-SKILLMAKE=mining 93.0
-TDATA1=90.0
-TDATA2=120.0
-CATEGORY=Items by Professions
-SUBSECTION=Blacksmiths
-DESCRIPTION=Blood Rock Ingot
-ON=@Create
-   COLOR=color_o_bloodrock
-
 [ITEMDEF i_ingot_valorite]
 NAME=Valorite Ingot
 ID=i_ingot_iron
@@ -470,32 +323,6 @@ DESCRIPTION=Bronze Ingot
 ON=@Create
    COLOR=color_o_bronze
 
-[ITEMDEF i_ingot_rusty]
-NAME=Rusty Ingot
-ID=i_ingot_iron
-RESOURCES=i_ore_rusty
-SKILLMAKE=mining 50.0
-TDATA1=40.0
-TDATA2=80.0
-CATEGORY=Items by Professions
-SUBSECTION=Blacksmiths
-DESCRIPTION=Rusty Ingot
-ON=@Create
-   COLOR=color_o_rusty
-
-[ITEMDEF i_ingot_old_copper]
-NAME=Old Copper Ingot
-ID=i_ingot_iron
-RESOURCES=i_ore_old_copper
-SKILLMAKE=mining 60.0
-TDATA1=50.0
-TDATA2=80.0
-CATEGORY=Items by Professions
-SUBSECTION=Blacksmiths
-DESCRIPTION=Old Copper Ingot
-ON=@Create
-   COLOR=color_o_oldcopper
-
 [ITEMDEF i_ingot_dull_copper]
 ID=i_ingot_iron
 NAME=Dull Copper Ingot
@@ -507,7 +334,6 @@ CATEGORY=Items by Professions
 SUBSECTION=Blacksmiths
 DESCRIPTION=Dull Copper Ingot
 ON=@Create
-   COLOR=color_o_dullcopper
-
+   COLOR=color_o_dull_copper
 
 [EOF]

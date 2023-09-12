@@ -1,4 +1,4 @@
-[function place_signs_trammel]
+[FUNCTION place_signs_trammel]
 f_add_sign 3032,373,904,-1,1,Court of Truth
 f_add_sign 2996,2769,976,0,1,The Ironwood Inn
 f_add_sign 3016,2634,2088,10,1,Cutlass Smithing
@@ -413,4 +413,4 @@ f_add_sign 7976,1580,2484,4,1,Only a mind at peace can approach the shrine
 f_add_sign 7976,1604,2484,7,1,A calm mind may travel where others may not tread
 
 
-[eof]
+[EOF]

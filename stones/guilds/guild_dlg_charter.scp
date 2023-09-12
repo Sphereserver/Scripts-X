@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[dialog d_Guild_ViewCharter]
+[DIALOG d_Guild_ViewCharter]
 5,25
 If (<type>!=t_stone_guild)
   return 1
@@ -15,7 +15,7 @@ endif
 If (<local.charpriv>!=<def0.STONEPRIV_MEMBER>)&&(<local.charpriv>!=<def0.STONEPRIV_MASTER>)
   return 1
 endif
-  
+
 page 0
 resizepic 0 0 5054 550 400
 resizepic 10 10 3000 530 380
@@ -44,7 +44,7 @@ else
   dhtmlgump 20 20 500 150 0 1 <local.chartertext>
 endif
 
-dhtmlgump 55 200 300 20 0 0 Visit the guild website : 
+dhtmlgump 55 200 300 20 0 0 Visit the guild website :
   button 20 200 4005 4007 1 0 1 // Website
   local.website=<webpage>
   If (<eval Strlen(<local.website>)> <= 3) // A website cant be that small
@@ -53,8 +53,8 @@ dhtmlgump 55 200 300 20 0 0 Visit the guild website :
   dhtmlgump 50 220 300 20 0 0 <local.website>
 
 
-[dialog d_Guild_ViewCharter Button]
-ON=0 1    
+[DIALOG d_Guild_ViewCharter Button]
+ON=0 1
   If (<argn1>==0)	// Exit Gump
     sdialog d_Guild_Main,0
   elif (<argn1>==1)	// Website
@@ -68,7 +68,7 @@ ON=0 1
 
 
 //------------------------------------------------------------------------
-[dialog d_Guild_SetCharter]
+[DIALOG d_Guild_SetCharter]
 110, 70
 If (<type>!=t_stone_guild)
   return 1
@@ -110,12 +110,12 @@ gumppic 40 328 1143
 dtextentry 50 331 250 32 0 1006 <webpage>
 
 
-[dialog d_Guild_SetCharter Button]
+[DIALOG d_Guild_SetCharter Button]
 ON=0 1
   If (<masteruid>!=<src.uid>)&&(!<src.isgm>)
     return 1
   endif
-  
+
   If ( <argn1> == 1 ) // Set the values
     charter0=<argtxt[1000]>
     charter1=<argtxt[1001]>

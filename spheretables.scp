@@ -24,7 +24,6 @@ As a general rule:
 // All the other scripts we want to load.
 crafting/
 crafting/interface/
-crafting/interface/legacy skillmenu/
 core/backwards_compatibility_functions.scp
 //core/backwards_compatibility_56b.scp
 //core/backwards_compatibility_56c.scp
@@ -50,6 +49,8 @@ core/dialogs/admin/language/
 core/dialogs/region_creator/
 //core/dialogs/legacy/
 skills/
+skills/menus/
+core/skillclasses.scp
 speech/
 speech/human/
 speech/jobs/
@@ -73,6 +74,9 @@ stones/guilds/
 stones/towns/
 housing/
 functions/
+
+//legacy
+legacy/crafting/
 
 // maps
 maps/map0/map0_starts.scp
@@ -127,8 +131,9 @@ maps/map5/map5_moongates.scp
 maps/map5/map5_moongates_tol.scp
 
 //templates
+templates/tm_generic.scp
 templates/
-templates_special/
+templates/special/
 
 //WorldGen Should be comment after the word generation is done
 functions/worldgen/crops/
@@ -148,6 +153,9 @@ functions/worldgen/spawns/termur/
 functions/worldgen/spawns/tokuno/
 functions/worldgen/spawns/trammel/
 functions/worldgen/spawns/uoclassic/
+
+//add-on
+add-on/generator/generator.scp
 
 //custom/
 

@@ -1,5 +1,5 @@
-[function deco_yew_trammel]	
-	
+[FUNCTION deco_yew_trammel]
+
 //metal door//
 serv.newitem= 0675//
 new.attr=attr_static//
@@ -4944,4 +4944,4 @@ new.name=Grammar Of Orcish//
 new.attr=attr_static//
 new.p=631 819 26 1//
 
-[eof]		
+[EOF]

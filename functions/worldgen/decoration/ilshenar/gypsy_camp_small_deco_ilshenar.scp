@@ -1,4 +1,4 @@
-[function deco_gypsy_camp_small_ilshenar]
+[FUNCTION deco_gypsy_camp_small_ilshenar]
 
 // wooden gate
 SERV.NEWITEM=0839
@@ -26,4 +26,4 @@ new.color=010
 new.attr=attr_static
 new.p=1391 439 19 2
 
-[eof]
+[EOF]

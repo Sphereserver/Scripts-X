@@ -12,7 +12,7 @@ VERSION=X1
 // --------------------
 // Based on EA crafting lists
 
-[defname sphere_crafting_alchemy_default]
+[DEFNAME sphere_crafting_alchemy_default]
 alchemy_marking			"0" // 1 or 0
 alchemy_firstmaterial	"0" // 1 or 0
 alchemy_secondmaterial	"0" // 1 or 0
@@ -80,14 +80,14 @@ alchemy_category_10_1	"i_potion_invisibility"		// 1074860
 //Plant Pigment
 //Natural Dye
 //Color Fixative
-//Crystal Granules	
+//Crystal Granules
 //Crystal Dust
 //Softened Reeds
 //Vial of Vitriol
 //Bottle of Ichor
 
 
-[comment several potions from sphere]
+[COMMENT several potions from sphere]
 // add them in the category you like.
 // the numbers and categories listed below are from an older file.
 //alchemy_category_1_3	"i_potion_forget_less"
@@ -114,4 +114,4 @@ alchemy_category_10_1	"i_potion_invisibility"		// 1074860
 //alchemy_category_4_13	"i_potion_weakness"
 
 
-[eof]
+[EOF]

@@ -10,7 +10,7 @@ call f_combat_hit <src>
 src.f_combat_gethit=<local.dam>,<argn2>
 
 
-[function f_combat_hit]			// We get the hit state.
+[FUNCTION f_combat_hit]			// We get the hit state.
 if (<src.IsItem>)						// This should not happen, but I cannot hit items.
 	return -1
 endif
@@ -324,7 +324,7 @@ if (<weapon>)
 	src.skillgain <argn1>,<actdiff>
 endif
 
-[function GetWeaponSwingTimer]
+[FUNCTION GetWeaponSwingTimer]
 if ( <weapon> )
 	local.speed=<qval <tag0.override.speed> ? <tag.override.speed> : <weapon.speed> >
 	if ( <local.speed> )
@@ -354,7 +354,7 @@ else
 endif
 return <dlocal.waittime>
 
-[function SetPoison]
+[FUNCTION SetPoison]
 // argn1 = Poison strenght
 // argn2 = duration
 // argn3 = src
@@ -375,7 +375,7 @@ return 1
 
 
 
-[function f_combat_gethit]			// GetHit
+[FUNCTION f_combat_gethit]			// GetHit
 if (<flags>&statf_invul)
 	effect 3,14265,9,30
 	return 1
@@ -569,7 +569,7 @@ endif
 argn2 |=dam_fixed
 
 
-[function OnTakeDmg]
+[FUNCTION OnTakeDmg]
 // This function is called when every check is already done, the damage is calculated and the dam is going to come.
 // The body part which is going to be hit is checked in this function.
 // Deflect some damage with shield or weapon ?
@@ -702,7 +702,7 @@ ARMOR_FEET			= 7
 // BODYPART_ABDOMEN	=18	// Spider or insect. asusme throax and chest are the same.
 	
 
-[function Armor_GetCoverageZone]
+[FUNCTION Armor_GetCoverageZone]
 if ( <argn>==ARMOR_BACK )
 	return <max <Armor_GetCoverageLayer LAYER_SHIRT,<argn>>,<Armor_GetCoverageLayer LAYER_CHEST,<argn>>,<Armor_GetCoverageLayer LAYER_TUNIC,<argn>>,<Armor_GetCoverageLayer LAYER_CAPE,<argn>>,<Armor_GetCoverageLayer LAYER_ROBE,<argn>>>
 elseif ( <args> == ARMOR_FEET )
@@ -722,7 +722,7 @@ elseif ( <args> == ARMOR_HEAD )
 endif
 return 0
 
-[function Armor_IsCoverageZone]
+[FUNCTION Armor_IsCoverageZone]
 if ( <args> == ARMOR_BACK )
 	return <eval ( (<layer>==LAYER_SHIRT) || (<layer>==LAYER_CHEST) || (<layer>==LAYER_TUNIC) || (<layer>==LAYER_CAPE) || (<layer>==LAYER_ROBE))>
 elseif ( <args> == ARMOR_FEET )
@@ -742,12 +742,12 @@ elseif ( <args> == ARMOR_HEAD )
 endif
 return 0
 
-[function Armor_GetCoverageLayer]
+[FUNCTION Armor_GetCoverageLayer]
 // Uncommenting the first line will make the system calc the percentaje of armor for armor + modar*GetcoveragePercent (body area),100 (Old Style) instead of ResPhysical when hitting body parts.
 return <eval <findlayer.<argv0>.armor> +<findlayer.<argv0>.modar>>
 
 // Here we have the % of armor coverage for each body zone
-[function Armor_GetCoveragePercent]
+[FUNCTION Armor_GetCoveragePercent]
 if ( <argn>==ARMOR_BACK )
 	return <ddef.coverage_layer_back>
 elseif ( <argn>==ARMOR_HEAD )
@@ -776,7 +776,7 @@ coverage_layer_hands=10
 coverage_layer_legs=20
 coverage_layer_feet=5
 
-[function Armor_GetDefense]
+[FUNCTION Armor_GetDefense]
 if !( <IsArmor> )
 	return 0
 endif
@@ -792,11 +792,11 @@ if ( <attr>&ATTR_MAGIC )
 endif
 return <dlocal.val>
 
-[function medium]
+[FUNCTION medium]
 return <qval <argv0>><argv1> ? <argv0> : <qval <argv2>< <argv1> ? <argv2> : <argv1>>>
 
 	
-[function f_value_getlinear]
+[FUNCTION f_value_getlinear]
 // arg0 = actual value
 // arg1 = max posible value
 // arg2-5 = values to calculate
@@ -844,7 +844,7 @@ endif
 return <dlocal.Chance>
 
 
-[function CalcDamage]
+[FUNCTION CalcDamage]
 // argn1 = 0 = normal damage.
 // argn1 = 1  = random damage.
 if ( <brain> == BRAIN_GUARD && <serv.GuardsInstantKill> )
@@ -870,7 +870,7 @@ endif
 return <dlocal.ret>
 
 
-[function WeaponCalcDamage]
+[FUNCTION WeaponCalcDamage]
 local.ret=<dam.lo> + <modar>
 local.ret += <qval <argn1> == 1 ? <r<dam.hi>> : <dam.hi> >
 local.ret = <muldiv <local.ret>,<GetRepairPercent>,100>
@@ -883,20 +883,20 @@ endif
 return <dlocal.ret>
 
 
-[function GetRepairPercent]
+[FUNCTION GetRepairPercent]
 if ( !<MaxHits> || ( <MaxHits> < <Hits> ) )
 	return 100
 endif
 return <muldiv <hits>,100,<MaxHits> >
 
 
-[function fixedid]
+[FUNCTION fixedid]
 local.flags=<tdata3>
 local.flags &=~0ffffffff9c000000
 return <local.flags>
 
 
-[function IsSkillRanged]
+[FUNCTION IsSkillRanged]
 if !(<def0.<args>>)
 	return 0
 endif

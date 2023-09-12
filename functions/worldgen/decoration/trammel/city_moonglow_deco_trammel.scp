@@ -1,79 +1,79 @@
-[function deco_magincia_trammel]	
-	
+[FUNCTION deco_magincia_trammel]
+
 // Signs
 serv.newitem=0BCF
-new.attr=attr_static 
+new.attr=attr_static
 new.p=4540 1375 21 1
-serv.newitem=0BCF 
-new.attr=attr_static 
+serv.newitem=0BCF
+new.attr=attr_static
 new.p=4539 1375 21 1
-serv.newitem=0BD2 
-new.attr=attr_static 
+serv.newitem=0BD2
+new.attr=attr_static
 new.p=4521 1370 23 1
-serv.newitem=0BD2 
-new.attr=attr_static 
+serv.newitem=0BD2
+new.attr=attr_static
 new.p=4527 1365 23 1
 serv.newitem=0BD1
-new.attr=attr_static 
+new.attr=attr_static
 new.p=4524 1364 23 1
-serv.newitem=0BD1 
-new.attr=attr_static 
+serv.newitem=0BD1
+new.attr=attr_static
 new.p=4511 1364 23 1
-serv.newitem=0BD2 
-new.attr=attr_static 
+serv.newitem=0BD2
+new.attr=attr_static
 new.p=4501 1374 23 1
-serv.newitem=0BD2 
-new.attr=attr_static 
+serv.newitem=0BD2
+new.attr=attr_static
 new.p=4493 1378 23 1
-serv.newitem=0BD2 
-new.attr=attr_static 
+serv.newitem=0BD2
+new.attr=attr_static
 new.p=4493 1391 23 1
-serv.newitem=0BD1 
-new.attr=attr_static 
+serv.newitem=0BD1
+new.attr=attr_static
 new.p=4506 1386 23 1
-serv.newitem=0BD2 
-new.attr=attr_static 
+serv.newitem=0BD2
+new.attr=attr_static
 new.p=4506 1391 23 1
-serv.newitem=0BD2 
-new.attr=attr_static 
+serv.newitem=0BD2
+new.attr=attr_static
 new.p=4521 1383 23 1
-serv.newitem=0BD2 
-new.attr=attr_static 
+serv.newitem=0BD2
+new.attr=attr_static
 new.p=4525 1389 23 1
 // Donation Box
 serv.newitem=016B
-new.attr=attr_static 
+new.attr=attr_static
 new.p=4538 1375 23 1
 // Walls
 serv.newitem=015F
-new.attr=attr_static 
+new.attr=attr_static
 new.p=4492 1396 23 1
 serv.newitem=015F
-new.attr=attr_static 
+new.attr=attr_static
 new.p=4492 1397 23 1
 serv.newitem=015F
-new.attr=attr_static 
+new.attr=attr_static
 new.p=4500 1356 23 1
 serv.newitem=015F
-new.attr=attr_static 
+new.attr=attr_static
 new.p=4500 1357 23 1
 serv.newitem=015F
-new.attr=attr_static 
+new.attr=attr_static
 new.p=4513 1356 23 1
 serv.newitem=015F
-new.attr=attr_static 
+new.attr=attr_static
 new.p=4513 1357 23 1
 serv.newitem=0160
-new.attr=attr_static 
+new.attr=attr_static
 new.p=4512 1376 23 1
 serv.newitem=0160
-new.attr=attr_static 
+new.attr=attr_static
 new.p=4513 1376 23 1
 serv.newitem=0160
-new.attr=attr_static 
+new.attr=attr_static
 new.p=4489 1375 23 1
 serv.newitem=0160
-new.attr=attr_static 
+new.attr=attr_static
 new.p=4490 1375 23 1
 // Signs//
 serv.newitem=0BCF//(LabelNumber=1074717)//
@@ -4943,4 +4943,4 @@ serv.newitem= 021A4//
 new.attr=attr_static//
 new.p=4708 1121 0 1 1//
 
-[EOF]		
+[EOF]

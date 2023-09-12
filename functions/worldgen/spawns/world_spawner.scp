@@ -1,7 +1,7 @@
 //World Spawner by Soulless v4.0
 //13/8/2021
 
-[defname world_spawner_settings]
+[DEFNAME world_spawner_settings]
 
 worldspawner_facet_0		Felucca
 worldspawner_facet_0_0		Vendors,spawn_vendors_felucca
@@ -33,7 +33,7 @@ worldspawner_facet_2_3	 	Dungeons,spawn_dungeons_ilshenar
 worldspawner_facet_2_4		Outdoors,spawn_outdoors_ilshenar
 
 worldspawner_facet_3		Malas
-worldspawner_facet_3_0		Vendors,spawn_vendors_malas	
+worldspawner_facet_3_0		Vendors,spawn_vendors_malas
 worldspawner_facet_3_1		Dungeons,spawn_dungeons_malas
 worldspawner_facet_3_2		Orc Forts,spawn_orc_forts_malas
 worldspawner_facet_3_3		Outdoors,spawn_outdoors_malas
@@ -45,13 +45,13 @@ worldspawner_facet_4_2		Dungeons,spawn_dungeons_tokuno
 worldspawner_facet_4_3		Outdoors,spawn_outdoors_tokuno
 
 worldspawner_facet_5		Ter Mur
-worldspawner_facet_5_0		Vendors,spawn_vendors_ter_mur	
+worldspawner_facet_5_0		Vendors,spawn_vendors_ter_mur
 Worldspawner_facet_5_1		Ter Mur,spawn_outdoors_ter_mur
 Worldspawner_facet_5_2		Underworld,spawn_underworld_ter_mur
 Worldspawner_facet_5_3		Abyss,spawn_abyss_ter_mur
 
 
-[itemdef i_world_spawner]
+[ITEMDEF i_world_spawner]
 id=i_deed
 name=World Spawner
 type=t_script
@@ -72,7 +72,7 @@ endif
 sdialog d_world_spawner
 return 1
 
-[dialog d_world_spawner]
+[DIALOG d_world_spawner]
 200,100
 
 page 0
@@ -93,7 +93,7 @@ dtext 150 60 17 Nerun's Distro
 dtext 30 75 1000 and to           for inspiring
 dtext 75 75 17 AmonVangrall
 
-resizepic 50 95 9350 200 120//white facet selection 
+resizepic 50 95 9350 200 120//white facet selection
 while !<isempty <def.worldspawner_facet_<dlocal.n>>>
   args=<def0.worldspawner_facet_<dlocal.n>>
   button 25 <eval 95+(<local.n>*20)> 4006 4007 0 <eval <local.n>+2>
@@ -105,20 +105,20 @@ checkbox 65 260 210 211 <qval <var0.f_validate_spawns>?1:0> 1
 dtext 90 260 1000 Validate Spawndefs
 
 resizepic 40 230 9350 150 22
-button 25 230 4006 4007 1 0 999999 
+button 25 230 4006 4007 1 0 999999
 dtext 60 230 1000 Remove    spawns
 dtext 105 230 026 ALL
 
-tilepic 210 230 13945 1 
+tilepic 210 230 13945 1
 
 local.n=
 local.x=2
 while !<isempty <def.worldspawner_facet_<dlocal.n>>>
   page=<local.x>
-  resizepic 35 80 9350 210 180			
-  resizepic 35 20 9200 205 20			
+  resizepic 35 80 9350 210 180
+  resizepic 35 20 9200 205 20
   dtext 100 20 1263 World Spawner
-  resizepic 35 40 9200 120 20			
+  resizepic 35 40 9200 120 20
   args=<def0.worldspawner_facet_<dlocal.n>>
   dtext 50 40 <eval 026+(<local.n>*20)> <argv[0]> Spawns
   button 20 263 4015 4016 0 1
@@ -135,7 +135,7 @@ while !<isempty <def.worldspawner_facet_<dlocal.n>>>
   local.y=
 endwhile
 
-[dialog d_world_spawner button]
+[DIALOG d_world_spawner button]
 
 onbutton=1,100000
 argn -= 1

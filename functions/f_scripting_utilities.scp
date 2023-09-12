@@ -18,17 +18,17 @@ FORCONTTYPE <ARGS> <QVAL <ARGN2> ? <ARGN2> : 5>
 ENDFOR
 RETURN 0
 
-[function f_getDefnameFromCorpse]
+[FUNCTION f_getDefnameFromCorpse]
 RETURN <HVAL (<DEF.RES_CHARDEF> << <DEF.RESTYPE_BIT_SHIFT>)|<MOREX>>
 
-[function f_resenddialog]
+[FUNCTION f_resenddialog]
 src.dialogclose <ARGV[0]>
 sdialog <ARGS>
 
-[function f_resources]
+[FUNCTION f_resources]
 return <ARGV>
 
-[function f_loopanim] // ID of anim, repeat, delay
+[FUNCTION f_loopanim] // ID of anim, repeat, delay
 if <argv[1]>>1
 	for <eval (<argv[1]>-1)>
 	timerf <eval (<local._for>*<argv[2]>)>,anim <eval <argv[0]>>
@@ -36,7 +36,7 @@ if <argv[1]>>1
 endif
 anim <argv[0]>
 
-[function f_loopsound]
+[FUNCTION f_loopsound]
 if <argv[1]>>1
 	for <eval (<argv[1]>-1)>
 	timerf <eval (<local._for>*<argv[2]>)>,sound <eval <argv[0]>>
@@ -45,7 +45,7 @@ endif
 sound <argv[0]>
 
 // <pet uid>.f_MakePetOf <owner uid>
-[function f_MakePetOf]
+[FUNCTION f_MakePetOf]
 serv.newitem i_memory
 new.color = memory_ipet
 new.more1 = 04
@@ -56,7 +56,7 @@ new.cont = <uid>
 
 // Check if the introduced argument is a spell number
 // Arguments = spell
-[function isdamagespell]
+[FUNCTION isdamagespell]
 IF ((<ARGN1> == 5) || (<ARGN1> == 12) || (<ARGN1> == 18) || (<ARGN1> == 30) || (<ARGN1> == 42) || (<ARGN1> == 49) || (<ARGN1> == 51) || (<ARGN1> == 55))
 RETURN 1
 ENDIF
@@ -75,7 +75,7 @@ ENDI
 
 // New ADDITEM function with works with 65000+ items pile
 // Arguments = id,amount
-[function f_additem]
+[FUNCTION f_additem]
 IF (0<DEF.<ARGV[0]>>)
 IF (0<ARGV[1]>)
 LOCAL.AMOUNT=<ARGV[1]>
@@ -147,12 +147,12 @@ ELSE
 ENDIF
 
 
-[function getargv]
+[FUNCTION getargv]
 local.toret = <strarg <args>>
 args = <streat <args>>
 return <argv[<local.toret>]>
 
-[function isdialogopen]
+[FUNCTION isdialogopen]
 for 0 <eval <dialoglist.count> - 1>
 	if strmatch("<dialoglist.<dlocal._for>.id>","<args>")
 	return 1
@@ -161,13 +161,13 @@ endfor
 return 0
 
 
-[function abs] // Absolute value: <abs x>
+[FUNCTION abs] // Absolute value: <abs x>
 if <argn1> < 0
 	return <eval (<argn1> * -1)>
 endif
 return <argn1>
 
-[function getpinpos] // Original position of pin. <getpinpos Pin#>
+[FUNCTION getpinpos] // Original position of pin. <getpinpos Pin#>
 local.dX = <eval (<more2h> - <more1h>)>
 local.dY = <eval (<more2l> - <more1l>)>
 
@@ -179,7 +179,7 @@ float.y = <floatval (((<dlocal.dY> / <dlocal.mapY>) * <streat <pin.<argn1>>>) + 
 
 return <feval <float.x>>,<feval <float.y>>
 
-[function emoteloc] // emoteloc self_cliloc_id, others_cliloc_id, color1(optional), color2 (optional - color1 can be used if not set), args for 2nd cliloc (@ : seperator)
+[FUNCTION emoteloc] // emoteloc self_cliloc_id, others_cliloc_id, color1(optional), color2 (optional - color1 can be used if not set), args for 2nd cliloc (@ : seperator)
 ref1=<uid>
 local.color1 = <qval ((<argv> < 3) || (<argv[2]> == 0)) ? 03b2:<argv[2]>>
 local.color2 = <qval ((<argv> < 4) || (<argv[3]> == 0)) ? <local.color1>:<argv[3]>>

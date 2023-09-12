@@ -1,4 +1,4 @@
-[function place_terrain_fixes_trammel]//
+[FUNCTION place_terrain_fixes_trammel]//
 
 //Champions Teleporters//
 // teleporter//
@@ -1338,4 +1338,4 @@ serv.newitem=0179a//
 new.attr=attr_static//
 new.p=3488 580 -5 1//
 
-[eof]		
+[EOF]

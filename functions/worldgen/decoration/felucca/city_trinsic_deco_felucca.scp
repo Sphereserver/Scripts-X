@@ -1,4 +1,4 @@
-[function deco_trinsic_felucca]
+[FUNCTION deco_trinsic_felucca]
 
 //battlement
 serv.newitem=0173
@@ -3987,7 +3987,7 @@ serv.newitem=0100B
 new.attr=attr_static
 new.p=1998 2694 0
 
-//spinning wheelSpinningWheelSouthAddon 
+//spinning wheelSpinningWheelSouthAddon
 serv.newitem=01015
 new.attr=attr_static
 new.p=1980 2840 15
@@ -4118,7 +4118,7 @@ serv.newitem=0105D
 new.attr=attr_static
 new.p=1841 2682 6
 
-//upright loomLoomEastAddon 
+//upright loomLoomEastAddon
 serv.newitem=01060
 new.attr=attr_static
 new.p=1977 2842 15
@@ -4126,7 +4126,7 @@ serv.newitem=0105f
 new.attr=attr_static
 new.p=1977 2843 15
 
-//upright loomLoomSouthAddon 
+//upright loomLoomSouthAddon
 serv.newitem=01061
 new.attr=attr_static
 new.p=1983 2830 15
@@ -4606,6 +4606,6 @@ serv.newitem=01E5E
 new.attr=attr_static
 new.p=1932 2786 0
 
-[eof]
+[EOF]
 
-[eof]
+[EOF]

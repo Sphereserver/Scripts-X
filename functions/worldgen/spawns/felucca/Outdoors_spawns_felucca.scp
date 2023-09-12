@@ -1,6 +1,6 @@
 
 
-[function spawn_outdoors_felucca]
+[FUNCTION spawn_outdoors_felucca]
 //##############
 //## By Nerun ##
 //##############
@@ -553,4 +553,4 @@ f_create_spawner,szavetra:imp:titan:snake:ratman:doppleganger:gargoyle,cow:bull:
 f_create_spawner,changeling:ratman:ettin:titan:ratmanarcher:ratmanmage,goat:pig:cow:bull:rat,gargoyleenforcer:gargoyledestroyer:gargoyle,snake,,,6191,155,0,1,5,10,25,25,1,18,12,9,3,0,0
 
 
-[eof]
+[EOF]

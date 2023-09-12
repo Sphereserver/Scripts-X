@@ -1,6 +1,6 @@
 //These are functions that get grouped together for spawner purposes
 
-[function spawn_dungeons_felucca]
+[FUNCTION spawn_dungeons_felucca]
 spawn_blighted_grove_felucca
 spawn_britain_sewer_felucca
 spawn_covetous_felucca

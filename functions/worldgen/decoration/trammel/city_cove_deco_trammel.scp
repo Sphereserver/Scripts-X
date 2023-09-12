@@ -1,4 +1,4 @@
-[function deco_cove_trammel]
+[FUNCTION deco_cove_trammel]
 
 //tent wall//
 serv.newitem=02EB//

@@ -1,9 +1,9 @@
-[function deco_magincia_trammel]
-	
+[FUNCTION deco_magincia_trammel]
+
 if (<reportedcliver> > 6.0.3)
   serv.log Skipping Old Magincia, reported client version is <reportedcliver>
   return 1
-endif	
+endif
 
 //metal signpost//
 serv.newitem=0BA0//

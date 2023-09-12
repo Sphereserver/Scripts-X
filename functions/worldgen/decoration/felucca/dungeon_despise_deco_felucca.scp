@@ -1,4 +1,4 @@
-[function deco_despise_felucca]
+[FUNCTION deco_despise_felucca]
 
 //crate
 serv.newitem=0E3C
@@ -974,4 +974,4 @@ serv.newitem=0FFD
 new.attr=attr_static
 new.p=5507 529 60
 
-[eof]
+[EOF]

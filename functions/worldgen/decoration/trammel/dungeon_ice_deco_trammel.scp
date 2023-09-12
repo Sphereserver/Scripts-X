@@ -1,5 +1,5 @@
-[function deco_ice_dungeon_trammel]	
-	
+[FUNCTION deco_ice_dungeon_trammel]
+
 //flag stones//
 serv.newitem=04FE//
 new.attr=attr_static//
@@ -322,4 +322,4 @@ serv.newitem=00738//
 new.attr=attr_static//
 new.p=5851 233 -13 1//
 
-[EOF]		
+[EOF]

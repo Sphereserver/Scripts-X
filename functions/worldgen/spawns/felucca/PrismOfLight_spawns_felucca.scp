@@ -1,6 +1,6 @@
 
 
-[function spawn_prism_of_light_felucca]
+[FUNCTION spawn_prism_of_light_felucca]
 //##############################
 //##   XML Spawns by Erica    ##
 //## Convert/Adapted By Nerun ##
@@ -34,4 +34,4 @@ f_create_spawner,CrystalDaemon,,,,,,6532,79,-10,1,5,10,4,4,1,1,0,0,0,0,0
 f_create_spawner,Ferret,,,,,,6578,183,31,1,5,10,5,5,1,2,0,0,0,0,0
 f_create_spawner,protector,,,,,,6510,171,0,1,5,10,8,8,1,3,0,0,0,0,0
 
-[eof]
+[EOF]

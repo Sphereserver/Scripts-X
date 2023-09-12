@@ -4,7 +4,7 @@
 //****************************************************************************
 VERSION=X1
 
-[dialog d_Town_Master_Warfare_DeclareWar]
+[DIALOG d_Town_Master_Warfare_DeclareWar]
 5,25
 local.tosearch=<args>
 If (<type>!=t_stone_town)
@@ -63,7 +63,7 @@ endfor
 
 
 
-[dialog d_Town_Master_Warfare_DeclareWar Button]
+[DIALOG d_Town_Master_Warfare_DeclareWar Button]
 ON=0 1
   If (!<src.ctag.dialog_townmasterwarfaredclarewar_townlist>)
     serv.log Declare war search function improperly returned info!!  Ctag not set!
@@ -72,20 +72,20 @@ ON=0 1
 
   local.war_townlist=<src.ctag.dialog_townmasterwarfaredclarewar_townlist>
   src.ctag.dialog_townmasterwarfaredclarewar_townlist=
-  
+
   If (<masteruid>!=<src.uid>)&&(!<src.isgm>)
     return 1
   endif
-  
+
   If (<argn1>==0)
     sdialog d_Town_Master_Warfare,0
   elif (<argn1>==1)
     CALL f_townsys_listsplit <local.war_townlist>
-  
+
     If (!<local.townlist_count>)
       return 1
     endif
-    
+
     local.num=<ARGCHKID>-10
     If ((<local.num> < 0) || (<local.num> > <local.townlist_count>))
       return 1
@@ -96,7 +96,7 @@ ON=0 1
     If (!<local.selectedtown>)
       return 1
     endif
-    
+
     If (<uid.<local.selectedtown>.type>!=T_STONE_TOWN)
       return 1
     endif

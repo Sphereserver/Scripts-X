@@ -1,4 +1,4 @@
-[function deco_papua_felucca]
+[FUNCTION deco_papua_felucca]
 
 //stone pavers
 SERV.NEWitem=0521

@@ -1,5 +1,5 @@
-[function deco_serpents_hold_trammel]	
-	
+[FUNCTION deco_serpents_hold_trammel]
+
 //MetalDoor//
 serv.newitem=0675//
 new.attr=attr_static//
@@ -2027,4 +2027,4 @@ serv.newitem=  01E5E//
 new.attr=attr_static//
 new.p=3017 3450 15 1//
 
-[EOF]		
+[EOF]

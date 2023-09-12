@@ -1,4 +1,4 @@
-[function spawn_quest_npcs_ilshenar]
+[FUNCTION spawn_quest_npcs_ilshenar]
 
 f_create_spawner	c_Yorus_The_Tinker,,,,,,1390,427,-20,2,5,10,10,10,1,1,0,0,0,0,0
 f_create_spawner	c_Petrus_the_Beekeeper,,,,,,1422,411,7,2,5,10,10,10,1,1,0,0,0,0,0
@@ -38,4 +38,4 @@ f_create_spawner	c_escort_female,,,,,,1628,1253,-18,2,5,10,10,10,1,1,0,0,0,0,0
 f_create_spawner	c_escort_male,,,,,,566,1292,-36,2,5,10,10,10,1,1,0,0,0,0,0
 f_create_spawner	c_escort_female,,,,,,59,1464,-28,2,5,10,10,10,1,1,0,0,0,0,0
 
-[eof]
+[EOF]

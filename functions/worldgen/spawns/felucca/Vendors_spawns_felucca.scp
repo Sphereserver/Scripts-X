@@ -1,6 +1,6 @@
 
 
-[function spawn_vendors_felucca]
+[FUNCTION spawn_vendors_felucca]
 //##############
 //## By Nerun ##
 //##############
@@ -434,4 +434,4 @@ f_create_spawner,fisherman,,,,,,4554,2389,-2,2,5,10,-1,1,1,1,0,0,0,0,0
 f_create_spawner,treasurelevel1h,,,,,,4534,2349,-2,2,5,10,-1,0,1,1,0,0,0,0,0
 f_create_spawner,treasurelevel1h,,,,,,4535,2349,-2,2,5,10,-1,0,1,1,0,0,0,0,0
 
-[eof]
+[EOF]

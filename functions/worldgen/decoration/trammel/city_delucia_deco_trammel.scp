@@ -1,4 +1,4 @@
-[function deco_delucia_trammel]		
+[FUNCTION deco_delucia_trammel]
 //oven//
 serv.newitem=0461//
 new.attr=attr_static//

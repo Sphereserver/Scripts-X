@@ -1,4 +1,4 @@
-[function deco_serpents_hold_felucca]
+[FUNCTION deco_serpents_hold_felucca]
 
 //MetalDoor
 serv.newitem=0675

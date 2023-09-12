@@ -1,9 +1,9 @@
-[function spawn_caves_ilshenar]
+[FUNCTION spawn_caves_ilshenar]
 spawn_ancient_lair_ilshenar
 spawn_mushroom_ilshenar
 spawn_ratman_cave_ilshenar
 
-[function spawn_dungeons_ilshenar]
+[FUNCTION spawn_dungeons_ilshenar]
 spawn_ankh_ilshenar
 spawn_blood_ilshenar
 spawn_exodus_ilshenar

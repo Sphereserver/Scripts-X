@@ -1,5 +1,5 @@
-[function deco_solen_hive_trammel]	
-	
+[FUNCTION deco_solen_hive_trammel]
+
 //Water Vats//
 serv.newitem=014d7//
 new.attr=attr_static//
@@ -247,4 +247,4 @@ new.p=5917,1795
 new.morep=2608,762,0,1
 
 
-[EOF]		
+[EOF]

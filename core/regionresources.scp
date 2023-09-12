@@ -52,11 +52,6 @@ REAPAMOUNT=1       // ...can be harvested this many at a time...
 //SKILL=0.0        // ...and it takes no skill to do it.
 REGEN=60*60*10
 
-[REGIONTYPE r_default_grass t_grass]
-// All grass can be eaten by default.
-RESOURCES=1.0 mr_grass
-
-
 /////////////////////////////////
 // Resources for fishing skill //
 /////////////////////////////////
@@ -89,25 +84,6 @@ REAPAMOUNT=1,3
 SKILL=1.0,100.0
 REGEN=60*60*10
 
-[REGIONTYPE r_default_water t_water]
-RESOURCES=60.0 mr_nothing  // Most of the time fishing produces nothing.
-RESOURCES=10.0 mr_fish1
-RESOURCES=10.0 mr_fish2
-RESOURCES=10.0 mr_fish3
-RESOURCES=10.0 mr_fish4
-
-[REGIONTYPE r_water t_water]
-RESOURCES=60.0 mr_nothing
-RESOURCES=10.0 mr_fish1
-RESOURCES=10.0 mr_fish2
-RESOURCES=10.0 mr_fish3
-RESOURCES=10.0 mr_fish4
-
-ON=@RegPeriodic
-// Water/Ocean boat sounds
-SRC.SOUND={025 1 026 1 027 1 010 1 011 1 012 1 013 1}
-
-
 ///////////////////////////////////////
 // Resources for lumberjacking skill //
 ///////////////////////////////////////
@@ -116,13 +92,50 @@ SRC.SOUND={025 1 026 1 027 1 010 1 011 1 012 1 013 1}
 AMOUNT=9,30
 REAP=i_log
 REAPAMOUNT=1,3
-SKILL=1.0,80.0
+SKILL=0.0,100.0
 REGEN=60*60*10
 
-[REGIONTYPE r_default_tree t_tree]
-// All trees produce wood by default.
-RESOURCES=60.0 mr_nothing
-RESOURCES=40.0 mr_tree
+[REGIONRESOURCE mr_tree_oak]
+AMOUNT=9,30
+REAP=i_log_oak
+REAPAMOUNT=1,3
+SKILL=25.0,105.0
+REGEN=60*60*10
+
+[REGIONRESOURCE mr_tree_ash]
+AMOUNT=9,30
+REAP=i_log_ash
+REAPAMOUNT=1,3
+SKILL=40.0,120.0
+REGEN=60*60*10
+
+[REGIONRESOURCE mr_tree_yew]
+AMOUNT=9,30
+REAP=i_log_yew
+REAPAMOUNT=1,3
+SKILL=55.0,135.0
+REGEN=60*60*10
+
+[REGIONRESOURCE mr_tree_heartwood]
+AMOUNT=9,30
+REAP=i_log_heartwood
+REAPAMOUNT=1,3
+SKILL=60.0,140.0
+REGEN=60*60*10
+
+[REGIONRESOURCE mr_tree_bloodwood]
+AMOUNT=9,30
+REAP=i_log_bloodwood
+REAPAMOUNT=1,3
+SKILL=60.0,140.0
+REGEN=60*60*10
+
+[REGIONRESOURCE mr_tree_frostwood]
+AMOUNT=9,30
+REAP=i_log_frostwood
+REAPAMOUNT=1,3
+SKILL=60.0,140.0
+REGEN=60*60*10
 
 ////////////////////////////////
 // Resources for mining skill //
@@ -135,23 +148,9 @@ REAPAMOUNT=1,3
 SKILL=1.0,30.0
 REGEN=60*60*10
 
-[REGIONRESOURCE mr_rusty]
-AMOUNT=8,21
-REAP=i_ore_rusty
-REAPAMOUNT=1,3
-SKILL=1.0,30.0
-REGEN=60*60*10
-
 [REGIONRESOURCE mr_bronze]
 AMOUNT=4,12
 REAP=i_ore_bronze
-REAPAMOUNT=1,3
-SKILL=1.0,30.0
-REGEN=60*60*10
-
-[REGIONRESOURCE mr_old_copper]
-AMOUNT=7,18
-REAP=i_ore_old_copper
 REAPAMOUNT=1,3
 SKILL=1.0,30.0
 REGEN=60*60*10
@@ -184,30 +183,9 @@ REAPAMOUNT=1,3
 SKILL=30.0,60.0
 REGEN=60*60*10
 
-[REGIONRESOURCE mr_rose]
-AMOUNT=3,9
-REAP=i_ore_rose
-REAPAMOUNT=1,3
-SKILL=30.0,60.0
-REGEN=60*60*10
-
 [REGIONRESOURCE mr_agapite]
 AMOUNT=3,8
 REAP=i_ore_agapite
-REAPAMOUNT=1,3
-SKILL=30.0,60.0
-REGEN=60*60*10
-
-[REGIONRESOURCE mr_bloodrock]
-AMOUNT=3,6
-REAP=i_ore_bloodrock
-REAPAMOUNT=1,3
-SKILL=30.0,60.0
-REGEN=60*60*10
-
-[REGIONRESOURCE mr_silver]
-AMOUNT=1,2
-REAP=i_ore_silver
 REAPAMOUNT=1,3
 SKILL=30.0,60.0
 REGEN=60*60*10
@@ -219,23 +197,9 @@ REAPAMOUNT=1,3
 SKILL=30.0,60.0
 REGEN=60*60*10
 
-[REGIONRESOURCE mr_Valorite]
+[REGIONRESOURCE mr_valorite]
 AMOUNT=2,4
 REAP=i_ore_Valorite
-REAPAMOUNT=1,3
-SKILL=60.0,110.0
-REGEN=60*60*10
-
-[REGIONRESOURCE mr_mytheril]
-AMOUNT=2,3
-REAP=i_ore_mytheril
-REAPAMOUNT=1,3
-SKILL=60.0,110.0
-REGEN=60*60*10
-
-[REGIONRESOURCE mr_blackrock]
-AMOUNT=1,3
-REAP=i_ore_blackrock
 REAPAMOUNT=1,3
 SKILL=60.0,110.0
 REGEN=60*60*10

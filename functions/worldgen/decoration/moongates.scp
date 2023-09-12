@@ -11,7 +11,7 @@ VERSION=X1
 //updated to look more pleasing with the enhanced client
 
 
-[defname moongate_settings]
+[DEFNAME moongate_settings]
 moongates_facet0_active		1	//1=on 2=off
 moongates_facet1_active		0
 moongates_facet2_active		0
@@ -31,7 +31,7 @@ moongates_facet0_7 	643,2067,5,0,Skara Brae		//skara brae
 moongates_facet0_8 	2711,2234,0,0,Buccaneer's Den 	//bucs den
 moongates_facet0_9	3725,2498,11,0,Ocllo (Newplayers)	//Ocllo
 moongates_facet0_9_hue	63
-moongates_facet0_10	
+moongates_facet0_10
 
 moongates_facet1	 Trammel
 moongates_facet1_0 	4467,1283,5,1,Moonglow 		//moonglow
@@ -44,8 +44,8 @@ moongates_facet1_6 	1828,2948,-20,1,Trinsic 		//trinsic
 moongates_facet1_7 	643,2067,5,1,Skara Brae 		//skara brae
 moongates_facet1_8 	3450,2677,26,1,New Haven 		//New Haven
 
-moongates_facet2	 Ilshenar	
-moongates_facet2_0 	1215,467,-13,2,Compassion 	//compassion	
+moongates_facet2	 Ilshenar
+moongates_facet2_0 	1215,467,-13,2,Compassion 	//compassion
 moongates_facet2_1 	722,1366,-60,2,Honesty 	//honesty
 moongates_facet2_2 	752,724,-27,2,Honor	 	//honor
 moongates_facet2_3 	281,1016,0,2,Humility 	//humility
@@ -67,7 +67,7 @@ moongates_facet4_2 	270,628,15,4,Homare-Jima 	//homare jima
 moongates_facet5 	Ter Mur
 moongates_facet5_0 	851,3525,-38,5,Royal City	//royal city
 
-[function place_moongates] 
+[FUNCTION place_moongates]
 forinstances i_moongate
   remove
 endfor
@@ -77,14 +77,14 @@ for f 0 6
     if <def0.moongates_facet<dlocal.f>_<dlocal.m>>
       serv.newitem i_moongate
       new.p <def0.moongates_facet<dlocal.f>_<dlocal.m>>
-      new.attr attr_static|attr_move_never 
+      new.attr attr_static|attr_move_never
     endif
   endfor
  endif
 endfor
 sysmessage Moongates placed
 
-[function remove_moongates]
+[FUNCTION remove_moongates]
 forinstances i_moongate
   remove
 endfor

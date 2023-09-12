@@ -1,5 +1,5 @@
 
-[function spawn_ice_dungeon_felucca]
+[FUNCTION spawn_ice_dungeon_felucca]
 //##############
 //## By Nerun ##
 //##############
@@ -54,4 +54,4 @@ f_create_spawner,TreasureLevel4,,,,,,5682,314,0,2,60,120,1,1,1,1,0,0,0,0,0
 f_create_spawner,TreasureLevel4,,,,,,5666,331,0,2,60,120,1,1,1,1,0,0,0,0,0
 f_create_spawner,TreasureLevel4,,,,,,5676,331,0,2,60,120,1,1,1,1,0,0,0,0,0
 
-[eof]
+[EOF]

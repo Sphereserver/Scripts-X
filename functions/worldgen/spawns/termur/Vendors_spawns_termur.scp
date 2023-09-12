@@ -1,4 +1,4 @@
-[function spawn_vendors_ter_mur]
+[FUNCTION spawn_vendors_ter_mur]
 
 //###############
 //## By PsYiOn ##
@@ -43,4 +43,4 @@ f_create_spawner,farmer,farmer,,,,,794,3446,-10,1,5,10,5,0,1,1,1,0,0,0,0
 f_create_spawner,jeweler,,,,,,779,3431,-10,1,5,10,5,0,1,1,0,0,0,0,0
 f_create_spawner,towncrier,,,,,,842,3453,-18,2,5,10,4,0,1,1,0,0,0,0,0
 
-[eof]
+[EOF]
