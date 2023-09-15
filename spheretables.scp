@@ -5,14 +5,14 @@
 VERSION=X1
 
 [COMMENT spheretables]
-NOTE: This file is loaded 2nd after SPHERE.INI and the order is very important,
-so be aware that the resources section is processed top down... if a file near
-the top is dependant on a file near the bottom, you may try to slide the dependent
-file up the list... but sometimes unreconcilable dependencies can happen, in which
-case the problematic file may need to be split.
+NOTE: THIS FILE is loaded 2nd after SPHERE.INI and the order is very important,
+so be aware that the RESOURCES section is processed top down... IF a FILE near
+the top is dependant on a FILE near the bottom, you may TRY to slide the dependent
+FILE up the list... but sometimes unreconcilable dependencies CAN happen, in which
+case the problematic FILE may need to be split.
 
 As a general rule:
-- DEFNAMEs come first
+- DEFNAMES come first
 - TYPEDEF and EVENTS second
 - ITEMDEF and CHARDEF
 - REGION* comes before AREADEF and ROOMDEF
@@ -22,8 +22,6 @@ As a general rule:
 [RESOURCES]
 // sphere.ini and spheretable.scp are automatic.
 // All the other scripts we want to load.
-crafting/
-crafting/interface/
 core/backwards_compatibility_functions.scp
 //core/backwards_compatibility_56b.scp
 //core/backwards_compatibility_56c.scp
@@ -69,11 +67,15 @@ events/
 spells/
 npcs/
 spawns/
-stones/
-stones/guilds/
-stones/towns/
-housing/
 functions/
+
+// systems
+systems/crafting/
+systems/crafting/interface/
+systems/stones/
+systems/stones/guilds/
+systems/stones/towns/
+systems/housing/
 
 //legacy
 legacy/crafting/

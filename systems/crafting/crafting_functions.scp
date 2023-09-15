@@ -16,95 +16,95 @@ VERSION=X1
 // OSI Crafting System
 
 [FUNCTION f_craftskill]
-if strcmp("<argv[0]>","<ctag.craft.skill>")
+IF STRCMP("<ARGV[0]>","<ctag.craft.SKILL>")
    ctag.craft.last
-   ctag.craft.page.sidebar
+   ctag.craft.PAGE.sidebar
    ctag.craft.sidebar = 01
-endif
-ctag.craft.skill=<argv[0]>
-if !(<ctag0.craft.mark>) && (<def0.<ctag0.craft.skill>_marking>)
+ENDIF
+ctag.craft.SKILL=<ARGV[0]>
+IF !(<ctag0.craft.mark>) && (<def0.<ctag0.craft.SKILL>_marking>)
    ctag.craft.mark=2
-endif
+ENDIF
 f_resenddialog d_craft_menu
 
 
 [FUNCTION f_craft]
 //<args> = Item ID need to be craft
-local.recipe = <getargv 3 <ctag0.craft.item.options>>
-if <local.recipe> == 1
-   if !<tag0.recipe.<serv.itemdef.<ctag0.craft.item>.baseid>>
-      ctag.craft.message = <def.scp.craft_msg_norecipe>
+local.recipe = <getargv 3 <ctag0.craft.ITEM.options>>
+IF <local.recipe> == 1
+   IF !<TAG0.recipe.<SERV.ITEMDEF.<ctag0.craft.ITEM>.BASEID>>
+      ctag.craft.MESSAGE = <DEF.scp.craft_msg_norecipe>
       f_resenddialog d_craft_menu
-      return 1
-   endif
-endif
-if <account.resdisp> < <getargv 4 <ctag0.craft.item.options>>
-   ctag.craft.message = <def.scp.craft_msg_noexpansion>
+      RETURN 1
+   ENDIF
+ENDIF
+IF <ACCOUNT.resdisp> < <getargv 4 <ctag0.craft.ITEM.options>>
+   ctag.craft.MESSAGE = <DEF.scp.craft_msg_noexpansion>
    f_resenddialog d_craft_menu
-   return 1
-endif
+   RETURN 1
+ENDIF
 
 // if the first material is different from base, then we need to use MATOVERRIDE
 //TODO: need to clean this matoverride stuff
-IF (<def.<ctag0.craft.skill>_material_<dctag.craft.material.<ctag.craft.skill>>_resourceid> != <SERV.ITEMDEF.<args>.RESOURCES.1.KEY.NAME>)
-    TAG.MATOVERRIDE_<def.<ctag0.craft.skill>_resourceid> = <def.<ctag0.craft.skill>_material_<dctag.craft.material.<ctag.craft.skill>>_resourceid>
+IF (<DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid> != <SERV.ITEMDEF.<ARGS>.RESOURCES.1.KEY.NAME>)
+    TAG.MATOVERRIDE_<DEF.<ctag0.craft.SKILL>_resourceid> = <DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid>
 ENDIF
 
-if !<canmakeskill <args>>
-   ctag.craft.message = <def.scp.craft_msg_noskill>
+IF !<canmakeskill <ARGS>>
+   ctag.craft.MESSAGE = <DEF.scp.craft_msg_noskill>
    f_resenddialog d_craft_menu
-   return 1
-elif !<canmake  <args>>
-   ctag.craft.message = <def.scp.craft_msg_noresources>
+   RETURN 1
+elif !<canmake  <ARGS>>
+   ctag.craft.MESSAGE = <DEF.scp.craft_msg_noresources>
    f_resenddialog d_craft_menu
-   return 1
-elif !<isempty <def.<ctag0.craft.skill>_check>>
-   if (<<def.<ctag0.craft.skill>_check> <args>>)
+   RETURN 1
+elif !<isempty <DEF.<ctag0.craft.SKILL>_check>>
+   IF (<<DEF.<ctag0.craft.SKILL>_check> <ARGS>>)
       f_resenddialog d_craft_menu
-      return 1
-   endif
-endif
-makeitem <args>
-f_craftsuccesschance <args>
-ctag.craft.message = "Creating <serv.itemdef.<args>.name>..."
-ctag.craft.last.<ctag0.craft.skill> = <args>
-if !strcmpi("Cooking","<ctag0.craft.skill>")
-   timerf <eval <serv.skill.13.delay>/10>,craftcooking <args>,<actdiff> // Cooking Fix
-endif
-LOCAL.NewLastTen=<args>
-for 0 9
-   LOCAL.TempItem=<getargv <LOCAL._for> <TAG0.craft.lastTen.<ctag0.craft.skill>>>
+      RETURN 1
+   ENDIF
+ENDIF
+MAKEITEM <ARGS>
+f_craftsuccesschance <ARGS>
+ctag.craft.MESSAGE = "Creating <SERV.ITEMDEF.<ARGS>.NAME>..."
+ctag.craft.last.<ctag0.craft.SKILL> = <ARGS>
+IF !STRCMPI("COOKING","<ctag0.craft.SKILL>")
+   timerf <EVAL <SERV.SKILL.13.delay>/10>,craftcooking <ARGS>,<actdiff> // Cooking Fix
+ENDIF
+LOCAL.NewLastTen=<ARGS>
+FOR 0 9
+   LOCAL.TempItem=<getargv <LOCAL._for> <TAG0.craft.lastTen.<ctag0.craft.SKILL>>>
    IF (<LOCAL.TempItem>) && !(STRMATCH(*<LOCAL.TempItem>*,<LOCAL.NewLastTen>))
       LOCAL.NewLastTen=<LOCAL.NewLastTen>,<LOCAL.TempItem>
    ENDIF
-endfor
+ENDFOR
 
 
 [FUNCTION f_craftcooking]
-if (<canmake <argv[0]>>) && (<argv[1]> > 0)
-   serv.newitem <argv[0]>
-   consume <new.resources>
-   new.bounce
-   ctag.craft.message = <def.scp.craft_msg_success>
-   skillgain cooking <r2>
-else
-   ctag.craft.message = <def.scp.craft_msg_fail>
-endif
-f_craftskill cooking
+IF (<canmake <ARGV[0]>>) && (<ARGV[1]> > 0)
+   SERV.NEWITEM <ARGV[0]>
+   CONSUME <NEW.RESOURCES>
+   NEW.BOUNCE
+   ctag.craft.MESSAGE = <DEF.scp.craft_msg_success>
+   skillgain COOKING <r2>
+ELSE
+   ctag.craft.MESSAGE = <DEF.scp.craft_msg_fail>
+ENDIF
+f_craftskill COOKING
 
 [FUNCTION f_canmake]
 //<args> = Item ID need to be craft
-FOR 1 <SERV.ITEMDEF.<args>.RESOURCES.COUNT>
+FOR 1 <SERV.ITEMDEF.<ARGS>.RESOURCES.COUNT>
 	// set the resource_name we can use to check the resource
-	LOCAL.RESOURCE_NAME=<SERV.ITEMDEF.<args>.RESOURCES.<dlocal._for>.KEY.NAME>
+	LOCAL.RESOURCE_NAME=<SERV.ITEMDEF.<ARGS>.RESOURCES.<dlocal._for>.KEY.NAME>
 
 	//if is different from base, then we need to check the resource
-	IF (!<ISEMPTY <def.<ctag0.craft.skill>_material_<dctag.craft.material.<ctag.craft.skill>>_resourceid>> && <def.<ctag0.craft.skill>_material_<dctag.craft.material.<ctag.craft.skill>>_resourceid> != <LOCAL.RESOURCE_NAME> )
-		LOCAL.RESOURCE_NAME=<def.<ctag0.craft.skill>_material_<dctag.craft.material.<ctag.craft.skill>>_resourceid>
+	IF (!<ISEMPTY <DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid>> && <DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid> != <LOCAL.RESOURCE_NAME> )
+		LOCAL.RESOURCE_NAME=<DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid>
 	ENDIF
 
 	// check if we have the resource
-	IF !(<RESTEST <SERV.ITEMDEF.<args>.RESOURCES.<dlocal._for>.VALUE> <LOCAL.RESOURCE_NAME>>)
+	IF !(<RESTEST <SERV.ITEMDEF.<ARGS>.RESOURCES.<dlocal._for>.VALUE> <LOCAL.RESOURCE_NAME>>)
 		RETURN 0
 	ENDIF
 ENDFOR
@@ -114,32 +114,32 @@ RETURN 1
 [FUNCTION f_makeitem]
 //<args> = Item ID need to be craft
 //evaluate if success or fail
-if (<src.<serv.skill.<serv.itemdef.<args>.skillmake.1.key>.key>> >= <serv.itemdef.<args>.skillmake.1.val>)
-   local.r = <eval (<src.<serv.skill.<serv.itemdef.<args>.skillmake.1.key>.key>> - <serv.itemdef.<args>.skillmake.1.val>) * 2>
-   local.r += <def.<src.ctag0.craft.skill>_chanceatmin>
-endif
+IF (<SRC.<SERV.SKILL.<SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.KEY>.KEY>> >= <SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.val>)
+   local.r = <EVAL (<SRC.<SERV.SKILL.<SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.KEY>.KEY>> - <SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.val>) * 2>
+   local.r += <DEF.<SRC.ctag0.craft.SKILL>_chanceatmin>
+ENDIF
 
 // chance to success
-if (<R1000> < <local.r>)
+IF (<R1000> < <local.r>)
 	LOCAL.SUCCESS=1
-else
+ELSE
 	LOCAL.SUCCESS=0
-endif
+ENDIF
 
 // skillgain (maybe we can increase the chance if success)
-SKILLGAIN <SERV.ITEMDEF.<args>.SKILLMAKE.1.KEY> <SERV.ITEMDEF.<args>.SKILLMAKE.1.VAL>
+SKILLGAIN <SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.KEY> <SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.VAL>
 
 // consume resources
-FOR 1 <SERV.ITEMDEF.<args>.RESOURCES.COUNT>
+FOR 1 <SERV.ITEMDEF.<ARGS>.RESOURCES.COUNT>
 	// set the resource_name we can use to check the resource
-	LOCAL.RESOURCE_NAME=<SERV.ITEMDEF.<args>.RESOURCES.<dlocal._for>.KEY.NAME>
+	LOCAL.RESOURCE_NAME=<SERV.ITEMDEF.<ARGS>.RESOURCES.<dlocal._for>.KEY.NAME>
 	// if is different from base, then we need to check the resource
-	IF (<def.<ctag0.craft.skill>_material_<dctag.craft.material.<ctag.craft.skill>>_resourceid> != <LOCAL.RESOURCE_NAME> )
-		LOCAL.RESOURCE_NAME=<def.<ctag0.craft.skill>_material_<dctag.craft.material.<ctag.craft.skill>>_resourceid>
+	IF (<DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid> != <LOCAL.RESOURCE_NAME> )
+		LOCAL.RESOURCE_NAME=<DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid>
 	ENDIF
 
 	// consume
-	LOCAL.CONSUME_QTY = <SERV.ITEMDEF.<args>.RESOURCES.<dlocal._for>.VALUE>
+	LOCAL.CONSUME_QTY = <SERV.ITEMDEF.<ARGS>.RESOURCES.<dlocal._for>.VALUE>
 
 	// if fail consume 1
 	IF (!<LOCAL.SUCCESS>)
@@ -157,22 +157,22 @@ ENDFOR
 // if success, we create the item
 IF (<LOCAL.SUCCESS>)
 	// create the item
-	SERV.NEWITEM=<args>
+	SERV.NEWITEM=<ARGS>
 	NEW.BOUNCE
 
-	ctag.craft.message = "Creating <serv.itemdef.<args>.name>..."
-	ctag.craft.last.<ctag0.craft.skill> = <args>
-	IF !strcmpi("Cooking","<ctag0.craft.skill>")
-		timerf <eval <serv.skill.13.delay>/10>,f_craftcooking <args>,<actdiff> // Cooking Fix
+	ctag.craft.MESSAGE = "Creating <SERV.ITEMDEF.<ARGS>.NAME>..."
+	ctag.craft.last.<ctag0.craft.SKILL> = <ARGS>
+	IF !STRCMPI("COOKING","<ctag0.craft.SKILL>")
+		timerf <EVAL <SERV.SKILL.13.delay>/10>,f_craftcooking <ARGS>,<actdiff> // Cooking Fix
 	ENDIF
-	LOCAL.NewLastTen=<args>
+	LOCAL.NewLastTen=<ARGS>
 	FOR 0 9
-		LOCAL.TempItem=<getargv <LOCAL._for> <TAG0.craft.lastTen.<ctag0.craft.skill>>>
+		LOCAL.TempItem=<getargv <LOCAL._for> <TAG0.craft.lastTen.<ctag0.craft.SKILL>>>
 		IF (<LOCAL.TempItem>) && !(STRMATCH(*<LOCAL.TempItem>*,<LOCAL.NewLastTen>))
 			LOCAL.NewLastTen=<LOCAL.NewLastTen>,<LOCAL.TempItem>
 		ENDIF
 	ENDFOR
-	TAG.craft.lastTen.<ctag0.craft.skill>=<LOCAL.NewLastTen>
+	TAG.craft.lastTen.<ctag0.craft.SKILL>=<LOCAL.NewLastTen>
 ENDIF
 //TODO: maybe use skillusequick
 //SKILLUSEQUICK <ctag0.craft.skill> 800
@@ -193,7 +193,7 @@ ENDIF
 RETURN 1
 
 [FUNCTION f_enhancesuccesschance]
-IF (<SRC.Imbuing> >= <serv.itemdef.<args>.skillmake.1.val>)
+IF (<SRC.Imbuing> >= <SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.val>)
    LOCAL.R = <EVAL (<SRC.Imbuing>> - <SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.VAL>) * 2>
    LOCAL.R += <DEF.<SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.NAME>_CHANCEATMIN>
 ENDIF
@@ -214,81 +214,81 @@ ELSE
 ENDIF
 
 [FUNCTION f_craftsuccesschance]
-if (<src.<serv.skill.<serv.itemdef.<args>.skillmake.1.key>.key>> >= <serv.itemdef.<args>.skillmake.1.val>)
-   local.r = <eval (<src.<serv.skill.<serv.itemdef.<args>.skillmake.1.key>.key>> - <serv.itemdef.<args>.skillmake.1.val>) * 2>
-   local.r += <def.<src.ctag0.craft.skill>_chanceatmin>
-endif
-if !(<isitem>)
-   if (<r1000> < <local.r>)
+IF (<SRC.<SERV.SKILL.<SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.KEY>.KEY>> >= <SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.val>)
+   local.r = <EVAL (<SRC.<SERV.SKILL.<SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.KEY>.KEY>> - <SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.val>) * 2>
+   local.r += <DEF.<SRC.ctag0.craft.SKILL>_chanceatmin>
+ENDIF
+IF !(<ISITEM>)
+   IF (<r1000> < <local.r>)
       actdiff = 10
-   else
+   ELSE
       actdiff = -10
-   endif
-   return 1
-else
-   if <local.r> < 0
+   ENDIF
+   RETURN 1
+ELSE
+   IF <local.r> < 0
       local.r = 0
    elif <local.r> > 1000
       local.r = 1000
-   endif
-   return <local.r>
-endif
+   ENDIF
+   RETURN <local.r>
+ENDIF
 
 [FUNCTION f_craft_exceptionalchance]
-if !(<getargv 1 <src.ctag0.craft.item.options>>)
-   return 0
-endif
-local.successchance = <eval (<src.<serv.skill.<serv.itemdef.<baseid>.skillmake.1.key>.key>> - <serv.itemdef.<baseid>.skillmake.1.val>) * 2>
-local.successchance += <def.<src.ctag0.craft.skill>_chanceatmin>
-local.r = <eval <local.successchance> - 450>
+IF !(<getargv 1 <SRC.ctag0.craft.ITEM.options>>)
+   RETURN 0
+ENDIF
+local.successchance = <EVAL (<SRC.<SERV.SKILL.<SERV.ITEMDEF.<BASEID>.SKILLMAKE.1.KEY>.KEY>> - <SERV.ITEMDEF.<BASEID>.SKILLMAKE.1.val>) * 2>
+local.successchance += <DEF.<SRC.ctag0.craft.SKILL>_chanceatmin>
+local.r = <EVAL <local.successchance> - 450>
 
-if <local.r> < 0
+IF <local.r> < 0
    local.r = 0
 elif <local.r> > 1000
    local.r = 1000
-endif
-return <local.r>
+ENDIF
+RETURN <local.r>
 
 [FUNCTION f_crafting_render_materials]
-xmfhtmlgumpcolor 175 40 370 20 1044011 0 0 <ddef.dcolor_white>
+XMFHTMLGUMPCOLOR 175 40 370 20 1044011 0 0 <ddef.dcolor_white>
 local.x = 180
-dorigin 180 45
-while !(<isempty <def.<ctag0.craft.skill>_material_<dlocal.n>_name>>)
-dtext +35 *20 0480 <def.<ctag0.craft.skill>_material_<dlocal.n>_name>
-button *0 *0 4005 4007 1 0 <eval 5020 + <local.n>>
-if <local.n> > 9
+DORIGIN 180 45
+WHILE !(<isempty <DEF.<ctag0.craft.SKILL>_material_<dlocal.n>_name>>)
+DTEXT +35 *20 0480 <DEF.<ctag0.craft.SKILL>_material_<dlocal.n>_name>
+BUTTON *0 *0 4005 4007 1 0 <EVAL 5020 + <local.n>>
+IF <local.n> > 9
    local.x += 180
-   dorigin <local.x> 45
-endif
+   DORIGIN <local.x> 45
+ENDIF
 local.n ++
-endwhile
+ENDWHILE
 
 [FUNCTION f_craft_exceptionalbonus] // ITEM.f_craft_exceptionalbonus <UID>
-ref1 = <args>
-if <isweapon>
-	local.totalbonus = <min 40,<eval 35 + (<ref1.armslore> / 200)>>
-	tag0.DamageIncrease += <local.totalbonus>
+ref1 = <ARGS>
+IF <isweapon>
+	local.totalbonus = <min 40,<EVAL 35 + (<ref1.ARMSLORE> / 200)>>
+	TAG0.DamageIncrease += <local.totalbonus>
 elif <isarmor>
-	local.totalbonus = <min 20,<eval 15 + (<ref1.armslore> / 200)>>
-	for <local.totalbonus>
-		dorand 5
-			tag0.ResPhysical ++
-			tag0.ResFire ++
-			tag0.ResCold ++
-			tag0.ResEnergy ++
-			tag0.ResPoison ++
-		enddo
-	endfor
-elif <tag0.UsesRemaining>
-	local.totalbonus = <min 40,<eval 35 + (<ref1.armslore> / 200)>> // FIXME: couldn't find any information on the actual formula so this is completely made up.
-	tag0.UsesRemaining += <local.totalbonus>
-endif
+	local.totalbonus = <min 20,<EVAL 15 + (<ref1.ARMSLORE> / 200)>>
+	FOR <local.totalbonus>
+		DORAND 5
+			TAG0.ResPhysical ++
+			TAG0.ResFire ++
+			TAG0.ResCold ++
+			TAG0.ResEnergy ++
+			TAG0.ResPoison ++
+		ENDDO
+	ENDFOR
+elif <TAG0.UsesRemaining>
+	local.totalbonus = <min 40,<EVAL 35 + (<ref1.ARMSLORE> / 200)>> // FIXME: couldn't find any information on the actual formula so this is completely made up.
+	TAG0.UsesRemaining += <local.totalbonus>
+ENDIF
 
 //Blacksmithing
 
 [FUNCTION f_craft_blacksmith_checkforge]
 IF ((!<ISNEARTYPE t_forge 3>) || (!<ISNEARTYPE t_anvil 3>))
-   CTAG.craft.message=<DEF.SCP.craft_msg_smithingneeds>
+   CTAG.craft.MESSAGE=<DEF.SCP.craft_msg_smithingneeds>
    RETURN 1
 ENDIF
 RETURN 0
@@ -297,15 +297,15 @@ RETURN 0
 REF5=<ARGS>
 NAME=Exceptional <NAME>
 IF (<ISWEAPON>)
-   tag0.damageincrease += <eval 35 + (<ref5.armslore> / 200)>
+   TAG0.damageincrease += <EVAL 35 + (<ref5.ARMSLORE> / 200)>
 ELIF (<ISARMOR>)
-   modar += <eval (<armor.high> * 15) / 100>
+   modar += <EVAL (<ARMOR.high> * 15) / 100>
 ENDIF
 
 
 [FUNCTION f_craft_blacksmith_repair]
 IF (!<ISNEARTYPE t_forge 3>) || (!<ISNEARTYPE t_anvil 3>)
-   CTAG.craft.message=<DEF.SCP.craft_msg_smithrepairneeds>
+   CTAG.craft.MESSAGE=<DEF.SCP.craft_msg_smithrepairneeds>
    f_resenddialog d_craft_menu
    RETURN 1
 ENDIF
@@ -314,11 +314,11 @@ SYSMESSAGE <DEF.SCP.craft_repair_targ>
 
 //TODO: consume resource if fail to
 [FUNCTION f_craft_blacksmith_repair_targ]
-LOCAL.Max = <argo.more1h>
+LOCAL.Max = <ARGO.MORE1H>
 LOCAL.Res = <STRARG <ARGO.RESOURCES.1.VALUE>>
 LOCAL.ResID = <STRARG <ARGO.RESOURCES.1.KEY>>
 LOCAL.Total = <LOCAL.max>/<LOCAL.res>
-LOCAL.ToRepair = <argo.more1h> - <argo.more1l>
+LOCAL.ToRepair = <ARGO.MORE1H> - <ARGO.MORE1L>
 LOCAL.IngotNeeded = <LOCAL.ToRepair>/<LOCAL.Total>
 
 //override res id if exist
@@ -327,25 +327,25 @@ IF (!<ISEMPTY <ARGO.TAG.CRAFT.RESOURCE>>)
 ENDIF
 
 IF (!<ISNEARTYPE t_forge 3>) || (!<ISNEARTYPE t_anvil 3>)
-   CTAG.craft.message=<DEF.SCP.craft_msg_smithrepairneeds>
+   CTAG.craft.MESSAGE=<DEF.SCP.craft_msg_smithrepairneeds>
    LOCAL.FailedRequirement=1
 // ELIF (!<ARGO.ISTEVENT.t_equipitem>)
    // CTAG.Craft.Message=<DEF.SCP.craft_repair_notitem>
    // LOCAL.FailedRequirement=1
-ELIF (<ARGO.SKILLMAKE.1.KEY>!=<SRC.CTAG0.craft.skill>)
-   CTAG.Craft.Message=<DEF.SCP.craft_repair_wrongskill>
+ELIF (<ARGO.SKILLMAKE.1.KEY>!=<SRC.CTAG0.craft.SKILL>)
+   CTAG.Craft.MESSAGE=<DEF.SCP.craft_repair_wrongskill>
    LOCAL.FailedRequirement=1
 ELIF (<ARGO.CONT> != <FINDLAYER(layer_pack).UID>)
-   CTAG.Craft.Message=<DEF.SCP.craft_repair_inpack>
+   CTAG.Craft.MESSAGE=<DEF.SCP.craft_repair_inpack>
    LOCAL.FailedRequirement=1
 ELIF ((<ARGO.SKILLMAKE.1.KEY> != skill_blacksmith) || !((<ARGO.TYPE> == t_armor) || (<ARGO.TYPE> == t_shield) || (<ARGO.ISWEAPON>)))
-   CTAG.Craft.Message=<DEF.SCP.craft_repair_wrongskill>
+   CTAG.Craft.MESSAGE=<DEF.SCP.craft_repair_wrongskill>
    LOCAL.FailedRequirement=1
 ELIF (<ARGO.MORE1L> >= <ARGO.MORE1H>)
-   CTAG.Craft.Message=<DEF.SCP.craft_repair_fullrepair>
+   CTAG.Craft.MESSAGE=<DEF.SCP.craft_repair_fullrepair>
    LOCAL.FailedRequirement=1
 ELIF (<ARGO.MORE1H> <= 0)
-   CTAG.Craft.Message=<DEF.SCP.craft_repair_cannot>
+   CTAG.Craft.MESSAGE=<DEF.SCP.craft_repair_cannot>
    LOCAL.FailedRequirement=1
 ENDIF
 
@@ -355,7 +355,7 @@ IF (<LOCAL.FailedRequirement>)
 ENDIF
 
 IF !(<SRC.RESTEST <DLOCAL.IngotNeeded> <LOCAL.ResID>>)
-	CTAG.Craft.Message=You don't have enough ingots
+	CTAG.Craft.MESSAGE=You don't have enough ingots
     f_resenddialog d_craft_menu
 	RETURN 1
 ENDIF
@@ -370,12 +370,12 @@ ENDIF
 //LOCAL.decrease += <EVAL {2 4}>
 ARGO.MORE1H=<EVAL (<ARGO.MORE1H> * (100 - <LOCAL.decrease>)) / 100>
 IF (<LOCAL.difficulty> > <R100>)
-   CTAG.craft.message=<DEF.SCP.craft_repair_fail>
+   CTAG.craft.MESSAGE=<DEF.SCP.craft_repair_fail>
    f_resenddialog d_craft_menu
    RETURN 1
 ELSE
    ARGO.MORE1L=<ARGO.MORE1H>
-   CTAG.craft.message=<DEF.SCP.craft_repair_success>
+   CTAG.craft.MESSAGE=<DEF.SCP.craft_repair_success>
    SRC.CONSUME <DLOCAL.IngotNeeded> <LOCAL.ResID>
    f_resenddialog d_craft_menu
 ENDIF
@@ -384,7 +384,7 @@ RESENDTOOLTIP
 
 [FUNCTION f_craft_blacksmith_smelt]
 IF (!<ISNEARTYPE t_forge 3>)
-   CTAG.craft.message=<DEF.SCP.craft_msg_smithsmeltneeds>
+   CTAG.craft.MESSAGE=<DEF.SCP.craft_msg_smithsmeltneeds>
    f_resenddialog d_craft_menu
    RETURN 1
 ENDIF
@@ -393,18 +393,18 @@ SYSMESSAGE <DEF.SCP.craft_smelt_targ>
 
 [FUNCTION f_craft_blacksmith_smelt_targ]
 IF (<ARGO.TOPOBJ> != <SRC>)
-   src.sysmessage <def.scp.craft_smelt_notinpack>
-	return 1
+   SRC.SYSMESSAGE <DEF.scp.craft_smelt_notinpack>
+	RETURN 1
 ELIF (!<ISNEARTYPE t_forge 3>)
-   CTAG.craft.message=<DEF.SCP.craft_msg_smithsmeltneeds>
+   CTAG.craft.MESSAGE=<DEF.SCP.craft_msg_smithsmeltneeds>
    RETURN 1
 ELIF !<ARGO.ISITEM>
    SYSMESSAGE <DEF.SCP.craft_smelt_notitem>
    RETURN 1
 ELIF (<ARGO.TYPE>==t_ore)
-    dclick <argo.uid>
+    dclick <ARGO.UID>
     RETURN 1
-ELIF (<ARGO.TYPE>==t_clothing) || (<ARGO.ATTR>&attr_magic) || !((<ARGO.ISARMOR>) || (<ARGO.ISWEAPON>) || STRMATCH("*ingot*","<ARGO.RESOURCES.1>"))
+ELIF (<ARGO.TYPE>==t_clothing) || (<ARGO.ATTR>&ATTR_MAGIC) || !((<ARGO.ISARMOR>) || (<ARGO.ISWEAPON>) || STRMATCH("*ingot*","<ARGO.RESOURCES.1>"))
    SYSMESSAGE <DEF.SCP.craft_smelt_notsmeltable>
    RETURN 1
 ELSE
@@ -418,27 +418,27 @@ ELSE
     NEW.CONT=<ARGO.CONT>
     ARGO.REMOVE
     SYSMESSAGE <DEF.SCP.craft_smelt_success>
-    src.f_fireforge
+    SRC.f_fireforge
     f_resenddialog d_craft_menu
 ENDIF
 
 [FUNCTION f_craft_cooking_checkfire]
-if (<serv.itemdef.<STREAT <serv.itemdef.<args>.resources>>.type> == t_meat_raw) || (<serv.itemdef.<STREAT <serv.itemdef.<args>.resources>>.type> == t_food_raw)
+IF (<SERV.ITEMDEF.<STREAT <SERV.ITEMDEF.<ARGS>.RESOURCES>>.TYPE> == t_meat_raw) || (<SERV.ITEMDEF.<STREAT <SERV.ITEMDEF.<ARGS>.RESOURCES>>.TYPE> == t_food_raw)
    IF !((<ISNEARTYPE t_fire 3>) || (<ISNEARTYPE t_forge 3>) || (<ISNEARTYPE t_campfire 3>))
-      CTAG.craft.message=<DEF.cooking_check_notice>
+      CTAG.craft.MESSAGE=<DEF.cooking_check_notice>
       RETURN 1
    ENDIF
-endif
+ENDIF
 RETURN 0
 
 [FUNCTION f_check_recipe] //Verification if player have the recipe of the item
 //Parameter: ARGS is the ID of the item  ex i_potion_refresh
 //Return 1 mean fabrication can't be DONE
-if <tag0.recipe.<ARGS>>
-   return 0
-else
-   return 1
-endif
+IF <TAG0.recipe.<ARGS>>
+   RETURN 0
+ELSE
+   RETURN 1
+ENDIF
 
 
 [EOF]

@@ -1,0 +1,258 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+// SCRIPT CREDITS
+// --------------
+// ShiryuX - All the script
+//
+// SCRIPT DOCUMENTATION
+// --------------------
+// This is a basic script that generates all your colored crafting files.
+// By default, only a few comes scripted, so I did this to save time.
+// Before using this, you need to define the colored materials to generate.
+// Along with the items, it will generate a table for each color.
+//
+// Now, how this baby works...
+// Mainly, it loops through all the items in all the categories of all skills
+// For each item, it will do the following proccess:
+// 1. a. This will read the options defined in each skill per each item.
+//    b. If option colored is 1, proceed to step 2.
+// 2. It creates a base item with MAX properties.
+// 3. Apply all the RES* and DAM* tags, apply the function defined for the color.
+// 4. Open/Creates a file in "scripts/items/crafting/"
+//    Name of the file is: "sphere_crafting_SKILL_COLOR.scp"
+//
+// After the main proccess of creating the item scripts per each color:
+// 1. Reads all the entries in crafting skillmenues
+// 2. Open/Creates a file in "scripts/add-on/skillmenu/"
+//    Name of the file is: "sphere_skillmenu_SKILL_colored.scp"
+//
+// To start the whole proccess, just write "ScriptCrafting" in the console
+// Good luck and enjoy it.
+
+[FUNCTION ScriptCrafting]
+f_crafting_generate blacksmithing
+f_crafting_generate BOWCRAFT
+f_crafting_generate CARPENTRY
+f_crafting_generate TAILORING
+
+[FUNCTION f_crafting_generate]
+local.SKILL = <ARGS>
+SERV.LOG @CraftingGenerator :: Starting generation of <local.SKILL>.
+FOR 1 10
+   IF <isempty <DEF.<local.SKILL>_material_<dlocal._for>>>
+      SERV.LOG @CraftingGenerator :: Finished generation of <local.SKILL>.
+      RETURN 1
+   ENDIF
+   f_make_craftinglist <local.SKILL>,<local._for>
+   FOR u 1 20
+      IF !<isempty <DEF.<local.SKILL>_category_<dlocal.u>_1>>
+         FOR y 1 100
+            IF !<isempty <DEF.<local.SKILL>_category_<dlocal.u>_<dlocal.y>>>
+               IF <isempty <DEF.<local.SKILL>_category_<dlocal.u>_<dlocal.y>_opt>>
+                  local.colored = <getargv 2 <DEF.<local.SKILL>_options_default>>
+               ELSE
+                  local.colored = <getargv 2 <DEF.<local.SKILL>_category_<dlocal.u>_<dlocal.y>_opt>>
+               ENDIF
+               IF <local.colored> == 1
+                  f_craft_item <DEF.<local.SKILL>_category_<dlocal.u>_<dlocal.y>>,<local.SKILL>,<local._for>
+               ENDIF
+            ENDIF
+         ENDFOR
+      ENDIF
+   ENDFOR
+ENDFOR
+
+[FUNCTION f_make_craftinglist]
+local.SKILL = <ARGV[0]>
+local.material = <ARGV[1]>
+local.topen = "scripts/add-on/skillmenu/sphere_skillmenu_<local.SKILL>_colored.scp" // _<def.<local.skill>_material_<dlocal.material>>
+FILE.mode.append = 1
+IF <FILE.open <local.topen>>
+   FILE.writeline "[DEFNAME sphere_crafting_blacksmithing_<DEF.<local.SKILL>_material_<dlocal.material>>]"
+   FOR y 1 20
+      IF !<isempty <DEF.<local.SKILL>_category_<dlocal.y>_1>>
+         local.items = 1
+         FOR z 1 100
+            IF !<isempty <DEF.<local.SKILL>_category_<dlocal.y>_<dlocal.z>>>
+               IF <isempty <DEF.<local.SKILL>_category_<dlocal.y>_<dlocal.z>_opt>>
+                  local.colored = <getargv 2 <DEF.<local.SKILL>_options_default>>
+               ELSE
+                  local.colored = <getargv 2 <DEF.<local.SKILL>_category_<dlocal.y>_<dlocal.z>_opt>>
+               ENDIF
+               IF <local.colored> == 1
+                  FILE.writeline <local.SKILL>_<dlocal.material>_category_<dlocal.y>_<dlocal.items> "<DEF.<local.SKILL>_category_<dlocal.y>_<dlocal.z>>_<DEF.<local.SKILL>_material_<dlocal.material>>"
+                  local.items ++
+               ENDIF
+            ENDIF
+         ENDFOR
+         IF <local.items>
+            FILE.writeline " "
+         ENDIF
+      ENDIF
+   ENDFOR
+   FILE.writeline " "
+   FILE.close
+ENDIF
+
+// f_craft_item $item,$skill,$resource
+[FUNCTION f_craft_item]
+local.ITEM = <ARGV[0]>
+local.SKILL = <ARGV[1]>
+local.material = <ARGV[2]>
+SERV.NEWITEM <local.ITEM>
+NEW.NAME = <DEF.<local.SKILL>_material_<dlocal.material>_name> <NEW.NAME>
+NEW.COLOR = <DEF.<local.SKILL>_material_<dlocal.material>_color>
+IF <NEW.isweapon>
+   NEW.HITPOINTS = 48
+   ARGS = <DEF.<local.SKILL>_material_<dlocal.material>_weaps_dam>
+   NEW.TAG0.DamPhysical = <EVAL <NEW.TAG0.DamPhysical> + <ARGV[0]>>
+   NEW.TAG0.DamFire = <EVAL <NEW.TAG0.DamPhysical> + <ARGV[1]>>
+   NEW.TAG0.DamCold = <EVAL <NEW.TAG0.DamPhysical> + <ARGV[2]>>
+   NEW.TAG0.DamPoison = <EVAL <NEW.TAG0.DamPhysical> + <ARGV[3]>>
+   NEW.TAG0.DamEnergy = <EVAL <NEW.TAG0.DamPhysical> + <ARGV[4]>>
+   IF !<isempty <ARGV[5]>>
+      IF (STRMATCH("<DEF.<local.SKILL>_material_<dlocal.material>_name>","heartwood"))
+         local.tocall = <ARGV[5]>
+      ELSE
+         NEW.<ARGV[5]>
+      ENDIF
+   ENDIF
+elif <NEW.isarmor>
+   NEW.HITPOINTS = 48
+   ARGS = <DEF.<local.SKILL>_material_<dlocal.material>_armor_res>
+   NEW.TAG0.ResPhysical = <EVAL <NEW.TAG0.ResPhysical> + <ARGV[0]>>
+   NEW.TAG0.ResFire = <EVAL <NEW.TAG0.ResFire> + <ARGV[1]>>
+   NEW.TAG0.ResCold = <EVAL <NEW.TAG0.ResCold> + <ARGV[2]>>
+   NEW.TAG0.ResPoison = <EVAL <NEW.TAG0.ResPoison> + <ARGV[3]>>
+   NEW.TAG0.ResEnergy = <EVAL <NEW.TAG0.ResEnergy> + <ARGV[4]>>
+   IF !<isempty <ARGV[5]>>
+      IF (STRMATCH("<DEF.<local.SKILL>_material_<dlocal.material>_name>","heartwood"))
+         local.tocall = <ARGV[5]>
+      ELSE
+         NEW.<ARGV[5]>
+      ENDIF
+   ENDIF
+ENDIF
+call f_script_item <NEW.UID>
+NEW.REMOVE
+
+[FUNCTION f_script_item]
+ref1 = <ARGS>
+FILE.close
+FILE.mode.append = 1
+local.topen = scripts/items/crafting/sphere_crafting_<local.SKILL>_<DEF.<local.SKILL>_material_<dlocal.material>>.scp
+IF <FILE.open <local.topen>>
+   FILE.writeline "[ITEMDEF <ref1.BASEID>_<DEF.<local.SKILL>_material_<dlocal.material>>]"
+   FILE.writeline "ID=<ref1.ID>"
+   FILE.writeline "NAME=<ref1.NAME>"
+   FILE.writeline "TYPE=<ref1.TYPE>"
+   ARGS = <SERV.ITEMDEF.<ref1.BASEID>.RESOURCES>
+   IF <SERV.ITEMDEF.<local.ITEM>.RESOURCES.1.KEY> == <DEF.<local.SKILL>_resourceid>
+      local.RESOURCES = "<EVAL <SERV.ITEMDEF.<local.ITEM>.RESOURCES.1.val>> <DEF.<local.SKILL>_material_<dlocal.material>_resourceid>"
+      IF <ARGV> > 1
+         FOR j 1 <EVAL <ARGV>-1>
+            local.RESOURCES .= ", <ARGV[<local.j>]>"
+         ENDFOR
+      ENDIF
+   ELSE
+      local.RESOURCES = <ARGV[0]>
+      IF <ARGV> > 1
+         FOR j 1 <EVAL <ARGV>-1>
+            IF <SERV.ITEMDEF.<local.ITEM>.RESOURCES.<dlocal.j>.KEY> == <DEF.<local.SKILL>_resourceid>
+               local.RESOURCES .= ", <SERV.ITEMDEF.<local.ITEM>.RESOURCES.<dlocal.j>.val> <DEF.<local.SKILL>_material_<dlocal.material>_resourceid>"
+            ELSE
+               local.RESOURCES = ", <SERV.ITEMDEF.<local.ITEM>.RESOURCES.<dlocal.j>.val> <STRTRIM <SERV.ITEMDEF.<local.ITEM>.RESOURCES.<dlocal.j>.KEY>>"
+            ENDIF
+         ENDFOR
+      ENDIF
+   ENDIF
+   FILE.writeline "RESOURCES=<local.RESOURCES>"
+   FILE.writeline "SKILLMAKE=<SERV.ITEMDEF.<ref1.BASEID>.SKILLMAKE>"
+   FILE.writeline "WEIGHT=<fval <ref1.WEIGHT>>"
+   IF <ref1.LowerReq>
+      FILE.writeline "REQSTR=<muldiv <ref1.reqstr>,<ref1.LowerReq>,100>"
+   ENDIF
+   IF <ref1.istevent.ei_equipitem>
+      FILE.writeline "TEVENTS=ei_equipitem"
+      FOR 1 <DEF.itemprops>
+         IF !<isempty <ref1.TAG.<getargv 5 <DEF.itemprop_<local.x>>>>>
+            FILE.writeline "TAG.<getargv 5 <DEF.itemprop_<local.x>>=<ref1.TAG0.<getargv 5 <DEF.itemprop_<local.x>>>>"
+         ENDIF
+      ENDFOR
+   ENDIF
+   IF <ref1.isweapon>
+      local.CATEGORY = "Provisions - Weapons"
+      local.SUBSECTION = <qval <ref1.BASEID> == <ref1.ID> ? "<ref1.TYPEDEF.NAME>" : "<SERV.ITEMDEF.<ref1.ID>.NAME>">
+   elif <ref1.isarmor>
+      local.CATEGORY = "Provisions - ARMOR"
+      IF (<ref1.ID> > 02773) && (<ref1.ID> < 027e9)
+         local.SUBSECTION = "<STRARG <ref1.TYPEDEF.NAME>> Samurai ARMOR"
+      ELSE
+         local.SUBSECTION = "<STRARG <ref1.TYPEDEF.NAME>> ARMOR"
+      ENDIF
+      IF <ref1.LAYER> == layer_helm
+         local.SUBSECTION = "Helmets"
+      elif <ref1.LAYER> == layer_hand2
+         local.SUBSECTION = "Shields"
+      ENDIF
+   elif <ref1.TYPE> == t_weapon_arrow
+      local.CATEGORY = "Provisions - Weapons"
+      local.SUBSECTION = "Ammunition"
+   ELSE
+      SERV.LOG @CraftingGenerator :: Cannot recognize TYPE <ref1.TYPE> of <ref1.TYPEDEF.NAME> (<ref1.BASEID>)
+   ENDIF
+   FILE.writeline "CATEGORY=<local.CATEGORY> - Colored"
+   FILE.writeline "SUBSECTION=<DEF.<local.SKILL>_material_<dlocal.material>_name> <local.SUBSECTION>"
+   FILE.writeline "DESCRIPTION=<ref1.NAME>"
+   IF <ref1.TAG0.Penalty.MEDITATION>
+      FILE.writeline "TAG.Penalty.MEDITATION=1"
+   ENDIF
+   IF <ref1.TAG0.Penalty.STEALTH>
+      FILE.writeline "TAG.Penalty.STEALTH=<ref1.dtag0.Penalty.STEALTH>"
+   ENDIF
+   IF <ref1.TAG0.DamPhysical>
+      FILE.writeline "TAG.DamPhysical=<ref1.dtag0.DamPhysical>"
+   ENDIF
+   IF <ref1.TAG0.DamFire>
+      FILE.writeline "TAG.DamFire=<ref1.dtag0.DamFire>"
+   ENDIF
+   IF <ref1.TAG0.DamCold>
+      FILE.writeline "TAG.DamCold=<ref1.dtag0.DamCold>"
+   ENDIF
+   IF <ref1.TAG0.DamPoison>
+      FILE.writeline "TAG.DamPoison=<ref1.dtag0.DamPoison>"
+   ENDIF
+   IF <ref1.TAG0.DamEnergy>
+      FILE.writeline "TAG.DamEnergy=<ref1.dtag0.DamEnergy>"
+   ENDIF
+   IF <ref1.TAG0.ResPhysical>
+      FILE.writeline "TAG.ResPhysical=<ref1.dtag0.ResPhysical>"
+   ENDIF
+   IF <ref1.TAG0.ResFire>
+      FILE.writeline "TAG.ResFire=<ref1.dtag0.ResFire>"
+   ENDIF
+   IF <ref1.TAG0.ResCold>
+      FILE.writeline "TAG.ResCold=<ref1.dtag0.ResCold>"
+   ENDIF
+   IF <ref1.TAG0.ResPoison>
+      FILE.writeline "TAG.ResPoison=<ref1.dtag0.ResPoison>"
+   ENDIF
+   IF <ref1.TAG0.ResEnergy>
+      FILE.writeline "TAG.ResEnergy=<ref1.dtag0.ResEnergy>"
+   ENDIF
+   FILE.writeline " "
+   FILE.writeline "ON=@CREATE"
+   IF !(STRMATCH("<local.tocall>","0"))
+      FILE.writeline "<local.tocall>"
+   ENDIF
+   FILE.writeline "HITPOINTS={<EVAL <ref1.HITPOINTS>-12> <ref1.HITPOINTS>}"
+   FILE.writeline "COLOR=<ref1.COLOR>"
+   FILE.writeline " "
+   FILE.close
+ENDIF
+
+[EOF]
