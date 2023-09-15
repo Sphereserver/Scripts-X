@@ -1,0 +1,157 @@
+[ITEMDEF 013e5]
+DEFNAME=i_ringmail_leggings_decoration
+NAME=decorative ringmail leggings
+FLIP=1
+CATEGORY=Armor
+SUBSECTION=Ringmail Armor
+DESCRIPTION=Ringmail Leggings (decorative)
+DUPELIST=013e6
+
+[ITEMDEF 013e6]
+//ringmail leggings
+DUPEITEM=013e5
+
+[ITEMDEF 013e7]
+DEFNAME=i_ringmail_tunic_decoration
+NAME=decorative ringmail tunic
+FLIP=1
+SKILLMAKE=Blacksmithing 21.9
+CATEGORY=Armor
+SUBSECTION=Ringmail Armor
+DESCRIPTION=Ringmail Tunic (decorative)
+DUPELIST=013e8
+
+[ITEMDEF 013e8]
+//ringmail armor
+DUPEITEM=013e7
+
+[ITEMDEF 013e9]
+DEFNAME=i_ringmail_sleeves_decoration
+NAME=decorative ringmail sleeves
+FLIP=1
+CATEGORY=Armor
+SUBSECTION=Ringmail Armor
+DESCRIPTION=Ringmail Sleeves (decorative)
+DUPELIST=013ea
+
+[ITEMDEF 013ea]
+//ringmail sleeves
+DUPEITEM=013e9
+
+[ITEMDEF 013eb]
+DEFNAME=i_ringmail_gloves
+TYPE=t_armor
+FLIP=1
+ARMOR=22
+VALUE=40
+WEIGHT=2.0
+RESOURCES=10 i_ingot_iron
+SKILLMAKE=Blacksmithing 12.0,Armslore 15.0
+CATEGORY=Armor
+SUBSECTION=Ringmail Armor
+DESCRIPTION=Ringmail Gloves
+CANUSE=can_u_human|can_u_elf
+REQSTR=40
+TEVENTS=ei_equipitem
+DUPELIST=013f2
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=1
+   RESENERGY=3
+   RESFIRE=3
+   RESPHYSICAL=3
+   RESPOISON=5
+
+[ITEMDEF 013ec]
+DEFNAME=i_ringmail_tunic
+TYPE=t_armor
+FLIP=1
+ARMOR=22
+VALUE=72
+WEIGHT=15.0
+RESOURCES=18 i_ingot_iron
+SKILLMAKE=Blacksmithing 21.9,Armslore 15.0
+CATEGORY=Armor
+SUBSECTION=Ringmail Armor
+DESCRIPTION=Ringmail Tunic
+CANUSE=can_u_human|can_u_elf
+REQSTR=40
+TEVENTS=ei_equipitem
+DUPELIST=013ed
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=1
+   RESENERGY=3
+   RESFIRE=3
+   RESPHYSICAL=3
+   RESPOISON=5
+
+[ITEMDEF 013ed]
+//ringmail tunic
+DUPEITEM=013ec
+
+[ITEMDEF 013ee]
+DEFNAME=i_ringmail_sleeves
+TYPE=t_armor
+FLIP=1
+ARMOR=22
+VALUE=56
+WEIGHT=15.0
+RESOURCES=14 i_ingot_iron
+SKILLMAKE=Blacksmithing 16.9,Armslore 15.0
+CATEGORY=Armor
+SUBSECTION=Ringmail Armor
+DESCRIPTION=Ringmail Sleeves
+CANUSE=can_u_human|can_u_elf
+REQSTR=40
+TEVENTS=ei_equipitem
+DUPELIST=013ef
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=1
+   RESENERGY=3
+   RESFIRE=3
+   RESPHYSICAL=3
+   RESPOISON=5
+
+[ITEMDEF 013ef]
+//ringmail sleeves
+DUPEITEM=013ee
+
+[ITEMDEF 013f0]
+DEFNAME=i_ringmail_leggings
+TYPE=t_armor
+FLIP=1
+ARMOR=22
+VALUE=64
+WEIGHT=15.0
+RESOURCES=16 i_ingot_iron
+SKILLMAKE=Blacksmithing 19.4,Armslore 15.0
+CATEGORY=Armor
+SUBSECTION=Ringmail Armor
+DESCRIPTION=Ringmail Leggings
+CANUSE=can_u_human|can_u_elf
+REQSTR=40
+TEVENTS=ei_equipitem
+DUPELIST=013f1
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=1
+   RESENERGY=3
+   RESFIRE=3
+   RESPHYSICAL=3
+   RESPOISON=5
+
+[ITEMDEF 013f1]
+//ringmail leggings
+DUPEITEM=013f0
+
+[ITEMDEF 013f2]
+//ringmail gloves
+DUPEITEM=013eb
+
+[EOF]

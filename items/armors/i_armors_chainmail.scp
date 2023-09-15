@@ -1,0 +1,116 @@
+[ITEMDEF 013bb]
+DEFNAME=i_chainmail_coif
+NAME=chainmail coif
+TYPE=t_armor
+FLIP=1
+ARMOR=25
+VALUE=40
+WEIGHT=7.0
+RESOURCES=10 i_ingot_iron
+SKILLMAKE=Blacksmithing 14.5,Armslore 20.0
+CATEGORY=Armor
+SUBSECTION=Chainmail Armor
+DESCRIPTION=Chainmail Coif
+CANUSE=can_u_human|can_u_elf
+REQSTR=60
+TEVENTS=ei_equipitem
+DUPELIST=013c0
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=4
+   RESENERGY=2
+   RESFIRE=4
+   RESPHYSICAL=4
+   RESPOISON=1
+
+[ITEMDEF 013bc]
+DEFNAME=i_chainmail_leggings_decoration
+NAME=decorative chainmail leggings
+FLIP=1
+CATEGORY=Armor
+SUBSECTION=Chainmail Armor
+DESCRIPTION=Chainmail Leggings (decorative)
+DUPELIST=013c1
+
+[ITEMDEF 013bd]
+DEFNAME=i_chainmail_tunic_decoration
+NAME=decorative chainmail tunic
+FLIP=1
+CATEGORY=Armor
+SUBSECTION=Chainmail Armor
+DESCRIPTION=Chainmail Tunic (decorative)
+DUPELIST=013c2
+
+[ITEMDEF 013be]
+DEFNAME=i_chainmail_leggings
+TYPE=t_armor
+FLIP=1
+ARMOR=25
+VALUE=72
+WEIGHT=7.0
+RESOURCES=18 i_ingot_iron
+SKILLMAKE=Blacksmithing 36.7,Armslore 20.0
+CATEGORY=Armor
+SUBSECTION=Chainmail Armor
+DESCRIPTION=Chainmail Leggings
+CANUSE=can_u_human|can_u_elf
+REQSTR=60
+TEVENTS=ei_equipitem
+DUPELIST=013c3
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+RESCOLD=4
+RESENERGY=2
+RESFIRE=4
+RESPHYSICAL=4
+RESPOISON=1
+
+[ITEMDEF 013bf]
+DEFNAME=i_chainmail_tunic
+TYPE=t_armor
+FLIP=1
+ARMOR=25
+VALUE=80
+WEIGHT=7.0
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 39.1,Armslore 20.0
+CATEGORY=Armor
+SUBSECTION=Chainmail Armor
+DESCRIPTION=Chainmail Tunic
+CANUSE=can_u_human|can_u_elf
+REQSTR=60
+TEVENTS=ei_equipitem
+DUPELIST=013c4
+//Expansion=RDS_PRET2A
+
+ON=@CREATE
+HITPOINTS={36 48}
+RESCOLD=4
+RESENERGY=2
+RESFIRE=4
+RESPHYSICAL=4
+RESPOISON=1
+
+[ITEMDEF 013c0]
+//chainmail coif
+DUPEITEM=013bb
+
+[ITEMDEF 013c1]
+//chainmail leggings
+DUPEITEM=013bc
+
+[ITEMDEF 013c2]
+//chainmail tunic
+DUPEITEM=013bd
+
+[ITEMDEF 013c3]
+//chainmail leggings
+DUPEITEM=013be
+
+[ITEMDEF 013c4]
+//chainmail tunic
+DUPEITEM=013bf
+
+[EOF]

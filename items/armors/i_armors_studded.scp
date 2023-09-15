@@ -1,0 +1,238 @@
+[ITEMDEF 013d4]
+DEFNAME=i_studded_sleeves
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=16
+VALUE=118
+WEIGHT=13.0
+RESOURCES=10 i_hides_cut,3 i_ingot_iron
+SKILLMAKE=Tailoring 86.3,t_sewing_kit,Armslore 10.0
+CATEGORY=Armor
+SUBSECTION=Studded Armor
+DESCRIPTION=Studded Sleeves
+CANUSE=can_u_human|can_u_elf
+REQSTR=25
+TEVENTS=ei_equipitem
+DUPELIST=013dc
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=4
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 013d5]
+DEFNAME=i_studded_gloves
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=16
+VALUE=79
+WEIGHT=9.0
+RESOURCES=8 i_hides_cut,1 i_ingot_iron
+SKILLMAKE=Tailoring 81.8,t_sewing_kit,Armslore 10.0
+CATEGORY=Armor
+SUBSECTION=Studded Armor
+DESCRIPTION=Studded Gloves
+CANUSE=can_u_human|can_u_elf
+REQSTR=25
+TEVENTS=ei_equipitem
+DUPELIST=013dd
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=4
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 013d6]
+DEFNAME=i_studded_gorget
+TYPE=t_armor_leather
+ARMOR=16
+VALUE=61
+WEIGHT=7.0
+RESOURCES=6 i_hides_cut,1 i_ingot_iron
+SKILLMAKE=Tailoring 77.2,t_sewing_kit,Armslore 10.0
+CATEGORY=Armor
+SUBSECTION=Studded Armor
+DESCRIPTION=Studded Gorget
+REQSTR=25
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=4
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 013d7]
+DEFNAME=i_studded_sleeves_decoration
+NAME=decorative studded sleeves
+FLIP=1
+SKILLMAKE=Tailoring 87.1,t_sewing_kit
+CATEGORY=Armor
+SUBSECTION=Studded Armor
+DESCRIPTION=Studded Sleeves (decorative)
+DUPELIST=013de
+
+[ITEMDEF 013d8]
+DEFNAME=i_studded_leggings_decoration
+NAME=decorative studded leggings
+FLIP=1
+CATEGORY=Armor
+SUBSECTION=Studded Armor
+DESCRIPTION=Studded Leggings (decorative)
+DUPELIST=013df
+
+[ITEMDEF 013d9]
+DEFNAME=i_studded_tunic_decoration
+NAME=decorative studded tunic
+FLIP=1
+CATEGORY=Armor
+SUBSECTION=Studded Armor
+DESCRIPTION=Studded Tunic (decorative)
+DUPELIST=013e0
+
+[ITEMDEF 013da]
+DEFNAME=i_studded_leggings
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=16
+VALUE=144
+WEIGHT=16.0
+RESOURCES=12 i_hides_cut,4 i_ingot_iron
+SKILLMAKE=Tailoring 90.9,t_sewing_kit,Armslore 10.0
+CATEGORY=Armor
+SUBSECTION=Studded Armor
+DESCRIPTION=Studded Leggings
+REQSTR=30
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=013e1
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=4
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 013db]
+DEFNAME=i_studded_tunic
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=16
+VALUE=171
+WEIGHT=19.0
+RESOURCES=14 i_hides_cut,5 i_ingot_iron
+SKILLMAKE=Tailoring 95.4,t_sewing_kit,Armslore 10.0
+CATEGORY=Armor
+SUBSECTION=Studded Armor
+DESCRIPTION=Studded Tunic
+REQSTR=35
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=013e2
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=4
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 013dc]
+//studded sleeves
+DUPEITEM=013d4
+
+[ITEMDEF 013dd]
+//studded gloves
+DUPEITEM=013d5
+
+[ITEMDEF 013de]
+//studded sleeves
+DUPEITEM=013d7
+
+[ITEMDEF 013df]
+//studded leggings
+DUPEITEM=013d8
+
+[ITEMDEF 013e0]
+//studded tunic
+DUPEITEM=013d9
+
+[ITEMDEF 013e1]
+//studded leggings
+DUPEITEM=013da
+
+[ITEMDEF 013e2]
+//studded tunic
+DUPEITEM=013db
+
+[ITEMDEF 01c02]
+DEFNAME=i_armor_female_studded
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=16
+VALUE=171
+WEIGHT=19.0
+RESOURCES=14 i_hides_cut,5 i_ingot_iron
+SKILLMAKE=Tailoring 95.4,t_sewing_kit,Armslore 10.0
+CATEGORY=Armor
+SUBSECTION=Female Armor
+DESCRIPTION=Studded Armor
+REQSTR=35
+CANUSE=can_u_human|can_u_elf|can_u_female
+TEVENTS=ei_equipitem
+DUPELIST=01c03
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 01c03]
+//studded armor
+DUPEITEM=01c02
+
+[ITEMDEF 01c0c]
+DEFNAME=i_armor_female_bustier_studded
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=16
+VALUE=114
+WEIGHT=13.0
+RESOURCES=11 i_hides_cut,2 i_ingot_iron
+SKILLMAKE=Tailoring 81.8,t_sewing_kit,Armslore 10.0
+CATEGORY=Armor
+SUBSECTION=Female Armor
+DESCRIPTION=Studded Bustier
+REQSTR=35
+CANUSE=can_u_human|can_u_elf|can_u_female
+TEVENTS=ei_equipitem
+DUPELIST=01c0d
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=4
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 01c0d]
+//studded bustier
+DUPEITEM=01c0c
+
+[EOF]

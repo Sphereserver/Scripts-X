@@ -1,0 +1,147 @@
+[ITEMDEF 0144e]
+DEFNAME=i_bone_arms
+TYPE=t_armor
+FLIP=1
+ARMOR=24
+VALUE=65
+WEIGHT=15.0
+RESOURCES=14 i_bone,1 i_hides_cut
+SKILLMAKE=Tailoring 96.8,t_sewing_kit,Anatomy 47.3,Necromancy 24.4
+CATEGORY=Armor
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Arms
+REQSTR=55
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=01453
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=4
+   RESENERGY=4
+   RESFIRE=3
+   RESPHYSICAL=3
+   RESPOISON=2
+
+[ITEMDEF 0144f]
+DEFNAME=i_bone_chest
+TYPE=t_armor
+FLIP=1
+ARMOR=24
+VALUE=49
+WEIGHT=11.0
+RESOURCES=10 i_bone,1 i_hides_cut
+SKILLMAKE=Tailoring 96.8,t_sewing_kit,Anatomy 47.3,Necromancy 49.2
+CATEGORY=Armor
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Tunic
+REQSTR=60
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=01454
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=4
+   RESENERGY=4
+   RESFIRE=3
+   RESPHYSICAL=3
+   RESPOISON=2
+
+[ITEMDEF 01450]
+DEFNAME=i_bone_gloves
+TYPE=t_armor
+FLIP=1
+ARMOR=24
+VALUE=33
+WEIGHT=7.0
+RESOURCES=6 i_bone,1 i_hides_cut
+SKILLMAKE=Tailoring 96.8,t_sewing_kit,Anatomy 47.3,Necromancy 18.6
+CATEGORY=Armor
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Gloves
+REQSTR=55
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=01455
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=4
+   RESENERGY=4
+   RESFIRE=3
+   RESPHYSICAL=3
+   RESPOISON=2
+
+[ITEMDEF 01451]
+DEFNAME=i_bone_helmet
+TYPE=t_armor
+FLIP=1
+ARMOR=24
+VALUE=29
+WEIGHT=8.0
+RESOURCES=4 i_bone,1 i_bone_skull,1 i_hides_cut
+SKILLMAKE=Tailoring 96.8,t_sewing_kit,Anatomy 47.3,Necromancy 35.2
+CATEGORY=Armor
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Helmet
+REQSTR=20
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=01456
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=4
+   RESENERGY=4
+   RESFIRE=3
+   RESPHYSICAL=3
+   RESPOISON=2
+
+[ITEMDEF 01452]
+DEFNAME=i_bone_leggings
+TYPE=t_armor
+FLIP=1
+ARMOR=24
+VALUE=80
+WEIGHT=19.0
+RESOURCES=18 i_bone,1 i_hides_cut
+SKILLMAKE=Tailoring 96.8,t_sewing_kit,Anatomy 47.3,Necromancy 44.7
+CATEGORY=Armor
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Legs
+REQSTR=55
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=01457
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=4
+   RESENERGY=4
+   RESFIRE=3
+   RESPHYSICAL=3
+   RESPOISON=2
+
+[ITEMDEF 01453]
+//bone arms
+DUPEITEM=0144e
+
+[ITEMDEF 01454]
+//bone armor
+DUPEITEM=0144f
+
+[ITEMDEF 01455]
+//bone gloves
+DUPEITEM=01450
+
+[ITEMDEF 01456]
+//bone helmet
+DUPEITEM=01451
+
+[ITEMDEF 01457]
+//bone legs
+DUPEITEM=01452
+
+
+[EOF]

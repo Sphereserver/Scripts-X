@@ -1,0 +1,357 @@
+[ITEMDEF 013c5]
+DEFNAME=i_leather_sleeves
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=13
+VALUE=70
+WEIGHT=2.0
+RESOURCES=4 i_hides_cut
+SKILLMAKE=Tailoring 59.0,t_sewing_kit,Armslore 10.0
+CATEGORY=Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Sleeves
+CANUSE=can_u_human|can_u_elf
+REQSTR=20
+TEVENTS=ei_equipitem
+DUPELIST=013cd
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 013c6]
+DEFNAME=i_leather_gloves
+NAME=leather gloves
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=13
+VALUE=24
+WEIGHT=1.0
+RESOURCES=3 i_hides_cut
+SKILLMAKE=Tailoring 51.8,t_sewing_kit,Armslore 10.0
+CATEGORY=Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Gloves
+CANUSE=can_u_human|can_u_elf
+REQSTR=20
+TEVENTS=ei_equipitem
+DUPELIST=013ce
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 013c7]
+DEFNAME=i_leather_gorget
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=13
+VALUE=32
+WEIGHT=1.0
+RESOURCES=4 i_hides_cut
+SKILLMAKE=Tailoring 53.9,t_sewing_kit,Armslore 10.0
+CATEGORY=Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Gorget
+CANUSE=can_u_human|can_u_elf
+REQSTR=20
+TEVENTS=ei_equipitem
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 013c8]
+DEFNAME=i_leather_sleeves_decoration
+NAME=decorative leather sleeves
+FLIP=1
+CATEGORY=Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Sleeves (decorative)
+DUPELIST=013cf
+
+[ITEMDEF 013c9]
+DEFNAME=i_leather_leggings_decoration
+NAME=decorative leather leggings
+FLIP=1
+CATEGORY=Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Leggings (decorative)
+DUPELIST=013d0
+
+[ITEMDEF 013ca]
+DEFNAME=i_leather_tunic_decoration
+NAME=decorative leather tunic
+FLIP=1
+CATEGORY=Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Tunic (decorative)
+DUPELIST=013d1
+
+[ITEMDEF 013cb]
+DEFNAME=i_leather_leggings
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=13
+VALUE=86
+WEIGHT=4.0
+RESOURCES=10 i_hides_cut
+SKILLMAKE=Tailoring 66.3,t_sewing_kit,Armslore 10.0
+CATEGORY=Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Leggings
+CANUSE=can_u_human|can_u_elf
+REQSTR=20
+TEVENTS=ei_equipitem
+DUPELIST=013d2
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 013cc]
+DEFNAME=i_leather_tunic
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=13
+VALUE=115
+WEIGHT=6.0
+RESOURCES=12 i_hides_cut
+SKILLMAKE=Tailoring 70.5,t_sewing_kit,Armslore 10.0
+CATEGORY=Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Tunic
+CANUSE=can_u_human|can_u_elf
+REQSTR=25
+TEVENTS=ei_equipitem
+DUPELIST=013d3
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 013cd]
+//leather sleeves
+DUPEITEM=013c5
+
+[ITEMDEF 013ce]
+//leather gloves
+DUPEITEM=013c6
+
+[ITEMDEF 013cf]
+//leather sleeves decoration
+DUPEITEM=013c8
+
+[ITEMDEF 013d0]
+//leather leggings
+DUPEITEM=013c9
+
+[ITEMDEF 013d1]
+//leather tunic
+DUPEITEM=013ca
+
+[ITEMDEF 013d2]
+//leather leggings
+DUPEITEM=013cb
+
+[ITEMDEF 013d3]
+//leather tunic
+DUPEITEM=013cc
+
+[ITEMDEF 01c00]
+DEFNAME=i_armor_female_shorts
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=13
+VALUE=74
+WEIGHT=8.1
+RESOURCES=8 i_hides_cut,1 i_ingot_iron
+SKILLMAKE=Tailoring 68.1,t_sewing_kit,Armslore 10.0
+CATEGORY=Armor
+SUBSECTION=Female Armor
+DESCRIPTION=Leather Shorts
+REQSTR=20
+CANUSE=can_u_human|can_u_elf|can_u_female
+TEVENTS=ei_equipitem
+DUPELIST=01c01
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 01c01]
+//leather shorts
+DUPEITEM=01c00
+
+[ITEMDEF 01c06]
+DEFNAME=i_armor_female_leather
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=13
+VALUE=100
+WEIGHT=11.0
+RESOURCES=10 i_hides_cut,1 i_ingot_iron
+SKILLMAKE=Tailoring 86.3,t_sewing_kit,Armslore 10.0
+CATEGORY=Armor
+SUBSECTION=Female Armor
+DESCRIPTION=Leather Armor
+REQSTR=25
+CANUSE=can_u_human|can_u_elf|can_u_female
+TEVENTS=ei_equipitem
+DUPELIST=01c07
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 01c07]
+//leather armor
+DUPEITEM=01c06
+
+[ITEMDEF 01c08]
+DEFNAME=i_armor_female_skirt
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=13
+VALUE=49
+WEIGHT=6.0
+RESOURCES=6 i_hides_cut
+SKILLMAKE=Tailoring 63.6,t_sewing_kit
+CATEGORY=Armor
+SUBSECTION=Female Armor
+DESCRIPTION=Leather Skirt
+REQSTR=25
+CANUSE=can_u_human|can_u_elf|can_u_female
+TEVENTS=ei_equipitem
+DUPELIST=01c09
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 01c09]
+//leather skirt
+DUPEITEM=01c08
+
+[ITEMDEF 01c0a]
+DEFNAME=i_armor_female_bustier
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=13
+VALUE=56
+WEIGHT=7.0
+RESOURCES=6 i_hides_cut,1 i_ingot_iron
+SKILLMAKE=Tailoring 63.6,t_sewing_kit,Armslore 10.0
+CATEGORY=Armor
+SUBSECTION=Female Armor
+DESCRIPTION=Leather Bustier
+REQSTR=20
+CANUSE=can_u_human|can_u_elf|can_u_female
+TEVENTS=ei_equipitem
+DUPELIST=01c0b
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 01c0b]
+//leather bustier
+DUPEITEM=01c0a
+
+[ITEMDEF 01db9]
+DEFNAME=i_leather_cap
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=13
+VALUE=13
+WEIGHT=2.1
+RESOURCES=2 i_hides_cut,1 i_thread
+SKILLMAKE=Tailoring 6.8,t_sewing_kit,Armslore 10.0
+CATEGORY=Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Cap
+REQSTR=20
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=01dba
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 01dba]
+//leather cap
+DUPEITEM=01db9
+
+
+[ITEMDEF 025e4]
+DEFNAME=i_armor_female_shorts_spiked
+//NAME=spiked shorts
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=15
+VALUE=71
+WEIGHT=9.0
+RESOURCES=8 i_hides_cut,1 i_ingot_iron
+SKILLMAKE=Tailoring 78.1,t_sewing_kit
+CATEGORY=Armor
+SUBSECTION=Female Armor
+DESCRIPTION=Spiked Shorts
+REQSTR=20
+CANUSE=can_u_human|can_u_elf|can_u_female
+TEVENTS=ei_equipitem
+DUPELIST=025e5
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 025e5]
+//spiked shorts
+DUPEITEM=025e4
+
+[EOF]

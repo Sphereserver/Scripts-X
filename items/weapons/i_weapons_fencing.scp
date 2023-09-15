@@ -1,0 +1,527 @@
+[ITEMDEF 0e87]
+//FIXME: Can dig up plants
+DEFNAME=i_pitchfork
+TYPE=t_weapon_fence
+DAM=13,14
+FLIP=1
+SKILL=Fencing
+SPEED=50
+//TAG.OVERRIDE.SPEED=25
+VALUE=28
+WEIGHT=11.0
+TWOHANDS=Y
+RESOURCES=5 i_ingot_iron,2 i_log
+SKILLMAKE=Tinkering 41.2,t_tinker_tools
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Pitchfork
+CANUSE=can_u_human|can_u_elf
+REQSTR=50
+TEVENTS=ei_equipitem
+DUPELIST=0e88
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 0e88]
+//pitchfork
+DUPEITEM=0e87
+
+[ITEMDEF 0ec4]
+DEFNAME=i_knife_skinning
+TYPE=t_weapon_fence
+DAM=9,11
+FLIP=1
+SKILL=Fencing
+SPEED=53
+//TAG.OVERRIDE.SPEED=22	//22.5
+VALUE=10
+WEIGHT=2.0
+TWOHANDS=N
+RESOURCES=2 i_ingot_iron
+SKILLMAKE=Tinkering 25.0,t_tinker_tools
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Skinning Knife
+CANUSE=can_u_human|can_u_elf
+REQSTR=5
+TEVENTS=ei_equipitem
+DUPELIST=0ec5
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 0ec5]
+//Skinning Knife
+DUPEITEM=0ec4
+
+[ITEMDEF 0f51]
+DEFNAME=i_dagger
+TYPE=t_weapon_fence
+DAM=10,11
+FLIP=1
+SKILL=Fencing
+SPEED=56
+//TAG.OVERRIDE.SPEED=20
+VALUE=21
+WEIGHT=4.0
+TWOHANDS=N
+RESOURCES=4 i_ingot_iron
+SKILLMAKE=Blacksmithing 0.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Dagger
+REQSTR=10
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=0f52
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 0f52]
+//dagger
+DUPEITEM=0f51
+
+[ITEMDEF 0f62]
+DEFNAME=i_spear
+NAME=long spear
+TYPE=t_weapon_fence
+DAM=13,15
+FLIP=1
+SKILL=Fencing
+SPEED=47
+//TAG.OVERRIDE.SPEED=27	//27.5
+VALUE=85
+WEIGHT=16.0
+TWOHANDS=Y
+RESOURCES=12 i_ingot_iron,2 i_log
+SKILLMAKE=Blacksmithing 49.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Long Spear
+REQSTR=50
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=0f63
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 0f63]
+//spear
+DUPEITEM=0f62
+
+[ITEMDEF i_tribal_spear]
+ID=i_spear
+NAME=tribal spear
+TAG.DamageIncrease=80
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Tribal Spear
+ON=@CREATE
+COLOR=0 //FIXME: unknown color
+HITPOINTS=80
+
+[ITEMDEF 01400]
+DEFNAME=i_kryss
+TYPE=t_weapon_fence
+DAM=10,12
+FLIP=1
+SKILL=Fencing
+SPEED=56
+//TAG.OVERRIDE.SPEED=20
+VALUE=51
+WEIGHT=8.0
+TWOHANDS=N
+RESOURCES=8 i_ingot_iron
+SKILLMAKE=Blacksmithing 36.7
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Kryss
+CANUSE=can_u_human|can_u_elf
+REQSTR=10
+TEVENTS=ei_equipitem
+DUPELIST=01401
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 01401]
+//kryss
+DUPEITEM=01400
+
+[ITEMDEF 01402]
+DEFNAME=i_spear_short
+TYPE=t_weapon_fence
+DAM=10,13
+FLIP=1
+SKILL=Fencing
+SPEED=56
+//TAG.OVERRIDE.SPEED=20
+VALUE=43
+WEIGHT=4.0
+TWOHANDS=Y
+RESOURCES=6 i_ingot_iron,1 i_log
+SKILLMAKE=Blacksmithing 45.3
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Short Spear
+CANUSE=can_u_human|can_u_elf
+REQSTR=40
+TEVENTS=ei_equipitem
+DUPELIST=01403
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 01403]
+//short spear
+DUPEITEM=01402
+
+[ITEMDEF 01404]
+DEFNAME=i_war_fork
+TYPE=t_weapon_fence
+DAM=12,13
+FLIP=1
+SKILL=Fencing
+SPEED=50
+//TAG.OVERRIDE.SPEED=25
+VALUE=78
+WEIGHT=8.0
+TWOHANDS=N
+RESOURCES=12 i_ingot_iron,1 i_log
+SKILLMAKE=Blacksmithing 42.9
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=War Fork
+CANUSE=can_u_human|can_u_elf
+REQSTR=40
+TEVENTS=ei_equipitem
+DUPELIST=01405
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 01405]
+//war fork
+DUPEITEM=01404
+
+[ITEMDEF 026be]
+DEFNAME=i_pike
+NAME=pike
+TYPE=t_weapon_fence
+DAM=14,16
+FLIP=1
+SKILL=Fencing
+SPEED=44
+//TAG.OVERRIDE.SPEED=30
+VALUE=72
+WEIGHT=8.0
+TWOHANDS=Y
+RESOURCES=12 i_ingot_iron,2 i_log
+SKILLMAKE=Blacksmithing 47.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Pike
+REQSTR=50
+TEVENTS=ei_equipitem
+DUPELIST=026c8
+Expansion=RDS_AOS
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 026c8]
+//pike
+DUPEITEM=026be
+
+[ITEMDEF 026bf]
+DEFNAME=i_staff_bladed_double
+NAME=double bladed staff
+TYPE=t_weapon_mace_sharp
+DAM=12,13
+FLIP=1
+SKILL=Fencing
+SPEED=53
+//TAG.OVERRIDE.SPEED=22	// 22.5
+RANGE=2
+VALUE=94
+WEIGHT=2.0
+TWOHANDS=Y
+RESOURCES=16 i_ingot_iron,1 i_log
+SKILLMAKE=Blacksmithing 45.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Double Bladed Staff
+REQSTR=50
+TEVENTS=ei_equipitem
+DUPELIST=026c9
+Expansion=RDS_AOS
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 026c9]
+//double bladed staff
+DUPEITEM=026bf
+
+[ITEMDEF 026c0]
+DEFNAME=i_lance
+NAME=lance
+TYPE=t_weapon_fence
+DAM=17,18
+FLIP=1
+SKILL=Fencing
+SPEED=26
+//TAG.OVERRIDE.SPEED=45
+RANGE=2
+VALUE=121
+WEIGHT=12.0
+TWOHANDS=N
+RESOURCES=20 i_ingot_iron,2 i_log
+SKILLMAKE=Blacksmithing 48.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Lance
+REQSTR=95
+TEVENTS=ei_equipitem
+DUPELIST=026ca
+Expansion=RDS_AOS
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 026ca]
+//lance
+DUPEITEM=026c0
+
+
+[ITEMDEF 027a7]
+DEFNAME=i_lajatang
+NAME=lajatang
+TYPE=t_weapon_fence
+DAM=16,18
+FLIP=1
+SKILL=Fencing
+SPEED=38
+//TAG.OVERRIDE.SPEED=35
+VALUE=110
+WEIGHT=12.0
+TWOHANDS=Y
+RESOURCES=25 i_ingot_iron,1 i_log
+SKILLMAKE=Blacksmithing 80.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Lajatang
+CANUSE=can_u_human|can_u_elf
+REQSTR=65
+TEVENTS=ei_equipitem
+DUPELIST=027f2
+Expansion=RDS_SE
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 027f2]
+//lajatang
+DUPEITEM=027a7
+
+[ITEMDEF 027ab]
+DEFNAME=i_tekagi
+NAME=tekagi
+TYPE=t_weapon_fence
+DAM=10,12
+FLIP=1
+SKILL=Fencing
+SPEED=56
+//TAG.OVERRIDE.SPEED=20
+VALUE=74
+WEIGHT=5.0
+TWOHANDS=Y
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 55.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Tekagi
+CANUSE=can_u_human|can_u_elf
+REQSTR=10
+TEVENTS=ei_equipitem
+DUPELIST=027f6
+Expansion=RDS_SE
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 027f6]
+//tekagi
+DUPEITEM=027ab
+
+[ITEMDEF 027ad]
+DEFNAME=i_kama
+NAME=kama
+TYPE=t_weapon_sword
+DAM=9,11
+FLIP=1
+SKILL=Fencing
+SPEED=56
+//TAG.OVERRIDE.SPEED=20
+VALUE=182
+//LAYER=layer_hand2
+VALUE=48
+WEIGHT=7.0
+TWOHANDS=Y
+RESOURCES=14 i_ingot_iron,2 i_log
+SKILLMAKE=Blacksmithing 40.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Kama
+CANUSE=can_u_human|can_u_elf
+REQSTR=15
+TEVENTS=ei_equipitem
+DUPELIST=027f8
+Expansion=RDS_SE
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 027f8]
+//kama
+DUPEITEM=027ad
+
+[ITEMDEF 027af]
+DEFNAME=i_sai
+NAME=sai
+TYPE=t_weapon_fence
+DAM=9,11
+FLIP=1
+SKILL=Fencing
+SPEED=56
+//TAG.OVERRIDE.SPEED=20
+VALUE=72
+WEIGHT=7.0
+TWOHANDS=Y
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 50.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Sai
+CANUSE=can_u_human|can_u_elf
+REQSTR=15
+TEVENTS=ei_equipitem
+DUPELIST=027fa
+Expansion=RDS_SE
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 027fa]
+//sai
+DUPEITEM=027af
+
+[ITEMDEF 02d20]
+DEFNAME=i_elven_spellblade
+NAME=elven spellblade
+TYPE=t_weapon_fence
+DAM=12,14
+FLIP=1
+SKILL=Fencing
+SPEED=50
+//TAG.OVERRIDE.SPEED=22	//22.5
+VALUE=97
+WEIGHT=5.0
+TWOHANDS=Y
+RESOURCES=14 i_ingot_iron,1 i_log
+SKILLMAKE=Blacksmithing 70.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Elven SpellBlade
+REQSTR=35
+TEVENTS=ei_equipitem
+DUPELIST=02d2c
+Expansion=RDS_ML
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 02d2c]
+//elven spellblade
+DUPEITEM=02d20
+
+[ITEMDEF 02d21]
+DEFNAME=i_sword_assassin_spike
+NAME=assassin spike
+TYPE=t_weapon_fence
+DAM=10,12
+FLIP=1
+SKILL=Fencing
+SPEED=56
+//TAG.OVERRIDE.SPEED=20
+VALUE=63
+WEIGHT=4.0
+TWOHANDS=N
+RESOURCES=9 i_ingot_iron,1 i_log
+SKILLMAKE=Blacksmithing 70.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Assasins Spike
+REQSTR=15
+TEVENTS=ei_equipitem
+DUPELIST=02d2d
+Expansion=RDS_ML
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 02d2d]
+//assassin spike
+DUPEITEM=02d21
+
+[ITEMDEF 02d22]
+DEFNAME=i_sword_leafblade
+NAME=leafblade
+TYPE=t_weapon_fence
+DAM=13,15
+FLIP=1
+SKILL=Fencing
+SPEED=47
+//TAG.OVERRIDE.SPEED=27	// 27.5
+VALUE=83
+WEIGHT=8.0
+TWOHANDS=N
+RESOURCES=12 i_ingot_iron,1 i_log
+SKILLMAKE=Blacksmithing 70.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=LeafBlade
+REQSTR=20
+TEVENTS=ei_equipitem
+DUPELIST=02d2e
+Expansion=RDS_ML
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 02d2e]
+//leafblade
+DUPEITEM=02d22
+
+[ITEMDEF 02d23]
+DEFNAME=i_sword_warcleaver
+NAME=war cleaver
+TYPE=t_weapon_fence
+DAM=10,12
+FLIP=1
+SKILL=Fencing
+SPEED=56
+//TAG.OVERRIDE.SPEED=20
+VALUE=104
+WEIGHT=5.0
+TWOHANDS=Y
+RESOURCES=18 i_ingot_iron,1 i_board
+SKILLMAKE=Blacksmithing 70.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=War Cleaver
+REQSTR=10
+TEVENTS=ei_equipitem
+DUPELIST=02d2f
+Expansion=RDS_ML
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 02d2f]
+//war cleaver
+DUPEITEM=02d23
+
+[EOF]

@@ -10,6 +10,11 @@ SUBSECTION=Placeholder Tiles
 DESCRIPTION=Unused Tile
 TYPE=t_normal
 
+[ITEMDEF 030f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 030f
+
 [ITEMDEF 031b0]
 CATEGORY=Miscellaneous
 SUBSECTION=Invisible Tiles
@@ -210,8 +215,8 @@ WEIGHT=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Communication Crystals
 DESCRIPTION=Communication Crystal (red)
-ON=@Create
-   MORE=500
+ON=@CREATE
+MORE=500
 
 [ITEMDEF i_crystal_of_com_t2]
 // Comm. Crystal (1000) GREEN
@@ -223,8 +228,8 @@ WEIGHT=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Communication Crystals
 DESCRIPTION=Communication Crystal (green)
-ON=@Create
-   MORE=1000
+ON=@CREATE
+MORE=1000
 
 [ITEMDEF i_crystal_of_com_t3]
 // Comm. Crystal (2000) GREEN
@@ -236,8 +241,8 @@ WEIGHT=1
 CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Communication Crystals
 DESCRIPTION=Communication Crystal (green)
-ON=@Create
-   MORE=2000
+ON=@CREATE
+MORE=2000
 
 [ITEMDEF i_checkerboard]
 ID=i_game_board
@@ -247,8 +252,8 @@ TDATA2=091a
 CATEGORY=Games
 SUBSECTION=Checkers
 DESCRIPTION=Checkerboard
-ON=@Create
-   MORE=1   // make this checkers.
+ON=@CREATE
+MORE=1   // make this checkers.
 
 [ITEMDEF i_chessboard]
 ID=i_game_board
@@ -285,13 +290,13 @@ SKILLMAKE=TINKERING 10.0, t_tinker_tools, ALCHEMY 10.0
 CATEGORY=Magic
 SUBSECTION=Tools
 DESCRIPTION=Bodypaint
-ON=@Create
-   COLOR=0447
-ON=@Click
+ON=@CREATE
+COLOR=0447
+ON=@CLICK
    MESSAGE=<NAME>
    SRC.SYSMESSAGE Double click to paint your skin to a random color.
    RETURN 1
-ON=@DClick
+ON=@DCLICK
    IF (<SRC.RESTEST 1 i_bodypaint>) && (<SRC.COLOR>==<SRC.OSKIN>)
       //pull up color picker here... or make random with colors_all
       //SRC.OSKIN=<COLOR> uncomment this to make change permenant
@@ -314,12 +319,12 @@ NAME=Bodypaint timer
 TYPE=t_eq_script
 LAYER=layer_special
 WEIGHT=0
-ON=@Create
-   ATTR=attr_decay
-ON=@Equip
-   TIMER={5000 9999}
+ON=@CREATE
+ATTR=attr_decay
+ON=@EQUIP
+TIMER={5000 9999}
    SRC.COLOR=colors_all
-ON=@Timer
+ON=@TIMER
    CONT.MESSAGE "The paint has worn off."
    CONT.COLOR=<CONT.OSKIN>
    REMOVE
@@ -329,11 +334,11 @@ ON=@Timer
 ID=i_barrel_open
 NAME=trash barrel
 
-ON=@Create
-	COLOR=946
-	ATTR=010
+ON=@CREATE
+COLOR=946
+ATTR=010
 
-ON=@Timer
+ON=@TIMER
 if !(<ATTR> & attr_decay)
 	if (<COUNT>)
 		MESSAGE @,,1 Emptying the trashcan!
@@ -342,25 +347,25 @@ if !(<ATTR> & attr_decay)
 	return 1
 endif
 
-ON=@DropOn_Self
+ON=@DROPON_SELF
 if (<RESCOUNT> >= 50)
 	TOPOBJ.MESSAGE @,,1 The trash is full!  Emptying!
 	EMPTY
 else
 	TOPOBJ.MESSAGE @,,1 The item will be deleted in three minutes.
-	timer=180
+TIMER=180
 endif
 
 [ITEMDEF i_solen_hive_teleporter]    //used for traversing the solen hives
-id=01772
-name=Solen Hive Hole
-type=t_sign_gump
+ID=01772
+NAME=Solen Hive Hole
+TYPE=t_sign_gump
 
-on=@create
-attr=010
-color=01
+ON=@CREATE
+ATTR=010
+COLOR=01
 
-on=@dclick
+ON=@DCLICK
 src.go <morep>
 return 1
 
