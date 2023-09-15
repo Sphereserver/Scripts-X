@@ -92,7 +92,9 @@ NAME=Verite Ore
 SKILLMAKE=mining 95.0
 TDATA1=i_ingot_verite
 VALUE=15
+
 ON=@Create
+   COLOR=color_o_verite
 
 [ITEMDEF i_ore_valorite]
 ID=i_ore_iron
