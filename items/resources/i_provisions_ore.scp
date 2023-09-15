@@ -15,7 +15,7 @@ sphere_region.scp file.
 
 [ITEMDEF 019b7]
 DEFNAME=i_ore_iron
-NAME=Iron Ore
+NAME=iron ore
 TYPE=t_ore
 SKILLMAKE=mining 0.0
 TDATA1=i_ingot_iron
@@ -50,7 +50,7 @@ DESCRIPTION=Ore
 [ITEMDEF i_ore_copper]
 // copper makes terrible armor.
 ID=i_ore_iron
-NAME=Copper Ore
+NAME=copper ore
 SKILLMAKE=mining 75.0
 TDATA1=i_ingot_copper
 VALUE=5
@@ -60,7 +60,7 @@ ON=@Create
 [ITEMDEF i_ore_gold]
 // Gold makes terrible armor.
 ID=i_ore_iron
-NAME=Gold Ore
+NAME=gold ore
 SKILLMAKE=mining 85.0
 TDATA1=i_ingot_gold
 VALUE=10
@@ -70,7 +70,7 @@ ON=@Create
 
 [ITEMDEF i_ore_shadow]
 ID=i_ore_iron
-NAME=Shadow Ore
+NAME=shadow ore
 SKILLMAKE=mining 70.0
 TDATA1=i_ingot_shadow
 VALUE=15
@@ -79,7 +79,7 @@ ON=@Create
 
 [ITEMDEF i_ore_agapite]
 ID=i_ore_iron
-NAME=Agapite Ore
+NAME=agapite ore
 SKILLMAKE=mining 90.0
 TDATA1=i_ingot_agapite
 VALUE=10
@@ -88,7 +88,7 @@ ON=@Create
 
 [ITEMDEF i_ore_verite]
 ID=i_ore_iron
-NAME=Verite Ore
+NAME=verite ore
 SKILLMAKE=mining 95.0
 TDATA1=i_ingot_verite
 VALUE=15
@@ -98,7 +98,7 @@ ON=@Create
 
 [ITEMDEF i_ore_valorite]
 ID=i_ore_iron
-NAME=Valorite Ore
+NAME=valorite ore
 SKILLMAKE=mining 99.0
 TDATA1=i_ingot_valorite
 VALUE=15
@@ -107,7 +107,7 @@ ON=@Create
 
 [ITEMDEF i_ore_bronze]
 ID=i_ore_iron
-NAME=Bronze Ore
+NAME=bronze ore
 SKILLMAKE=mining 80.0
 TDATA1=i_ingot_bronze
 VALUE=7
@@ -117,7 +117,7 @@ ON=@Create
 [ITEMDEF i_ore_dull_copper]
 // this is really just a variety of copper. copper makes terrible armor
 ID=i_ore_iron
-NAME=Dull Copper Ore
+NAME=dull copper ore
 SKILLMAKE=mining 65.0
 TDATA1=i_ingot_dull_copper
 VALUE=15
@@ -261,7 +261,7 @@ DUPEITEM=01bf5
 DUPEITEM=01bf5
 
 [ITEMDEF i_ingot_shadow]
-NAME=Shadow Ingot
+NAME=shadow ingot
 ID=i_ingot_iron
 SKILLMAKE=mining 70.0
 TDATA1=60.0
@@ -275,7 +275,7 @@ ON=@Create
 
 [ITEMDEF i_ingot_agapite]
 ID=i_ingot_iron
-NAME=Agapite
+NAME=agapite ingot
 SKILLMAKE=mining 90.0
 TDATA1=80.0
 TDATA2=100.0
@@ -287,7 +287,7 @@ ON=@Create
    COLOR=color_o_agapite
 
 [ITEMDEF i_ingot_verite]
-NAME=Verite Ingot
+NAME=verite ingot
 ID=i_ingot_iron
 RESOURCES=i_ore_verite
 SKILLMAKE=mining 95.0
@@ -300,7 +300,7 @@ ON=@Create
    COLOR=color_o_verite
 
 [ITEMDEF i_ingot_valorite]
-NAME=Valorite Ingot
+NAME=valorite ingot
 ID=i_ingot_iron
 RESOURCES=i_ore_valorite
 SKILLMAKE=mining 99.0
@@ -313,7 +313,7 @@ ON=@Create
    COLOR=color_o_valorite
 
 [ITEMDEF i_ingot_bronze]
-NAME=Bronze Ingot
+NAME=bronze ingot
 ID=i_ingot_iron
 RESOURCES=i_ore_bronze
 SKILLMAKE=mining 80.0
@@ -327,7 +327,7 @@ ON=@Create
 
 [ITEMDEF i_ingot_dull_copper]
 ID=i_ingot_iron
-NAME=Dull Copper Ingot
+NAME=dull copper ingot
 RESOURCES=i_ore_dull_copper
 SKILLMAKE=mining 65.0
 TDATA1=40.0
