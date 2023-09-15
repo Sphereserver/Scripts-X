@@ -19,9 +19,10 @@ tailoring_firstmaterial		"1" // 1 or 0
 tailoring_secondmaterial	"0" // 1 or 0
 tailoring_options_default	"1,1,1,0,0" //"mark,exceptional,colored,recipe,expansion"
 
-tailoring_smelt			""
-tailoring_repair		""
-tailoring_check			""
+tailoring_resourceid		        "i_hides_cut" //default material
+tailoring_smelt			    ""
+tailoring_repair		    ""
+tailoring_check			    ""
 tailoring_check_notice		""
 tailoring_chanceatmin		"50.0"
 tailoring_exceptional_bonus	"f_craft_exceptionalbonus"
@@ -210,36 +211,29 @@ tailoring_category_11_15	"i_studded_tunic"
 tailoring_material_0		        ""
 tailoring_material_0_name	        "Leather"
 tailoring_material_0_skill	        "Tailoring 0.0"
-tailoring_resourceid		        "i_hides_cut"
 
 tailoring_material_1		        "spined"
 tailoring_material_1_name	        "Spined"
 tailoring_material_1_skill	        "Tailoring 65.0"
-tailoring_material_1_armor_res	    "5,0,0,0,0,f_colored_armor_spined"
-tailoring_material_1_weaps_dam	    "0,0,0,0,0"
 tailoring_material_1_color	        "color_hide_spined"
 tailoring_material_1_resourceid	    "i_hides_cut_spined"
+tailoring_material_1_aftercraft     "f_resource_leather_aftercraft_spined"
 
 tailoring_material_2		        "horned"
 tailoring_material_2_name	        "Horned"
 tailoring_material_2_skill	        "Tailoring 80.0"
-tailoring_material_2_armor_res	    "2,3,2,2,2"
-tailoring_material_2_weaps_dam	    "0,0,0,0,0"
 tailoring_material_2_color	        "color_hide_horned"
 tailoring_material_2_resourceid	    "i_hides_cut_horned"
+tailoring_material_2_aftercraft     "f_resource_leather_aftercraft_horned"
 
 tailoring_material_3		        "barbed"
 tailoring_material_3_name	        "Barbed"
 tailoring_material_3_skill	        "Tailoring 99.9"
-tailoring_material_3_armor_res	    "2,1,2,3,4"
-tailoring_material_3_weaps_dam	    "0,0,0,0,0"
 tailoring_material_3_color	        "color_hide_barbed"
 tailoring_material_3_resourceid	    "i_hides_cut_barbed"
+tailoring_material_3_aftercraft     "f_resource_leather_aftercraft_barbed"
 
-[FUNCTION f_colored_armor_spined]
-if !<istevent.ei_equipitem>
-events +ei_equipitem
-endif
-Luck = <eval <Luck> + 40>
+
+
 
 [EOF]

@@ -11,6 +11,7 @@ VERSION=X1
  pyromapes2k - Base crafting system used in here
  coruja - Updated to be more OSI compatible
  ShiryuX - Updated to the scriptpack and tweaked many parts of it
+ Raylde - Update for work with dynamic configuration instead of create new ITEMDEF for each craftable item
 
  SCRIPT DOCUMENTATION
  --------------------
@@ -68,24 +69,24 @@ xmfhtmlgumpcolor 10 38 200 20 <ddef.scp.craft_head_categories> 0 0 <ddef.dcolor_
 xmfhtmlgumpcolor 50 61 115 20 <ddef.scp.craft_button_lastten> 0 0 <ddef.dcolor_white>
 button 15 60 4005 4007 1 0 406
 local.wid = 80
-local.sidebar = <eval 1 + (10 * <ctag0.craft.page.sidebar>)>
-for z <local.sidebar> <eval <local.sidebar>+9>
+local.sidebar = <eval 1 + (9 * <ctag0.craft.page.sidebar>)>
+for z <local.sidebar> <eval <local.sidebar>+8>
    if !<isempty <def.<ctag0.craft.skill>_category_<dlocal.z>_name>>
       button 15 <dlocal.wid> 4005 4007 1 0 <local.sidebar>
       if (<isnum <def.<ctag0.craft.skill>_category_<dlocal.z>_name>>)
          xmfhtmlgumpcolor 50 <eval <local.wid>+2> 145 20 <ddef.<ctag0.craft.skill>_category_<dlocal.z>_name> 0 0 <ddef.dcolor_white>
       else
-         dcroppedtext 50 <eval <local.wid>+2> 145 20 0480 <def.<ctag0.craft.skill>_category_<dlocal.z>_name>
+         dcroppedtext 50 <eval <local.wid>+2> 145 20 0480 <STRTOUPPER <def.<ctag0.craft.skill>_category_<dlocal.z>_name>>
       endif
    endif
    local.wid += 20
    local.sidebar ++
 endfor
 if !<isempty <def.<ctag0.craft.skill>_category_<dlocal.sidebar>_name>>
-  button 175 267 4005 4007 1 0 401
+  button 175 265 4005 4007 1 0 401
 endif
 if <ctag0.craft.page.sidebar> > 0
-   button 15 267 4014 4015 1 0 400
+   button 15 265 4014 4015 1 0 400
 endif
 
 // notices section
@@ -100,28 +101,31 @@ endif
 xmfhtmlgumpcolor 215 38 305 20 <ddef.scp.craft_head_selections> 0 0 <ddef.dcolor_white>
 
 local.y = 60
-local.resource = <qval <ctag0.craft.material.<ctag0.craft.skill>> ? "_<dctag0.craft.material.<ctag0.craft.skill>>_" : "_">
 local.mainbar = <eval 1 + (10 * <ctag0.craft.page.mainbar>)>
 for 1 10
-   if <ctag0.lastenbutton>
+   IF (<ctag0.lastenbutton>)
       local.item = <getargv <eval <local._for>-1> <TAG0.craft.lastTen.<ctag0.craft.skill>>>
-   else
-      local.item = <def.<ctag0.craft.skill><local.resource>category_<dctag0.craft.sidebar>_<dlocal.mainbar>>
-   endif
-   if <local.item> != 0
-      button 480 <local.y> 4011 4012 1 0 <eval 100 + <local.mainbar>>
-      button 220 <local.y> 4005 4007 1 0 <eval 600 + <local.mainbar>>
-      dcroppedtext 255 <local.y> 220 20 <qval (<cancraft <local.item>>) ? 0480 : 020> <serv.itemdef.<local.item>.name>
-   endif
+   ELSE
+      local.item = <def.<ctag0.craft.skill>_category_<dctag0.craft.sidebar>_<dlocal.mainbar>>
+   ENDIF
+    //check if expansion is required
+    ARGS = <def.<ctag0.craft.skill>_category_<dctag0.craft.sidebar>_<dlocal.mainbar>_opt>
+    IF (<ISEMPTY <def.<ctag0.craft.skill>_category_<dctag0.craft.sidebar>_<dlocal.mainbar>_opt>> || <Account.Resdisp> > <ARGV[4]>)
+        IF (<local.item> != 0)
+            button 480 <local.y> 4011 4012 1 0 <eval 100 + <local.mainbar>>
+            button 220 <local.y> 4005 4007 1 0 <eval 600 + <local.mainbar>>
+            dcroppedtext 255 <local.y> 220 20 <qval (<f_cancraft <local.item>>) ? 0480 : 020> <serv.itemdef.<local.item>.name>
+        ENDIF
+    ENDIF
    local.mainbar ++
    local.y += 20
 endfor
-if !<isempty <def.<ctag0.craft.skill><local.resource>category_<dctag0.craft.sidebar>_<dlocal.mainbar>>>
-   button 380 267 4005 4007 1 0 404
-   xmfhtmlgumpcolor 415 268 150 20 <ddef.scp.craft_button_nextpage> 0 0 <ddef.dcolor_white>
+if !<isempty <def.<ctag0.craft.skill>_category_<dctag0.craft.sidebar>_<dlocal.mainbar>>>
+   button 410 265 4005 4007 1 0 404
+   xmfhtmlgumpcolor 445 268 150 20 <ddef.scp.craft_button_nextpage> 0 0 <ddef.dcolor_white>
 endif
 if (<ctag0.craft.page.mainbar> > 0)
-   button 220 267 4014 4015 1 0 403
+   button 220 265 4014 4015 1 0 403
    xmfhtmlgumpcolor 255 268 150 20 <ddef.scp.craft_button_prevpage> 0 0 <ddef.dcolor_white>
 endif
 
@@ -132,7 +136,7 @@ if !<isempty <def.<ctag0.craft.skill>_smelt>>
 endif
 if <def0.<ctag0.craft.skill>_firstmaterial>
    button 15 362 4005 4007 1 0 501
-   dtext 50 363 0480 <def.<ctag0.craft.skill>_material_<dctag.craft.material.<ctag.craft.skill>>_name>
+   dtext 50 363 0480 <STRTOUPPER <def.<ctag0.craft.skill>_material_<dctag.craft.material.<ctag.craft.skill>>_name>>
 endif
 //if <def0.<ctag0.craft.skill>_secondmaterial>
 //   button 15 382 4005 4007 1 0 502
@@ -166,18 +170,12 @@ ctag.craft.sidebar = <argn>
 f_resenddialog d_craft_menu
 
 on=100 300 // select item button
-local.resource = <qval <ctag0.craft.material.<ctag0.craft.skill>> ? "_<dctag0.craft.material.<ctag0.craft.skill>>_" : "_">
-if <ctag0.craft.material.<ctag.craft.skill>>
-   if <isempty <def.<ctag0.craft.skill><local.resource>category_<dctag0.craft.sidebar>_<eval <argn>-100>>>
-      local.resource = "_"
-   endif
-endif
 if <ctag0.lastenbutton>
    ctag.craft.item = <getargv <eval <argn>-101> <TAG0.craft.lastTen.<ctag0.craft.skill>>>
    ctag.craft.item.options = 0,0,0,0,0
    //FIXME: ideally find the actual _opt entry rather than forcing 0,0,0,0,0
 else
-   ctag.craft.item = <def.<ctag0.craft.skill><local.resource>category_<dctag0.craft.sidebar>_<eval <argn>-100>>
+   ctag.craft.item = <def.<ctag0.craft.skill>_category_<dctag0.craft.sidebar>_<eval <argn>-100>>
    ctag.craft.item.options = <def.<ctag0.craft.skill>_options_default>
    if !<isempty <def.<ctag0.craft.skill>_category_<dctag0.craft.sidebar>_<eval <argn>-100>_opt>>
       ctag.craft.item.options = <def.<ctag0.craft.skill>_category_<dctag0.craft.sidebar>_<eval <argn>-100>_opt>
@@ -187,18 +185,12 @@ dialogclose d_craft_menu
 f_resenddialog d_craft_itemprop
 
 on=600 800 // craft item button
-local.resource = <qval <ctag0.craft.material.<ctag0.craft.skill>> ? "_<dctag0.craft.material.<ctag0.craft.skill>>_" : "_">
-if <ctag0.craft.material.<ctag.craft.skill>>
-   if <isempty <def.<ctag0.craft.skill><local.resource>category_<dctag0.craft.sidebar>_<eval <argn>-600>>>
-      local.resource = "_"
-   endif
-endif
 if <ctag0.lastenbutton>
    ctag.craft.item = <getargv <eval <argn>-601> <TAG0.craft.lastTen.<ctag0.craft.skill>>>
    ctag.craft.item.options = 0,0,0,0,0
    //FIXME: ideally find the actual _opt entry rather than forcing 0,0,0,0,0
 else
-   ctag.craft.item = <def.<ctag0.craft.skill><local.resource>category_<dctag0.craft.sidebar>_<eval <argn>-600>>
+   ctag.craft.item = <def.<ctag0.craft.skill>_category_<dctag0.craft.sidebar>_<eval <argn>-600>>
    ctag.craft.item.options = <def.<ctag0.craft.skill>_options_default>
    if !<isempty <def.<ctag0.craft.skill>_category_<dctag0.craft.sidebar>_<eval <argn>-600>_opt>>
       ctag.craft.item.options = <def.<ctag0.craft.skill>_category_<dctag0.craft.sidebar>_<eval <argn>-600>_opt>
@@ -289,31 +281,25 @@ page 1
 xmfhtmlgumpcolor 10 38 200 20 <ddef.scp.craft_head_categories> 0 0 <ddef.dcolor_white>
 button 15 60 4005 4007 1 0 406
 xmfhtmlgumpcolor 50 61 115 20 <ddef.scp.craft_button_lastten> 0 0 <ddef.dcolor_white>
-local.resource = <qval <ctag0.craft.material.<ctag0.craft.skill>> ? "_<dctag0.craft.material.<ctag0.craft.skill>>_" : "_">
-local.sidebar = <eval 1 + (10 * <ctag0.craft.page.sidebar>)>
+local.sidebar = <eval 1 + (9 * <ctag0.craft.page.sidebar>)>
 local.wid = 80
-if <ctag0.craft.material.<ctag.craft.skill>>
-   if <isempty <def.<ctag0.craft.skill><local.resource>category_<dlocal.z>_name>>
-      local.resource = "_"
-   endif
-endif
-for z <local.sidebar> <eval <local.sidebar>+9>
-   if !<isempty <def.<ctag0.craft.skill><local.resource>category_<dlocal.z>_name>>
+for z <local.sidebar> <eval <local.sidebar>+8>
+   if !<isempty <def.<ctag0.craft.skill>_category_<dlocal.z>_name>>
       button 15 <dlocal.wid> 4005 4007 1 0 <local.sidebar>
-      if (<isnum <def.<ctag0.craft.skill><local.resource>category_<dlocal.z>_name>>)
-         xmfhtmlgumpcolor 50 <eval <local.wid>+2> 115 20 <ddef.<ctag0.craft.skill><local.resource>category_<dlocal.z>_name> 0 0 <ddef.dcolor_white>
+      if (<isnum <def.<ctag0.craft.skill>_category_<dlocal.z>_name>>)
+         xmfhtmlgumpcolor 50 <eval <local.wid>+2> 115 20 <ddef.<ctag0.craft.skill>_category_<dlocal.z>_name> 0 0 <ddef.dcolor_white>
       else
-         dcroppedtext 50 <eval <local.wid>+2> 115 20 0480 <def.<ctag0.craft.skill><local.resource>category_<dlocal.z>_name>
+         dcroppedtext 50 <eval <local.wid>+2> 115 20 0480 <STRTOUPPER <def.<ctag0.craft.skill>_category_<dlocal.z>_name>>
       endif
    endif
    local.wid += 20
    local.sidebar ++
 endfor
-if !<isempty <def.<ctag0.craft.skill><local.resource>category_<dlocal.sidebar>_name>>
-   button 135 267 4005 4007 1 0 401
+if !<isempty <def.<ctag0.craft.skill>_category_<dlocal.sidebar>_name>>
+   button 175 265 4005 4007 1 0 401
 endif
 if <ctag0.craft.page.sidebar> > 0
-   button 15 267 4014 4015 1 0 400
+   button 15 265 4014 4015 1 0 400
 endif
 
 // notices section
@@ -331,17 +317,17 @@ local.y = 60
 for 0 10
    if !<isempty <def.<ctag0.craft.skill>_material_<dlocal.mainbar>_name>>
       button 220 <local.y> 4005 4007 1 0 <eval 600 + <local.mainbar>>
-      dcroppedtext 255 <local.y> 220 20 0480 <def.<ctag0.craft.skill>_material_<dlocal.mainbar>_name>
+      dcroppedtext 255 <local.y> 220 20 0480 <STRTOUPPER <def.<ctag0.craft.skill>_material_<dlocal.mainbar>_name>>
    endif
    local.mainbar ++
    local.y += 20
 endfor
 if !<isempty <def.<ctag0.craft.skill>_material_<dlocal.mainbar>_name>>
-   button 380 267 4005 4007 1 0 404
-   xmfhtmlgumpcolor 415 268 150 20 <ddef.scp.craft_button_nextpage> 0 0 <ddef.dcolor_white>
+   button 410 265 4005 4007 1 0 404
+   xmfhtmlgumpcolor 445 268 150 20 <ddef.scp.craft_button_nextpage> 0 0 <ddef.dcolor_white>
 endif
 if (<ctag0.craft.page.mainbar> > 0)
-   button 220 267 4014 4015 1 0 403
+   button 220 265 4014 4015 1 0 403
    xmfhtmlgumpcolor 255 268 150 20 <ddef.scp.craft_button_prevpage> 0 0 <ddef.dcolor_white>
 endif
 
@@ -352,7 +338,7 @@ if !<isempty <def.<ctag0.craft.skill>_smelt>>
 endif
 if <def0.<ctag0.craft.skill>_firstmaterial>
    button 15 362 4005 4007 1 0 501
-   dtext 50 363 0480 <def.<ctag0.craft.skill>_material_<dctag.craft.material.<ctag.craft.skill>>_name>
+   dtext 50 363 0480 <STRTOUPPER <def.<ctag0.craft.skill>_material_<dctag.craft.material.<ctag.craft.skill>>_name>>
 endif
 //if <def0.<ctag0.craft.skill>_secondmaterial>
 //   button 15 382 4005 4007 1 0 502
@@ -366,8 +352,10 @@ button 270 342 4005 4007 1 0 505
 xmfhtmlgumpcolor 305 343 150 20 <ddef.scp.craft_button_repair> 0 0 <ddef.dcolor_white>
 button 270 362 4005 4007 1 0 506
 xmfhtmlgumpcolor 305 363 150 20 <qval (<ctag0.craft.mark>) ? <qval (<ctag0.craft.mark>==1) ? 1044017 : 1044019> : 1044018> 0 0 <ddef.dcolor_white>
-button 270 382 4005 4007 1 0 507
-xmfhtmlgumpcolor 305 383 150 20 <ddef.scp.craft_button_enhance> 0 0 <ddef.dcolor_white>
+if !<isempty <def.<ctag0.craft.skill>_enhance>>
+   button 270 382 4005 4007 1 0 507
+   xmfhtmlgumpcolor 305 383 150 20 <ddef.scp.craft_button_enhance> 0 0 <ddef.dcolor_white>
+endif
 button 270 402 4005 4007 1 0 508
 xmfhtmlgumpcolor 305 403 150 20 <ddef.scp.craft_button_makelast> 0 0 <ddef.dcolor_white>
 
@@ -384,13 +372,7 @@ dialogclose d_craft_material
 f_resenddialog d_craft_menu
 
 on=100 300 // select item button
-local.resource = <qval <ctag0.craft.material.<ctag0.craft.skill>> ? "_<dctag0.craft.material.<ctag0.craft.skill>>_" : "_">
-if <ctag0.craft.material.<ctag.craft.skill>>
-   if <isempty <def.<ctag0.craft.skill><local.resource>category_<dctag0.craft.sidebar>_<eval <argn>-100>>>
-      local.resource = "_"
-   endif
-endif
-ctag.craft.item = <def.<ctag0.craft.skill><local.resource>category_<dctag0.craft.sidebar>_<eval <argn>-100>>
+ctag.craft.item = <def.<ctag0.craft.skill>_category_<dctag0.craft.sidebar>_<eval <argn>-100>>
 ctag.craft.item.options = <def.<ctag0.craft.skill>_options_default>
 if !<isempty <def.<ctag0.craft.skill>_category_<dctag0.craft.sidebar>_<eval <argn>-100>_opt>>
    ctag.craft.item.options = <def.<ctag0.craft.skill>_category_<dctag0.craft.sidebar>_<eval <argn>-100>_opt>
@@ -512,7 +494,7 @@ dcroppedtext 170 74 330 20 0480 Success Chance
 if <local.recipe> == 1
    dcroppedtext 430 74 50 20 0480 ??.?%
 else
-   dcroppedtext 430 74 50 20 0480 <fval <ref1.craftsuccesschance <ref1.baseid>>>%
+   dcroppedtext 430 74 50 20 0480 <fval <ref1.f_craftsuccesschance <ref1.baseid>>>%
 endif
 button 15 387 4014 4016 1 0 0
 dtext 50 388 0480 Back
@@ -550,7 +532,6 @@ for 1 <argv>
    endif
 endfor
 ref1.remove
-local.resource = <qval <ctag0.craft.material.<ctag0.craft.skill>> ? "_<dctag0.craft.material.<ctag0.craft.skill>>_" : "_">
 args = <ctag0.craft.item.options> // mark,exceptional,colored,recipe,expansion
 local.height = 302
 if !<isempty <argv[4]>>
@@ -584,12 +565,6 @@ dialogclose d_craft_itemprop
 f_resenddialog d_craft_menu
 
 on=1
-local.resource = <qval <ctag0.craft.material.<ctag0.craft.skill>> ? "_<dctag0.craft.material.<ctag0.craft.skill>>_" : "_">
-if <ctag0.craft.material.<ctag.craft.skill>>
-   if <isempty <def.<ctag0.craft.skill><local.resource>category_<dlocal.z>_name>>
-      local.resource = "_"
-   endif
-endif
 f_craft <ctag0.craft.item>
 
 /////////////////////////////////////////
