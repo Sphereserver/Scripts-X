@@ -338,7 +338,7 @@ CATEGORY=Items by Professions
 SUBSECTION=Imbuing
 DESCRIPTION=Crystalline Blackrock
 
-[ITEMDEF 05733] 
+[ITEMDEF 05733]
 //Crystalline Blackrock (animation frame)
 
 [ITEMDEF 05734]
@@ -459,7 +459,7 @@ DESCRIPTION=Void Orb
 
 [ITEMDEF 05742]
 // Is an imbuing ingredient used to imbue high intensities of Physical
-// Fire, Cold, Poison, and Energy Resist properties. 
+// Fire, Cold, Poison, and Energy Resist properties.
 DEFNAME=i_boura_pelt
 TYPE=t_fur
 VALUE=100

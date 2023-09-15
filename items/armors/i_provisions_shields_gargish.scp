@@ -6,7 +6,7 @@ VERSION=X1
 
 [ITEMDEF 04200]
 DEFNAME=i_shield_gargish_wooden
-NAME=Gargish wooden shield
+NAME=gargish wooden shield
 TYPE=t_shield
 FLIP=1
 ARMOR=8
@@ -28,7 +28,7 @@ ON=@Create
 
 [ITEMDEF 04201]
 DEFNAME=i_shield_gargish_kite
-NAME=Gargish kite shield
+NAME=gargish kite shield
 TYPE=t_shield
 FLIP=1
 ARMOR=12
@@ -50,7 +50,7 @@ ON=@Create
 
 [ITEMDEF 04202]
 DEFNAME=i_shield_gargish_plate_small
-NAME=small Gargish plate shield
+NAME=small gargish plate shield
 TYPE=t_shield
 FLIP=1
 ARMOR=7
@@ -72,7 +72,7 @@ ON=@Create
 
 [ITEMDEF 04203]
 DEFNAME=i_shield_gargish_plate_medium
-NAME=medium Gargish plate shield
+NAME=medium gargish plate shield
 TYPE=t_shield
 FLIP=1
 ARMOR=11
@@ -94,7 +94,7 @@ ON=@Create
 
 [ITEMDEF 04204]
 DEFNAME=i_shield_gargish_plate_large
-NAME=large Gargish plate shield
+NAME=large gargish plate shield
 TYPE=t_shield
 FLIP=1
 ARMOR=15
@@ -116,7 +116,7 @@ ON=@Create
 
 [ITEMDEF 04205]
 DEFNAME=i_shield_gargish_stone_large
-NAME=Large Gargish stone shield
+NAME=large gargish stone shield
 TYPE=t_shield
 FLIP=1
 ARMOR=15

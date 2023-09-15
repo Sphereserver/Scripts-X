@@ -236,7 +236,7 @@ DUPEITEM=01bc4
 
 [ITEMDEF 01bc6]
 DEFNAME=i_shield_scale
-NAME=Scale Shield (unwearable)
+NAME=scale shield (unwearable)
 TYPE=t_shield
 FLIP=1
 ARMOR=16

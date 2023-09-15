@@ -73,7 +73,7 @@ ON=@Create
 
 [ITEMDEF i_swiftflight]
 ID=i_bow
-NAME=Swiftflight
+NAME=swiftflight
 //TEVENTS=t_set_marksman //FIXME add it
 CATEGORY=Provisions - Weapons - Archery
 SUBSECTION=Bows
@@ -120,7 +120,7 @@ DUPEITEM=026c2
 
 [ITEMDEF i_heartseeker]
 ID=i_bow_composite
-NAME=Heartseeker
+NAME=heartseeker
 REQSTR=13
 CATEGORY=Provisions - Weapons - Archery
 SUBSECTION=Composite Bows
@@ -172,7 +172,7 @@ DUPEITEM=02d1e
 
 [ITEMDEF i_barbed_longbow]
 ID=i_elven_composite_longbow
-NAME=Barbed Longbow
+NAME=barbed longbow
 RESOURCES=20 i_log, 1 i_gem_fire_ruby
 SKILLMAKE=Bowcraft 95.0,1 i_elven_bow_stringer
 CATEGORY=Provisions - Weapons - Archery
@@ -188,7 +188,7 @@ ON=@Create
 
 [ITEMDEF i_blight_gripped_longbow]
 ID=i_elven_composite_longbow
-NAME=Blight Gripped Longbow
+NAME=blight gripped longbow
 RESOURCES=20 i_log, 10 i_ingredient_blight, 10 i_ingredient_corruption, 1 i_ingredient_paroxysmus_lard
 SKILLMAKE=Bowcraft 75.0,1 i_elven_bow_stringer
 CATEGORY=Provisions - Weapons - Archery
@@ -209,7 +209,7 @@ ON=@Create
 
 [ITEMDEF i_faerie_fire]
 ID=i_elven_composite_longbow
-NAME=Faerie Fire
+NAME=faerie fire
 RESOURCES=20 i_log, 10 i_ingredient_blight, 10 i_ingredient_corruption, 1 i_ingredient_paroxysmus_lard
 SKILLMAKE=Bowcraft 75.0,1 i_elven_bow_stringer
 CATEGORY=Provisions - Weapons - Archery
@@ -230,7 +230,7 @@ ON=@Create
 
 [ITEMDEF i_frozen_longbow]
 ID=i_elven_composite_longbow
-NAME=Frozen Longbow
+NAME=frozen longbow
 RESOURCES=20 i_log, 1 i_gem_turquoise
 SKILLMAKE=Bowcraft 70.0,1 i_elven_bow_stringer
 CATEGORY=Provisions - Weapons - Archery
@@ -247,7 +247,7 @@ ON=@Create
 
 [ITEMDEF i_longbow_might]
 ID=i_elven_composite_longbow
-NAME=Longbow of Might
+NAME=longbow of might
 RESOURCES=20 i_log, 1 i_gem_blue_diamond
 SKILLMAKE=Bowcraft 70.0,1 i_elven_bow_stringer
 CATEGORY=Provisions - Weapons - Archery
@@ -263,7 +263,7 @@ ON=@Create
 
 [ITEMDEF i_silvani_feywood_bow]
 ID=i_elven_composite_longbow
-NAME=Faerie Fire
+NAME=faerie fire
 RESOURCES=20 i_log, 10 i_ingredient_muculent, 10 i_ingredient_scourge, 1 i_ingredient_paroxysmus_lard
 SKILLMAKE=Bowcraft 75.0,1 i_elven_bow_stringer
 CATEGORY=Provisions - Weapons - Archery
@@ -283,7 +283,7 @@ ON=@Create
 
 [ITEMDEF i_slayer_longbow]
 ID=i_elven_composite_longbow
-NAME=Slayer Longbow
+NAME=slayer longbow
 RESOURCES=20 i_log, 1 i_gem_brilliant_amber
 SKILLMAKE=Bowcraft 70.0,1 i_elven_bow_stringer
 CATEGORY=Provisions - Weapons - Archery
@@ -332,7 +332,7 @@ DUPEITEM=02d1f
 
 [ITEMDEF i_assassin_shortbow]
 ID=i_magical_shortbow
-NAME=Assassin's Shortbow
+NAME=assassin's shortbow
 RESOURCES=15 i_log, 1 i_gem_dark_sapphire
 SKILLMAKE=Bowcraft 70.0
 CATEGORY=Provisions - Weapons - Archery
@@ -349,7 +349,7 @@ ON=@Create
 
 [ITEMDEF i_lightweight_shortbow]
 ID=i_magical_shortbow
-NAME=Lightweight Shortbow
+NAME=lightweight shortbow
 RESOURCES=15 i_log, 1 i_gem_white_pearl
 SKILLMAKE=Bowcraft 70.0
 CATEGORY=Provisions - Weapons - Archery
@@ -365,7 +365,7 @@ ON=@Create
 
 [ITEMDEF i_mischief_maker]
 ID=i_magical_shortbow
-NAME=Mischief Maker
+NAME=mischief maker
 RESOURCES=15 i_log, 10 i_ingredient_corruption, 10 i_ingredient_putrefaction, 1 i_ingredient_dread_horn_mane
 SKILLMAKE=Bowcraft 75.0
 //TAG.Slayer.Super=SSLAYER_UNDEAD
@@ -385,7 +385,7 @@ ON=@Create
 
 [ITEMDEF i_mystical_shortbow]
 ID=i_magical_shortbow
-NAME=Mystical Shortbow
+NAME=mystical shortbow
 RESOURCES=15 i_log, 1 i_gem_ecru_citrine
 SKILLMAKE=Bowcraft 70.0
 CATEGORY=Provisions - Weapons - Archery
@@ -402,7 +402,7 @@ ON=@Create
 
 [ITEMDEF i_ranger_shortbow]
 ID=i_magical_shortbow
-NAME=Ranger's Shortbow
+NAME=ranger's shortbow
 RESOURCES=15 i_log, 1 i_gem_perfect_emerald
 SKILLMAKE=Bowcraft 70.0
 CATEGORY=Provisions - Weapons - Archery
@@ -454,7 +454,7 @@ DUPEITEM=027a5
 
 [ITEMDEF i_hanzo_bow]
 ID=i_yumi
-NAME=Hanzo's Bow
+NAME=hanzo's bow
 BonusSkill1=Ninjitsu
 BonusSkill1Amt=10.0
 CATEGORY=Provisions - Weapons - Archery
@@ -472,7 +472,7 @@ ON=@Create
 
 [ITEMDEF i_horselord]
 ID=i_yumi
-NAME=The Horselord
+NAME=the horselord
 //TAG.Slayer.Super=SSLAYER_ELEMENTAL
 CATEGORY=Provisions - Weapons - Archery
 SUBSECTION=Yumis
@@ -657,7 +657,7 @@ DUPEITEM=026c3
 
 [ITEMDEF i_shamino_best_crossbow]
 ID=i_crossbow_repeating
-NAME=Shamino's Best Crossbow
+NAME=shamino's best crossbow
 REQSTR=0
 SelfRepair=10
 IncreaseHitChance=15
@@ -674,7 +674,7 @@ ON=@Create
 
 [ITEMDEF i_night_reaper]
 ID=i_crossbow_repeating
-NAME=The Night Reaper
+NAME=the night reaper
 RESOURCES=10 i_log, 10 i_ingredient_blight, 10 i_ingredient_scourge, 1 i_ingredient_dread_horn_mane
 SKILLMAKE=Bowcraft 75.0
 //TAG.Slayer.Super=SSLAYER_DEMON
@@ -701,7 +701,7 @@ can be used by the Ninja with the proper amount of skill. A minimum of 50
 is required. Hit chance success is related to Ninjitsu skill level. It
 is a One-Handed Weapon for anyone with the requisite skill, however,
 Grandmaster Ninjas can use them while equipped with a two-handed weapon. A
-carpenter can find it in the Weapons category of the crafting menu. 
+carpenter can find it in the Weapons category of the crafting menu.
 
 [ITEMDEF 027aa]
 //FIXME: load and unload,

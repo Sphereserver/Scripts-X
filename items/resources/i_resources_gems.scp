@@ -365,7 +365,7 @@ DESCRIPTION=Diamond 5 (Big)
 
 [ITEMDEF 03192]
 DEFNAME=i_gem_dark_sapphire
-NAME=Dark Sapphire
+NAME=dark sapphire
 TYPE=t_normal
 VALUE=25
 CATEGORY=Crafting Resources

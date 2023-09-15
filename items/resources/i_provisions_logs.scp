@@ -138,7 +138,7 @@ COLOR=color_log_yew
 
 [ITEMDEF i_board_yew]
 ID=i_board
-NAME=Yew board%s
+NAME=yew board%s
 TYPE=t_board
 CATEGORY=Resources
 SUBSECTION=Boards
