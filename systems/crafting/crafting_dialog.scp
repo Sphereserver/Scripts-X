@@ -1,0 +1,594 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[COMMENT sphere_crafting_system]
+
+"SCRIPT CREDITS
+ --------------
+ pyromapes2k - Base crafting system used in here
+ coruja - Updated to be MORE OSI compatible
+ ShiryuX - Updated to the scriptpack and tweaked many parts of it
+ Raylde - UPDATE FOR work with dynamic configuration instead of CREATE NEW ITEMDEF FOR each craftable ITEM
+
+ SCRIPT DOCUMENTATION
+ --------------------
+ OSI Crafting System
+ ---------------------------------------
+ ctag0.craft.SKILL = the SKILL used
+ ctag0.craft.last = last ITEM crafted
+ ctag0.craft.PAGE.sidebar = sidebar PAGE
+ ---------------------------------------
+ d_craft_menu buttons
+ --------------------
+ 1 - 99 = sidebar
+ 100 - 300 = ITEM list
+ 600 - 800 = ITEM list (make BUTTON)
+
+ 400 = prev PAGE sidebar
+ 401 = next PAGE sidebar
+
+ 403 = prev PAGE main list
+ 404 = next PAGE main list
+
+ 406 = last ten BUTTON
+
+ 500 = smelt ITEM
+ 501 = first resource
+ 502 = second resource
+ 503 = exit
+
+ 505 = REPAIR
+ 506 = smelt
+ 507 = enhance
+ 508 = make last
+ --------------------"
+
+///////////////////////////////////////////////////////////////
+//////// MAIN CRAFTING MENU
+///////////////////////////////////////////////////////////////
+// This is the main menu, contains the list of items.
+[DIALOG d_craft_menu]
+40,40
+
+PAGE 0
+RESIZEPIC 0 0 9200 530 437   // background/border
+GUMPPICTILED 10 10 510 417 2624   // darker background
+GUMPPICTILED 10 32 510 5 5058   // 1 grey separators - start here
+GUMPPICTILED 10 287 510 5 5058   // 2
+GUMPPICTILED 10 337 510 5 5058   // 3
+GUMPPICTILED 210 37 5 250 5058   // 4
+GUMPPICTILED 160 292 5 45 5058   // 5 grey separators - end here
+CHECKERTRANS 10 10 510 417   // transparency layer
+XMFHTMLGUMPCOLOR 10 13 530 20 <ddef.scp.craft_title_<ctag0.craft.SKILL>> 0 0 <ddef.dcolor_white> // menu header
+
+PAGE 1
+XMFHTMLGUMPCOLOR 10 38 200 20 <ddef.scp.craft_head_categories> 0 0 <ddef.dcolor_white>
+XMFHTMLGUMPCOLOR 50 61 115 20 <ddef.scp.craft_button_lastten> 0 0 <ddef.dcolor_white>
+BUTTON 15 60 4005 4007 1 0 406
+local.wid = 80
+local.sidebar = <EVAL 1 + (9 * <ctag0.craft.PAGE.sidebar>)>
+FOR z <local.sidebar> <EVAL <local.sidebar>+8>
+   IF !<isempty <DEF.<ctag0.craft.SKILL>_category_<dlocal.z>_name>>
+      BUTTON 15 <dlocal.wid> 4005 4007 1 0 <local.sidebar>
+      IF (<isnum <DEF.<ctag0.craft.SKILL>_category_<dlocal.z>_name>>)
+         XMFHTMLGUMPCOLOR 50 <EVAL <local.wid>+2> 145 20 <ddef.<ctag0.craft.SKILL>_category_<dlocal.z>_name> 0 0 <ddef.dcolor_white>
+      ELSE
+         DCROPPEDTEXT 50 <EVAL <local.wid>+2> 145 20 0480 <STRTOUPPER <DEF.<ctag0.craft.SKILL>_category_<dlocal.z>_name>>
+      ENDIF
+   ENDIF
+   local.wid += 20
+   local.sidebar ++
+ENDFOR
+IF !<isempty <DEF.<ctag0.craft.SKILL>_category_<dlocal.sidebar>_name>>
+  BUTTON 175 265 4005 4007 1 0 401
+ENDIF
+IF <ctag0.craft.PAGE.sidebar> > 0
+   BUTTON 15 265 4014 4015 1 0 400
+ENDIF
+
+// notices section
+XMFHTMLGUMPCOLOR 10 305 155 20 <ddef.scp.craft_head_notices> 0 0 <ddef.dcolor_white>
+IF <isnum <ctag.craft.MESSAGE>>
+   XMFHTMLGUMPCOLOR 175 295 350 45 <dctag0.craft.MESSAGE> 0 0 <ddef.dcolor_white>
+ELSE
+   DHTMLGUMP 175 295 350 45 0 0 <DEF.bfont_white><ctag.craft.MESSAGE>
+ENDIF
+
+// item list section
+XMFHTMLGUMPCOLOR 215 38 305 20 <ddef.scp.craft_head_selections> 0 0 <ddef.dcolor_white>
+
+local.y = 60
+local.mainbar = <EVAL 1 + (10 * <ctag0.craft.PAGE.mainbar>)>
+FOR 1 10
+   IF (<ctag0.lastenbutton>)
+      local.ITEM = <getargv <EVAL <local._for>-1> <TAG0.craft.lastTen.<ctag0.craft.SKILL>>>
+   ELSE
+      local.ITEM = <DEF.<ctag0.craft.SKILL>_category_<dctag0.craft.sidebar>_<dlocal.mainbar>>
+   ENDIF
+    //check if expansion is required
+    ARGS = <DEF.<ctag0.craft.SKILL>_category_<dctag0.craft.sidebar>_<dlocal.mainbar>_opt>
+    IF (<ISEMPTY <DEF.<ctag0.craft.SKILL>_category_<dctag0.craft.sidebar>_<dlocal.mainbar>_opt>> || <ACCOUNT.Resdisp> > <ARGV[4]>)
+        IF (<local.ITEM> != 0)
+            BUTTON 480 <local.y> 4011 4012 1 0 <EVAL 100 + <local.mainbar>>
+            BUTTON 220 <local.y> 4005 4007 1 0 <EVAL 600 + <local.mainbar>>
+            DCROPPEDTEXT 255 <local.y> 220 20 <qval (<f_cancraft <local.ITEM>>) ? 0480 : 020> <SERV.ITEMDEF.<local.ITEM>.NAME>
+        ENDIF
+    ENDIF
+   local.mainbar ++
+   local.y += 20
+ENDFOR
+IF !<isempty <DEF.<ctag0.craft.SKILL>_category_<dctag0.craft.sidebar>_<dlocal.mainbar>>>
+   BUTTON 410 265 4005 4007 1 0 404
+   XMFHTMLGUMPCOLOR 445 268 150 20 <ddef.scp.craft_button_nextpage> 0 0 <ddef.dcolor_white>
+ENDIF
+IF (<ctag0.craft.PAGE.mainbar> > 0)
+   BUTTON 220 265 4014 4015 1 0 403
+   XMFHTMLGUMPCOLOR 255 268 150 20 <ddef.scp.craft_button_prevpage> 0 0 <ddef.dcolor_white>
+ENDIF
+
+// buttons - left section
+IF !<isempty <DEF.<ctag0.craft.SKILL>_smelt>>
+   BUTTON 15 342 4005 4007 1 0 500
+   XMFHTMLGUMPCOLOR 50 343 150 20 <ddef.scp.craft_button_smelt> 0 0 <ddef.dcolor_white>
+ENDIF
+IF <def0.<ctag0.craft.SKILL>_firstmaterial>
+   BUTTON 15 362 4005 4007 1 0 501
+   DTEXT 50 363 0480 <STRTOUPPER <DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_name>>
+ENDIF
+//if <def0.<ctag0.craft.skill>_secondmaterial>
+//   button 15 382 4005 4007 1 0 502
+//   dtext 50 383 0480 <def.<ctag0.craft.skill>_material_2_<dctag.craft.material.<ctag.craft.skill>>_name>
+//endif
+BUTTON 15 402 4017 4019 1 0 503
+XMFHTMLGUMPCOLOR 50 403 150 20 <ddef.scp.craft_button_exit> 0 0 <ddef.dcolor_white>
+
+// buttons - right section
+BUTTON 270 342 4005 4007 1 0 505
+XMFHTMLGUMPCOLOR 305 343 150 20 <ddef.scp.craft_button_repair> 0 0 <ddef.dcolor_white>
+BUTTON 270 362 4005 4007 1 0 506
+XMFHTMLGUMPCOLOR 305 363 150 20 <qval (<ctag0.craft.mark>) ? <qval (<ctag0.craft.mark>==1) ? 1044017 : 1044019> : 1044018> 0 0 <ddef.dcolor_white>
+IF !<isempty <DEF.<ctag0.craft.SKILL>_enhance>>
+    BUTTON 270 382 4005 4007 1 0 507
+    XMFHTMLGUMPCOLOR 305 383 150 20 <ddef.scp.craft_button_enhance> 0 0 <ddef.dcolor_white>
+ENDIF
+BUTTON 270 402 4005 4007 1 0 508
+XMFHTMLGUMPCOLOR 305 403 150 20 <ddef.scp.craft_button_makelast> 0 0 <ddef.dcolor_white>
+
+
+[DIALOG d_craft_menu BUTTON]
+on=0 // exit
+ctag.craft.MESSAGE
+
+on=1 99 // select category button
+ctag.craft.ITEM
+ctag.craft.PAGE.mainbar
+ctag.lastenbutton
+ctag.craft.sidebar = <ARGN>
+f_resenddialog d_craft_menu
+
+on=100 300 // select item button
+IF <ctag0.lastenbutton>
+   ctag.craft.ITEM = <getargv <EVAL <ARGN>-101> <TAG0.craft.lastTen.<ctag0.craft.SKILL>>>
+   ctag.craft.ITEM.options = 0,0,0,0,0
+   //FIXME: ideally find the actual _opt entry rather than forcing 0,0,0,0,0
+ELSE
+   ctag.craft.ITEM = <DEF.<ctag0.craft.SKILL>_category_<dctag0.craft.sidebar>_<EVAL <ARGN>-100>>
+   ctag.craft.ITEM.options = <DEF.<ctag0.craft.SKILL>_options_default>
+   IF !<isempty <DEF.<ctag0.craft.SKILL>_category_<dctag0.craft.sidebar>_<EVAL <ARGN>-100>_opt>>
+      ctag.craft.ITEM.options = <DEF.<ctag0.craft.SKILL>_category_<dctag0.craft.sidebar>_<EVAL <ARGN>-100>_opt>
+   ENDIF
+ENDIF
+DIALOGCLOSE d_craft_menu
+f_resenddialog d_craft_itemprop
+
+on=600 800 // craft item button
+IF <ctag0.lastenbutton>
+   ctag.craft.ITEM = <getargv <EVAL <ARGN>-601> <TAG0.craft.lastTen.<ctag0.craft.SKILL>>>
+   ctag.craft.ITEM.options = 0,0,0,0,0
+   //FIXME: ideally find the actual _opt entry rather than forcing 0,0,0,0,0
+ELSE
+   ctag.craft.ITEM = <DEF.<ctag0.craft.SKILL>_category_<dctag0.craft.sidebar>_<EVAL <ARGN>-600>>
+   ctag.craft.ITEM.options = <DEF.<ctag0.craft.SKILL>_options_default>
+   IF !<isempty <DEF.<ctag0.craft.SKILL>_category_<dctag0.craft.sidebar>_<EVAL <ARGN>-600>_opt>>
+      ctag.craft.ITEM.options = <DEF.<ctag0.craft.SKILL>_category_<dctag0.craft.sidebar>_<EVAL <ARGN>-600>_opt>
+   ENDIF
+ENDIF
+f_craft <ctag0.craft.ITEM>
+
+on=400 401 // sidebar buttons
+IF <ARGN> == 401
+   ctag0.craft.PAGE.sidebar ++
+ELSE
+   ctag0.craft.PAGE.sidebar --
+ENDIF
+f_resenddialog d_craft_menu
+
+on=403 404 // main list buttons
+IF <ARGN> == 404
+   ctag0.craft.PAGE.mainbar ++
+ELSE
+   ctag0.craft.PAGE.mainbar --
+ENDIF
+f_resenddialog d_craft_menu
+
+on=406 // last ten button
+ctag.lastenbutton=1
+f_resenddialog d_craft_menu
+
+on=500 // smelt button
+TRY <DEF.<ctag0.craft.SKILL>_smelt>
+
+on=501 502 // material buttons
+DIALOGCLOSE d_craft_menu
+f_resenddialog d_craft_material <EVAL <ARGN> - 500>
+
+on=503 // exit button
+ctag.craft.MESSAGE
+DIALOGCLOSE d_craft_menu
+
+on=505 // repair button
+IF !<isempty <DEF.<ctag0.craft.SKILL>_repair>>
+   TRY <DEF.<ctag0.craft.SKILL>_repair>
+ENDIF
+
+on=506 // mark item option button
+IF <def0.<ctag0.craft.SKILL>_marking>
+   DOSWITCH <ctag0.craft.mark>
+      ctag.craft.mark = 1
+      ctag.craft.mark = 2
+      ctag.craft.mark
+   ENDDO
+ENDIF
+f_resenddialog d_craft_menu
+
+on=507 // enhance button
+IF !<isempty <DEF.<ctag0.craft.SKILL>_enhance>>
+   TRY <DEF.<ctag0.craft.SKILL>_enhance>
+ENDIF
+//1149869,<FVAL <SRC.IMBUING>>//"Target an item to enhance with the properties of your selected material (success rate: ~%)"
+//1061081//"The target item is not a magic item or does not have any properties that match those of the special material."
+
+on=508 // make last button
+IF <isempty <ctag.craft.last.<ctag0.craft.SKILL>>>
+   ctag.craft.MESSAGE = You need to make an ITEM first.
+ENDIF
+f_craft <ctag0.craft.last.<ctag0.craft.SKILL>>
+
+
+///////////////////////////////////////////////////////////////
+//////// MATERIAL CRAFTING MENU
+///////////////////////////////////////////////////////////////
+// This is the main menu, contains the list of items.
+[DIALOG d_craft_material]
+40,40
+
+PAGE 0
+RESIZEPIC 0 0 9200 530 437   // background/border
+GUMPPICTILED 10 10 510 417 2624   // darker background
+GUMPPICTILED 10 32 510 5 5058   // 1 grey separators - start here
+GUMPPICTILED 10 287 510 5 5058   // 2
+GUMPPICTILED 10 337 510 5 5058   // 3
+GUMPPICTILED 210 37 5 250 5058   // 4
+GUMPPICTILED 160 292 5 45 5058   // 5 grey separators - end here
+CHECKERTRANS 10 10 510 417   // transparency layer
+XMFHTMLGUMPCOLOR 10 13 530 20 <ddef.scp.craft_title_<ctag0.craft.SKILL>> 0 0 <ddef.dcolor_white> // menu header
+
+PAGE 1
+// sidebar section
+XMFHTMLGUMPCOLOR 10 38 200 20 <ddef.scp.craft_head_categories> 0 0 <ddef.dcolor_white>
+BUTTON 15 60 4005 4007 1 0 406
+XMFHTMLGUMPCOLOR 50 61 115 20 <ddef.scp.craft_button_lastten> 0 0 <ddef.dcolor_white>
+local.sidebar = <EVAL 1 + (9 * <ctag0.craft.PAGE.sidebar>)>
+local.wid = 80
+FOR z <local.sidebar> <EVAL <local.sidebar>+8>
+   IF !<isempty <DEF.<ctag0.craft.SKILL>_category_<dlocal.z>_name>>
+      BUTTON 15 <dlocal.wid> 4005 4007 1 0 <local.sidebar>
+      IF (<isnum <DEF.<ctag0.craft.SKILL>_category_<dlocal.z>_name>>)
+         XMFHTMLGUMPCOLOR 50 <EVAL <local.wid>+2> 115 20 <ddef.<ctag0.craft.SKILL>_category_<dlocal.z>_name> 0 0 <ddef.dcolor_white>
+      ELSE
+         DCROPPEDTEXT 50 <EVAL <local.wid>+2> 115 20 0480 <STRTOUPPER <DEF.<ctag0.craft.SKILL>_category_<dlocal.z>_name>>
+      ENDIF
+   ENDIF
+   local.wid += 20
+   local.sidebar ++
+ENDFOR
+IF !<isempty <DEF.<ctag0.craft.SKILL>_category_<dlocal.sidebar>_name>>
+   BUTTON 175 265 4005 4007 1 0 401
+ENDIF
+IF <ctag0.craft.PAGE.sidebar> > 0
+   BUTTON 15 265 4014 4015 1 0 400
+ENDIF
+
+// notices section
+XMFHTMLGUMPCOLOR 10 305 155 20 <ddef.scp.craft_head_notices> 0 0 <ddef.dcolor_white>
+IF <isnum <ctag.craft.MESSAGE>>
+   XMFHTMLGUMPCOLOR 175 295 350 45 <dctag0.craft.MESSAGE> 0 0 <ddef.dcolor_white>
+ELSE
+   DHTMLGUMP 175 295 350 45 0 0 <DEF.bfont_white><ctag.craft.MESSAGE>
+ENDIF
+
+// material list section
+XMFHTMLGUMPCOLOR 215 38 305 20 <ddef.scp.craft_head_selections> 0 0 <ddef.dcolor_white>
+local.mainbar = <EVAL 10 * <ctag0.craft.PAGE.mainbar>>
+local.y = 60
+FOR 0 10
+   IF !<isempty <DEF.<ctag0.craft.SKILL>_material_<dlocal.mainbar>_name>>
+      BUTTON 220 <local.y> 4005 4007 1 0 <EVAL 600 + <local.mainbar>>
+      DCROPPEDTEXT 255 <local.y> 220 20 0480 <STRTOUPPER <DEF.<ctag0.craft.SKILL>_material_<dlocal.mainbar>_name>>
+   ENDIF
+   local.mainbar ++
+   local.y += 20
+ENDFOR
+IF !<isempty <DEF.<ctag0.craft.SKILL>_material_<dlocal.mainbar>_name>>
+   BUTTON 410 265 4005 4007 1 0 404
+   XMFHTMLGUMPCOLOR 445 268 150 20 <ddef.scp.craft_button_nextpage> 0 0 <ddef.dcolor_white>
+ENDIF
+IF (<ctag0.craft.PAGE.mainbar> > 0)
+   BUTTON 220 265 4014 4015 1 0 403
+   XMFHTMLGUMPCOLOR 255 268 150 20 <ddef.scp.craft_button_prevpage> 0 0 <ddef.dcolor_white>
+ENDIF
+
+// buttons - left section
+IF !<isempty <DEF.<ctag0.craft.SKILL>_smelt>>
+   BUTTON 15 342 4005 4007 1 0 500
+   XMFHTMLGUMPCOLOR 50 343 150 20 <ddef.scp.craft_button_smelt> 0 0 <ddef.dcolor_white>
+ENDIF
+IF <def0.<ctag0.craft.SKILL>_firstmaterial>
+   BUTTON 15 362 4005 4007 1 0 501
+   DTEXT 50 363 0480 <STRTOUPPER <DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_name>>
+ENDIF
+//if <def0.<ctag0.craft.skill>_secondmaterial>
+//   button 15 382 4005 4007 1 0 502
+//   dtext 50 383 0480 <def.<ctag0.craft.skill>_material_2_<dctag.craft.material.<ctag.craft.skill>>_name>
+//endif
+BUTTON 15 402 4017 4019 1 0 503
+XMFHTMLGUMPCOLOR 50 403 150 20 <ddef.scp.craft_button_exit> 0 0 <ddef.dcolor_white>
+
+// buttons - right section
+BUTTON 270 342 4005 4007 1 0 505
+XMFHTMLGUMPCOLOR 305 343 150 20 <ddef.scp.craft_button_repair> 0 0 <ddef.dcolor_white>
+BUTTON 270 362 4005 4007 1 0 506
+XMFHTMLGUMPCOLOR 305 363 150 20 <qval (<ctag0.craft.mark>) ? <qval (<ctag0.craft.mark>==1) ? 1044017 : 1044019> : 1044018> 0 0 <ddef.dcolor_white>
+IF !<isempty <DEF.<ctag0.craft.SKILL>_enhance>>
+   BUTTON 270 382 4005 4007 1 0 507
+   XMFHTMLGUMPCOLOR 305 383 150 20 <ddef.scp.craft_button_enhance> 0 0 <ddef.dcolor_white>
+ENDIF
+BUTTON 270 402 4005 4007 1 0 508
+XMFHTMLGUMPCOLOR 305 403 150 20 <ddef.scp.craft_button_makelast> 0 0 <ddef.dcolor_white>
+
+[DIALOG d_craft_material BUTTON]
+on=0 // exit
+ctag.craft.MESSAGE
+
+on=1 99 // select category button
+ctag.craft.ITEM
+ctag.craft.PAGE.mainbar
+ctag.lastenbutton
+ctag.craft.sidebar = <ARGN>
+DIALOGCLOSE d_craft_material
+f_resenddialog d_craft_menu
+
+on=100 300 // select item button
+ctag.craft.ITEM = <DEF.<ctag0.craft.SKILL>_category_<dctag0.craft.sidebar>_<EVAL <ARGN>-100>>
+ctag.craft.ITEM.options = <DEF.<ctag0.craft.SKILL>_options_default>
+IF !<isempty <DEF.<ctag0.craft.SKILL>_category_<dctag0.craft.sidebar>_<EVAL <ARGN>-100>_opt>>
+   ctag.craft.ITEM.options = <DEF.<ctag0.craft.SKILL>_category_<dctag0.craft.sidebar>_<EVAL <ARGN>-100>_opt>
+ENDIF
+DIALOGCLOSE d_craft_material
+f_resenddialog d_craft_itemprop
+
+on=400 401 // sidebar buttons
+IF <ARGN> == 401
+   ctag0.craft.PAGE.sidebar ++
+ELSE
+   ctag0.craft.PAGE.sidebar --
+ENDIF
+f_resenddialog d_craft_material
+
+on=403 404 // mainbar buttons
+IF <ARGN> == 404
+   ctag0.craft.PAGE.mainbar ++
+ELSE
+   ctag0.craft.PAGE.mainbar --
+ENDIF
+f_resenddialog d_craft_material
+
+on=406 // last ten button
+ctag.lastenbutton=1
+DIALOGCLOSE d_craft_material
+f_resenddialog d_craft_menu
+
+on=500 // smelt button
+TRY <DEF.<ctag0.craft.SKILL>_smelt>
+
+on=501 502 // material buttons
+f_resenddialog d_craft_material <EVAL <ARGN> - 500>
+
+on=503 // exit button
+ctag.craft.MESSAGE
+DIALOGCLOSE d_craft_material
+
+on=505 // repair button
+IF !<isempty <DEF.<ctag0.craft.SKILL>_repair>>
+   TRY <DEF.<ctag0.craft.SKILL>_repair>
+ENDIF
+
+on=506 // mark item option button
+IF <def0.<ctag0.craft.SKILL>_marking>
+   DOSWITCH <ctag0.craft.mark>
+      ctag.craft.mark = 1
+      ctag.craft.mark = 2
+      ctag.craft.mark
+   ENDDO
+ENDIF
+f_resenddialog d_craft_material
+
+on=507 // enhance button
+IF !<isempty <DEF.<ctag0.craft.SKILL>_enhance>>
+   TRY <DEF.<ctag0.craft.SKILL>_enhance>
+ENDIF
+
+on=508 // make last button
+IF <isempty <ctag.craft.last.<ctag0.craft.SKILL>>>
+   ctag.craft.MESSAGE = You need to make an ITEM first.
+ENDIF
+f_craft <ctag0.craft.last.<ctag0.craft.SKILL>>
+
+on=600 700
+IF <ARGN> == 600
+   ctag.craft.material.<ctag0.craft.SKILL>
+   f_resenddialog d_craft_menu
+   RETURN 0
+ENDIF
+local.SKILL = <STRARG <DEF.<ctag0.craft.SKILL>_material_<EVAL <ARGN>-600>_skill>>
+local.SKILLREQ = <STREAT <DEF.<ctag0.craft.SKILL>_material_<EVAL <ARGN>-600>_skill>>
+IF <<local.SKILL>> < <local.SKILLREQ>
+   ctag.craft.MESSAGE "You need to have at least <fval <local.SKILLREQ>> <local.SKILL> to USE THIS material."
+   f_resenddialog d_craft_material
+   RETURN 1
+ENDIF
+ctag.craft.material.<ctag0.craft.SKILL> = <EVAL <ARGN> - 600>
+f_resenddialog d_craft_menu
+
+///////////////////////////////////////////////////////////////
+//////// ITEM PROPERTIES CRAFTING MENU
+///////////////////////////////////////////////////////////////
+// This menu displays the requirements of the item to craft
+[DIALOG d_craft_itemprop]
+40,40
+
+PAGE 0 // Basic Layout
+RESIZEPIC 0 0 9200 530 418 // background
+GUMPPICTILED 10 10 510 399 2624 // darker overimage
+GUMPPICTILED 10 32 510 5 5058
+GUMPPICTILED 10 185 155 5 5058
+GUMPPICTILED 10 212 155 25 5058
+GUMPPICTILED 165 212 355 5 5058
+GUMPPICTILED 10 297 155 25 5058
+GUMPPICTILED 165 297 355 5 5058
+GUMPPICTILED 160 37 5 148 5058
+GUMPPICTILED 165 127 355 5 5058
+GUMPPICTILED 10 382 510 5 5058
+CHECKERTRANS 10 10 510 399
+
+PAGE 1 // Content
+XMFHTMLGUMPCOLOR 10 13 530 20 <ddef.scp.craft_title_<ctag0.craft.SKILL>> 0 0 <ddef.dcolor_white>
+ARGS = <ctag0.craft.ITEM>
+SERV.NEWITEM <ARGV[0]>
+ref1=<NEW>
+IF <def0.scp.NewCrafting_RecipeNeeded> == 1
+   IF (<getargv 3 <ctag0.craft.ITEM.options>>)
+      local.recipe = <f_check_recipe <NEW.BASEID>>
+   ENDIF
+ENDIF
+IF (STRMATCH("*t_masonry_tool*","<REF1.SKILLMAKE>")) || (STRMATCH("*t_glassblowing*","<REF1.SKILLMAKE>"))
+   LOCAL.recipe=1
+ENDIF
+TILEPICHUE 30 80 <ref1.dispiddec> <dref1.COLOR>
+DCROPPEDTEXT 170 37 265 20 0480 ITEM
+DCROPPEDTEXT 330 37 265 20 88 <ref1.NAME>
+DCROPPEDTEXT 170 74 330 20 0480 Success Chance
+IF <local.recipe> == 1
+   DCROPPEDTEXT 430 74 50 20 0480 ??.?%
+ELSE
+   DCROPPEDTEXT 430 74 50 20 0480 <fval <ref1.f_craftsuccesschance <ref1.BASEID>>>%
+ENDIF
+BUTTON 15 387 4014 4016 1 0 0
+DTEXT 50 388 0480 Back
+BUTTON 270 387 4011 4012 1 0 1
+DTEXT 305 388 0480 Make ITEM
+ARGS = <ref1.SKILLMAKE>
+DORIGIN 170 112
+FOR 1 <ARGV>
+   IF (<ref1.SKILLMAKE.<local._for>.KEY>==i_pen_and_ink)
+      DCROPPEDTEXT 170 *20 170 20 0480 Need Pen and ink
+      continue
+   ENDIF
+	IF !( (<ref1.SKILLMAKE.<local._for>.KEY>==t_carpentry) || (<ref1.SKILLMAKE.<local._for>.KEY>==t_tinker_tools) || (<ref1.SKILLMAKE.<local._for>.KEY>==t_cooking) || (<ref1.SKILLMAKE.<local._for>.KEY>==t_sewing_kit) || (<ref1.SKILLMAKE.<local._for>.KEY>==t_mortar) )
+      IF (<SERV.SKILL.<ref1.SKILLMAKE.<local._for>.KEY>>)
+         IF <local.recipe> == 1
+            DCROPPEDTEXT 170 *20 170 20 0480 ??????????
+            DCROPPEDTEXT 430 *0 50 20 0480 ??.?
+         ELSE
+            DCROPPEDTEXT 170 *20 170 20 0480 <SERV.SKILL.<ref1.SKILLMAKE.<local._for>.KEY>.NAME>
+            DCROPPEDTEXT 430 *0 50 20 0480 <fval <ref1.SKILLMAKE.<local._for>.val>>
+         ENDIF
+      ENDIF
+   ENDIF
+ENDFOR
+XMFHTMLGUMPCOLOR 10 215 155 20 1044055 0 0 <ddef.dcolor_white>
+ARGS = <ref1.RESMAKE>
+DORIGIN 170 197
+FOR 1 <ARGV>
+   IF <local.recipe> == 1
+      DCROPPEDTEXT 170 *20 170 20 0480 ??????????
+      DCROPPEDTEXT 430 *0 50 20 0480 ??
+   ELSE
+      DCROPPEDTEXT 170 *20 170 20 0480 <SERV.ITEMDEF.<ref1.RESOURCES.<local._for>.KEY>.NAME>
+      DCROPPEDTEXT 430 *0 50 20 0480 <ref1.RESOURCES.<local._for>.val>
+   ENDIF
+ENDFOR
+ref1.REMOVE
+ARGS = <ctag0.craft.ITEM.options> // mark,exceptional,colored,recipe,expansion
+local.height = 302
+IF !<isempty <ARGV[4]>>
+   IF <ARGV[4]> > 3
+      XMFHTMLGUMPCOLOR 170 <dlocal.height> 350 20 <ddef.scp.craft_resdisp_<ARGV[4]>> 0 0 <ddef.dcolor_white>
+      local.height += 20
+   ENDIF
+ENDIF
+IF <ARGV[2]>
+   XMFHTMLGUMPCOLOR 170 <dlocal.height> 350 20 <ddef.scp.craft_colored> 0 0 <ddef.dcolor_white>
+   local.height += 20
+ENDIF
+IF <ARGV[0]>
+   XMFHTMLGUMPCOLOR 170 <dlocal.height> 350 20 <ddef.scp.craft_markable> 0 0 <ddef.dcolor_white>
+   local.height += 20
+ENDIF
+IF (STRMATCH("*t_masonry_tool*","<REF1.SKILLMAKE>"))
+   XMFHTMLGUMPCOLOR 170 <dlocal.height> 350 20 1044635 0 0 <ddef.dcolor_white>
+   local.height += 20
+ENDIF
+IF (STRMATCH("*t_glassblowing*","<REF1.SKILLMAKE>"))
+   XMFHTMLGUMPCOLOR 170 <dlocal.height> 350 20 1044636 0 0 <ddef.dcolor_white>
+   local.height += 20
+ENDIF
+
+
+[DIALOG d_craft_itemprop BUTTON]
+on=0
+ctag.craft.ITEM
+DIALOGCLOSE d_craft_itemprop
+f_resenddialog d_craft_menu
+
+on=1
+f_craft <ctag0.craft.ITEM>
+
+/////////////////////////////////////////
+/////////////////////////////////////////
+/////////////////////////////////////////
+
+[DIALOG d_craft_prompt]
+100,200
+
+RESIZEPIC 0 0 5054 220 170
+RESIZEPIC 10 10 3000 200 150
+XMFHTMLGUMP 20 20 180 80 1018317 0 0 // Do you wish to place your maker's mark on this item?
+XMFHTMLGUMP 55 100 140 25 1011011 0 0 // CONTINUE
+BUTTON 20 100 4005 4007 1 0 1
+XMFHTMLGUMP 55 125 140 25 1011012 0 0 // CANCEL
+BUTTON 20 125 4005 4007 1 0 0
+
+[DIALOG d_craft_prompt BUTTON]
+on=0
+SRC.SYSMESSAGE @,,1 Cancelled mark.
+
+on=1
+SRC.SYSMESSAGE @,,1 You mark the ITEM.
+TAG0.craftedby = <qval (<SRC.FAME> < 10000) ? "<SRC.NAME>":"<SRC.SEX Lord/Lady> <SRC.NAME>">
+resendtooltip 1
+
+[EOF]

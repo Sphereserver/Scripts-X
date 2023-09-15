@@ -1,0 +1,166 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+// SCRIPT CREDITS
+// --------------
+// pyromapes2k - Base crafting system used in here
+// coruja - Updated to be more OSI compatible
+// ShiryuX - Updated to the scriptpack and tweaked many parts of it
+// Raylde - Update for work with dynamic configuration instead of create new ITEMDEF for each craftable item
+//
+// SCRIPT DOCUMENTATION
+// --------------------
+// OSI Crafting System
+
+[EVENTS e_player_crafting_event]
+ON=@SKILLMENU
+IF <DEF.scp.CraftingSystem> == 0
+RETURN 0
+ENDIF
+
+//clean MATOVERRIDE tag
+TAG0.MATOVERRIDE_<DEF.<ctag0.craft.SKILL>_resourceid>
+
+IF <ARGS>==sm_blacksmith
+	IF <def0.scp.NewCrafting_Blacksmithing> == 1
+	f_craftskill Blacksmithing
+	RETURN 1
+	ENDIF
+elif <ARGS>==sm_alchemy
+	IF <def0.scp.NewCrafting_Alchemy> == 1
+	f_craftskill ALCHEMY
+	RETURN 1
+	ENDIF
+elif <ARGS>==sm_bowcraft
+	IF <def0.scp.NewCrafting_Bowcraft> == 1
+	f_craftskill BOWCRAFT
+	RETURN 1
+	ENDIF
+elif <ARGS>==sm_cartography
+	IF <def0.scp.NewCrafting_Cartography> == 1
+	f_craftskill CARTOGRAPHY
+	RETURN 1
+	ENDIF
+elif <ARGS>==sm_carpentry
+	IF <def0.scp.NewCrafting_Carpentry> == 1
+	f_craftskill CARPENTRY
+	RETURN 1
+	ENDIF
+elif (<ARGS>==sm_tailor_leather) || (<ARGS>==sm_tailor_cloth)
+	IF <def0.scp.NewCrafting_Tailoring> == 1
+	f_craftskill TAILORING
+	RETURN 1
+	ENDIF
+elif <ARGS>==sm_tinker
+	IF <def0.scp.NewCrafting_Tinkering> == 1
+	f_craftskill TINKERING
+	RETURN 1
+	ENDIF
+elif <ARGS>==sm_inscription
+	IF <def0.scp.NewCrafting_Inscription> == 1
+	f_craftskill INSCRIPTION
+	RETURN 1
+	ENDIF
+elif <ARGS>==sm_cooking
+	IF <def0.scp.NewCrafting_Cooking> == 1
+	f_craftskill COOKING
+	RETURN 1
+	ENDIF
+ENDIF
+RETURN 0
+
+ON=@SKILLABORT
+IF <DEF.scp.CraftingSystem> == 0
+   RETURN 0
+ENDIF
+IF <def0.scp.NewCrafting_<SERV.SKILL.<ARGN>.KEY>> == 0
+   RETURN 0
+ENDIF
+
+//clean MATOVERRIDE tag
+TAG0.MATOVERRIDE_<DEF.<ctag0.craft.SKILL>_resourceid>
+
+ctag.craft.MESSAGE = <DEF.scp.craft_msg_fail>
+
+ON=@SKILLFAIL
+IF <DEF.scp.CraftingSystem> == 0
+   RETURN 0
+ENDIF
+IF <def0.scp.NewCrafting_<SERV.SKILL.<ARGN>.KEY>> == 1
+   IF !<isempty <ctag.craft.SKILL>>
+        //clean MATOVERRIDE tag
+        TAG0.MATOVERRIDE_<DEF.<ctag0.craft.SKILL>_resourceid>
+        ctag.craft.MESSAGE = <DEF.scp.craft_msg_fail>
+        f_craftskill <ctag0.craft.SKILL>
+   ENDIF
+ENDIF
+
+ON=@SKILLMAKEITEM
+ref2 = <ACT.UID>
+ref2.NAME = <SERV.ITEMDEF.<ref2.BASEID>.NAME>
+
+//FIX for giving the color of folded cloth to the new item (Legacy and OSI like crafting menu)
+IF <ARGO.isvalid> && <UID.<ref2>.SKILLMAKE.1.KEY>==Skill_Tailoring && <ARGO.BASEID>==i_cloth
+	ref2.COLOR=<ARGO.COLOR>
+ENDIF
+
+ctag.craft.MESSAGE =
+IF <DEF.scp.CraftingSystem> == 0
+   RETURN 0
+ENDIF
+IF <def0.scp.NewCrafting_<SERV.SKILL.<ctag.craft.SKILL>.KEY>> == 0
+   RETURN 0
+ENDIF
+
+ctag.craft.MESSAGE = Your last successful creation: <ref2.NAME>.
+
+ARGS = <ctag0.craft.ITEM.options> // mark,exceptional,colored,recipe,expansion
+
+// check if exceptional is marked
+IF (<ARGV[1]>)
+    IF <ref2.f_craft_exceptionalchance> > <r>
+        IF !<isempty <DEF.<ctag0.craft.SKILL>_exceptional_bonus>>
+            ref2.<DEF.<ctag0.craft.SKILL>_exceptional_bonus> <UID>
+        ENDIF
+        ctag0.craft.MESSAGE = <DEF.scp.craft_msg_exceptional>
+        ref2.TAG.exceptional = 1
+        IF (<SERV.SKILL.<ctag.craft.SKILL>.KEY> >= 100.0)
+            IF <ctag0.craft.mark> == 2
+                ref2.DIALOG d_craft_prompt
+            ELIF <ctag0.craft.mark> == 1
+                ref2.TAG.craftedby = <qval (<FAME> < 10000) ? "<NAME>":"<SEX Lord/Lady> <NAME>">
+                ctag.craft.MESSAGE = <DEF.scp.craft_msg_excepmark>
+            ENDIF
+        ENDIF
+    ENDIF
+ENDIF
+
+IF !<isempty <DEF.<ctag0.craft.SKILL>_aftercraft>>
+   ref2.<DEF.<ctag0.craft.SKILL>_aftercraft>
+ENDIF
+IF <ctag0.craft.material.<ctag.craft.SKILL>>
+   IF !<isempty <DEF.<ctag0.craft.SKILL>_<ctag0.craft.material.<ctag0.craft.SKILL>>_aftercraft>>
+      ref2.<DEF.<ctag0.craft.SKILL>_<ctag0.craft.material.<ctag0.craft.SKILL>>_aftercraft>
+   ENDIF
+ENDIF
+
+//change color and name if the material is different from the default if colored is enabled
+IF (<ARGV[2]> && <dctag.craft.material.<ctag.craft.SKILL>> > 0)
+    REF2.NAME=<DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_name> <REF2.NAME>
+    REF2.COLOR=<DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_color>
+ENDIF
+
+//set the TAG.CRAFT.RESOURCE to know what resource was used to craft the item
+REF2.TAG.CRAFT.RESOURCE=<DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid>
+
+//clean MATOVERRIDE tag
+TAG0.MATOVERRIDE_<DEF.<ctag0.craft.SKILL>_resourceid>
+
+REF2.resendtooltip 1
+f_resenddialog d_craft_menu
+RETURN 0
+
+[EOF]

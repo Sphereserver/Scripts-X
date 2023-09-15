@@ -21,7 +21,7 @@ scp.craft_msg_smithrepairneeds   "1044282" // You must be near a forge and and a
 scp.craft_msg_noresources	"1044253" // You don't have the components needed to make that.
 scp.craft_msg_nomana		"1044380" // You don't have enough mana to inscribe that spell.
 scp.craft_msg_norecipe		"1073620"	// You have not learned this recipe.
-scp.craft_msg_nocast		"You need to be able to cast this spell in order to inscribe it."
+scp.craft_msg_nocast		"You need to be able to cast THIS SPELL in order to inscribe it."
 scp.craft_msg_noexpansion	"You don't have the expansion pack needed."
 
 

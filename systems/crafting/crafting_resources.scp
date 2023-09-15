@@ -3,18 +3,18 @@
 IF <ISARMOR>
     MODAR = 2
     LowerReq = 20
-    hitpoints += 50
+    HITPOINTS += 50
 ELIF <ISWEAPON>
     LowerReq = 50
-    hitpoints += 100
+    HITPOINTS += 100
 ENDIF
 
 [FUNCTION f_resource_ore_aftercraft_shadow]
 IF <ISARMOR>
     MODAR = 4
-    hitpoints += 100
+    HITPOINTS += 100
 ELIF <ISWEAPON>
-    hitpoints += 50
+    HITPOINTS += 50
 ENDIF
 
 [FUNCTION f_resource_ore_aftercraft_copper]
@@ -31,15 +31,15 @@ ENDIF
 IF <ISARMOR>
     MODAR = 10
     IF !<istevent.ei_equipitem>
-        events +ei_equipitem
+        EVENTS +ei_equipitem
     ENDIF
-    Luck = <eval <Luck> + 40>
+    Luck = <EVAL <Luck> + 40>
     LowerReq = 30
 ELIF <ISWEAPON>
     IF !<istevent.ei_equipitem>
-        events +ei_equipitem
+        EVENTS +ei_equipitem
     ENDIF
-    Luck = <eval <Luck> + 40>
+    Luck = <EVAL <Luck> + 40>
     LowerReq = 50
 ENDIF
 
@@ -56,7 +56,7 @@ ENDIF
 [FUNCTION f_resource_ore_aftercraft_valorite]
 IF <ISARMOR>
     MODAR = 16
-    hitpoints += 50
+    HITPOINTS += 50
 ENDIF
 
 // leather
@@ -64,9 +64,9 @@ ENDIF
 IF (<ISARMOR>)
     MODAR = 10
     IF !<istevent.ei_equipitem>
-        events +ei_equipitem
+        EVENTS +ei_equipitem
     ENDIF
-    Luck = <eval <Luck> + 40>
+    Luck = <EVAL <Luck> + 40>
 ENDIF
 
 [FUNCTION f_resource_leather_aftercraft_horned]
@@ -82,16 +82,16 @@ ENDIF
 // logs
 [FUNCTION f_resource_log_aftercraft_oak]
 IF !<istevent.ei_equipitem>
-    events +ei_equipitem
+    EVENTS +ei_equipitem
 ENDIF
 IF (<ISWEAPON>)
-    Luck = <eval <Luck> + 40>
+    Luck = <EVAL <Luck> + 40>
     IncreaseDam = 5
 ENDIF
 
 [FUNCTION f_resource_log_aftercraft_ash]
 IF !<istevent.ei_equipitem>
-    events +ei_equipitem
+    EVENTS +ei_equipitem
 ENDIF
 IF (<ISARMOR>)
     LowerReq = 20
@@ -103,7 +103,7 @@ ENDIF
 
 [FUNCTION f_resource_log_aftercraft_yew]
 IF !<istevent.ei_equipitem>
-    events +ei_equipitem
+    EVENTS +ei_equipitem
 ENDIF
 IF (<ISARMOR>)
     RegenHits = 1
@@ -115,21 +115,21 @@ ENDIF
 
 [FUNCTION f_resource_log_aftercraft_heartwood]
 IF !<istevent.ei_equipitem>
-    events +ei_equipitem
+    EVENTS +ei_equipitem
 ENDIF
 IF <ISARMOR>
     //SHIELD
     IF (<TYPE> == t_shield)
-        dorand 6
+        DORAND 6
             Luck = 40
-            hitpoints += <eval <hitpoints> / 2>
+            HITPOINTS += <EVAL <HITPOINTS> / 2>
             LowerReq = 20
             IncreaseDam = 10
             IncreaseHitChance = 5
             MageArmor = 1
-        enddo
+        ENDDO
     ELSE
-        dorand 7
+        DORAND 7
             BonusDEX = 2
             BonusStr = 2
             RESPHYSICAL = 5
@@ -137,24 +137,24 @@ IF <ISARMOR>
             SelfRepair = 2
             RESCOLD = 3
             SpellChanneling = 1
-        enddo
+        ENDDO
     ENDIF
 ELIF <ISWEAPON>
-    dorand 7
+    DORAND 7
         Luck = 40
-        hitpoints += <eval <hitpoints> / 2>
+        HITPOINTS += <EVAL <HITPOINTS> / 2>
         LowerReq = 20
         IncreaseSwingSpeed = 10
         IncreaseHitChance = 5
         HitLeechLife = <r100>
         Luck = 10
-    enddo
+    ENDDO
 ENDIF
 
 
 [FUNCTION f_resource_log_aftercraft_bloodwood]
 IF !<istevent.ei_equipitem>
-    events +ei_equipitem
+    EVENTS +ei_equipitem
 ENDIF
 IF <ISARMOR>
     //SHIELD
@@ -169,7 +169,7 @@ ENDIF
 
 [FUNCTION f_resource_log_aftercraft_frostwood]
 IF !<istevent.ei_equipitem>
-    events +ei_equipitem
+    EVENTS +ei_equipitem
 ENDIF
 IF (<ISARMOR> && <TYPE> == t_shield)
     SpellChanneling = 1
