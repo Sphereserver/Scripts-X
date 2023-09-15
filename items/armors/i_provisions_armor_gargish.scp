@@ -6,7 +6,7 @@ VERSION=X1
 
 [ITEMDEF 0283]
 DEFNAME=i_gargish_stone_arms_female
-NAME=Gargish female stone arms
+NAME=gargish female stone arms
 TYPE=t_armor
 FLIP=1
 ARMOR=25
@@ -32,7 +32,7 @@ ON=@Create
 
 [ITEMDEF 0284]
 DEFNAME=i_gargish_stone_arms
-NAME=Gargish stone arms
+NAME=gargish stone arms
 TYPE=t_armor
 FLIP=1
 ARMOR=25
@@ -58,7 +58,7 @@ ON=@Create
 
 [ITEMDEF 0285]
 DEFNAME=i_gargish_stone_chest_female
-NAME=Gargish female stone chest
+NAME=gargish female stone chest
 TYPE=t_armor
 FLIP=1
 ARMOR=25
@@ -84,7 +84,7 @@ ON=@Create
 
 [ITEMDEF 0286]
 DEFNAME=i_gargish_stone_chest
-NAME=Gargish stone chest
+NAME=gargish stone chest
 TYPE=t_armor
 FLIP=1
 ARMOR=25
@@ -110,7 +110,7 @@ ON=@Create
 
 [ITEMDEF 0287]
 DEFNAME=i_gargish_stone_kilt_female
-NAME=Gargish female stone kilt
+NAME=gargish female stone kilt
 TYPE=t_armor
 FLIP=1
 ARMOR=25
@@ -136,7 +136,7 @@ ON=@Create
 
 [ITEMDEF 0288]
 DEFNAME=i_gargish_stone_kilt
-NAME=Gargish stone kilt
+NAME=gargish stone kilt
 TYPE=t_armor
 FLIP=1
 ARMOR=25
@@ -162,7 +162,7 @@ ON=@Create
 
 [ITEMDEF 0289]
 DEFNAME=i_gargish_stone_leggings_female
-NAME=Gargish female stone leggings
+NAME=gargish female stone leggings
 TYPE=t_armor
 FLIP=1
 ARMOR=25
@@ -188,7 +188,7 @@ ON=@Create
 
 [ITEMDEF 028a]
 DEFNAME=i_gargish_stone_leggings
-NAME=Gargish stone leggings
+NAME=gargish stone leggings
 TYPE=t_armor
 FLIP=1
 ARMOR=25
@@ -215,7 +215,7 @@ ON=@Create
 
 [ITEMDEF 0307]
 DEFNAME=i_gargish_plate_arms_female
-NAME=Gargish female platemail arms
+NAME=gargish female platemail arms
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -241,7 +241,7 @@ ON=@Create
 
 [ITEMDEF 0308]
 DEFNAME=i_gargish_plate_arms
-NAME=Gargish platemail arms
+NAME=gargish platemail arms
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -267,7 +267,7 @@ ON=@Create
 
 [ITEMDEF 0309]
 DEFNAME=i_gargish_plate_chest_female
-NAME=Gargish female platemail chest
+NAME=gargish female platemail chest
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -293,7 +293,7 @@ ON=@Create
 
 [ITEMDEF 030a]
 DEFNAME=i_gargish_plate_chest
-NAME=Gargish platemail chest
+NAME=gargish platemail chest
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -319,7 +319,7 @@ ON=@Create
 
 [ITEMDEF 030b]
 DEFNAME=i_gargish_plate_kilt_female
-NAME=Gargish female platemail kilt
+NAME=gargish female platemail kilt
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -345,7 +345,7 @@ ON=@Create
 
 [ITEMDEF 030c]
 DEFNAME=i_gargish_plate_kilt
-NAME=Gargish platemail kilt
+NAME=gargish platemail kilt
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -371,7 +371,7 @@ ON=@Create
 
 [ITEMDEF 030d]
 DEFNAME=i_gargish_plate_leggings_female
-NAME=Gargish female platemail leggings
+NAME=gargish female platemail leggings
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -397,7 +397,7 @@ ON=@Create
 
 [ITEMDEF 030e]
 DEFNAME=i_gargish_plate_leggings
-NAME=Gargish platemail leggings
+NAME=gargish platemail leggings
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -424,7 +424,7 @@ ON=@Create
 
 [ITEMDEF 0403]
 DEFNAME=i_gargish_cloth_arms_female
-NAME=Gargish female cloth arms
+NAME=gargish female cloth arms
 TYPE=t_armor
 DYE=1
 FLIP=1
@@ -452,7 +452,7 @@ ON=@Create
 
 [ITEMDEF 0404]
 DEFNAME=i_gargish_cloth_arms
-NAME=Gargish cloth arms
+NAME=gargish cloth arms
 TYPE=t_armor
 DYE=1
 FLIP=1
@@ -480,7 +480,7 @@ ON=@Create
 
 [ITEMDEF 0405]
 DEFNAME=i_gargish_cloth_chest_female
-NAME=Gargish female cloth chest
+NAME=gargish female cloth chest
 TYPE=t_armor
 DYE=1
 FLIP=1
@@ -508,7 +508,7 @@ ON=@Create
 
 [ITEMDEF 0406]
 DEFNAME=i_gargish_cloth_chest
-NAME=Gargish cloth chest
+NAME=gargish cloth chest
 TYPE=t_armor
 DYE=1
 FLIP=1
@@ -536,7 +536,7 @@ ON=@Create
 
 [ITEMDEF 0407]
 DEFNAME=i_gargish_cloth_kilt_female
-NAME=Gargish female cloth kilt
+NAME=gargish female cloth kilt
 TYPE=t_armor
 DYE=1
 FLIP=1
@@ -564,7 +564,7 @@ ON=@Create
 
 [ITEMDEF 0408]
 DEFNAME=i_gargish_cloth_kilt
-NAME=Gargish cloth kilt
+NAME=gargish cloth kilt
 TYPE=t_armor
 DYE=1
 FLIP=1
@@ -592,7 +592,7 @@ ON=@Create
 
 [ITEMDEF 0409]
 DEFNAME=i_gargish_cloth_leggings_female
-NAME=Gargish female cloth leggings
+NAME=gargish female cloth leggings
 TYPE=t_armor
 DYE=1
 FLIP=1
@@ -620,7 +620,7 @@ ON=@Create
 
 [ITEMDEF 040a]
 DEFNAME=i_gargish_cloth_leggings
-NAME=Gargish cloth leggings
+NAME=gargish cloth leggings
 TYPE=t_armor
 DYE=1
 FLIP=1
@@ -746,7 +746,7 @@ DUPEITEM=040a
 
 [ITEMDEF 042de]
 DEFNAME=i_gargish_plate_talons
-NAME=Gargish plate talons
+NAME=gargish plate talons
 TYPE=t_armor
 FLIP=1
 ARMOR=15
@@ -774,7 +774,7 @@ DUPEITEM=042de
 // Gargish Leather Arms
 [ITEMDEF 0301]
 defname=i_gargish_leather_arms_f
-name=gargish leather arms
+NAME=gargish leather arms
 nameloc=1020769
 type=t_armor_leather
 can=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
@@ -807,7 +807,7 @@ nameloc=1095327
 // Gargish Leather Arms
 [ITEMDEF 0302]
 defname=i_gargish_leather_arms
-name=gargish leather arms
+NAME=gargish leather arms
 nameloc=1020770
 type=t_armor_leather
 can=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
@@ -840,7 +840,7 @@ nameloc=1095328
 // Gargish Leather Chest
 [ITEMDEF 0303]
 defname=i_gargish_leather_chest_f
-name=gargish leather chest
+NAME=gargish leather chest
 nameloc=1020771
 type=t_armor_leather
 can=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
@@ -873,7 +873,7 @@ nameloc=1095329
 // Gargish Leather Chest
 [ITEMDEF 0304]
 defname=i_gargish_leather_chest
-name=gargish leather chest
+NAME=gargish leather chest
 nameloc=1020772
 type=t_armor_leather
 can=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
@@ -906,7 +906,7 @@ nameloc=1095330
 // Gargish Leather Leggings
 [ITEMDEF 0305]
 defname=i_gargish_leather_leggings_f
-name=gargish leather leggings
+NAME=gargish leather leggings
 nameloc=1020773
 type=t_armor_leather
 can=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
@@ -939,7 +939,7 @@ nameloc=1095333
 // Gargish Leather Leggings
 [ITEMDEF 0306]
 defname=i_gargish_leather_leggings
-name=gargish leather leggings
+NAME=gargish leather leggings
 nameloc=1020774
 type=t_armor_leather
 can=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
@@ -972,7 +972,7 @@ nameloc=1095334
 // Gargish Leather Kilt
 [ITEMDEF 0310]
 defname=i_gargish_leather_kilt_f
-name=gargish leather kilt
+NAME=gargish leather kilt
 nameloc=1020784
 type=t_armor_leather
 can=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
@@ -1005,7 +1005,7 @@ nameloc=1095331
 // Gargish Leather Kilt
 [ITEMDEF 0311]
 defname=i_gargish_leather_kilt
-name=gargish leather kilt
+NAME=gargish leather kilt
 nameloc=1020785
 type=t_armor_leather
 can=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
@@ -1038,7 +1038,7 @@ nameloc=1095332
 // Gargish Leather Talons
 [ITEMDEF 041d8]
 defname=i_gargish_leather_talons
-name=gargish leather talons
+NAME=gargish leather talons
 nameloc=1095728
 type=t_armor_leather
 can=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
@@ -1065,7 +1065,7 @@ nameloc=1095729
 // Gargish Leather Wing Armor
 [ITEMDEF 0457e]
 defname=i_gargish_leather_wing_armor
-name=gargish leather wing armor
+NAME=gargish leather wing armor
 nameloc=1096662
 type=t_armor_leather
 can=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
@@ -1098,7 +1098,7 @@ nameloc=1096663
 // Gargish Belt
 [ITEMDEF 0450d]
 defname=i_gargish_belt
-name=gargish belt
+NAME=gargish belt
 nameloc=1096549
 type=t_clothing
 can=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle

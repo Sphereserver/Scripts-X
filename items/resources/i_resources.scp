@@ -384,7 +384,7 @@ ON=@Create
       NAME=scattered crystals
       NAME=crushed crystals
       NAME=jagged crystals
-      NAME=crystal pieces 
+      NAME=crystal pieces
    ENDDO
 
 [ITEMDEF 0223b]
@@ -825,7 +825,7 @@ DESCRIPTION=White Tiger Pelt
 
 [ITEMDEF i_medusa_scale]
 ID=026b4
-NAME=Medusa scale%s
+NAME=medusa scale%s
 CATEGORY=Quest
 SUBSECTION=Medusa
 DESCRIPTION=Medusa Scale

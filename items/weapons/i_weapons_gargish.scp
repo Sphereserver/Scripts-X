@@ -138,7 +138,7 @@ ON=@Create
 
 [ITEMDEF 0902]
 DEFNAME=i_gargish_dagger
-NAME=Gargish dagger
+NAME=gargish dagger
 TYPE=t_weapon_fence
 DAM=10,11
 FLIP=1
@@ -287,7 +287,7 @@ ON=@Create
 
 [ITEMDEF 0908]
 DEFNAME=i_gargish_talwar
-NAME=Gargish talwar
+NAME=gargish talwar
 TYPE=t_weapon_sword
 DAM=16,18
 FLIP=1
@@ -393,10 +393,10 @@ DUPELIST=04073
 Expansion=RDS_SA
 ON=@Create
    HITPOINTS={36 48}
-   
+
 [ITEMDEF 048ae]
 DEFNAME=i_gargish_cleaver
-NAME=Gargish cleaver
+NAME=gargish cleaver
 TYPE=t_weapon_sword
 DAM=11,13
 FLIP=1
@@ -425,7 +425,7 @@ DUPEITEM=048ae
 
 [ITEMDEF 048b0]
 DEFNAME=i_gargish_axe_battle
-NAME=Gargish battle axe
+NAME=gargish battle axe
 TYPE=t_weapon_axe
 DAM=15,17
 FLIP=1
@@ -455,7 +455,7 @@ DUPEITEM=048b0
 
 [ITEMDEF 048b2]
 DEFNAME=i_gargish_axe
-NAME=Gargish axe
+NAME=gargish axe
 TYPE=t_weapon_axe
 DAM=14,16
 FLIP=1
@@ -485,7 +485,7 @@ DUPEITEM=048b2
 
 [ITEMDEF 048b4]
 DEFNAME=i_gargish_bardiche
-NAME=Gargish bardiche
+NAME=gargish bardiche
 TYPE=t_weapon_sword
 DAM=17,18
 FLIP=1
@@ -515,7 +515,7 @@ DUPEITEM=048b4
 
 [ITEMDEF 048b6]
 DEFNAME=i_gargish_knife_butcher
-NAME=Gargish butcher knife
+NAME=gargish butcher knife
 TYPE=t_weapon_sword
 DAM=9,11
 FLIP=1
@@ -544,7 +544,7 @@ DUPEITEM=048b6
 
 [ITEMDEF 048b8]
 DEFNAME=i_gargish_staff_gnarled
-NAME=Gargish gnarled staff
+NAME=gargish gnarled staff
 TYPE=t_weapon_mace_staff
 DAM=15,17
 FLIP=1
@@ -573,7 +573,7 @@ DUPEITEM=048b8
 
 [ITEMDEF 048ba]
 DEFNAME=i_gargish_katana
-NAME=Gargish katana
+NAME=gargish katana
 TYPE=t_weapon_sword
 DAM=11,13
 FLIP=1
@@ -602,7 +602,7 @@ DUPEITEM=048ba
 
 [ITEMDEF 048bc]
 DEFNAME=i_gargish_kryss
-NAME=Gargish kryss
+NAME=gargish kryss
 TYPE=t_weapon_fence
 DAM=10,12
 FLIP=1
@@ -631,7 +631,7 @@ DUPEITEM=048bc
 
 [ITEMDEF 048be]
 DEFNAME=i_gargish_war_fork
-NAME=Gargish war fork
+NAME=gargish war fork
 TYPE=t_weapon_fence
 DAM=12,13
 FLIP=1
@@ -660,7 +660,7 @@ DUPEITEM=048be
 
 [ITEMDEF 048c0]
 DEFNAME=i_gargish_hammer_war
-NAME=Gargish war hammer
+NAME=gargish war hammer
 TYPE=t_weapon_mace_smith
 DAM=17,18
 FLIP=1
@@ -689,7 +689,7 @@ DUPEITEM=048c0
 
 [ITEMDEF 048c2]
 DEFNAME=i_gargish_maul
-NAME=Gargish maul
+NAME=gargish maul
 TYPE=t_weapon_mace_smith
 DAM=14,16
 FLIP=1
@@ -718,7 +718,7 @@ DUPEITEM=048c2
 
 [ITEMDEF 048c4]
 DEFNAME=i_gargish_scythe
-NAME=Gargish scythe
+NAME=gargish scythe
 TYPE=t_weapon_sword
 DAM=15,18
 FLIP=1
@@ -749,7 +749,7 @@ DUPEITEM=048c4
 
 [ITEMDEF 048c6]
 DEFNAME=i_gargish_bone_harvester
-NAME=Gargish bone harvester
+NAME=gargish bone harvester
 TYPE=t_weapon_sword
 DAM=13,15
 FLIP=1
@@ -778,7 +778,7 @@ DUPEITEM=048c6
 
 [ITEMDEF 048c8]
 DEFNAME=i_gargish_pike
-NAME=Gargish pike
+NAME=gargish pike
 TYPE=t_weapon_fence
 DAM=14,16
 FLIP=1
@@ -807,7 +807,7 @@ DUPEITEM=048c8
 
 [ITEMDEF 048ca]
 DEFNAME=i_gargish_lance
-NAME=Gargish lance
+NAME=gargish lance
 TYPE=t_weapon_fence
 DAM=17,18
 FLIP=1
@@ -837,7 +837,7 @@ DUPEITEM=048ca
 
 [ITEMDEF 048cc]
 DEFNAME=i_gargish_tessen
-NAME=Gargish tessen
+NAME=gargish tessen
 TYPE=t_weapon_mace_sharp
 DAM=10,12
 FLIP=1
@@ -867,7 +867,7 @@ DUPEITEM=048cc
 
 [ITEMDEF 048ce]
 DEFNAME=i_gargish_tekagi
-NAME=Gargish tekagi
+NAME=gargish tekagi
 TYPE=t_weapon_fence
 DAM=10,12
 FLIP=1
@@ -896,7 +896,7 @@ DUPEITEM=048ce
 
 [ITEMDEF 048d0]
 DEFNAME=i_gargish_daisho
-NAME=Gargish daisho
+NAME=gargish daisho
 TYPE=t_weapon_sword
 DAM=13,15
 FLIP=1

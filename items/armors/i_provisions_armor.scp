@@ -2862,7 +2862,7 @@ DUPEITEM=02793
 
 [ITEMDEF 02b06]
 DEFNAME=i_legs_honor
-NAME=Legs of Honor
+NAME=legs of honor
 TYPE=t_armor
 FLIP=1
 ARMOR=40
@@ -2897,7 +2897,7 @@ DUPEITEM=02b06
 
 [ITEMDEF 02b08]
 DEFNAME=i_breastplate_justice
-NAME=Breastplate of Justice
+NAME=breastplate of justice
 TYPE=t_armor
 FLIP=1
 ARMOR=40
@@ -2932,7 +2932,7 @@ DUPEITEM=02b08
 
 [ITEMDEF 02b0a]
 DEFNAME=i_arms_compassion
-NAME=Arms of Compassion
+NAME=arms of compassion
 TYPE=t_armor
 FLIP=1
 ARMOR=40
@@ -2967,7 +2967,7 @@ DUPEITEM=02b0a
 
 [ITEMDEF 02b0c]
 DEFNAME=i_gauntlets_valor
-NAME=Gauntlets of Valor
+NAME=gauntlets of valor
 TYPE=t_armor
 FLIP=1
 ARMOR=40
@@ -3002,7 +3002,7 @@ DUPEITEM=02b0c
 
 [ITEMDEF 02b0e]
 DEFNAME=i_gorget_truth
-NAME=Gorget of Honesty
+NAME=gorget of honesty
 TYPE=t_armor
 FLIP=1
 ARMOR=40
@@ -3037,7 +3037,7 @@ DUPEITEM=02b0e
 
 [ITEMDEF 02b10]
 DEFNAME=i_helm_spirituality
-NAME=Helm Spirituality
+NAME=helm spirituality
 TYPE=t_armor
 FLIP=1
 ARMOR=40
@@ -3072,7 +3072,7 @@ DUPEITEM=02b10
 
 [ITEMDEF 02b12]
 DEFNAME=i_solaretes_sacrifice
-NAME=Sollerets of Sacrifice
+NAME=sollerets of sacrifice
 TYPE=t_armor
 FLIP=1
 ARMOR=40

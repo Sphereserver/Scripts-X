@@ -31,7 +31,7 @@ VERSION=X1
 
 [ITEMDEF 03183]
 DEFNAME=i_ingredient_blight
-NAME=Blight
+NAME=blight
 TYPE=t_normal
 CATEGORY=Crafting Resources
 SUBSECTION=Ingredients
@@ -39,7 +39,7 @@ DESCRIPTION=Blight
 
 [ITEMDEF 03184]
 DEFNAME=i_ingredient_corruption
-NAME=Corruption
+NAME=corruption
 TYPE=t_normal
 CATEGORY=Crafting Resources
 SUBSECTION=Ingredients
@@ -47,7 +47,7 @@ DESCRIPTION=Corruption
 
 [ITEMDEF 03185]
 DEFNAME=i_ingredient_putrefaction
-NAME=Putrefaction
+NAME=putrefaction
 TYPE=t_normal
 CATEGORY=Crafting Resources
 SUBSECTION=Ingredients
@@ -55,7 +55,7 @@ DESCRIPTION=Putrefaction
 
 [ITEMDEF 03186]
 DEFNAME=i_ingredient_scourge
-NAME=Scourge
+NAME=scourge
 TYPE=t_normal
 CATEGORY=Crafting Resources
 SUBSECTION=Ingredients
@@ -63,7 +63,7 @@ DESCRIPTION=Scourge
 
 [ITEMDEF 03187]
 DEFNAME=i_ingredient_taint
-NAME=Taint
+NAME=taint
 TYPE=t_normal
 CATEGORY=Crafting Resources
 SUBSECTION=Ingredients
@@ -71,7 +71,7 @@ DESCRIPTION=Taint
 
 [ITEMDEF 03188]
 DEFNAME=i_ingredient_muculent
-NAME=Muculent
+NAME=muculent
 TYPE=t_normal
 CATEGORY=Crafting Resources
 SUBSECTION=Ingredients
@@ -79,7 +79,7 @@ DESCRIPTION=Muculent
 
 [ITEMDEF 03189]
 DEFNAME=i_ingredient_paroxysmus_lard
-NAME=Lard of Paroxysmus
+NAME=lard of paroxysmus
 TYPE=t_normal
 CATEGORY=Crafting Resources
 SUBSECTION=Ingredients
@@ -87,7 +87,7 @@ DESCRIPTION=Lard of Paroxysmus
 
 [ITEMDEF 0318a]
 DEFNAME=i_ingredient_dread_horn_mane
-NAME=Dread Horn Mane
+NAME=dread horn mane
 TYPE=t_normal
 CATEGORY=Crafting Resources
 SUBSECTION=Ingredients
@@ -95,7 +95,7 @@ DESCRIPTION=Dread Horn Mane
 
 [ITEMDEF 0318b]
 DEFNAME=i_ingredient_diseased_bark
-NAME=Diseased Bark
+NAME=diseased bark
 TYPE=t_normal
 CATEGORY=Crafting Resources
 SUBSECTION=Ingredients
@@ -103,7 +103,7 @@ DESCRIPTION=Diseased Bark
 
 [ITEMDEF 0318c]
 DEFNAME=i_ingredient_grizzled_bones
-NAME=Grizzled Bones
+NAME=grizzled bones
 TYPE=t_normal
 CATEGORY=Crafting Resources
 SUBSECTION=Ingredients
@@ -111,7 +111,7 @@ DESCRIPTION=Grizzled Bones
 
 [ITEMDEF 0318d]
 DEFNAME=i_ingredient_travesty_eye
-NAME=Eye of the Travesty
+NAME=eye of the travesty
 TYPE=t_normal
 CATEGORY=Crafting Resources
 SUBSECTION=Ingredients
@@ -119,7 +119,7 @@ DESCRIPTION=Eye of the Travesty
 
 [ITEMDEF 0318e]
 DEFNAME=i_ingredient_captured_essence
-NAME=Captured Essence
+NAME=captured essence
 TYPE=t_normal
 CATEGORY=Crafting Resources
 SUBSECTION=Ingredients
