@@ -28,13 +28,13 @@ SKILLMAKE=Bowcraft 30.0
 CATEGORY=Provisions - Weapons - Archery
 SUBSECTION=Archery
 DESCRIPTION=Bow
-CanUse=can_u_human|can_u_elf
-ReqStr=20
+CANUSE=can_u_human|can_u_elf
+REQSTR=20
 TEVENTS=ei_equipitem
 DUPELIST=013b2
 //Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
 
 [ITEMDEF 013b2]
 //bow
@@ -54,8 +54,8 @@ SKILLMAKE=Bowcraft 40.0
 CATEGORY=Provisions - Weapons - Archery
 SUBSECTION=Bows
 DESCRIPTION=Superior Bow
-ON=@Create
-   HITPOINTS={48 60}
+ON=@CREATE
+HITPOINTS={48 60}
 
 [ITEMDEF i_bow_exceptional]
 ID=i_bow
@@ -68,8 +68,8 @@ SKILLMAKE=Bowcraft 50.0
 CATEGORY=Provisions - Weapons - Archery
 SUBSECTION=Bows
 DESCRIPTION=Exceptional Bow
-ON=@Create
-   HITPOINTS={60 72}
+ON=@CREATE
+HITPOINTS={60 72}
 
 [ITEMDEF i_swiftflight]
 ID=i_bow
@@ -78,9 +78,9 @@ NAME=swiftflight
 CATEGORY=Provisions - Weapons - Archery
 SUBSECTION=Bows
 DESCRIPTION=Swiftflight
-ON=@Create
-   COLOR=0 //FIXME: unknown color
-   HITPOINTS=255
+ON=@CREATE
+COLOR=0 //FIXME: unknown color
+HITPOINTS=255
    IncreaseDam=40
 
 
@@ -107,12 +107,12 @@ SKILLMAKE=Bowcraft 70.0
 CATEGORY=Provisions - Weapons - Archery
 SUBSECTION=Archery
 DESCRIPTION=Composite Bow
-ReqStr=45
+REQSTR=45
 TEVENTS=ei_equipitem
 DUPELIST=026cc
 Expansion=RDS_AOS
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
 
 [ITEMDEF 026cc]
 //composite bow
@@ -128,9 +128,9 @@ DESCRIPTION=Heartseeker
 TEVENTS=ei_equipitem
 DUPELIST=026cc
 Expansion=RDS_AOS
-ON=@Create
-   COLOR=0 //FIXME: unknown color
-   HITPOINTS={36 48}
+ON=@CREATE
+COLOR=0 //FIXME: unknown color
+HITPOINTS={36 48}
    IncreaseHitChance=5
    IncreaseSwingSpeed=10
    IncreaseDam=25
@@ -159,12 +159,12 @@ SKILLMAKE=Bowcraft 95.0
 CATEGORY=Provisions - Weapons - Archery
 SUBSECTION=Archery
 DESCRIPTION=Elven Composite LongBow
-ReqStr=45
+REQSTR=45
 TEVENTS=ei_equipitem
 DUPELIST=02d2a
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
 
 [ITEMDEF 02d2a]
 //elven composite longbow
@@ -181,9 +181,9 @@ DESCRIPTION=Barbed Longbow
 TEVENTS=ei_equipitem
 DUPELIST=02d2a
 Expansion=RDS_ML
-ON=@Create
-   COLOR=0 //FIXME: unknown color
-   HITPOINTS={36 48}
+ON=@CREATE
+COLOR=0 //FIXME: unknown color
+HITPOINTS={36 48}
    ReflectPhysicalDam=12
 
 [ITEMDEF i_blight_gripped_longbow]
@@ -197,9 +197,9 @@ DESCRIPTION=Blight Gripped Longbow
 TEVENTS=ei_equipitem
 DUPELIST=02d2a
 Expansion=RDS_ML
-ON=@Create
-   COLOR=<ColorElementalType>
-   HITPOINTS=255
+ON=@CREATE
+COLOR=<ColorElementalType>
+HITPOINTS=255
    NightSight=1
    HitAreaPoison=20
    RegenStam=4
@@ -218,9 +218,9 @@ DESCRIPTION=Faerie Fire
 TEVENTS=ei_equipitem
 DUPELIST=02d2a
 Expansion=RDS_ML
-ON=@Create
-   COLOR=<ColorElementalType>
-   HITPOINTS=255
+ON=@CREATE
+COLOR=<ColorElementalType>
+HITPOINTS=255
    HitFireball=25
    Balanced=1
    Bonusdex=3
@@ -239,9 +239,9 @@ DESCRIPTION=Frozen Longbow
 TEVENTS=ei_equipitem
 DUPELIST=02d2a
 Expansion=RDS_ML
-ON=@Create
-   COLOR=0 //FIXME: unknown color
-   HITPOINTS={36 48}
+ON=@CREATE
+COLOR=0 //FIXME: unknown color
+HITPOINTS={36 48}
    IncreaseSwingSpeed=-5
    IncreaseDam=10
 
@@ -256,9 +256,9 @@ DESCRIPTION=Longbow of Might
 TEVENTS=ei_equipitem
 DUPELIST=02d2a
 Expansion=RDS_ML
-ON=@Create
-   COLOR=0 //FIXME: unknown color
-   HITPOINTS={36 48}
+ON=@CREATE
+COLOR=0 //FIXME: unknown color
+HITPOINTS={36 48}
    IncreaseDam=5
 
 [ITEMDEF i_silvani_feywood_bow]
@@ -272,9 +272,9 @@ DESCRIPTION=Faerie Fire
 TEVENTS=ei_equipitem
 DUPELIST=02d2a
 Expansion=RDS_ML
-ON=@Create
-   COLOR=<ColorElementalType>
-   HITPOINTS=255
+ON=@CREATE
+COLOR=<ColorElementalType>
+HITPOINTS=255
    SpellChanneling=1
    IncreaseHitChance=12
    IncreaseSwingSpeed=30
@@ -292,9 +292,9 @@ DESCRIPTION=Slayer Longbow
 TEVENTS=ei_equipitem
 DUPELIST=02d2a
 Expansion=RDS_ML
-ON=@Create
-   COLOR=0 //FIXME: unknown color
-   HITPOINTS={36 48}
+ON=@CREATE
+COLOR=0 //FIXME: unknown color
+HITPOINTS={36 48}
 
 ///////////////////////////////////////////////////////////////
 //////// MAGICAL SHORTBOWS
@@ -319,12 +319,12 @@ SKILLMAKE=Bowcraft 85.0
 CATEGORY=Provisions - Weapons - Archery
 SUBSECTION=Archery
 DESCRIPTION=Magical Shortbow
-ReqStr=45
+REQSTR=45
 TEVENTS=ei_equipitem
 DUPELIST=02d2b
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
 
 [ITEMDEF 02d2b]
 //magical shortbow
@@ -341,9 +341,9 @@ DESCRIPTION=Assassin's Shortbow
 TEVENTS=ei_equipitem
 DUPELIST=02d2b
 Expansion=RDS_ML
-ON=@Create
-   COLOR=0 //FIXME: unknown color
-   HITPOINTS={36 48}
+ON=@CREATE
+COLOR=0 //FIXME: unknown color
+HITPOINTS={36 48}
    IncreaseHitChance=3
    Increasedam=4
 
@@ -358,9 +358,9 @@ DESCRIPTION=Lightweight Shortbow
 TEVENTS=ei_equipitem
 DUPELIST=02d2b
 Expansion=RDS_ML
-ON=@Create
-   COLOR=0 //FIXME: unknown color
-   HITPOINTS={36 48}
+ON=@CREATE
+COLOR=0 //FIXME: unknown color
+HITPOINTS={36 48}
    Balanced=1
 
 [ITEMDEF i_mischief_maker]
@@ -375,9 +375,9 @@ DESCRIPTION=Mischief Maker
 TEVENTS=ei_equipitem
 DUPELIST=02d2b
 Expansion=RDS_ML
-ON=@Create
-   COLOR=<ColorElementalType>
-   HITPOINTS=255
+ON=@CREATE
+COLOR=<ColorElementalType>
+HITPOINTS=255
    Balanced=1
    IncreaseSwingSpeed=35
    IncreaseDam=45
@@ -394,9 +394,9 @@ DESCRIPTION=Mystical Shortbows
 TEVENTS=ei_equipitem
 DUPELIST=02d2b
 Expansion=RDS_ML
-ON=@Create
-   COLOR=0 //FIXME: unknown color
-   HITPOINTS={36 48}
+ON=@CREATE
+COLOR=0 //FIXME: unknown color
+HITPOINTS={36 48}
    SpellChanneling=1
    FasterCasting=-1
 
@@ -411,9 +411,9 @@ DESCRIPTION=Ranger's Shortbow
 TEVENTS=ei_equipitem
 DUPELIST=02d2b
 Expansion=RDS_ML
-ON=@Create
-   COLOR=0 //FIXME: unknown color
-   HITPOINTS={36 48}
+ON=@CREATE
+COLOR=0 //FIXME: unknown color
+HITPOINTS={36 48}
    IncreaseSwingSpeed=5
 
 ///////////////////////////////////////////////////////////////
@@ -440,13 +440,13 @@ SKILLMAKE=Bowcraft 90.0
 CATEGORY=Provisions - Weapons - Archery
 SUBSECTION=Archery
 DESCRIPTION=Yumi
-CanUse=can_u_human|can_u_elf
-ReqStr=75
+CANUSE=can_u_human|can_u_elf
+REQSTR=75
 TEVENTS=ei_equipitem
 DUPELIST=027f0
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
 
 [ITEMDEF 027f0]
 //yumi
@@ -463,9 +463,9 @@ DESCRIPTION=Hanzo's Bow
 TEVENTS=ei_equipitem
 DUPELIST=027f0
 Expansion=RDS_SE
-ON=@Create
-   COLOR=0 //FIXME: unknown color
-   HITPOINTS=255
+ON=@CREATE
+COLOR=0 //FIXME: unknown color
+HITPOINTS=255
    HitLeechLife=45
    SelfRepair=3
    IncreaseDam=50
@@ -480,9 +480,9 @@ DESCRIPTION=The Horselord
 TEVENTS=ei_equipitem
 DUPELIST=027f0
 Expansion=RDS_SE
-ON=@Create
-   COLOR=0 //FIXME: unknown color
-   HITPOINTS=255
+ON=@CREATE
+COLOR=0 //FIXME: unknown color
+HITPOINTS=255
    BonusDex=5
    RegenMana=1
    Luck=125
@@ -511,13 +511,13 @@ SKILLMAKE=Bowcraft 60.0
 CATEGORY=Provisions - Weapons - Archery
 SUBSECTION=Archery
 DESCRIPTION=Crossbow
-ReqStr=30
-CanUse=can_u_human|can_u_elf
+REQSTR=30
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=0f50
 //Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
 
 [ITEMDEF 0f50]
 //crossbow
@@ -535,8 +535,8 @@ SUBSECTION=Crossbows
 DESCRIPTION=Superior Crossbow
 TEVENTS=ei_equipitem
 //Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={48 60}
+ON=@CREATE
+HITPOINTS={48 60}
 
 [ITEMDEF i_crossbow_exceptional]
 ID=i_crossbow
@@ -550,8 +550,8 @@ SUBSECTION=Crossbows
 DESCRIPTION=Exceptional Crossbow
 TEVENTS=ei_equipitem
 //Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={60 72}
+ON=@CREATE
+HITPOINTS={60 72}
 
 ///////////////////////////////////////////////////////////////
 //////// HEAVY CROSSBOWS
@@ -576,13 +576,13 @@ SKILLMAKE=Bowcraft 80.0
 CATEGORY=Provisions - Weapons
 SUBSECTION=Archery
 DESCRIPTION=Heavy Crossbow
-CanUse=can_u_human|can_u_elf
-ReqStr=80
+CANUSE=can_u_human|can_u_elf
+REQSTR=80
 TEVENTS=ei_equipitem
 DUPELIST=013fd
 //Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
 
 [ITEMDEF 013fd]
 //heavy crossbow
@@ -601,8 +601,8 @@ DESCRIPTION=Superior Heavy Crossbow
 TEVENTS=ei_equipitem
 DUPELIST=013fd
 //Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={48 60}
+ON=@CREATE
+HITPOINTS={48 60}
 
 [ITEMDEF i_crossbow_heavy_exceptional]
 ID=i_crossbow_heavy
@@ -617,8 +617,8 @@ DESCRIPTION=Exceptional Heavy Crossbow
 TEVENTS=ei_equipitem
 DUPELIST=013fd
 //Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={60 72}
+ON=@CREATE
+HITPOINTS={60 72}
 
 ///////////////////////////////////////////////////////////////
 //////// REPEATING CROSSBOWS
@@ -644,12 +644,12 @@ SKILLMAKE=Bowcraft 90.0
 CATEGORY=Provisions - Weapons - Archery
 SUBSECTION=Archery
 DESCRIPTION=Repeating Crossbow
-ReqStr=30
+REQSTR=30
 TEVENTS=ei_equipitem
 DUPELIST=026cd
 Expansion=RDS_AOS
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
 
 [ITEMDEF 026cd]
 //repeating crossbow
@@ -668,9 +668,9 @@ DESCRIPTION=Shamino's Best Crossbow
 TEVENTS=ei_equipitem
 DUPELIST=026cd
 Expansion=RDS_AOS
-ON=@Create
-   COLOR=0504
-   HITPOINTS=255
+ON=@CREATE
+COLOR=0504
+HITPOINTS=255
 
 [ITEMDEF i_night_reaper]
 ID=i_crossbow_repeating
@@ -684,9 +684,9 @@ DESCRIPTION=The Night Reaper
 TEVENTS=ei_equipitem
 DUPELIST=026cd
 Expansion=RDS_AOS
-ON=@Create
-   COLOR=041c
-   HITPOINTS=255
+ON=@CREATE
+COLOR=041c
+HITPOINTS=255
    NightSight=1
    IncreaseSwingSpeed=25
    IncreaseDam=55
@@ -732,13 +732,17 @@ SKILLMAKE=Carpentry 60.0,t_carpentry
 CATEGORY=Provisions - Weapons
 SUBSECTION=Archery
 DESCRIPTION=Fukiya
-CanUse=can_u_human|can_u_elf
-ReqStr=10
+CANUSE=can_u_human|can_u_elf
+REQSTR=10
 TEVENTS=ei_equipitem
 DUPELIST=027f5
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 027f5]
+//fukiya
+DUPEITEM=027aa
 
 ///////////////////////////////////////////////////////////////
 //////// AMMUNITION

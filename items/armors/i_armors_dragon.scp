@@ -1,0 +1,151 @@
+[ITEMDEF 02641]
+DEFNAME=i_dragon_chest
+NAME=dragon breastplate
+TYPE=t_armor
+FLIP=1
+ARMOR=28
+VALUE=1145
+WEIGHT=26.2
+RESOURCES=36 i_dragonscale,1 i_ingot_silver
+SKILLMAKE=Blacksmithing 85.0,Armslore 55.0
+CATEGORY=Armor
+SUBSECTION=Dragon Scale
+DESCRIPTION=Breastplate
+REQSTR=75
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=02642
+Expansion=RDS_LBR	//Dragon armor was introduced in LBR, but it used the classic plate graphic.
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=3
+   RESPHYSICAL=3
+   RESPOISON=3
+
+[ITEMDEF 02642]
+//dragon breastplate
+DUPEITEM=02641
+
+[ITEMDEF 02643]
+DEFNAME=i_dragon_gloves
+NAME=dragon gloves
+TYPE=t_armor
+FLIP=1
+ARMOR=28
+VALUE=497
+WEIGHT=12.2
+RESOURCES=16 i_dragonscale,1 i_ingot_silver
+SKILLMAKE=Blacksmithing 68.9,Armslore 55.0
+CATEGORY=Armor
+SUBSECTION=Dragon Scale
+DESCRIPTION=Gloves
+REQSTR=75
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=02644
+Expansion=RDS_LBR
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=3
+   RESPHYSICAL=3
+   RESPOISON=3
+
+[ITEMDEF 02644]
+//dragon gloves
+DUPEITEM=02643
+
+[ITEMDEF 02645]
+DEFNAME=i_dragon_helm
+NAME=dragon helm
+TYPE=t_armor
+FLIP=1
+ARMOR=28
+VALUE=626
+WEIGHT=15.0
+RESOURCES=20 i_dragonscale,1 i_ingot_silver
+SKILLMAKE=Blacksmithing 72.6,Armslore 55.0
+CATEGORY=Armor
+SUBSECTION=Dragon Scale
+DESCRIPTION=Helm
+REQSTR=75
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=02646
+Expansion=RDS_LBR
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=3
+   RESPHYSICAL=3
+   RESPOISON=3
+
+[ITEMDEF 02646]
+//dragon helm
+DUPEITEM=02645
+
+[ITEMDEF 02647]
+DEFNAME=i_dragon_leggings
+NAME=dragon leggings
+TYPE=t_armor
+FLIP=1
+ARMOR=28
+VALUE=890
+WEIGHT=20.6
+RESOURCES=28 i_dragonscale,1 i_ingot_silver
+SKILLMAKE=Blacksmithing 78.8,Armslore 55.0
+CATEGORY=Armor
+SUBSECTION=Dragon Scale
+DESCRIPTION=Leggings
+REQSTR=75
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=02648
+Expansion=RDS_LBR
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=3
+   RESPHYSICAL=3
+   RESPOISON=3
+
+[ITEMDEF 02648]
+//dragon leggings
+DUPEITEM=02647
+
+[ITEMDEF 02657]
+DEFNAME=i_dragon_sleeves
+NAME=dragon sleeves
+TYPE=t_armor
+FLIP=1
+ARMOR=28
+VALUE=760
+WEIGHT=17.8
+RESOURCES=24 i_dragonscale,1 i_ingot_silver
+SKILLMAKE=Blacksmithing 76.3,Armslore 55.0
+CATEGORY=Armor
+SUBSECTION=Dragon Scale
+DESCRIPTION=Sleeves
+REQSTR=75
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=02658
+Expansion=RDS_LBR
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=3
+   RESPHYSICAL=3
+   RESPOISON=3
+
+[ITEMDEF 02658]
+//dragon sleeves
+DUPEITEM=02657
+
+[EOF]

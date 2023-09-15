@@ -4,1313 +4,6 @@
 //****************************************************************************
 VERSION=X1
 
-
-//No idea why this is here.
-[ITEMDEF 030f]
-CATEGORY=Miscellaneous
-SUBSECTION=Bad Tiles
-DESCRIPTION=Unused Tile 030f
-
-[ITEMDEF 013bb]
-DEFNAME=i_chainmail_coif
-NAME=chainmail coif
-TYPE=t_armor
-FLIP=1
-ARMOR=25
-VALUE=40
-WEIGHT=7.0
-RESOURCES=10 i_ingot_iron
-SKILLMAKE=Blacksmithing 14.5,Armslore 20.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Chainmail Armor
-DESCRIPTION=Chainmail Coif
-canuse=can_u_human|can_u_elf
-ReqStr=60
-TEVENTS=ei_equipitem
-DUPELIST=013c0
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=4
-   RESENERGY=2
-   RESFIRE=4
-   RESPHYSICAL=4
-   RESPOISON=1
-
-[ITEMDEF 013bc]
-DEFNAME=i_chainmail_leggings_decoration
-NAME=decorative chainmail leggings
-FLIP=1
-CATEGORY=Provisions - Armor
-SUBSECTION=Chainmail Armor
-DESCRIPTION=Chainmail Leggings (decorative)
-DUPELIST=013c1
-
-[ITEMDEF 013bd]
-DEFNAME=i_chainmail_tunic_decoration
-NAME=decorative chainmail tunic
-FLIP=1
-CATEGORY=Provisions - Armor
-SUBSECTION=Chainmail Armor
-DESCRIPTION=Chainmail Tunic (decorative)
-DUPELIST=013c2
-
-[ITEMDEF 013be]
-DEFNAME=i_chainmail_leggings
-TYPE=t_armor
-FLIP=1
-ARMOR=25
-VALUE=72
-WEIGHT=7.0
-RESOURCES=18 i_ingot_iron
-SKILLMAKE=Blacksmithing 36.7,Armslore 20.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Chainmail Armor
-DESCRIPTION=Chainmail Leggings
-canuse=can_u_human|can_u_elf
-ReqStr=60
-TEVENTS=ei_equipitem
-DUPELIST=013c3
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=4
-   RESENERGY=2
-   RESFIRE=4
-   RESPHYSICAL=4
-   RESPOISON=1
-
-[ITEMDEF 013bf]
-DEFNAME=i_chainmail_tunic
-TYPE=t_armor
-FLIP=1
-ARMOR=25
-VALUE=80
-WEIGHT=7.0
-RESOURCES=20 i_ingot_iron
-SKILLMAKE=Blacksmithing 39.1,Armslore 20.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Chainmail Armor
-DESCRIPTION=Chainmail Tunic
-canuse=can_u_human|can_u_elf
-ReqStr=60
-TEVENTS=ei_equipitem
-DUPELIST=013c4
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=4
-   RESENERGY=2
-   RESFIRE=4
-   RESPHYSICAL=4
-   RESPOISON=1
-
-[ITEMDEF 013c0]
-//chainmail coif
-DUPEITEM=013bb
-
-[ITEMDEF 013c1]
-//chainmail leggings
-DUPEITEM=013bc
-
-[ITEMDEF 013c2]
-//chainmail tunic
-DUPEITEM=013bd
-
-[ITEMDEF 013c3]
-//chainmail leggings
-DUPEITEM=013be
-
-[ITEMDEF 013c4]
-//chainmail tunic
-DUPEITEM=013bf
-
-[ITEMDEF 013c5]
-DEFNAME=i_leather_sleeves
-TYPE=t_armor_leather
-FLIP=1
-ARMOR=13
-VALUE=70
-WEIGHT=2.0
-RESOURCES=4 i_hides_cut
-SKILLMAKE=Tailoring 59.0,t_sewing_kit,Armslore 10.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Leather Armor
-DESCRIPTION=Leather Sleeves
-canuse=can_u_human|can_u_elf
-ReqStr=20
-TEVENTS=ei_equipitem
-DUPELIST=013cd
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 013c6]
-DEFNAME=i_leather_gloves
-NAME=leather gloves
-TYPE=t_armor_leather
-FLIP=1
-ARMOR=13
-VALUE=24
-WEIGHT=1.0
-RESOURCES=3 i_hides_cut
-SKILLMAKE=Tailoring 51.8,t_sewing_kit,Armslore 10.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Leather Armor
-DESCRIPTION=Leather Gloves
-canuse=can_u_human|can_u_elf
-ReqStr=20
-TEVENTS=ei_equipitem
-DUPELIST=013ce
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 013c7]
-DEFNAME=i_leather_gorget
-TYPE=t_armor_leather
-FLIP=1
-ARMOR=13
-VALUE=32
-WEIGHT=1.0
-RESOURCES=4 i_hides_cut
-SKILLMAKE=Tailoring 53.9,t_sewing_kit,Armslore 10.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Leather Armor
-DESCRIPTION=Leather Gorget
-canuse=can_u_human|can_u_elf
-ReqStr=20
-TEVENTS=ei_equipitem
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 013c8]
-DEFNAME=i_leather_sleeves_decoration
-NAME=decorative leather sleeves
-FLIP=1
-CATEGORY=Provisions - Armor
-SUBSECTION=Leather Armor
-DESCRIPTION=Leather Sleeves (decorative)
-DUPELIST=013cf
-
-[ITEMDEF 013c9]
-DEFNAME=i_leather_leggings_decoration
-NAME=decorative leather leggings
-FLIP=1
-CATEGORY=Provisions - Armor
-SUBSECTION=Leather Armor
-DESCRIPTION=Leather Leggings (decorative)
-DUPELIST=013d0
-
-[ITEMDEF 013ca]
-DEFNAME=i_leather_tunic_decoration
-NAME=decorative leather tunic
-FLIP=1
-CATEGORY=Provisions - Armor
-SUBSECTION=Leather Armor
-DESCRIPTION=Leather Tunic (decorative)
-DUPELIST=013d1
-
-[ITEMDEF 013cb]
-DEFNAME=i_leather_leggings
-TYPE=t_armor_leather
-FLIP=1
-ARMOR=13
-VALUE=86
-WEIGHT=4.0
-RESOURCES=10 i_hides_cut
-SKILLMAKE=Tailoring 66.3,t_sewing_kit,Armslore 10.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Leather Armor
-DESCRIPTION=Leather Leggings
-canuse=can_u_human|can_u_elf
-ReqStr=20
-TEVENTS=ei_equipitem
-DUPELIST=013d2
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 013cc]
-DEFNAME=i_leather_tunic
-TYPE=t_armor_leather
-FLIP=1
-ARMOR=13
-VALUE=115
-WEIGHT=6.0
-RESOURCES=12 i_hides_cut
-SKILLMAKE=Tailoring 70.5,t_sewing_kit,Armslore 10.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Leather Armor
-DESCRIPTION=Leather Tunic
-canuse=can_u_human|can_u_elf
-ReqStr=25
-TEVENTS=ei_equipitem
-DUPELIST=013d3
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 013cd]
-//leather sleeves
-DUPEITEM=013c5
-
-[ITEMDEF 013ce]
-//leather gloves
-DUPEITEM=013c6
-
-[ITEMDEF 013cf]
-//leather sleeves decoration
-DUPEITEM=013c8
-
-[ITEMDEF 013d0]
-//leather leggings
-DUPEITEM=013c9
-
-[ITEMDEF 013d1]
-//leather tunic
-DUPEITEM=013ca
-
-[ITEMDEF 013d2]
-//leather leggings
-DUPEITEM=013cb
-
-[ITEMDEF 013d3]
-//leather tunic
-DUPEITEM=013cc
-
-[ITEMDEF 013d4]
-DEFNAME=i_studded_sleeves
-TYPE=t_armor_leather
-FLIP=1
-ARMOR=16
-VALUE=118
-WEIGHT=13.0
-RESOURCES=10 i_hides_cut,3 i_ingot_iron
-SKILLMAKE=Tailoring 86.3,t_sewing_kit,Armslore 10.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Studded Armor
-DESCRIPTION=Studded Sleeves
-canuse=can_u_human|can_u_elf
-ReqStr=25
-TEVENTS=ei_equipitem
-DUPELIST=013dc
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=4
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 013d5]
-DEFNAME=i_studded_gloves
-TYPE=t_armor_leather
-FLIP=1
-ARMOR=16
-VALUE=79
-WEIGHT=9.0
-RESOURCES=8 i_hides_cut,1 i_ingot_iron
-SKILLMAKE=Tailoring 81.8,t_sewing_kit,Armslore 10.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Studded Armor
-DESCRIPTION=Studded Gloves
-canuse=can_u_human|can_u_elf
-ReqStr=25
-TEVENTS=ei_equipitem
-DUPELIST=013dd
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=4
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 013d6]
-DEFNAME=i_studded_gorget
-TYPE=t_armor_leather
-ARMOR=16
-VALUE=61
-WEIGHT=7.0
-RESOURCES=6 i_hides_cut,1 i_ingot_iron
-SKILLMAKE=Tailoring 77.2,t_sewing_kit,Armslore 10.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Studded Armor
-DESCRIPTION=Studded Gorget
-ReqStr=25
-canuse=can_u_human|can_u_elf
-TEVENTS=ei_equipitem
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=4
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 013d7]
-DEFNAME=i_studded_sleeves_decoration
-NAME=decorative studded sleeves
-FLIP=1
-SKILLMAKE=Tailoring 87.1,t_sewing_kit
-CATEGORY=Provisions - Armor
-SUBSECTION=Studded Armor
-DESCRIPTION=Studded Sleeves (decorative)
-DUPELIST=013de
-
-[ITEMDEF 013d8]
-DEFNAME=i_studded_leggings_decoration
-NAME=decorative studded leggings
-FLIP=1
-CATEGORY=Provisions - Armor
-SUBSECTION=Studded Armor
-DESCRIPTION=Studded Leggings (decorative)
-DUPELIST=013df
-
-[ITEMDEF 013d9]
-DEFNAME=i_studded_tunic_decoration
-NAME=decorative studded tunic
-FLIP=1
-CATEGORY=Provisions - Armor
-SUBSECTION=Studded Armor
-DESCRIPTION=Studded Tunic (decorative)
-DUPELIST=013e0
-
-[ITEMDEF 013da]
-DEFNAME=i_studded_leggings
-TYPE=t_armor_leather
-FLIP=1
-ARMOR=16
-VALUE=144
-WEIGHT=16.0
-RESOURCES=12 i_hides_cut,4 i_ingot_iron
-SKILLMAKE=Tailoring 90.9,t_sewing_kit,Armslore 10.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Studded Armor
-DESCRIPTION=Studded Leggings
-ReqStr=30
-canuse=can_u_human|can_u_elf
-TEVENTS=ei_equipitem
-DUPELIST=013e1
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=4
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 013db]
-DEFNAME=i_studded_tunic
-TYPE=t_armor_leather
-FLIP=1
-ARMOR=16
-VALUE=171
-WEIGHT=19.0
-RESOURCES=14 i_hides_cut,5 i_ingot_iron
-SKILLMAKE=Tailoring 95.4,t_sewing_kit,Armslore 10.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Studded Armor
-DESCRIPTION=Studded Tunic
-ReqStr=35
-canuse=can_u_human|can_u_elf
-TEVENTS=ei_equipitem
-DUPELIST=013e2
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=4
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 013dc]
-//studded sleeves
-DUPEITEM=013d4
-
-[ITEMDEF 013dd]
-//studded gloves
-DUPEITEM=013d5
-
-[ITEMDEF 013de]
-//studded sleeves
-DUPEITEM=013d7
-
-[ITEMDEF 013df]
-//studded leggings
-DUPEITEM=013d8
-
-[ITEMDEF 013e0]
-//studded tunic
-DUPEITEM=013d9
-
-[ITEMDEF 013e1]
-//studded leggings
-DUPEITEM=013da
-
-[ITEMDEF 013e2]
-//studded tunic
-DUPEITEM=013db
-
-
-[ITEMDEF 013e5]
-DEFNAME=i_ringmail_leggings_decoration
-NAME=decorative ringmail leggings
-FLIP=1
-CATEGORY=Provisions - Armor
-SUBSECTION=Ringmail Armor
-DESCRIPTION=Ringmail Leggings (decorative)
-DUPELIST=013e6
-
-[ITEMDEF 013e6]
-//ringmail leggings
-DUPEITEM=013e5
-
-[ITEMDEF 013e7]
-DEFNAME=i_ringmail_tunic_decoration
-NAME=decorative ringmail tunic
-FLIP=1
-SKILLMAKE=Blacksmithing 21.9
-CATEGORY=Provisions - Armor
-SUBSECTION=Ringmail Armor
-DESCRIPTION=Ringmail Tunic (decorative)
-DUPELIST=013e8
-
-[ITEMDEF 013e8]
-//ringmail armor
-DUPEITEM=013e7
-
-[ITEMDEF 013e9]
-DEFNAME=i_ringmail_sleeves_decoration
-NAME=decorative ringmail sleeves
-FLIP=1
-CATEGORY=Provisions - Armor
-SUBSECTION=Ringmail Armor
-DESCRIPTION=Ringmail Sleeves (decorative)
-DUPELIST=013ea
-
-[ITEMDEF 013ea]
-//ringmail sleeves
-DUPEITEM=013e9
-
-[ITEMDEF 013eb]
-DEFNAME=i_ringmail_gloves
-TYPE=t_armor
-FLIP=1
-ARMOR=22
-VALUE=40
-WEIGHT=2.0
-RESOURCES=10 i_ingot_iron
-SKILLMAKE=Blacksmithing 12.0,Armslore 15.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Ringmail Armor
-DESCRIPTION=Ringmail Gloves
-CanUse=can_u_human|can_u_elf
-ReqStr=40
-TEVENTS=ei_equipitem
-DUPELIST=013f2
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=1
-   RESENERGY=3
-   RESFIRE=3
-   RESPHYSICAL=3
-   RESPOISON=5
-
-[ITEMDEF 013ec]
-DEFNAME=i_ringmail_tunic
-TYPE=t_armor
-FLIP=1
-ARMOR=22
-VALUE=72
-WEIGHT=15.0
-RESOURCES=18 i_ingot_iron
-SKILLMAKE=Blacksmithing 21.9,Armslore 15.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Ringmail Armor
-DESCRIPTION=Ringmail Tunic
-CanUse=can_u_human|can_u_elf
-ReqStr=40
-TEVENTS=ei_equipitem
-DUPELIST=013ed
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=1
-   RESENERGY=3
-   RESFIRE=3
-   RESPHYSICAL=3
-   RESPOISON=5
-
-[ITEMDEF 013ed]
-//ringmail tunic
-DUPEITEM=013ec
-
-[ITEMDEF 013ee]
-DEFNAME=i_ringmail_sleeves
-TYPE=t_armor
-FLIP=1
-ARMOR=22
-VALUE=56
-WEIGHT=15.0
-RESOURCES=14 i_ingot_iron
-SKILLMAKE=Blacksmithing 16.9,Armslore 15.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Ringmail Armor
-DESCRIPTION=Ringmail Sleeves
-CanUse=can_u_human|can_u_elf
-ReqStr=40
-TEVENTS=ei_equipitem
-DUPELIST=013ef
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=1
-   RESENERGY=3
-   RESFIRE=3
-   RESPHYSICAL=3
-   RESPOISON=5
-
-[ITEMDEF 013ef]
-//ringmail sleeves
-DUPEITEM=013ee
-
-[ITEMDEF 013f0]
-DEFNAME=i_ringmail_leggings
-TYPE=t_armor
-FLIP=1
-ARMOR=22
-VALUE=64
-WEIGHT=15.0
-RESOURCES=16 i_ingot_iron
-SKILLMAKE=Blacksmithing 19.4,Armslore 15.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Ringmail Armor
-DESCRIPTION=Ringmail Leggings
-CanUse=can_u_human|can_u_elf
-ReqStr=40
-TEVENTS=ei_equipitem
-DUPELIST=013f1
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=1
-   RESENERGY=3
-   RESFIRE=3
-   RESPHYSICAL=3
-   RESPOISON=5
-
-[ITEMDEF 013f1]
-//ringmail leggings
-DUPEITEM=013f0
-
-[ITEMDEF 013f2]
-//ringmail gloves
-DUPEITEM=013eb
-
-
-[ITEMDEF 01408]
-DEFNAME=i_helm_closed
-TYPE=t_armor
-FLIP=1
-ARMOR=30
-VALUE=60
-WEIGHT=5.0
-RESOURCES=15 i_ingot_iron
-SKILLMAKE=Blacksmithing 37.9,Armslore 25.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Helmets
-DESCRIPTION=Close Helmet
-CanUse=can_u_human|can_u_elf
-ReqStr=55
-TEVENTS=ei_equipitem
-DUPELIST=01409
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=3
-   RESPHYSICAL=3
-   RESPOISON=3
-
-[ITEMDEF 01409]
-//close helmet
-DUPEITEM=01408
-
-[ITEMDEF 0140a]
-DEFNAME=i_helm_open
-TYPE=t_armor
-FLIP=1
-ARMOR=30
-VALUE=60
-WEIGHT=5.0
-RESOURCES=15 i_ingot_iron
-SKILLMAKE=Blacksmithing 37.9,Armslore 25.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Helmets
-DESCRIPTION=Helmet
-CanUse=can_u_human|can_u_elf
-ReqStr=45
-TEVENTS=ei_equipitem
-DUPELIST=0140b
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=4
-   RESENERGY=2
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 0140b]
-//helmet
-DUPEITEM=0140a
-
-[ITEMDEF 0140c]
-DEFNAME=i_bascinet
-NAME=bascinet
-TYPE=t_armor
-FLIP=1
-ARMOR=25
-VALUE=60
-WEIGHT=5.0
-RESOURCES=15 i_ingot_iron
-SKILLMAKE=Blacksmithing 8.3,Armslore 25.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Helmets
-DESCRIPTION=Bascinet
-CanUse=can_u_human|can_u_elf
-ReqStr=40
-TEVENTS=ei_equipitem
-DUPELIST=0140d
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=2
-   RESENERGY=2
-   RESFIRE=2
-   RESPHYSICAL=7
-   RESPOISON=2
-
-[ITEMDEF 0140d]
-//bascinet
-DUPEITEM=0140c
-
-[ITEMDEF 0140e]
-DEFNAME=i_helm_nose
-NAME=norse helm
-TYPE=t_armor
-FLIP=1
-ARMOR=30
-VALUE=60
-WEIGHT=5.0
-RESOURCES=15 i_ingot_iron
-SKILLMAKE=Blacksmithing 37.9,Armslore 25.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Helmets
-DESCRIPTION=Norse Helm
-CanUse=can_u_human|can_u_elf
-ReqStr=55
-TEVENTS=ei_equipitem
-DUPELIST=0140f
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=4
-   RESENERGY=2
-   RESFIRE=1
-   RESPHYSICAL=4
-   RESPOISON=4
-
-[ITEMDEF 0140f]
-//norse helm
-DUPEITEM=0140e
-
-[ITEMDEF 01410]
-DEFNAME=i_platemail_arms
-TYPE=t_armor
-FLIP=1
-ARMOR=30
-VALUE=72
-WEIGHT=5.0
-RESOURCES=18 i_ingot_iron
-SKILLMAKE=Blacksmithing 66.3,Armslore 25.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Platemail Armor
-DESCRIPTION=Platemail Arms
-CanUse=can_u_human|can_u_elf
-ReqStr=80
-TEVENTS=ei_equipitem
-DUPELIST=01417
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=2
-   RESENERGY=2
-   RESFIRE=3
-   RESPHYSICAL=5
-   RESPOISON=3
-
-[ITEMDEF 01411]
-DEFNAME=i_platemail_leggings
-TYPE=t_armor
-FLIP=1
-ARMOR=30
-//LAYER=layer_legs
-VALUE=80
-WEIGHT=7.0
-RESOURCES=20 i_ingot_iron
-SKILLMAKE=Blacksmithing 68.8,Armslore 25.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Platemail Armor
-DESCRIPTION=Platemail Legs
-CanUse=can_u_human|can_u_elf
-ReqStr=90
-TEVENTS=ei_equipitem
-DUPELIST=0141a
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=2
-   RESENERGY=2
-   RESFIRE=3
-   RESPHYSICAL=5
-   RESPOISON=3
-
-[ITEMDEF 01412]
-DEFNAME=i_platemail_helm
-TYPE=t_armor
-FLIP=1
-ARMOR=30
-VALUE=60
-WEIGHT=5.0
-RESOURCES=15 i_ingot_iron
-SKILLMAKE=Blacksmithing 62.6,Armslore 25.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Platemail Armor
-DESCRIPTION=Plate Helm
-CanUse=can_u_human|can_u_elf
-ReqStr=80
-TEVENTS=ei_equipitem
-DUPELIST=01419
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=2
-   RESENERGY=2
-   RESFIRE=3
-   RESPHYSICAL=5
-   RESPOISON=3
-
-[ITEMDEF 01413]
-DEFNAME=i_platemail_gorget
-TYPE=t_armor
-FLIP=1
-ARMOR=30
-VALUE=40
-WEIGHT=2.0
-RESOURCES=10 i_ingot_iron
-SKILLMAKE=Blacksmithing 56.4,Armslore 25.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Platemail Armor
-DESCRIPTION=Platemail Gorget
-CanUse=can_u_human|can_u_elf
-ReqStr=45
-TEVENTS=ei_equipitem
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=2
-   RESENERGY=2
-   RESFIRE=3
-   RESPHYSICAL=5
-   RESPOISON=3
-
-[ITEMDEF 01414]
-DEFNAME=i_platemail_gloves
-TYPE=t_armor
-FLIP=1
-ARMOR=30
-VALUE=48
-WEIGHT=2.0
-RESOURCES=12 i_ingot_iron
-SKILLMAKE=Blacksmithing 58.9,Armslore 25.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Platemail Armor
-DESCRIPTION=Platemail Gloves
-CanUse=can_u_human|can_u_elf
-ReqStr=70
-TEVENTS=ei_equipitem
-DUPELIST=01418
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=2
-   RESENERGY=2
-   RESFIRE=3
-   RESPHYSICAL=5
-   RESPOISON=3
-
-[ITEMDEF 01415]
-DEFNAME=i_platemail_chest
-TYPE=t_armor
-FLIP=1
-ARMOR=30
-VALUE=100
-WEIGHT=10.0
-RESOURCES=25 i_ingot_iron
-SKILLMAKE=Blacksmithing 75.0,Armslore 25.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Platemail Armor
-DESCRIPTION=Platemail Tunic
-CanUse=can_u_human|can_u_elf
-ReqStr=95
-TEVENTS=ei_equipitem
-DUPELIST=01416
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=2
-   RESENERGY=2
-   RESFIRE=3
-   RESPHYSICAL=5
-   RESPOISON=3
-
-[ITEMDEF 01416]
-//platemail
-DUPEITEM=01415
-
-[ITEMDEF 01417]
-//platemail arms
-DUPEITEM=01410
-
-[ITEMDEF 01418]
-//platemail gloves
-DUPEITEM=01414
-
-[ITEMDEF 01419]
-//plate helm
-DUPEITEM=01412
-
-[ITEMDEF 0141a]
-//platemail legs
-DUPEITEM=01411
-
-
-[ITEMDEF 0144e]
-DEFNAME=i_bone_arms
-TYPE=t_armor
-FLIP=1
-ARMOR=24
-VALUE=65
-WEIGHT=15.0
-RESOURCES=14 i_bone,1 i_hides_cut
-SKILLMAKE=Tailoring 96.8,t_sewing_kit,Anatomy 47.3,Necromancy 24.4
-CATEGORY=Provisions - Armor
-SUBSECTION=Bone Armor
-DESCRIPTION=Bone Arms
-ReqStr=55
-CanUse=can_u_human|can_u_elf
-TEVENTS=ei_equipitem
-DUPELIST=01453
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=4
-   RESENERGY=4
-   RESFIRE=3
-   RESPHYSICAL=3
-   RESPOISON=2
-
-[ITEMDEF 0144f]
-DEFNAME=i_bone_chest
-TYPE=t_armor
-FLIP=1
-ARMOR=24
-VALUE=49
-WEIGHT=11.0
-RESOURCES=10 i_bone,1 i_hides_cut
-SKILLMAKE=Tailoring 96.8,t_sewing_kit,Anatomy 47.3,Necromancy 49.2
-CATEGORY=Provisions - Armor
-SUBSECTION=Bone Armor
-DESCRIPTION=Bone Tunic
-ReqStr=60
-CanUse=can_u_human|can_u_elf
-TEVENTS=ei_equipitem
-DUPELIST=01454
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=4
-   RESENERGY=4
-   RESFIRE=3
-   RESPHYSICAL=3
-   RESPOISON=2
-
-[ITEMDEF 01450]
-DEFNAME=i_bone_gloves
-TYPE=t_armor
-FLIP=1
-ARMOR=24
-VALUE=33
-WEIGHT=7.0
-RESOURCES=6 i_bone,1 i_hides_cut
-SKILLMAKE=Tailoring 96.8,t_sewing_kit,Anatomy 47.3,Necromancy 18.6
-CATEGORY=Provisions - Armor
-SUBSECTION=Bone Armor
-DESCRIPTION=Bone Gloves
-ReqStr=55
-CanUse=can_u_human|can_u_elf
-TEVENTS=ei_equipitem
-DUPELIST=01455
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=4
-   RESENERGY=4
-   RESFIRE=3
-   RESPHYSICAL=3
-   RESPOISON=2
-
-[ITEMDEF 01451]
-DEFNAME=i_bone_helmet
-TYPE=t_armor
-FLIP=1
-ARMOR=24
-VALUE=29
-WEIGHT=8.0
-RESOURCES=4 i_bone,1 i_bone_skull,1 i_hides_cut
-SKILLMAKE=Tailoring 96.8,t_sewing_kit,Anatomy 47.3,Necromancy 35.2
-CATEGORY=Provisions - Armor
-SUBSECTION=Bone Armor
-DESCRIPTION=Bone Helmet
-ReqStr=20
-CanUse=can_u_human|can_u_elf
-TEVENTS=ei_equipitem
-DUPELIST=01456
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=4
-   RESENERGY=4
-   RESFIRE=3
-   RESPHYSICAL=3
-   RESPOISON=2
-
-[ITEMDEF 01452]
-DEFNAME=i_bone_leggings
-TYPE=t_armor
-FLIP=1
-ARMOR=24
-VALUE=80
-WEIGHT=19.0
-RESOURCES=18 i_bone,1 i_hides_cut
-SKILLMAKE=Tailoring 96.8,t_sewing_kit,Anatomy 47.3,Necromancy 44.7
-CATEGORY=Provisions - Armor
-SUBSECTION=Bone Armor
-DESCRIPTION=Bone Legs
-ReqStr=55
-CanUse=can_u_human|can_u_elf
-TEVENTS=ei_equipitem
-DUPELIST=01457
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=4
-   RESENERGY=4
-   RESFIRE=3
-   RESPHYSICAL=3
-   RESPOISON=2
-
-[ITEMDEF 01453]
-//bone arms
-DUPEITEM=0144e
-
-[ITEMDEF 01454]
-//bone armor
-DUPEITEM=0144f
-
-[ITEMDEF 01455]
-//bone gloves
-DUPEITEM=01450
-
-[ITEMDEF 01456]
-//bone helmet
-DUPEITEM=01451
-
-[ITEMDEF 01457]
-//bone legs
-DUPEITEM=01452
-
-
-[ITEMDEF 01c00]
-DEFNAME=i_armor_female_shorts
-TYPE=t_armor_leather
-FLIP=1
-ARMOR=13
-VALUE=74
-WEIGHT=8.1
-RESOURCES=8 i_hides_cut,1 i_ingot_iron
-SKILLMAKE=Tailoring 68.1,t_sewing_kit,Armslore 10.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Female Armor
-DESCRIPTION=Leather Shorts
-ReqStr=20
-CanUse=can_u_human|can_u_elf|can_u_female
-TEVENTS=ei_equipitem
-DUPELIST=01c01
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 01c01]
-//leather shorts
-DUPEITEM=01c00
-
-[ITEMDEF 01c02]
-DEFNAME=i_armor_female_studded
-TYPE=t_armor_leather
-FLIP=1
-ARMOR=16
-VALUE=171
-WEIGHT=19.0
-RESOURCES=14 i_hides_cut,5 i_ingot_iron
-SKILLMAKE=Tailoring 95.4,t_sewing_kit,Armslore 10.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Female Armor
-DESCRIPTION=Studded Armor
-ReqStr=35
-CanUse=can_u_human|can_u_elf|can_u_female
-TEVENTS=ei_equipitem
-DUPELIST=01c03
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 01c03]
-//studded armor
-DUPEITEM=01c02
-
-[ITEMDEF 01c04]
-DEFNAME=i_armor_female_plate
-TYPE=t_armor
-FLIP=1
-ARMOR=30
-VALUE=100
-WEIGHT=4.0
-RESOURCES=20 i_ingot_iron
-SKILLMAKE=Blacksmithing 44.1,Armslore 25.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Female Armor
-DESCRIPTION=Female Plate
-CanUse=can_u_human|can_u_elf|can_u_female
-ReqStr=95
-TEVENTS=ei_equipitem
-DUPELIST=01c05
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=2
-   RESENERGY=2
-   RESFIRE=3
-   RESPHYSICAL=5
-   RESPOISON=3
-
-[ITEMDEF 01c05]
-//female bikini style plate armor
-DUPEITEM=01c04
-
-[ITEMDEF 01c06]
-DEFNAME=i_armor_female_leather
-TYPE=t_armor_leather
-FLIP=1
-ARMOR=13
-VALUE=100
-WEIGHT=11.0
-RESOURCES=10 i_hides_cut,1 i_ingot_iron
-SKILLMAKE=Tailoring 86.3,t_sewing_kit,Armslore 10.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Female Armor
-DESCRIPTION=Leather Armor
-ReqStr=25
-CanUse=can_u_human|can_u_elf|can_u_female
-TEVENTS=ei_equipitem
-DUPELIST=01c07
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 01c07]
-//leather armor
-DUPEITEM=01c06
-
-[ITEMDEF 01c08]
-DEFNAME=i_armor_female_skirt
-TYPE=t_armor_leather
-FLIP=1
-ARMOR=13
-VALUE=49
-WEIGHT=6.0
-RESOURCES=6 i_hides_cut
-SKILLMAKE=Tailoring 63.6,t_sewing_kit
-CATEGORY=Provisions - Armor
-SUBSECTION=Female Armor
-DESCRIPTION=Leather Skirt
-ReqStr=25
-CanUse=can_u_human|can_u_elf|can_u_female
-TEVENTS=ei_equipitem
-DUPELIST=01c09
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 01c09]
-//leather skirt
-DUPEITEM=01c08
-
-[ITEMDEF 01c0a]
-DEFNAME=i_armor_female_bustier
-TYPE=t_armor_leather
-FLIP=1
-ARMOR=13
-VALUE=56
-WEIGHT=7.0
-RESOURCES=6 i_hides_cut,1 i_ingot_iron
-SKILLMAKE=Tailoring 63.6,t_sewing_kit,Armslore 10.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Female Armor
-DESCRIPTION=Leather Bustier
-ReqStr=20
-CanUse=can_u_human|can_u_elf|can_u_female
-TEVENTS=ei_equipitem
-DUPELIST=01c0b
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 01c0b]
-//leather bustier
-DUPEITEM=01c0a
-
-[ITEMDEF 01c0c]
-DEFNAME=i_armor_female_bustier_studded
-TYPE=t_armor_leather
-FLIP=1
-ARMOR=16
-VALUE=114
-WEIGHT=13.0
-RESOURCES=11 i_hides_cut,2 i_ingot_iron
-SKILLMAKE=Tailoring 81.8,t_sewing_kit,Armslore 10.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Female Armor
-DESCRIPTION=Studded Bustier
-ReqStr=35
-CanUse=can_u_human|can_u_elf|can_u_female
-TEVENTS=ei_equipitem
-DUPELIST=01c0d
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=4
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 01c0d]
-//studded bustier
-DUPEITEM=01c0c
-
-
-[ITEMDEF 01db9]
-DEFNAME=i_leather_cap
-TYPE=t_armor_leather
-FLIP=1
-ARMOR=13
-VALUE=13
-WEIGHT=2.1
-RESOURCES=2 i_hides_cut,1 i_thread
-SKILLMAKE=Tailoring 6.8,t_sewing_kit,Armslore 10.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Leather Armor
-DESCRIPTION=Leather Cap
-ReqStr=20
-CanUse=can_u_human|can_u_elf
-TEVENTS=ei_equipitem
-DUPELIST=01dba
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 01dba]
-//leather cap
-DUPEITEM=01db9
-
-
 [ITEMDEF 01f0b]
 DEFNAME=i_helm_orc
 TYPE=t_armor
@@ -1321,16 +14,16 @@ VALUE=30
 WEIGHT=5.1
 RESOURCES=2 i_hides_cut,1 i_thread
 SKILLMAKE=Tailoring 68.8,t_sewing_kit,Anatomy 89.1,Armslore 10.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Helmets
 DESCRIPTION=Orc Helm
-CanUse=can_u_human|can_u_elf
-ReqStr=30
+CANUSE=can_u_human|can_u_elf
+REQSTR=30
 TEVENTS=ei_equipitem
 DUPELIST=01f0c
 //Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=5
    RESFIRE=1
@@ -1351,16 +44,16 @@ VALUE=65
 WEIGHT=10.0
 RESOURCES=10 i_ingot_iron
 SKILLMAKE=Blacksmithing 63.0,Armslore 25.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Platemail Armor
 DESCRIPTION=Kabuto
-ReqStr=80
-CanUse=can_u_human|can_u_elf
+REQSTR=80
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=0236d
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=2
    RESFIRE=3
@@ -1372,216 +65,7 @@ ON=@Create
 DUPEITEM=0236c
 
 
-[ITEMDEF 025e4]
-DEFNAME=i_armor_female_shorts_spiked
-//NAME=spiked shorts
-TYPE=t_armor_leather
-FLIP=1
-ARMOR=15
-VALUE=71
-WEIGHT=9.0
-RESOURCES=8 i_hides_cut,1 i_ingot_iron
-SKILLMAKE=Tailoring 78.1,t_sewing_kit
-CATEGORY=Provisions - Armor
-SUBSECTION=Female Armor
-DESCRIPTION=Spiked Shorts
-ReqStr=20
-CanUse=can_u_human|can_u_elf|can_u_female
-TEVENTS=ei_equipitem
-DUPELIST=025e5
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
 
-[ITEMDEF 025e5]
-//spiked shorts
-DUPEITEM=025e4
-
-[ITEMDEF 025e6]
-DEFNAME=i_armor_female_harness_amazon
-//NAME=Amazon harness
-TYPE=t_armor
-FLIP=1
-ARMOR=18
-VALUE=137
-WEIGHT=20.0
-RESOURCES=20 i_ingot_iron
-SKILLMAKE=Blacksmithing 72.6
-CATEGORY=Provisions - Armor
-SUBSECTION=Amazon
-DESCRIPTION=Amazon Harness
-ReqStr=25
-CanUse=can_u_human|can_u_elf|can_u_female
-TEVENTS=ei_equipitem
-DUPELIST=025e7
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 025e7]
-//amazon harness
-DUPEITEM=025e6
-
-[ITEMDEF 025e8]
-DEFNAME=i_armor_female_harness_elite
-//NAME=Amazon elite harness
-TYPE=t_armor
-FLIP=1
-ARMOR=20
-VALUE=165
-WEIGHT=22.0
-RESOURCES=22 i_ingot_iron
-SKILLMAKE=Blacksmithing 88.4
-CATEGORY=Provisions - Armor
-SUBSECTION=Amazon
-DESCRIPTION=Elite Harness
-ReqStr=25
-CanUse=can_u_human|can_u_elf|can_u_female
-TEVENTS=ei_equipitem
-DUPELIST=025e9
-//Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=4
-   RESPHYSICAL=2
-   RESPOISON=3
-
-[ITEMDEF 025e9]
-//elite harness
-DUPEITEM=025e8
-
-
-[ITEMDEF 02641]
-DEFNAME=i_dragon_chest
-NAME=dragon breastplate
-TYPE=t_armor
-FLIP=1
-ARMOR=28
-VALUE=1145
-WEIGHT=26.2
-RESOURCES=36 i_dragonscale,1 i_ingot_silver
-SKILLMAKE=Blacksmithing 85.0,Armslore 55.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Dragon Scale
-DESCRIPTION=Breastplate
-ReqStr=75
-CanUse=can_u_human|can_u_elf
-TEVENTS=ei_equipitem
-DUPELIST=02642
-Expansion=RDS_LBR	//Dragon armor was introduced in LBR, but it used the classic plate graphic.
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=3
-   RESPHYSICAL=3
-   RESPOISON=3
-
-[ITEMDEF 02642]
-//dragon breastplate
-DUPEITEM=02641
-
-[ITEMDEF 02643]
-DEFNAME=i_dragon_gloves
-NAME=dragon gloves
-TYPE=t_armor
-FLIP=1
-ARMOR=28
-VALUE=497
-WEIGHT=12.2
-RESOURCES=16 i_dragonscale,1 i_ingot_silver
-SKILLMAKE=Blacksmithing 68.9,Armslore 55.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Dragon Scale
-DESCRIPTION=Gloves
-ReqStr=75
-CanUse=can_u_human|can_u_elf
-TEVENTS=ei_equipitem
-DUPELIST=02644
-Expansion=RDS_LBR
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=3
-   RESPHYSICAL=3
-   RESPOISON=3
-
-[ITEMDEF 02644]
-//dragon gloves
-DUPEITEM=02643
-
-[ITEMDEF 02645]
-DEFNAME=i_dragon_helm
-NAME=dragon helm
-TYPE=t_armor
-FLIP=1
-ARMOR=28
-VALUE=626
-WEIGHT=15.0
-RESOURCES=20 i_dragonscale,1 i_ingot_silver
-SKILLMAKE=Blacksmithing 72.6,Armslore 55.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Dragon Scale
-DESCRIPTION=Helm
-ReqStr=75
-CanUse=can_u_human|can_u_elf
-TEVENTS=ei_equipitem
-DUPELIST=02646
-Expansion=RDS_LBR
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=3
-   RESPHYSICAL=3
-   RESPOISON=3
-
-[ITEMDEF 02646]
-//dragon helm
-DUPEITEM=02645
-
-[ITEMDEF 02647]
-DEFNAME=i_dragon_leggings
-NAME=dragon leggings
-TYPE=t_armor
-FLIP=1
-ARMOR=28
-VALUE=890
-WEIGHT=20.6
-RESOURCES=28 i_dragonscale,1 i_ingot_silver
-SKILLMAKE=Blacksmithing 78.8,Armslore 55.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Dragon Scale
-DESCRIPTION=Leggings
-ReqStr=75
-CanUse=can_u_human|can_u_elf
-TEVENTS=ei_equipitem
-DUPELIST=02648
-Expansion=RDS_LBR
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=3
-   RESPHYSICAL=3
-   RESPOISON=3
-
-[ITEMDEF 02648]
-//dragon leggings
-DUPEITEM=02647
 
 
 [ITEMDEF 0264b]
@@ -1592,17 +76,17 @@ ARMOR=30
 VALUE=63
 WEIGHT=10.0
 RESOURCES=10 i_ingot_iron
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Platemail Armor
 DESCRIPTION=Platemail Gorget 2
 SKILLMAKE=Blacksmithing 57.3
-ReqStr=45
-CanUse=can_u_human|can_u_elf
+REQSTR=45
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=0264c
 //Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=2
    RESFIRE=3
@@ -1626,16 +110,16 @@ WEIGHT=12.0
 RESOURCES=12 i_ingot_iron
 SKILLMAKE=Blacksmithing 59.7,Armslore 25.0
 TEVENTS=ei_equipment_3donly
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Platemail Armor
 DESCRIPTION=Waraji (3d client only)
-CanUse=can_u_human|can_u_elf|can_u_none
-ReqStr=70
+CANUSE=can_u_human|can_u_elf|can_u_none
+REQSTR=70
 TEVENTS=ei_equipitem
 DUPELIST=02654
 Expansion=RDS_LBR			//Even if it has  an oriental name, the 3d suggest it was introuced for the Third Dawn client.
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=2
    RESFIRE=3
@@ -1645,37 +129,6 @@ ON=@Create
 [ITEMDEF 02654]
 //waraji
 DUPEITEM=02653
-
-
-[ITEMDEF 02657]
-DEFNAME=i_dragon_sleeves
-NAME=dragon sleeves
-TYPE=t_armor
-FLIP=1
-ARMOR=28
-VALUE=760
-WEIGHT=17.8
-RESOURCES=24 i_dragonscale,1 i_ingot_silver
-SKILLMAKE=Blacksmithing 76.3,Armslore 55.0
-CATEGORY=Provisions - Armor
-SUBSECTION=Dragon Scale
-DESCRIPTION=Sleeves
-ReqStr=75
-CanUse=can_u_human|can_u_elf
-TEVENTS=ei_equipitem
-DUPELIST=02658
-Expansion=RDS_LBR
-ON=@Create
-   HITPOINTS={36 48}
-   RESCOLD=3
-   RESENERGY=3
-   RESFIRE=3
-   RESPHYSICAL=3
-   RESPOISON=3
-
-[ITEMDEF 02658]
-//dragon sleeves
-DUPEITEM=02657
 
 
 [ITEMDEF 02659]
@@ -1688,16 +141,16 @@ VALUE=175
 WEIGHT=25.0
 RESOURCES=25 i_ingot_iron
 SKILLMAKE=Blacksmithing 75.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Amazon
 DESCRIPTION=Heavy (unwearable)
-CanUse=can_u_human|can_u_elf|can_u_female|can_u_none
-ReqStr=60
+CANUSE=can_u_human|can_u_elf|can_u_female|can_u_none
+REQSTR=60
 TEVENTS=ei_equipitem
 DUPELIST=0265a
 //Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=3
    RESFIRE=3
@@ -1719,16 +172,16 @@ VALUE=140
 WEIGHT=20.0
 RESOURCES=20 i_ingot_iron
 SKILLMAKE=Blacksmithing 75.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Amazon
 DESCRIPTION=Medium (unwearable)
-CanUse=can_u_human|can_u_elf|can_u_female|can_u_none
-ReqStr=60
+CANUSE=can_u_human|can_u_elf|can_u_female|can_u_none
+REQSTR=60
 TEVENTS=ei_equipitem
 DUPELIST=0265c
 //Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=3
    RESFIRE=3
@@ -1750,16 +203,16 @@ VALUE=140
 WEIGHT=20.0
 RESOURCES=20 i_ingot_iron
 SKILLMAKE=Blacksmithing 75.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Amazon
 DESCRIPTION=Light (unwearable)
-CanUse=can_u_human|can_u_elf|can_u_female|can_u_none
-ReqStr=60
+CANUSE=can_u_human|can_u_elf|can_u_female|can_u_none
+REQSTR=60
 TEVENTS=ei_equipitem
 DUPELIST=0265e
 //Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=3
    RESFIRE=3
@@ -1782,15 +235,15 @@ VALUE=23
 WEIGHT=3.0
 RESOURCES=3 i_hides_cut
 SKILLMAKE=Tailoring 56.8,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Leather Armor
 DESCRIPTION=Kote Gloves (unwearable)
-CanUse=can_u_human|can_u_elf|can_u_none
-ReqStr=40
+CANUSE=can_u_human|can_u_elf|can_u_none
+REQSTR=40
 TEVENTS=ei_equipitem
 DUPELIST=02678
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=2
    RESFIRE=2
@@ -1812,15 +265,15 @@ VALUE=23
 WEIGHT=3.0
 RESOURCES=3 i_hides_cut
 SKILLMAKE=Tailoring 56.8,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Leather Armor
 DESCRIPTION=Kote Gloves 2 (unwearable)
-CanUse=can_u_human|can_u_elf|can_u_none
-ReqStr=40
+CANUSE=can_u_human|can_u_elf|can_u_none
+REQSTR=40
 TEVENTS=ei_equipitem
 DUPELIST=0267a
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=2
    RESFIRE=2
@@ -1834,7 +287,6 @@ DUPEITEM=02679
 
 [ITEMDEF 02689]
 DEFNAME=i_helm_winged
-NAME=winged helmet
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -1842,16 +294,16 @@ WEIGHT=10.0
 VALUE=65
 RESOURCES=10 i_board,60 i_feather,4 i_bark
 SKILLMAKE=Carpentry 58.4,Armslore 25.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Helmets
 DESCRIPTION=Winged Helm
-ReqStr=25
-CanUse=can_u_human|can_u_elf
+REQSTR=25
+CANUSE=can_u_human|can_u_elf
 //CanUse=can_u_elf
 DUPELIST=0268a
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=5
    RESFIRE=1
@@ -1865,7 +317,6 @@ DUPEITEM=02689
 [ITEMDEF 0268b]
 //appears like nothing on paperdoll
 DEFNAME=i_hachimaki
-NAME=hachimaki
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -1873,16 +324,16 @@ VALUE=65
 WEIGHT=10.0
 RESOURCES=10 i_ingot_iron
 SKILLMAKE=Blacksmithing 63.0,Armslore 25.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Helmets
 DESCRIPTION=Hachimaki (unwearable)
-CanUse=can_u_human|can_u_elf|can_u_none
-ReqStr=40
+CANUSE=can_u_human|can_u_elf|can_u_none
+REQSTR=40
 TEVENTS=ei_equipitem
 DUPELIST=0268c
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=5
    RESFIRE=1
@@ -1903,16 +354,16 @@ VALUE=65
 WEIGHT=10.0
 RESOURCES=10 i_ingot_iron
 SKILLMAKE=Blacksmithing 63.0,Armslore 25.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Helmets
 DESCRIPTION=Kabuto (decorative)
-ReqStr=80
-CanUse=can_u_human|can_u_elf
+REQSTR=80
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=0268e
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=2
    RESFIRE=3
@@ -1926,7 +377,7 @@ DUPEITEM=0268d
 [ITEMDEF 0268f]
 //appears like disc mace on paperdoll
 DEFNAME=i_kabuto_mempo
-NAME=decorative kabuto mempo
+//NAME=decorative kabuto mempo
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -1934,16 +385,16 @@ VALUE=65
 WEIGHT=10.0
 RESOURCES=10 i_ingot_iron
 SKILLMAKE=Blacksmithing 63.0,Armslore 25.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Helmets
 DESCRIPTION=Kabuto Mempo (unwearable)
-CanUse=can_u_human|can_u_elf|can_u_none
-ReqStr=80
+CANUSE=can_u_human|can_u_elf|can_u_none
+REQSTR=80
 TEVENTS=ei_equipitem
 DUPELIST=02690
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=2
    RESFIRE=3
@@ -1963,16 +414,16 @@ VALUE=12
 WEIGHT=2.1
 RESOURCES=2 i_hides_cut,1 i_thread
 SKILLMAKE=Tailoring 6.8,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Leather Armor
 DESCRIPTION=Leather Cap 2
-ReqStr=20
-CanUse=can_u_human|can_u_elf
+REQSTR=20
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=02692
 //Expansion=RDS_PRET2A
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=3
    RESFIRE=4
@@ -1986,7 +437,6 @@ DUPEITEM=02691
 
 [ITEMDEF 02774]
 DEFNAME=i_chainmail_hatsuburi
-NAME=chainmail hatsuburi
 TYPE=t_armor
 FLIP=1
 ARMOR=28
@@ -1994,16 +444,16 @@ VALUE=104
 WEIGHT=20.0
 RESOURCES=20 i_ingot_iron
 SKILLMAKE=Blacksmithing 30.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Chainmail Armor
 DESCRIPTION=Hatsuburi
-ReqStr=50
-CanUse=can_u_human|can_u_elf
+REQSTR=50
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027bf
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=4
    RESFIRE=2
@@ -2012,7 +462,6 @@ ON=@Create
 
 [ITEMDEF 02775]
 DEFNAME=i_platemail_hatsuburi
-NAME=platemail hatsuburi
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -2020,16 +469,16 @@ VALUE=116
 WEIGHT=20.0
 RESOURCES=20 i_ingot_iron
 SKILLMAKE=Blacksmithing 45.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Platemail Armor
 DESCRIPTION=Hatsuburi
-ReqStr=65
-CanUse=can_u_human|can_u_elf
+REQSTR=65
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027c0
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=3
    RESFIRE=3
@@ -2038,7 +487,6 @@ ON=@Create
 
 [ITEMDEF 02776]
 DEFNAME=i_leather_jingasa
-NAME=leather jingasa
 TYPE=t_armor_leather
 FLIP=1
 ARMOR=13
@@ -2046,16 +494,16 @@ VALUE=102
 WEIGHT=14.1
 RESOURCES=14 i_hides_cut,1 i_thread
 SKILLMAKE=Tailoring 45.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Leather Armor
 DESCRIPTION=Leather Jingasa
-ReqStr=25
-CanUse=can_u_human|can_u_elf
+REQSTR=25
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027c1
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=3
    RESFIRE=3
@@ -2064,7 +512,6 @@ ON=@Create
 
 [ITEMDEF 02777]
 DEFNAME=i_plate_jingasa_heavy
-NAME=plate jingasa
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -2072,16 +519,16 @@ VALUE=116
 WEIGHT=20.0
 RESOURCES=20 i_ingot_iron
 SKILLMAKE=Blacksmithing 45.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Helmets
 DESCRIPTION=Heavy Plate Jingasa
-ReqStr=55
-CanUse=can_u_human|can_u_elf
+REQSTR=55
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027c2
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=2
    RESFIRE=2
@@ -2090,7 +537,6 @@ ON=@Create
 
 [ITEMDEF 02778]
 DEFNAME=i_platemail_kabuto_decorative
-NAME=plate kabuto
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -2098,16 +544,16 @@ VALUE=190
 WEIGHT=25.0
 RESOURCES=25 i_ingot_iron
 SKILLMAKE=Blacksmithing 90.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Platemail Armor
 DESCRIPTION=Plate Kabuto
-ReqStr=80
-CanUse=can_u_human|can_u_elf
+REQSTR=80
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027c3
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=2
    RESFIRE=3
@@ -2116,7 +562,6 @@ ON=@Create
 
 [ITEMDEF 02779]
 DEFNAME=i_platemail_mempo
-NAME=platemail mempo
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -2124,16 +569,16 @@ VALUE=130
 WEIGHT=18.0
 RESOURCES=18 i_ingot_iron
 SKILLMAKE=Blacksmithing 80.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Platemail Armor
 DESCRIPTION=Platemail Mempo
-ReqStr=50
-CanUse=can_u_human|can_u_elf
+REQSTR=50
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027c4
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=2
    RESFIRE=3
@@ -2142,7 +587,6 @@ ON=@Create
 
 [ITEMDEF 0277a]
 DEFNAME=i_leather_mempo
-NAME=leather mempo
 TYPE=t_armor_leather
 FLIP=1
 ARMOR=13
@@ -2150,16 +594,16 @@ VALUE=72
 WEIGHT=8.1
 RESOURCES=8 i_hides_cut,1 i_thread
 SKILLMAKE=Tailoring 80.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Leather Armor
 DESCRIPTION=Leather Mempo
-ReqStr=30
-CanUse=can_u_human|can_u_elf
+REQSTR=30
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027c5
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=3
    RESFIRE=4
@@ -2168,7 +612,6 @@ ON=@Create
 
 [ITEMDEF 0277b]
 DEFNAME=i_leather_do
-NAME=leather do
 TYPE=t_armor_leather
 FLIP=1
 ARMOR=13
@@ -2176,16 +619,16 @@ VALUE=105
 WEIGHT=12.1
 RESOURCES=12 i_hides_cut,1 i_thread
 SKILLMAKE=Tailoring 75.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Leather Armor
 DESCRIPTION=Leather Do
-ReqStr=40
-CanUse=can_u_human|can_u_elf
+REQSTR=40
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027c6
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=3
    RESFIRE=4
@@ -2194,7 +637,6 @@ ON=@Create
 
 [ITEMDEF 0277c]
 DEFNAME=i_studded_do
-NAME=studded do
 TYPE=t_armor_leather
 FLIP=1
 ARMOR=20
@@ -2202,16 +644,16 @@ VALUE=137
 WEIGHT=16.1
 RESOURCES=14 i_hides_cut,1 i_thread,2 i_ingot_iron
 SKILLMAKE=Tailoring 95.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Studded Armor
 DESCRIPTION=Studded Do
-ReqStr=55
-CanUse=can_u_human|can_u_elf
+REQSTR=55
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027c7
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=4
    RESFIRE=4
@@ -2220,7 +662,6 @@ ON=@Create
 
 [ITEMDEF 0277d]
 DEFNAME=i_platemail_do
-NAME=platemail do
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -2228,16 +669,16 @@ VALUE=209
 WEIGHT=28.0
 RESOURCES=28 i_ingot_iron
 SKILLMAKE=Blacksmithing 87.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Platemail Armor
 DESCRIPTION=Platemail Do
-ReqStr=85
-CanUse=can_u_human|can_u_elf
+REQSTR=85
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027c8
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=2
    RESFIRE=3
@@ -2246,7 +687,6 @@ ON=@Create
 
 [ITEMDEF 0277e]
 DEFNAME=i_leather_hiro_sode
-NAME=leather hiro sode
 TYPE=t_armor
 FLIP=1
 ARMOR=13
@@ -2254,16 +694,16 @@ VALUE=62
 WEIGHT=8.1
 RESOURCES=8 i_hides_cut,1 i_thread
 SKILLMAKE=Tailoring 55.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Leather Armor
 DESCRIPTION=Leather Hiro Sode
-ReqStr=25
-CanUse=can_u_human|can_u_elf
+REQSTR=25
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027c9
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=3
    RESFIRE=4
@@ -2272,7 +712,6 @@ ON=@Create
 
 [ITEMDEF 0277f]
 DEFNAME=i_studded_hiro_sode
-NAME=studded hiro sode
 TYPE=t_armor_leather
 FLIP=1
 ARMOR=20
@@ -2280,16 +719,16 @@ VALUE=70
 WEIGHT=8.1
 RESOURCES=6 i_hides_cut,2 i_ingot_iron,1 i_thread
 SKILLMAKE=Tailoring 85.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Studded Armor
 DESCRIPTION=Studded Hiro Sode
-ReqStr=30
-CanUse=can_u_human|can_u_elf
+REQSTR=30
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027ca
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=4
    RESFIRE=4
@@ -2298,7 +737,6 @@ ON=@Create
 
 [ITEMDEF 02780]
 DEFNAME=i_platemail_hiro_sode
-NAME=plate hiro sode
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -2306,16 +744,16 @@ VALUE=72
 WEIGHT=8.0
 RESOURCES=8 i_ingot_iron
 SKILLMAKE=Blacksmithing 80.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Platemail Armor
 DESCRIPTION=Platemail Hiro Sode
-ReqStr=75
-CanUse=can_u_human|can_u_elf
+REQSTR=75
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027cb
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=2
    RESFIRE=3
@@ -2324,7 +762,6 @@ ON=@Create
 
 [ITEMDEF 02781]
 DEFNAME=i_plate_jingasa_light
-NAME=light platemail jingasa
 TYPE=t_armor
 FLIP=1
 ARMOR=28
@@ -2332,16 +769,16 @@ VALUE=104
 WEIGHT=18.0
 RESOURCES=18 i_ingot_iron
 SKILLMAKE=Blacksmithing 45.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Helmets
 DESCRIPTION=Light Platemail Jingasa
-ReqStr=55
-CanUse=can_u_human|can_u_elf
+REQSTR=55
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027cc
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=2
    RESFIRE=2
@@ -2351,7 +788,6 @@ ON=@Create
 
 [ITEMDEF 02784]
 DEFNAME=i_plate_jingasa_small
-NAME=small platemail jingasa
 TYPE=t_armor
 FLIP=1
 ARMOR=13
@@ -2359,16 +795,16 @@ VALUE=93
 WEIGHT=16.0
 RESOURCES=16 i_ingot_iron
 SKILLMAKE=Blacksmithing 45.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Helmets
 DESCRIPTION=Small Platemail Jingasa
-ReqStr=55
-CanUse=can_u_human|can_u_elf
+REQSTR=55
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027cf
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=2
    RESFIRE=2
@@ -2377,7 +813,6 @@ ON=@Create
 
 [ITEMDEF 02785]
 DEFNAME=i_helm_kabuto_battle
-NAME=platemail battle kabuto
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -2385,16 +820,16 @@ VALUE=114
 WEIGHT=15.0
 RESOURCES=15 i_ingot_iron
 SKILLMAKE=Blacksmithing 90.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Platemail Armor
 DESCRIPTION=Platemail Battle Kabuto
-ReqStr=70
-CanUse=can_u_human|can_u_elf
+REQSTR=70
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027d0
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=3
    RESFIRE=2
@@ -2403,7 +838,6 @@ ON=@Create
 
 [ITEMDEF 02786]
 DEFNAME=i_leather_suneate
-NAME=leather suneate
 TYPE=t_armor_leather
 FLIP=1
 ARMOR=13
@@ -2411,16 +845,16 @@ VALUE=117
 WEIGHT=14.1
 RESOURCES=14 i_hides_cut,1 i_thread
 SKILLMAKE=Tailoring 68.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Leather Armor
 DESCRIPTION=Leather Suneate
-ReqStr=20
-CanUse=can_u_human|can_u_elf
+REQSTR=20
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027d1
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=3
    RESFIRE=4
@@ -2429,7 +863,6 @@ ON=@Create
 
 [ITEMDEF 02787]
 DEFNAME=i_studded_suneate
-NAME=studded suneate
 TYPE=t_armor_leather
 FLIP=1
 ARMOR=20
@@ -2437,16 +870,16 @@ VALUE=129
 WEIGHT=14.1
 RESOURCES=11 i_hides_cut,3 i_ingot_iron,1 i_thread
 SKILLMAKE=Tailoring 92.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Studded Armor
 DESCRIPTION=Studded Suneate
-ReqStr=30
-CanUse=can_u_human|can_u_elf
+REQSTR=30
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027d2
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=4
    RESFIRE=4
@@ -2455,7 +888,6 @@ ON=@Create
 
 [ITEMDEF 02788]
 DEFNAME=i_platemail_suneate
-NAME=plate suneate
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -2463,16 +895,16 @@ VALUE=92
 WEIGHT=14.0
 RESOURCES=14 i_ingot_iron
 SKILLMAKE=Blacksmithing 65.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Platemail Armor
 DESCRIPTION=Plate Suneate
-ReqStr=80
-CanUse=can_u_human|can_u_elf
+REQSTR=80
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027d3
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=2
    RESFIRE=3
@@ -2481,7 +913,6 @@ ON=@Create
 
 [ITEMDEF 02789]
 DEFNAME=i_platemail_kabuto
-NAME=standard platemail kabuto
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -2489,16 +920,16 @@ VALUE=99
 WEIGHT=15.0
 RESOURCES=15 i_ingot_iron
 SKILLMAKE=Blacksmithing 65.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Platemail Armor
 DESCRIPTION=Standard Platemail Kabuto
-ReqStr=70
-CanUse=can_u_human|can_u_elf
+REQSTR=70
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 DUPELIST=027d4
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=3
    RESFIRE=2
@@ -2507,7 +938,6 @@ ON=@Create
 
 [ITEMDEF 0278a]
 DEFNAME=i_leather_haidate
-NAME=leather haidate
 TYPE=t_armor_leather
 FLIP=1
 ARMOR=13
@@ -2515,16 +945,16 @@ VALUE=100
 WEIGHT=12.1
 RESOURCES=12 i_hides_cut,1 i_thread
 SKILLMAKE=Tailoring 68.9,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Leather Armor
 DESCRIPTION=Leather Haidate
-CanUse=can_u_human|can_u_elf
-ReqStr=20
+CANUSE=can_u_human|can_u_elf
+REQSTR=20
 TEVENTS=ei_equipitem
 DUPELIST=027d5
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=3
    RESFIRE=4
@@ -2533,7 +963,6 @@ ON=@Create
 
 [ITEMDEF 0278b]
 DEFNAME=i_studded_haidate
-NAME=studded haidate
 TYPE=t_armor_leather
 FLIP=1
 ARMOR=20
@@ -2541,16 +970,16 @@ VALUE=115
 WEIGHT=12.1
 RESOURCES=10 i_hides_cut,2 i_ingot_iron,1 i_thread
 SKILLMAKE=Tailoring 92.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Studded Armor
 DESCRIPTION=Studded Haidate
-CanUse=can_u_human|can_u_elf
-ReqStr=30
+CANUSE=can_u_human|can_u_elf
+REQSTR=30
 TEVENTS=ei_equipitem
 DUPELIST=027d6
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=4
    RESFIRE=4
@@ -2560,7 +989,6 @@ ON=@Create
 
 [ITEMDEF 0278d]
 DEFNAME=i_platemail_haidate
-NAME=plate haidate
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -2568,16 +996,16 @@ VALUE=79
 WEIGHT=12.0
 RESOURCES=12 i_ingot_iron
 SKILLMAKE=Blacksmithing 65.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Platemail Armor
 DESCRIPTION=Platemail Haidate
-CanUse=can_u_human|can_u_elf
-ReqStr=80
+CANUSE=can_u_human|can_u_elf
+REQSTR=80
 TEVENTS=ei_equipitem
 DUPELIST=027d8
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=2
    RESFIRE=3
@@ -2586,7 +1014,6 @@ ON=@Create
 
 [ITEMDEF 0278e]
 DEFNAME=i_hood_ninja_leather
-NAME=leather ninja hood
 TYPE=t_armor_leather
 FLIP=1
 ARMOR=13
@@ -2594,16 +1021,16 @@ VALUE=136
 WEIGHT=14.0
 RESOURCES=14 i_hides_cut,1 i_thread
 SKILLMAKE=Tailoring 90.0,t_sewing_kit,Armslore 38.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Leather Armor
 DESCRIPTION=Leather Ninja Hood
-CanUse=can_u_human|can_u_elf
-ReqStr=10
+CANUSE=can_u_human|can_u_elf
+REQSTR=10
 TEVENTS=ei_equipitem
 DUPELIST=027d9
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=3
    RESFIRE=4
@@ -2613,7 +1040,6 @@ ON=@Create
 
 [ITEMDEF 02790]
 DEFNAME=i_belt_ninja_leather
-NAME=leather ninja belt
 TYPE=t_armor_leather
 FLIP=1
 //LAYER=layer_half_apron
@@ -2627,20 +1053,19 @@ CATEGORY=Provisions - Clothes
 SUBSECTION=Miscellaneous
 DESCRIPTION=Leather Ninja Belt
 
-CanUse=can_u_human|can_u_elf
-ReqStr=10
+CANUSE=can_u_human|can_u_elf
+REQSTR=10
 TEVENTS=ei_equipitem
 TEVENTS=t_ninja_shuriken
 DUPELIST=027db
 Expansion=RDS_SE
 
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESPOISON=1
 
 [ITEMDEF 02791]
 DEFNAME=i_pants_ninja_leather
-NAME=leather ninja pants
 TYPE=t_armor_leather
 FLIP=1
 ARMOR=13
@@ -2648,16 +1073,16 @@ VALUE=120
 WEIGHT=13.0
 RESOURCES=13 i_hides_cut,1 i_thread
 SKILLMAKE=Tailoring 80.0,t_sewing_kit,Armslore 38.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Leather Armor
 DESCRIPTION=Leather Ninja Pants
-CanUse=can_u_human|can_u_elf
-ReqStr=10
+CANUSE=can_u_human|can_u_elf
+REQSTR=10
 TEVENTS=ei_equipitem
 DUPELIST=027dc
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=3
    RESFIRE=4
@@ -2666,7 +1091,6 @@ ON=@Create
 
 [ITEMDEF 02792]
 DEFNAME=i_mitts_ninja_leather
-NAME=leather ninja mitts
 TYPE=t_armor_leather
 FLIP=1
 ARMOR=13
@@ -2674,16 +1098,16 @@ VALUE=69
 WEIGHT=8.0
 RESOURCES=8 i_hides_cut,1 i_thread
 SKILLMAKE=Tailoring 65.0,t_sewing_kit,Armslore 38.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Leather Armor
 DESCRIPTION=Leather Ninja Mitts
-CanUse=can_u_human|can_u_elf
-ReqStr=10
+CANUSE=can_u_human|can_u_elf
+REQSTR=10
 TEVENTS=ei_equipitem
 DUPELIST=027dd
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=3
    RESFIRE=4
@@ -2692,7 +1116,6 @@ ON=@Create
 
 [ITEMDEF 02793]
 DEFNAME=i_jacket_ninja_leather
-NAME=leather ninja jacket
 TYPE=t_armor_leather
 FLIP=1
 ARMOR=13
@@ -2700,16 +1123,16 @@ VALUE=124
 WEIGHT=13.0
 RESOURCES=13 i_hides_cut,1 i_thread
 SKILLMAKE=Tailoring 85.0,t_sewing_kit,Armslore 38.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Leather Armor
 DESCRIPTION=Leather Ninja Jacket
-CanUse=can_u_human|can_u_elf
-ReqStr=10
+CANUSE=can_u_human|can_u_elf
+REQSTR=10
 TEVENTS=ei_equipitem
 DUPELIST=027de
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=3
    RESFIRE=4
@@ -2719,7 +1142,6 @@ ON=@Create
 
 [ITEMDEF 0279d]
 DEFNAME=i_mempo_studded
-NAME=studded mempo
 TYPE=t_armor_leather
 FLIP=1
 ARMOR=20
@@ -2727,16 +1149,16 @@ VALUE=72
 WEIGHT=10.1
 RESOURCES=8 i_hides_cut,2 i_ingot_iron,1 i_thread
 SKILLMAKE=Tailoring 80.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Studded Armor
 DESCRIPTION=Studded Mempo
-CanUse=can_u_human|can_u_elf
-ReqStr=30
+CANUSE=can_u_human|can_u_elf
+REQSTR=30
 TEVENTS=ei_equipitem
 DUPELIST=027e8
 Expansion=RDS_SE
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=3
    RESENERGY=4
    RESFIRE=4
@@ -2874,15 +1296,15 @@ TEVENTS=ei_equipment_special
 CATEGORY=Quest
 SUBSECTION=8th Age
 DESCRIPTION=Legs of Honor
-CanUse=can_u_human|can_u_elf
-ReqStr=70
+CANUSE=can_u_human|can_u_elf
+REQSTR=70
 TEVENTS=ei_equipitem
 DUPELIST=02b07
 Expansion=RDS_ML
-ON=@Create
-   ATTR=attr_magic
-   COLOR=1827//tarnish
-   HITPOINTS=255
+ON=@CREATE
+ATTR=attr_magic
+COLOR=1827//tarnish
+HITPOINTS=255
    Rarity=1
    TAG.VirtueArmor=1
    RESCOLD=10
@@ -2909,15 +1331,15 @@ TEVENTS=ei_equipment_special
 CATEGORY=Quest
 SUBSECTION=8th Age
 DESCRIPTION=Breastplate of Justice
-CanUse=can_u_human|can_u_elf
-ReqStr=65
+CANUSE=can_u_human|can_u_elf
+REQSTR=65
 TEVENTS=ei_equipitem
 DUPELIST=02b09
 Expansion=RDS_ML
-ON=@Create
-   ATTR=attr_magic
-   COLOR=1827//tarnish
-   HITPOINTS=255
+ON=@CREATE
+ATTR=attr_magic
+COLOR=1827//tarnish
+HITPOINTS=255
    Rarity=1
    TAG.VirtueArmor=1
    RESCOLD=8
@@ -2944,15 +1366,15 @@ TEVENTS=ei_equipment_special
 CATEGORY=Quest
 SUBSECTION=8th Age
 DESCRIPTION=Arms of Compassion
-CanUse=can_u_human|can_u_elf
-ReqStr=60
+CANUSE=can_u_human|can_u_elf
+REQSTR=60
 TEVENTS=ei_equipitem
 DUPELIST=02b09
 Expansion=RDS_ML
-ON=@Create
-   ATTR=attr_magic
-   COLOR=1827//tarnish
-   HITPOINTS=255
+ON=@CREATE
+ATTR=attr_magic
+COLOR=1827//tarnish
+HITPOINTS=255
    Rarity=1
    TAG.VirtueArmor=1
    RESCOLD=6
@@ -2979,15 +1401,15 @@ TEVENTS=ei_equipment_special
 CATEGORY=Quest
 SUBSECTION=8th Age
 DESCRIPTION=Gauntlets of Valor
-CanUse=can_u_human|can_u_elf
-ReqStr=60
+CANUSE=can_u_human|can_u_elf
+REQSTR=60
 TEVENTS=ei_equipitem
 DUPELIST=02b0d
 Expansion=RDS_ML
-ON=@Create
-   ATTR=attr_magic
-   COLOR=1827//tarnish
-   HITPOINTS=255
+ON=@CREATE
+ATTR=attr_magic
+COLOR=1827//tarnish
+HITPOINTS=255
    Rarity=1
    TAG.VirtueArmor=1
    RESCOLD=6
@@ -3014,15 +1436,15 @@ TEVENTS=ei_equipment_special
 CATEGORY=Quest
 SUBSECTION=8th Age
 DESCRIPTION=Gorget of Truth
-CanUse=can_u_human|can_u_elf
-ReqStr=45
+CANUSE=can_u_human|can_u_elf
+REQSTR=45
 TEVENTS=ei_equipitem
 DUPELIST=02b0f
 Expansion=RDS_ML
-ON=@Create
-   ATTR=attr_magic
-   COLOR=1827//tarnish
-   HITPOINTS=255
+ON=@CREATE
+ATTR=attr_magic
+COLOR=1827//tarnish
+HITPOINTS=255
    Rarity=1
    TAG.VirtueArmor=1
    RESCOLD=9
@@ -3049,15 +1471,15 @@ TEVENTS=ei_equipment_special
 CATEGORY=Quest
 SUBSECTION=8th Age
 DESCRIPTION=Helm of Spirituality
-CanUse=can_u_human|can_u_elf
-ReqStr=25
+CANUSE=can_u_human|can_u_elf
+REQSTR=25
 TEVENTS=ei_equipitem
 DUPELIST=02b11
 Expansion=RDS_ML
-ON=@Create
-   ATTR=attr_magic
-   COLOR=1827//tarnish
-   HITPOINTS=255
+ON=@CREATE
+ATTR=attr_magic
+COLOR=1827//tarnish
+HITPOINTS=255
    Rarity=1
    TAG.VirtueArmor=1
    RESCOLD=7
@@ -3084,15 +1506,15 @@ TEVENTS=ei_equipment_special
 CATEGORY=Quest
 SUBSECTION=8th Age
 DESCRIPTION=Sollerets of Sacrifice
-CanUse=can_u_human|can_u_elf
-ReqStr=10
+CANUSE=can_u_human|can_u_elf
+REQSTR=10
 TEVENTS=ei_equipitem
 DUPELIST=02b13
 Expansion=RDS_ML
-ON=@Create
-   ATTR=attr_magic
-   COLOR=1827//tarnish
-   HITPOINTS=255
+ON=@CREATE
+ATTR=attr_magic
+COLOR=1827//tarnish
+HITPOINTS=255
    Rarity=1
    TAG.VirtueArmor=1
    RESPHYSICAL=8
@@ -3112,16 +1534,16 @@ VALUE=175
 WEIGHT=8.0
 RESOURCES=20 i_board,6 i_bark
 SKILLMAKE=Carpentry 90.0,Armslore 25.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Woodland Chest
-CanUse=can_u_elf
-ReqStr=95
+CANUSE=can_u_elf
+REQSTR=95
 TEVENTS=ei_equipitem
 DUPELIST=0315e
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=2
    RESFIRE=3
@@ -3139,16 +1561,16 @@ VALUE=63
 WEIGHT=10.0
 RESOURCES=15 i_board,4 i_bark
 SKILLMAKE=Carpentry 85.0,Armslore 25.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Woodland Gorget
-CanUse=can_u_elf
-ReqStr=45
+CANUSE=can_u_elf
+REQSTR=45
 TEVENTS=ei_equipitem
 DUPELIST=03160
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=2
    RESFIRE=3
@@ -3165,16 +1587,16 @@ VALUE=76
 WEIGHT=12.0
 RESOURCES=15 i_board,4 i_bark
 SKILLMAKE=Carpentry 85.0,Armslore 25.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Woodland Gauntlets
-CanUse=can_u_elf
-ReqStr=70
+CANUSE=can_u_elf
+REQSTR=70
 TEVENTS=ei_equipitem
 DUPELIST=03161
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=2
    RESFIRE=3
@@ -3192,16 +1614,16 @@ VALUE=122
 WEIGHT=18.0
 RESOURCES=15 i_board,4 i_bark
 SKILLMAKE=Carpentry 85.0,Armslore 25.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Woodland Leggings
-CanUse=can_u_elf
-ReqStr=90
+CANUSE=can_u_elf
+REQSTR=90
 TEVENTS=ei_equipitem
 DUPELIST=03162
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=2
    RESFIRE=3
@@ -3218,16 +1640,16 @@ VALUE=100
 WEIGHT=15.0
 RESOURCES=15 i_board,4 i_bark
 SKILLMAKE=Carpentry 85.0,Armslore 25.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Woodland Arms
-CanUse=can_u_elf
-ReqStr=80
+CANUSE=can_u_elf
+REQSTR=80
 TEVENTS=ei_equipitem
 DUPELIST=03163
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=2
    RESFIRE=3
@@ -3244,16 +1666,16 @@ VALUE=140
 WEIGHT=20.0
 RESOURCES=20 i_board,6 i_bark
 SKILLMAKE=Carpentry 90.0,Armslore 25.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Woodland Chest (female)
-CanUse=can_u_elf|can_u_female
-ReqStr=95
+CANUSE=can_u_elf|can_u_female
+REQSTR=95
 TEVENTS=ei_equipitem
 DUPELIST=03164
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=2
    RESFIRE=3
@@ -3270,16 +1692,16 @@ VALUE=65
 WEIGHT=10.0
 RESOURCES=10 i_ingot_iron
 SKILLMAKE=Blacksmithing 63.0,Armslore 25.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Circlet
-CanUse=can_u_elf
-ReqStr=10
+CANUSE=can_u_elf
+REQSTR=10
 TEVENTS=ei_equipitem
 DUPELIST=03165
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=5
    RESFIRE=5
@@ -3296,16 +1718,16 @@ VALUE=70
 WEIGHT=10.0
 RESOURCES=10 i_ingot_iron
 SKILLMAKE=Blacksmithing 77.3,Armslore 25.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Royal Circlet
-CanUse=can_u_elf
-ReqStr=10
+CANUSE=can_u_elf
+REQSTR=10
 TEVENTS=ei_equipitem
 DUPELIST=03166
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=5
    RESFIRE=5
@@ -3322,16 +1744,16 @@ VALUE=1050
 WEIGHT=10.0
 RESOURCES=8 i_ingot_iron,20 i_gem_diamond
 SKILLMAKE=Blacksmithing 93.2,Armslore 25.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Gemmed Circlet
-CanUse=can_u_elf
-ReqStr=10
+CANUSE=can_u_elf
+REQSTR=10
 TEVENTS=ei_equipitem
 DUPELIST=03167
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=5
    RESFIRE=5
@@ -3348,16 +1770,16 @@ VALUE=65
 WEIGHT=10.0
 RESOURCES=10 i_board,25 i_feather,4 i_bark
 SKILLMAKE=Carpentry 65.0,Armslore 25.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Raven Helm
-CanUse=can_u_elf
-ReqStr=25
+CANUSE=can_u_elf
+REQSTR=25
 TEVENTS=ei_equipitem
 DUPELIST=03168
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=5
    RESFIRE=1
@@ -3374,16 +1796,16 @@ VALUE=65
 WEIGHT=10.0
 RESOURCES=10 i_board,25 i_feather,4 i_bark
 SKILLMAKE=Carpentry 63.9,Armslore 25.0
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Vulture Helm
-CanUse=can_u_elf
-ReqStr=25
+CANUSE=can_u_elf
+REQSTR=25
 TEVENTS=ei_equipitem
 DUPELIST=03169
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=5
    RESFIRE=1
@@ -3400,16 +1822,16 @@ VALUE=65
 WEIGHT=10.0
 RESOURCES=10 i_board,60 i_feather,4 i_bark
 SKILLMAKE=Carpentry 58.4
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Winged Helm
-CanUse=can_u_elf
-ReqStr=25
+CANUSE=can_u_elf
+REQSTR=25
 TEVENTS=ei_equipitem
 DUPELIST=0316a
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=5
    RESFIRE=1
@@ -3426,16 +1848,16 @@ VALUE=113
 WEIGHT=13.1
 RESOURCES=13 i_hides_cut,1 i_ingot_iron,1 i_thread
 SKILLMAKE=Tailoring 85.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Hide Tunic
-CanUse=can_u_elf
-ReqStr=25
+CANUSE=can_u_elf
+REQSTR=25
 TEVENTS=ei_equipitem
 DUPELIST=0316b
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=4
    RESENERGY=2
    RESFIRE=3
@@ -3452,16 +1874,16 @@ VALUE=24
 WEIGHT=3.1
 RESOURCES=3 i_hides_cut,1 i_thread
 SKILLMAKE=Tailoring 75.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Hide Gloves
-CanUse=can_u_elf
-ReqStr=15
+CANUSE=can_u_elf
+REQSTR=15
 TEVENTS=ei_equipitem
 DUPELIST=0316c
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=4
    RESENERGY=2
    RESFIRE=3
@@ -3478,16 +1900,16 @@ VALUE=31
 WEIGHT=4.0
 RESOURCES=4 i_hides_cut,1 i_thread
 SKILLMAKE=Tailoring 59.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Hide Gorget
-CanUse=can_u_elf
-ReqStr=15
+CANUSE=can_u_elf
+REQSTR=15
 TEVENTS=ei_equipitem
 DUPELIST=0316d
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=4
    RESENERGY=2
    RESFIRE=3
@@ -3504,16 +1926,16 @@ VALUE=70
 WEIGHT=9.1
 RESOURCES=8 i_hides_cut,1 i_ingot_iron,1 i_thread
 SKILLMAKE=Tailoring 75.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Hide Pauldrons
-CanUse=can_u_elf
-ReqStr=20
+CANUSE=can_u_elf
+REQSTR=20
 TEVENTS=ei_equipitem
 DUPELIST=0316e
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=4
    RESENERGY=2
    RESFIRE=3
@@ -3530,16 +1952,16 @@ VALUE=86
 WEIGHT=11.1
 RESOURCES=10 i_hides_cut,1 i_ingot_iron,1 i_thread
 SKILLMAKE=Tailoring 59.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Hide Pants
-CanUse=can_u_elf
-ReqStr=25
+CANUSE=can_u_elf
+REQSTR=25
 TEVENTS=ei_equipitem
 DUPELIST=0316f
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=4
    RESENERGY=2
    RESFIRE=3
@@ -3556,16 +1978,16 @@ VALUE=96
 WEIGHT=13.1
 RESOURCES=10 i_hides_cut,1 i_ingot_iron,1 i_thread
 SKILLMAKE=Tailoring 85.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Hide Tunic (female)
-CanUse=can_u_elf|can_u_female
-ReqStr=25
+CANUSE=can_u_elf|can_u_female
+REQSTR=25
 TEVENTS=ei_equipitem
 DUPELIST=03170
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=4
    RESENERGY=2
    RESFIRE=3
@@ -3582,15 +2004,15 @@ WEIGHT=2
 REQSTR=20
 RESOURCES=15 i_hides_cut
 SKILLMAKE=Tailoring 75.0
-CanUse=can_u_elf|can_u_female
-CATEGORY=Provisions - Armor - Leather
+CANUSE=can_u_elf|can_u_female
+CATEGORY=Armor - Leather
 SUBSECTION=Leaf Armor
 DESCRIPTION=Leaf Tunic
 TEVENTS=ei_equipitem
 DUPELIST=0317b
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={50 60}
+ON=@CREATE
+HITPOINTS={50 60}
    ResPhysical=2
    ResFire=3
    ResCold=2
@@ -3707,16 +2129,16 @@ VALUE=113
 WEIGHT=13.1
 RESOURCES=12 i_hides_cut,1 i_ingot_iron,1 i_thread
 SKILLMAKE=Tailoring 77.2,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Leaf Tunic
-CanUse=can_u_elf
-ReqStr=20
+CANUSE=can_u_elf
+REQSTR=20
 TEVENTS=ei_equipitem
 DUPELIST=02fc5
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=4
    RESFIRE=3
@@ -3734,16 +2156,16 @@ VALUE=27
 WEIGHT=3.1
 RESOURCES=3 i_hides_cut,1 i_thread
 SKILLMAKE=Tailoring 56.8,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Leaf Gloves
-CanUse=can_u_elf
-ReqStr=10
+CANUSE=can_u_elf
+REQSTR=10
 TEVENTS=ei_equipitem
 DUPELIST=02fc6
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=4
    RESFIRE=3
@@ -3761,16 +2183,16 @@ VALUE=35
 WEIGHT=4.1
 RESOURCES=4 i_hides_cut,1 i_thread
 SKILLMAKE=Tailoring 59.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Leaf Gorget
-CanUse=can_u_elf
-ReqStr=10
+CANUSE=can_u_elf
+REQSTR=10
 TEVENTS=ei_equipitem
 DUPELIST=02fc7
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=4
    RESFIRE=3
@@ -3788,16 +2210,16 @@ VALUE=73
 WEIGHT=9.1
 RESOURCES=8 i_hides_cut,1 i_ingot_iron,1 i_thread
 SKILLMAKE=Tailoring 59.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Leaf Arms
-CanUse=can_u_elf
-ReqStr=15
+CANUSE=can_u_elf
+REQSTR=15
 TEVENTS=ei_equipitem
 DUPELIST=02fc8
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=4
    RESFIRE=3
@@ -3815,16 +2237,16 @@ VALUE=89
 WEIGHT=11.1
 RESOURCES=10 i_hides_cut,1 i_ingot_iron,1 i_thread
 SKILLMAKE=Tailoring 59.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Leaf Leggings
-CanUse=can_u_elf
-ReqStr=20
+CANUSE=can_u_elf
+REQSTR=20
 TEVENTS=ei_equipitem
 DUPELIST=02fc9
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=4
    RESFIRE=3
@@ -3842,16 +2264,16 @@ VALUE=117
 WEIGHT=13.1
 RESOURCES=12 i_hide,1 i_ingot_iron,1 i_thread
 SKILLMAKE=Tailoring 77.2,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Leaf Tonlet
-CanUse=can_u_elf
-ReqStr=10
+CANUSE=can_u_elf
+REQSTR=10
 TEVENTS=ei_equipitem
 DUPELIST=02fca
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=4
    RESFIRE=3
@@ -3869,16 +2291,16 @@ VALUE=117
 WEIGHT=13.1
 RESOURCES=12 i_hide,1 i_ingot_iron,1 i_thread
 SKILLMAKE=Tailoring 77.2,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Elven
 DESCRIPTION=Female Leaf Tunic
-CanUse=can_u_elf|can_u_female
-ReqStr=20
+CANUSE=can_u_elf|can_u_female
+REQSTR=20
 TEVENTS=ei_equipitem
 DUPELIST=02fcb
 Expansion=RDS_ML
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESCOLD=2
    RESENERGY=4
    RESFIRE=3
@@ -3893,15 +2315,15 @@ NAME=tiger pelt chest
 TYPE=t_armor
 RESOURCES=8 i_hides_cut,4 i_tigerpelt
 SKILLMAKE=Tailoring 90.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Tiger Pelt
 DESCRIPTION=Tiger Pelt Chest
-ReqStr=30
-CanUse=can_u_human|can_u_elf
+REQSTR=30
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 Expansion=RDS_TOL
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESPHYSICAL=3
    RESFIRE=4
    RESCOLD=3
@@ -3914,15 +2336,15 @@ NAME=tiger pelt bustier
 TYPE=t_armor
 RESOURCES=6 i_hides_cut,3 i_tigerpelt
 SKILLMAKE=Tailoring 90.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Tiger Pelt
 DESCRIPTION=Tiger Pelt Bustier
-ReqStr=25
-CanUse=can_u_human|can_u_elf|can_u_female
+REQSTR=25
+CANUSE=can_u_human|can_u_elf|can_u_female
 TEVENTS=ei_equipitem
 Expansion=RDS_TOL
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESPHYSICAL=3
    RESFIRE=4
    RESCOLD=3
@@ -3935,15 +2357,15 @@ NAME=tiger pelt leggings
 TYPE=t_armor
 RESOURCES=8 i_hides_cut,4 i_tigerpelt
 SKILLMAKE=Tailoring 90.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Tiger Pelt
 DESCRIPTION=Tiger Pelt Leggings
-ReqStr=30
-CanUse=can_u_human|can_u_elf
+REQSTR=30
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 Expansion=RDS_TOL
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESPHYSICAL=3
    RESFIRE=4
    RESCOLD=3
@@ -3956,15 +2378,15 @@ NAME=tiger pelt shorts
 TYPE=t_armor
 RESOURCES=4 i_hides_cut,2 i_tigerpelt
 SKILLMAKE=Tailoring 90.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Tiger Pelt
 DESCRIPTION=Tiger Pelt Shorts
-ReqStr=25
-CanUse=can_u_human|can_u_elf
+REQSTR=25
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 Expansion=RDS_TOL
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESPHYSICAL=3
    RESFIRE=4
    RESCOLD=3
@@ -3977,15 +2399,15 @@ NAME=tiger pelt long skirt
 TYPE=t_armor
 RESOURCES=4 i_hides_cut,2 i_tigerpelt
 SKILLMAKE=Tailoring 90.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Tiger Pelt
 DESCRIPTION=Tiger Pelt Long Skirt
-ReqStr=25
-CanUse=can_u_human|can_u_elf|can_u_female
+REQSTR=25
+CANUSE=can_u_human|can_u_elf|can_u_female
 TEVENTS=ei_equipitem
 Expansion=RDS_TOL
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESPHYSICAL=3
    RESFIRE=4
    RESCOLD=3
@@ -3998,15 +2420,15 @@ NAME=tiger pelt skirt
 TYPE=t_armor
 RESOURCES=4 i_hides_cut,2 i_tigerpelt
 SKILLMAKE=Tailoring 90.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Tiger Pelt
 DESCRIPTION=Tiger Pelt Skirt
-ReqStr=25
-CanUse=can_u_human|can_u_elf|can_u_female
+REQSTR=25
+CANUSE=can_u_human|can_u_elf|can_u_female
 TEVENTS=ei_equipitem
 Expansion=RDS_TOL
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESPHYSICAL=3
    RESFIRE=4
    RESCOLD=3
@@ -4019,15 +2441,15 @@ NAME=tiger pelt helm
 TYPE=t_armor
 RESOURCES=2 i_hides_cut,1 i_tigerpelt
 SKILLMAKE=Tailoring 90.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Tiger Pelt
 DESCRIPTION=Tiger Pelt Helm
-ReqStr=30
-CanUse=can_u_human|can_u_elf
+REQSTR=30
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 Expansion=RDS_TOL
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESPHYSICAL=3
    RESFIRE=4
    RESCOLD=3
@@ -4040,15 +2462,15 @@ NAME=tiger pelt collar
 TYPE=t_armor
 RESOURCES=2 i_hides_cut,1 i_tigerpelt
 SKILLMAKE=Tailoring 90.0,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Tiger Pelt
 DESCRIPTION=Tiger Pelt Collar
-ReqStr=30
-CanUse=can_u_human|can_u_elf
+REQSTR=30
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 Expansion=RDS_TOL
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESPHYSICAL=3
    RESFIRE=4
    RESCOLD=3
@@ -4061,15 +2483,15 @@ NAME=dragon turtle hide chest
 TYPE=t_armor
 RESOURCES=8 i_hides_cut,4 i_dragonturtle_scute
 SKILLMAKE=Tailoring 101.5,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Dragon Turtle Hide
 DESCRIPTION=Dragon Turtle Hide Chest
-ReqStr=30
-CanUse=can_u_human|can_u_elf
+REQSTR=30
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 Expansion=RDS_TOL
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESPHYSICAL=4
    RESFIRE=2
    RESCOLD=2
@@ -4082,15 +2504,15 @@ NAME=dragon turtle hide bustier
 TYPE=t_armor
 RESOURCES=6 i_hides_cut,3 i_dragonturtle_scute
 SKILLMAKE=Tailoring 101.5,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Dragon Turtle Hide
 DESCRIPTION=Dragon Turtle Hide Bustier
-ReqStr=30
-CanUse=can_u_human|can_u_elf|can_u_female
+REQSTR=30
+CANUSE=can_u_human|can_u_elf|can_u_female
 TEVENTS=ei_equipitem
 Expansion=RDS_TOL
-ON=@Create
-   HITPOINTS={35 54}
+ON=@CREATE
+HITPOINTS={35 54}
    RESPHYSICAL=4
    RESFIRE=2
    RESCOLD=2
@@ -4103,15 +2525,15 @@ NAME=dragon turtle hide leggings
 TYPE=t_armor
 RESOURCES=8 i_hides_cut,4 i_dragonturtle_scute
 SKILLMAKE=Tailoring 101.5,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Dragon Turtle Hide
 DESCRIPTION=Dragon Turtle Hide Leggings
-ReqStr=30
-CanUse=can_u_human|can_u_elf
+REQSTR=30
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 Expansion=RDS_TOL
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESPHYSICAL=4
    RESFIRE=2
    RESCOLD=2
@@ -4124,15 +2546,15 @@ NAME=dragon turtle hide helm
 TYPE=t_armor
 RESOURCES=2 i_hides_cut,1 i_dragonturtle_scute
 SKILLMAKE=Tailoring 101.5,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Dragon Turtle Hide
 DESCRIPTION=Dragon Turtle Hide Helm
-ReqStr=30
-CanUse=can_u_human|can_u_elf
+REQSTR=30
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 Expansion=RDS_TOL
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESPHYSICAL=4
    RESFIRE=2
    RESCOLD=2
@@ -4145,19 +2567,1137 @@ NAME=dragon turtle hide arms
 TYPE=t_armor
 RESOURCES=4 i_hides_cut,2 i_dragonturtle_scute
 SKILLMAKE=Tailoring 101.5,t_sewing_kit
-CATEGORY=Provisions - Armor
+CATEGORY=Armor
 SUBSECTION=Dragon Turtle Hide
 DESCRIPTION=Dragon Turtle Hide Arms
-ReqStr=30
-CanUse=can_u_human|can_u_elf
+REQSTR=30
+CANUSE=can_u_human|can_u_elf
 TEVENTS=ei_equipitem
 Expansion=RDS_TOL
-ON=@Create
-   HITPOINTS={36 48}
+ON=@CREATE
+HITPOINTS={36 48}
    RESPHYSICAL=4
    RESFIRE=2
    RESCOLD=2
    RESPOISON=4
    RESENERGY=4
+
+[ITEMDEF 0283]
+DEFNAME=i_gargish_stone_arms_female
+NAME=gargish female stone arms
+TYPE=t_armor
+FLIP=1
+ARMOR=25
+VALUE=120
+WEIGHT=10.0
+RESOURCES=8 i_rock_granite
+SKILLMAKE=Carpentry 56.3,t_masonry_tool,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Stone Gargoyle Armor
+DESCRIPTION=Gargish Stone Arms (female)
+CANUSE=can_u_gargoyle|can_u_female
+REQSTR=40
+TEVENTS=ei_equipitem
+DUPELIST=04057
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=4
+   RESENERGY=6
+   RESFIRE=6
+   RESPHYSICAL=6
+   RESPOISON=8
+
+[ITEMDEF 0284]
+DEFNAME=i_gargish_stone_arms
+NAME=gargish stone arms
+TYPE=t_armor
+FLIP=1
+ARMOR=25
+VALUE=120
+WEIGHT=10.0
+RESOURCES=8 i_rock_granite
+SKILLMAKE=Carpentry 56.3,t_masonry_tool,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Stone Gargoyle Armor
+DESCRIPTION=Gargish Stone Arms
+CANUSE=can_u_gargoyle
+REQSTR=40
+TEVENTS=ei_equipitem
+DUPELIST=04058
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=4
+   RESENERGY=6
+   RESFIRE=6
+   RESPHYSICAL=6
+   RESPOISON=8
+
+[ITEMDEF 0285]
+DEFNAME=i_gargish_stone_chest_female
+NAME=gargish female stone chest
+TYPE=t_armor
+FLIP=1
+ARMOR=25
+VALUE=175
+WEIGHT=15.0
+RESOURCES=12 i_rock_granite
+SKILLMAKE=Carpentry 65.0,t_masonry_tool,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Stone Gargoyle Armor
+DESCRIPTION=Gargish Stone Chest (female)
+CANUSE=can_u_gargoyle|can_u_female
+REQSTR=40
+TEVENTS=ei_equipitem
+DUPELIST=04059
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=4
+   RESENERGY=6
+   RESFIRE=6
+   RESPHYSICAL=6
+   RESPOISON=8
+
+[ITEMDEF 0286]
+DEFNAME=i_gargish_stone_chest
+NAME=gargish stone chest
+TYPE=t_armor
+FLIP=1
+ARMOR=25
+VALUE=175
+WEIGHT=15.0
+RESOURCES=12 i_rock_granite
+SKILLMAKE=Carpentry 65.0,t_masonry_tool,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Stone Gargoyle Armor
+DESCRIPTION=Gargish Stone Chest
+CANUSE=can_u_gargoyle
+REQSTR=40
+TEVENTS=ei_equipitem
+DUPELIST=0405a
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=4
+   RESENERGY=6
+   RESFIRE=6
+   RESPHYSICAL=6
+   RESPOISON=8
+
+[ITEMDEF 0287]
+DEFNAME=i_gargish_stone_kilt_female
+NAME=gargish female stone kilt
+TYPE=t_armor
+FLIP=1
+ARMOR=25
+VALUE=135
+WEIGHT=10.0
+RESOURCES=6 i_rock_granite
+SKILLMAKE=Carpentry 48.9,t_masonry_tool,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Stone Gargoyle Armor
+DESCRIPTION=Gargish Stone Kilt (female)
+CANUSE=can_u_gargoyle|can_u_female
+REQSTR=40
+TEVENTS=ei_equipitem
+DUPELIST=0405b
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=4
+   RESENERGY=6
+   RESFIRE=6
+   RESPHYSICAL=6
+   RESPOISON=8
+
+[ITEMDEF 0288]
+DEFNAME=i_gargish_stone_kilt
+NAME=gargish stone kilt
+TYPE=t_armor
+FLIP=1
+ARMOR=25
+VALUE=135
+WEIGHT=10.0
+RESOURCES=6 i_rock_granite
+SKILLMAKE=Carpentry 48.9,t_masonry_tool,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Stone Gargoyle Armor
+DESCRIPTION=Gargish Stone Kilt
+CANUSE=can_u_gargoyle
+REQSTR=40
+TEVENTS=ei_equipitem
+DUPELIST=0405c
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=4
+   RESENERGY=6
+   RESFIRE=6
+   RESPHYSICAL=6
+   RESPOISON=8
+
+[ITEMDEF 0289]
+DEFNAME=i_gargish_stone_leggings_female
+NAME=gargish female stone leggings
+TYPE=t_armor
+FLIP=1
+ARMOR=25
+VALUE=135
+WEIGHT=15.0
+RESOURCES=10 i_rock_granite
+SKILLMAKE=Carpentry 58.8,t_masonry_tool,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Stone Gargoyle Armor
+DESCRIPTION=Gargish Stone Leggings (female)
+CANUSE=can_u_gargoyle|can_u_female
+REQSTR=40
+TEVENTS=ei_equipitem
+DUPELIST=0405d
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=4
+   RESENERGY=6
+   RESFIRE=6
+   RESPHYSICAL=6
+   RESPOISON=8
+
+[ITEMDEF 028a]
+DEFNAME=i_gargish_stone_leggings
+NAME=gargish stone leggings
+TYPE=t_armor
+FLIP=1
+ARMOR=25
+VALUE=135
+WEIGHT=15.0
+RESOURCES=10 i_rock_granite
+SKILLMAKE=Carpentry 58.8,t_masonry_tool,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Stone Gargoyle Armor
+DESCRIPTION=Gargish Stone Leggings
+CANUSE=can_u_gargoyle
+REQSTR=40
+TEVENTS=ei_equipitem
+DUPELIST=0405e
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=4
+   RESENERGY=6
+   RESFIRE=6
+   RESPHYSICAL=6
+   RESPOISON=8
+
+
+[ITEMDEF 0307]
+DEFNAME=i_gargish_plate_arms_female
+NAME=gargish female platemail arms
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=120
+WEIGHT=5.0
+RESOURCES=18 i_ingot_iron
+SKILLMAKE=Blacksmithing 66.3,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Plate Gargoyle Armor
+DESCRIPTION=Gargish Plate Arms (female)
+CANUSE=can_u_gargoyle|can_u_female
+REQSTR=80
+TEVENTS=ei_equipitem
+DUPELIST=0404f
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=5
+   RESENERGY=5
+   RESFIRE=6
+   RESPHYSICAL=8
+   RESPOISON=6
+
+[ITEMDEF 0308]
+DEFNAME=i_gargish_plate_arms
+NAME=gargish platemail arms
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=120
+WEIGHT=5.0
+RESOURCES=18 i_ingot_iron
+SKILLMAKE=Blacksmithing 66.3,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Plate Gargoyle Armor
+DESCRIPTION=Gargish Plate Arms
+CANUSE=can_u_gargoyle
+REQSTR=80
+TEVENTS=ei_equipitem
+DUPELIST=04050
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=5
+   RESENERGY=5
+   RESFIRE=6
+   RESPHYSICAL=8
+   RESPOISON=6
+
+[ITEMDEF 0309]
+DEFNAME=i_gargish_plate_chest_female
+NAME=gargish female platemail chest
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=175
+WEIGHT=10.0
+RESOURCES=25 i_ingot_iron
+SKILLMAKE=Blacksmithing 75.0,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Plate Gargoyle Armor
+DESCRIPTION=Gargish Plate Chest (female)
+CANUSE=can_u_gargoyle|can_u_female
+REQSTR=95
+TEVENTS=ei_equipitem
+DUPELIST=04051
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=5
+   RESENERGY=5
+   RESFIRE=6
+   RESPHYSICAL=8
+   RESPOISON=6
+
+[ITEMDEF 030a]
+DEFNAME=i_gargish_plate_chest
+NAME=gargish platemail chest
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=175
+WEIGHT=10.0
+RESOURCES=25 i_ingot_iron
+SKILLMAKE=Blacksmithing 75.0,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Plate Gargoyle Armor
+DESCRIPTION=Gargish Plate Chest
+CANUSE=can_u_gargoyle
+REQSTR=95
+TEVENTS=ei_equipitem
+DUPELIST=04052
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=5
+   RESENERGY=5
+   RESFIRE=6
+   RESPHYSICAL=8
+   RESPOISON=6
+
+[ITEMDEF 030b]
+DEFNAME=i_gargish_plate_kilt_female
+NAME=gargish female platemail kilt
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=135
+WEIGHT=5.0
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 58.9,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Plate Gargoyle Armor
+DESCRIPTION=Gargish Plate Kilt (female)
+CANUSE=can_u_gargoyle|can_u_female
+REQSTR=80
+TEVENTS=ei_equipitem
+DUPELIST=04053
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=5
+   RESENERGY=5
+   RESFIRE=6
+   RESPHYSICAL=8
+   RESPOISON=6
+
+[ITEMDEF 030c]
+DEFNAME=i_gargish_plate_kilt
+NAME=gargish platemail kilt
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=135
+WEIGHT=5.0
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 58.9,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Plate Gargoyle Armor
+DESCRIPTION=Gargish Plate Kilt
+CANUSE=can_u_gargoyle
+REQSTR=80
+TEVENTS=ei_equipitem
+DUPELIST=04054
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=5
+   RESENERGY=5
+   RESFIRE=6
+   RESPHYSICAL=8
+   RESPOISON=6
+
+[ITEMDEF 030d]
+DEFNAME=i_gargish_plate_leggings_female
+NAME=gargish female platemail leggings
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=135
+WEIGHT=7.0
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 68.8,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Plate Gargoyle Armor
+DESCRIPTION=Gargish Plate Leggings (female)
+CANUSE=can_u_gargoyle|can_u_female
+REQSTR=90
+TEVENTS=ei_equipitem
+DUPELIST=04055
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=5
+   RESENERGY=5
+   RESFIRE=6
+   RESPHYSICAL=8
+   RESPOISON=6
+
+[ITEMDEF 030e]
+DEFNAME=i_gargish_plate_leggings
+NAME=gargish platemail leggings
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=135
+WEIGHT=7.0
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 68.8,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Plate Gargoyle Armor
+DESCRIPTION=Gargish Plate Leggings
+CANUSE=can_u_gargoyle
+REQSTR=90
+TEVENTS=ei_equipitem
+DUPELIST=04056
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=5
+   RESENERGY=5
+   RESFIRE=6
+   RESPHYSICAL=8
+   RESPOISON=6
+
+
+[ITEMDEF 0403]
+DEFNAME=i_gargish_cloth_arms_female
+NAME=gargish female cloth arms
+TYPE=t_armor
+DYE=1
+FLIP=1
+//LAYER=layer_arms
+ARMOR=5
+VALUE=64
+WEIGHT=14.1
+RESOURCES=14 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 45.4,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Gargoyle Cloth Armor
+DESCRIPTION=Gargish Female Cloth Arms
+CANUSE=can_u_gargoyle|can_u_female
+REQSTR=20
+TEVENTS=ei_equipitem
+DUPELIST=0405f
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=6
+   RESENERGY=6
+   RESFIRE=7
+   RESPHYSICAL=5
+   RESPOISON=6
+
+[ITEMDEF 0404]
+DEFNAME=i_gargish_cloth_arms
+NAME=gargish cloth arms
+TYPE=t_armor
+DYE=1
+FLIP=1
+//LAYER=layer_arms
+ARMOR=5
+VALUE=64
+WEIGHT=14.1
+RESOURCES=14 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 45.4,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Gargoyle Cloth Armor
+DESCRIPTION=Gargish Cloth Arms
+CANUSE=can_u_gargoyle
+REQSTR=20
+TEVENTS=ei_equipitem
+DUPELIST=04060
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=6
+   RESENERGY=6
+   RESFIRE=7
+   RESPHYSICAL=5
+   RESPOISON=6
+
+[ITEMDEF 0405]
+DEFNAME=i_gargish_cloth_chest_female
+NAME=gargish female cloth chest
+TYPE=t_armor
+DYE=1
+FLIP=1
+//LAYER=layer_chest
+ARMOR=5
+VALUE=33
+WEIGHT=8.1
+RESOURCES=8 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 27.2,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Gargoyle Cloth Armor
+DESCRIPTION=Gargish Female Cloth Chest
+CANUSE=can_u_gargoyle|can_u_female
+REQSTR=25
+TEVENTS=ei_equipitem
+DUPELIST=04061
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=6
+   RESENERGY=6
+   RESFIRE=7
+   RESPHYSICAL=5
+   RESPOISON=6
+
+[ITEMDEF 0406]
+DEFNAME=i_gargish_cloth_chest
+NAME=gargish cloth chest
+TYPE=t_armor
+DYE=1
+FLIP=1
+//LAYER=layer_chest
+ARMOR=5
+VALUE=33
+WEIGHT=8.1
+RESOURCES=8 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 27.2,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Gargoyle Cloth Armor
+DESCRIPTION=Gargish Cloth Chest
+CANUSE=can_u_gargoyle
+REQSTR=25
+TEVENTS=ei_equipitem
+DUPELIST=04062
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=6
+   RESENERGY=6
+   RESFIRE=7
+   RESPHYSICAL=5
+   RESPOISON=6
+
+[ITEMDEF 0407]
+DEFNAME=i_gargish_cloth_kilt_female
+NAME=gargish female cloth kilt
+TYPE=t_armor
+DYE=1
+FLIP=1
+//LAYER=layer_skirt
+ARMOR=5
+VALUE=33
+WEIGHT=8.1
+RESOURCES=8 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 22.2,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Gargoyle Cloth Armor
+DESCRIPTION=Gargish Female Cloth Kilt
+CANUSE=can_u_gargoyle|can_u_female
+REQSTR=20
+TEVENTS=ei_equipitem
+DUPELIST=04063
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=6
+   RESENERGY=6
+   RESFIRE=7
+   RESPHYSICAL=5
+   RESPOISON=6
+
+[ITEMDEF 0408]
+DEFNAME=i_gargish_cloth_kilt
+NAME=gargish cloth kilt
+TYPE=t_armor
+DYE=1
+FLIP=1
+//LAYER=layer_skirt
+ARMOR=5
+VALUE=33
+WEIGHT=8.1
+RESOURCES=8 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 22.2,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Gargoyle Cloth Armor
+DESCRIPTION=Gargish Cloth Kilt
+CANUSE=can_u_gargoyle
+REQSTR=20
+TEVENTS=ei_equipitem
+DUPELIST=04064
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=6
+   RESENERGY=6
+   RESFIRE=7
+   RESPHYSICAL=5
+   RESPOISON=6
+
+[ITEMDEF 0409]
+DEFNAME=i_gargish_cloth_leggings_female
+NAME=gargish female cloth leggings
+TYPE=t_armor
+DYE=1
+FLIP=1
+//LAYER=layer_pants
+ARMOR=5
+VALUE=33
+WEIGHT=8.1
+RESOURCES=8 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 29.2,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Gargoyle Cloth Armor
+DESCRIPTION=Gargish Female Cloth Leggings
+CANUSE=can_u_gargoyle|can_u_female
+REQSTR=20
+TEVENTS=ei_equipitem
+DUPELIST=04065
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=6
+   RESENERGY=6
+   RESFIRE=7
+   RESPHYSICAL=5
+   RESPOISON=6
+
+[ITEMDEF 040a]
+DEFNAME=i_gargish_cloth_leggings
+NAME=gargish cloth leggings
+TYPE=t_armor
+DYE=1
+FLIP=1
+//LAYER=layer_pants
+ARMOR=5
+VALUE=33
+WEIGHT=8.1
+RESOURCES=8 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 29.2,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Gargoyle Cloth Armor
+DESCRIPTION=Gargish Cloth Leggings
+CANUSE=can_u_gargoyle
+REQSTR=20
+TEVENTS=ei_equipitem
+DUPELIST=04066
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=6
+   RESENERGY=6
+   RESFIRE=7
+   RESPHYSICAL=5
+   RESPOISON=6
+
+[ITEMDEF 0404f]
+//Gargish female plate arms
+DUPEITEM=0307
+
+[ITEMDEF 04050]
+//Gargish plate arms
+DUPEITEM=0308
+
+[ITEMDEF 04051]
+//Gargish female plate chest
+DUPEITEM=0309
+
+[ITEMDEF 04052]
+//Gargish plate chest
+DUPEITEM=030a
+
+[ITEMDEF 04053]
+//Gargish female plate kilt
+DUPEITEM=030b
+
+[ITEMDEF 04054]
+//Gargish plate kilt
+DUPEITEM=030c
+
+[ITEMDEF 04055]
+//Gargish female plate leggings
+DUPEITEM=030d
+
+[ITEMDEF 04056]
+//Gargish plate leggings
+DUPEITEM=030e
+
+[ITEMDEF 04057]
+//Gargish female stone arms
+DUPEITEM=0283
+
+[ITEMDEF 04058]
+//Gargish stone arms
+DUPEITEM=0284
+
+[ITEMDEF 04059]
+//Gargish female stone chest
+DUPEITEM=0285
+
+[ITEMDEF 0405a]
+//Gargish stone chest
+DUPEITEM=0286
+
+[ITEMDEF 0405b]
+//Gargish female stone kilt
+DUPEITEM=0287
+
+[ITEMDEF 0405c]
+//Gargish stone kilt
+DUPEITEM=0288
+
+[ITEMDEF 0405d]
+//Gargish female stone leggings
+DUPEITEM=0289
+
+[ITEMDEF 0405e]
+//Gargish stone leggings
+DUPEITEM=028a
+
+[ITEMDEF 0405f]
+//Gargish female cloth arms
+DUPEITEM=0403
+
+[ITEMDEF 04060]
+//Gargish cloth arms
+DUPEITEM=0404
+
+[ITEMDEF 04061]
+//Gargish female cloth chest
+DUPEITEM=0405
+
+[ITEMDEF 04062]
+//Gargish cloth chest
+DUPEITEM=0406
+
+[ITEMDEF 04063]
+//Gargish female cloth kilt
+DUPEITEM=0407
+
+[ITEMDEF 04064]
+//Gargish cloth kilt
+DUPEITEM=0408
+
+[ITEMDEF 04065]
+//Gargish female cloth leggings
+DUPEITEM=0409
+
+[ITEMDEF 04066]
+//Gargish cloth leggings
+DUPEITEM=040a
+
+
+
+[ITEMDEF 042de]
+DEFNAME=i_gargish_plate_talons
+NAME=gargish plate talons
+TYPE=t_armor
+FLIP=1
+ARMOR=15
+//LAYER=layer_shoes
+VALUE=57
+WEIGHT=8.0
+RESOURCES=8 i_ingot_iron
+SKILLMAKE=Blacksmithing 56.8,Armslore 10.0
+CATEGORY=Armor
+SUBSECTION=Plate Gargoyle Armor
+DESCRIPTION=Gargish Plate Talons
+CANUSE=can_u_gargoyle
+REQSTR=20
+TEVENTS=ei_equipitem
+DUPELIST=042df
+Expansion=RDS_SA
+ON=@CREATE
+HITPOINTS={36 48}
+   RESPHYSICAL=1
+
+[ITEMDEF 042df]
+//plate talons
+DUPEITEM=042de
+
+// Gargish Leather Arms
+[ITEMDEF 0301]
+DEFNAME=i_gargish_leather_arms_f
+NAME=gargish leather arms
+nameloc=1020769
+TYPE=t_armor_leather
+CAN=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
+LAYER=layer_arms
+WEIGHT=4
+REQSTR=25
+CANUSE=can_u_gargoyle|can_u_female
+Expansion=RDS_SA
+RESOURCES=8 i_hides_cut
+SKILLMAKE=tailoring 53.9
+DUPELIST=04047
+
+CATEGORY=Armor
+SUBSECTION=Gargish Leather Armor
+DESCRIPTION=Gargish Leather Arms (Female)
+
+ON=@CREATE
+HITPOINTS={ 36 48 }
+
+resphysical=5
+resfire=6
+rescold=7
+respoison=6
+resenergy=6
+
+[ITEMDEF 04047]
+DUPEITEM=0301
+nameloc=1095327
+
+// Gargish Leather Arms
+[ITEMDEF 0302]
+DEFNAME=i_gargish_leather_arms
+NAME=gargish leather arms
+nameloc=1020770
+TYPE=t_armor_leather
+CAN=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
+LAYER=layer_arms
+WEIGHT=4
+REQSTR=25
+CANUSE=can_u_gargoyle|can_u_male
+Expansion=RDS_SA
+RESOURCES=8 i_hides_cut
+SKILLMAKE=tailoring 53.9
+DUPELIST=04048
+
+CATEGORY=Armor
+SUBSECTION=Gargish Leather Armor
+DESCRIPTION=Gargish Leather Arms
+
+ON=@CREATE
+HITPOINTS={ 36 48 }
+
+resphysical=5
+resfire=6
+rescold=7
+respoison=6
+resenergy=6
+
+[ITEMDEF 04048]
+DUPEITEM=0302
+nameloc=1095328
+
+// Gargish Leather Chest
+[ITEMDEF 0303]
+DEFNAME=i_gargish_leather_chest_f
+NAME=gargish leather chest
+nameloc=1020771
+TYPE=t_armor_leather
+CAN=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
+LAYER=layer_chest
+WEIGHT=4
+REQSTR=25
+CANUSE=can_u_gargoyle|can_u_female
+Expansion=RDS_SA
+RESOURCES=8 i_hides_cut
+SKILLMAKE=tailoring 70.5
+DUPELIST=04049
+
+CATEGORY=Armor
+SUBSECTION=Gargish Leather Armor
+DESCRIPTION=Gargish Leather Chest (Female)
+
+ON=@CREATE
+HITPOINTS={ 36 48 }
+
+resphysical=5
+resfire=6
+rescold=7
+respoison=6
+resenergy=6
+
+[ITEMDEF 04049]
+DUPEITEM=0303
+nameloc=1095329
+
+// Gargish Leather Chest
+[ITEMDEF 0304]
+DEFNAME=i_gargish_leather_chest
+NAME=gargish leather chest
+nameloc=1020772
+TYPE=t_armor_leather
+CAN=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
+LAYER=layer_chest
+WEIGHT=4
+REQSTR=25
+CANUSE=can_u_gargoyle|can_u_male
+Expansion=RDS_SA
+RESOURCES=8 i_hides_cut
+SKILLMAKE=tailoring 70.5
+DUPELIST=0404a
+
+CATEGORY=Armor
+SUBSECTION=Gargish Leather Armor
+DESCRIPTION=Gargish Leather Chest
+
+ON=@CREATE
+HITPOINTS={ 36 48 }
+
+resphysical=5
+resfire=6
+rescold=7
+respoison=6
+resenergy=6
+
+[ITEMDEF 0404a]
+DUPEITEM=0304
+nameloc=1095330
+
+// Gargish Leather Leggings
+[ITEMDEF 0305]
+DEFNAME=i_gargish_leather_leggings_f
+NAME=gargish leather leggings
+nameloc=1020773
+TYPE=t_armor_leather
+CAN=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
+LAYER=layer_legs
+WEIGHT=5
+REQSTR=20
+CANUSE=can_u_gargoyle|can_u_female
+Expansion=RDS_SA
+RESOURCES=10 i_hides_cut
+SKILLMAKE=tailoring 66.3
+DUPELIST=0404d
+
+CATEGORY=Armor
+SUBSECTION=Gargish Leather Armor
+DESCRIPTION=Gargish Leather Leggings (Female)
+
+ON=@CREATE
+HITPOINTS={ 36 48 }
+
+resphysical=5
+resfire=6
+rescold=7
+respoison=6
+resenergy=6
+
+[ITEMDEF 0404d]
+DUPEITEM=0305
+nameloc=1095333
+
+// Gargish Leather Leggings
+[ITEMDEF 0306]
+DEFNAME=i_gargish_leather_leggings
+NAME=gargish leather leggings
+nameloc=1020774
+TYPE=t_armor_leather
+CAN=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
+LAYER=layer_legs
+WEIGHT=5
+REQSTR=20
+CANUSE=can_u_gargoyle|can_u_male
+Expansion=RDS_SA
+RESOURCES=10 i_hides_cut
+SKILLMAKE=tailoring 66.3
+DUPELIST=0404e
+
+CATEGORY=Armor
+SUBSECTION=Gargish Leather Armor
+DESCRIPTION=Gargish Leather Leggings
+
+ON=@CREATE
+HITPOINTS={ 36 48 }
+
+resphysical=5
+resfire=6
+rescold=7
+respoison=6
+resenergy=6
+
+[ITEMDEF 0404e]
+DUPEITEM=0306
+nameloc=1095334
+
+// Gargish Leather Kilt
+[ITEMDEF 0310]
+DEFNAME=i_gargish_leather_kilt_f
+NAME=gargish leather kilt
+nameloc=1020784
+TYPE=t_armor_leather
+CAN=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
+LAYER=layer_skirt
+WEIGHT=5
+REQSTR=25
+CANUSE=can_u_gargoyle|can_u_female
+Expansion=RDS_SA
+RESOURCES=6 i_hides_cut
+SKILLMAKE=tailoring 58.0
+DUPELIST=0404b
+
+CATEGORY=Armor
+SUBSECTION=Gargish Leather Armor
+DESCRIPTION=Gargish Leather Kilt (Female)
+
+ON=@CREATE
+HITPOINTS={ 36 48 }
+
+resphysical=5
+resfire=6
+rescold=7
+respoison=6
+resenergy=6
+
+[ITEMDEF 0404b]
+DUPEITEM=0310
+nameloc=1095331
+
+// Gargish Leather Kilt
+[ITEMDEF 0311]
+DEFNAME=i_gargish_leather_kilt
+NAME=gargish leather kilt
+nameloc=1020785
+TYPE=t_armor_leather
+CAN=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
+LAYER=layer_skirt
+WEIGHT=5
+REQSTR=25
+CANUSE=can_u_gargoyle|can_u_male
+Expansion=RDS_SA
+RESOURCES=6 i_hides_cut
+SKILLMAKE=tailoring 58.0
+DUPELIST=0404c
+
+CATEGORY=Armor
+SUBSECTION=Gargish Leather Armor
+DESCRIPTION=Gargish Leather Kilt
+
+ON=@CREATE
+HITPOINTS={ 36 48 }
+
+resphysical=5
+resfire=6
+rescold=7
+respoison=6
+resenergy=6
+
+[ITEMDEF 0404c]
+DUPEITEM=0311
+nameloc=1095332
+
+// Gargish Leather Talons
+[ITEMDEF 041d8]
+DEFNAME=i_gargish_leather_talons
+NAME=gargish leather talons
+nameloc=1095728
+TYPE=t_armor_leather
+CAN=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
+LAYER=layer_shoes
+WEIGHT=2
+REQSTR=10
+CANUSE=can_u_gargoyle|can_u_male|can_u_female
+Expansion=RDS_SA
+RESOURCES=6 i_hides_cut
+SKILLMAKE=tailoring 40.4
+DUPELIST=041d9
+
+CATEGORY=Armor
+SUBSECTION=Gargish Leather Armor
+DESCRIPTION=Gargish Leather Talons
+
+ON=@CREATE
+HITPOINTS={ 36 48 }
+
+[ITEMDEF 041d9]
+DUPEITEM=041d8
+nameloc=1095729
+
+// Gargish Leather Wing Armor
+[ITEMDEF 0457e]
+DEFNAME=i_gargish_leather_wing_armor
+NAME=gargish leather wing armor
+nameloc=1096662
+TYPE=t_armor_leather
+CAN=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
+LAYER=layer_cape
+WEIGHT=2
+REQSTR=10
+CANUSE=can_u_gargoyle|can_u_male|can_u_female
+Expansion=RDS_SA
+RESOURCES=12 i_hides_cut
+SKILLMAKE=tailoring 65.0
+DUPELIST=0457f
+
+CATEGORY=Armor
+SUBSECTION=Gargish Leather Armor
+DESCRIPTION=Gargish Leather Wing Armor
+
+ON=@CREATE
+HITPOINTS={ 36 48 }
+
+resphysical=5
+resfire=6
+rescold=7
+respoison=6
+resenergy=6
+
+[ITEMDEF 0457f]
+DUPEITEM=0457e
+nameloc=1096663
+
+// Gargish Belt
+[ITEMDEF 0450d]
+DEFNAME=i_gargish_belt
+NAME=gargish belt
+nameloc=1096549
+TYPE=t_clothing
+CAN=can_i_flip|can_i_repair|can_i_dye|can_i_exceptional|can_i_makersmark|can_i_retaincolor|can_i_imbue|can_i_enchant|can_i_recycle
+LAYER=
+WEIGHT=
+REQSTR=
+CANUSE=can_u_gargoyle|can_u_male|can_u_female
+Expansion=RDS_SA
+RESOURCES=
+SKILLMAKE=
+DUPELIST=0450e
+
+CATEGORY=Armor
+SUBSECTION=Gargish Leather Armor
+DESCRIPTION=Gargish Belt
+
+ON=@CREATE
+HITPOINTS={ 36 48 }
+
+[ITEMDEF 0450e]
+DUPEITEM=0450d
+nameloc=1096550
 
 [EOF]

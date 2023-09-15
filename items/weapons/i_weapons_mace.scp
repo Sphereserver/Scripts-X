@@ -1,0 +1,626 @@
+[ITEMDEF 02d24]
+DEFNAME=i_mace_diamond
+NAME=diamond mace
+TYPE=t_weapon_mace_sharp
+DAM=14,17
+FLIP=1
+SKILL=Macefighting
+SPEED=44
+//TAG.OVERRIDE.SPEED=32	// 32.5
+VALUE=138
+WEIGHT=10.0
+TWOHANDS=N
+RESOURCES=20 i_ingot_iron,1 i_board
+SKILLMAKE=Blacksmithing 70.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Diamond Mace
+REQSTR=35
+TEVENTS=ei_equipitem
+DUPELIST=02d30
+Expansion=RDS_ML
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 02d30]
+//diamond mace
+DUPEITEM=02d24
+
+[ITEMDEF 02d25]
+DEFNAME=i_staff_wild
+NAME=wild staff
+TYPE=t_weapon_mace_staff
+DAM=11,13
+FLIP=1
+SKILL=MaceFighting
+SPEED=50
+VALUE=36
+WEIGHT=9.0
+REQSTR=40
+TWOHANDS=N
+RESOURCES=16 i_log
+SKILLMAKE=CARPENTRY 63.8, t_carpentry
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Wild Staves
+DESCRIPTION=Wild Staff
+TEVENTS=ei_equipitem
+DUPELIST=02d31
+Expansion=RDS_ML
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 02d31]
+DUPEITEM=02d25
+
+[ITEMDEF 0df0]
+DEFNAME=i_staff_black
+TYPE=t_weapon_mace_staff
+DAM=13,16
+FLIP=1
+SKILL=Macefighting
+SPEED=47
+//TAG.OVERRIDE.SPEED=27	// 27.5
+VALUE=14
+WEIGHT=9.0
+TWOHANDS=Y
+RESOURCES=9 i_log
+SKILLMAKE=Carpentry 82.0,t_carpentry
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Black Staff
+CANUSE=can_u_human|can_u_elf
+REQSTR=35
+TEVENTS=ei_equipitem
+DUPELIST=0df1
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 0df1]
+//black staff
+DUPEITEM=0df0
+
+[ITEMDEF 0df2]
+DEFNAME=i_wand_1
+NAME=blank wand
+TYPE=t_wand
+DAM=9,11
+SKILL=Macefighting
+SPEED=47
+//TAG.OVERRIDE.SPEED=27	// 27.5
+VALUE=77
+WEIGHT=4.1
+TWOHANDS=N
+RESOURCES=1 i_log,2 i_wire_silver,1 i_wire_gold,1 i_gem_diamond
+SKILLMAKE=Carpentry 37.1,t_carpentry
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Blank Wand 1
+REQSTR=5
+TEVENTS=ei_equipitem
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 0df3]
+DEFNAME=i_wand_2
+NAME=blank wand
+TYPE=t_wand
+DAM=9,11
+SKILL=Macefighting
+SPEED=47
+//TAG.OVERRIDE.SPEED=27	// 27.5
+VALUE=77
+WEIGHT=4.1
+TWOHANDS=N
+RESOURCES=1 i_log,2 i_wire_silver,1 i_wire_gold,1 i_gem_diamond
+SKILLMAKE=Carpentry 37.1,t_carpentry
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Blank Wand 2
+REQSTR=5
+TEVENTS=ei_equipitem
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 0df4]
+DEFNAME=i_wand_3
+NAME=blank wand
+TYPE=t_wand
+DAM=9,11
+SKILL=Macefighting
+SPEED=47
+//TAG.OVERRIDE.SPEED=27	// 27.5
+VALUE=59
+WEIGHT=4.1
+TWOHANDS=N
+RESOURCES=2 i_log,2 i_wire_gold,1 i_gem_diamond
+SKILLMAKE=Carpentry 37.1,t_carpentry
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Blank Wand 3
+REQSTR=5
+TEVENTS=ei_equipitem
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 0df5]
+DEFNAME=i_wand_4
+NAME=blank wand
+TYPE=t_wand
+DAM=9,11
+SKILL=Macefighting
+SPEED=47
+//TAG.OVERRIDE.SPEED=27	// 27.5
+VALUE=59
+WEIGHT=4.1
+TWOHANDS=N
+RESOURCES=2 i_log,2 i_wire_gold,1 i_gem_diamond
+SKILLMAKE=Carpentry 37.1,t_carpentry
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Blank Wand 4
+REQSTR=5
+TEVENTS=ei_equipitem
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+
+[ITEMDEF 0e81]
+DEFNAME=i_crook_thin
+TYPE=t_weapon_mace_crook
+DAM=13,15
+FLIP=1
+SKILL=Macefighting
+SPEED=47
+//TAG.OVERRIDE.SPEED=27	//27.5
+VALUE=27
+WEIGHT=7.0
+TWOHANDS=Y
+RESOURCES=7 i_log
+SKILLMAKE=Carpentry 78.9,t_carpentry
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Sheperd Crook
+REQSTR=20
+TEVENTS=ei_equipitem
+DUPELIST=0e82
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 0e82]
+//miniature shepherds crook
+DUPEITEM=0e81
+
+[ITEMDEF 0e89]
+DEFNAME=i_staff_quarter
+TYPE=t_weapon_mace_staff
+DAM=11,14
+FLIP=1
+SKILL=Macefighting
+SPEED=53
+//TAG.OVERRIDE.SPEED=22	// 22.5
+VALUE=10
+WEIGHT=8.0
+TWOHANDS=Y
+RESOURCES=8 i_log
+SKILLMAKE=Carpentry 74.0,t_carpentry
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Quarter Staff
+CANUSE=can_u_human|can_u_elf
+REQSTR=20
+TEVENTS=ei_equipitem
+DUPELIST=0e8a
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 0e8a]
+//quarter staff
+DUPEITEM=0e89
+
+[ITEMDEF 0f5c]
+DEFNAME=i_mace
+TYPE=t_weapon_mace_smith
+DAM=12,14
+FLIP=1
+SKILL=Macefighting
+SPEED=47
+//TAG.OVERRIDE.SPEED=27	// 27.5
+VALUE=35
+WEIGHT=8.0
+TWOHANDS=N
+RESOURCES=6 i_ingot_iron,1 i_log
+SKILLMAKE=Blacksmithing 40.8
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Mace
+REQSTR=45
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=0f5d
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 0f5d]
+//mace
+DUPEITEM=0f5c
+
+[ITEMDEF 0fb4]
+DEFNAME=i_hammer_sledge
+TYPE=t_weapon_mace_smith
+DAM=13,15
+FLIP=1
+SKILL=Macefighting
+SPEED=41
+//TAG.OVERRIDE.SPEED=32	// 32.5
+VALUE=26
+WEIGHT=9.0
+TWOHANDS=N
+RESOURCES=4 i_ingot_iron,1 i_log
+SKILLMAKE=Tinkering 40.0,t_tinker_tools
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Sledge Hammer
+REQSTR=40
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=0fb5
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   UsesMax={25 75}
+
+[ITEMDEF 0fb5]
+//sledge hammer
+DUPEITEM=0fb4
+
+
+[ITEMDEF 013af]
+DEFNAME=i_axe_war
+TYPE=t_weapon_axe
+DAM=14,15
+FLIP=1
+SKILL=Macefighting
+SPEED=41
+//TAG.OVERRIDE.SPEED=32	// 32.5
+VALUE=68
+WEIGHT=9.0
+TWOHANDS=N
+RESOURCES=11 i_ingot_iron,1 i_log
+SKILLMAKE=Blacksmithing 48.4
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=War Axe
+CANUSE=can_u_human|can_u_elf
+REQSTR=35
+TEVENTS=ei_equipitem
+DUPELIST=013b0
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   UsesMax=150
+
+[ITEMDEF 013b0]
+//War Axe
+DUPEITEM=013af
+
+
+[ITEMDEF 013b3]
+DEFNAME=i_club
+TYPE=t_weapon_mace_smith
+DAM=11,13
+FLIP=1
+SKILL=Macefighting
+SPEED=53
+//TAG.OVERRIDE.SPEED=25
+VALUE=12
+WEIGHT=6.0
+TWOHANDS=N
+RESOURCES=10 i_log
+SKILLMAKE=Carpentry 65.0,t_carpentry
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Club
+REQSTR=40
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=013b4
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 013b4]
+//Club
+DUPEITEM=013b3
+
+[ITEMDEF 013e3]
+DEFNAME=i_hammer_smith
+TYPE=t_weapon_mace_smith
+DAM=13,15
+FLIP=1
+SKILL=Macefighting
+SPEED=41
+//TAG.OVERRIDE.SPEED=32	// 32.5
+VALUE=50
+WEIGHT=7.0
+TWOHANDS=N
+RESOURCES=6 i_ingot_iron,1 i_log
+SKILLMAKE=Tinkering 40.0,t_tinker_tools
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Smith Hammer
+REQSTR=5
+TEVENTS=ei_equipitem
+DUPELIST=013e4
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 013e4]
+//smith hammer
+DUPEITEM=013e3
+
+
+[ITEMDEF 013f4]
+DEFNAME=i_shepherds_crook
+TYPE=t_weapon_mace_crook
+DAM=13,15
+FLIP=1
+SKILL=Macefighting
+SPEED=47
+//TAG.OVERRIDE.SPEED=27	// 27.5
+VALUE=13
+WEIGHT=4.0
+TWOHANDS=Y
+RESOURCES=7 i_log
+SKILLMAKE=Carpentry 78.9,t_carpentry
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Shepherd Crook
+REQSTR=20
+TEVENTS=ei_equipitem
+DUPELIST=013f5
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 013f5]
+//Shepherd Crook
+DUPEITEM=013f4
+
+[ITEMDEF 013f8]
+DEFNAME=i_staff_gnarled
+TYPE=t_weapon_mace_staff
+DAM=15,17
+FLIP=1
+SKILL=Macefighting
+SPEED=41
+//TAG.OVERRIDE.SPEED=32	// 32.5
+VALUE=8
+WEIGHT=3.0
+TWOHANDS=Y
+RESOURCES=7 i_log
+SKILLMAKE=Carpentry 78.9,t_carpentry
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Gnarled Staff
+CANUSE=can_u_human|can_u_elf
+REQSTR=20
+TEVENTS=ei_equipitem
+DUPELIST=013f9
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 013f9]
+//gnarled staff
+DUPEITEM=013f8
+
+[ITEMDEF 01406]
+DEFNAME=i_mace_war
+TYPE=t_weapon_mace_smith
+DAM=16,17
+FLIP=1
+SKILL=Macefighting
+SPEED=32
+//TAG.OVERRIDE.SPEED=40
+VALUE=84
+WEIGHT=17.0
+TWOHANDS=N
+RESOURCES=14 i_ingot_iron,1 i_log
+SKILLMAKE=Blacksmithing 28.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=War Mace
+CANUSE=can_u_human|can_u_elf
+REQSTR=80
+TEVENTS=ei_equipitem
+DUPELIST=01407
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 01407]
+//war mace
+DUPEITEM=01406
+
+[ITEMDEF 01438]
+DEFNAME=i_hammer_war
+TYPE=t_weapon_mace_smith
+DAM=17,18
+FLIP=1
+SKILL=Macefighting
+SPEED=35
+//TAG.OVERRIDE.SPEED=37	//37.5
+VALUE=103
+WEIGHT=10.0
+TWOHANDS=Y
+RESOURCES=16 i_ingot_iron,1 i_board
+SKILLMAKE=Blacksmithing 34.2
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=War Hammer
+REQSTR=95
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=01439
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 01439]
+//war hammer
+DUPEITEM=01438
+
+[ITEMDEF 0143a]
+DEFNAME=i_maul
+TYPE=t_weapon_mace_smith
+DAM=14,16
+FLIP=1
+SKILL=Macefighting
+SPEED=38
+//TAG.OVERRIDE.SPEED=35
+VALUE=59
+WEIGHT=10.0
+TWOHANDS=N
+RESOURCES=10 i_ingot_iron,1 i_log
+SKILLMAKE=Blacksmithing 19.4
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Maul
+REQSTR=45
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=0143b
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   UsesMax={25 75}
+
+[ITEMDEF 0143b]
+//Maul
+DUPEITEM=0143a
+
+[ITEMDEF 0143c]
+DEFNAME=i_hammer_pick
+TYPE=t_weapon_mace_pick
+DAM=15,17
+FLIP=1
+SKILL=Macefighting
+SPEED=35
+//TAG.OVERRIDE.SPEED=37	// 37.5
+VALUE=50
+WEIGHT=9.0
+TWOHANDS=N
+RESOURCES=15 i_ingot_iron,1 i_board
+SKILLMAKE=Blacksmithing 34.2
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Hammer Pick
+REQSTR=45
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+DUPELIST=0143d
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 0143d]
+//hammer pick
+DUPEITEM=0143c
+
+[ITEMDEF 027a3]
+DEFNAME=i_tessen
+NAME=tessen
+TYPE=t_weapon_mace_sharp
+DAM=10,12
+FLIP=1
+//LAYER=layer_hand2
+SKILL=Macefighting
+SPEED=56
+//TAG.OVERRIDE.SPEED=20
+VALUE=174
+WEIGHT=6.0
+TWOHANDS=Y
+RESOURCES=16 i_ingot_iron,10 i_cloth
+SKILLMAKE=Blacksmithing 85.0,Tailoring 50.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Tessen
+CANUSE=can_u_human|can_u_elf
+REQSTR=10
+TEVENTS=ei_equipitem
+DUPELIST=027ee
+Expansion=RDS_SE
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 027ee]
+//tessen
+DUPEITEM=027a3
+
+[ITEMDEF 027a6]
+DEFNAME=i_tetsubo
+NAME=tetsubo
+TYPE=t_weapon_mace_smith
+DAM=12,14
+FLIP=1
+SKILL=Macefighting
+SPEED=50
+//TAG.OVERRIDE.SPEED=2.5
+VALUE=50
+WEIGHT=8.0
+TWOHANDS=N
+RESOURCES=10 i_board
+SKILLMAKE=Carpentry 80.0,t_carpentry
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Tetsubo
+CANUSE=can_u_human|can_u_elf
+REQSTR=35
+TEVENTS=ei_equipitem
+DUPELIST=027f1
+Expansion=RDS_SE
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 027f1]
+//tetsubo
+DUPEITEM=027a6
+
+[ITEMDEF 027ae]
+DEFNAME=i_nunchaku
+NAME=nunchaku
+TYPE=t_weapon_mace_staff
+DAM=11,13
+FLIP=1
+SKILL=Macefighting
+SPEED=50
+//TAG.OVERRIDE.SPEED=25
+WEIGHT=5.0
+TWOHANDS=Y
+RESOURCES=8 i_board,3 i_ingot_iron
+SKILLMAKE=Tinkering 70.0,t_carpentry
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Nunchaku
+CANUSE=can_u_human|can_u_elf
+REQSTR=15
+TEVENTS=ei_equipitem
+DUPELIST=027f9
+Expansion=RDS_SE
+ON=@CREATE
+HITPOINTS={36 48}
+
+[ITEMDEF 027f9]
+//nunchaku
+DUPEITEM=027ae
+
+[EOF]

@@ -1,0 +1,378 @@
+[ITEMDEF 01408]
+DEFNAME=i_helm_closed
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=60
+WEIGHT=5.0
+RESOURCES=15 i_ingot_iron
+SKILLMAKE=Blacksmithing 37.9,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Helmets
+DESCRIPTION=Close Helmet
+CANUSE=can_u_human|can_u_elf
+REQSTR=55
+TEVENTS=ei_equipitem
+DUPELIST=01409
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=3
+   RESPHYSICAL=3
+   RESPOISON=3
+
+[ITEMDEF 01409]
+//close helmet
+DUPEITEM=01408
+
+[ITEMDEF 0140a]
+DEFNAME=i_helm_open
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=60
+WEIGHT=5.0
+RESOURCES=15 i_ingot_iron
+SKILLMAKE=Blacksmithing 37.9,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Helmets
+DESCRIPTION=Helmet
+CANUSE=can_u_human|can_u_elf
+REQSTR=45
+TEVENTS=ei_equipitem
+DUPELIST=0140b
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=4
+   RESENERGY=2
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 0140b]
+//helmet
+DUPEITEM=0140a
+
+[ITEMDEF 0140c]
+DEFNAME=i_bascinet
+NAME=bascinet
+TYPE=t_armor
+FLIP=1
+ARMOR=25
+VALUE=60
+WEIGHT=5.0
+RESOURCES=15 i_ingot_iron
+SKILLMAKE=Blacksmithing 8.3,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Helmets
+DESCRIPTION=Bascinet
+CANUSE=can_u_human|can_u_elf
+REQSTR=40
+TEVENTS=ei_equipitem
+DUPELIST=0140d
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=2
+   RESENERGY=2
+   RESFIRE=2
+   RESPHYSICAL=7
+   RESPOISON=2
+
+[ITEMDEF 0140d]
+//bascinet
+DUPEITEM=0140c
+
+[ITEMDEF 0140e]
+DEFNAME=i_helm_nose
+NAME=norse helm
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=60
+WEIGHT=5.0
+RESOURCES=15 i_ingot_iron
+SKILLMAKE=Blacksmithing 37.9,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Helmets
+DESCRIPTION=Norse Helm
+CANUSE=can_u_human|can_u_elf
+REQSTR=55
+TEVENTS=ei_equipitem
+DUPELIST=0140f
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=4
+   RESENERGY=2
+   RESFIRE=1
+   RESPHYSICAL=4
+   RESPOISON=4
+
+[ITEMDEF 0140f]
+//norse helm
+DUPEITEM=0140e
+
+[ITEMDEF 01410]
+DEFNAME=i_platemail_arms
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=72
+WEIGHT=5.0
+RESOURCES=18 i_ingot_iron
+SKILLMAKE=Blacksmithing 66.3,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Platemail Armor
+DESCRIPTION=Platemail Arms
+CANUSE=can_u_human|can_u_elf
+REQSTR=80
+TEVENTS=ei_equipitem
+DUPELIST=01417
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=2
+   RESENERGY=2
+   RESFIRE=3
+   RESPHYSICAL=5
+   RESPOISON=3
+
+[ITEMDEF 01411]
+DEFNAME=i_platemail_leggings
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+//LAYER=layer_legs
+VALUE=80
+WEIGHT=7.0
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 68.8,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Platemail Armor
+DESCRIPTION=Platemail Legs
+CANUSE=can_u_human|can_u_elf
+REQSTR=90
+TEVENTS=ei_equipitem
+DUPELIST=0141a
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=2
+   RESENERGY=2
+   RESFIRE=3
+   RESPHYSICAL=5
+   RESPOISON=3
+
+[ITEMDEF 01412]
+DEFNAME=i_platemail_helm
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=60
+WEIGHT=5.0
+RESOURCES=15 i_ingot_iron
+SKILLMAKE=Blacksmithing 62.6,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Platemail Armor
+DESCRIPTION=Plate Helm
+CANUSE=can_u_human|can_u_elf
+REQSTR=80
+TEVENTS=ei_equipitem
+DUPELIST=01419
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=2
+   RESENERGY=2
+   RESFIRE=3
+   RESPHYSICAL=5
+   RESPOISON=3
+
+[ITEMDEF 01413]
+DEFNAME=i_platemail_gorget
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=40
+WEIGHT=2.0
+RESOURCES=10 i_ingot_iron
+SKILLMAKE=Blacksmithing 56.4,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Platemail Armor
+DESCRIPTION=Platemail Gorget
+CANUSE=can_u_human|can_u_elf
+REQSTR=45
+TEVENTS=ei_equipitem
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=2
+   RESENERGY=2
+   RESFIRE=3
+   RESPHYSICAL=5
+   RESPOISON=3
+
+[ITEMDEF 01414]
+DEFNAME=i_platemail_gloves
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=48
+WEIGHT=2.0
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 58.9,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Platemail Armor
+DESCRIPTION=Platemail Gloves
+CANUSE=can_u_human|can_u_elf
+REQSTR=70
+TEVENTS=ei_equipitem
+DUPELIST=01418
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=2
+   RESENERGY=2
+   RESFIRE=3
+   RESPHYSICAL=5
+   RESPOISON=3
+
+[ITEMDEF 01415]
+DEFNAME=i_platemail_chest
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=100
+WEIGHT=10.0
+RESOURCES=25 i_ingot_iron
+SKILLMAKE=Blacksmithing 75.0,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Platemail Armor
+DESCRIPTION=Platemail Tunic
+CANUSE=can_u_human|can_u_elf
+REQSTR=95
+TEVENTS=ei_equipitem
+DUPELIST=01416
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=2
+   RESENERGY=2
+   RESFIRE=3
+   RESPHYSICAL=5
+   RESPOISON=3
+
+[ITEMDEF 01416]
+//platemail
+DUPEITEM=01415
+
+[ITEMDEF 01417]
+//platemail arms
+DUPEITEM=01410
+
+[ITEMDEF 01418]
+//platemail gloves
+DUPEITEM=01414
+
+[ITEMDEF 01419]
+//plate helm
+DUPEITEM=01412
+
+[ITEMDEF 0141a]
+//platemail legs
+DUPEITEM=01411
+
+[ITEMDEF 01c04]
+DEFNAME=i_armor_female_plate
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=100
+WEIGHT=4.0
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 44.1,Armslore 25.0
+CATEGORY=Armor
+SUBSECTION=Female Armor
+DESCRIPTION=Female Plate
+CANUSE=can_u_human|can_u_elf|can_u_female
+REQSTR=95
+TEVENTS=ei_equipitem
+DUPELIST=01c05
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=2
+   RESENERGY=2
+   RESFIRE=3
+   RESPHYSICAL=5
+   RESPOISON=3
+
+[ITEMDEF 01c05]
+//female bikini style plate armor
+DUPEITEM=01c04
+
+[ITEMDEF 025e6]
+DEFNAME=i_armor_female_harness_amazon
+//NAME=Amazon harness
+TYPE=t_armor
+FLIP=1
+ARMOR=18
+VALUE=137
+WEIGHT=20.0
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 72.6
+CATEGORY=Armor
+SUBSECTION=Amazon
+DESCRIPTION=Amazon Harness
+REQSTR=25
+CANUSE=can_u_human|can_u_elf|can_u_female
+TEVENTS=ei_equipitem
+DUPELIST=025e7
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 025e7]
+//amazon harness
+DUPEITEM=025e6
+
+[ITEMDEF 025e8]
+DEFNAME=i_armor_female_harness_elite
+//NAME=Amazon elite harness
+TYPE=t_armor
+FLIP=1
+ARMOR=20
+VALUE=165
+WEIGHT=22.0
+RESOURCES=22 i_ingot_iron
+SKILLMAKE=Blacksmithing 88.4
+CATEGORY=Armor
+SUBSECTION=Amazon
+DESCRIPTION=Elite Harness
+REQSTR=25
+CANUSE=can_u_human|can_u_elf|can_u_female
+TEVENTS=ei_equipitem
+DUPELIST=025e9
+//Expansion=RDS_PRET2A
+ON=@CREATE
+HITPOINTS={36 48}
+   RESCOLD=3
+   RESENERGY=3
+   RESFIRE=4
+   RESPHYSICAL=2
+   RESPOISON=3
+
+[ITEMDEF 025e9]
+//elite harness
+DUPEITEM=025e8
+
+[EOF]
