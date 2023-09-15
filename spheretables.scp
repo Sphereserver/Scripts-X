@@ -57,9 +57,10 @@ speech/towns/
 types/
 items/
 items/magic_pre_aos/
-items/material_nonbase/
 //items/not_complete/  //uncomment this line before execute dui command to avoid
 items/weapons/
+items/armors/
+items/resources/
 multis/
 core/regionresources.scp 	//Must be define after ITEM
 core/regiontypes.scp		//Must be define after ITEM
@@ -138,23 +139,23 @@ templates/
 templates/special/
 
 //WorldGen Should be comment after the word generation is done
-functions/worldgen/crops/
-functions/worldgen/decoration/
-functions/worldgen/decoration/felucca/
-functions/worldgen/decoration/ilshenar/
-functions/worldgen/decoration/malas/
-functions/worldgen/decoration/misc/
-functions/worldgen/decoration/termur/
-functions/worldgen/decoration/tokuno/
-functions/worldgen/decoration/trammel/
-functions/worldgen/spawns/
-functions/worldgen/spawns/felucca/
-functions/worldgen/spawns/ilshenar/
-functions/worldgen/spawns/malas/
-functions/worldgen/spawns/termur/
-functions/worldgen/spawns/tokuno/
-functions/worldgen/spawns/trammel/
-functions/worldgen/spawns/uoclassic/
+systems/worldgen/crops/
+systems/worldgen/decoration/
+systems/worldgen/decoration/felucca/
+systems/worldgen/decoration/ilshenar/
+systems/worldgen/decoration/malas/
+systems/worldgen/decoration/misc/
+systems/worldgen/decoration/termur/
+systems/worldgen/decoration/tokuno/
+systems/worldgen/decoration/trammel/
+systems/worldgen/spawns/
+systems/worldgen/spawns/felucca/
+systems/worldgen/spawns/ilshenar/
+systems/worldgen/spawns/malas/
+systems/worldgen/spawns/termur/
+systems/worldgen/spawns/tokuno/
+systems/worldgen/spawns/trammel/
+systems/worldgen/spawns/uoclassic/
 
 //add-on
 add-on/generator/generator.scp
