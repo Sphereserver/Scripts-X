@@ -157,9 +157,6 @@ systems/worldgen/spawns/tokuno/
 systems/worldgen/spawns/trammel/
 systems/worldgen/spawns/uoclassic/
 
-//add-on
-add-on/generator/generator.scp
-
 //custom/
 
 [OBSCENE]
