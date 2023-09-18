@@ -78,8 +78,9 @@ systems/stones/guilds/
 systems/stones/towns/
 systems/housing/
 
-//legacy
-legacy/crafting/
+//legacy (uncomment if you want to use the old crafting system)
+//legacy/crafting/
+//legacy/crafting/items/
 
 // maps
 maps/map0/map0_starts.scp
