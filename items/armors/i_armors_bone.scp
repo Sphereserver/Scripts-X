@@ -1,6 +1,6 @@
 [ITEMDEF 0144e]
 DEFNAME=i_bone_arms
-TYPE=t_armor
+TYPE=t_armor_bone
 FLIP=1
 ARMOR=24
 VALUE=65
@@ -25,7 +25,7 @@ HITPOINTS={36 48}
 
 [ITEMDEF 0144f]
 DEFNAME=i_bone_chest
-TYPE=t_armor
+TYPE=t_armor_bone
 FLIP=1
 ARMOR=24
 VALUE=49
@@ -50,7 +50,7 @@ HITPOINTS={36 48}
 
 [ITEMDEF 01450]
 DEFNAME=i_bone_gloves
-TYPE=t_armor
+TYPE=t_armor_bone
 FLIP=1
 ARMOR=24
 VALUE=33
@@ -75,7 +75,7 @@ HITPOINTS={36 48}
 
 [ITEMDEF 01451]
 DEFNAME=i_bone_helmet
-TYPE=t_armor
+TYPE=t_armor_bone
 FLIP=1
 ARMOR=24
 VALUE=29
@@ -100,7 +100,7 @@ HITPOINTS={36 48}
 
 [ITEMDEF 01452]
 DEFNAME=i_bone_leggings
-TYPE=t_armor
+TYPE=t_armor_bone
 FLIP=1
 ARMOR=24
 VALUE=80

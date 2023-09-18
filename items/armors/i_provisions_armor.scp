@@ -64,10 +64,6 @@ HITPOINTS={36 48}
 //Kabuto
 DUPEITEM=0236c
 
-
-
-
-
 [ITEMDEF 0264b]
 DEFNAME=i_platemail_gorget2
 TYPE=t_armor
@@ -96,7 +92,6 @@ HITPOINTS={36 48}
 [ITEMDEF 0264c]
 //platemail gorget2
 DUPEITEM=0264b
-
 
 [ITEMDEF 02653]
 //not visible on paperdoll

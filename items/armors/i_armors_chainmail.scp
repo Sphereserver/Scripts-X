@@ -1,7 +1,7 @@
 [ITEMDEF 013bb]
 DEFNAME=i_chainmail_coif
 NAME=chainmail coif
-TYPE=t_armor
+TYPE=t_armor_chain
 FLIP=1
 ARMOR=25
 VALUE=40
@@ -44,7 +44,7 @@ DUPELIST=013c2
 
 [ITEMDEF 013be]
 DEFNAME=i_chainmail_leggings
-TYPE=t_armor
+TYPE=t_armor_chain
 FLIP=1
 ARMOR=25
 VALUE=72
@@ -69,7 +69,7 @@ RESPOISON=1
 
 [ITEMDEF 013bf]
 DEFNAME=i_chainmail_tunic
-TYPE=t_armor
+TYPE=t_armor_chain
 FLIP=1
 ARMOR=25
 VALUE=80

@@ -54,14 +54,14 @@ WEIGHT=1.0
 CATEGORY=Provisions - Deeds
 SUBSECTION=Misc
 DESCRIPTION=Bank Check
-ON=@Create
-   ATTR=attr_newbie
-   COLOR=034
-ON=@ClientTooltip
+ON=@CREATE
+ATTR=attr_newbie
+COLOR=034
+ON=@CLIENTTOOLTIP
    addcliloc 1060738,<MORE>	//value: ~1_val~
-ON=@AfterClick
+ON=@AFTERCLICK
    LOCAL.ClickMsgText .= ": <MORE>"
-ON=@DClick
+ON=@DCLICK
    IF (<TOPOBJ> != <SRC>) || (<CONT.TYPE> != t_eq_bank_box)
     SRC.SYSMESSAGE That must be in your bank box to use it.
     return 1
@@ -81,8 +81,8 @@ VALUE=37000
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Small Stone and Plaster House
-ON=@Create
-   MORE=m_stone_and_plaster_house
+ON=@CREATE
+MORE=m_stone_and_plaster_house
 
 [ITEMDEF i_deed_field_stone_house]
 ID=i_deed
@@ -91,8 +91,8 @@ VALUE=37000
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Small Stone House
-ON=@Create
-   MORE=m_field_stone_house
+ON=@CREATE
+MORE=m_field_stone_house
 
 [ITEMDEF i_deed_small_brick_house]
 ID=i_deed
@@ -101,8 +101,8 @@ VALUE=36750
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Small Brick House
-ON=@Create
-   MORE=m_small_brick_house
+ON=@CREATE
+MORE=m_small_brick_house
 
 [ITEMDEF i_deed_wooden_house]
 ID=i_deed
@@ -111,8 +111,8 @@ VALUE=35250
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Wooden House
-ON=@Create
-   MORE=m_wooden_house
+ON=@CREATE
+MORE=m_wooden_house
 
 [ITEMDEF i_deed_wood_and_plaster_house]
 ID=i_deed
@@ -121,8 +121,8 @@ VALUE=36750
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Wood and Plaster House
-ON=@Create
-   MORE=m_wood_and_plaster_house
+ON=@CREATE
+MORE=m_wood_and_plaster_house
 
 [ITEMDEF i_deed_thatched_roof_cottage]
 ID=i_deed
@@ -131,8 +131,8 @@ VALUE=36750
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Thatched-Roof Cottage
-ON=@Create
-   MORE=m_thatched_roof_cottage
+ON=@CREATE
+MORE=m_thatched_roof_cottage
 
 [ITEMDEF i_deed_blue_tent]
 ID=i_deed
@@ -141,8 +141,8 @@ VALUE=22800
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Blue Tent
-ON=@Create
-   MORE=m_blue_tent
+ON=@CREATE
+MORE=m_blue_tent
 
 [ITEMDEF i_deed_green_tent]
 ID=i_deed
@@ -151,8 +151,8 @@ VALUE=22800
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Green Tent
-ON=@Create
-   MORE=m_green_tent
+ON=@CREATE
+MORE=m_green_tent
 
 [ITEMDEF i_deed_brick_house]
 ID=i_deed
@@ -161,8 +161,8 @@ VALUE=131500
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Brick House
-ON=@Create
-   MORE=m_brick_house
+ON=@CREATE
+MORE=m_brick_house
 
 [ITEMDEF i_deed_two_story_wood_and_plaster_house]
 ID=i_deed
@@ -171,8 +171,8 @@ VALUE=162750
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Two-Story Wood and Plaster House
-ON=@Create
-   MORE=m_two_story_wood_and_plaster_house
+ON=@CREATE
+MORE=m_two_story_wood_and_plaster_house
 
 [ITEMDEF i_deed_two_story_stone_and_plaster_house]
 ID=i_deed
@@ -181,8 +181,8 @@ VALUE=162000
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Two-Story Stone and Plaster House
-ON=@Create
-   MORE=m_two_story_stone_and_plaster_house
+ON=@CREATE
+MORE=m_two_story_stone_and_plaster_house
 
 [ITEMDEF i_deed_tower]
 ID=i_deed
@@ -191,8 +191,8 @@ VALUE=366500
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Tower
-ON=@Create
-   MORE=m_tower
+ON=@CREATE
+MORE=m_tower
 
 [ITEMDEF i_deed_small_stone_keep]
 ID=i_deed
@@ -201,8 +201,8 @@ VALUE=572750
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Small Stone Keep
-ON=@Create
-   MORE=m_small_stone_keep
+ON=@CREATE
+MORE=m_small_stone_keep
 
 [ITEMDEF i_deed_castle]
 ID=i_deed
@@ -211,8 +211,8 @@ VALUE=865250
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Castle
-ON=@Create
-   MORE=m_castle
+ON=@CREATE
+MORE=m_castle
 
 [ITEMDEF i_deed_large_house_with_patio]
 ID=i_deed
@@ -221,8 +221,8 @@ VALUE=129250
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Large House with Patio
-ON=@Create
-   MORE=m_large_house_with_patio
+ON=@CREATE
+MORE=m_large_house_with_patio
 
 [ITEMDEF i_deed_marble_house_with_patio]
 ID=i_deed
@@ -231,8 +231,8 @@ VALUE=160500
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Marble House with Patio
-ON=@Create
-   MORE=m_marble_house_with_patio
+ON=@CREATE
+MORE=m_marble_house_with_patio
 
 [ITEMDEF i_deed_small_stone_tower]
 ID=i_deed
@@ -241,8 +241,8 @@ VALUE=73500
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Small Stone Tower
-ON=@Create
-   MORE=m_small_stone_tower
+ON=@CREATE
+MORE=m_small_stone_tower
 
 [ITEMDEF i_deed_two_story_log_cabin]
 ID=i_deed
@@ -251,8 +251,8 @@ VALUE=81750
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Two-Story Log Cabin
-ON=@Create
-   MORE=m_two_story_log_cabin
+ON=@CREATE
+MORE=m_two_story_log_cabin
 
 [ITEMDEF i_deed_sandstone_house_with_patio]
 ID=i_deed
@@ -261,8 +261,8 @@ VALUE=76500
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Sandstone House with Patio
-ON=@Create
-   MORE=m_sandstone_house_with_patio
+ON=@CREATE
+MORE=m_sandstone_house_with_patio
 
 [ITEMDEF i_deed_two_story_villa]
 ID=i_deed
@@ -271,8 +271,8 @@ VALUE=113750
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Two-Story Villa
-ON=@Create
-   MORE1=m_two_story_villa
+ON=@CREATE
+MORE1=m_two_story_villa
 
 [ITEMDEF i_deed_small_stone_workshop]
 ID=i_deed
@@ -281,8 +281,8 @@ VALUE=50500
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Small Stone Workshop
-ON=@Create
-   MORE=m_small_stone_workshop
+ON=@CREATE
+MORE=m_small_stone_workshop
 
 [ITEMDEF i_deed_small_marble_workshop]
 ID=i_deed
@@ -291,8 +291,8 @@ VALUE=52500
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Small Marble Workshop
-ON=@Create
-   MORE=m_small_marble_workshop
+ON=@CREATE
+MORE=m_small_marble_workshop
 
 [ITEMDEF i_deed_evil_compound]
 ID=i_deed
@@ -301,8 +301,8 @@ VALUE=1865250
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Evil Compound
-ON=@Create
-   MORE=m_evil_compound
+ON=@CREATE
+MORE=m_evil_compound
 
 [ITEMDEF i_deed_guildstone]
 ID=i_deed
@@ -311,8 +311,8 @@ VALUE=25000
 CATEGORY=Provisions - Deeds
 SUBSECTION=Guild and Town Stones
 DESCRIPTION=Guildstone
-ON=@Create
-   MORE=i_guildstone
+ON=@CREATE
+MORE=i_guildstone
 
 [ITEMDEF i_deed_small_ship_n]
 ID=i_deed_ship
@@ -321,8 +321,8 @@ VALUE=12500
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Small Ship
-ON=@Create
-   MORE=m_small_ship_n
+ON=@CREATE
+MORE=m_small_ship_n
 
 [ITEMDEF i_deed_small_dragon_ship_n]
 ID=i_deed_ship
@@ -331,8 +331,8 @@ VALUE=12500
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Small Dragon Ship
-ON=@Create
-   MORE=m_small_dragon_ship_n
+ON=@CREATE
+MORE=m_small_dragon_ship_n
 
 [ITEMDEF i_deed_medium_ship_n]
 ID=i_deed_ship
@@ -341,8 +341,8 @@ VALUE=14200
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Medium Ship
-ON=@Create
-   MORE=m_medium_ship_n
+ON=@CREATE
+MORE=m_medium_ship_n
 
 [ITEMDEF i_deed_medium_dragon_ship_n]
 ID=i_deed_ship
@@ -351,8 +351,8 @@ VALUE=14200
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Medium Dragon Ship
-ON=@Create
-   MORE=m_medium_dragon_ship_n
+ON=@CREATE
+MORE=m_medium_dragon_ship_n
 
 [ITEMDEF i_deed_large_ship_n]
 ID=i_deed_ship
@@ -361,8 +361,8 @@ VALUE=15900
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Long Ship
-ON=@Create
-   MORE=m_large_ship_n
+ON=@CREATE
+MORE=m_large_ship_n
 
 [ITEMDEF i_deed_large_dragon_ship_n]
 ID=i_deed_ship
@@ -371,8 +371,8 @@ VALUE=15900
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Long Dragon Ship
-ON=@Create
-   MORE=m_large_dragon_ship_n
+ON=@CREATE
+MORE=m_large_dragon_ship_n
 
 [ITEMDEF i_deed_orc_ship_n]
 ID=i_deed_ship
@@ -381,8 +381,8 @@ VALUE=100000
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Orc Ship
-ON=@Create
-   MORE=m_orc_ship_n
+ON=@CREATE
+MORE=m_orc_ship_n
 
 [ITEMDEF i_deed_rowboat_n]
 ID=i_deed_ship
@@ -391,8 +391,8 @@ VALUE=6200
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Rowboat
-ON=@Create
-   MORE=m_rowboat_n
+ON=@CREATE
+MORE=m_rowboat_n
 
 [ITEMDEF i_deed_gargoyle_ship_n]
 ID=i_deed_ship
@@ -401,8 +401,8 @@ VALUE=200000
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Gargoyle Ship
-ON=@Create
-   MORE=m_gargoyle_ship_n
+ON=@CREATE
+MORE=m_gargoyle_ship_n
 
 [ITEMDEF i_deed_tokuno_ship_n]
 ID=i_deed_ship
@@ -411,8 +411,8 @@ VALUE=150000
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Tokuno Ship
-ON=@Create
-   MORE=m_tokuno_ship_n
+ON=@CREATE
+MORE=m_tokuno_ship_n
 
 [ITEMDEF i_deed_britannian_ship_n]
 ID=i_deed_ship
@@ -421,8 +421,8 @@ VALUE=250000
 CATEGORY=Provisions - Deeds
 SUBSECTION=Ship Plans
 DESCRIPTION=Britannian Ship
-ON=@Create
-   MORE=m_britannian_ship_n
+ON=@CREATE
+MORE=m_britannian_ship_n
 
 [ITEMDEF i_deed_bboardw]
 ID=i_deed
@@ -432,8 +432,8 @@ SKILLMAKE=Carpentry 85.0,t_carpentry
 CATEGORY=Provisions - Deeds
 SUBSECTION=Item Deeds
 DESCRIPTION=Bulletin Board W
-ON=@Create
-   MORE=i_bulletin_board
+ON=@CREATE
+MORE=i_bulletin_board
 
 [ITEMDEF i_deed_bboardn]
 ID=i_deed
@@ -443,8 +443,8 @@ SKILLMAKE=Carpentry 85.0,t_carpentry
 CATEGORY=Provisions - Deeds
 SUBSECTION=Item Deeds
 DESCRIPTION=Bulletin Board N
-ON=@Create
-   MORE=i_bulletin_board_2
+ON=@CREATE
+MORE=i_bulletin_board_2
 
 [ITEMDEF i_deed_spinwheel]
 ID=i_deed
@@ -452,8 +452,8 @@ NAME=Deed to a Spinning Wheel
 CATEGORY=Provisions - Deeds
 SUBSECTION=Item Deeds
 DESCRIPTION=Spinning Wheel
-ON=@Create
-   MORE=i_spinning_wheel
+ON=@CREATE
+MORE=i_spinning_wheel
 
 [ITEMDEF i_deed_forge]
 ID=i_deed
@@ -463,8 +463,8 @@ SKILLMAKE=Carpentry 56.0, Blacksmithing 75.0
 CATEGORY=Provisions - Deeds
 SUBSECTION=Item Deeds
 DESCRIPTION=Forge
-ON=@Create
-   MORE=i_forge
+ON=@CREATE
+MORE=i_forge
 
 [ITEMDEF i_deed_anvil]
 ID=i_deed
@@ -474,8 +474,8 @@ SKILLMAKE=Carpentry 56.0, Blacksmithing 75.0
 CATEGORY=Provisions - Deeds
 SUBSECTION=Item Deeds
 DESCRIPTION=Anvil
-ON=@Create
-   MORE=i_anvil
+ON=@CREATE
+MORE=i_anvil
 
 [ITEMDEF i_deed_dummy]
 ID=i_deed
@@ -483,8 +483,8 @@ NAME=Deed to a Training Dummy
 CATEGORY=Provisions - Deeds
 SUBSECTION=Item Deeds
 DESCRIPTION=Training Dummy
-ON=@Create
-   MORE=i_training_dummy
+ON=@CREATE
+MORE=i_training_dummy
 
 [ITEMDEF i_deed_archbutte]
 ID=i_deed
@@ -492,8 +492,8 @@ NAME=Deed to an Archery Butte
 CATEGORY=Provisions - Deeds
 SUBSECTION=Item Deeds
 DESCRIPTION=Archery Butte
-ON=@Create
-   MORE=i_archery_butte
+ON=@CREATE
+MORE=i_archery_butte
 
 [ITEMDEF i_deed_pickpock_blue]
 ID=i_deed
@@ -501,8 +501,8 @@ NAME=Deed to a Pickpocket Dip blue
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Pickpocket Dip
-ON=@Create
-   MORE=i_pickpocket_dip
+ON=@CREATE
+MORE=i_pickpocket_dip
 
 [ITEMDEF i_deed_pickpock_yellow]
 ID=i_deed
@@ -510,8 +510,8 @@ NAME=Deed to a Pickpocket Dip yellow
 CATEGORY=Provisions - Deeds
 SUBSECTION=House Deeds
 DESCRIPTION=Pickpocket Dip
-ON=@Create
-   MORE=i_pickpocket_dip2
+ON=@CREATE
+MORE=i_pickpocket_dip2
 
 [ITEMDEF i_deed_vendor]
 ID=i_deed
@@ -520,7 +520,7 @@ VALUE=15000
 CATEGORY=Provisions - Deeds
 SUBSECTION=Vendor Deeds
 DESCRIPTION=Player Vendor
-ON=@DClick
+ON=@DCLICK
    SRC.MESSAGE Your vendor has been created.
    SERV.newnpc { c_vendor 1 c_vendor_f 1 }
    REF1=<NEW>
@@ -546,8 +546,8 @@ NAME=Deed to a Brown Fountain
 CATEGORY=Provisions - Deeds
 SUBSECTION=Item Deeds
 DESCRIPTION=Brown Fountain
-ON=@Create
-   MORE=m_fountain_brown
+ON=@CREATE
+MORE=m_fountain_brown
 
 [ITEMDEF i_deed_fount_wh]
 ID=i_deed
@@ -555,8 +555,8 @@ NAME=Deed to a White Fountain
 CATEGORY=Provisions - Deeds
 SUBSECTION=Item Deeds
 DESCRIPTION=White Fountain
-ON=@Create
-   MORE=m_fountain_white
+ON=@CREATE
+MORE=m_fountain_white
 
 [ITEMDEF i_deed_wandering_healer_camp]
 ID=i_deed
@@ -564,8 +564,8 @@ NAME=Deed to a Wandering Healer Camp
 CATEGORY=Provisions - Deeds
 SUBSECTION=Wandering Tent Deeds
 DESCRIPTION=Deed to Wandering Healer Camp
-ON=@Create
-   MORE=m_wandering_healer_camp
+ON=@CREATE
+MORE=m_wandering_healer_camp
 
 [ITEMDEF i_deed_wandering_mage_camp]
 ID=i_deed
@@ -573,8 +573,8 @@ NAME=Deed to a Wandering Mage Camp
 CATEGORY=Provisions - Deeds
 SUBSECTION=Wandering Tent Deeds
 DESCRIPTION=Deed to Wandering Mage Camp
-ON=@Create
-   MORE=m_wandering_mage_camp
+ON=@CREATE
+MORE=m_wandering_mage_camp
 
 [ITEMDEF i_deed_wandering_bank_camp]
 ID=i_deed
@@ -582,8 +582,8 @@ NAME=Deed to a Wandering Bank Camp
 CATEGORY=Provisions - Deeds
 SUBSECTION=Wandering Tent Deeds
 DESCRIPTION=Deed to Wandering Bank Camp
-ON=@Create
-   MORE=m_wandering_bank_camp
+ON=@CREATE
+MORE=m_wandering_bank_camp
 
 [ITEMDEF i_deed_scaffold_and_trailer]
 ID=i_deed
@@ -591,8 +591,8 @@ NAME=Deed to a Scaffold and Trailer
 CATEGORY=Provisions - Deeds
 SUBSECTION=Misc
 DESCRIPTION=Deed to Scaffold and Trailer
-ON=@Create
-   MORE=m_scaffold_and_trailer
+ON=@CREATE
+MORE=m_scaffold_and_trailer
 
 
 // [ITEMDEF i_deed_forge_bellow]
@@ -612,9 +612,9 @@ TYPE=t_deed
 CATEGORY=Provisions - Deeds
 SUBSECTION=Multi Item Deeds
 DESCRIPTION=Bearskin Rug
-ON=@Create
-   MORE=i_multi_rug_bearskin_w
-   
+ON=@CREATE
+MORE=i_multi_rug_bearskin_w
+
 [ITEMDEF i_deed_bearskin_rug_s]
 ID=i_deed
 NAME=Deed to a Bearskin Rug
@@ -622,8 +622,8 @@ TYPE=t_deed
 CATEGORY=Provisions - Deeds
 SUBSECTION=Multi Item Deeds
 DESCRIPTION=Bearskin Rug
-ON=@Create
-   MORE=i_multi_rug_bearskin_s
+ON=@CREATE
+MORE=i_multi_rug_bearskin_s
 
 [ITEMDEF i_deed_polarbear_rug_w]
 ID=i_deed
@@ -632,9 +632,9 @@ TYPE=t_deed
 CATEGORY=Provisions - Deeds
 SUBSECTION=Multi Item Deeds
 DESCRIPTION=Polar Bearskin Rug
-ON=@Create
-   MORE=i_multi_rug_polarbear_w
-   
+ON=@CREATE
+MORE=i_multi_rug_polarbear_w
+
 [ITEMDEF i_deed_polarbear_rug_s]
 ID=i_deed
 NAME=Deed to a Polar Bearskin Rug
@@ -642,8 +642,8 @@ TYPE=t_deed
 CATEGORY=Provisions - Deeds
 SUBSECTION=Multi Item Deeds
 DESCRIPTION=Polar Bearskin Rug
-ON=@Create
-   MORE=i_multi_rug_polarbear_s
+ON=@CREATE
+MORE=i_multi_rug_polarbear_s
 
 [ITEMDEF i_deed_gardenshed_south]
 ID=i_deed
@@ -652,9 +652,9 @@ TYPE=t_deed
 CATEGORY=Provisions - Deeds
 SUBSECTION=Multi Item Deeds
 DESCRIPTION=Garden Shed
-ON=@Create
-   MORE=m_garden_shed_south
-   
+ON=@CREATE
+MORE=m_garden_shed_south
+
 [ITEMDEF i_deed_gardenshed_east]
 ID=i_deed
 NAME=Deed to a Garden Shed
@@ -662,8 +662,8 @@ TYPE=t_deed
 CATEGORY=Provisions - Deeds
 SUBSECTION=Multi Item Deeds
 DESCRIPTION=Garden Shed
-ON=@Create
-   MORE=m_garden_shed_east
+ON=@CREATE
+MORE=m_garden_shed_east
 
 [ITEMDEF i_deed_foundation_7x7]
 ID=i_deed
@@ -671,8 +671,8 @@ NAME=Deed to a 7x7 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=7x7 Foundation
-ON=@Create
-   MORE=m_foundation_7x7
+ON=@CREATE
+MORE=m_foundation_7x7
 
 [ITEMDEF i_deed_foundation_7x8]
 ID=i_deed
@@ -680,8 +680,8 @@ NAME=Deed to a 7x8 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=7x8 Foundation
-ON=@Create
-   MORE=m_foundation_7x8
+ON=@CREATE
+MORE=m_foundation_7x8
 
 [ITEMDEF i_deed_foundation_7x9]
 ID=i_deed
@@ -689,8 +689,8 @@ NAME=Deed to a 7x9 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=7x9 Foundation
-ON=@Create
-   MORE=m_foundation_7x9
+ON=@CREATE
+MORE=m_foundation_7x9
 
 [ITEMDEF i_deed_foundation_7x10]
 ID=i_deed
@@ -698,8 +698,8 @@ NAME=Deed to a 7x10 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=7x10 Foundation
-ON=@Create
-   MORE=m_foundation_7x10
+ON=@CREATE
+MORE=m_foundation_7x10
 
 [ITEMDEF i_deed_foundation_7x11]
 ID=i_deed
@@ -707,8 +707,8 @@ NAME=Deed to a 7x11 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=7x11 Foundation
-ON=@Create
-   MORE=m_foundation_7x11
+ON=@CREATE
+MORE=m_foundation_7x11
 
 [ITEMDEF i_deed_foundation_7x12]
 ID=i_deed
@@ -716,8 +716,8 @@ NAME=Deed to a 7x12 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=7x12 Foundation
-ON=@Create
-   MORE=m_foundation_7x12
+ON=@CREATE
+MORE=m_foundation_7x12
 
 [ITEMDEF i_deed_foundation_8x7]
 ID=i_deed
@@ -725,8 +725,8 @@ NAME=Deed to a 8x7 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=8x7 Foundation
-ON=@Create
-   MORE=m_foundation_8x7
+ON=@CREATE
+MORE=m_foundation_8x7
 
 [ITEMDEF i_deed_foundation_8x8]
 ID=i_deed
@@ -734,8 +734,8 @@ NAME=Deed to a 8x8 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=8x8 Foundation
-ON=@Create
-   MORE=m_foundation_8x8
+ON=@CREATE
+MORE=m_foundation_8x8
 
 [ITEMDEF i_deed_foundation_8x9]
 ID=i_deed
@@ -743,8 +743,8 @@ NAME=Deed to a 8x9 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=8x9 Foundation
-ON=@Create
-   MORE=m_foundation_8x9
+ON=@CREATE
+MORE=m_foundation_8x9
 
 [ITEMDEF i_deed_foundation_8x10]
 ID=i_deed
@@ -752,8 +752,8 @@ NAME=Deed to a 8x10 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=8x10 Foundation
-ON=@Create
-   MORE=m_foundation_8x10
+ON=@CREATE
+MORE=m_foundation_8x10
 
 [ITEMDEF i_deed_foundation_8x11]
 ID=i_deed
@@ -761,8 +761,8 @@ NAME=Deed to a 8x11 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=8x11 Foundation
-ON=@Create
-   MORE=m_foundation_8x11
+ON=@CREATE
+MORE=m_foundation_8x11
 
 [ITEMDEF i_deed_foundation_8x12]
 ID=i_deed
@@ -770,8 +770,8 @@ NAME=Deed to a 8x12 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=8x12 Foundation
-ON=@Create
-   MORE=m_foundation_8x12
+ON=@CREATE
+MORE=m_foundation_8x12
 
 [ITEMDEF i_deed_foundation_8x13]
 ID=i_deed
@@ -779,8 +779,8 @@ NAME=Deed to a 8x13 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=8x13 Foundation
-ON=@Create
-   MORE=m_foundation_8x13
+ON=@CREATE
+MORE=m_foundation_8x13
 
 [ITEMDEF i_deed_foundation_9x7]
 ID=i_deed
@@ -788,8 +788,8 @@ NAME=Deed to a 9x7 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=9x7 Foundation
-ON=@Create
-   MORE=m_foundation_9x7
+ON=@CREATE
+MORE=m_foundation_9x7
 
 [ITEMDEF i_deed_foundation_9x8]
 ID=i_deed
@@ -797,8 +797,8 @@ NAME=Deed to a 9x8 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=9x8 Foundation
-ON=@Create
-   MORE=m_foundation_9x8
+ON=@CREATE
+MORE=m_foundation_9x8
 
 [ITEMDEF i_deed_foundation_9x9]
 ID=i_deed
@@ -806,8 +806,8 @@ NAME=Deed to a 9x9 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=9x9 Foundation
-ON=@Create
-   MORE=m_foundation_9x9
+ON=@CREATE
+MORE=m_foundation_9x9
 
 [ITEMDEF i_deed_foundation_9x10]
 ID=i_deed
@@ -815,8 +815,8 @@ NAME=Deed to a 9x10 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=9x10 Foundation
-ON=@Create
-   MORE=m_foundation_9x10
+ON=@CREATE
+MORE=m_foundation_9x10
 
 [ITEMDEF i_deed_foundation_9x11]
 ID=i_deed
@@ -824,8 +824,8 @@ NAME=Deed to a 9x11 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=9x11 Foundation
-ON=@Create
-   MORE=m_foundation_9x11
+ON=@CREATE
+MORE=m_foundation_9x11
 
 [ITEMDEF i_deed_foundation_9x12]
 ID=i_deed
@@ -833,8 +833,8 @@ NAME=Deed to a 9x12 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=9x12 Foundation
-ON=@Create
-   MORE=m_foundation_9x12
+ON=@CREATE
+MORE=m_foundation_9x12
 
 [ITEMDEF i_deed_foundation_9x13]
 ID=i_deed
@@ -842,8 +842,8 @@ NAME=Deed to a 9x13 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=9x13 Foundation
-ON=@Create
-   MORE=m_foundation_9x13
+ON=@CREATE
+MORE=m_foundation_9x13
 
 [ITEMDEF i_deed_foundation_9x14]
 ID=i_deed
@@ -851,8 +851,8 @@ NAME=Deed to a 9x14 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=9x14 Foundation
-ON=@Create
-   MORE=m_foundation_9x14
+ON=@CREATE
+MORE=m_foundation_9x14
 
 [ITEMDEF i_deed_foundation_10x7]
 ID=i_deed
@@ -860,8 +860,8 @@ NAME=Deed to a 10x7 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=10x7 Foundation
-ON=@Create
-   MORE=m_foundation_10x7
+ON=@CREATE
+MORE=m_foundation_10x7
 
 [ITEMDEF i_deed_foundation_10x8]
 ID=i_deed
@@ -869,8 +869,8 @@ NAME=Deed to a 10x8 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=10x8 Foundation
-ON=@Create
-   MORE=m_foundation_10x8
+ON=@CREATE
+MORE=m_foundation_10x8
 
 [ITEMDEF i_deed_foundation_10x9]
 ID=i_deed
@@ -878,8 +878,8 @@ NAME=Deed to a 10x9 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=10x9 Foundation
-ON=@Create
-   MORE=m_foundation_10x9
+ON=@CREATE
+MORE=m_foundation_10x9
 
 [ITEMDEF i_deed_foundation_10x10]
 ID=i_deed
@@ -887,8 +887,8 @@ NAME=Deed to a 10x10 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=10x10 Foundation
-ON=@Create
-   MORE=m_foundation_10x10
+ON=@CREATE
+MORE=m_foundation_10x10
 
 [ITEMDEF i_deed_foundation_10x11]
 ID=i_deed
@@ -896,8 +896,8 @@ NAME=Deed to a 10x11 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=10x11 Foundation
-ON=@Create
-   MORE=m_foundation_10x11
+ON=@CREATE
+MORE=m_foundation_10x11
 
 [ITEMDEF i_deed_foundation_10x12]
 ID=i_deed
@@ -905,8 +905,8 @@ NAME=Deed to a 10x12 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=10x12 Foundation
-ON=@Create
-   MORE=m_foundation_10x12
+ON=@CREATE
+MORE=m_foundation_10x12
 
 [ITEMDEF i_deed_foundation_10x13]
 ID=i_deed
@@ -914,8 +914,8 @@ NAME=Deed to a 10x13 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=10x13 Foundation
-ON=@Create
-   MORE=m_foundation_10x13
+ON=@CREATE
+MORE=m_foundation_10x13
 
 [ITEMDEF i_deed_foundation_10x14]
 ID=i_deed
@@ -923,8 +923,8 @@ NAME=Deed to a 10x14 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=10x14 Foundation
-ON=@Create
-   MORE=m_foundation_10x14
+ON=@CREATE
+MORE=m_foundation_10x14
 
 [ITEMDEF i_deed_foundation_10x15]
 ID=i_deed
@@ -932,8 +932,8 @@ NAME=Deed to a 10x15 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=10x15 Foundation
-ON=@Create
-   MORE=m_foundation_10x15
+ON=@CREATE
+MORE=m_foundation_10x15
 
 [ITEMDEF i_deed_foundation_11x7]
 ID=i_deed
@@ -941,8 +941,8 @@ NAME=Deed to a 11x7 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=11x7 Foundation
-ON=@Create
-   MORE=m_foundation_11x7
+ON=@CREATE
+MORE=m_foundation_11x7
 
 [ITEMDEF i_deed_foundation_11x8]
 ID=i_deed
@@ -950,8 +950,8 @@ NAME=Deed to a 11x8 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=11x8 Foundation
-ON=@Create
-   MORE=m_foundation_11x8
+ON=@CREATE
+MORE=m_foundation_11x8
 
 [ITEMDEF i_deed_foundation_11x9]
 ID=i_deed
@@ -959,8 +959,8 @@ NAME=Deed to a 11x9 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=11x9 Foundation
-ON=@Create
-   MORE=m_foundation_11x9
+ON=@CREATE
+MORE=m_foundation_11x9
 
 [ITEMDEF i_deed_foundation_11x10]
 ID=i_deed
@@ -968,8 +968,8 @@ NAME=Deed to a 11x10 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=11x10 Foundation
-ON=@Create
-   MORE=m_foundation_11x10
+ON=@CREATE
+MORE=m_foundation_11x10
 
 [ITEMDEF i_deed_foundation_11x11]
 ID=i_deed
@@ -977,8 +977,8 @@ NAME=Deed to a 11x11 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=11x11 Foundation
-ON=@Create
-   MORE=m_foundation_11x11
+ON=@CREATE
+MORE=m_foundation_11x11
 
 [ITEMDEF i_deed_foundation_11x12]
 ID=i_deed
@@ -986,8 +986,8 @@ NAME=Deed to a 11x12 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=11x12 Foundation
-ON=@Create
-   MORE=m_foundation_11x12
+ON=@CREATE
+MORE=m_foundation_11x12
 
 [ITEMDEF i_deed_foundation_11x13]
 ID=i_deed
@@ -995,8 +995,8 @@ NAME=Deed to a 11x13 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=11x13 Foundation
-ON=@Create
-   MORE=m_foundation_11x13
+ON=@CREATE
+MORE=m_foundation_11x13
 
 [ITEMDEF i_deed_foundation_11x14]
 ID=i_deed
@@ -1004,8 +1004,8 @@ NAME=Deed to a 11x14 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=11x14 Foundation
-ON=@Create
-   MORE=m_foundation_11x14
+ON=@CREATE
+MORE=m_foundation_11x14
 
 [ITEMDEF i_deed_foundation_11x15]
 ID=i_deed
@@ -1013,8 +1013,8 @@ NAME=Deed to a 11x15 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=11x15 Foundation
-ON=@Create
-   MORE=m_foundation_11x15
+ON=@CREATE
+MORE=m_foundation_11x15
 
 [ITEMDEF i_deed_foundation_11x16]
 ID=i_deed
@@ -1022,8 +1022,8 @@ NAME=Deed to a 11x16 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=11x16 Foundation
-ON=@Create
-   MORE=m_foundation_11x16
+ON=@CREATE
+MORE=m_foundation_11x16
 
 [ITEMDEF i_deed_foundation_12x7]
 ID=i_deed
@@ -1031,8 +1031,8 @@ NAME=Deed to a 12x7 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=12x7 Foundation
-ON=@Create
-   MORE=m_foundation_12x7
+ON=@CREATE
+MORE=m_foundation_12x7
 
 [ITEMDEF i_deed_foundation_12x8]
 ID=i_deed
@@ -1040,8 +1040,8 @@ NAME=Deed to a 12x8 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=12x8 Foundation
-ON=@Create
-   MORE=m_foundation_12x8
+ON=@CREATE
+MORE=m_foundation_12x8
 
 [ITEMDEF i_deed_foundation_12x9]
 ID=i_deed
@@ -1049,8 +1049,8 @@ NAME=Deed to a 12x9 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=12x9 Foundation
-ON=@Create
-   MORE=m_foundation_12x9
+ON=@CREATE
+MORE=m_foundation_12x9
 
 [ITEMDEF i_deed_foundation_12x10]
 ID=i_deed
@@ -1058,8 +1058,8 @@ NAME=Deed to a 12x10 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=12x10 Foundation
-ON=@Create
-   MORE=m_foundation_12x10
+ON=@CREATE
+MORE=m_foundation_12x10
 
 [ITEMDEF i_deed_foundation_12x11]
 ID=i_deed
@@ -1067,8 +1067,8 @@ NAME=Deed to a 12x11 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=12x11 Foundation
-ON=@Create
-   MORE=m_foundation_12x11
+ON=@CREATE
+MORE=m_foundation_12x11
 
 [ITEMDEF i_deed_foundation_12x12]
 ID=i_deed
@@ -1076,8 +1076,8 @@ NAME=Deed to a 12x12 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=12x12 Foundation
-ON=@Create
-   MORE=m_foundation_12x12
+ON=@CREATE
+MORE=m_foundation_12x12
 
 [ITEMDEF i_deed_foundation_12x13]
 ID=i_deed
@@ -1085,8 +1085,8 @@ NAME=Deed to a 12x13 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=12x13 Foundation
-ON=@Create
-   MORE=m_foundation_12x13
+ON=@CREATE
+MORE=m_foundation_12x13
 
 [ITEMDEF i_deed_foundation_12x14]
 ID=i_deed
@@ -1094,8 +1094,8 @@ NAME=Deed to a 12x14 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=12x14 Foundation
-ON=@Create
-   MORE=m_foundation_12x14
+ON=@CREATE
+MORE=m_foundation_12x14
 
 [ITEMDEF i_deed_foundation_12x15]
 ID=i_deed
@@ -1103,8 +1103,8 @@ NAME=Deed to a 12x15 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=12x15 Foundation
-ON=@Create
-   MORE=m_foundation_12x15
+ON=@CREATE
+MORE=m_foundation_12x15
 
 [ITEMDEF i_deed_foundation_12x16]
 ID=i_deed
@@ -1112,8 +1112,8 @@ NAME=Deed to a 12x16 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=12x16 Foundation
-ON=@Create
-   MORE=m_foundation_12x16
+ON=@CREATE
+MORE=m_foundation_12x16
 
 [ITEMDEF i_deed_foundation_12x17]
 ID=i_deed
@@ -1121,8 +1121,8 @@ NAME=Deed to a 12x17 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=12x17 Foundation
-ON=@Create
-   MORE=m_foundation_12x17
+ON=@CREATE
+MORE=m_foundation_12x17
 
 [ITEMDEF i_deed_foundation_13x8]
 ID=i_deed
@@ -1130,8 +1130,8 @@ NAME=Deed to a 13x8 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=13x8 Foundation
-ON=@Create
-   MORE=m_foundation_13x8
+ON=@CREATE
+MORE=m_foundation_13x8
 
 [ITEMDEF i_deed_foundation_13x9]
 ID=i_deed
@@ -1139,8 +1139,8 @@ NAME=Deed to a 13x9 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=13x9 Foundation
-ON=@Create
-   MORE=m_foundation_13x9
+ON=@CREATE
+MORE=m_foundation_13x9
 
 [ITEMDEF i_deed_foundation_13x10]
 ID=i_deed
@@ -1148,8 +1148,8 @@ NAME=Deed to a 13x10 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=13x10 Foundation
-ON=@Create
-   MORE=m_foundation_13x10
+ON=@CREATE
+MORE=m_foundation_13x10
 
 [ITEMDEF i_deed_foundation_13x11]
 ID=i_deed
@@ -1157,8 +1157,8 @@ NAME=Deed to a 13x11 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=13x11 Foundation
-ON=@Create
-   MORE=m_foundation_13x11
+ON=@CREATE
+MORE=m_foundation_13x11
 
 [ITEMDEF i_deed_foundation_13x12]
 ID=i_deed
@@ -1166,8 +1166,8 @@ NAME=Deed to a 13x12 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=13x12 Foundation
-ON=@Create
-   MORE=m_foundation_13x12
+ON=@CREATE
+MORE=m_foundation_13x12
 
 [ITEMDEF i_deed_foundation_13x13]
 ID=i_deed
@@ -1175,8 +1175,8 @@ NAME=Deed to a 13x13 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=13x13 Foundation
-ON=@Create
-   MORE=m_foundation_13x13
+ON=@CREATE
+MORE=m_foundation_13x13
 
 [ITEMDEF i_deed_foundation_13x14]
 ID=i_deed
@@ -1184,8 +1184,8 @@ NAME=Deed to a 13x14 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=13x14 Foundation
-ON=@Create
-   MORE=m_foundation_13x14
+ON=@CREATE
+MORE=m_foundation_13x14
 
 [ITEMDEF i_deed_foundation_13x15]
 ID=i_deed
@@ -1193,8 +1193,8 @@ NAME=Deed to a 13x15 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=13x15 Foundation
-ON=@Create
-   MORE=m_foundation_13x15
+ON=@CREATE
+MORE=m_foundation_13x15
 
 [ITEMDEF i_deed_foundation_13x16]
 ID=i_deed
@@ -1202,8 +1202,8 @@ NAME=Deed to a 13x16 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=13x16 Foundation
-ON=@Create
-   MORE=m_foundation_13x16
+ON=@CREATE
+MORE=m_foundation_13x16
 
 [ITEMDEF i_deed_foundation_13x17]
 ID=i_deed
@@ -1211,8 +1211,8 @@ NAME=Deed to a 13x17 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=13x17 Foundation
-ON=@Create
-   MORE=m_foundation_13x17
+ON=@CREATE
+MORE=m_foundation_13x17
 
 [ITEMDEF i_deed_foundation_13x18]
 ID=i_deed
@@ -1220,8 +1220,8 @@ NAME=Deed to a 13x18 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=13x18 Foundation
-ON=@Create
-   MORE=m_foundation_13x18
+ON=@CREATE
+MORE=m_foundation_13x18
 
 [ITEMDEF i_deed_foundation_14x9]
 ID=i_deed
@@ -1229,8 +1229,8 @@ NAME=Deed to a 14x9 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=14x9 Foundation
-ON=@Create
-   MORE=m_foundation_14x9
+ON=@CREATE
+MORE=m_foundation_14x9
 
 [ITEMDEF i_deed_foundation_14x10]
 ID=i_deed
@@ -1238,8 +1238,8 @@ NAME=Deed to a 14x10 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=14x10 Foundation
-ON=@Create
-   MORE=m_foundation_14x10
+ON=@CREATE
+MORE=m_foundation_14x10
 
 [ITEMDEF i_deed_foundation_14x11]
 ID=i_deed
@@ -1247,8 +1247,8 @@ NAME=Deed to a 14x11 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=14x11 Foundation
-ON=@Create
-   MORE=m_foundation_14x11
+ON=@CREATE
+MORE=m_foundation_14x11
 
 [ITEMDEF i_deed_foundation_14x12]
 ID=i_deed
@@ -1256,8 +1256,8 @@ NAME=Deed to a 14x12 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=14x12 Foundation
-ON=@Create
-   MORE=m_foundation_14x12
+ON=@CREATE
+MORE=m_foundation_14x12
 
 [ITEMDEF i_deed_foundation_14x13]
 ID=i_deed
@@ -1265,8 +1265,8 @@ NAME=Deed to a 14x13 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=14x13 Foundation
-ON=@Create
-   MORE=m_foundation_14x13
+ON=@CREATE
+MORE=m_foundation_14x13
 
 [ITEMDEF i_deed_foundation_14x14]
 ID=i_deed
@@ -1274,8 +1274,8 @@ NAME=Deed to a 14x14 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=14x14 Foundation
-ON=@Create
-   MORE=m_foundation_14x14
+ON=@CREATE
+MORE=m_foundation_14x14
 
 [ITEMDEF i_deed_foundation_14x15]
 ID=i_deed
@@ -1283,8 +1283,8 @@ NAME=Deed to a 14x15 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=14x15 Foundation
-ON=@Create
-   MORE=m_foundation_14x15
+ON=@CREATE
+MORE=m_foundation_14x15
 
 [ITEMDEF i_deed_foundation_14x16]
 ID=i_deed
@@ -1292,8 +1292,8 @@ NAME=Deed to a 14x16 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=14x16 Foundation
-ON=@Create
-   MORE=m_foundation_14x16
+ON=@CREATE
+MORE=m_foundation_14x16
 
 [ITEMDEF i_deed_foundation_14x17]
 ID=i_deed
@@ -1301,8 +1301,8 @@ NAME=Deed to a 14x17 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=14x17 Foundation
-ON=@Create
-   MORE=m_foundation_14x17
+ON=@CREATE
+MORE=m_foundation_14x17
 
 [ITEMDEF i_deed_foundation_14x18]
 ID=i_deed
@@ -1310,8 +1310,8 @@ NAME=Deed to a 14x18 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=14x18 Foundation
-ON=@Create
-   MORE=m_foundation_14x18
+ON=@CREATE
+MORE=m_foundation_14x18
 
 [ITEMDEF i_deed_foundation_15x10]
 ID=i_deed
@@ -1319,8 +1319,8 @@ NAME=Deed to a 15x10 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=15x10 Foundation
-ON=@Create
-   MORE=m_foundation_15x10
+ON=@CREATE
+MORE=m_foundation_15x10
 
 [ITEMDEF i_deed_foundation_15x11]
 ID=i_deed
@@ -1328,8 +1328,8 @@ NAME=Deed to a 15x11 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=15x11 Foundation
-ON=@Create
-   MORE=m_foundation_15x11
+ON=@CREATE
+MORE=m_foundation_15x11
 
 [ITEMDEF i_deed_foundation_15x12]
 ID=i_deed
@@ -1337,8 +1337,8 @@ NAME=Deed to a 15x12 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=15x12 Foundation
-ON=@Create
-   MORE=m_foundation_15x12
+ON=@CREATE
+MORE=m_foundation_15x12
 
 [ITEMDEF i_deed_foundation_15x13]
 ID=i_deed
@@ -1346,8 +1346,8 @@ NAME=Deed to a 15x13 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=15x13 Foundation
-ON=@Create
-   MORE=m_foundation_15x13
+ON=@CREATE
+MORE=m_foundation_15x13
 
 [ITEMDEF i_deed_foundation_15x14]
 ID=i_deed
@@ -1355,8 +1355,8 @@ NAME=Deed to a 15x14 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=15x14 Foundation
-ON=@Create
-   MORE=m_foundation_15x14
+ON=@CREATE
+MORE=m_foundation_15x14
 
 [ITEMDEF i_deed_foundation_15x15]
 ID=i_deed
@@ -1364,8 +1364,8 @@ NAME=Deed to a 15x15 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=15x15 Foundation
-ON=@Create
-   MORE=m_foundation_15x15
+ON=@CREATE
+MORE=m_foundation_15x15
 
 [ITEMDEF i_deed_foundation_15x16]
 ID=i_deed
@@ -1373,8 +1373,8 @@ NAME=Deed to a 15x16 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=15x16 Foundation
-ON=@Create
-   MORE=m_foundation_15x16
+ON=@CREATE
+MORE=m_foundation_15x16
 
 [ITEMDEF i_deed_foundation_15x17]
 ID=i_deed
@@ -1382,8 +1382,8 @@ NAME=Deed to a 15x17 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=15x17 Foundation
-ON=@Create
-   MORE=m_foundation_15x17
+ON=@CREATE
+MORE=m_foundation_15x17
 
 [ITEMDEF i_deed_foundation_15x18]
 ID=i_deed
@@ -1391,8 +1391,8 @@ NAME=Deed to a 15x18 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=15x18 Foundation
-ON=@Create
-   MORE=m_foundation_15x18
+ON=@CREATE
+MORE=m_foundation_15x18
 
 [ITEMDEF i_deed_foundation_16x11]
 ID=i_deed
@@ -1400,8 +1400,8 @@ NAME=Deed to a 16x11 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=16x11 Foundation
-ON=@Create
-   MORE=m_foundation_16x11
+ON=@CREATE
+MORE=m_foundation_16x11
 
 [ITEMDEF i_deed_foundation_16x12]
 ID=i_deed
@@ -1409,8 +1409,8 @@ NAME=Deed to a 16x12 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=16x12 Foundation
-ON=@Create
-   MORE=m_foundation_16x12
+ON=@CREATE
+MORE=m_foundation_16x12
 
 [ITEMDEF i_deed_foundation_16x13]
 ID=i_deed
@@ -1418,8 +1418,8 @@ NAME=Deed to a 16x13 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=16x13 Foundation
-ON=@Create
-   MORE=m_foundation_16x13
+ON=@CREATE
+MORE=m_foundation_16x13
 
 [ITEMDEF i_deed_foundation_16x14]
 ID=i_deed
@@ -1427,8 +1427,8 @@ NAME=Deed to a 16x14 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=16x14 Foundation
-ON=@Create
-   MORE=m_foundation_16x14
+ON=@CREATE
+MORE=m_foundation_16x14
 
 [ITEMDEF i_deed_foundation_16x15]
 ID=i_deed
@@ -1436,8 +1436,8 @@ NAME=Deed to a 16x15 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=16x15 Foundation
-ON=@Create
-   MORE=m_foundation_16x15
+ON=@CREATE
+MORE=m_foundation_16x15
 
 [ITEMDEF i_deed_foundation_16x16]
 ID=i_deed
@@ -1445,8 +1445,8 @@ NAME=Deed to a 16x16 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=16x16 Foundation
-ON=@Create
-   MORE=m_foundation_16x16
+ON=@CREATE
+MORE=m_foundation_16x16
 
 [ITEMDEF i_deed_foundation_16x17]
 ID=i_deed
@@ -1454,8 +1454,8 @@ NAME=Deed to a 16x17 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=16x17 Foundation
-ON=@Create
-   MORE=m_foundation_16x17
+ON=@CREATE
+MORE=m_foundation_16x17
 
 [ITEMDEF i_deed_foundation_16x18]
 ID=i_deed
@@ -1463,8 +1463,8 @@ NAME=Deed to a 16x18 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=16x18 Foundation
-ON=@Create
-   MORE=m_foundation_16x18
+ON=@CREATE
+MORE=m_foundation_16x18
 
 [ITEMDEF i_deed_foundation_17x12]
 ID=i_deed
@@ -1472,8 +1472,8 @@ NAME=Deed to a 17x12 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=17x12 Foundation
-ON=@Create
-   MORE=m_foundation_17x12
+ON=@CREATE
+MORE=m_foundation_17x12
 
 [ITEMDEF i_deed_foundation_17x13]
 ID=i_deed
@@ -1481,8 +1481,8 @@ NAME=Deed to a 17x13 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=17x13 Foundation
-ON=@Create
-   MORE=m_foundation_17x13
+ON=@CREATE
+MORE=m_foundation_17x13
 
 [ITEMDEF i_deed_foundation_17x14]
 ID=i_deed
@@ -1490,8 +1490,8 @@ NAME=Deed to a 17x14 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=17x14 Foundation
-ON=@Create
-   MORE=m_foundation_17x14
+ON=@CREATE
+MORE=m_foundation_17x14
 
 [ITEMDEF i_deed_foundation_17x15]
 ID=i_deed
@@ -1499,8 +1499,8 @@ NAME=Deed to a 17x15 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=17x15 Foundation
-ON=@Create
-   MORE=m_foundation_17x15
+ON=@CREATE
+MORE=m_foundation_17x15
 
 [ITEMDEF i_deed_foundation_17x16]
 ID=i_deed
@@ -1508,8 +1508,8 @@ NAME=Deed to a 17x16 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=17x16 Foundation
-ON=@Create
-   MORE=m_foundation_17x16
+ON=@CREATE
+MORE=m_foundation_17x16
 
 [ITEMDEF i_deed_foundation_17x17]
 ID=i_deed
@@ -1517,8 +1517,8 @@ NAME=Deed to a 17x17 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=17x17 Foundation
-ON=@Create
-   MORE=m_foundation_17x17
+ON=@CREATE
+MORE=m_foundation_17x17
 
 [ITEMDEF i_deed_foundation_17x18]
 ID=i_deed
@@ -1526,8 +1526,8 @@ NAME=Deed to a 17x18 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=17x18 Foundation
-ON=@Create
-   MORE=m_foundation_17x18
+ON=@CREATE
+MORE=m_foundation_17x18
 
 [ITEMDEF i_deed_foundation_18x13]
 ID=i_deed
@@ -1535,8 +1535,8 @@ NAME=Deed to a 18x13 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=18x13 Foundation
-ON=@Create
-   MORE=m_foundation_18x13
+ON=@CREATE
+MORE=m_foundation_18x13
 
 [ITEMDEF i_deed_foundation_18x14]
 ID=i_deed
@@ -1544,8 +1544,8 @@ NAME=Deed to a 18x14 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=18x14 Foundation
-ON=@Create
-   MORE=m_foundation_18x14
+ON=@CREATE
+MORE=m_foundation_18x14
 
 [ITEMDEF i_deed_foundation_18x15]
 ID=i_deed
@@ -1553,8 +1553,8 @@ NAME=Deed to a 18x15 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=18x15 Foundation
-ON=@Create
-   MORE=m_foundation_18x15
+ON=@CREATE
+MORE=m_foundation_18x15
 
 [ITEMDEF i_deed_foundation_18x16]
 ID=i_deed
@@ -1562,8 +1562,8 @@ NAME=Deed to a 18x16 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=18x16 Foundation
-ON=@Create
-   MORE=m_foundation_18x16
+ON=@CREATE
+MORE=m_foundation_18x16
 
 [ITEMDEF i_deed_foundation_18x17]
 ID=i_deed
@@ -1571,8 +1571,8 @@ NAME=Deed to a 18x17 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=18x17 Foundation
-ON=@Create
-   MORE=m_foundation_18x17
+ON=@CREATE
+MORE=m_foundation_18x17
 
 [ITEMDEF i_deed_foundation_18x18]
 ID=i_deed
@@ -1580,7 +1580,7 @@ NAME=Deed to a 18x18 foundation
 CATEGORY=Provisions - Deeds
 SUBSECTION=foundation Deeds
 DESCRIPTION=18x18 Foundation
-ON=@Create
-   MORE=m_foundation_18x18
+ON=@CREATE
+MORE=m_foundation_18x18
 
 [EOF]
