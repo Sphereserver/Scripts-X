@@ -1,0 +1,541 @@
+[ITEMDEF i_leather_sleeves_spined]
+ID=i_leather_sleeves
+NAME=spined leather sleeves
+ARMOR=23
+ 
+RESOURCES=4 i_hides_cut_spined
+SKILLMAKE=TAILORING 53.9
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=spined
+DESCRIPTION=Leather Sleeves
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_spined
+ 
+[ITEMDEF i_leather_gorget_spined]
+ID=i_leather_gorget
+NAME=spined leather gorget
+ARMOR=23
+ 
+RESOURCES=4 i_hides_cut_spined
+SKILLMAKE=TAILORING 53.9
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=spined
+DESCRIPTION=Leather Gorget
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_spined
+ 
+[ITEMDEF i_leather_leggings_spined]
+ID=i_leather_leggings
+NAME=spined leather leggings
+ARMOR=23
+ 
+RESOURCES=10 i_hides_cut_spined
+SKILLMAKE=TAILORING 66.3
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=spined
+DESCRIPTION=Leather Leggings
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_spined
+ 
+[ITEMDEF i_leather_tunic_spined]
+ID=i_leather_tunic
+NAME=spined leather tunic
+ARMOR=23
+ 
+RESOURCES=12 i_hides_cut_spined
+SKILLMAKE=TAILORING 70.5
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=spined
+DESCRIPTION=Leather Tunic
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_spined
+ 
+[ITEMDEF i_leather_gloves_spined]
+ID=i_leather_gloves
+NAME=spined leather gloves
+ARMOR=23
+ 
+RESOURCES=3 i_hides_cut_spined
+SKILLMAKE=TAILORING 51.8
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=spined
+DESCRIPTION=Leather Gloves
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_spined
+ 
+[ITEMDEF i_leather_cap_spined]
+ID=i_leather_cap
+NAME=spined leather cap
+ARMOR=23
+ 
+RESOURCES=2 i_hides_cut_spined
+SKILLMAKE=TAILORING 6.2
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=spined
+DESCRIPTION=Leather Cap
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_spined
+ 
+[ITEMDEF i_leather_shorts_spined]
+ID=i_armor_female_shorts
+NAME=spined leather shorts
+ARMOR=23
+ 
+RESOURCES=8 i_hides_cut_spined
+SKILLMAKE=TAILORING 62.2
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=spined
+DESCRIPTION=Leather Shorts
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_spined
+ 
+[ITEMDEF i_leather_armor_female_spined]
+ID=i_armor_female_leather
+NAME=spined female leather tunic
+ARMOR=23
+ 
+RESOURCES=8 i_hides_cut_spined
+SKILLMAKE=TAILORING 62.2
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=spined
+DESCRIPTION=Female Leather Tunic
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_spined
+ 
+[ITEMDEF i_leather_skirt_spined]
+ID=i_armor_female_skirt
+NAME=spined leather skirt
+ARMOR=23
+ 
+RESOURCES=6 i_hides_cut_spined
+SKILLMAKE=TAILORING 58.0
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=spined
+DESCRIPTION=Leather Skirt
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_spined
+ 
+[ITEMDEF i_leather_bustier_spined]
+ID=i_armor_female_bustier
+NAME=spined leather bustier
+ARMOR=23
+ 
+RESOURCES=6 i_hides_cut_spined
+SKILLMAKE=TAILORING 58.0
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=spined
+DESCRIPTION=Leather Bustier
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_spined
+ 
+[ITEMDEF i_leather_sleeves_horned]
+ID=i_leather_sleeves
+NAME=horned leather sleeves
+ARMOR=26
+ 
+RESOURCES=4 i_hides_cut_horned
+SKILLMAKE=TAILORING 53.9
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=horned
+DESCRIPTION=Leather Sleeves
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_horned
+ 
+[ITEMDEF i_leather_gorget_horned]
+ID=i_leather_gorget
+NAME=horned leather gorget
+ARMOR=26
+ 
+RESOURCES=4 i_hides_cut_horned
+SKILLMAKE=TAILORING 53.9
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=horned
+DESCRIPTION=Leather Gorget
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_horned
+ 
+[ITEMDEF i_leather_leggings_horned]
+ID=i_leather_leggings
+NAME=horned leather leggings
+ARMOR=26
+ 
+RESOURCES=10 i_hides_cut_horned
+SKILLMAKE=TAILORING 66.3
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=horned
+DESCRIPTION=Leather Leggings
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_horned
+ 
+[ITEMDEF i_leather_tunic_horned]
+ID=i_leather_tunic
+NAME=horned leather tunic
+ARMOR=26
+ 
+RESOURCES=12 i_hides_cut_horned
+SKILLMAKE=TAILORING 70.5
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=horned
+DESCRIPTION=Leather Tunic
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_horned
+ 
+[ITEMDEF i_leather_gloves_horned]
+ID=i_leather_gloves
+NAME=horned leather gloves
+ARMOR=26
+ 
+RESOURCES=3 i_hides_cut_horned
+SKILLMAKE=TAILORING 51.8
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=horned
+DESCRIPTION=Leather Gloves
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_horned
+ 
+[ITEMDEF i_leather_cap_horned]
+ID=i_leather_cap
+NAME=horned leather cap
+ARMOR=26
+ 
+RESOURCES=2 i_hides_cut_horned
+SKILLMAKE=TAILORING 6.2
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=horned
+DESCRIPTION=Leather Cap
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_horned
+ 
+[ITEMDEF i_leather_shorts_horned]
+ID=i_armor_female_shorts
+NAME=horned leather shorts
+ARMOR=26
+ 
+RESOURCES=8 i_hides_cut_horned
+SKILLMAKE=TAILORING 62.2
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=horned
+DESCRIPTION=Leather Shorts
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_horned
+ 
+[ITEMDEF i_leather_armor_female_horned]
+ID=i_armor_female_leather
+NAME=horned female leather tunic
+ARMOR=26
+ 
+RESOURCES=8 i_hides_cut_horned
+SKILLMAKE=TAILORING 62.2
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=horned
+DESCRIPTION=Female Leather Tunic
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_horned
+ 
+[ITEMDEF i_leather_skirt_horned]
+ID=i_armor_female_skirt
+NAME=horned leather skirt
+ARMOR=26
+ 
+RESOURCES=6 i_hides_cut_horned
+SKILLMAKE=TAILORING 58.0
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=horned
+DESCRIPTION=Leather Skirt
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_horned
+ 
+[ITEMDEF i_leather_bustier_horned]
+ID=i_armor_female_bustier
+NAME=horned leather bustier
+ARMOR=26
+ 
+RESOURCES=6 i_hides_cut_horned
+SKILLMAKE=TAILORING 58.0
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=horned
+DESCRIPTION=Leather Bustier
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_horned
+ 
+[ITEMDEF i_leather_sleeves_barbed]
+ID=i_leather_sleeves
+NAME=barbed leather sleeves
+ARMOR=29
+ 
+RESOURCES=4 i_hides_cut_barbed
+SKILLMAKE=TAILORING 53.9
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=barbed
+DESCRIPTION=Leather Sleeves
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_barbed
+ 
+[ITEMDEF i_leather_gorget_barbed]
+ID=i_leather_gorget
+NAME=barbed leather gorget
+ARMOR=29
+ 
+RESOURCES=4 i_hides_cut_barbed
+SKILLMAKE=TAILORING 53.9
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=barbed
+DESCRIPTION=Leather Gorget
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_barbed
+ 
+[ITEMDEF i_leather_leggings_barbed]
+ID=i_leather_leggings
+NAME=barbed leather leggings
+ARMOR=29
+ 
+RESOURCES=10 i_hides_cut_barbed
+SKILLMAKE=TAILORING 66.3
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=barbed
+DESCRIPTION=Leather Leggings
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_barbed
+ 
+[ITEMDEF i_leather_tunic_barbed]
+ID=i_leather_tunic
+NAME=barbed leather tunic
+ARMOR=29
+ 
+RESOURCES=12 i_hides_cut_barbed
+SKILLMAKE=TAILORING 70.5
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=barbed
+DESCRIPTION=Leather Tunic
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_barbed
+ 
+[ITEMDEF i_leather_gloves_barbed]
+ID=i_leather_gloves
+NAME=barbed leather gloves
+ARMOR=29
+ 
+RESOURCES=3 i_hides_cut_barbed
+SKILLMAKE=TAILORING 51.8
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=barbed
+DESCRIPTION=Leather Gloves
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_barbed
+ 
+[ITEMDEF i_leather_cap_barbed]
+ID=i_leather_cap
+NAME=barbed leather cap
+ARMOR=29
+ 
+RESOURCES=2 i_hides_cut_barbed
+SKILLMAKE=TAILORING 6.2
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=barbed
+DESCRIPTION=Leather Cap
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_barbed
+ 
+[ITEMDEF i_leather_shorts_barbed]
+ID=i_armor_female_shorts
+NAME=barbed leather shorts
+ARMOR=29
+ 
+RESOURCES=8 i_hides_cut_barbed
+SKILLMAKE=TAILORING 62.2
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=barbed
+DESCRIPTION=Leather Shorts
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_barbed
+ 
+[ITEMDEF i_leather_armor_female_barbed]
+ID=i_armor_female_leather
+NAME=barbed female leather tunic
+ARMOR=29
+ 
+RESOURCES=8 i_hides_cut_barbed
+SKILLMAKE=TAILORING 62.2
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=barbed
+DESCRIPTION=Female Leather Tunic
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_barbed
+ 
+[ITEMDEF i_leather_skirt_barbed]
+ID=i_armor_female_skirt
+NAME=barbed leather skirt
+ARMOR=29
+ 
+RESOURCES=6 i_hides_cut_barbed
+SKILLMAKE=TAILORING 58.0
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=barbed
+DESCRIPTION=Leather Skirt
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_barbed
+ 
+[ITEMDEF i_leather_bustier_barbed]
+ID=i_armor_female_bustier
+NAME=barbed leather bustier
+ARMOR=29
+ 
+RESOURCES=6 i_hides_cut_barbed
+SKILLMAKE=TAILORING 58.0
+ 
+TEVENTS=ei_material_nonbase
+ 
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=barbed
+DESCRIPTION=Leather Bustier
+ 
+ON=@CREATE
+	HITPOINTS={31 37}
+	COLOR=color_hide_barbed
+ 
+[EOF]
