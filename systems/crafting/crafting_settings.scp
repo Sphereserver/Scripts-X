@@ -10,27 +10,20 @@ VERSION=X1
 // Every setting has its own description.
 //
 [DEFNAME SETTINGS_CRAFTING]
-
-
-///////////////////////////////////////////////////////////////
-//////// Crafting Settings
-///////////////////////////////////////////////////////////////
-
-
 // Enables, switch or disable the new crafting system
 // 0 = Default. 1 = OSI-Like.
 scp.CraftingSystem=1
 
 // Enable or disable the crafting menu for specific skill.
 // <boolean> (1 if enable, 0 if not). Default = 1
-scp.NewCrafting_Alchemy=0
+scp.NewCrafting_Alchemy=1
 scp.NewCrafting_Blacksmithing=1
-scp.NewCrafting_Bowcraft=0
-scp.NewCrafting_Carpentry=0
-scp.NewCrafting_Cooking=0
-scp.NewCrafting_Inscription=0
-scp.NewCrafting_Tailoring=0
-scp.NewCrafting_Tinkering=0
+scp.NewCrafting_Bowcraft=1
+scp.NewCrafting_Carpentry=1
+scp.NewCrafting_Cooking=1
+scp.NewCrafting_Inscription=1
+scp.NewCrafting_Tailoring=1
+scp.NewCrafting_Tinkering=1
 
 // If the item needs a recipe and the player doesn't have it, display resources as "????"
 // If this is 0, it will display the skillmake/resources normally.
