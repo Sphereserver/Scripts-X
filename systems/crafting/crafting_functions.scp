@@ -99,9 +99,13 @@ FOR 1 <SERV.ITEMDEF.<ARGS>.RESOURCES.COUNT>
 	LOCAL.RESOURCE_NAME=<SERV.ITEMDEF.<ARGS>.RESOURCES.<dlocal._for>.KEY.NAME>
 
 	//if is different from base, then we need to check the resource
-	IF (!<ISEMPTY <DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid>> && <DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid> != <LOCAL.RESOURCE_NAME> )
-		LOCAL.RESOURCE_NAME=<DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid>
-	ENDIF
+    IF (<DEF.<ctag0.craft.SKILL>_resourceid> == <SERV.ITEMDEF.<ARGS>.RESOURCES.<dlocal._for>.KEY>)
+        IF (<dctag.craft.material.<ctag.craft.SKILL>> != 0)
+            IF (!<ISEMPTY <DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid>> && <DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid> != <LOCAL.RESOURCE_NAME> )
+                LOCAL.RESOURCE_NAME=<DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid>
+            ENDIF
+        ENDIF
+    ENDIF
 
 	// check if we have the resource
 	IF !(<RESTEST <SERV.ITEMDEF.<ARGS>.RESOURCES.<dlocal._for>.VALUE> <LOCAL.RESOURCE_NAME>>)
