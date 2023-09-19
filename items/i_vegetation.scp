@@ -3602,7 +3602,7 @@ DUPEITEM=018e1
 [ITEMDEF 018e3]
 //garlic bulb with sprout (as if just pulled from the ground)
 DEFNAME=i_fruit_garlic
-TYPE=t_fruit //t_reagent_raw
+TYPE=t_reagent_raw
 TDATA1=i_crop_garlic
 VALUE=1
 WEIGHT=0.1
@@ -3640,7 +3640,7 @@ DUPEITEM=018e5
 
 [ITEMDEF 018e7]
 DEFNAME=i_fruit_nightshade
-TYPE=t_fruit //t_reagent_raw
+TYPE=t_reagent_raw
 TDATA1=i_crop_nightshade
 VALUE=1
 WEIGHT=0.1
@@ -3680,7 +3680,7 @@ DUPEITEM=018e9
 [ITEMDEF 018eb]
 //ginseng flower and root (as if just pulled from the ground)
 DEFNAME=i_fruit_ginseng
-TYPE=t_fruit //t_reagent_raw
+TYPE=t_reagent_raw
 TDATA1=i_crop_ginseng
 VALUE=1
 WEIGHT=0.1
