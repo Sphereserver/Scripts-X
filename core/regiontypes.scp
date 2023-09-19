@@ -27,7 +27,7 @@ RESOURCES=100.0 mr_nothing
 RESOURCES=30.0 mr_iron
 RESOURCES=5.0 mr_shadow
 
-ON=@RegPeriodic
+ON=@REGPERIODIC
 SRC.SOUND={021f 1 0243 1 0244 1 0245 1}
 
 [REGIONTYPE r_spooky t_rock]
@@ -40,7 +40,7 @@ RESOURCES=5.0 mr_shadow
 // There is nothing to mine in a swamp.
 RESOURCES=100.0 mr_nothing
 
-ON=@RegPeriodic
+ON=@REGPERIODIC
 SRC.SOUND={0e 10 0f 10 022 1 023 1 024 1 0267 1}
 
 /////////////////////////////////////////
@@ -75,7 +75,7 @@ RESOURCES=10.0 mr_fish2
 RESOURCES=10.0 mr_fish3
 RESOURCES=10.0 mr_fish4
 
-ON=@RegPeriodic
+ON=@REGPERIODIC
 // Water/Ocean boat sounds
 SRC.SOUND={025 1 026 1 027 1 010 1 011 1 012 1 013 1}
 
@@ -87,21 +87,20 @@ SRC.SOUND={025 1 026 1 027 1 010 1 011 1 012 1 013 1}
 // All grass can be eaten by default.
 RESOURCES=1.0 mr_grass
 
-
 /////////////////////
 // Generic Regions //
 /////////////////////
 
 [REGIONTYPE r_default]
-ON=@Enter
+ON=@ENTER
 IF <SRC.ISPLAYER> && <SRC.REGION>
- IF STRCMPI("<TAG.MUSIC>","<SRC.REGION.TAG.MUSIC>")
-  IF !(<isempty <TAG.MUSIC>>)
-   SRC.MIDILIST=<TAG.MUSIC>
-  ELSE
-   SRC.MIDILIST=midi_britain1,midi_ForestA,midi_JungleA,midi_MountainA,midi_Plains,midi_Victory
-  ENDIF
- ENDIF
+    IF STRCMPI("<TAG.MUSIC>","<SRC.REGION.TAG.MUSIC>")
+        IF !(<isempty <TAG.MUSIC>>)
+            SRC.MIDILIST=<TAG.MUSIC>
+        ELSE
+            SRC.MIDILIST=midi_britain1,midi_ForestA,midi_JungleA,midi_MountainA,midi_Plains,midi_Victory
+        ENDIF
+    ENDIF
 ENDIF
 
 //ON=@CliPeriodic
@@ -110,23 +109,23 @@ ENDIF
 //ENDIF
 
 [REGIONTYPE r_graveyards]
-ON=@RegPeriodic
+ON=@REGPERIODIC
 SRC.SOUND={0a 1 0b 1}
 
 [REGIONTYPE r_forests]
-ON=@RegPeriodic
+ON=@REGPERIODIC
 IF (<SRC.SECTOR.ISNIGHTTIME>)
- SRC.SOUND={00 2 01 2 02 2 07d 1}	//Play these sounds at night.
+    SRC.SOUND={00 2 01 2 02 2 07d 1}	//Play these sounds at night.
 ELSE
- SRC.SOUND={08 10 09 10 0219 1 07d 1}	//Play these sounds during the day.
+    SRC.SOUND={08 10 09 10 0219 1 07d 1}	//Play these sounds during the day.
 ENDIF
 
 [REGIONTYPE r_jungle]
-ON=@RegPeriodic
+ON=@REGPERIODIC
 IF (<SRC.SECTOR.ISNIGHTTIME>)
- SRC.SOUND={0c 2 0d 2 0b3 1}
+    SRC.SOUND={0c 2 0d 2 0b3 1}
 ELSE
- SRC.SOUND={03 2 04 2 05 2 0b3 1}
+    SRC.SOUND={03 2 04 2 05 2 0b3 1}
 ENDIF
 
 [EOF]
