@@ -12,7 +12,6 @@ if (!<isempty <args>> && <serv.chardef.<dargs>>)
 endif
 sysmessage <defmsg.cmd_invalid>
 
-
 [FUNCTION tweak]
 INFO
 
@@ -75,13 +74,13 @@ NAME=Follower
 TYPE=t_eq_script
 LAYER=layer_special
 
-ON=@TargOn_Char
+ON=@TARGON_CHAR
 LINK=<ARGO>
 
-ON=@TargOn_Item
+ON=@TARGON_ITEM
 LINK=<ARGO>
 
-ON=@Timer
+ON=@TIMER
 IF !(<LINK.UID>) || (<CONT.FLAGS> & statf_war)
  CONT.SYSMESSAGE Follow: off
  REMOVE
