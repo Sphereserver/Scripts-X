@@ -17,7 +17,6 @@ DESCRIPTION=Sugared Peach
 ON=@Create
    MOREM=1
 
-
 [ITEMDEF 0970]
 //This animation is typically used with a cauldron or kettle.
 DEFNAME=i_bowl_stew
@@ -703,41 +702,7 @@ DUPEITEM=0995
 //goblet
 DUPEITEM=099a
 
-[ITEMDEF 09cc]
-DEFNAME=i_fish_big_1
-TYPE=t_fish
-VALUE=2
-WEIGHT=5.0
-CATEGORY=Provisions - Food
-SUBSECTION=Fish
-DESCRIPTION=Fish (Whole)
 
-[ITEMDEF 09cd]
-DEFNAME=i_fish_big_2
-TYPE=t_fish
-VALUE=2
-WEIGHT=5.0
-CATEGORY=Provisions - Food
-SUBSECTION=Fish
-DESCRIPTION=Fish
-
-[ITEMDEF 09ce]
-DEFNAME=i_fish_big_3
-TYPE=t_fish
-VALUE=2
-WEIGHT=5.0
-CATEGORY=Provisions - Food
-SUBSECTION=Fish
-DESCRIPTION=Fish
-
-[ITEMDEF 09cf]
-DEFNAME=i_fish_big_4
-TYPE=t_fish
-VALUE=2
-WEIGHT=5.0
-CATEGORY=Provisions - Food
-SUBSECTION=Fish
-DESCRIPTION=Fish
 
 [ITEMDEF 09d3]
 //ham
@@ -1082,30 +1047,6 @@ SKILLMAKE=Cooking 15.0, t_cooking
 CATEGORY=Provisions - Food
 SUBSECTION=Assembled
 DESCRIPTION=Bowl of Flour
-
-
-[ITEMDEF 0dd6]
-DEFNAME=i_fish_small
-TYPE=t_fish
-VALUE=2
-WEIGHT=1
-CATEGORY=Provisions - Food
-SUBSECTION=Fish
-DESCRIPTION=Small Fish
-DUPELIST=0dd7,0dd8,0dd9
-
-[ITEMDEF 0dd7]
-//small fish
-DUPEITEM=0dd6
-
-[ITEMDEF 0dd8]
-//small fish
-DUPEITEM=0dd6
-
-[ITEMDEF 0dd9]
-//small fish
-DUPEITEM=0dd6
-
 
 [ITEMDEF 0ec1]
 DEFNAME=i_knife_broken
@@ -2598,148 +2539,6 @@ DESCRIPTION=Egg (large)
 ON=@Create
    MOREM=6
 
-
-[ITEMDEF 04302]
-DEFNAME=i_fish_salmon
-NAME=salmon
-TYPE=t_fish
-FLIP=1
-VALUE=2
-WEIGHT=5.0
-CATEGORY=Provisions - Food
-SUBSECTION=Fish
-DESCRIPTION=Fish (salmon)
-DUPELIST=04303
-
-[ITEMDEF 04303]
-//Fish (salmon)
-DUPEITEM=04302
-
-[ITEMDEF 04304]
-DEFNAME=i_fish_marlin
-NAME=marlin
-TYPE=t_fish
-FLIP=1
-VALUE=2
-WEIGHT=5.0
-CATEGORY=Provisions - Food
-SUBSECTION=Fish
-DESCRIPTION=Fish (marlin)
-DUPELIST=04305
-
-[ITEMDEF 04305]
-//Fish (marlin)
-DUPEITEM=04304
-
-[ITEMDEF 04306]
-DEFNAME=i_fish_grouper
-NAME=grouper
-TYPE=t_fish
-FLIP=1
-VALUE=2
-WEIGHT=5.0
-CATEGORY=Provisions - Food
-SUBSECTION=Fish
-DESCRIPTION=Fish (grouper)
-DUPELIST=04307
-
-[ITEMDEF 04307]
-//Fish (grouper)
-DUPEITEM=04306
-
-
-[ITEMDEF 044c3]
-DEFNAME=i_fish_barracuda
-NAME=barracuda
-TYPE=t_fish
-FLIP=1
-VALUE=2
-WEIGHT=5.0
-CATEGORY=Provisions - Food
-SUBSECTION=Fish
-DESCRIPTION=Fish (barracuda)
-DUPELIST=044c4
-
-[ITEMDEF 044c4]
-//Fish (barracuda)
-DUPEITEM=044c3
-
-[ITEMDEF 044c5]
-DEFNAME=i_fish_mahimahi
-NAME=mahimahi
-TYPE=t_fish
-FLIP=1
-VALUE=2
-WEIGHT=5.0
-CATEGORY=Provisions - Food
-SUBSECTION=Fish
-DESCRIPTION=Fish (mahimahi)
-DUPELIST=044c6
-
-[ITEMDEF 044c6]
-//Fish (mahimahi)
-DUPEITEM=044c5
-
-
-[ITEMDEF 044d1]
-DEFNAME=i_fish_crab
-NAME=crab
-TYPE=t_fish
-FLIP=1
-VALUE=2
-WEIGHT=5.0
-CATEGORY=Provisions - Food
-SUBSECTION=Fish
-DESCRIPTION=Fish (crab)
-DUPELIST=044d2
-
-[ITEMDEF 044d2]
-//Fish (crab)
-DUPEITEM=044d1
-
-[ITEMDEF 044d3]
-DEFNAME=i_fish_lobster
-NAME=lobster
-TYPE=t_fish
-FLIP=1
-VALUE=2
-WEIGHT=5.0
-CATEGORY=Provisions - Food
-SUBSECTION=Fish
-DESCRIPTION=Fish (lobster)
-DUPELIST=044d4
-
-[ITEMDEF 044d4]
-//Fish (lobster)
-DUPEITEM=044d3
-
-
-[ITEMDEF 044e5]
-DEFNAME=i_fish_dragon
-NAME=dragon fish
-TYPE=t_fish
-FLIP=1
-VALUE=2
-WEIGHT=5.0
-CATEGORY=Provisions - Food
-SUBSECTION=Fish
-DESCRIPTION=Fish (dragon)
-DUPELIST=044e6
-
-[ITEMDEF 044e6]
-//Fish (dragon)
-DUPEITEM=044e5
-
-[ITEMDEF 03b10]
-DEFNAME=i_seahorse
-NAME=seahorse
-TYPE=t_fish
-VALUE=10
-WEIGHT=1.0
-CATEGORY=Provisions - Food
-SUBSECTION=Aquarium
-DESCRIPTION=Seahorse
-
 [ITEMDEF 0495e]
 DEFNAME=i_jug_hooch
 NAME=hooch jug
@@ -2805,7 +2604,7 @@ ON=@Create
 
 [ITEMDEF i_cocoa_liquor]
 ID=i_cookie_mix
-NAME=cocoa liquor 
+NAME=cocoa liquor
 TYPE=t_food
 VALUE=7
 WEIGHT=0.1
@@ -3225,22 +3024,11 @@ DESCRIPTION=Oktoberfest Ale
 ON=@Create
 	COLOR=COLORS_ORANGE
 
-[ITEMDEF i_fish_full_moon]
-ID=i_aquarium_full_moon_fish
-NAME=full moon fish
-TYPE=t_fish
-CATEGORY=Provisions - Food
-SUBSECTION=Fish
-DESCRIPTION=Full Moon Fish
-ON=@Create
-	COLOR=colors_brown
-
 [ITEMDEF i_frostingbowl]
 ID=i_bowl_dough
 NAME=bowl of frosting
 ON=@Create
    COLOR=colors_yellow
-
 
 
 [EOF]
