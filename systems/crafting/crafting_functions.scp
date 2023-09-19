@@ -110,76 +110,6 @@ FOR 1 <SERV.ITEMDEF.<ARGS>.RESOURCES.COUNT>
 ENDFOR
 RETURN 1
 
-// function for make the item
-[FUNCTION f_makeitem]
-//<args> = Item ID need to be craft
-//evaluate if success or fail
-IF (<SRC.<SERV.SKILL.<SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.KEY>.KEY>> >= <SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.val>)
-   local.r = <EVAL (<SRC.<SERV.SKILL.<SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.KEY>.KEY>> - <SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.val>) * 2>
-   local.r += <DEF.<SRC.ctag0.craft.SKILL>_chanceatmin>
-ENDIF
-
-// chance to success
-IF (<R1000> < <local.r>)
-	LOCAL.SUCCESS=1
-ELSE
-	LOCAL.SUCCESS=0
-ENDIF
-
-// skillgain (maybe we can increase the chance if success)
-SKILLGAIN <SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.KEY> <SERV.ITEMDEF.<ARGS>.SKILLMAKE.1.VAL>
-
-// consume resources
-FOR 1 <SERV.ITEMDEF.<ARGS>.RESOURCES.COUNT>
-	// set the resource_name we can use to check the resource
-	LOCAL.RESOURCE_NAME=<SERV.ITEMDEF.<ARGS>.RESOURCES.<dlocal._for>.KEY.NAME>
-	// if is different from base, then we need to check the resource
-	IF (<DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid> != <LOCAL.RESOURCE_NAME> )
-		LOCAL.RESOURCE_NAME=<DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid>
-	ENDIF
-
-	// consume
-	LOCAL.CONSUME_QTY = <SERV.ITEMDEF.<ARGS>.RESOURCES.<dlocal._for>.VALUE>
-
-	// if fail consume 1
-	IF (!<LOCAL.SUCCESS>)
-		LOCAL.CONSUME_QTY = <LOCAL.CONSUME_QTY> / 2
-		// if is less than 1, then consume 1
-		IF (<LOCAL.CONSUME_QTY> < 1)
-			LOCAL.CONSUME_QTY = 1
-	ENDIF
-
-	CONSUME <LOCAL.CONSUME_QTY> <LOCAL.RESOURCE_NAME>
-ENDFOR
-
-//TODO: play animation and sound
-
-// if success, we create the item
-IF (<LOCAL.SUCCESS>)
-	// create the item
-	SERV.NEWITEM=<ARGS>
-	NEW.BOUNCE
-
-	ctag.craft.MESSAGE = "Creating <SERV.ITEMDEF.<ARGS>.NAME>..."
-	ctag.craft.last.<ctag0.craft.SKILL> = <ARGS>
-	IF !STRCMPI("COOKING","<ctag0.craft.SKILL>")
-		timerf <EVAL <SERV.SKILL.13.delay>/10>,f_craftcooking <ARGS>,<actdiff> // Cooking Fix
-	ENDIF
-	LOCAL.NewLastTen=<ARGS>
-	FOR 0 9
-		LOCAL.TempItem=<getargv <LOCAL._for> <TAG0.craft.lastTen.<ctag0.craft.SKILL>>>
-		IF (<LOCAL.TempItem>) && !(STRMATCH(*<LOCAL.TempItem>*,<LOCAL.NewLastTen>))
-			LOCAL.NewLastTen=<LOCAL.NewLastTen>,<LOCAL.TempItem>
-		ENDIF
-	ENDFOR
-	TAG.craft.lastTen.<ctag0.craft.SKILL>=<LOCAL.NewLastTen>
-ENDIF
-//TODO: maybe use skillusequick
-//SKILLUSEQUICK <ctag0.craft.skill> 800
-ACT=<NEW>
-TRIGGER @SKILLMAKEITEM
-
-
 [FUNCTION f_cancraft]
 IF (STRMATCH("*t_masonry_tool*","<SERV.ITEMDEF.<ARGS>.SKILLMAKE>") && !(<TAG0.crafting.masonry>))
    RETURN 0
@@ -434,7 +364,7 @@ RETURN 0
 [FUNCTION f_check_recipe] //Verification if player have the recipe of the item
 //Parameter: ARGS is the ID of the item  ex i_potion_refresh
 //Return 1 mean fabrication can't be DONE
-IF <TAG0.recipe.<ARGS>>
+IF (<TAG0.recipe.<ARGS>>)
    RETURN 0
 ELSE
    RETURN 1

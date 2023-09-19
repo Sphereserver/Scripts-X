@@ -523,13 +523,23 @@ XMFHTMLGUMPCOLOR 10 215 155 20 1044055 0 0 <ddef.dcolor_white>
 ARGS = <ref1.RESMAKE>
 DORIGIN 170 197
 FOR 1 <ARGV>
-   IF <local.recipe> == 1
-      DCROPPEDTEXT 170 *20 170 20 0480 ??????????
-      DCROPPEDTEXT 430 *0 50 20 0480 ??
-   ELSE
-      DCROPPEDTEXT 170 *20 170 20 0480 <SERV.ITEMDEF.<ref1.RESOURCES.<local._for>.KEY>.NAME>
-      DCROPPEDTEXT 430 *0 50 20 0480 <ref1.RESOURCES.<local._for>.val>
-   ENDIF
+    IF <local.recipe> == 1
+        DCROPPEDTEXT 170 *20 170 20 0480 ??????????
+        DCROPPEDTEXT 430 *0 50 20 0480 ??
+    ELSE
+        // if the main material is the same as the resource
+        IF (<DEF.<ctag0.craft.SKILL>_resourceid> == <ref1.RESOURCES.<local._for>.KEY>)
+            // if the material is 0, display the name, but if is different, we need to display the material name based on the material id
+            IF (<dctag.craft.material.<ctag.craft.SKILL>> == 0)
+                DCROPPEDTEXT 170 *20 170 20 0480 <SERV.ITEMDEF.<ref1.RESOURCES.<local._for>.KEY>.NAME>
+            ELSE
+                DCROPPEDTEXT 170 *20 170 20 0480 <SERV.ITEMDEF.<DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid>.NAME>
+            ENDIF
+        ELSE
+            DCROPPEDTEXT 170 *20 170 20 0480 <SERV.ITEMDEF.<ref1.RESOURCES.<local._for>.KEY>.NAME>
+        ENDIF
+        DCROPPEDTEXT 430 *0 50 20 0480 <ref1.RESOURCES.<local._for>.val>
+    ENDIF
 ENDFOR
 ref1.REMOVE
 ARGS = <ctag0.craft.ITEM.options> // mark,exceptional,colored,recipe,expansion

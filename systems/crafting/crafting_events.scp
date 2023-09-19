@@ -15,68 +15,79 @@ VERSION=X1
 // --------------------
 // OSI Crafting System
 
+[SKILLMENU sm_alchemy]
+[SKILLMENU sm_blacksmith]
+[SKILLMENU sm_bolts]
+[SKILLMENU sm_bowcraft]
+[SKILLMENU sm_carpentry]
+[SKILLMENU sm_cartography]
+[SKILLMENU sm_inscription]
+[SKILLMENU sm_tailor_cloth]
+[SKILLMENU sm_tailor_leather]
+[SKILLMENU sm_tinker]
+
 [EVENTS e_player_crafting_event]
 ON=@SKILLMENU
-IF <DEF.scp.CraftingSystem> == 0
-RETURN 0
+IF (<DEF.scp.CraftingSystem> == 0)
+    RETURN 0
 ENDIF
 
 //clean MATOVERRIDE tag
 TAG0.MATOVERRIDE_<DEF.<ctag0.craft.SKILL>_resourceid>
 
-IF <ARGS>==sm_blacksmith
+IF (<ARGS>==sm_blacksmith)
 	IF <def0.scp.NewCrafting_Blacksmithing> == 1
-	f_craftskill Blacksmithing
-	RETURN 1
+        f_craftskill Blacksmithing
+        RETURN 1
 	ENDIF
-elif <ARGS>==sm_alchemy
+elif (<ARGS>==sm_alchemy)
 	IF <def0.scp.NewCrafting_Alchemy> == 1
 	f_craftskill ALCHEMY
 	RETURN 1
 	ENDIF
-elif <ARGS>==sm_bowcraft
+elif (<ARGS>==sm_bowcraft)
 	IF <def0.scp.NewCrafting_Bowcraft> == 1
-	f_craftskill BOWCRAFT
-	RETURN 1
+        f_craftskill BOWCRAFT
+        RETURN 1
 	ENDIF
-elif <ARGS>==sm_cartography
+elif (<ARGS>==sm_cartography)
 	IF <def0.scp.NewCrafting_Cartography> == 1
-	f_craftskill CARTOGRAPHY
-	RETURN 1
+        f_craftskill CARTOGRAPHY
+        RETURN 1
 	ENDIF
-elif <ARGS>==sm_carpentry
+elif (<ARGS>==sm_carpentry)
 	IF <def0.scp.NewCrafting_Carpentry> == 1
-	f_craftskill CARPENTRY
-	RETURN 1
+        f_craftskill CARPENTRY
+        RETURN 1
 	ENDIF
 elif (<ARGS>==sm_tailor_leather) || (<ARGS>==sm_tailor_cloth)
 	IF <def0.scp.NewCrafting_Tailoring> == 1
-	f_craftskill TAILORING
-	RETURN 1
+        f_craftskill TAILORING
+        RETURN 1
 	ENDIF
-elif <ARGS>==sm_tinker
+elif (<ARGS>==sm_tinker)
 	IF <def0.scp.NewCrafting_Tinkering> == 1
-	f_craftskill TINKERING
-	RETURN 1
+        f_craftskill TINKERING
+        RETURN 1
 	ENDIF
-elif <ARGS>==sm_inscription
+elif (<ARGS>==sm_inscription)
 	IF <def0.scp.NewCrafting_Inscription> == 1
-	f_craftskill INSCRIPTION
-	RETURN 1
+        f_craftskill INSCRIPTION
+        RETURN 1
 	ENDIF
-elif <ARGS>==sm_cooking
+elif (<ARGS>==sm_cooking)
 	IF <def0.scp.NewCrafting_Cooking> == 1
-	f_craftskill COOKING
-	RETURN 1
+        f_craftskill COOKING
+        RETURN 1
 	ENDIF
 ENDIF
 RETURN 0
 
 ON=@SKILLABORT
-IF <DEF.scp.CraftingSystem> == 0
+IF (<DEF.scp.CraftingSystem> == 0)
    RETURN 0
 ENDIF
-IF <def0.scp.NewCrafting_<SERV.SKILL.<ARGN>.KEY>> == 0
+IF (<def0.scp.NewCrafting_<SERV.SKILL.<ARGN>.KEY>> == 0)
    RETURN 0
 ENDIF
 
