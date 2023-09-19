@@ -81,6 +81,7 @@ systems/housing/
 //legacy (uncomment if you want to use the old crafting system)
 //legacy/crafting/
 //legacy/crafting/items/
+//legacy/templates/
 
 // maps
 maps/map0/map0_starts.scp
