@@ -3010,7 +3010,7 @@ CATEGORY=Provisions - Food
 SUBSECTION=Drinks - Booze
 DESCRIPTION=Stout Ale
 ON=@Create
-	COLOR=COLOR_O_BLACKROCK
+	COLOR=0455
 
 [ITEMDEF i_ale_oktoberfest]
 ID=i_bottle_ale
