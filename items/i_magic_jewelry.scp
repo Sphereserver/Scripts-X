@@ -11,7 +11,7 @@ VERSION=X1
 [ITEMDEF i_ring_str_lesser]
 ID=i_ring_gold
 NAME=lesser ring of strength
-RESOURCES=1 i_ingot_bloodrock,12 i_gem_star_sapphire,1 i_wire_gold,1 i_scroll_strength
+RESOURCES=1 i_ingot_valorite,12 i_gem_star_sapphire,1 i_wire_gold,1 i_scroll_strength
 SKILLMAKE=Tinkering 100.0,t_tinker_tools,Magery 100.0
 CATEGORY=Magic
 SUBSECTION=Jewelry
@@ -29,7 +29,7 @@ ON=@Create
 [ITEMDEF i_ring_int_lesser]
 ID=i_ring_gold
 NAME=lesser ring of intelligence
-RESOURCES=1 i_ingot_bloodrock,12 i_gem_emerald,1 i_wire_gold,1 i_scroll_cunning
+RESOURCES=1 i_ingot_valorite,12 i_gem_emerald,1 i_wire_gold,1 i_scroll_cunning
 SKILLMAKE=Tinkering 100.0,t_tinker_tools,Magery 100.0
 CATEGORY=Magic
 SUBSECTION=Jewelry
@@ -47,7 +47,7 @@ ON=@Create
 [ITEMDEF i_ring_dex_lesser]
 ID=i_ring_gold
 NAME=lesser ring of dexterity
-RESOURCES=1 i_ingot_bloodrock,12 i_gem_amber,1 i_wire_gold,1 i_scroll_agility
+RESOURCES=1 i_ingot_valorite,12 i_gem_amber,1 i_wire_gold,1 i_scroll_agility
 SKILLMAKE=Tinkering 100.0,t_tinker_tools,Magery 100.0
 CATEGORY=Magic
 SUBSECTION=Jewelry
@@ -65,7 +65,7 @@ ON=@Create
 [ITEMDEF i_ring_bless_lesser]
 ID=i_ring_gold
 NAME=lesser ring of bless
-RESOURCES=3 i_ingot_bloodrock,12 i_gem_tourmaline,12 i_gem_ruby,6 i_gem_amber,1 i_wire_gold,1 i_scroll_bless
+RESOURCES=3 i_ingot_valorite,12 i_gem_tourmaline,12 i_gem_ruby,6 i_gem_amber,1 i_wire_gold,1 i_scroll_bless
 SKILLMAKE=Tinkering 100.0,t_tinker_tools,Magery 100.0,INSCRIPTION 15.0
 CATEGORY=Magic
 SUBSECTION=Jewelry

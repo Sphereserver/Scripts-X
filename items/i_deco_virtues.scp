@@ -447,7 +447,7 @@ DESCRIPTION=Humility (04/04) (N)
 
 [ITEMDEF 014e3]
 DEFNAME=i_shrine_chaos_1
-RESOURCES=20 i_rock_marble,2 i_ingot_bloodrock,2 i_rock_plain
+RESOURCES=20 i_rock_marble,2 i_ingot_iron,2 i_rock_plain
 WEIGHT=32
 CATEGORY=Decoration - Virtues
 SUBSECTION=Chaos

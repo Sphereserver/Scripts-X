@@ -898,7 +898,7 @@ DUPEITEM=014F8
 
 [ITEMDEF 01514]
 DEFNAME=i_serpent_crest
-RESOURCES=20 i_ingot_silver,4 i_ingot_bloodrock
+RESOURCES=20 i_ingot_silver,4 i_ingot_valorite
 WEIGHT=35
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Serpent Crest
