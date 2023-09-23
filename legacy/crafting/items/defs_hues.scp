@@ -1,0 +1,17 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+
+// Ores (Legacy sphere custom)
+color_o_oldcopper  0590
+color_o_silver     0482 //option: 0231
+color_o_bloodrock  04c2
+color_o_blackrock  0455
+color_o_mytheril   052d //option: 0528
+color_o_rose       0665
+color_o_rusty      0750
+
+[EOF]
