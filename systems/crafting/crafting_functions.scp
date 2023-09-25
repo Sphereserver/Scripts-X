@@ -23,7 +23,7 @@ IF STRCMP("<ARGV[0]>","<ctag.craft.SKILL>")
 ENDIF
 ctag.craft.SKILL=<ARGV[0]>
 IF !(<ctag0.craft.mark>) && (<def0.<ctag0.craft.SKILL>_marking>)
-   ctag.craft.mark=2
+   ctag.craft.mark=1 //mark option from default
 ENDIF
 f_resenddialog d_craft_menu
 
@@ -256,8 +256,8 @@ LOCAL.ToRepair = <ARGO.MORE1H> - <ARGO.MORE1L>
 LOCAL.IngotNeeded = <LOCAL.ToRepair>/<LOCAL.Total>
 
 //override res id if exist
-IF (!<ISEMPTY <ARGO.TAG.CRAFT.RESOURCE>>)
-    LOCAL.ResID = <ARGO.TAG.CRAFT.RESOURCE>
+IF (!<ISEMPTY <ARGO.MATERIAL>>)
+    LOCAL.ResID = <ARGO.MATERIAL>
 ENDIF
 
 IF (!<ISNEARTYPE t_forge 3>) || (!<ISNEARTYPE t_anvil 3>)
@@ -343,9 +343,9 @@ ELIF (<ARGO.TYPE>==t_clothing) || (<ARGO.ATTR>&ATTR_MAGIC) || !((<ARGO.ISARMOR>)
    RETURN 1
 ELSE
     LOCAL.RESOURCE = <ARGO.RESOURCES.1.KEY>
-    //check if exist TAG.CRAFT.RESOURCE and change the resource if exist
-    IF (!<ISEMPTY <ARGO.TAG.CRAFT.RESOURCE>>)
-        LOCAL.RESOURCE = <ARGO.TAG.CRAFT.RESOURCE>
+    //check if exist MATERIAL and change the resource if exist
+    IF (!<ISEMPTY <ARGO.MATERIAL>>)
+        LOCAL.RESOURCE = <ARGO.MATERIAL>
     ENDIF
     LOCAL.AMOUNT=<MULDIV <STRARG <ARGO.RESOURCES.1>>,60,100>
     SERV.NEWITEM=<LOCAL.RESOURCE>,<dLOCAL.AMOUNT>

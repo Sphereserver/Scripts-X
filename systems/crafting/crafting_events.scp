@@ -164,8 +164,8 @@ IF (<ARGV[2]> && <dctag.craft.material.<ctag.craft.SKILL>> > 0)
     REF2.COLOR=<DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_color>
 ENDIF
 
-//set the TAG.CRAFT.RESOURCE to know what resource was used to craft the item
-REF2.TAG.CRAFT.RESOURCE=<DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid>
+//set the MATERIAL to know what resource was used to craft the item
+REF2.MATERIAL=<DEF.<ctag0.craft.SKILL>_material_<dctag.craft.material.<ctag.craft.SKILL>>_resourceid>
 
 //clean MATOVERRIDE tag
 TAG0.MATOVERRIDE_<DEF.<ctag0.craft.SKILL>_resourceid>
