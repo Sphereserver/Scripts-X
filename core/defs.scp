@@ -577,9 +577,9 @@ can_u_none			020
 can_o_nosleep 		010000000
 
 [DEFNAME swing_types]
-war_swing_equipping		0	// we are recoiling our weapon.
-war_swing_ready			1	// we can swing at any time.
-war_swing_swinging		2	// we are swinging our weapon.
+swing_equipping		0	// we are recoiling our weapon.
+swing_ready			1	// we can swing at any time.
+swing_swinging		2	// we are swinging our weapon.
 
 [DEFNAME theme_packs]
 theme_gothic		1
