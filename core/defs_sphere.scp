@@ -1,0 +1,240 @@
+//****************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereserver.net
+//****************************************************************************
+VERSION=X1
+
+[DEFNAME autoprivflags]
+priv_gm                             00002 // Acts as a GM (dif from having GM level)
+priv_gm_page                        00008 // Listen to GM pages or not.
+priv_hearall                        00010 // I can hear everything said by people of lower plevel
+priv_allmove                        00020 // I can move all things. (GM only)
+priv_detail                         00040 // Show combat detail messages
+priv_debug                          00080 // Show all objects as boxes and chars as humans.
+pviv_priv_noshow                    00200 // Show the GM title and Invul flags.
+priv_telnet_short                   00400 // Disable broadcasts to be accepted by client
+priv_jailed                         00800 // Must be /PARDONed from jail.
+priv_blocked                        02000 // The account is blocked.
+priv_allshow                        04000 // Show even the offline chars.
+
+[DEFNAME combatflags]
+combat_nodirchange                  000001 // Not rotate player when fighting (like was in 0.51a)
+combat_facecombat                   000002 // Allow faced combat only (recommended)
+combat_prehit                       000004 // Deal the damage in the same moment as the swing animation starts  (OSI like) (use an AnimDelay = 0 instead of = 10 tenths of second)
+combat_elemental_engine             000008 // Use DAM*/RES* to split damage/resist into Physical/Fire/Cold/Poison/Energy (AOS) instead use old AR (pre-AOS)
+combat_dclickself_unmounts          000020 // Unmount horse when dclicking self while in warmode
+combat_allowhitfromship             000040 // Allow attacking opponents from ships
+combat_nopetdesert                  000080 // Allow pet owner attack own pet without make it desert its owner
+combat_archerycanmove               000100 // Allow firing bow while moving
+combat_stayinrange                  000200 // Abort attack swing when out of range instead of waiting to come back in range
+combat_stackarmor                   001000 // If a region is covered by more than one armor part, all AR will count
+combat_nopoisonhit                  002000 // Disables old (55i like) poisoning style (0~100% chance based on Poisoning skill for monsters, or 50% chance for poisoned weapons)
+combat_slayer                       004000 // Enables Slayer damage PVM combat
+combat_swing_norange                008000 // The hit can be started at any distance and regardless of the Line of Sight, then the damage will be dealt when in range and LoS
+                                       // WARNING: This flag is ignored if PREHIT is on!
+combat_anim_hit_smooth              010000 // The hit animation has the same duration as the swing delay, instead of having a fixed fast duration and being idle until the delay has expired.
+                                       // WARNING: doesn't work with Gargoyles due to the new animation packet not accepting a custom animation duration!
+combat_firsthit_instant             020000 // The first hit in a fight doesn't wait for the recoil time (OSI like)
+combat_npc_bonusdamage              040000 // Npc get bonus damage from various sources such as CombatBonus, CombatBonusPercent, IncreaseDam, Anatomy, Tactics etc. See revision from 12-11-2019 for more details.
+combat_paralyze_canswing            080000 // Characters can continue attacking while paralyzed. (Old sphere behaviour)
+
+[DEFNAME parryflags]
+parryera_preseformula               001 // pre - SE parrying chance formula(not using the Bushido skill).Mutually exclusive with 02 flag.
+parryera_seformula                  002 // SE parrying chance formula (using also the Bushido skill). Mutually exclusive with 01 flag.
+parryera_shieldblock                010 // can parry with a shield
+parryera_onehandblock               020 // can parry with a one-handed weapon without a shield
+parryera_twohandblock               040 // can parry with two handed weapons
+parryera_arscaling                  080 // Shields AR scales with Parrying skill, not compatible with Combat Elemental Engine.
+
+[DEFNAME magicflags]
+magicf_nodirchange                  00001 // Not rotate player when casting/targeting
+magicf_precast                      00002 // Precasting (cast spell before target prompt)
+magicf_ignorear                     00004 // Magic damage ignore ar
+magicf_canharmself                  00008 // Magic can do damage on self
+magicf_stackstats                   00010 // Different stat spells don't cancel each other out
+magicf_freezeoncast                 00020 // No movement whilst casting
+magicf_summonwalkcheck              00040 // Summoned creatures should be able to walk on the target location (e.g. water creatures to be summoned on water)
+magicf_nofieldsoverwalls            00080 // Field spells cannot cross over blocking objects
+magicf_noanim                       00100 // Auto SPELLFLAG_NO_ANIM in every spell
+magicf_osiformulas                  00200 // Calculate spell damage and duration based on OSI formulas
+magicf_nocastfrozenhands            00400 // Can't cast spells if got paralyzed holding something on hands
+magicf_polymorphstats               00800 // Polymorph spells give out stats based on base chars (old behaviour backwards)
+magicf_overridefields               01000 // Prevent cast multiple field spells on the same tile, making the new field tile remove the previous field
+magicf_castparalyzed                02000 // Can cast even if paralyzed
+magicf_noreflectown                 04000 // Do not reflect own spell if the spell has already reflected from the target.
+magicf_delreflectown                08000 // Remove reflection instead of damage himself when NOREFLECTOWN active if the spell reflected from another target.
+
+[DEFNAME racialflags]
+racialf_human_strongback            0001 // Increase carrying capacity (+60 stones of weight)
+racialf_human_tough                 0002 // Regenerate hitpoints faster (+2 Hit Point Regeneration)
+racialf_human_workhorse             0004 // Find more resources while gathering hides, ore and lumber
+racialf_human_jackoftrades          0008 // Skill calculations always consider 20.0 minimum ability on untrained skills
+racialf_elf_nightsight              0010 // Permanent night sight effect
+racialf_elf_difftrack               0020 // Increase difficulty to be tracked while hidden/invisible
+racialf_elf_wisdom                  0040 // Permanent max mana bonus (+20 Mana Increase)
+racialf_garg_fly                    0080 // Enable gargoyle fly ability (FEATURE_AOS_UPDATE_B is required to enable gargoyle ability book)
+racialf_garg_berserk                0100 // Increase ferocity in situations of danger (15% Damage Increase + 3% Spell Damage Increase for each 20hp lost)
+racialf_garg_deadlyaim              0200 // Throwing calculations always consider 20.0 minimum ability when untrained
+racialf_garg_mysticinsight          0400 // Mysticism calculations always consider 30.0 minimum ability when untrained
+
+[DEFNAME revealflags]
+revealf_detectinghidden             0001 // Reveal Spell with Detecting Hidden Skill. (NOTE: Hidden characters will be always revealed by default)
+revealf_lootingself                 0002 // Reveal when looting self bodies (NOTE: Hidden characters will be always revealed by default).
+revealf_lootingothers               0004 // Reveal when looting bodies of other Players or NPCs (NOTE: Hidden characters will be always revealed by default).
+revealf_speak                       0008 // Reveal when speaking. (NOTE: Hidden characters will be always revealed by default)
+revealf_spellcast                   0010 // Reveal when starting to cast a Spell. (NOTE: Hidden characters will be always revealed by default)
+revealf_osilikepersonalspace        0020 // Do not reveal hidden and invisible character when a character enters on personal space.
+revealf_snooping                    0040 // Do not reveal hidden players while snooping.
+revealf_stealing                    0080 // Do not reveal hidden players while stealing.
+revealf_stealing_success            0100 // Reveal hidden players when stealing successfully finished.
+revealf_stealing_fail               0200 // Reveal hidden players when stealing failed.
+
+[DEFNAME emoteflags]
+emotef_attacker                     01 // Only show %s is attacking %s! emote to attacked character.
+emotef_poison                       02 // Only show poison emotes to the affected character.
+emotef_destroy                      04 // Only show item destroyed emote to the owner of the item.
+
+[DEFNAME npcaiflags]
+npc_ai_path                         0001 // Enable advanced NPC pathfinding engine (this can significantly increase server CPU usage)
+npc_ai_food                         0002 // Enable basic NPC food search (objects + grass) when hungry
+npc_ai_extra                        0004 // Make NPCs with humanoid brain equip/unequip weapons on combat or light sources at night (triggers @NPCAction)
+npc_ai_alwaysint                    0008 // Make NPC_AI_PATH consider all NPCs as smart as possible to find better paths (if INT < 30, they would be too dumb to find a good path)
+npc_ai_intfood                      0010 // Enable advanced NPC food search (more intelligent and trusworthy) when hungry
+npc_ai_combat                       0040 // Make NPCs cast good spells in his friends while in combat
+npc_ai_looting                      0100 // Make NPCs loot nearby items and corpses
+npc_ai_moveobstacles                0200 // Make NPCs with CAN=mt_usehands able to move items blocking its way
+npc_ai_persistentpath               0400 // Make NPCs try to follow its target even when it is unreachable instead give up
+npc_ai_threat                       0800 // Make NPCs attack targets that have higher threat level in combat
+
+[DEFNAME statsflags]
+stat_flag_normal                    00 // MAX* status allowed (default)
+stat_flag_denymax                   01 // MAX* denied
+stat_flag_denymaxp                  02 // MAX* denied for players
+stat_flag_denymaxn                  04 // MAX* denied for npcs
+
+[DEFNAME advancedlosflags]
+advancedlos_disabled                00 // Disabled, use the old method
+advancedlos_player                  01 // Enabled only for players
+advancedlos_npc                     02 // Enabled only for NPCs
+
+[DEFNAME petsnotorietyflags]
+pet_noto_good                       001 // Blue
+pet_noto_guildsame                  002 // Green (Ally)
+pet_noto_neutral                    004 // Grey (Can be Attacked)
+pet_noto_criminal                   008 // Grey (Criminal)
+pet_noto_guildwar                   010 // Orange (Enemy)
+pet_noto_evil                       020 // Red
+pet_noto_invul                      040 // Yellow
+
+[DEFNAME experimentalflags]
+ef_nodiagonalchecklos               000001 // Disable LOS checks on diagonal directions
+ef_dynamicbackgroundsave            000002 // This will enable, if necessary, if a backgroundsave tick is triggered to save more than only one Sector.
+ef_itemstacking                     000004 // Enable item stacking feature when drop items on ground
+ef_itemstackdrop                    000008 // The item stack will drop when an item got removed from the stack
+ef_fastwalkprevention               000010 // Use new client fastwalk (speedhack) prevention instead old WalkBuffer/WalkRegen checks. (Not work at the moment don't use)
+ef_intrinsic_locals                 000020 // Disables the needing of 'local.', 'tag.', etc. Be aware of not creating variables with the same name of already-existing functions
+ef_item_strict_comparison           000040 // Don't consider log/board and leather/hide as the same resource type
+ef_followerlist                     000080 // Save the followers to the list and enable CURFOLLOWER.n.UID, CURFOLLOWER.ADD/DEL <UID> and CURFOLLOWER.CLEAR commands.
+ef_allowtelnetpacketfilter          000200 // Enable packet filtering for telnet connections as well
+ef_script_profiler                  000400 // Record all functions/triggers execution time statistics (it can be viewed pressing P on console)
+ef_damagetools                      002000 // Damage tools (and fire @damage on them) while mining or lumberjacking
+ef_usepingserver                    008000 // Enable the experimental Ping Server (for showing pings on the server list, uses UDP port 12000)
+ef_fixcanseeinclosedconts           020000 // Change CANSEE to return 0 for items inside containers that a client hasn't opened
+ef_walkcheckheightmounted           040000 // Unlike the client does, assume an height increased by 4 in walkchecks if the char is mounted. Enabling this may prevent mounted characters to walk under places they could before.
+
+[DEFNAME optionflags]
+of_nodclicktarget                   00000001 // Weapons won't open a target in the cursor after DClicking them for equip.
+of_nosmoothsailing                  00000002 // Deactivate Smooth Sailing for clients >= 7.0.8.13
+of_scaledamagebydurability          00000004 // Weapons/armors will lose DAM/AR effect based on it's current durability
+of_command_sysmsgs                  00000008 // Shows status of hearall, allshow, allmove... commands after toggling them
+of_petslot                          00000010 // Enable AOS pet follower slots on chars. If enabled, all players must have MAXFOLLOWER property set (default=5)
+of_osimultisight                    00000020 // Only send items inside multis when the player enter on the multi area
+of_items_autoname                   00000040 // Auto rename potions/scrolls to match its spell name
+of_filecommands                     00000080 // Enable the usage of FILE commands
+of_noitemnaming                     00000100 // Disable the DEFMSG."grandmaster_mark" in crafted items
+of_nohousemutespeech                00000200 // Players outside multis won't hear what is told inside
+of_nocontextmenulos                 00000400 // Disable LOS check to use context menus on chars
+of_mapboundarysailing               00000800 // Boats will move to the other side of the map when reach map boundary
+of_flood_protection                 00001000 // Prevent the server send messages to client if its the same message as the last already sent
+of_buffs                            00002000 // Enable the buff/debuff bar on ML clients >= 5.0.2b
+of_noprefix                         00004000 // Don't show "a" and "an" prefix on item names
+of_dyetype                          00008000 // Allow use i_dye on all items with t_dye_vat typedef instead only on i_dye_tub itemdef
+of_drinkisfood                      00010000 // Typedef t_drink will increase food level like t_food
+of_nodclickturn                     00020000 // Don't turn the player when DClick something
+of_nopaperdolltradetitle            00040000 // Don't show the trade title on the paperdoll
+of_notargturn                       00080000 // Don't turn the player when targetting something
+of_statallowvalovermax              00100000 // Allow stats value above their maximum value (i.e. allow hits value > maxhits).
+of_guardoutsideguardedarea          00200000 // Allow guards to walk in unguarded areas, instead of being teleported back to their home point.
+of_ownodropcarrieditem              00400000 // When overweighted, don't drop items on ground when moving them (or using BOUNCE) and checking if you can carry them.
+of_allowcontainerinsidecontainer    00800000 // Allow containers inside other containers even if they are heavier than the container being inserted into.
+of_ventorstocklimit                 01000000 // Limits how much of an item a vendor can buy using the value set in the TEMPLATE. Format: BUY=ID,AMOUNT
+of_enableguildalignnotoriety        02000000 // If enabled, guilds with the same alignment will see each other as enemy or ally.
+
+[DEFNAME areaflags]
+areaf_roominheritsevents            01 // ROOMDEFs inherit EVENTs from the parent AREADEF (if any)
+areaf_roominheritsflags             02 // ROOMDEFs inherit REGION FLAGS from the parent AREADEF (if any)
+areaf_roominheritstags              04 // ROOMDEFs inherit TAGs from the parent AREADEF (if any)
+
+[DEFNAME featureflags]
+feature_t2a_update                  001 // Monster and Lost lands
+feature_t2a_chat                    002 // In game chat
+
+feature_lbr_update                  001 // Lbr Monsters
+feature_lbr_sound                   002 // MP3 instead of MIDI
+
+feature_aos_update_a                001 // AOS Monsters, Map
+feature_aos_update_b                002 // Tooltip, Fightbook, Necro/paladin on creation, Single/Six char selection screen, Skills, Newer spellbook support
+feature_aos_popup                   004 // PopUp Menus
+feature_aos_damage                  008 // Show damage values above char head when deal/receive any damage
+
+feature_se_update                   001 // Basic SE features
+feature_se_ninjasam                 002 // Ninja and Samurai
+
+feature_ml_update                   001 // Basic ML features
+
+feature_kr_update                   001 // Basic KR features
+
+feature_sa_update                   001 // Unlocks gargoyle character creation and housing items
+feature_sa_movement                 002 // Activates new movement packets (not good)
+
+feature_tol_update                  001 // Basic TOL features
+feature_tol_virtualgold             002 // Use virtual gold/platinum currency instead default 'physical' gold
+
+feature_extra_crystal               001 // Unlocks ML crystal/shadow items on house design
+feature_extra_gothic                002 // Unlocks SA gothic items on house design
+feature_extra_rustic                004 // Unlocks SA rustic items on house design
+feature_extra_jungle                008 // Unlocks TOL jungle items on house design
+feature_extra_shadowguard           010 // Unlocks TOL shadowguard items on house design
+feature_extra_roleplayfaces         020 // Unlocks extra roleplay face styles on character creation (enhanced clients only)
+
+[DEFNAME debugflags]
+debugf_npc_emote                    00001
+debugf_advance_stats                00002
+debugf_exp                          00200 // experience gain/loss
+debugf_level                        00400 // experience level changes
+debugf_scripts                      00800 // debug flag for scripts
+debugf_los                          01000 // debug flag for AdvancedLOS
+debugf_walk                         02000 // debug flag for new walking check stuff
+debugf_packets                      04000 // log packets to file
+debugf_network                      08000 // debug flags for networking
+
+[DEFNAME logmasks]
+logm_accounts                       000100 // account login/operations
+logm_init                           000200 // start up messages
+logm_save                           000400 // world save
+logm_clients_log                    000800 // all clients as they log in and out
+logm_gm_page                        001000 // player gm pages
+logm_player_speak                   002000 // all that the players say
+logm_gm_cmds                        004000 // all gm commands
+logm_cheat                          008000 // possible cheat attempts
+logm_kills                          010000 // player combat results
+logm_http                           020000 // http protocol operations
+
+[DEFNAME experiencemodes]
+exp_mode_raise_combat               001 // Gain experience in combat.
+exp_mode_raise_craft                002 // Gain experience in crafts.
+exp_mode_allow_down                 004 // Allow experience to go down.
+exp_mode_down_nolevel               008 // Limit experience decrease by a range witheen a current level.
+exp_mode_autoset_exp                010 // Auto-init EXP/LEVEL for NPCs if not set in @Create.
+
+[EOF]
