@@ -40,6 +40,7 @@ core/defs_hues.scp
 core/defs_html.scp
 core/defs_mounts.scp
 core/defs_sounds.scp
+core/defs_sphere.scp
 core/defs_types_hardcoded.scp
 core/messages.scp
 core/serv_triggers.scp
