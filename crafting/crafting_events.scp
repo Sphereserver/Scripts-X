@@ -19,47 +19,47 @@ on=@skillmenu
 if <def.scp.CraftingSystem> == 0
 return 0
 endif
-if <args>==sm_blacksmith
+if <local.skillmenu>==sm_blacksmith
 	if <def0.scp.NewCrafting_Blacksmithing> == 1
 	craftskill Blacksmithing
 	return 1
 	endif
-elif <args>==sm_alchemy
+elif <local.skillmenu>==sm_alchemy
 	if <def0.scp.NewCrafting_Alchemy> == 1
 	craftskill Alchemy
 	return 1
 	endif
-elif <args>==sm_bowcraft
+elif <local.skillmenu>==sm_bowcraft
 	if <def0.scp.NewCrafting_Bowcraft> == 1
 	craftskill Bowcraft
 	return 1
 	endif
-elif <args>==sm_cartography
+elif <local.skillmenu>==sm_cartography
 	if <def0.scp.NewCrafting_Cartography> == 1
 	craftskill Cartography
 	return 1
 	endif
-elif <args>==sm_carpentry
+elif <local.skillmenu>==sm_carpentry
 	if <def0.scp.NewCrafting_Carpentry> == 1
 	craftskill Carpentry
 	return 1
 	endif
-elif (<args>==sm_tailor_leather) || (<args>==sm_tailor_cloth)
+elif (<local.skillmenu>==sm_tailor_leather) || (<local.skillmenu>==sm_tailor_cloth)
 	if <def0.scp.NewCrafting_Tailoring> == 1
 	craftskill Tailoring
 	return 1
 	endif
-elif <args>==sm_tinker
+elif <local.skillmenu>==sm_tinker
 	if <def0.scp.NewCrafting_Tinkering> == 1
 	craftskill Tinkering
 	return 1
 	endif
-elif <args>==sm_inscription
+elif <local.skillmenu>==sm_inscription
 	if <def0.scp.NewCrafting_Inscription> == 1
 	craftskill Inscription
 	return 1
 	endif
-elif <args>==sm_cooking
+elif <local.skillmenu>==sm_cooking
 	if <def0.scp.NewCrafting_Cooking> == 1
 	craftskill Cooking
 	return 1
