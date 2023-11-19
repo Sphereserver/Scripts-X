@@ -293,6 +293,7 @@ RESEND
 INFO
 ADMIN
 PAGE
+GM
 GO
 GOUID
 GOCHAR
@@ -301,22 +302,25 @@ GOCLI
 XGO
 JAIL
 FORGIVE
+
 // Scripted functions
 t	// teleport
 sm	// staff message
-//gmtravel
+
 
 [PLEVEL 3]
 CHARLIST
 
 [PLEVEL 4]
+ADD
+ADDNPC
 BADSPAWN
-SAVE
-LINK
-TILE
-NUKE
 GOTYPE
 GONAME
+NUKE
+LINK
+SAVE
+TILE
 
 [PLEVEL 6]
 ACCOUNT
