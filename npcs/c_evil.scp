@@ -2137,9 +2137,9 @@ ON=@Create
    COLOR=colors_hair
    ITEMNEWBIE=random_facial_hair
    COLOR=match_hair
+   ITEM=loot_dreadlord
 ON=@CreateLoot
    ITEM={ i_servered_human_ears 1 0 9 }
-   ITEM=loot_dreadlord
    ITEM=loot_ai_healer
 
 [CHARDEF c_dreadlord_captain]
@@ -2179,10 +2179,10 @@ ON=@Create
    COLOR=colors_hair
    ITEMNEWBIE=random_facial_hair
    COLOR=match_hair
+   ITEM=loot_dreadlord
 ON=@CreateLoot
    ITEM={ i_servered_human_ears 1 0 9 }
    ITEM=loot_ai_hard
-   ITEM=loot_dreadlord
    ITEM=random_magic_custom_lesser,R50
 
 [CHARDEF c_dreadranger]
@@ -2220,10 +2220,10 @@ ON=@Create
    COLOR=colors_hair
    ITEMNEWBIE=random_facial_hair
    COLOR=match_hair
+   ITEM=loot_dreadlord
 ON=@CreateLoot
    ITEM={ i_servered_human_ears 1 0 9 }
    ITEM=loot_ai_hard
-   ITEM=loot_dreadlord
    ITEM=random_magic_custom_lesser,1,R80
 
 [CHARDEF c_dreadlord_general]
@@ -2262,10 +2262,10 @@ ON=@Create
    COLOR=colors_hair
    ITEMNEWBIE=random_facial_hair
    COLOR=match_hair
+   ITEM=loot_dreadlord
 ON=@CreateLoot
    ITEM={ i_servered_human_ears 1 0 9 }
    ITEM=loot_ai_hard
-   ITEM=loot_dreadlord
    ITEM=random_magic_custom_greater,1,R40
 
 [CHARDEF c_dreadhorse]
@@ -2304,6 +2304,7 @@ ON=@Create
    COLOR=colors_hair
    ITEMNEWBIE=random_facial_hair
    COLOR=match_hair
+   ITEM=loot_dreadlord
 ON=@EnvironChange
    IF !<SRC.RESTEST 1 i_mt_horse_gray>
       NEWITEM=i_mt_horse_gray
@@ -2323,7 +2324,6 @@ ON=@Death
    RETURN 0
 ON=@CreateLoot
    ITEM={ i_servered_human_ears 1 0 9 }
-   ITEM=loot_dreadlord
    ITEM=loot_ai_hard
    ITEMNEWBIE=i_mt_horse_gray
 
