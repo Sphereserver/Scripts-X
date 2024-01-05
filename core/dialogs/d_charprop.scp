@@ -327,9 +327,8 @@ FOR 0 38
   checkbox <eval 10+((<LOCAL._FOR>/20)*240)> <eval 35+((<LOCAL._FOR>%20)*20)> 210 211 <hval (<FLAGS> & <LOCAL.Flag>)> <eval 400+<LOCAL._FOR>>
   dtext <eval 35+((<LOCAL._FOR>/20)*240)> <eval 35+((<LOCAL._FOR>%20)*20)> 1000 <DEF0.CharFlag.<eval <LOCAL._FOR>+1>>
  ENDIF
- // Workaround: LOCAL.Flag=<hval <LOCAL.Flag> << 1> doesn't evaluate << correctly
- LOCAL.Flag="<LOCAL.Flag> << 1"
- LOCAL.Flag=<hval <LOCAL.Flag>>
+LOCAL.Flag=<hval <LOCAL.Flag> << 1>
+LOCAL.Flag=<hval <LOCAL.Flag>>
 ENDFOR
 
 button 250 415 4005 4006 1 0 400
@@ -489,9 +488,8 @@ FOR 0 38
    FLAGS &= ~<LOCAL.Flag>
   ENDIF
  ENDIF
- // Workaround: LOCAL.Flag=<hval <LOCAL.Flag> << 1> doesn't evaluate << correctly
- LOCAL.Flag="<LOCAL.Flag> << 1"
- LOCAL.Flag=<hval <LOCAL.Flag>>
+LOCAL.Flag=<hval <LOCAL.Flag> << 1>
+LOCAL.Flag=<hval <LOCAL.Flag>>
 ENDFOR
 DIALOG d_charprop1 4
 SRC.SYSMESSAGE Flags modified

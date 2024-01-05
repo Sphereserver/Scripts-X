@@ -45,7 +45,7 @@ endif
 if (<CanSee <src>>)													// If I can see my target.
 																	// And my target is being ridden (should not happen) or ! CanSeeLos (Ignoring windows if i'm shooting).
 	if ( (<src.brain> && <src.flags>&statf_ridden) || !<CanSeeLosFlag <src>,<qval ( <Action>==archery || <action>==throwing )? LOS_NB_WINDOWS : 0>>)
-		if ( !<serv.CombatFlags>&200 || <Swing>!=SWING_SWINGING)	// I'm going to stop (unless i'm preparing to hit and Combat_StayInRange is not set).
+		if ( !<serv.CombatFlags>&0200 || <Swing>!=SWING_SWINGING)	// I'm going to stop (unless i'm preparing to hit and Combat_StayInRange is not set).
 			argn1 SWING_READY
 			return 1
 		endif
@@ -53,7 +53,7 @@ if (<CanSee <src>>)													// If I can see my target.
 		return 1
 	endif
 else
-	if ( !<serv.CombatFlags>&200 || <Swing>!=SWING_SWINGING)		// same here but without LOS check.
+	if ( !<serv.CombatFlags>&0200 || <Swing>!=SWING_SWINGING)		// same here but without LOS check.
 		argn1 SWING_READY
 		return 1
 	endif
@@ -94,7 +94,7 @@ if (<weapon>)
 		
 		if ( <local.dist> > <local.maxdist )							// If my target is far than my weapon's max distance...
 					
-			if ( !<serv.CombatFlags>&200 || <Swing>!=SWING_SWINGING)	// and I'm not preparing to hit or not Combat_StayInRange
+			if ( !<serv.CombatFlags>&0200 || <Swing>!=SWING_SWINGING)	// and I'm not preparing to hit or not Combat_StayInRange
 				argn1 SWING_READY
 				return 1
 			endif

@@ -2330,6 +2330,17 @@ CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Dragon (swamp)
 
+[ITEMDEF i_pet_dragon_paroxysmus]
+DEFNAME=i_pet_dragon_paroxysmus
+ID=i_pet_dragon_swamp
+NAME=Paroxysmus' Swamp Dragon
+TYPE=t_figurine
+TDATA3=c_pet_dragon_paroxysmus
+VALUE={1050 1100}
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Paroxysmus' Swamp Dragon
+
 [ITEMDEF 0261a]
 DEFNAME=i_pet_swarm
 NAME=swarm
@@ -2965,6 +2976,20 @@ VALUE={25 50}
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Squirrel
+
+[ITEMDEF i_crystal_squirrel]
+DEFNAME=i_crystal_squirrel
+ID=i_pet_squirrel
+NAME=Albinos Squirrel
+TYPE=t_figurine
+TDATA3=c_squirrel_albino
+VALUE={25 50}
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Albinos Squirrel
+
+ON=@Create
+   COLOR=047e
 
 [ITEMDEF 02d98]
 DEFNAME=i_pet_ferret

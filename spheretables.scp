@@ -34,6 +34,7 @@ core/defs_hues.scp
 core/defs_html.scp
 core/defs_mounts.scp
 core/defs_sounds.scp
+core/defs_sphere.scp
 core/defs_types_hardcoded.scp
 core/messages.scp
 core/serv_triggers.scp
@@ -299,6 +300,7 @@ RESEND
 INFO
 ADMIN
 PAGE
+GM
 GO
 GOUID
 GOCHAR
@@ -307,22 +309,25 @@ GOCLI
 XGO
 JAIL
 FORGIVE
+
 // Scripted functions
 t	// teleport
 sm	// staff message
-//gmtravel
+
 
 [PLEVEL 3]
 CHARLIST
 
 [PLEVEL 4]
+ADD
+ADDNPC
 BADSPAWN
-SAVE
-LINK
-TILE
-NUKE
 GOTYPE
 GONAME
+NUKE
+LINK
+SAVE
+TILE
 
 [PLEVEL 6]
 ACCOUNT

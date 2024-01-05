@@ -1655,6 +1655,8 @@ ON=@CreateLoot
 // Swamp Dragon, it has one extra feature. It comes with a permanent set
 // of Dragon Barding applied that grants a 12% damage reduction to it's
 // rider in PvM combat."
+// The one who uses this item (i_pet_dragon_paroxysmus) will shatter it, releasing the creature 
+// which will instantly bond to him/her as a pet.
 ID=c_armored_swamp_dragon
 NAME=Swamp Dragon of Paroxysmus
 ICON=i_pet_dragon_paroxysmus
@@ -2233,6 +2235,7 @@ ON=@CreateLoot
    ITEM=random_artifact,1,R30
 
 [CHARDEF c_squirrel_albino]
+//FIXME: Can not be shrunk
 ID=c_squirrel
 NAME=albino squirrel
 ICON=i_crystal_squirrel
@@ -2258,6 +2261,5 @@ ON=@Create
    RESENERGY=0
    RESFIRE=0
    RESPOISON=0
-//FIXME: Can not be shrunk
 
 [EOF]
