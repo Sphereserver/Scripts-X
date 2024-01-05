@@ -301,9 +301,8 @@ for x 0 31
       endif
    endif
 
-   // Workaround for sphere bug - local.flag=<hval <local.flag> << 1> attempts to evaluate << !
-   local.flag="<local.flag> << 1"
-   local.flag=<hval <local.flag>>
+   LOCAL.Flag=<hval <LOCAL.Flag> << 1>
+   LOCAL.Flag=<hval <LOCAL.Flag>>
 end
 button 360 360 4005 4006 1 0 31
 dtext 400 360 0c1 Set flags
