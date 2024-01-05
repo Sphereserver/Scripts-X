@@ -549,8 +549,8 @@ For x 0 31
          Local.oy = 40
       Endif
    Endif
-   Local.Flag="<Local.Flag> << 1"
-   Local.Flag=<hval <Local.Flag>>
+LOCAL.Flag=<hval <LOCAL.Flag> << 1>
+LOCAL.Flag=<hval <LOCAL.Flag>>
 End
 
 Button 5 330 4023 4025 1 0 51
@@ -772,8 +772,8 @@ On=52
             Flags &= ~<Local.Flag>
          Endif
       Endif
-      Local.Flag="<Local.Flag> << 1"
-      Local.Flag=<Hval <Local.Flag>>
+   LOCAL.Flag=<hval <LOCAL.Flag> << 1>
+   LOCAL.Flag=<hval <LOCAL.Flag>>
    Endfor
    If ((<Flags>&<Def0.Admin_UpdatexFlags>) != <Local.UpdatexFlags>)
       Updatex
