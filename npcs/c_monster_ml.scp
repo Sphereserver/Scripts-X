@@ -1378,7 +1378,7 @@ ON=@CreateLoot
 NAME=Squirrel
 DEFNAME=c_squirrel
 SOUND=0c9
-ICON=i_pet_rabbit
+ICON=i_pet_squirrel
 CAN=mt_walk|mt_run
 
 DAM=1,2
