@@ -402,7 +402,8 @@ can_i_recycle			0400000		// Can be recycled
 can_i_reforge			0800000		// Can be Runic Reforged.
 can_i_forcedc			01000000	// Items with this flag will not perform any check before @DClick trigger.
 can_i_damageable		02000000	// Display item health bar on HS clients >= 7.0.30.0 (MORE1L = cur hitpoints / MORE1H = max hitpoints)
-can_i_blocklos_height	04000000	//  blocks LOS without blocking walkchecks, but only if the item is too high for the viewer. Works only if ADVANCEDLOS is enabled.
+can_i_blocklos_height	04000000	// Blocks LOS without blocking walkchecks, but only if the item is too high for the viewer. Works only if ADVANCEDLOS is enabled.
+can_i_equiponcast       08000000    // Allow items to stay equipped while EquippedCast disabled in sphere.ini.
 
 [DEFNAME tile_flags]
 tilef_background        000000001   // No idea. None whatsoever. Maybe it's the blackness.
@@ -576,9 +577,9 @@ can_u_none			020
 can_o_nosleep 		010000000
 
 [DEFNAME swing_types]
-war_swing_equipping		0	// we are recoiling our weapon.
-war_swing_ready			1	// we can swing at any time.
-war_swing_swinging		2	// we are swinging our weapon.
+swing_equipping		0	// we are recoiling our weapon.
+swing_ready			1	// we can swing at any time.
+swing_swinging		2	// we are swinging our weapon.
 
 [DEFNAME theme_packs]
 theme_gothic		1
