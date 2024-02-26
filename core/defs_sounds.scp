@@ -410,7 +410,7 @@ snd_monster_intgrizzle_spe    1411
 snd_monster_satyr1            1413
 snd_monster_shimmering1       1425
 snd_monster_minotaur1         1430
-snd_monster_troglodyte1       1438
+snd_monster_troglodyte1       1437
 
 snd_monster_dryad_spe         1476 //allure
 snd_monster_dryad_spe2        1477 //allure fail
