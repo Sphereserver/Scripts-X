@@ -46,7 +46,7 @@ ON=@Abort
 [FUNCTION GetCharArmorRating]
 ARGS=4,6,7,10,13,19,24
 WHILE (<dARGS>)
- IF !(<FINDLAYER.<ARGV0>.MageArmor>)
+ IF <FINDLAYER.<ARGV0>.isvalid> && !(<FINDLAYER.<ARGV0>.MageArmor>)
   LOCAL.AR += <DEF0.ArmorRating.<FINDLAYER.<ARGV0>.GetArmorMaterial>.Layer<ARGV0>>
  ENDIF
  ARGS=<STREAT <ARGS>>

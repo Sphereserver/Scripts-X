@@ -263,12 +263,12 @@ bufficon_mindrot				debufficon_mindrot
 bufficon_painspike				debufficon_painspike
 bufficon_strangle				debufficon_strangle
 bufficon_thunderstorm			debufficon_thunderstorm
-bufficon_essenceofwind			debufficon_essenceofwind	
+bufficon_essenceofwind			debufficon_essenceofwind
 bufficon_mortalstrike			debufficon_mortalstrike
 bufficon_paralyze				debufficon_paralyze
-bufficon_poison					debufficon_poison	
+bufficon_poison					debufficon_poison
 bufficon_bleed					debufficon_bleed
-bufficon_clumsy					debufficon_clumsy	
+bufficon_clumsy					debufficon_clumsy
 bufficon_feeblemind				debufficon_feeblemind
 bufficon_weaken					debufficon_weaken
 bufficon_curse					debufficon_curse
