@@ -74,7 +74,7 @@ IF (<HasComponentProps <DEF.CompProps_ItemWeapon>>)
 	ENDIF
 	IF (<BoneBreaker>)
 		ADDCLILOC 1157318 // Bone Breaker
-	ENDI
+	ENDIF
 	IF (<MageWeapon>)
 		ADDCLILOC 1060438,<SRC.MAGERY> // FIXME: <SRC.MAGERY> is incorrect
 	ENDIF
@@ -160,7 +160,7 @@ IF (<SERV.CombatFlags> & 08) // COMBAT_ELEMENTAL_ENGINE
 	ENDIF
 	IF (<RESPOISON>)
 		ADDCLILOC 1060449,<RESPOISON>
-	ENDIF	
+	ENDIF
 ELSE
 	// Obsolete AR was replaced by physical/fire/cold/poison/energy resist since AOS
     // and doesn't even have proper tooltips. It's just there for backward compatibility
@@ -210,14 +210,14 @@ ENDIF
 	IF (<LUCK>)
 		ADDCLILOC 1060436,<LUCK>
 	ENDIF
-	
+
 	IF (<SpellChanneling>)
 		ADDCLILOC 1060482,<SpellChanneling>
 	ENDIF
 	IF (<NightSight>)
 		ADDCLILOC 1060441
 	ENDIF
-	
+
 	IF (<BonusStr>)//strength bonus
 		ADDCLILOC 1060485,<BonusStr>
 	ENDIF
@@ -295,7 +295,7 @@ ENDIF
 	IF (<LowerReagentCost>)
 		ADDCLILOC 1060434,<LowerReagentCost>
 	ENDIF
-	
+
 	IF (<IncreaseDam>)
 		ADDCLILOC 1060401,<IncreaseDam> // damage increase ~1_val~%
 	ENDIF
@@ -322,7 +322,7 @@ ENDIF
 			ADDCLILOC 1060407,<DamEnergy>
 		ENDIF
 	ENDIF
-	
+
 	// EaterDam? Is a custom sphere (and unimplemented) stuff?
 	IF (<SERV.CombatFlags> & 08) // COMBAT_ELEMENTAL_ENGINE
 		IF (<EaterCold>)
@@ -341,7 +341,7 @@ ENDIF
 			ADDCLILOC 1113595,<EaterPoison> // Poison Eater ~1_Val~%
 		ENDIF
 	ENDIF
-	
+
 	IF (<SoulCharge>)
 		ADDCLILOC 1113630,<SoulCharge> // Soul Charge ~1_val~%
 	ENDIF
@@ -443,7 +443,7 @@ ENDIF
 	IF (<HitLowerDef>)
 		ADDCLILOC 1060425,<HitLowerDef> // hit lower defense ~1_val~%
 	ENDIF
-		
+
 	IF <SLAYER>
 		IF (<SLAYER>&<def.faction_repond>)
 			ADDCLILOC 1060472
@@ -577,7 +577,7 @@ ENDIF
 IF (<SelfRepair>)
 	ADDCLILOC 1060450,<SelfRepair>
 ENDIF
-	
+
 // When you RETURN 1 in this trigger, the built-in tooltip is prevented.
 // If you remove the RETURN 1, these customizations and the built-in
 // tooltip are merged and the order ends up... confusing.

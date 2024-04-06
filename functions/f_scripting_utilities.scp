@@ -71,7 +71,7 @@ IF (<DIALOGLIST.COUNT>)
 		DIALOGCLOSE <LOCAL.DIALOGNAME> <ARGN2>
 		ENDIF
 	ENDFOR
-ENDI
+ENDIF
 
 // New ADDITEM function with works with 65000+ items pile
 // Arguments = id,amount

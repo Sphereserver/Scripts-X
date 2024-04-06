@@ -63,12 +63,13 @@ update
 for 0 5
   p=1,1,1,<dlocal._for>
   forchars 10000
-    if (<npc>) 
+    if (<npc>)
       if !(<owner>) && !(<flags>&statf_invul)
         remove
       else
         serv.log Can't remove <name>. (<qval (<owner.isvalid>)?<owner.name>:Nobody> owns it and it's <qval <flags>&statf_invul?Invulneralbe: Not Invulnerable>)
       endif
+    endif
   endfor
 endfor
 p=<local.p>
@@ -82,12 +83,13 @@ update
 for 0 5
 p=1,1,1,<dlocal._for>
   forchars 10000
-    if (<npc>) 
+    if (<npc>)
       if !(<owner>) && !(<flags>&statf_invul)
         hits=0
       else
         serv.log Can't kill <name> (<owner.name> owns it and it's <qval <flags>&statf_invul?Invulneralbe: Not Invulnerable>)
       endif
+    endif
   endfor
   //f_remove_all_corpses
 endfor
