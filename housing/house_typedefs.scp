@@ -7,124 +7,152 @@ VERSION=X1
 // House sign override
 [TYPEDEF ei_house_sign]
 ON=@Create
-timerf 1, trigger @HouseSysInit // The LINK is automatically set immediately after placement and @Create
+	timerf 1, trigger @HouseSysInit // The LINK is automatically set immediately after placement and @Create
 
 ON=@HouseSysInit
-if <link.isvalid> && !<link.tag0.convert>
-    attr=010
-    timer = -1
-else
-    if <def.hs_can_decay>
-        attr=02|010
-        timer=60*60*24*<def.hs_can_decay>
-    else
-        attr=010
-		timer =-1
-    endif
-endif
-if <link.isvalid>
-	link.REGION.EVENTS=+r_house_system
-endif
+	if <link.isvalid> && !<link.tag0.convert>
+		attr=010
+		timer = -1
+	else
+		if <def.hs_can_decay>
+			attr=02|010
+			timer=60*60*24*<def.hs_can_decay>
+		else
+			attr=010
+			timer =-1
+		endif
+	endif
+	if <link.isvalid>
+		name=New House
+		link.region.events=+r_house_system
+		link.region.flags=region_flag_nodecay|region_flag_nobuilding|region_antimagic_recall_in|region_flag_insta_logout
+		link.tag.buildon=<serv.rtime>
+		resendtooltip 1,0
+	endif
 
 ON=@Click
-if !<link.region.tag0.forsale>
-    if <link.housetype>==<def.house_guild>
-        message <name>
-        message [<uid.<tag0.is_guild>.abbrev>]
-        return 1
-    else
-        return 0
-    endif
-else
-    message For Sale
-    message <link.dtag0.price> gp
-    return 1
-endif
+	if !<link.region.tag0.forsale>
+		if <link.housetype==<def.house_guild>
+			message [<uid.<tag0.is_guild>.abbrev>]
+			return 1
+		else
+			return 0
+		endif
+	else
+		message For Sale
+		message <link.dtag0.price> gp
+		return 1
+	endif
 
 
 ON=@ClientToolTip
-if (<link>==<def.link_invalid>)
-    return 0
-endif
-if <link.tag0.demolition>
-    addcliloc 1070722, Demolition Scheduled in <QVAL (<eval <timer>/86400> < 1)? <eval (<timer>%86400)/3600> hours and <eval ((<timer>%86400)%3600)/60> minutes.:<eval <timer>/86400> days>
-elif <link.region.tag0.forsale>
-    addcliloc 1070722, FOR SALE <link.dtag0.price>gp
-endif
-addcliloc 1061639,<name>
-addcliloc 1061640,<uid.<more1>.name>
-if <link.housetype>==<def.house_guild>
-    addcliloc 1042971,[<uid.<tag0.is_guild>.abbrev>] Guild House
-endif
-addcliloc <QVAL (<link.housetype>==<def.house_private>)? 1061642:1061641>
-return 1
+	if (<link>==<def.link_invalid>)
+		return 0
+	endif
+	if <link.tag0.demolition>
+		addcliloc 1070722, Demolition Scheduled in <QVAL (<eval <timer>/86400> < 1)? <eval (<timer>%86400)/3600> hours and <eval ((<timer>%86400)%3600)/60> minutes.:<eval <timer>/86400> days>
+	elif <link.region.tag0.forsale>
+		addcliloc 1070722, FOR SALE <link.dtag0.price>gp
+	endif
+	addcliloc 1042971,<link.name>
+	addcliloc 1061639,<name>
+	addcliloc 1061640,<link.owner.name>
+	if <link.housetype>==<def.house_guild>
+		addcliloc 1042971,[<uid.<tag0.is_guild>.abbrev>] Guild House
+	endif
+	addcliloc <QVAL (<link.housetype>==<def.house_private>)? 1061642:1061641>
+	return 1
 
 
 ON=@DClick
-if (<link>!=<def.link_invalid>)
-    if !(<def.hs_can_decay>)
-        if (<attr>&02)
-            attr &=~ 02
-            timer -1
-        endif
-    else
-        if !(<attr>&02)
-            attr |= 02
-            if <timer> < 0
-                timer=60*60*24*<def.hs_can_decay>
-            endif
-        endif
-    endif
-endif
-if (<link.isowner <src>>) || (<link.GetCoownerPos <src>> >= 0) || (<link.GetFriendPos <src>> >= 0) || (<src.isgm>)
-    if (<src.region.uid>==<link>)
-        link.dialog d_house_menu
-        return 1
-    else
-        src.sysmessage @32,,1 You must be standing on your doorstep to access the house menu.
-        return 1
-    endif
-else
-    if !<link.region.tag0.forsale>
-        link.dialog d_house_visitor
-        return 1
-    else
-        link.dialog d_house_forsale
-        return 1
-    endif
-endif
+	if (<link>!=<def.link_invalid>)
+		if !(<def.hs_can_decay>)
+			if (<attr>&02)
+				attr &=~ 02
+				timer -1
+			endif
+		else
+			if !(<attr>&02)
+				attr |= 02
+				if <timer> < 0
+					timer=60*60*24*<def.hs_can_decay>
+				endif
+			endif
+		endif
+	endif
+	if (<link.isowner <src>>) || (<link.GetCoownerPos <src>> >= 0) || (<link.GetFriendPos <src>> >= 0) || (<src.isgm>)
+		if (<src.region.uid>==<link>)
+			link.dialog d_house_menu
+			return 1
+		else
+			src.sysmessage @32,,1 You must be standing on your doorstep to access the house menu.
+			return 1
+		endif
+	else
+		if !<link.region.tag0.forsale>
+			link.dialog d_house_visitor
+			return 1
+		else
+			link.dialog d_house_forsale
+			return 1
+		endif
+	endif
 
 
 ON=@Timer
-ref2=<link.owner>
-if (<def.hs_can_decay>)
-    attr 012
-    if (<link>)
-        link.redeed
-    endif
-    if <ref2.isonline>
-        ref2.sysmessage @,,1 Your <link.name> in <region.region.name> has collapsed
-        ref2.sysmessage @,,1 The number of houses you own is now <ref2.houses>
-    endif
-else
-    return 1
-endif
+	ref2=<link.owner>
+	if (<def.hs_can_decay>)
+		attr 012
+		if (<link>)
+			link.redeed
+		endif
+		if <ref2.isonline>
+			ref2.sysmessage @,,1 Your <link.name> in <region.region.name> has collapsed
+			ref2.sysmessage @,,1 The number of houses you own is now <ref2.houses>
+		endif
+	else
+		return 1
+	endif
 
 
 // Event for locked down items.
 [TYPEDEF ei_house_lockdown]
 ON=@ClientToolTip
-addcliloc 501643
+	ADDCLILOC 501643
 
+ON=@ContextMenuRequest
+	ref1=<region.uid>
+	if <src>==<ref1.owner> || <tag0.lockedby>==<src> || <src.isgm>
+		src.AddContextEntry 701,1015183	// Unlock
+	endif
+
+ON=@ContextMenuSelect
+	if <distance> > 3
+		src.sysmessage @,,1 You can't reach <name>.
+		return 1
+	endif
+	if <argn> == 701
+		ref1=<region.uid>
+		ref1.unlockitem <uid>
+		tag.lockedby=
+		message @,,2 501726	// No longer locked down!
+		if !<isempty <tag.decay>>
+			tag.decay=
+			timer <eval <serv.DecayTimer>*60>
+			attr |= attr_decay
+		endif
+		resendtooltip 1,0
+	endif
+ 
 ON=@PickUp_Ground   // Do not allow to move this item
-if (!<src.IsGM>)
-    return 1
-endif
+	if (!<src.IsGM>)
+		return 1
+	endif
 
 ON=@PickUp_Self // For containers only, do not allow to pick up items
-if (!<src.IsGM>)
-    return 1
-endif
+	if (!<src.IsGM>)
+		return 1
+	endif
 
 // When entering customize mode, all locked down items and containers are being moved to the Moving Crate
 // but they are still Locked Down items, counting as so and having their properties
@@ -132,55 +160,56 @@ endif
 // but they can still be picked up from the moving crate and dropped on the ground or other containers
 // that's why some checks must be done to prevent malintentionated/unintended placements outside the multi.
 ON=@DropOn_Ground
-if (<region.uid> != <link.region.uid>)
-    return 1
-endif
+	if (<region.uid> != <link.region.uid>)
+		return 1
+	endif
 
 ON=@DropOn_Item
-if (<argo.region.uid> != <link.region.uid>)
-    return 1
-endif
+	if (<argo.region.uid> != <link.region.uid>)
+		return 1
+	endif
 
 // Doors event
 [TYPEDEF ei_house_door]
+ON=@ContextMenuRequest
+	ref1=<region.uid>
+	if <src>==<ref1.owner> || <src.isgm>
+		src.AddContextEntry 700,1078864	// Access
+	endif
+
+ON=@ContextMenuSelect
+	if <argn> == 700
+		ref1=<uid>
+		dialogclose d_house_secure
+		ref1.sdialog d_house_secure
+	endif
+
 ON=@Click
-if (<tag0.guild>)
-	message @,,1 [<uid.<tag0.guild>.abbrev>] Guild Members Only.
+	if (<tag0.access>==house_access_owner)
+		message @,,1 Owner Only
+	elif (<tag0.access>==house_access_coowner)
+		message @,,1 Co-Owners Only
+	elif (<tag0.access>==house_access_friend)
+		message @,,1 Friends Only
+	elif (<tag0.access>==house_access_guild)
+		message @,,1 [<uid.<tag0.is_guild>.abbrev>] Members Only
+	endif
 	message @,,1 <name>
 	return 1
-elif (<tag0.owneronly>)
-	message @,,1 Owner Only
-	message @,,1 <name>
-	return 1
-elif (<tag0.restricted>==1)
-	message @,,1 Co-Owners Only
-	message @,,1 <name>
-	return 1
-elif (<tag0.restricted>==2)
-	message @,,1 Friends Only
-	message @,,1 <name>
-	return 1
-endif
 
 ON=@ClientToolTip
-if (<tag0.guild>)
-	addcliloc 1042971, [<uid.<tag0.guild>.abbrev>] Guild Members Only
-	return 1
-elif (<tag0.owneronly>)
-	addcliloc 1070722, Private
-	addcliloc 1042971, Owner Only
-	return 1
-elif (<tag0.restricted>)
-	if (<tag.restricted>==1)
-		addcliloc 1042971, Restricted Access
-		addcliloc 1070722, Owner & Co-owners Only
-		return 1
-	elif (<tag.restricted>==2)
-		addcliloc 1042971, Restricted Access
-		addcliloc 1070722, Owner Co-owners & Friends Only
-		return 1
+	if (<tag0.access>==house_access_owner)
+		addcliloc 1060658,Access,<def.bfont_lyellow>Owner Only<def.bfont_white>
+	elif (<tag0.access>==house_access_coowner)
+		addcliloc 1060658,Access,<def.bfont_lyellow>Co-Owners<def.bfont_white>
+	elif (<tag0.access>==house_access_friend)
+		addcliloc 1060658,Access,<def.bfont_lyellow>Friends<def.bfont_white>
+	elif (<tag0.access>==house_access_guild)
+		ref1=<tag.is_guild>
+		if <ref1.isvalid>
+			addcliloc 1114773,<def.bfont_lyellow>[<ref1.abbrev>]<def.bfont_white>,Guild Members Only
+		endif
 	endif
-endif
 
 ON=@DClick
 ref1=<region.uid>
@@ -208,11 +237,12 @@ endif
 if (<serv.AutoHouseKeys>)   // If keys are used, let the server check them.
     return 0
 endif
-if !(<src.isgm>)
-	if (<ref1.f_house_can_access> != <def.house_access_none>)
-        UseDoor
-        return 1
-	endif
+if <type>==t_door_locked
+	type=t_door
+endif
+if (<f_house_can_access>)
+	UseDoor
+	return 1
 endif
 
 // House container created from COMPONENTs from [MULTIDEF ] (this also have 'ei_house_component').
@@ -236,77 +266,105 @@ if <count> <= 1
 	remove
 endif
 
-ON=@destroy
-ref1 = <link.owner>
-if (<ref1> && <ref1.isevent.e_moving_crate>)
-	ref1.events -e_moving_crate
-endif
+ON=@Destroy
+	ref1 = <link.owner> 
+	if <ref1.isvalid> && <ref1.isevent.e_moving_crate>
+		ref1.events -e_moving_crate
+	endif
 
-ON=@create
-attr |= <def.attr_invis>
+ON=@Create
+	attr |= <def.attr_invis>
 
 // Secured Containers.
 // Only allowed players can manage their storage (Refer to f_house_can_access to see the allowance).
 [TYPEDEF ei_house_secure]
-ON=@clienttooltip
-addcliloc 501644
+ON=@Clienttooltip
+	addcliloc 501644
+	if (<tag0.access>==house_access_owner)
+		addcliloc 1060658,Access,<def.bfont_lyellow>Owner Only<def.bfont_white>
+	elif (<tag0.access>==house_access_coowner)
+		addcliloc 1060658,Access,<def.bfont_lyellow>Co-Owners<def.bfont_white>
+	elif (<tag0.access>==house_access_friend)
+		addcliloc 1060658,Access,<def.bfont_lyellow>Friends<def.bfont_white>
+	elif (<tag0.access>==house_access_guild)
+		ref1=<tag.is_guild>
+		if <ref1.isvalid>
+			addcliloc 1114773,<def.bfont_lyellow>[<ref1.abbrev>]<def.bfont_white>,Guild Members Only
+		endif
+	endif
+
+ON=@ContextMenuRequest
+	ref1=<region.uid>
+	if <src>==<ref1.owner> || <src.isgm>
+		src.AddContextEntry 700,1078864	// Access
+		src.AddContextEntry 701,1015183	// Unlock
+	endif
+
+ON=@ContextMenuSelect
+	if <distance> > 3
+		src.sysmessage @,,1 You can't reach <name>.
+		return 1
+	endif
+	if <argn> == 700
+		dialogclose d_house_secure
+		sdialog d_house_secure
+	elif <argn> == 701
+		ref1=<region.uid>
+		ref1.release <uid>
+		message @,,2 501718	// No longer secure!
+		if !<isempty <tag.decay>>
+			tag.decay=
+			timer <eval <serv.DecayTimer>*60>
+			attr |= attr_decay
+		endif
+		resendtooltip 1,0
+	endif
 
 ON=@PickUp_ground
-if (!<src.IsGM>)
-    return 1
-endif
+	if (!<src.IsGM>)
+		return 1
+	endif
 
 ON=@DClick
-if (<f_house_can_access>)
-    return 0
-endif
-return 1
-
+	if (<f_house_can_access>)
+		return 0
+	endif
+	return 1
+ 
 ON=@PickUp_Self
-if (<f_house_can_access>)
-    return 0
-endif
-return 1
+	if (<f_house_can_access>)
+		return 0
+	endif
+	return 1
 
 // Telepad for multis.
 [typedef ei_house_telepad]
 ON=@Click
-if (<tag0.guild>)
-	message @,,1 [<uid.<tag0.guild>.abbrev>] Guild Members Only.
+	if (<tag0.access>==house_access_owner)
+		message @,,1 Owner Only
+	elif (<tag0.access>==house_access_coowner)
+		message @,,1 Co-Owners Only
+	elif (<tag0.access>==house_access_friend)
+		message @,,1 Friends Only
+	elif (<tag0.access>==house_access_guild)
+		message @,,1 [<uid.<tag0.is_guild>.abbrev>] Members Only
+	endif
 	message @,,1 <name>
 	return 1
-elif (<tag0.access>==house_access_owner)
-	message @,,1 Owner Only
-	message @,,1 <name>
-	return 1
-elif (<tag0.access>==house_access_coowner)
-	message @,,1 Co-Owners Only
-	message @,,1 <name>
-	return 1
-elif (<tag0.access>==house_access_friend)
-	message @,,1 Friends Only
-	message @,,1 <name>
-	return 1
-endif
 
 ON=@ClientToolTip
-if (<tag0.guild>)
-	addcliloc 1042971, [<uid.<tag0.guild>.abbrev>] Guild Members Only
-	return 1
-elif (<tag0.access>==house_access_owner)
-	addcliloc 1070722, Private
-	addcliloc 1042971, Owner Only
-	return 1
-elif (<tag0.access>==house_access_coowner)
-	addcliloc 1042971, Restricted Access
-	addcliloc 1070722, Owner & Co-owners Only
-	return 1
-elif (<tag0.access>==house_access_friend)
-	addcliloc 1042971, Restricted Access
-	addcliloc 1070722, Owner Co-owners & Friends Only
-	return 1
-endif
-
+	if (<tag0.access>==house_access_owner)
+		addcliloc 1060658,Access,<def.bfont_lyellow>Owner Only<def.bfont_white>
+	elif (<tag0.access>==house_access_coowner)
+		addcliloc 1060658,Access,<def.bfont_lyellow>Co-Owners<def.bfont_white>
+	elif (<tag0.access>==house_access_friend)
+		addcliloc 1060658,Access,<def.bfont_lyellow>Friends<def.bfont_white>
+	elif (<tag0.access>==house_access_guild)
+		ref1=<tag.is_guild>
+		if <ref1.isvalid>
+			addcliloc 1114773,<def.bfont_lyellow>[<ref1.abbrev>]<def.bfont_white>,Guild Members Only
+		endif
+	endif
 
 ON=@step
 if !(<link>==<def.link_invalid>)
@@ -411,18 +469,17 @@ ENDIF
 ON=@Enter
 if <src.isplayer>
 	src.events +e_house_player_events
-	SRC.dSPEECH +spk_player_house
 	src.timerf 1, f_house_visitor_count
 	ref1=<uid>
 	if !<src.isgm>
-		if <ref1.housetype>==house_private
-			if (<ref1.isowner <src>>) || (<ref1.getcoownerpos <src>> >= 0) || (<ref1.getfriendpos <src>> >= 0) || (<src.isgm>)
+		if <ref1.housetype>==<def.house_private>
+			if (<ref1.isowner <src>>) || (<ref1.getcoownerpos <src>> >= 0) || (<ref1.getfriendpos <src>> >= 0) || (<ref1.GetAccessPos <src>> >= 0) || (<src.isgm>)
 				return 0
-			elif (<ref1.housetype>==house_guild)
+			elif (<ref1.housetype>==<def.house_guild>)
 				if (<src.guild>==<ref1.tag0.is_guild>)
 					return 0
 				else
-					src.sysmessage @32,,1 You are not a member of this guild
+					src.sysmessage @32,,1 You are not a member of this guild.
 					return 1
 				endif
 			else
@@ -432,7 +489,7 @@ if <src.isplayer>
 			endif
 		else
 			if <ref1.getbanpos <src>> >= 0
-				src.sysmessage @32,,1 You are banned from this property
+				src.sysmessage @32,,1 You are banned from this property.
 				return 1
 			else
 				return 0
@@ -445,8 +502,13 @@ ON=@Exit
 	src.dialogclose d_house_menu
 	src.events -e_house_player_events
 
-
 //////////////////////////////////////////////////////////////////////////////////////events///////////////////////////////////////////////////
+[EVENTS e_house_count_block]
+ON=@AddMulti
+    if <argn2>!=<def.hp_owner>
+        return 1 // Prevents this multi from being added to SRC's house storage
+    endif
+
 [EVENTS e_house_transfer]
 ON=@TradeAccepted
 DIALOGCLOSE d_house_demolish
@@ -490,7 +552,7 @@ if (<act.defname>==<def.vendor_deed_id>)
 			if <ref1.housetype>==house_private
 				src.sysmessage @32,,1 You must set your building to public before you can place vendors here.
 				return 1
-			else
+			else 		
 				if (<ref1.vendors> < <ref1.maxvendors>)
 					return 0
 				else

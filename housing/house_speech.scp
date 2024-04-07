@@ -4,160 +4,152 @@
 //****************************************************************************
 VERSION=X1
 
-[SPEECH spk_player_house]
+[SPEECH spk_house_cmds]
 ON=lock this*
-ref1 = <region.uid>
-if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
-	targetf, f_house_item_lock
-	sysmessage @,,1 What do you wish to lockdown?
-	return 1
-else
-	sysmessage @32,,1 You must be in your house to do that.
-	return 1
-endif
+	ref1 = <region.uid>
+	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
+		return 0
+	else
+		src.targetf f_house_item_lock
+		src.message @,,1 What do you wish to lockdown?
+		return 1
+	endif
 
 ON=release this*
-ref1 = <region.uid>
-if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
-	targetf, f_house_item_unlock
-	sysmessage @,,1 What do you wish to release?
-	return 1
-else
-	sysmessage @32,,1 You must be in your house to do that.
-	return 1
-endif
+	ref1 = <region.uid>
+	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
+		return 0
+	else
+		src.targetf f_house_item_unlock
+		src.message @,,1 What do you wish to release?
+		return 1
+	endif
 
 ON=secure this*
-ref1 = <region.uid>
-if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<isgm>)
-	targetf, f_house_item_secure
-	sysmessage @,,1 What do you wish to secure?
-	return 1
-else
-	sysmessage @32,,1 You must be in your house to do that.
-	return 1
-endif
+	ref1 = <region.uid>
+	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
+		return 0
+	else
+		src.targetf f_house_item_secure
+		src.message @,,1 What do you wish to secure?
+		return 1
+	endif
 
 ON=move north*
-ref1 = <region.uid>
-if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
-	targetf, f_house_moven
-	sysmessage @,,1 What do you wish to move?
-	return 1
-else
-	sysmessage @32,,1 You must be in your house to do that.
-	return 1
-endif
+	ref1 = <region.uid>
+	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
+		return 0
+	else
+		src.targetf f_house_moven
+		src.message @,,1 What do you wish to move?
+		return 1
+	endif
 
 ON=move south*
-ref1 = <region.uid>
-if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
-	targetf, f_house_moves
-	sysmessage @,,1 What do you wish to move?
-	return 1
-else
-	sysmessage @32,,1 You must be in your house to do that.
-	return 1
-endif
+	ref1 = <region.uid>
+	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
+		return 0
+	else
+		src.targetf f_house_moves
+		src.message @,,1 What do you wish to move?
+		return 1
+	endif
 
 ON=move east*
-ref1 = <region.uid>
-if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
-	targetf, f_house_movee
-	sysmessage @,,1 What do you wish to move?
-	return 1
-else
-	sysmessage @32,,1 You must be in your house to do that.
-	return 1
-endif
+	ref1 = <region.uid>
+	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
+		return 0
+	else
+		src.targetf f_house_movee
+		src.message @,,1 What do you wish to move?
+		return 1
+	endif
 
 ON=move west*
-ref1 = <region.uid>
-if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
-	targetf, f_house_movew
-	sysmessage @,,1 What do you wish to move?
-	return 1
-else
-	sysmessage @32,,1 You must be in your house to do that.
-	return 1
-endif
+	ref1 = <region.uid>
+	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
+		return 0
+	else
+		src.targetf f_house_movew
+		src.message @,,1 What do you wish to move?
+		return 1
+	endif
 
 ON=release this*
-ref1 = <region.uid>
-if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
-	targetf, f_release
-	sysmessage @,,1 What do you wish to release?
-	return 1
-else
-	sysmessage @32,,1 You must be in your house to do that.
-	return 1
-endif
+	ref1 = <region.uid>
+	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
+		return 0
+	else
+		targetf, f_release
+		src.message @,,1 What do you wish to release?
+		return 1
+	endif
 
 ON=bank*
-if !<isgm>
 	if <def.hs_can_bank>
 		ref1 = <region.uid>
-		if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
-			bankself
-			sysmessage You have <bankbalance> gold in your Bank Box
-		else
+		if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
 			return 0
+		else
+			src.bankself
+			src.sysmessage @,,1 You have <bankbalance> gold in your Bank Box.
+			return 1
 		endif
 	endif
-else
-	bankself
-	return 0
-endif
 
 ON=eject*
-ref1 = <region.uid>
-if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>) 
-	targetf, f_house_eject
-else
-	return 0
-endif
+	ref1 = <region.uid>
+	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
+		return 0
+	else
+		src.targetf f_house_eject
+		src.message @,,1 Select player to eject
+		return 1
+	endif
 
 ON=Ban Person*
-ref1 = <region.uid>
-if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
-	targetf, f_house_add_list ban
-else
-	return 0
-endif
+	ref1 = <region.uid>
+	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
+		return 0
+	else
+		src.targetf f_house_add_list ban
+		src.message @,,1 Select player to ban
+		return 1
+	endif
 
 ON=Place trashcan*
-ref1 = <region.uid>
-if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<isgm>)
-	if (<ref1.tag0.trashcan>)
-		sysmessage @32,,1 You already have a trashcan.
-		return 1
+	ref1 = <region.uid>
+	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
+		return 0
 	else
-		serv.newitem i_trashcan
-		new.p=<p>
-		new.attr=attr_move_never
-		ref1.tag0.trashcan=<new.uid>
+		if (<ref1.tag0.trashcan>)
+			sysmessage @32,,1 You already have a trashcan.
+		else
+			serv.newitem i_trashcan
+			new.p=<p>
+			new.attr=attr_move_never
+			ref1.tag0.trashcan=<new>
+		endif
+		return 1
 	endif
-else
-	return 0
-endif
-
 
 ON=Remove trashcan*
-ref1 = <region.uid>
-if (<ref1.isowner <uid>>) || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || (<isgm>)
-	if (<ref1.tag0.trashcan>)
-		try uid.<ref1.tag0.trashcan>.remove 
-		ref1.tag.trashcan
+	ref1 = <region.uid>
+	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
+		return 0
 	else
-		sysmessage @32,,1 You have no trashcan to remove.
+		if (<ref1.tag0.trashcan>)
+			try uid.<ref1.tag0.trashcan>.remove 
+			ref1.tag.trashcan
+		else
+			sysmessage @32,,1 You have no trashcan to remove.
+		endif
 		return 1
 	endif
-else
-	return 0
-endif
-
 
 ON=house commands*
-sdialog d_house_commands
+	dialogclose d_house_commands
+	sdialog d_house_commands
+	return 1
 
 [EOF]

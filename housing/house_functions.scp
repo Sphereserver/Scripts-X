@@ -28,7 +28,7 @@ SERV.NEWITEM i_gold
 NEW.P <STREAT <STREAT <ARGS>>>
 NEW.REMOVEFROMVIEW
 REF1=<NEW.REGION.UID>
-IF (<REF1.DISPID>==<STRARG <ARGS>>)
+IF <REF1.ISVALID> && (<REF1.DISPID>==<STRARG <ARGS>>)
  REF1.TAG.PLACEMENT=<STRARG <STREAT <ARGS>>>
 ENDIF
 NEW.REMOVE
@@ -65,7 +65,7 @@ elseif (<tag0.access>==<def.house_access_guild>)
     endif
 endif
 return 0
-
+ 
 [function f_house_get_priv]
 if (<IsOwner <src>>)
     return <def.house_access_owner>
@@ -86,55 +86,48 @@ return <def.house_access_none>
 [FUNCTION f_house_render_list]
 ref1 = <owner>
 local.list = <argv[0]>
-dtext 125 130 07f9 <local.list> List
-dtext 230 140 07f9 <<local.list><qval (strmatch(*access*,<local.list>))?es:s>> / 10
+dhtmlgump 88 125 220 20 0 0 <def.bfont_lslateblue><def.bfont_size7><def.center><local.list> List <<local.list><qval (strmatch(*access*,<local.list>))?es:s>> / <def0.hs_max_co_owners>
 if (strmatch(*ban*,<local.list>))
-	local.fontcolor = 32
+	local.fontcolor = <def.bfont_lred>
 elif (strmatch(*access*,<local.list>))
-	local.fontcolor =  367
+	local.fontcolor =  <def.bfont_lgray>
 else
-	local.fontcolor = 07f9
+	local.fontcolor = <def.bfont_white>
 endif
+local.x=7
 local.y=170
 if <<local.list><qval (strmatch(*access*,<local.list>))?es:s>>
 	for  0 <eval <<local.list><qval (strmatch(*access*,<local.list>))?es:s>>-1>
-		if (<local._for> < 11)
-			local.txt = 57
-			local.btn = 7
-		else
-			local.txt = 250
-			local.btn = 200
-		endif
-		if (<local._for>==11)
-			local.y=170
-		endif
-		if ((<isowner <src>>) || (<get<local.list>pos <src>> >= 0) || (<src.isgm>)) && ((strmatch(*coowner*,<local.list>)) || (strmatch(*friend*,<local.list>)))
-			if (<<local.list>.<local._for>>==<src.uid>) || (<isowner <src>>) || (<src.isgm>)
-				dtext 57 <local.y> <local.fontcolor> <<local.list>.<local._for>.name>
-				if <argv[1]>
-					button 7 <local.y> 4017 4018 1 0 <eval (100+<local._for>)>
-				endif
-			else
-				dtext 57 <local.y> <local.fontcolor> <<local.list>.<local._for>.name>
-			endif
-		elif ((<isowner <src>>) || (<GetCoownerPos <src>> >= 0) || (<src.isgm>)) && ((strmatch(*friend*,<local.list>)) || (strmatch(*access*,<local.list>)) ||(strmatch(*ban*,<local.list>)))
-			dtext 57 <local.y> <local.fontcolor> <<local.list>.<local._for>.name>
-			serv.log a
+	if ((<isowner <src>>) || (<get<local.list>pos <src>> >= 0) || (<src.isgm>)) && ((strmatch(*coowner*,<local.list>)) || (strmatch(*friend*,<local.list>)))
+		if (<<local.list>.<local._for>>==<src.uid>) || (<isowner <src>>) || (<src.isgm>)
+			dhtmlgump <eval <local.x>+36> <eval <local.y>+3> 120 20 0 0 <local.fontcolor><<local.list>.<local._for>.name>
 			if <argv[1]>
-				button 7 <local.y> 4017 4018 1 0 <eval (100+<local._for>)>
+				button <local.x> <local.y> 4017 4018 1 0 <eval (100+<local._for>)>
 			endif
+		else
+			dhtmlgump <eval <local.x>+36> <eval <local.y>+3> 120 20 0 0 <local.fontcolor><<local.list>.<local._for>.name>
 		endif
+	elif ((<isowner <src>>) || (<GetCoownerPos <src>> >= 0) || (<src.isgm>)) && ((strmatch(*friend*,<local.list>)) || (strmatch(*access*,<local.list>)) ||(strmatch(*ban*,<local.list>)))
+		dhtmlgump <eval <local.x>+36> <eval <local.y>+3> 120 20 0 0 <local.fontcolor><<local.list>.<local._for>.name>
+		if <argv[1]>
+			button <local.x> <local.y> 4017 4018 1 0 <eval (100+<local._for>)>
+		endif
+	endif
 	local.y += 20
+	if <local.y> >= 370
+		local.x += 124
+		local.y = 170
+	endif
 	endfor
 endif
 
 [function f_house_render_signs]
 local.y=157
-local.btn1 = 7
-local.btn2 = 37
+local.btn1 = 20
+local.btn2 = 50
 local.sign=2979
-buttontileart 7 132 07588 07588  1 0 2965 2965 0 -10 -5
-buttontileart 37 132 07588 07588 1 0 2966 2966 0 -10 -5
+buttontileart 20 132 07588 07588  1 0 2965 2965 0 -10 -5
+buttontileart 50 132 07588 07588 1 0 2966 2966 0 -10 -5
 for 1 112
 	if (<local.y> > 360)
 		local.y=132
@@ -150,7 +143,7 @@ for 1 112
 	if (<dlocal.sign> == 3087)
 		local.sign = 3139
 	elif (<dlocal.sign> > 3140)
-		return
+		return 
 	endif
 endfor
 
@@ -160,47 +153,61 @@ ref2 = <argo>
 if <ref2.isplayer>
 	if (<ref2>==<src>)
 		src.sysmessage @32,,1 You cannot add yourself to the <local.list> list.
+		ref1.dialog d_house_menu
 		return 1
 	endif
 	if (<ref1.isowner <ref2>>)
 		src.sysmessage @32,,1 <ref2.name> is the owner of this property.
+		ref1.dialog d_house_menu
 		return 1
 	elif (<ref1.GetCoownerPos <ref2>> >= 0)
 		src.sysmessage @32,,1 <ref2.name> is a co-owner of this property.
 		src.sysmessage @32,,1 remove them from this list before adding them to another.
+		ref1.dialog d_house_menu
 		return 1
 	elif (<ref1.GetFriendPos <ref2>> >= 0)
 		src.sysmessage @32,,1 <ref2.name> is a friend of this property.
 		src.sysmessage @32,,1 remove them from this list before adding them to another.
+		ref1.dialog d_house_menu
 		return 1
 	elif (<ref1.GetAccessPos <ref2>> >= 0)
 		src.sysmessage @32,,1 <ref2.name> is on the access list.
 		src.sysmessage @32,,1 remove them from this list before adding them to another.
+		ref1.dialog d_house_menu
 		return 1
 	elif (<ref1.GetBanPos <ref2>> >= 0)
 		src.sysmessage @32,,1 <ref2.name> is on the bans list.
 		src.sysmessage @32,,1 remove them from this list before adding them to another.
+		ref1.dialog d_house_menu
 		return 1
 	elseif <argn> == 1
 		if <ref1.Coowners> <= <ddef.hs_max_co_owners>
+			ref2.events=+e_house_count_block
 			ref1.AddCoowner=<ref2>
-			src.sysmessage @,,1 <ref2.name> has been added as a Co-Owner for this property.
-			ref2.sysmessage @,,1 You have been made a Co-Owner for this property.
+			src.sysmessage @52,,1 <ref2.name> has been added as a Co-Owner for this property.
+			ref2.sysmessage @52,,1 You have been made a Co-Owner for this property.
+			ref2.events=-e_house_count_block
+			ref1.dialog d_house_menu
 			return 1
 		else
 			src.sysmessage @32,,1 You already have the maximum number of Co-Owners permitted for this property. (<ddef.hs_max_co_owners>)
 			src.sysmessage @32,,1 Remove someone from the list and try again.
+			ref1.dialog d_house_menu
 			return 1
 		endif
 	elseif <argn> == 2
 		if <ref1.Friends> <= <ddef.hs_max_friends>
+			ref2.events=+e_house_count_block
 			ref1.AddFriend=<ref2>
-			src.sysmessage @,,1 <ref2.name> has been added as a Friend for this property.
-			ref2.sysmessage @,,1 You have been made a Friend for this property.
+			src.sysmessage @52,,1 <ref2.name> has been added as a Friend for this property.
+			ref2.sysmessage @52,,1 You have been made a Friend for this property.
+			ref2.events=-e_house_count_block
+			ref1.dialog d_house_menu
 			return 1
 		else
 			src.sysmessage @32,,1 You already have the maximum number of Friends permitted for this property. (<ddef.hs_max_friends>)
 			src.sysmessage @32,,1 Remove someone from the list and try again.
+			ref1.dialog d_house_menu
 			return 1
 		endif
 	elseif <argn> == 3
@@ -209,21 +216,25 @@ if <ref2.isplayer>
 			src.sysmessage @32,,1 <ref2.name> has been banned from the property.
 			ref2.sysmessage @32,,1 You have been banned from this property.
 			ref2.go <link.p>
+			ref1.dialog d_house_menu
 			return 1
 		else
-			src.sysmessage @32,,1 Your Ban list is full.
+			src.sysmessage @32,,1 Your Ban list is full. 
 			src.sysmessage @32,,1 Remove someone from the list and try again.
+			ref1.dialog d_house_menu
 			return 1
 		endif
 	elseif <argn> == 4
 		if <ref1.Accesses> <= 10
 			ref1.AddAccess=<ref2>
-			src.sysmessage @367,,1 <ref2.name> has been granted access to the property.
-			ref2.sysmessage @367,,1 You have been granted access to the property.
+			src.sysmessage @52,,1 <ref2.name> has been granted access to the property.
+			ref2.sysmessage @52,,1 You have been granted access to the property.
+			ref1.dialog d_house_menu
 			return 1
 		else
-			src.sysmessage @32,,1 Your Access list is full.
+			src.sysmessage @32,,1 Your Access list is full. 
 			src.sysmessage @32,,1 Remove someone from the list and try again.
+			ref1.dialog d_house_menu
 			return 1
 		endif
 	endif
@@ -262,7 +273,7 @@ if (<src.gold> >= <dlocal.value>)
 		local.storage=75
 	else
 		local.storage=100
-	endif
+	endif 
 	IncreasedStorage += <dlocal.storage>
 	src.sysmessage @,,1 <dlocal.value> gp has been deducted from your bank to pay for this upgrade.
 else
@@ -272,17 +283,31 @@ endif
 
 [function f_house_item_lock]
 ref1=<region.uid>
-if !(<ref1.IsOwner <uid>> || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || <IsGM>) // Double check to prevent players to get the target on their house and use it on another.
-    return
+if !(<ref1.IsOwner <uid>> || <ref1.GetCoownerPos <uid>> >= 0 || <ref1.GetFriendPos <uid>> >= 0 || <IsGM>) // Double check to prevent players to get the target on their house and use it on another.
+	sysmessage You must be in your house to do that.
+	return 1
 endif
 if <def.hs_hs_secure_locks_limit>
 	if <ref1.currentstorage> >= <ref1.maxstorage>
 		sysmessage @32,,1 Your house reached its storage limit.
-		return
+		return 1
 	endif
 endif
 if (<argo.isitem> && <argo.region.uid>==<ref1>)
+	if <argo.isevent.ei_house_lockdown>
+		argo.message @,,2 501719	// This is already locked down!
+		return 1
+	endif
+	if <argo.cont>
+		sysmessage @,,2 501729	// This item cannot be locked down.
+		return 1
+	endif
+	if <argo.f_isContainer>
+		sysmessage @,,1 You cannot lockdown containers, use secure instead.
+		return 1
+	endif
 	ref1.lockitem <argo>
+	argo.message @,,2 501721 	// Locked down!
 	if ((<argo.attr>&attr_decay) && (<argo.timer> >= 0))
 		argo.tag.decay=1
 		argo.timer -1
@@ -291,57 +316,68 @@ if (<argo.isitem> && <argo.region.uid>==<ref1>)
 			argo.tag.lockedby <uid>
 		endif
 	endif
+	argo.resendtooltip 1,0
 endif
-
+ 
 [function f_house_item_unlock]
 ref1=<region.uid>
 if !(<ref1.IsOwner <uid>> || (<ref1.GetCoownerPos <uid>> >= 0) || (<ref1.GetFriendPos <uid>> >= 0) || <IsGM>) // Double check to prevent players to get the target on their house and use it on another.
-    return
+    return 1
 endif
 if (<ref1.GetSecuredContainerPos <argo>> = 0) && ((<ref1.IsOwner <uid>>) || (<IsGM>))
 	ref1.release <argo>
+	argo.tag.access=
+	argo.message @,,2 501718	// No longer secure!
 elif (<argo.isitem> && <argo.region.uid>==<ref1>)
 	if (<ref1.GetFriendPos <uid>> >= 0) && (<argo.tag0.lockedby> != <uid>)
 		sysmessage @32,,1 Friends can only unlock items if they are locked them.
-		return
+		return 1
 	endif
 	ref1.unlockitem <argo>
-	tag0.lockedby
+	tag.lockedby=
+	argo.message @,,2 501726	// No longer locked down!
 endif
 if (<argo.tag0.decay>)
-		argo.tag.decay
-		argo.timer <eval <serv.DecayTimer>*60>
-		argo.attr |= attr_decay
+	argo.tag.decay=
+	argo.timer <eval <serv.DecayTimer>*60>
+	argo.attr |= attr_decay
 endif
+argo.resendtooltip 1,0
 
 [function f_house_item_secure]
 ref1=<region.uid>
 if !(<ref1.IsOwner <uid>> || (<ref1.GetCoownerPos <uid>> >= 0) || <IsGM>) // Double check to prevent players to get the target on their house and use it on another.
 	sysmessage @32,,1 Only owner and co-owner can secure items.
-    return
+    return 1
 endif
 if <def.hs_hs_secure_locks_limit>
 	if (<ref1.currentstorage> >= <ref1.maxstorage>) || (<eval <argo.count>+1> >= <ref1.maxstorage>)
 		sysmessage @32,,1 Your house reached its storage limit.
-		return
+		return 1
 	endif
+endif
+if !<argo>
+	return 1
 endif
 if (<argo.isitem> && <argo.region.uid>==<ref1>)
 	if (<argo.f_isContainer>)
 		ref1.secure <argo>
+		argo.tag.access = 1
+		argo.message @,,2 501716	// Secure!
 		if ((<argo.attr>&attr_decay) && (<argo.timer> >= 0))
 			argo.tag.decay=1
 			argo.timer -1
 			argo.attr &= ~attr_decay
 		endif
+		argo.resendtooltip 1
 	else
-		sysmessage @32,,1 You can only secure containers.
+		sysmessage @,,2 501712. 	// This isn't a container!
 	endif
 endif
 
 
 [function f_d_house_secure]
-ref1= <argo.region.uid>
+ref1=<argo.region.uid>
 if <src> == <ref1.owner>
 	if (<argo.type>==t_door) || (<argo.type>==t_door_locked) || (<argo.type>==t_telepad)
 		if <argo.isevent.ei_house_door> || <argo.isevent.ei_house_telepad>
@@ -365,26 +401,20 @@ endif
 [FUNCTION f_house_eject]
 ref1=<src.region.uid>
 ref2=<argo.region.uid>
-if <argo.isplayer>
-	if !<argo.isgm>
-		if (<ref1>==<ref2>)
-			if (<argo>==<src>)
-				src.sysmessage @32,,1 You cannot eject yourself from this property.
-				return 1
-			endif
-			if (<argo.is_owner>) || (<argo.is_coowner>) || (<argo.is_friend>)
-				src.sysmessage @32,,1 You cannot eject this person
-			else
-				argo.go <uid.<ref1.link>.p>
-			endif
-		else
-			src.sysmessage @32,,1 That person is not in your house
-			return 1
-		endif
-	else
-		src.sysmessage @32,,1 You cannot eject staff from your house
-		return 1
-	endif
+if !<argo.isplayer>
+	src.sysmessage @32,,1 Invalid Target.
+	return 1
+elif <argo>==<src>
+	src.sysmessage @32,,1 You cannot eject yourself from this property.
+	return 1
+elif <ref1>!=<ref2>
+	src.sysmessage @32,,1 That person is not in your house.
+	return 1
+elif (<argo.IsOwner <uid>> || (<argo.GetCoownerPos <uid>> >= 0) || (<argo.GetFriendPos <uid>> >= 0) || <argo.IsGM>)
+	src.sysmessage @32,,1 You cannot eject this person.
+	return 1
+else
+	argo.go <uid.<ref1.link>.p>
 endif
 
 [FUNCTION f_house_declare_guild]
@@ -392,12 +422,12 @@ if (<argo.ischar>) || (<argo.topobj.ischar>)
 	src.sysmessage @32,,1 That is not allowed
 	return 1
 endif
-if (<argo.type>!=t_stone_guild)
+if (<argo.type>!=t_stone_guild)	
 	src.sysmessage @32,,1 That is not allowed
 	return 1
 endif
 if (<argo.type>==t_stone_guild) && (<argo.region.uid>==<src.region.uid>)
-	ref1.tag0.is_guild=<argo.uid>
+	ref1.tag.is_guild=<argo.uid>
 	ref1.resendtooltip
 	src.sysmessage @,,1 All <uid.<argo.uid>.name> guild members now have access to this building.
 	src.sysmessage @,,1 Don't forget to set your door codes if areas are/need to be restricted.
@@ -405,7 +435,7 @@ endif
 
 [FUNCTION f_house_moven]
 ref1=<src.region.uid>
-if (<argo.uid>==<src.uid>) || (<argo.isplayer>)
+if (<argo.uid>==<src.uid>) || (<argo.isplayer>) 
 	src.sysmessage @32,,1 You cannot move that.
 	return 1
 elif (<argo.link>==<ref1>)
@@ -428,7 +458,7 @@ endif
 
 [FUNCTION f_house_moves]
 ref1=<src.region.uid>
-if (<argo.uid>==<src.uid>) || (<argo.isplayer>)
+if (<argo.uid>==<src.uid>) || (<argo.isplayer>) 
 	src.sysmessage @32,,1 You cannot move that.
 	return 1
 elif (<argo.link>==<ref1>)
@@ -451,7 +481,7 @@ endif
 
 [FUNCTION f_house_movee]
 ref1=<src.region.uid>
-if (<argo.uid>==<src.uid>) || (<argo.isplayer>)
+if (<argo.uid>==<src.uid>) || (<argo.isplayer>) 
 	src.sysmessage @32,,1 You cannot move that.
 	return 1
 elif (<argo.link>==<ref1>)
@@ -474,7 +504,7 @@ endif
 
 [FUNCTION f_house_movew]
 ref1=<src.region.uid>
-if (<argo.uid>==<src.uid>) || (<argo.isplayer>)
+if (<argo.uid>==<src.uid>) || (<argo.isplayer>) 
 	src.sysmessage @32,,1 You cannot move that.
 	return 1
 elif (<argo.link>==<ref1>)
@@ -497,7 +527,7 @@ endif
 
 [FUNCTION f_house_flip] // unused function?
 ref1=<src.region.uid>
-if (<argo.uid>==<src.uid>) || (<argo.isplayer>)
+if (<argo.uid>==<src.uid>) || (<argo.isplayer>) 
 	src.sysmessage @32,,1 You cannot flip that.
 	return 1
 elif (<argo.link>==<ref1>)
@@ -514,42 +544,38 @@ return 1
 
 [function f_house_visitor_count]
 ref1 = <region.uid>
-if !<src.isgm>
-	uid.<ref1.link>.more2 +=1
+if <ref1.isvalid> && !(<ref1.isowner <uid>> || <isgm>)	// <ref1.GetCoownerPos <uid>> >= 0 || <ref1.GetFriendPos <uid>> >= 0 
+	uid.<ref1.link>.more2 += 1
 endif
 
 [FUNCTION f_house_transfer]
-if !(<ARGO.ISPLAYER>)
-	SRC.SYSMESSAGE @,,1 Only players can have house !
+if !<argo.isplayer> || <argo>==<src>
+	src.sysmessage @,,1 Invalid Target.
 	return 1
 endif
-REF1=<ARGS>
-if (<ARGO>==<SRC>)
-	SRC.SYSMESSAGE @,,1 You can't trade house to yourself !
-	return 1
-endif
+ref1=<args>
 if !(<argo.houses> < <serv.MaxHousesAccount>)
-	SRC.SYSMESSAGE @,,1 <ARGO.NAME> already own the maximum number of houses permitable : <serv.MaxHousesAccount>
+	src.sysmessage @,,1 <argo.name> already has the maximum number of houses: <serv.MaxHousesAccount>
 	return 1
 endif
-SRC.SYSMESSAGE @,,1 Please wait until <argo.name> accept the trade.
-if (<FINDTYPE.t_eq_trade_window>)
-	SYSMESSAGE @,,1 Baska birisine evi transfer etmeye calisirken bir baskasina da transfer edemezsınız. //FIXME: translate to english!
+src.sysmessage @,,1 Please wait until <argo.name> accept the trade.
+if (<findtype.t_eq_trade_window.isvalid>)
+	sysmessage @,,1 You already have a trade window open.
 	return 1
-elif (<SRC.FINDTYPE.t_eq_trade_window>)
-	SRC.SYSMESSAGE @,,1 Baska birisine evi transfer etmeye calisirken bir baskasina da transfer edemezsınız. //FIXME: translate to english!
+elif (<src.findtype.t_eq_trade_window>)
+	src.sysmessage @,,1 You already have a trade window open.
 	return 1
 endif
-SRC.EVENTS=+e_house_transfer
-argo.EVENTS=+e_house_transfer
-SERV.NEWITEM i_deed
-NEW.ATTR=attr_move_never
-NEW.COLOR=0480
-NEW.LINK=<REF1>
-NEW.MORE1=<argo>
-NEW.TYPE=t_trade_house_deed
-NEW.TIMERF 2,TRIGGER @Timer
-SRC.TRYSRC <argo> f_TradeWindow <NEW>
+src.events=+e_house_transfer
+argo.events=+e_house_transfer
+serv.newitem i_deed
+new.attr=attr_move_never
+new.color=0480
+new.link=<ref1>
+new.more1=<argo>
+new.type=t_trade_house_deed
+new.timerf 2,trigger @Timer
+src.trysrc <argo> f_TradeWindow <NEW>
 
 [FUNCTION f_TradeWindow] //Credits to Terrikate for provide the function engine
 REF1=<uid>
@@ -586,11 +612,11 @@ if (<baseid>==m_tower)
 	local.xy=16x14
 else
 	args = <multiregion>
-	local.left=<argv[0]>
+	local.left=<argv[0]> 
 	local.top=<argv[1]>
-	local.right=<argv[2]>
+	local.right=<argv[2]> 
 	local.bottom= <argv[3]>
-	local.x <eval (<local.bottom> - <local.top>) + 1>
+	local.x <eval (<local.bottom> - <local.top>) + 1> 
 	local.y <eval (<local.right> - <local.left>) + 1>
     local.x /= 2
     local.y /= 2
@@ -611,7 +637,7 @@ forchars <eval (((<argv[2]>+<argv[3]>)/2)+2)>
 endfor
 if (<eval <value>+<increasedstorage>> < <serv.multidef.m_foundation_<local.xy>.value>)
 	local.extra=<serv.multidef.m_foundation_<local.xy>.value>-<eval (<value>+<tag0.boughtstorage>)>>
-	if (<ref2.gold> >= <dlocal.extra>)
+	if (<ref2.gold> >= <dlocal.extra>) 
 		ref2.gold -= <dlocal.extra>
 		ref2.sysmessage @,,1 <dlocal.extra> gp has been deducted from your bank for this conversion.
 		local.p=<p>
@@ -835,5 +861,88 @@ if (<def.hs_placement_check_roads>)
     endfor
     new.remove
 endif
+
+
+// args = <multiregion>
+// foritems 
+
+[FUNCTION f_house_box]	// src.f_house_box <region.uid>
+ref1=<args>
+args=<ref1.multiregion>
+local.m=<eval (<argv[2]>+<argv[3]>)>
+if <ref1.isowner <uid>> || <isgm>
+	local.x=30
+	ref3=<ref1.owner>
+	serv.newitem=i_crate_lg,1,<ref3.findlayer.29>
+	new.contp=<local.x>,30
+	ref2=<new>
+	foritems <local.m>
+	if <region.uid>==<ref1> && <isempty <tag.multicomponent>> && !(<type>=t_multi || <type>=t_multi_custom)
+		if <isevent.ei_house_secure>
+			ref1.release <uid>
+			tag.access=
+		endif
+		if <isevent.ei_house_lockdown>
+			ref1.unlockitem <uid>
+			tag.lockedby=
+			tag.multilockdown=
+		endif
+		if <link.isvalid>
+			link=04fffffff
+		endif
+		if !<isempty <tag.decay>>
+			tag.decay=
+			timer <eval <serv.DecayTimer>*60>
+			attr |= attr_decay
+		endif
+		if <attr> & 010
+			if <type>==t_stone_guild
+				p=<ref1.p>
+			else
+				if !<isempty <tag.deed>>  // custom house addons
+					serv.newitem=<tag.deed>,1,<ref2>
+				endif
+				remove
+			endif
+		else
+			cont=<ref2>
+		endif
+		if <ref2.rescount> >= 250
+			local.x += 30
+			serv.newitem=i_crate_lg,1,<ref3.findlayer.29>
+			new.contp=<local.x>,30
+			ref2=<new>
+		endif
+	endif
+	endfor
+endif
+
+[FUNCTION f_house_remove_allitems]	// src.f_house_remove_allitems <region.uid>
+ref1=<args>	// <region.uid>
+args=<ref1.multiregion>
+local.m=<eval (<argv[2]>+<argv[3]>)>
+if <ref1.isowner <uid>> || <isgm>
+	foritems <local.m>
+	if <region.uid>==<ref1> && <isempty <tag.multicomponent>> && !(<type>=t_multi || <type>=t_multi_custom)
+		if <isevent.ei_house_secure>
+			ref1.release <uid> // in case function is used without removing house, to not mess counters
+		endif
+		if <isevent.ei_house_lockdown>
+			ref1.unlockitem <uid>
+		endif
+		if <type>=t_stone_guild
+			p=<ref1.p>
+		else
+			remove
+		endif
+	endif
+	endfor
+endif
+
+[FUNCTION f_house_dialog]	// f_house_dialog x,y,w,h
+resizepic <argv[0]> <argv[1]> <def.dialog_hs_bg> <argv[2]> <argv[3]>
+gumppictiled <eval <argv[0]>+4> <eval <argv[1]>+6> <eval <argv[2]>-9> <eval <argv[3]>-10> 2624
+checkertrans <eval <argv[0]>+4> <eval <argv[1]>+6> <eval <argv[2]>-9> <eval <argv[3]>-10>
+
 
 [EOF]
