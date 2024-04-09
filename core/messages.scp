@@ -127,8 +127,6 @@ EMOTE_DEF_UNICODE	0
 //cont_full_weight,			"That container cannot hold more weight."
 //cont_toosmall,				"The container is too small for that"
 //corpse_name				"%s of %s"
-//deed_name					"Deed to a %s"
-//location_invalid			"That location is not valid."
 //detecthidden_succ			"You find %s"
 //drink_cantmove				"You can't move the item."
 //drink_potion_delay			"You can't drink another potion yet"
@@ -1188,5 +1186,8 @@ EMOTE_DEF_UNICODE	0
 //tiled_items					"Items Created"
 //nudged_objects				"Objects Nudged"
 //tile_same_point				"Thats the same point."
+//house_add_limit                   "House redeeded. You already own the maximum number of houses permitable."
+//deed_name					"Deed to a %s"
+//location_invalid			"That location is not valid."
 
 [EOF]
