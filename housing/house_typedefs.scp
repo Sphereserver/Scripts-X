@@ -32,7 +32,7 @@ ON=@HouseSysInit
 
 ON=@Click
 	if !<link.region.tag0.forsale>
-		if <link.housetype==<def.house_guild>
+		if <link.housetype>==<def.house_guild>
 			message [<uid.<tag0.is_guild>.abbrev>]
 			return 1
 		else
@@ -143,7 +143,7 @@ ON=@ContextMenuSelect
 		endif
 		resendtooltip 1,0
 	endif
- 
+
 ON=@PickUp_Ground   // Do not allow to move this item
 	if (!<src.IsGM>)
 		return 1
@@ -267,7 +267,7 @@ if <count> <= 1
 endif
 
 ON=@Destroy
-	ref1 = <link.owner> 
+	ref1 = <link.owner>
 	if <ref1.isvalid> && <ref1.isevent.e_moving_crate>
 		ref1.events -e_moving_crate
 	endif
@@ -330,7 +330,7 @@ ON=@DClick
 		return 0
 	endif
 	return 1
- 
+
 ON=@PickUp_Self
 	if (<f_house_can_access>)
 		return 0
@@ -552,7 +552,7 @@ if (<act.defname>==<def.vendor_deed_id>)
 			if <ref1.housetype>==house_private
 				src.sysmessage @32,,1 You must set your building to public before you can place vendors here.
 				return 1
-			else 		
+			else
 				if (<ref1.vendors> < <ref1.maxvendors>)
 					return 0
 				else
