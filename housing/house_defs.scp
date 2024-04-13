@@ -26,113 +26,533 @@ VERSION=X1
 
 [DEFNAME housing_control]
 //general settings
-hs_can_bank 				1 		// set to 1 to allow players to bank from home. (verbal command)(owner, co-owners & friends only)
-hs_allow_custom 			1		// Allow players to convert to custom houses 0 to disable
-hs_wipe_switch_lists 		1 		// if set to 1 access/ban lists are wiped when house is switched between private/public (helps reduce server memory)
-hs_allow_sign_color 		1		// Allow player to change the color of their house signs.
-hs_hs_secure_locks_limit 	1		// Lockdowns & Secures Zero to turn off limitations
-hs_secure_locks_limit		0		// Overwrite hardcoded placement check. (Doesnt work right now)
-hs_placement_check_roads    1
-hs_redeed_crate             1       // house items to crate on redeed
+hs_can_bank						1		// set to 1 to allow players to bank from home. (verbal command)(owner, co-owners & friends only)
+hs_allow_custom					1		// Allow players to convert to custom houses 0 to disable
+hs_wipe_switch_lists			1		// if set to 1 access/ban lists are wiped when house is switched between private/public (helps reduce server memory)
+
+hs_allow_sign_color				0		// Allow player to change the color of their house signs.
+hs_allow_sign_post				1		// Allow player to change the post of their house signs.
+hs_allow_sign_hanger			1		// Allow player to change the hanger of their house signs.
+hs_allow_foundation				0		// Allow player to change the foundantion of their house.  (Doesnt work right now)
+
+hs_hs_secure_locks_limit		1		// Lockdowns & Secures Zero to turn off limitations
+hs_secure_locks_limit			0		// Overwrite hardcoded placement check. (Doesnt work right now)
+hs_placement_check_roads		1		//
+hs_redeed_crate					1		// house items to crate on redeed
+
+hs_placement_delay				3		// Number of days until you can place another house after build previous
+// hs_placement_ilshenar_facet		0	// Place house in Inhenar
+
+hs_door_acces_key				0		//Is set this and (<serv.AutoHouseKeys> == 1) - doors open with keys
 
 //vendor settings
-house_list_vendors	0 	// set to 1 to allow players on house list to place vendors, 0 = owner only
-house_sell			1   //set to 0 if you dont want to allow sell houses.
+house_list_vendors				0		// set to 1 to allow players on house list to place vendors, 0 = owner only
+house_sell						1		//set to 0 if you dont want to allow sell houses.
 
 //Set these to the body types for vendors in your script
-vendor_deed_id		i_deed_vendor
-vendor_obody_male	c_vendor
-vendor_obody_female	c_vendor_f
+vendor_deed_id				i_deed_vendor
+vendor_obody_male			c_vendor
+vendor_obody_female			c_vendor_f
 
 //Taxes & Fees 
-hs_redeed_fee 			10	// Cost to redeed a house % of house value, zero disables.
-hs_demolish_fee         5   // Cost to demolish a house % of house value, zero disables.
-hs_can_decay 			30 	// set to number of days for a house to decay, or set to 0 to disable
-hs_property_tax			10	// Set to % figure of house value to pay for maintenance on houses, WORKS ONLY WHEN hs_can_decay IS ON! zero disables.
-hs_PlaceMinDistFront	5	// Minimum front distance allowed between placed houses. Default = 5
-hs_PlaceMinDistArea		1	// Minimum area distance allowed between placed houses. Default = 1
+hs_redeed_fee				10	// Cost to redeed a house % of house value, zero disables.
+hs_demolish_fee				5	// Cost to demolish a house % of house value, zero disables.
+hs_can_decay				30	// set to number of days for a house to decay, or set to 0 to disable
+hs_property_tax				10	// Set to % figure of house value to pay for maintenance on houses, WORKS ONLY WHEN hs_can_decay IS ON! zero disables.
+hs_PlaceMinDistFront		5	// Minimum front distance allowed between placed houses. Default = 5
+hs_PlaceMinDistArea			1	// Minimum area distance allowed between placed houses. Default = 1
 
-hs_estate_tax 			2	// Extra charges for player with MORE than this many houses.  0 disables
-hs_estate_rate 			10	// % per house over the hs_estate_tax
-hs_estate_calc 			1	// 1 = flat <def.hs_estate_rate>% rate    2 = linear charge increase per house (1 over = + premium rate, 2 over = + premium rate*2, 3 over = + premium rate*3 e.t.c..) 
+hs_estate_tax				2	// Extra charges for player with MORE than this many houses.  0 disables
+hs_estate_rate				10	// % per house over the hs_estate_tax
+hs_estate_calc				2	// 1 = flat <def.hs_estate_rate>% rate    2 = linear charge increase per house (1 over = + premium rate, 2 over = + premium rate*2, 3 over = + premium rate*3 e.t.c..) 
 
-hs_buy_storage 			1 	// if set to 1 allows players to increase secure storage by up to 100% via house sign, 0 to disable
+hs_buy_storage 				1	// if set to 1 allows players to increase secure storage by up to 100% via house sign, 0 to disable
 
 //DO NOT ALTER THE FOLLOWING AFTER INITIAL SETUP!!! - - Doing so could cause problems when players go over these limits.
-hs_max_friends 			20 	// DO NOT SET THIS ONE ABOVE 20 Dialog doesn't have extra pages for above that amount (actual number is set from building size)
-hs_max_co_owners 		10 	// DO NOT SET THIS ONE ABOVE 10 Dialog is not set up for more than that amount (actual number is set from building size)
+hs_max_friends				20	// DO NOT SET THIS ONE ABOVE 20 Dialog doesn't have extra pages for above that amount (actual number is set from building size)
+hs_max_co_owners			10	// DO NOT SET THIS ONE ABOVE 10 Dialog is not set up for more than that amount (actual number is set from building size)
+hs_max_ban					10	// DO NOT SET THIS ONE ABOVE 10 Dialog is not set up for more than that amount (actual number is set from building size)
+hs_max_access				10	// DO NOT SET THIS ONE ABOVE 10 Dialog is not set up for more than that amount (actual number is set from building size)
 
 
 // Dialog Settings
-dialog_hs_bg            5054                        // small dialogs background (resizepic)
-bfont_hs_title	        <basefont color="#9933ff">  // strong purple
-bfont_hs_text1	        <basefont color="#ffffff">  // white
-bfont_hs_text2	        <basefont color="#ffff99">  // light yellow
-bfont_hs_text3	        <basefont color="#d3d3d3">  // lgray
-bfont_hs_red	        <basefont color="#ff3333">  // light red
-bfont_hs_gray	        <basefont color="#808080">  // gray
+dialog_hs_bg				5054                        // small dialogs background (resizepic)
+bfont_hs_title				<basefont color="#ffa500">  // orange
+bfont_hs_text1				<basefont color="#ffffff">  // white
+bfont_hs_text2				<basefont color="#ffff99">  // light yellow
+bfont_hs_text3				<basefont color="#d3d3d3">  // lgray
+bfont_hs_red				<basefont color="#ff3333">  // light red
+bfont_hs_gray				<basefont color="#808080">  // gray
+
+// TextColor Settings
+fail			32
+
+
+// Dialog Language Settings
+HouseCtrl_ENG_INFORMATION		INFORMATION
+HouseCtrl_ENG_SECURITY			SECURITY
+HouseCtrl_ENG_STORAGE			STORAGE
+HouseCtrl_ENG_CUSTOMIZE			CUSTOMIZE
+HouseCtrl_ENG_OWNERSHIP			OWNERSHIP
+////
+HouseCtrl_ENG_GrantAccess		Grant Access
+HouseCtrl_ENG_Banish			Banish
+HouseCtrl_ENG_Revoke			Revoke Access
+HouseCtrl_ENG_LiftBan			Lift a Ban
+HouseCtrl_ENG_Eject				Eject Person
+////
+HouseCtrl_ENG_Owned				Owned By
+HouseCtrl_ENG_IncorrPlace		This house is improperly placed.
+HouseCtrl_ENG_Headquarter		This house is the headquarters of
+HouseCtrl_ENG_Guild				guild
+HouseCtrl_ENG_BuildOn			Build On
+HouseCtrl_ENG_SalePrice			This house is currently for sale at
+HouseCtrl_ENG_Value				House Value
+HouseCtrl_ENG_VisitCnt			Visit Count
+
+HouseCtrl_ENG_LstPrice			List Price
+HouseCtrl_ENG_HouseIsOf			This house is of
+HouseCtrl_ENG_HouseIs			This house is
+HouseCtrl_ENG_Custom			custom
+HouseCtrl_ENG_Prebuilt			prebuilt
+HouseCtrl_ENG_Design			design.
+HouseCtrl_ENG_PrivProp			private property
+HouseCtrl_ENG_PublOpen			open to the public
+HouseCtrl_ENG_DecayProtect		This house has been made exempt from decay.
+HouseCtrl_ENG_ThisHouse			This house
+HouseCtrl_ENG_WillDemol			will be demolished
+HouseCtrl_ENG_WillDecay			будет снесён
+HouseCtrl_ENG_SayIn				In
+HouseCtrl_ENG_MsgShedDemol		This house is improperly placed and has been scheduled for demolition in
+HouseCtrl_ENG_MsgDemolRefund	Unless you redeed it yourself before that time the house and all items within will be lost without refund
+HouseCtrl_ENG_FORSALE			FOR SALE
+HouseCtrl_ENG_BuyHouse			Buy this house for
+HouseCtrl_ENG_TaxCover			Propery Tax covered for 
+HouseCtrl_ENG_TaxIs				Property Tax for this house is 
+
+HouseCtrl_ENG_DemolProceed		You are about to demolish
+HouseCtrl_ENG_DemolProceed2		this property
+HouseCtrl_ENG_DemolProceed3		Do you wish to proceed?
+HouseCtrl_ENG_DemolAndDestr		Demolish & Destroy Contents
+HouseCtrl_ENG_Refund			Refund
+HouseCtrl_ENG_Charge			Charge
+HouseCtrl_ENG_GMFree			FREE FOR GM
+HouseCtrl_ENG_RedeedBank		Redeed & Bank Contents
+HouseCtrl_ENG_ClrList			You are about to clear your
+HouseCtrl_ENG_ClrConfirm		Сonfirm clearing the list
+
+HouseCtrl_ENG_Access			Acces
+HouseCtrl_ENG_Owner				Owner
+HouseCtrl_ENG_OwnerOnly			Owner Only
+HouseCtrl_ENG_CoOwners			Co-owners
+HouseCtrl_ENG_Friends			Friends
+HouseCtrl_ENG_GuildMemb			Guild Members
+HouseCtrl_ENG_Anyone			Anyone
+
+HouseCtrl_ENG_Refreshed			This house is Automatically refreshed.
+HouseCtrl_ENG_LastTraded		Last Traded:
+HouseCtrl_ENG_PayTax			Pay Property Tax
+HouseCtrl_ENG_TradeHouse		Trade House
+HouseCtrl_ENG_HouseRemoval		House Removal
+HouseCtrl_ENG_RemoveEnsure		Please ensure that your house is empty before you put it on the market.  All lists will be wiped and all doors will be unlocked.  Your house will be open to viewing, however you will retain control over it, until it is bought.
+HouseCtrl_ENG_PutForSale		Put this house up for sale
+HouseCtrl_ENG_TakeOffSale		Take this house off the market
+
+HouseCtrl_ENG_AdmOptions		Administrative Options
+HouseCtrl_ENG_SetDecay			Allow decay on this property
+HouseCtrl_ENG_SetEternal		Make this property exempt from decay
+HouseCtrl_ENG_SchedDemol		Schedule this property for demolition
+HouseCtrl_ENG_NumDayDemol		Number of days until demolition (between 7 & 30)
+HouseCtrl_ENG_DemolitDays		days
+HouseCtrl_ENG_CancelDemol		Cancel scheduled demolition
+HouseCtrl_ENG_StartDemol		Demolish this propery in
+
+HouseCtrl_ENG_SellHouse			Sell This House
+HouseCtrl_ENG_AskPrice			Enter your asking price
+HouseCtrl_ENG_CurForSale		This house is currently for sale for
+HouseCtrl_ENG_StorageSumm		House Storage Summary
+HouseCtrl_ENG_StorageIncr		Increased Storage
+HouseCtrl_ENG_StorageBuy		Buy Storage
+HouseCtrl_ENG_Unlimited			Unlimited
+HouseCtrl_ENG_StorageMax		Maximum Storage
+HouseCtrl_ENG_StorageMax2		Maximum Storage
+HouseCtrl_ENG_StorageAvb		Available Storage
+HouseCtrl_ENG_LockdownUse		Used by Lockdowns
+HouseCtrl_ENG_LockdownMax		Maximum Lockdowns
+HouseCtrl_ENG_LockdownMax2		Maximum Lockdowns
+HouseCtrl_ENG_LockdownAvb		Available Lockdowns
+HouseCtrl_ENG_SecureUse			Used by Secure Storage
+HouseCtrl_ENG_MaxLockdown		Maximum Lockdowns
+HouseCtrl_ENG_UseMoveCont		Used by Moving Crate
+HouseCtrl_ENG_Vendors			Vendors
+
+HouseCtrl_ENG_IncreaseStor		Increase Storage
+HouseCtrl_ENG_IncrStorInf		You may buy up to a 100% increase in storage space. The value listed for this property will be adjusted to reflect your investment.  The price for a 100% upgrade should not cost more than 50% of the property price, however you buy it.
+HouseCtrl_ENG_IncrStorInf2		The value of purchased storage will be refunded to your bankbox upon redeeding.
+HouseCtrl_ENG_IncrStorAdd		Add
+HouseCtrl_ENG_IncrStorFor		for
+
+HouseCtrl_ENG_ConvCustomize		Convert into Customizable House
+HouseCtrl_ENG_CustomizeH		Customize This House
+HouseCtrl_ENG_RelMoveCrate		Relocate Moving Crate
+HouseCtrl_ENG_CngSignID			Change House Sign
+HouseCtrl_ENG_CngSignCol		Change House Sign Color
+HouseCtrl_ENG_CngSignHng		Change House Sign Hanger
+HouseCtrl_ENG_CngSignPst		Change House Signpost
+HouseCtrl_ENG_CngFoundat		Change Foundation Style
+HouseCtrl_ENG_RenameHouse		Rename House
+
+
+
+HouseCtrl_ENG_ListAccess		Access List
+HouseCtrl_ENG_ListBan			Ban List
+HouseCtrl_ENG_ListCoowner		Coowner List
+HouseCtrl_ENG_ListFriend		Friend List
+/////
+HouseCtrl_ENG_ViewCoOwn			View Co-Owners List
+HouseCtrl_ENG_AddCoOwn			Add a Co-Owner
+HouseCtrl_ENG_RemCoOwn			Remove a Co-Owner
+HouseCtrl_ENG_ClrCoOwn			Clear Co-Owner List
+/////
+HouseCtrl_ENG_ViewFriend		View House Friends
+HouseCtrl_ENG_AddFriend			Add a Friend
+HouseCtrl_ENG_RemFriend			Remove a Friend
+HouseCtrl_ENG_ClrFriend			Clear Friend List
+/////
+HouseCtrl_ENG_ViewAccess		View Access List
+HouseCtrl_ENG_ClrAccess			Clear Access List
+/////
+HouseCtrl_ENG_ViewBanList		View Ban List
+HouseCtrl_ENG_ClrBanList		Clear Ban List
+/////
+HouseCtrl_ENG_RemGldhouse		Remove Guild Declaration
+HouseCtrl_ENG_SetGldhouse		Declare Guildhouse
+/////
+HouseCtrl_ENG_RecodeDoor		Recode Doors, Boxes
+HouseCtrl_ENG_OrTelepads		or Telepads
+HouseCtrl_ENG_Public			Public
+HouseCtrl_ENG_Private			Private
+HouseCtrl_ENG_ChangeTo			Change to
+// HouseCtrl_END_RecodeBox		Boxes
+/////
+
+
+HouseCtrl_ENG_Houses			Houses
+HouseCtrl_ENG_PropExempt		This property has been made exempt from decay.
+HouseCtrl_ENG_PropNoTax			As such you have no Property Tax to pay.
+HouseCtrl_ENG_PropRefl			This exemption is reflected on the main page of this menu.
+HouseCtrl_ENG_PropLost			If this house is put for sale or moved the exemption will be lost.
+HouseCtrl_ENG_EstateTax			Estate Tax applies for
+HouseCtrl_ENG_House-s			house(s)
+HouseCtrl_ENG_PLUS				PLUS
+HouseCtrl_ENG_Addit				Additional
+HouseCtrl_ENG_FlatRate			of house value (flat rate)
+HouseCtrl_ENG_ResetDec			Reset your house's decay timer to
+HouseCtrl_ENG_TaxIsDue			Property Tax may be paid whenever any is due.
+HouseCtrl_ENG_TaxPrice			The price of your Property Tax per
+
+HouseCtrl_ENG_TaxOf				of
+HouseCtrl_ENG_TaxIs				is
+HouseCtrl_ENG_HouseVal			House Value
+HouseCtrl_ENG_HouseVal2			house value
+HouseCtrl_ENG_TaxRegRate		region rate
+HouseCtrl_ENG_UpStdAllow		for each house over standard allowance
+HouseCtrl_ENG_Pay				Pay
+HouseCtrl_ENG_ToAdd				to add
+HouseCtrl_ENG_ToQTS				qts.
+HouseCtrl_ENG_NoPropTax			No Property Tax is due on this building.
+HouseCtrl_ENG_StaffOver			Staff Override
+HouseCtrl_ENG_ResDecTmr			Reset decay timer to
+
+HouseCtrl_ENG_WARNING			WARNING
+HouseCtrl_ENG_Condemn			You are about to place a new house. Placing this house will <def.bfont_hs_title>condemn<def.bfont_black> any and all of your other houses that you may have.<DEF.BR><DEF.BR>In addition, you will not be able to place another house or have one transferred to you for one (1) real-life week.<DEF.BR><DEF.BR>Once you accept these terms, these effects cannot be reversed.  Re-deeding or transferring your new house will <def.bfont_hs_title>not<def.bfont_black> uncondemn your other house(s) nor will the one week timer be removed.<DEF.BR><DEF.BR>If you are absolutely certain you wish to proceed, click the button next to OKAY below.  If you do not wish to trade for this house, click CANCEL.
+
+HouseCtrl_ENG_DecorFlip			Flip
+HouseCtrl_ENG_DecorUp			Up
+HouseCtrl_ENG_DecorDown			Down
+HouseCtrl_ENG_HousePTools		HOUSE PLACEMENT TOOL
+HouseCtrl_ENG_HouseClass		Classic Houses
+HouseCtrl_ENG_House2Story		2-Story Customizable Houses
+HouseCtrl_ENG_House3Story		3-Story Customizable Houses
+HouseCtrl_ENG_UnablePlace		You are currently unable to place a new house or receive a house in trade because you have become the owner of a house within the last
+HouseCtrl_ENG_TestPlacem		You can test for house placement right now, but you cannot currently create a permanent house.
+HouseCtrl_ENG_HouseDescr		House Description
+HouseCtrl_ENG_Storages			Storage
+HouseCtrl_ENG_Lockdowns			Lockdowns
+HouseCtrl_ENG_Costs				Cost
+HouseCtrl_ENG_BankBal			Bank Balance
+HouseCtrl_ENG_Close				Close
+HouseCtrl_ENG_Next				Next
+HouseCtrl_ENG_Prev				Previous
+
+HouseCtrl_ENG_Cancel			Cancel
+HouseCtrl_ENG_Confirm			Confirm
+
+
+HouseCtrl_ENG_InvalTrg			Invalid Target.
+
+/////////////////////////////////////////////////////////////
+
+HouseCtrl_RUS_INFORMATION		ИНФОРМАЦИЯ
+HouseCtrl_RUS_SECURITY			БЕЗОПАСНОСТЬ
+HouseCtrl_RUS_STORAGE			ХРАНИЛИЩЕ
+HouseCtrl_RUS_CUSTOMIZE			НАСТРОЙКИ
+HouseCtrl_RUS_OWNERSHIP			СОБСТВЕННОСТЬ
+////
+HouseCtrl_RUS_GrantAccess		Даровать доступ
+HouseCtrl_RUS_Banish			Изгнать
+HouseCtrl_RUS_Revoke			Отозвать доступ
+HouseCtrl_RUS_LiftBan			Снять запрет
+HouseCtrl_RUS_Eject				Прогнать
+////
+HouseCtrl_RUS_Owned				Владелец:
+HouseCtrl_RUS_IncorrPlace		Этот дом неправильно расположен.
+HouseCtrl_RUS_Headquarter		Это здание является штаб-квартирой
+HouseCtrl_RUS_Guild				гильдии
+HouseCtrl_RUS_BuildOn			Построен:
+HouseCtrl_RUS_SalePrice			Это здание продается за
+HouseCtrl_RUS_Value				Стоимость:
+HouseCtrl_RUS_VisitCnt			Счетчик визитов:
+
+HouseCtrl_RUS_LstPrice			Заявленная Цена:
+HouseCtrl_RUS_HouseIsOf			Этот дом построен по
+HouseCtrl_RUS_HouseIs			и находится в
+HouseCtrl_RUS_Custom			индивидуальному
+HouseCtrl_RUS_Prebuilt			стандартному
+HouseCtrl_RUS_Design			проекту
+HouseCtrl_RUS_PrivProp			частной собственности
+HouseCtrl_RUS_PublOpen			в публичном доступе
+HouseCtrl_RUS_DecayProtect		Этот дом защищен от разрушения.
+HouseCtrl_RUS_ThisHouse			Этот дом
+HouseCtrl_RUS_WillDemol			будет снесён
+HouseCtrl_RUS_WillDecay			разрушится
+HouseCtrl_RUS_SayIn				через
+HouseCtrl_RUS_MsgShedDemol		Этот дом расположен в неправильном месте и будет снесён через
+HouseCtrl_RUS_MsgDemolRefund	Если вы сами не демонтируете здание, то оно вместе с находящимися на его территории предметами будет удалено
+HouseCtrl_RUS_FORSALE			ПРОДАЁТСЯ
+HouseCtrl_RUS_BuyHouse			Купите этот дом за
+HouseCtrl_RUS_TaxCover			Налог на имущество оплачен на
+HouseCtrl_RUS_TaxIs				Налог на имущество составляет 
+
+HouseCtrl_RUS_DemolProceed		Вы собираетесь снести
+HouseCtrl_RUS_DemolProceed2		этот объект недвижимости
+HouseCtrl_RUS_DemolProceed3		Желаете продолжить?
+HouseCtrl_RUS_DemolAndDestr		Снести и утилизировать
+HouseCtrl_RUS_Refund			Возврат
+HouseCtrl_RUS_Charge			Заплатите
+HouseCtrl_RUS_GMFree			Бесплатно для ГМа
+HouseCtrl_RUS_RedeedBank		Свернуть и сложить в банк
+HouseCtrl_RUS_ClrList			Вы собираетесь очистить
+HouseCtrl_RUS_ClrConfirm		Подтведить очистку списка
+
+HouseCtrl_RUS_Access			Доступ
+HouseCtrl_RUS_Owner				Владелец
+HouseCtrl_RUS_OwnerOnly			Только владелец
+HouseCtrl_RUS_CoOwners			Совладельцы
+HouseCtrl_RUS_Friends			Друзья
+HouseCtrl_RUS_GuildMemb			Согильдийцы
+HouseCtrl_RUS_Anyone			Кто угодно
+
+HouseCtrl_RUS_Refreshed			Дом автоматически обновлен.
+HouseCtrl_RUS_LastTraded		Куплен:
+HouseCtrl_RUS_PayTax			Оплатить налог на собственность
+HouseCtrl_RUS_TradeHouse		Продать дом
+HouseCtrl_RUS_HouseRemoval		Удаление дома
+HouseCtrl_RUS_RemoveEnsure		Пожалуйста, убедитесь, что ваш дом пуст, прежде чем выставлять его на продажу. Все списки будут удалены и все двери будут открыты. Ваш дом будет открыт для просмотра, однако вы сохраните за собой контроль над ним до тех пор, пока он не будет куплен.
+HouseCtrl_RUS_PutForSale		Выставить дом на продажу
+HouseCtrl_RUS_TakeOffSale		Снять дом с продажи
+
+HouseCtrl_RUS_AdmOptions		Административные Возможности
+HouseCtrl_RUS_SetDecay			Вернуть разрушаемость дома от ветхости
+HouseCtrl_RUS_SetEternal		Установить защиту дома от ветхости
+HouseCtrl_RUS_SchedDemol		Запланировать снос этого дома
+HouseCtrl_RUS_NumDayDemol		Количество дней до сноса (от 7 до 30)
+HouseCtrl_RUS_DemolitDays		дней
+HouseCtrl_RUS_CancelDemol		Отменить плановый снос
+HouseCtrl_RUS_StartDemol		Снести дом через
+
+HouseCtrl_RUS_SellHouse			Продажа дома
+HouseCtrl_RUS_AskPrice			Введите запрашиваемую цену
+HouseCtrl_RUS_CurForSale		Это здание выставлено на продажу
+HouseCtrl_RUS_StorageSumm		Описание Хранилища
+HouseCtrl_RUS_StorageIncr		Улучшение Склада
+HouseCtrl_RUS_StorageBuy		Увеличить размер склада
+HouseCtrl_RUS_Unlimited			Бесконечно
+HouseCtrl_RUS_StorageMax		Предельный размер склада
+HouseCtrl_RUS_StorageMax2		Лимит Склада
+HouseCtrl_RUS_StorageAvb		Доступный объем склада
+HouseCtrl_RUS_LockdownUse		Закреплено предметов
+HouseCtrl_RUS_LockdownMax		Максимум закреплений
+HouseCtrl_RUS_LockdownMax2		Лимит Закреплений
+HouseCtrl_RUS_LockdownAvb		Доступно закреплений
+HouseCtrl_RUS_SecureUse			Использовано от объема склада
+HouseCtrl_RUS_UseMoveCont		Закреплено контейнеров
+HouseCtrl_RUS_Vendors			Торговцы
+
+HouseCtrl_RUS_IncreaseStor		Улучшить хранилище
+HouseCtrl_RUS_IncrStorInf		Вы можете улучшить размер склада до 100% от начального объема. Стоимость здания, будет скорректирована, но не более чем на 50% от изначальной стоимости объекта.
+HouseCtrl_RUS_IncrStorInf2		Стоимость улучшений будет полностью возмещена в случае демонтажа здания.
+HouseCtrl_RUS_IncrStorAdd		Купить
+HouseCtrl_RUS_IncrStorFor		за
+
+HouseCtrl_RUS_ConvCustomize		Преобразовать в "Строительную площадку" //Construction site
+HouseCtrl_RUS_CustomizeH		Перейти в режим "Стройки"
+HouseCtrl_RUS_RelMoveCrate		Переместить ящик
+HouseCtrl_RUS_CngSignID			Поменять вид вывески
+HouseCtrl_RUS_CngSignCol		Поменять цвет вывески
+HouseCtrl_RUS_CngSignHng		Поменять кронштейн вывески
+HouseCtrl_RUS_CngSignPst		Поменять опору вывески
+HouseCtrl_RUS_CngFoundat		Поменять вид фундамента
+HouseCtrl_RUS_RenameHouse		Переименовать дом
+
+
+HouseCtrl_RUS_ListAccess		Список Доступа
+HouseCtrl_RUS_ListBan			Список Изгнания
+HouseCtrl_RUS_ListCoowner		Список Хозяев
+HouseCtrl_RUS_ListFriend		Список Друзей
+/////
+HouseCtrl_RUS_ViewCoOwn			Список Хозяев
+HouseCtrl_RUS_AddCoOwn			Добавить Хозяина
+HouseCtrl_RUS_RemCoOwn			Удалить Хозяина
+HouseCtrl_RUS_ClrCoOwn			Очистить Хозяев
+/////
+HouseCtrl_RUS_ViewFriend		Список Друзей
+HouseCtrl_RUS_AddFriend			Добавить Друга
+HouseCtrl_RUS_RemFriend			Удалить Друга
+HouseCtrl_RUS_ClrFriend			Очистить Друзей
+/////
+HouseCtrl_RUS_ViewAccess		Список Доступа
+HouseCtrl_RUS_ClrAccess			Очистить Доступ
+/////
+HouseCtrl_RUS_ViewBanList		Список Изгнания
+HouseCtrl_RUS_ClrBanList		Очистить Изгнание
+/////
+HouseCtrl_RUS_RemGldhouse		Распустить Штаб
+HouseCtrl_RUS_SetGldhouse		Объявить Штабом
+/////
+HouseCtrl_RUS_RecodeDoor		Кодировать двери,
+HouseCtrl_RUS_OrTelepads		ящики, порталы
+HouseCtrl_RUS_Public			Публичный
+HouseCtrl_RUS_Private			Частный
+HouseCtrl_RUS_ChangeTo			Режим
+// HouseCtrl_RUS_RecodeBox			Boxes
+/////
+
+HouseCtrl_RUS_Houses			Кол-во домов
+HouseCtrl_RUS_PropExempt		Это здание защищено от разрушения.
+HouseCtrl_RUS_PropNoTax			Поэтому вам не нужно платить налог на имущество.
+HouseCtrl_RUS_PropRefl			Это исключение отражено на главной странице данного меню.
+HouseCtrl_RUS_PropLost			Если этот дом будет выставлен на продажу или переедет, льгота будет утрачена.
+HouseCtrl_RUS_EstateTax			Налог на недвижимость для
+HouseCtrl_RUS_House-s			дома(ов)
+HouseCtrl_RUS_PLUS				ПЛЮС
+HouseCtrl_RUS_Addit				Дополнительно
+HouseCtrl_RUS_FlatRate			от стоимости дома (фикс.ставка)
+HouseCtrl_RUS_ResetDec			Обновить таймер разрушения до
+HouseCtrl_RUS_TaxIsDue			Налог может быть уплачен в любое время.
+HouseCtrl_RUS_TaxPrice			Размер налога на недвижимость за
+
+HouseCtrl_RUS_TaxOf				от
+HouseCtrl_RUS_TaxIs				составляет
+HouseCtrl_RUS_HouseVal			стоимости дома
+HouseCtrl_RUS_HouseVal2			от стоимости дома
+HouseCtrl_RUS_TaxRegRate		регионально
+HouseCtrl_RUS_UpStdAllow		за каждый дом сверх станд.кол-ва
+HouseCtrl_RUS_Pay				Оплатите
+HouseCtrl_RUS_ToAdd				за
+HouseCtrl_RUS_ToQTS				шт.
+HouseCtrl_RUS_NoPropTax			Это здание не облагается налогом.
+HouseCtrl_RUS_StaffOver			Административные Возможности
+HouseCtrl_RUS_ResDecTmr			Уст-ть таймер разрушения на
+
+HouseCtrl_RUS_WARNING			ВНИМАНИЕ
+HouseCtrl_RUS_Condemn			Вы собираетесь построить новый дом. Размещение этого дома приведет к тому, что <def.bfont_hs_title>уничтожит<def.bfont_black>все остальные ваши дома, которые у вас могут быть.<DEF.BR><DEF.BR>Кроме того, вы не сможете разместить другой дом или передать его вам на один (1) срок неделя реальной жизни.<DEF.BR ><DEF.BR >После того, как вы примете эти условия, эти последствия не могут быть отменены. Переоформление или перенос вашего нового дома не повлияет на другие ваши дома, а также не отменит действие недельного таймера.<DEF.BR><DEF.BR >Если вы абсолютно уверены, что хотите продолжить, нажмите кнопку "Далее" ниже нажмите "ОК".  Если вы не хотите торговать этим домом, нажмите кнопку ОТМЕНА.
+
+HouseCtrl_RUS_DecorFlip			Flip
+HouseCtrl_RUS_DecorUp			Up
+HouseCtrl_RUS_DecorDown			Down
+HouseCtrl_RUS_HousePTools		МАСТЕР УСТАНОВКИ ДОМОВ
+HouseCtrl_RUS_HouseClass		Классические дома
+HouseCtrl_RUS_House2Story		2-х этажные Проектируемые дома
+HouseCtrl_RUS_House3Story		3-х этажные Проектируемые дома
+HouseCtrl_RUS_UnablePlace		Вы не можете установить или купить новый дом, поскольку вы стали владельцем другого дома в течении последних
+HouseCtrl_RUS_TestPlacem		Вы можете протестировать систему размещения дома прямо сейчас, но не сможете установить постоянный дом.
+HouseCtrl_RUS_HouseDescr		Описание дома
+HouseCtrl_RUS_Storages			Склад
+HouseCtrl_RUS_Lockdowns			Закреп.
+HouseCtrl_RUS_Costs				Цена
+HouseCtrl_RUS_BankBal			Банковский баланс
+HouseCtrl_RUS_Close				Закрыть
+HouseCtrl_RUS_Next				Следующий
+HouseCtrl_RUS_Prev				Предыдущий
+
+HouseCtrl_RUS_Cancel			Отменить
+HouseCtrl_RUS_Confirm			Подтвердить
+
+HouseCtrl_RUS_InvalTrg			Неправильная цель.
+
 
 //Available sign colors - Test colors only, set to suit your hues and tastes.
-sign_color_1 06d6
-sign_color_2 07ad
-sign_color_3 0641
-sign_color_4 0975
-sign_color_5 07a1
-sign_color_6 0770
-sign_color_7 079c
-sign_color_8 0455
-sign_color_9 0796
-sign_color_10 0665
-sign_color_11 07d1
-sign_color_12 0400
-sign_color_13 0750
-sign_color_14 0515
-sign_color_15 04de
-sign_color_16 0538
-sign_color_17 079b
-sign_color_18 04ab
-sign_color_19 04a9
-sign_color_20 04aa
-sign_color_21 0157
-sign_color_22 0676
-sign_color_23 0157
-sign_color_24 0235
-sign_color_25 06c0
-sign_color_26 04ac
-sign_color_27 0473
-sign_color_28 02e9
-sign_color_29 04a8
-sign_color_30 0490
+sign_color_1		06d6
+sign_color_2		07ad
+sign_color_3		0641
+sign_color_4		0975
+sign_color_5		07a1
+sign_color_6		0770
+sign_color_7		079c
+sign_color_8		0455
+sign_color_9		0796
+sign_color_10		0665
+sign_color_11		07d1
+sign_color_12		0400
+sign_color_13		0750
+sign_color_14		0515
+sign_color_15		04de
+sign_color_16		0538
+sign_color_17		079b
+sign_color_18		04ab
+sign_color_19		04a9
+sign_color_20		04aa
+sign_color_21		0157
+sign_color_22		0676
+sign_color_23		0157
+sign_color_24		0235
+sign_color_25		06c0
+sign_color_26		04ac
+sign_color_27		0473
+sign_color_28		02e9
+sign_color_29		04a8
+sign_color_30		0490
 
-[DEFNAME signs]
-sign_1 9
-sign_2 29
-sign_3 54
-sign_4 90
-sign_5 147
-sign_6 169
-sign_7 177
-sign_8 204
-sign_9 251
-sign_10 257
-sign_11 263
-sign_12 298
-sign_13 347
-sign_14 424
-sign_15 441
-sign_16 466
-sign_17 514
-sign_18 600
-sign_19 601
-sign_20 602
-sign_21 603
-sign_22 660
-sign_23 666
-sign_24 672
-sign_25 898
-sign_26 970
-sign_27 974
-sign_28 982
+[DEFNAME signposts]
+signpost_1			9
+signpost_2			29
+signpost_3			54
+signpost_4			90
+signpost_5			147
+signpost_6			169
+signpost_7			177
+signpost_8			204
+signpost_9			251
+signpost_10			257
+signpost_11			263
+signpost_12			298
+signpost_13			347
+signpost_14			424
+signpost_15			441
+signpost_16			466
+signpost_17			514
+signpost_18			600
+signpost_19			601
+signpost_20			602
+signpost_21			603
+signpost_22			660
+signpost_23			666
+signpost_24			672
+signpost_25			898
+signpost_26			970
+signpost_27			974
+signpost_28			982
 
 [DEFNAME Avaible_Houses]		//Avaible houses on House Placement Tool
 house_classic_1			"m_stone_and_plaster_house"
@@ -260,28 +680,28 @@ house_custom_3story_53		"m_foundation_18x16"
 house_custom_3story_54		"m_foundation_18x17"
 house_custom_3story_55		"m_foundation_18x18"
 
-[defname house_access_level]
-house_access_none       = 0
-house_access_owner      = 1
-house_access_coowner    = 2
-house_access_friend     = 3
-house_access_guild      = 4
-house_access_all        = 5
+[DEFNAME house_access_level]
+house_access_none			0
+house_access_owner			1
+house_access_coowner		2
+house_access_friend			3
+house_access_guild			4
+house_access_all			5
 
-[defname house_container_access_level]
-house_container_access_all      = 0
-house_container_access_friend   = 1
-house_container_access_coowner  = 2
-house_container_access_owner    = 3
+[DEFNAME house_container_access_level]
+house_container_access_all			0
+house_container_access_friend		1
+house_container_access_coowner		2
+house_container_access_owner		3
 
 [DEFNAME house_privs]
-hp_none         = 0
-hp_owner        = 1
-hp_coowner      = 2
-hp_friend       = 3
-hp_accessonly   = 4
-hp_ban          = 5
-hp_vendor       = 6
-hp_guild        = 7
+hp_none				0
+hp_owner			1
+hp_coowner			2
+hp_friend			3
+hp_accessonly		4
+hp_ban				5
+hp_vendor			6
+hp_guild			7
 
 [EOF]

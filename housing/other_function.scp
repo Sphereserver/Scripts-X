@@ -1,0 +1,194 @@
+[FUNCTION f_math_cat] //делит число на разряды
+if strlen(<argn>) <= 3
+	return <argn>
+endif
+local.lng = <eval(strlen(<args>))>
+while (<local.lng> > 3)
+	local.lng -= 3
+	local.res = ".<strsub <local.lng> 3 <args>><local.res>"
+endwhile
+local.leftover = "<strsub 0 <local.lng> <args>>"
+if (!strcmp("-","<local.leftover>") && strlen(<local.leftover>) == 1)
+	local.res = "<local.leftover><strsub 1 <eval(strlen(<local.res>)-2)> <local.res>>"
+else
+	local.res = "<local.leftover><strsub 0 <eval(strlen(<local.res>)-1)> <local.res>>"
+endif
+return <local.res>
+
+[FUNCTION f_return_odd] // четное ли число? 1 = да
+return <qval <argn>%2?0:1>
+
+//////////////////////////////////////
+
+[FUNCTION f_rtime_year]
+if <ISEMPTY <args>>
+	return <serv.rtime.format %Y>
+else
+	return "<eval(<STRSUB 0 4 <args>>)>"
+endif
+
+[FUNCTION f_rtime_month]
+if <ISEMPTY <args>>
+	return <serv.rtime.format %m>
+else
+	return <STRSUB 5 2 <args>>
+endif
+
+[FUNCTION f_rtime_day]
+if <ISEMPTY <args>>
+	return <serv.rtime.format %d>
+else
+	return <STRSUB 8 2 <args>>
+endif
+
+[FUNCTION f_rtime_hours]
+if <ISEMPTY <args>>
+	return <serv.rtime.format %H>
+else
+	return <STRSUB 11 2 <args>>
+endif
+
+[FUNCTION f_rtime_minutes]
+if <ISEMPTY <args>>
+	return <serv.rtime.format %M>
+else
+	return <STRSUB 14 2 <args>>
+endif
+
+[FUNCTION f_rtime_second]
+if <ISEMPTY <args>>
+	return <serv.rtime.format %S>
+else
+	return <STRSUB 17 2 <args>>
+endif
+
+
+[FUNCTION f_return_todate]
+if <ISEMPTY <args>>
+	local.year = "<f_rtime_year <serv.rtime>>"
+	local.month = "<f_rtime_month <serv.rtime>>"
+	local.day = "<f_rtime_day <serv.rtime>>"
+	local.todate = <f_rtime_year <serv.rtime>>_<f_rtime_month <serv.rtime>>_<f_rtime_day <serv.rtime>>
+else
+	local.year = "<f_rtime_year <args>>"
+	local.month = "<f_rtime_month <args>>"
+	local.day = "<f_rtime_day <args>>"
+	local.todate = <f_rtime_year <args>>_<f_rtime_month <args>>_<f_rtime_day <args>>
+endif
+
+[FUNCTION f_return_timeleft]
+local.timer = <argn>
+if (<argn> <= 0)
+	local.hour = "0"
+	local.minutes = "0"
+	local.second = "0"
+	local.return = 4
+elseif (<argn> >= 86400)
+	local.day = "<eval(<argn> / 86400)>"
+	// local.day = "<qval (<local.day>/10)?<local.day>:0<local.day>>"
+	local.timer = <eval(<local.timer> - (<local.day> * 86400))>
+	local.hour = "<eval(<local.timer> / 3600)>"
+	local.timer = <eval(<local.timer> - (<local.hour> * 3600))>
+	local.minutes = "<eval(<local.timer> / 60)>"
+	local.second = "<eval(<local.timer> - (<local.minutes> * 60))>"
+	local.return = 1
+elseif (<argn> >= 3600)
+	local.hour = "<eval(<local.timer> / 3600)>"
+	local.timer = <eval(<local.timer> - (<local.hour> * 3600))>
+	local.minutes = "<eval(<local.timer> / 60)>"
+	local.second = "<eval(<local.timer> - (<local.minutes> * 60))>"
+	local.return = 2
+elseif (<argn> >= 60)
+	local.hour = "0"
+	local.minutes = "<eval(<local.timer> / 60)>"
+	local.second = "<eval(<local.timer> - (<local.minutes> * 60))>"
+	local.return = 3
+else
+	local.hour = "0"
+	local.minutes = "0"
+	local.second = "<argn>"
+	local.return = 4
+endif
+local.hour = "<qval (<local.hour>/10)?<local.hour>:0<local.hour>>"
+local.minutes = "<qval (<local.minutes>/10)?<local.minutes>:0<local.minutes>>"
+local.second = "<qval (<local.second>/10)?<local.second>:0<local.second>>"
+
+[FUNCTION f_month_name]
+local.last = <STRSUB <eval(strlen(<argn>)-1)> 1 <argn>>
+if (<local.last> == 1)
+	local.month_name = месяц
+elseif ((<local.last> >= 2) && (<local.last> <= 4))
+	local.month_name = месяца
+else
+	local.month_name = месяцев
+endif
+// say @,,1 <argn> <local.month_name>
+
+[FUNCTION f_days_name]
+local.last = <STRSUB <eval(strlen(<argn>)-1)> 1 <argn>>
+if (<local.last> == 1)
+	local.day_name = день
+elseif ((<local.last> >= 2) && (<local.last> <= 4))
+	local.day_name = дня
+else
+	local.day_name = дней
+endif
+// say @,,1 <argn> <local.day_name>
+
+[FUNCTION f_hour_name]
+local.last = <STRSUB <eval(strlen(<argn>)-1)> 1 <argn>>
+if (<local.last> == 1)
+	local.hour_name = час
+elseif ((<local.last> >= 2) && (<local.last> <= 4))
+	local.hour_name = часа
+else
+	local.hour_name = часов
+endif
+// say @,,1 <argn> <local.hour_name>
+
+[FUNCTION f_minutes_name]
+local.last = <STRSUB <eval(strlen(<argn>)-1)> 1 <argn>>
+if (<local.last> == 1)
+	local.min_name = минуту
+elseif ((<local.last> >= 2) && (<local.last> <= 4))
+	local.min_name = минуты
+else
+	local.min_name = минут
+endif
+// say @,,1 <argn> <local.min_name>
+
+[FUNCTION f_sec_name]
+local.last = <STRSUB <eval(strlen(<argn>)-1)> 1 <argn>>
+if (<local.last> == 1)
+	local.sec_name = секунду
+elseif ((<local.last> >= 2) && (<local.last> <= 4))
+	local.sec_name = секунды
+else
+	local.sec_name = секунд
+endif
+// say @,,1 <argn> <local.sec_name>
+
+
+//////////////////////////////////////
+
+[FUNCTION f_LangChange]
+if <ISEMPTY <account.tag.LANG>>
+	account.tag.LANG = ENG
+endif
+local.switch = <qval <def.<account.tag.LANG>>?ENG:RUS>
+account.tag.LANG = <local.switch>
+src.sysmessage @,,1 LANG = <account.tag.LANG>
+
+[FUNCTION f_LangShowNum]
+if <ISEMPTY <account.tag.LANG>>
+	account.tag.LANG = ENG
+endif
+return <def.<account.tag.LANG>>
+
+[FUNCTION f_LangShow]
+if <ISEMPTY <account.tag.LANG>>
+	account.tag.LANG = ENG
+endif
+return <account.tag.LANG>
+
+[EOF]

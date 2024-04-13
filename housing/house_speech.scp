@@ -11,7 +11,10 @@ ON=lock this*
 		return 0
 	else
 		src.targetf f_house_item_lock
-		src.message @,,1 What do you wish to lockdown?
+		doswitch <src.f_LangShowNum>
+			src.message @,,1 What do you wish to lockdown?
+			src.message @,,1 Укажите, что вы хотите закрепить?
+		enddo
 		return 1
 	endif
 
@@ -21,17 +24,36 @@ ON=release this*
 		return 0
 	else
 		src.targetf f_house_item_unlock
-		src.message @,,1 What do you wish to release?
+		doswitch <src.f_LangShowNum>
+			src.message @,,1 What do you wish to release?
+			src.message @,,1 Укажите, что вы хотите открепить?
+		enddo
 		return 1
 	endif
 
+// ON=flip this*
+	// ref1 = <region.uid>
+	// if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
+		// return 0
+	// else
+		// src.targetf f_house_item_flip
+		// doswitch <src.f_LangShowNum>
+			// src.message @,,1 What do you wish to flip?
+			// src.message @,,1 Укажите, что вы хотите повернуть?
+		// enddo
+		// return 1
+	// endif
+
 ON=secure this*
 	ref1 = <region.uid>
-	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
+	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <src.isgm>) //<ref1.GetFriendPos <src>> >= 0 || 
 		return 0
 	else
 		src.targetf f_house_item_secure
-		src.message @,,1 What do you wish to secure?
+		doswitch <src.f_LangShowNum>
+			src.message @,,1 What do you wish to secure?
+			src.message @,,1 Укажите, что вы хотите охранять?
+		enddo
 		return 1
 	endif
 
@@ -40,8 +62,11 @@ ON=move north*
 	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
 		return 0
 	else
-		src.targetf f_house_moven
-		src.message @,,1 What do you wish to move?
+		src.targetf f_house_moveN
+		doswitch <src.f_LangShowNum>
+			src.message @,,1 What do you wish to move?
+			src.message @,,1 Укажите, что вы хотите подвинуть?
+		enddo
 		return 1
 	endif
 
@@ -50,8 +75,11 @@ ON=move south*
 	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
 		return 0
 	else
-		src.targetf f_house_moves
-		src.message @,,1 What do you wish to move?
+		src.targetf f_house_moveS
+		doswitch <src.f_LangShowNum>
+			src.message @,,1 What do you wish to move?
+			src.message @,,1 Укажите, что вы хотите подвинуть?
+		enddo
 		return 1
 	endif
 
@@ -60,8 +88,11 @@ ON=move east*
 	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
 		return 0
 	else
-		src.targetf f_house_movee
-		src.message @,,1 What do you wish to move?
+		src.targetf f_house_moveE
+		doswitch <src.f_LangShowNum>
+			src.message @,,1 What do you wish to move?
+			src.message @,,1 Укажите, что вы хотите подвинуть?
+		enddo
 		return 1
 	endif
 
@@ -70,18 +101,11 @@ ON=move west*
 	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
 		return 0
 	else
-		src.targetf f_house_movew
-		src.message @,,1 What do you wish to move?
-		return 1
-	endif
-
-ON=release this*
-	ref1 = <region.uid>
-	if !(<ref1.isowner <src>> || <ref1.GetCoownerPos <src>> >= 0 || <ref1.GetFriendPos <src>> >= 0 || <src.isgm>)
-		return 0
-	else
-		targetf, f_release
-		src.message @,,1 What do you wish to release?
+		src.targetf f_house_moveW
+		doswitch <src.f_LangShowNum>
+			src.message @,,1 What do you wish to move?
+			src.message @,,1 Укажите, что вы хотите подвинуть?
+		enddo
 		return 1
 	endif
 
@@ -92,7 +116,10 @@ ON=bank*
 			return 0
 		else
 			src.bankself
-			src.sysmessage @,,1 You have <bankbalance> gold in your Bank Box.
+			doswitch <src.f_LangShowNum>
+				src.sysmessage @,,1 You have <f_math_cat <src.bankbalance>> gold in your Bank Box.
+				src.sysmessage @,,1 На вашем банковском счету находится <f_math_cat <src.bankbalance>> gp
+			enddo
 			return 1
 		endif
 	endif
@@ -103,7 +130,10 @@ ON=eject*
 		return 0
 	else
 		src.targetf f_house_eject
-		src.message @,,1 Select player to eject
+		doswitch <src.f_LangShowNum>
+			src.message @,,1 Select player to eject.
+			src.message @,,1 Укажите персонажа, которого вы хотите удалить с территории дома.
+		enddo
 		return 1
 	endif
 
@@ -113,7 +143,10 @@ ON=Ban Person*
 		return 0
 	else
 		src.targetf f_house_add_list ban
-		src.message @,,1 Select player to ban
+		doswitch <src.f_LangShowNum>
+			src.message @,,1 Select player to ban.
+			src.message @,,1 Укажите персонажа, которого вы хотите изгнать с территории дома.
+		enddo
 		return 1
 	endif
 
@@ -123,12 +156,15 @@ ON=Place trashcan*
 		return 0
 	else
 		if (<ref1.tag0.trashcan>)
-			sysmessage @32,,1 You already have a trashcan.
+			doswitch <src.f_LangShowNum>
+				src.message @<def.fail>,,1 You already have a trashcan.
+				src.message @<def.fail>,,1 На территории дома уже установлена мусорная корзина.
+			enddo
 		else
 			serv.newitem i_trashcan
-			new.p=<p>
-			new.attr=attr_move_never
-			ref1.tag0.trashcan=<new>
+			new.p = <src.p>
+			new.attr = attr_move_never
+			ref1.tag0.trashcan = <new>
 		endif
 		return 1
 	endif
@@ -139,10 +175,13 @@ ON=Remove trashcan*
 		return 0
 	else
 		if (<ref1.tag0.trashcan>)
-			try uid.<ref1.tag0.trashcan>.remove 
-			ref1.tag.trashcan
+			try uid.<ref1.tag0.trashcan>.remove
+			ref1.tag.trashcan =
 		else
-			sysmessage @32,,1 You have no trashcan to remove.
+			doswitch <src.f_LangShowNum>
+				src.message @<def.fail>,,1 You have no trashcan to remove.
+				src.message @<def.fail>,,1 На территории дома нет мусорной корзины.
+			enddo
 		endif
 		return 1
 	endif
