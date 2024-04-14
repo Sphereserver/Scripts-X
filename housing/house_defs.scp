@@ -84,10 +84,6 @@ bfont_hs_text3				<basefont color="#d3d3d3">  // lgray
 bfont_hs_red				<basefont color="#ff3333">  // light red
 bfont_hs_gray				<basefont color="#808080">  // gray
 
-// TextColor Settings
-fail			32
-
-
 // Dialog Language Settings
 HouseCtrl_ENG_INFORMATION		INFORMATION
 HouseCtrl_ENG_SECURITY			SECURITY

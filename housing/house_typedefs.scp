@@ -1,4 +1,4 @@
-//****************************************************************************
+п»ї//****************************************************************************
 // SphereServer by: SphereServer development team and Menasoft.
 // www.sphereserver.net
 //****************************************************************************
@@ -30,6 +30,7 @@ On=@HouseSysInit
 		ref1 = <uid> //sign
 		ref2 = <link> //house
 		ref3 = <link.owner> //owner
+		call f_return_todate <serv.rtime>
 		
 		ref2.tag.sign = <uid>
 		tag.sign_dispid = <hval(<dispid> & ~0a8f00000)>
@@ -85,13 +86,13 @@ On=@ClientToolTip
 					local.decaymsg = <dlocal.day> <local.day_name> <dlocal.hour> <local.hour_name> <dlocal.minutes> <local.min_name> //1
 					local.decaymsg = <dlocal.hour> <local.hour_name> <dlocal.minutes> <local.min_name> //2
 					local.decaymsg = 0 <local.hour_name> <dlocal.minutes> <local.min_name> //3
-					local.decaymsg = менее чем на 1 минуту //4
+					local.decaymsg = РјРµРЅРµРµ С‡РµРј РЅР° 1 РјРёРЅСѓС‚Сѓ //4
 				enddo
 			end
 		enddo
 		doswitch <src.f_LangShowNum>
 			addcliloc 1070722, Demolition Scheduled in <local.decaymsg>
-			addcliloc 1070722, Снос запланирован через <local.decaymsg>
+			addcliloc 1070722, РЎРЅРѕСЃ Р·Р°РїР»Р°РЅРёСЂРѕРІР°РЅ С‡РµСЂРµР· <local.decaymsg>
 		endif
 	elseif <ref4.tag0.forsale>
 		addcliloc 1070722, <def.HouseCtrl_<src.f_LangShow>_FORSALE> <link.dtag0.price>gp
@@ -134,7 +135,7 @@ On=@DClick
 		else
 			doswitch <src.f_LangShowNum>
 				src.sysmessage @<def.fail>,,1 You must be standing on your doorstep to access the house menu.
-				src.sysmessage @<def.fail>,,1 Вы должны находится на территории дома, чтобы получить доступ к меню.
+				src.sysmessage @<def.fail>,,1 Р’С‹ РґРѕР»Р¶РЅС‹ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° С‚РµСЂСЂРёС‚РѕСЂРёРё РґРѕРјР°, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РґРѕСЃС‚СѓРї Рє РјРµРЅСЋ.
 			enddo
 			return 1
 		endif
@@ -163,8 +164,8 @@ On=@Timer
 					ref2.sysmessage @,,1 The number of houses you own is now <ref2.houses>
 				end
 				begin
-					ref2.sysmessage @,,1 Ваш <link.name> на территории <region.region.name> разрушился.
-					ref2.sysmessage @,,1 Количество домов, которыми вы владеете, теперь равно <ref2.houses>.
+					ref2.sysmessage @,,1 Р’Р°С€ <link.name> РЅР° С‚РµСЂСЂРёС‚РѕСЂРёРё <region.region.name> СЂР°Р·СЂСѓС€РёР»СЃСЏ.
+					ref2.sysmessage @,,1 РљРѕР»РёС‡РµСЃС‚РІРѕ РґРѕРјРѕРІ, РєРѕС‚РѕСЂС‹РјРё РІС‹ РІР»Р°РґРµРµС‚Рµ, С‚РµРїРµСЂСЊ СЂР°РІРЅРѕ <ref2.houses>.
 				end
 			enddo
 		endif
@@ -230,7 +231,8 @@ On=@DropOn_Item
 // Doors event
 [TYPEDEF ei_house_door]
 On=@Click
-	if !((<def0.hs_door_acces_key>) && (<serv.AutoHouseKeys>))
+	if ((<def0.hs_door_acces_key>) && (<serv.AutoHouseKeys>))
+	else
 		f_house_msg_access
 	endif
 
@@ -288,7 +290,7 @@ On=@DClick
 						local.decaymsg = <dlocal.day> <local.day_name> <dlocal.hour> <local.hour_name> <dlocal.minutes> <local.min_name> //1
 						local.decaymsg = <dlocal.hour> <local.hour_name> <dlocal.minutes> <local.min_name> //2
 						local.decaymsg = 0 <local.hour_name> <dlocal.minutes> <local.min_name> //3
-						local.decaymsg = менее чем на 1 минуту //4
+						local.decaymsg = РјРµРЅРµРµ С‡РµРј РЅР° 1 РјРёРЅСѓС‚Сѓ //4
 					enddo
 				end
 			enddo
@@ -458,10 +460,10 @@ On=@Click
 		end
 		begin
 			message House Transfer Contract
-			message @,,1 Дом: <link.name>
-			message @,,1 Владелец: <uid.<link.more1>.name>
-			// message @,,1 Координаты: <LINK.SEXTANTP> //<LINK.REGION.REGION.NAME> (<LINK.P>)
-			message @,,1 Координаты: <link.p.x>,<link.p.y>
+			message @,,1 Р”РѕРј: <link.name>
+			message @,,1 Р’Р»Р°РґРµР»РµС†: <uid.<link.more1>.name>
+			// message @,,1 РљРѕРѕСЂРґРёРЅР°С‚С‹: <LINK.SEXTANTP> //<LINK.REGION.REGION.NAME> (<LINK.P>)
+			message @,,1 РљРѕРѕСЂРґРёРЅР°С‚С‹: <link.p.x>,<link.p.y>
 		end
 	enddo
 	return 1
@@ -474,7 +476,7 @@ On=@ClientToolTip
 
 On=@Timer
 	if (<cont.type> == t_eq_trade_window)
-		timerf 2,trigger @timer
+		timerf 2,trigger @Timer
 	else
 		uid.<more>.events -e_house_transfer
 		remove
@@ -503,10 +505,10 @@ On=@HouseTraded
 			ref1.sysmessage @,,1 The number of houses you own is now <ref1.houses>.
 		end
 		begin
-			ref2.sysmessage @,,1 Вы передали этот дом <ref1.name>.
-			ref2.sysmessage @,,1 Количество домов, которыми вы владеете, теперь равно <ref2.houses>.
-			ref1.sysmessage @,,1 <ref2.name> перевел вам в собственность этот дом.
-			ref1.sysmessage @,,1 Количество домов, которыми вы владеете, теперь равно <ref1.houses>.
+			ref2.sysmessage @,,1 Р’С‹ РїРµСЂРµРґР°Р»Рё СЌС‚РѕС‚ РґРѕРј <ref1.name>.
+			ref2.sysmessage @,,1 РљРѕР»РёС‡РµСЃС‚РІРѕ РґРѕРјРѕРІ, РєРѕС‚РѕСЂС‹РјРё РІС‹ РІР»Р°РґРµРµС‚Рµ, С‚РµРїРµСЂСЊ СЂР°РІРЅРѕ <ref2.houses>.
+			ref1.sysmessage @,,1 <ref2.name> РїРµСЂРµРІРµР» РІР°Рј РІ СЃРѕР±СЃС‚РІРµРЅРЅРѕСЃС‚СЊ СЌС‚РѕС‚ РґРѕРј.
+			ref1.sysmessage @,,1 РљРѕР»РёС‡РµСЃС‚РІРѕ РґРѕРјРѕРІ, РєРѕС‚РѕСЂС‹РјРё РІС‹ РІР»Р°РґРµРµС‚Рµ, С‚РµРїРµСЂСЊ СЂР°РІРЅРѕ <ref1.houses>.
 		end
 	enddo
 	link.delban -1
@@ -521,7 +523,7 @@ On=@DClick
 	if (<cont> != <src.findlayer.21>)
 		doswitch <src.f_LangShowNum>
 			src.sysmessage @<def.fail>,,1 The item must be on your backpack.
-			src.sysmessage @<def.fail>,,1 Предмет должен находится в вашем рюкзаке.
+			src.sysmessage @<def.fail>,,1 РџСЂРµРґРјРµС‚ РґРѕР»Р¶РµРЅ РЅР°С…РѕРґРёС‚СЃСЏ РІ РІР°С€РµРј СЂСЋРєР·Р°РєРµ.
 		enddo
 		return 1
 	endif
@@ -535,13 +537,13 @@ On=@TargOn_Ground
 			if (<src.TAG0.House_PlacementDelay> > <serv.time>) && (<def0.hs_placement_delay>)
 				doswitch <src.f_LangShowNum>
 					src.sysmessage @<def.fail>,,1 Number of days until you can place another house: <eval((<src.TAG0.House_PlacementDelay>-<serv.time>)/864000)>
-					src.sysmessage @<def.fail>,,1 Количество дней до того, как вы сможете установить новый дом: <eval((<src.TAG0.House_PlacementDelay>-<serv.time>)/864000)>
+					src.sysmessage @<def.fail>,,1 РљРѕР»РёС‡РµСЃС‚РІРѕ РґРЅРµР№ РґРѕ С‚РѕРіРѕ, РєР°Рє РІС‹ СЃРјРѕР¶РµС‚Рµ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ РЅРѕРІС‹Р№ РґРѕРј: <eval((<src.TAG0.House_PlacementDelay>-<serv.time>)/864000)>
 				enddo
 				return 1
 			elseif !(<def0.hs_placement_ilshenar_facet>) && (<src.TARGP.M> == 2)
 				doswitch <src.f_LangShowNum>
 					src.sysmessage @<def.fail>,,1 Housing cannot be created in this area.
-					src.sysmessage @<def.fail>,,1 Невозможно установить дом в этом регионе.
+					src.sysmessage @<def.fail>,,1 РќРµРІРѕР·РјРѕР¶РЅРѕ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ РґРѕРј РІ СЌС‚РѕРј СЂРµРіРёРѕРЅРµ.
 				enddo
 				trigger @TargOn_Cancel
 				return 1
@@ -556,7 +558,7 @@ On=@TargOn_Char
 	endif
 	doswitch <src.f_LangShowNum>
 		src.sysmessage @<def.fail>,,1 You must place your house on ground.
-		src.sysmessage @<def.fail>,,1 Дом возможно установить только на земную поверхность.
+		src.sysmessage @<def.fail>,,1 Р”РѕРј РІРѕР·РјРѕР¶РЅРѕ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ С‚РѕР»СЊРєРѕ РЅР° Р·РµРјРЅСѓСЋ РїРѕРІРµСЂС…РЅРѕСЃС‚СЊ.
 	enddo
 	trigger @TargOn_Cancel
 	return 1
@@ -564,7 +566,7 @@ On=@TargOn_Char
 On=@TargOn_Item
 	doswitch <src.f_LangShowNum>
 		src.sysmessage @<def.fail>,,1 You must place your house on ground.
-		src.sysmessage @<def.fail>,,1 Дом возможно установить только на земную поверхность.
+		src.sysmessage @<def.fail>,,1 Р”РѕРј РІРѕР·РјРѕР¶РЅРѕ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ С‚РѕР»СЊРєРѕ РЅР° Р·РµРјРЅСѓСЋ РїРѕРІРµСЂС…РЅРѕСЃС‚СЊ.
 	enddo
 	trigger @TargOn_Cancel
 	return 1
@@ -593,14 +595,14 @@ On=@Enter
 					else
 						doswitch <src.f_LangShowNum>
 							src.sysmessage @<def.fail>,,1 You are not a member of this guild.
-							src.sysmessage @<def.fail>,,1 Вы не являетесь членом данной гильдии.
+							src.sysmessage @<def.fail>,,1 Р’С‹ РЅРµ СЏРІР»СЏРµС‚РµСЃСЊ С‡Р»РµРЅРѕРј РґР°РЅРЅРѕР№ РіРёР»СЊРґРёРё.
 						enddo
 						return 1
 					endif
 				else
 					doswitch <src.f_LangShowNum>
 						src.sysmessage @<def.fail>,,1 This is private property. You may not trespass.
-						src.sysmessage @<def.fail>,,1 Это частная собсвтенность. Вы не можете пройти.
+						src.sysmessage @<def.fail>,,1 Р­С‚Рѕ С‡Р°СЃС‚РЅР°СЏ СЃРѕР±СЃРІС‚РµРЅРЅРѕСЃС‚СЊ. Р’С‹ РЅРµ РјРѕР¶РµС‚Рµ РїСЂРѕР№С‚Рё.
 					enddo
 					return 1
 				endif
@@ -608,7 +610,7 @@ On=@Enter
 				if (<ref1.getbanpos <src>> >= 0)
 					doswitch <src.f_LangShowNum>
 						src.sysmessage @<def.fail>,,1 You are banned from this property.
-						src.sysmessage @<def.fail>,,1 Вам запретили находится на территории этого дома.
+						src.sysmessage @<def.fail>,,1 Р’Р°Рј Р·Р°РїСЂРµС‚РёР»Рё РЅР°С…РѕРґРёС‚СЃСЏ РЅР° С‚РµСЂСЂРёС‚РѕСЂРёРё СЌС‚РѕРіРѕ РґРѕРјР°.
 					enddo
 					return 1
 				else
@@ -653,14 +655,14 @@ On=@ItemDClick
 			if !(<ref1.isowner <uid>>) && !(<src.isgm)
 				doswitch <src.f_LangShowNum>
 					src.sysmessage @<def.fail>,,1 Only the home owner may place vendors here.
-					src.sysmessage @<def.fail>,,1 Только собственник дома может размещать торговцев.
+					src.sysmessage @<def.fail>,,1 РўРѕР»СЊРєРѕ СЃРѕР±СЃС‚РІРµРЅРЅРёРє РґРѕРјР° РјРѕР¶РµС‚ СЂР°Р·РјРµС‰Р°С‚СЊ С‚РѕСЂРіРѕРІС†РµРІ.
 				enddo
 				return 1
 			else
 				if (<ref1.housetype> == house_private)
 					doswitch <src.f_LangShowNum>
 						src.sysmessage @<def.fail>,,1 You must set your building to public before you can place vendors here.
-						src.sysmessage @<def.fail>,,1 Перед тем как разместить торговца нужно установить здание в публичный режим.
+						src.sysmessage @<def.fail>,,1 РџРµСЂРµРґ С‚РµРј РєР°Рє СЂР°Р·РјРµСЃС‚РёС‚СЊ С‚РѕСЂРіРѕРІС†Р° РЅСѓР¶РЅРѕ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ Р·РґР°РЅРёРµ РІ РїСѓР±Р»РёС‡РЅС‹Р№ СЂРµР¶РёРј.
 					enddo
 					return 1
 				else
@@ -673,8 +675,8 @@ On=@ItemDClick
 								src.sysmessage @<def.fail>,,1 You must remove an existing vendor before you can place a new one.
 							end
 							begin
-								src.sysmessage @<def.fail>,,1 У вас не хватает свободных мест для размещения торговца.
-								src.sysmessage @<def.fail>,,1 Вы можете уволить кого-то из ваших торговцев для размещения нового.
+								src.sysmessage @<def.fail>,,1 РЈ РІР°СЃ РЅРµ С…РІР°С‚Р°РµС‚ СЃРІРѕР±РѕРґРЅС‹С… РјРµСЃС‚ РґР»СЏ СЂР°Р·РјРµС‰РµРЅРёСЏ С‚РѕСЂРіРѕРІС†Р°.
+								src.sysmessage @<def.fail>,,1 Р’С‹ РјРѕР¶РµС‚Рµ СѓРІРѕР»РёС‚СЊ РєРѕРіРѕ-С‚Рѕ РёР· РІР°С€РёС… С‚РѕСЂРіРѕРІС†РµРІ РґР»СЏ СЂР°Р·РјРµС‰РµРЅРёСЏ РЅРѕРІРѕРіРѕ.
 							end
 						enddo
 						return 1
@@ -686,7 +688,7 @@ On=@ItemDClick
 				if (<ref1.housetype> == house_private)
 					doswitch <src.f_LangShowNum>
 						src.sysmessage @<def.fail>,,1 You must set your building to public before you can place vendors here.
-						src.sysmessage @<def.fail>,,1 Перед тем как разместить торговца нужно установить здание в публичный режим.
+						src.sysmessage @<def.fail>,,1 РџРµСЂРµРґ С‚РµРј РєР°Рє СЂР°Р·РјРµСЃС‚РёС‚СЊ С‚РѕСЂРіРѕРІС†Р° РЅСѓР¶РЅРѕ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ Р·РґР°РЅРёРµ РІ РїСѓР±Р»РёС‡РЅС‹Р№ СЂРµР¶РёРј.
 					enddo
 					return 1
 				else
@@ -699,8 +701,8 @@ On=@ItemDClick
 								src.sysmessage @<def.fail>,,1 You must remove an existing vendor before you can place a new one.
 							end
 							begin
-								src.sysmessage @<def.fail>,,1 У вас не хватает свободных мест для размещения торговца.
-								src.sysmessage @<def.fail>,,1 Вы можете уволить кого-то из ваших торговцев для размещения нового.
+								src.sysmessage @<def.fail>,,1 РЈ РІР°СЃ РЅРµ С…РІР°С‚Р°РµС‚ СЃРІРѕР±РѕРґРЅС‹С… РјРµСЃС‚ РґР»СЏ СЂР°Р·РјРµС‰РµРЅРёСЏ С‚РѕСЂРіРѕРІС†Р°.
+								src.sysmessage @<def.fail>,,1 Р’С‹ РјРѕР¶РµС‚Рµ СѓРІРѕР»РёС‚СЊ РєРѕРіРѕ-С‚Рѕ РёР· РІР°С€РёС… С‚РѕСЂРіРѕРІС†РµРІ РґР»СЏ СЂР°Р·РјРµС‰РµРЅРёСЏ РЅРѕРІРѕРіРѕ.
 							end
 						enddo
 						return 1
@@ -709,7 +711,7 @@ On=@ItemDClick
 			else
 				doswitch <src.f_LangShowNum>
 					src.sysmessage @<def.fail>,,1 Only people on the home lists may place a vendor here.
-					src.sysmessage @<def.fail>,,1 Только совладельцы и друзья могут размещать торговцев на территории дома.
+					src.sysmessage @<def.fail>,,1 РўРѕР»СЊРєРѕ СЃРѕРІР»Р°РґРµР»СЊС†С‹ Рё РґСЂСѓР·СЊСЏ РјРѕРіСѓС‚ СЂР°Р·РјРµС‰Р°С‚СЊ С‚РѕСЂРіРѕРІС†РµРІ РЅР° С‚РµСЂСЂРёС‚РѕСЂРёРё РґРѕРјР°.
 				enddo
 				return 1
 			endif
@@ -735,7 +737,7 @@ On=@SkillStart
 	endif
 	doswitch <src.f_LangShowNum>
 		src.sysmessage @<def.fail>,,1 You cannot do this whilst designing a house.
-		src.sysmessage @<def.fail>,,1 Вы не можете сделать этого во время проектирования дома.
+		src.sysmessage @<def.fail>,,1 Р’С‹ РЅРµ РјРѕР¶РµС‚Рµ СЃРґРµР»Р°С‚СЊ СЌС‚РѕРіРѕ РІРѕ РІСЂРµРјСЏ РїСЂРѕРµРєС‚РёСЂРѕРІР°РЅРёСЏ РґРѕРјР°.
 	enddo
 	return 1
 
@@ -752,7 +754,7 @@ On=@HouseDesignCommit
 	if (<isgm>)
 		doswitch <src.f_LangShowNum>
 			src.sysmessage @<def.fail>,,1 You cannot do this whilst designing a house.
-			src.sysmessage @<def.fail>,,1 Вы не можете сделать этого во время проектирования дома.
+			src.sysmessage @<def.fail>,,1 Р’С‹ РЅРµ РјРѕР¶РµС‚Рµ СЃРґРµР»Р°С‚СЊ СЌС‚РѕРіРѕ РІРѕ РІСЂРµРјСЏ РїСЂРѕРµРєС‚РёСЂРѕРІР°РЅРёСЏ РґРѕРјР°.
 		enddo
 		return 2
 	endif
@@ -762,32 +764,32 @@ On=@HouseDesignCommit
 	if (<gold> < <local.curcost>)
 		doswitch <src.f_LangShowNum>
 			src.sysmessage @<def.fail>,,1 You lack the funds to pay off this design.
-			src.sysmessage @<def.fail>,,1 У вас нет денежных средств для оплаты этого проекта.
+			src.sysmessage @<def.fail>,,1 РЈ РІР°СЃ РЅРµС‚ РґРµРЅРµР¶РЅС‹С… СЃСЂРµРґСЃС‚РІ РґР»СЏ РѕРїР»Р°С‚С‹ СЌС‚РѕРіРѕ РїСЂРѕРµРєС‚Р°.
 		enddo
 		return 1
 	endif
 	argo.tag0.construction = <eval(<local.newcost>-<argo.value>)>
 	doswitch <src.f_LangShowNum>
 		src.sysmessage @,,1 Your new house design has been committed.
-		src.sysmessage @,,1 Проект вашего нового дома успешно разработан.
+		src.sysmessage @,,1 РџСЂРѕРµРєС‚ РІР°С€РµРіРѕ РЅРѕРІРѕРіРѕ РґРѕРјР° СѓСЃРїРµС€РЅРѕ СЂР°Р·СЂР°Р±РѕС‚Р°РЅ.
 	enddo
 	if (<local.curcost> == 0)
 		doswitch <src.f_LangShowNum>
 			src.sysmessage @,,1 As the new design costs the same as the previous one, no gp has been taken out of your account.
-			src.sysmessage @,,1 Поскольку общая стоимость вашего проекта не изменилась, денежные средства не списывались.
+			src.sysmessage @,,1 РџРѕСЃРєРѕР»СЊРєСѓ РѕР±С‰Р°СЏ СЃС‚РѕРёРјРѕСЃС‚СЊ РІР°С€РµРіРѕ РїСЂРѕРµРєС‚Р° РЅРµ РёР·РјРµРЅРёР»Р°СЃСЊ, РґРµРЅРµР¶РЅС‹Рµ СЃСЂРµРґСЃС‚РІР° РЅРµ СЃРїРёСЃС‹РІР°Р»РёСЃСЊ.
 		enddo
 	elif (<local.curcost> < 0)
 		local.curcost = <eval(0 - <local.curcost>)>
 		gold += <local.curcost>
 		doswitch <src.f_LangShowNum>
 			src.sysmessage @,,1 As the new design is cheaper than the previous one, <dlocal.curcost> gp has been returned to you.
-			src.sysmessage @,,1 Поскольку новый проект оказался дешевле предыдущего на ваш банковский счет было возвращено <dlocal.curcost> gp.
+			src.sysmessage @,,1 РџРѕСЃРєРѕР»СЊРєСѓ РЅРѕРІС‹Р№ РїСЂРѕРµРєС‚ РѕРєР°Р·Р°Р»СЃСЏ РґРµС€РµРІР»Рµ РїСЂРµРґС‹РґСѓС‰РµРіРѕ РЅР° РІР°С€ Р±Р°РЅРєРѕРІСЃРєРёР№ СЃС‡РµС‚ Р±С‹Р»Рѕ РІРѕР·РІСЂР°С‰РµРЅРѕ <dlocal.curcost> gp.
 		enddo
 	else
 		gold -= <local.curcost>
 		doswitch <src.f_LangShowNum>
 			src.sysmessage @,,1 <dlocal.curcost> gp has been taken out of your account to pay for the construction.
-			src.sysmessage @,,1 <dlocal.curcost> gp были списаны с вашего банковского счета для оплаты строительства.
+			src.sysmessage @,,1 <dlocal.curcost> gp Р±С‹Р»Рё СЃРїРёСЃР°РЅС‹ СЃ РІР°С€РµРіРѕ Р±Р°РЅРєРѕРІСЃРєРѕРіРѕ СЃС‡РµС‚Р° РґР»СЏ РѕРїР»Р°С‚С‹ СЃС‚СЂРѕРёС‚РµР»СЊСЃС‚РІР°.
 		enddo
 	endif
 	return 2
@@ -809,7 +811,7 @@ On=@LogOut
 		ref1 = <house.<dlocal._for>.MovingCrate>
 		if (<ref1>)
 			ref1.attr |= attr_invis
-			ref1.p <ref1.link.p>
+			ref1.p = <ref1.link.p>
 			ref1.move 0 0 -20
 		endif
 	endfor
@@ -820,7 +822,7 @@ On=@HouseDesignBegin
 		ref1 = <house.<dlocal._for>.MovingCrate>
 		if (<ref1>)
 			ref1.attr |= attr_invis
-			ref1.p <ref1.link.p>
+			ref1.p = <ref1.link.p>
 			ref1.move 0 0 -20
 		endif
 	endfor

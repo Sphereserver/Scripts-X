@@ -173,9 +173,11 @@ if !<ISEMPTY <tag.lasttransfer>>
 	dhtmlgump 120 - 120 20 0 0 <def.bfont_hs_text3><local.day>.<local.month>.<local.year>
 endif
 
-call f_return_todate <tag0.buildon>
-dhtmlgump 20 *20 100 20 0 0 <def.bfont_hs_title><def.HouseCtrl_<src.f_LangShow>_BuildOn>
-dhtmlgump 120 - 120 20 0 0 <def.bfont_hs_text3><local.day>.<local.month>.<local.year>
+if !<ISEMPTY <tag.buildon>>
+	call f_return_todate <tag0.buildon>
+	dhtmlgump 20 *20 100 20 0 0 <def.bfont_hs_title><def.HouseCtrl_<src.f_LangShow>_BuildOn>
+	dhtmlgump 120 - 120 20 0 0 <def.bfont_hs_text3><local.day>.<local.month>.<local.year>
+endif
 
 dhtmlgump 20 *20 100 20 0 0 <def.bfont_hs_title><def.HouseCtrl_<src.f_LangShow>_Value>
 dhtmlgump 120 - 120 20 0 0 <def.bfont_hs_text3><dlocal.value> gp
@@ -217,7 +219,7 @@ if (<isowner <src>>) || (<GetCoownerPos <src>> >= 0) || (<src.isgm>)
 	button 7 260 4005 4007 1 0 19
 	
 	dhtmlgump 44 283 180 20 0 0 <def.bfont_hs_text1><def.HouseCtrl_<src.f_LangShow>_RemFriend>
-	button 7 280 4005 4007 0 18 0
+	button 7 280 4005 4007 1 0 25
 	
 	dhtmlgump 44 303 180 20 0 0 <def.bfont_hs_text1><def.HouseCtrl_<src.f_LangShow>_ClrFriend>
 	button 7 300 4005 4007 1 0 20
@@ -295,8 +297,13 @@ dorigin 11 160
 dhtmlgump 11 *20 250 20 0 0 <def.bfont_hs_text3><def.HouseCtrl_<src.f_LangShow>_StorageMax>
 dhtmlgump 290 - 140 20 0 0 <def.bfont_hs_text1><qval (!<def.hs_hs_secure_locks_limit>)?<local.unlim>:<maxstorage>>
 
-dhtmlgump 11 *20 250 20 0 0 <def.bfont_hs_text3><def.HouseCtrl_<src.f_LangShow>_UseMoveCont> //my line
-dhtmlgump 290 - 140 20 0 0 <def.bfont_hs_text1><qval (!<def.hs_hs_secure_locks_limit>)?<local.unlim>:<qval (<MovingCrate>)?<uid.<MovingCrate>.count>:0>> //my line
+if (<type> == t_multi_custom)
+	dhtmlgump 11 *20 250 20 0 0 <def.bfont_hs_text3><def.HouseCtrl_<src.f_LangShow>_UseMoveCont>
+	dhtmlgump 290 - 140 20 0 0 <def.bfont_hs_text1><qval (!<def.hs_hs_secure_locks_limit>)?<local.unlim>:<qval (<MovingCrate>)?<uid.<MovingCrate>.count>:0>> //my line
+else
+	dhtmlgump 11 *20 250 20 0 0 <def.bfont_hs_gray><def.HouseCtrl_<src.f_LangShow>_UseMoveCont>
+	dhtmlgump 290 - 140 20 0 0 <def.bfont_hs_gray><qval (!<def.hs_hs_secure_locks_limit>)?<local.unlim>:<qval (<MovingCrate>)?<uid.<MovingCrate>.count>:0>> //my line
+endif
 
 // dhtmlgump 11 *20 250 20 0 0 <def.bfont_hs_text3><def.HouseCtrl_<src.f_LangShow>_StorageMax> //my line
 // dhtmlgump 290 - 140 20 0 0 <def.bfont_hs_text1><qval (!<def.hs_hs_secure_locks_limit>)?<local.unlim>:<eval(<maxstorage>-(<lockdowns>+<getSECUREDitems>))> / <maxstorage>> //my line
@@ -708,7 +715,7 @@ ONBUTTON=0,88
 		targetf, f_house_add_list 1
 	elseif (<argn> == 18) //clear coowner
 		src.ctag0.list = coowner
-		sdialog d_house_list_clear 
+		sdialog d_house_list_clear
 	elseif (<argn> == 19) //add friend
 		targetf, f_house_add_list 2
 	elseif (<argn> == 20) //clear friend
@@ -764,7 +771,9 @@ ONBUTTON=0,88
 		sdialog d_house_menu
 	elseif (<argn> == 24)//rename house
 		dialog d_house_rename
-	//elseif (<argn> == 25) // -------------------------- reserved change sign page
+	elseif (<argn> == 25) //remove friend
+		src.ctag0.list = friend
+		sdialog d_house_menu 18
 	elseif (<argn> == 26)//recode doors
 		src.targetf f_d_house_secure
 		return 1
@@ -1102,9 +1111,9 @@ ONBUTTON=0,88
 ONBUTTON=100,299 // rmv person from (x) list 
 	ref1 = <tag0.sign> //sign
 	local.list = <src.ctag0.list>
-	local.button <eval <argn>-100>
+	local.button <eval(<argn>-100)>
 	if <<local.list><qval (strmatch(*access*,<local.list>))?es:s>>
-		if (<<local.list>.<dlocal.button>.uid>==<src.uid>)
+		if (<<local.list>.<dlocal.button>.uid> == <src.uid>)
 			ref5 = <src>
 			doswitch <src.f_LangShowNum>
 				src.sysmessage @,,1 You have removed yourself from the <local.list> list.

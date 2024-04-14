@@ -319,6 +319,7 @@ ONBUTTON=1
 		ref1 = <uid> //sign
 		ref2 = <link> //house
 		ref3 = <link.owner> //owner
+		call f_return_todate <serv.rtime>
 		
 		ref2.tag.sign = <uid>
 		tag.sign_dispid = <hval(<dispid> & ~0a8f00000)>

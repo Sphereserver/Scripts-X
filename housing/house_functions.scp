@@ -27,10 +27,14 @@ new.remove
 
 [FUNCTION f_house_can_access]
 ref1 = <region.uid>
+// if (<tag0.access> == <def.house_access_none>)
+	// return 1
+// endif
 if (<tag0.access> == <def.house_access_all> || <src.IsGM>)
 	return 1
 endif
 local.AccessLevel = <ref1.f_house_get_priv <src>>
+say AccessLevel <dlocal.AccessLevel> - <dtag0.access>
 if (<local.AccessLevel> == 0)
 	return 0
 elseif (<tag0.access> == <def.house_access_friend>)
@@ -53,6 +57,13 @@ endif
 return 0
 
 [FUNCTION f_house_msg_access]
+if (<tag0.access> == house_access_none)
+	doswitch <src.f_LangShowNum>
+		message @,,1 Security Lvl unspecified
+		message @,,1 Уровень доступа не указан
+	enddo
+	return 1
+endif
 if (<tag0.access> == house_access_owner)
 	doswitch <src.f_LangShowNum>
 		message @,,1 Owner Only
@@ -111,30 +122,30 @@ elseif (strmatch(*access*,<local.list>))
 else
 	local.fontcolor = <def.bfont_white>
 endif
-local.x=7
-local.y=170
+local.x = 7
+local.y = 170
 if <<local.list><qval (strmatch(*access*,<local.list>))?es:s>>
-	for  0 <eval <<local.list><qval (strmatch(*access*,<local.list>))?es:s>>-1>
-	if ((<isowner <src>>) || (<get<local.list>pos <src>> >= 0) || (<src.isgm>)) && ((strmatch(*coowner*,<local.list>)) || (strmatch(*friend*,<local.list>)))
-		if (<<local.list>.<local._for>> == <src.uid>) || (<isowner <src>>) || (<src.isgm>)
+	for 0 <eval <<local.list><qval (strmatch(*access*,<local.list>))?es:s>>-1>
+		if ((<isowner <src>>) || (<get<local.list>pos <src>> >= 0) || (<src.isgm>)) && ((strmatch(*coowner*,<local.list>)) || (strmatch(*friend*,<local.list>)))
+			if (<<local.list>.<local._for>> == <src.uid>) || (<isowner <src>>) || (<src.isgm>)
+				dhtmlgump <eval(<local.x>+36)> <eval(<local.y>+3)> 120 20 0 0 <local.fontcolor><<local.list>.<local._for>.name>
+				if <argv[1]>
+					button <local.x> <local.y> 4017 4018 1 0 <eval(100+<local._for>)>
+				endif
+			else
+				dhtmlgump <eval(<local.x>+36)> <eval(<local.y>+3)> 120 20 0 0 <local.fontcolor><<local.list>.<local._for>.name>
+			endif
+		elseif ((<isowner <src>>) || (<GetCoownerPos <src>> >= 0) || (<src.isgm>)) && ((strmatch(*friend*,<local.list>)) || (strmatch(*access*,<local.list>)) ||(strmatch(*ban*,<local.list>)))
 			dhtmlgump <eval(<local.x>+36)> <eval(<local.y>+3)> 120 20 0 0 <local.fontcolor><<local.list>.<local._for>.name>
 			if <argv[1]>
 				button <local.x> <local.y> 4017 4018 1 0 <eval(100+<local._for>)>
 			endif
-		else
-			dhtmlgump <eval(<local.x>+36)> <eval(<local.y>+3)> 120 20 0 0 <local.fontcolor><<local.list>.<local._for>.name>
 		endif
-	elif ((<isowner <src>>) || (<GetCoownerPos <src>> >= 0) || (<src.isgm>)) && ((strmatch(*friend*,<local.list>)) || (strmatch(*access*,<local.list>)) ||(strmatch(*ban*,<local.list>)))
-		dhtmlgump <eval(<local.x>+36)> <eval(<local.y>+3)> 120 20 0 0 <local.fontcolor><<local.list>.<local._for>.name>
-		if <argv[1]>
-			button <local.x> <local.y> 4017 4018 1 0 <eval(100+<local._for>)>
+		local.y += 20
+		if (<local.y> >= 370)
+			local.x += 124
+			local.y = 170
 		endif
-	endif
-	local.y += 20
-	if <local.y> >= 370
-		local.x += 124
-		local.y = 170
-	endif
 	endfor
 endif
 
@@ -556,7 +567,6 @@ elseif !(<argo.f_isContainer>)
 endif
 ref1.secure <argo>
 argo.tag.access = <ref1.f_house_get_priv <uid>>
-argo.message @,,2 501716	// Secure!
 doswitch <src.f_LangShowNum>
 	argo.message @,,2 501716	// Secure!
 	argo.message @,,1 Контейнер теперь надёжен!
@@ -1054,35 +1064,5 @@ endif
 resizepic <argv[0]> <argv[1]> <def.dialog_hs_bg> <argv[2]> <argv[3]>
 gumppictiled <eval(<argv[0]>+4)> <eval(<argv[1]>+6)> <eval(<argv[2]>-9)> <eval(<argv[3]>-10)> 2624
 checkertrans <eval(<argv[0]>+4)> <eval(<argv[1]>+6)> <eval(<argv[2]>-9)> <eval(<argv[3]>-10)>
-
-[FUNCTION f_house_init] //ref1 - sign //ref2 - house //ref3 - owner
-// if (<timer> == -1)
-	// timer = 3600
-	// if !<argn1>
-		// if <src.isgm>
-			// message @,,1 <name>: таймер возобновлен
-		// endif
-	// endif
-// endif
-if !(<ref2.tag0.sign>)
-	tag.region_name = <ref2.tag.region_name>
-	tag.kingdom = <ref2.tag0.kingdom>
-	tag.kingdom_name = <ref2.tag.kingdom_name>
-	
-	call f_return_todate <serv.rtime>
-	ref2.tag.buildon = <local.todate>
-	if (<argn1> & 02)
-		ref2.tag.lasttransfer = <local.todate>
-	endif
-	
-	ref2.tag.sign = <uid>
-	tag.sign_dispid = <hval(<dispid> & ~0a8f00000)>
-endif
-if !(<tag0.update_time>)
-	tag.update_time = <serv.time>
-endif
-if !(<tag0.update_date>)
-	tag.update_date = <eval(<f_return_jd> - ((<serv.time> - <tag.update_time>) / 864000))>
-endif
 
 [EOF]

@@ -1,3 +1,15 @@
+[DEFNAME LANGUAGE]
+LANG_COUNT = 2
+LANG_0		= ENG
+LANG_1		= RUS
+
+ENG			= 0
+RUS			= 1
+
+[DEFNAME msg_types]
+// TextColor Settings
+fail			32
+
 [FUNCTION f_math_cat] //делит число на разряды
 if strlen(<argn>) <= 3
 	return <argn>
@@ -171,12 +183,23 @@ endif
 
 //////////////////////////////////////
 
+[PLEVEL 1]
+LANGUAGE
+
+[FUNCTION LANGUAGE]
+sdialog d_language
+//f_LangChange
+
 [FUNCTION f_LangChange]
 if <ISEMPTY <account.tag.LANG>>
 	account.tag.LANG = ENG
 endif
-local.switch = <qval <def.<account.tag.LANG>>?ENG:RUS>
-account.tag.LANG = <local.switch>
+local.lang = <f_LangShowNum>
+local.lang += 1
+if (<local.lang> > <eval(<def0.LANG_COUNT>-1)>)
+	local.lang = 0
+endif
+account.tag.LANG = <def0.LANG_<dlocal.lang>>
 src.sysmessage @,,1 LANG = <account.tag.LANG>
 
 [FUNCTION f_LangShowNum]
@@ -190,5 +213,40 @@ if <ISEMPTY <account.tag.LANG>>
 	account.tag.LANG = ENG
 endif
 return <account.tag.LANG>
+
+
+[DIALOG d_language]
+100,100
+// f_house_dialog 0,0,260,<eval(224 + ((<def0.LANG_COUNT> - 2)*50))>
+
+resizepic 0 0 <def.dialog_hs_bg> 260 <eval(224 + ((<def0.LANG_COUNT> - 2)*50))>
+gumppictiled 4 6 251 <eval(214 + ((<def0.LANG_COUNT> - 2)*50))> 2624
+checkertrans 4 6 251 <eval(214 + ((<def0.LANG_COUNT> - 2)*50))>
+
+button 207 10 3 4 1 0 0    // close/cancel
+
+doswitch <src.f_LangShowNum>
+	dhtmlgump 10 10 240 20 0 0 <def.bfont_hs_title><def.center>LANGUAGE SELECTION
+	dhtmlgump 10 10 240 20 0 0 <def.bfont_hs_title><def.center>ВЫБОР ЯЗЫКА
+enddo
+resizepic 13 32 3000 233 64
+doswitch <src.f_LangShowNum>
+	dhtmlgump 10 36 240 60 0 0 <def.center>In this menu, you can change<def.br>the language of messages<def.br>in the game.
+	dhtmlgump 10 36 240 60 0 0 <def.center>В этом диалоговом окне<def.br>можно сменить язык<def.br>сообщений в игре.
+enddo
+
+dorigin 4 60
+for 1 <def0.LANG_COUNT>
+	gumppictiled - *50 251 36 <eval(<def.dialog_hs_bg>+4)>
+	checkertrans - - 251 42
+	dhtmlgump +38 +11 240 20 0 0 <def.bfont_hs_text1><def.LANG_<eval(<local._for> - 1)>>
+	button +2 +7 4005 4007 1 0 <local._for>
+enddo
+
+[DIALOG d_language button]
+ONBUTTON=1,10
+	argn -= 1
+	src.account.tag.LANG = <def.LANG_<argn>>
+	src.sysmessage @,,1 LANG = <src.account.tag.LANG>
 
 [EOF]
