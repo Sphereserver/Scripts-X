@@ -352,13 +352,13 @@ IF !(<isempty <ctag.add_show>>)
 		dtext 156 554 0480 Create
 		dtext 626 440 0480 Create spawn
 		dtext 600 460 0480 Amount
-		dtextentry 680 460 20 20 33 1 1 
+		dtextentry 680 460 20 20 33 1 <qval <isempty <ctag.spawn_amt>>?1:<ctag0.spawn_amt>>
 		dtext 600 480 0480 Min Time
-		dtextentry 680 480 20 20 33 2 5 
+		dtextentry 680 480 20 20 33 2 <qval <isempty <ctag.spawn_morex>>?5:<ctag0.spawn_morex>>
 		dtext 600 500 0480 Max Time
-		dtextentry 680 500 20 20 33 3 15 
+		dtextentry 680 500 20 20 33 3 <qval <isempty <ctag.spawn_morey>>?15:<ctag0.spawn_morey>>
 		dtext 600 520 0480 Max Distance
-		dtextentry 680 520 20 20 33 4 15 
+		dtextentry 680 520 20 20 33 4 <qval <isempty <ctag.spawn_morez>>?15:<ctag0.spawn_morez>>
 		button 600 554 4005 4007 1 0 <eval 300000+<ctag.add_show>>
 		dtext 630 554 0480 Create Spawn
 	endif
@@ -504,6 +504,10 @@ sysmessage=Where do you want to place the spawn?
 
 
 [function f_createspawn]
+ctag.spawn_amt=<argv[2]>
+ctag.spawn_morex=<argv[3]>
+ctag.spawn_morey=<argv[4]>
+ctag.spawn_morez=<argv[5]>
 serv.newitem=i_worldgem_bit
 new.type=<argv[0]>
 new.more=<argv[1]>
