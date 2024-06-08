@@ -47,7 +47,7 @@
 ;		quite unlike HIGH, and MEDIUM )
 ;		11/19/01
 ;		Added the rest of the triggers.
-;		
+;
 ; SphereServer
 ; Website -     www.sphereserver.com
 ; IRC Server -  irc.sphereserver.com
@@ -209,10 +209,16 @@ ISMASTER
 
 f_onchar_delete
 f_onaccount_login
+f_onserver_start
+f_onserver_exit
 f_onserver_save
 f_onserver_save_ok
 f_onserver_save_fail
-f_onserver_start
+f_onserver_save_finished
+f_onserver_blockip
+f_onserver_timer
+f_onserver_connectreq_ex
+f_onserver_connection_acquired
 
 ; Custom
 ISARMOR
@@ -1015,22 +1021,22 @@ color_snow
 color_spectral
 color_violet_lt
 
-color_o_iron		
-color_o_bronze       
-color_o_gold		
-color_o_copper		
-color_o_oldcopper	
-color_o_dullcopper 
-color_o_silver    
-color_o_shadow    
-color_o_bloodrock  
-color_o_blackrock  
-color_o_mytheril  
-color_o_rose       
-color_o_verite   
-color_o_agapite   
-color_o_rusty     
-color_o_valorite   
+color_o_iron
+color_o_bronze
+color_o_gold
+color_o_copper
+color_o_oldcopper
+color_o_dullcopper
+color_o_silver
+color_o_shadow
+color_o_bloodrock
+color_o_blackrock
+color_o_mytheril
+color_o_rose
+color_o_verite
+color_o_agapite
+color_o_rusty
+color_o_valorite
 
 colors_all
 colors_animal
@@ -1056,7 +1062,7 @@ colors_snake
 colors_white
 colors_wyrm
 colors_yellow
- 
+
 ; HTML defnames
 LT
 GT
@@ -6008,21 +6014,21 @@ snd_SPELL_UNLOCK
 snd_SPELL_WALL_OF_STONE
 snd_SPELL_WEAKEN
 
-snd_SPELL_BLOOD_OATH		
-snd_SPELL_CORPSE_SKIN		
-snd_SPELL_CURSE_WEAPON	
-snd_SPELL_EVIL_OMEN			
-snd_SPELL_HORRIFIC_BEAST	
-snd_SPELL_LICH_FORM			
-snd_SPELL_MIND_ROT			
-snd_SPELL_PAIN_ROT			
-snd_SPELL_POISON_STRIKE	
-snd_SPELL_STRANGLE			
-snd_SPELL_SUMMON_FAMILIAR	
+snd_SPELL_BLOOD_OATH
+snd_SPELL_CORPSE_SKIN
+snd_SPELL_CURSE_WEAPON
+snd_SPELL_EVIL_OMEN
+snd_SPELL_HORRIFIC_BEAST
+snd_SPELL_LICH_FORM
+snd_SPELL_MIND_ROT
+snd_SPELL_PAIN_ROT
+snd_SPELL_POISON_STRIKE
+snd_SPELL_STRANGLE
+snd_SPELL_SUMMON_FAMILIAR
 snd_SPELL_VAMPIRIC_EMBRACE
-snd_SPELL_VENGEFUL_SPIRIT	
-snd_SPELL_WITHER			
-snd_SPELL_WRAITH_FORM		
+snd_SPELL_VENGEFUL_SPIRIT
+snd_SPELL_WITHER
+snd_SPELL_WRAITH_FORM
 
 snd_WEAPONS_AXE01
 snd_WEAPONS_BLUNT01
@@ -6448,7 +6454,7 @@ OF_Magic_PreCast
 OF_FileCommands
 OF_NoItemNaming
 OF_NoHouseMuteSpeech
-OF_SkipUndefMsgs 
+OF_SkipUndefMsgs
 
 EF_XCMD_Spy
 EF_Unicode
