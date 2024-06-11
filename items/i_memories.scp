@@ -548,6 +548,13 @@ LAYER=layer_horse
 TDATA3=c_lasher
 WEIGHT=0
 
+[ITEMDEF i_mt_palomino]
+ID=03ecd
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_horse_palomino
+WEIGHT=0
+
 [ITEMDEF i_mt_windrunner]
 ID=03ecc
 TYPE=t_eq_horse
