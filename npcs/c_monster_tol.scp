@@ -682,6 +682,24 @@ DESCRIPTION=Tarantula
 
 ON=@Create
     NPC=brain_animal
+    FAME=300
+    KARMA=-300
+    
+    STR=400
+    DEX=125
+    INT={60 75}
+    MAXHITS=240
+    
+    RESPHYSICAL={40 50}
+    RESFIRE={30 40}
+    RESCOLD={30 40}
+    RESPOISON={30 40}
+    RESENERGY={30 40}
+    
+    WRESTLING={30.1 40.0}
+    TACTICS={30.1 40.0}
+    MAGICRESISTANCE={20.1 30.0}
+    TAMING=29.1
 
 
 [CHARDEF 057a]
