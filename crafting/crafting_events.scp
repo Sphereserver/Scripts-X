@@ -131,7 +131,7 @@ if !<isempty <def.<ctag0.craft.skill>_aftercraft>>
 endif
 if <ctag0.craft.material.<ctag.craft.skill>>
    if !<isempty <def.<ctag0.craft.skill>_<ctag0.craft.material.<ctag0.craft.skill>>_aftercraft>>
-      ref2.<def.<ctag0.craft.skill>_<ctag0.craft.material.<ctag0.craft.skill>>_aftercraft>>
+      ref2.<def.<ctag0.craft.skill>_<ctag0.craft.material.<ctag0.craft.skill>>_aftercraft>
    endif
 endif
 ref2.resendtooltip 1
