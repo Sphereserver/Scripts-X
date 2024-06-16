@@ -646,4 +646,11 @@ LAYER=layer_horse
 TDATA3=c_dog_rottweiler
 WEIGHT=0
 
+[ITEMDEF i_mt_frost_mite]
+ID=03eda
+TYPE=t_eq_horse
+LAYER=layer_horse
+TDATA3=c_frost_mite
+WEIGHT=0
+
 [EOF]
