@@ -4061,20 +4061,20 @@ DESCRIPTION=Dog_Newfoundland
  
 [ITEMDEF 0a76c]
 // Dog_Alaskan Malamut
-DEFNAME=i_pet_dog_dane
-NAME=Great Dane Dog
-TYPE=t_figurine
-TDATA3=c_dog_dane
-CATEGORY=Miscellaneous
-SUBSECTION=Character Icons
-DESCRIPTION=Dog_Alaskan Malamut
- 
-[ITEMDEF 0a76d]
-// Dog_Great_Dane
 DEFNAME=i_pet_dog_malamut
 NAME=Alaskan Malamut Dog
 TYPE=t_figurine
 TDATA3=c_dog_malamut
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dog_Alaskan Malamut
+
+[ITEMDEF 0a76d]
+// Dog_Great_Dane
+DEFNAME=i_pet_dog_dane
+NAME=Great Dane Dog
+TYPE=t_figurine
+TDATA3=c_dog_dane
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Dog_Great_Dane
