@@ -435,7 +435,7 @@ ENDIF
 
 ON=@TargOn_Ground
 IF !(<SRC.ISGM>)
-  IF !STRMATCH("*ship*","<BASEID>")
+  IF (<dispid>!=i_deed_ship)
     IF (<SRC.TAG0.House.PlacementDelay> > <SERV.TIME>)
       SRC.SYSMESSAGE @,,1 Number of days until you can place another house: <eval (<SRC.TAG0.House.PlacementDelay>-<SERV.TIME>)/864000>
       return 1
