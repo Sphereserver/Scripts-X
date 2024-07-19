@@ -1,0 +1,337 @@
+[ITEMDEF 0a1f7]
+// Barrel South (flag down)(empty)
+DEFNAME=i_barrel_mailbox_s
+NAME=Barrel Mailbox
+TYPE=t_container
+TDATA2=06d5
+VALUE=100
+WEIGHT=40.0
+DUPELIST=0a1f5
+TEVENTS=t_mailbox
+RESOURCES=20 i_board,5 i_ingot_iron
+SKILLMAKE=Carpentry 95.0,t_carpentry
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Mailbox
+DESCRIPTION=Barrel (South)
+
+[ITEMDEF 0a1f5]
+// Barrel South (flag up)
+DUPEITEM=0a1f7
+
+[ITEMDEF 0a1f9]
+// Barrel East (flag down)(empty)
+DEFNAME=i_barrel_mailbox_e
+NAME=Barrel Mailbox
+TYPE=t_container
+TDATA2=06d5
+VALUE=100
+WEIGHT=40.0
+DUPELIST=0a1f8
+TEVENTS=t_mailbox
+RESOURCES=20 i_board,5 i_ingot_iron
+SKILLMAKE=Carpentry 95.0,t_carpentry
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Mailbox
+DESCRIPTION=Barrel (East)
+
+[ITEMDEF 0a1f8]
+// Barrel East (flag up)
+DUPEITEM=0a1f9
+
+[ITEMDEF 0a203]
+// Dolphin South (flag down)(empty)
+DEFNAME=i_dolphin_mailbox_s
+NAME=Dolphin Mailbox
+TYPE=t_container
+TDATA2=06d3
+VALUE=100
+WEIGHT=40.0
+DUPELIST=0a202
+TEVENTS=t_mailbox
+RESOURCES=20 i_board,5 i_ingot_iron
+SKILLMAKE=Carpentry 95.0,t_carpentry
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Mailbox
+DESCRIPTION=Dolphin (South)
+
+[ITEMDEF 0a202]
+// Dolphin South (flag up)
+DUPEITEM=0a203
+
+[ITEMDEF 0a205]
+// Dolphin East (flag down)(empty)
+DEFNAME=i_dolphin_mailbox_e
+NAME=Dolphin Mailbox
+TYPE=t_container
+TDATA2=06d3
+VALUE=100
+WEIGHT=40.0
+DUPELIST=0a204
+TEVENTS=t_mailbox
+RESOURCES=20 i_board,5 i_ingot_iron
+SKILLMAKE=Carpentry 95.0,t_carpentry
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Mailbox
+DESCRIPTION=Dolphin (East)
+
+[ITEMDEF 0a204]
+// Dolphin East (flag up)
+DUPEITEM=0a205
+
+[ITEMDEF 0a206]
+// Squirrel South (tail down)(empty)
+DEFNAME=i_squirrel_mailbox_s
+NAME=Squirrel Mailbox
+TYPE=t_container
+TDATA2=06d4
+VALUE=100
+WEIGHT=40.0
+DUPELIST=0a207
+TEVENTS=t_mailbox
+RESOURCES=20 i_board,5 i_ingot_iron
+SKILLMAKE=Carpentry 95.0,t_carpentry
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Mailbox
+DESCRIPTION=Squirrel (South)
+
+[ITEMDEF 0a207]
+// Squirrel South (tail up)
+DUPEITEM=0a206
+
+[ITEMDEF 0a208]
+// Squirrel East (tail down)(empty)
+DEFNAME=i_squirrel_mailbox_e
+NAME=Squirrel Mailbox
+TYPE=t_container
+TDATA2=06d4
+VALUE=100
+WEIGHT=40.0
+DUPELIST=0a209
+TEVENTS=t_mailbox
+RESOURCES=20 i_board,5 i_ingot_iron
+SKILLMAKE=Carpentry 95.0,t_carpentry
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Mailbox
+DESCRIPTION=Squirrel (East)
+
+[ITEMDEF 0a209]
+// Squirrel East (tail up)
+DUPEITEM=0a208
+
+[ITEMDEF 0a268]
+// Light South (unlit)(empty)
+DEFNAME=i_light_mailbox_s
+NAME=Light Mailbox
+TYPE=t_container
+TDATA2=06d6
+VALUE=100
+WEIGHT=40.0
+DUPELIST=0a269,0a26a,0a26b
+TEVENTS=t_mailbox
+RESOURCES=20 i_board,5 i_ingot_iron
+SKILLMAKE=Carpentry 95.0,t_carpentry
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Mailbox
+DESCRIPTION=Light (South)
+
+[ITEMDEF 0a269]
+// Light South (lit)
+DUPEITEM=0a268
+
+[ITEMDEF 0a26a]
+// Light South (lit)
+DUPEITEM=0a268
+
+[ITEMDEF 0a26b]
+// Light South (lit)
+DUPEITEM=0a268
+
+[ITEMDEF 0a26c]
+// Light East (unlit)(empty)
+DEFNAME=i_light_mailbox_e
+NAME=Light Mailbox
+TYPE=t_container
+TDATA2=06d6
+VALUE=100
+WEIGHT=40.0
+DUPELIST=0a26d,0a26e,0a26f
+TEVENTS=t_mailbox
+RESOURCES=20 i_board,5 i_ingot_iron
+SKILLMAKE=Carpentry 95.0,t_carpentry
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Mailbox
+DESCRIPTION=Light (East)
+
+[ITEMDEF 0a26d]
+// Light East (lit)
+DUPEITEM=0a26c
+
+[ITEMDEF 0a26e]
+// Light East (lit)
+DUPEITEM=0a26c
+
+[ITEMDEF 0a26f]
+// Light East (lit)
+DUPEITEM=0a26c
+
+[ITEMDEF 0a3eb]
+// Sitting Kitten South (tail down)(empty)
+DEFNAME=i_kitten_sitting_mailbox_s
+NAME=Sitting Kitten Mailbox
+TYPE=t_container
+TDATA2=09d37
+VALUE=100
+WEIGHT=40.0
+DUPELIST=0a3ec
+TEVENTS=t_mailbox
+RESOURCES=20 i_board,5 i_ingot_iron
+SKILLMAKE=Carpentry 95.0,t_carpentry
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Mailbox
+DESCRIPTION=Kitten Sitting (South)
+
+[ITEMDEF 0a3ec]
+// Sitting Kitten South (tail up)
+DUPEITEM=0a3eb
+
+[ITEMDEF 0a3ed]
+// Sitting Kitten East (tail down)(empty)
+DEFNAME=i_kitten_sitting_mailbox_e
+NAME=Sitting Kitten Mailbox
+TYPE=t_container
+TDATA2=09d37
+VALUE=100
+WEIGHT=40.0
+DUPELIST=0a3ee
+TEVENTS=t_mailbox
+RESOURCES=20 i_board,5 i_ingot_iron
+SKILLMAKE=Carpentry 95.0,t_carpentry
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Mailbox
+DESCRIPTION=Kitten Sitting (East)
+
+[ITEMDEF 0a3ee]
+// Sitting Kitten East (tail up)
+DUPEITEM=0a3ed
+
+[ITEMDEF 0a3f0]
+// Standing Kitten South (ears down)(empty)
+DEFNAME=i_kitten_standing_mailbox_s
+NAME=Standing Kitten Mailbox
+TYPE=t_container
+TDATA2=09d38
+VALUE=100
+WEIGHT=40.0
+DUPELIST=0a3ef
+TEVENTS=t_mailbox
+RESOURCES=20 i_board,5 i_ingot_iron
+SKILLMAKE=Carpentry 95.0,t_carpentry
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Mailbox
+DESCRIPTION=Kitten Standing (South)
+
+[ITEMDEF 0a3ef]
+// Standing Kitten South (ears up)
+DUPEITEM=0a3f0
+
+[ITEMDEF 0a3f2]
+// Standing Kitten East (ears down)(empty)
+DEFNAME=i_kitten_standing_mailbox_e
+NAME=Standing Kitten Mailbox
+TYPE=t_container
+TDATA2=09d38
+VALUE=100
+WEIGHT=40.0
+DUPELIST=0a3f1
+TEVENTS=t_mailbox
+RESOURCES=20 i_board,5 i_ingot_iron
+SKILLMAKE=Carpentry 95.0,t_carpentry
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Mailbox
+DESCRIPTION=Kitten Standing (East)
+
+[ITEMDEF 0a3f1]
+// Standing Kitten East (ears up)
+DUPEITEM=0a3f2
+
+[ITEMDEF 0a3f4]
+// Scarecrow South (flag down)(empty)
+DEFNAME=i_scarecrow_mailbox_s
+NAME=Scarecrow Mailbox
+TYPE=t_container
+TDATA2=09d39
+VALUE=100
+WEIGHT=40.0
+DUPELIST=0a3f3
+TEVENTS=t_mailbox
+RESOURCES=20 i_board,5 i_ingot_iron
+SKILLMAKE=Carpentry 95.0,t_carpentry
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Mailbox
+DESCRIPTION=Scarecrow (South)
+
+[ITEMDEF 0a3f3]
+// Scarecrow South (flag up)
+DUPEITEM=0a3f4
+
+[ITEMDEF 0a3f6]
+// Scarecrow East (flag down)(empty)
+DEFNAME=i_scarecrow_mailbox_e
+NAME=Scarecrow Mailbox
+TYPE=t_container
+TDATA2=09d39
+VALUE=100
+WEIGHT=40.0
+DUPELIST=0a3f5
+TEVENTS=t_mailbox
+RESOURCES=20 i_board,5 i_ingot_iron
+SKILLMAKE=Carpentry 95.0,t_carpentry
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Mailbox
+DESCRIPTION=Scarecrow (East)
+
+[ITEMDEF 0a3f5]
+// Scarecrow East (flag up)
+DUPEITEM=0a3f6
+
+[ITEMDEF 0a3f7]
+// Lion South (tail down)(empty)
+DEFNAME=i_lion_mailbox_s
+NAME=Lion Mailbox
+TYPE=t_container
+TDATA2=09d3a
+VALUE=100
+WEIGHT=40.0
+DUPELIST=0a3f8
+TEVENTS=t_mailbox
+RESOURCES=20 i_board,5 i_ingot_iron
+SKILLMAKE=Carpentry 95.0,t_carpentry
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Mailbox
+DESCRIPTION=Lion (South)
+
+[ITEMDEF 0a3f8]
+// Lion South (tail up)
+DUPEITEM=0a3f7
+
+[ITEMDEF 0a3f9]
+// Lion East (tail down)(empty)
+DEFNAME=i_lion_mailbox_e
+NAME=Lion Mailbox
+TYPE=t_container
+TDATA2=09d3a
+VALUE=100
+WEIGHT=40.0
+DUPELIST=0a3fa
+TEVENTS=t_mailbox
+RESOURCES=20 i_board,5 i_ingot_iron
+SKILLMAKE=Carpentry 95.0,t_carpentry
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Mailbox
+DESCRIPTION=Lion (East)
+
+[ITEMDEF 0a3fa]
+// Lion East (tail up)
+DUPEITEM=0a3f9
+
+[EOF]

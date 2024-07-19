@@ -306,23 +306,19 @@ ON=@DClick
 
 [TYPEDEF t_mailbox]
 //FIXME: Implement keys, secure locks, pickable locks, and traps.
-ON=@DropOn_Self
-   ID=<TAG.FullID>
-   UPDATE
+// ON=@Create
+// 	attr=010
+ON=@Dropon_Self
+    if !<rescount>
+        args=<dupelist>
+        dispid=<argv[0]>
+        update
+    endif
 ON=@PickUp_Self
-   TIMERF 0,f_ResetMailboxFlag
-
-[FUNCTION f_ResetMailboxFlag]
-LOCAL.HasAnItem=0
-FORCONT <UID> 0
-   LOCAL.HasAnItem += 1
-ENDFOR
-IF (<LOCAL.HasAnItem>)
-   ID=<TAG.FullID>
-ELSE
-   ID=<TAG.EmptyID>
-ENDIF
-UPDATE
+    if <rescount>==1 // && <dispid>!=<dupeitem>
+        dispid=<dupeitem>
+        update
+    endif
 
 //////////////////////////
 // Dungeon Chest Typedefs

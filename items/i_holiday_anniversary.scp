@@ -304,50 +304,45 @@ NAME=codex of virtue
 //codex of virtue (multi-part)
 NAME=codex of virtue
 
-
 [ITEMDEF 04141]
-//mailbox (south)
+// Mailbox South (flag up)
+DUPEITEM=04142
 
-[ITEMDEF 04142]
+[ITEMDEF 04142] // this item is in i_holiday_anniversary.scp
+// Mailbox South (flag down)(empty)
 DEFNAME=i_mailbox_s
-NAME=mailbox
+NAME=Mailbox
 TYPE=t_container
 TDATA2=011a
+VALUE=100
+WEIGHT=40.0
+DUPELIST=04141
+TEVENTS=t_mailbox
+RESOURCES=20 i_board,5 i_ingot_iron
+SKILLMAKE=Carpentry 95.0,t_carpentry
 CATEGORY=Anniversary Gifts
 SUBSECTION=12th Anniversary
 DESCRIPTION=Mailbox (south)
-ON=@DropOn_Self
-   IF (<DISPID> != 04141)
-    DISPID=04141
-    UPDATE
-   ENDIF
-ON=@PickUp_Self
-   IF (<DISPID> != 04142) && (<RESCOUNT> < 2)
-    DISPID=04142
-    UPDATE
-   ENDIF
 
 [ITEMDEF 04143]
-//mailbox (west)
+// Mailbox East (flag up)
+DUPEITEM=04144
 
 [ITEMDEF 04144]
+// Mailbox East (flag down)(empty)
 DEFNAME=i_mailbox_e
-NAME=mailbox
+NAME=Mailbox
 TYPE=t_container
 TDATA2=011a
+VALUE=100
+WEIGHT=40.0
+DUPELIST=04143
+TEVENTS=t_mailbox
+RESOURCES=20 i_board,5 i_ingot_iron
+SKILLMAKE=Carpentry 95.0,t_carpentry
 CATEGORY=Anniversary Gifts
 SUBSECTION=12th Anniversary
 DESCRIPTION=Mailbox (east)
-ON=@DropOn_Self
-   IF (<DISPID> != 04143)
-    DISPID=04143
-    UPDATE
-   ENDIF
-ON=@PickUp_Self
-   IF (<DISPID> != 04144) && (<RESCOUNT> < 2)
-    DISPID=04144
-    UPDATE
-   ENDIF
 
 
 [ITEMDEF 042c7]
