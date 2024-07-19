@@ -7099,29 +7099,9 @@ TYPE=t_normal
 DEFNAME=i_spider_tree_5
 TYPE=t_normal
 
-[ITEMDEF 0a1f5]
-// Barrel Mailbox East
-DEFNAME=i_barrel_mailbox_east
-TYPE=t_container
-
 [ITEMDEF 0a1f6]
 // First Aid Belt
 DEFNAME=i_first_aid_belt
-TYPE=t_container
-
-[ITEMDEF 0a1f7]
-// Barrel Mailbox East
-DEFNAME=i_barrel_mailbox_east_2
-TYPE=t_container
-
-[ITEMDEF 0a1f8]
-// Barrel Mailbox Sout
-DEFNAME=i_barrel_mailbox_sout
-TYPE=t_container
-
-[ITEMDEF 0a1f9]
-// Barrel Mailbox Sout
-DEFNAME=i_barrel_mailbox_sout_2
 TYPE=t_container
 
 [ITEMDEF 0a1fe]
@@ -7143,46 +7123,6 @@ TYPE=t_light_lit
 // glow
 DEFNAME=i_glow_4
 TYPE=t_light_lit
-
-[ITEMDEF 0a202]
-// Dolphin Mailbox Eas
-DEFNAME=i_dolphin_mailbox_eas
-TYPE=t_container
-
-[ITEMDEF 0a203]
-// Dolphin Mailbox Eas
-DEFNAME=i_dolphin_mailbox_eas_2
-TYPE=t_container
-
-[ITEMDEF 0a204]
-// Dolphin Mailbox Sou
-DEFNAME=i_dolphin_mailbox_sou
-TYPE=t_container
-
-[ITEMDEF 0a205]
-// Dolphin Mailbox Sou
-DEFNAME=i_dolphin_mailbox_sou_2
-TYPE=t_container
-
-[ITEMDEF 0a206]
-// Squirrel Mailbox Ea
-DEFNAME=i_squirrel_mailbox_ea
-TYPE=t_container
-
-[ITEMDEF 0a207]
-// Squirrel Mailbox Ea
-DEFNAME=i_squirrel_mailbox_ea_2
-TYPE=t_container
-
-[ITEMDEF 0a208]
-// Squirrel Mailbox So
-DEFNAME=i_squirrel_mailbox_so
-TYPE=t_container
-
-[ITEMDEF 0a209]
-// Squirrel Mailbox So
-DEFNAME=i_squirrel_mailbox_so_2
-TYPE=t_container
 
 [ITEMDEF 0a20a]
 // embroidery tool
@@ -7652,46 +7592,6 @@ TYPE=t_container
 [ITEMDEF 0a267]
 // recipe_book_south
 DEFNAME=i_recipe_book_south
-TYPE=t_container
-
-[ITEMDEF 0a268]
-// Light Mailbox East_
-DEFNAME=i_light_mailbox_east
-TYPE=t_container
-
-[ITEMDEF 0a269]
-// Light Mailbox east_
-DEFNAME=i_light_mailbox_east_2
-TYPE=t_container
-
-[ITEMDEF 0a26a]
-// Light Mailbox east_
-DEFNAME=i_light_mailbox_east_3
-TYPE=t_container
-
-[ITEMDEF 0a26b]
-// Light Mailbox east_
-DEFNAME=i_light_mailbox_east_4
-TYPE=t_container
-
-[ITEMDEF 0a26c]
-// Light Mailbox South
-DEFNAME=i_light_mailbox_south
-TYPE=t_container
-
-[ITEMDEF 0a26d]
-// Light Mailbox South
-DEFNAME=i_light_mailbox_south_2
-TYPE=t_container
-
-[ITEMDEF 0a26e]
-// Light Mailbox South
-DEFNAME=i_light_mailbox_south_3
-TYPE=t_container
-
-[ITEMDEF 0a26f]
-// Light Mailbox South
-DEFNAME=i_light_mailbox_south_4
 TYPE=t_container
 
 [ITEMDEF 0a272]
@@ -9002,46 +8902,6 @@ TYPE=t_container
 [ITEMDEF 0a3f2]
 // Standing Kitten Mai
 DEFNAME=i_standing_kitten_mai_4
-TYPE=t_container
-
-[ITEMDEF 0a3f3]
-// Scarecrow Mailbox E
-DEFNAME=i_scarecrow_mailbox_e
-TYPE=t_container
-
-[ITEMDEF 0a3f4]
-// Scarecrow Mailbox E
-DEFNAME=i_scarecrow_mailbox_e_2
-TYPE=t_container
-
-[ITEMDEF 0a3f5]
-// Scarecrow Mailbox S
-DEFNAME=i_scarecrow_mailbox_s
-TYPE=t_container
-
-[ITEMDEF 0a3f6]
-// Scarecrow Mailbox S
-DEFNAME=i_scarecrow_mailbox_s_2
-TYPE=t_container
-
-[ITEMDEF 0a3f7]
-// Lion Mailbox East
-DEFNAME=i_lion_mailbox_east
-TYPE=t_container
-
-[ITEMDEF 0a3f8]
-// Lion Mailbox East
-DEFNAME=i_lion_mailbox_east_2
-TYPE=t_container
-
-[ITEMDEF 0a3f9]
-// Lion Mailbox South
-DEFNAME=i_lion_mailbox_south
-TYPE=t_container
-
-[ITEMDEF 0a3fa]
-// Lion Mailbox South
-DEFNAME=i_lion_mailbox_south_2
 TYPE=t_container
 
 [ITEMDEF 0a3fb]
