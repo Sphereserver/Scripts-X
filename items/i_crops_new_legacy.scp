@@ -1,0 +1,2026 @@
+// PILE=0 since no generic flag set on tiledata.
+
+[ITEMDEF 0a86a]
+DEFNAME=i_sprout_1
+NAME=Sprout
+TYPE=t_normal
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Sprout 1
+
+[ITEMDEF 0a86b]
+DEFNAME=i_sprout_2
+NAME=Sprout
+TYPE=t_normal
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Sprout 2
+
+[ITEMDEF 0a86c]
+DEFNAME=i_sprout_3
+NAME=Sprout
+TYPE=t_normal
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Sprout 3
+
+[ITEMDEF i_crop_cualiflower_1]
+DEFNAME=i_crop_cualiflower_1
+ID=i_sprout_1
+NAME=Cualiflower
+TYPE=t_crops
+TDATA2=i_crop_cualiflower_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Cualiflower 1(sprout)
+
+[ITEMDEF 0a86d]
+DEFNAME=i_crop_cualiflower_2
+NAME=Cualiflower
+TYPE=t_crops
+TDATA2=i_crop_cualiflower_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Cualiflower 2(grow)
+
+[ITEMDEF 0a86e]
+DEFNAME=i_crop_cualiflower_3
+NAME=Cualiflower
+TYPE=t_crops
+TDATA1=i_crop_cualiflower_1
+TDATA3=i_fruit_cualiflower
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Cualiflower 3(ripe)
+
+[ITEMDEF 0a86f]
+DEFNAME=i_fruit_cualiflower
+NAME=Cualiflower%s
+TYPE=t_fruit
+TDATA1=i_crop_cualiflower_1
+PILE=0
+VALUE=6
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Cualiflower
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_ginger_1]
+DEFNAME=i_crop_ginger_1
+ID=i_sprout_2
+NAME=Ginger
+TYPE=t_crops
+TDATA2=i_crop_ginger_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Ginger 1(sprout)
+
+[ITEMDEF 0a870]
+DEFNAME=i_crop_ginger_2
+NAME=Ginger
+TYPE=t_crops
+TDATA2=i_crop_ginger_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Ginger 2(grow)
+
+[ITEMDEF 0a871]
+DEFNAME=i_crop_ginger_3
+NAME=Ginger
+TYPE=t_crops
+TDATA1=i_crop_ginger_1
+TDATA3=i_fruit_ginger
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Ginger 3(ripe)
+ON=@Create
+	morex={1 2}
+
+[ITEMDEF 0a872]
+DEFNAME=i_fruit_ginger
+NAME=Ginger Root
+TYPE=t_fruit
+TDATA1=i_crop_ginger_1
+PILE=0
+VALUE=6
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Ginger Root
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_grape_vine_1]
+DEFNAME=i_crop_grape_vine_1
+ID=i_sprout_2
+NAME=Grape Vine
+TYPE=t_crops
+TDATA2=i_crop_grape_vine_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Grape Vine 1(sprout)
+
+[ITEMDEF 0a873]
+DEFNAME=i_crop_grape_vine_2
+NAME=Grape Vine
+TYPE=t_crops
+TDATA2=i_crop_grape_vine_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Grape Vine 2(grow)
+
+[ITEMDEF 0a874]
+DEFNAME=i_crop_grape_vine_3
+NAME=Grape Vine
+TYPE=t_crops
+TDATA1=i_crop_grape_vine_1
+TDATA3=i_fruit_grapes
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Grape Vine 3(ripe)
+ON=@Create
+	morex={3 5}
+
+[ITEMDEF i_crop_green_bean_1]
+DEFNAME=i_crop_green_bean_1
+ID=i_sprout_2
+NAME=Green Bean
+TYPE=t_crops
+TDATA2=i_crop_green_bean_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Green Bean 1(sprout)
+
+[ITEMDEF 0a875]
+DEFNAME=i_crop_green_bean_2
+NAME=Green Bean
+TYPE=t_crops
+TDATA2=i_crop_green_bean_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Green Bean 2(grow)
+
+[ITEMDEF 0a876]
+DEFNAME=i_crop_green_bean_3
+NAME=Green Bean
+TYPE=t_crops
+TDATA1=i_crop_green_bean_1
+TDATA3=i_fruit_green_bean
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Green Bean 3(ripe)
+ON=@Create
+	morex={2 5}
+
+[ITEMDEF 0a877]
+DEFNAME=i_fruit_green_bean
+NAME=Green Beans
+TYPE=t_fruit
+TDATA1=i_crop_green_bean_1
+PILE=0
+VALUE=6
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Green Beans
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_kale_1]
+DEFNAME=i_crop_kale_1
+ID=i_sprout_2
+NAME=Kale
+TYPE=t_crops
+TDATA2=i_crop_kale_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Kale 1(sprout)
+
+[ITEMDEF 0a878]
+DEFNAME=i_crop_kale_2
+NAME=Kale
+TYPE=t_crops
+TDATA2=i_crop_kale_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Kale 2(grow)
+
+[ITEMDEF 0a879]
+DEFNAME=i_crop_kale_3
+NAME=Kale
+TYPE=t_crops
+TDATA1=i_crop_kale_1
+TDATA3=i_fruit_kale
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Kale 3(ripe)
+ON=@Create
+	morex={2 4}
+
+[ITEMDEF 0a87a]
+DEFNAME=i_fruit_kale
+NAME=Kale Leaf%s
+TYPE=t_fruit
+TDATA1=i_crop_kale_1
+PILE=0
+VALUE=6
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Kale Leaf
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_onions_1]
+DEFNAME=i_crop_onions_1
+ID=i_sprout_3
+NAME=Onions
+TYPE=t_crops
+TDATA2=i_crop_onions_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Onions 1(sprout)
+
+[ITEMDEF 0a87b]
+DEFNAME=i_crop_onions_2
+NAME=Onions
+TYPE=t_crops
+TDATA2=i_crop_onions_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Onions 2(grow)
+
+[ITEMDEF 0a87c]
+DEFNAME=i_crop_onions_3
+NAME=Onions
+TYPE=t_crops
+TDATA1=i_crop_onions_1
+TDATA3=i_fruit_onion_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Onions 3(ripe)
+ON=@Create
+	morex=6
+
+[ITEMDEF 0a87d]
+DEFNAME=i_fruit_onion_2
+NAME=Onion%s
+TYPE=t_fruit
+TDATA1=i_crop_onions_1
+PILE=0
+VALUE=6
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Onion 2
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_orchids_1]
+DEFNAME=i_crop_orchids_1
+ID=i_sprout_2
+NAME=Orchids
+TYPE=t_crops
+TDATA2=i_crop_orchids_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Orchids 1(sprout)
+
+[ITEMDEF 0a87e]
+DEFNAME=i_crop_orchids_2
+NAME=Orchids
+TYPE=t_crops
+TDATA1=i_crop_orchids_1
+TDATA3=i_flower_orchids_1
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Orchids 2(mature)
+
+[ITEMDEF 0a87f]
+DEFNAME=i_flower_orchids_1
+NAME=Orchids
+TYPE=t_normal
+// TDATA1=i_crop_orchids_1
+// DYE=1
+PILE=0
+VALUE=3
+WEIGHT=0.1
+CATEGORY=Vegetation
+SUBSECTION=Flowers
+DESCRIPTION=Orchids
+
+[ITEMDEF i_crop_parsnip_1]
+DEFNAME=i_crop_parsnip_1
+ID=i_sprout_4
+NAME=Parsnip
+TYPE=t_crops
+TDATA2=i_crop_parsnip_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Parsnip 1(sprout)
+
+[ITEMDEF 0a880]
+DEFNAME=i_crop_parsnip_2
+NAME=Parsnip
+TYPE=t_crops
+TDATA2=i_crop_parsnip_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Parsnip 2(grow)
+
+[ITEMDEF 0a881]
+DEFNAME=i_crop_parsnip_3
+NAME=Parsnip
+TYPE=t_crops
+TDATA1=i_crop_parsnip_1
+TDATA3=i_fruit_parsnip
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Parsnip 3(ripe)
+ON=@Create
+	morex=6
+
+[ITEMDEF 0a882]
+DEFNAME=i_fruit_parsnip
+NAME=Parsnip%s
+TYPE=t_fruit
+TDATA1=i_crop_parsnip_1
+PILE=0
+VALUE=6
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Parsnip
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_potato_1]
+DEFNAME=i_crop_potato_1
+ID=i_sprout_1
+NAME=Potato Plant
+TYPE=t_crops
+TDATA2=i_crop_potato_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Potato 1(sprout)
+
+[ITEMDEF 0a883]
+DEFNAME=i_crop_potato_2
+NAME=Potato Plant
+TYPE=t_crops
+TDATA2=i_crop_potato_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Potato 2(grow)
+
+[ITEMDEF 0a884]
+DEFNAME=i_crop_potato_3
+NAME=Potato Plant
+TYPE=t_crops
+TDATA1=i_crop_potato_1
+TDATA3=i_fruit_potato_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Potato 3(ripe)
+ON=@Create
+	morex={2 4}
+
+[ITEMDEF 0a885]
+DEFNAME=i_fruit_potato_2
+NAME=Potato%es
+TYPE=t_fruit
+TDATA1=i_crop_potato_1
+PILE=0
+VALUE=6
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Potato 2
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_rhubarb_1]
+DEFNAME=i_crop_rhubarb_1
+ID=i_sprout_2
+NAME=Rhubarb
+TYPE=t_crops
+TDATA2=i_crop_rhubarb_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Rhubarb 1(sprout)
+
+[ITEMDEF 0a886]
+DEFNAME=i_crop_rhubarb_2
+NAME=Rhubarb
+TYPE=t_crops
+TDATA2=i_crop_rhubarb_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Rhubarb 2(grow)
+
+[ITEMDEF 0a887]
+DEFNAME=i_crop_rhubarb_3
+NAME=Rhubarb
+TYPE=t_crops
+TDATA1=i_crop_rhubarb_1
+TDATA3=i_fruit_rhubarb
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Rhubarb 3(ripe)
+ON=@Create
+	morex={2 4}
+
+[ITEMDEF 0a888]
+DEFNAME=i_fruit_rhubarb
+NAME=Rhubarb%s
+TYPE=t_fruit
+TDATA1=i_crop_rhubarb_1
+PILE=0
+VALUE=6
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Rhubarb
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_strawberry_1]
+DEFNAME=i_crop_strawberry_1
+ID=i_sprout_1
+NAME=Strawberry
+TYPE=t_crops
+TDATA2=i_crop_strawberry_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Strawberry 1(sprout)
+
+[ITEMDEF 0a889]
+DEFNAME=i_crop_strawberry_2
+NAME=Strawberry
+TYPE=t_crops
+TDATA2=i_crop_strawberry_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Strawberry 2(grow)
+
+[ITEMDEF 0a88a]
+DEFNAME=i_crop_strawberry_3
+NAME=Strawberry
+TYPE=t_crops
+TDATA1=i_crop_strawberry_1
+TDATA3=i_fruit_strawberry
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Strawberry 3(ripe)
+ON=@Create
+	morex={2 4}
+
+[ITEMDEF 0a88b]
+DEFNAME=i_fruit_strawberry
+NAME=Strawberries
+TYPE=t_fruit
+TDATA1=i_crop_strawberry_1
+PILE=0
+VALUE=2
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Strawberries
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_tulips_1]
+DEFNAME=i_crop_tulips_1
+ID=i_sprout_3
+NAME=Tulips
+TYPE=t_crops
+TDATA2=i_crop_tulips_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Tulips 1(sprout)
+
+[ITEMDEF 0a88c]
+DEFNAME=i_crop_tulips_2
+NAME=Tulips
+TYPE=t_crops
+TDATA2=i_crop_tulips_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Tulips 2(grow)
+
+[ITEMDEF 0a88d]
+DEFNAME=i_crop_tulips_3
+NAME=Tulips
+TYPE=t_crops
+TDATA1=i_crop_tulips_1
+TDATA3=i_flower_tulips
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Tulips 3(ripe)
+
+[ITEMDEF 0a88e]
+DEFNAME=i_flower_tulips
+NAME=Tulips
+TYPE=t_normal
+// TDATA1=i_crop_tulips_1
+PILE=0
+VALUE=3
+WEIGHT=0.1
+CATEGORY=Vegetation
+SUBSECTION=Flowers
+DESCRIPTION=Tulips
+
+[ITEMDEF i_crop_turnip_1]
+DEFNAME=i_crop_turnip_1
+ID=i_sprout_1
+NAME=Turnip
+TYPE=t_crops
+TDATA2=i_crop_turnip_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Turnip 1(sprout)
+
+[ITEMDEF 0a88f]
+DEFNAME=i_crop_turnip_2
+NAME=Turnip
+TYPE=t_crops
+TDATA2=i_crop_turnip_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Turnip 2(grow)
+
+[ITEMDEF 0a890]
+DEFNAME=i_crop_turnip_3
+NAME=Turnip
+TYPE=t_crops
+TDATA1=i_crop_turnip_1
+TDATA3=i_fruit_turnip
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Turnip 3(ripe)
+ON=@Create
+	morex=6
+
+[ITEMDEF 0a891]
+DEFNAME=i_crop_banana_tree_1
+NAME=Banana Tree
+TYPE=t_crops
+TDATA2=i_crop_banana_tree_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Banana Tree 1(grow)
+
+[ITEMDEF 0a892]
+DEFNAME=i_crop_banana_tree_2
+NAME=Banana Tree
+TYPE=t_crops
+TDATA1=i_crop_banana_tree_1
+TDATA3=i_fruit_banana
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Banana Tree 3(ripe)
+on=@Create
+	morex={4 6}
+
+[ITEMDEF i_crop_blueberry_1]
+DEFNAME=i_crop_blueberry_1
+ID=i_sprout_4
+NAME=Blueberry
+TYPE=t_crops
+TDATA2=i_crop_blueberry_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Blueberry 1(sprout)
+
+[ITEMDEF 0a893]
+DEFNAME=i_crop_blueberry_2
+NAME=Blueberry
+TYPE=t_crops
+TDATA2=i_crop_blueberry_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Blueberry 2(grow)
+
+[ITEMDEF 0a894]
+DEFNAME=i_crop_blueberry_3
+NAME=Blueberry
+TYPE=t_crops
+TDATA1=i_crop_blueberry_1
+TDATA3=i_fruit_blueberry
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Blueberry 3(ripe)
+ON=@Create
+	morex=6
+
+[ITEMDEF 0a895]
+DEFNAME=i_fruit_blueberry
+NAME=Blueberries
+TYPE=t_fruit
+TDATA1=i_crop_blueberry_1
+PILE=0
+VALUE=2
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Blueberries
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_canteloupe_1]
+DEFNAME=i_crop_canteloupe_1
+ID=i_sprout_3
+NAME=Canteloupe
+TYPE=t_crops
+TDATA2=i_crop_canteloupe_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Canteloupe 1(sprout)
+
+[ITEMDEF 0a896]
+DEFNAME=i_crop_canteloupe_2
+NAME=Canteloupe
+TYPE=t_crops
+TDATA2=i_crop_canteloupe_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Canteloupe 2(grow)
+
+[ITEMDEF 0a897]
+DEFNAME=i_crop_canteloupe_3
+NAME=Canteloupe
+TYPE=t_crops
+TDATA1=i_crop_canteloupe_1
+TDATA3=i_fruit_cantaloupe
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Canteloupe 3(ripe)
+ON=@Create
+	morex={4 6}
+
+[ITEMDEF 0a898]
+DEFNAME=i_crop_cocoa_tree_1
+NAME=Cocoa Tree
+TYPE=t_crops
+TDATA2=i_crop_cocoa_tree_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Cocoa Tree 1(grow)
+
+[ITEMDEF 0a899]
+DEFNAME=i_crop_cocoa_tree_2
+NAME=Cocoa Tree
+TYPE=t_crops
+TDATA1=i_crop_cocoa_tree_1
+TDATA3=i_fruit_cocoa
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Cocoa Tree 2(ripe)
+ON=@Create
+	morex={4 7}
+
+[ITEMDEF 0a89a]
+DEFNAME=i_fruit_cocoa
+NAME=Cocoa Fruit%s
+TYPE=t_fruit
+TDATA1=i_crop_cocoa_tree_1
+PILE=0
+VALUE=2
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Cocoa Fruit
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_corn_1]
+DEFNAME=i_crop_corn_1
+ID=i_sprout_2
+NAME=Corn
+TYPE=t_crops
+TDATA2=i_crop_corn_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Corn 1(sprout)
+
+[ITEMDEF 0a89b]
+DEFNAME=i_crop_corn_2
+NAME=Corn
+TYPE=t_crops
+TDATA2=i_crop_corn_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Corn 2(grow)
+
+[ITEMDEF 0a89c]
+DEFNAME=i_crop_corn_3
+NAME=Corn
+TYPE=t_crops
+TDATA1=i_crop_corn_1
+TDATA3=i_fruit_corn
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Corn 3(ripe)
+ON=@Create
+	morex={3 5}
+
+[ITEMDEF i_crop_cucumber_1]
+DEFNAME=i_crop_cucumber_1
+ID=i_sprout_1
+NAME=Cucumber
+TYPE=t_crops
+TDATA2=i_crop_cucumber_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Cucumber 1(sprout)
+
+[ITEMDEF 0a89d]
+DEFNAME=i_crop_cucumber_2
+NAME=Cucumber
+TYPE=t_crops
+TDATA2=i_crop_cucumber_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Cucumber 2(grow)
+
+[ITEMDEF 0a89e]
+DEFNAME=i_crop_cucumber_3
+NAME=Cucumber
+TYPE=t_crops
+TDATA1=i_crop_cucumber_1
+TDATA3=i_fruit_cucumber
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Cucumber 3(ripe)
+ON=@Create
+	morex={3 4}
+
+[ITEMDEF 0a89f]
+DEFNAME=i_fruit_cucumber
+NAME=Cucumber%s
+TYPE=t_fruit
+TDATA1=i_crop_cucumber_1
+PILE=0
+VALUE=3
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Cucumber
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_hot_pepper_1]
+DEFNAME=i_crop_hot_pepper_1
+ID=i_sprout_2
+NAME=Hot Pepper
+TYPE=t_crops
+TDATA2=i_crop_hot_pepper_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Hot Pepper 1(sprout)
+
+[ITEMDEF 0a8a0]
+DEFNAME=i_crop_hot_pepper_2
+NAME=Hot Pepper
+TYPE=t_crops
+TDATA2=i_crop_hot_pepper_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Hot Pepper 2(grow)
+
+[ITEMDEF 0a8a1]
+DEFNAME=i_crop_hot_pepper_3
+NAME=Hot Pepper
+TYPE=t_crops
+TDATA1=i_crop_hot_pepper_1
+TDATA3=i_fruit_hot_pepper
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Hot Pepper 3(ripe)
+ON=@Create
+	morex={3 4}
+
+[ITEMDEF 0a8a2]
+DEFNAME=i_fruit_hot_pepper
+NAME=Hot Peppers
+TYPE=t_fruit
+TDATA1=i_crop_hot_pepper_1
+PILE=0
+VALUE=2
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Hot Pepper
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_iris_1]
+DEFNAME=i_crop_iris_1
+ID=i_sprout_3
+NAME=Iris Flowers
+TYPE=t_crops
+TDATA2=i_crop_iris_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Iris 1(sprout)
+
+[ITEMDEF 0a8a3]
+DEFNAME=i_crop_iris_2
+NAME=Iris Flowers
+TYPE=t_crops
+TDATA2=i_crop_iris_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Iris 2(grow)
+
+[ITEMDEF 0a8a4]
+DEFNAME=i_crop_iris_3
+NAME=Iris Flowers
+TYPE=t_crops
+TDATA1=i_crop_iris_1
+TDATA3=i_flower_iris
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Iris 3(mature)
+
+[ITEMDEF 0a8a5]
+DEFNAME=i_flower_iris
+NAME=Iris Flowers
+TYPE=t_normal
+// TDATA1=i_crop_iris_1
+PILE=0
+VALUE=3
+WEIGHT=0.1
+CATEGORY=Vegetation
+SUBSECTION=Flowers
+DESCRIPTION=Iris
+
+[ITEMDEF 0a8a6]
+DEFNAME=i_crop_lemon_tree_1
+NAME=Lemon Tree
+TYPE=t_crops
+TDATA2=i_crop_lemon_tree_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Lemon Tree 1(grow)
+
+[ITEMDEF 0a8a7]
+DEFNAME=i_crop_lemon_tree_2
+NAME=Lemon Tree
+TYPE=t_crops
+TDATA1=i_crop_lemon_tree_1
+TDATA3=i_fruit_lemon
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Lemon Tree 2(ripe)
+ON=@Create
+	morex={3 5}
+
+[ITEMDEF i_crop_lettuce_1]
+DEFNAME=i_crop_lettuce_1
+ID=i_sprout_1
+NAME=Lettuce
+TYPE=t_crops
+TDATA2=i_crop_lettuce_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Lettuce 1(sprout)
+
+[ITEMDEF 0a8a8]
+DEFNAME=i_crop_lettuce_2
+NAME=Lettuce
+TYPE=t_crops
+TDATA2=i_crop_lettuce_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Lettuce 2(grow)
+
+[ITEMDEF 0a8a9]
+DEFNAME=i_crop_lettuce_3
+NAME=Lettuce
+TYPE=t_crops
+TDATA1=i_crop_lettuce_1
+TDATA3=i_fruit_lettuce
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Lettuce 3(ripe)
+
+[ITEMDEF 0a8aa]
+DEFNAME=i_crop_lime_tree_1
+NAME=Lime Tree
+TYPE=t_crops
+TDATA2=i_crop_lime_tree_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Lime Tree 1(grow)
+
+[ITEMDEF 0a8ab]
+DEFNAME=i_crop_lime_tree_2
+NAME=Lime Tree
+TYPE=t_crops
+TDATA1=i_crop_lime_tree_1
+TDATA3=i_fruit_lime
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Lime Tree 2(ripe)
+ON=@Create
+	morex={3 5}
+
+[ITEMDEF 0a8ac]
+DEFNAME=i_crop_mango_tree_1
+NAME=Mango Tree
+TYPE=t_crops
+TDATA2=i_crop_mango_tree_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Mango Tree 1(grow)
+
+[ITEMDEF 0a8ad]
+DEFNAME=i_crop_mango_tree_2
+NAME=Mango Tree
+TYPE=t_crops
+TDATA1=i_crop_mango_tree_1
+TDATA3=i_fruit_mango
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Mango Tree 2(ripe)
+ON=@Create
+	morex={4 7}
+
+[ITEMDEF 0a8ae]
+DEFNAME=i_fruit_mango
+NAME=Mango%s
+TYPE=t_fruit
+TDATA1=i_crop_mango_tree_1
+PILE=0
+VALUE=3
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Mango
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_orchids2_1]
+DEFNAME=i_crop_orchids2_1
+ID=i_sprout_1
+NAME=Orchids
+TYPE=t_crops
+TDATA2=i_crop_orchids2_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Orchids2 1(sprout)
+
+[ITEMDEF 0a8af]
+DEFNAME=i_crop_orchids2_2
+NAME=Orchids
+TYPE=t_crops
+TDATA1=i_crop_orchids2_1
+TDATA3=i_flower_orchids_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Orchids2 2(mature)
+
+[ITEMDEF 0a8b0]
+DEFNAME=i_flower_orchids_2
+NAME=Orchids
+TYPE=t_normal
+// TDATA1=i_crop_orchids2_1
+// DYE=1
+PILE=0
+VALUE=3
+WEIGHT=0.1
+CATEGORY=Vegetation
+SUBSECTION=Flowers
+DESCRIPTION=Orchids2
+
+[ITEMDEF i_crop_peach_tree_1]
+DEFNAME=i_crop_peach_tree_1
+ID=i_sprout_2
+NAME=Peach Tree
+TYPE=t_crops
+TDATA2=i_crop_peach_tree_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Peach Tree 1(sprout)
+
+[ITEMDEF 0a8b1]
+DEFNAME=i_crop_peach_tree_1
+NAME=Peach Tree
+TYPE=t_crops
+TDATA2=i_crop_peach_tree_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Peach Tree 1(grow)
+
+[ITEMDEF 0a8b2]
+DEFNAME=i_crop_peach_tree_2
+NAME=Peach Tree
+TYPE=t_crops
+TDATA1=i_crop_peach_tree_1
+TDATA3=i_fruit_peach
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Peach Tree 2(ripe)
+ON=@Create
+	morex={4 6}
+
+[ITEMDEF 0a8b3]
+DEFNAME=i_crop_radish_1
+NAME=Radish
+TYPE=t_crops
+TDATA2=i_crop_radish_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Radish 1(grow)
+
+[ITEMDEF 0a8b4]
+DEFNAME=i_crop_radish_2
+NAME=Radish
+TYPE=t_crops
+TDATA1=i_crop_radish_1
+TDATA3=i_fruit_radish
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Radish 2(ripe)
+ON=@Create
+	morex={4 6}
+
+[ITEMDEF 0a8b5]
+DEFNAME=i_fruit_radish
+NAME=Radish%es
+TYPE=t_fruit
+TDATA1=i_crop_radish_1
+PILE=0
+VALUE=3
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Radish
+ON=@Create
+    morem=1
+
+[ITEMDEF 0a8b6]
+DEFNAME=i_crop_starfruit_tree_1
+NAME=Starfruit Tree
+TYPE=t_crops
+TDATA2=i_crop_starfruit_tree_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Starfruit Tree 1(grow)
+
+[ITEMDEF 0a8b7]
+DEFNAME=i_crop_starfruit_tree_2
+NAME=Starfruit Tree
+TYPE=t_crops
+TDATA1=i_crop_starfruit_tree_1
+TDATA3=i_fruit_starfruit
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Starfruit Tree 2(ripe)
+ON=@Create
+	morex={4 7}
+
+[ITEMDEF 0a8b8]
+DEFNAME=i_fruit_starfruit
+NAME=Starfruit%s
+TYPE=t_fruit
+TDATA1=i_crop_starfruit_tree_1
+PILE=0
+VALUE=3
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Starfruit
+ON=@Create
+    morem=1
+
+[ITEMDEF 0a8b9]
+DEFNAME=i_crop_sweet_potato_1
+NAME=Sweet Potato
+TYPE=t_crops
+TDATA2=i_crop_sweet_potato_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Sweet Potato 1(grow)
+
+[ITEMDEF 0a8ba]
+DEFNAME=i_crop_sweet_potato_2
+NAME=Sweet Potato
+TYPE=t_crops
+TDATA1=i_crop_sweet_potato_1
+TDATA3=i_fruit_sweet_potato_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Sweet Potato 2(ripe)
+ON=@Create
+	morex={2 4}
+
+[ITEMDEF 0a8bb]
+DEFNAME=i_fruit_sweet_potato_2
+NAME=Sweet Potato%es
+TYPE=t_fruit
+TDATA1=i_crop_sweet_potato_1
+PILE=0
+VALUE=6
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Sweet Potato
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_tomato2_1]
+DEFNAME=i_crop_tomato2_1
+ID=i_sprout_2
+NAME=Tomato
+TYPE=t_crops
+TDATA2=i_crop_tomato2_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Tomato2 1(sprout)
+
+[ITEMDEF 0a8bc]
+DEFNAME=i_crop_tomato2_2
+NAME=Tomato
+TYPE=t_crops
+TDATA2=i_crop_tomato2_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Tomato2 2(grow)
+
+[ITEMDEF 0a8bd]
+DEFNAME=i_crop_tomato2_3
+NAME=Tomato
+TYPE=t_crops
+TDATA1=i_crop_tomato2_1
+TDATA3=i_fruit_tomato_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Tomato2 3(ripe)
+ON=@Create
+	morex={2 4}
+
+[ITEMDEF 0a8be]
+DEFNAME=i_fruit_tomato_2
+NAME=Tomato%es
+TYPE=t_fruit
+TDATA1=i_crop_tomato2_1
+PILE=0
+VALUE=6
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Tomato 2
+ON=@Create
+    morem=1
+
+[ITEMDEF 0a8bf]
+DEFNAME=i_crop_watermelon_1
+NAME=Watermelon
+TYPE=t_crops
+TDATA2=i_crop_watermelon_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Watermelon 1(grow)
+
+[ITEMDEF 0a8c0]
+DEFNAME=i_crop_watermelon_2
+NAME=Watermelon
+TYPE=t_crops
+TDATA1=i_crop_watermelon_1
+TDATA3=i_fruit_watermelon
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Watermelon 2(ripe)
+ON=@Create
+	morex=3
+
+[ITEMDEF 0a8c1]
+DEFNAME=i_crop_apple_tree_1
+NAME=Apple Tree
+TYPE=t_crops
+TDATA2=i_crop_apple_tree_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Apple Tree 1(grow)
+
+[ITEMDEF 0a8c2]
+DEFNAME=i_crop_apple_tree_2
+NAME=Apple Tree
+TYPE=t_crops
+TDATA1=i_crop_apple_tree_1
+TDATA3=i_fruit_apple
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Apple Tree 2(ripe)
+ON=@Create
+	morex={4 7}
+
+[ITEMDEF 0a8c6]
+DEFNAME=i_crop_beets_1
+NAME=Beets
+TYPE=t_crops
+TDATA2=i_crop_beets_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Beets 1(grow)
+
+[ITEMDEF 0a8c7]
+DEFNAME=i_crop_beets_2
+NAME=Beets
+TYPE=t_crops
+TDATA1=i_crop_beets_1
+TDATA3=i_fruit_beets
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Beets 2(ripe)
+ON=@Create
+	morex=6
+
+[ITEMDEF 0a8c8]
+DEFNAME=i_fruit_beets
+NAME=Beets%s
+TYPE=t_fruit
+TDATA1=i_crop_beets_1
+PILE=0
+VALUE=3
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Beets
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_cabbage_1]
+DEFNAME=i_crop_cabbage_1
+ID=i_sprout_1
+NAME=Cabbage
+TYPE=t_crops
+TDATA2=i_crop_cabbage_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Cabbage 1(sprout)
+
+[ITEMDEF 0a8c9]
+DEFNAME=i_crop_cabbage_2
+NAME=Cabbage
+TYPE=t_crops
+TDATA2=i_crop_cabbage_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Cabbage 2(grow)
+
+[ITEMDEF 0a8ca]
+DEFNAME=i_crop_cabbage_3
+NAME=Cabbage
+TYPE=t_crops
+TDATA1=i_crop_cabbage_1
+TDATA3=i_fruit_cabbage
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Cabbage 3(ripe)
+
+[ITEMDEF 0a8cb] // Carrots
+DEFNAME=i_sprout_4
+NAME=Sprout
+TYPE=t_normal
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Sprout 4
+
+[ITEMDEF 0a8cc]
+DEFNAME=i_crop_cranberries_1
+NAME=Cranberries
+TYPE=t_crops
+TDATA2=i_crop_cranberries_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Cranberries 1(grow)
+
+[ITEMDEF 0a8cd]
+DEFNAME=i_crop_cranberries_2
+NAME=Cranberries
+TYPE=t_crops
+TDATA1=i_crop_cranberries_1
+TDATA3=i_fruit_cranberries
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Cranberries 2(ripe)
+ON=@Create
+	morex=6
+
+[ITEMDEF 0a8ce]
+DEFNAME=i_fruit_cranberries
+NAME=Cranberries
+TYPE=t_fruit
+TDATA1=i_crop_cranberries_1
+PILE=0
+VALUE=3
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Cranberries
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_eggplant_1]
+DEFNAME=i_crop_eggplant_1
+ID=i_sprout_2
+NAME=Eggplant
+TYPE=t_crops
+TDATA2=i_crop_eggplant_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Eggplant 1(sprout)
+
+[ITEMDEF 0a8cf]
+DEFNAME=i_crop_eggplant_2
+NAME=Eggplant
+TYPE=t_crops
+TDATA2=i_crop_eggplant_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Eggplant 2(grow)
+
+[ITEMDEF 0a8d0]
+DEFNAME=i_crop_eggplant_3
+NAME=Eggplant
+TYPE=t_crops
+TDATA1=i_crop_eggplant_1
+TDATA3=i_fruit_eggplant
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Eggplant 3(ripe)
+ON=@Create
+	morex=6
+
+[ITEMDEF 0a8d1]
+DEFNAME=i_fruit_eggplant
+NAME=Eggplant%s
+TYPE=t_fruit
+TDATA1=i_crop_eggplant_1
+PILE=0
+VALUE=3
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Eggplant
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_ginseng_1]
+DEFNAME=i_crop_ginseng_1
+ID=i_sprout_4
+NAME=Ginseng
+TYPE=t_crops
+TDATA2=i_crop_ginseng_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Ginseng 1(sprout)
+
+[ITEMDEF 0a8d2]
+DEFNAME=i_crop_ginseng_2
+NAME=Ginseng
+TYPE=t_crops
+TDATA2=i_crop_ginseng_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Ginseng 2(grow)
+
+[ITEMDEF 0a8d3]
+DEFNAME=i_crop_ginseng_3
+NAME=Ginseng
+TYPE=t_crops
+TDATA1=i_crop_ginseng_1
+TDATA3=i_reag_ginseng
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Ginseng 3(ripe)
+ON=@Create
+	morex={3 5}
+
+[ITEMDEF 0a8d4]
+DEFNAME=i_crop_gourds_1
+NAME=Gourds
+TYPE=t_crops
+TDATA2=i_crop_gourds_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Gourds 1(grow)
+
+[ITEMDEF 0a8d5]
+DEFNAME=i_crop_gourds_2
+NAME=Gourds
+TYPE=t_crops
+TDATA1=i_crop_gourds_1
+TDATA3=i_fruit_gourd
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Gourds 2(ripe)
+ON=@Create
+	morex=4
+
+[ITEMDEF i_crop_marigolds_1]
+DEFNAME=i_crop_marigolds_1
+ID=i_sprout_4
+NAME=Marigolds
+TYPE=t_crops
+TDATA2=i_crop_marigolds_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Marigolds 1(sprout)
+
+[ITEMDEF 0a8d6]
+DEFNAME=i_crop_marigolds_2
+NAME=Marigolds
+TYPE=t_crops
+TDATA2=i_crop_marigolds_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Marigolds 2(grow)
+
+[ITEMDEF 0a8d7]
+DEFNAME=i_crop_marigolds_3
+NAME=Marigolds
+TYPE=t_crops
+TDATA1=i_crop_marigolds_1
+TDATA3=i_flower_marigolds
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Marigolds 3(mature)
+
+[ITEMDEF 0a8d8]
+DEFNAME=i_flower_marigolds
+NAME=Marigolds
+TYPE=t_normal
+// TDATA1=i_crop_marigolds_1
+PILE=0
+VALUE=3
+WEIGHT=0.1
+CATEGORY=Vegetation
+SUBSECTION=Flowers
+DESCRIPTION=Marigolds
+
+[ITEMDEF 0a8d9]
+DEFNAME=i_crop_orchids3_1
+NAME=Orchids
+TYPE=t_crops
+TDATA2=i_crop_orchids3_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Orchids 3(grow)
+
+[ITEMDEF 0a8da]
+DEFNAME=i_crop_orchids3_2
+NAME=Orchids
+TYPE=t_crops
+TDATA1=i_crop_orchids3_1
+TDATA3=i_flower_orchids_1
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Orchids 3(mature)
+
+[ITEMDEF 0a8db]
+DEFNAME=i_crop_pear_tree_1
+NAME=Pear Tree
+TYPE=t_crops
+TDATA2=i_crop_pear_tree_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Pear Tree 1(grow)
+
+[ITEMDEF 0a8dc]
+DEFNAME=i_crop_pear_tree_2
+NAME=Pear Tree
+TYPE=t_crops
+TDATA1=i_crop_pear_tree_1
+TDATA3=i_fruit_pear
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Pear Tree 2(ripe)
+ON=@Create
+	morex={4 6}
+
+[ITEMDEF 0a8dd]
+DEFNAME=i_crop_pumpkin_1
+NAME=Pumpkins
+TYPE=t_crops
+TDATA2=i_crop_pumpkin_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Pumpkins 1(grow)
+
+[ITEMDEF 0a8de]
+DEFNAME=i_crop_pumpkin_2
+NAME=Pumpkins
+TYPE=t_crops
+TDATA1=i_crop_pumpkin_1
+TDATA3=i_fruit_pumpkin
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Pumpkins 2(ripe)
+ON=@Create
+	morex={4 5}
+
+[ITEMDEF 0a8df]
+DEFNAME=i_crop_asparagus_1
+NAME=Asparagus
+TYPE=t_crops
+TDATA2=i_crop_asparagus_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Asparagus 1(grow)
+
+[ITEMDEF 0a8e0]
+DEFNAME=i_crop_asparagus_2
+NAME=Asparagus
+TYPE=t_crops
+TDATA1=i_crop_asparagus_1
+TDATA3=i_fruit_asparagus
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Asparagus 2(ripe)
+ON=@Create
+	morex=6
+
+[ITEMDEF 0a8e1]
+DEFNAME=i_fruit_asparagus
+NAME=Asparagus
+TYPE=t_fruit
+TDATA1=i_crop_asparagus_1
+PILE=0
+VALUE=3
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Asparagus
+ON=@Create
+    morem=1
+
+[ITEMDEF 0a8e2]
+DEFNAME=i_crop_frostberries_1
+NAME=Frostberries
+TYPE=t_crops
+TDATA2=i_crop_frostberries_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Frostberries 1(grow)
+
+[ITEMDEF 0a8e3]
+DEFNAME=i_crop_frostberries_2
+NAME=Frostberries
+TYPE=t_crops
+TDATA1=i_crop_frostberries_1
+TDATA3=i_fruit_frostberries
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Frostberries 2(ripe)
+ON=@Create
+	morex=6
+
+[ITEMDEF 0a8e4]
+DEFNAME=i_fruit_frostberries
+NAME=Frostberries
+TYPE=t_fruit
+TDATA1=i_crop_frostberries_1
+PILE=0
+VALUE=3
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Frostberries
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_garlic_1]
+DEFNAME=i_crop_garlic_1
+ID=i_sprout_3
+NAME=Garlic
+TYPE=t_crops
+TDATA2=i_crop_garlic_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Garlic 1(sprout)
+
+[ITEMDEF 0a8e5]
+DEFNAME=i_crop_garlic_2
+NAME=Garlic
+TYPE=t_crops
+TDATA2=i_crop_garlic_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Garlic 2(grow)
+
+[ITEMDEF 0a8e6]
+DEFNAME=i_crop_garlic_3
+NAME=Garlic
+TYPE=t_crops
+TDATA1=i_crop_garlic_1
+TDATA3=i_reag_garlic
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Garlic 3(ripe)
+ON=@Create
+	morex=6
+
+[ITEMDEF 0a8e7]
+DEFNAME=i_crop_hops_1
+NAME=Hops
+TYPE=t_crops
+TDATA2=i_crop_hops_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Hops 1(grow)
+
+[ITEMDEF 0a8e8]
+DEFNAME=i_crop_hops_2
+NAME=Hops
+TYPE=t_crops
+TDATA1=i_crop_hops_1
+TDATA3=i_fruit_hops
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Hops 2(ripe)
+
+[ITEMDEF 0a8e9]
+DEFNAME=i_crop_mandrake_1
+NAME=Mandrake
+TYPE=t_crops
+TDATA2=i_crop_mandrake_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Mandrake 1(grow)
+
+[ITEMDEF 0a8ea]
+DEFNAME=i_crop_mandrake_2
+NAME=Mandrake
+TYPE=t_crops
+TDATA1=i_crop_mandrake_1
+TDATA3=i_reag_mandrake_root
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Mandrake 2(ripe)
+ON=@Create
+	morex={3 5}
+
+[ITEMDEF 0a8eb]
+DEFNAME=i_crop_orchids4
+NAME=Orchids
+TYPE=t_crops
+TDATA1=i_crop_orchids4
+TDATA3=i_flower_orchids_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Orchids 4(mature)
+
+[ITEMDEF 0a8ec]
+DEFNAME=i_flower_orchids_2
+NAME=Orchids
+TYPE=t_normal
+// TDATA1=i_crop_orchids4_1
+// DYE=1
+PILE=0
+VALUE=3
+WEIGHT=0.1
+CATEGORY=Vegetation
+SUBSECTION=Flowers
+DESCRIPTION=Orchids 2
+
+[ITEMDEF 0a8ed]
+DEFNAME=i_crop_peas_1
+NAME=Peas
+TYPE=t_crops
+TDATA2=i_crop_peas_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Peas 1(grow)
+
+[ITEMDEF 0a8ee]
+DEFNAME=i_crop_peas_2
+NAME=Peas
+TYPE=t_crops
+TDATA1=i_crop_peas_1
+TDATA3=i_fruit_peas_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Peas 2(ripe)
+ON=@Create
+	morex={2 5}
+
+[ITEMDEF 0a8ef]
+DEFNAME=i_fruit_peas_2
+NAME=Peas
+TYPE=t_fruit
+TDATA1=i_crop_peas_1
+PILE=0
+VALUE=6
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Peas 2
+ON=@Create
+    morem=1
+
+[ITEMDEF i_crop_pointsettas_1]
+DEFNAME=i_crop_pointsettas_1
+ID=i_sprout_1
+NAME=Pointsettas
+TYPE=t_crops
+TDATA2=i_crop_pointsettas_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Pointsettas 1(sprout)
+
+[ITEMDEF 0a8f0]
+DEFNAME=i_crop_pointsettas_2
+NAME=Pointsettas
+TYPE=t_crops
+TDATA2=i_crop_pointsettas_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Pointsettas 2(grow)
+
+[ITEMDEF 0a8f1]
+DEFNAME=i_crop_pointsettas_3
+NAME=Pointsettas
+TYPE=t_crops
+TDATA1=i_crop_pointsettas_1
+// TDATA3= // no flower found
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Pointsettas 3(mature)
+
+[ITEMDEF 0a8f2]
+DEFNAME=i_crop_roses_1
+NAME=Roses
+TYPE=t_crops
+TDATA2=i_crop_roses_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Roses 1(grow)
+
+[ITEMDEF 0a8f3]
+DEFNAME=i_crop_roses_2
+NAME=Roses
+TYPE=t_crops
+TDATA1=i_crop_roses_1
+TDATA3=i_flower_roses
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Roses 2(mature)
+
+[ITEMDEF 0a8f4]
+DEFNAME=i_flower_roses
+NAME=Roses
+TYPE=t_normal
+// TDATA1=i_crop_roses_1
+// DYE=1
+PILE=0
+VALUE=3
+WEIGHT=0.1
+CATEGORY=Vegetation
+SUBSECTION=Flowers
+DESCRIPTION=Roses
+
+[ITEMDEF i_crop_spinach_1]
+DEFNAME=i_crop_spinach_1
+ID=i_sprout_1
+NAME=Spinach
+TYPE=t_crops
+TDATA2=i_crop_spinach_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Spinach 1(sprout)
+
+[ITEMDEF 0a8f5]
+DEFNAME=i_crop_spinach_2
+NAME=Spinach
+TYPE=t_crops
+TDATA2=i_crop_spinach_3
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Spinach 2(grow)
+
+[ITEMDEF 0a8f6]
+DEFNAME=i_crop_spinach_3
+NAME=Spinach
+TYPE=t_crops
+TDATA1=i_crop_spinach_1
+TDATA3=i_fruit_spinach
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Spinach 3(ripe)
+
+[ITEMDEF 0a8f7]
+DEFNAME=i_fruit_spinach
+NAME=Spinach%s
+TYPE=t_fruit
+TDATA1=i_crop_spinach_1
+PILE=0
+VALUE=6
+WEIGHT=0.1
+CATEGORY=Provisions - Food
+SUBSECTION=Fruits
+DESCRIPTION=Spinachs
+ON=@Create
+    morem=1
+
+[ITEMDEF 0a8f8]
+DEFNAME=i_crop_wheat_1
+NAME=Wheat
+TYPE=t_crops
+TDATA1=i_crop_wheat_1
+TDATA3=i_wheat_sheaf
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Wheat 2(ripe)
+
+[ITEMDEF 0a8f9]
+DEFNAME=i_crop_nightshade_1
+NAME=Nightshade
+TYPE=t_crops
+TDATA2=i_crop_nightshade_2
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Nightshade 1(grow)
+
+[ITEMDEF 0a8fa]
+DEFNAME=i_crop_nightshade_2
+NAME=Nightshade
+TYPE=t_crops
+TDATA1=i_crop_nightshade_1
+TDATA3=i_reag_nightshade
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Crops
+DESCRIPTION=Nightshade 2(ripe)
+ON=@Create
+	morex={4 6}
+
+[ITEMDEF 0a8fb]
+DEFNAME=i_crop_white_truffles
+NAME=White Truffles
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Mushrooms
+DESCRIPTION=White Truffles
+
+[ITEMDEF 0a8fc]
+DEFNAME=i_crop_black_truffles
+NAME=Black Truffles
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Mushrooms
+DESCRIPTION=Black Truffles
+
+[ITEMDEF 0a8fd]
+DEFNAME=i_crop_chanterelles
+NAME=Chanterelles
+VALUE=1
+CATEGORY=Vegetation
+SUBSECTION=Mushrooms
+DESCRIPTION=Chanterelles
+
+[EOF]
