@@ -301,7 +301,7 @@ ON=@Create
 
 [ITEMDEF i_crop_orchids_1]
 DEFNAME=i_crop_orchids_1
-ID=i_sprout_1
+ID=i_sprout_2
 NAME=Orchids
 TYPE=t_crops
 TDATA2=i_crop_orchids_2
@@ -336,7 +336,7 @@ DESCRIPTION=Orchids
 
 [ITEMDEF i_crop_parsnip_1]
 DEFNAME=i_crop_parsnip_1
-ID=i_sprout_3
+ID=i_sprout_4
 NAME=Parsnip
 TYPE=t_crops
 TDATA2=i_crop_parsnip_2
@@ -385,7 +385,7 @@ ON=@Create
 [ITEMDEF i_crop_potato_1]
 DEFNAME=i_crop_potato_1
 ID=i_sprout_1
-NAME=Potato
+NAME=Potato Plant
 TYPE=t_crops
 TDATA2=i_crop_potato_2
 VALUE=1
@@ -395,7 +395,7 @@ DESCRIPTION=Potato 1(sprout)
 
 [ITEMDEF 0a883]
 DEFNAME=i_crop_potato_2
-NAME=Potato
+NAME=Potato Plant
 TYPE=t_crops
 TDATA2=i_crop_potato_3
 VALUE=1
@@ -405,7 +405,7 @@ DESCRIPTION=Potato 2(grow)
 
 [ITEMDEF 0a884]
 DEFNAME=i_crop_potato_3
-NAME=Potato
+NAME=Potato Plant
 TYPE=t_crops
 TDATA1=i_crop_potato_1
 TDATA3=i_fruit_potato_2
@@ -572,7 +572,7 @@ DESCRIPTION=Tulips
 
 [ITEMDEF i_crop_turnip_1]
 DEFNAME=i_crop_turnip_1
-ID=i_sprout_3
+ID=i_sprout_1
 NAME=Turnip
 TYPE=t_crops
 TDATA2=i_crop_turnip_2
@@ -604,29 +604,18 @@ DESCRIPTION=Turnip 3(ripe)
 ON=@Create
 	morex=6
 
-[ITEMDEF i_crop_banana_tree_1]
+[ITEMDEF 0a891]
 DEFNAME=i_crop_banana_tree_1
-ID=i_sprout_3
 NAME=Banana Tree
 TYPE=t_crops
 TDATA2=i_crop_banana_tree_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Banana Tree 1(sprout)
-
-[ITEMDEF 0a891]
-DEFNAME=i_crop_banana_tree_2
-NAME=Banana Tree
-TYPE=t_crops
-TDATA2=i_crop_banana_tree_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Banana Tree 2(grow)
+DESCRIPTION=Banana Tree 1(grow)
 
 [ITEMDEF 0a892]
-DEFNAME=i_crop_banana_tree_3
+DEFNAME=i_crop_banana_tree_2
 NAME=Banana Tree
 TYPE=t_crops
 TDATA1=i_crop_banana_tree_1
@@ -640,7 +629,7 @@ on=@Create
 
 [ITEMDEF i_crop_blueberry_1]
 DEFNAME=i_crop_blueberry_1
-ID=i_sprout_3
+ID=i_sprout_4
 NAME=Blueberry
 TYPE=t_crops
 TDATA2=i_crop_blueberry_2
@@ -712,7 +701,7 @@ DEFNAME=i_crop_canteloupe_3
 NAME=Canteloupe
 TYPE=t_crops
 TDATA1=i_crop_canteloupe_1
-TDATA3=i_fruit_cantelope
+TDATA3=i_fruit_cantaloupe
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
@@ -720,29 +709,18 @@ DESCRIPTION=Canteloupe 3(ripe)
 ON=@Create
 	morex={4 6}
 
-[ITEMDEF i_crop_cocoa_tree_1]
+[ITEMDEF 0a898]
 DEFNAME=i_crop_cocoa_tree_1
-ID=i_sprout_2
 NAME=Cocoa Tree
 TYPE=t_crops
 TDATA2=i_crop_cocoa_tree_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Cocoa Tree 1(sprout)
-
-[ITEMDEF 0a898]
-DEFNAME=i_crop_cocoa_tree_2
-NAME=Cocoa Tree
-TYPE=t_crops
-TDATA2=i_crop_cocoa_tree_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Cocoa Tree 2(grow)
+DESCRIPTION=Cocoa Tree 1(grow)
 
 [ITEMDEF 0a899]
-DEFNAME=i_crop_cocoa_tree_3
+DEFNAME=i_crop_cocoa_tree_2
 NAME=Cocoa Tree
 TYPE=t_crops
 TDATA1=i_crop_cocoa_tree_1
@@ -750,7 +728,7 @@ TDATA3=i_fruit_cocoa
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Cocoa Tree 3(ripe)
+DESCRIPTION=Cocoa Tree 2(ripe)
 ON=@Create
 	morex={4 7}
 
@@ -942,29 +920,18 @@ CATEGORY=Vegetation
 SUBSECTION=Flowers
 DESCRIPTION=Iris
 
-[ITEMDEF i_crop_lemon_tree_1]
+[ITEMDEF 0a8a6]
 DEFNAME=i_crop_lemon_tree_1
-ID=i_sprout_2
 NAME=Lemon Tree
 TYPE=t_crops
 TDATA2=i_crop_lemon_tree_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Lemon Tree 1(sprout)
-
-[ITEMDEF 0a8a6]
-DEFNAME=i_crop_lemon_tree_2
-NAME=Lemon Tree
-TYPE=t_crops
-TDATA2=i_crop_lemon_tree_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Lemon Tree 2(grow)
+DESCRIPTION=Lemon Tree 1(grow)
 
 [ITEMDEF 0a8a7]
-DEFNAME=i_crop_lemon_tree_3
+DEFNAME=i_crop_lemon_tree_2
 NAME=Lemon Tree
 TYPE=t_crops
 TDATA1=i_crop_lemon_tree_1
@@ -972,7 +939,7 @@ TDATA3=i_fruit_lemon
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Lemon Tree 3(ripe)
+DESCRIPTION=Lemon Tree 2(ripe)
 ON=@Create
 	morex={3 5}
 
@@ -1008,29 +975,18 @@ CATEGORY=Vegetation
 SUBSECTION=Crops
 DESCRIPTION=Lettuce 3(ripe)
 
-[ITEMDEF i_crop_lime_tree_1]
+[ITEMDEF 0a8aa]
 DEFNAME=i_crop_lime_tree_1
-ID=i_sprout_2
 NAME=Lime Tree
 TYPE=t_crops
 TDATA2=i_crop_lime_tree_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Lime Tree 1(sprout)
-
-[ITEMDEF 0a8aa]
-DEFNAME=i_crop_lime_tree_2
-NAME=Lime Tree
-TYPE=t_crops
-TDATA2=i_crop_lime_tree_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Lime Tree 2(grow)
+DESCRIPTION=Lime Tree 1(grow)
 
 [ITEMDEF 0a8ab]
-DEFNAME=i_crop_lime_tree_3
+DEFNAME=i_crop_lime_tree_2
 NAME=Lime Tree
 TYPE=t_crops
 TDATA1=i_crop_lime_tree_1
@@ -1038,33 +994,22 @@ TDATA3=i_fruit_lime
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Lime Tree 3(ripe)
+DESCRIPTION=Lime Tree 2(ripe)
 ON=@Create
 	morex={3 5}
 
-[ITEMDEF i_crop_mango_tree_1]
+[ITEMDEF 0a8ac]
 DEFNAME=i_crop_mango_tree_1
-ID=i_sprout_2
 NAME=Mango Tree
 TYPE=t_crops
 TDATA2=i_crop_mango_tree_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Mango Tree 1(sprout)
-
-[ITEMDEF 0a8ac]
-DEFNAME=i_crop_mango_tree_2
-NAME=Mango Tree
-TYPE=t_crops
-TDATA2=i_crop_mango_tree_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Mango Tree 2(grow)
+DESCRIPTION=Mango Tree 1(grow)
 
 [ITEMDEF 0a8ad]
-DEFNAME=i_crop_mango_tree_3
+DEFNAME=i_crop_mango_tree_2
 NAME=Mango Tree
 TYPE=t_crops
 TDATA1=i_crop_mango_tree_1
@@ -1072,7 +1017,7 @@ TDATA3=i_fruit_mango
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Mango Tree 3(ripe)
+DESCRIPTION=Mango Tree 2(ripe)
 ON=@Create
 	morex={4 7}
 
@@ -1092,10 +1037,10 @@ ON=@Create
 
 [ITEMDEF i_crop_orchids2_1]
 DEFNAME=i_crop_orchids2_1
-ID=i_sprout_2
+ID=i_sprout_1
 NAME=Orchids
 TYPE=t_crops
-TDATA2=i_crop_orchids_2
+TDATA2=i_crop_orchids2_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
@@ -1106,14 +1051,14 @@ DEFNAME=i_crop_orchids2_2
 NAME=Orchids
 TYPE=t_crops
 TDATA1=i_crop_orchids2_1
-TDATA3=i_flower_orchids
+TDATA3=i_flower_orchids2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
 DESCRIPTION=Orchids2 2(mature)
 
 [ITEMDEF 0a8b0]
-DEFNAME=i_flower_orchids2
+DEFNAME=i_flower_orchids_2
 NAME=Orchids
 TYPE=t_normal
 // TDATA1=i_crop_orchids2_1
@@ -1137,17 +1082,17 @@ SUBSECTION=Crops
 DESCRIPTION=Peach Tree 1(sprout)
 
 [ITEMDEF 0a8b1]
-DEFNAME=i_crop_peach_tree_2
+DEFNAME=i_crop_peach_tree_1
 NAME=Peach Tree
 TYPE=t_crops
-TDATA2=i_crop_peach_tree_3
+TDATA2=i_crop_peach_tree_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Peach Tree 2(grow)
+DESCRIPTION=Peach Tree 1(grow)
 
 [ITEMDEF 0a8b2]
-DEFNAME=i_crop_peach_tree_3
+DEFNAME=i_crop_peach_tree_2
 NAME=Peach Tree
 TYPE=t_crops
 TDATA1=i_crop_peach_tree_1
@@ -1155,33 +1100,22 @@ TDATA3=i_fruit_peach
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Peach Tree 3(ripe)
+DESCRIPTION=Peach Tree 2(ripe)
 ON=@Create
 	morex={4 6}
 
-[ITEMDEF i_crop_radish_1]
+[ITEMDEF 0a8b3]
 DEFNAME=i_crop_radish_1
-ID=i_sprout_2
 NAME=Radish
 TYPE=t_crops
 TDATA2=i_crop_radish_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Radish 1(sprout)
-
-[ITEMDEF 0a8b3]
-DEFNAME=i_crop_radish_2
-NAME=Radish
-TYPE=t_crops
-TDATA2=i_crop_radish_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Radish 2(grow)
+DESCRIPTION=Radish 1(grow)
 
 [ITEMDEF 0a8b4]
-DEFNAME=i_crop_radish_3
+DEFNAME=i_crop_radish_2
 NAME=Radish
 TYPE=t_crops
 TDATA1=i_crop_radish_1
@@ -1189,7 +1123,7 @@ TDATA3=i_fruit_radish
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Radish 3(ripe)
+DESCRIPTION=Radish 2(ripe)
 ON=@Create
 	morex={4 6}
 
@@ -1207,29 +1141,18 @@ DESCRIPTION=Radish
 ON=@Create
     morem=1
 
-[ITEMDEF i_crop_starfruit_tree_1]
+[ITEMDEF 0a8b6]
 DEFNAME=i_crop_starfruit_tree_1
-ID=i_sprout_2
 NAME=Starfruit Tree
 TYPE=t_crops
 TDATA2=i_crop_starfruit_tree_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Starfruit Tree 1(sprout)
-
-[ITEMDEF 0a8b6]
-DEFNAME=i_crop_starfruit_tree_2
-NAME=Starfruit Tree
-TYPE=t_crops
-TDATA2=i_crop_starfruit_tree_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Starfruit Tree 2(grow)
+DESCRIPTION=Starfruit Tree 1(grow)
 
 [ITEMDEF 0a8b7]
-DEFNAME=i_crop_starfruit_tree_3
+DEFNAME=i_crop_starfruit_tree_2
 NAME=Starfruit Tree
 TYPE=t_crops
 TDATA1=i_crop_starfruit_tree_1
@@ -1237,7 +1160,7 @@ TDATA3=i_fruit_starfruit
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Starfruit Tree 3(ripe)
+DESCRIPTION=Starfruit Tree 2(ripe)
 ON=@Create
 	morex={4 7}
 
@@ -1255,29 +1178,18 @@ DESCRIPTION=Starfruit
 ON=@Create
     morem=1
 
-[ITEMDEF i_crop_sweet_potato_1]
+[ITEMDEF 0a8b9]
 DEFNAME=i_crop_sweet_potato_1
-ID=i_sprout_1
 NAME=Sweet Potato
 TYPE=t_crops
 TDATA2=i_crop_sweet_potato_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Sweet Potato 1(sprout)
-
-[ITEMDEF 0a8b9]
-DEFNAME=i_crop_sweet_potato_2
-NAME=Sweet Potato
-TYPE=t_crops
-TDATA2=i_crop_sweet_potato_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Sweet Potato 2(grow)
+DESCRIPTION=Sweet Potato 1(grow)
 
 [ITEMDEF 0a8ba]
-DEFNAME=i_crop_sweet_potato_3
+DEFNAME=i_crop_sweet_potato_2
 NAME=Sweet Potato
 TYPE=t_crops
 TDATA1=i_crop_sweet_potato_1
@@ -1285,7 +1197,7 @@ TDATA3=i_fruit_sweet_potato_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Sweet Potato 3(ripe)
+DESCRIPTION=Sweet Potato 2(ripe)
 ON=@Create
 	morex={2 4}
 
@@ -1305,7 +1217,7 @@ ON=@Create
 
 [ITEMDEF i_crop_tomato2_1]
 DEFNAME=i_crop_tomato2_1
-ID=i_sprout_1
+ID=i_sprout_2
 NAME=Tomato
 TYPE=t_crops
 TDATA2=i_crop_tomato2_2
@@ -1341,7 +1253,7 @@ ON=@Create
 DEFNAME=i_fruit_tomato_2
 NAME=Tomato%es
 TYPE=t_fruit
-TDATA1=i_crop_tomato_1
+TDATA1=i_crop_tomato2_1
 PILE=0
 VALUE=6
 WEIGHT=0.1
@@ -1351,29 +1263,18 @@ DESCRIPTION=Tomato 2
 ON=@Create
     morem=1
 
-[ITEMDEF i_crop_watermelon_1]
+[ITEMDEF 0a8bf]
 DEFNAME=i_crop_watermelon_1
-ID=i_sprout_1
 NAME=Watermelon
 TYPE=t_crops
 TDATA2=i_crop_watermelon_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Watermelon 1(sprout)
-
-[ITEMDEF 0a8bf]
-DEFNAME=i_crop_watermelon_2
-NAME=Watermelon
-TYPE=t_crops
-TDATA2=i_crop_watermelon_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Watermelon 2(grow)
+DESCRIPTION=Watermelon 1(grow)
 
 [ITEMDEF 0a8c0]
-DEFNAME=i_crop_watermelon_3
+DEFNAME=i_crop_watermelon_2
 NAME=Watermelon
 TYPE=t_crops
 TDATA1=i_crop_watermelon_1
@@ -1381,33 +1282,22 @@ TDATA3=i_fruit_watermelon
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Watermelon 3(ripe)
+DESCRIPTION=Watermelon 2(ripe)
 ON=@Create
 	morex=3
 
-[ITEMDEF i_crop_apple_tree_1]
+[ITEMDEF 0a8c1]
 DEFNAME=i_crop_apple_tree_1
-ID=i_sprout_2
 NAME=Apple Tree
 TYPE=t_crops
 TDATA2=i_crop_apple_tree_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Apple Tree 1(sprout)
-
-[ITEMDEF 0a8c1]
-DEFNAME=i_crop_apple_tree_2
-NAME=Apple Tree
-TYPE=t_crops
-TDATA2=i_crop_apple_tree_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Apple Tree 2(grow)
+DESCRIPTION=Apple Tree 1(grow)
 
 [ITEMDEF 0a8c2]
-DEFNAME=i_crop_apple_tree_3
+DEFNAME=i_crop_apple_tree_2
 NAME=Apple Tree
 TYPE=t_crops
 TDATA1=i_crop_apple_tree_1
@@ -1415,33 +1305,22 @@ TDATA3=i_fruit_apple
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Apple Tree 3(ripe)
+DESCRIPTION=Apple Tree 2(ripe)
 ON=@Create
 	morex={4 7}
 
-[ITEMDEF i_crop_beets_1]
+[ITEMDEF 0a8c6]
 DEFNAME=i_crop_beets_1
-ID=i_sprout_2
 NAME=Beets
 TYPE=t_crops
 TDATA2=i_crop_beets_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Beets 1(sprout)
-
-[ITEMDEF 0a8c6]
-DEFNAME=i_crop_beets_2
-NAME=Beets
-TYPE=t_crops
-TDATA2=i_crop_beets_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Beets 2(grow)
+DESCRIPTION=Beets 1(grow)
 
 [ITEMDEF 0a8c7]
-DEFNAME=i_crop_beets_3
+DEFNAME=i_crop_beets_2
 NAME=Beets
 TYPE=t_crops
 TDATA1=i_crop_beets_1
@@ -1449,7 +1328,7 @@ TDATA3=i_fruit_beets
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Beets 3(ripe)
+DESCRIPTION=Beets 2(ripe)
 ON=@Create
 	morex=6
 
@@ -1469,7 +1348,7 @@ ON=@Create
 
 [ITEMDEF i_crop_cabbage_1]
 DEFNAME=i_crop_cabbage_1
-ID=i_sprout_2
+ID=i_sprout_1
 NAME=Cabbage
 TYPE=t_crops
 TDATA2=i_crop_cabbage_2
@@ -1508,29 +1387,18 @@ CATEGORY=Vegetation
 SUBSECTION=Crops
 DESCRIPTION=Sprout 4
 
-[ITEMDEF i_crop_cranberries_1]
+[ITEMDEF 0a8cc]
 DEFNAME=i_crop_cranberries_1
-ID=i_sprout_4
 NAME=Cranberries
 TYPE=t_crops
 TDATA2=i_crop_cranberries_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Cranberries 1(sprout)
-
-[ITEMDEF 0a8cc]
-DEFNAME=i_crop_cranberries_2
-NAME=Cranberries
-TYPE=t_crops
-TDATA2=i_crop_cranberries_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Cranberries 2(grow)
+DESCRIPTION=Cranberries 1(grow)
 
 [ITEMDEF 0a8cd]
-DEFNAME=i_crop_cranberries_3
+DEFNAME=i_crop_cranberries_2
 NAME=Cranberries
 TYPE=t_crops
 TDATA1=i_crop_cranberries_1
@@ -1538,7 +1406,7 @@ TDATA3=i_fruit_cranberries
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Cranberries 3(ripe)
+DESCRIPTION=Cranberries 2(ripe)
 ON=@Create
 	morex=6
 
@@ -1615,7 +1483,7 @@ CATEGORY=Vegetation
 SUBSECTION=Crops
 DESCRIPTION=Ginseng 1(sprout)
 
-[ITEMDEF 0a8d1]
+[ITEMDEF 0a8d2]
 DEFNAME=i_crop_ginseng_2
 NAME=Ginseng
 TYPE=t_crops
@@ -1625,7 +1493,7 @@ CATEGORY=Vegetation
 SUBSECTION=Crops
 DESCRIPTION=Ginseng 2(grow)
 
-[ITEMDEF 0a8d2]
+[ITEMDEF 0a8d3]
 DEFNAME=i_crop_ginseng_3
 NAME=Ginseng
 TYPE=t_crops
@@ -1638,29 +1506,18 @@ DESCRIPTION=Ginseng 3(ripe)
 ON=@Create
 	morex={3 5}
 
-[ITEMDEF i_crop_gourds_1]
+[ITEMDEF 0a8d4]
 DEFNAME=i_crop_gourds_1
-ID=i_sprout_4
 NAME=Gourds
 TYPE=t_crops
 TDATA2=i_crop_gourds_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Gourds 1(sprout)
-
-[ITEMDEF 0a8d4]
-DEFNAME=i_crop_gourds_2
-NAME=Gourds
-TYPE=t_crops
-TDATA2=i_crop_gourds_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Gourds 2(grow)
+DESCRIPTION=Gourds 1(grow)
 
 [ITEMDEF 0a8d5]
-DEFNAME=i_crop_gourds_3
+DEFNAME=i_crop_gourds_2
 NAME=Gourds
 TYPE=t_crops
 TDATA1=i_crop_gourds_1
@@ -1668,13 +1525,13 @@ TDATA3=i_fruit_gourd
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Gourds 3(ripe)
+DESCRIPTION=Gourds 2(ripe)
 ON=@Create
 	morex=4
 
 [ITEMDEF i_crop_marigolds_1]
 DEFNAME=i_crop_marigolds_1
-ID=i_sprout_3
+ID=i_sprout_4
 NAME=Marigolds
 TYPE=t_crops
 TDATA2=i_crop_marigolds_2
@@ -1716,61 +1573,39 @@ CATEGORY=Vegetation
 SUBSECTION=Flowers
 DESCRIPTION=Marigolds
 
-[ITEMDEF i_crop_orchids3_1]
+[ITEMDEF 0a8d9]
 DEFNAME=i_crop_orchids3_1
-ID=i_sprout_2
 NAME=Orchids
 TYPE=t_crops
 TDATA2=i_crop_orchids3_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Orchids 1(sprout)
+DESCRIPTION=Orchids 3(grow)
 
-[ITEMDEF 0a8d9]
+[ITEMDEF 0a8da]
 DEFNAME=i_crop_orchids3_2
 NAME=Orchids
 TYPE=t_crops
-TDATA2=i_crop_orchids3_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Orchids 2(grow)
-
-[ITEMDEF 0a8da]
-DEFNAME=i_crop_orchids3_3
-NAME=Orchids
-TYPE=t_crops
 TDATA1=i_crop_orchids3_1
-TDATA3=i_flower_orchids
+TDATA3=i_flower_orchids_1
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
 DESCRIPTION=Orchids 3(mature)
 
-[ITEMDEF i_crop_pear_tree_1]
+[ITEMDEF 0a8db]
 DEFNAME=i_crop_pear_tree_1
-ID=i_sprout_2
 NAME=Pear Tree
 TYPE=t_crops
 TDATA2=i_crop_pear_tree_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Pear Tree 1(sprout)
-
-[ITEMDEF 0a8db]
-DEFNAME=i_crop_pear_tree_2
-NAME=Pear Tree
-TYPE=t_crops
-TDATA2=i_crop_pear_tree_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Pear Tree 2(grow)
+DESCRIPTION=Pear Tree 1(grow)
 
 [ITEMDEF 0a8dc]
-DEFNAME=i_crop_pear_tree_3
+DEFNAME=i_crop_pear_tree_2
 NAME=Pear Tree
 TYPE=t_crops
 TDATA1=i_crop_pear_tree_1
@@ -1778,33 +1613,22 @@ TDATA3=i_fruit_pear
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Pear Tree 3(ripe)
+DESCRIPTION=Pear Tree 2(ripe)
 ON=@Create
 	morex={4 6}
 
-[ITEMDEF i_crop_pumpkin_1]
+[ITEMDEF 0a8dd]
 DEFNAME=i_crop_pumpkin_1
-ID=i_sprout_1
 NAME=Pumpkins
 TYPE=t_crops
 TDATA2=i_crop_pumpkin_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Pumpkins 1(sprout)
-
-[ITEMDEF 0a8dd]
-DEFNAME=i_crop_pumpkin_2
-NAME=Pumpkins
-TYPE=t_crops
-TDATA2=i_crop_pumpkin_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Pumpkins 2(grow)
+DESCRIPTION=Pumpkins 1(grow)
 
 [ITEMDEF 0a8de]
-DEFNAME=i_crop_pumpkin_3
+DEFNAME=i_crop_pumpkin_2
 NAME=Pumpkins
 TYPE=t_crops
 TDATA1=i_crop_pumpkin_1
@@ -1812,33 +1636,22 @@ TDATA3=i_fruit_pumpkin
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Pumpkins 3(ripe)
+DESCRIPTION=Pumpkins 2(ripe)
 ON=@Create
 	morex={4 5}
 
-[ITEMDEF i_crop_asparagus_1]
+[ITEMDEF 0a8df]
 DEFNAME=i_crop_asparagus_1
-ID=i_sprout_3
 NAME=Asparagus
 TYPE=t_crops
 TDATA2=i_crop_asparagus_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Asparagus 1(sprout)
-
-[ITEMDEF 0a8df]
-DEFNAME=i_crop_asparagus_2
-NAME=Asparagus
-TYPE=t_crops
-TDATA2=i_crop_asparagus_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Asparagus 2(grow)
+DESCRIPTION=Asparagus 1(grow)
 
 [ITEMDEF 0a8e0]
-DEFNAME=i_crop_asparagus_3
+DEFNAME=i_crop_asparagus_2
 NAME=Asparagus
 TYPE=t_crops
 TDATA1=i_crop_asparagus_1
@@ -1846,7 +1659,7 @@ TDATA3=i_fruit_asparagus
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Asparagus 3(ripe)
+DESCRIPTION=Asparagus 2(ripe)
 ON=@Create
 	morex=6
 
@@ -1864,29 +1677,18 @@ DESCRIPTION=Asparagus
 ON=@Create
     morem=1
 
-[ITEMDEF i_crop_frostberries_1]
+[ITEMDEF 0a8e2]
 DEFNAME=i_crop_frostberries_1
-ID=i_sprout_2
 NAME=Frostberries
 TYPE=t_crops
 TDATA2=i_crop_frostberries_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Frostberries 1(sprout)
-
-[ITEMDEF 0a8e2]
-DEFNAME=i_crop_frostberries_2
-NAME=Frostberries
-TYPE=t_crops
-TDATA2=i_crop_frostberries_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Frostberries 2(grow)
+DESCRIPTION=Frostberries 1(grow)
 
 [ITEMDEF 0a8e3]
-DEFNAME=i_crop_frostberries_3
+DEFNAME=i_crop_frostberries_2
 NAME=Frostberries
 TYPE=t_crops
 TDATA1=i_crop_frostberries_1
@@ -1894,7 +1696,7 @@ TDATA3=i_fruit_frostberries
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Frostberries 3(ripe)
+DESCRIPTION=Frostberries 2(ripe)
 ON=@Create
 	morex=6
 
@@ -1946,101 +1748,66 @@ DESCRIPTION=Garlic 3(ripe)
 ON=@Create
 	morex=6
 
-[ITEMDEF i_crop_hops_1]
+[ITEMDEF 0a8e7]
 DEFNAME=i_crop_hops_1
-ID=i_sprout_3
 NAME=Hops
 TYPE=t_crops
 TDATA2=i_crop_hops_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Hops 1(sprout)
+DESCRIPTION=Hops 1(grow)
 
-[ITEMDEF 0a8e5]
+[ITEMDEF 0a8e8]
 DEFNAME=i_crop_hops_2
 NAME=Hops
 TYPE=t_crops
-TDATA2=i_crop_hops_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Hops 2(grow)
-
-[ITEMDEF 0a8e6]
-DEFNAME=i_crop_hops_3
-NAME=Hops
-TYPE=t_crops
 TDATA1=i_crop_hops_1
-TDATA3=i_fruit_green_bean
+TDATA3=i_fruit_hops
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Hops 3(ripe)
-ON=@Create
-	morex={3 5}
+DESCRIPTION=Hops 2(ripe)
 
-[ITEMDEF i_crop_mandrake_1]
+[ITEMDEF 0a8e9]
 DEFNAME=i_crop_mandrake_1
-ID=i_sprout_4
 NAME=Mandrake
 TYPE=t_crops
 TDATA2=i_crop_mandrake_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Mandrake 1(sprout)
+DESCRIPTION=Mandrake 1(grow)
 
-[ITEMDEF 0a8e9]
+[ITEMDEF 0a8ea]
 DEFNAME=i_crop_mandrake_2
 NAME=Mandrake
 TYPE=t_crops
-TDATA2=i_crop_mandrake_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Mandrake 2(grow)
-
-[ITEMDEF 0a8ea]
-DEFNAME=i_crop_mandrake_3
-NAME=Mandrake
-TYPE=t_crops
 TDATA1=i_crop_mandrake_1
-TDATA3=i_reag_mandrake
+TDATA3=i_reag_mandrake_root
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Mandrake 3(ripe)
+DESCRIPTION=Mandrake 2(ripe)
 ON=@Create
 	morex={3 5}
 
-[ITEMDEF i_crop_orchids3_1]
-DEFNAME=i_crop_orchids3_1
-ID=i_sprout_1
-NAME=Orchids
-TYPE=t_crops
-TDATA2=i_crop_orchids3_2
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Orchids3 1(sprout)
-
 [ITEMDEF 0a8eb]
-DEFNAME=i_crop_orchids3_2
+DEFNAME=i_crop_orchids4
 NAME=Orchids
 TYPE=t_crops
-TDATA1=i_crop_orchids3_1
+TDATA1=i_crop_orchids4
 TDATA3=i_flower_orchids_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Orchids 2(mature)
+DESCRIPTION=Orchids 4(mature)
 
 [ITEMDEF 0a8ec]
 DEFNAME=i_flower_orchids_2
 NAME=Orchids
 TYPE=t_normal
-// TDATA1=i_crop_orchids3_1
+// TDATA1=i_crop_orchids4_1
 // DYE=1
 PILE=0
 VALUE=3
@@ -2049,42 +1816,31 @@ CATEGORY=Vegetation
 SUBSECTION=Flowers
 DESCRIPTION=Orchids 2
 
-[ITEMDEF i_crop_peas_1]
+[ITEMDEF 0a8ed]
 DEFNAME=i_crop_peas_1
-ID=i_sprout_4
 NAME=Peas
 TYPE=t_crops
 TDATA2=i_crop_peas_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Peas 1(sprout)
+DESCRIPTION=Peas 1(grow)
 
-[ITEMDEF 0a8ed]
+[ITEMDEF 0a8ee]
 DEFNAME=i_crop_peas_2
 NAME=Peas
 TYPE=t_crops
-TDATA2=i_crop_peas_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Peas 2(grow)
-
-[ITEMDEF 0a8ee]
-DEFNAME=i_crop_peas_3
-NAME=Peas
-TYPE=t_crops
 TDATA1=i_crop_peas_1
-TDATA3=i_fruit_peas
+TDATA3=i_fruit_peas_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Peas 3(ripe)
+DESCRIPTION=Peas 2(ripe)
 ON=@Create
 	morex={2 5}
 
 [ITEMDEF 0a8ef]
-DEFNAME=i_fruit_peas
+DEFNAME=i_fruit_peas_2
 NAME=Peas
 TYPE=t_fruit
 TDATA1=i_crop_peas_1
@@ -2093,7 +1849,7 @@ VALUE=6
 WEIGHT=0.1
 CATEGORY=Provisions - Food
 SUBSECTION=Fruits
-DESCRIPTION=Peass
+DESCRIPTION=Peas 2
 ON=@Create
     morem=1
 
@@ -2123,35 +1879,24 @@ DEFNAME=i_crop_pointsettas_3
 NAME=Pointsettas
 TYPE=t_crops
 TDATA1=i_crop_pointsettas_1
-// TDATA3=
+// TDATA3= // no flower found
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
 DESCRIPTION=Pointsettas 3(mature)
 
-[ITEMDEF i_crop_roses_1]
+[ITEMDEF 0a8f2]
 DEFNAME=i_crop_roses_1
-ID=i_sprout_4
 NAME=Roses
 TYPE=t_crops
 TDATA2=i_crop_roses_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Roses 1(sprout)
-
-[ITEMDEF 0a8f2]
-DEFNAME=i_crop_roses_2
-NAME=Roses
-TYPE=t_crops
-TDATA2=i_crop_roses_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Roses 2(grow)
+DESCRIPTION=Roses 1(grow)
 
 [ITEMDEF 0a8f3]
-DEFNAME=i_crop_roses_3
+DEFNAME=i_crop_roses_2
 NAME=Roses
 TYPE=t_crops
 TDATA1=i_crop_roses_1
@@ -2159,7 +1904,7 @@ TDATA3=i_flower_roses
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Roses 3(mature)
+DESCRIPTION=Roses 2(mature)
 
 [ITEMDEF 0a8f4]
 DEFNAME=i_flower_roses
@@ -2220,19 +1965,8 @@ DESCRIPTION=Spinachs
 ON=@Create
     morem=1
 
-[ITEMDEF i_crop_wheat_1]
-DEFNAME=i_crop_wheat_1
-ID=i_sprout_3
-NAME=Wheat
-TYPE=t_crops
-TDATA2=i_crop_wheat_2
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Wheat 1(sprout)
-
 [ITEMDEF 0a8f8]
-DEFNAME=i_crop_wheat_2
+DEFNAME=i_crop_wheat_1
 NAME=Wheat
 TYPE=t_crops
 TDATA1=i_crop_wheat_1
@@ -2240,31 +1974,20 @@ TDATA3=i_wheat_sheaf
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Wheat 3(ripe)
+DESCRIPTION=Wheat 2(ripe)
 
-[ITEMDEF i_crop_nightshade_1]
+[ITEMDEF 0a8f9]
 DEFNAME=i_crop_nightshade_1
-ID=i_sprout_4
 NAME=Nightshade
 TYPE=t_crops
 TDATA2=i_crop_nightshade_2
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Nightshade 1(sprout)
-
-[ITEMDEF 0a8f9]
-DEFNAME=i_crop_nightshade_2
-NAME=Nightshade
-TYPE=t_crops
-TDATA2=i_crop_nightshade_3
-VALUE=1
-CATEGORY=Vegetation
-SUBSECTION=Crops
-DESCRIPTION=Nightshade 2(grow)
+DESCRIPTION=Nightshade 1(grow)
 
 [ITEMDEF 0a8fa]
-DEFNAME=i_crop_nightshade_3
+DEFNAME=i_crop_nightshade_2
 NAME=Nightshade
 TYPE=t_crops
 TDATA1=i_crop_nightshade_1
@@ -2272,9 +1995,9 @@ TDATA3=i_reag_nightshade
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
-DESCRIPTION=Nightshade 3(ripe)
+DESCRIPTION=Nightshade 2(ripe)
 ON=@Create
-	morex=6
+	morex={4 6}
 
 [ITEMDEF 0a8fb]
 DEFNAME=i_crop_white_truffles
