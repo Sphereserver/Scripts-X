@@ -10949,7 +10949,7 @@ FLIP=1
 VALUE=75
 WEIGHT=8.0
 DUPELIST=0a5eb
-CATEGORY=Custom
+CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Trophies
 DESCRIPTION=Trophy 2 (E)
 
@@ -10964,7 +10964,7 @@ FLIP=1
 VALUE=75
 WEIGHT=8.0
 DUPELIST=0a5ed
-CATEGORY=Custom
+CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Trophies
 DESCRIPTION=Bullfrog (E)
 
@@ -11528,7 +11528,7 @@ DUPEITEM=0a652
 
 [ITEMDEF 0a657]
 // Wood Strike F1
-DEFNAME=i_fx_mining_strike
+DEFNAME=i_fx_wood_strike
 NAME=Wood Strike
 TYPE=t_spell
 CATEGORY=Animations
@@ -12712,7 +12712,7 @@ TYPE=t_normal
 FLIP=0
 VALUE=75
 WEIGHT=15.0
-CATEGORY=Custom
+CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Trophies
 DESCRIPTION=Kraken
 
@@ -12724,7 +12724,7 @@ FLIP=1
 VALUE=75
 WEIGHT=25.0
 DUPELIST=0a7ab
-CATEGORY=Custom
+CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Trophies
 DESCRIPTION=Silverback Gorilla (E)
 
@@ -13709,7 +13709,7 @@ FLIP=1
 VALUE=75
 WEIGHT=15.0
 DUPELIST=0a9cb
-CATEGORY=Custom
+CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Trophies
 DESCRIPTION=Polar Bear 1
 
@@ -13724,7 +13724,7 @@ FLIP=1
 VALUE=75
 WEIGHT=8.0
 DUPELIST=0a9cd
-CATEGORY=Custom
+CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Trophies
 DESCRIPTION=Trophy 1
 
