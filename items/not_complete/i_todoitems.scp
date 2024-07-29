@@ -3743,22 +3743,24 @@ TYPE=t_water
 [ITEMDEF 05675]
 // splash
 DEFNAME=i_splash
-TYPE=t_normal
+TYPE=t_water
+VALUE=2
+WEIGHT=0.1
+CATEGORY=Ground Tiles
+SUBSECTION=Water splash
+DESCRIPTION=@
+DUPELIST=05676,05677,05678
 
 [ITEMDEF 05676]
-// splash
-DEFNAME=i_splash_2
-TYPE=t_normal
+DUPEITEM=05675
 
 [ITEMDEF 05677]
-// splash
-DEFNAME=i_splash_3
-TYPE=t_normal
+DUPEITEM=05675
 
 [ITEMDEF 05678]
-// splash
-DEFNAME=i_splash_4
-TYPE=t_normal
+DUPEITEM=05675
+
+
 
 [ITEMDEF 0567f]
 // long beard
@@ -10938,25 +10940,36 @@ TYPE=t_container
 DEFNAME=i_alchemist_bookcase_2
 TYPE=t_container
 
-[ITEMDEF 0a5ea]
-// Trophy
-DEFNAME=i_trophy
+
+[ITEMDEF 0a5ea] // not sure which monster is
+DEFNAME=i_trophy_2
+NAME=Trophy
 TYPE=t_normal
+FLIP=1
+VALUE=75
+WEIGHT=8.0
+DUPELIST=0a5eb
+CATEGORY=Custom
+SUBSECTION=Trophies
+DESCRIPTION=Trophy 2 (E)
 
 [ITEMDEF 0a5eb]
-// Trophy
-DEFNAME=i_trophy_2
-TYPE=t_normal
+DUPEITEM=0a5ea
 
 [ITEMDEF 0a5ec]
-// Trophy
-DEFNAME=i_trophy_3
+DEFNAME=i_trophy_bullfrog
+NAME=Bullfrog Trophy
 TYPE=t_normal
+FLIP=1
+VALUE=75
+WEIGHT=8.0
+DUPELIST=0a5ed
+CATEGORY=Custom
+SUBSECTION=Trophies
+DESCRIPTION=Bullfrog (E)
 
 [ITEMDEF 0a5ed]
-// Trophy
-DEFNAME=i_trophy_4
-TYPE=t_normal
+DUPEITEM=0a5ec
 
 [ITEMDEF 0a5ee]
 // Blanket
@@ -11184,19 +11197,20 @@ DEFNAME=i_spire_p_9
 TYPE=t_normal
 
 [ITEMDEF 0a61b]
-// large fireball
-DEFNAME=i_large_fireball
-TYPE=t_normal
+// Large Fireball (partialhue)
+DEFNAME=i_fx_firebal_large
+NAME=Large Fireball
+TYPE=t_fire
+CATEGORY=Animations
+SUBSECTION=Fireballs
+DESCRIPTION=Large Fireball
+DUPELIST=0a61c,0a61d
 
 [ITEMDEF 0a61c]
-// large fireball
-DEFNAME=i_large_fireball_2
-TYPE=t_normal
+DUPEITEM=0a61b
 
 [ITEMDEF 0a61d]
-// large fireball
-DEFNAME=i_large_fireball_3
-TYPE=t_normal
+DUPEITEM=0a61b
 
 [ITEMDEF 0a61e]
 // Yard Ornament Zombi
@@ -11416,92 +11430,123 @@ TYPE=t_normal
 [ITEMDEF 0a649]
 // Shield_Pirate
 DEFNAME=i_shield_pirate
-TYPE=t_normal
+NAME=Pirate Shield
+TYPE=t_shield
+FLIP=1
+ARMOR=20
+REQSTR=35
+WEIGHT=12.0
+VALUE=100
+DUPELIST=0a64a
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 98.0,Armslore 75.0
+TEVENTS=ei_equipitem
+CanUse=can_u_human|can_u_elf
+Expansion=RDS_HS
+CATEGORY=Provisions - Armor
+SUBSECTION=Shields
+DESCRIPTION=Pirate Shield
+ON=@Create
+   HITPOINTS={36 48}
 
 [ITEMDEF 0a64a]
 // Shield_Pirate
-DEFNAME=i_shield_pirate_2
-TYPE=t_normal
+DUPEITEM=0a649
 
 [ITEMDEF 0a64b]
 // fishing_bear_south
-DEFNAME=i_fishing_bear_south
+DEFNAME=i_stuffie_fishing_bear
+NAME=Fishing Bear Stuffie
 TYPE=t_normal
+FLIP=1
+WEIGHT=1.0
+VALUE=20
+DUPELIST=0a650
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Stuffies
+DESCRIPTION=Bear Fishing
 
 [ITEMDEF 0a64c]
 // fishing_bear_east
-DEFNAME=i_fishing_bear_east
-TYPE=t_normal
+DUPEITEM=0a64b
 
 [ITEMDEF 0a64d]
-// halloween_bear_sout
-DEFNAME=i_halloween_bear_sout
+// halloween_bear_south
+DEFNAME=i_stuffie_halloween_bear
+NAME=Halloween Bear Stuffie
 TYPE=t_normal
+FLIP=1
+WEIGHT=1.0
+VALUE=20
+DUPELIST=0a650
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Stuffies
+DESCRIPTION=Bear Halloween
 
 [ITEMDEF 0a64e]
 // halloween_bear_east
-DEFNAME=i_halloween_bear_east
-TYPE=t_normal
+DUPEITEM=0a64d
 
 [ITEMDEF 0a64f]
 // chef_bear_south
-DEFNAME=i_chef_bear_south
+DEFNAME=i_stuffie_chef_bear
+NAME=Chef Bear Stuffie
 TYPE=t_normal
+FLIP=1
+WEIGHT=1.0
+VALUE=20
+DUPELIST=0a650
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Stuffies
+DESCRIPTION=Bear Chef
 
 [ITEMDEF 0a650]
 // chef_bear_east
-DEFNAME=i_chef_bear_east
-TYPE=t_normal
+DUPEITEM=0a64f
 
 [ITEMDEF 0a652]
 // Mining Strike F1
-DEFNAME=i_mining_strike_f
-TYPE=t_normal
+DEFNAME=i_fx_mining_strike
+NAME=Mining Strike
+TYPE=t_spell
+CATEGORY=Animations
+SUBSECTION=Sparkles
+DESCRIPTION=Mining Strike
+DUPELIST=0a653,0a654,0a655,0a656
 
 [ITEMDEF 0a653]
-// Mining Strike F2
-DEFNAME=i_mining_strike_f_2
-TYPE=t_normal
+DUPEITEM=0a652
 
 [ITEMDEF 0a654]
-// Mining Strike F3
-DEFNAME=i_mining_strike_f_3
-TYPE=t_normal
+DUPEITEM=0a652
 
 [ITEMDEF 0a655]
-// Mining Strike F4
-DEFNAME=i_mining_strike_f_4
-TYPE=t_normal
+DUPEITEM=0a652
 
 [ITEMDEF 0a656]
-// Mining Strike F5
-DEFNAME=i_mining_strike_f_5
-TYPE=t_normal
+DUPEITEM=0a652
 
 [ITEMDEF 0a657]
 // Wood Strike F1
-DEFNAME=i_wood_strike_f
-TYPE=t_normal
+DEFNAME=i_fx_mining_strike
+NAME=Wood Strike
+TYPE=t_spell
+CATEGORY=Animations
+SUBSECTION=Sparkles
+DESCRIPTION=Wood Strike
+DUPELIST=0a658,0a659,0a65a,0a65b
 
 [ITEMDEF 0a658]
-// Wood Strike F2
-DEFNAME=i_wood_strike_f_2
-TYPE=t_normal
+DUPEITEM=0a657
 
 [ITEMDEF 0a659]
-// Wood Strike F3
-DEFNAME=i_wood_strike_f_3
-TYPE=t_normal
+DUPEITEM=0a657
 
 [ITEMDEF 0a65a]
-// Wood Strike F4
-DEFNAME=i_wood_strike_f_4
-TYPE=t_normal
+DUPEITEM=0a657
 
 [ITEMDEF 0a65b]
-// Wood Strike F5
-DEFNAME=i_wood_strike_f_5
-TYPE=t_normal
+DUPEITEM=0a657
 
 [ITEMDEF 0a65c]
 // o'hii tree
@@ -11699,84 +11744,140 @@ DEFNAME=i_orfluer_flowers_5
 TYPE=t_normal
 
 [ITEMDEF 0a683]
-// tapestry
 DEFNAME=i_tapestry_4
+NAME=Tapestry
 TYPE=t_normal
+FLIP=1
+VALUE=32
+WEIGHT=20.0
+RESOURCES=6 i_board,5 i_cloth,2 i_dyes,i_thread
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+DUPELIST=0a684
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 4 (East)
 
 [ITEMDEF 0a684]
-// tapestry
-DEFNAME=i_tapestry_5
-TYPE=t_normal
+DUPEITEM=0a683
 
 [ITEMDEF 0a685]
-// tapestry
-DEFNAME=i_tapestry_6
+DEFNAME=i_tapestry_5
+NAME=Tapestry
 TYPE=t_normal
+FLIP=1
+VALUE=32
+WEIGHT=20.0
+RESOURCES=6 i_board,5 i_cloth,2 i_dyes,i_thread
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+DUPELIST=0a686
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 5 (East)
 
 [ITEMDEF 0a686]
-// tapestry
-DEFNAME=i_tapestry_7
-TYPE=t_normal
+DUPEITEM=0a685
 
 [ITEMDEF 0a687]
-// tapestry
-DEFNAME=i_tapestry_8
+DEFNAME=i_tapestry_6
+NAME=Tapestry
 TYPE=t_normal
+FLIP=1
+VALUE=32
+WEIGHT=20.0
+RESOURCES=6 i_board,5 i_cloth,2 i_dyes,i_thread
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+DUPELIST=0a688
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 6 (East)
 
 [ITEMDEF 0a688]
-// tapestry
-DEFNAME=i_tapestry_9
-TYPE=t_normal
+DUPEITEM=0a687
 
 [ITEMDEF 0a689]
-// tapestry
-DEFNAME=i_tapestry_10
+DEFNAME=i_tapestry_7
+NAME=Tapestry
 TYPE=t_normal
+FLIP=1
+VALUE=32
+WEIGHT=20.0
+RESOURCES=6 i_board,5 i_cloth,2 i_dyes,i_thread
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+DUPELIST=0a68a
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 7 (East)
 
 [ITEMDEF 0a68a]
-// tapestry
-DEFNAME=i_tapestry_11
-TYPE=t_normal
+DUPEITEM=0a689
 
 [ITEMDEF 0a68b]
-// tapestry
-DEFNAME=i_tapestry_12
+DEFNAME=i_tapestry_8
+NAME=Tapestry
 TYPE=t_normal
+FLIP=1
+VALUE=32
+WEIGHT=20.0
+RESOURCES=6 i_board,5 i_cloth,2 i_dyes,i_thread
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+DUPELIST=0a68c
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 8 (East)
 
 [ITEMDEF 0a68c]
-// tapestry
-DEFNAME=i_tapestry_13
-TYPE=t_normal
+DUPEITEM=0a68b
 
 [ITEMDEF 0a68d]
-// tapestry
-DEFNAME=i_tapestry_14
+DEFNAME=i_tapestry_9
+NAME=Tapestry
 TYPE=t_normal
+FLIP=1
+VALUE=32
+WEIGHT=20.0
+RESOURCES=6 i_board,5 i_cloth,2 i_dyes,i_thread
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+DUPELIST=0a68e
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 9 (East)
 
 [ITEMDEF 0a68e]
-// tapestry
-DEFNAME=i_tapestry_15
-TYPE=t_normal
+DUPEITEM=0a68d
 
 [ITEMDEF 0a68f]
-// tapestry
-DEFNAME=i_tapestry_16
+DEFNAME=i_tapestry_10
+NAME=Tapestry
 TYPE=t_normal
+FLIP=1
+VALUE=32
+WEIGHT=20.0
+RESOURCES=6 i_board,5 i_cloth,2 i_dyes,i_thread
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+DUPELIST=0a690
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 10 (East)
 
 [ITEMDEF 0a690]
-// tapestry
-DEFNAME=i_tapestry_17
-TYPE=t_normal
+DUPEITEM=0a68f
 
 [ITEMDEF 0a691]
-// tapestry
-DEFNAME=i_tapestry_18
+DEFNAME=i_tapestry_11
+NAME=Tapestry
 TYPE=t_normal
+FLIP=1
+VALUE=32
+WEIGHT=20.0
+RESOURCES=6 i_board,5 i_cloth,2 i_dyes,i_thread
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+DUPELIST=0a692
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 11 (East)
 
 [ITEMDEF 0a692]
-// tapestry
-DEFNAME=i_tapestry_19
-TYPE=t_normal
+DUPEITEM=0a691
 
 [ITEMDEF 0a693]
 // herald
@@ -12604,19 +12705,31 @@ DEFNAME=i_demon_platter_2
 TYPE=t_normal
 
 [ITEMDEF 0a7a9]
-// Kraken_Trophy
-DEFNAME=i_kraken_trophy
+// Kraken Trophy
+DEFNAME=i_trophy_kraken
+NAME=Kraken Trophy
 TYPE=t_normal
+FLIP=0
+VALUE=75
+WEIGHT=15.0
+CATEGORY=Custom
+SUBSECTION=Trophies
+DESCRIPTION=Kraken
 
 [ITEMDEF 0a7aa]
-// Silverback_Gorilla_
-DEFNAME=i_silverback_gorilla
-TYPE=t_normal
+// Silverback Gorilla East
+DEFNAME=i_trophy_silverback_gorilla
+NAME=Silverback Gorilla Trophy
+FLIP=1
+VALUE=75
+WEIGHT=25.0
+DUPELIST=0a7ab
+CATEGORY=Custom
+SUBSECTION=Trophies
+DESCRIPTION=Silverback Gorilla (E)
 
 [ITEMDEF 0a7ab]
-// Silverback_Gorilla_
-DEFNAME=i_silverback_gorilla_2
-TYPE=t_normal
+DUPEITEM=0a7aa
 
 [ITEMDEF 0a7ac]
 // fish_basket
@@ -13111,12 +13224,28 @@ TYPE=t_normal
 [ITEMDEF 0a831]
 // Shield_Hildebrandt
 DEFNAME=i_shield_hildebrandt
-TYPE=t_normal
+NAME=Hildebrandt Shield
+TYPE=t_shield
+FLIP=1
+ARMOR=20
+REQSTR=35
+WEIGHT=12.0
+VALUE=100
+DUPELIST=0a832
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 100.0,Armslore 75.0
+TEVENTS=ei_equipitem
+CanUse=can_u_human|can_u_elf
+Expansion=RDS_HS
+CATEGORY=Provisions - Armor
+SUBSECTION=Shields
+DESCRIPTION=Hildebrandt Shield
+ON=@Create
+   HITPOINTS={36 48}
 
 [ITEMDEF 0a832]
 // Shield_Hildebrandt
-DEFNAME=i_shield_hildebrandt_2
-TYPE=t_normal
+DUPEITEM=0a831
 
 [ITEMDEF 0a833]
 // cartography_table
@@ -13358,55 +13487,74 @@ TYPE=t_container
 DEFNAME=i_venus_flytrap_small_2
 TYPE=t_container
 
-[ITEMDEF 0a91e]
-// Pixie_Lights
-DEFNAME=i_pixie_lights
-TYPE=t_light_lit
 
-[ITEMDEF 0a91f]
-// Pixie_Lights
-DEFNAME=i_pixie_lights_2
-TYPE=t_light_lit
-
-[ITEMDEF 0a920]
-// Pixie_Lights
-DEFNAME=i_pixie_lights_3
-TYPE=t_light_lit
-
-[ITEMDEF 0a921]
-// Pixie_Lights
-DEFNAME=i_pixie_lights_4
-TYPE=t_light_lit
 
 [ITEMDEF 0a922]
-// Pixie_Lights
-DEFNAME=i_pixie_lights_5
-TYPE=t_normal
+// Pixie Lights South (unlit)
+DEFNAME=i_pixie_lights1
+NAME=Pixie Lights
+TYPE=t_light_out
+TDATA3=i_pixie_lights1_lit
+VALUE=6
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Miscellaneous
+DESCRIPTION=Pixie Lights (S)(unlit)
+ON=@Create
+	MOREZ=20
 
-[ITEMDEF 0a923]
-// Pixie_Lights
-DEFNAME=i_pixie_lights_6
+[ITEMDEF 0a91e]
+// Pixie Lights South (lit)
+DEFNAME=i_pixie_lights1_lit
+NAME=Pixie Lights
 TYPE=t_light_lit
+TDATA3=i_pixie_lights1
+DUPELIST=0a91f,0a920,0a921
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Miscellaneous
+DESCRIPTION=Pixie Lights (S)(lit)
 
-[ITEMDEF 0a924]
-// Pixie_Lights
-DEFNAME=i_pixie_lights_7
-TYPE=t_light_lit
+[ITEMDEF 0a91f]
+DUPEITEM=0a91e
 
-[ITEMDEF 0a925]
-// Pixie_Lights
-DEFNAME=i_pixie_lights_8
-TYPE=t_light_lit
+[ITEMDEF 0a920]
+DUPEITEM=0a91e
 
-[ITEMDEF 0a926]
-// Pixie_Lights
-DEFNAME=i_pixie_lights_9
-TYPE=t_light_lit
+[ITEMDEF 0a921]
+DUPEITEM=0a91e
 
 [ITEMDEF 0a927]
-// Pixie_Lights
-DEFNAME=i_pixie_lights_10
-TYPE=t_normal
+// Pixie Lights East (unlit)
+DEFNAME=i_pixie_lights2
+NAME=Pixie Lights
+TYPE=t_light_out
+TDATA3=i_pixie_lights2_lit
+VALUE=6
+FLIP=0
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Miscellaneous
+DESCRIPTION=Pixie Lights (E)(unlit)
+ON=@Create
+	MOREZ=20
+
+[ITEMDEF 0a923]
+// Pixie Lights East (lit)
+DEFNAME=i_pixie_lights2_lit
+NAME=Pixie Lights
+TYPE=t_light_lit
+TDATA3=i_pixie_lights2
+DUPELIST=0a924,0a925,0a926
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Miscellaneous
+DESCRIPTION=Pixie Lights (E)(lit)
+
+[ITEMDEF 0a924]
+DUPEITEM=0a923
+
+[ITEMDEF 0a925]
+DUPEITEM=0a923
+
+[ITEMDEF 0a926]
+DUPEITEM=0a923
 
 [ITEMDEF 0a929]
 // Shield
@@ -13553,25 +13701,35 @@ TYPE=t_normal
 DEFNAME=i_polar_bear_topiary_2
 TYPE=t_normal
 
+
 [ITEMDEF 0a9ca]
-// Trophy
-DEFNAME=i_trophy_5
-TYPE=t_normal
+DEFNAME=i_trophy_polarbear_1
+NAME=Polar Bear Trophy
+FLIP=1
+VALUE=75
+WEIGHT=15.0
+DUPELIST=0a9cb
+CATEGORY=Custom
+SUBSECTION=Trophies
+DESCRIPTION=Polar Bear 1
 
 [ITEMDEF 0a9cb]
-// Trophy
-DEFNAME=i_trophy_6
-TYPE=t_normal
+DUPEITEM=0a9ca
 
-[ITEMDEF 0a9cc]
-// Trophy
-DEFNAME=i_trophy_7
+[ITEMDEF 0a9cc] // not sure which monster is
+DEFNAME=i_trophy_1
+NAME=Trophy
 TYPE=t_normal
+FLIP=1
+VALUE=75
+WEIGHT=8.0
+DUPELIST=0a9cd
+CATEGORY=Custom
+SUBSECTION=Trophies
+DESCRIPTION=Trophy 1
 
 [ITEMDEF 0a9cd]
-// Trophy
-DEFNAME=i_trophy_8
-TYPE=t_normal
+DUPEITEM=0a9cc
 
 [ITEMDEF 0a9ce]
 // Blanket
@@ -13935,18 +14093,54 @@ TYPE=t_normal
 
 [ITEMDEF 0ac46]
 // Stuffies Queen Dawn
-DEFNAME=i_stuffies_queen_dawn
+DEFNAME=i_stuffie_queen_dawn
+NAME=Queen Dawn Stuffie
 TYPE=t_normal
+FLIP=1
+WEIGHT=1.0
+VALUE=20
+DUPELIST=0a650
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Stuffies
+DESCRIPTION=Queen Dawn
+
+[ITEMDEF 0ac7b]
+// Stuffies Queen Dawn
+DUPEITEM=0ac46
 
 [ITEMDEF 0ac47]
 // Stuffies Blackthorn
-DEFNAME=i_stuffies_blackthorn
+DEFNAME=i_stuffie_blackthorn
+NAME=Blackthorn Stuffie
 TYPE=t_normal
+FLIP=1
+WEIGHT=1.0
+VALUE=20
+DUPELIST=0a650
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Stuffies
+DESCRIPTION=Blackthorn
+
+[ITEMDEF 0ac7c]
+// Stuffies Blackthorn
+DUPEITEM=0ac47
 
 [ITEMDEF 0ac48]
-// Stuffies Dasha Sout
-DEFNAME=i_stuffies_dasha_sout
+// Stuffies Dasha South
+DEFNAME=i_stuffie_dasha
+NAME=Dasha Stuffie
 TYPE=t_normal
+FLIP=1
+WEIGHT=1.0
+VALUE=20
+DUPELIST=0a650
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Stuffies
+DESCRIPTION=Dasha
+
+[ITEMDEF 0ac7d]
+// Stuffies Dasha East
+DUPEITEM=0ac48
 
 [ITEMDEF 0ac49]
 // salvage_station
@@ -14151,21 +14345,6 @@ TYPE=t_normal
 [ITEMDEF 0ac7a]
 // Watermelon Sliced E
 DEFNAME=i_watermelon_sliced_e
-TYPE=t_normal
-
-[ITEMDEF 0ac7b]
-// Stuffies Queen Dawn
-DEFNAME=i_stuffies_queen_dawn_2
-TYPE=t_normal
-
-[ITEMDEF 0ac7c]
-// Stuffies Blackthorn
-DEFNAME=i_stuffies_blackthorn_2
-TYPE=t_normal
-
-[ITEMDEF 0ac7d]
-// Stuffies Dasha East
-DEFNAME=i_stuffies_dasha_east
 TYPE=t_normal
 
 [EOF]
