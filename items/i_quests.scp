@@ -425,86 +425,6 @@ CATEGORY=Quests
 SUBSECTION=Shattered Obelisk
 DESCRIPTION=Card (Hydros)
 
-// [MULTIDEF 02120]
-// DEFNAME=m_caravan_ambushed_trade
-// TYPE=t_multi
-// CATEGORY=Quests
-// SUBSECTION=Shattered Obelisk
-// DESCRIPTION=Caravan (multi)(ambushed trade)
-// MULTIREGION=-4,-4,5,5
-
-// [MULTIDEF 02121]
-// DEFNAME=m_caravan_moonglow
-// TYPE=t_multi
-// CATEGORY=Quests
-// SUBSECTION=Shattered Obelisk
-// DESCRIPTION=Caravan (multi)(moonglow)
-// MULTIREGION=-3,-3,1,4
-
-// [MULTIDEF 02122]
-// DEFNAME=m_caravan_minoc
-// TYPE=t_multi
-// CATEGORY=Quests
-// SUBSECTION=Shattered Obelisk
-// DESCRIPTION=Caravan (multi)(minoc)
-// MULTIREGION=-5,-5,2,0
-
-// [MULTIDEF 02123]
-// DEFNAME=m_caravan_skarabrae
-// TYPE=t_multi
-// CATEGORY=Quests
-// SUBSECTION=Shattered Obelisk
-// DESCRIPTION=Caravan (multi)(skarabrae)
-// MULTIREGION=-4,-4,0,3
-
-// [MULTIDEF 02124]
-// DEFNAME=m_caravan_jhelom
-// TYPE=t_multi
-// CATEGORY=Quests
-// SUBSECTION=Shattered Obelisk
-// DESCRIPTION=Caravan (multi)(jhelom)
-// MULTIREGION=-5,-5,2,0
-
-// [MULTIDEF 02125]
-// DEFNAME=m_caravan_trinsic
-// TYPE=t_multi
-// CATEGORY=Quests
-// SUBSECTION=Shattered Obelisk
-// DESCRIPTION=Caravan (multi)(trinsic)
-// MULTIREGION=-4,-4,0,4
-
-// [MULTIDEF 02126]
-// DEFNAME=m_caravan_sosaria
-// TYPE=t_multi
-// CATEGORY=Quests
-// SUBSECTION=Shattered Obelisk
-// DESCRIPTION=Caravan (multi)(sosaria)
-// MULTIREGION=-5,-5,3,0
-
-// [MULTIDEF 02127]
-// DEFNAME=m_caravan_magincia
-// TYPE=t_multi
-// CATEGORY=Quests
-// SUBSECTION=Shattered Obelisk
-// DESCRIPTION=Caravan (multi)(magincia)
-// MULTIREGION=-5,-5,0,2
-
-// [MULTIDEF 02128]
-// DEFNAME=m_caravan_city
-// TYPE=t_multi
-// CATEGORY=Quests
-// SUBSECTION=Shattered Obelisk
-// DESCRIPTION=Caravan (multi)(city)
-// MULTIREGION=-3,-3,4,0
-
-// [MULTIDEF 02129]
-// DEFNAME=m_caravan_yew
-// TYPE=t_multi
-// CATEGORY=Quests
-// SUBSECTION=Shattered Obelisk
-// DESCRIPTION=Caravan (multi)(yew)
-// MULTIREGION=-5,-5,2,0
-
 //////////////////////////
 // Treasures of Khaldun //
 //////////////////////////
@@ -2250,5 +2170,91 @@ DESCRIPTION=Fellowship Medallion
 
 [ITEMDEF 0a42a]
 //necklace (unused, seems to be duplicated from 0a429)
+
+
+///////////////////////////
+// The Shattered Obelisk //
+///////////////////////////
+// These multis are supposed to be stored in store on muilticollectuon.uop
+
+[MULTIDEF 02120]
+DEFNAME=m_caravan_ambushed_trade
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(ambushed trade)
+MULTIREGION=-4,-4,5,5
+
+[MULTIDEF 02121]
+DEFNAME=m_caravan_moonglow
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(moonglow)
+MULTIREGION=-3,-3,1,4
+
+[MULTIDEF 02122]
+DEFNAME=m_caravan_minoc
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(minoc)
+MULTIREGION=-5,-5,2,0
+
+[MULTIDEF 02123]
+DEFNAME=m_caravan_skarabrae
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(skarabrae)
+MULTIREGION=-4,-4,0,3
+
+[MULTIDEF 02124]
+DEFNAME=m_caravan_jhelom
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(jhelom)
+MULTIREGION=-5,-5,2,0
+
+[MULTIDEF 02125]
+DEFNAME=m_caravan_trinsic
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(trinsic)
+MULTIREGION=-4,-4,0,4
+
+[MULTIDEF 02126]
+DEFNAME=m_caravan_sosaria
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(sosaria)
+MULTIREGION=-5,-5,3,0
+
+[MULTIDEF 02127]
+DEFNAME=m_caravan_magincia
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(magincia)
+MULTIREGION=-5,-5,0,2
+
+[MULTIDEF 02128]
+DEFNAME=m_caravan_city
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(city)
+MULTIREGION=-3,-3,4,0
+
+[MULTIDEF 02129]
+DEFNAME=m_caravan_yew
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Caravan (multi)(yew)
+MULTIREGION=-5,-5,2,0
 
 [EOF]
