@@ -14,11 +14,11 @@ DUPELIST=046a1
 ON=@Create
    MORE2=10
 ON=@ClientTooltip
-   addcliloc 1049116,<dMORE2>	//[ Charges: ~1_CHARGES~ ]
+   addcliloc 1060741,<dMORE2>	//Charges: ~1_CHARGES~
 ON=@DClick
    IF (<MORE2>)
     SRC.SYSMESSAGE You take some food from the cornucopia.
-    SERV.NEWITEM {i_bacon_slab 1 i_cheese_wheel 1 i_bread_french 1 i_bird_cooked 1 i_ham 1 i_jar_honey 1 i_fruit_watermelon 1 i_fruit_onion 1 i_fruit_squash 1 i_fruit_carrot 1 i_fruit_turnip 1 i_banana_unpeeled 1 i_coconut_halved 1}
+    SERV.NEWITEM {i_ham 1 i_cheese_wheel 1 i_bread_french 1 i_bird_cooked 1 i_ham 1 i_jar_honey 1 i_fruit_watermelon 1 i_fruit_onion 1 i_fruit_squash 1 i_fruit_carrot 1 i_fruit_turnip 1 i_banana_unpeeled 1 i_coconut_halved 1}
     NEW.BOUNCE
     MORE2 --
     RESENDTOOLTIP
@@ -96,7 +96,7 @@ DUPELIST=04bda
 ON=@Create
    MORE2=10
 ON=@ClientTooltip
-   addcliloc 1049116,<dMORE2>	//[ Charges: ~1_CHARGES~ ]
+   addcliloc 1060741,<dMORE2>	//Charges: ~1_CHARGES~
 ON=@DClick
    IF (<MORE2>)
     IF (<R5>)

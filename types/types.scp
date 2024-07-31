@@ -411,6 +411,21 @@ ON=@ContextMenuSelect
       //1080048//"Select a pet to retrieve from the stable:"
    ENDIF
 
+[TYPEDEF t_yarn]
+ON=@Targon_Item
+    if <argo.type>==t_loom && <argo.baseid>==i_autoloom_s || <argo.baseid>==i_autoloom_e
+        argo.timerf 3,flip
+        argo.flip
+        // src.sound=
+    endif
+
+[TYPEDEF t_thread]
+ON=@Targon_Item
+    if <argo.type>==t_loom && <argo.baseid>==i_autoloom_s || <argo.baseid>==i_autoloom_e
+        argo.timerf 3,flip
+        argo.flip
+        // src.sound=
+    endif
 
 [TYPEDEF t_masonry_tool]
 [TYPEDEF t_glassblowing_tool]

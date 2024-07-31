@@ -3641,4 +3641,339 @@ DUPELIST=09f32
 //trophy blacktigerhead
 DUPEITEM=09f31
 
+[ITEMDEF 0a1a0]
+DEFNAME=i_trophy_barracuda
+NAME=fish
+FLIP=1
+RESOURCES=1 i_trophy_mountboard_lg,1 i_fish_barracuda
+SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Barracuda
+DUPELIST=0a1a1
+
+[ITEMDEF 0a1a1]
+//fish
+DUPEITEM=0a1a0
+
+[ITEMDEF 0a1a2]
+DEFNAME=i_trophy_salmon
+NAME=fish
+FLIP=1
+RESOURCES=1 i_trophy_mountboard_lg,1 i_fish_salmon
+SKILLMAKE=Carpentry 72.0,Tailoring 60.0,t_carpentry,t_sewing_kit
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Salmon
+DUPELIST=0a1a3
+
+[ITEMDEF 0a1a3]
+//fish
+DUPEITEM=0a1a2
+
+[ITEMDEF 0a20c]
+DEFNAME=i_trophy_sea_serpent
+NAME=sea serpent trophy
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Sea Serpent Trophy
+
+[ITEMDEF 0a20d]
+DEFNAME=i_trophy_raptor
+NAME=raptor trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Raptor
+DUPELIST=0a20e
+
+[ITEMDEF 0a20e]
+//trophy raptor
+DUPEITEM=0a20d
+
+[ITEMDEF 0a20f]
+DEFNAME=i_trophy_scorpion
+NAME=scorpion trophy
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Scorpion
+DUPELIST=0a210
+
+[ITEMDEF 0a210]
+//trophy scorpion
+DUPEITEM=0a20f
+
+
+[ITEMDEF 0a5ea] // not sure which monster is
+DEFNAME=i_trophy_dragonhead2
+NAME=Trophy
+TYPE=t_normal
+FLIP=1
+VALUE=75
+WEIGHT=8.0
+DUPELIST=0a5eb
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Dragon
+
+[ITEMDEF 0a5eb]
+//trophy dragonhead2
+DUPEITEM=0a5ea
+
+[ITEMDEF 0a5ec]
+DEFNAME=i_trophy_bullfrog
+NAME=Bullfrog Trophy
+TYPE=t_normal
+FLIP=1
+VALUE=75
+WEIGHT=8.0
+DUPELIST=0a5ed
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Bullfrog
+
+[ITEMDEF 0a5ed]
+//trophy bullfrog
+DUPEITEM=0a5ec
+
+[ITEMDEF 0a683]
+DEFNAME=i_tapestry_8
+NAME=Tapestry
+TYPE=t_normal
+FLIP=1
+VALUE=32
+WEIGHT=20.0
+RESOURCES=6 i_board,5 i_cloth,2 i_dyes,i_thread
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+DUPELIST=0a684
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 8 (East)
+
+[ITEMDEF 0a684]
+// Tapestry 8 (South)
+DUPEITEM=0a683
+
+[ITEMDEF 0a685]
+DEFNAME=i_tapestry_9
+NAME=Tapestry
+TYPE=t_normal
+FLIP=1
+VALUE=32
+WEIGHT=20.0
+RESOURCES=6 i_board,5 i_cloth,2 i_dyes,i_thread
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+DUPELIST=0a686
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 9 (East)
+
+[ITEMDEF 0a686]
+// Tapestry 9 (South)
+DUPEITEM=0a685
+
+[ITEMDEF 0a687]
+DEFNAME=i_tapestry_10
+NAME=Tapestry
+TYPE=t_normal
+FLIP=1
+VALUE=32
+WEIGHT=20.0
+RESOURCES=6 i_board,5 i_cloth,2 i_dyes,i_thread
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+DUPELIST=0a688
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 10 (East)
+
+[ITEMDEF 0a688]
+// Tapestry 10 (South)
+DUPEITEM=0a687
+
+[ITEMDEF 0a689]
+DEFNAME=i_tapestry_11
+NAME=Tapestry
+TYPE=t_normal
+FLIP=1
+VALUE=32
+WEIGHT=20.0
+RESOURCES=6 i_board,5 i_cloth,2 i_dyes,i_thread
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+DUPELIST=0a68a
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 11 (East)
+
+[ITEMDEF 0a68a]
+// Tapestry 11 (South)
+DUPEITEM=0a689
+
+[ITEMDEF 0a68b]
+DEFNAME=i_tapestry_12
+NAME=Tapestry
+TYPE=t_normal
+FLIP=1
+VALUE=32
+WEIGHT=20.0
+RESOURCES=6 i_board,5 i_cloth,2 i_dyes,i_thread
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+DUPELIST=0a68c
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 12 (East)
+
+[ITEMDEF 0a68c]
+// Tapestry 12 (South)
+DUPEITEM=0a68b
+
+[ITEMDEF 0a68d]
+DEFNAME=i_tapestry_13
+NAME=Tapestry
+TYPE=t_normal
+FLIP=1
+VALUE=32
+WEIGHT=20.0
+RESOURCES=6 i_board,5 i_cloth,2 i_dyes,i_thread
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+DUPELIST=0a68e
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 13 (East)
+
+[ITEMDEF 0a68e]
+// Tapestry 13 (South)
+DUPEITEM=0a68d
+
+[ITEMDEF 0a68f]
+DEFNAME=i_tapestry_14
+NAME=Tapestry
+TYPE=t_normal
+FLIP=1
+VALUE=32
+WEIGHT=20.0
+RESOURCES=6 i_board,5 i_cloth,2 i_dyes,i_thread
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+DUPELIST=0a690
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 14 (East)
+
+[ITEMDEF 0a690]
+// Tapestry 14 (South)
+DUPEITEM=0a68f
+
+[ITEMDEF 0a691]
+DEFNAME=i_tapestry_15
+NAME=Tapestry
+TYPE=t_normal
+FLIP=1
+VALUE=32
+WEIGHT=20.0
+RESOURCES=6 i_board,5 i_cloth,2 i_dyes,i_thread
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+DUPELIST=0a692
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 15 (East)
+
+[ITEMDEF 0a692]
+// Tapestry 15 (South)
+DUPEITEM=0a691
+
+[ITEMDEF 0a7a9]
+// Kraken Trophy
+DEFNAME=i_trophy_kraken
+NAME=Kraken Trophy
+TYPE=t_normal
+FLIP=0
+VALUE=75
+WEIGHT=15.0
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Kraken
+
+[ITEMDEF 0a7aa]
+DEFNAME=i_trophy_silverback_gorilla
+NAME=Silverback Gorilla Trophy
+FLIP=1
+VALUE=75
+WEIGHT=25.0
+DUPELIST=0a7ab
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Silverback Gorilla (East)
+
+[ITEMDEF 0a7ab]
+// Silverback Gorilla (South)
+DUPEITEM=0a7aa
+
+[ITEMDEF 0a9ca]
+DEFNAME=i_trophy_polarbear_1
+NAME=Polar Bear Trophy
+FLIP=1
+VALUE=75
+WEIGHT=15.0
+DUPELIST=0a9cb
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=Polar Bear 1
+
+[ITEMDEF 0a9cb]
+// Silverback Polar Bear (South)
+DUPEITEM=0a9ca
+
+[ITEMDEF 0a7cd]
+DEFNAME=i_tapestry_16
+NAME=Tapestry
+TYPE=t_normal
+FLIP=1
+VALUE=32
+WEIGHT=20.0
+RESOURCES=6 i_board,5 i_cloth,2 i_dyes,i_thread
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+DUPELIST=0a7ce
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 16 (East)
+
+[ITEMDEF 0a7ce]
+// Tapestry 16 (South)
+DUPEITEM=0a7cd
+
+[ITEMDEF 0a7cf]
+DEFNAME=i_tapestry_17
+NAME=Tapestry
+TYPE=t_normal
+FLIP=1
+VALUE=32
+WEIGHT=20.0
+RESOURCES=6 i_board,5 i_cloth,2 i_dyes,i_thread
+SKILLMAKE=Carpentry 80.0,Tailoring 50.0,t_carpentry
+DUPELIST=0a7d0
+CATEGORY=Decoration - Wall Hangings
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 17 (East)
+
+[ITEMDEF 0a7d0]
+// Tapestry 17 (South)
+DUPEITEM=0a7cf
+
+[ITEMDEF 0a9cc] // not sure which monster is
+//trophy bourahead (East)
+DEFNAME=i_trophy_bourahead
+NAME=High Plains Boura
+TYPE=t_normal
+FLIP=1
+VALUE=75
+WEIGHT=12.0
+DUPELIST=0a9cd
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Trophies
+DESCRIPTION=High Plains Boura (East)
+
+[ITEMDEF 0a9cd]
+//trophy bourahead (South)
+DUPEITEM=0a9cc
+
 [EOF]

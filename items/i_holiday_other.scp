@@ -1,0 +1,254 @@
+[ITEMDEF 0a0e6]
+DEFNAME=i_enchanted_wheelbarrow_empty
+NAME=enchanted wheelbarrow
+FLIP=1
+CATEGORY=Holiday Gifts
+SUBSECTION=Spring
+DESCRIPTION=Enchanted Wheelbarrow (empty)
+DUPELIST=0a0e7
+ON=@Create
+   local.t=60*60*24*7*10 	//1 week
+   TAG.NextHarvest=<eval <SERV.TIME>+<dlocal.t>>
+   TIMER=3600
+ON=@ClientTooltip
+   IF (<TAG0.NextHarvest> > <SERV.TIME>)
+      local.t=<eval (<dTAG0.NextHarvest>-<SERV.TIME>)/10>/60
+      ADDCLILOC <def.empty_cliloc>,Next harvest in<def.br><FormatMinutes <dlocal.t>>
+   ENDIF
+ON=@Timer
+   IF (<SERV.TIME> > <TAG0.NextHarvest>)
+      DISPID=<eval <DISPIDDEC>+2>
+      UPDATEX
+      return 1
+   ELIF !(<ATTR> & attr_decay)
+      TIMER=3600
+      return 1
+   ENDIF
+ON=@DClick
+   IF (<TAG0.NextHarvest> > <SERV.TIME>)
+      local.t=<eval (<dTAG0.NextHarvest>-<SERV.TIME>)/10>/60
+      SRC.SYSMESSAGE Next harvest is in <FormatMinutes <dlocal.t>>.
+   ELSE
+      SRC.MESSAGE @,,2 1158330 // *You collect a plant from the wheelbarrow*
+      SERV.NEWITEM {{0a0dd 0a0e5} 1 0a0ed 1 {0a11b 0a12b} 1}
+      IF (5 < <R100>)
+         NEW.COLOR={02 1 0481 1 048e 1 0496 1 04eb 1 0782 1 0a26 1 0aa9 1}
+      ENDIF
+      NEW.BOUNCE
+      DISPID=<eval <DISPIDDEC>-2>
+      local.t=60*60*24*7*10 	//1 week
+      TAG.NextHarvest=<eval <SERV.TIME>+<dlocal.t>>
+      TIMER=3600
+      UPDATEX
+   ENDIF
+   return 1
+
+[ITEMDEF 0a0e7]
+NAME=enchanted wheelbarrow
+DUPEITEM=0a0e6
+
+[ITEMDEF 0a0e8]
+DEFNAME=i_enchanted_wheelbarrow
+NAME=enchanted wheelbarrow
+FLIP=1
+CATEGORY=Holiday Gifts
+SUBSECTION=Spring
+DESCRIPTION=Enchanted Wheelbarrow
+DUPELIST=0a0e9
+
+[ITEMDEF 0a0e9]
+NAME=enchanted wheelbarrow
+DUPEITEM=0a0e8
+
+[ITEMDEF 0a0ca]
+//blanket (east)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0cb]
+//blanket (east)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0cc]
+//blanket (east)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0cd]
+//blanket (east)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0ce]
+//blanket (east)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0cf]
+//blanket (east)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0d0]
+//blanket (south)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0d1]
+//blanket (south)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0d2]
+//blanket (south)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0d3]
+//blanket (south)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0d4]
+//blanket (south)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0d5]
+//blanket (south)(multi-part)
+NAME=blanket
+DYE=1
+
+[ITEMDEF 0a0d6]
+DEFNAME=i_sausage
+NAME=sausage
+TYPE=t_food
+FLIP=1
+RESOURCES=1 i_ham,1 i_dried_herbs
+SKILLMAKE=Cooking 45.0,t_cooking
+CATEGORY=Holiday Gifts
+SUBSECTION=Summer
+DESCRIPTION=Sausage
+DUPELIST=0a0d7
+ON=@Create
+   MOREM=1
+
+[ITEMDEF 0a0d7]
+DUPEITEM=0a0d6
+
+[ITEMDEF 0a0d8]
+DEFNAME=i_hot_dog
+NAME=hot dog
+TYPE=t_food
+FLIP=1
+RESOURCES=1 i_bread_french,1 i_sausage
+SKILLMAKE=Cooking 45.0,t_cooking
+CATEGORY=Holiday Gifts
+SUBSECTION=Summer
+DESCRIPTION=Hot Dog
+DUPELIST=0a0d9
+ON=@Create
+   MOREM=1
+
+[ITEMDEF 0a0d9]
+DUPEITEM=0a0d8
+
+[ITEMDEF 0a0da]
+DEFNAME=i_hamburger
+NAME=hamburger
+TYPE=t_food
+RESOURCES=1 i_bread_loaf,1 i_ribs_raw,1 i_fruit_lettuce
+SKILLMAKE=Cooking 45.0,t_cooking
+CATEGORY=Holiday Gifts
+SUBSECTION=Summer
+DESCRIPTION=Hamburger
+ON=@Create
+   MOREM=1
+
+[ITEMDEF 0a0db]
+DEFNAME=i_enchanted_picnic_basket
+NAME=enchanted picnic basket
+TYPE=t_container
+TDATA2=0108
+FLIP=1
+RESOURCES=2 i_softened_reed,3 i_arrow_shaft
+SKILLMAKE=Tinkering 75.0,t_tinker_tools
+CATEGORY=Holiday Gifts
+SUBSECTION=Summer
+DESCRIPTION=Enchanted Picnic Basket
+DUPELIST=0a0dc
+ON=@Create
+   //SERV.NEWITEM i_deed_picnic_blanket,1,<UID>
+   SERV.NEWITEM i_sausage,3,<UID>
+   SERV.NEWITEM i_hot_dog,3,<UID>
+   SERV.NEWITEM i_hamburger,3,<UID>
+
+[ITEMDEF 0a0dc]
+NAME=enchanted picnic basket
+DUPEITEM=0a0db
+
+[ITEMDEF m_picnic_blanket_e]
+ID=0a0cd
+NAME=Blanket
+TYPE=t_multi
+CATEGORY=Holiday Gifts
+SUBSECTION=Summer
+DESCRIPTION=Picnic Blanket (east)
+MULTIREGION=0,0,0,0
+COMPONENT=0a0ca,1,-1
+COMPONENT=0a0cb,0,-1
+COMPONENT=0a0cc,1,0
+COMPONENT=0a0ce,1,1
+COMPONENT=0a0cf,0,1
+
+[ITEMDEF m_picnic_blanket_s]
+ID=0a0d3
+NAME=Blanket
+TYPE=t_multi
+CATEGORY=Holiday Gifts
+SUBSECTION=Summer
+DESCRIPTION=Picnic Blanket (south)
+MULTIREGION=0,0,0,0
+COMPONENT=0a0d0,-1,1
+COMPONENT=0a0d1,-1,0
+COMPONENT=0a0d2,0,1
+COMPONENT=0a0d4,1,1
+COMPONENT=0a0d5,1,0
+
+[ITEMDEF 0a2f6]
+DEFNAME=i_bonfire
+NAME=bonfire
+TYPE=t_light_out
+TDATA3=i_bonfire_lit
+CATEGORY=Holiday Gifts
+SUBSECTION=Summer
+DESCRIPTION=Bonfire (unlit)
+ON=@Create
+   MOREZ=1
+
+[ITEMDEF 0a2f7]
+DEFNAME=i_bonfire_lit
+NAME=bonfire
+TYPE=t_light_lit
+TDATA3=i_bonfire
+CATEGORY=Holiday Gifts
+SUBSECTION=Summer
+DESCRIPTION=Bonfire (lit)
+
+[ITEMDEF 0a2f8]
+//bonfire (lit)(anim)
+
+[ITEMDEF 0a2f9]
+//bonfire (lit)(anim)
+
+[ITEMDEF 0a2fa]
+//bonfire (lit)(anim)
+
+[ITEMDEF 0a2fb]
+//bonfire (lit)(anim)
+
+[ITEMDEF 0a2fc]
+//bonfire (lit)(anim)
+
+[EOF]

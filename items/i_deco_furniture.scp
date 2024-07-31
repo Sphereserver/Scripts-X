@@ -3974,4 +3974,208 @@ MULTIREGION=0,0,0,0
 COMPONENT=04c1d,0,-1
 COMPONENT=04c1f,0,1
 
+[ITEMDEF 0a29b]
+DEFNAME=i_pie_safe
+NAME=pie safe
+TYPE=t_container
+TDATA2=04f
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Pie Safe
+DUPELIST=0a29d
+ON=@Create
+   COLOR=01c0
+ON=@DClick
+   IF (<DISPID> == i_pie_safe)
+      DISPID=0a29c
+   ELIF (<DISPID> == 0a29c)
+      DISPID=i_pie_safe
+   ELIF (<DISPID> == 0a29d)
+      DISPID=0a29e
+   ELIF (<DISPID> == 0a29e)
+      DISPID=0a29d
+   ENDIF
+   UPDATE
+
+[ITEMDEF 0a29c]
+//pie safe (south)(open)
+
+[ITEMDEF 0a29d]
+//pie safe (east)
+DUPEITEM=0a29b
+
+[ITEMDEF 0a29e]
+//pie safe (east)(open)
+
+[ITEMDEF 0a29f]
+DEFNAME=i_china_cabinet
+NAME=china cabinet
+TYPE=t_container
+TDATA2=04f
+FLIP=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=China Cabinet
+DUPELIST=0a2a1
+ON=@Create
+   COLOR=01c0
+ON=@DClick
+   IF (<DISPID> == i_china_cabinet)
+      DISPID=0a2a0
+   ELIF (<DISPID> == 0a2a0)
+      DISPID=i_china_cabinet
+   ELIF (<DISPID> == 0a2a1)
+      DISPID=0a2a2
+   ELIF (<DISPID> == 0a2a2)
+      DISPID=0a2a1
+   ENDIF
+   UPDATE
+
+[ITEMDEF 0a2a0]
+//china cabinet (south)(open)
+
+[ITEMDEF 0a2a1]
+//china cabinet (east)
+DUPEITEM=0a29f
+
+[ITEMDEF 0a2a2]
+//china cabinet (east)(open)
+
+[ITEMDEF 0a2a3]
+DEFNAME=i_butcher_block
+NAME=butcher block
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Butcher Block
+
+[ITEMDEF 0a2a4]
+DEFNAME=i_wood_stove_east
+NAME=wood stove
+TYPE=t_fire
+CAN=can_i_light
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Wood Stove (east)
+ON=@Create
+   MOREZ=2
+ON=@DClick
+   SOUND 03be
+   DISPID=<QVAL (<DISPID> == i_wood_stove_east)? 0a2a5 : i_wood_stove_east>
+   UPDATE
+   return 1
+
+[ITEMDEF 0a2a5]
+//wood stove (east)(lit)
+
+[ITEMDEF 0a2a6]
+//wood stove (east)(lit)(anim)
+
+[ITEMDEF 0a2a7]
+//wood stove (east)(lit)(anim)
+
+[ITEMDEF 0a2a8]
+DEFNAME=i_wood_stove_south
+NAME=wood stove
+TYPE=t_fire
+CAN=can_i_light
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Wood Stove (south)
+ON=@Create
+   MOREZ=2
+ON=@DClick
+   SOUND 03be
+   DISPID=<QVAL (<DISPID> == i_wood_stove_south)? 0a2a9 : i_wood_stove_south>
+   UPDATE
+   return 1
+
+[ITEMDEF 0a2a9]
+//wood stove (south)(lit)
+
+[ITEMDEF 0a2aa]
+//wood stove (south)(lit)(anim)
+
+[ITEMDEF 0a2ab]
+//wood stove (south)(lit)(anim)
+
+[ITEMDEF 0a2ac]
+//wash basin (multi-part)(south)
+NAME=wash basin
+
+[ITEMDEF 0a2ad]
+//wash basin (multi-part)(south)
+NAME=wash basin
+
+[ITEMDEF 0a2ae]
+//wash basin (multi-part)(south)
+NAME=wash basin
+
+[ITEMDEF 0a2af]
+//wash basin (multi-part)(south)
+NAME=wash basin
+
+[ITEMDEF 0a2b0]
+//wash basin (multi-part)(south)(anim)
+
+[ITEMDEF 0a2b1]
+//wash basin (multi-part)(south)(anim)
+
+[ITEMDEF 0a2b2]
+//wash basin (multi-part)(south)(anim)
+
+[MULTIDEF m_wash_basin_south]
+ID=0a2ad
+NAME=wash basin
+TYPE=t_multi
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Wash Basin (multi)(south)
+MULTIREGION=0,0,0,0
+COMPONENT=0a2ac,-1,0
+COMPONENT=0a2ae,1,0
+
+[ITEMDEF 0a2b3]
+//wash basin (multi-part)(east)
+NAME=wash basin
+
+[ITEMDEF 0a2b4]
+//wash basin (multi-part)(east)
+NAME=wash basin
+
+[ITEMDEF 0a2b5]
+//wash basin (multi-part)(east)
+NAME=wash basin
+
+[ITEMDEF 0a2b6]
+//wash basin (multi-part)(east)
+NAME=wash basin
+
+[ITEMDEF 0a2b7]
+//wash basin (multi-part)(east)(anim)
+
+[ITEMDEF 0a2b8]
+//wash basin (multi-part)(east)(anim)
+
+[ITEMDEF 0a2b9]
+//wash basin (multi-part)(east)(anim)
+
+[MULTIDEF m_wash_basin_east]
+ID=0a2b4
+NAME=wash basin
+TYPE=t_multi
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Wash Basin (multi)(east)
+MULTIREGION=0,0,0,0
+COMPONENT=0a2b5,0,-1
+COMPONENT=0a2b3,0,1
+
+[ITEMDEF 0a2da]
+DEFNAME=i_wash_basin_countertop
+NAME=countertop
+CATEGORY=Decoration - Furniture
+SUBSECTION=Kitchen Set
+DESCRIPTION=Wash Basin (countertop)
+
 [EOF]

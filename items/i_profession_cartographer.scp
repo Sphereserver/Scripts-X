@@ -85,6 +85,129 @@ DUPELIST=09d3d
 DUPEITEM=09d3c
 
 
+
+[ITEMDEF 0a833]
+// Cartography Table South (on)
+DUPELIST=0a83d
+
+[ITEMDEF 0a834]
+// Cartography Table South (on)
+
+[ITEMDEF 0a835]
+// Cartography Table South (on)
+
+[ITEMDEF 0a836]
+// Cartography Table South (on)
+
+[ITEMDEF 0a837]
+// Cartography Table South (on)
+
+[ITEMDEF 0a838]
+// Cartography Table South (on)
+
+[ITEMDEF 0a839]
+// Cartography Table South (on)
+
+[ITEMDEF 0a83a]
+// Cartography Table South (on)
+
+[ITEMDEF 0a83b]
+// Cartography Table South (on)
+
+[ITEMDEF 0a83c]
+// Cartography Table South (on)
+
+[ITEMDEF 0a83d]
+// Cartography Table East (on)
+DUPEITEM=0a833
+
+[ITEMDEF 0a83e]
+// Cartography Table East (on)
+
+[ITEMDEF 0a83f]
+// Cartography Table East (on)
+
+[ITEMDEF 0a840]
+// Cartography Table East (on)
+
+[ITEMDEF 0a841]
+// Cartography Table East (on)
+
+[ITEMDEF 0a842]
+// Cartography Table East (on)
+
+[ITEMDEF 0a843]
+// Cartography Table East (on)
+
+[ITEMDEF 0a844]
+// Cartography Table East (on)
+
+[ITEMDEF 0a845]
+// Cartography Table East (on)
+
+[ITEMDEF 0a846]
+// Cartography Table East (on)
+
+[ITEMDEF 0a847]
+// Cartography Table South (off)
+DEFNAME=i_cartography_table
+NAME=Cartography Table
+TYPE=t_normal
+FLIP=1
+VALUE=225
+WEIGHT=53.0
+DUPELIST=0a848
+CATEGORY=Items by Professions
+SUBSECTION=Cartographer
+DESCRIPTION=Cartography Table (South)(Off)
+ON=@ContextMenuRequest
+   SRC.AddContextEntry 101,1155742	//Toggle: On/Off
+ON=@ContextMenuSelect
+   IF (<ARGN>==101)
+      IF (<DISPID>==i_cartography_table)
+         DISPID=0a833
+         // SOUND=
+         MESSAGE @,,2 1157075 // *You switch on the apparatus*
+      ELIF (<DISPID>==0a848)
+         DISPID=0a83d
+         // SOUND=
+         MESSAGE @,,2 1157075 // *You switch on the apparatus*
+      ELIF (<DISPID>==0a833)
+         DISPID=0a847
+         MESSAGE @,,2 1157074 // *You switch off the apparatus*
+      ELIF (<DISPID>==0a83d)
+         DISPID=0a848
+         MESSAGE @,,2 1157074 // *You switch off the apparatus*
+      ENDIF
+      UPDATE
+   ENDIF
+
+[ITEMDEF 0a848]
+// Cartography Table East (off)
+DUPEITEM=0a847
+
+[ITEMDEF 0a849]
+// Cartography Table South (container)
+DEFNAME=i_cartography_table_s2
+NAME=Cartography Table
+TYPE=t_container
+TDATA2=266
+FLIP=1
+VALUE=225
+WEIGHT=53.0
+DUPELIST=0a84a
+CATEGORY=Items by Professions
+SUBSECTION=Cartographer
+DESCRIPTION=Cartography Table (S)(container)
+
+[ITEMDEF 0a84a]
+// Cartography Table East (container)
+DUPEITEM=0a849
+
+//////////////////
+// Custom Items //
+//////////////////
+
 [ITEMDEF i_mapmakers_pen]
 ID=i_pen_and_ink
 NAME=mapmaker's pen

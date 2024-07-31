@@ -639,6 +639,21 @@ DUPELIST=09bcf
 //Dragon Turtle Scute
 DUPEITEM=09bce
 
+[ITEMDEF 0a3e9]
+DEFNAME=i_live_rock
+NAME=live rock
+CATEGORY=Resources
+SUBSECTION=Mineral
+DESCRIPTION=Live Rock
+
+[ITEMDEF 0a414]
+DEFNAME=i_ocean_sapphire
+NAME=ocean sapphire
+CATEGORY=Resources
+SUBSECTION=Mineral
+DESCRIPTION=Ocean Sapphire
+ON=@Create
+   COLOR=077d
 
 ///////////////////////////
 // Custom Resource Items //

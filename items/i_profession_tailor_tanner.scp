@@ -621,6 +621,131 @@ DUPEITEM=02dd9
 //elven spinning wheel
 DUPEITEM=02dd9
 
+[ITEMDEF 0a81d]
+// autoloom south (on)
+DEFNAME=i_autoloom_s1
+NAME=Autoloom
+TYPE=t_loom
+VALUE=225
+WEIGHT=53.0
+DUPELIST=0a81e,0a81f,0a820,0a821,0a822,0a823,0a824
+CATEGORY=Items by Professions
+SUBSECTION=Weaver
+DESCRIPTION=AutoLoom South (On)
+
+[ITEMDEF 0a81e]
+// autoloom south
+DUPEITEM=0a81d
+
+[ITEMDEF 0a81f]
+// autoloom south
+DUPEITEM=0a81d
+
+[ITEMDEF 0a820]
+// autoloom south
+DUPEITEM=0a81d
+
+[ITEMDEF 0a821]
+// autoloom south
+DUPEITEM=0a81d
+
+[ITEMDEF 0a822]
+// autoloom south
+DUPEITEM=0a81d
+
+[ITEMDEF 0a823]
+// autoloom south
+DUPEITEM=0a81d
+
+[ITEMDEF 0a824]
+// autoloom south
+DUPEITEM=0a81d
+
+[ITEMDEF 0a825]
+// autoloom east (On)
+DEFNAME=i_autoloom_e1
+NAME=Autoloom
+TYPE=t_loom
+FLIP=1
+VALUE=225
+WEIGHT=53.0
+RESOURCES=38 i_board,2 i_wire_iron,10 i_nails,2 i_string,4 i_hinge
+SKILLMAKE=Carpentry 75.1,Tinkering 83.7,t_tinker_tools,t_carpentry
+CATEGORY=Items by Professions
+SUBSECTION=Weaver
+DESCRIPTION=AutoLoom East (On)
+DUPELIST=0a826,0a827,0a828,0a829,0a82a,0a82b,0a82c
+
+[ITEMDEF 0a826]
+// autoloom east
+DUPEITEM=0a825
+
+[ITEMDEF 0a827]
+// autoloom east
+DUPEITEM=0a825
+
+[ITEMDEF 0a828]
+// autoloom east
+DUPEITEM=0a825
+
+[ITEMDEF 0a829]
+// autoloom east
+DUPEITEM=0a825
+
+[ITEMDEF 0a82a]
+// autoloom east
+DUPEITEM=0a825
+
+[ITEMDEF 0a82b]
+// autoloom east
+DUPEITEM=0a825
+
+[ITEMDEF 0a82c]
+// autoloom east
+DUPEITEM=0a825
+
+[ITEMDEF 0a82d]
+// autoloom south 2(off)(back part)
+DEFNAME=i_autoloom_2
+NAME=Autoloom
+TYPE=t_loom
+FLIP=1
+VALUE=225
+WEIGHT=53.0
+DUPELIST=0a82f
+CATEGORY=Items by Professions
+SUBSECTION=Weaver
+DESCRIPTION=AutoLoom 2(Off)
+
+[ITEMDEF 0a82e]
+// autoloom south (off)
+DEFNAME=i_autoloom_s
+NAME=Autoloom
+TYPE=t_loom
+FLIP=1
+VALUE=225
+WEIGHT=53.0
+DUPELIST=0a81d
+CATEGORY=Items by Professions
+SUBSECTION=Weaver
+DESCRIPTION=AutoLoom South (Off)
+
+[ITEMDEF 0a82f]
+// autoloom east 2(off)(back part)
+DUPEITEM=0a82d
+
+[ITEMDEF 0a830]
+// autoloom east (off)
+DEFNAME=i_autoloom_e
+NAME=Autoloom
+TYPE=t_loom
+FLIP=1
+VALUE=225
+WEIGHT=53.0
+DUPELIST=0a825
+CATEGORY=Items by Professions
+SUBSECTION=Weaver
+DESCRIPTION=AutoLoom (Off)
 
 //////////////////
 // Custom Items //

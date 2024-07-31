@@ -157,7 +157,7 @@ SUBSECTION=Decoration
 DESCRIPTION=Cupid's Arrow
 DUPELIST=04f7b,04f7e,04f7f
 ON=@ClientTooltip
-   IF !(<ISEMPTY <TAG.Name1>>) && !(<ISEMPTY <TAG.Name1>>)
+   IF !(<ISEMPTY <TAG.Name1>>) && !(<ISEMPTY <TAG.Name2>>)
     addcliloc 1152273,<TAG.Name1>,<TAG.Name2>	//~1_val~ is madly in love with ~2_val~
    ENDIF
 ON=@DClick
@@ -396,8 +396,6 @@ TDATA3=i_table_heart
 CATEGORY=Valentine's Day
 SUBSECTION=Decoration
 DESCRIPTION=Table with Candle (lit)
-ON=@Create
-   MOREZ=2
 
 [ITEMDEF 0a006]
 //table (animation frame)
@@ -460,7 +458,6 @@ DUPEITEM=0a05c
 //chair
 DUPEITEM=0a05c
 
-
 [ITEMDEF 0a0a1]
 DEFNAME=i_pillow_heart
 NAME=pillow
@@ -475,5 +472,52 @@ DUPELIST=0a0a2
 [ITEMDEF 0a0a2]
 //pillow
 DUPEITEM=0a0a1
+
+[ITEMDEF 0a285]
+DEFNAME=i_lillypad_candle
+NAME=lilly pad
+TYPE=t_light_out
+TDATA3=i_lillypad_candle_lit
+WEIGHT=1.0
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Lilly Pad (unlit)
+ON=@Create
+   ATTR=attr_move_always
+   MOREZ=29
+
+[ITEMDEF 0a286]
+DEFNAME=i_lillypad_candle_lit
+NAME=lilly pad
+TYPE=t_light_lit
+TDATA3=i_lillypad_candle
+WEIGHT=1.0
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Lilly Pad (lit)
+ON=@Create
+   ATTR=attr_move_always
+
+[ITEMDEF 0a287]
+//lilly pad (lit)(anim)
+
+[ITEMDEF 0a288]
+//lilly pad (lit)(anim)
+
+[ITEMDEF 0a515]
+DEFNAME=i_teddybear
+NAME=bear
+TYPE=t_normal
+WEIGHT=1.0
+VALUE=20
+FLIP=1
+DUPELIST=0a516
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Teddy Bear
+
+[ITEMDEF 0a516]
+//teddy bear
+DUPEITEM=0a515
 
 [EOF]

@@ -1604,7 +1604,6 @@ ON=@Create
 //copper flower pot
 DUPEITEM=0a35d
 
-
 [ITEMDEF 0a3de]
 DEFNAME=i_copper_wings
 NAME=copper wings

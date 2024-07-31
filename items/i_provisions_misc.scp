@@ -608,37 +608,6 @@ DUPEITEM=01f24
 //bedroll square
 DUPEITEM=01f24
 
-[ITEMDEF 09c43]
-DEFNAME=i_container_fletching
-NAME=fletching container
-TYPE=t_container
-TDATA2=09bfe
-FLIP=1
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Containers
-DESCRIPTION=Fletching container
-DUPELIST=09c44
-
-[ITEMDEF 09c44]
-//fletching container
-DUPEITEM=09c43
-
-[ITEMDEF 09c46]
-DEFNAME=i_container_woodworking
-NAME=woodworking container
-TYPE=t_container
-TDATA2=03e
-FLIP=1
-CATEGORY=Provisions - Miscellaneous
-SUBSECTION=Containers
-DESCRIPTION=Woodworking container
-DUPELIST=09c47
-
-[ITEMDEF 09c47]
-//woodworking container
-DUPEITEM=09c46
-
-
 [ITEMDEF 09fb5]
 //hildebrandt dragon rug (multi-part)(south)
 NAME=hildebrandt dragon rug
@@ -847,6 +816,65 @@ CATEGORY=Provisions - Miscellaneous
 SUBSECTION=Misc
 DESCRIPTION=Obsidian
 
+[ITEMDEF 0a393]
+// Golden_Chest_South
+DEFNAME=i_golden_chest_south
+NAME=Golden Chest
+TYPE=t_container
+TDATA2=09cd9
+FLIP=1
+VALUE=115
+WEIGHT=25.0
+RESOURCES=15 i_ingot_iron,5 i_ingot_gold,2 i_log
+SKILLMAKE=Tinkering 80.0,t_tinker_tools
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Containers
+DESCRIPTION=Golden Chest
+DUPELIST=0a394
+
+[ITEMDEF 0a394]
+// Golden_Chest_East
+DUPEITEM=0a393
+
+[ITEMDEF 0a84f]
+// Small Wooden/Brass Chest South
+DEFNAME=i_chest_wooden_brass_sm
+NAME=Small Wooden Chest
+TYPE=t_container
+TDATA2=049
+FLIP=1
+VALUE=51
+WEIGHT=11.0
+RESOURCES=15 i_board
+SKILLMAKE=Carpentry 73.6,t_carpentry
+DUPELIST=0a850
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Containers
+DESCRIPTION=Wood/Brass Chest Small
+
+[ITEMDEF 0a850]
+// Small Wooden/Brass Chest East
+DUPEITEM=0a84f
+
+[ITEMDEF 0a851]
+// Small Metal/Brass Chest South
+DEFNAME=i_chest_metal_brass_sm
+NAME=Small Metal Chest
+TYPE=t_container
+TDATA2=042
+FLIP=1
+VALUE=95
+WEIGHT=18.0
+RESOURCES=10 i_ingot_iron,3 i_ingot_gold,2 i_log
+SKILLMAKE=Tinkering 80.0,t_tinker_tools
+DUPELIST=0a852
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Containers
+DESCRIPTION=Metal/Brass Chest Small
+
+[ITEMDEF 0a852]
+// Small Metal/Brass Chest East
+DUPEITEM=0a851
 
 ////////////
 // Multis //

@@ -555,4 +555,107 @@ DUPEITEM=02a9a
 NAME=sacrificial altar
 DUPEITEM=02a9a
 
+
+[ITEMDEF 0a64b]
+// fishing_bear_south
+DEFNAME=i_stuffie_fishing_bear
+NAME=Fishing Bear Stuffie
+TYPE=t_normal
+FLIP=1
+WEIGHT=1.0
+VALUE=20
+DUPELIST=0a650
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Stuffies
+DESCRIPTION=Bear Fishing
+
+[ITEMDEF 0a64c]
+// fishing_bear_east
+DUPEITEM=0a64b
+
+[ITEMDEF 0a64d]
+// halloween_bear_south
+DEFNAME=i_stuffie_halloween_bear
+NAME=Halloween Bear Stuffie
+TYPE=t_normal
+FLIP=1
+WEIGHT=1.0
+VALUE=20
+DUPELIST=0a650
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Stuffies
+DESCRIPTION=Bear Halloween
+
+[ITEMDEF 0a64e]
+// halloween_bear_east
+DUPEITEM=0a64d
+
+[ITEMDEF 0a64f]
+// chef_bear_south
+DEFNAME=i_stuffie_chef_bear
+NAME=Chef Bear Stuffie
+TYPE=t_normal
+FLIP=1
+WEIGHT=1.0
+VALUE=20
+DUPELIST=0a650
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Stuffies
+DESCRIPTION=Bear Chef
+
+[ITEMDEF 0a650]
+// chef_bear_east
+DUPEITEM=0a64f
+
+[ITEMDEF 0ac46]
+// Stuffies Queen Dawn
+DEFNAME=i_stuffie_queen_dawn
+NAME=Queen Dawn Stuffie
+TYPE=t_normal
+FLIP=1
+WEIGHT=1.0
+VALUE=20
+DUPELIST=0a650
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Stuffies
+DESCRIPTION=Queen Dawn
+
+[ITEMDEF 0ac7b]
+// Stuffies Queen Dawn
+DUPEITEM=0ac46
+
+[ITEMDEF 0ac47]
+// Stuffies Blackthorn
+DEFNAME=i_stuffie_blackthorn
+NAME=Blackthorn Stuffie
+TYPE=t_normal
+FLIP=1
+WEIGHT=1.0
+VALUE=20
+DUPELIST=0a650
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Stuffies
+DESCRIPTION=Blackthorn
+
+[ITEMDEF 0ac7c]
+// Stuffies Blackthorn
+DUPEITEM=0ac47
+
+[ITEMDEF 0ac48]
+// Stuffies Dasha South
+DEFNAME=i_stuffie_dasha
+NAME=Dasha Stuffie
+TYPE=t_normal
+FLIP=1
+WEIGHT=1.0
+VALUE=20
+DUPELIST=0a650
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Stuffies
+DESCRIPTION=Dasha
+
+[ITEMDEF 0ac7d]
+// Stuffies Dasha East
+DUPEITEM=0ac48
+
 [EOF]

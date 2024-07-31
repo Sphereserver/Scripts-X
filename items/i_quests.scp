@@ -17,7 +17,6 @@ DESCRIPTION=Prismatic Crystal
 ON=@Create
    COLOR=032
 
-
 ///////////////////
 // Twisted Weald //
 ///////////////////
@@ -31,7 +30,6 @@ DESCRIPTION=Blighted Cotton
 ON=@Create
    COLOR=034
 
-
 [ITEMDEF 02001]
 DEFNAME=i_lissith_silk
 NAME=lissith's silk
@@ -41,7 +39,6 @@ DESCRIPTION=Lissith's Silk
 ON=@Create
    COLOR=04fe
 
-
 [ITEMDEF 0207c]
 //This statue is duplicated from 01226/0139b, but used on Twisted Weald
 //as container to drop dungeon keys and receive the Essence of the Wind
@@ -50,7 +47,6 @@ NAME=statue of the faie
 CATEGORY=Quests
 SUBSECTION=Twisted Weald
 DESCRIPTION=Statue of the Faie
-
 
 [ITEMDEF 03156]
 DEFNAME=i_mangled_head_dread_horn
@@ -104,137 +100,6 @@ DUPELIST=0315d
 [ITEMDEF 0315d]
 //horn of dread horn
 DUPEITEM=0315c
-
-
-///////////////////////////
-// The Shattered Obelisk //
-///////////////////////////
-
-[ITEMDEF 09f96]
-DEFNAME=i_obelisk_heart_of_earth
-NAME=Heart of Earth
-CATEGORY=Quests
-SUBSECTION=Shattered Obelisk
-DESCRIPTION=Heart of Earth
-
-[ITEMDEF 09f97]
-DEFNAME=i_obelisk_tongue_of_flames
-NAME=Tongue of Flames
-CATEGORY=Quests
-SUBSECTION=Shattered Obelisk
-DESCRIPTION=Tongue of Flames
-
-[ITEMDEF 09f98]
-DEFNAME=i_obelisk_breath_of_air
-NAME=Breath of Air
-CATEGORY=Quests
-SUBSECTION=Shattered Obelisk
-DESCRIPTION=Breath of Air
-
-[ITEMDEF 09f99]
-DEFNAME=i_obelisk_tear_of_seas
-NAME=Tear of Seas
-CATEGORY=Quests
-SUBSECTION=Shattered Obelisk
-DESCRIPTION=Tear of Seas
-
-[ITEMDEF 09f9a]
-DEFNAME=i_obelisk_tip
-NAME=Obelisk Tip
-CATEGORY=Quests
-SUBSECTION=Shattered Obelisk
-DESCRIPTION=Obelisk Tip
-
-[ITEMDEF 09f9b]
-//obelisk tip (anim)
-
-[ITEMDEF 09f9c]
-//obelisk tip (anim)
-
-[ITEMDEF 09f9d]
-//obelisk (damaged 1)
-
-[ITEMDEF 09f9e]
-//obelisk (damaged 2)
-
-[ITEMDEF 09f9f]
-//obelisk (damaged 3)
-
-[ITEMDEF 09fa0]
-//obelisk (damaged 4)
-
-
-[ITEMDEF 09fa2]
-DEFNAME=i_obelisk_stone_cache
-NAME=Stone Cache
-TYPE=t_container
-TDATA2=0266b
-CATEGORY=Quests
-SUBSECTION=Shattered Obelisk
-DESCRIPTION=Stone Cache (container)
-
-
-[ITEMDEF 09fab]
-//FIXME: This item should be damageable, but hitpoints value is missing
-DEFNAME=i_obelisk
-NAME=Obelisk
-//CAN=can_i_damageable
-//MORE1H=	//max hitpoints
-CATEGORY=Quests
-SUBSECTION=Shattered Obelisk
-DESCRIPTION=Obelisk
-
-[ITEMDEF 09fac]
-DEFNAME=i_banner_titan_pyros
-NAME=banner
-WEIGHT=5.0
-CATEGORY=Quests
-SUBSECTION=Shattered Obelisk
-DESCRIPTION=Banner (Pyros)
-DUPELIST=09fad
-
-[ITEMDEF 09fad]
-//banner (Pyros)
-DUPEITEM=09fac
-
-[ITEMDEF 09fae]
-DEFNAME=i_banner_titan_stratos
-NAME=banner
-WEIGHT=5.0
-CATEGORY=Quests
-SUBSECTION=Shattered Obelisk
-DESCRIPTION=Banner (Stratos)
-DUPELIST=09faf
-
-[ITEMDEF 09faf]
-//banner (Stratos)
-DUPEITEM=09fae
-
-[ITEMDEF 09fb0]
-DEFNAME=i_banner_titan_lithos
-NAME=banner
-WEIGHT=5.0
-CATEGORY=Quests
-SUBSECTION=Shattered Obelisk
-DESCRIPTION=Banner (Lithos)
-DUPELIST=09fb1
-
-[ITEMDEF 09fb1]
-//banner (Lithos)
-DUPEITEM=09fb0
-
-[ITEMDEF 09fb2]
-DEFNAME=i_banner_titan_hydros
-NAME=banner
-WEIGHT=5.0
-CATEGORY=Quests
-SUBSECTION=Shattered Obelisk
-DESCRIPTION=Banner (Hydros)
-DUPELIST=09fb3
-
-[ITEMDEF 09fb3]
-//banner (Hydros)
-DUPEITEM=09fb2
 
 [ITEMDEF 02002]
 DEFNAME=i_key_quest
@@ -318,6 +183,134 @@ CATEGORY=Quests
 SUBSECTION=Resolve
 DESCRIPTION=Resolve's Bridle
 
+///////////////////////////
+// The Shattered Obelisk //
+///////////////////////////
+
+[ITEMDEF 09f96]
+DEFNAME=i_obelisk_heart_of_earth
+NAME=Heart of Earth
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Heart of Earth
+
+[ITEMDEF 09f97]
+DEFNAME=i_obelisk_tongue_of_flames
+NAME=Tongue of Flames
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Tongue of Flames
+
+[ITEMDEF 09f98]
+DEFNAME=i_obelisk_breath_of_air
+NAME=Breath of Air
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Breath of Air
+
+[ITEMDEF 09f99]
+DEFNAME=i_obelisk_tear_of_seas
+NAME=Tear of Seas
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Tear of Seas
+
+[ITEMDEF 09f9a]
+DEFNAME=i_obelisk_tip
+NAME=Obelisk Tip
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Obelisk Tip
+
+[ITEMDEF 09f9b]
+//obelisk tip (anim)
+
+[ITEMDEF 09f9c]
+//obelisk tip (anim)
+
+[ITEMDEF 09f9d]
+//obelisk (damaged 1)
+
+[ITEMDEF 09f9e]
+//obelisk (damaged 2)
+
+[ITEMDEF 09f9f]
+//obelisk (damaged 3)
+
+[ITEMDEF 09fa0]
+//obelisk (damaged 4)
+
+[ITEMDEF 09fa2]
+DEFNAME=i_obelisk_stone_cache
+NAME=Stone Cache
+TYPE=t_container
+TDATA2=0266b
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Stone Cache (container)
+
+[ITEMDEF 09fab]
+//FIXME: This item should be damageable, but hitpoints value is missing
+DEFNAME=i_obelisk
+NAME=Obelisk
+//CAN=can_i_damageable
+//MORE1H=	//max hitpoints
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Obelisk
+
+[ITEMDEF 09fac]
+DEFNAME=i_banner_titan_pyros
+NAME=banner
+WEIGHT=5.0
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Banner (Pyros)
+DUPELIST=09fad
+
+[ITEMDEF 09fad]
+//banner (Pyros)
+DUPEITEM=09fac
+
+[ITEMDEF 09fae]
+DEFNAME=i_banner_titan_stratos
+NAME=banner
+WEIGHT=5.0
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Banner (Stratos)
+DUPELIST=09faf
+
+[ITEMDEF 09faf]
+//banner (Stratos)
+DUPEITEM=09fae
+
+[ITEMDEF 09fb0]
+DEFNAME=i_banner_titan_lithos
+NAME=banner
+WEIGHT=5.0
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Banner (Lithos)
+DUPELIST=09fb1
+
+[ITEMDEF 09fb1]
+//banner (Lithos)
+DUPEITEM=09fb0
+
+[ITEMDEF 09fb2]
+DEFNAME=i_banner_titan_hydros
+NAME=banner
+WEIGHT=5.0
+CATEGORY=Quests
+SUBSECTION=Shattered Obelisk
+DESCRIPTION=Banner (Hydros)
+DUPELIST=09fb3
+
+[ITEMDEF 09fb3]
+//banner (Hydros)
+DUPEITEM=09fb2
+
 [ITEMDEF 09fb4]
 //This is the Town Cryer empty template (decorative). To enable its functionality as newspaper
 //set TYPE=t_town_cryer and fill the TAGs with proper info (as the example items below)
@@ -396,7 +389,6 @@ CATEGORY=Quests
 SUBSECTION=Shattered Obelisk
 DESCRIPTION=The Town Cryer (5)
 
-
 [ITEMDEF i_card_titan_stratos]
 ID=09c14
 NAME=Stratos
@@ -432,5 +424,1831 @@ TDATA2=09be9
 CATEGORY=Quests
 SUBSECTION=Shattered Obelisk
 DESCRIPTION=Card (Hydros)
+
+// [MULTIDEF 02120]
+// DEFNAME=m_caravan_ambushed_trade
+// TYPE=t_multi
+// CATEGORY=Quests
+// SUBSECTION=Shattered Obelisk
+// DESCRIPTION=Caravan (multi)(ambushed trade)
+// MULTIREGION=-4,-4,5,5
+
+// [MULTIDEF 02121]
+// DEFNAME=m_caravan_moonglow
+// TYPE=t_multi
+// CATEGORY=Quests
+// SUBSECTION=Shattered Obelisk
+// DESCRIPTION=Caravan (multi)(moonglow)
+// MULTIREGION=-3,-3,1,4
+
+// [MULTIDEF 02122]
+// DEFNAME=m_caravan_minoc
+// TYPE=t_multi
+// CATEGORY=Quests
+// SUBSECTION=Shattered Obelisk
+// DESCRIPTION=Caravan (multi)(minoc)
+// MULTIREGION=-5,-5,2,0
+
+// [MULTIDEF 02123]
+// DEFNAME=m_caravan_skarabrae
+// TYPE=t_multi
+// CATEGORY=Quests
+// SUBSECTION=Shattered Obelisk
+// DESCRIPTION=Caravan (multi)(skarabrae)
+// MULTIREGION=-4,-4,0,3
+
+// [MULTIDEF 02124]
+// DEFNAME=m_caravan_jhelom
+// TYPE=t_multi
+// CATEGORY=Quests
+// SUBSECTION=Shattered Obelisk
+// DESCRIPTION=Caravan (multi)(jhelom)
+// MULTIREGION=-5,-5,2,0
+
+// [MULTIDEF 02125]
+// DEFNAME=m_caravan_trinsic
+// TYPE=t_multi
+// CATEGORY=Quests
+// SUBSECTION=Shattered Obelisk
+// DESCRIPTION=Caravan (multi)(trinsic)
+// MULTIREGION=-4,-4,0,4
+
+// [MULTIDEF 02126]
+// DEFNAME=m_caravan_sosaria
+// TYPE=t_multi
+// CATEGORY=Quests
+// SUBSECTION=Shattered Obelisk
+// DESCRIPTION=Caravan (multi)(sosaria)
+// MULTIREGION=-5,-5,3,0
+
+// [MULTIDEF 02127]
+// DEFNAME=m_caravan_magincia
+// TYPE=t_multi
+// CATEGORY=Quests
+// SUBSECTION=Shattered Obelisk
+// DESCRIPTION=Caravan (multi)(magincia)
+// MULTIREGION=-5,-5,0,2
+
+// [MULTIDEF 02128]
+// DEFNAME=m_caravan_city
+// TYPE=t_multi
+// CATEGORY=Quests
+// SUBSECTION=Shattered Obelisk
+// DESCRIPTION=Caravan (multi)(city)
+// MULTIREGION=-3,-3,4,0
+
+// [MULTIDEF 02129]
+// DEFNAME=m_caravan_yew
+// TYPE=t_multi
+// CATEGORY=Quests
+// SUBSECTION=Shattered Obelisk
+// DESCRIPTION=Caravan (multi)(yew)
+// MULTIREGION=-5,-5,2,0
+
+//////////////////////////
+// Treasures of Khaldun //
+//////////////////////////
+
+[ITEMDEF 0a1ce]
+DEFNAME=i_polished_meteorite
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite
+
+[ITEMDEF 0a1cf]
+DEFNAME=i_polished_meteorite_2
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (2)
+
+[ITEMDEF 0a1d0]
+DEFNAME=i_polished_meteorite_3
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (3)
+
+[ITEMDEF 0a1d1]
+DEFNAME=i_polished_meteorite_4
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (4)
+
+[ITEMDEF 0a1d2]
+DEFNAME=i_polished_meteorite_5
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (5)
+
+[ITEMDEF 0a1d3]
+DEFNAME=i_polished_meteorite_6
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (6)
+
+[ITEMDEF 0a1d4]
+DEFNAME=i_polished_meteorite_7
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (7)
+
+[ITEMDEF 0a1d5]
+DEFNAME=i_polished_meteorite_8
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (8)
+
+[ITEMDEF 0a1d6]
+DEFNAME=i_polished_meteorite_9
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (9)
+
+[ITEMDEF 0a1d7]
+DEFNAME=i_polished_meteorite_10
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (10)
+
+[ITEMDEF 0a1d8]
+DEFNAME=i_polished_meteorite_11
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (11)
+
+[ITEMDEF 0a1d9]
+DEFNAME=i_polished_meteorite_12
+NAME=polished meteorite
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Polished Meteorite (12)
+
+[ITEMDEF 0a1da]
+DEFNAME=i_relic_hydros
+NAME=relic of hydros
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Relic of Hydros
+
+[ITEMDEF 0a1db]
+DEFNAME=i_relic_pyros
+NAME=relic of pyros
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Relic of Pyros
+
+[ITEMDEF 0a1dc]
+DEFNAME=i_relic_stratos
+NAME=relic of stratos
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Relic of Stratos
+
+[ITEMDEF 0a1dd]
+DEFNAME=i_relic_lithos
+NAME=relic of lithos
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Relic of Lithos
+
+[ITEMDEF 0a1de]
+DEFNAME=i_painting_khaldun
+NAME=painting
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Painting
+DUPELIST=0a1df
+
+[ITEMDEF 0a1df]
+//painting
+DUPEITEM=0a1de
+
+[ITEMDEF 0a1e0]
+DEFNAME=i_painting_khaldun_2
+NAME=painting
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Painting (2)
+DUPELIST=0a1e1
+
+[ITEMDEF 0a1e1]
+//painting
+DUPEITEM=0a1e0
+
+[ITEMDEF 0a1e2]
+DEFNAME=i_painting_khaldun_3
+NAME=painting
+CATEGORY=Quests
+SUBSECTION=Treasures of Khaldun
+DESCRIPTION=Painting (3)
+DUPELIST=0a1e3
+
+[ITEMDEF 0a1e3]
+//painting
+DUPEITEM=0a1e2
+
+///////////////////////
+// Krampus Encounter //
+///////////////////////
+
+[ITEMDEF 0a28d]
+DEFNAME=i_boots_krampus_minion
+NAME=krampus minion boots
+TYPE=t_clothing
+FLIP=1
+DYE=1
+REQSTR=10
+RESOURCES=6 i_hides_cut,4 i_cloth
+SKILLMAKE=Tailoring 100.0,t_sewing_kit
+CanUse=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Krampus Encounter
+DESCRIPTION=Krampus Minion Boots
+DUPELIST=0a28e
+ON=@Create
+   HITPOINTS={30 50}
+
+[ITEMDEF 0a28e]
+//krampus minion boots
+DUPEITEM=0a28d
+
+[ITEMDEF 0a28f]
+DEFNAME=i_hat_krampus_minion
+NAME=krampus minion hat
+TYPE=t_clothing
+FLIP=1
+DYE=1
+REQSTR=10
+RESPHYSICAL=3
+RESFIRE=9
+RESCOLD=12
+RESPOISON=8
+RESENERGY=8
+RESOURCES=8 i_cloth
+SKILLMAKE=Tailoring 100.0,t_sewing_kit
+CanUse=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Krampus Encounter
+DESCRIPTION=Krampus Minion Hat
+DUPELIST=0a290
+ON=@Create
+   HITPOINTS={20 30}
+
+[ITEMDEF 0a290]
+//krampus minion hat
+DUPEITEM=0a28f
+
+[ITEMDEF 0a294]
+DEFNAME=i_talons_krampus_minion
+NAME=krampus minion talons
+TYPE=t_clothing
+FLIP=1
+REQSTR=10
+RESOURCES=6 i_hides_cut,4 i_cloth
+SKILLMAKE=Tailoring 100.0,t_sewing_kit
+CanUse=can_u_gargoyle
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Krampus Encounter
+DESCRIPTION=Krampus Minion Talons
+DUPELIST=0a296
+ON=@Create
+   HITPOINTS={30 50}
+   COLOR=0481
+
+[ITEMDEF 0a295]
+DEFNAME=i_earrings_krampus_minion
+NAME=krampus minion earrings
+TYPE=t_jewelry
+FLIP=1
+RESPHYSICAL=1
+RESFIRE=2
+RESCOLD=2
+RESPOISON=2
+RESENERGY=3
+RESOURCES=3 i_ingot_iron
+SKILLMAKE=Tinkering 100.0,t_tinker_tools
+CanUse=can_u_gargoyle
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Krampus Encounter
+DESCRIPTION=Krampus Minion Earrings
+ON=@Create
+   HITPOINTS={30 50}
+
+[ITEMDEF 0a296]
+//krampus minion talons
+DUPEITEM=0a294
+
+
+[ITEMDEF i_town_cryer_krampus_encounter]
+ID=i_town_cryer
+TYPE=t_town_cryer
+TAG.Title="Bewildering Encounters on Trade Routes, Guards Move to Quell Fear"
+TAG.Author="Rita Radcliffe"
+TAG.TextCliloc=1158806
+TAG.GumpID=06d8
+CATEGORY=Quests
+SUBSECTION=Krampus Encounter
+DESCRIPTION=The Town Cryer
+
+[ITEMDEF 0a289]
+DEFNAME=i_whip_barbed
+NAME=Barbed Whip
+TYPE=t_weapon_whip
+SKILL=Macefighting
+DAM=13,17
+SPEED=41
+//TAG.OVERRIDE.SPEED=32		//3.25
+REQSTR=20
+FLIP=1
+RESOURCES=5 i_ingot_iron,10 i_hides_cut
+SKILLMAKE=Tinkering 100.0,t_tinker_tools
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Krampus Encounter
+DESCRIPTION=Barbed Whip
+DUPELIST=0a291
+ON=@Create
+   HITPOINTS={30 60}
+
+[ITEMDEF 0a28a]
+DEFNAME=i_whip_spiked
+NAME=Spiked Whip
+TYPE=t_weapon_whip
+SKILL=Fencing
+DAM=13,17
+SPEED=41
+//TAG.OVERRIDE.SPEED=32		//3.25
+REQSTR=20
+FLIP=1
+RESOURCES=5 i_ingot_iron,10 i_hides_cut
+SKILLMAKE=Tinkering 100.0,t_tinker_tools
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Krampus Encounter
+DESCRIPTION=Spiked Whip
+DUPELIST=0a292
+ON=@Create
+   HITPOINTS={30 60}
+
+[ITEMDEF 0a28b]
+DEFNAME=i_whip_bladed
+NAME=Bladed Whip
+TYPE=t_weapon_whip
+SKILL=Swordsmanship
+DAM=13,17
+SPEED=41
+//TAG.OVERRIDE.SPEED=32		//3.25
+REQSTR=20
+FLIP=1
+RESOURCES=5 i_ingot_iron,10 i_hides_cut
+SKILLMAKE=Tinkering 100.0,t_tinker_tools
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Krampus Encounter
+DESCRIPTION=Bladed Whip
+DUPELIST=0a293
+ON=@Create
+   HITPOINTS={30 60}
+
+[ITEMDEF 0a291]
+//barbed whip
+DUPEITEM=0a289
+
+[ITEMDEF 0a292]
+//spiked whip
+DUPEITEM=0a28a
+
+[ITEMDEF 0a293]
+//bladed whip
+DUPEITEM=0a28b
+
+/////////////////
+// Rising Tide //
+/////////////////
+
+[ITEMDEF 0a2c0]
+DEFNAME=i_shipcannon_blundercannon
+NAME=blundercannon
+TYPE=t_container
+TDATA2=09ce7
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Blundercannon
+DUPELIST=0a2c1,0a2c2,0a2c3
+
+[ITEMDEF 0a2c1]
+//blundercannon (west)
+DUPEITEM=0a2c0
+
+[ITEMDEF 0a2c2]
+//blundercannon (north)
+DUPEITEM=0a2c0
+
+[ITEMDEF 0a2c3]
+//blundercannon (east)
+DUPEITEM=0a2c0
+
+[ITEMDEF 0a2c4]
+DEFNAME=i_maritime_trade_cargo
+NAME=Maritime Trade Cargo
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Maritime Trade Cargo
+DUPELIST=0a2c5
+
+[ITEMDEF 0a2c5]
+//maritime trade cargo
+DUPEITEM=0a2c4
+
+[ITEMDEF 0a2c6]
+DEFNAME=i_mysterious_statue
+NAME=Mysterious Statue
+WEIGHT=5.0
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Mysterious Statue
+DUPELIST=0a2c7
+
+[ITEMDEF 0a2c7]
+//mysterious statue
+DUPEITEM=0a2c6
+
+[ITEMDEF 0a2c8]
+DEFNAME=i_pirate_wall_map
+NAME=Pirate Wall Map
+TYPE=t_sign_gump
+TDATA2=09ce9
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Pirate Wall Map
+DUPELIST=0a2c9
+
+[ITEMDEF 0a2c9]
+//pirate wall map
+DUPEITEM=0a2c8
+
+[ITEMDEF 0a2ca]
+DEFNAME=i_shoulder_parrot
+NAME=Parrot
+TYPE=t_armor
+REQSTR=10
+DYE=1
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Parrot
+DUPELIST=0a2cb
+ON=@Create
+   ATTR=attr_newbie
+ON=@DClick
+   IF (<CONT> != <SRC>)
+      SRC.SYSMESSAGE This item must be equipped to be used.
+      return 1
+   ELIF (<SRC.CTAG0.ShoulderParrot.Cooldown> > <SERV.TIME>)
+      SRC.SYSMESSAGE Your parrot is too tired to fly right now.
+      return 1
+   ELIF (<SRC.FLAGS> & statf_hovering)
+      SRC.SYSMESSAGE Your parrot can't fly here.
+      return 1
+   ENDIF
+   EFFECT 3,0a2cc,0,52
+   SRC.CTAG.ShoulderParrot.Cooldown = <eval <SERV.TIME>+300>
+   return 1
+
+[ITEMDEF 0a2cb]
+//shoulder parrot
+DUPEITEM=0a2ca
+
+[ITEMDEF 0a2cc]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2cd]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2ce]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2cf]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2d0]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2d1]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2d2]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2d3]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2d4]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2d5]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2d6]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2d7]
+//shoulder parrot (anim)
+
+[ITEMDEF 0a2d8]
+// Lava_Elemental_Stat
+DEFNAME=i_lava_elemental_stat
+TYPE=t_normal
+
+[ITEMDEF 0a2d9]
+// Lava_Elemental_Stat
+DEFNAME=i_lava_elemental_stat_2
+TYPE=t_normal
+
+[MULTIDEF m_cannon_dragon_south]
+ID=04221
+TYPE=t_multi
+NAME=Dragon Cannon
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Dragon Cannon (multi)(decorative)(south)
+MULTIREGION=0,0,0,0
+COMPONENT=04220,0,-1
+COMPONENT=04222,0,1
+
+[MULTIDEF m_cannon_dragon_west]
+ID=0424a
+TYPE=t_multi
+NAME=Dragon Cannon
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Dragon Cannon (multi)(decorative)(west)
+MULTIREGION=0,0,0,0
+COMPONENT=0418f,-1,0
+COMPONENT=04223,1,0
+
+[MULTIDEF m_cannon_dragon_north]
+ID=044f4
+TYPE=t_multi
+NAME=Dragon Cannon
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Dragon Cannon (multi)(decorative)(north)
+MULTIREGION=0,0,0,0
+COMPONENT=044f3,0,1
+COMPONENT=044f5,0,-1
+
+[MULTIDEF m_cannon_dragon_east]
+ID=044f7
+TYPE=t_multi
+NAME=Dragon Cannon
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Dragon Cannon (multi)(decorative)(east)
+MULTIREGION=0,0,0,0
+COMPONENT=044f6,1,0
+COMPONENT=044f8,-1,0
+
+[MULTIDEF 0212a]
+DEFNAME=m_plunderbeacon
+NAME=Plunderbeacon
+TYPE=t_ship
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+CATEGORY=Quests
+SUBSECTION=Rising Tide
+DESCRIPTION=Plunderbeacon (multi)
+MULTIREGION=-9,-5,2,6
+COMPONENT=04724,-2,1,9		//lighthouse
+COMPONENT=0472f,-3,1,9		//lighthouse
+COMPONENT=04730,-4,1,9		//lighthouse
+COMPONENT=04217,-5,-2,10	//culverin
+COMPONENT=04217,-5,0,10		//culverin
+COMPONENT=04217,-5,2,10		//culverin
+COMPONENT=04219,-1,-2,9		//culverin
+COMPONENT=04219,-1,0,9		//culverin
+COMPONENT=04219,-1,2,9		//culverin
+COMPONENT=0a2c0,-6,5,3		//blundercannon
+COMPONENT=0a2c0,-4,5,3		//blundercannon
+COMPONENT=0a2c0,-2,5,3		//blundercannon
+COMPONENT=0a2c0,0,5,3		//blundercannon
+COMPONENT=0a2c2,-6,-4,3		//blundercannon
+COMPONENT=0a2c2,-4,-4,3		//blundercannon
+COMPONENT=0a2c2,-2,-4,3		//blundercannon
+COMPONENT=0a2c2,0,-4,3		//blundercannon
+
+/////////////////////////
+// Forgotten Treasures //
+/////////////////////////
+
+[ITEMDEF 0a2dc]
+DEFNAME=i_painting_mib_1
+NAME=painting
+DYE=1
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Painting (1)
+DUPELIST=0a2dd
+
+[ITEMDEF 0a2dd]
+//painting
+DUPEITEM=0a2dc
+
+[ITEMDEF 0a2de]
+DEFNAME=i_painting_mib_2
+NAME=painting
+DYE=1
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Painting (2)
+DUPELIST=0a2df
+
+[ITEMDEF 0a2df]
+//painting
+DUPEITEM=0a2de
+
+[ITEMDEF 0a2e0]
+DEFNAME=i_painting_mib_3
+NAME=painting
+DYE=1
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Painting (3)
+DUPELIST=0a2e1
+
+[ITEMDEF 0a2e1]
+//painting
+DUPEITEM=0a2e0
+
+[ITEMDEF 0a2e2]
+DEFNAME=i_painting_mib_4
+NAME=painting
+DYE=1
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Painting (4)
+DUPELIST=0a2e3
+
+[ITEMDEF 0a2e3]
+//painting
+DUPEITEM=0a2e2
+
+[ITEMDEF 0a2e4]
+DEFNAME=i_painting_mib_5
+NAME=painting
+DYE=1
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Painting (5)
+DUPELIST=0a2e5
+
+[ITEMDEF 0a2e5]
+//painting
+DUPEITEM=0a2e4
+
+[ITEMDEF 0a2e6]
+DEFNAME=i_painting_mib_6
+NAME=painting
+DYE=1
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Painting (6)
+DUPELIST=0a2e7
+
+[ITEMDEF 0a2e7]
+//painting
+DUPEITEM=0a2e6
+
+[ITEMDEF 0a2e8]
+DEFNAME=i_painting_mib_7
+NAME=painting
+DYE=1
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Painting (7)
+DUPELIST=0a2e9
+
+[ITEMDEF 0a2e9]
+//painting
+DUPEITEM=0a2e8
+
+[ITEMDEF 0a2ea]
+DEFNAME=i_painting_mib_8
+NAME=painting
+DYE=1
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Painting (8)
+DUPELIST=0a2eb
+
+[ITEMDEF 0a2eb]
+//painting
+DUPEITEM=0a2ea
+
+[ITEMDEF 0a2ec]
+DEFNAME=i_painting_mib_9
+NAME=painting
+DYE=1
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Painting (9)
+DUPELIST=0a2ed
+
+[ITEMDEF 0a2ed]
+//painting
+DUPEITEM=0a2ec
+
+[ITEMDEF 0a2ee]
+DEFNAME=i_painting_mib_10
+NAME=painting
+DYE=1
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Painting (10)
+DUPELIST=0a2ef
+
+[ITEMDEF 0a2ef]
+//painting
+DUPEITEM=0a2ee
+
+[ITEMDEF 0a2f0]
+DEFNAME=i_painting_mib_11
+NAME=painting
+DYE=1
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Painting (11)
+DUPELIST=0a2f1
+
+[ITEMDEF 0a2f1]
+//painting
+DUPEITEM=0a2f0
+
+[ITEMDEF 0a2f2]
+DEFNAME=i_painting_mib_12
+NAME=painting
+DYE=1
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Painting (12)
+DUPELIST=0a2f3
+
+[ITEMDEF 0a2f3]
+//painting
+DUPEITEM=0a2f2
+
+[ITEMDEF 0a2f4]
+DEFNAME=i_painting_mib_13
+NAME=painting
+DYE=1
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Painting (13)
+DUPELIST=0a2f5
+
+[ITEMDEF 0a2f5]
+//painting
+DUPEITEM=0a2f4
+
+[ITEMDEF 0a304]
+DEFNAME=i_chest_metal_2
+NAME=chest
+TYPE=t_container
+TDATA2=042
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Metal Chest
+DUPELIST=0a305
+
+[ITEMDEF 0a305]
+//metal chest
+DUPEITEM=0a304
+
+[ITEMDEF 0a306]
+DEFNAME=i_chest_rusty
+NAME=chest
+TYPE=t_container
+TDATA2=042
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Rusty Chest
+DUPELIST=0a307
+
+[ITEMDEF 0a307]
+//rusty chest
+DUPEITEM=0a306
+
+[ITEMDEF 0a308]
+DEFNAME=i_chest_golden
+NAME=chest
+TYPE=t_container
+TDATA2=042
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Golden Chest
+DUPELIST=0a309
+
+[ITEMDEF 0a309]
+//golden chest
+DUPEITEM=0a308
+
+[ITEMDEF 0a30a]
+DEFNAME=i_chest_barnacle
+NAME=chest
+TYPE=t_container
+TDATA2=042
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Barnacle Chest
+DUPELIST=0a30b
+
+[ITEMDEF 0a30b]
+//barnacle chest
+DUPEITEM=0a30a
+
+[ITEMDEF 0a30c]
+DEFNAME=i_bottle_message
+NAME=bottle
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Message in a Bottle
+
+[ITEMDEF 0a321]
+DEFNAME=i_bottle_ship
+NAME=ship in a bottle
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Ship in a Bottle
+DUPELIST=0a322
+
+[ITEMDEF 0a322]
+//ship in a bottle
+DUPEITEM=0a321
+
+[ITEMDEF 0a325]
+DEFNAME=i_porthole_east
+NAME=porthole
+DYE=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Porthole (east)
+DUPELIST=0a327
+ON=@DClick
+   DISPID=<QVAL (<DISPID> == i_porthole_east)? 0a326 : i_porthole_east>
+   UPDATE
+   return 1
+
+[ITEMDEF 0a326]
+//porthole (east)(open)
+
+[ITEMDEF 0a327]
+DEFNAME=i_porthole_south
+NAME=porthole
+DYE=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Porthole (south)
+DUPEITEM=0a325
+ON=@DClick
+   DISPID=<QVAL (<DISPID> == i_porthole_south)? 0a328 : i_porthole_south>
+   UPDATE
+   return 1
+
+[ITEMDEF 0a328]
+//porthole (south)(open)
+
+[ITEMDEF 0a329]
+// hanging_tools_east
+DEFNAME=i_hanging_tools_east
+TYPE=t_normal
+
+[ITEMDEF 0a32a]
+// hanging_tools_east
+DEFNAME=i_hanging_tools_east_2
+TYPE=t_normal
+
+[ITEMDEF 0a32b]
+DEFNAME=i_anchor
+NAME=anchor
+DYE=1
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Anchor
+DUPELIST=0a32d
+
+[ITEMDEF 0a32c]
+DEFNAME=i_anchor_chain
+NAME=chain
+DYE=1
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Anchor Chain
+DUPELIST=0a32e
+
+[ITEMDEF 0a32d]
+//anchor
+DUPEITEM=0a32b
+
+[ITEMDEF 0a32e]
+//chain
+DUPEITEM=0a32c
+
+[ITEMDEF 0a32f]
+DEFNAME=i_bag_reags
+NAME=bag
+TYPE=t_container
+TDATA2=03d
+//FLIP=1
+DUPELIST=0a330
+
+[ITEMDEF 0a330]
+//bag (reags)
+DUPEITEM=0a32f
+
+[ITEMDEF 0a331]
+DEFNAME=i_bag_gold
+NAME=bag
+TYPE=t_container
+TDATA2=03d
+//FLIP=1
+DUPELIST=0a332
+
+[ITEMDEF 0a332]
+//bag (gold)
+DUPEITEM=0a331
+
+[ITEMDEF 0a333]
+DEFNAME=i_bag_gems
+NAME=bag
+TYPE=t_container
+TDATA2=03d
+//FLIP=1
+DUPELIST=0a334
+
+[ITEMDEF 0a334]
+//bag (gems)
+DUPEITEM=0a333
+
+
+[ITEMDEF 0a339]
+DEFNAME=i_hourglass_marble
+NAME=hourglass
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Hourglass
+DUPELIST=0a33a
+
+[ITEMDEF 0a33a]
+//hourglass
+DUPEITEM=0a339
+
+[ITEMDEF 0a33b]
+//ancient weapon
+FLIP=1
+DUPELIST=0a33c
+
+[ITEMDEF 0a33c]
+//ancient weapon
+DUPEITEM=0a33b
+
+[ITEMDEF 0a33d]
+//ancient weapon
+FLIP=1
+DUPELIST=0a33e
+
+[ITEMDEF 0a33e]
+//ancient weapon
+DUPEITEM=0a33d
+
+[ITEMDEF 0a33f]
+//ancient weapon
+FLIP=1
+DUPELIST=0a340
+
+[ITEMDEF 0a340]
+//ancient weapon
+DUPEITEM=0a33f
+
+[ITEMDEF 0a341]
+DEFNAME=i_sword_long_skull
+NAME=skull longsword
+TYPE=t_weapon_sword
+DAM=14,18
+FLIP=1
+SKILL=Swordsmanship
+SPEED=38
+//TAG.OVERRIDE.SPEED=35
+WEIGHT=7.0
+REQSTR=35
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Skull Longsword
+DUPELIST=0a342
+ON=@Create
+   HITPOINTS={40 65}
+
+[ITEMDEF 0a342]
+//skull longsword
+DUPEITEM=0a341
+
+[ITEMDEF 0a343]
+DEFNAME=i_staff_gnarled_skull
+NAME=skull gnarled staff
+TYPE=t_weapon_mace_staff
+DAM=15,18
+FLIP=1
+SKILL=Macefighting
+SPEED=41
+//TAG.OVERRIDE.SPEED=32
+WEIGHT=3.0
+REQSTR=20
+TWOHANDS=Y
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Skull Gnarled Staff
+DUPELIST=0a344
+ON=@Create
+   HITPOINTS={40 65}
+
+[ITEMDEF 0a344]
+//skull gnarled staff
+DUPEITEM=0a343
+
+[ITEMDEF 0a345]
+DEFNAME=i_sword_long_skull_gargish
+NAME=gargish skull longsword
+TYPE=t_weapon_sword
+DAM=14,18
+FLIP=1
+SKILL=Swordsmanship
+SPEED=38
+//TAG.OVERRIDE.SPEED=35
+WEIGHT=7.0
+REQSTR=35
+CANUSE=can_u_gargoyle
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Gargish Skull Longsword
+DUPELIST=0a346
+ON=@Create
+   HITPOINTS={40 65}
+
+[ITEMDEF 0a346]
+//gargish skull longsword
+DUPEITEM=0a345
+
+[ITEMDEF 0a347]
+DEFNAME=i_staff_gnarled_skull_gargish
+NAME=gargish skull gnarled staff
+TYPE=t_weapon_mace_staff
+DAM=15,18
+FLIP=1
+SKILL=Macefighting
+SPEED=41
+//TAG.OVERRIDE.SPEED=32
+WEIGHT=3.0
+REQSTR=20
+TWOHANDS=Y
+CANUSE=can_u_gargoyle
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Gargish Skull Gnarled Staff
+DUPELIST=0a348
+ON=@Create
+   HITPOINTS={40 65}
+
+[ITEMDEF 0a348]
+//gargish skull gnarled staff
+DUPEITEM=0a347
+
+[ITEMDEF 0a349]
+DEFNAME=i_necklace_octopus
+NAME=octopus necklace
+TYPE=t_jewelry
+WEIGHT=1.0
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Octopus Necklace
+
+[ITEMDEF 0a34a]
+DEFNAME=i_necklace_octopus_gargish
+NAME=gargish octopus necklace
+TYPE=t_jewelry
+WEIGHT=1.0
+CANUSE=can_u_gargoyle
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Gargish Octopus Necklace
+
+[ITEMDEF 0a34b]
+//skull floor (multi-part)(south)
+NAME=floor
+DYE=1
+
+[ITEMDEF 0a34c]
+//skull floor (multi-part)(south)
+NAME=floor
+DYE=1
+
+[ITEMDEF 0a34d]
+//skull floor (multi-part)(south)
+NAME=floor
+DYE=1
+
+[ITEMDEF 0a34e]
+//skull floor (multi-part)(south)
+NAME=floor
+DYE=1
+
+[ITEMDEF 0a34f]
+//skull floor (multi-part)(south)
+NAME=floor
+DYE=1
+
+[ITEMDEF 0a350]
+//skull floor (multi-part)(south)
+NAME=floor
+DYE=1
+
+[ITEMDEF 0a351]
+//skull floor (multi-part)(south)
+NAME=floor
+DYE=1
+
+[ITEMDEF 0a352]
+//skull floor (multi-part)(south)
+NAME=floor
+DYE=1
+
+[ITEMDEF 0a353]
+//skull floor (multi-part)(south)
+NAME=floor
+DYE=1
+
+[ITEMDEF 0a354]
+//skull floor (multi-part)(east)
+NAME=floor
+DYE=1
+
+[ITEMDEF 0a355]
+//skull floor (multi-part)(east)
+NAME=floor
+DYE=1
+
+[ITEMDEF 0a356]
+//skull floor (multi-part)(east)
+NAME=floor
+DYE=1
+
+[ITEMDEF 0a357]
+//skull floor (multi-part)(east)
+NAME=floor
+DYE=1
+
+[ITEMDEF 0a358]
+//skull floor (multi-part)(east)
+NAME=floor
+DYE=1
+
+[ITEMDEF 0a359]
+//skull floor (multi-part)(east)
+NAME=floor
+DYE=1
+
+[ITEMDEF 0a35a]
+//skull floor (multi-part)(east)
+NAME=floor
+DYE=1
+
+[ITEMDEF 0a35b]
+//skull floor (multi-part)(east)
+NAME=floor
+DYE=1
+
+[ITEMDEF 0a35c]
+//skull floor (multi-part)(east)
+NAME=floor
+DYE=1
+
+[MULTIDEF m_skull_floor_south]
+ID=0a34f
+NAME=floor
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Skull Floor (multi)(south)
+MULTIREGION=0,0,0,0
+COMPONENT=0a34b,1,1
+COMPONENT=0a34c,0,1
+COMPONENT=0a34d,-1,1
+COMPONENT=0a34e,1,0
+COMPONENT=0a350,-1,0
+COMPONENT=0a351,1,-1
+COMPONENT=0a352,0,-1
+COMPONENT=0a353,-1,-1
+
+[MULTIDEF m_skull_floor_east]
+ID=0a358
+NAME=floor
+TYPE=t_multi
+CATEGORY=Quests
+SUBSECTION=Forgotten Treasures
+DESCRIPTION=Skull Floor (multi)(east)
+MULTIREGION=0,0,0,0
+COMPONENT=0a354,1,1
+COMPONENT=0a355,1,0
+COMPONENT=0a356,1,-1
+COMPONENT=0a357,0,1
+COMPONENT=0a359,0,-1
+COMPONENT=0a35a,-1,1
+COMPONENT=0a35b,-1,0
+COMPONENT=0a35c,-1,-1
+
+///////////////////
+// Forsaken Foes //
+///////////////////
+
+[ITEMDEF 0a3e8]
+DEFNAME=i_ethereal_sand
+NAME=ethereal sand
+WEIGHT=0.1
+CATEGORY=Quests
+SUBSECTION=Forsaken Foes
+DESCRIPTION=Ethereal Sand
+
+[ITEMDEF 0a3ea]
+DEFNAME=i_jack_o_lantern_helm
+NAME=jack o' lantern helm
+TYPE=t_clothing
+CAN=can_i_light
+REQSTR=10
+RESPHYSICAL=12
+RESFIRE=14
+RESCOLD=4
+RESPOISON=8
+RESENERGY=10
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Forsaken Foes
+DESCRIPTION=Jack o' Lantern Helm
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0a3fb]
+DEFNAME=i_shipcannon_pumpkin
+NAME=pumpkin cannon
+TYPE=t_container
+TDATA2=09ce7
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forsaken Foes
+DESCRIPTION=Pumpkin Cannon
+DUPELIST=0a3fc,0a3fd,0a3fe
+
+[ITEMDEF 0a3fc]
+//pumpkin cannon (west)
+DUPEITEM=0a3fb
+
+[ITEMDEF 0a3fd]
+//pumpkin cannon (north)
+DUPEITEM=0a3fb
+
+[ITEMDEF 0a3fe]
+//pumpkin cannon (east)
+DUPEITEM=0a3fb
+
+[ITEMDEF 0a407]
+DEFNAME=i_exploding_jack_o_lantern
+NAME=Exploding Jack o' Lantern
+WEIGHT=1.0
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Forsaken Foes
+DESCRIPTION=Exploding Jack o' Lantern
+DUPELIST=0a408,0a409,0a40a
+ON=@Create
+   ATTR=attr_newbie
+ON=@DClick
+   IF (<CONT> != <SRC.FINDLAYER.layer_pack>)
+      SRC.SYSMESSAGE That must be in your pack for you to use it.
+   ELIF (<SRC.FLAGS> & statf_onhorse)
+      SRC.SYSMESSAGE You can't do that while riding a mount.
+   ELIF (<SRC.CTAG0.ExplodingJackOLantern.Delay> > <SERV.TIME>)
+      SRC.SYSMESSAGE You must wait before trying again.
+   ELSE
+      SRC.CTAG.ExplodingJackOLantern.Delay=<eval <SERV.TIME>+30>
+      TARGET Which target do you wish to throw this at?
+   ENDIF
+   return 1
+ON=@TargOn_Ground
+   return 1
+ON=@TargOn_Item
+   return 1
+ON=@TargOn_Char
+   IF (<ARGO> == <SRC>)
+      SRC.SYSMESSAGE Verbal taunts might be more effective!
+   ELIF (<SRC.CANSEE <ARGO>>) && (<ARGO.FINDID.i_exploding_jack_o_lantern>)
+      SRC.ANIM 11
+      SRC.SYSMESSAGE You hit your target!
+      ARGO.EFFECT 0 <DISPID> 10 0 1
+      ARGO.SOUND 0207
+      ARGO.SYSMESSAGE You have just been hit by a Jack o' Lantern!!!
+   ENDIF
+   return 1
+
+[ITEMDEF 0a408]
+//exploding jack o' lantern (west)
+DUPEITEM=0a407
+
+[ITEMDEF 0a409]
+//exploding jack o' lantern (north)
+DUPEITEM=0a407
+
+[ITEMDEF 0a40a]
+//exploding jack o' lantern (east)
+DUPEITEM=0a407
+
+
+[ITEMDEF 0a40b]
+DEFNAME=i_admiral_jacks_pumpkin_spice_ale
+NAME=Admiral Jack's Pumpkin Spice Ale
+SPELLCHANNELING=1
+TYPE=t_clothing
+WEIGHT=3.0
+VALUE=20
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Forsaken Foes
+DESCRIPTION=Admiral Jack's Pumpkin Spice Ale
+ON=@Create
+   COLOR=0782
+
+[ITEMDEF 0a40c]
+DEFNAME=i_belt_mace
+NAME=mace belt
+TYPE=t_clothing
+WEIGHT=3.0
+VALUE=20
+RESOURCES=5 i_cloth,5 i_hide,5 i_lodestone
+SKILLMAKE=Tailoring 90.0,t_sewing_kit
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Forsaken Foes
+DESCRIPTION=Mace Belt
+
+[ITEMDEF 0a40d]
+DEFNAME=i_belt_sword
+NAME=sword belt
+TYPE=t_clothing
+WEIGHT=3.0
+VALUE=20
+RESOURCES=5 i_cloth,5 i_hide,5 i_lodestone
+SKILLMAKE=Tailoring 90.0,t_sewing_kit
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Forsaken Foes
+DESCRIPTION=Sword Belt
+
+[ITEMDEF 0a40e]
+DEFNAME=i_belt_dagger
+NAME=dagger belt
+TYPE=t_clothing
+WEIGHT=3.0
+VALUE=20
+RESOURCES=5 i_cloth,5 i_hide,5 i_vile_tentacles
+SKILLMAKE=Tailoring 90.0,t_sewing_kit
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Forsaken Foes
+DESCRIPTION=Dagger Belt
+
+[ITEMDEF 0a40f]
+DEFNAME=i_collar_elegant
+NAME=elegant collar
+TYPE=t_clothing
+WEIGHT=3.0
+VALUE=20
+RESPHYSICAL=2
+RESFIRE=4
+RESCOLD=3
+RESPOISON=3
+RESENERGY=3
+REQSTR=30
+RESOURCES=5 i_cloth,5 i_hide,5 i_fey_wings
+SKILLMAKE=Tailoring 90.0,t_sewing_kit
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Forsaken Foes
+DESCRIPTION=Elegant Collar
+ON=@Create
+   HITPOINTS={35 50}
+
+[ITEMDEF 0a410]
+DEFNAME=i_cowl_assassin
+NAME=assassin's cowl
+TYPE=t_clothing
+WEIGHT=3.0
+VALUE=20
+RESPHYSICAL=2
+RESFIRE=4
+RESCOLD=4
+RESPOISON=3
+RESENERGY=2
+REQSTR=45
+RESOURCES=5 i_cloth,5 i_hide,5 i_vile_tentacles
+SKILLMAKE=Tailoring 90.0,t_sewing_kit
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Forsaken Foes
+DESCRIPTION=Assassin's Cowl
+ON=@Create
+   HITPOINTS={40 60}
+
+[ITEMDEF 0a411]
+DEFNAME=i_hood_mage
+NAME=mage's hood
+TYPE=t_clothing
+WEIGHT=3.0
+VALUE=20
+RESFIRE=3
+RESCOLD=5
+RESPOISON=8
+RESENERGY=8
+REQSTR=10
+RESOURCES=5 i_cloth,5 i_hide,5 i_void_core
+SKILLMAKE=Tailoring 90.0,t_sewing_kit
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Forsaken Foes
+DESCRIPTION=Mage's Hood
+ON=@Create
+   HITPOINTS={20 40}
+
+
+[ITEMDEF 0a42e]
+//pumpkin rowboat (multi-part)(north)
+
+[ITEMDEF 0a43c]
+//pumpkin rowboat (multi-part)(west)
+
+[ITEMDEF 0a44a]
+//pumpkin rowboat (multi-part)(east)
+
+[ITEMDEF 0a459]
+//pumpkin rowboat (multi-part)(south)
+
+[ITEMDEF 0a467]
+//mooring block (multi-part)(south)
+NAME=mooring block
+
+[ITEMDEF 0a468]
+//mooring block (multi-part)(east)
+NAME=mooring block
+
+[MULTIDEF 050]
+DEFNAME=m_pumpkin_rowboat_n
+NAME=Pumpkin Rowboat
+NAMELOC=1159233	//Pumpkin Rowboat
+TYPE=t_ship
+HEIGHT=5
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=1
+SHIPSPEED=5,1
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Forsaken Foes
+DESCRIPTION=Pumpkin Rowboat (multi)(north)
+MULTIREGION=-1,-3,1,4
+COMPONENT=03ebd,1,2,2	//tiller
+COMPONENT=0a42e,1,3	//pumpkin rowboat
+COMPONENT=0a468,0,-1,3	//mooring line
+
+[MULTIDEF 051]
+DEFNAME=m_pumpkin_rowboat_e
+NAME=Pumpkin Rowboat
+NAMELOC=1159233	//Pumpkin Rowboat
+TYPE=t_ship
+HEIGHT=5
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=1
+SHIPSPEED=5,1
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Forsaken Foes
+DESCRIPTION=Pumpkin Rowboat (multi)(east)
+MULTIREGION=-4,-1,3,1
+COMPONENT=03e62,-1,1,9	//tiller
+COMPONENT=0a44a,-2,0	//pumpkin rowboat
+COMPONENT=0a467,1,0,3	//mooring line
+
+[MULTIDEF 052]
+DEFNAME=m_pumpkin_rowboat_s
+NAME=Pumpkin Rowboat
+NAMELOC=1159233	//Pumpkin Rowboat
+TYPE=t_ship
+HEIGHT=5
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=1
+SHIPSPEED=5,1
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Forsaken Foes
+DESCRIPTION=Pumpkin Rowboat (multi)(south)
+MULTIREGION=-1,-4,1,3
+COMPONENT=03ec3,1,-1,9	//tiller
+COMPONENT=0a459,0,-2	//pumpkin rowboat
+COMPONENT=0a468,0,1,3	//mooring line
+
+[MULTIDEF 053]
+DEFNAME=m_pumpkin_rowboat_w
+NAME=Pumpkin Rowboat
+NAMELOC=1159233	//Pumpkin Rowboat
+TYPE=t_ship
+HEIGHT=5
+CAN=can_i_block
+REGIONFLAGS=region_flag_nobuilding|region_flag_ship
+TSPEECH=spk_ship_cmds
+SPEEDMODE=1
+SHIPSPEED=5,1
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Forsaken Foes
+DESCRIPTION=Pumpkin Rowboat (multi)(west)
+MULTIREGION=-3,-1,4,1
+COMPONENT=03e77,2,1,2	//tiller
+COMPONENT=0a43c,3,1	//pumpkin rowboat
+COMPONENT=0a467,-1,0,3	//mooring line
+
+/////////////////
+// Jolly Roger //
+/////////////////
+
+[ITEMDEF 0a412]
+//Also known as 'Tabard of Virtue'
+DEFNAME=i_tabard
+NAME=tabard
+TYPE=t_clothing
+DYE=1
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Tabard
+
+[ITEMDEF 0a413]
+//Also known as 'Cloak of the Virtuous'
+DEFNAME=i_cloak_elegant_quarter
+NAME=elegant quarter cloak
+TYPE=t_clothing
+DYE=1
+REQSTR=10
+CANUSE=can_u_human|can_u_elf
+TEVENTS=ei_equipitem
+// Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Elegant quarter cloak
+
+[ITEMDEF 0a517]
+DEFNAME=i_rune_virtue_spirituality
+NAME=rune
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Rune (spirituality)
+DUPELIST=0a518
+
+[ITEMDEF 0a518]
+//rune (spirituality)
+DUPEITEM=0a517
+
+[ITEMDEF 0a519]
+DEFNAME=i_rune_virtue_honesty
+NAME=rune
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Rune (honesty)
+DUPELIST=0a51a
+
+[ITEMDEF 0a51a]
+//rune (honesty)
+DUPEITEM=0a519
+
+[ITEMDEF 0a51b]
+DEFNAME=i_rune_virtue_compassion
+NAME=rune
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Rune (compassion)
+DUPELIST=0a51c
+
+[ITEMDEF 0a51c]
+//rune (compassion)
+DUPEITEM=0a51b
+
+[ITEMDEF 0a51d]
+DEFNAME=i_rune_virtue_honor
+NAME=rune
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Rune (honor)
+DUPELIST=0a51e
+
+[ITEMDEF 0a51e]
+//rune (honor)
+DUPEITEM=0a51d
+
+[ITEMDEF 0a51f]
+DEFNAME=i_rune_virtue_justice
+NAME=rune
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Rune (justice)
+DUPELIST=0a520
+
+[ITEMDEF 0a520]
+//rune (justice)
+DUPEITEM=0a51f
+
+[ITEMDEF 0a521]
+DEFNAME=i_rune_virtue_humility
+NAME=rune
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Rune (humility)
+DUPELIST=0a522
+
+[ITEMDEF 0a522]
+//rune (humility)
+DUPEITEM=0a521
+
+[ITEMDEF 0a523]
+DEFNAME=i_rune_virtue_sacrifice
+NAME=rune
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Rune (sacrifice)
+DUPELIST=0a524
+
+[ITEMDEF 0a524]
+//rune (sacrifice)
+DUPEITEM=0a523
+
+[ITEMDEF 0a525]
+DEFNAME=i_rune_virtue_valor
+NAME=rune
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Rune (valor)
+DUPELIST=0a526
+
+[ITEMDEF 0a526]
+//rune (valor)
+DUPEITEM=0a525
+
+[ITEMDEF 0a527]
+DEFNAME=i_frozen_corpse_orc
+NAME=frozen corpse
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Frozen corpse (orc)
+DUPELIST=0a528
+
+[ITEMDEF 0a528]
+//frozen corpse (orc)
+DUPEITEM=0a527
+
+[ITEMDEF 0a529]
+DEFNAME=i_frozen_corpse_orc_skull
+NAME=frozen corpse
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Frozen corpse (orc)(skull)
+DUPELIST=0a52a
+
+[ITEMDEF 0a52a]
+//frozen corpse (orc)(skull)
+DUPEITEM=0a529
+
+[ITEMDEF 0a52b]
+DEFNAME=i_frozen_corpse_jack
+NAME=frozen corpse
+FLIP=1
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Frozen corpse (jack)
+DUPELIST=0a52c
+
+[ITEMDEF 0a52c]
+//frozen corpse (jack)
+DUPEITEM=0a52b
+
+[ITEMDEF i_lute_stones]
+ID=i_lute
+NAME=Lute tuned to Stones
+TYPE=t_musical
+TDATA1=0682
+TDATA2=04d
+CATEGORY=Quests
+SUBSECTION=Jolly Roger
+DESCRIPTION=Lute tuned to Stones
+ON=@Create
+   UsesMax={350 450}
+
+////////////////////
+// The Fellowship //
+////////////////////
+
+[ITEMDEF 0a429]
+DEFNAME=i_fellowship_medallion
+NAME=Fellowship Medallion
+TYPE=t_jewelry
+CATEGORY=Quests
+SUBSECTION=The Fellowship
+DESCRIPTION=Fellowship Medallion
+
+[ITEMDEF 0a42a]
+//necklace (unused, seems to be duplicated from 0a429)
 
 [EOF]

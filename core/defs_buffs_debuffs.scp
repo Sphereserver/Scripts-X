@@ -80,6 +80,8 @@ debufficon_Thrust				1168
 debufficon_Sparks				1176
 debufficon_Swarm				1177
 debufficon_BoneBreaker			1178
+debufficon_Feint                1185
+debufficon_Discord              1189
 
 [DEFNAME buff_icons]
 bufficon_NoRearm				1002
@@ -186,6 +188,14 @@ bufficon_SakkhraProphylaxis		1175
 bufficon_Sparks					1179
 bufficon_Swarm					1180
 bufficon_BoneBreaker			1181
+bufficon_goblin                 1182    // 40158
+bufficon_cora                   1183    // 24033
+bufficon_virtue_shield          1184    // 24031
+bufficon_caddelliteinfused      1186    // 24037
+bufficon_potionofgloriousfortune 1187    // 24036
+bufficon_mondo                  1188    // 24038
+bufficon_chaliceofpilferingprotection 1190
+bufficon_battlelust             1191
 
 [DEFNAME buff_clilocs]
 buffcliloc_Empty				1070722
