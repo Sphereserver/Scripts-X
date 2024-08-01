@@ -3233,4 +3233,30 @@ DUPEITEM=0a657
 // Wood Strike
 DUPEITEM=0a657
 
+[ITEMDEF 0a804]
+// Digging Strike F1
+DEFNAME=i_fx_digging_strike
+NAME=Digging Strike
+TYPE=t_spell
+CATEGORY=Animations
+SUBSECTION=Sparkles
+DESCRIPTION=Digging Strike
+DUPELIST=0a805,0a806,0a807,0a808
+
+[ITEMDEF 0a805]
+// Digging Strike
+DUPEITEM=0a804
+
+[ITEMDEF 0a806]
+// Digging Strike
+DUPEITEM=0a804
+
+[ITEMDEF 0a807]
+// Digging Strike
+DUPEITEM=0a804
+
+[ITEMDEF 0a808]
+// Digging Strike
+DUPEITEM=0a804
+
 [EOF]
