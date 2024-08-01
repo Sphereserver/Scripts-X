@@ -3233,4 +3233,25 @@ Expansion=RDS_TOL
 ON=@Create
    HITPOINTS={36 48}
 
+[ITEMDEF 0a7e2]
+DEFNAME=i_belt_demon
+NAME=Demon Belt
+TYPE=t_armor_leather
+ARMOR=5
+// LAYER=layer_half_apron
+VALUE=84
+WEIGHT=4.0
+REQSTR=10
+RESOURCES=10 i_hides_cut
+SKILLMAKE=Tailoring 80.0,t_sewing_kit
+TEVENTS=ei_equipitem
+CanUse=can_u_human|can_u_elf
+Expansion=RDS_TOL
+CATEGORY=Provisions - Armor
+SUBSECTION=Miscellaneous
+DESCRIPTION=Demon Belt
+ON=@Create
+   HITPOINTS={36 48}
+   RESPHYSICAL=1
+
 [EOF]
