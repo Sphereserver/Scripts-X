@@ -3163,4 +3163,100 @@ DUPEITEM=09f80
 //Green Warp (animation frame)
 DUPEITEM=09f80
 
+[ITEMDEF 0a61b]
+// Large Fireball (partialhue)
+DEFNAME=i_fx_firebal_large
+NAME=Large Fireball
+TYPE=t_fire
+CATEGORY=Animations
+SUBSECTION=Fireballs
+DESCRIPTION=Large Fireball (partialhue)
+DUPELIST=0a61c,0a61d
+
+[ITEMDEF 0a61c]
+// Large Fireball (partialhue)
+DUPEITEM=0a61b
+
+[ITEMDEF 0a61d]
+// Large Fireball (partialhue)
+DUPEITEM=0a61b
+
+[ITEMDEF 0a652]
+// Mining Strike
+DEFNAME=i_fx_mining_strike
+NAME=Mining Strike
+TYPE=t_spell
+CATEGORY=Animations
+SUBSECTION=Sparkles
+DESCRIPTION=Mining Strike
+DUPELIST=0a653,0a654,0a655,0a656
+
+[ITEMDEF 0a653]
+// Mining Strike
+DUPEITEM=0a652
+
+[ITEMDEF 0a654]
+// Mining Strike
+DUPEITEM=0a652
+
+[ITEMDEF 0a655]
+// Mining Strike
+DUPEITEM=0a652
+
+[ITEMDEF 0a656]
+// Mining Strike
+DUPEITEM=0a652
+
+[ITEMDEF 0a657]
+// Wood Strike
+DEFNAME=i_fx_wood_strike
+NAME=Wood Strike
+TYPE=t_spell
+CATEGORY=Animations
+SUBSECTION=Sparkles
+DESCRIPTION=Wood Strike
+DUPELIST=0a658,0a659,0a65a,0a65b
+
+[ITEMDEF 0a658]
+// Wood Strike
+DUPEITEM=0a657
+
+[ITEMDEF 0a659]
+// Wood Strike
+DUPEITEM=0a657
+
+[ITEMDEF 0a65a]
+// Wood Strike
+DUPEITEM=0a657
+
+[ITEMDEF 0a65b]
+// Wood Strike
+DUPEITEM=0a657
+
+[ITEMDEF 0a804]
+// Digging Strike F1
+DEFNAME=i_fx_digging_strike
+NAME=Digging Strike
+TYPE=t_spell
+CATEGORY=Animations
+SUBSECTION=Sparkles
+DESCRIPTION=Digging Strike
+DUPELIST=0a805,0a806,0a807,0a808
+
+[ITEMDEF 0a805]
+// Digging Strike
+DUPEITEM=0a804
+
+[ITEMDEF 0a806]
+// Digging Strike
+DUPEITEM=0a804
+
+[ITEMDEF 0a807]
+// Digging Strike
+DUPEITEM=0a804
+
+[ITEMDEF 0a808]
+// Digging Strike
+DUPEITEM=0a804
+
 [EOF]

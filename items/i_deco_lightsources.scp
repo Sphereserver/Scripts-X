@@ -1098,4 +1098,122 @@ DUPELIST=049c1
 ON=@Create
    MOREZ=2
 
+
+[ITEMDEF 0a85e]
+// Candle 2 (Unlit)
+DEFNAME=i_candle_2
+TYPE=t_light_out
+TDATA3=i_candle_2_lit
+RESOURCES=4 i_ingot_iron
+SKILLMAKE=Tinkering 55.0,t_tinker_tools
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Candles
+DESCRIPTION=Candle 2 (Unlit)
+ON=@Create
+   MOREZ=2
+
+[ITEMDEF 0a858]
+// candle 2 (lit)
+DEFNAME=i_candle_2_lit
+TYPE=t_light_lit
+TDATA3=i_candle_2
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Candles
+DESCRIPTION=Candle 2 (lit)
+DUPELIST=0a859,0a85a,0a85b,0a85c,0a85d
+
+[ITEMDEF 0a859]
+// candle 2 (lit)
+DUPEITEM=0a858
+
+[ITEMDEF 0a85a]
+// candle 2 (lit)
+DUPEITEM=0a858
+
+[ITEMDEF 0a85b]
+// candle 2 (lit)
+DUPEITEM=0a858
+
+[ITEMDEF 0a85c]
+// candle 2 (lit)
+DUPEITEM=0a858
+
+[ITEMDEF 0a85d]
+// candle 2 (lit)
+DUPEITEM=0a858
+
+
+[ITEMDEF 0a922]
+// Pixie Lights South (unlit)
+DEFNAME=i_pixie_lights1
+NAME=Pixie Lights
+TYPE=t_light_out
+TDATA3=i_pixie_lights1_lit
+VALUE=6
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Miscellaneous
+DESCRIPTION=Pixie Lights (S)(unlit)
+ON=@Create
+	MOREZ=210
+
+[ITEMDEF 0a91e]
+// Pixie Lights South (lit)
+DEFNAME=i_pixie_lights1_lit
+NAME=Pixie Lights
+TYPE=t_light_lit
+TDATA3=i_pixie_lights1
+DUPELIST=0a91f,0a920,0a921
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Miscellaneous
+DESCRIPTION=Pixie Lights (S)(lit)
+
+[ITEMDEF 0a91f]
+// Pixie Lights South (lit)
+DUPEITEM=0a91e
+
+[ITEMDEF 0a920]
+// Pixie Lights South (lit)
+DUPEITEM=0a91e
+
+[ITEMDEF 0a921]
+// Pixie Lights South (lit)
+DUPEITEM=0a91e
+
+[ITEMDEF 0a927]
+// Pixie Lights East (unlit)
+DEFNAME=i_pixie_lights2
+NAME=Pixie Lights
+TYPE=t_light_out
+TDATA3=i_pixie_lights2_lit
+VALUE=6
+FLIP=0
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Miscellaneous
+DESCRIPTION=Pixie Lights (E)(unlit)
+ON=@Create
+	MOREZ=230
+
+[ITEMDEF 0a923]
+// Pixie Lights East (lit)
+DEFNAME=i_pixie_lights2_lit
+NAME=Pixie Lights
+TYPE=t_light_lit
+TDATA3=i_pixie_lights2
+DUPELIST=0a924,0a925,0a926
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Miscellaneous
+DESCRIPTION=Pixie Lights (E)(lit)
+
+[ITEMDEF 0a924]
+// Pixie Lights East (lit)
+DUPEITEM=0a923
+
+[ITEMDEF 0a925]
+// Pixie Lights East (lit)
+DUPEITEM=0a923
+
+[ITEMDEF 0a926]
+// Pixie Lights East (lit)
+DUPEITEM=0a923
+
 [EOF]

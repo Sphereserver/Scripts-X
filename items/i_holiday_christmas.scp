@@ -270,9 +270,9 @@ ON=@DClick
     MESSAGE Noooo!
     MESSAGE Please don't eat me... *whimper*
     MESSAGE Not the face!
-    MESSAGE Ahhhhhh! My foot’s gone!
+    MESSAGE Ahhhhhh! My footï¿½s gone!
     MESSAGE Please. No! I have gingerkids!
-    MESSAGE No, no! I’m really made of poison. Really.
+    MESSAGE No, no! Iï¿½m really made of poison. Really.
     MESSAGE Run, run as fast as you can! You can't catch me! I'm the gingerbread man!
     MORE2=1
     return 1
@@ -1868,10 +1868,330 @@ ON=@Create
 [ITEMDEF 0a094]
 DEFNAME=i_holiday_gift_token
 NAME=holiday gift token
+TYPE=t_normal
 CATEGORY=Christmas
 SUBSECTION=Misc
 DESCRIPTION=Holiday Gift Token
 
+[ITEMDEF 0a12e]
+DEFNAME=i_wreath2
+NAME=wreath
+TYPE=t_normal
+DYE=1
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Wreath (2)
+DUPELIST=0a12f
+ON=@Create
+   COLOR=colors_all
+
+[ITEMDEF 0a12f]
+//wreath
+DUPEITEM=0a12e
+
+[ITEMDEF 0a130]
+DEFNAME=i_candlelit_holiday_sign_east
+NAME=candlelit holiday sign
+TYPE=t_light_out
+TEVENTS=e_candlelit_holiday_sign
+DYE=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Candlelit Holiday Sign (east)(unlit)
+
+[ITEMDEF 0a131]
+DEFNAME=i_candlelit_holiday_sign_east_lit
+NAME=candlelit holiday sign
+TYPE=t_light_lit
+TEVENTS=e_candlelit_holiday_sign
+DYE=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Candlelit Holiday Sign (east)(lit)
+
+[ITEMDEF 0a132]
+//candlelit holiday sign (east)(anim)
+
+[ITEMDEF 0a133]
+//candlelit holiday sign (east)(anim)
+
+[ITEMDEF 0a134]
+DEFNAME=i_candlelit_holiday_sign_south
+NAME=candlelit holiday sign
+TYPE=t_light_out
+TEVENTS=e_candlelit_holiday_sign
+DYE=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Candlelit Holiday Sign (south)(unlit)
+
+[ITEMDEF 0a135]
+DEFNAME=i_candlelit_holiday_sign_south_lit
+NAME=candlelit holiday sign
+TYPE=t_light_lit
+TEVENTS=e_candlelit_holiday_sign
+DYE=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Candlelit Holiday Sign (south)(lit)
+
+[ITEMDEF 0a136]
+//candlelit holiday sign (south)(anim)
+
+[ITEMDEF 0a137]
+//candlelit holiday sign (south)(anim)
+
+[TYPEDEF e_candlelit_holiday_sign]
+ON=@Create
+   TAG.GumpID=0689
+   MOREZ=1
+ON=@ContextMenuRequest
+   SRC.AddContextEntry 101,1158829	//Change Sign Text
+   SRC.AddContextEntry 102,1155742	//Toggle: On/Off
+ON=@ContextMenuSelect
+   IF (<ARGN> == 101)
+      TAG0.GumpID ++
+      IF (<TAG0.GumpID> > 068c)
+         TAG.GumpID=0689
+      ENDIF
+      IF (<TAG0.GumpID> == 0689)
+         ARGS="Happy Holidays"
+      ELIF (<TAG0.GumpID> == 068a)
+         ARGS="Merry Christmas"
+      ELIF (<TAG0.GumpID> == 068b)
+         ARGS="Season's Greetings"
+      ELIF (<TAG0.GumpID> == 068c)
+         ARGS="Happy Hanukkah"
+      ENDIF
+      SRC.SYSMESSAGE The sign text has been set to: <ARGS>
+   ELIF (<ARGN> == 102)
+      IF (<DISPID> == i_candlelit_holiday_sign_east)
+         DISPID=i_candlelit_holiday_sign_east_lit
+      ELIF (<DISPID> == i_candlelit_holiday_sign_east_lit)
+         DISPID=i_candlelit_holiday_sign_east
+      ELIF (<DISPID> == i_candlelit_holiday_sign_south)
+         DISPID=i_candlelit_holiday_sign_south_lit
+      ELIF (<DISPID> == i_candlelit_holiday_sign_south_lit)
+         DISPID=i_candlelit_holiday_sign_south
+      ENDIF
+      UPDATE
+   ENDIF
+ON=@DClick
+   // This packet just open an generic gump, exactly the same as t_sign_gump. But t_sign_gump can only send
+   // static TDATA2 gump set on ITEMDEF, so to deal with dynamic values the packet must be sent manually
+   SRC.SENDPACKET 08b W13 D<UID> W<TAG0.GumpID> W0 W0
+   return 1
+
+[ITEMDEF 0a266]
+DEFNAME=i_book_recipe
+NAME=recipe book
+TYPE=t_normal
+FLIP=1
+CATEGORY=Christmas
+SUBSECTION=Misc
+DESCRIPTION=Recipe Book
+DUPELIST=0a267
+
+[ITEMDEF 0a267]
+//recipe book
+DUPEITEM=0a266
+
+[ITEMDEF 0a4ad]
+DEFNAME=i_glass_tree_1_s
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_1_s_lit
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 1 (south)(unlit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a4ae]
+DEFNAME=i_glass_tree_1_s_lit
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_1_s
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 1 (south)(lit)
+
+[ITEMDEF 0a4af]
+DEFNAME=i_glass_tree_1_e
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_1_e_lit
+WEIGHT=1.0
+TEVENTS=t_big_light
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 1 (east)(unlit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a4b0]
+DEFNAME=i_glass_tree_1_e_lit
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_1_e
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 1 (east)(lit)
+
+[ITEMDEF 0a4b1]
+DEFNAME=i_dove_cage
+NAME=cage
+DYE=1
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Cage
+DUPELIST=0a4b2
+ON=@DClick
+   SOUND 067f
+   return 1
+
+[ITEMDEF 0a4b2]
+//cage
+DUPEITEM=0a4b1
+
+[ITEMDEF 0a4b3]
+DEFNAME=i_glass_tree_2_s
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_2_s_lit
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 2 (south)(unlit)
+ON=@Create
+   MOREZ=210
+
+[ITEMDEF 0a4b4]
+DEFNAME=i_glass_tree_2_s_lit
+NAME=glass tree
+TYPE=t_light_lit
+TDATA3=i_glass_tree_2_s
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 2 (south)(lit)
+
+[ITEMDEF 0a4b5]
+DEFNAME=i_glass_tree_2_e
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_2_e_lit
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 2 (east)(unlit)
+ON=@Create
+   MOREZ=210
+
+[ITEMDEF 0a4b6]
+DEFNAME=i_glass_tree_2_e_lit
+NAME=glass tree
+TYPE=t_light_lit
+TDATA3=i_glass_tree_2_e
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 2 (east)(lit)
+
+[ITEMDEF 0a4b7]
+DEFNAME=i_glass_tree_3_s
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_3_s_lit
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 3 (south)(unlit)
+ON=@Create
+   MOREZ=210
+
+[ITEMDEF 0a4b8]
+DEFNAME=i_glass_tree_3_s_lit
+NAME=glass tree
+TYPE=t_light_lit
+TDATA3=i_glass_tree_3_s
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 3 (south)(lit)
+
+[ITEMDEF 0a4b9]
+DEFNAME=i_glass_tree_3_e
+NAME=glass tree
+TYPE=t_light_out
+TDATA3=i_glass_tree_3_e_lit
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 3 (east)(unlit)
+ON=@Create
+   MOREZ=210
+
+[ITEMDEF 0a4ba]
+DEFNAME=i_glass_tree_3_e_lit
+NAME=glass tree
+TYPE=t_light_lit
+TDATA3=i_glass_tree_3_e
+WEIGHT=1.0
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Glass Tree 3 (east)(lit)
+
+[ITEMDEF 0a4cf]
+DEFNAME=i_holiday_tree_jolly
+NAME=Holiday Tree
+DYE=1
+CATEGORY=Christmas
+SUBSECTION=Decoration
+DESCRIPTION=Jolly Holiday Tree
+ON=@DClick
+   IF (<DISPID> == i_holiday_tree_jolly)
+      DISPID=0a4d0
+   ELSE
+      DISPID=i_holiday_tree_jolly
+   ENDIF
+   UPDATE
+   return 1
+
+[ITEMDEF 0a4d0]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d1]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d2]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d3]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d4]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d5]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d6]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d7]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d8]
+//holiday tree (anim)
+
+[ITEMDEF 0a4d9]
+//holiday tree (anim)
 
 //////////////////
 // Custom Items //
@@ -2172,9 +2492,9 @@ TYPE=t_sign_gump
 TDATA2=09be2
 CATEGORY=Christmas
 SUBSECTION=Misc
-DESCRIPTION=Card of Semidar (Shamino Sallé Dacil)
+DESCRIPTION=Card of Semidar (Shamino Sallï¿½ Dacil)
 ON=@ClientTooltip
-   addcliloc 1156398	//Shamino Sallé Dacil
+   addcliloc 1156398	//Shamino Sallï¿½ Dacil
 
 [ITEMDEF i_card_semidar_juonar]
 ID=09c14

@@ -260,4 +260,56 @@ ON=@Create
 //scale shield
 DUPEITEM=01bc6
 
+[ITEMDEF 0a649]
+// Pirate Shield
+DEFNAME=i_shield_pirate
+NAME=Pirate Shield
+TYPE=t_shield
+FLIP=1
+ARMOR=20
+REQSTR=35
+WEIGHT=12.0
+VALUE=100
+DUPELIST=0a64a
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 98.0,Armslore 75.0
+TEVENTS=ei_equipitem
+CanUse=can_u_human|can_u_elf
+Expansion=RDS_HS
+CATEGORY=Provisions - Armor
+SUBSECTION=Shields
+DESCRIPTION=Pirate Shield
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0a64a]
+// Pirate Shield
+DUPEITEM=0a649
+
+[ITEMDEF 0a831]
+// Shield_Hildebrandt
+DEFNAME=i_shield_hildebrandt
+NAME=Hildebrandt Shield
+TYPE=t_shield
+FLIP=1
+ARMOR=20
+REQSTR=35
+WEIGHT=12.0
+VALUE=100
+DUPELIST=0a832
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 100.0,Armslore 75.0
+TEVENTS=ei_equipitem
+CanUse=can_u_human|can_u_elf
+Expansion=RDS_HS
+CATEGORY=Provisions - Armor
+SUBSECTION=Shields
+DESCRIPTION=Hildebrandt Shield
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0a832]
+// Shield_Hildebrandt
+DUPEITEM=0a831
+
 [EOF]

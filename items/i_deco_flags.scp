@@ -1,0 +1,751 @@
+[ITEMDEF 0aa45]
+DEFNAME=i_flag_1e
+TYPE=t_normal
+VALUE=100
+DUPELIST=0aa46,0aa47,0aa48,0aa49,0aa4a
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 1 (E)
+
+[ITEMDEF 0aa46]
+DUPEITEM=0aa45
+
+[ITEMDEF 0aa47]
+DUPEITEM=0aa45
+
+[ITEMDEF 0aa48]
+DUPEITEM=0aa45
+
+[ITEMDEF 0aa49]
+DUPEITEM=0aa45
+
+[ITEMDEF 0aa4a]
+DUPEITEM=0aa45
+
+[ITEMDEF 0aa4b]
+DEFNAME=i_flag_1s
+TYPE=t_normal
+VALUE=100
+DUPELIST=0aa4c,0aa4d,0aa4e,0aa4f,0aa50
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 1(S)
+
+[ITEMDEF 0aa4c]
+DUPEITEM=0aa4b
+
+[ITEMDEF 0aa4d]
+DUPEITEM=0aa4b
+
+[ITEMDEF 0aa4e]
+DUPEITEM=0aa4b
+
+[ITEMDEF 0aa4f]
+DUPEITEM=0aa4b
+
+[ITEMDEF 0aa50]
+DUPEITEM=0aa4b
+
+[ITEMDEF 0aa62]
+DEFNAME=i_flag_2e
+TYPE=t_normal
+VALUE=100
+DUPELIST=0aa63,0aa64,0aa65,0aa66,0aa67
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 2 (E)
+
+[ITEMDEF 0aa63]
+DUPEITEM=0aa62
+
+[ITEMDEF 0aa64]
+DUPEITEM=0aa62
+
+[ITEMDEF 0aa65]
+DUPEITEM=0aa62
+
+[ITEMDEF 0aa66]
+DUPEITEM=0aa62
+
+[ITEMDEF 0aa67]
+DUPEITEM=0aa62
+
+[ITEMDEF 0aa68]
+DEFNAME=i_flag_2s
+TYPE=t_normal
+VALUE=100
+DUPELIST=0aa69,0aa6a,0aa6b,0aa6c,0aa6d
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 2(S)
+
+[ITEMDEF 0aa69]
+DUPEITEM=0aa68
+
+[ITEMDEF 0aa6a]
+DUPEITEM=0aa68
+
+[ITEMDEF 0aa6b]
+DUPEITEM=0aa68
+
+[ITEMDEF 0aa6c]
+DUPEITEM=0aa68
+
+[ITEMDEF 0aa6d]
+DUPEITEM=0aa68
+
+[ITEMDEF 0aa7f]
+DEFNAME=i_flag_3e
+TYPE=t_normal
+VALUE=100
+DUPELIST=0aa80,0aa81,0aa82,0aa83,0aa84
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 3 (E)
+
+[ITEMDEF 0aa80]
+DUPEITEM=0aa7f
+
+[ITEMDEF 0aa81]
+DUPEITEM=0aa7f
+
+[ITEMDEF 0aa82]
+DUPEITEM=0aa7f
+
+[ITEMDEF 0aa83]
+DUPEITEM=0aa7f
+
+[ITEMDEF 0aa84]
+DUPEITEM=0aa7f
+
+[ITEMDEF 0aa85]
+DEFNAME=i_flag_3s
+TYPE=t_normal
+VALUE=100
+DUPELIST=0aa86,0aa87,0aa88,0aa89,0aa8a
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 3(S)
+
+[ITEMDEF 0aa86]
+DUPEITEM=0aa85
+
+[ITEMDEF 0aa87]
+DUPEITEM=0aa85
+
+[ITEMDEF 0aa88]
+DUPEITEM=0aa85
+
+[ITEMDEF 0aa89]
+DUPEITEM=0aa85
+
+[ITEMDEF 0aa8a]
+DUPEITEM=0aa85
+
+[ITEMDEF 0aa9c]
+DEFNAME=i_flag_4e
+TYPE=t_normal
+VALUE=100
+DUPELIST=0aa9d,0aa9e,0aa9f,0aaa0,0aaa1
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 4 (E)
+
+[ITEMDEF 0aa9d]
+DUPEITEM=0aa9c
+
+[ITEMDEF 0aa9e]
+DUPEITEM=0aa9c
+
+[ITEMDEF 0aa9f]
+DUPEITEM=0aa9c
+
+[ITEMDEF 0aaa0]
+DUPEITEM=0aa9c
+
+[ITEMDEF 0aaa1]
+DUPEITEM=0aa9c
+
+[ITEMDEF 0aaa2]
+DEFNAME=i_flag_4s
+TYPE=t_normal
+VALUE=100
+DUPELIST=0aaa3,0aaa4,0aaa5,0aaa6,0aaa7
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 4(S)
+
+[ITEMDEF 0aaa3]
+DUPEITEM=0aaa2
+
+[ITEMDEF 0aaa4]
+DUPEITEM=0aaa2
+
+[ITEMDEF 0aaa5]
+DUPEITEM=0aaa2
+
+[ITEMDEF 0aaa6]
+DUPEITEM=0aaa2
+
+[ITEMDEF 0aaa7]
+DUPEITEM=0aaa2
+
+[ITEMDEF 0aab9]
+DEFNAME=i_flag_5e
+TYPE=t_normal
+VALUE=100
+DUPELIST=0aaba,0aabb,0aabc,0aabd,0aabe
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 5 (E)
+
+[ITEMDEF 0aaba]
+DUPEITEM=0aab9
+
+[ITEMDEF 0aabb]
+DUPEITEM=0aab9
+
+[ITEMDEF 0aabc]
+DUPEITEM=0aab9
+
+[ITEMDEF 0aabd]
+DUPEITEM=0aab9
+
+[ITEMDEF 0aabe]
+DUPEITEM=0aab9
+
+[ITEMDEF 0aabf]
+DEFNAME=i_flag_5s
+TYPE=t_normal
+VALUE=100
+DUPELIST=0aac0,0aac1,0aac2,0aac3,0aac4
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 5(S)
+
+[ITEMDEF 0aac0]
+DUPEITEM=0aabf
+
+[ITEMDEF 0aac1]
+DUPEITEM=0aabf
+
+[ITEMDEF 0aac2]
+DUPEITEM=0aabf
+
+[ITEMDEF 0aac3]
+DUPEITEM=0aabf
+
+[ITEMDEF 0aac4]
+DUPEITEM=0aabf
+
+[ITEMDEF 0aad6]
+DEFNAME=i_flag_6e
+TYPE=t_normal
+VALUE=100
+DUPELIST=0aad7,0aad8,0aad9,0aada,0aadb
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 6 (E)
+
+[ITEMDEF 0aad7]
+DUPEITEM=0aad6
+
+[ITEMDEF 0aad8]
+DUPEITEM=0aad6
+
+[ITEMDEF 0aad9]
+DUPEITEM=0aad6
+
+[ITEMDEF 0aada]
+DUPEITEM=0aad6
+
+[ITEMDEF 0aadb]
+DUPEITEM=0aad6
+
+[ITEMDEF 0aadc]
+DEFNAME=i_flag_6s
+TYPE=t_normal
+VALUE=100
+DUPELIST=0aadd,0aade,0aadf,0aae0,0aae1
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 6(S)
+
+[ITEMDEF 0aadd]
+DUPEITEM=0aadc
+
+[ITEMDEF 0aade]
+DUPEITEM=0aadc
+
+[ITEMDEF 0aadf]
+DUPEITEM=0aadc
+
+[ITEMDEF 0aae0]
+DUPEITEM=0aadc
+
+[ITEMDEF 0aae1]
+DUPEITEM=0aadc
+
+[ITEMDEF 0aaf3]
+DEFNAME=i_flag_7e
+TYPE=t_normal
+VALUE=100
+DUPELIST=0aaf4,0aaf5,0aaf6,0aaf7,0aaf8
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 7 (E)
+
+[ITEMDEF 0aaf4]
+DUPEITEM=0aaf3
+
+[ITEMDEF 0aaf5]
+DUPEITEM=0aaf3
+
+[ITEMDEF 0aaf6]
+DUPEITEM=0aaf3
+
+[ITEMDEF 0aaf7]
+DUPEITEM=0aaf3
+
+[ITEMDEF 0aaf8]
+DUPEITEM=0aaf3
+
+[ITEMDEF 0aaf9]
+DEFNAME=i_flag_7s
+TYPE=t_normal
+VALUE=100
+DUPELIST=0aafa,0aafb,0aafc,0aafd,0aafe
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 7(S)
+
+[ITEMDEF 0aafa]
+DUPEITEM=0aaf9
+
+[ITEMDEF 0aafb]
+DUPEITEM=0aaf9
+
+[ITEMDEF 0aafc]
+DUPEITEM=0aaf9
+
+[ITEMDEF 0aafd]
+DUPEITEM=0aaf9
+
+[ITEMDEF 0aafe]
+DUPEITEM=0aaf9
+
+[ITEMDEF 0ab10]
+DEFNAME=i_flag_8e
+TYPE=t_normal
+VALUE=100
+DUPELIST=0ab11,0ab12,0ab13,0ab14,0ab15
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 8 (E)
+
+[ITEMDEF 0ab11]
+DUPEITEM=0ab10
+
+[ITEMDEF 0ab12]
+DUPEITEM=0ab10
+
+[ITEMDEF 0ab13]
+DUPEITEM=0ab10
+
+[ITEMDEF 0ab14]
+DUPEITEM=0ab10
+
+[ITEMDEF 0ab15]
+DUPEITEM=0ab10
+
+[ITEMDEF 0ab16]
+DEFNAME=i_flag_8s
+TYPE=t_normal
+VALUE=100
+DUPELIST=0ab17,0ab18,0ab19,0ab1a,0ab1b
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 8(S)
+
+[ITEMDEF 0ab17]
+DUPEITEM=0ab16
+
+[ITEMDEF 0ab18]
+DUPEITEM=0ab16
+
+[ITEMDEF 0ab19]
+DUPEITEM=0ab16
+
+[ITEMDEF 0ab1a]
+DUPEITEM=0ab16
+
+[ITEMDEF 0ab1b]
+DUPEITEM=0ab16
+
+[ITEMDEF 0ab2d]
+DEFNAME=i_flag_9e
+TYPE=t_normal
+VALUE=100
+DUPELIST=0ab2e,0ab2f,0ab30,0ab31,0ab32
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 9 (E)
+
+[ITEMDEF 0ab2e]
+DUPEITEM=0ab2d
+
+[ITEMDEF 0ab2f]
+DUPEITEM=0ab2d
+
+[ITEMDEF 0ab30]
+DUPEITEM=0ab2d
+
+[ITEMDEF 0ab31]
+DUPEITEM=0ab2d
+
+[ITEMDEF 0ab32]
+DUPEITEM=0ab2d
+
+[ITEMDEF 0ab33]
+DEFNAME=i_flag_9s
+TYPE=t_normal
+VALUE=100
+DUPELIST=0ab34,0ab35,0ab36,0ab37,0ab38
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 9(S)
+
+[ITEMDEF 0ab34]
+DUPEITEM=0ab33
+
+[ITEMDEF 0ab35]
+DUPEITEM=0ab33
+
+[ITEMDEF 0ab36]
+DUPEITEM=0ab33
+
+[ITEMDEF 0ab37]
+DUPEITEM=0ab33
+
+[ITEMDEF 0ab38]
+DUPEITEM=0ab33
+
+[ITEMDEF 0ab4a]
+DEFNAME=i_flag_10e
+TYPE=t_normal
+VALUE=100
+DUPELIST=0ab4b,0ab4c,0ab4d,0ab4e,0ab4f
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 10 (E)
+
+[ITEMDEF 0ab4b]
+DUPEITEM=0ab4a
+
+[ITEMDEF 0ab4c]
+DUPEITEM=0ab4a
+
+[ITEMDEF 0ab4d]
+DUPEITEM=0ab4a
+
+[ITEMDEF 0ab4e]
+DUPEITEM=0ab4a
+
+[ITEMDEF 0ab4f]
+DUPEITEM=0ab4a
+
+[ITEMDEF 0ab50]
+DEFNAME=i_flag_10s
+TYPE=t_normal
+VALUE=100
+DUPELIST=0ab51,0ab52,0ab53,0ab54,0ab55
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 10(S)
+
+[ITEMDEF 0ab51]
+DUPEITEM=0ab50
+
+[ITEMDEF 0ab52]
+DUPEITEM=0ab50
+
+[ITEMDEF 0ab53]
+DUPEITEM=0ab50
+
+[ITEMDEF 0ab54]
+DUPEITEM=0ab50
+
+[ITEMDEF 0ab55]
+DUPEITEM=0ab50
+
+[ITEMDEF 0ab67]
+DEFNAME=i_flag_11e
+TYPE=t_normal
+VALUE=100
+DUPELIST=0ab68,0ab69,0ab6a,0ab6b,0ab6c
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 11 (E)
+
+[ITEMDEF 0ab68]
+DUPEITEM=0ab67
+
+[ITEMDEF 0ab69]
+DUPEITEM=0ab67
+
+[ITEMDEF 0ab6a]
+DUPEITEM=0ab67
+
+[ITEMDEF 0ab6b]
+DUPEITEM=0ab67
+
+[ITEMDEF 0ab6c]
+DUPEITEM=0ab67
+
+[ITEMDEF 0ab6d]
+DEFNAME=i_flag_11s
+TYPE=t_normal
+VALUE=100
+DUPELIST=0ab6e,0ab6f,0ab70,0ab71,0ab72
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 11(S)
+
+[ITEMDEF 0ab6e]
+DUPEITEM=0ab6d
+
+[ITEMDEF 0ab6f]
+DUPEITEM=0ab6d
+
+[ITEMDEF 0ab70]
+DUPEITEM=0ab6d
+
+[ITEMDEF 0ab71]
+DUPEITEM=0ab6d
+
+[ITEMDEF 0ab72]
+DUPEITEM=0ab6d
+
+[ITEMDEF 0ab84]
+DEFNAME=i_flag_12e
+TYPE=t_normal
+VALUE=100
+DUPELIST=0ab85,0ab86,0ab87,0ab88,0ab89
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 12 (E)
+
+[ITEMDEF 0ab85]
+DUPEITEM=0ab84
+
+[ITEMDEF 0ab86]
+DUPEITEM=0ab84
+
+[ITEMDEF 0ab87]
+DUPEITEM=0ab84
+
+[ITEMDEF 0ab88]
+DUPEITEM=0ab84
+
+[ITEMDEF 0ab89]
+DUPEITEM=0ab84
+
+[ITEMDEF 0ab8a]
+DEFNAME=i_flag_12s
+TYPE=t_normal
+VALUE=100
+DUPELIST=0ab8b,0ab8c,0ab8d,0ab8e,0ab8f
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 12(S)
+
+[ITEMDEF 0ab8b]
+DUPEITEM=0ab8a
+
+[ITEMDEF 0ab8c]
+DUPEITEM=0ab8a
+
+[ITEMDEF 0ab8d]
+DUPEITEM=0ab8a
+
+[ITEMDEF 0ab8e]
+DUPEITEM=0ab8a
+
+[ITEMDEF 0ab8f]
+DUPEITEM=0ab8a
+
+[ITEMDEF 0abf1]
+DEFNAME=i_flag_13e
+TYPE=t_normal
+VALUE=100
+DUPELIST=0abf2,0abf3,0abf4,0abf5,0abf6
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 13 (E)
+
+[ITEMDEF 0abf2]
+DUPEITEM=0abf1
+
+[ITEMDEF 0abf3]
+DUPEITEM=0abf1
+
+[ITEMDEF 0abf4]
+DUPEITEM=0abf1
+
+[ITEMDEF 0abf5]
+DUPEITEM=0abf1
+
+[ITEMDEF 0abf6]
+DUPEITEM=0abf1
+
+[ITEMDEF 0abf7]
+DEFNAME=i_flag_13s
+TYPE=t_normal
+VALUE=100
+DUPELIST=0abf8,0abf9,0abfa,0abfb,0abfc
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 13(S)
+
+[ITEMDEF 0abf8]
+DUPEITEM=0abf7
+
+[ITEMDEF 0abf9]
+DUPEITEM=0abf7
+
+[ITEMDEF 0abfa]
+DUPEITEM=0abf7
+
+[ITEMDEF 0abfb]
+DUPEITEM=0abf7
+
+[ITEMDEF 0abfc]
+DUPEITEM=0abf7
+
+[ITEMDEF 0ac0e]
+DEFNAME=i_flag_14e
+TYPE=t_normal
+VALUE=100
+DUPELIST=0ac0f,0ac10,0ac11,0ac12,0ac13
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 14 (E)
+
+[ITEMDEF 0ac0f]
+DUPEITEM=0ac0e
+
+[ITEMDEF 0ac10]
+DUPEITEM=0ac0e
+
+[ITEMDEF 0ac11]
+DUPEITEM=0ac0e
+
+[ITEMDEF 0ac12]
+DUPEITEM=0ac0e
+
+[ITEMDEF 0ac13]
+DUPEITEM=0ac0e
+
+[ITEMDEF 0ac14]
+DEFNAME=i_flag_14s
+TYPE=t_normal
+VALUE=100
+DUPELIST=0ac15,0ac16,0ac17,0ac18,0ac19
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 14(S)
+
+[ITEMDEF 0ac15]
+DUPEITEM=0ac14
+
+[ITEMDEF 0ac16]
+DUPEITEM=0ac14
+
+[ITEMDEF 0ac17]
+DUPEITEM=0ac14
+
+[ITEMDEF 0ac18]
+DUPEITEM=0ac14
+
+[ITEMDEF 0ac19]
+DUPEITEM=0ac14
+
+[ITEMDEF 0ac2b]
+DEFNAME=i_flag_15e
+TYPE=t_normal
+VALUE=100
+DUPELIST=0ac2c,0ac2d,0ac2e,0ac2f,0ac30
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 15 (E)
+
+[ITEMDEF 0ac2c]
+DUPEITEM=0ac2b
+
+[ITEMDEF 0ac2d]
+DUPEITEM=0ac2b
+
+[ITEMDEF 0ac2e]
+DUPEITEM=0ac2b
+
+[ITEMDEF 0ac2f]
+DUPEITEM=0ac2b
+
+[ITEMDEF 0ac30]
+DUPEITEM=0ac2b
+
+[ITEMDEF 0ac31]
+DEFNAME=i_flag_15s
+TYPE=t_normal
+VALUE=100
+DUPELIST=0ac32,0ac33,0ac34,0ac35,0ac36
+RESOURCES=20 i_board,4 i_ingot_gold,6 i_cloth
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Flags
+DESCRIPTION=Flag 15(S)
+
+[ITEMDEF 0ac32]
+DUPEITEM=0ac31
+
+[ITEMDEF 0ac33]
+DUPEITEM=0ac31
+
+[ITEMDEF 0ac34]
+DUPEITEM=0ac31
+
+[ITEMDEF 0ac35]
+DUPEITEM=0ac31
+
+[ITEMDEF 0ac36]
+DUPEITEM=0ac31
+
+[EOF]

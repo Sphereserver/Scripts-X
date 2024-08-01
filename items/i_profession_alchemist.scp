@@ -868,6 +868,39 @@ CATEGORY=Items by Professions
 SUBSECTION=Alchemist
 DESCRIPTION=Bottle 11 (empty)
 
+[ITEMDEF 0a84b]
+// Potion Vat South (closed)
+DEFNAME=i_potion_vat_closed
+NAME=Potion Vat
+TYPE=t_normal
+FLIP=1
+VALUE=225
+WEIGHT=53.0
+DUPELIST=0a84d
+CATEGORY=Items by Professions
+SUBSECTION=Alchemist
+DESCRIPTION=Potion Vat (closed)
+
+[ITEMDEF 0a84c]
+// Potion Vat South (Open)
+DEFNAME=i_potion_vat_open
+NAME=Potion Vat
+TYPE=t_normal
+FLIP=1
+VALUE=225
+WEIGHT=53.0
+DUPELIST=0a84e
+CATEGORY=Items by Professions
+SUBSECTION=Alchemist
+DESCRIPTION=Potion Vat (Open)
+
+[ITEMDEF 0a84d]
+// Potion Vat East (closed)
+DUPEITEM=0a84b
+
+[ITEMDEF 0a84e]
+// Potion Vat East (Open)
+DUPEITEM=0a84c
 
 //////////////////
 // Custom Items //

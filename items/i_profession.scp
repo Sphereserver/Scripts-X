@@ -3238,4 +3238,325 @@ DUPELIST=04b47
 //Fish Hook
 DUPEITEM=04b46
 
+[ITEMDEF 0a52e]
+// Glassblowing Table (S)(container)
+DEFNAME=i_glassblowing_table
+NAME=Glassblowing Table
+TYPE=t_container
+FLIP=1
+VALUE=20
+WEIGHT=12.0
+DUPELIST=0a52f
+CATEGORY=Items by Professions
+SUBSECTION=Glassblower
+DESCRIPTION=Glassblowing Table (container)
+
+[ITEMDEF 0a52f]
+// Glassblowing Table (E)(container)
+DUPEITEM=0a52e
+
+[ITEMDEF 0a530]
+// Glassblowing Tool (S)(off)
+DEFNAME=i_glassblowing_tool
+NAME=Glassblowing Tool
+TYPE=t_normal
+FLIP=1
+VALUE=225
+WEIGHT=53.0
+DUPELIST=0a534
+CATEGORY=Items by Professions
+SUBSECTION=Glassblower
+DESCRIPTION=Glassblowing Tool (Off)
+ON=@ContextMenuRequest
+   SRC.AddContextEntry 101,1155742	//Toggle: On/Off
+ON=@ContextMenuSelect
+   IF (<ARGN> == 101)
+      IF (<DISPID> == i_glassblowing_tool)
+         DISPID=0a531
+         SOUND=02b
+         MESSAGE @,,2 1157073 // *You ignite the fire*
+      ELIF (<DISPID> == 0a534)
+         DISPID=0a535
+         SOUND=02B
+         MESSAGE @,,2 1157073 // *You ignite the fire*
+      ELIF (<DISPID> == 0a531)
+         DISPID=0a530
+         MESSAGE @,,2 1157072 // *You douse the fire*
+      ELIF (<DISPID> == 0a535)
+         DISPID=0a534
+         MESSAGE @,,2 1157072 // *You douse the fire*
+      ENDIF
+      UPDATE
+   ENDIF
+
+[ITEMDEF 0a531]
+// Glassblowing Tool south (on)
+DUPELIST=0a535
+
+[ITEMDEF 0a532]
+// Glassblowing Tool south (on)
+
+[ITEMDEF 0a533]
+// Glassblowing Tool south (on)
+
+[ITEMDEF 0a534]
+// Glassblowing Tool East (off)
+DUPEITEM=0a530
+
+[ITEMDEF 0a535]
+// Glassblowing Tool East (on)
+DUPEITEM=0a531
+
+[ITEMDEF 0a536]
+// Glassblowing Tool East (on)
+
+[ITEMDEF 0a537]
+// Glassblowing Tool East (on)
+
+[ITEMDEF 0a538]
+// Masonry Tool south (off)
+DEFNAME=i_masonry_tool
+NAME=Masonry Tool
+TYPE=t_normal
+FLIP=1
+VALUE=225
+WEIGHT=53.0
+DUPELIST=0a540
+CATEGORY=Items by Professions
+SUBSECTION=Masonry
+DESCRIPTION=Masonry Tool (Off)
+ON=@ContextMenuRequest
+   SRC.AddContextEntry 101,1155742	//Toggle: On/Off
+ON=@ContextMenuSelect
+   IF (<ARGN>==101)
+      IF (<DISPID>==i_masonry_tool)
+         DISPID=0a541
+         // SOUND=
+         MESSAGE @,,2 1157075 // *You switch on the apparatus*
+      ELIF (<DISPID>==0a540)
+         DISPID=0a539
+         // SOUND=
+         MESSAGE @,,2 1157075 // *You switch on the apparatus*
+      ELIF (<DISPID>==0a541)
+         DISPID=0a538
+         MESSAGE @,,2 1157074 // *You switch off the apparatus*
+      ELIF (<DISPID>==0a539)
+         DISPID=0a540
+         MESSAGE @,,2 1157074 // *You switch off the apparatus*
+      ENDIF
+      UPDATE
+   ENDIF
+
+[ITEMDEF 0a539]
+// Masonry Tool East (on)
+DUPELIST=0a541
+
+[ITEMDEF 0a53a]
+// Masonry Tool East (on)
+
+[ITEMDEF 0a53b]
+// Masonry Tool East (on)
+
+[ITEMDEF 0a53c]
+// Masonry Tool East (on)
+
+[ITEMDEF 0a53d]
+// Masonry Tool East (on)
+
+[ITEMDEF 0a53e]
+// Masonry Tool East (on)
+
+[ITEMDEF 0a53f]
+// Masonry Tool East (on)
+
+[ITEMDEF 0a540]
+// Masonry Tool East (on)
+
+[ITEMDEF 0a541]
+// Masonry Tool South (on)
+DUPEITEM=0a539
+
+[ITEMDEF 0a542]
+// Masonry Tool South (on)
+
+[ITEMDEF 0a543]
+// Masonry Tool South (on)
+
+[ITEMDEF 0a544]
+// Masonry Tool South (on)
+
+[ITEMDEF 0a545]
+// Masonry Tool South (on)
+
+[ITEMDEF 0a546]
+// Masonry Tool South (on)
+
+[ITEMDEF 0a547]
+// Masonry Tool South (on)
+
+[ITEMDEF 0a548]
+// Masonry Tool (E)(container)
+DEFNAME=i_masonry_tool_2
+NAME=Masonry Tool
+TYPE=t_container
+FLIP=1
+VALUE=225
+WEIGHT=15.0
+DUPELIST=0a549
+CATEGORY=Items by Professions
+SUBSECTION=Masonry
+DESCRIPTION=Masonry Tool (container)
+
+[ITEMDEF 0a549]
+// Masonry Tool (S)(container)
+DUPEITEM=0a548
+
+
+[ITEMDEF 0ac49]
+// salvage station south (on)
+DUPELIST=0ac5a
+
+[ITEMDEF 0ac4a]
+// salvage station south (on)
+
+[ITEMDEF 0ac4b]
+// salvage station south (on)
+
+[ITEMDEF 0ac4c]
+// salvage station south (on)
+
+[ITEMDEF 0ac4d]
+// salvage station south (on)
+
+[ITEMDEF 0ac4e]
+// salvage station south (on)
+
+[ITEMDEF 0ac4f]
+// salvage station south (on)
+
+[ITEMDEF 0ac50]
+// salvage station south (on)
+
+[ITEMDEF 0ac51]
+// salvage station south (on)
+
+[ITEMDEF 0ac52]
+// salvage station south (on)
+
+[ITEMDEF 0ac53]
+// salvage station south (on)
+
+[ITEMDEF 0ac54]
+// salvage station south (on)
+
+[ITEMDEF 0ac55]
+// salvage station south (on)
+
+[ITEMDEF 0ac56]
+// salvage station south (on)
+
+[ITEMDEF 0ac57]
+// salvage station south (on)
+
+[ITEMDEF 0ac58]
+// salvage station south (off)
+DEFNAME=i_salvage_station
+NAME=Salvage Station
+TYPE=t_normal
+FLIP=1
+VALUE=225
+WEIGHT=53.0
+DUPELIST=0ac69
+CATEGORY=Items by Professions
+SUBSECTION=Miscellaneous 
+DESCRIPTION=Salvage Station (Off)
+ON=@ContextMenuRequest
+   SRC.AddContextEntry 101,1155742	//Toggle: On/Off
+ON=@ContextMenuSelect
+   IF (<ARGN>==101)
+      IF (<DISPID>==i_salvage_station)
+         DISPID=0ac49
+         // SOUND=
+         MESSAGE @,,2 1157075 // *You switch on the apparatus*
+      ELIF (<DISPID>==0ac69)
+         DISPID=0ac5a
+         // SOUND=
+         MESSAGE @,,2 1157075 // *You switch on the apparatus*
+      ELIF (<DISPID>==0ac49)
+         DISPID=0ac58
+         MESSAGE @,,2 1157074 // *You switch off the apparatus*
+      ELIF (<DISPID>==0ac5a)
+         DISPID=0ac69
+         MESSAGE @,,2 1157074 // *You switch off the apparatus*
+      ENDIF
+      UPDATE
+   ENDIF
+
+[ITEMDEF 0ac59]
+// Salvage Station Container South
+DEFNAME=i_salvage_container
+NAME=Salvage Station
+TYPE=t_container
+FLIP=1
+VALUE=20
+WEIGHT=12.0
+DUPELIST=0ac6a
+CATEGORY=Items by Professions
+SUBSECTION=Tinker
+DESCRIPTION=Salvage Station (container)
+
+[ITEMDEF 0ac5a]
+// salvage station east (on)
+DUPEITEM=0ac49
+
+[ITEMDEF 0ac5b]
+// salvage station east (on)
+
+[ITEMDEF 0ac5c]
+// salvage station east (on)
+
+[ITEMDEF 0ac5d]
+// salvage station east (on)
+
+[ITEMDEF 0ac5e]
+// salvage station east (on)
+
+[ITEMDEF 0ac5f]
+// salvage station east (on)
+
+[ITEMDEF 0ac60]
+// salvage station east (on)
+
+[ITEMDEF 0ac61]
+// salvage station east (on)
+
+[ITEMDEF 0ac62]
+// salvage station east (on)
+
+[ITEMDEF 0ac63]
+// salvage station east (on)
+
+[ITEMDEF 0ac64]
+// salvage station east (on)
+
+[ITEMDEF 0ac65]
+// salvage station east (on)
+
+[ITEMDEF 0ac66]
+// salvage station east (on)
+
+[ITEMDEF 0ac67]
+// salvage station east (on)
+
+[ITEMDEF 0ac68]
+// salvage station east (on)
+
+[ITEMDEF 0ac69]
+// salvage station east (off)
+DUPEITEM=0ac58
+
+[ITEMDEF 0ac6a]
+// Salvage Station Container East
+DUPEITEM=0ac59
+
 [EOF]

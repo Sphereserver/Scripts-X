@@ -1,0 +1,337 @@
+[ITEMDEF 099cc]
+// Covetous Tile SOUTH
+DEFNAME=i_covetous_tile_south
+NAME=Covetous
+TYPE=t_normal
+WEIGHT=32.0
+DUPELIST=099cd,099ce,099cf
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+CATEGORY=Decoration - Dungeon and the dead
+SUBSECTION=Dungeon Tiles
+DESCRIPTION=Covetous (S)
+
+[ITEMDEF 099cd]
+DUPELIST=099cc
+
+[ITEMDEF 099ce]
+DUPELIST=099cc
+
+[ITEMDEF 099cf]
+DUPELIST=099cc
+
+[ITEMDEF 099d0]
+// Covetous Tile EAST
+DEFNAME=i_covetous_tile_east
+NAME=Covetous
+TYPE=t_normal
+WEIGHT=32.0
+DUPELIST=099d1,099d2,099d3
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+CATEGORY=Decoration - Dungeon and the dead
+SUBSECTION=Dungeon Tiles
+DESCRIPTION=Covetous (E)
+
+[ITEMDEF 099d1]
+DUPELIST=099d0
+
+[ITEMDEF 099d2]
+DUPELIST=099d0
+
+[ITEMDEF 099d3]
+DUPELIST=099d0
+
+[ITEMDEF 099d4]
+// Deceit Tile SOUTH
+DEFNAME=i_deceit_tile_south
+NAME=Deceit
+TYPE=t_normal
+WEIGHT=32.0
+DUPELIST=099d5,099d6,099d7
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+CATEGORY=Decoration - Dungeon and the dead
+SUBSECTION=Dungeon Tiles
+DESCRIPTION=Deceit (S)
+
+[ITEMDEF 099d5]
+DUPELIST=099d4
+
+[ITEMDEF 099d6]
+DUPELIST=099d4
+
+[ITEMDEF 099d7]
+DUPELIST=099d4
+
+[ITEMDEF 099d8]
+// Deceit Tile EAST
+DEFNAME=i_deceit_tile_east
+NAME=Deceit
+TYPE=t_normal
+WEIGHT=32.0
+DUPELIST=099d9,099da,099db
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+CATEGORY=Decoration - Dungeon and the dead
+SUBSECTION=Dungeon Tiles
+DESCRIPTION=Deceit (E)
+
+[ITEMDEF 099d9]
+DUPELIST=099d8
+
+[ITEMDEF 099da]
+DUPELIST=099d8
+
+[ITEMDEF 099db]
+DUPELIST=099d8
+
+[ITEMDEF 099dc]
+// Despise Tile SOUTH
+DEFNAME=i_despise_tile_south
+NAME=Despise
+TYPE=t_normal
+WEIGHT=32.0
+DUPELIST=099dd,099de,099df
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+CATEGORY=Decoration - Dungeon and the dead
+SUBSECTION=Dungeon Tiles
+DESCRIPTION=Despise (S)
+
+[ITEMDEF 099dd]
+DUPELIST=099dc
+
+[ITEMDEF 099de]
+DUPELIST=099dc
+
+[ITEMDEF 099df]
+DUPELIST=099dc
+
+[ITEMDEF 099e0]
+// Despise Tile EAST
+DEFNAME=i_despise_tile_east
+NAME=Despise
+TYPE=t_normal
+WEIGHT=32.0
+DUPELIST=099e1,099e2,099e3
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+CATEGORY=Decoration - Dungeon and the dead
+SUBSECTION=Dungeon Tiles
+DESCRIPTION=Despise (E)
+
+[ITEMDEF 099e1]
+DUPELIST=099e0
+
+[ITEMDEF 099e2]
+DUPELIST=099e0
+
+[ITEMDEF 099e3]
+DUPELIST=099e0
+
+[ITEMDEF 099e4]
+// Destard Tile SOUTH
+DEFNAME=i_destard_tile_south
+NAME=Destard
+TYPE=t_normal
+WEIGHT=32.0
+DUPELIST=099e5,099e6,099e7
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+CATEGORY=Decoration - Dungeon and the dead
+SUBSECTION=Dungeon Tiles
+DESCRIPTION=Destard (S)
+
+[ITEMDEF 099e5]
+DUPELIST=099e4
+
+[ITEMDEF 099e6]
+DUPELIST=099e4
+
+[ITEMDEF 099e7]
+DUPELIST=099e4
+
+[ITEMDEF 099e8]
+// Destard Tile EAST
+DEFNAME=i_destard_tile_east
+NAME=Destard
+TYPE=t_normal
+WEIGHT=32.0
+DUPELIST=099e9,099ea,099eb
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+CATEGORY=Decoration - Dungeon and the dead
+SUBSECTION=Dungeon Tiles
+DESCRIPTION=Destard (E)
+
+[ITEMDEF 099e9]
+DUPELIST=099e8
+
+[ITEMDEF 099ea]
+DUPELIST=099e8
+
+[ITEMDEF 099eb]
+DUPELIST=099e8
+
+[ITEMDEF 099ec]
+// Hythloth Tile SOUTH
+DEFNAME=i_hythloth_tile_south
+NAME=Hythloth
+TYPE=t_normal
+WEIGHT=32.0
+DUPELIST=099ed,099ee,099ef
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+CATEGORY=Decoration - Dungeon and the dead
+SUBSECTION=Dungeon Tiles
+DESCRIPTION=Hythloth (S)
+
+[ITEMDEF 099ed]
+DUPELIST=099ec
+
+[ITEMDEF 099ee]
+DUPELIST=099ec
+
+[ITEMDEF 099ef]
+DUPELIST=099ec
+
+[ITEMDEF 099f0]
+// Hythloth Tile EAST
+DEFNAME=i_hythloth_tile_east
+NAME=Hythloth
+TYPE=t_normal
+WEIGHT=32.0
+DUPELIST=099f1,099f2,099f3
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+CATEGORY=Decoration - Dungeon and the dead
+SUBSECTION=Dungeon Tiles
+DESCRIPTION=Hythloth (E)
+
+[ITEMDEF 099f1]
+DUPELIST=099f0
+
+[ITEMDEF 099f2]
+DUPELIST=099f0
+
+[ITEMDEF 099f3]
+DUPELIST=099f0
+
+[ITEMDEF 099f4]
+// Pride Tile SOUTH
+DEFNAME=i_pride_tile_south
+NAME=Pride
+TYPE=t_normal
+WEIGHT=32.0
+DUPELIST=099f5,099f6,099f7
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+CATEGORY=Decoration - Dungeon and the dead
+SUBSECTION=Dungeon Tiles
+DESCRIPTION=Pride (S)
+
+[ITEMDEF 099f5]
+DUPELIST=099f4
+
+[ITEMDEF 099f6]
+DUPELIST=099f4
+
+[ITEMDEF 099f7]
+DUPELIST=099f4
+
+[ITEMDEF 099f8]
+// Pride Tile EAST
+DEFNAME=i_pride_tile_east
+NAME=Pride
+TYPE=t_normal
+WEIGHT=32.0
+DUPELIST=099f9,099fa,099fb
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+CATEGORY=Decoration - Dungeon and the dead
+SUBSECTION=Dungeon Tiles
+DESCRIPTION=Pride (E)
+
+[ITEMDEF 099f9]
+DUPELIST=099f8
+
+[ITEMDEF 099fa]
+DUPELIST=099f8
+
+[ITEMDEF 099fb]
+DUPELIST=099f8
+
+[ITEMDEF 099fc]
+// Shame Tile SOUTH
+DEFNAME=i_shame_tile_south
+NAME=Pride
+TYPE=t_normal
+WEIGHT=32.0
+DUPELIST=099fd,099fe,099ff
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+CATEGORY=Decoration - Dungeon and the dead
+SUBSECTION=Dungeon Tiles
+DESCRIPTION=Pride (S)
+
+[ITEMDEF 099fd]
+DUPELIST=099fc
+
+[ITEMDEF 099fe]
+DUPELIST=099fc
+
+[ITEMDEF 099ff]
+DUPELIST=099fc
+
+[ITEMDEF 09a00]
+// Shame Tile EAST
+DEFNAME=i_shame_tile_east
+NAME=Pride
+TYPE=t_normal
+WEIGHT=32.0
+DUPELIST=09a01,09a02,09a03
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+CATEGORY=Decoration - Dungeon and the dead
+SUBSECTION=Dungeon Tiles
+DESCRIPTION=Pride (E)
+
+[ITEMDEF 09a01]
+DUPELIST=09a00
+
+[ITEMDEF 09a02]
+DUPELIST=09a00
+
+[ITEMDEF 09a03]
+DUPELIST=09a00
+
+[ITEMDEF 09a04]
+// Wrong Tile SOUTH
+DEFNAME=i_wrong_tile_south
+NAME=Pride
+TYPE=t_normal
+WEIGHT=32.0
+DUPELIST=09a05,09a06,09a07
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+CATEGORY=Decoration - Dungeon and the dead
+SUBSECTION=Dungeon Tiles
+DESCRIPTION=Pride (S)
+
+[ITEMDEF 09a05]
+DUPELIST=09a04
+
+[ITEMDEF 09a06]
+DUPELIST=09a04
+
+[ITEMDEF 09a07]
+DUPELIST=09a04
+
+[ITEMDEF 09a08]
+// Wrong Tile EAST
+DEFNAME=i_wrong_tile_east
+NAME=Pride
+TYPE=t_normal
+WEIGHT=32.0
+DUPELIST=09a09,09a0a,09a0b
+RESOURCES=20 i_rock_marble,4 i_ingot_gold,6 i_rock_plain
+CATEGORY=Decoration - Dungeon and the dead
+SUBSECTION=Dungeon Tiles
+DESCRIPTION=Pride (E)
+
+[ITEMDEF 09a09]
+DUPELIST=09a08
+
+[ITEMDEF 09a0a]
+DUPELIST=09a08
+
+[ITEMDEF 09a0b]
+DUPELIST=09a08
+
+[EOF]

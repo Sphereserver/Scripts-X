@@ -2770,6 +2770,57 @@ DUPELIST=09e37
 //fermentation barrel
 DUPEITEM=09e36
 
+[ITEMDEF 0a421]
+DEFNAME=i_serpent_steak_raw
+NAME=raw serpent steak
+FLIP=1
+CATEGORY=Items by Professions
+SUBSECTION=Cook
+DESCRIPTION=Serpent Steak (raw)
+DUPELIST=0a423
+
+[ITEMDEF 0a422]
+DEFNAME=i_serpent_steak_grilled
+NAME=grilled serpent steak
+FLIP=1
+RESOURCES=1 i_serpent_steak_raw	
+SKILLMAKE=Cooking 45.0, t_cooking
+CATEGORY=Items by Professions
+SUBSECTION=Cook
+DESCRIPTION=Serpent Steak (grilled)
+DUPELIST=0a424
+
+[ITEMDEF 0a423]
+//raw serpent steak
+DUPEITEM=0a421
+
+[ITEMDEF 0a424]
+//grilled serpent steak
+DUPEITEM=0a422
+
+[ITEMDEF 0a425]
+NAME=raw dino ribs
+FLIP=1
+DUPELIST=0a427
+
+[ITEMDEF 0a426]
+DEFNAME=i_bbq_dino_ribs
+NAME=BBQ dino ribs
+FLIP=1
+//RESOURCES=
+SKILLMAKE=Cooking 45.0, t_cooking
+CATEGORY=Items by Professions
+SUBSECTION=Cook
+DESCRIPTION=BBQ Dino Ribs (cooked)
+DUPELIST=0a428
+
+[ITEMDEF 0a427]
+//raw dino ribs
+DUPEITEM=0a425
+
+[ITEMDEF 0a428]
+//bbq dino ribs
+DUPEITEM=0a426
 
 //////////////////
 // Custom Items //
@@ -3240,7 +3291,5 @@ ID=i_bowl_dough
 NAME=bowl of frosting
 ON=@Create
    COLOR=colors_yellow
-
-
 
 [EOF]

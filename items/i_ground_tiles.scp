@@ -6538,8 +6538,26 @@ DESCRIPTION=Black Tile 03d84 (empty)
 // hover over (hidden)
 TYPE=t_hoverover
 
-
 //FIXME: 55f0-5678 water tiles
 
+[ITEMDEF 05675]
+// splash (animation)
+DEFNAME=i_splash
+TYPE=t_water
+VALUE=2
+WEIGHT=0.1
+CATEGORY=Ground Tiles
+SUBSECTION=Water splash
+DESCRIPTION=@
+DUPELIST=05676,05677,05678
+
+[ITEMDEF 05676]
+DUPEITEM=05675
+
+[ITEMDEF 05677]
+DUPEITEM=05675
+
+[ITEMDEF 05678]
+DUPEITEM=05675
 
 [EOF]
