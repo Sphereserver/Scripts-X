@@ -2292,6 +2292,34 @@ DUPEITEM=02d28
 //elven machete
 DUPEITEM=02d29
 
+
+[ITEMDEF 0a767]
+DEFNAME=i_wand_5
+NAME=wand
+TYPE=t_weapon_mace_staff
+DAM=9,11
+SKILL=Macefighting
+SPEED=47
+//TAG.OVERRIDE.SPEED=27	// 27.5
+VALUE=59
+WEIGHT=4.1
+TWOHANDS=Y
+RESOURCES=2 i_log,2 i_wire_gold,1 i_gem_diamond
+SKILLMAKE=Carpentry 37.1,t_carpentry
+ReqStr=5
+TEVENTS=ei_equipitem
+DUPELIST=0a768
+//Expansion=RDS_TOL
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Wand 5
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0a768]
+// wand 5
+DUPEITEM=0a767
+
 ///////////////////////////////////////////////////////////////
 //////// BOLAS
 ///////////////////////////////////////////////////////////////

@@ -3233,6 +3233,136 @@ DUPEITEM=0a657
 // Wood Strike
 DUPEITEM=0a657
 
+[ITEMDEF 0a7e3]
+// Sparkle 4
+DEFNAME=i_fx_sparkle_4
+TYPE=t_spell
+CATEGORY=Animations
+SUBSECTION=Sparkles
+DESCRIPTION=Sparkle 4
+DUPELIST=0a7e4,0a7e5,0a7e6,0a7e7,0a7e8,0a7e9,0a7ea,0a7eb,0a7ec,0a7ed,0a7ee,0a7ef,0a7f0
+
+[ITEMDEF 0a7e4]
+// Sparkle 4
+DUPEITEM=0a7e3
+
+[ITEMDEF 0a7e5]
+// Sparkle 4
+DUPEITEM=0a7e3
+
+[ITEMDEF 0a7e6]
+// Sparkle 4
+DUPEITEM=0a7e3
+
+[ITEMDEF 0a7e7]
+// Sparkle 4
+DUPEITEM=0a7e3
+
+[ITEMDEF 0a7e8]
+// Sparkle 4
+DUPEITEM=0a7e3
+
+[ITEMDEF 0a7e9]
+// Sparkle 4
+DUPEITEM=0a7e3
+
+[ITEMDEF 0a7ea]
+// Sparkle 4
+DUPEITEM=0a7e3
+
+[ITEMDEF 0a7eb]
+// Sparkle 4
+DUPEITEM=0a7e3
+
+[ITEMDEF 0a7ec]
+// Sparkle 4
+DUPEITEM=0a7e3
+
+[ITEMDEF 0a7ed]
+// Sparkle 4
+DUPEITEM=0a7e3
+
+[ITEMDEF 0a7ee]
+// Sparkle 4
+DUPEITEM=0a7e3
+
+[ITEMDEF 0a7ef]
+// Sparkle 4
+DUPEITEM=0a7e3
+
+[ITEMDEF 0a7f0]
+// Sparkle 4
+DUPEITEM=0a7e3
+
+[ITEMDEF 0a7f1]
+// Sparkle 5
+DEFNAME=i_fx_sparkle_5
+TYPE=t_spell
+CATEGORY=Animations
+SUBSECTION=Sparkles
+DESCRIPTION=Sparkle 5
+DUPELIST=0a7f2,0a7f4,0a7f5,0a7f6,0a7f7,0a7f8,0a7f9,0a7fa,0a7fb,0a7fc,0a7fd,0a7fe,0a7ff,0a800
+
+[ITEMDEF 0a7f2]
+// Sparkle 5
+DUPEITEM=0a7f1
+
+[ITEMDEF 0a7f3]
+// Sparkle 5
+DUPEITEM=0a7f1
+
+[ITEMDEF 0a7f4]
+// Sparkle 5
+DUPEITEM=0a7f1
+
+[ITEMDEF 0a7f5]
+// Sparkle 5
+DUPEITEM=0a7f1
+
+[ITEMDEF 0a7f6]
+// Sparkle 5
+DUPEITEM=0a7f1
+
+[ITEMDEF 0a7f7]
+// Sparkle 5
+DUPEITEM=0a7f1
+
+[ITEMDEF 0a7f8]
+// Sparkle 5
+DUPEITEM=0a7f1
+
+[ITEMDEF 0a7f9]
+// Sparkle 5
+DUPEITEM=0a7f1
+
+[ITEMDEF 0a7fa]
+// Sparkle 5
+DUPEITEM=0a7f1
+
+[ITEMDEF 0a7fb]
+// Sparkle 5
+DUPEITEM=0a7f1
+
+[ITEMDEF 0a7fc]
+// Sparkle 5
+DUPEITEM=0a7f1
+
+[ITEMDEF 0a7fd]
+// Sparkle 5
+DUPEITEM=0a7f1
+
+[ITEMDEF 0a7fe]
+// Sparkle 5
+DUPEITEM=0a7f1
+
+[ITEMDEF 0a7ff]
+// Sparkle 5
+DUPEITEM=0a7f1
+
+[ITEMDEF 0a800]
+// Sparkle 5
+DUPEITEM=0a7f1
+
 [ITEMDEF 0a804]
 // Digging Strike F1
 DEFNAME=i_fx_digging_strike

@@ -2171,6 +2171,35 @@ DESCRIPTION=Fellowship Medallion
 [ITEMDEF 0a42a]
 //necklace (unused, seems to be duplicated from 0a429)
 
+///////////////////////
+// Krampus Encounter //
+///////////////////////
+
+[ITEMDEF 0a7c3]
+DEFNAME=i_staff_candycane
+NAME=Candycane Staff
+TYPE=t_weapon_mace_staff
+DAM=19,26
+FLIP=1
+SKILL=Macefighting
+SPEED=47
+//TAG.OVERRIDE.SPEED=27	// 27.5
+VALUE=14
+WEIGHT=4.0
+TWOHANDS=Y
+DUPELIST=0a7c4
+TEVENTS=ei_equipitem
+Expansion=RDS_TOL
+CATEGORY=Quests
+SUBSECTION=Krampus Encounter
+DESCRIPTION=Staff Candycane
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0a7c4]
+// Candycane Staff
+DUPEITEM=0a7c3
+
 
 ///////////////////////////
 // The Shattered Obelisk //

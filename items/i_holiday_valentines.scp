@@ -520,4 +520,56 @@ DESCRIPTION=Teddy Bear
 //teddy bear
 DUPEITEM=0a515
 
+[ITEMDEF 0a811]
+// The Royal Taste Tester Suit of Armor (partialhue)
+// Provides a “Friendship Rose” once per week
+DEFNAME=i_valentine_suit
+NAME=suit of armor
+FLIP=1
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Suit of Armor
+DUPELIST=0a812
+ON=@ClientTooltip
+	ADDCLILOC 1159851	// The Royal Taste Tester
+	IF (<TAG0.NextRose> > <SERV.TIME>)
+		local.t=<EVAL (<DTAG0.NEXTROSE>-<SERV.TIME>)/10>/60
+		ADDCLILOC <def.empty_cliloc>,Next gift in<def.br><FormatMinutes <dlocal.t>>
+	ENDIF
+ON=@DClick
+	IF (<TAG0.NextRose> > <SERV.TIME>)
+		local.t=<EVAL (<DTAG0.NEXTROSE>-<SERV.TIME>)/10>/60
+		SRC.SYSMESSAGE Next gift is in <FormatMinutes <dlocal.t>>.
+	ELSE
+		SERV.NEWITEM=i_friendship_rose
+		NEW.BOUNCE
+      COLOR=<NEW.COLOR>
+		EFFECT=2,i_fx_sparkle_4,10,12,0,<COLOR>
+		SOUND=575
+		local.msg=You collect a <NEW.NAME> from the <NAME>
+		SRC.MESSAGE @,,2 <def.empty_cliloc>,*You collect a <NEW.NAME> from the <NAME>*
+		local.t=60*60*24*7 	//1 week
+		TAG.NextRose=<EVAL <SERV.TIME>+(<dlocal.t>*10)>
+	ENDIF
+	RESENDTOOLTIP 1,0
+	return 1
+
+[ITEMDEF 0a812]
+// The Royal Taste Tester Suit of Armor (partialhue)
+DUPELIST=0a811
+
+[ITEMDEF i_friendship_rose]
+DEFNAME=i_friendship_rose
+ID=018d9
+NAME=friendship rose%s
+TYPE=t_normal
+DYE=1
+WEIGHT=0.1
+VALUE=2
+CATEGORY=Valentine's Day
+SUBSECTION=Decoration
+DESCRIPTION=Friendship Rose
+ON=@Create
+   COLOR={02 1 0481 1 048e 1 0496 1 04eb 1 0782 1 0a26 1 0aa9 1}
+
 [EOF]

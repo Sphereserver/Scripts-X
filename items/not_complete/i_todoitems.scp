@@ -8784,46 +8784,6 @@ TYPE=t_normal
 DEFNAME=i_gear_cargo_2
 TYPE=t_normal
 
-[ITEMDEF 0a747]
-// gargoyle_lamp
-DEFNAME=i_gargoyle_lamp
-TYPE=t_normal
-
-[ITEMDEF 0a748]
-// gargoyle_lamp
-DEFNAME=i_gargoyle_lamp_2
-TYPE=t_light_lit
-
-[ITEMDEF 0a749]
-// gargoyle_lamp
-DEFNAME=i_gargoyle_lamp_3
-TYPE=t_light_lit
-
-[ITEMDEF 0a74a]
-// gargoyle_lamp
-DEFNAME=i_gargoyle_lamp_4
-TYPE=t_light_lit
-
-[ITEMDEF 0a74b]
-// gargoyle_lamp
-DEFNAME=i_gargoyle_lamp_5
-TYPE=t_normal
-
-[ITEMDEF 0a74c]
-// gargoyle_lamp
-DEFNAME=i_gargoyle_lamp_6
-TYPE=t_light_lit
-
-[ITEMDEF 0a74d]
-// gargoyle_lamp
-DEFNAME=i_gargoyle_lamp_7
-TYPE=t_light_lit
-
-[ITEMDEF 0a74e]
-// gargoyle_lamp
-DEFNAME=i_gargoyle_lamp_8
-TYPE=t_light_lit
-
 [ITEMDEF 0a74f]
 // halloween_skulls
 DEFNAME=i_halloween_skulls
@@ -8942,26 +8902,6 @@ TYPE=t_normal
 [ITEMDEF 0a766]
 // dagger
 DEFNAME=i_dagger_3
-TYPE=t_normal
-
-[ITEMDEF 0a767]
-// wand
-DEFNAME=i_wand
-TYPE=t_normal
-
-[ITEMDEF 0a768]
-// wand
-DEFNAME=i_wand_5
-TYPE=t_normal
-
-[ITEMDEF 0a769]
-// Lantern_on
-DEFNAME=i_lantern_on
-TYPE=t_light_lit
-
-[ITEMDEF 0a76a]
-// Lantern_off
-DEFNAME=i_lantern_off
 TYPE=t_normal
 
 [ITEMDEF 0a772]
@@ -9294,16 +9234,6 @@ TYPE=t_light_lit
 DEFNAME=i_windows_16
 TYPE=t_light_lit
 
-[ITEMDEF 0a7c3]
-// candycane_staff
-DEFNAME=i_candycane_staff
-TYPE=t_normal
-
-[ITEMDEF 0a7c4]
-// candycane_staff
-DEFNAME=i_candycane_staff_2
-TYPE=t_normal
-
 [ITEMDEF 0a7c5]
 // Holiday_Candle_Arra
 DEFNAME=i_holiday_candle_arra
@@ -9382,171 +9312,6 @@ TYPE=t_normal
 [ITEMDEF 0a7d8]
 // Demon_Head
 DEFNAME=i_demon_head_8
-TYPE=t_normal
-
-[ITEMDEF 0a7e2]
-// Demon_Belt
-DEFNAME=i_demon_belt
-TYPE=t_normal
-
-[ITEMDEF 0a7e3]
-// sparkle
-DEFNAME=i_sparkle
-TYPE=t_normal
-
-[ITEMDEF 0a7e4]
-// sparkle
-DEFNAME=i_sparkle_2
-TYPE=t_normal
-
-[ITEMDEF 0a7e5]
-// sparkle
-DEFNAME=i_sparkle_3
-TYPE=t_normal
-
-[ITEMDEF 0a7e6]
-// sparkle
-DEFNAME=i_sparkle_4
-TYPE=t_normal
-
-[ITEMDEF 0a7e7]
-// sparkle
-DEFNAME=i_sparkle_5
-TYPE=t_normal
-
-[ITEMDEF 0a7e8]
-// sparkle
-DEFNAME=i_sparkle_6
-TYPE=t_normal
-
-[ITEMDEF 0a7e9]
-// sparkle
-DEFNAME=i_sparkle_7
-TYPE=t_normal
-
-[ITEMDEF 0a7ea]
-// sparkle
-DEFNAME=i_sparkle_8
-TYPE=t_normal
-
-[ITEMDEF 0a7eb]
-// sparkle
-DEFNAME=i_sparkle_9
-TYPE=t_normal
-
-[ITEMDEF 0a7ec]
-// sparkle
-DEFNAME=i_sparkle_10
-TYPE=t_normal
-
-[ITEMDEF 0a7ed]
-// sparkle
-DEFNAME=i_sparkle_11
-TYPE=t_normal
-
-[ITEMDEF 0a7ee]
-// sparkle
-DEFNAME=i_sparkle_12
-TYPE=t_normal
-
-[ITEMDEF 0a7ef]
-// sparkle
-DEFNAME=i_sparkle_13
-TYPE=t_normal
-
-[ITEMDEF 0a7f0]
-// sparkle
-DEFNAME=i_sparkle_14
-TYPE=t_normal
-
-[ITEMDEF 0a7f1]
-// sparkle
-DEFNAME=i_sparkle_15
-TYPE=t_normal
-
-[ITEMDEF 0a7f2]
-// sparkle
-DEFNAME=i_sparkle_16
-TYPE=t_normal
-
-[ITEMDEF 0a7f3]
-// sparkle
-DEFNAME=i_sparkle_17
-TYPE=t_normal
-
-[ITEMDEF 0a7f4]
-// sparkle
-DEFNAME=i_sparkle_18
-TYPE=t_normal
-
-[ITEMDEF 0a7f5]
-// sparkle
-DEFNAME=i_sparkle_19
-TYPE=t_normal
-
-[ITEMDEF 0a7f6]
-// sparkle
-DEFNAME=i_sparkle_20
-TYPE=t_normal
-
-[ITEMDEF 0a7f7]
-// sparkle
-DEFNAME=i_sparkle_21
-TYPE=t_normal
-
-[ITEMDEF 0a7f8]
-// sparkle
-DEFNAME=i_sparkle_22
-TYPE=t_normal
-
-[ITEMDEF 0a7f9]
-// sparkle
-DEFNAME=i_sparkle_23
-TYPE=t_normal
-
-[ITEMDEF 0a7fa]
-// sparkle
-DEFNAME=i_sparkle_24
-TYPE=t_normal
-
-[ITEMDEF 0a7fb]
-// sparkle
-DEFNAME=i_sparkle_25
-TYPE=t_normal
-
-[ITEMDEF 0a7fc]
-// sparkle
-DEFNAME=i_sparkle_26
-TYPE=t_normal
-
-[ITEMDEF 0a7fd]
-// sparkle
-DEFNAME=i_sparkle_27
-TYPE=t_normal
-
-[ITEMDEF 0a7fe]
-// sparkle
-DEFNAME=i_sparkle_28
-TYPE=t_normal
-
-[ITEMDEF 0a7ff]
-// sparkle
-DEFNAME=i_sparkle_29
-TYPE=t_normal
-
-[ITEMDEF 0a800]
-// sparkle
-DEFNAME=i_sparkle_30
-TYPE=t_normal
-
-[ITEMDEF 0a811]
-// Valentine_Suit_of_A
-DEFNAME=i_valentine_suit_of_a
-TYPE=t_normal
-
-[ITEMDEF 0a812]
-// Valentine_Suit_of_A
-DEFNAME=i_valentine_suit_of_a_2
 TYPE=t_normal
 
 [ITEMDEF 0a853]
@@ -17457,9 +17222,5 @@ TYPE=t_normal
 // Gold Mask East
 DEFNAME=i_gold_mask_east
 TYPE=t_normal
-
-[EOF]
-
-
 
 [EOF]

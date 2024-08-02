@@ -1099,6 +1099,94 @@ ON=@Create
    MOREZ=2
 
 
+[ITEMDEF 0a747]
+// Gargoyle Lamp South (unlit)
+DEFNAME=i_gargoyle_lamp_s
+NAME=gargoyle lamp
+TYPE=t_light_out
+TDATA3=i_gargoyle_lamp_s_lit
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Miscellaneous
+DESCRIPTION=Gargoyle Lamp (S)(unlit)
+ON=@Create
+    morez=1
+
+[ITEMDEF 0a748]
+// Gargoyle Lamp South (lit)
+DEFNAME=i_gargoyle_lamp_s_lit
+NAME=gargoyle lamp
+TYPE=t_light_lit
+TDATA3=i_gargoyle_lamp_s
+DUPELIST=0a749,0a74a
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Miscellaneous
+DESCRIPTION=Gargoyle Lamp (S)(lit)
+ON=@Create
+    morez=1
+
+[ITEMDEF 0a749]
+// Gargoyle Lamp South (lit)
+DUPEITEM=0a748
+
+[ITEMDEF 0a74a]
+// Gargoyle Lamp South (lit)
+DUPEITEM=0a748
+
+[ITEMDEF 0a74b]
+// Gargoyle Lamp East (unlit)
+DEFNAME=i_gargoyle_lamp_e
+NAME=gargoyle lamp
+TYPE=t_light_out
+TDATA3=i_gargoyle_lamp_e_lit
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Miscellaneous
+DESCRIPTION=Gargoyle Lamp (E)(unlit)
+ON=@Create
+    morez=1
+
+[ITEMDEF 0a74c]
+// Gargoyle Lamp East (lit)
+DEFNAME=i_gargoyle_lamp_e_lit
+NAME=gargoyle lamp
+TYPE=t_light_lit
+TDATA3=i_gargoyle_lamp_e
+DUPELIST=0a74d,0a74e
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Miscellaneous
+DESCRIPTION=Gargoyle Lamp (E)(lit)
+ON=@Create
+    morez=1
+
+[ITEMDEF 0a74d]
+// Gargoyle Lamp East (lit)
+DUPEITEM=0a74c
+
+[ITEMDEF 0a74e]
+// Gargoyle Lamp East (lit)
+DUPEITEM=0a74c
+
+[ITEMDEF 0a769]
+// Lantern 2 (lit)(wearable)
+DEFNAME=i_lantern_2_lit
+NAME=Fancy Lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_2
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Lanterns
+DESCRIPTION=Lantern Fancy (lit)
+
+[ITEMDEF 0a76a]
+// Lantern 2 (Unlit)
+DEFNAME=i_lantern_2
+NAME=Fancy Lantern
+TYPE=t_light_out
+TDATA3=i_lantern_2_lit
+RESOURCES=10 i_ingot_bronze
+SKILLMAKE=Tinkering 50.0,t_tinker_tools
+CATEGORY=Decoration - Lightsources
+SUBSECTION=Lanterns
+DESCRIPTION=Lantern Fancy (Unlit)
+
 [ITEMDEF 0a85e]
 // Candle 2 (Unlit)
 DEFNAME=i_candle_2
