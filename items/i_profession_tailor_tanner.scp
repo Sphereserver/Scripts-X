@@ -621,94 +621,62 @@ DUPEITEM=02dd9
 //elven spinning wheel
 DUPEITEM=02dd9
 
+
 [ITEMDEF 0a81d]
 // autoloom south (on)
-DEFNAME=i_autoloom_s1
-NAME=Autoloom
-TYPE=t_loom
-VALUE=225
-WEIGHT=53.0
-DUPELIST=0a81e,0a81f,0a820,0a821,0a822,0a823,0a824
-CATEGORY=Items by Professions
-SUBSECTION=Weaver
-DESCRIPTION=AutoLoom South (On)
+DUPELIST=0a825
 
 [ITEMDEF 0a81e]
-// autoloom south
-DUPEITEM=0a81d
+// autoloom south (on)
 
 [ITEMDEF 0a81f]
-// autoloom south
-DUPEITEM=0a81d
+// autoloom south (on)
 
 [ITEMDEF 0a820]
-// autoloom south
-DUPEITEM=0a81d
+// autoloom south (on)
 
 [ITEMDEF 0a821]
-// autoloom south
-DUPEITEM=0a81d
+// autoloom south (on)
 
 [ITEMDEF 0a822]
-// autoloom south
-DUPEITEM=0a81d
+// autoloom south (on)
 
 [ITEMDEF 0a823]
-// autoloom south
-DUPEITEM=0a81d
+// autoloom south (on)
 
 [ITEMDEF 0a824]
-// autoloom south
-DUPEITEM=0a81d
+// autoloom south (on)
 
 [ITEMDEF 0a825]
 // autoloom east (On)
-DEFNAME=i_autoloom_e1
-NAME=Autoloom
-TYPE=t_loom
-FLIP=1
-VALUE=225
-WEIGHT=53.0
-RESOURCES=38 i_board,2 i_wire_iron,10 i_nails,2 i_string,4 i_hinge
-SKILLMAKE=Carpentry 75.1,Tinkering 83.7,t_tinker_tools,t_carpentry
-CATEGORY=Items by Professions
-SUBSECTION=Weaver
-DESCRIPTION=AutoLoom East (On)
-DUPELIST=0a826,0a827,0a828,0a829,0a82a,0a82b,0a82c
+DUPEITEM=0a81d
 
 [ITEMDEF 0a826]
-// autoloom east
-DUPEITEM=0a825
+// autoloom east (On)
 
 [ITEMDEF 0a827]
-// autoloom east
-DUPEITEM=0a825
+// autoloom east (On)
 
 [ITEMDEF 0a828]
-// autoloom east
-DUPEITEM=0a825
+// autoloom east (On)
 
 [ITEMDEF 0a829]
-// autoloom east
-DUPEITEM=0a825
+// autoloom east (On)
 
 [ITEMDEF 0a82a]
-// autoloom east
-DUPEITEM=0a825
+// autoloom east (On)
 
 [ITEMDEF 0a82b]
-// autoloom east
-DUPEITEM=0a825
+// autoloom east (On)
 
 [ITEMDEF 0a82c]
-// autoloom east
-DUPEITEM=0a825
+// autoloom east (On)
 
 [ITEMDEF 0a82d]
 // autoloom south 2(off)(back part)
 DEFNAME=i_autoloom_2
 NAME=Autoloom
-TYPE=t_loom
+TYPE=t_normal
 FLIP=1
 VALUE=225
 WEIGHT=53.0
@@ -719,16 +687,63 @@ DESCRIPTION=AutoLoom 2(Off)
 
 [ITEMDEF 0a82e]
 // autoloom south (off)
-DEFNAME=i_autoloom_s
+// Year 5 Veteran Reward
+DEFNAME=i_autoloom
 NAME=Autoloom
-TYPE=t_loom
+TYPE=t_normal
 FLIP=1
+DYE=1
 VALUE=225
 WEIGHT=53.0
-DUPELIST=0a81d
+DUPELIST=0a830
 CATEGORY=Items by Professions
 SUBSECTION=Weaver
-DESCRIPTION=AutoLoom South (Off)
+DESCRIPTION=AutoLoom (Off)
+ON=@Dclick
+	if !<canseelos>
+		src.sysmessage @,,1 You can't reach the autoloom.
+	elif <type>!=t_normal
+		src.sysmessage @,,1 The autoloom is currently in use.
+	else
+		src.message @,,1 Select material to process
+		target
+	endif
+	return 1
+ON=@Targon_Item
+	if !<canseelos>
+		src.sysmessage @,,1 You can't reach the autoloom.
+	elif <argo.topobj>!=<src>
+		src.sysmessage @,,1 The material must be in your backpack.
+	elif <type>!=t_normal
+		src.sysmessage @,,1 The autoloom is currently in use.
+	elif !(<argo.baseid>==i_cotton || <argo.baseid>==i_wool || <argo.baseid>==i_flax_bundle)
+		src.sysmessage @,,2 1159852 // The autoloom only works on cotton, wool, and flax.
+	elif <argo.amount> < 5
+		src.sysmessage @,,2 1159853 // The autoloom requires at least 5 resources to begin processing. Target a pile of at least 5 cotton, wool, or flax.
+	else
+		if <dispid>==i_autoloom
+			dispid=0a81d
+			local.d=0a82e
+		else
+			dispid=0a825
+			local.d=0a830
+		endif
+		sound=snd_z_end_scissors
+		type=t_anim_active
+		update
+		src.consume=5 <argo.baseid>
+		local.amt=<qval <argo.baseid>==i_wool?3:5>
+		src.timerf 3,f_autoloom_use <uid>,<hlocal.d>,<dlocal.amt>
+	endif
+	return 1
+
+[FUNCTION f_autoloom_use]
+ref1=<argv[0]>
+ref1.type=t_normal
+ref1.dispid=<argv[1]>
+ref1.update
+serv.newitem=i_cloth_bolt,<argv[2]>
+new.bounce <uid>
 
 [ITEMDEF 0a82f]
 // autoloom east 2(off)(back part)
@@ -736,16 +751,7 @@ DUPEITEM=0a82d
 
 [ITEMDEF 0a830]
 // autoloom east (off)
-DEFNAME=i_autoloom_e
-NAME=Autoloom
-TYPE=t_loom
-FLIP=1
-VALUE=225
-WEIGHT=53.0
-DUPELIST=0a825
-CATEGORY=Items by Professions
-SUBSECTION=Weaver
-DESCRIPTION=AutoLoom (Off)
+DUPEITEM=0a82e
 
 //////////////////
 // Custom Items //
