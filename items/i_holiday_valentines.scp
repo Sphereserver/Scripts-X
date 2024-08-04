@@ -546,7 +546,6 @@ ON=@DClick
       COLOR=<NEW.COLOR>
 		EFFECT=2,i_fx_sparkle_4,10,12,0,<COLOR>
 		SOUND=575
-		local.msg=You collect a <NEW.NAME> from the <NAME>
 		SRC.MESSAGE @,,2 <def.empty_cliloc>,*You collect a <NEW.NAME> from the <NAME>*
 		local.t=60*60*24*7 	//1 week
 		TAG.NextRose=<EVAL <SERV.TIME>+(<dlocal.t>*10)>
@@ -556,7 +555,7 @@ ON=@DClick
 
 [ITEMDEF 0a812]
 // The Royal Taste Tester Suit of Armor (partialhue)
-DUPELIST=0a811
+DUPEITEM=0a811
 
 [ITEMDEF i_friendship_rose]
 DEFNAME=i_friendship_rose
