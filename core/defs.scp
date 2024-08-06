@@ -93,6 +93,8 @@ spellflag_good             00000200   // the spell is a good spell. You intend t
 spellflag_resist           00000400   // allowed to resist this.
 spellflag_targ_noself      00000800   // cannot target spell to self
 spellflag_freezeoncast     00001000   // when cast this spell gets frozen, opposite to SPELLFLAG_NOFREEZEONCAST (MAGICF_FREEZEONCAST must be disabled.)
+spellflag_field_randomdecay 00002000 // make the field items have random timers.
+spellflag_no_elementalengine 00004000
 spellflag_disabled         00008000   // spell is disabled
 spellflag_scripted         00010000   // spell is scripted
 spellflag_playeronly       00020000   // spell is not casted by npc ai
