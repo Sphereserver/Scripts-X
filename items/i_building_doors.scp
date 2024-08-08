@@ -1478,303 +1478,509 @@ DUPEITEM=01fed
 //Barred Metal Door (opened)
 DUPEITEM=01fee
 
+
 [ITEMDEF 0241f]
+//Dark Wooden Door (opened)
 DEFNAME=i_door_wooden_dark_o
+NAME=wooden door
 TYPE=t_door_open
 CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Dark Wooden Door
-DESCRIPTION=@ (opened)
-DUPELIST=02421,02423
+DESCRIPTION=Dark Wooden Door (opened)
+DUPELIST=02421
 
 [ITEMDEF 02420]
-DEFNAME=i_door_wooden_dark
+//Dark Wooden Door 1(south)(closed)
+DEFNAME=i_door_wooden_dark_1
+NAME=wooden door
 TYPE=t_door
+TDATA2=0241f
+TDATA3=-1
+TDATA4=1
 CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Dark Wooden Door
-DESCRIPTION=@ (closed)
-DUPELIST=02422,02424
+DESCRIPTION=Dark Wooden Door 1(S)(closed)
 
 [ITEMDEF 02421]
 //Dark Wooden Door (opened)
 DUPEITEM=0241f
 
 [ITEMDEF 02422]
-//Dark Wooden Door (closed)
-DUPEITEM=02420
+//Dark Wooden Door 2(east)(closed)
+DEFNAME=i_door_wooden_dark_2
+NAME=wooden door
+TYPE=t_door
+TDATA2=02421
+TDATA3=1
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Dark Wooden Door
+DESCRIPTION=Dark Wooden Door 2(E)(closed)
 
 [ITEMDEF 02423]
-//Dark Wooden Door (opened)
-DUPEITEM=0241f
+//Dark Wooden Sliding Door 1(south)(closed)
+DEFNAME=i_door_sliding_wooden_1
+NAME=wooden door
+TYPE=t_door
+TDATA2=02423
+TDATA3=1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Doors
+DESCRIPTION=Dark Wooden 1(S)(closed)
 
 [ITEMDEF 02424]
-//Dark Wooden Door (closed)
-DUPEITEM=02420
+//Dark Wooden Sliding Door 2(east)(closed)
+DEFNAME=i_door_sliding_wooden_2
+NAME=wooden door
+TYPE=t_door
+TDATA2=02424
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Doors
+DESCRIPTION=Dark Wooden 2(E)(closed)
+
 
 [ITEMDEF 026f4]
+//Sliding Door Wide 1(south)(closed)
 //Note: One of the two tiles this door appears to block is not actually blocked
-DEFNAME=i_door_sliding_wide
+DEFNAME=i_door_sliding_wide_1s
+NAME=sliding door
 TYPE=t_door
+TDATA2=026f4
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
-SUBSECTION=Sliding Door 1 (double)
-DESCRIPTION=@ (closed)
-DUPELIST=02990,0299e
+SUBSECTION=Sliding Doors
+DESCRIPTION=Wide 1(S)(closed)
 
 [ITEMDEF 026f6]
-//Sliding Door 1 (closed)
-DUPEITEM=026f4
+//Sliding Door Wide 1(east)(closed)
+DEFNAME=i_door_sliding_wide_1e
+NAME=sliding door
+TYPE=t_door
+TDATA2=026f6
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Doors
+DESCRIPTION=Wide 1(E)(closed)
 
 [ITEMDEF 02990]
+//Sliding Door Wide 2(south)(closed)
 //Note: One of the two tiles this door appears to block is not actually blocked
-DEFNAME=i_door_sliding_2_wide
+DEFNAME=i_door_sliding_wide_2s
+NAME=sliding door
 TYPE=t_door
+TDATA2=02990
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
-SUBSECTION=Sliding Door 2 (double)
-DESCRIPTION=@ (closed)
-DUPELIST=02991
+SUBSECTION=Sliding Doors
+DESCRIPTION=Wide 2(S)(closed)
 
 [ITEMDEF 02991]
-//Sliding Door 2 (closed)
-DUPEITEM=02990
+//Sliding Door Wide 2(east)(closed)
+DEFNAME=i_door_sliding_wide_2e
+NAME=sliding door
+TYPE=t_door
+TDATA2=02991
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Doors
+DESCRIPTION=Wide 2(E)(closed)
 
 [ITEMDEF 0299e]
+//Sliding Door Wide 3(south)(closed)
 //Note: One of the two tiles this door appears to block is not actually blocked
-DEFNAME=i_door_sliding_3_wide
+DEFNAME=i_door_sliding_wide_3s
+NAME=sliding door
 TYPE=t_door
+TDATA2=0299e
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
-SUBSECTION=Sliding Door 3 (double)
-DESCRIPTION=@ (closed)
-DUPELIST=0299f
+SUBSECTION=Sliding Doors
+DESCRIPTION=Wide 3(S)(closed)
 
 [ITEMDEF 0299f]
-//Sliding Door 3 (closed)
-DUPEITEM=0299e
+//Sliding Door Wide 3(east)(closed)
+DEFNAME=i_door_sliding_wide_3e
+NAME=sliding door
+TYPE=t_door
+TDATA2=0299f
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Doors
+DESCRIPTION=Wide 3(E)(closed)
+
 
 [ITEMDEF 02a05]
-DEFNAME=i_door_sliding
+//Sliding Door 1(S1)(closed)
+DEFNAME=i_door_sliding_s1
+NAME=sliding door
 TYPE=t_door
+TDATA2=02a06
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
-SUBSECTION=Sliding Door 1
-DESCRIPTION=@ (closed)
-DUPELIST=02a07,02a09,02a0b
+SUBSECTION=Sliding Doors
+DESCRIPTION=Sliding Door 1(S1)(closed)
 
 [ITEMDEF 02a06]
+//Sliding Door 1(opened)
 DEFNAME=i_door_sliding_o
+NAME=sliding door
 TYPE=t_door_open
 CATEGORY=Buildings - Doors
-SUBSECTION=Sliding Door 1
-DESCRIPTION=@ (opened)
+SUBSECTION=Sliding Doors
+DESCRIPTION=Sliding Door 1(opened)
 DUPELIST=02a08,02a0a,02a0c
 
 [ITEMDEF 02a07]
-//Sliding Door 1 (closed)
-DUPEITEM=02a05
+//Sliding Door 1(S2)(closed)
+DEFNAME=i_door_sliding_s2
+NAME=sliding door
+TYPE=t_door
+TDATA2=02a08
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Doors
+DESCRIPTION=Sliding Door 1(S2)(closed)
 
 [ITEMDEF 02a08]
-//Sliding Door 1 (opened)
+//Sliding Door 1(opened)
 DUPEITEM=02a06
 
 [ITEMDEF 02a09]
-//Sliding Door 1 (closed)
-DUPEITEM=02a05
+//Sliding Door 1(E1)(closed)
+DEFNAME=i_door_sliding_e1
+NAME=sliding door
+TYPE=t_door
+TDATA2=02a0a
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Doors
+DESCRIPTION=Sliding Door 1(E1)(closed)
 
 [ITEMDEF 02a0a]
-//Sliding Door 1 (opened)
+//Sliding Door 1(E1)(opened)
 DUPEITEM=02a06
 
 [ITEMDEF 02a0b]
-//Sliding Door 1 (closed)
-DUPEITEM=02a05
+//Sliding Door 1(E2)(closed)
+DEFNAME=i_door_sliding_e2
+NAME=sliding door
+TYPE=t_door
+TDATA2=02a0c
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Doors
+DESCRIPTION=Sliding Door 1(E2)(closed)
 
 [ITEMDEF 02a0c]
-//Sliding Door 1 (opened)
+//Sliding Door 1(E2)(opened)
 DUPEITEM=02a06
 
+
 [ITEMDEF 02a0d]
-DEFNAME=i_door_sliding_2
+//Sliding Door 2(S1)(closed)
+DEFNAME=i_door_sliding2_s1
+NAME=sliding door
 TYPE=t_door
+TDATA2=02a0e
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
-SUBSECTION=Sliding Door 2
-DESCRIPTION=@ (closed)
-DUPELIST=02a0f,02a11,02a13
+SUBSECTION=Sliding Doors
+DESCRIPTION=Sliding Door 2(S1)(closed)
 
 [ITEMDEF 02a0e]
-DEFNAME=i_door_sliding_2_o
+//Sliding Door 2(opened)
+DEFNAME=i_door_sliding2_o
+NAME=sliding door
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
-SUBSECTION=Sliding Door 2
-DESCRIPTION=@ (opened)
+SUBSECTION=Sliding Doors
+DESCRIPTION=Sliding Door 2(opened)
 DUPELIST=02a10,02a12,02a14
 
 [ITEMDEF 02a0f]
-//Sliding Door 2 (closed)
-DUPEITEM=02a0d
+//Sliding Door 2(S2)(closed)
+DEFNAME=i_door_sliding2_s2
+NAME=sliding door
+TYPE=t_door
+TDATA2=02a10
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Doors
+DESCRIPTION=Sliding Door 2(S2)(closed)
 
 [ITEMDEF 02a10]
-//Sliding Door 2 (opened)
+//Sliding Door 2(opened)
 DUPEITEM=02a0e
 
 [ITEMDEF 02a11]
-//Sliding Door 2 (closed)
-DUPEITEM=02a0d
+//Sliding Door 2(E1)(closed)
+DEFNAME=i_door_sliding2_e1
+NAME=sliding door
+TYPE=t_door
+TDATA2=02a12
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Doors
+DESCRIPTION=Sliding Door 2(E1)(closed)
 
 [ITEMDEF 02a12]
-//Sliding Door 2 (opened)
+//Sliding Door 2(opened)
 DUPEITEM=02a0e
 
 [ITEMDEF 02a13]
-//Sliding Door 2 (closed)
-DUPEITEM=02a0d
+//Sliding Door 2(E2)(closed)
+DEFNAME=i_door_sliding2_e2
+NAME=sliding door
+TYPE=t_door
+TDATA2=02a14
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Doors
+DESCRIPTION=Sliding Door 2(E2)(closed)
 
 [ITEMDEF 02a14]
-//Sliding Door 2 (opened)
+//Sliding Door 2(opened)
 DUPEITEM=02a0e
 
+
 [ITEMDEF 02a15]
-DEFNAME=i_door_sliding_3
+//Sliding Door 3(S1)(closed)
+DEFNAME=i_door_sliding3_s1
+NAME=sliding door
 TYPE=t_door
+TDATA2=02a16
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
-SUBSECTION=Sliding Door 3
-DESCRIPTION=@ (closed)
-DUPELIST=02a17,02a19,02a1b
+SUBSECTION=Sliding Doors
+DESCRIPTION=Sliding Door 3(S1)(closed)
 
 [ITEMDEF 02a16]
-DEFNAME=i_door_sliding_3_o
+//Sliding Door 3(opened)
+DEFNAME=i_door_sliding3_o
+NAME=sliding door
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
-SUBSECTION=Sliding Door 3
-DESCRIPTION=@ (opened)
+SUBSECTION=Sliding Doors
+DESCRIPTION=Sliding Door 3(opened)
 DUPELIST=02a18,02a1a,02a1c
 
 [ITEMDEF 02a17]
-//Sliding Door 3 (closed)
-DUPEITEM=02a15
+//Sliding Door 3(S2)(closed)
+DEFNAME=i_door_sliding3_s2
+NAME=sliding door
+TYPE=t_door
+TDATA2=02a18
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Doors
+DESCRIPTION=Sliding Door 3(S2)(closed)
 
 [ITEMDEF 02a18]
 //Sliding Door 3 (opened)
 DUPEITEM=02a16
 
 [ITEMDEF 02a19]
-//Sliding Door 3 (closed)
-DUPEITEM=02a15
+//Sliding Door 3(E1)(closed)
+DEFNAME=i_door_sliding3_e1
+NAME=sliding door
+TYPE=t_door
+TDATA2=02a1a
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Doors
+DESCRIPTION=Sliding Door 3(E1)(closed)
 
 [ITEMDEF 02a1a]
 //Sliding Door 3 (opened)
 DUPEITEM=02a16
 
 [ITEMDEF 02a1b]
-//Sliding Door 3 (closed)
-DUPEITEM=02a15
+//Sliding Door 3(E2)(closed)
+DEFNAME=i_door_sliding3_e2
+NAME=sliding door
+TYPE=t_door
+TDATA2=02a1c
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Sliding Doors
+DESCRIPTION=Sliding Door 3(E2)(closed)
 
 [ITEMDEF 02a1c]
 //Sliding Door 3 (opened)
 DUPEITEM=02a16
 
+
 [ITEMDEF 02d46]
-DEFNAME=i_door_elven_bark
+DEFNAME=i_door_elven_bark_1
+NAME=elven bark door
 TYPE=t_door
+TDATA2=02d47
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Elven Bark Door
 DESCRIPTION=@ (closed)
-DUPELIST=02d48,031ac,031ae
 
 [ITEMDEF 02d47]
 DEFNAME=i_door_elven_bark_o
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Elven Bark Door
 DESCRIPTION=@ (opened)
 DUPELIST=02d49,031ad,031af
 
 [ITEMDEF 02d48]
-//Elven Bark Door (closed)
-DUPEITEM=02d46
+//Elven Bark Door 2(closed)
+DEFNAME=i_door_elven_bark_2
+NAME=elven bark door
+TYPE=t_door
+TDATA2=02d49
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Elven Bark Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 02d49]
 //Elven Bark Door (opened)
 DUPEITEM=02d47
 
 [ITEMDEF 02d63]
-DEFNAME=i_door_elven_simple
+DEFNAME=i_door_elven_simple_1
+NAME=elven simple door
 TYPE=t_door
+TDATA2=02d64
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Elven Simple Door
 DESCRIPTION=@ (closed)
-DUPELIST=02d65
 
 [ITEMDEF 02d64]
 DEFNAME=i_door_elven_simple_o
+NAME=elven simple door
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Elven Simple Door
 DESCRIPTION=@ (opened)
-DUPELIST=02d66
+DUPELIST=02d66,031a1,031a3
 
 [ITEMDEF 02d65]
-//Elven Simple Door (closed)
-DUPEITEM=02d63
+DEFNAME=i_door_elven_simple_3
+NAME=elven simple door
+TYPE=t_door
+TDATA2=02d66
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Elven Simple Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 02d66]
 //Elven Simple Door (opened)
 DUPEITEM=02d64
 
+
 [ITEMDEF 02d67]
-DEFNAME=i_door_elven_ornate
+//Elven Ornate Door 1(closed)
+DEFNAME=i_door_elven_ornate_1
+NAME=elven ornate door
 TYPE=t_door
+TDATA2=02d68
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Elven Ornate Door
 DESCRIPTION=@ (closed)
-DUPELIST=02d69,031a4,031a6
+// DUPELIST=02d69,031a4,031a6
 
 [ITEMDEF 02d68]
 DEFNAME=i_door_elven_ornate_o
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Elven Ornate Door
 DESCRIPTION=@ (opened)
 DUPELIST=02d6a,031a5,031a7
 
 [ITEMDEF 02d69]
-//Elven Ornate Door (closed)
-DUPEITEM=02d67
+//Elven Ornate Door 3(closed)
+DEFNAME=i_door_elven_ornate_3
+NAME=elven ornate door
+TYPE=t_door
+TDATA2=02d6a
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Elven Ornate Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 02d6a]
 //Elven Ornate Door (opened)
 DUPEITEM=02d68
 
 [ITEMDEF 02d6b]
-DEFNAME=i_door_elven_plain
+//Elven Plain Door 1(closed)
+DEFNAME=i_door_elven_plain_1
+NAME=elven plain door
 TYPE=t_door
+TDATA2=02d6c
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Elven Plain Door
 DESCRIPTION=@ (closed)
-DUPELIST=02d6d,031a8,031aa
 
 [ITEMDEF 02d6c]
+//Elven Plain Door (opened)
 DEFNAME=i_door_elven_plain_o
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Elven Plain Door
 DESCRIPTION=@ (opened)
 DUPELIST=02d6e,031a9,031ab
 
 [ITEMDEF 02d6d]
-//Elven Plain Door (closed)
-DUPEITEM=02d6b
+//Elven Plain Door 3(closed)
+DEFNAME=i_door_elven_plain_3
+NAME=elven plain door
+TYPE=t_door
+TDATA2=02d6e
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Elven Plain Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 02d6e]
 //Elven Plain Door (opened)
 DUPEITEM=02d6c
 
+
 [ITEMDEF 02fe2]
-DEFNAME=i_door_moon
+//Moon Door 1(closed)
+DEFNAME=i_door_moon_1
 NAME=moon door
 TYPE=t_door
+TDATA2=02fe3
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Moon Door
 DESCRIPTION=@ (closed)
-DUPELIST=02fe4,0319c,0319e
+// DUPELIST=02fe4,0319c,0319e
 
 [ITEMDEF 02fe3]
 DEFNAME=i_door_moon_o
@@ -1786,103 +1992,203 @@ DESCRIPTION=@ (opened)
 DUPELIST=02fe5,0319d,0319f
 
 [ITEMDEF 02fe4]
-//Moon Door (closed)
-DUPEITEM=02fe2
+//Moon Door 3(closed)
+DEFNAME=i_door_moon_3
+NAME=moon door
+TYPE=t_door
+TDATA2=02fe5
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Moon Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 02fe5]
 //Moon Door (opened)
 DUPEITEM=02fe3
 
 [ITEMDEF 0319c]
-//Moon Door (closed)
-DUPEITEM=02fe2
+//Moon Door 4(closed)
+DEFNAME=i_door_moon_4
+NAME=moon door
+TYPE=t_door
+TDATA2=0319d
+TDATA3=1
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Moon Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 0319d]
 //Moon Door (opened)
 DUPEITEM=02fe3
 
 [ITEMDEF 0319e]
-//Moon Door (closed)
-DUPEITEM=02fe2
+//Moon Door 2(closed)
+DEFNAME=i_door_moon_2
+NAME=moon door
+TYPE=t_door
+TDATA2=0319f
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Moon Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 0319f]
 //Moon Door (opened)
 DUPEITEM=02fe3
 
+
 [ITEMDEF 031a0]
-//Elven Simple Door (closed)
-DUPEITEM=02d63
+DEFNAME=i_door_elven_simple_4
+NAME=elven simple door
+TYPE=t_door
+TDATA2=031a1
+TDATA3=1
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Elven Simple Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 031a1]
 //Elven Simple Door (opened)
 DUPEITEM=02d64
 
 [ITEMDEF 031a2]
-//Elven Simple Door (closed)
-DUPEITEM=02d63
+DEFNAME=i_door_elven_simple_2
+NAME=elven simple door
+TYPE=t_door
+TDATA2=031a3
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Elven Simple Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 031a3]
 //Elven Simple Door (opened)
-DUPEITEM=02d63
+DUPEITEM=02d64
 
 [ITEMDEF 031a4]
-//Elven Ornate Door (closed)
-DUPEITEM=02d67
+//Elven Ornate Door 4(closed)
+DEFNAME=i_door_elven_ornate_4
+NAME=elven ornate door
+TYPE=t_door
+TDATA2=031a5
+TDATA3=1
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Elven Simple Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 031a5]
 //Elven Ornate Door (opened)
 DUPEITEM=02d68
 
 [ITEMDEF 031a6]
-//Elven Ornate Door (closed)
-DUPEITEM=02d67
+//Elven Ornate Door 2(closed)
+DEFNAME=i_door_elven_ornate_2
+NAME=elven ornate door
+TYPE=t_door
+TDATA2=031a7
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Elven Simple Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 031a7]
 //Elven Ornate Door (opened)
 DUPEITEM=02d68
 
 [ITEMDEF 031a8]
-//Elven Plain Door (closed)
-DUPEITEM=02d6b
+//Elven Plain Door 4(closed)
+DEFNAME=i_door_elven_plain_4
+NAME=elven plain door
+TYPE=t_door
+TDATA2=031a9
+TDATA3=0
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Elven Plain Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 031a9]
 //Elven Plain Door (opened)
 DUPEITEM=02d6c
 
 [ITEMDEF 031aa]
-//Elven Plain Door (closed)
-DUPEITEM=02d6b
+//Elven Plain Door 2(closed)
+DEFNAME=i_door_elven_plain_2
+NAME=elven plain door
+TYPE=t_door
+TDATA2=031ab
+TDATA3=1
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Elven Plain Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 031ab]
 //Elven Plain Door (opened)
 DUPEITEM=02d6c
 
+
 [ITEMDEF 031ac]
-//Elven Bark Door (closed)
-DUPEITEM=02d46
+//Elven Bark Door 3(closed)
+DEFNAME=i_door_elven_bark_3
+NAME=elven bark door
+TYPE=t_door
+TDATA2=031ad
+TDATA3=1
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Elven Bark Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 031ad]
 //Elven Bark Door (opened)
 DUPEITEM=02d47
 
 [ITEMDEF 031ae]
-//Elven Bark Door (closed)
-DUPEITEM=02d46
+//Elven Bark Door 4(closed)
+DEFNAME=i_door_elven_bark_4
+NAME=elven bark door
+TYPE=t_door
+TDATA2=031af
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Elven Bark Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 031af]
 //Elven Bark Door (opened)
 DUPEITEM=02d47
 
+
 [ITEMDEF 0409b]
-DEFNAME=i_door_ws3
+//SA Set 3 Door 1(closed)
+DEFNAME=i_door_ws3_1
 NAME=door
 TYPE=t_door
+TDATA2=0409c
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=SA Set 3
 DESCRIPTION=@ (closed)
-DUPELIST=0409d,0409f,040a1
+// DUPELIST=0409d,0409f,040a1
 
 [ITEMDEF 0409c]
+//SA Set 3 Door (opened)
 DEFNAME=i_door_ws3_o
 NAME=door
 TYPE=t_door_open
@@ -1892,37 +2198,66 @@ DESCRIPTION=@ (opened)
 DUPELIST=0409e,040a0,040a2
 
 [ITEMDEF 0409d]
-//WS3 Door (closed)
-DUPEITEM=0409b
+//SA Set 3 Door 2(closed)
+DEFNAME=i_door_ws3_2
+NAME=door
+TYPE=t_door
+TDATA2=0409e
+TDATA3=1
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Set 3
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 0409e]
-//WS3 Door (opened)
+//SA Set 3 Door (opened)
 DUPEITEM=0409c
 
 [ITEMDEF 0409f]
-//WS3 Door (closed)
-DUPEITEM=0409b
+//SA Set 3 Door 3(closed)
+DEFNAME=i_door_ws3_3
+NAME=door
+TYPE=t_door
+TDATA2=040a0
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Set 3
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 040a0]
-//WS3 Door (opened)
+//SA Set 3 Door (opened)
 DUPEITEM=0409c
 
 [ITEMDEF 040a1]
-//WS3 Door (closed)
-DUPEITEM=0409b
-
-[ITEMDEF 040a2]
-//WS3 Door (opened)
-DUPEITEM=0409c
-
-[ITEMDEF 0410c]
-DEFNAME=i_door_gargoyle
+//SA Set 3 Door 4(closed)
+DEFNAME=i_door_ws3_4
 NAME=door
 TYPE=t_door
+TDATA2=040a2
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Set 3
+DESCRIPTION=@ (closed)
+
+[ITEMDEF 040a2]
+//SA Set 3 Door (opened)
+DUPEITEM=0409c
+
+
+[ITEMDEF 0410c]
+//Gargoyle Door 1(closed)
+DEFNAME=i_door_gargoyle_1
+NAME=door
+TYPE=t_door
+TDATA2=0410d
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Gargoyle Doors
 DESCRIPTION=@ (closed)
-DUPELIST=0410e,04110,04112
+// DUPELIST=0410e,04110,04112
 
 [ITEMDEF 0410d]
 DEFNAME=i_door_gargoyle_o
@@ -1934,39 +2269,67 @@ DESCRIPTION=@ (opened)
 DUPELIST=0410f,04111,04113
 
 [ITEMDEF 0410e]
-//Gargoyle Door (closed)
-DUPEITEM=0410c
+//Gargoyle Door 2(closed)
+DEFNAME=i_door_gargoyle_2
+NAME=door
+TYPE=t_door
+TDATA2=0410f
+TDATA3=1
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargoyle Doors
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 0410f]
 //Gargoyle Door (opened)
 DUPEITEM=0410d
 
 [ITEMDEF 04110]
-//Gargoyle Door (closed)
-DUPEITEM=0410c
+//Gargoyle Door 3(closed)
+DEFNAME=i_door_gargoyle_3
+NAME=door
+TYPE=t_door
+TDATA2=04111
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargoyle Doors
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 04111]
 //Gargoyle Door (opened)
 DUPEITEM=0410d
 
 [ITEMDEF 04112]
-//Gargoyle Door (closed)
-DUPEITEM=0410c
+//Gargoyle Door 4(closed)
+DEFNAME=i_door_gargoyle_4
+NAME=door
+TYPE=t_door
+TDATA2=04113
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Gargoyle Doors
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 04113]
 //Gargoyle Door (opened)
 DUPEITEM=0410d
 
 [ITEMDEF 041c2]
-DEFNAME=i_door_ws2
+//SA Set 2 Door 1(closed)
+DEFNAME=i_door_ws2_1
 NAME=door
 TYPE=t_door
+TDATA2=041c3
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=SA Set 2
 DESCRIPTION=@ (closed)
-DUPELIST=041c4,041c6,041c8
 
 [ITEMDEF 041c3]
+//SA Set 2 Door (opened)
 DEFNAME=i_door_ws2_o
 NAME=door
 TYPE=t_door_open
@@ -1976,205 +2339,357 @@ DESCRIPTION=@ (opened)
 DUPELIST=041c5,041c7,041c9
 
 [ITEMDEF 041c4]
-//SA Set 2 Door (closed)
-DUPEITEM=041c2
+//SA Set 2 Door 2(closed)
+DEFNAME=i_door_ws2_2
+NAME=door
+TYPE=t_door
+TDATA2=041c5
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Set 2
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 041c5]
 //SA Set 2 Door (opened)
 DUPEITEM=041c3
 
 [ITEMDEF 041c6]
-//SA Set 2 Door (closed)
-DUPEITEM=041c2
+//SA Set 2 Door 3(closed)
+DEFNAME=i_door_ws2_3
+NAME=door
+TYPE=t_door
+TDATA2=041c7
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Set 2
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 041c7]
 //SA Set 2 Door (opened)
 DUPEITEM=041c3
 
 [ITEMDEF 041c8]
-//SA Set 2 Door (closed)
-DUPEITEM=041c2
+//SA Set 2 Door 4(closed)
+DEFNAME=i_door_ws2_4
+NAME=door
+TYPE=t_door
+TDATA2=041c9
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Set 2
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 041c9]
 //SA Set 2 Door (opened)
 DUPEITEM=041c3
 
+
 [ITEMDEF 041cf]
-DEFNAME=i_door_ws1
+//SA Set 1 Door 1(closed)
+DEFNAME=i_door_ws_1
+NAME=door
 TYPE=t_door
+TDATA2=041d0
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=SA Set 1
 DESCRIPTION=@ (closed)
-DUPELIST=041d1,041d3,041d5
 
 [ITEMDEF 041d0]
-DEFNAME=i_door_ws1_o
+//SA Set 1 Door (opened)
+DEFNAME=i_door_ws_1o
+NAME=door
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=SA Set 1
 DESCRIPTION=@ (opened)
 DUPELIST=041d2,041d4,041d6
 
 [ITEMDEF 041d1]
-//SA Set 1 Door (closed)
-DUPEITEM=041cf
+//SA Set 1 Door 2(closed)
+DEFNAME=i_door_ws_2
+NAME=door
+TYPE=t_door
+TDATA2=041d2
+TDATA3=1
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Set 1
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 041d2]
 //SA Set 1 Door (opened)
 DUPEITEM=041d0
 
 [ITEMDEF 041d3]
-//SA Set 1 Door (closed)
-DUPEITEM=041cf
+//SA Set 1 Door 3(closed)
+DEFNAME=i_door_ws_3
+NAME=door
+TYPE=t_door
+TDATA2=041d4
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Set 1
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 041d4]
 //SA Set 1 Door (opened)
 DUPEITEM=041d0
 
 [ITEMDEF 041d5]
-//SA Set 1 Door (closed)
-DUPEITEM=041cf
+//SA Set 1 Door 4(closed)
+DEFNAME=i_door_ws_4
+NAME=door
+TYPE=t_door
+TDATA2=041d6
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Set 1
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 041d6]
 //SA Set 1 Door (opened)
 DUPEITEM=041d0
 
+
 [ITEMDEF 0436e]
-DEFNAME=i_door_m1
+//SA Misc 1 Door (closed)
+DEFNAME=i_door_m1_1
 NAME=door
 TYPE=t_door
+TDATA2=0436f
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Misc 1
+SUBSECTION=SA Misc
 DESCRIPTION=@ (closed)
-DUPELIST=04370,04376,04378
 
 [ITEMDEF 0436f]
+//SA Misc 1 Door (opened)
 DEFNAME=i_door_m1_o
 NAME=door
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Misc 1
+SUBSECTION=SA Misc
 DESCRIPTION=@ (opened)
 DUPELIST=04371,04377,04379
 
 [ITEMDEF 04370]
-//SA Misc 1 Door (closed)
-DUPEITEM=0436e
+//SA Misc 1 Door 2(closed)
+DEFNAME=i_door_m1_2
+NAME=door
+TYPE=t_door
+TDATA2=04371
+TDATA3=1
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Misc
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 04371]
-//SA Misc 1 Door (opened)
+//SA Misc 1 Door 2(opened)
 DUPEITEM=0436f
 
 [ITEMDEF 04372]
-DEFNAME=i_door_m2
+//SA Misc 2 Door (closed)
+DEFNAME=i_door_m2_1
 NAME=door
 TYPE=t_door
+TDATA2=04373
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Misc 2
+SUBSECTION=SA Misc
 DESCRIPTION=@ (closed)
-DUPELIST=04374,0437a,0437c
 
 [ITEMDEF 04373]
+//SA Misc 2 Door (opened)
 DEFNAME=i_door_m2_o
 NAME=door
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
-SUBSECTION=SA Misc 2
+SUBSECTION=SA Misc
 DESCRIPTION=@ (opened)
 DUPELIST=04375,0437b,0437d
 
 [ITEMDEF 04374]
-//SA Misc 2 Door (closed)
-DUPEITEM=04372
+//SA Misc 2 Door 2(closed)
+DEFNAME=i_door_m2_2
+NAME=door
+TYPE=t_door
+TDATA2=04375
+TDATA3=1
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Misc
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 04375]
-//SA Misc 2 Door (opened)
+//SA Misc 2 Door 2(opened)
 DUPEITEM=04373
 
 [ITEMDEF 04376]
-//SA Misc 1 Door (closed)
-DUPEITEM=0436e
+//SA Misc 1 Door 3(closed)
+DEFNAME=i_door_m1_3
+NAME=door
+TYPE=t_door
+TDATA2=04377
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Misc
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 04377]
-//SA Misc 1 Door (opened)
+//SA Misc 1 Door 3(opened)
 DUPEITEM=0436f
 
 [ITEMDEF 04378]
-//SA Misc 1 Door (closed)
-DUPEITEM=0436e
+//SA Misc 1 Door 4(closed)
+DEFNAME=i_door_m1_4
+NAME=door
+TYPE=t_door
+TDATA2=04379
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Misc
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 04379]
-//SA Misc 1 Door (opened)
+//SA Misc 1 Door 4(opened)
 DUPEITEM=0436f
 
 [ITEMDEF 0437a]
-//SA Misc 2 Door (closed)
-DUPEITEM=04372
+//SA Misc 2 Door 3(closed)
+DEFNAME=i_door_m2_3
+NAME=door
+TYPE=t_door
+TDATA2=0437b
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Misc
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 0437b]
-//SA Misc 2 Door (opened)
+//SA Misc 2 Door 3(opened)
 DUPEITEM=04373
 
 [ITEMDEF 0437c]
-//SA Misc 2 Door (closed)
-DUPEITEM=04372
-
-[ITEMDEF 0437d]
-//SA Misc 2 Door (opened)
-DUPEITEM=04373
-
-[ITEMDEF 046dd]
-DEFNAME=i_door_ruined
+//SA Misc 2 Door 4(closed)
+DEFNAME=i_door_m2_4
 NAME=door
 TYPE=t_door
+TDATA2=0437d
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Misc
+DESCRIPTION=@ (closed)
+
+[ITEMDEF 0437d]
+//SA Misc 2 Door 4(opened)
+DUPEITEM=04373
+
+
+[ITEMDEF 046dd]
+//Ruined Door 1(closed)
+DEFNAME=i_door_ruined_1
+NAME=ruined door
+TYPE=t_door
+TDATA2=046de
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Ruined Door
 DESCRIPTION=@ (closed)
-DUPELIST=046df,046e1,046e3
+// DUPELIST=046df,046e1,046e3
 
 [ITEMDEF 046de]
 DEFNAME=i_door_ruined_o
-NAME=door
+NAME=ruined door
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Ruined Door
 DESCRIPTION=@ (opened)
 DUPELIST=046e0,046e2,046e4
 
 [ITEMDEF 046df]
-//Ruined Door (closed)
-DUPEITEM=046dd
+//Ruined Door 2(closed)
+DEFNAME=i_door_ruined_2
+NAME=ruined door
+TYPE=t_door
+TDATA2=046e0
+TDATA3=1
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Ruined Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 046e0]
 //Ruined Door (opened)
 DUPEITEM=046de
 
 [ITEMDEF 046e1]
-//Ruined Door (closed)
-DUPEITEM=046dd
+//Ruined Door 3(closed)
+DEFNAME=i_door_ruined_3
+NAME=ruined door
+TYPE=t_door
+TDATA2=046e2
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Ruined Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 046e2]
 //Ruined Door (opened)
 DUPEITEM=046de
 
 [ITEMDEF 046e3]
-//Ruined Door (closed)
-DUPEITEM=046dd
+//Ruined Door 4(closed)
+DEFNAME=i_door_ruined_4
+NAME=ruined door
+TYPE=t_door
+TDATA2=046e4
+TDATA3=0
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Ruined Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 046e4]
 //Ruined Door (opened)
 DUPEITEM=046de
 
+
 [ITEMDEF 04d1a]
-DEFNAME=i_door_queen_huge
+//Huge Queen Door 1(closed)
+DEFNAME=i_door_queen_huge_1
 NAME=door
 TYPE=t_door
+TDATA2=04d1b
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Huge Queen Door
 DESCRIPTION=@ (closed)
-DUPELIST=04d1c,04d1e,04d20
+// DUPELIST=04d1c,04d1e,04d20
 
 [ITEMDEF 04d1b]
+//Huge Queen Door (opened)
 DEFNAME=i_door_queen_huge_o
 NAME=door
 TYPE=t_door_open
@@ -2184,39 +2699,68 @@ DESCRIPTION=@ (opened)
 DUPELIST=04d1d,04d1f,04d21
 
 [ITEMDEF 04d1c]
-//Huge Queen Door (closed)
-DUPEITEM=04d1a
+//Huge Queen Door 2(closed)
+DEFNAME=i_door_queen_huge_2
+NAME=door
+TYPE=t_door
+TDATA2=04d1d
+TDATA3=1
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Huge Queen Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 04d1d]
 //Huge Queen Door (opened)
 DUPEITEM=04d1b
 
 [ITEMDEF 04d1e]
-//Huge Queen Door (closed)
-DUPEITEM=04d1a
+//Huge Queen Door 3(closed)
+DEFNAME=i_door_queen_huge_3
+NAME=door
+TYPE=t_door
+TDATA2=04d1f
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Huge Queen Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 04d1f]
 //Huge Queen Door (opened)
 DUPEITEM=04d1b
 
 [ITEMDEF 04d20]
-//Huge Queen Door (closed)
-DUPEITEM=04d1a
+//Huge Queen Door 4(closed)
+DEFNAME=i_door_queen_huge_4
+NAME=door
+TYPE=t_door
+TDATA2=04d21
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Huge Queen Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 04d21]
 //Huge Queen Door (opened)
 DUPEITEM=04d1b
 
+
 [ITEMDEF 04d22]
-DEFNAME=i_door_queen
+//Queen Door 1(closed)
+DEFNAME=i_door_queen_1
 NAME=door
 TYPE=t_door
+TDATA2=04d23
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=Queen Door
 DESCRIPTION=@ (closed)
-DUPELIST=04d24,04d26,04d28
 
 [ITEMDEF 04d23]
+//Queen Door (opened)
 DEFNAME=i_door_queen_o
 NAME=door
 TYPE=t_door_open
@@ -2226,39 +2770,68 @@ DESCRIPTION=@ (opened)
 DUPELIST=04d25,04d27,04d29
 
 [ITEMDEF 04d24]
-//Queen Door (closed)
-DUPEITEM=04d22
+//Queen Door 2(closed)
+DEFNAME=i_door_queen_2
+NAME=door
+TYPE=t_door
+TDATA2=04d25
+TDATA3=1
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Queen Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 04d25]
 //Queen Door (opened)
 DUPEITEM=04d23
 
 [ITEMDEF 04d26]
-//Queen Door (closed)
-DUPEITEM=04d22
+//Queen Door 3(closed)
+DEFNAME=i_door_queen_3
+NAME=door
+TYPE=t_door
+TDATA2=04d27
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Queen Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 04d27]
 //Queen Door (opened)
 DUPEITEM=04d23
 
 [ITEMDEF 04d28]
-//Queen Door (closed)
-DUPEITEM=04d22
+//Queen Door 4(closed)
+DEFNAME=i_door_queen_4
+NAME=door
+TYPE=t_door
+TDATA2=04d29
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=Queen Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 04d29]
 //Queen Door (opened)
 DUPEITEM=04d23
 
+
 [ITEMDEF 050c8]
-DEFNAME=i_door_m3
+//SA Misc 3 Door 1(closed)
+DEFNAME=i_door_m3_1
 NAME=door
 TYPE=t_door
+TDATA2=050c9
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=SA Misc 3
 DESCRIPTION=@ (closed)
-DUPELIST=050ca,050cc,050ce
 
 [ITEMDEF 050c9]
+//SA Misc 3 Door (opened)
 DEFNAME=i_door_m3_o
 NAME=door
 TYPE=t_door_open
@@ -2268,37 +2841,65 @@ DESCRIPTION=@ (opened)
 DUPELIST=050cb,050cd,050cf
 
 [ITEMDEF 050ca]
-//SA Misc 3 Door (closed)
-DUPEITEM=050c8
+//SA Misc 3 Door 2(closed)
+DEFNAME=i_door_m3_2
+NAME=door
+TYPE=t_door
+TDATA2=050cb
+TDATA3=1
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Misc
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 050cb]
 //SA Misc 3 Door (opened)
 DUPEITEM=050c9
 
 [ITEMDEF 050cc]
-//SA Misc 3 Door (closed)
-DUPEITEM=050c8
+//SA Misc 3 Door 3(closed)
+DEFNAME=i_door_m3_3
+NAME=door
+TYPE=t_door
+TDATA2=050cd
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Misc
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 050cd]
 //SA Misc 3 Door (opened)
 DUPEITEM=050c9
 
 [ITEMDEF 050ce]
-//SA Misc 3 Door (closed)
-DUPEITEM=050c8
+//SA Misc 3 Door 4(closed)
+DEFNAME=i_door_m3_4
+NAME=door
+TYPE=t_door
+TDATA2=050cf
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Misc
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 050cf]
 //SA Misc 3 Door (opened)
 DUPEITEM=050c9
 
+
 [ITEMDEF 050d0]
-DEFNAME=i_door_m4
+//SA Misc 4 Door 1(closed)
+DEFNAME=i_door_m4_1
 NAME=door
 TYPE=t_door
+TDATA2=050d1
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=SA Misc 4
 DESCRIPTION=@ (closed)
-DUPELIST=050d2,050d4,050d6
 
 [ITEMDEF 050d1]
 DEFNAME=i_door_m4_o
@@ -2310,37 +2911,64 @@ DESCRIPTION=@ (opened)
 DUPELIST=050d3,050d5,050d7
 
 [ITEMDEF 050d2]
-//SA Misc 4 Door (closed)
-DUPEITEM=050d0
+//SA Misc 4 Door 2(closed)
+DEFNAME=i_door_m4_2
+NAME=door
+TYPE=t_door
+TDATA2=050d3
+TDATA3=1
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Misc
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 050d3]
 //SA Misc 4 Door (opened)
 DUPEITEM=050d1
 
 [ITEMDEF 050d4]
-//SA Misc 4 Door (closed)
-DUPEITEM=050d0
+//SA Misc 4 Door 3(closed)
+DEFNAME=i_door_m4_3
+NAME=door
+TYPE=t_door
+TDATA2=050d5
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Misc
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 050d5]
 //SA Misc 4 Door (opened)
 DUPEITEM=050d1
 
 [ITEMDEF 050d6]
-//SA Misc 4 Door (closed)
-DUPEITEM=050d0
+//SA Misc 4 Door 4(closed)
+DEFNAME=i_door_m4_4
+NAME=door
+TYPE=t_door
+TDATA2=050d7
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Misc
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 050d7]
 //SA Misc 4 Door (opened)
 DUPEITEM=050d1
 
+
 [ITEMDEF 05142]
 DEFNAME=i_door_barred_2
 NAME=door
 TYPE=t_door
+TDATA2=05143
+TDATA3=-1
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=SA Barred Door
 DESCRIPTION=@ (closed)
-DUPELIST=05144,05146,05148
 
 [ITEMDEF 05143]
 DEFNAME=i_door_barred_2_o
@@ -2353,7 +2981,16 @@ DUPELIST=05145,05147,05149
 
 [ITEMDEF 05144]
 //SA Barred Door (closed)
-DUPEITEM=05142
+DEFNAME=i_door_barred_3
+NAME=door
+TYPE=t_door
+TDATA2=05145
+TDATA3=1
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Barred Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 05145]
 //SA Barred Door (opened)
@@ -2361,7 +2998,14 @@ DUPEITEM=05143
 
 [ITEMDEF 05146]
 //SA Barred Door (closed)
-DUPEITEM=05142
+DEFNAME=i_door_barred_4
+NAME=door
+TYPE=t_door
+TDATA2=05147
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Barred Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 05147]
 //SA Barred Door (opened)
@@ -2369,16 +3013,26 @@ DUPEITEM=05143
 
 [ITEMDEF 05148]
 //SA Barred Door (closed)
-DUPEITEM=05142
+DEFNAME=i_door_barred_5
+NAME=door
+TYPE=t_door
+TDATA2=05149
+TDATA4=-1
+CAN=can_i_door|can_i_dcignorelos
+CATEGORY=Buildings - Doors
+SUBSECTION=SA Barred Door
+DESCRIPTION=@ (closed)
 
 [ITEMDEF 05149]
 //SA Barred Door (opened)
 DUPEITEM=05143
 
+
 [ITEMDEF 09ad7]
 DEFNAME=i_door_jungle
 NAME=jungle door
 TYPE=t_door
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=TOL Jungle Door
 DESCRIPTION=@ (closed)
@@ -2388,6 +3042,7 @@ DUPELIST=09ad9,09adb,09add,09adf,09ae1,09ae3,09ae5
 DEFNAME=i_door_jungle_o
 NAME=jungle door
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=TOL Jungle Door
 DESCRIPTION=@ (opened)
@@ -2449,10 +3104,12 @@ DUPEITEM=09ad7
 //Jungle Door (opened)
 DUPEITEM=09ad8
 
+
 [ITEMDEF 09b3c]
 DEFNAME=i_door_shadowguard
 NAME=shadowguard door
 TYPE=t_door
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=TOL Shadowguard Door
 DESCRIPTION=@ (closed)
@@ -2462,6 +3119,7 @@ DUPELIST=09b3e,09b40,09b42,09b44,09b46,09b48,09b4a
 DEFNAME=i_door_shadowguard_o
 NAME=shadowguard door
 TYPE=t_door_open
+CAN=can_i_door|can_i_dcignorelos
 CATEGORY=Buildings - Doors
 SUBSECTION=TOL Shadowguard Door
 DESCRIPTION=@ (opened)

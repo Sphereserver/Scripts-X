@@ -3044,26 +3044,6 @@ TYPE=t_normal
 DEFNAME=i_crystaltop_east_2
 TYPE=t_normal
 
-[ITEMDEF 050da]
-// QC Medium Wall c So
-DEFNAME=i_qc_medium_wall_c_so
-TYPE=t_water
-
-[ITEMDEF 050db]
-// QC Medium Wall c So
-DEFNAME=i_qc_medium_wall_c_so_2
-TYPE=t_normal
-
-[ITEMDEF 050dc]
-// Marble Wall South
-DEFNAME=i_marble_wall_south
-TYPE=t_normal
-
-[ITEMDEF 050dd]
-// QC Column a0 South
-DEFNAME=i_qc_column_a_south
-TYPE=t_normal
-
 [ITEMDEF 050f8]
 // Marble Door East
 DEFNAME=i_marble_door_east
