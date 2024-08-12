@@ -260,7 +260,7 @@ if (<isowner <src>>) || (<src.isgm>)
         button 7 160 4005 4007 1 0 35
         dhtmlgump 44 163 240 20 0 0 <def.bfont_hs_text1>Customize This House
     else
-        if (<baseid>==m_small_stone_keep) || (<baseid>==m_castle) || (<baseid>==m_two_story_wood_and_plaster_house) || (<baseid>=m_two_story_stone_and_plaster_house) || (<eval <id>> >= 70782)
+        if (<baseid>==m_small_stone_keep) || (<baseid>==m_castle) || (<baseid>==m_two_story_wood_and_plaster_house) || (<baseid>=m_two_story_stone_and_plaster_house) || (<eval <id>> >= 5246)
             dhtmlgump 44 143 240 20 0 0 <def.bfont_hs_gray>Convert Into Customizable House
             dhtmlgump 44 163 240 20 0 0 <def.bfont_hs_gray>Customize This House
         else
