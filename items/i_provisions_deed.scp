@@ -1583,4 +1583,384 @@ DESCRIPTION=18x18 Foundation
 ON=@Create
    MORE=m_foundation_18x18
 
+[ITEMDEF i_deed_foundation_24x24]
+ID=i_deed
+NAME=Deed to a 24x24 foundation
+CATEGORY=Provisions - Deeds
+SUBSECTION=foundation Deeds
+DESCRIPTION=24x24 Foundation
+ON=@Create
+   MORE=m_foundation_24x24
+
+[ITEMDEF i_deed_foundation_31x31]
+ID=i_deed
+NAME=Deed to a 31x31 foundation
+CATEGORY=Provisions - Deeds
+SUBSECTION=foundation Deeds
+DESCRIPTION=31x31 Foundation
+ON=@Create
+   MORE=m_foundation_31x31
+
+// Wining Contest Castles & Keeps
+
+[ITEMDEF i_deed_keep_trinsic]
+ID=i_deed
+NAME=Deed to The Trinsic Keep
+VALUE=1000000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Keeps
+DESCRIPTION=The Trinsic Keep
+ON=@Create
+   MORE=m_keep_trinsic
+
+[ITEMDEF i_deed_castle_gothic_rose]
+ID=i_deed
+NAME=Deed to The Gothic Rose Castle
+VALUE=1500000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Gothic Rose Castle
+ON=@Create
+   MORE=m_castle_gothic_rose
+
+[ITEMDEF i_deed_castle_elsa]
+ID=i_deed
+NAME=Deed to The Elsa Castle
+VALUE=1533000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Elsa Castle
+ON=@Create
+   MORE=m_castle_elsa
+
+[ITEMDEF i_deed_castle_spires]
+ID=i_deed
+NAME=Deed to The Spires
+VALUE=1533000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Spires
+ON=@Create
+   MORE=m_castle_spires
+
+[ITEMDEF i_deed_castle_oceania]
+ID=i_deed
+NAME=Deed to The Castle of Oceania
+VALUE=1533000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Castle of Oceania
+ON=@Create
+   MORE=m_castle_oceania
+
+[ITEMDEF i_deed_castle_feudal]
+ID=i_deed
+NAME=Deed to The Feudal Castle
+VALUE=933000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Feudal Castle
+ON=@Create
+   MORE=m_castle_feudal
+
+[ITEMDEF i_deed_keep_robin_nest]
+ID=i_deed
+NAME=Deed to The Robin’s Nest
+VALUE=866000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Keeps
+DESCRIPTION=The Robin’s Nest
+ON=@Create
+   MORE=m_keep_robin_nest
+
+[ITEMDEF i_deed_keep_traditional]
+ID=i_deed
+NAME=Deed to The Traditional Keep
+VALUE=900000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Keeps
+DESCRIPTION=The Traditional Keep
+ON=@Create
+   MORE=m_keep_traditional
+
+[ITEMDEF i_deed_keep_villa_crowley]
+ID=i_deed
+NAME=Deed to The Villa Crowley
+VALUE=733000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Keeps
+DESCRIPTION=The Villa Crowley
+ON=@Create
+   MORE=m_keep_villa_crowley
+
+[ITEMDEF i_deed_keep_darkthorn]
+ID=i_deed
+NAME=Deed to The Darkthorn Keep
+VALUE=933000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Keeps
+DESCRIPTION=The Darkthorn Keep
+ON=@Create
+   MORE=m_keep_darkthorn
+
+[ITEMDEF i_deed_keep_sandalwood]
+ID=i_deed
+NAME=Deed to The Sandalwood Keep
+VALUE=800000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Keeps
+DESCRIPTION=The Sandalwood Keep
+ON=@Create
+   MORE=m_keep_sandalwood
+
+[ITEMDEF i_deed_keep_casa_moga]
+ID=i_deed
+NAME=Deed to The Casa Moga
+VALUE=900000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Keeps
+DESCRIPTION=The Casa Moga
+ON=@Create
+   MORE=m_keep_casa_moga
+
+[ITEMDEF i_deed_castle_robin_roost]
+ID=i_deed
+NAME=Deed to The Robin's Roost Castle
+VALUE=1466000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Robin's Roost Castle
+ON=@Create
+   MORE=m_castle_robin_roost
+
+[ITEMDEF i_deed_castle_camelot]
+ID=i_deed
+NAME=Deed to The Camelot Castle
+VALUE=1600000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Camelot Castle
+ON=@Create
+   MORE=m_castle_camelot
+
+[ITEMDEF i_deed_castle_lacrimae_caelo]
+ID=i_deed
+NAME=Deed to The Lacrimae in Caelo Castle
+VALUE=1533000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Lacrimae in Caelo Castle
+ON=@Create
+   MORE=m_castle_lacrimae_caelo
+
+[ITEMDEF i_deed_castle_okinawa]
+ID=i_deed
+NAME=Deed to The Okinawa Castle
+VALUE=1366000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Okinawa Castle
+ON=@Create
+   MORE=m_castle_okinawa
+
+[ITEMDEF i_deed_castle_sandstone]
+ID=i_deed
+NAME=Deed to The Sandstone Castle
+VALUE=1633000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Sandstone Castle
+ON=@Create
+   MORE=m_castle_sandstone
+
+[ITEMDEF i_deed_castle_grimswind_sisters]
+ID=i_deed
+NAME=Deed to The Grimswind Sisters Castle
+VALUE=1433000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Grimswind Sisters Castle
+ON=@Create
+   MORE=m_castle_grimswind_sisters
+
+[ITEMDEF i_deed_keep_fortress_lestat]
+ID=i_deed
+NAME=Deed to The Fortress of Lestat
+VALUE=933000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Keeps
+DESCRIPTION=The Fortress of Lestat
+ON=@Create
+   MORE=m_keep_fortress_lestat
+
+[ITEMDEF i_deed_keep_citadel_east]
+ID=i_deed
+NAME=Deed to The Citadel of the Far East
+VALUE=1000000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Keeps
+DESCRIPTION=The Citadel of the Far East
+ON=@Create
+   MORE=m_keep_citadel_east
+
+[ITEMDEF i_deed_keep_incarcerated]
+ID=i_deed
+NAME=Deed to The Keep Incarcerated
+VALUE=1000000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Keeps
+DESCRIPTION=The Keep Incarcerated
+ON=@Create
+   MORE=m_keep_incarcerated
+
+[ITEMDEF i_deed_keep_sally_trees]
+ID=i_deed
+NAME=Deed to The Sally Trees Refurbished Keep
+VALUE=1000000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Keeps
+DESCRIPTION=The Sally Trees Refurbished Keep
+ON=@Create
+   MORE=m_keep_sally_trees
+
+[ITEMDEF i_deed_keep_desert_rose]
+ID=i_deed
+NAME=Deed to The Desert Rose
+VALUE=1000000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Keeps
+DESCRIPTION=The Desert Rose
+ON=@Create
+   MORE=m_keep_desert_rose
+
+[ITEMDEF i_deed_keep_clover]
+ID=i_deed
+NAME=Deed to The Clover’s Keep
+VALUE=933000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Keeps
+DESCRIPTION=The Clover’s Keep
+ON=@Create
+   MORE=m_keep_clover
+
+[ITEMDEF i_deed_castle_sorcerer]
+ID=i_deed
+NAME=Deed to The Sorcerer's Castle
+VALUE=1366000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Sorcerer's Castle
+ON=@Create
+   MORE=m_castle_sorcerer
+
+[ITEMDEF i_deed_castle_cascade]
+ID=i_deed
+NAME=Deed to The Castle Cascade
+VALUE=1633000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Castle Cascade
+ON=@Create
+   MORE=m_castle_cascade
+
+[ITEMDEF i_deed_castle_house_ruins]
+ID=i_deed
+NAME=Deed to The House Built On The Ruins
+VALUE=1433000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The House Built On The Ruins
+ON=@Create
+   MORE=m_castle_house_ruins
+
+[ITEMDEF i_deed_castle_sandstone_fortress]
+ID=i_deed
+NAME=Deed to The Sandstone Fortress Of Grand Cross
+VALUE=1633000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Sandstone Fortress Of Grand Cross
+ON=@Create
+   MORE=m_castle_sandstone_fortress
+
+[ITEMDEF i_deed_castle_dragonstone]
+ID=i_deed
+NAME=Deed to The Dragonstone Castle
+VALUE=1330000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Dragonstone Castle
+ON=@Create
+   MORE=m_castle_dragonstone
+
+[ITEMDEF i_deed_castle_terrace_gardens]
+ID=i_deed
+NAME=Deed to The Terrace Gardens
+VALUE=1330000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Terrace Gardens
+ON=@Create
+   MORE=m_castle_terrace_gardens
+
+[ITEMDEF i_deed_keep_calm_carry]
+ID=i_deed
+NAME=Deed to The Keep Calm and Carry On Keep
+VALUE=800000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Keeps
+DESCRIPTION=The Keep Calm and Carry On Keep
+ON=@Create
+   MORE=m_keep_calm_carry
+
+[ITEMDEF i_deed_keep_ravenloft]
+ID=i_deed
+NAME=Deed to The Ravenloft Keep
+VALUE=833000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Keeps
+DESCRIPTION=The Ravenloft Keep
+ON=@Create
+   MORE=m_keep_ravenloft
+
+[ITEMDEF i_deed_keep_queen_retreat]
+ID=i_deed
+NAME=Deed to The Queen's Retreat Keep
+VALUE=933000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Keeps
+DESCRIPTION=The Queen's Retreat Keep
+ON=@Create
+   MORE=m_keep_queen_retreat
+
+[ITEMDEF i_deed_castle_heorot]
+ID=i_deed
+NAME=Deed to The Heorot
+VALUE=1133000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Heorot
+ON=@Create
+   MORE=m_castle_heorot
+
+[ITEMDEF i_deed_castle_township]
+ID=i_deed
+NAME=Deed to The Township
+VALUE=1400000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Township
+ON=@Create
+   MORE=m_castle_township
+
+[ITEMDEF i_deed_castle_resistance]
+ID=i_deed
+NAME=Deed to The Castle of the Resistance
+VALUE=1533000
+CATEGORY=Provisions - Deeds
+SUBSECTION=Contest Winning Castles
+DESCRIPTION=The Castle of the Resistance
+ON=@Create
+   MORE=m_castle_resistance
+
 [EOF]

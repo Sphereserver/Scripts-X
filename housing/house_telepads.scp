@@ -1,0 +1,214 @@
+[DEFNAME house_telepads]
+tpad_keep_trinsic_1             4,6,1,47 // comp#,x,y,z
+tpad_keep_trinsic_2             5,6,1,27
+tpad_keep_trinsic_3             6,-8,-6,67
+tpad_keep_trinsic_4             7,7,2,7
+tpad_keep_trinsic_5             8,7,2,7
+tpad_keep_trinsic_6             9,7,2,7
+
+tpad_keep_robin_nest_1          4,7,2,27
+tpad_keep_robin_nest_2          5,2,8,7
+tpad_keep_robin_nest_3          6,2,2,47
+tpad_keep_robin_nest_4          7,7,2,27
+tpad_keep_robin_nest_5          8,9,-10,67
+tpad_keep_robin_nest_6          9,2,2,47
+
+tpad_keep_sandalwood_1          4,6,-8,47
+tpad_keep_sandalwood_2          5,8,4,27
+tpad_keep_sandalwood_3          6,-9,-4,67
+tpad_keep_sandalwood_4          7,-8,-8,7
+tpad_keep_sandalwood_5          8,7,3,7
+tpad_keep_sandalwood_6          9,7,3,7
+tpad_keep_sandalwood_7          10,7,3,7
+tpad_keep_sandalwood_8          11,7,3,7
+
+tpad_keep_casa_moga_1           4,5,-8,7
+tpad_keep_casa_moga_2           5,0,10,7
+tpad_keep_casa_moga_3           6,-9,-1,67
+tpad_keep_casa_moga_4           7,-1,-8,27
+
+tpad_castle_robin_roost_1       4,0,6,47
+tpad_castle_robin_roost_2       5,8,6,27
+tpad_castle_robin_roost_3       6,7,-12,67
+tpad_castle_robin_roost_4       7,11,1,7
+tpad_castle_robin_roost_5       8,11,1,7
+tpad_castle_robin_roost_6       9,11,1,7
+
+tpad_castle_sandstone_1         4,9,7,47
+tpad_castle_sandstone_2         5,-9,7,47
+tpad_castle_sandstone_3         6,7,-9,47
+tpad_castle_sandstone_4         7,-10,-9,47
+tpad_castle_sandstone_5         8,11,9,27
+tpad_castle_sandstone_6         9,-11,9,27
+tpad_castle_sandstone_7         10,9,-11,27
+tpad_castle_sandstone_8         11,-11,-9,27
+
+tpad_keep_fortress_lestat_1     4,-7,2,7
+tpad_keep_fortress_lestat_2     5,-7,2,7
+tpad_keep_fortress_lestat_3     6,4,2,27
+tpad_keep_fortress_lestat_4     7,-8,12,7
+tpad_keep_fortress_lestat_5     8,8,12,7
+tpad_keep_fortress_lestat_6     9,8,7,7
+tpad_keep_fortress_lestat_7     10,-9,6,47
+tpad_keep_fortress_lestat_8     11,4,2,27
+tpad_keep_fortress_lestat_9     12,-9,7,67
+tpad_keep_fortress_lestat_10    13,-9,6,47
+
+tpad_keep_incarcerated_1        4,6,5,27
+tpad_keep_incarcerated_2        5,11,10,27
+tpad_keep_incarcerated_3        6,7,6,47
+tpad_keep_incarcerated_4        7,11,10,47
+tpad_keep_incarcerated_5        8,7,6,67
+tpad_keep_incarcerated_6        9,11,10,67
+
+tpad_keep_sally_trees_1         4,2,-7,67
+tpad_keep_sally_trees_2         5,9,8,7
+
+tpad_keep_desert_rose_1         4,-8,11,47
+tpad_keep_desert_rose_2         5,2,1,27
+tpad_keep_desert_rose_3         6,12,-10,67
+tpad_keep_desert_rose_4         7,2,0,7
+tpad_keep_desert_rose_5         8,2,0,47
+tpad_keep_desert_rose_6         9,-9,9,7
+tpad_keep_desert_rose_7         10,2,1,27
+tpad_keep_desert_rose_8         11,9,-10,7
+
+tpad_keep_clover_1              4,10,6,27
+tpad_keep_clover_2              5,10,2,47
+tpad_keep_clover_3              6,10,2,67
+tpad_keep_clover_4              7,9,9,7
+tpad_keep_clover_5              8,9,9,7
+tpad_keep_clover_6              9,9,9,7
+
+tpad_castle_sorcerer_1          4,-9,8,7
+tpad_castle_sorcerer_2          5,-13,9,67
+tpad_castle_sorcerer_3          6,-13,-13,47
+tpad_castle_sorcerer_4          7,-11,13,7
+tpad_castle_sorcerer_5          8,10,-14,67
+tpad_castle_sorcerer_6          9,-9,8,7
+tpad_castle_sorcerer_7          10,-9,8,7
+tpad_castle_sorcerer_8          11,-12,-4,27
+
+tpad_castle_cascade_1           2,13,10,67
+tpad_castle_cascade_2           3,-12,10,67
+tpad_castle_cascade_3           4,5,5,47
+tpad_castle_cascade_4           5,5,0,27
+tpad_castle_cascade_5           6,-8,5,67
+tpad_castle_cascade_6           7,10,-12,67
+tpad_castle_cascade_7           8,-10,-13,67
+tpad_castle_cascade_8           9,5,2,7
+tpad_castle_cascade_9           10,5,5,47
+tpad_castle_cascade_10          11,5,0,27
+tpad_castle_cascade_11          12,5,2,7
+tpad_castle_cascade_12          13,-8,-1,67
+tpad_castle_cascade_13          14,13,13,7
+tpad_castle_cascade_14          15,-10,13,7
+tpad_castle_cascade_15          16,5,2,7
+tpad_castle_cascade_16          17,5,5,47
+tpad_castle_cascade_17          18,13,-10,7
+tpad_castle_cascade_18          19,-10,-13,7
+
+tpad_castle_house_ruins_1       4,-5,7,47
+tpad_castle_house_ruins_2       5,9,-2,27
+tpad_castle_house_ruins_3       6,2,6,7
+tpad_castle_house_ruins_4       7,-6,13,7
+tpad_castle_house_ruins_5       8,-6,13,7
+tpad_castle_house_ruins_6       9,2,-12,47
+tpad_castle_house_ruins_7       10,-6,13,7
+tpad_castle_house_ruins_8       11,10,6,67
+tpad_castle_house_ruins_9       12,13,-2,67
+tpad_castle_house_ruins_10      13,0,-11,27
+tpad_castle_house_ruins_11      14,10,6,47
+tpad_castle_house_ruins_12      15,13,-2,47
+
+tpad_castle_dragonstone_1       4,9,1,27
+tpad_castle_dragonstone_2       5,-1,1,47
+tpad_castle_dragonstone_3       6,-12,-6,67
+tpad_castle_dragonstone_4       7,9,2,7
+tpad_castle_dragonstone_5       8,9,2,7
+tpad_castle_dragonstone_6       9,9,2,7
+
+tpad_keep_calm_carry_1          4,9,-8,67
+tpad_keep_calm_carry_2          5,-9,1,47
+tpad_keep_calm_carry_3          6,7,0,27
+tpad_keep_calm_carry_4          7,9,1,7
+tpad_keep_calm_carry_5          8,9,1,7
+tpad_keep_calm_carry_6          9,9,1,7
+
+tpad_keep_ravenloft_1           4,5,-4,47
+tpad_keep_ravenloft_2           5,-6,0,47
+tpad_keep_ravenloft_3           6,2,0,27
+tpad_keep_ravenloft_4           7,9,0,7
+tpad_keep_ravenloft_5           8,-9,11,7
+tpad_keep_ravenloft_6           9,9,9,7
+
+tpad_keep_queen_retreat_1       4,-8,5,7
+tpad_keep_queen_retreat_2       5,-7,10,7
+
+tpad_castle_heorot_1            2,0,1,27
+tpad_castle_heorot_2            3,-3,1,47
+tpad_castle_heorot_3            4,12,-12,27
+tpad_castle_heorot_4            5,3,3,7
+tpad_castle_heorot_5            6,12,-13,7
+tpad_castle_heorot_6            7,3,3,7
+
+tpad_castle_resistance_1        4,12,7,7
+tpad_castle_resistance_2        5,4,1,7
+tpad_castle_resistance_3        6,11,12,7
+tpad_castle_resistance_4        7,-7,1,7
+tpad_castle_resistance_5        8,-12,6,67
+tpad_castle_resistance_6        9,-7,5,7
+tpad_castle_resistance_7        10,4,-12,47
+tpad_castle_resistance_8        11,-11,12,7
+tpad_castle_resistance_9        12,4,1,7
+tpad_castle_resistance_10       13,4,1,7
+
+
+[FUNCTION hs_set_telepads]
+ref1=<args>
+for 1 <ref1.dtag0.telepads>
+args=<def.tpad<strsub 1 0 <ref1.baseid>>_<dlocal._for>>
+ref2=<ref1.comp.<argv[0]>>
+if <ref2.type>==t_telepad
+    ref2.type=t_hs_telepad
+    ref2.morex=<eval <ref1.p.x>+<argv[1]>>
+    ref2.morey=<eval <ref1.p.y>+<argv[2]>>
+    ref2.morez=<argv[3]>
+    if <ref2.dmorez> > 60
+        local.f=4th
+    elif <ref2.dmorez> > 40
+        local.f=3rd
+    elif <ref2.dmorez> > 20
+        local.f=2nd
+    else
+        local.f=1st
+    endif
+    ref2.name=<local.f> Floor
+    ref2.resendtooltip
+endif
+endfor
+
+[FUNCTION f_hs_telepad]
+ref1=<args>
+if <ref1>==<src.ctag.telepad> && (<ref1.p.x>==<src.p.x> && <ref1.p.y>==<src.p.y> && <ref1.p.z>==<src.p.z>)
+    src.go <ref1.morep>
+    if !<src.isevent.e_house_player_events>
+        src.events +e_house_player_events
+    endif
+    src.ctag.telepad=
+endif
+ref1.color=0
+
+[TYPEDEF t_hs_telepad]
+ON=@ClientToolTip
+    ADDCLILOC <def.empty_cliloc>,Telepad
+ON=@Step
+    if (<f_house_can_access>)
+        src.ctag.telepad=<uid>
+        color=<def.colors_red>
+        src.timerf 1,f_hs_telepad <uid>
+    else
+        return 0
+    endif
+
+[EOF]

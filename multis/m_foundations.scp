@@ -1864,4 +1864,42 @@ COMPONENT=0b98,-8,10,7
 COMPONENT=0009,-8,9,7
 COMPONENT=i_sign_brass_2,-8,10,7
 
+[MULTIDEF 0147c]
+DEFNAME=m_foundation_24x24
+TYPE=t_multi_custom
+NAME=24x24 3-Story Customizable Keep
+NAMELOC=1158538
+VALUE=220000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+BaseStorage=2437
+BaseVendors=42
+//LockdownPercent=50
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=24x24 Customizable Keep
+MULTIREGION=-11,-11,12,13
+COMPONENT=i_sign_brass_2,-11,13,7
+COMPONENT=0b98,-11,13,7
+COMPONENT=0009,-11,12,7
+
+[MULTIDEF 0147d]
+DEFNAME=m_foundation_31x31
+TYPE=t_multi_custom
+NAME=31x31 3-Story Customizable Castle
+NAMELOC=1158539
+VALUE=310000
+REGIONFLAGS=region_flag_nobuilding|region_antimagic_teleport
+TSPEECH=spk_house_cmds
+BaseStorage=2437
+BaseVendors=42
+//LockdownPercent=50
+CATEGORY=Multis
+SUBSECTION=House Foundations
+DESCRIPTION=31x31 Customizable Castle
+MULTIREGION=-15,-15,15,15
+COMPONENT=i_sign_brass_2,-15,15,7
+COMPONENT=0b98,-15,15,7
+COMPONENT=0009,-15,14,7
+
 [EOF]
