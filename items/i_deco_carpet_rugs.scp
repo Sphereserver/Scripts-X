@@ -1974,7 +1974,152 @@ NAME=world tree
 //world tree (large)(east)
 NAME=world tree
 
+[ITEMDEF 0a595]
+// Mage Rug 5x5
+DUPEITEM=0a59e
 
+[ITEMDEF 0a596]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a597]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a598]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a599]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a59a]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a59b]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a59c]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a59d]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a59e]
+// Mage Rug 5x5
+DEFNAME=i_rug_mage_5x5
+NAME=Mage Rug
+TYPE=t_floor
+DYE=1
+CAN=can_i_platform
+TEVENTS=t_arcane_circle
+DUPELIST=0a595,0a596,0a597,0a598,0a599,0a59a,0a59b,0a59c,0a59d,0a59f,0a5a0,0a5a1,0a5a2,0a5a3,0a5a4,0a5a5,0a5a6,0a5a7,0a5a8,0a5a9,0a5aa,0a5ab
+CATEGORY=Decoration - Carpets & Rugs
+SUBSECTION=Mage Set
+DESCRIPTION=Mage Rug 5x5
+
+[ITEMDEF 0a59f]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a5a0]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a5a1]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a5a2]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a5a3]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a5a4]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a5a5]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a5a6]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a5a7]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a5a8]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a5a9]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a5aa]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+[ITEMDEF 0a5ab]
+// Mage Rug 5x5
+DUPEITEM=0a59e
+
+
+[ITEMDEF 0a5ae]
+// Mage Rug 3x3
+DUPEITEM=0a5d6
+
+[ITEMDEF 0a5af]
+// Mage Rug 3x3
+DUPEITEM=0a5d6
+
+[ITEMDEF 0a5b0]
+// Mage Rug 3x3
+DUPEITEM=0a5d6
+
+[ITEMDEF 0a5b1]
+// Mage Rug 3x3
+DUPEITEM=0a5d6
+
+[ITEMDEF 0a5d6]
+// Mage Rug 3x3
+DEFNAME=i_rug_mage_3x3
+NAME=Mage Rug
+TYPE=t_floor
+DYE=1
+CAN=can_i_platform
+TEVENTS=t_arcane_circle
+DUPELIST=0a5ae,0a5af,0a5b0,0a5b1,0a5d7,0a5d8,0a5d9,0a5da
+CATEGORY=Decoration - Carpets & Rugs
+SUBSECTION=Mage Set
+DESCRIPTION=Mage Rug 3x3
+
+[ITEMDEF 0a5d7]
+// Mage Rug 3x3
+DUPEITEM=0a5d6
+
+[ITEMDEF 0a5d8]
+// Mage Rug 3x3
+DUPEITEM=0a5d6
+
+[ITEMDEF 0a5d9]
+// Mage Rug 3x3
+DUPEITEM=0a5d6
+
+[ITEMDEF 0a5da]
+// Mage Rug 3x3
+DUPEITEM=0a5d6
 ////////////
 // Multis //
 ////////////
@@ -2074,5 +2219,53 @@ COMPONENT=09e79,0,-2
 COMPONENT=09e7a,-1,-1
 COMPONENT=09e7b,-1,-2
 COMPONENT=09e7c,-2,-1
+
+[ITEMDEF m_rug_mage_5x5]
+ID=0a59e
+NAME=Mage Rug
+TYPE=t_multi
+CATEGORY=House Addons
+SUBSECTION=Misc
+DESCRIPTION=Mage Rug 5x5
+MULTIREGION=0,0,0,0
+COMPONENT=0a597,1,-2
+COMPONENT=0a59f,1,0
+COMPONENT=0a5a0,2,0
+COMPONENT=0a5a1,-2,0
+COMPONENT=0a5a2,-1,0
+COMPONENT=0a5a3,0,-1
+COMPONENT=0a5a4,1,-1
+COMPONENT=0a5a5,2,-1
+COMPONENT=0a5a6,-2,-1
+COMPONENT=0a5a7,-1,-1
+COMPONENT=0a5a8,0,-2
+COMPONENT=0a5a9,-1,-2
+COMPONENT=0a5aa,2,-2
+COMPONENT=0a595,0,2
+COMPONENT=0a596,1,2
+COMPONENT=0a598,-1,2
+COMPONENT=0a599,0,1
+COMPONENT=0a59a,1,1
+COMPONENT=0a59b,2,1
+COMPONENT=0a59c,-2,1
+COMPONENT=0a59d,-1,1
+COMPONENT=0a5ab,-2,2
+
+[ITEMDEF m_rug_mage_3x3]
+ID=0a5d6
+NAME=Mage Rug
+TYPE=t_multi
+CATEGORY=House Addons
+SUBSECTION=Misc
+DESCRIPTION=Mage Rug 3x3
+MULTIREGION=0,0,0,0
+COMPONENT=0a5b0,-1,1
+COMPONENT=0a5d7,-1,0
+COMPONENT=0a5da,-1,-1
+COMPONENT=0a5af,0,1
+COMPONENT=0a5d9,0,-1
+COMPONENT=0a5ae,1,1
+COMPONENT=0a5b1,1,0
+COMPONENT=0a5d8,1,-1
 
 [EOF]
