@@ -217,7 +217,7 @@ t_dye_vat               165
 t_dye                   166
 t_potion_empty          167   // empty bottle
 t_mortar                168
-//t_unused_169          169
+t_hair_dye              169
 t_sewing_kit            170
 t_tinker_tools          171
 t_wall                  172   // wall of a structure

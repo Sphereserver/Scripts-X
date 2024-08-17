@@ -4178,4 +4178,105 @@ CATEGORY=Decoration - Furniture
 SUBSECTION=Kitchen Set
 DESCRIPTION=Wash Basin (countertop)
 
+[ITEMDEF 0a586]
+// Mage Throne South
+DEFNAME=i_mage_throne
+NAME=Mage Throne
+DUPELIST=0a587
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mage Set
+DESCRIPTION=Mage Throne
+
+[ITEMDEF 0a587]
+// Mage Throne East
+DUPEITEM=0a586
+
+[ITEMDEF 0a588]
+// Magic Book Stand South
+DEFNAME=i_mage_book_stand
+NAME=Mage's Book Stand
+TYPE=t_normal
+DYE=1
+FLIP=1
+DUPELIST=0a58e
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mage Set
+DESCRIPTION=Mage Book Stand
+
+[ITEMDEF 0a589]
+// Magic Book Stand South
+
+[ITEMDEF 0a58a]
+// Magic Book Stand South
+
+[ITEMDEF 0a58b]
+// Magic Book Stand South
+
+[ITEMDEF 0a58c]
+// Magic Book Stand South
+
+[ITEMDEF 0a58d]
+// Magic Book Stand South
+
+[ITEMDEF 0a58e]
+// Magic Book Stand East
+DUPEITEM=0a588
+
+[ITEMDEF 0a58f]
+// Magic Book Stand East
+
+[ITEMDEF 0a590]
+// Magic Book Stand East
+
+[ITEMDEF 0a591]
+// Magic Book Stand East
+
+[ITEMDEF 0a592]
+// Magic Book Stand East
+
+[ITEMDEF 0a593]
+// Magic Book Stand East
+
+[ITEMDEF 0a5db]
+// Mage Crystal Ball Frame 1
+DEFNAME=i_crystal_ball_mage
+NAME=Crystal Ball
+TYPE=t_normal
+DYE=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mage Set
+DESCRIPTION=Crystal Ball
+
+[ITEMDEF 0a5dc]
+// Mage Crystal Ball Frame 2
+
+[ITEMDEF 0a5dd]
+// Mage Crystal Ball Frame 3
+
+[ITEMDEF 0a5de]
+// Mage Crystal Ball Frame 4
+
+[ITEMDEF 0a5df]
+// Mage Crystal Ball Frame 5
+
+
+[ITEMDEF 0a5e8]
+// Alchemist Bookcase (S)
+DEFNAME=i_alchemist_bookcase
+NAME=Alchemist Bookcase
+TYPE=t_container
+TDATA2=04d
+DYE=1
+FLIP=1
+DUPELIST=0a5e9
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mage Set
+DESCRIPTION=Alchemist Bookcase
+ON=@Create
+   COLOR=01c0
+
+[ITEMDEF 0a5e9]
+// Alchemist Bookcase (E)
+DUPEITEM=0a5e8
+
 [EOF]

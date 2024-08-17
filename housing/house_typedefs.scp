@@ -27,6 +27,9 @@ ON=@HouseSysInit
 		link.region.events=+r_house_system
 		link.region.flags=region_flag_nodecay|region_flag_nobuilding|region_antimagic_recall_in|region_flag_insta_logout
 		link.tag.buildon=<serv.rtime>
+		if !<isempty <link.tag.telepads>>
+			hs_set_telepads <link>
+		endif
 		resendtooltip 1,0
 	endif
 
