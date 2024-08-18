@@ -640,4 +640,34 @@ RES_WEBPAGE			= 51	// Define a web page template.
 //--
 RESTYPE_BIT_SHIFT	= 20
 
+[DEFNAME serv_log_utility]
+//Example: SERV.LOG @CTCOL_RED,LOGL_EVENT,LOGM_NOCONTEXT|LOGM_KILLS message
+
+LOGL_FATAL  = 1,    // fatal error ! cannot continue.
+LOGL_CRIT   = 2,    // critical. might not continue.
+LOGL_ERROR  = 3,    // non-fatal errors. can continue.
+LOGL_WARN   = 4,    // strange.
+LOGL_EVENT  = 5,    // Misc major events.
+LOGL_QTY    = 0xF,  // first 4 bits = binary 1111 = dec 15 = hex 0xF
+
+// --log Flags
+LOGF_CONSOLE_ONLY   = 0x10,    // do not write this message to the log file
+LOGF_LOGFILE_ONLY   = 0x20,    // write this message only to the log file
+LOGF_QTY            = 0xF0,
+
+// --subject Matter (severity level is first 4 bits, LOGL_EVENT)
+LOGM_ACCOUNTS       = 0x000100,
+LOGM_INIT           = 0x000200,    // start up messages.
+LOGM_SAVE           = 0x000400,    // world save status.
+LOGM_CLIENTS_LOG    = 0x000800,    // all clients as they log in and out.
+LOGM_GM_PAGE        = 0x001000,    // player gm pages.
+LOGM_PLAYER_SPEAK   = 0x002000,    // All that the players say.
+LOGM_GM_CMDS        = 0x004000,    // Log all GM commands.
+LOGM_CHEAT          = 0x008000,    // Probably an exploit !
+LOGM_KILLS          = 0x010000,    // Log player combat results.
+LOGM_HTTP           = 0x020000,
+LOGM_NOCONTEXT      = 0x040000,    // do not include context information
+LOGM_DEBUG          = 0x080000,    // debug kind of message with "DEBUG:" prefix
+LOGM_QTY            = 0x0FFF00     // All masks.
+
 [EOF]

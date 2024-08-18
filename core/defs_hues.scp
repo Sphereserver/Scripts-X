@@ -102,4 +102,15 @@ dcolor_lorange		720628
 dcolor_lgreen1		1621840
 dcolor_lgreen2		22616011
 
+[DEFNAME console_text_color]
+CTCOL_DEFAULT   0
+CTCOL_RED       1
+CTCOL_GREEN     2
+CTCOL_YELLOW    3
+CTCOL_BLUE      4
+CTCOL_MAGENTA   5
+CTCOL_CYAN      6
+CTCOL_WHITE     7
+CTCOL_QTY       8
+
 [EOF]
