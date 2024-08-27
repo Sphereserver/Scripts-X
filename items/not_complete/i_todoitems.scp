@@ -5839,16 +5839,6 @@ TYPE=t_light_lit
 DEFNAME=i_mondo_totum_pole_of
 TYPE=t_normal
 
-
-
-
-
-
-
-
-
-
-
 [ITEMDEF 0a222]
 // Ank_OFF_East
 DEFNAME=i_ank_off_east

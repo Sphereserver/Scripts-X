@@ -556,6 +556,507 @@ NAME=sacrificial altar
 DUPEITEM=02a9a
 
 
+[ITEMDEF 0a222]
+// Ankh Paper Lantern (E)(unlit)
+DEFNAME=i_lantern_paper_ankh1
+NAME=Ankh Paper Lantern
+TYPE=t_light_out
+TDATA3=i_lantern_paper_ankh1_lit
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Paper Lantern, Ankh(E)(unlit)
+ON=@Create
+   MOREZ=220
+
+[ITEMDEF 0a223]
+// Ankh Paper Lantern (E)(lit)
+DEFNAME=i_lantern_paper_ankh1_lit
+NAME=Ankh Paper Lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_paper_ankh1
+DUPELIST=0a224,0a225
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Paper Lantern, Ankh(E)(lit)
+ON=@Create
+	MOREZ=220
+
+[ITEMDEF 0a224]
+// Ankh Paper Lantern (E)(lit)
+DUPEITEM=0a223
+
+[ITEMDEF 0a225]
+// Ankh Paper Lantern (E)(lit)
+DUPEITEM=0a223
+
+[ITEMDEF 0a226]
+// Ankh Paper Lantern (S)(unlit)
+DEFNAME=i_lantern_paper_ankh2
+NAME=Ankh Paper Lantern
+TYPE=t_light_out
+TDATA3=i_lantern_paper_ankh2_lit
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Paper Lantern, Ankh(S)(unlit)
+ON=@Create
+   MOREZ=220
+
+[ITEMDEF 0a227]
+// Ankh Paper Lantern (S)(lit)
+DEFNAME=i_lantern_paper_ankh2_lit
+NAME=Ankh Paper Lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_paper_ankh2
+DUPELIST=0a228,0a229
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Paper Lantern, Ankh(S)(lit)
+ON=@Create
+	MOREZ=220
+
+[ITEMDEF 0a228]
+// Ankh Paper Lantern (S)(lit)
+DUPEITEM=0a227
+
+[ITEMDEF 0a229]
+// Ankh Paper Lantern (S)(lit)
+DUPEITEM=0a227
+
+[ITEMDEF 0a22a]
+// Axe Paper Lantern (E)(unlit)
+DEFNAME=i_lantern_paper_axe1
+NAME=Axe Paper Lantern
+TYPE=t_light_out
+TDATA3=i_lantern_paper_axe1_lit
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Paper Lantern, Axe(E)(unlit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a22b]
+// Axe Paper Lantern (E)(lit)
+DEFNAME=i_lantern_paper_axe1_lit
+NAME=Axe Paper Lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_paper_axe1
+DUPELIST=0a22c,0a22d
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Paper Lantern, Axe(E)(lit)
+ON=@Create
+	MOREZ=240
+
+[ITEMDEF 0a22c]
+// Axe Paper Lantern (E)(lit)
+DUPEITEM=0a22b
+
+[ITEMDEF 0a22d]
+// Axe Paper Lantern (E)(lit)
+DUPEITEM=0a22b
+
+[ITEMDEF 0a22e]
+// Axe Paper Lantern (S)(unlit)
+DEFNAME=i_lantern_paper_axe2
+NAME=Axe Paper Lantern
+TYPE=t_light_out
+TDATA3=i_lantern_paper_axe2_lit
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Paper Lantern, Axe(S)(unlit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a22f]
+// Axe Paper Lantern (S)(lit)
+DEFNAME=i_lantern_paper_axe2_lit
+NAME=Axe Paper Lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_paper_axe2
+DUPELIST=0a230,0a231
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Paper Lantern, Axe(S)(lit)
+ON=@Create
+	MOREZ=240
+
+[ITEMDEF 0a230]
+// Axe Paper Lantern (S)(lit)
+DUPEITEM=0a22f
+
+[ITEMDEF 0a231]
+// Axe Paper Lantern (S)(lit)
+DUPEITEM=0a22f
+
+[ITEMDEF 0a232]
+// Sword Paper Lantern (E)(unlit)
+DEFNAME=i_lantern_paper_sword1
+NAME=Sword Paper Lantern
+TYPE=t_light_out
+TDATA3=i_lantern_paper_sword1_lit
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Paper Lantern, Sword(E)(unlit)
+ON=@Create
+   MOREZ=220
+
+[ITEMDEF 0a233]
+// Sword Paper Lantern (E)(lit)
+DEFNAME=i_lantern_paper_sword1_lit
+NAME=Sword Paper Lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_paper_sword1
+DUPELIST=0a234,0a235
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Paper Lantern, Sword(E)(lit)
+ON=@Create
+	MOREZ=220
+
+[ITEMDEF 0a234]
+// Sword Paper Lantern (E)(lit)
+DUPEITEM=0a233
+
+[ITEMDEF 0a235]
+// Sword Paper Lantern (E)(lit)
+DUPEITEM=0a233
+
+[ITEMDEF 0a236]
+// Sword Paper Lantern (S)(unlit)
+DEFNAME=i_lantern_paper_sword2
+NAME=Sword Paper Lantern
+TYPE=t_light_out
+TDATA3=i_lantern_paper_sword2_lit
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Paper Lantern, Sword(S)(unlit)
+ON=@Create
+   MOREZ=220
+
+[ITEMDEF 0a237]
+// Sword Paper Lantern (S)(lit)
+DEFNAME=i_lantern_paper_sword2_lit
+NAME=Sword Paper Lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_paper_sword2
+DUPELIST=0a238,0a239
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Paper Lantern, Sword(S)(lit)
+ON=@Create
+	MOREZ=220
+
+[ITEMDEF 0a238]
+// Sword Paper Lantern (S)(lit)
+DUPEITEM=0a237
+
+[ITEMDEF 0a239]
+// Sword Paper Lantern (S)(lit)
+DUPEITEM=0a237
+
+[ITEMDEF 0a23a]
+// Masks Paper Lantern (E)(unlit)
+DEFNAME=i_lantern_paper_masks1
+NAME=Masks Paper Lantern
+TYPE=t_light_out
+TDATA3=i_lantern_paper_masks1_lit
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Paper Lantern, Masks(E)(unlit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a23b]
+// Masks Paper Lantern (E)(lit)
+DEFNAME=i_lantern_paper_masks1_lit
+NAME=Masks Paper Lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_paper_masks1
+DUPELIST=0a23c,0a23d
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Paper Lantern, Masks(E)(lit)
+ON=@Create
+	MOREZ=240
+
+[ITEMDEF 0a23c]
+// Masks Paper Lantern (E)(lit)
+DUPEITEM=0a23b
+
+[ITEMDEF 0a23d]
+// Masks Paper Lantern (E)(lit)
+DUPEITEM=0a23b
+
+[ITEMDEF 0a23e]
+// Masks Paper Lantern (S)(unlit)
+DEFNAME=i_lantern_paper_masks2
+NAME=Masks Paper Lantern
+TYPE=t_light_out
+TDATA3=i_lantern_paper_masks2_lit
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Paper Lantern, Masks(S)(unlit)
+ON=@Create
+   MOREZ=240
+
+[ITEMDEF 0a23f]
+// Masks Paper Lantern (S)(lit)
+DEFNAME=i_lantern_paper_masks2_lit
+NAME=Masks Paper Lantern
+TYPE=t_light_lit
+TDATA3=i_lantern_paper_masks2
+DUPELIST=0a240,0a241
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Paper Lantern, Masks(S)(lit)
+ON=@Create
+	MOREZ=240
+
+[ITEMDEF 0a240]
+// Masks Paper Lantern (S)(lit)
+DUPEITEM=0a23f
+
+[ITEMDEF 0a241]
+// Masks Paper Lantern (S)(lit)
+DUPEITEM=0a23f
+
+[ITEMDEF 0a242]
+// painting_moon_East
+DEFNAME=i_painting_moon
+NAME=Moon Painting
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Painting, Moon
+DUPELIST=0a243
+
+[ITEMDEF 0a243]
+// painting_moon_South
+DUPEITEM=0a242
+
+[ITEMDEF 0a244]
+// painting_skull_East
+DEFNAME=i_painting_skull
+NAME=Skull Painting
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Painting, Skull
+DUPELIST=0a245
+
+[ITEMDEF 0a245]
+// painting_skull_South
+DUPEITEM=0a244
+
+[ITEMDEF 0a246]
+// painting_teardrop_E
+DEFNAME=i_painting_teardrop
+NAME=Teardrop Painting
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Painting, Teardrop
+DUPELIST=0a247
+
+[ITEMDEF 0a247]
+// painting_teardrop_S
+DUPEITEM=0a246
+
+[ITEMDEF 0a248]
+// painting_Chalice_Ea
+DEFNAME=i_painting_chalice
+NAME=Chalice Painting
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Painting, Chalice
+DUPELIST=0a249
+
+[ITEMDEF 0a249]
+// painting_chalise_So
+DUPEITEM=0a248
+
+[ITEMDEF 0a24a]
+// pillow_crook_South
+DEFNAME=i_pillow_crook
+NAME=Crook Pillow
+FLIP=1
+VALUE=33
+WEIGHT=6.1
+RESOURCES=6 i_cloth,3 i_wool,1 i_thread
+SKILLMAKE=Tailoring 78.0,t_sewing_kit
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Pillow, Crook
+DUPELIST=0a24b
+
+[ITEMDEF 0a24b]
+// pillow_crook_East
+DUPEITEM=0a24a
+
+[ITEMDEF 0a24c]
+// pillow_evan scales_South
+DEFNAME=i_pillow_evan_scales
+NAME=Evan Scales Pillow
+FLIP=1
+VALUE=33
+WEIGHT=6.1
+RESOURCES=6 i_cloth,3 i_wool,1 i_thread
+SKILLMAKE=Tailoring 78.0,t_sewing_kit
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Pillow, Evan Scales
+DUPELIST=0a24d
+
+[ITEMDEF 0a24d]
+// pillow_evan scales_East
+DUPEITEM=0a24c
+
+[ITEMDEF 0a24e]
+// pillow_sceptor_South
+DEFNAME=i_pillow_sceptor
+NAME=Evan Scales Pillow
+FLIP=1
+VALUE=33
+WEIGHT=6.1
+RESOURCES=6 i_cloth,3 i_wool,1 i_thread
+SKILLMAKE=Tailoring 78.0,t_sewing_kit
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Pillow, Evan Scales
+DUPELIST=0a24f
+
+[ITEMDEF 0a24f]
+// pillow_sceptor_East
+DUPEITEM=0a24e
+
+[ITEMDEF 0a250]
+// pillow_coin_South
+DEFNAME=i_pillow_coin
+NAME=Evan Scales Pillow
+FLIP=1
+VALUE=33
+WEIGHT=6.1
+RESOURCES=6 i_cloth,3 i_wool,1 i_thread
+SKILLMAKE=Tailoring 78.0,t_sewing_kit
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Pillow, Evan Scales
+DUPELIST=0a251
+
+[ITEMDEF 0a251]
+// pillow_coin_East
+DUPEITEM=0a250
+
+[ITEMDEF 0a252]
+// sculpture_wood_hand
+DEFNAME=i_sculpture_wood_hand
+NAME=Hand Sculpture
+TYPE=t_normal
+WEIGHT=50.0
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Sculpture, Hand
+ON=@DClick
+   dispid=<qval <dispid>==i_sculpture_wood_hand?0a253:i_sculpture_wood_hand>
+   update
+   return 1
+
+[ITEMDEF 0a253]
+// sculpture_wood_hand(anim)
+
+[ITEMDEF 0a254]
+// sculpture_wood_hand(anim)
+
+[ITEMDEF 0a255]
+// sculpture_wood_hand(anim)
+
+[ITEMDEF 0a256]
+// sculpture_wood_hand(anim)
+
+[ITEMDEF 0a257]
+// sculpture_wood_hearth
+DEFNAME=i_sculpture_wood_hearth
+NAME=Hearth Sculpture
+TYPE=t_normal
+WEIGHT=50.0
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Sculpture, Hearth
+ON=@DClick
+   dispid=<qval <dispid>==i_sculpture_wood_hearth?0a258:i_sculpture_wood_hearth>
+   update
+   return 1
+
+[ITEMDEF 0a258]
+// sculpture_wood_hearth(anim)
+
+[ITEMDEF 0a259]
+// sculpture_wood_hearth(anim)
+
+[ITEMDEF 0a25a]
+// sculpture_wood_hearth(anim)
+
+[ITEMDEF 0a25b]
+// sculpture_wood_hearth(anim)
+
+[ITEMDEF 0a25c]
+// sculpture_wood_evan_scales
+DEFNAME=i_sculpture_wood_scales
+NAME=Evan Scales Sculpture
+TYPE=t_normal
+WEIGHT=50.0
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Sculpture, Evan Scales
+ON=@DClick
+   dispid=<qval <dispid>==i_sculpture_wood_scales?0a25d:i_sculpture_wood_scales>
+   update
+   return 1
+
+[ITEMDEF 0a25d]
+// sculpture_wood_evan_scales(anim)
+
+[ITEMDEF 0a25e]
+// sculpture_wood_evan_scales(anim)
+
+[ITEMDEF 0a25f]
+// sculpture_wood_evan_scales(anim)
+
+[ITEMDEF 0a260]
+// sculpture_wood_evan_scales(anim)
+
+[ITEMDEF 0a261]
+// sculpture_wood_broken_shield
+DEFNAME=i_sculpture_wood_broken_shield
+NAME=Broken Shield Sculpture
+TYPE=t_normal
+WEIGHT=50.0
+CATEGORY=Decor Collection
+SUBSECTION=Artisan Festival
+DESCRIPTION=Sculpture, Broken Shield
+ON=@DClick
+   dispid=<qval <dispid>==i_sculpture_wood_broken_shield?0a262:i_sculpture_wood_broken_shield>
+   update
+   return 1
+
+[ITEMDEF 0a262]
+// sculpture_wood_broken_shield(anim)
+
+[ITEMDEF 0a263]
+// sculpture_wood_broken_shield(anim)
+
+[ITEMDEF 0a264]
+// sculpture_wood_broken_shield(anim)
+
+[ITEMDEF 0a265]
+// sculpture_wood_broken_shield(anim)
+
+
 [ITEMDEF 0a64b]
 // fishing_bear_south
 DEFNAME=i_stuffie_fishing_bear
