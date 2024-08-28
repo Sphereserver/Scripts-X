@@ -3428,7 +3428,7 @@ DUPELIST=09c0d
 //trophy dimetrosaurhead
 DUPEITEM=09c0c
 
-[ITEMDEF 09c0c]
+[ITEMDEF 09c0e]
 DEFNAME=i_trophy_saurosaurushead
 NAME=saurosaurus trophy
 FLIP=1
@@ -3437,9 +3437,9 @@ SUBSECTION=Trophies
 DESCRIPTION=Saurosaurus
 DUPELIST=09c0d
 
-[ITEMDEF 09c0d]
+[ITEMDEF 09c0f]
 //trophy saurosaurushead
-DUPEITEM=09c0c
+DUPEITEM=09c0e
 
 
 [ITEMDEF 09cb9]
