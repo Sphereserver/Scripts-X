@@ -186,7 +186,7 @@ ON=@Create
    HITPOINTS={36 48}
    ReflectPhysicalDam=12
 
-[ITEMDEF i_ingredient_blight_gripped_longbow]
+[ITEMDEF i_blight_gripped_longbow]
 ID=i_elven_composite_longbow
 NAME=Blight Gripped Longbow
 RESOURCES=20 i_log, 10 i_ingredient_blight, 10 i_ingredient_corruption, 1 i_ingredient_paroxysmus_lard
