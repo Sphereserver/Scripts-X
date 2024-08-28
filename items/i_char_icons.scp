@@ -3958,7 +3958,7 @@ TDATA3=c_krumpus
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Krumpus_Statue
- 
+
 [ITEMDEF 0a271]
 // Krumpus_Imp_Statue
 DEFNAME=i_pet_krumpus_small
@@ -3968,7 +3968,7 @@ TDATA3=c_krumpus_small
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Krumpus_Imp_Statue
- 
+
 [ITEMDEF 0a335]
 // Crab_Coconut_Mount
 DEFNAME=i_pet_crab_coconut_mount
@@ -3978,7 +3978,7 @@ TDATA3=c_coconut_crab_mount
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Crab_Coconut_Mount
- 
+
 [ITEMDEF 0a336]
 // Crab_Coconut_Small
 DEFNAME=i_pet_crab_coconut_small
@@ -3988,7 +3988,7 @@ TDATA3=c_coconut_crab_small
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Crab_Coconut_Small
- 
+
 [ITEMDEF 0a337]
 // Crab_Coconut_Large
 DEFNAME=i_pet_crab_coconut_large
@@ -3998,7 +3998,7 @@ TDATA3=c_coconut_crab_large
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Crab_Coconut_Large
- 
+
 [ITEMDEF 0a554]
 // war_boar_mount
 DEFNAME=i_pet_war_boar_mount
@@ -4008,7 +4008,7 @@ TDATA3=c_war_boar_mount
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=war_boar_mount
- 
+
 [ITEMDEF 0a57b]
 // Capybara_Mount_Stat
 DEFNAME=i_pet_capybara_mount
@@ -4018,7 +4018,7 @@ TDATA3=c_capybara_mount
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Capybara_Mount_Stat
- 
+
 [ITEMDEF 0a57c]
 // Capybara_Baby_Statu
 DEFNAME=i_pet_capybara_baby
@@ -4028,7 +4028,7 @@ TDATA3=c_capybara_baby
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Capybara_Baby_Statu
- 
+
 [ITEMDEF 0a738]
 // Rabbit_Doom
 DEFNAME=i_pet_rabbit_doom
@@ -4038,7 +4038,7 @@ TDATA3=c_rabbit_doom
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Rabbit_Doom
- 
+
 [ITEMDEF 0a739]
 // Rabbit_Doom_Baby
 DEFNAME=i_pet_rabbit_doom_baby
@@ -4048,7 +4048,7 @@ TDATA3=c_rabbit_doom_baby
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Rabbit_Doom_Baby
- 
+
 [ITEMDEF 0a76b]
 // Dog_Newfoundland
 DEFNAME=i_pet_dog_newfoundland
@@ -4058,7 +4058,7 @@ TDATA3=c_dog_newfoundland
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Dog_Newfoundland
- 
+
 [ITEMDEF 0a76c]
 // Dog_Alaskan Malamut
 DEFNAME=i_pet_dog_malamut
@@ -4078,7 +4078,7 @@ TDATA3=c_dog_dane
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Dog_Great_Dane
- 
+
 [ITEMDEF 0a76e]
 // Dog_Saint_Bernard
 DEFNAME=i_pet_dog_bernard
@@ -4088,7 +4088,7 @@ TDATA3=c_dog_bernard
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Dog_Saint_Bernard
- 
+
 [ITEMDEF 0a76f]
 // Dog_Black_Russian_t
 DEFNAME=i_pet_dog_terier
@@ -4098,7 +4098,7 @@ TDATA3=c_dog_terier
 CATEGORY=Miscellaneous
 SUBSECTION=Character Icons
 DESCRIPTION=Dog_Black_Russian_t
- 
+
 [ITEMDEF 0a770]
 // Dog_Rottweiler
 DEFNAME=i_pet_dog_rottweiler

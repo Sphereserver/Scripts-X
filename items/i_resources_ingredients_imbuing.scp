@@ -278,6 +278,12 @@ DESCRIPTION=Vile Tentacles
 
 [ITEMDEF 05728]
 //void core
+DEFNAME=i_void_core
+NAME=Void core
+TYPE=t_normal
+VALUE=100
+WEIGHT=0.1
+
 [ITEMDEF 05729]
 [ITEMDEF 0572a]
 [ITEMDEF 0572b]
@@ -338,7 +344,7 @@ CATEGORY=Items by Professions
 SUBSECTION=Imbuing
 DESCRIPTION=Crystalline Blackrock
 
-[ITEMDEF 05733] 
+[ITEMDEF 05733]
 //Crystalline Blackrock (animation frame)
 
 [ITEMDEF 05734]
@@ -384,6 +390,13 @@ DESCRIPTION=Crystal Shards
 
 [ITEMDEF 05739]
 //lodestone
+defname=i_lodestone
+TYPE=t_normal
+VALUE=100
+WEIGHT=1.0
+CATEGORY=Resources
+SUBSECTION=Mineral
+DESCRIPTION=Lodestone
 
 [ITEMDEF 0573a]
 // Is an imbuing ingredient used to imbue the use best weapon skill property.
@@ -459,7 +472,7 @@ DESCRIPTION=Void Orb
 
 [ITEMDEF 05742]
 // Is an imbuing ingredient used to imbue high intensities of Physical
-// Fire, Cold, Poison, and Energy Resist properties. 
+// Fire, Cold, Poison, and Energy Resist properties.
 DEFNAME=i_boura_pelt
 TYPE=t_fur
 VALUE=100

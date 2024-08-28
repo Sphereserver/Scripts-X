@@ -186,7 +186,7 @@ ON=@Create
    HITPOINTS={36 48}
    ReflectPhysicalDam=12
 
-[ITEMDEF i_blight_gripped_longbow]
+[ITEMDEF i_ingredient_blight_gripped_longbow]
 ID=i_elven_composite_longbow
 NAME=Blight Gripped Longbow
 RESOURCES=20 i_log, 10 i_ingredient_blight, 10 i_ingredient_corruption, 1 i_ingredient_paroxysmus_lard
@@ -701,7 +701,7 @@ can be used by the Ninja with the proper amount of skill. A minimum of 50
 is required. Hit chance success is related to Ninjitsu skill level. It
 is a One-Handed Weapon for anyone with the requisite skill, however,
 Grandmaster Ninjas can use them while equipped with a two-handed weapon. A
-carpenter can find it in the Weapons category of the crafting menu. 
+carpenter can find it in the Weapons category of the crafting menu.
 
 [ITEMDEF 027aa]
 //FIXME: load and unload,

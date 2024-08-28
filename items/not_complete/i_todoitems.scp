@@ -5859,21 +5859,6 @@ TYPE=t_normal
 DEFNAME=i_voidpool_status
 TYPE=t_normal
 
-[ITEMDEF 0a294]
-// Holiday_Gargoyle_Ta
-DEFNAME=i_holiday_gargoyle_ta
-TYPE=t_normal
-
-[ITEMDEF 0a295]
-// Holiday_Gargoyle_ea
-DEFNAME=i_holiday_gargoyle_ea
-TYPE=t_normal
-
-[ITEMDEF 0a296]
-// Holiday_Gargoyle_Ta
-DEFNAME=i_holiday_gargoyle_ta_2
-TYPE=t_normal
-
 [ITEMDEF 0a297]
 // Ribbon_south
 DEFNAME=i_ribbon_south
