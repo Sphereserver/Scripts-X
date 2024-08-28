@@ -1309,7 +1309,7 @@ ON=@DClick
    return 1
 
 [ITEMDEF 0a12c]
-DEFNAME=i_telescope
+DEFNAME=i_telescope_anniversary
 NAME=telescope
 FLIP=1
 RESOURCES=25 i_ingot_iron, 1 i_workable_glass, 1 i_sextant_parts
