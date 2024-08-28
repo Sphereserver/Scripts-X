@@ -4704,16 +4704,6 @@ TYPE=t_normal
 DEFNAME=i_najasaurus_rear_lef
 TYPE=t_normal
 
-[ITEMDEF 09c0e]
-// saurosaurus head le
-DEFNAME=i_saurosaurus_head_le
-TYPE=t_normal
-
-[ITEMDEF 09c0f]
-// saurosaurus head ri
-DEFNAME=i_saurosaurus_head_ri
-TYPE=t_normal
-
 [ITEMDEF 09c48]
 // foil
 DEFNAME=i_foil
