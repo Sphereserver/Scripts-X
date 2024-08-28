@@ -3435,7 +3435,7 @@ FLIP=1
 CATEGORY=Decoration - Miscellaneous
 SUBSECTION=Trophies
 DESCRIPTION=Saurosaurus
-DUPELIST=09c0d
+DUPELIST=09c0f
 
 [ITEMDEF 09c0f]
 //trophy saurosaurushead
