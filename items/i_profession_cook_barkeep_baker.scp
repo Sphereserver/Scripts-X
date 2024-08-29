@@ -2730,7 +2730,8 @@ DUPELIST=044e6
 //Fish (dragon)
 DUPEITEM=044e5
 
-[ITEMDEF 03b10]
+[ITEMDEF i_seahorse]
+ID=i_aquarium_seahorse
 DEFNAME=i_seahorse
 NAME=seahorse
 TYPE=t_fish
@@ -2783,7 +2784,7 @@ DUPELIST=0a423
 DEFNAME=i_serpent_steak_grilled
 NAME=grilled serpent steak
 FLIP=1
-RESOURCES=1 i_serpent_steak_raw	
+RESOURCES=1 i_serpent_steak_raw
 SKILLMAKE=Cooking 45.0, t_cooking
 CATEGORY=Items by Professions
 SUBSECTION=Cook
@@ -2856,7 +2857,7 @@ ON=@Create
 
 [ITEMDEF i_cocoa_liquor]
 ID=i_cookie_mix
-NAME=cocoa liquor 
+NAME=cocoa liquor
 TYPE=t_food
 VALUE=7
 WEIGHT=0.1

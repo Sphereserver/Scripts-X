@@ -2628,6 +2628,9 @@ ON=@Create
    //TAG.WeightReduction=30
    RESPHYSICAL=1
 
+[ITEMDEF 03171]
+//elven quiver
+DUPEITEM=02fb7
 
 [ITEMDEF 02fb9]
 DEFNAME=i_elven_male_robe1
@@ -3173,7 +3176,7 @@ CanUse=can_u_human|can_u_elf
 CATEGORY=Provisions - Clothes
 SUBSECTION=Shirts & Robes
 DESCRIPTION=Hooded Britannia Robe (1)
-Expansion=RDS_TOL 
+Expansion=RDS_TOL
 ON=@Create
    HITPOINTS={36 48}
 

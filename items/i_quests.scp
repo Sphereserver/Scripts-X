@@ -22,7 +22,7 @@ ON=@Create
 ///////////////////
 
 [ITEMDEF 02db]
-DEFNAME=i_blighted_cotton
+DEFNAME=i_ingredient_blighted_cotton
 NAME=blighted cotton
 CATEGORY=Quests
 SUBSECTION=Twisted Weald
@@ -651,6 +651,10 @@ ON=@Create
    HITPOINTS={30 50}
    COLOR=0481
 
+[ITEMDEF 0a296]
+//krampus minion talons
+DUPEITEM=0a294
+
 [ITEMDEF 0a295]
 DEFNAME=i_earrings_krampus_minion
 NAME=krampus minion earrings
@@ -671,11 +675,6 @@ SUBSECTION=Krampus Encounter
 DESCRIPTION=Krampus Minion Earrings
 ON=@Create
    HITPOINTS={30 50}
-
-[ITEMDEF 0a296]
-//krampus minion talons
-DUPEITEM=0a294
-
 
 [ITEMDEF i_town_cryer_krampus_encounter]
 ID=i_town_cryer

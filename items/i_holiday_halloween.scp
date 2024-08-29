@@ -7,6 +7,9 @@ VERSION=X1
 [ITEMDEF 042b5]
 DEFNAME=i_skulls_on_pike
 NAME=skulls on pike
+TYPE=t_normal
+WEIGHT=13.0
+RESOURCES=10 i_bone,3 i_bone_skull
 CATEGORY=Halloween
 SUBSECTION=Decoration
 DESCRIPTION=Skulls on Pike

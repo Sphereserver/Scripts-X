@@ -1312,12 +1312,6 @@ ON=@CreateLoot
     ITEM=magic_items
     //ITEM=spellweaving_scrolls
 
-
-[ITEMDEF 10090]
-DEFNAME=i_pet_hiryu
-NAME=Hiryu
-
-
 [CHARDEF 0115]
 NAME=Cu Sidhe
 SOUND=snd_animal_cusidhe1
