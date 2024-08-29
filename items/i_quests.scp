@@ -1287,7 +1287,8 @@ DEFNAME=i_hanging_tools_east_2
 TYPE=t_normal
 
 [ITEMDEF 0a32b]
-DEFNAME=i_anchor
+//stockless anchor
+DEFNAME=i_anchor_stockless
 NAME=anchor
 DYE=1
 FLIP=1
@@ -1297,6 +1298,7 @@ DESCRIPTION=Anchor
 DUPELIST=0a32d
 
 [ITEMDEF 0a32c]
+//stockless anchor chain
 DEFNAME=i_anchor_chain
 NAME=chain
 DYE=1
@@ -1307,11 +1309,11 @@ DESCRIPTION=Anchor Chain
 DUPELIST=0a32e
 
 [ITEMDEF 0a32d]
-//anchor
+//stockless anchor
 DUPEITEM=0a32b
 
 [ITEMDEF 0a32e]
-//chain
+//stockless anchor chain
 DUPEITEM=0a32c
 
 [ITEMDEF 0a32f]

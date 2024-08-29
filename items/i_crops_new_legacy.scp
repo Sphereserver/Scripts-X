@@ -1647,14 +1647,14 @@ DEFNAME=i_crop_orchids4
 NAME=Orchids
 TYPE=t_crops
 TDATA1=i_crop_orchids4
-TDATA3=i_flower_orchids_2
+TDATA3=i_flower_orchids_3
 VALUE=1
 CATEGORY=Vegetation
 SUBSECTION=Crops
 DESCRIPTION=Orchids 4(mature)
 
 [ITEMDEF 0a8ec]
-DEFNAME=i_flower_orchids_2
+DEFNAME=i_flower_orchids_3
 NAME=Orchids
 TYPE=t_normal
 // TDATA1=i_crop_orchids4_1
@@ -1664,7 +1664,7 @@ VALUE=3
 WEIGHT=0.1
 CATEGORY=Vegetation
 SUBSECTION=Flowers
-DESCRIPTION=Orchids 2
+DESCRIPTION=Orchids 3
 
 [ITEMDEF 0a8ed]
 DEFNAME=i_crop_peas_1

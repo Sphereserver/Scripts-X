@@ -1404,26 +1404,26 @@ DUPEITEM=0a15e
 DUPEITEM=0a15e
 
 [ITEMDEF 0a161]
-DEFNAME=i_green_pumpkin_witch
+DEFNAME=i_green_pumpkin_witch2
 NAME=carved pumpkin
 TYPE=t_light_out
-TDATA3=i_green_pumpkin_witch_lit
+TDATA3=i_green_pumpkin_witch2_lit
 WEIGHT=18.0
 CATEGORY=Halloween
 SUBSECTION=Lightsources
-DESCRIPTION=Carved Pumpkin (witch)(unlit)
+DESCRIPTION=Carved Pumpkin (witch2)(unlit)
 ON=@Create
    MOREZ=1
 
 [ITEMDEF 0a162]
-DEFNAME=i_green_pumpkin_witch_lit
+DEFNAME=i_green_pumpkin_witch2_lit
 NAME=carved pumpkin
 TYPE=t_light_lit
-TDATA3=i_green_pumpkin_witch
+TDATA3=i_green_pumpkin_witch2
 WEIGHT=18.0
 CATEGORY=Halloween
 SUBSECTION=Lightsources
-DESCRIPTION=Carved Pumpkin (witch)(lit)
+DESCRIPTION=Carved Pumpkin (witch2)(lit)
 DUPELIST=0a163,0a164
 
 [ITEMDEF 0a163]
