@@ -101,6 +101,46 @@ DUPELIST=0315d
 //horn of dread horn
 DUPEITEM=0315c
 
+[ITEMDEF i_tainted_shroom1]
+ID=0222f
+NAME=dread horn tainted mushroom
+TYPE=t_normal
+WEIGHT=5.0
+VALUE=3
+CATEGORY=Quests
+SUBSECTION=Twisted Weald
+DESCRIPTION=Tainted Mushroom 1
+
+[ITEMDEF i_tainted_shroom2]
+ID=02231
+NAME=dread horn tainted mushroom
+TYPE=t_normal
+WEIGHT=5.0
+VALUE=3
+CATEGORY=Quests
+SUBSECTION=Twisted Weald
+DESCRIPTION=Tainted Mushroom 2
+
+[ITEMDEF i_tainted_shroom3]
+ID=02230
+NAME=dread horn tainted mushroom
+TYPE=t_normal
+WEIGHT=5.0
+VALUE=3
+CATEGORY=Quests
+SUBSECTION=Twisted Weald
+DESCRIPTION=Tainted Mushroom 3
+
+[ITEMDEF i_tainted_shroom4]
+ID=0222e
+NAME=dread horn tainted mushroom
+TYPE=t_normal
+WEIGHT=5.0
+VALUE=3
+CATEGORY=Quests
+SUBSECTION=Twisted Weald
+DESCRIPTION=Tainted Mushroom 4
+
 [ITEMDEF 02002]
 DEFNAME=i_key_quest
 NAME=quest key
