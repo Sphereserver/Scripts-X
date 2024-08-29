@@ -2025,7 +2025,6 @@ NAME=glass tree
 TYPE=t_light_out
 TDATA3=i_glass_tree_1_e_lit
 WEIGHT=1.0
-TEVENTS=t_big_light
 CATEGORY=Christmas
 SUBSECTION=Decoration
 DESCRIPTION=Glass Tree 1 (east)(unlit)
