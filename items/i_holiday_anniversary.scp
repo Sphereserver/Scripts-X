@@ -159,151 +159,6 @@ DUPELIST=03bb4
 //10th anniversary sculpture
 DUPEITEM=03bb3
 
-
-[ITEMDEF 040da]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040db]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040dc]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040dd]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040de]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040df]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040e0]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040e1]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040e2]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040e3]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040e4]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040e5]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040e6]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040e7]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040e8]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040e9]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040ea]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040eb]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040ec]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040ed]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040ee]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040ef]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040f0]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040f1]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040f2]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040f3]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040f4]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040f5]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040f6]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040f7]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040f8]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040f9]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040fa]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040fb]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040fc]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
-[ITEMDEF 040fd]
-//codex of virtue (multi-part)
-NAME=codex of virtue
-
 [ITEMDEF 04141]
 // Mailbox South (flag up)
 DUPEITEM=04142
@@ -691,7 +546,7 @@ DESCRIPTION=15th Anniversary Cake
 ON=@Create
    MORE2=10
 ON=@ClientTooltip
-   addcliloc 1153151,<dMORE2>	//Slices: ~1_amt~ 
+   addcliloc 1153151,<dMORE2>	//Slices: ~1_amt~
 ON=@DClick
    SERV.NEWITEM i_cake_15th_anniversary_slice
    NEW.BOUNCE
@@ -1309,7 +1164,7 @@ ON=@DClick
    return 1
 
 [ITEMDEF 0a12c]
-DEFNAME=i_telescope
+DEFNAME=i_telescope_anniversary
 NAME=telescope
 FLIP=1
 RESOURCES=25 i_ingot_iron, 1 i_workable_glass, 1 i_sextant_parts

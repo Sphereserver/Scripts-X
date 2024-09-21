@@ -663,7 +663,6 @@ DUPEITEM=01d97
 //ankh of sacrifice
 DUPEITEM=01d97
 
-
 [ITEMDEF 040da]
 DEFNAME=i_sa_floor_virtue_1
 NAME=virtue symbol

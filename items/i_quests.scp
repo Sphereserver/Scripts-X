@@ -22,7 +22,7 @@ ON=@Create
 ///////////////////
 
 [ITEMDEF 02db]
-DEFNAME=i_blighted_cotton
+DEFNAME=i_ingredient_blighted_cotton
 NAME=blighted cotton
 CATEGORY=Quests
 SUBSECTION=Twisted Weald
@@ -100,6 +100,46 @@ DUPELIST=0315d
 [ITEMDEF 0315d]
 //horn of dread horn
 DUPEITEM=0315c
+
+[ITEMDEF i_tainted_shroom1]
+ID=0222f
+NAME=dread horn tainted mushroom
+TYPE=t_normal
+WEIGHT=5.0
+VALUE=3
+CATEGORY=Quests
+SUBSECTION=Twisted Weald
+DESCRIPTION=Tainted Mushroom 1
+
+[ITEMDEF i_tainted_shroom2]
+ID=02231
+NAME=dread horn tainted mushroom
+TYPE=t_normal
+WEIGHT=5.0
+VALUE=3
+CATEGORY=Quests
+SUBSECTION=Twisted Weald
+DESCRIPTION=Tainted Mushroom 2
+
+[ITEMDEF i_tainted_shroom3]
+ID=02230
+NAME=dread horn tainted mushroom
+TYPE=t_normal
+WEIGHT=5.0
+VALUE=3
+CATEGORY=Quests
+SUBSECTION=Twisted Weald
+DESCRIPTION=Tainted Mushroom 3
+
+[ITEMDEF i_tainted_shroom4]
+ID=0222e
+NAME=dread horn tainted mushroom
+TYPE=t_normal
+WEIGHT=5.0
+VALUE=3
+CATEGORY=Quests
+SUBSECTION=Twisted Weald
+DESCRIPTION=Tainted Mushroom 4
 
 [ITEMDEF 02002]
 DEFNAME=i_key_quest
@@ -651,6 +691,10 @@ ON=@Create
    HITPOINTS={30 50}
    COLOR=0481
 
+[ITEMDEF 0a296]
+//krampus minion talons
+DUPEITEM=0a294
+
 [ITEMDEF 0a295]
 DEFNAME=i_earrings_krampus_minion
 NAME=krampus minion earrings
@@ -671,11 +715,6 @@ SUBSECTION=Krampus Encounter
 DESCRIPTION=Krampus Minion Earrings
 ON=@Create
    HITPOINTS={30 50}
-
-[ITEMDEF 0a296]
-//krampus minion talons
-DUPEITEM=0a294
-
 
 [ITEMDEF i_town_cryer_krampus_encounter]
 ID=i_town_cryer
@@ -1288,7 +1327,8 @@ DEFNAME=i_hanging_tools_east_2
 TYPE=t_normal
 
 [ITEMDEF 0a32b]
-DEFNAME=i_anchor
+//stockless anchor
+DEFNAME=i_anchor_stockless
 NAME=anchor
 DYE=1
 FLIP=1
@@ -1298,6 +1338,7 @@ DESCRIPTION=Anchor
 DUPELIST=0a32d
 
 [ITEMDEF 0a32c]
+//stockless anchor chain
 DEFNAME=i_anchor_chain
 NAME=chain
 DYE=1
@@ -1308,11 +1349,11 @@ DESCRIPTION=Anchor Chain
 DUPELIST=0a32e
 
 [ITEMDEF 0a32d]
-//anchor
+//stockless anchor
 DUPEITEM=0a32b
 
 [ITEMDEF 0a32e]
-//chain
+//stockless anchor chain
 DUPEITEM=0a32c
 
 [ITEMDEF 0a32f]

@@ -4097,17 +4097,6 @@ DUPEITEM=01da3
 //left leg
 DUPEITEM=01da4
 
-
-[ITEMDEF 0207c]
-//This statue is duplicated from 01226/0139b, but used on Twisted Weald
-//as container to drop dungeon keys and receive the Essence of the Wind
-DEFNAME=i_statue_faie
-NAME=statue of the faie
-CATEGORY=Decoration - Dungeons and The Dead
-SUBSECTION=Twisted Weald
-DESCRIPTION=Statue of the Faie
-
-
 [ITEMDEF 021fc]
 DEFNAME=i_skull_spikes
 NAME=skull spikes
@@ -4218,14 +4207,6 @@ RESOURCES=1 i_rock_plain,1 i_springs
 CATEGORY=Traps
 SUBSECTION=Goblin Trap
 DESCRIPTION=Goblin Trap
-
-
-[ITEMDEF 09cee]
-DEFNAME=i_automaton_actuator_right
-NAME=automaton actuator
-CATEGORY=Decoration - Dungeons and The Dead
-SUBSECTION=Kotl City
-DESCRIPTION=Automaton Actuator (right)
 
 [ITEMDEF 09ccf]
 //automaton actuator (right)
