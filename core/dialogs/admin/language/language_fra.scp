@@ -30,6 +30,8 @@ d_admin_FRA_Resync					"ATTENTION - Les scripts du serveur seront mis à jour!"
 d_admin_FRA_Disconnect					"ATTENTION - Dans 15 minutes tous les joueurs seront déconnectés!"
 d_admin_FRA_Shutdown					"ATTENTION - Dans 15 minutes le serveur sera arrêté, déconnecter!"
 d_admin_FRA_Region_Creator				"Créateur de région"
+d_admin_FRA_MultiCentrEd				"Exporter les statistiques vers CentrEd"
+d_admin_FRA_Static2Multi				"Script d'exportation statique vers Multis"
 
 d_admin_FRA_clients					"Clients:"
 d_admin_FRA_Found					"A trouvé"

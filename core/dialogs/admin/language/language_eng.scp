@@ -30,6 +30,8 @@ d_admin_ENG_Resync					"ATTENTION - The server scripts will be updated!"
 d_admin_ENG_Disconnect					"ATTENTION - In 15 minutes all players will be disconnected!"
 d_admin_ENG_Shutdown					"ATTENTION - In 15 minutes the server will be shut down, disconnect!"
 d_admin_ENG_Region_Creator				"Region Creator"
+d_admin_ENG_MultiCentrEd				"Export Statics to CentrEd"
+d_admin_ENG_Static2Multi				"Export Static to Multis script"
 
 d_admin_ENG_clients					"Clients:"
 d_admin_ENG_Found					"Found"

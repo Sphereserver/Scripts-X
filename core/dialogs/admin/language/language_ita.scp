@@ -30,6 +30,8 @@ d_admin_ITA_Resync					"ATTENZIONE - Gli script del server verranno aggiornati!"
 d_admin_ITA_Disconnect					"ATTENZIONE - Tutti i giocatori verranno disconnessi tra 15 minuti!"
 d_admin_ITA_Shutdown					"ATTENZIONE - Il server si spegnerà tra 15 minuti, disconnettersi!"
 d_admin_ITA_Region_Creator				"Creatore di regione"
+d_admin_ITA_MultiCentrEd				"Esporta dati statici su CentrEd"
+d_admin_ITA_Static2Multi				"Esporta script da statico a Multis"
 
 d_admin_ITA_clients					"Clients:"
 d_admin_ITA_Found					"Trovato"

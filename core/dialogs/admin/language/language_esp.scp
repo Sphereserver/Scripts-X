@@ -30,6 +30,8 @@ d_admin_ESP_Resync					"ATENCIÓN - ¡Se actualizarán los scripts del servidor!
 d_admin_ESP_Disconnect					"ATENCIÓN - ¡En 15 min. los jugadores serán desconectados!"
 d_admin_ESP_Shutdown					"ATENCIÓN - El servidor se aparagá en 15 minutos, ¡desconecta!"
 d_admin_ESP_Region_Creator				"Creador de Regiones"
+d_admin_ESP_MultiCentrEd				"Exportar estática a CentrEd"
+d_admin_ESP_Static2Multi				"Exportar script estático a multis"
 
 d_admin_ESP_clients					"Clientes:"
 d_admin_ESP_Found					"Encontrado"

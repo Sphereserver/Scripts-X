@@ -6,7 +6,7 @@
 //***********************************************************************************
 // Multilanguage Region Creator
 // Created by Reflex. https://forum.spherecommunity.net/sshare.php?srt=1&uid=686
-// Reworked for a multilingual system  Golfin
+// © 11/2024 Reworked for a multilingual system  Golfin
 //***********************************************************************************
 VERSION=X1
 
@@ -193,7 +193,7 @@ ElseIf !<ISEMPTY <STREAT <ARGS>>>
    DIALOG d_Region_Record
    Return 1
 ElseIf <ISNUM <ARGS>>
-   Src.Sysmessage @tcolor_red <Def.d_Region_<Src.CTag0.AccountLang>>_No_Numbers> 
+   Src.Sysmessage @tcolor_red <Def.d_Region_<Src.CTag0.AccountLang>_No_Numbers> 
    DIALOG d_Region_Record
    Return 1
 ElseIf !<ISEMPTY <Def.<ARGS>>>

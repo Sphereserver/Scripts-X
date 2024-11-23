@@ -30,6 +30,8 @@ d_admin_SKY_Resync					"POZOR - Bude vykonaná aktualizácia skryptů serveri!"
 d_admin_SKY_Disconnect					"POZOR - Za 15 minút budú všetci hráči odpojení zo servera!"
 d_admin_SKY_Shutdown					"POZOR - Za 15 minút bude server vypnutý, odpojte sa z hry!"
 d_admin_SKY_Region_Creator				"Región Kreator"
+d_admin_SKY_MultiCentrEd				"Export Statiku do CentrEd"
+d_admin_SKY_Static2Multi				"Export Statiku do Multis skriptu"
 
 d_admin_SKY_clients					"Klientuv:"
 d_admin_SKY_Found					"Nájdených"

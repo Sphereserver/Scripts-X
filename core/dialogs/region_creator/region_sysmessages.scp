@@ -1,0 +1,84 @@
+//***********************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereServer.net
+//***********************************************************************************
+// Save in ANSI encoding
+//***********************************************************************************
+// New Multilanguage Admin
+// Created by Golfin (http://eranova.cz/) and Jhobean (https://www.uocryptonite.com/)
+//© 11/2024 Translated by Golfin, TRK Mirror_
+//***********************************************************************************
+//For an obscure reason, these defs need to be separate on a separate ANSI encoded  file. Avoid this make bug on sysmessage with special letter like é à ç á
+VERSION=X1
+
+[DEFNAME defs_d_Region_Record_Sysmessage_CSY]
+d_Region_CSY_Target_TopLeft				"Zamìø levou horní pozici oblasti."
+d_Region_CSY_Target_BottomRight				"Zamìø pravou dolní pozici oblasti."
+d_Region_CSY_Type_Area_Name				"Zadej Area název regionu (Bez pouití mezer a diakritiky!)."
+d_Region_CSY_Type_Name					"Zadej název regionu."
+d_Region_CSY_Type_Group					"Zadej název skupiny."
+d_Region_CSY_Target_P					"Zamìø pozici, kde chceš mít souøadnice P.""
+d_Region_CSY_Enter_Name					"Musíš zadat název regionu!"
+d_Region_CSY_No_Space					"Area název regionu nesmí obsahovat mezery!"
+d_Region_CSY_No_Numbers					"Area název regionu nesmí obsahovat pouze èísla, doplò té slovní název!"
+d_Region_CSY_Used					"Tento název regionu je u pouit!"
+d_Region_CSY_Enter_Group				"Musíš zadat název skupiny!"
+d_Region_CSY_Sys_Create					"Region se ukládá do souboru /scripts/maps/sphere_map_region_record.scp..."
+
+[DEFNAME defs_d_Region_Record_Sysmessage_SKY]
+d_Region_SKY_Target_TopLeft				"Zameraj ¾avú hornú pozíciu oblasti."
+d_Region_SKY_Target_BottomRight				"Zameraj pravú dolnú pozíciu oblasti."
+d_Region_SKY_Type_Area_Name				"Zadaj Area názov regiónu (Bez pouitia medzier a diakritiky!)."
+d_Region_SKY_Type_Name					"Zadaj názov regiónu."
+d_Region_SKY_Type_Group					"Zadaj názov skupiny."
+d_Region_SKY_Target_P					"Zameraj pozícii, kde chceš ma súradnice P."
+d_Region_SKY_Enter_Name					"Musíš zada názov regiónu!"
+d_Region_SKY_No_Space					"Area názov regiónu nesmie obsahova medzery!"
+d_Region_SKY_No_Numbers					"Area názov regiónu nesmie obsahova iba èísla, doplò tie slovné názov! "
+d_Region_SKY_Used					"Tento názov regiónu je u pouitı!"
+d_Region_SKY_Enter_Group				"Musíš zada názov skupiny!"
+d_Region_SKY_Sys_Create					"Región sa ukladá do súboru /scripts/maps/sphere_map_region_record.scp..."
+
+[DEFNAME defs_d_Region_Record_Sysmessage_DEU]
+d_Region_DEU_Target_TopLeft				"Zielen Sie auf die obere linke Position des Bereichs."
+d_Region_DEU_Target_BottomRight				"Zielen Sie auf die untere rechte Position des Bereichs. "
+d_Region_DEU_Type_Area_Name				"Geben Sie den Namen der Region ein (keine Leerzeichen oder Akzente!). "
+d_Region_DEU_Type_Name					"Geben Sie den Namen der Region ein. "
+d_Region_DEU_Type_Group					"Geben Sie einen Namen für die Gruppe ein."
+d_Region_DEU_Target_P					"Zielen Sie auf die Position, an der Sie die P-Koordinaten haben möchten."
+d_Region_DEU_Enter_Name					"Sie müssen einen Regionsnamen eingeben!"
+d_Region_DEU_No_Space					"Gebietsregionname darf keine Leerzeichen enthalten! "
+d_Region_DEU_No_Numbers					"Bereich Der Name der Region darf nicht nur Zahlen enthalten, sondern auch einen Wortnamen hinzufügen!"
+d_Region_DEU_Used					"Dieser Regionsname wird bereits verwendet!"
+d_Region_DEU_Enter_Group				"Sie müssen einen Gruppennamen eingeben!"
+d_Region_DEU_Sys_Create					"Die Region wird in einer Datei gespeichert  /scripts/maps/sphere_map_region_record.scp..."
+
+[DEFNAME defs_d_Region_Record_Sysmessage_TRK]
+d_Region_TRK_Target_TopLeft				"Alanin sol üst konumunu hedefleyin."
+d_Region_TRK_Target_BottomRight				"Alanin sag alt konumunu hedefleyin."
+d_Region_TRK_Type_Area_Name				"Alan bölge adini girin (Boºluk veya aksan yok!)."
+d_Region_TRK_Type_Name					"Bölgenin adini girin."
+d_Region_TRK_Type_Group					"Grup için bir ad girin"
+d_Region_TRK_Target_P					"P koordinatlarini istediginiz konumu hedefleyin"
+d_Region_TRK_Enter_Name					"Bir bölge adi girmelisiniz!"
+d_Region_TRK_No_Space					"Alan bölge adi boºluk içeremez!"
+d_Region_TRK_No_Numbers					"Alan Bölge adi sadece sayilar içermemeli, ayrica bir kelime adi da eklemelisiniz!"
+d_Region_TRK_Used					"Bu bölge adi zaten kullaniliyor!"
+d_Region_TRK_Enter_Group				"Bir grup adi girmelisiniz! "
+d_Region_TRK_Sys_Create					"Bölge bir dosyaya kaydedilir /scripts/maps/sphere_map_region_record.scp..."
+
+[DEFNAME defs_d_Region_Record_Sysmessage_FRA]
+d_Region_FRA_Target_TopLeft				"Visez la position supérieure gauche de la zone."
+d_Region_FRA_Target_BottomRight				"Visez la position inférieure droite de la zone."
+d_Region_FRA_Type_Area_Name				"Entrez le nom de la région (pas d'espaces ni d'accents!)."
+d_Region_FRA_Type_Name					"Entrez le nom de la région."
+d_Region_FRA_Type_Group					"Saisissez un nom pour le groupe."
+d_Region_FRA_Target_P					"Visez la position ou vous voulez les coordonnées P."
+d_Region_FRA_Enter_Name					"Vous devez saisir un nom de région!"
+d_Region_FRA_No_Space					"Le nom de la région ne peut pas contenir d'espaces!"
+d_Region_FRA_No_Numbers					"Zone Le nom de la région ne doit pas seulement contenir des chiffres, il faut aussi ajouter un mot nom!"
+d_Region_FRA_Used					"Ce nom de région est déja utilisé!"
+d_Region_FRA_Enter_Group				"Vous devez saisir un nom de groupe!"
+d_Region_FRA_Sys_Create					"La région est enregistrée dans un fichier /scripts/maps/sphere_map_region_record.scp..."
+
+[EOF]

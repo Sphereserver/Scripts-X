@@ -8,7 +8,7 @@
 // Multilanguage Region Creator
 // Created by Reflex. https://forum.spherecommunity.net/sshare.php?srt=1&uid=686
 // Reworked for a multilingual system  Golfin
-// Translated by Golfin
+// © 11/2024 Translated by Golfin
 //***********************************************************************************
 VERSION=X1
 
@@ -28,19 +28,5 @@ d_Region_TRK_Name					"Name:"
 d_Region_TRK_Area_Group					"Group:"
 d_Region_TRK_Area_P					"P:"
 d_Region_TRK_Create					"Bölge oluştur"
-d_Region_TRK_Target_TopLeft				"Alanın sol üst konumunu hedefleyin."
-d_Region_TRK_Target_BottomRight				"Alanın sağ alt konumunu hedefleyin."
-d_Region_TRK_Type_Area_Name				"Alan bölge adını girin (Boşluk veya aksan yok!)."
-d_Region_TRK_Type_Name					"Bölgenin adını girin."
-d_Region_TRK_Type_Group					"Grup için bir ad girin"
-d_Region_TRK_Target_P					"P koordinatlarını istediğiniz konumu hedefleyin"
-d_Region_TRK_Enter_Area_Name				"Bölgenin Alan adını girmelisiniz! "
-d_Region_TRK_Enter_Name					"Bir bölge adı girmelisiniz!"
-d_Region_TRK_Enter_Group				"Bir grup adı girmelisiniz! "
-d_Region_TRK_No_Space					"Alan bölge adı boşluk içeremez!"
-d_Region_TRK_Area_Letters_Numbers			"Alan bölge adı sadece kelime, sayı ve alt çizgi içerebilir!"
-d_Region_TRK_No_Numbers					"Alan Bölge adı sadece sayılar içermemeli, ayrıca bir kelime adı da eklemelisiniz!"
-d_Region_TRK_Used					"Bu bölge adı zaten kullanılıyor!"
-d_Region_TRK_Sys_Create					"Bölge bir dosyaya kaydedilir /scripts/maps/sphere_map_region_record.scp..."
 
 [Eof]
