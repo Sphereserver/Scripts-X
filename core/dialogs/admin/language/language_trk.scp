@@ -30,6 +30,8 @@ d_admin_TRK_Resync					"DİKKAT - Sunucu komut dosyaları güncellenecektir!"
 d_admin_TRK_Disconnect					"DİKKAT - 15 dakika içinde tüm oyuncuların bağlantısı kesilecek! "
 d_admin_TRK_Shutdown					"DİKKAT - Sunucu 15 dakika içinde kapanacak, bağlantıyı kesin!"
 d_admin_TRK_Region_Creator				"Region Creator"
+d_admin_TRK_MultiCentrEd				"Statikleri CentrEd'e Aktar"
+d_admin_TRK_Static2Multi				"Statik'i Multis komut dosyasına aktar"
 
 d_admin_TRK_clients					"Toplam Oyuncu:"
 d_admin_TRK_Found					"Bulundu"

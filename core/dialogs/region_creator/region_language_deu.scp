@@ -8,7 +8,7 @@
 // Multilanguage Region Creator
 // Created by Reflex. https://forum.spherecommunity.net/sshare.php?srt=1&uid=686
 // Reworked for a multilingual system  Golfin
-// Translated by Golfin
+// © 11/2024 Translated by Golfin
 //***********************************************************************************
 VERSION=X1
 
@@ -28,19 +28,5 @@ d_Region_DEU_Name					"Name:"
 d_Region_DEU_Area_Group					"Group:"
 d_Region_DEU_Area_P					"P:"
 d_Region_DEU_Create					"Kreate region"
-d_Region_DEU_Target_TopLeft				"Zielen Sie auf die obere linke Position des Bereichs."
-d_Region_DEU_Target_BottomRight				"Zielen Sie auf die untere rechte Position des Bereichs. "
-d_Region_DEU_Type_Area_Name				"Geben Sie den Namen der Region ein (keine Leerzeichen oder Akzente!). "
-d_Region_DEU_Type_Name					"Geben Sie den Namen der Region ein. "
-d_Region_DEU_Type_Group					"Geben Sie einen Namen für die Gruppe ein."
-d_Region_DEU_Target_P					"Zielen Sie auf die Position, an der Sie die P-Koordinaten haben möchten."
-d_Region_DEU_Enter_Area_Name				"Sie müssen den Gebietsnamen der Region eingeben! "
-d_Region_DEU_Enter_Name					"Sie müssen einen Regionsnamen eingeben!"
-d_Region_DEU_Enter_Group				"Sie müssen einen Gruppennamen eingeben!"
-d_Region_DEU_No_Space					"Gebietsregionname darf keine Leerzeichen enthalten! "
-d_Region_DEU_Area_Letters_Numbers			"Der Name der Bereichsregion darf nur Wörter, Zahlen und Unterstriche enthalten!"
-d_Region_DEU_No_Numbers					"Bereich Der Name der Region darf nicht nur Zahlen enthalten, sondern auch einen Wortnamen hinzufügen!"
-d_Region_DEU_Used					"Dieser Regionsname wird bereits verwendet!"
-d_Region_DEU_Sys_Create					"Die Region wird in einer Datei gespeichert  /scripts/maps/sphere_map_region_record.scp..."
 
 [Eof]

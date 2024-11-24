@@ -1,0 +1,167 @@
+//***********************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereServer.net
+//***********************************************************************************
+// Save in ANSI encoding
+//***********************************************************************************
+// Multilanguage Statics to CentrEd .xml files
+// Based on the original multicentred.scp script by Drk84.
+// Modified to export static items to the multis script.
+// Uses Target to determine coordinates. Creates a new TilesEntry.xml and  
+// TilesGroup.xml in the Sphere  root folder if it doesn't exist.
+// Reworked for a multilingual system
+// © 11/2024 by Golfin
+//***********************************************************************************
+VERSION=X1
+
+//The script automatic find your langage and set the menu.
+//If you want to force a language, juste put Local.Lang=XXX 
+If (!strcmp(<Account.Lang>,CSY))
+   Local.Lang=<Account.Lang>
+Elif (!strcmp(<Account.Lang>,DEU))
+   Local.Lang=<Account.Lang>
+Elif (!strcmp(<Account.Lang>,ENG)) || (!strcmp(<Account.Lang>,ENU))
+   Local.Lang=ENG   
+Elif (!strcmp(<Account.Lang>,FRA)) || (!strcmp(<Account.Lang>,FRB)) || (!strcmp(<Account.Lang>,FRC))
+   Local.Lang=FRA  
+Elif (!strcmp(<Account.Lang>,ITA))
+   Local.Lang=<Account.Lang> 
+Elif (!strcmp(<Account.Lang>,SKY))
+   Local.Lang=<Account.Lang> 
+Elif (!strcmp(<Account.Lang>,TRK))
+   Local.Lang=<Account.Lang> 
+Elif (!strcmp(<Account.Lang>,ESP))
+   Local.Lang=<Account.Lang>
+Else //All other language
+   Local.Lang=ENG 
+Endif
+CTag.AccountLang=<Local.Lang>
+f_multiCentrEd
+
+[PLEVEL 5]
+f_multiCentrEd
+
+// Targp coordinates of the targetted point.
+[FUNCTION f_multiCentrEd]
+If !<Argn1>	// Pick the top left corner of the multi area.
+   Sysmessage @tcolor_orange <Def.f_Multis_<Src.CTag0.AccountLang>_Select_Top>
+   TargetFg f_multiCentrEd 1
+   Return 
+Elseif <Argn1> == 1	// Pick the bottom right corner of the multi area.
+   Sysmessage @tcolor_orange <Def.f_Multis_<Src.CTag0.AccountLang>_Select_Bottom>
+   Tag.Coordinate.X1 = <Targp.X>
+   Tag.Coordinate.Y1 = <Targp.Y>
+   Tag.Coordinate.Z1 = <Targp.Z>
+   Tag.Coordinate.M1 = <Targp.M>
+   TargetFg f_multiCentrEd 2
+   Return 
+Else	// Time to convert to CentrEd
+   Tag.Coordinate.X2 = <Targp.X>
+   Tag.Coordinate.Y2 = <Targp.Y>
+   Tag.Coordinate.Z2 = <Targp.Z>
+   Tag.Coordinate.M2 = <Targp.M>
+   If <Tag0.Coordinate.X1> < <Tag0.Coordinate.X2> 
+      Local.WIDth = 1 + <Tag0.Coordinate.X2> - <Tag0.Coordinate.X1>
+      Local.CX = (<Tag0.Coordinate.X1> + <Tag0.Coordinate.X2>) / 2	// X center of the area
+   Else
+      Sysmessage @tcolor_red <Def.f_Multis_<Src.CTag0.AccountLang>_Wrong_X>
+      Return 
+   Endif
+	
+   If <Tag0.Coordinate.Y1> < <Tag0.Coordinate.Y2> 
+      Local.Height = 1 + <Tag0.Coordinate.Y2> - <Tag0.Coordinate.Y1>
+      Local.CY = (<Tag0.Coordinate.Y1> + <Tag0.Coordinate.Y2>) / 2	// Y center of the area
+   Else
+      Sysmessage @tcolor_red <Def.f_Multis_<Src.CTag0.AccountLang>_Wrong_Y>
+      Return 
+   Endif
+	
+   Serv.Log <Def.f_Multis_<Src.CTag0.AccountLang>_Coordinates_Export> <dTag0.Coordinate.X1>,<dTag0.Coordinate.Y1>,<dTag0.Coordinate.Z1> - <dTag0.Coordinate.X2>,<dTag0.Coordinate.Y2>,<dTag0.Coordinate.Z2>
+   Serv.Log <Def.f_Multis_<Src.CTag0.AccountLang>_Multi_Size>, <Def.f_Multis_<Src.CTag0.AccountLang>_Width_X> <dLocal.WIDth> - <Def.f_Multis_<Src.CTag0.AccountLang>_Height_Y> <dLocal.Height>
+   Serv.Log <Def.f_Multis_<Src.CTag0.AccountLang>_Multi_Center>, X: <dLocal.CX>- Y: <dLocal.CY>
+   Local.Pos = <dTag0.Coordinate.X1>,<dTag0.Coordinate.Y1>,<dTag0.Coordinate.M1>
+   Local.End 	= <dTag0.Coordinate.X2>,<dTag0.Coordinate.Y2>,<dTag0.Coordinate.M2>
+   Sysmessage @tcolor_green <Def.f_Multis_<Src.CTag0.AccountLang>_Start_Coordinates> <Local.Pos>
+   Sysmessage @tcolor_cyan <Def.f_Multis_<Src.CTag0.AccountLang>_End_Coordinates> <Local.End>
+	
+   Local.File.TilesEntry = TilesEntry.xml
+   Local.File.TilesGroup = TilesGroup.xml
+   Local.PosID = <f_getLastTileEntryID>
+   Local.Statics = 0
+   Local.dX = 0
+   Local.dY = 0
+   Local.dZ = 0
+   If <f_File_Check <Local.File.TilesEntry>>
+      Serv.Log <Def.f_Multis_<Src.CTag0.AccountLang>_Written_to_file> <File.FilePath>
+      f_Writeline Entry ID='<dLocal.PosID>' Name='<Def.f_Multis_<Src.CTag0.AccountLang>_Name_Multis>'
+		
+      For X <dTag0.Coordinate.X1> <dTag0.Coordinate.X2>
+         For Y <dTag0.Coordinate.Y1> <dTag0.Coordinate.Y2>
+            Local.Pos = <dLocal.X>,<dLocal.Y>,<dTag0.Coordinate.M1>
+            Local.Statics = <Serv.Map(<Local.Pos>).Statics>
+            If <Local.Statics> > 0
+               Local.dX = <f_convertToMultiCoordinate <dLocal.X> <dLocal.CX>>
+               Local.dY = <f_convertToMultiCoordinate <dLocal.Y> <dLocal.CY>>
+               Local.TerrainZ = <Serv.Map(<Local.Pos>).Terrain.Z>
+               For Z 0 <Eval <Local.Statics> - 1>
+                  Local.CurrentZ = <Serv.Map(<Local.Pos>).Statics.<dLocal.Z>.Z>
+                  Local.dZ = <f_convertToMultiCoordinate <dLocal.CurrentZ> <dLocal.TerrainZ>>
+                  Local.ID = <Serv.Map(<Local.Pos>).Statics.<dLocal.Z>.ID>
+                  f_Writeline Item X='<dLocal.dX>' Y='<dLocal.dY>' Z='<dLocal.dZ>' ID='0x<hval <Local.ID>>' /
+               Endfor
+            Endif
+         Endfor
+      Endfor
+      f_Writeline /Entry
+      Sysmessage @tcolor_green Tile Entry ID <dVar.CentrEd.TileEntryID> bylo vytvoøeno.
+      File.Close
+      // Create TilesGroup
+      If <f_File_Check <Local.File.TilesGroup>>
+         f_Writeline Entry ID='<dVar.CentrEd.TileEntryID>' /
+         Sysmessage @tcolor_green Tile Group  Entry <dVar.CentrEd.TileEntryID> bylo vytvoøeno.
+         Var.CentrEd.TileEntryID += 1
+         File.Close 
+      Else
+         Sysmessage @tcolor_red <Def.f_Multis_<Src.CTag0.AccountLang>_Error_Create TileGroup <dVar.CentrEd.TileEntryID>.
+         File.Close 
+      Endif
+			
+   Else
+      Sysmessage @tcolor_red <Def.f_Multis_<Src.CTag0.AccountLang>_Error_Create TileEntry <dVar.CentrEd.TileEntryID>.
+      File.Close 
+   Endif
+Endif
+
+ClearTags
+
+[FUNCTION f_File_Check]
+If !<File.FileExist <Args>>
+   Serv.Log Def.f_Multis_<Src.CTag0.AccountLang>_File> <Args> <Def.f_Multis_<Src.CTag0.AccountLang>_Create>
+   File.Mode.Create
+Else 
+   File.Mode.Append
+   Serv.Log <Def.f_Multis_<Src.CTag0.AccountLang>_Append>
+Endif
+If !<File.Open <Args>>
+   Serv.Log Def.f_Multis_<Src.CTag0.AccountLang>_File> <Args> <Def.f_Multis_<Src.CTag0.AccountLang>_No_Open>
+   Return 0
+Endif
+Return 1
+
+[FUNCTION f_getLastTileEntryID]
+If <isEmpty <Var.CentrEd.TileEntryID>>
+   Var.CentrEd.TileEntryID = 5000
+Endif
+Return <Var.CentrEd.TileEntryID>
+
+
+[FUNCTION f_convertToMultiCoordinate]
+Return <Eval <Argn1> - <argn2>>
+
+
+[FUNCTION f_Writeline]
+File.Write "	<"
+File.Write "<Args>"
+File.Writeline ">"
+ 
+[Eof]

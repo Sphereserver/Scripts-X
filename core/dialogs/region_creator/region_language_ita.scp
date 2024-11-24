@@ -8,7 +8,7 @@
 // Multilanguage Region Creator
 // Created by Reflex. https://forum.spherecommunity.net/sshare.php?srt=1&uid=686
 // Reworked for a multilingual system  Golfin
-// Translated by Golfin
+// © 11/2024 Translated by Golfin
 //***********************************************************************************
 VERSION=X1
 
@@ -34,11 +34,9 @@ d_Region_ITA_Type_Area_Name				"Inserisci il nome della regione dell'area (senza
 d_Region_ITA_Type_Name					"Inserisci il nome della regione. "
 d_Region_ITA_Type_Group					"Inserisci un nome per il gruppo."
 d_Region_ITA_Target_P					"Mira alla posizione in cui desideri le coordinate P."
-d_Region_ITA_Enter_Area_Name				"Devi inserire il nome dell'area della regione! "
 d_Region_ITA_Enter_Name					"Devi inserire un nome di regione!"
 d_Region_ITA_Enter_Group				"Devi inserire un nome di gruppo!"
 d_Region_ITA_No_Space					"Il nome della regione dell'area non può contenere spazi!"
-d_Region_ITA_Area_Letters_Numbers			"Il nome della regione dell'area può contenere solo parole, numeri e trattini bassi!"
 d_Region_ITA_No_Numbers					"Area Il nome della regione non deve contenere solo numeri, ma deve anche aggiungere un nome di parola! "
 d_Region_ITA_Used					"Questo nome di regione è già in uso! "
 d_Region_ITA_Sys_Create					"La regione viene salvata in un file /scripts/maps/sphere_map_region_record.scp..."

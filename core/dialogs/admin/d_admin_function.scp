@@ -5,7 +5,7 @@
 // Save in UTF8 encoding
 //***********************************************************************************
 // New Multilanguage Admin
-// Created by Golfin (http://eranova.cz/)
+// Created by Golfin
 //***********************************************************************************
 Version=X1
 
@@ -82,6 +82,14 @@ Endif
 If (<Account.Plevel> > 4)
    Button 10 280 4005 4006 1 0 20
    DText 45 280 0c1 <Def.d_admin_<Src.CTag0.AccountLang>_Region_Creator>
+Endif
+If (<Account.Plevel> > 4)
+   Button 10 300 4005 4006 1 0 21
+   DText 45 300 0c1 <Def.d_admin_<Src.CTag0.AccountLang>_MultiCentrEd>
+Endif
+If (<Account.Plevel> > 4)
+   Button 10 320 4005 4006 1 0 22
+   DText 45 320 0c1 <Def.d_admin_<Src.CTag0.AccountLang>_Static2Multi>
 Endif
 
 [DIALOG d_SphereAdmin_function Button]
@@ -168,6 +176,14 @@ On=19
 On=20
    ClearCTags Dialog.Admin
    f_Region_Record
+
+On=21
+   ClearCTags Dialog.Admin
+   f_multicentred
+
+On=22
+   ClearCTags Dialog.Admin
+   f_static2multi
 
 
 
