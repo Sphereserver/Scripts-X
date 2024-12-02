@@ -349,6 +349,11 @@ LAYER_SPELL_Nether_Cyclone		78
 
 //Individual Spell Layers
 LAYER_SPELL_Mana_Drain			79
+LAYER_SPELL_Explosion			80
+
+// internally layers for storage and stable
+LAYER_STORAGE                   81
+LAYER_STABLE                    82
 
 [DEFNAME def_gumps]
 // name the gumps.
