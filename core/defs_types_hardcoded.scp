@@ -207,7 +207,7 @@ t_kindling              155
 t_train_dummy           156
 t_train_pickpocket      157
 t_bedroll               158
-//t_unused_159          159
+t_fletching             159
 t_hide                  160   // made into leather
 t_cloth_bolt            161
 t_board                 162   // logs are plained into decent lumber

@@ -349,6 +349,10 @@ LAYER_SPELL_Nether_Cyclone		78
 
 //Individual Spell Layers
 LAYER_SPELL_Mana_Drain			79
+LAYER_SPELL_Explosion           80
+
+LAYER_STORAGE 81 // New Storage layer, can equip t_container and t_container_locked.
+LAYER_STABLE 82 // New stable layer, now stabled pets will be stored in this layer of the player instead of npc's itself.
 
 [DEFNAME def_gumps]
 // name the gumps.
@@ -624,11 +628,11 @@ RES_COMMENT           = 8   // A commented out block type.
 RES_DEFNAME           = 9   // (SL) Just add a bunch of new defs and equivs str/values.
 RES_DIALOG            = 10  // A scriptable gump dialog, text or handler block.
 RES_EVENTS            = 11  // An Event handler block with the trigger type in it. ON=@Death etc.
-RES_FAME              = 12  
+RES_FAME              = 12
 RES_FUNCTION          = 13  // Define a new command verb script that applies to a char.
 RES_GMPAGE            = 14  // A GM page. (SAVED in World)
 RES_ITEMDEF           = 15  // Define an item type. (overlap with RES_TEMPLATE)
-RES_KARMA             = 16  
+RES_KARMA             = 16
 RES_KRDIALOGLIST      = 17  // Mapping of dialog<->kr ids
 RES_MENU              = 18  // General scriptable menus.
 RES_MOONGATES         = 19  // (SL) Define where the moongates are.
@@ -659,18 +663,18 @@ RES_STARTS            = 43  // (SI) List of starting locations for newbies.
 RES_STAT              = 44  // Stats elements like KARMA,STR,DEX,FOOD,FAME,CRIMINAL etc. Used for resource and desire scripts.
 RES_TELEPORTERS       = 45  // (SL) Where are the teleporters in the world ? dungeon transports etc.
 RES_TEMPLATE          = 46  // Define lists of items. (for filling loot etc)
-RES_TIMERF            = 47  
+RES_TIMERF            = 47
 RES_TIP               = 48  // Tips (similar to RES_SCROLL) that can come up at startup.
 RES_TYPEDEF           = 49  // Define a trigger block for a RES_WORLDITEM m_type.
-RES_TYPEDEFS          = 50  
+RES_TYPEDEFS          = 50
 RES_WC                = 51  // =WORLDCHAR
 RES_WEBPAGE           = 52  // Define a web page template.
 RES_WI                = 53  // =WORLDITEM
 RES_WORLDCHAR         = 54  // Define instance of char in the world. (SAVED in World)
 RES_WORLDITEM         = 55  // Define instance of item in the world. (SAVED in World)
-RES_WORLDLISTS        = 56  
+RES_WORLDLISTS        = 56
 RES_WORLDSCRIPT       = 57  // Something to load into a script.
-RES_WORLDVARS         = 58  
+RES_WORLDVARS         = 58
 RES_WS                = 59  // =WORLDSCRIPT
 //--
 RESTYPE_BIT_SHIFT	= 20
