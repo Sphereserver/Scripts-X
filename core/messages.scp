@@ -360,6 +360,8 @@ EMOTE_DEF_UNICODE	0
 //login_player					"There is 1 other player here."
 //login_players					"There are %d other players here."
 //login_lastlogged				"Last logged: %s"
+//login_player                   "There is 1 other player here."
+//login_players                  "There are %d other players here."
 //lumberjacking_1				"Try chopping elsewhere."
 //lumberjacking_2				"There is nothing here to chop."
 //lumberjacking_3				"This is not a tree."
