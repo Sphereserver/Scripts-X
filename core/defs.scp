@@ -410,6 +410,8 @@ can_i_forcedc			01000000	// Items with this flag will not perform any check befo
 can_i_damageable		02000000	// Display item health bar on HS clients >= 7.0.30.0 (MORE1L = cur hitpoints / MORE1H = max hitpoints)
 can_i_blocklos_height	04000000	// Blocks LOS without blocking walkchecks, but only if the item is too high for the viewer. Works only if ADVANCEDLOS is enabled.
 can_i_equiponcast       08000000    // Allow items to stay equipped while EquippedCast disabled in sphere.ini.
+can_i_scriptedmore      020000000   // This item doesn't use an hardcoded behavior, so its MORE value might be used for custom stuff.
+can_i_timer_contained   040000000   // This item (if not "sleeping") can have a timer even if inside a container (overrides global default behavior).
 
 [DEFNAME tile_flags]
 tilef_background        000000001   // No idea. None whatsoever. Maybe it's the blackness.
