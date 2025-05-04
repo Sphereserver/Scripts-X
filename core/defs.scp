@@ -62,7 +62,7 @@ region_antimagic_teleport		0000010   // can't teleport into here.
 region_antimagic_damage			0000020   // just no bad magic here
 region_flag_ship				0000040   // this is a ship region. ship commands
 region_flag_nobuilding			0000080   // no building in this area
-region_flag_house			    0000200   // this is a house region
+region_flag_house			    0000100   // this is a house region
 region_flag_announce			0000200   // announce to all who enter.
 region_flag_insta_logout		0000400   // instant log out is allowed here (hotel).
 region_flag_underground			0000800   // dungeon type area (no weather, and not necessarily a dungeon).
