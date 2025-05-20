@@ -139,8 +139,8 @@ NAME=garden shed
 NAME=garden shed
 TYPE=t_container
 TDATA2=044
-TDATA3=0a0014
-TDATA4=06400aa
+TDATA3=01400a
+TDATA4=0aa0064
 
 [ITEMDEF 04be8]
 //garden shed (multi-part)(south)
@@ -151,8 +151,8 @@ NAME=garden shed
 NAME=garden shed
 TYPE=t_container
 TDATA2=03e
-TDATA3=0240021
-TDATA4=094008e
+TDATA3=0210024
+TDATA4=08e0094
 
 [ITEMDEF 04bea]
 //garden shed (multi-part)(east)
@@ -163,8 +163,8 @@ NAME=garden shed
 NAME=garden shed
 TYPE=t_container
 TDATA2=044
-TDATA3=0a0014
-TDATA4=06400aa
+TDATA3=01400a
+TDATA4=0aa0064
 
 [ITEMDEF 04bec]
 //garden shed (multi-part)(east)
@@ -175,8 +175,8 @@ NAME=garden shed
 NAME=garden shed
 TYPE=t_container
 TDATA2=03e
-TDATA3=0240021
-TDATA4=094008e
+TDATA3=0210024
+TDATA4=08e0094
 
 [ITEMDEF 04bee]
 //garden shed (multi-part)(east)
