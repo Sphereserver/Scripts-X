@@ -763,6 +763,7 @@ EMOTE_DEF_UNICODE	0
 //party_decline_1				"%s: Does not wish to join the party."
 //party_decline_2				"You notify %s that you do not wish to join the party."
 //party_disbanded				"Your party has disbanded."
+//party_change_leader				"%s was appointed the new party leader."
 //party_invite					"You have invited %s to join the party."
 //party_invite_targ				"%s: You are invited to join the party. Type /accept to join or /decline to decline the offer."
 //party_joined					"%s: joined the party."
