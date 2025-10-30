@@ -74,7 +74,7 @@ If (0<Account.Tag0.NumNotes>)
       dHtmlgump 160 <Eval <Local.oy>> 435 80 1 1 <Def.d_admin_<Src.CTag0.AccountLang>_Added> <Account.Tag0.Note_<Eval <Local.x>>_by> <Account.Tag0.Note_<Eval <Local.x>>_time>: <Account.Tag0.Note_<Eval <Local.x>>>
       Button 605 <Eval <Local.oy>> 4017 4018 1 0 <Eval 10+<Local.X>>
       Local.oy += 90
-   end
+   endfor
 Endif
 
 [DIALOG d_SphereAdmin_PlayerNotes Button]
@@ -227,7 +227,7 @@ Else
       TrySrv Obj.Account.Tag.Note_<Eval <Local.Note>>_By=<Obj.Account.Tag.Note_<Eval <Local.Note>+1>_By>
       TrySrv Obj.Account.Tag.Note_<Eval <Local.Note>>_Time=<Obj.Account.Tag.Note_<Eval <Local.Note>+1>_Time>
       Local.Note += 1
-   end
+   endwhile
 Endif
 TrySrv Obj.Account.Tag0.NumNotes=<Eval <Obj.Account.Tag0.NumNotes>-1>
 Sysmessage @<def.tcolor_orange> <Def.d_admin_<Src.CTag0.AccountLang>_Note_For_Account_Sys> <Obj.Account> <Def.d_admin_<Src.CTag0.AccountLang>_Del_Note_Sys>

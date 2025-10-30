@@ -657,7 +657,7 @@ ON=@DClick
                            DAMAGE <EVAL ((<SRC.Musicianship> / <LOCAL.DIV>) + (<SRC.Provocation> / <LOCAL.DIV>) + (<SRC.Peacemaking> / <LOCAL.DIV>) + (<SRC.Enticement> / <LOCAL.DIV>)) - 5> <DEF.dam_fire> <SRC>
                         ENDIF
                      ENDIF
-                  END
+                  ENDFOR
                   SERV.NEWITEM=i_fire_horn_timer
                   NEW.CONT=<SRC>
                   NEW.TIMER=7

@@ -2309,7 +2309,7 @@ ON=@GetHit
             ENDIF
             SRC.SYSMESSAGE @color_text,,1 The evil aura of the succubus drains life from you
          ENDIF
-      END
+      ENDFOR
    ENDIF
 
 

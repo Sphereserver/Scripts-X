@@ -447,7 +447,7 @@ ON=@GetHit
             ACTION=-1//FIXME: Temporary solution, should slow down swing speed and casting time instead
             SYSMESSAGELOC color_text,1072068//"Your enemies putrid prescence envelops you..."
          ENDIF
-      END
+      ENDFOR
    ENDIF
 
 [CHARDEF 0103]
@@ -636,7 +636,7 @@ ON=@GetHit
             DAMAGE <LOCAL.DAM> <DEF.dam_energy> <REF11>
             SYSMESSAGE @color_text,,1 Intense energy radiating from the creature damages you
          ENDIF
-      END
+      ENDFOR
    ENDIF
 
 [CHARDEF 0106]

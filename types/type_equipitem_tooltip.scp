@@ -583,9 +583,6 @@ ENDIF
 // tooltip are merged and the order ends up... confusing.
 RETURN 1
 
-[EOF]
-
-
 [COMMENT tooltips for special properties (gained only using a full item set or such)]
 // Virtuous/Villanious Epiphany set
 PROP: (HEALINGBURSTEVIL,	RDS_SA) 1150830 // Set Ability: evil healing burst
@@ -598,4 +595,4 @@ PROP: (BURSTKARMA,			RDS_SA)	1150243 // Karma Bonus: Burst level ~1_val~
 // Mana phasing orb
 MANAPHASE
 
-
+[EOF]

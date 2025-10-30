@@ -2084,7 +2084,7 @@ ON=@GetHit
             DAMAGE <LOCAL.DAM> <DEF.dam_cold> <REF11>
             SYSMESSAGE Intense cold radiating from the elemental damages you
          ENDIF
-      END
+      ENDFOR
    ENDIF
 
 [CHARDEF 0a2]
@@ -2198,7 +2198,7 @@ ON=@GetHit
             DAMAGE <LOCAL.DAM> <DEF.dam_cold> <REF11>
             SYSMESSAGE Intense cold radiating from the elemental damages you
          ENDIF
-      END
+      ENDFOR
    ENDIF
    
 [CHARDEF 0d2]

@@ -73,7 +73,7 @@ If (0<TagCount>)
          Button 160 <Local.oy> 4017 4018 1 0 <Eval (1000 + <Local.x>)>
       Endif
       Local.oy += 25
-   end
+   endfor
 Else
    DText 160 60 0c1 <Def.d_admin_<Src.CTag0.AccountLang>_No_Tags>
 Endif

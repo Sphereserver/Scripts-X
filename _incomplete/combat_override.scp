@@ -605,7 +605,7 @@ if ( ( <serv.CombatFlags>&02000 ) && ( <local.HitPref>!=0 ) && ( ( <argv2>&DAM_P
 	if (<r1100> < <local.HitPrefChance> )
 		while ( <local.HitPref> > 7 )	// Here the default body parts are used, if you are planing to extend it ... place a check for bodies, ie: if body == dragon, must be higher than 7 and lower than 14?
 			local.HitPref -= 7			// We lower it until we get a useable value.
-		end
+		endwhile
 		local.HitArea=<local.HitPref>-1
 		local.dam += (<local.dam>*<local.HitPrefBonus>)/100
 	else
@@ -614,13 +614,13 @@ if ( ( <serv.CombatFlags>&02000 ) && ( <local.HitPref>!=0 ) && ( ( <argv2>&DAM_P
 		while ( <local.hitarea> <= 7 && <local.hitroll> > 0 )
 			local.HitRoll -= <Armor_GetCoverageZone <local.hitarea>>
 			local.hitarea ++
-		end
+		endwhile
 	endif
 else
 	while ( <local.hitarea> <= 7 && <local.hitroll> > 0 )
 		local.HitRoll -= <Armor_GetCoverageZone <local.hitarea>>
 		local.hitarea ++
-	end
+	endwhile
 endif
 if ( ( ( <argv2>&DAM_PHYSICAL ) || ( <argv2>&DAM_PIERCE ) || ( <argv2>&DAM_SLASH ) ) && !( ( <argv2>&DAM_GOD ) || ( <argv2>&DAM_ENERGY ) ) )
 	if ( <detail> || <src.detail> )
