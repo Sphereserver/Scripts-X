@@ -204,7 +204,7 @@ CAN=mt_walk|mt_run|mt_nonhum
 DAM=16,22
 ARMOR=55
 MAXFOOD=35
-FACTION=faction_vermin
+FACTION_GROUP=faction_vermin
 FollowerSLOTS=2
 DamENERGY=20
 DamFIRE=40
@@ -548,7 +548,7 @@ DamCOLD=25
 DamENERGY=25
 DamFIRE=25
 DamPOISON=25
-FACTION=faction_demon
+FACTION_GROUP=faction_demon
 TAG.Barding.DIFF=160.0
 
 DESIRES=r_dungeon_abyss,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
@@ -822,7 +822,7 @@ DAM=20,32
 ARMOR=30
 MAXFOOD=35
 DamFIRE=20
-FACTION=faction_wolf
+FACTION_GROUP=faction_wolf
 TAG.Barding.DIFF=95.1
 
 DESIRES=r_jungle,r_forests,t_coin,t_gold,t_gem,t_potion
@@ -1133,7 +1133,7 @@ CAN=mt_walk|mt_run|mt_nonhum
 DAM=8,19
 ARMOR=35
 MAXFOOD=25
-FACTION=faction_mage
+FACTION_GROUP=faction_mage
 DamENERGY=50
 TAG.Barding.DIFF=98.0
 
@@ -1241,7 +1241,7 @@ CAN=mt_walk|mt_run|mt_nonhum
 DAM=7,17
 ARMOR=55
 MAXFOOD=35
-FACTION=faction_snake
+FACTION_GROUP=faction_snake
 TAG.Barding.DIFF=86.6
 
 DESIRES=r_jungle,t_coin,t_gold,t_gem
@@ -1301,7 +1301,7 @@ DAM=21,28
 ARMOR=55
 DamENERGY=20
 DamFIRE=20
-FACTION=faction_demon
+FACTION_GROUP=faction_demon
 MAXFOOD=45
 TAG.Barding.DIFF=160.0
 
@@ -1676,7 +1676,7 @@ MAXFOOD=80
 DamENERGY=25
 DamFIRE=25
 TAG.OVERRIDE.SPIDERWEB=1
-FACTION=faction_spider
+FACTION_GROUP=faction_spider
 TAG.Barding.DIFF=160.0
 
 DESIRES=r_dungeon_abyss,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
@@ -1884,7 +1884,7 @@ DAM=12,23
 ARMOR=40
 MAXFOOD=15
 FollowerSLOTS=2
-FACTION=faction_wolf
+FACTION_GROUP=faction_wolf
 TAG.Barding.DIFF=74.2
 
 DESIRES=r_ruins,t_coin,t_gold,t_gem
@@ -1945,7 +1945,7 @@ DAM=18,25
 ARMOR=55
 DamCOLD=45
 DamENERGY=45
-FACTION=faction_undead
+FACTION_GROUP=faction_undead
 TAG.Barding.DIFF=10000//Immune to barding
 
 DESIRES=r_graveyards,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
@@ -2013,7 +2013,7 @@ DamCOLD=20
 DamENERGY=20
 DamFIRE=20
 DamPOISON=20
-FACTION=faction_demon
+FACTION_GROUP=faction_demon
 TAG.Barding.DIFF=160.0
 
 DESIRES=r_dungeon_abyss,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
@@ -2092,7 +2092,7 @@ ARMOR=85
 MAXFOOD=100
 DamENERGY=25
 DamFIRE=50
-FACTION=faction_dragon
+FACTION_GROUP=faction_dragon
 TAG.Barding.DIFF=160.0
 
 DESIRES=r_dungeon_abyss,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
@@ -2446,7 +2446,7 @@ DamCOLD=20
 DamENERGY=20
 DamFIRE=20
 DamPOISON=20
-FACTION=faction_undead
+FACTION_GROUP=faction_undead
 TAG.Barding.DIFF=160.0
 
 DESIRES=r_dungeon_abyss,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
@@ -2514,7 +2514,7 @@ DAM=77,92
 ARMOR=45
 MAXFOOD=55
 DamFIRE=50
-FACTION=faction_bird
+FACTION_GROUP=faction_bird
 TAG.Barding.DIFF=108.6
 
 DESIRES=r_mountains,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
@@ -2697,7 +2697,7 @@ DAM=20,30
 ARMOR=60
 MAXFOOD=15
 TAG.Barding.DIFF=120.0
-FACTION=faction_bird
+FACTION_GROUP=faction_bird
 
 DESIRES=t_dirt
 AVERSIONS=e_carnivores2,e_carnivores3

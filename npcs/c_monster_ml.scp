@@ -189,7 +189,7 @@ MAXFOOD=25
 RESOURCES=1 i_ribs_raw
 
 TAG.Barding.Diff=145.4
-FACTION=faction_mage
+FACTION_GROUP=faction_mage
 
 CATEGORY=Named Creatures
 SUBSECTION=Humanoids

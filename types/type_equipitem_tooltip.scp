@@ -444,113 +444,113 @@ ENDIF
 		ADDCLILOC 1060425,<HitLowerDef> // hit lower defense ~1_val~%
 	ENDIF
 
-	IF <SLAYER>
-		IF (<SLAYER>&<def.faction_repond>)
+	IF <SLAYER_GROUP>
+		IF (<SLAYER_GROUP>&<def.faction_repond>)
 			ADDCLILOC 1060472
 		ENDIF
-		IF (<SLAYER>&<def.faction_ogre>)
+		IF (<SLAYER_GROUP>&<def.faction_ogre>)
 			ADDCLILOC 1060468
 		ENDIF
-		IF (<SLAYER>&<def.faction_orc>)
+		IF (<SLAYER_GROUP>&<def.faction_orc>)
 			ADDCLILOC 1060470
 		ENDIF
-		IF (<SLAYER>&<def.faction_troll>)
+		IF (<SLAYER_GROUP>&<def.faction_troll>)
 			ADDCLILOC 1060480
 		ENDIF
-		IF (<SLAYER>&<def.faction_undead>)
+		IF (<SLAYER_GROUP>&<def.faction_undead>)
 			ADDCLILOC 1060479
 		ENDIF
-		IF (<SLAYER>&<def.faction_elemental>)
+		IF (<SLAYER_GROUP>&<def.faction_elemental>)
 			ADDCLILOC 1060464
 		ENDIF
-		IF (<SLAYER>&<def.faction_air_elemental>)
+		IF (<SLAYER_GROUP>&<def.faction_air_elemental>)
 			ADDCLILOC 1060457
 		ENDIF
-		IF (<SLAYER>&<def.faction_blood_elemental>)
+		IF (<SLAYER_GROUP>&<def.faction_blood_elemental>)
 			ADDCLILOC 1060459
 		ENDIF
-		IF (<SLAYER>&<def.faction_earth_elemental>)
+		IF (<SLAYER_GROUP>&<def.faction_earth_elemental>)
 			ADDCLILOC 1060463
 		ENDIF
-		IF (<SLAYER>&<def.faction_fire_elemental>)
+		IF (<SLAYER_GROUP>&<def.faction_fire_elemental>)
 			ADDCLILOC 1060465
 		ENDIF
-		IF (<SLAYER>&<def.faction_poison_elemental>)
+		IF (<SLAYER_GROUP>&<def.faction_poison_elemental>)
 			ADDCLILOC 1060471
 		ENDIF
-		IF (<SLAYER>&<def.faction_snow_elemental>)
+		IF (<SLAYER_GROUP>&<def.faction_snow_elemental>)
 			ADDCLILOC 1060476
 		ENDIF
-		IF (<SLAYER>&<def.faction_water_elemental>)
+		IF (<SLAYER_GROUP>&<def.faction_water_elemental>)
 			ADDCLILOC 1060481
 		ENDIF
-		IF (<SLAYER>&<def.faction_demon>)
+		IF (<SLAYER_GROUP>&<def.faction_demon>)
 			ADDCLILOC 1060460
 		ENDIF
-		IF (<SLAYER>&<def.faction_gargoyle>)
+		IF (<SLAYER_GROUP>&<def.faction_gargoyle>)
 			ADDCLILOC 1060466
 		ENDIF
-		IF (<SLAYER>&<def.faction_fey>)
+		IF (<SLAYER_GROUP>&<def.faction_fey>)
 			ADDCLILOC 1070855
 		ENDIF
-		IF (<SLAYER>&<def.faction_arachnid>)
+		IF (<SLAYER_GROUP>&<def.faction_arachnid>)
 			ADDCLILOC 1060458
 		ENDIF
-		IF (<SLAYER>&<def.faction_scorpion>)
+		IF (<SLAYER_GROUP>&<def.faction_scorpion>)
 			ADDCLILOC 1060474
 		ENDIF
-		IF (<SLAYER>&<def.faction_spider>)
+		IF (<SLAYER_GROUP>&<def.faction_spider>)
 			ADDCLILOC 1060477
 		ENDIF
-		IF (<SLAYER>&<def.faction_terathan>)
+		IF (<SLAYER_GROUP>&<def.faction_terathan>)
 			ADDCLILOC 1060478
 		ENDIF
-		IF (<SLAYER>&<def.faction_reptile>)
+		IF (<SLAYER_GROUP>&<def.faction_reptile>)
 			ADDCLILOC 1060473
 		ENDIF
-		IF (<SLAYER>&<def.faction_dragon>)
+		IF (<SLAYER_GROUP>&<def.faction_dragon>)
 			ADDCLILOC 1061284
 		ENDIF
-		IF (<SLAYER>&<def.faction_lizardman>)
+		IF (<SLAYER_GROUP>&<def.faction_lizardman>)
 			ADDCLILOC 1060467
 		ENDIF
-		IF (<SLAYER>&<def.faction_ophidian>)
+		IF (<SLAYER_GROUP>&<def.faction_ophidian>)
 			ADDCLILOC 1060469
 		ENDIF
-		IF (<SLAYER>&<def.faction_snake>)
+		IF (<SLAYER_GROUP>&<def.faction_snake>)
 			ADDCLILOC 1060475
 		ENDIF
-		IF (<SLAYER>&<def.faction_bear>)
+		IF (<SLAYER_GROUP>&<def.faction_bear>)
 			ADDCLILOC 1072504
 		ENDIF
-		IF (<SLAYER>&<def.faction_vermin>)
+		IF (<SLAYER_GROUP>&<def.faction_vermin>)
 			ADDCLILOC 1072505
 		ENDIF
-		IF (<SLAYER>&<def.faction_bat>)
+		IF (<SLAYER_GROUP>&<def.faction_bat>)
 			ADDCLILOC 1072506
 		ENDIF
-		IF (<SLAYER>&<def.faction_mage>)
+		IF (<SLAYER_GROUP>&<def.faction_mage>)
 			ADDCLILOC 1072507
 		ENDIF
-		IF (<SLAYER>&<def.faction_beetle>)
+		IF (<SLAYER_GROUP>&<def.faction_beetle>)
 			ADDCLILOC 1072508
 		ENDIF
-		IF (<SLAYER>&<def.faction_bird>)
+		IF (<SLAYER_GROUP>&<def.faction_bird>)
 			ADDCLILOC 1072509
 		ENDIF
-		IF (<SLAYER>&<def.faction_ice>)
+		IF (<SLAYER_GROUP>&<def.faction_ice>)
 			ADDCLILOC 1072510
 		ENDIF
-		IF (<SLAYER>&<def.faction_flame>)
+		IF (<SLAYER_GROUP>&<def.faction_flame>)
 			ADDCLILOC 1072511
 		ENDIF
-		IF (<SLAYER>&<def.faction_bovine>)
+		IF (<SLAYER_GROUP>&<def.faction_bovine>)
 			ADDCLILOC 1072512
 		ENDIF
-		IF (<SLAYER>&<def.faction_wolf>)
+		IF (<SLAYER_GROUP>&<def.faction_wolf>)
 			ADDCLILOC 1075462
 		ENDIF
-		IF (<SLAYER>&<def.faction_goblin>)
+		IF (<SLAYER_GROUP>&<def.faction_goblin>)
 			ADDCLILOC 1095010
 		ENDIF
 	ENDIF

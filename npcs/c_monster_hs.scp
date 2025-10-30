@@ -12,7 +12,7 @@ ARMOR=80
 MAXFOOD=80
 DamCOLD=30
 DamENERGY=30
-//FACTION=faction_dragon
+//FACTION_GROUP=faction_dragon
 TAG.Barding.DIFF=160.0
 
 DESIRES=t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
@@ -79,7 +79,7 @@ DAM=28,36
 ARMOR=50
 MAXFOOD=15
 MOVERATE=150
-FACTION=faction_flame
+FACTION_GROUP=faction_flame
 //FollowerSLOTS=3
 DamFIRE=80
 TAG.Barding.DIFF=122.8
@@ -137,7 +137,7 @@ CAN=mt_walk|mt_run
 DAM=14,25
 ARMOR=35
 MAXFOOD=20
-FACTION=faction_wolf
+FACTION_GROUP=faction_wolf
 TAG.Barding.DIFF=79.8
 
 DESIRES=r_forests,t_coin,t_gold,t_gem
@@ -194,7 +194,7 @@ CAN=mt_walk|mt_run|mt_usehands|mt_equip
 DAM=25,40
 ARMOR=50
 MAXFOOD=55
-FACTION=faction_bovine
+FACTION_GROUP=faction_bovine
 TAG.Barding.DIFF=160.0
 
 DESIRES=r_dungeon_labyrinth,t_coin,t_gold,t_wand,t_potion,t_scroll,t_reagent,e_notoriety
@@ -361,7 +361,7 @@ CAN=mt_nonmover|mt_nonhum
 DAM=14,27
 ARMOR=30
 TAG.Barding.DIFF=72.5
-FACTION=faction_demon
+FACTION_GROUP=faction_demon
 
 DESIRES=t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
 AVERSIONS=t_trap,r_civilization,e_carnivores3
@@ -422,7 +422,7 @@ CAN=mt_nonmover|mt_nonhum
 
 DAM=14,27
 ARMOR=30
-FACTION=faction_demon
+FACTION_GROUP=faction_demon
 TAG.Barding.DIFF=72.5
 
 DESIRES=t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
@@ -485,7 +485,7 @@ CAN=mt_walk|mt_run|mt_usehands|mt_equip
 DAM=25,40
 ARMOR=50
 MAXFOOD=55
-FACTION=faction_demon
+FACTION_GROUP=faction_demon
 TAG.Barding.DIFF=160.0
 
 DESIRES=r_dungeon_exodus,t_coin,t_gold,t_wand,t_potion,t_scroll,t_reagent,e_notoriety

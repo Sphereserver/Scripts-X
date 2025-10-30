@@ -22,7 +22,7 @@ ARMOR=40
 
 TAG.Barding.Diff=10000	//Immune to barding
 FollowerSlots=1
-FACTION = faction_wolf
+FACTION_GROUP=faction_wolf
 
 CATEGORY=Spells
 SUBSECTION=Necromancy
@@ -60,7 +60,7 @@ ARMOR=40
 TAG.Barding.DIFF=88.1
 DAMCOLD=40
 DAMENERGY=50
-FACTION=faction_undead
+FACTION_GROUP=faction_undead
 
 DESIRES=r_dungeon_doom,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
 AVERSIONS=t_trap,r_civilization
