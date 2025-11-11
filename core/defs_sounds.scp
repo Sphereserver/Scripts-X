@@ -504,13 +504,13 @@ snd_spell_paralyze             516
 snd_spell_poison               517
 snd_spell_flamestrike          520
 snd_spell_energy_bolt          522
-snd_spell_energy_field         523
+snd_spell_energy_field         528  //523
 snd_spell_paralyze_field       523
-snd_spell_poison_field         523
-snd_spell_fire_field           524
+snd_spell_poison_field         524  //523
+snd_spell_fire_field           477  //524
 snd_spell_gate_travel          526
 snd_spell_polymorph            527
-snd_spell_blade_spirits        530
+snd_spell_blade_spirits        512  //530
 snd_spell_energy_vortex        530
 snd_spell_mind_blast           531
 snd_spell_resurrection         532
