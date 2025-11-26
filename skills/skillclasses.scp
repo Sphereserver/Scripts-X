@@ -74,17 +74,19 @@ Mysticism=100.0
 Imbuing=100.0
 Throwing=100.0
 
-
 ON=@ItemEquip
-if (<act.type>==t_armor && !<act.MageArmor>)
-	tag0.MeditPenalty ++
-	f_meditation_setup
-endif
+	if (<act.type>==t_armor && !<act.MageArmor>)
+		tag0.MeditPenalty ++
+		f_meditation_setup
+	endif
 
 ON=@ItemUnEquip
-if (<act.type>==t_armor && !<act.MageArmor>)
-	tag0.MeditPenalty --
-	f_meditation_setup
-endif
+	if (<act.type>==t_armor && !<act.MageArmor>)
+		tag0.MeditPenalty --
+		f_meditation_setup
+	endif
 	
+On=@LogIn
+	events +e_poisoning
+
 [EOF]
