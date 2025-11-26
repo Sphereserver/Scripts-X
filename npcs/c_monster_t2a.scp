@@ -19,7 +19,7 @@ ARMOR=25
 MAXFOOD=25
 FOLLOWERSLOTS=1
 DAMCOLD=80
-FACTION=faction_spider
+FACTION_GROUP=faction_spider
 HEIGHT=10
 TAG.BARDING.DIFF=45.4
 TAG.OVERRIDE.SPIDERWEB=1
@@ -93,7 +93,7 @@ ARMOR=55
 MAXFOOD=55
 MOVERATE=120
 DAMCOLD=80
-FACTION=faction_demon
+FACTION_GROUP=faction_demon
 HEIGHT=35
 TAG.BARDING.DIFF=89.3
 
@@ -160,7 +160,7 @@ DAM=17,25
 ARMOR=60
 MAXFOOD=80
 DAMCOLD=50
-FACTION=faction_dragon
+FACTION_GROUP=faction_dragon
 HEIGHT=45
 TAG.BARDING.DIFF=100.3
 TAG.TAMINGSLOT=3
@@ -217,7 +217,7 @@ DAM=14,20
 DAMCOLD=25
 ARMOR=50
 MAXFOOD=35
-FACTION=faction_troll
+FACTION_GROUP=faction_troll
 HEIGHT=23
 TAG.BARDING.DIFF=54.5
 
@@ -380,7 +380,7 @@ CAN=mt_walk|mt_fly|mt_usehands|mt_equip
 DAM=25,40
 ARMOR=45
 MAXFOOD=25
-FACTION=faction_gargoyle
+FACTION_GROUP=faction_gargoyle
 BLOODCOLOR=-1
 HEIGHT=16
 TAG.BARDING.DIFF=71.4
@@ -437,7 +437,7 @@ DAM=23,59
 ARMOR=45
 MAXFOOD=25
 DAMENERGY=50
-FACTION=Faction_Mage
+FACTION_GROUP=Faction_Mage
 HEIGHT=16
 TAG.BARDING.DIFF=90.2
 
@@ -493,7 +493,7 @@ CAN=mt_walk|mt_usehands
 
 DAM=7,17
 ARMOR=30
-FACTION=faction_terathan
+FACTION_GROUP=faction_terathan
 HEIGHT=16
 
 RESOURCES=4 i_ribs_raw
@@ -549,7 +549,7 @@ CAN=mt_walk
 
 DAM=6,12
 ARMOR=24
-FACTION=faction_terathan
+FACTION_GROUP=faction_terathan
 HEIGHT=15
 
 RESOURCES=4 i_ribs_raw
@@ -605,7 +605,7 @@ CAN=mt_walk|mt_usehands
 
 DAM=11,14
 ARMOR=25
-FACTION=faction_terathan
+FACTION_GROUP=faction_terathan
 HEIGHT=18
 
 AVERSIONS=r_civilization
@@ -666,7 +666,7 @@ DAM=20,40
 ARMOR=45
 MAXFOOD=25
 DAMPOISON=25
-FACTION=faction_bird
+FACTION_GROUP=faction_bird
 BLOODCOLOR=-1
 HEIGHT=18
 TAG.BARDING.DIFF=70.3
@@ -720,7 +720,7 @@ CAN=mt_walk|mt_usehands
 
 DAM=7,23
 ARMOR=48
-FACTION=Faction_Repond
+FACTION_GROUP=Faction_Repond
 HEIGHT=28
 RESLEVEL=1
 
@@ -776,7 +776,7 @@ CAN=mt_walk|mt_usehands
 
 DAM=13,16
 ARMOR=40
-FACTION=faction_repond
+FACTION_GROUP=faction_repond
 HEIGHT=40
 
 RESOURCES=4 i_ribs_raw
@@ -839,7 +839,7 @@ ARMOR=55
 TAG.BARDING.DIFF=135.9
 DAMCOLD=40
 DAMENERGY=40
-FACTION=faction_undead
+FACTION_GROUP=faction_undead
 HEIGHT=18
 
 DESIRES=r_graveyards,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent,e_undead
@@ -992,7 +992,7 @@ CAN=mt_walk|mt_usehands
 
 DAM=5,10
 ARMOR=30
-FACTION=faction_ophidian
+FACTION_GROUP=faction_ophidian
 HEIGHT=18
 
 RESOURCES=1 i_ribs_raw
@@ -1052,7 +1052,7 @@ CAN=mt_walk|mt_usehands
 
 DAM=5,11
 ARMOR=36
-FACTION=faction_ophidian
+FACTION_GROUP=faction_ophidian
 HEIGHT=15
 
 RESOURCES=1 i_ribs_raw
@@ -1106,7 +1106,7 @@ CAN=mt_walk|mt_usehands
 
 DAM=11,13
 ARMOR=50
-FACTION=faction_ophidian
+FACTION_GROUP=faction_ophidian
 HEIGHT=15
 
 FOODTYPE=15 t_meat_raw, 5 t_food
@@ -1165,7 +1165,7 @@ DAM=17,41
 ARMOR=30
 MAXFOOD=35
 DAMCOLD=90
-FACTION=Faction_Snake
+FACTION_GROUP=Faction_Snake
 HEIGHT=6
 TAG.BARDING.DIFF=53.1
 
@@ -1220,7 +1220,7 @@ DAM=33,56
 ARMOR=35
 MAXFOOD=35
 DAMFIRE=80
-FACTION=faction_snake
+FACTION_GROUP=faction_snake
 HEIGHT=6
 TAG.BARDING.DIFF=75.5
 
@@ -1324,7 +1324,7 @@ ARMOR=15
 MAXFOOD=10
 TAG.BARDING.DIFF=14.5
 TAG.CORROSIVEBLOOD=10
-FACTION=faction_vermin
+FACTION_GROUP=faction_vermin
 HEIGHT=1
 
 DESIRES=r_snow,t_coin,t_gold,t_gem,e_carnivores
@@ -1378,7 +1378,7 @@ CAN=mt_swim
 ANIM=078c7f
 DAM=5,15
 ARMOR=15
-FACTION=faction_snake
+FACTION_GROUP=faction_snake
 HEIGHT=6
 
 RESOURCES=50 i_ribs_raw,8 i_reag_nox_crystal
@@ -1484,7 +1484,7 @@ MAXFOOD=15
 RESOURCES=1 i_ribs_raw,5 i_reag_sulfur_ash
 
 TAG.Barding.Diff=65.0
-FACTION=faction_wolf
+FACTION_GROUP=faction_wolf
 FollowerSlots=2
 
 DamFire=80
@@ -1538,7 +1538,7 @@ RESOURCES=19 i_ribs_raw,20 i_hide_barbed,6 i_reag_dragon_blood,10 i_dragonscale_
 TAG.Barding.Diff=124.9
 DamCold=25
 
-FACTION=faction_dragon
+FACTION_GROUP=faction_dragon
 
 CATEGORY=Monsters
 SUBSECTION=Dragons
@@ -1792,7 +1792,7 @@ BLOODCOLOR=colors_white
 
 TAG.Barding.Diff=88.8
 DamCold=70
-FACTION=faction_ogre|faction_repond
+FACTION_GROUP=faction_ogre|faction_repond
 
 CATEGORY=Monsters
 SUBSECTION=Giants
@@ -2084,7 +2084,7 @@ ON=@GetHit
             DAMAGE <LOCAL.DAM> <DEF.dam_cold> <REF11>
             SYSMESSAGE Intense cold radiating from the elemental damages you
          ENDIF
-      END
+      ENDFOR
    ENDIF
 
 [CHARDEF 0a2]
@@ -2198,7 +2198,7 @@ ON=@GetHit
             DAMAGE <LOCAL.DAM> <DEF.dam_cold> <REF11>
             SYSMESSAGE Intense cold radiating from the elemental damages you
          ENDIF
-      END
+      ENDFOR
    ENDIF
    
 [CHARDEF 0d2]

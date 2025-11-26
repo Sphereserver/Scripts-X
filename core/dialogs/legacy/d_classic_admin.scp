@@ -188,7 +188,7 @@ for x <eval ((<ctag0.admin_page> - 1) * 15) + 1> <eval (<ctag0.admin_page> * 15)
    dtext 520 <local.y> <local.hue> <obj.p.x>,<obj.p.y>,<obj.p.z>,<obj.p.m>
    //  dtext 540 <local.y> <local.hue> <obj.account.plevel> (<def0.admin_plevel_<eval <obj.account.plevel>>>)
    local.y += 20
-end
+endfor
 
 [DIALOG d_sphereadmin BUTTON]
 on=0
@@ -303,7 +303,7 @@ for x 0 31
 
    LOCAL.Flag=<hval <LOCAL.Flag> << 1>
    LOCAL.Flag=<hval <LOCAL.Flag>>
-end
+endfor
 button 360 360 4005 4006 1 0 31
 dtext 400 360 0c1 Set flags
 page 4
@@ -446,7 +446,7 @@ if (0<account.tag0.numnotes>)
       dtext 160 <eval <local.oy> + 15> 0480 <account.tag0.note_<eval <local.x>>>
       button 600 <eval <local.oy>> 4017 4018 1 0 <EVAL 10+<LOCAL.X>>
       local.oy += 60
-   end
+   endfor
 endif
 
 [DIALOG d_sphereplayernotes BUTTON]
@@ -497,7 +497,7 @@ ELSE //sort note list
       TRYSRV OBJ.ACCOUNT.TAG.NOTE_<EVAL <LOCAL.NOTE>>_BY=<OBJ.ACCOUNT.TAG.NOTE_<EVAL <LOCAL.NOTE>+1>_BY>
       TRYSRV OBJ.ACCOUNT.TAG.NOTE_<EVAL <LOCAL.NOTE>>_TIME=<OBJ.ACCOUNT.TAG.NOTE_<EVAL <LOCAL.NOTE>+1>_TIME>
       LOCAL.NOTE += 1
-   end
+   ENDWHILE
 endif
 TRYSRV OBJ.ACCOUNT.TAG0.NUMNOTES=<EVAL <OBJ.ACCOUNT.TAG0.NUMNOTES>-1>
 SYSMESSAGE Note removed from <obj.account>!

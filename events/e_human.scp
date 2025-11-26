@@ -52,5 +52,5 @@ ON=@EnvironChange
 //       TRAIN <SERV.SKILL.<eval <ARGN>-200>.KEY>
 //    ENDIF
 
-   [EOF]
+[EOF]
    

@@ -115,7 +115,7 @@ IF !(<R3>)
         DAMAGE <LOCAL.DAM> <DEF.dam_cold> <REF11>
         SYSMESSAGE Intense cold radiating from the demon damages you
      ENDIF
-  END
+  ENDFOR
 ENDIF
 
 
@@ -131,7 +131,7 @@ IF ( (<MANA> >= 20) && !(<R5>) )
         DAMAGE <LOCAL.DAM> <DEF.dam_fire> <REF11>
         SYSMESSAGE Intense heat radiating from the serpent damages you
      ENDIF
-  END
+  ENDFOR
 ENDIF
 
 

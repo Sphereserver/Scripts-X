@@ -551,7 +551,7 @@ For x 0 31
    Endif
 LOCAL.Flag=<hval <LOCAL.Flag> << 1>
 LOCAL.Flag=<hval <LOCAL.Flag>>
-End
+Endfor
 
 Button 5 330 4023 4025 1 0 51
 DText 40 330 0c1 <Def.d_admin_<Src.CTag0.AccountLang>_Set_All_Flags>

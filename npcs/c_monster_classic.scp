@@ -374,7 +374,7 @@ HEIGHT=35
 RESOURCES=1 i_ribs_raw
 DESIRES=i_gold
 AVERSIONS=r_civilization
-FACTION = faction_demon
+FACTION_GROUP=faction_demon
 
 CATEGORY=Monsters
 SUBSECTION=Daemons
@@ -424,7 +424,7 @@ HEIGHT=35
 RESOURCES=1 i_ribs_raw,2 i_reag_daemon_bone
 DESIRES=r_caves,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
 AVERSIONS=t_trap,r_civilization
-FACTION = faction_demon
+FACTION_GROUP=faction_demon
 
 CATEGORY=Monsters
 SUBSECTION=Daemons
@@ -1100,7 +1100,7 @@ DAM=20,32
 ARMOR=20
 MAXFOOD=15
 FOLLOWERSLOTS=1
-FACTION=faction_wolf
+FACTION_GROUP=faction_wolf
 HEIGHT=10
 TAG.Barding.DIFF=50.3
 
@@ -1205,7 +1205,7 @@ DAM=4,10
 ARMOR=15
 MAXFOOD=15
 FOLLOWERSLOTS=1
-FACTION=faction_wolf
+FACTION_GROUP=faction_wolf
 HEIGHT=10
 TAG.Barding.DIFF=30.2
 
@@ -1514,7 +1514,7 @@ RESOURCES=1 i_ribs_raw,2 i_fur_light,4 i_hide
 
 TAG.Barding.Diff=32.3
 FollowerSlots=1
-FACTION=faction_wolf
+FACTION_GROUP=faction_wolf
 
 CATEGORY=Animals
 SUBSECTION=Wild
@@ -1645,7 +1645,7 @@ ARMOR=15
 
 MAXFOOD=15
 FOLLOWERSLOTS=1
-FACTION=faction_wolf
+FACTION_GROUP=faction_wolf
 HEIGHT=10
 TAG.Barding.DIFF=32.3
 
@@ -2841,7 +2841,7 @@ ARMOR=40
 MOVERATE=120
 DAMCOLD=60
 DAMENERGY=40
-FACTION=faction_undead
+FACTION_GROUP=faction_undead
 HEIGHT=18
 TAG.Barding.DIFF=106.4
 
@@ -2903,7 +2903,7 @@ DAM=22,25
 ARMOR=50
 MAXFOOD=35
 TAG.Barding.DIFF=103.7
-FACTION=faction_ogre
+FACTION_GROUP=faction_ogre
 
 DESIRES=r_forests,t_coin,t_gold,t_gem,t_potion
 AVERSIONS=t_trap,r_civilization
@@ -2992,7 +2992,7 @@ DAM=11,53
 ARMOR=35
 DAMPOISON=50
 MAXFOOD=35
-FACTION=faction_snake
+FACTION_GROUP=faction_snake
 TAG.Barding.DIFF=80.1
 
 DESIRES=r_jungle,t_coin,t_gold,t_gem
@@ -3044,7 +3044,7 @@ CAN=mt_walk|mt_run|mt_nonhum
 DAM=22,34
 ARMOR=25
 FOLLOWERSLOTS=2
-FACTION=faction_wolf
+FACTION_GROUP=faction_wolf
 TAG.Barding.DIFF=55.3
 MAXFOOD=15
 HEIGHT=8
@@ -3096,7 +3096,7 @@ DAM=22,34
 ARMOR=25
 MAXFOOD=15
 FOLLOWERSLOTS=2
-FACTION=faction_wolf
+FACTION_GROUP=faction_wolf
 TAG.Barding.DIFF=55.3
 HEIGHT=8
 
@@ -3164,7 +3164,7 @@ RESOURCES=10 i_ore_agapite
 BLOODCOLOR=color_o_agapite
 MOVERATE=120
 TAG.Barding.Diff=72.9
-FACTION=faction_elemental
+FACTION_GROUP=faction_elemental
 
 CATEGORY=Monsters
 SUBSECTION=Elementals
@@ -3218,7 +3218,7 @@ MOVERATE=120
 TAG.Barding.Diff=71.8
 DamFire=70
 
-FACTION=faction_elemental
+FACTION_GROUP=faction_elemental
 
 CATEGORY=Monsters
 SUBSECTION=Elementals
@@ -3271,7 +3271,7 @@ MOVERATE=120
 TAG.Barding.Diff=73.3
 ReflectPhysicalDam=50
 
-FACTION=faction_elemental
+FACTION_GROUP=faction_elemental
 
 CATEGORY=Monsters
 SUBSECTION=Elementals
@@ -3322,7 +3322,7 @@ RESOURCES=10 i_ore_copper//_dull
 BLOODCOLOR=color_o_copper//_dull
 MOVERATE=120
 TAG.Barding.Diff=73.8
-FACTION=faction_elemental
+FACTION_GROUP=faction_elemental
 
 CATEGORY=Monsters
 SUBSECTION=Elementals
@@ -3388,7 +3388,7 @@ BLOODCOLOR=color_o_shadow
 MOVERATE=120
 TAG.Barding.Diff=72.3
 
-FACTION=faction_elemental
+FACTION_GROUP=faction_elemental
 
 CATEGORY=Monsters
 SUBSECTION=Elementals
@@ -3447,7 +3447,7 @@ DamCold=25
 DamEnergy=25
 DamFire=25
 
-FACTION=faction_elemental
+FACTION_GROUP=faction_elemental
 
 CATEGORY=Monsters
 SUBSECTION=Elementals
@@ -3499,7 +3499,7 @@ MOVERATE=120
 TAG.Barding.Diff=72.9
 DamEnergy=50
 
-FACTION=faction_elemental
+FACTION_GROUP=faction_elemental
 
 CATEGORY=Monsters
 SUBSECTION=Elementals
@@ -3545,7 +3545,7 @@ RESOURCES=1 i_ribs_raw,12 i_hide_spined
 
 TAG.Barding.Diff=32.2
 FollowerSlots=1
-FACTION=faction_reptile
+FACTION_GROUP=faction_reptile
 CATEGORY=Animals
 SUBSECTION=Reptiles
 DESCRIPTION=Alligator, Small
@@ -3739,7 +3739,7 @@ RESOURCES=1 i_ribs_raw,8 i_hide_spined
 MOVERATE=150
 
 TAG.Barding.Diff=73.5
-FACTION=faction_repond
+FACTION_GROUP=faction_repond
 
 CATEGORY=Monsters
 SUBSECTION=Ratmen
@@ -3792,7 +3792,7 @@ MAXFOOD=25
 RESOURCES=1 i_ribs_raw,8 i_hide_spined
 
 TAG.Barding.Diff=79.3
-FACTION=faction_repond
+FACTION_GROUP=faction_repond
 
 CATEGORY=Monsters
 SUBSECTION=Ratmen
@@ -4784,7 +4784,7 @@ CAN=mt_walk|mt_run|mt_nonhum
 DAM=5,11
 ARMOR=15
 MAXFOOD=10
-FACTION=faction_vermin
+FACTION_GROUP=faction_vermin
 FOLLOWERSLOTS=1
 HEIGHT=6
 TAG.Barding.DIFF=25.8

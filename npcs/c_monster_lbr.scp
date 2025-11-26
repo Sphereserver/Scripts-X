@@ -15,7 +15,7 @@ DAM=13,33
 ARMOR=40
 MAXFOOD=35
 DAMPOISON=80
-FACTION=faction_spider
+FACTION_GROUP=faction_spider
 TAG.OVERRIDE.SPIDERWEB=1
 TAG.Barding.DIFF=88.0
 HEIGHT=10
@@ -1007,7 +1007,7 @@ HitLeechLife=30
 HitLeechMana=30
 HitLeechStam=30
 
-FACTION=faction_fey
+FACTION_GROUP=faction_fey
 
 CATEGORY=Monsters
 SUBSECTION=Feys
@@ -1436,7 +1436,7 @@ BLOODCOLOR=colors_green
 COLOR=096d
 
 TAG.Barding.Diff=67.3
-FACTION=faction_orc|faction_repond
+FACTION_GROUP=faction_orc|faction_repond
 
 CATEGORY=Monsters
 SUBSECTION=Orcs
@@ -1487,7 +1487,7 @@ MAXFOOD=25
 RESOURCES=1 i_ribs_raw
 
 TAG.Barding.Diff=72.2
-FACTION=faction_repond
+FACTION_GROUP=faction_repond
 
 CATEGORY=Humanoids
 SUBSECTION=Civilized
@@ -1650,7 +1650,7 @@ SUBSECTION=Undeads
 DESCRIPTION=Bone Magi
 
 ON=@Create
-faction=faction_undead
+FACTION_GROUP=faction_undead
 NPC=brain_monster
 str={76, 100}
 dex={56, 75}
@@ -2309,7 +2309,7 @@ ON=@GetHit
             ENDIF
             SRC.SYSMESSAGE @color_text,,1 The evil aura of the succubus drains life from you
          ENDIF
-      END
+      ENDFOR
    ENDIF
 
 
@@ -5513,7 +5513,7 @@ CAN=mt_walk|mt_run|mt_nonhum
 DAM=14,45
 ARMOR=35
 MAXFOOD=10
-FACTION=faction_reptile
+FACTION_GROUP=faction_reptile
 FOLLOWERSLOTS=1
 DAMFIRE=40
 HEIGHT=8

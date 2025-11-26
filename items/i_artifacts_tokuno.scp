@@ -337,7 +337,7 @@ ON=@Create
 [ITEMDEF i_exiler]
 ID=i_tetsubo
 NAME=Exiler
-SLAYER=faction_demon
+SLAYER_GROUP=faction_demon
 HitDispel=33
 IncreaseSwingSpeed=20
 IncreaseDam=40
@@ -361,12 +361,12 @@ DESCRIPTION=Flute of Renewal
 ON=@Create
    ATTR=attr_magic|attr_identified
    DORAND 6	// Can be one of the 7 super slayer excepting Fey
-      SLAYER=faction_elemental
-      SLAYER=faction_demon
-      SLAYER=faction_repond
-      SLAYER=faction_undead
-      SLAYER=faction_arachnid
-      SLAYER=faction_reptile
+      SLAYER_GROUP=faction_elemental
+      SLAYER_GROUP=faction_demon
+      SLAYER_GROUP=faction_repond
+      SLAYER_GROUP=faction_undead
+      SLAYER_GROUP=faction_arachnid
+      SLAYER_GROUP=faction_reptile
    ENDDO
    TAG.Charges=300
 ON=@ClientTooltip
@@ -455,7 +455,7 @@ ON=@Create
 ID=i_bokuto
 NAME=Peasant's Bokuto
 SelfRepair=3
-SLAYER=faction_snake
+SLAYER_GROUP=faction_snake
 HitLowerDef=30
 IncreaseSwingSpeed=10
 IncreaseDam=35
@@ -595,7 +595,7 @@ ON=@Create
 [ITEMDEF i_the_horselord]
 ID=i_yumi
 NAME=The Horselord
-SLAYER=faction_elemental|faction_reptile
+SLAYER_GROUP=faction_elemental|faction_reptile
 BonusDex=5
 RegenMana=1
 LUCK=125
