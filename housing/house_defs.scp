@@ -19,7 +19,7 @@ VERSION=X1
 //			Flate rate (def.hs_estate_calc = 1) adds an extra def.hs_estate_rate or regional maintenance rate to the cost to refresh a house when a player has more than <def.hs_estate_tax> houses regardless of how many.
 //			Linear rate (def.hs_estate_calc = 2) adds 1 def.hs_estate_rate or regional maintenance rate for each house over <def.hs_estate_tax> (gets more expensive with more houses)
 //
-//		To retain the house the player should use another character on the account and use the transfer ownership option on that character 
+//		To retain the house the player should use another character on the account and use the transfer ownership option on that character
 //		(you can use this to transfer the house around the chars in account) BEFORE they delete the named character.
 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -44,17 +44,17 @@ vendor_deed_id		i_deed_vendor
 vendor_obody_male	c_vendor
 vendor_obody_female	c_vendor_f
 
-//Taxes & Fees 
+//Taxes & Fees
 hs_redeed_fee 			10	// Cost to redeed a house % of house value, zero disables.
 hs_demolish_fee         5   // Cost to demolish a house % of house value, zero disables.
-hs_can_decay 			30 	// set to number of days for a house to decay, or set to 0 to disable
+hs_can_decay 			0 	// set to number of days for a house to decay, or set to 0 to disable
 hs_property_tax			10	// Set to % figure of house value to pay for maintenance on houses, WORKS ONLY WHEN hs_can_decay IS ON! zero disables.
 hs_PlaceMinDistFront	5	// Minimum front distance allowed between placed houses. Default = 5
 hs_PlaceMinDistArea		1	// Minimum area distance allowed between placed houses. Default = 1
 
 hs_estate_tax 			2	// Extra charges for player with MORE than this many houses.  0 disables
 hs_estate_rate 			10	// % per house over the hs_estate_tax
-hs_estate_calc 			1	// 1 = flat <def.hs_estate_rate>% rate    2 = linear charge increase per house (1 over = + premium rate, 2 over = + premium rate*2, 3 over = + premium rate*3 e.t.c..) 
+hs_estate_calc 			1	// 1 = flat <def.hs_estate_rate>% rate    2 = linear charge increase per house (1 over = + premium rate, 2 over = + premium rate*2, 3 over = + premium rate*3 e.t.c..)
 
 hs_buy_storage 			1 	// if set to 1 allows players to increase secure storage by up to 100% via house sign, 0 to disable
 
