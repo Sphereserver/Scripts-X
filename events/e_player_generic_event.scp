@@ -7,4 +7,11 @@ VERSION=X1
 [events e_player_generic_event]
 //Generic event to all players
 
+// Added on 2026-03-06 as a backwards compatibility due to removal in core in https://github.com/Sphereserver/Source-X/pull/1486
+on=@getHit
+  if (<action> == Healing)
+    sysmessage <defmsg.healing_interrupt>
+    action = -1
+  endif
+
 [eof]
