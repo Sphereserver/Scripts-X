@@ -218,18 +218,6 @@ debugf_walk                         02000 // debug flag for new walking check st
 debugf_packets                      04000 // log packets to file
 debugf_network                      08000 // debug flags for networking
 
-[DEFNAME logmasks]
-logm_accounts                       000100 // account login/operations
-logm_init                           000200 // start up messages
-logm_save                           000400 // world save
-logm_clients_log                    000800 // all clients as they log in and out
-logm_gm_page                        001000 // player gm pages
-logm_player_speak                   002000 // all that the players say
-logm_gm_cmds                        004000 // all gm commands
-logm_cheat                          008000 // possible cheat attempts
-logm_kills                          010000 // player combat results
-logm_http                           020000 // http protocol operations
-
 [DEFNAME experiencemodes]
 exp_mode_raise_combat               001 // Gain experience in combat.
 exp_mode_raise_craft                002 // Gain experience in crafts.
