@@ -4,7 +4,13 @@
 //****************************************************************************
 VERSION=X1
 
+// Generic event to all players.
 [events e_player_generic_event]
-//Generic event to all players
+
+on=@login
+    // If enabled in configuration, chatname will be changed to character name on login.
+    if (<def.config.chatname_char> == 1)
+        account.chatname = <src.name>
+    endif
 
 [eof]
