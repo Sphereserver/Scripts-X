@@ -2217,6 +2217,8 @@ CATEGORY=Animations
 SUBSECTION=Poison Fields
 DESCRIPTION=Poison Field West/East
 DUPELIST=03916,03917,03918,03919,0391a,0391b,0391c,0391d,0391e,0391f
+On=@Step
+   f_checkPoisoned
 
 [ITEMDEF 03916]
 //Poison Field West/East (animation frame)
@@ -2269,6 +2271,8 @@ CATEGORY=Animations
 SUBSECTION=Poison Fields
 DESCRIPTION=Poison Field North/South
 DUPELIST=03920,03922,03923,03924,03925,03926,03927,03928,03929
+On=@Step
+   f_checkPoisoned
 
 [ITEMDEF 03922]
 //Poison Field North/South (animation frame)

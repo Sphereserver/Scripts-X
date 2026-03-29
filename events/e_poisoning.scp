@@ -1,0 +1,325 @@
+// Combat poisoning by MalucoBeleza.
+//
+// This script was meant to maintain as much as the original scriptpack as possible.
+// Poisoning skill was not altered. Poison potions add the following moreZ values to blades:
+// Lesser poison: moreZ = 40
+// Poison: moreZ = 50
+// Greater poison: moreZ = 90
+// Deadly poison: moreZ = 105
+//
+// Potions:
+// Lesser cure potions cure only lesser poison.
+// Cure potions cure lesser poison and poison.
+// Greater cure potions cure all poisons.
+// If you drink a potion that cannot cure your poison, it lowers the poison level by 1 (deadly poison goes to greater poison, greater poison goes to poison and poison goes to lesser poison).
+//
+// Cure spells:
+// Cure spell cures lesser poison, poison and greater poison. If you are deadly poisoned, the poison is lowered to greater poison.
+// Arch cure spell cures all poisons.
+//
+// Poison spells:
+// If you were poisoned by a weapon and receives a poison spell, the spell overrides the combat poison (same with poison field). 
+
+[defname poisoningDefs]
+poisonAppliedBy         1 // 0: by chance; 1: by a number of hits
+
+chancePoisonLesser      40
+chancePoisonRegular     30
+chancePoisonGreater     20
+chancePoisonDeadly      10
+
+hitsPoisonLesser        3
+hitsPoisonRegular       4
+hitsPoisonGreater       5
+hitsPoisonDeadly        6
+
+hitsPoisonDecay         3 // seconds for hits to decay
+
+timerPoisonLesser       5
+timerPoisonRegular      4
+timerPoisonGreater      4
+timerPoisonDeadly       3
+
+ticksPoisonLesser       3
+ticksPoisonRegular      4
+ticksPoisonGreater      5
+ticksPoisonDeadly       6
+
+poisonDmgType           1 // 0: by a percentual of the victim's hitpoints (the next 4 defs should be integers)
+                          // 1: by a fixed amount (the next 4 defs should be min,max)
+
+dmgPoisonLesser         7,9
+dmgPoisonRegular        10,12
+dmgPoisonGreater        15,17
+dmgPoisonDeadly         19,21
+
+[EVENTS e_poisoning]
+On=@Hit
+    if (<weapon>)
+        if (<weapon.moreZ> > 0) && !(<src.flags> & statf_poisoned) && !(<src.findid.i_memPoisoned>)
+            if (<def.poisonappliedBy> == 0)
+                if (<weapon.moreZ> == 40)
+                    local.poisonChance = <def.chancePoisonLesser>
+                    
+                elif (<weapon.moreZ> == 50)
+                    local.poisonChance = <def.chancePoisonRegular>
+
+                elif (<weapon.moreZ> == 90)
+                    local.poisonChance = <def.chancePoisonGreater>
+
+                elif (<weapon.moreZ> == 105)
+                    local.poisonChance = <def.chancePoisonDeadly>
+
+                endif
+
+                local.random = <r1,100>
+                if (<local.poisonChance> > <local.random>)
+                    serv.newitem i_memPoisoned
+                    new.link = <uid>
+                    new.moreZ = <weapon.moreZ>
+                    src.equip <new>
+                endif
+
+            elif (<def.poisonappliedby> == 1)
+                if !(<src.findid.i_memPoisonHits>)
+                    serv.newitem i_memPoisonHits
+                    src.equip <new>
+                    
+                endif
+                src.findid.i_memPoisonHits.tag0.<uid> ++
+                src.findid.i_memPoisonHits.trigger @SetTimer
+
+                if (<weapon.moreZ> == 40) && (<src.findid.i_memPoisonHits.tag.<uid>> >= <def.hitsPoisonLesser>)
+                    src.findid.i_memPoisonHits.remove
+                    serv.newitem i_memPoisoned
+                    new.link = <uid>
+                    new.moreZ = <weapon.moreZ>
+                    src.equip <new>
+
+                elif (<weapon.moreZ> == 50) && (<src.findid.i_memPoisonHits.tag.<uid>> >= <def.hitsPoisonRegular>)
+                    src.findid.i_memPoisonHits.remove
+                    serv.newitem i_memPoisoned
+                    new.link = <uid>
+                    new.moreZ = <weapon.moreZ>
+                    src.equip <new>
+
+                elif (<weapon.moreZ> == 90) && (<src.findid.i_memPoisonHits.tag.<uid>> >= <def.hitsPoisonGreater>)
+                    src.findid.i_memPoisonHits.remove
+                    serv.newitem i_memPoisoned
+                    new.link = <uid>
+                    new.moreZ = <weapon.moreZ>
+                    src.equip <new>
+
+                elif (<weapon.moreZ> == 105) && (<src.findid.i_memPoisonHits.tag.<uid>> >= <def.hitsPoisonDeadly>)
+                    src.findid.i_memPoisonHits.remove
+                    serv.newitem i_memPoisoned
+                    new.link = <uid>
+                    new.moreZ = <weapon.moreZ>
+                    src.equip <new>
+
+                endif
+            endif
+        endif
+    endif
+
+[ITEMDEF i_memPoisonHits]
+ID=i_potion_poison
+NAME=poisonMemHits
+WEIGHT=0
+LAYER=layer_special
+TYPE=t_eq_script
+On=@Create
+    attr = attr_invis|attr_newbie
+    timer = <def.hitsPoisonDecay>
+
+On=@Timer
+    for 0 <Eval <tagcount> - 1>
+        tag.<tagat.<local._for>.key> --
+        if (<tag.<tagat.<local._for>.key>> <= 0)
+            tag.<tagat.<local._for>.key> =
+        else
+            local.noRemove = 1
+        endif
+    endfor
+
+    if (<local.noRemove> == 1)
+        trigger @SetTimer
+
+    else
+        remove
+
+    endif
+
+    return 1
+
+On=@SetTimer
+    timer = <def.hitsPoisonDecay>
+
+[ITEMDEF i_memPoisoned]
+ID=i_potion_poison
+NAME=poisonMem
+WEIGHT=0
+LAYER=layer_special
+TYPE=t_eq_script
+On=@Create
+    attr = attr_invis|attr_newbie
+
+On=@Equip
+    if !(<src.flags> & statf_poisoned)
+        src.flags |= statf_poisoned
+    endif
+
+    src.events +e_poisoned
+
+    src.sound snd_spell_poison
+    src.effect 3,i_fx_curse,1,16,0
+
+    src.sysmessageua 70,1,1,1, You have been poisoned by <link.name>!
+    src.emote has been poisoned!
+
+    if (<moreZ> == 40)
+        timer = <def.timerPoisonLesser>
+        tag.ticks = <def.ticksPoisonLesser>
+
+    elif (<moreZ> == 50)
+        timer = <def.timerPoisonRegular>
+        tag.ticks = <def.ticksPoisonRegular>
+        
+    elif (<moreZ> == 90)
+        timer = <def.timerPoisonGreater>
+        tag.ticks = <def.ticksPoisonGreater>
+        
+    elif (<moreZ> == 105)
+        timer = <def.timerPoisonDeadly>
+        tag.ticks = <def.ticksPoisonDeadly>
+        
+    endif
+
+On=@Timer
+    if (<moreZ> == 40)
+        timer = <def.timerPoisonLesser>
+        local.dmg = <def.dmgPoisonLesser>
+
+    elif (<moreZ> == 50)
+        timer = <def.timerPoisonRegular>
+        local.dmg = <def.dmgPoisonRegular>
+        
+    elif (<moreZ> == 90)
+        timer = <def.timerPoisonGreater>
+        local.dmg = <def.dmgPoisonGreater>
+        
+    elif (<moreZ> == 105)
+        timer = <def.timerPoisonDeadly>
+        local.dmg = <def.dmgPoisonDeadly>
+        
+    endif
+
+    if (<def.poisonDmgType> == 0)
+        local.dmg = <eval (<cont.hits>*<local.dmg>)/100>
+    endif
+    cont.damage <r<local.dmg>>, dam_poison, <link>
+
+    tag0.tick += 1
+    if (<tag.tick> >= <tag.ticks>)
+        remove
+    endif
+
+    return 1
+
+On=@UnEquip
+    if (<src.flags> & statf_poisoned)
+        src.flags &=~ statf_poisoned
+    endif
+    
+    src.events -e_poisoned
+
+    if (<tag0.noWarning> == 0)
+        src.sysmessageua 70,1,1,1, You feel better!
+    endif
+
+[EVENTS e_poisoned]
+On=@SpellEffect
+    if (<argn1> == 11) // cure (potion or spell)
+        if (<findid.i_memPoisoned>)
+
+            if (<argo>) && (<argo.type> == t_potion)
+                if (<argo.more2> >= 1000) // greater cure potion
+                    findid.i_memPoisoned.remove
+
+                elif (<argo.more2> >= 600)  // cure potion
+                    if (<src.findid.i_memPoisoned.moreZ> == 40) || (<src.findid.i_memPoisoned.moreZ> == 50)
+                        findid.i_memPoisoned.remove
+                        
+                    elif (<src.findid.i_memPoisoned.moreZ> == 90)
+                        sysmessageua 70,1,1,1, The spell wasn't strong enough to cure your poison, but it still helped.
+                        findid.i_memPoisoned.moreZ = 50
+                        findid.i_memPoisoned.trigger @SetTimer
+                        
+                    elif (<src.findid.i_memPoisoned.moreZ> == 105)
+                        sysmessageua 70,1,1,1, The spell wasn't strong enough to cure your poison, but it still helped.
+                        findid.i_memPoisoned.moreZ = 90
+                        findid.i_memPoisoned.trigger @SetTimer
+
+                    endif
+                
+                elif (<argo.more2> >= 400)  // lesser cure potion
+                    if (<src.findid.i_memPoisoned.moreZ> == 40)
+                        findid.i_memPoisoned.remove
+
+                    elif (<src.findid.i_memPoisoned.moreZ> == 50)
+                        sysmessageua 70,1,1,1, The spell wasn't strong enough to cure your poison, but it still helped.
+                        findid.i_memPoisoned.moreZ = 40
+                        findid.i_memPoisoned.trigger @SetTimer
+                    
+                    elif (<src.findid.i_memPoisoned.moreZ> == 90)
+                        sysmessageua 70,1,1,1, The spell wasn't strong enough to cure your poison, but it still helped.
+                        findid.i_memPoisoned.moreZ = 50
+                        findid.i_memPoisoned.trigger @SetTimer
+                    
+                    elif (<src.findid.i_memPoisoned.moreZ> == 105)
+                        sysmessageua 70,1,1,1, The spell wasn't strong enough to cure your poison, but it still helped.
+                        findid.i_memPoisoned.moreZ = 90
+                        findid.i_memPoisoned.trigger @SetTimer
+                    
+                    endif
+                endif
+
+            else // spell
+                if (<findid.i_memPoisoned.moreZ> < 105)
+                    findid.i_memPoisoned.remove
+
+                else
+                    sysmessageua 70,1,1,1, The spell wasn't strong enough to cure your poison, but it still helped.
+                    findid.i_memPoisoned.moreZ = 90
+
+                endif
+            endif
+        endif
+
+    elif (<argn1> == 20) || (<argn1> == 39) // poison
+        if (<findid.i_memPoisoned>)
+            findid.i_memPoisoned.tag.noWarning = 1
+            findid.i_memPoisoned.remove
+        endif
+
+        if (<findid.i_memPoisonHits>)
+            findid.i_memPoisonHits.remove
+        endif
+
+    elif (<argn1> == 25) // arch cure
+        if (<findid.i_memPoisoned>)
+            findid.i_memPoisoned.remove
+        endif
+    endif
+
+[FUNCTION f_checkPoisoned]
+if (<src.findid.i_memPoisoned>)
+    src.findid.i_memPoisoned.tag.noWarning = 1
+    src.findid.i_memPoisoned.remove
+endif
+
+if (<src.findid.i_memPoisonHits>)
+    src.findid.i_memPoisonHits.remove
+endif
+
+[EOF]
