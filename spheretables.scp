@@ -22,6 +22,7 @@ As a general rule:
 [RESOURCES]
 // sphere.ini and spheretable.scp are automatic.
 // All the other scripts we want to load.
+config.scp
 crafting/
 crafting/interface/
 crafting/interface/legacy skillmenu/

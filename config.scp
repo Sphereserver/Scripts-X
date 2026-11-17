@@ -1,0 +1,9 @@
+//
+// @file
+// ScriptPack configuration file.
+//
+
+// Configurable switches, that can change global behaviour.
+[DEFNAME configuration]
+// When enabled, account chatname will be set to currently logged character.
+config.chatname_char = 0
