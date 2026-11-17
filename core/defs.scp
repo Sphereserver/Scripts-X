@@ -559,6 +559,12 @@ death_nolootdrop        004
 death_noconjuredeffect  008
 death_hascorpse         010
 
+[DEFNAME stat_type]
+stat_str  0
+stat_int  1
+stat_dex  2
+stat_food 3
+
 [DEFNAME noto_types]
 noto_good            1
 noto_guild_same      2
